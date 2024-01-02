@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/Directory.Build.props b/src/dev_ng/Directory.Build.props
+index b6c0bb302..57358d075 100644
+--- a/src/dev_ng/Directory.Build.props
++++ b/src/dev_ng/Directory.Build.props
+@@ -69,7 +69,7 @@
+ 		<RS_TOOLSRUBY>$(RS_TOOLSROOT)\bin\ruby\bin\ruby.exe</RS_TOOLSRUBY>
+ 		<RS_TOOLSIR>$(RS_TOOLSROOT)\bin\ironruby\bin\ir64.exe</RS_TOOLSIR>
+ 		<RS_TOOLSPYTHON>$(PYTHONHOME)\python.exe</RS_TOOLSPYTHON>
+-		<RAGE_3RDPARTY>X:\3rdparty\dev</RAGE_3RDPARTY>
++		<RAGE_3RDPARTY>$(RS_PROJROOT)\3rdparty\dev</RAGE_3RDPARTY>
+ 		<RAGE_CRASHDUMP_DIR>$(RS_BUILDBRANCH)</RAGE_CRASHDUMP_DIR>
+ 		<RS_TITLE_UPDATE>$(RS_PROJROOT)\titleupdate\$(RS_BRANCHNAME)</RS_TITLE_UPDATE>
+ 		<RS_TOOLSCONVERT>$(RS_TOOLSIRONLIB)\lib\RSG.Pipeline.Convert.exe</RS_TOOLSCONVERT>

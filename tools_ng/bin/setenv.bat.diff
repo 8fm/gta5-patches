@@ -1,0 +1,13 @@
+diff --git a/tools_ng/bin/setenv.bat b/tools_ng/bin/setenv.bat
+index 2d1fbf797..61636f85e 100644
+--- a/tools_ng/bin/setenv.bat
++++ b/tools_ng/bin/setenv.bat
+@@ -29,7 +29,7 @@ SET RS_TOOLSSRC=%RS_PROJROOT%\src\dev_ng\rage\framework\tools\src
+ SET RS_TOOLSRUBY=%RS_TOOLSROOT%\bin\ruby\bin\ruby.exe
+ SET RS_TOOLSIR=%RS_TOOLSROOT%\bin\ironruby\bin\ir64.exe
+ SET RS_TOOLSPYTHON=%RS_TOOLSROOT%\bin\python\App\python.exe
+-SET RAGE_3RDPARTY=X:\3rdparty\dev
++SET RAGE_3RDPARTY=%RS_PROJROOT%\3rdparty\dev
+ SET RAGE_CRASHDUMP_DIR=%RS_BUILDBRANCH%
+ SET RS_TITLE_UPDATE=%RS_PROJROOT%\titleupdate\dev
+ 

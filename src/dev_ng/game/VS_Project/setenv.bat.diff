@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/VS_Project/setenv.bat b/src/dev_ng/game/VS_Project/setenv.bat
+index 107d55778..61f53be7a 100644
+--- a/src/dev_ng/game/VS_Project/setenv.bat
++++ b/src/dev_ng/game/VS_Project/setenv.bat
+@@ -17,14 +17,14 @@ ECHO.%~dp0| FIND /I "dev_ng_live">nul && (
+     set RAGE_DIR=X:\gta5\src\dev_ng_live\rage
+     set RS_TITLE_UPDATE_NG=x:\gta5\titleupdate\dev_ng_live
+ ) || (
+-    set RS_BUILDBRANCH=x:\gta5\build\dev_ng
+-    set RS_CODEBRANCH=x:\gta5\src\dev_ng
++    set RS_BUILDBRANCH=%RS_PROJROOT%\build\dev_ng
++    set RS_CODEBRANCH=%RS_PROJROOT%\src\dev_ng
+     set RS_PROJECT=gta5
+-    set RS_PROJROOT=x:\gta5
+-    set RS_SCRIPTBRANCH=x:\gta5\script\dev_ng
+-    set RS_TOOLSROOT=X:\gta5\tools_ng
+-    set RAGE_DIR=X:\gta5\src\dev_ng\rage
+-    set RS_TITLE_UPDATE_NG=x:\gta5\titleupdate\dev_ng
++REM    set RS_PROJROOT=x:\gta5
++    set RS_SCRIPTBRANCH=%RS_PROJROOT%\script\dev_ng
++    set RS_TOOLSROOT=%RS_PROJROOT%\tools_ng
++    set RAGE_DIR=%RS_PROJROOT%\src\dev_ng\rage
++    set RS_TITLE_UPDATE_NG=%RS_PROJROOT%\titleupdate\dev_ng
+ )
+ 
+ ECHO SETTING SPECIFIC ENVIRONMENT VALUES TO OVERRIDE SETENV.BAT
