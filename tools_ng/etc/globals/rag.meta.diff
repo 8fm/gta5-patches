@@ -1,0 +1,19 @@
+diff --git a/tools_ng/etc/globals/rag.meta b/tools_ng/etc/globals/rag.meta
+index ce392b655..c9ffb6766 100644
+--- a/tools_ng/etc/globals/rag.meta
++++ b/tools_ng/etc/globals/rag.meta
+@@ -4,12 +4,13 @@
+   This file contains known source IPs that are ignored by RAG when encountering data on the new game connection port.
+   
+   This file is safe to integrate across tools branches.
++  Nessus ADC original IPAddress: 10.70.255.23
+ -->
+ <RagConfiguration>
+   <IgnoredConnectionSources>
+     <Item type="ConnectionSource">
+       <Name>Nessus ADC</Name>
+-      <IPAddress>10.70.255.23</IPAddress>
++      <IPAddress>192.168.0.0</IPAddress>
+     </Item>
+     <Item type="ConnectionSource">
+       <Name>Nessus EDC</Name>

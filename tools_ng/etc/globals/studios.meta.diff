@@ -1,0 +1,20 @@
+diff --git a/tools_ng/etc/globals/studios.meta b/tools_ng/etc/globals/studios.meta
+index 79efa8db0..6389c9cc2 100644
+--- a/tools_ng/etc/globals/studios.meta
++++ b/tools_ng/etc/globals/studios.meta
+@@ -4,13 +4,14 @@
+   This file contains data per-studio that is used across our tool chain.
+   
+   This file is safe to integrate across tools branches.
++  R* North original SubnetMask: 10.10.0.0/16
+ -->
+ <StudioFile>
+   <Studios>
+     <Item type="Studio">
+       <Key>north</Key>
+       <FriendlyName>R* North</FriendlyName>
+-      <SubnetMask>10.10.0.0/16</SubnetMask>
++      <SubnetMask>192.168.0.0/16</SubnetMask>
+       <Domain>rockstarnorth.com</Domain>
+       <PerforceServer>rsgperforce:1666</PerforceServer>
+       <PerforceMocapServer/>
