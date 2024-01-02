@@ -1,0 +1,94 @@
+diff --git a/src/dev_ng/game/system/FileMgr.cpp b/src/dev_ng/game/system/FileMgr.cpp
+index 6c8144639..ba67dc046 100644
+--- a/src/dev_ng/game/system/FileMgr.cpp
++++ b/src/dev_ng/game/system/FileMgr.cpp
+@@ -114,7 +114,7 @@
+ 	#define PLATFORM_DEBUG_PACK     "xboxone_debug.rpf"	// contains all unshippable data for packaged non-final builds
+ #else	// pc, anything else
+ 	#define DISKROOT_DIRECTORY	    ""
+-	#if __FINAL
++	#if __PACKEDDEBUG
+ 		#define ROOT_DIRECTORY	    ""
+ 	#else
+ 		#define ROOT_DIRECTORY	    RS_BUILDBRANCH "/"
+@@ -131,7 +131,7 @@
+ #endif
+ #endif //__XENON
+ 
+-#if !__FINAL
++#if !__PACKEDDEBUG
+ #define COMMON_DEBUG_PACK           "common_debug.rpf"	// contains all unshippable data for packaged non-final builds
+ #endif	// !__FINAL
+ 
+@@ -147,7 +147,7 @@
+ #define AUDIO_DIRECTORY			    PLATFORM_DIRECTORY "audio/"
+ #endif
+ 
+-#if RSG_BANK 
++#if !__PACKEDDEBUG
+ #define AUDIO_RPF				    "audio.rpf"
+ #define AUDIO_PACKLIST			    "packlist.txt"
+ #else
+@@ -208,7 +208,7 @@ fiDeviceRelative gGameCacheDevice;
+ fiDeviceRelative gAudioDevice;
+ fiDeviceCrc gCrcPlatformDevice;
+ fiDeviceCrc gCrcCommonDevice;
+-#if !__FINAL
++#if !__PACKEDDEBUG
+ fiDeviceRelative gAssetsDevice;
+ fiDeviceRelative gArtDevice;
+ fiDeviceRelative gDebugDevice;			// mounted as debug: typically from the hosted build directory (eg, /<project>/build/<branch>)
+@@ -699,7 +699,7 @@ void CFileMgr::SetupDevices()
+ #endif
+ #else
+ // pc final builds assume packaged config - may switch this to __MASTER only
+-#if __FINAL
++#if __PACKEDDEBUG
+     PARAM_commonpack.Set(DISKROOT_DIRECTORY "common.rpf");
+     PARAM_platformpack.Set(DISKROOT_DIRECTORY PLATFORM_PACK);
+     PARAM_audiopack.Set(DISKROOT_DIRECTORY AUDIO_DIRECTORY AUDIO_RPF);
+@@ -735,7 +735,7 @@ void CFileMgr::SetupDevices()
+ 	PARAM_audiofolder.Get(pAudioFolder);
+ 
+ 	// Indicate whether or not this is a packaged build.
+-#if !__FINAL
++#if !__PACKEDDEBUG
+ 	sysBootManager::SetIsPackagedBuild(PARAM_platformpack.Get() && PARAM_commonpack.Get());
+ 
+ 	if (PARAM_commonpack.Get())
+@@ -844,7 +844,7 @@ void CFileMgr::SetupDevices()
+ 		gCrcPlatformDevice.MountAs("platformcrc:/");
+ 	}
+ 
+-#if !__FINAL
++#if !__PACKEDDEBUG
+ 	if(!PARAM_nodebugpack.Get() && (PARAM_commonpack.Get() || PARAM_platformpack.Get()))
+ 	{
+ 		if(PARAM_commonpack.Get())
+@@ -917,7 +917,7 @@ void CFileMgr::SetupDevices()
+ 		gAudioDevice.MountAs("audio:/");
+ 	}
+ 
+-#if !__FINAL
++#if !__PACKEDDEBUG
+ 	gAssetsDevice.Init(GetAssetsFolder(), false);
+ 	gAssetsDevice.MountAs("assets:/");
+ 	gArtDevice.Init(GetArtFolder(), false);
+@@ -932,7 +932,7 @@ void CFileMgr::SetupDevices()
+ 
+ 	CExtraContentManager::MountUpdate();
+ 
+-	if (__FINAL || sysBootManager::IsBootedFromDisc() || packedCommon)
++	if (__PACKEDDEBUG || sysBootManager::IsBootedFromDisc() || packedCommon)
+ 	{
+ 		Displayf("Game cache is using read-only device - if you didn't prebuild your cache, you'll have a problem.");
+ 		extern fiDeviceRelative gTitleUpdateCommon2;
+@@ -940,7 +940,7 @@ void CFileMgr::SetupDevices()
+ 	}
+ 	else
+ 	{
+-#if !__FINAL && RSG_PC	// definitely helps with pc, but may want to enable for other platforms, too
++#if !__PACKEDDEBUG && RSG_PC	// definitely helps with pc, but may want to enable for other platforms, too
+ 		const char* pUpdateFolder;
+ 		if (PARAM_update.Get(pUpdateFolder))
+ 		{

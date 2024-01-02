@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/game/network/Shop/NetworkShopping.cpp b/src/dev_ng/game/network/Shop/NetworkShopping.cpp
+index 745ded72b..18d949eae 100644
+--- a/src/dev_ng/game/network/Shop/NetworkShopping.cpp
++++ b/src/dev_ng/game/network/Shop/NetworkShopping.cpp
+@@ -1828,7 +1828,7 @@ void CNetworkShoppingMgr::Init(sysMemAllocator* allocator)
+ 
+ 	sysMemAllocator::SetCurrent(*previousallocator);
+ 
+-#if	__DEV
++#if	!__PACKEDDEBUG
+ 	PARSER.LoadObject("common:/data/debug/networkshop_debug", "meta", *this);
+ #else
+ 	PARSER.LoadObject("common:/data/networkshop", "meta", *this);

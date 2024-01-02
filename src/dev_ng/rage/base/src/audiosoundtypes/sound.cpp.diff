@@ -1,0 +1,75 @@
+diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp b/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp
+index 29039c350..54a315f57 100644
+--- a/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp
++++ b/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp
+@@ -360,7 +360,9 @@ audSound::~audSound()
+ #if !__SPU
+ bool audSound::Init(const void *pMetadata, const audSoundInternalInitParams* initParams, audSoundScratchInitParams *scratchInitParams)
+ {
++#if __USEDEBUGAUDIO
+ 	SoundAssert(m_SoundFlags.IsInitialising);
++#endif
+ 
+ 	if (!initParams || !pMetadata)
+ 	{
+@@ -432,7 +434,7 @@ bool audSound::Init(const void *pMetadata, const audSoundInternalInitParams* ini
+ 	// Set up our local params based on the InitParams struct
+ 	SetCanBeRemovedFromHierarchy(initParams->RemoveHierarchy);
+ 
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 	if(audSoundManager::ShouldBreakOnCreate(this))
+ 	{
+ 		audWarningf("Debug breaking on sound %s creation", this->GetName());
+@@ -717,6 +719,7 @@ void audSound::SetForceMuteEnabled(bool enabled)
+ 
+ void BreakOnNameChanged()
+ {
++#if __USEDEBUGAUDIO
+ 	const Sound *sound = SOUNDFACTORY.GetMetadataPtr(atStringHash(g_BreakOnNameBuf));
+ 	if(sound)
+ 	{
+@@ -729,6 +732,7 @@ void BreakOnNameChanged()
+ 	{
+ 		audDisplayf("Invalid breakpoint sound name: %s", g_BreakOnNameBuf);
+ 	}
++#endif
+ }
+ 
+ void audSound::AddWidgets(bkBank &bank)
+@@ -886,7 +890,7 @@ void audSound::PrepareAndPlay(audWaveSlot* waveSlot, bool allowLoad, s32 timeLim
+ 
+ void audSound::_ManagedAudioPlay(u32 timeInMs, audSoundCombineBuffer combineBuffer)
+ {
+-#if __BANK && !__SPU
++#if __USEDEBUGAUDIO && !__SPU
+ 	if(g_BreakOnSoundPlay && ((g_BreakOnNameTableOffset == m_BaseMetadata->NameTableOffset) || (m_InitParams.BucketId == g_BreakOnSoundBucketId && sm_Pool.GetSoundSlotIndex(m_InitParams.BucketId, this) == g_BreakOnSoundSlotId)))
+ 	{
+ 		__debugbreak();
+@@ -969,7 +973,7 @@ void audSound::Stop()
+ 
+ void audSound::StopAndForget(bool continueUpdatingEntity)
+ {
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 	if(audSoundManager::ShouldBreakOnStop(this))
+ 	{
+ 		audWarningf("Debug breaking on sound %s stopping", this->GetName());
+@@ -1151,7 +1155,7 @@ bool audSound::_ManagedAudioUpdate(u32 timeInMs, audSoundCombineBuffer combineBu
+ {
+ 	bool shouldRemoveFromHierarchy = false;
+ 
+-#if __BANK && !__SPU
++#if __USEDEBUGAUDIO && !__SPU
+ 	if(g_BreakOnSoundUpdate && ((g_BreakOnNameTableOffset == m_BaseMetadata->NameTableOffset) || (m_InitParams.BucketId == g_BreakOnSoundBucketId && sm_Pool.GetSoundSlotIndex(m_InitParams.BucketId, this) == g_BreakOnSoundSlotId)))
+ 	{
+ 		__debugbreak();
+@@ -2323,7 +2327,7 @@ char g_SoundName[128];
+ 
+ const char *audSound::GetName() const
+ {
+-#if RSG_BANK
++#if __USEDEBUGAUDIO
+ 
+ #if RSG_SPU
+ 

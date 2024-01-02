@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/entity.cpp b/src/dev_ng/rage/base/src/audioengine/entity.cpp
+index 37f5f98d0..5b309f6e0 100644
+--- a/src/dev_ng/rage/base/src/audioengine/entity.cpp
++++ b/src/dev_ng/rage/base/src/audioengine/entity.cpp
+@@ -374,7 +374,7 @@ bool audEntity::CreateAndPlaySound(const audMetadataRef metadataRef, const audSo
+ 
+ bool audEntity::AddBatchedSoundRequest(audMetadataRef soundMetadataRef, const audSoundInitParams *initParams)
+ {
+-#if RSG_ASSERT	
++#if __USEDEBUGAUDIO
+ 	if(initParams)
+ 	{
+ 		if(initParams->EnvironmentGroup || initParams->Tracker)

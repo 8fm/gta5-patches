@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp b/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp
+index 31279bbf8..7d217ea4e 100644
+--- a/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp
++++ b/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp
+@@ -140,7 +140,7 @@ audSound *audSoundFactory::GetInstanceFromMetadata(const void *metadata, audSoun
+ 				pSound->PostInitAsParent(parentInitParams);
+ 				audSound::GetStaticPool().MarkSoundSlotAsParent(initParams->BucketId, audSound::GetStaticPool().GetSoundSlotIndex(initParams->BucketId, pSound));			
+ 
+-#if __BANK								
++#if __USEDEBUGAUDIO
+ 				const u32 slotsUsed = sm_BucketSoundCount[initParams->BucketId].PeakSoundSlotsForHierarchy;
+ 				if(initParams->IsAuditioning || (PARAM_printlargesounds.Get() && (sm_BucketSoundCount[initParams->BucketId].NumSoundsCreatedInHierarchy > 40 || slotsUsed > 40)))
+ 				{
+@@ -154,7 +154,7 @@ audSound *audSoundFactory::GetInstanceFromMetadata(const void *metadata, audSoun
+ 	}
+ 	else
+ 	{
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 		if(m_MetadataMgr.IsRAVEConnected())
+ 		{
+ 			if(audSound::GetStaticPool().GetBucket(initParams->BucketId)->numSoundSlotsFree == 0)

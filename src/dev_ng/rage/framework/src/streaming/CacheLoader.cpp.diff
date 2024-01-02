@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp b/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp
+index 7f9e0e7d6..a1282c8ad 100644
+--- a/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp
++++ b/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp
+@@ -1216,7 +1216,7 @@ void strCacheLoader::BuildCacheFilename(const char* const pFilename)
+ 				"%s%s_cache_packaged_%c%s%s.dat", deviceAndPath,
+ 				ASSET.FileName(baseName),
+ 				g_sysHostPlatform,
+-				( __BANK ? "_bank" : "" ),
++				(!__PACKEDDEBUG ? "_bank" : "" ),
+ 				ipAddress
+ 				);
+ 		}
+@@ -1227,7 +1227,7 @@ void strCacheLoader::BuildCacheFilename(const char* const pFilename)
+ 				"%s%s_cache_%c%s%s.dat", deviceAndPath,
+ 				ASSET.FileName(baseName),
+ 				g_sysHostPlatform,
+-				( __BANK ? "_bank" : "" ),
++				(!__PACKEDDEBUG ? "_bank" : "" ),
+ 				ipAddress
+ 			);
+ 		}

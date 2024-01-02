@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/audio/scriptaudioentity.cpp b/src/dev_ng/game/audio/scriptaudioentity.cpp
+index 4070da597..6bb8c5d1b 100644
+--- a/src/dev_ng/game/audio/scriptaudioentity.cpp
++++ b/src/dev_ng/game/audio/scriptaudioentity.cpp
+@@ -7968,7 +7968,7 @@ void audScriptAudioEntity::PlayStreamFromEntityInternal(CEntity *entity)
+ 				REPLAY_ONLY(CReplayMgr::ReplayRecordPlayStreamFromEntity(entity, m_StreamSound, sm_CurrentStreamName, sm_CurrentStartOffset, sm_CurrentSetName);)
+ 			}
+ #endif
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 			if(g_ScriptedStreamSpew)
+ 			{
+ 				audDebugf1("[audScriptedStream] Playing stream: %s from entity",SOUNDFACTORY.GetMetadataManager().GetObjectNameFromNameTableOffset(m_StreamSound->GetBaseMetadata()->NameTableOffset));
+@@ -8020,7 +8020,7 @@ void audScriptAudioEntity::PlayStreamFrontendInternal()
+ 			REPLAY_ONLY(CReplayMgr::ReplayRecordPlayStreamFrontend(m_StreamSound, sm_CurrentStreamName, sm_CurrentStartOffset, sm_CurrentSetName);)
+ 		}
+ #endif
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 		if(g_ScriptedStreamSpew)
+ 		{
+ 			audDebugf1("[audScriptedStream] Playing stream: %s frontend",SOUNDFACTORY.GetMetadataManager().GetObjectNameFromNameTableOffset(m_StreamSound->GetBaseMetadata()->NameTableOffset));
+@@ -8037,7 +8037,9 @@ const u32 audScriptAudioEntity::GetStreamPlayTime() const
+ {
+ 	if(m_StreamSound && m_ScriptStreamState == AUD_SCRIPT_STREAM_PLAYING)
+ 	{
++#if __USEDEBUGAUDIO
+ 		if(naVerifyf(m_StreamSound->GetSoundTypeID() == StreamingSound::TYPE_ID,"Script stream %s, with a parent sound that it's not a stream sound. Please bug default audio.",g_AudioEngine.GetSoundManager().GetFactory().GetMetadataManager().GetObjectName(m_StreamSound->GetBaseMetadata()->NameTableOffset)))
++#endif
+ 		{
+ 			return ((audStreamingSound*)m_StreamSound)->GetCurrentPlayTimeOfWave();				
+ 		}
+@@ -8114,7 +8116,7 @@ void audScriptAudioEntity::PlayStreamFromPositionInternal(const Vector3 &pos)
+ 			REPLAY_ONLY(CReplayMgr::ReplayRecordPlayStreamFromPosition(pos, m_StreamSound, sm_CurrentStreamName, sm_CurrentStartOffset, sm_CurrentSetName);)
+ 		}
+ #endif
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 		if(g_ScriptedStreamSpew)
+ 		{
+ 			audDebugf1("[audScriptedStream] Playing stream: %s from position",SOUNDFACTORY.GetMetadataManager().GetObjectNameFromNameTableOffset(m_StreamSound->GetBaseMetadata()->NameTableOffset));

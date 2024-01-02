@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/soundset.cpp b/src/dev_ng/rage/base/src/audioengine/soundset.cpp
+index f9883a8dc..bec12a3dc 100644
+--- a/src/dev_ng/rage/base/src/audioengine/soundset.cpp
++++ b/src/dev_ng/rage/base/src/audioengine/soundset.cpp
+@@ -23,7 +23,7 @@ namespace rage
+ 		if(metadata)
+ 		{
+ 			m_Data = metadata;
+-#if __ASSERT
++#if __USEDEBUGAUDIO
+ 			// validate sorting
+ 			for(u32 i = 1; i < m_Data->numSounds; i++)
+ 			{
+@@ -66,7 +66,7 @@ namespace rage
+ 
+ 	audMetadataRef audSoundSet::Find(const u32 nameHash) const
+ 	{
+-#if RSG_BANK
++#if __USEDEBUGAUDIO
+ 		// Reinitialise to pick up RAVE edits that override our metadata.
+ 		if(m_Data && g_AudioEngine.GetSoundManager().GetFactory().GetMetadataManager().IsRAVEConnected())
+ 		{

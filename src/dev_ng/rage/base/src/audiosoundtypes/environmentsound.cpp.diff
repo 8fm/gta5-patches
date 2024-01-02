@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/environmentsound.cpp b/src/dev_ng/rage/base/src/audiosoundtypes/environmentsound.cpp
+index 5eb71e8ce..1d7c50610 100644
+--- a/src/dev_ng/rage/base/src/audiosoundtypes/environmentsound.cpp
++++ b/src/dev_ng/rage/base/src/audiosoundtypes/environmentsound.cpp
+@@ -290,7 +290,7 @@ bool audEnvironmentSound::Init(const void *metadata, const audSoundInternalInitP
+ 
+ 	if(m_CategoryIndex == 0 && !initParams->IsAuditioning)
+ 	{
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 		const audSound *parent = GetTopLevelParent();
+ 		static const u32 ignoreList[] = {
+ 			0

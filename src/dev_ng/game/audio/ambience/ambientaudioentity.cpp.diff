@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
+index 1a9eec10e..e562d652e 100644
+--- a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
++++ b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
+@@ -7768,12 +7768,15 @@ void audAmbientAudioEntity::SerialiseSoundName(char* xmlMessage, char* tempbuffe
+ {
+ 	const Sound* soundPtr = g_AudioEngine.GetSoundManager().GetFactory().GetMetadataPtr(hash);
+ 
++#if __USEDEBUGAUDIO
+ 	if(soundPtr)
+ 	{
+ 		const audMetadataManager &metadataManager = SOUNDFACTORY.GetMetadataManager();
+ 		SerialiseString(xmlMessage, tempbuffer, elementName, metadataManager.GetObjectNameFromNameTableOffset(soundPtr->NameTableOffset));
+ 	}
+-	else if(defaultToNull)
++	else
++#endif
++	if (defaultToNull)
+ 	{
+ 		SerialiseString(xmlMessage, tempbuffer, elementName, "NULL_SOUND");
+ 	}
+@@ -8052,12 +8055,14 @@ void audAmbientAudioEntity::MoveRuleToCurrentCoords(bool interiorRelative)
+ 
+ 		const Sound* soundPtr = g_AudioEngine.GetSoundManager().GetFactory().GetMetadataPtr(ruleData->Sound);
+ 
++#if __USEDEBUGAUDIO
+ 		if(soundPtr)
+ 		{
+ 			const audMetadataManager &metadataManager = SOUNDFACTORY.GetMetadataManager();
+ 			SerialiseString(xmlMsg, tmpBuf, "Sound", metadataManager.GetObjectNameFromNameTableOffset(soundPtr->NameTableOffset));
+ 		}
+ 		else
++#endif
+ 		{
+ 			SerialiseString(xmlMsg, tmpBuf, "Sound", "NULL_SOUND");
+ 		}

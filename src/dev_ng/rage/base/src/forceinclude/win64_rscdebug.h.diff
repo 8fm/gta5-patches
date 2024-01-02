@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_rscdebug.h b/src/dev_ng/rage/base/src/forceinclude/win64_rscdebug.h
+index c6ccd157b..6934f7f9b 100644
+--- a/src/dev_ng/rage/base/src/forceinclude/win64_rscdebug.h
++++ b/src/dev_ng/rage/base/src/forceinclude/win64_rscdebug.h
+@@ -205,6 +205,11 @@ END_NS_RAGE
+ #define __TOOL		0
+ #define __EXPORTER	0
+ #define	__PROFILE	0
++#define	__PACKEDDEBUG	1
++#define	__SKIPDEBUGAUTH	1
++#define	__USEDEBUGAUDIO	0
++#define DEBUGAUDIO_ONLY(...)
++#define DEBUGUNPACKED_ONLY(...)
+ #define RSG_DEV		__DEV
+ #define RSG_BANK	__BANK
+ #define RSG_ASSERT	__ASSERT
