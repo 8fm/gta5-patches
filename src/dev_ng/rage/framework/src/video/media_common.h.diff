@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/framework/src/video/media_common.h b/src/dev_ng/rage/framework/src/video/media_common.h
+index be5786010..0dc2ad5ba 100644
+--- a/src/dev_ng/rage/framework/src/video/media_common.h
++++ b/src/dev_ng/rage/framework/src/video/media_common.h
+@@ -55,7 +55,7 @@ struct IMFAttributes;
+ struct IUnknown;
+ 
+ // This interface doesn't exist prior to W8
+-#if RSG_PC
++#if RSG_PC && _MSC_VER < 1900
+ typedef IUnknown IMFDXGIDeviceManager;
+ #else
+ struct IMFDXGIDeviceManager;

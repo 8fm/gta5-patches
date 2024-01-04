@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp b/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp
+index bf9481936..168cedca1 100644
+--- a/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp
++++ b/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp
+@@ -87,7 +87,7 @@ bool crAnimChannelVariableQuantizeFloat::CreateFloat(float* floats, int num, int
+ 	fp = floats;
+ 	for(int i=0; i<num; ++i)
+ 	{
+-		float numValues = Max(ceil(m_Scale / tolerances[i]), 2.f);
++		float numValues = Max(ceilf(m_Scale / tolerances[i]), 2.f);
+ 
+ 		// can range of values be quantized within tolerance
+ 		if(numValues >= float(0x80000000))

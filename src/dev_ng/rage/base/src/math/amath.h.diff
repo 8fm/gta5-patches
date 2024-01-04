@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/rage/base/src/math/amath.h b/src/dev_ng/rage/base/src/math/amath.h
+index 6e3b3f222..4330ce325 100644
+--- a/src/dev_ng/rage/base/src/math/amath.h
++++ b/src/dev_ng/rage/base/src/math/amath.h
+@@ -932,7 +932,7 @@ inline float Modf(float f, float* i)
+ 	*i = intPart;
+ 	return fracPart;
+ #else
+-	return ::modf(f, i);
++	return ::modff(f, i);
+ #endif
+ }
+ 
+@@ -1256,7 +1256,7 @@ inline float QuinticEaseInOut (float t)
+ inline float CircularEaseIn (float t)
+ {
+ 	Assert(t>=0.0f && t<=1.0f);
+-	return 1.0f - sqrt(1.0f - (t * t));
++	return 1.0f - sqrtf(1.0f - (t * t));
+ }
+ 
+ // PURPOSE: Find the number that follows a Circular ease in-shaped curve for a given number between 0 and 1.
+@@ -1267,7 +1267,7 @@ inline float CircularEaseOut (float t)
+ {
+ 	Assert(t>=0.0f && t<=1.0f);
+ 	float oneMinusT = 1.0f - t;
+-	return sqrt(1.0f - (oneMinusT*oneMinusT));
++	return sqrtf(1.0f - (oneMinusT*oneMinusT));
+ }
+ 
+ // PURPOSE: Find the number that follows a Circular ease in/out curve for a given number between 0 and 1.

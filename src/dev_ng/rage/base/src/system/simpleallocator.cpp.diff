@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/system/simpleallocator.cpp b/src/dev_ng/rage/base/src/system/simpleallocator.cpp
+index fe851e32b..9f1cd8c47 100644
+--- a/src/dev_ng/rage/base/src/system/simpleallocator.cpp
++++ b/src/dev_ng/rage/base/src/system/simpleallocator.cpp
+@@ -167,7 +167,7 @@ static void s_DisplayLine(size_t addr,const char *sym,size_t offset)
+ 	if (s_Skipper)
+ 		--s_Skipper;
+ 	else
+-		fprintf(s_Stream,"\"%"SIZETFMT"x:%s+%"SIZETFMT"x\",",addr,sym,offset);
++		fprintf(s_Stream,"\"%" SIZETFMT "x:%s+%" SIZETFMT "x\",",addr,sym,offset);
+ }
+ #endif
+ 

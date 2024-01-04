@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_kcacheoptimizer.cpp b/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_kcacheoptimizer.cpp
+index e9f533b64..a70f77b0f 100644
+--- a/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_kcacheoptimizer.cpp
++++ b/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_kcacheoptimizer.cpp
+@@ -4,11 +4,11 @@
+  * All Rights Reserved.
+  */
+ 
+-#include <limits.h>
+ #include <float.h>
+ #include <string.h>
+ #include <stdio.h>
+ #include <stdlib.h>
++#include <limits.h>
+ 
+ #include "edge/libedgegeomtool/libedgegeomtool_internal.h"
+ 

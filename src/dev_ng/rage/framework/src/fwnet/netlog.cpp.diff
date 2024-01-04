@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netlog.cpp b/src/dev_ng/rage/framework/src/fwnet/netlog.cpp
+index a598b1308..bf367c995 100644
+--- a/src/dev_ng/rage/framework/src/fwnet/netlog.cpp
++++ b/src/dev_ng/rage/framework/src/fwnet/netlog.cpp
+@@ -22,7 +22,7 @@ NETWORK_OPTIMISATIONS()
+ // C headers
+ #include <stdarg.h>
+ #include <stdio.h>
+-#include <string.h>
++#include <string>
+ 
+ // Rage headers
+ #include "system/bootmgr.h"

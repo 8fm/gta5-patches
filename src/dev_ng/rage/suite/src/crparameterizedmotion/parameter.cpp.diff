@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/suite/src/crparameterizedmotion/parameter.cpp b/src/dev_ng/rage/suite/src/crparameterizedmotion/parameter.cpp
+index c38abd8f1..2e5eadb39 100644
+--- a/src/dev_ng/rage/suite/src/crparameterizedmotion/parameter.cpp
++++ b/src/dev_ng/rage/suite/src/crparameterizedmotion/parameter.cpp
+@@ -268,7 +268,7 @@ void crpmParameter::AddWidgets(bkBank& bk, const crpmParameter* minParameter, co
+ 			float range = maxValue-minValue;
+ 			if(range > 0.f)
+ 			{
+-				units = rage::Clamp(pow(10.f, floorf(log10f(range / 1000.f))), 0.f, 1.f);
++				units = rage::Clamp(powf(10.f, floorf(log10f(range / 1000.f))), 0.f, 1.f);
+ 			}
+ 		}
+ 

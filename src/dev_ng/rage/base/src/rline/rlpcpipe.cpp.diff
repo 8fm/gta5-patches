@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp b/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
+index b0015459b..95a319bb9 100644
+--- a/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
+@@ -209,7 +209,7 @@ bool rlPcPipeSignInMessage::Init(RockstarId id)
+ 	rtry
+ 	{
+ 		rverify(id != InvalidRockstarId, catchall, );
+-		formatf(m_Buffer, "%s%"I64FMT"d", GetMessageName(), id);
++		formatf(m_Buffer, "%s%" I64FMT "d", GetMessageName(), id);
+ 		return true;
+ 	}
+ 	rcatchall
+@@ -248,7 +248,7 @@ bool rlPcPipeTicketChangedMessage::Init(RockstarId id, const char* xmlResponse)
+ 		int maxLength = MSG_BUF_SIZE + datBase64::GetMaxEncodedSize(responseLen);
+ 		m_Buffer = (char*)RL_ALLOCATE(RgscProfileManager, maxLength);
+ 		rverify(m_Buffer, catchall, );
+-		formatf(m_Buffer, maxLength, "%s%"I64FMT"d:", GetMessageName(), id);
++		formatf(m_Buffer, maxLength, "%s%" I64FMT "d:", GetMessageName(), id);
+ 
+ 		// offset by chars written so message reads "SCTC:MSG"
+ 		int offset = istrlen(m_Buffer);

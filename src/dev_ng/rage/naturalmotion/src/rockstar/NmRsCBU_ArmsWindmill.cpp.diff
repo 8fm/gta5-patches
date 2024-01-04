@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp
+index b4a4b5c84..8aedef3f1 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp
+@@ -386,8 +386,8 @@ namespace ART
+       // also modify strength if necessary
+       if(m_parameters.m_adaptiveMode >= ADAPT_DIR_SPEED_STRENGTH)
+       {
+-        m_armStiffness = rage::Clamp((10.0f*fabs(cavD)),0.001f, 15.0f);
+-        m_armDamping = rage::Clamp((1.0f*fabs(cavD)),0.1f, 1.0f);
++        m_armStiffness = rage::Clamp((10.0f*fabsf(cavD)),0.001f, 15.0f);
++        m_armDamping = rage::Clamp((1.0f* fabsf(cavD)),0.1f, 1.0f);
+       }
+     } // if adapt
+     

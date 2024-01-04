@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
+index 9388e9182..a866e3906 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
+@@ -1214,7 +1214,7 @@ namespace ART
+         float legStiffness = catchFallTask->m_parameters.m_legsStiffness;
+         if (balColReactTask->m_balancerState == bal_Slump || balColReactTask->m_balancerState == bal_Trip)
+         {
+-          legStiffness = rage::Min(sqrt(getRightLeg()->getKnee()->getMuscleStrength()),sqrt(getLeftLeg()->getKnee()->getMuscleStrength()), balColReactTask->m_slumpStiffLKnee, balColReactTask->m_slumpStiffRKnee);
++          legStiffness = rage::Min(sqrtf(getRightLeg()->getKnee()->getMuscleStrength()), sqrtf(getLeftLeg()->getKnee()->getMuscleStrength()), balColReactTask->m_slumpStiffLKnee, balColReactTask->m_slumpStiffRKnee);
+         }
+         if (balColReactTask->m_balancerState == bal_LeanAgainst)
+         {

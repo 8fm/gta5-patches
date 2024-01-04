@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Peds/PedMotionData.h b/src/dev_ng/game/Peds/PedMotionData.h
+index db59fc92f..76e2dc4fd 100644
+--- a/src/dev_ng/game/Peds/PedMotionData.h
++++ b/src/dev_ng/game/Peds/PedMotionData.h
+@@ -290,11 +290,11 @@ public:
+ 	void SetScriptedMinMoveBlendRatio(float fScriptedMinMoveBlendRatio) { m_fScriptedMinMoveBlendRatio = fScriptedMinMoveBlendRatio; }	
+ 	void SetGaitReducedMaxMoveBlendRatio(float fGaitReducedMaxMoveBlendRatio) { m_fGaitReducedMaxMoveBlendRatio = fGaitReducedMaxMoveBlendRatio; }		
+ 	float GetGaitReducedMaxMoveBlendRatio() const { return m_fGaitReducedMaxMoveBlendRatio; }		
+-	Vector2 GetGaitReducedDesiredMoveBlendRatio() const {return Vector2(Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.x)), Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.y)));}
+-	void GetGaitReducedDesiredMoveBlendRatio(Vector2 & vDesiredMoveBlendRatio) const { vDesiredMoveBlendRatio.Set( Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.x)), Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.y))); }
+-	void GetGaitReducedDesiredMoveBlendRatio(float & x, float & y) const { x = Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.x)); y = Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.y)); }
+-	inline float GetGaitReducedDesiredMbrX() const {return Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.x));}
+-	inline float GetGaitReducedDesiredMbrY() const {return Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabs(m_vDesiredMoveBlendRatio.y));}
++	Vector2 GetGaitReducedDesiredMoveBlendRatio() const {return Vector2(Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.x)), Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.y)));}
++	void GetGaitReducedDesiredMoveBlendRatio(Vector2 & vDesiredMoveBlendRatio) const { vDesiredMoveBlendRatio.Set( Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.x)), Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.y))); }
++	void GetGaitReducedDesiredMoveBlendRatio(float & x, float & y) const { x = Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.x)); y = Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.y)); }
++	inline float GetGaitReducedDesiredMbrX() const {return Sign(m_vDesiredMoveBlendRatio.x) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.x));}
++	inline float GetGaitReducedDesiredMbrY() const {return Sign(m_vDesiredMoveBlendRatio.y) * Min(m_fGaitReducedMaxMoveBlendRatio, fabsf(m_vDesiredMoveBlendRatio.y));}
+ 	inline float GetScriptedMaxMoveBlendRatio() const { return m_fScriptedMaxMoveBlendRatio; }		
+ 	inline float GetScriptedMinMoveBlendRatio() const { return m_fScriptedMinMoveBlendRatio; }		
+ 

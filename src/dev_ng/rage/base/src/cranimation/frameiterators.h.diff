@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/cranimation/frameiterators.h b/src/dev_ng/rage/base/src/cranimation/frameiterators.h
+index 7b2c05de0..460a81f39 100644
+--- a/src/dev_ng/rage/base/src/cranimation/frameiterators.h
++++ b/src/dev_ng/rage/base/src/cranimation/frameiterators.h
+@@ -842,7 +842,7 @@ bool crFrameIterator<_T>::IterateAnim(const crAnimation& anim, float time, crFra
+ 		}
+ 
+ 		const float blockTime = anim.ConvertInternalFrameToBlockTime(time, blockIdx);
+-		const u32 quotientTime = u32(Clamp(floor(blockTime), 0.f, float(block->m_NumFrames-2)));
++		const u32 quotientTime = u32(Clamp(floorf(blockTime), 0.f, float(block->m_NumFrames-2)));
+ 		const float tr = Clamp(blockTime - float(quotientTime), 0.f, 1.f);
+ 
+ 		u16* indices = NULL;

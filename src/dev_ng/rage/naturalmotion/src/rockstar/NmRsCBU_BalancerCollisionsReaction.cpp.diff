@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
+index 0c9b0d484..3737d1781 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
+@@ -1343,12 +1343,12 @@ namespace ART
+     m_character->setFrictionPreScale(m_backFrictionMult, (bvmask_Trunk & ~bvmask_CervicalSpine));
+ 
+     //Apply muscle stengths.  Take min of slump values and current(coming from eg. staggerFall)
+-    float ankleStiffnessL = rage::Min(sqrt(getLeftLeg()->getAnkle()->getMuscleStrength()), m_slumpStiffLLeg+2.f);
+-    float kneeStiffnessL = rage::Min(sqrt(getLeftLeg()->getKnee()->getMuscleStrength()),m_slumpStiffLKnee);
+-    float hipStiffnessL = rage::Min(sqrt(getLeftLeg()->getHip()->getMuscleStrength()),m_slumpStiffLLeg);
+-    float ankleStiffnessR = rage::Min(sqrt(getRightLeg()->getAnkle()->getMuscleStrength()),m_slumpStiffRLeg+2.f);
+-    float kneeStiffnessR = rage::Min(sqrt(getRightLeg()->getKnee()->getMuscleStrength()),m_slumpStiffRKnee);
+-    float hipStiffnessR = rage::Min(sqrt(getRightLeg()->getHip()->getMuscleStrength()),m_slumpStiffRLeg);
++    float ankleStiffnessL = rage::Min(sqrtf(getLeftLeg()->getAnkle()->getMuscleStrength()), m_slumpStiffLLeg+2.f);
++    float kneeStiffnessL = rage::Min(sqrtf(getLeftLeg()->getKnee()->getMuscleStrength()),m_slumpStiffLKnee);
++    float hipStiffnessL = rage::Min(sqrtf(getLeftLeg()->getHip()->getMuscleStrength()),m_slumpStiffLLeg);
++    float ankleStiffnessR = rage::Min(sqrtf(getRightLeg()->getAnkle()->getMuscleStrength()),m_slumpStiffRLeg+2.f);
++    float kneeStiffnessR = rage::Min(sqrtf(getRightLeg()->getKnee()->getMuscleStrength()),m_slumpStiffRKnee);
++    float hipStiffnessR = rage::Min(sqrtf(getRightLeg()->getHip()->getMuscleStrength()),m_slumpStiffRLeg);
+ 
+     //Don't reduce so much they go unstable
+     ankleStiffnessL = rage::Max(7.f,ankleStiffnessL);
