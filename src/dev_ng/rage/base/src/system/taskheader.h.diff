@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/system/taskheader.h b/src/dev_ng/rage/base/src/system/taskheader.h
+index 5324921aa..2ff7330d2 100644
+--- a/src/dev_ng/rage/base/src/system/taskheader.h
++++ b/src/dev_ng/rage/base/src/system/taskheader.h
+@@ -58,7 +58,7 @@ struct sysTaskParameters {
+ #define SPURS_TASK_SIZE(name)	_binary_task_##name##_task_elf_size
+ #endif
+ 
+-#if __WIN32 || __PSP2 || RSG_ORBIS
++#if __WIN32 || __PSP2 || RSG_ORBIS || __LINUX
+ #define DECLARE_TASK_INTERFACE(name)	extern void name(::rage::sysTaskParameters &)
+ #define RELOAD_TASK_DECLARE(name)
+ #define RELOAD_TASK_BINARY(name)

@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/rage/base/src/file/stream.h b/src/dev_ng/rage/base/src/file/stream.h
+index f5785562b..73c4dd4aa 100644
+--- a/src/dev_ng/rage/base/src/file/stream.h
++++ b/src/dev_ng/rage/base/src/file/stream.h
+@@ -12,7 +12,7 @@
+ 
+ #include <stdio.h>
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include <tchar.h>
+ #endif
+ 
+@@ -188,7 +188,7 @@ public:
+ 	int ReadByte(char *dest,int num);				// <ALIAS fiStream::ReadByte@unsigned char*@int>
+ 	int ReadShort(unsigned short *dest,int num);	// <ALIAS fiStream::ReadByte@unsigned char*@int>
+ 	int ReadShort(short *dest,int num);				// <ALIAS fiStream::ReadByte@unsigned char*@int>
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	int ReadTChar(_TCHAR *dest,int num);			// <ALIAS fiStream::ReadByte@unsigned char*@int>
+ #endif
+ 	int ReadInt(unsigned *dest,int num);			// <ALIAS fiStream::ReadByte@unsigned char*@int>
+@@ -207,7 +207,7 @@ public:
+ 	int WriteByte(const char *src,int num);				// <ALIAS fiStream::WriteByte@const unsigned char *@int>
+ 	int WriteShort(const unsigned short *src,int num);	// <ALIAS fiStream::WriteByte@const unsigned char *@int>
+ 	int WriteShort(const short *src,int num);			// <ALIAS fiStream::WriteByte@const unsigned char *@int>
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	int WriteTChar(const _TCHAR *src,int num);			// <ALIAS fiStream::WriteByte@const unsigned char *@int>
+ #endif
+ 	int WriteInt(const unsigned *src,int num);			// <ALIAS fiStream::WriteByte@const unsigned char *@int>
+@@ -432,7 +432,7 @@ inline int fiStream::ReadShort(unsigned short *dest,int num) {
+ 	return Read(dest,num<<1)>>1; 
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ inline int fiStream::ReadTChar(_TCHAR *dest,int num) { 
+ 	if (sizeof(_TCHAR) == sizeof(short))
+ 	{
+@@ -461,7 +461,7 @@ inline int fiStream::WriteShort(const unsigned short *src,int num) {
+ 	return Write(src,num<<1)>>1; 
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ inline int fiStream::WriteTChar(const _TCHAR *src,int num) { 
+ 	if (sizeof(_TCHAR) == sizeof(short))
+ 	{

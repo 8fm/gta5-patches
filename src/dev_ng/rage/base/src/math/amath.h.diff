@@ -1,5 +1,5 @@
 diff --git a/src/dev_ng/rage/base/src/math/amath.h b/src/dev_ng/rage/base/src/math/amath.h
-index 6e3b3f222..4330ce325 100644
+index 6e3b3f222..b21501937 100644
 --- a/src/dev_ng/rage/base/src/math/amath.h
 +++ b/src/dev_ng/rage/base/src/math/amath.h
 @@ -932,7 +932,7 @@ inline float Modf(float f, float* i)
@@ -29,3 +29,23 @@ index 6e3b3f222..4330ce325 100644
  }
  
  // PURPOSE: Find the number that follows a Circular ease in/out curve for a given number between 0 and 1.
+@@ -1567,6 +1567,9 @@ __forceinline unsigned Log2FloorInternal(u64 a)
+ 		return (unsigned)bsr;
+ #	elif __XENON
+ 		return 63-_CountLeadingZeros64(a);
++#	elif defined(__GNUC__) // GCC, Clang
++		unsigned long bsr = 63 - __builtin_clzll(a);
++		return a != 0 ? bsr : ~0u;
+ #	else
+ #		error "not yet implemented"
+ #	endif
+@@ -1602,6 +1605,9 @@ __forceinline unsigned Log2FloorInternal(u32 a)
+ 		return bsr;
+ #	elif __XENON
+ 		return 31-_CountLeadingZeros(a);
++#	elif defined(__GNUC__) // GCC, Clang
++	unsigned long bsr = 31 - __builtin_clz(a);
++	return a != 0 ? bsr : ~0u;
+ #	else
+ #		error "not yet implemented"
+ #	endif

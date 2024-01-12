@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h b/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h
+index c8303c573..48ca4bd22 100644
+--- a/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h
++++ b/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h
+@@ -1,8 +1,8 @@
+ #ifndef GRCORE_ORBIS_DURANGO_TEXTURE_BASE_H
+ #define GRCORE_ORBIS_DURANGO_TEXTURE_BASE_H
+ 
+-#include "grcore\config_switches.h"
+-#include "grcore\texture.h"
++#include "grcore/config_switches.h"
++#include "grcore/texture.h"
+ 
+ #if RSG_DURANGO || RSG_ORBIS || (RSG_PC && __64BIT && __RESOURCECOMPILER)
+ 

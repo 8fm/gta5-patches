@@ -1,0 +1,67 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h
+index a6c2fbf8e..86eb678fa 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h
+@@ -28,7 +28,7 @@
+ #if ART_ENABLE_BSPY_LIMBS
+ #include "NmRsSpy.h"
+ #include "NmRsCBU_Shared.h"
+-#include "bSpy\bSpyCommonPackets.h"
++#include "bSpy/bSpyCommonPackets.h"
+ #endif // ART_ENABLE_BSPY_LIMBS
+ 
+ 
+@@ -96,7 +96,7 @@ namespace ART
+       // m_DesiredAngleSetBy = bvid_Invalid;
+       // Auto-generate initialisation from inline file.
+       #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) INIT_BLENDABLE_PARAMETER(_name)
+-      #include "common\NmRs1DofEffector.inl"
++      #include "common/NmRs1DofEffector.inl"
+       #undef NM_RS_PARAMETER
+     }
+ 
+@@ -130,7 +130,7 @@ namespace ART
+       //
+       // Auto-generate blend parameter from inline file.
+       #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) BLEND_PARAMETER(_prefix, _name)
+-      #include "common\NmRs1DofEffector.inl"
++      #include "common/NmRs1DofEffector.inl"
+       #undef NM_RS_PARAMETER
+ 
+       return m_data.m_flags == NmRs1DofEffectorInputData::applyAll;
+@@ -154,7 +154,7 @@ namespace ART
+     //
+     // Auto-generate blend parameter member variables from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_BLENDABLE_PARAMETER(_name)
+-    #include "common\NmRs1DofEffector.inl"
++    #include "common/NmRs1DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   };
+ 
+@@ -173,7 +173,7 @@ namespace ART
+     {
+       // Auto-generate intialisation from inline file.
+       #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) INIT_BLENDABLE_PARAMETER(_name)
+-      #include "common\NmRs3DofEffector.inl"
++      #include "common/NmRs3DofEffector.inl"
+       #undef NM_RS_PARAMETER
+     }
+ 
+@@ -211,7 +211,7 @@ namespace ART
+ #else
+       // Auto-generate blend parameter from inline file.
+       #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) BLEND_PARAMETER(_prefix, _name)
+-      #include "common\NmRs3DofEffector.inl"
++      #include "common/NmRs3DofEffector.inl"
+       #undef NM_RS_PARAMETER
+ #endif
+       return m_data.m_flags == NmRs3DofEffectorInputData::applyAll;
+@@ -239,7 +239,7 @@ namespace ART
+ 
+     // Auto-generate blend parameter member variables from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_BLENDABLE_PARAMETER(_name)
+-    #include "common\NmRs3DofEffector.inl"
++    #include "common/NmRs3DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   };
+ 

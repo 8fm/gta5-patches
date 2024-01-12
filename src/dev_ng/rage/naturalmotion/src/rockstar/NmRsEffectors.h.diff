@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h
+index c405a0625..a792802dd 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h
+@@ -404,7 +404,7 @@ namespace ART
+       // declare parameters and accessors
+ #define NM_RS_EFFECTOR_CLASS_BODY
+ # include "NmRsEffectorAutoreg.inl"
+-#include "common\NmRs1DofEffector.inl"
++#include "common/NmRs1DofEffector.inl"
+ #undef NM_RS_EFFECTOR_CLASS_BODY
+     };
+ 
+@@ -555,7 +555,7 @@ namespace ART
+       // declare parameters and accessors
+ #define NM_RS_EFFECTOR_CLASS_BODY
+ # include "NmRsEffectorAutoreg.inl"
+-#include "common\NmRs3DofEffector.inl"
++#include "common/NmRs3DofEffector.inl"
+ #undef NM_RS_EFFECTOR_CLASS_BODY
+     };
+ 

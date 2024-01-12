@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/texture.h b/src/dev_ng/rage/base/src/grcore/texture.h
+index 0c1adcef7..eaa14ecc0 100644
+--- a/src/dev_ng/rage/base/src/grcore/texture.h
++++ b/src/dev_ng/rage/base/src/grcore/texture.h
+@@ -9,7 +9,7 @@
+ 
+ #include "atl/array.h"
+ #include "atl/ownedptr.h"
+-#include "atl\pool.h"
++#include "atl/pool.h"
+ #include "atl/queue.h"
+ #include "data/struct.h"
+ #include "effect_typedefs.h"

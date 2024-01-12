@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h
+index 1272068bc..b58a13700 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h
+@@ -22,7 +22,7 @@
+ #if ART_ENABLE_BSPY_LIMBS
+ #include "NmRsSpy.h"
+ #include "NmRsCBU_Shared.h"
+-#include "bSpy\bSpyCommonPackets.h"
++#include "bSpy/bSpyCommonPackets.h"
+ #endif // ART_ENABLE_BSPY_LIMBS
+ 
+ #undef DECLARE_ACCESSORS
+@@ -83,7 +83,7 @@ public:
+ 
+     // Auto-generate parameter initialization from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) INITIALIZE_PARAMETER(_name, _default)
+-    #include "common\NmRs1DofEffector.inl"
++    #include "common/NmRs1DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -104,7 +104,7 @@ public:
+ #endif
+ 
+   #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_ACCESSORS(_prefix, _type, _name)
+-  #include "common\NmRs1DofEffector.inl"
++  #include "common/NmRs1DofEffector.inl"
+   #undef NM_RS_PARAMETER
+ 
+ NmRs1DofEffectorInputData& m_data;
+@@ -128,7 +128,7 @@ public:
+ 
+     // Auto-generate parameter initialization from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) INITIALIZE_PARAMETER(_name, _default)
+-    #include "common\NmRs3DofEffector.inl"
++    #include "common/NmRs3DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -155,7 +155,7 @@ public:
+ 
+   // Auto-generate member accessors from inline file.
+   #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_ACCESSORS(_prefix, _type, _name)
+-  #include "common\NmRs3DofEffector.inl"
++  #include "common/NmRs3DofEffector.inl"
+   #undef NM_RS_PARAMETER
+ 
+   NmRs3DofEffectorInputData& m_data;

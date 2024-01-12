@@ -1,0 +1,103 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h
+index a5ba51211..3a233b11a 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h
+@@ -83,20 +83,20 @@ struct NmRsIKInputData
+   {
+     // Auto-generate bit masks for input types from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) apply##_name = 1 << (__COUNTER__ - FlagOffset - 1),
+-    #include "common\NmRsIK.inl"
++    #include "common/NmRsIK.inl"
+     #undef NM_RS_PARAMETER
+ 
+     // Auto-generate apply-all bitmask from inline file.
+     applyAll = 0 
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) | apply##_name
+-    #include "common\NmRsIK.inl"
++    #include "common/NmRsIK.inl"
+     #undef NM_RS_PARAMETER
+   };
+   unsigned int m_flags;
+ 
+   // Auto-generated member data and accessors from inline file
+   #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_DATA(_type, _name)
+-  #include "common\NmRsIK.inl"
++  #include "common/NmRsIK.inl"
+   #undef NM_RS_PARAMETER
+ };
+ 
+@@ -110,20 +110,20 @@ struct NmRs1DofEffectorInputData
+   {
+     // Auto-generate bit masks for input types from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) apply##_name = 1 << (__COUNTER__ - FlagOffset - 1),
+-    #include "common\NmRs1DofEffector.inl"
++    #include "common/NmRs1DofEffector.inl"
+     #undef NM_RS_PARAMETER
+ 
+     // Auto-generate apply-all bitmask from inline file.
+     applyAll = 0 
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) | apply##_name
+-    #include "common\NmRs1DofEffector.inl"
++    #include "common/NmRs1DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   };
+   unsigned int m_flags;
+ 
+   // Auto-generated member data and accessors from inline file
+   #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_DATA(_type, _name)
+-  #include "common\NmRs1DofEffector.inl"
++  #include "common/NmRs1DofEffector.inl"
+   #undef NM_RS_PARAMETER
+ };
+ 
+@@ -137,20 +137,20 @@ struct NmRs3DofEffectorInputData
+   {
+     // Auto-generate bit masks for input types from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) apply##_name = 1 << (__COUNTER__ - FlagOffset - 1),
+-    #include "common\NmRs3DofEffector.inl"
++    #include "common/NmRs3DofEffector.inl"
+     #undef NM_RS_PARAMETER
+ 
+     // Auto-generate apply-all bitmask from inline file.
+     applyAll = 0 
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) | apply##_name
+-    #include "common\NmRs3DofEffector.inl"
++    #include "common/NmRs3DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   };
+   unsigned int m_flags;
+ 
+   // Auto-generated member data and accessors from inline file
+   #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_DATA(_type, _name)
+-  #include "common\NmRs3DofEffector.inl"
++  #include "common/NmRs3DofEffector.inl"
+   #undef NM_RS_PARAMETER
+ };
+ 
+@@ -164,7 +164,7 @@ struct NmRs3DofEffectorInputData
+ struct NmRsArmInputData
+ {
+   // Struct members and accessors auto generated from inline using NM_RS_PARAMETER above
+-  #include "common\NmRsHumanArm.inl"
++  #include "common/NmRsHumanArm.inl"
+ };
+ 
+ // NmRsLegInputData
+@@ -172,7 +172,7 @@ struct NmRsArmInputData
+ struct NmRsLegInputData
+ {
+   // Struct members and accessors auto generated from inline using NM_RS_PARAMETER above
+-  #include "common\NmRsHumanLeg.inl"
++  #include "common/NmRsHumanLeg.inl"
+ };
+ 
+ // NmRsSpineInputData
+@@ -180,7 +180,7 @@ struct NmRsLegInputData
+ struct NmRsSpineInputData
+ {
+   // Struct members and accessors auto generated from inline using NM_RS_PARAMETER above
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+ };
+ 
+ #undef NM_RS_PARAMETER

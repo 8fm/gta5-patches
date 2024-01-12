@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp
+index 54a940593..4dde564d7 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp
+@@ -91,7 +91,7 @@ namespace ART
+     // Auto-generate send component from inline file.
+     #undef NM_RS_PARAMETER
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) SEND_BSPY_COMPONENT(_prefix, _type, _name)
+-    #include "common\NmRs1DofEffector.inl"
++    #include "common/NmRs1DofEffector.inl"
+     #undef NM_RS_PARAMETER
+ 
+     bspySendPacket(cp);
+@@ -106,7 +106,7 @@ namespace ART
+     // Auto-generate set current from inline file.
+     #undef NM_RS_PARAMETER
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DEFINE_SET_CURRENT(_name)
+-    #include "common\NmRs1DofEffector.inl"
++    #include "common/NmRs1DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -222,7 +222,7 @@ namespace ART
+ 
+     // Auto-generate send bspy component from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) SEND_BSPY_COMPONENT(_prefix, _type, _name)
+-    #include "common\NmRs3DofEffector.inl"
++    #include "common/NmRs3DofEffector.inl"
+     #undef NM_RS_PARAMETER
+ 
+     bspySendPacket(cp);
+@@ -236,7 +236,7 @@ namespace ART
+ 
+     // Auto-generate set current from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DEFINE_SET_CURRENT(_name)
+-    #include "common\NmRs3DofEffector.inl"
++    #include "common/NmRs3DofEffector.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 

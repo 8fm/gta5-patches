@@ -11,3 +11,12 @@ index df206010d..4bae5f1ee 100644
  
  #define USE_NV_TXAA RSG_PC && !__GAMETOOL
  #if USE_NV_TXAA
+@@ -614,7 +614,7 @@ namespace rage {
+ 		static int InitSingleton() { return 1; }
+ #endif
+ 
+-#if __WIN32 || RSG_DURANGO
++#if __WIN32 || RSG_DURANGO || __LINUX
+ 		grcEntry bool IsCreated() { return (GetCurrent() != NULL); }
+ #endif
+ 

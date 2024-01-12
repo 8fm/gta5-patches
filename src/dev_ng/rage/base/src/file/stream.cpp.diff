@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/base/src/file/stream.cpp b/src/dev_ng/rage/base/src/file/stream.cpp
+index d2e4301b2..cbb4433ad 100644
+--- a/src/dev_ng/rage/base/src/file/stream.cpp
++++ b/src/dev_ng/rage/base/src/file/stream.cpp
+@@ -598,7 +598,7 @@ int fiStream::ReadShort(unsigned short *dest,int num) {
+ 	return ct;
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ int fiStream::ReadTChar(_TCHAR *dest,int num) {
+ 	if (sizeof(_TCHAR) == sizeof(short))
+ 	{
+@@ -638,7 +638,7 @@ int fiStream::WriteShort(const unsigned short *src,int num) {
+ 	return amt;
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ int fiStream::WriteTChar(const _TCHAR *src,int num) {
+ 	if (sizeof(_TCHAR) == sizeof(short))
+ 	{

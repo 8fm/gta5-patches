@@ -1,8 +1,16 @@
 diff --git a/src/dev_ng/rage/base/src/string/string.h b/src/dev_ng/rage/base/src/string/string.h
-index 3912d6e10..dd2dc5a64 100644
+index 3912d6e10..47dc78b00 100644
 --- a/src/dev_ng/rage/base/src/string/string.h
 +++ b/src/dev_ng/rage/base/src/string/string.h
-@@ -47,7 +47,7 @@ extern "C" char* strlwr(char*);
+@@ -40,14 +40,14 @@ namespace rage {
+ #else
+ #define stricmp     strcasecmp
+ #define strnicmp  strncasecmp
+-# if __PS3 || __PSP2 || RSG_ORBIS
++# if __PS3 || __PSP2 || RSG_ORBIS || __LINUX
+ extern "C" char* strupr(char*);
+ extern "C" char* strlwr(char*);
+ #define strcmpi stricmp
  # endif
  #endif
  

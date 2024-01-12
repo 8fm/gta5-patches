@@ -1,0 +1,342 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
+index 6235bf5b3..49e9dc0e8 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
+@@ -21,7 +21,7 @@
+ #include "NmRsUtils.h"
+ 
+ #if ART_ENABLE_BSPY_LIMBS
+-#include "bSpy\bSpyCommonPackets.h"
++#include "bSpy/bSpyCommonPackets.h"
+ #include "NmRsCBU_Shared.h"
+ #include "NmRsCBU_TaskManager.h"
+ #endif // ART_ENABLE_BSPY_LIMBS
+@@ -103,7 +103,7 @@ namespace ART
+ #else
+     // Auto-generate blend from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) SET_PARAMETER(_prefix, _name)
+-    #include "common\NmRs3DofEffector.inl"
++    #include "common/NmRs3DofEffector.inl"
+     #undef NM_RS_PARAMETER
+ 
+     Assert(effector->getDesiredLean1() == effector->getDesiredLean1());
+@@ -136,7 +136,7 @@ namespace ART
+ #else
+     // Auto-generate blend from inline file.
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) SET_PARAMETER(_prefix, _name)
+-    #include "common\NmRs1DofEffector.inl"
++    #include "common/NmRs1DofEffector.inl"
+     #undef NM_RS_PARAMETER
+ #endif
+ 
+@@ -543,7 +543,7 @@ namespace ART
+     //   if(mask == bvmask_Full || m_character->isEffectorInMask(mask, getShoulder()->getJointIndex()))\
+     //     result = m_blendTarget.getShoulderBlendable()->blend(input->m_data.m_Shoulder, task, weight) && result;
+     #define NM_RS_PARAMETER(_prefix, _name) BLEND_EFFECTOR(_prefix, _name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+ 
+     return result;
+@@ -770,14 +770,14 @@ namespace ART
+   void NmRsHumanArm::setToCurrent(NmRsArmInputWrapper* data, BehaviourMask mask /*= bvmask_Full*/) const
+   {
+     #define NM_RS_PARAMETER(_type, _name) SET_CURRENT_MASKED(_name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+   void NmRsHumanArm::setStiffness(NmRsArmInputWrapper* data, float stiffness, float damping, BehaviourMask mask /*= bvmask_Full*/, float *muscleStiffness /*= 0*/) const
+   {
+     #define NM_RS_PARAMETER(_type, _name) BODYSTIFFNESS_MASKED(_name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -804,7 +804,7 @@ namespace ART
+     //
+     // Auto-generate parameter initialization from inline file.
+     #define NM_RS_PARAMETER(_type, _name) BODYSTIFFNESSSCALING_MASKED(_name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -812,7 +812,7 @@ namespace ART
+   {
+     NmRsArmInputWrapper* data = input.getData<NmRsArmInputWrapper>();
+ #define NM_RS_PARAMETER(_type, _name) SETRELAXATION_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -820,7 +820,7 @@ namespace ART
+   {
+     NmRsArmInputWrapper* data = input.getData<NmRsArmInputWrapper>();
+ #define NM_RS_PARAMETER(_type, _name) ACTIVE_POSE_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -828,7 +828,7 @@ namespace ART
+   {
+     NmRsArmInputWrapper* data = input.getData<NmRsArmInputWrapper>();
+ #define NM_RS_PARAMETER(_type, _name) BLENDTOZERO_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -836,7 +836,7 @@ namespace ART
+   {
+     NmRsArmInputWrapper* data = input.getData<NmRsArmInputWrapper>();
+ #define NM_RS_PARAMETER(_type, _name) HOLD_POSE_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -844,7 +844,7 @@ namespace ART
+   {
+     NmRsArmInputWrapper* data = input.getData<NmRsArmInputWrapper>();
+ #define NM_RS_PARAMETER(_type, _name) RESET_EFFECTORS_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -852,7 +852,7 @@ namespace ART
+   {
+     NmRsArmInputWrapper* data = input.getData<NmRsArmInputWrapper>();
+ #define NM_RS_PARAMETER(_type, _name) OPPOSE_GRAVITY_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -861,11 +861,11 @@ namespace ART
+     const ResetEffectorsType type = kResetCalibrations | kResetAngles;
+     const float scale = 1.0f;
+ #define NM_RS_PARAMETER(_type, _name) RESET_EFFECTORS_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+ 
+ #define NM_RS_PARAMETER(_type, _name) HOLD_POSE_MASKED(_name)
+-#include "common\NmRsHumanArm.inl"
++#include "common/NmRsHumanArm.inl"
+ #undef NM_RS_PARAMETER
+ 
+     setStiffness(data, 5.0f, 0.5f, mask);
+@@ -1066,7 +1066,7 @@ namespace ART
+       result = m_blendTarget.getHipBlendable()->blend(input->m_data.m_Hip, task, weight, subTask) && result;
+ #else
+     #define NM_RS_PARAMETER(_prefix, _name) BLEND_EFFECTOR(_prefix, _name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+ #endif
+ 
+@@ -1162,7 +1162,7 @@ namespace ART
+   void NmRsHumanLeg::setToCurrent(NmRsLegInputWrapper* data, BehaviourMask mask /*= bvmask_Full*/)
+   {
+ #define NM_RS_PARAMETER(_type, _name) SET_CURRENT_MASKED(_name)
+-#include "common\NmRsHumanLeg.inl"
++#include "common/NmRsHumanLeg.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1175,7 +1175,7 @@ namespace ART
+   void NmRsHumanLeg::setStiffness(NmRsLegInputWrapper* data, float stiffness, float damping, BehaviourMask mask /*= bvmask_Full*/, float *muscleStiffness /*= 0*/) const
+   {
+     #define NM_RS_PARAMETER(_type, _name) BODYSTIFFNESS_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1186,7 +1186,7 @@ namespace ART
+ 
+     // Auto-generate parameter initialization from inline file.
+     #define NM_RS_PARAMETER(_type, _name) BODYSTIFFNESSSCALING_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1194,7 +1194,7 @@ namespace ART
+   {
+     NmRsLegInputWrapper* data = input.getData<NmRsLegInputWrapper>();
+     #define NM_RS_PARAMETER(_type, _name) SETRELAXATION_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1202,7 +1202,7 @@ namespace ART
+   {
+     NmRsLegInputWrapper* data = input.getData<NmRsLegInputWrapper>();
+     #define NM_RS_PARAMETER(_type, _name) ACTIVE_POSE_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1210,7 +1210,7 @@ namespace ART
+   {
+     NmRsLegInputWrapper* data = input.getData<NmRsLegInputWrapper>();
+     #define NM_RS_PARAMETER(_type, _name) BLENDTOZERO_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1218,7 +1218,7 @@ namespace ART
+   {
+     NmRsLegInputWrapper* data = input.getData<NmRsLegInputWrapper>();
+     #define NM_RS_PARAMETER(_type, _name) HOLD_POSE_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1226,7 +1226,7 @@ namespace ART
+   {
+     NmRsLegInputWrapper* data = input.getData<NmRsLegInputWrapper>();
+     #define NM_RS_PARAMETER(_type, _name) RESET_EFFECTORS_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1234,7 +1234,7 @@ namespace ART
+   {
+     NmRsLegInputWrapper* data = input.getData<NmRsLegInputWrapper>();
+     #define NM_RS_PARAMETER(_type, _name) OPPOSE_GRAVITY_MASKED(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1243,11 +1243,11 @@ namespace ART
+     const ResetEffectorsType type = kResetCalibrations | kResetAngles;
+     const float scale = 1.0f;
+ #define NM_RS_PARAMETER(_type, _name) RESET_EFFECTORS_MASKED(_name)
+-#include "common\NmRsHumanLeg.inl"
++#include "common/NmRsHumanLeg.inl"
+ #undef NM_RS_PARAMETER
+ 
+ #define NM_RS_PARAMETER(_type, _name) HOLD_POSE_MASKED(_name)
+-#include "common\NmRsHumanLeg.inl"
++#include "common/NmRsHumanLeg.inl"
+ #undef NM_RS_PARAMETER
+ 
+     setStiffness(data, 5.0f, 0.5f, mask);
+@@ -1438,7 +1438,7 @@ namespace ART
+     //   if(mask == bvmask_Full || m_character->isEffectorInMask(mask, getSpine0()->getJointIndex()))\
+     //     result = m_blendTarget.getSpine0Blendable()->blend(input.m_data.m_Spine0, task, weight) && result;
+     #define NM_RS_PARAMETER(_prefix, _name) BLEND_EFFECTOR(_prefix, _name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+ 
+     return result;
+@@ -1447,7 +1447,7 @@ namespace ART
+   void NmRsHumanSpine::setToCurrent(NmRsSpineInputWrapper* data, BehaviourMask mask /*= bvmask_Full*/)
+   {
+ #define NM_RS_PARAMETER(_type, _name) SET_CURRENT_MASKED(_name)
+-#include "common\NmRsHumanSpine.inl"
++#include "common/NmRsHumanSpine.inl"
+ #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1460,7 +1460,7 @@ namespace ART
+   void NmRsHumanSpine::setStiffness(NmRsSpineInputWrapper* data, float stiffness, float damping, BehaviourMask mask /*= bvmask_Full*/, float *muscleStiffness /*= 0*/) const
+   {
+     #define NM_RS_PARAMETER(_type, _name) BODYSTIFFNESS_MASKED(_name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -1471,7 +1471,7 @@ void NmRsHumanSpine::setBodyStiffnessScaling(float stiffnessScale, float damping
+ 
+   // Auto-generate parameter initialization from inline file.
+   #define NM_RS_PARAMETER(_type, _name) BODYSTIFFNESSSCALING_MASKED(_name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ 
+@@ -1479,7 +1479,7 @@ void NmRsHumanSpine::setRelaxation(NmRsLimbInput& input, float mult, BehaviourMa
+ {
+   NmRsSpineInputWrapper* data = input.getData<NmRsSpineInputWrapper>();
+   #define NM_RS_PARAMETER(_type, _name) SETRELAXATION_MASKED(_name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ 
+@@ -1487,7 +1487,7 @@ void NmRsHumanSpine::activePose(NmRsLimbInput& input, int transformSource, Behav
+ {
+   NmRsSpineInputWrapper* data = input.getData<NmRsSpineInputWrapper>();
+   #define NM_RS_PARAMETER(_type, _name) ACTIVE_POSE_MASKED(_name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ 
+@@ -1495,7 +1495,7 @@ void NmRsHumanSpine::blendToZeroPose(NmRsLimbInput& input, float t, BehaviourMas
+ {
+   NmRsSpineInputWrapper* data = input.getData<NmRsSpineInputWrapper>();
+   #define NM_RS_PARAMETER(_type, _name) BLENDTOZERO_MASKED(_name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ 
+@@ -1503,7 +1503,7 @@ void NmRsHumanSpine::resetEffectors(NmRsLimbInput& input, ResetEffectorsType typ
+ {
+   NmRsSpineInputWrapper* data = input.getData<NmRsSpineInputWrapper>();
+   #define NM_RS_PARAMETER(_type, _name) RESET_EFFECTORS_MASKED(_name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ 
+@@ -1511,7 +1511,7 @@ void NmRsHumanSpine::setOpposeGravity(NmRsLimbInput& input, float oppose, Behavi
+ {
+   NmRsSpineInputWrapper* data = input.getData<NmRsSpineInputWrapper>();
+   #define NM_RS_PARAMETER(_type, _name) OPPOSE_GRAVITY_MASKED(_name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ 
+@@ -1519,7 +1519,7 @@ void NmRsHumanSpine::holdPose(NmRsLimbInput& input, BehaviourMask mask /*= bvmas
+ {
+   NmRsSpineInputWrapper* data = input.getData<NmRsSpineInputWrapper>();
+   #define NM_RS_PARAMETER(_type, _name) HOLD_POSE_MASKED(_name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ 
+@@ -1528,11 +1528,11 @@ void NmRsHumanSpine::holdPose(NmRsLimbInput& input, BehaviourMask mask /*= bvmas
+     const ResetEffectorsType type = kResetCalibrations | kResetAngles;
+     const float scale = 1.0f;
+ #define NM_RS_PARAMETER(_type, _name) RESET_EFFECTORS_MASKED(_name)
+-#include "common\NmRsHumanSpine.inl"
++#include "common/NmRsHumanSpine.inl"
+ #undef NM_RS_PARAMETER
+ 
+ #define NM_RS_PARAMETER(_type, _name) HOLD_POSE_MASKED(_name)
+-#include "common\NmRsHumanSpine.inl"
++#include "common/NmRsHumanSpine.inl"
+ #undef NM_RS_PARAMETER
+ 
+     setStiffness(data, 5.0f, 0.5f, mask);

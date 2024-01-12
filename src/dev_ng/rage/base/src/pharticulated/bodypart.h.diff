@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/pharticulated/bodypart.h b/src/dev_ng/rage/base/src/pharticulated/bodypart.h
+index 21df412e7..ae295cbac 100644
+--- a/src/dev_ng/rage/base/src/pharticulated/bodypart.h
++++ b/src/dev_ng/rage/base/src/pharticulated/bodypart.h
+@@ -22,7 +22,7 @@
+ 
+ #include "bodyinertia.h"
+ 
+-#include "data\safestruct.h"
++#include "data/safestruct.h"
+ 
+ #include "data/resource.h"
+ #include "phcore/config.h"

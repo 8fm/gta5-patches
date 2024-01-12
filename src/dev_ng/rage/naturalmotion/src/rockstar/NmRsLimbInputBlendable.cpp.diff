@@ -1,0 +1,48 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp
+index 83c0de8c2..2aeb64970 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp
+@@ -62,7 +62,7 @@ void NmRsArmInputBlendable::sendComponents(const char* /* name */, BehaviourID /
+   // m_ShoulderBlendable.sendComponents("Shoulder");
+   // Auto-generate send components from inline file.
+   #define NM_RS_PARAMETER(_prefix, _name) SEND_BLENDABLE_COMPONENTS(_prefix, _name)
+-  #include "common\NmRsHumanArm.inl"
++  #include "common/NmRsHumanArm.inl"
+   #undef NM_RS_PARAMETER
+ }
+ #endif
+@@ -100,7 +100,7 @@ void NmRsLegInputBlendable::sendComponents(const char* /* name */, BehaviourID /
+ {
+   // Auto-generate send components from inline file.
+   #define NM_RS_PARAMETER(_prefix, _name) SEND_BLENDABLE_COMPONENTS(_prefix, _name)
+-  #include "common\NmRsHumanLeg.inl"
++  #include "common/NmRsHumanLeg.inl"
+   #undef NM_RS_PARAMETER
+ }
+ #endif
+@@ -128,14 +128,14 @@ bool NmRsSpineInputBlendable::canDoIK(bool greedy /*=false*/)
+   {
+     // Auto-generate can do IK from inline file.
+     #define NM_RS_PARAMETER(_prefix, _name) CAN_DO_IK_GREEDY(_name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+   else
+   {
+     // Auto-generate can do IK from inline file.
+     #define NM_RS_PARAMETER(_prefix, _name) CAN_DO_IK(_name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -147,7 +147,7 @@ void NmRsSpineInputBlendable::sendComponents(const char* /* name */, BehaviourID
+ {
+   // Auto-generate sendComponents from inline file.
+   #define NM_RS_PARAMETER(_prefix, _name) SEND_BLENDABLE_COMPONENTS(_prefix, _name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ }
+ #endif

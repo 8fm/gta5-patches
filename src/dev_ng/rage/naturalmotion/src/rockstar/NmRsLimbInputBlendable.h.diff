@@ -1,0 +1,58 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h
+index 7232f24a4..5e6478474 100644
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h
+@@ -52,7 +52,7 @@ public:
+ 
+     // Auto-generate initialization code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) INIT_BLENDABLE_EFFECTOR_DATA(_prefix, _name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -70,7 +70,7 @@ public:
+   //  protected:
+   //    NmRs3DofInputBlendable m_ClavicleBlendable;
+   #define NM_RS_PARAMETER(_prefix, _name) DECLARE_BLENDABLE_EFFECTOR_DATA(_prefix, _name)
+-  #include "common\NmRsHumanArm.inl"
++  #include "common/NmRsHumanArm.inl"
+   #undef NM_RS_PARAMETER
+ };
+ 
+@@ -88,7 +88,7 @@ public:
+ 
+     // Auto-generate initialization code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) INIT_BLENDABLE_EFFECTOR_DATA(_prefix, _name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -99,7 +99,7 @@ public:
+ #endif
+ 
+   #define NM_RS_PARAMETER(_prefix, _name) DECLARE_BLENDABLE_EFFECTOR_DATA(_prefix, _name)
+-  #include "common\NmRsHumanLeg.inl"
++  #include "common/NmRsHumanLeg.inl"
+   #undef NM_RS_PARAMETER
+ };
+ 
+@@ -117,7 +117,7 @@ public:
+ 
+     // Auto-generate initialization code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) INIT_BLENDABLE_EFFECTOR_DATA(_prefix, _name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -128,7 +128,7 @@ public:
+ #endif
+ 
+   #define NM_RS_PARAMETER(_prefix, _name) DECLARE_BLENDABLE_EFFECTOR_DATA(_prefix, _name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ };
+ 

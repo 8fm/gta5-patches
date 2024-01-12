@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/paging/array.h b/src/dev_ng/rage/base/src/paging/array.h
+index 48ddd4351..576b4d417 100644
+--- a/src/dev_ng/rage/base/src/paging/array.h
++++ b/src/dev_ng/rage/base/src/paging/array.h
+@@ -42,7 +42,7 @@ public:
+ 
+ 	// Not including operator[] here is intentional; pgArrays are generally already pointers,
+ 	// so you end up having to use the weird pObj->operator[](value) syntax anyway.
+-	const _Type& GetElement(unsigned idx) const { TrapGE(idx,m_Count); return m_Elements[idx]; }
++	const _Type& GetElement(unsigned idx) const { TrapGE(idx, (unsigned int)m_Count); return m_Elements[idx]; }
+ 
+ 	_Type& GetElement(unsigned idx) { TrapGE(idx,(unsigned int)m_Count); return m_Elements[idx]; }
+ 

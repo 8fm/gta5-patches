@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h b/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
+index 79ae6c0dc..2a1b4f47e 100644
+--- a/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
++++ b/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
+@@ -27,7 +27,7 @@
+  * Automatically configure NM_PLATFORM_? from compiler defines
+  */
+ 
+-#if defined(WIN32) || defined(_WIN32)
++#if defined(WIN32) || defined(_WIN32) || defined(__linux__)
+ 
+ #if defined(_WIN64)
+ # define NM_IA64
