@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp b/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
+index 5da1ab256..80927be18 100644
+--- a/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
++++ b/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
+@@ -86,7 +86,11 @@ namespace rage
+ 			GetModuleFileNameW = (GetModuleFileNameWFnPtr)GetProcAddress(hKernel32, "GetModuleFileNameA");
+ 			ReadProcessMemory = (ReadProcessMemoryFnPtr)GetProcAddress(hKernel32, "ReadProcessMemory");
+ 
++#if _MSC_VER < 1900
+ 			HMODULE hPsapi = GetModuleHandle("psapi.dll");
++#else
++			HMODULE hPsapi = LoadLibrary("psapi.dll");
++#endif
+ 			EnumProcessModules = (EnumProcessModulesFnPtr)GetProcAddress(hPsapi, "EnumProcessModules");
+ 			GetModuleFileNameExA = (GetModuleFileNameExAFnPtr)GetProcAddress(hPsapi, "GetModuleFileNameExA");
+ 			GetModuleFileNameExW = (GetModuleFileNameExWFnPtr)GetProcAddress(hPsapi, "GetModuleFileNameExW");
