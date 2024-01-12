@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/VS_Project_network/CMakeLists.txt b/src/dev_ng/game/VS_Project_network/CMakeLists.txt
+new file mode 100644
+index 000000000..07d61e4fd
+--- /dev/null
++++ b/src/dev_ng/game/VS_Project_network/CMakeLists.txt
+@@ -0,0 +1,30 @@
++project(network)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
++
++set(SRC_FILES
++    "_Unity/_unity_network_network1.cpp"
++    "_Unity/_unity_network_network2.cpp"
++    "_Unity/_unity_network_network3.cpp"
++    "../network/Events/NetworkEventTypes.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}/game
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

@@ -1,0 +1,81 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageGraphics/CMakeLists.txt b/src/dev_ng/rage/base/src/vcproj/RageGraphics/CMakeLists.txt
+new file mode 100644
+index 000000000..fd4b67fb2
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/vcproj/RageGraphics/CMakeLists.txt
+@@ -0,0 +1,75 @@
++project(RageGraphics)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++set(SRC_FILES
++    "_Unity/_unity_RageGraphics_output.cpp"
++    "_Unity/_unity_RageGraphics_crmetadata_crskeleton.cpp"
++    "_Unity/_unity_RageGraphics_edge.cpp"
++    "_Unity/_unity_RageGraphics_grblendshapes_grmodel_grprofile.cpp"
++    "_Unity/_unity_RageGraphics_grcore.cpp"
++    "_Unity/_unity_RageGraphics_input_jpeg_mesh.cpp"
++    "_Unity/_unity_RageGraphics_rmcore_shaderlib_spatialdata.cpp"
++    "../../edge/libedgegeomtool/libedgegeomtool_kcacheoptimizer.cpp"
++    "../../edge/libedgegeomtool/libedgegeomtool_partitioner.cpp"
++    "../../grcore/indexbuffer_d3d.cpp"
++    "../../grcore/device_win32.cpp"
++    "../../grcore/texturexenon.cpp"
++    "../../grcore/gnmx/computecontext.cpp"
++    "../../grcore/gnmx/computequeue.cpp"
++    "../../grcore/gnmx/constantupdateengine.cpp"
++    "../../grcore/gnmx/cue.cpp"
++    "../../grcore/gnmx/cue-cueringbuffer.cpp"
++    "../../grcore/gnmx/cue-deprecated.cpp"
++    "../../grcore/gnmx/cue-dispatchdraw.cpp"
++    "../../grcore/gnmx/cue-resource.cpp"
++    "../../grcore/gnmx/cue-shader.cpp"
++    "../../grcore/gnmx/cue-static.cpp"
++    "../../grcore/gnmx/fetchshaderhelper.cpp"
++    "../../grcore/gnmx/gfxcontext.cpp"
++    "../../grcore/gnmx/helpers.cpp"
++    "../../grcore/gnmx/lwconstantupdateengine.cpp"
++    "../../grcore/gnmx/lwconstantupdateengine_validation.cpp"
++    "../../grcore/gnmx/shader_parser.cpp"
++    "../../grcore/edge_callbacks.cpp"
++    "../../grcore/edge_callbacks_gta4.cpp"
++    "../../grcore/device_gcm.cpp"
++    "../../jpeg/jchuff.cpp"
++    "../../jpeg/jcmarker.cpp"
++    "../../jpeg/jctrans.cpp"
++    "../../jpeg/jdcoefct.cpp"
++    "../../jpeg/jdcolor.cpp"
++    "../../jpeg/jdhuff.cpp"
++    "../../jpeg/jdmainct.cpp"
++    "../../jpeg/jdmaster.cpp"
++    "../../jpeg/jdmerge.cpp"
++    "../../jpeg/jdphuff.cpp"
++    "../../jpeg/jdsample.cpp"
++    "../../jpeg/jfdctfst.cpp"
++    "../../jpeg/jfdctint.cpp"
++    "../../jpeg/jidctfst.cpp"
++    "../../jpeg/jidctint.cpp"
++    "../../jpeg/jidctred.cpp"
++    "../../jpeg/jmemmgr.cpp"
++    "../../jpeg/jquant2.cpp"
++    "../../mesh/mesh.cpp"
++    "../../mesh/xbstrip.cpp"
++    "../../mesh/primitive.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

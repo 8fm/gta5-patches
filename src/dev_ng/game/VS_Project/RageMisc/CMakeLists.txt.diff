@@ -1,0 +1,83 @@
+diff --git a/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt b/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt
+new file mode 100644
+index 000000000..cee98f5ab
+--- /dev/null
++++ b/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt
+@@ -0,0 +1,77 @@
++project(RageMisc)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++add_definitions(-DHAVE_CONFIG_H=__XENON -DOVERRIDE_SPEEX_ERROR=1 -DOVERRIDE_SPEEX_WARNING_INT=1 -DOVERRIDE_SPEEX_WARNING=1)
++
++set(SRC_FILES
++    "_Unity/_unity_RageMisc_scaleform_scr_scaleform.cpp"
++    "_Unity/_unity_RageMisc_squish_telemetry.cpp"
++    "_Unity/_unity_RageMisc_bink_cutfile_cutscene.cpp"
++    "_Unity/_unity_RageMisc_fragment_event.cpp"
++    "_Unity/_unity_RageMisc_gpuptfx_rmptfx.cpp"
++    "_Unity/_unity_RageMisc_snet_avchat_cloth_grrope_pedsafezone.cpp"
++    "_Unity/_unity_RageMisc_phglass_breakable_softrasterizer.cpp"
++    "../../../rage/suite/src/snet/tasks.cpp"
++    "../../../rage/suite/src/avchat/voicechat.cpp"
++    "../../../rage/suite/src/avchat/speex/libspeex/bits.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/cb_search.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/exc_10_16_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/exc_10_32_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/exc_20_32_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/exc_5_256_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/exc_5_64_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/exc_8_128_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/fftwrap.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/filters.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/gain_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/gain_table_lbr.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/hexc_10_32_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/hexc_table.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/high_lsp_tables.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/jitter.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/kiss_fft.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/kiss_fftr.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/lpc.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/lsp.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/lsp_tables_nb.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/ltp.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/math_approx.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/mdf.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/misc.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/modes.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/nb_celp.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/preprocess.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/quant_lsp.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/sb_celp.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/smallft.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/speex.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/speex_callbacks.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/speex_header.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/stereo.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/vbr.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/vq.c"
++    "../../../rage/suite/src/avchat/speex/libspeex/window.c"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}../../rage/3rdparty/dev/cli/libxml2-2.7.6/include
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/Scaleform/Include
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/tools/src/dcc/libs
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src/avchat/speex/include
++    ${CMAKE_SOURCE_DIR}/rage/suite/src/avchat/speex/libspeex
++    ${CMAKE_SOURCE_DIR}/rage/suite/src/avchat/speex/win32
++)
++
++target_link_libraries(${PROJECT_NAME})

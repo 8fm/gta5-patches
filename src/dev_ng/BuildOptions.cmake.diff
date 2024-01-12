@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/BuildOptions.cmake b/src/dev_ng/BuildOptions.cmake
+new file mode 100644
+index 000000000..c613d8ff5
+--- /dev/null
++++ b/src/dev_ng/BuildOptions.cmake
+@@ -0,0 +1,35 @@
++
++if (${GAME_CONFIG} STREQUAL "BankRelease")
++    add_definitions(-D_MBCS -DRSG_GEN9=0 -DWIN64 -D_NOEXCEPT=noexcept)
++    if (${TARGET_TYPE} STREQUAL "StaticLib")
++        add_definitions(-D_LIB)
++    elseif(${TARGET_TYPE} STREQUAL "Exec")
++        add_definitions(-D_WINDOWS)
++    endif()
++endif()
++
++if (MSVC)
++    if (${GAME_CONFIG} STREQUAL "BankRelease")
++        add_compile_options(/FI${CMAKE_SOURCE_DIR}/rage/base/src/forceinclude/win64_bankrelease.h)
++        add_compile_options(/Zc:sizedDealloc- /errorReport:prompt /fp:fast /Gd /GR /GS- /GT /MP /MT /nologo /Ob2 /Oi /openmp /Os /Ox /Oy /W4 /WX- /Zc:forScope /Zc:wchar_t /Zi)
++        if (${TARGET_TYPE} STREQUAL "StaticLib")
++            add_compile_options(/GF /Gm- /Gy)
++        elseif(${TARGET_TYPE} STREQUAL "Exec")
++            add_compile_options(/GF- /Gm /Gy-)
++        endif()
++    endif()
++else()
++    if (${GAME_CONFIG} STREQUAL "BankRelease")
++        add_compile_options(-include ${CMAKE_SOURCE_DIR}/rage/base/src/forceinclude/win64_bankrelease.h)
++    endif()
++
++    add_compile_options(-std=c++14 -fpermissive -Wno-narrowing)
++    add_definitions(-D_M_X64)
++
++    # Verbose output
++    add_compile_options(-v)
++    add_link_options(-v)
++
++    # Add _DEBUG flag
++    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -D_DEBUG")
++endif()
+\ No newline at end of file

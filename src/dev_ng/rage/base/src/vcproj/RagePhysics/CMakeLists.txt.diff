@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RagePhysics/CMakeLists.txt b/src/dev_ng/rage/base/src/vcproj/RagePhysics/CMakeLists.txt
+new file mode 100644
+index 000000000..3d3c8a62a
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/vcproj/RagePhysics/CMakeLists.txt
+@@ -0,0 +1,31 @@
++project(RagePhysics)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++set(SRC_FILES
++    "_Unity/_unity_RagePhysics_curve_phcore.cpp"
++    "_Unity/_unity_RagePhysics_physics_phspurs.cpp"
++    "_Unity/_unity_RagePhysics_pharticulated_phbound.cpp"
++    "_Unity/_unity_RagePhysics_phbullet_pheffects.cpp"
++    "_Unity/_unity_RagePhysics_phsolver.cpp"
++    "../../physics/levelnew.cpp"
++    "../../phbullet/btGjkEpa.cpp"
++    "../../phbullet/btGjkEpa2.cpp"
++    "../../phbullet/MinkowskiPenetrationDepthSolver.cpp"
++    "../../pheffects/cloth_verlet_update.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/suite/src/vcproj/RageSuiteCreature/CMakeLists.txt b/src/dev_ng/rage/suite/src/vcproj/RageSuiteCreature/CMakeLists.txt
+new file mode 100644
+index 000000000..18ed62d98
+--- /dev/null
++++ b/src/dev_ng/rage/suite/src/vcproj/RageSuiteCreature/CMakeLists.txt
+@@ -0,0 +1,24 @@
++project(RageSuiteCreature)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++set(SRC_FILES
++    "_Unity/_unity_RageSuiteCreature_crclip_extra_parammotion.cpp"
++    "_Unity/_unity_RageSuiteCreature_crmotiontree.cpp"
++    "_Unity/_unity_RageSuiteCreature_move.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

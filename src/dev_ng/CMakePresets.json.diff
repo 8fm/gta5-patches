@@ -1,0 +1,53 @@
+diff --git a/src/dev_ng/CMakePresets.json b/src/dev_ng/CMakePresets.json
+new file mode 100644
+index 000000000..543f49932
+--- /dev/null
++++ b/src/dev_ng/CMakePresets.json
+@@ -0,0 +1,47 @@
++{
++  "version": 3,
++  "cmakeMinimumRequired": {
++    "major": 3,
++    "minor": 19,
++    "patch": 0
++  },
++  "configurePresets": [
++    {
++      "name": "ninja-x64-debug",
++      "generator": "Ninja Multi-Config",
++      "architecture": {
++        "value": "x64",
++        "strategy": "external"
++      },
++      "cacheVariables": {
++        "CMAKE_BUILD_TYPE": "Debug"
++      },
++      "binaryDir": "${sourceDir}/build/${presetName}"
++    },
++    {
++      "name": "ninja-x64-release",
++      "generator": "Ninja Multi-Config",
++      "architecture": {
++        "value": "x64",
++        "strategy": "external"
++      },
++      "cacheVariables": {
++        "CMAKE_BUILD_TYPE": "Release"
++      },
++      "binaryDir": "${sourceDir}/build/${presetName}"
++    }
++
++  ],
++  "buildPresets": [
++    {
++      "name": "x64-debug",
++      "configurePreset": "ninja-x64-debug",
++      "configuration": "Debug"
++    },
++    {
++      "name": "x64-release",
++      "configurePreset": "ninja-x64-release",
++      "configuration": "Release"
++    }
++  ]
++}

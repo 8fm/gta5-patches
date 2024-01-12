@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageCore/CMakeLists.txt b/src/dev_ng/rage/base/src/vcproj/RageCore/CMakeLists.txt
+new file mode 100644
+index 000000000..aadf579eb
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/vcproj/RageCore/CMakeLists.txt
+@@ -0,0 +1,34 @@
++project(RageCore)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++set(SRC_FILES
++    "_Unity/_unity_RageCore_atl_bank_data.cpp"
++    "_Unity/_unity_RageCore_diag_file.cpp"
++    "_Unity/_unity_RageCore_forceinclude_math_mathext_paging.cpp"
++    "_Unity/_unity_RageCore_parser_parsercore.cpp"
++    "_Unity/_unity_RageCore_profile_qa_string_zlib.cpp"
++    "_Unity/_unity_RageCore_system.cpp"
++    "_Unity/_unity_RageCore_vector_vectormath_video.cpp"
++    "../../atl/pool.cpp"
++    "../../system/mallocstub.cpp"
++    "../../system/task_psn.cpp"
++    "../../system/tmcommands_ms.cpp"
++    "../../system/llsc_xbox360.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/Arxan/TransformIT/x64/include
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

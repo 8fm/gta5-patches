@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/CMakeLists.txt b/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/CMakeLists.txt
+new file mode 100644
+index 000000000..a2179e0d4
+--- /dev/null
++++ b/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/CMakeLists.txt
+@@ -0,0 +1,38 @@
++project(ScaleformGfx)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/rage/scaleform/rage_forceinclude.h)
++
++set(SRC_FILES
++    "_Unity/_unity_ScaleformGfx_headers_gkernel_grenderer.cpp"
++    "_Unity/_unity_ScaleformGfx_gfxplayer.cpp"
++    "_Unity/_unity_ScaleformGfx_gfxplayer_sub.cpp"
++    "_Unity/_unity_ScaleformGfx_gfxaudio.cpp"
++    "../../GFxPlayer/IME/GASIme.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/base/src/jpeg
++    ${CMAKE_SOURCE_DIR}/rage/base/src/zlib
++    ${CMAKE_SOURCE_DIR}/rage/scaleform/Include
++    ${CMAKE_SOURCE_DIR}/rage/scaleform/Src/GFxAudio
++    ${CMAKE_SOURCE_DIR}/rage/scaleform/Src/GFxPlayer
++    ${CMAKE_SOURCE_DIR}/rage/scaleform/Src/GFxPlayer/AMP
++    ${CMAKE_SOURCE_DIR}/rage/scaleform/Src/GKernel
++    ${CMAKE_SOURCE_DIR}/rage/scaleform/Src/GRenderer
++    ${CMAKE_SOURCE_DIR}/rage/scaleform/Src/GFxAudio
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

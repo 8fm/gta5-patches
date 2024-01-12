@@ -1,0 +1,74 @@
+diff --git a/src/dev_ng/rage/framework/src/vcproj/RageFramework/CMakeLists.txt b/src/dev_ng/rage/framework/src/vcproj/RageFramework/CMakeLists.txt
+new file mode 100644
+index 000000000..01aa3c771
+--- /dev/null
++++ b/src/dev_ng/rage/framework/src/vcproj/RageFramework/CMakeLists.txt
+@@ -0,0 +1,68 @@
++project(RageFramework)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++set(SRC_FILES
++    "_Unity/_unity_RageFramework_entity_fwcontrol_fwdebug_fwdecorator.cpp"
++    "_Unity/_unity_RageFramework_fwanimation.cpp"
++    "_Unity/_unity_RageFramework_fwdrawlist_fwevent_fwlocalisation_fwpheffects.cpp"
++    "_Unity/_unity_RageFramework_fwcommerce_fwnet.cpp"
++    "_Unity/_unity_RageFramework_fwrenderer_fwscene.cpp"
++    "_Unity/_unity_RageFramework_fwscript_fwsys_fwtl_phframework.cpp"
++    "_Unity/_unity_RageFramework_ai_fwvehicleai_streaming_timecycle.cpp"
++    "_Unity/_unity_RageFramework_vfx_fwutil_fwmaths_fwaudio.cpp"
++    "_Unity/_unity_RageFramework_fwui.cpp"
++    "../../fwgeovis/geovis.cpp"
++    "../../fwtextureconversion/textureconversion.cpp"
++    "../../fwtextureconversion/textureconversionimage.cpp"
++    "../../memory/memdebug.cpp"
++    "../../video/contentDelete_Orbis.cpp"
++    "../../video/contentExport_Orbis.cpp"
++    "../../video/contentSearch_Orbis.cpp"
++    "../../video/greatestmoment_dummy.cpp"
++    "../../video/media_buffer.cpp"
++    "../../video/media_common.cpp"
++    "../../video/media_transcoding_allocator.cpp"
++    "../../video/mediadecoder.cpp"
++    "../../video/mediadecoder_win.cpp"
++    "../../video/mediadecoder_orbis.cpp"
++    "../../video/mediadecoder_display_frame.cpp"
++    "../../video/mediaencoder_bufferpool.cpp"
++    "../../video/mediaencoder_buffers.cpp"
++    "../../video/mediaencoder_colourconversion.cpp"
++    "../../video/mediaencoder_params.cpp"
++    "../../video/mediaencoder.cpp"
++    "../../video/mediaencoder_durango.cpp"
++    "../../video/mediaencoder_mmf.cpp"
++    "../../video/mediaencoder_orbis.cpp"
++    "../../video/mediaencoder_texture_pool.cpp"
++    "../../video/mediaencoder_video_class_factory.cpp"
++    "../../video/mediaencoder_win.cpp"
++    "../../video/mediatimer_system.cpp"
++    "../../video/mediatimer_mmf.cpp"
++    "../../video/recordinginterface_dummy.cpp"
++    "../../video/recordinginterface_orbis.cpp"
++    "../../video/recordinginterface_win.cpp"
++    "../../video/sinkwriter.cpp"
++    "../../video/VideoPlayback.cpp"
++    "../../video/VideoPlaybackInstance.cpp"
++    "../../video/VideoPlaybackThumbnailManager.cpp"
++    "../../fwactuator/recoileffect.cpp"
++    "../../fwlight/wantedlighteffect.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

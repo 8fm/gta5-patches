@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/naturalmotion/vcproj/NaturalMotion/CMakeLists.txt b/src/dev_ng/rage/naturalmotion/vcproj/NaturalMotion/CMakeLists.txt
+new file mode 100644
+index 000000000..0ea41548c
+--- /dev/null
++++ b/src/dev_ng/rage/naturalmotion/vcproj/NaturalMotion/CMakeLists.txt
+@@ -0,0 +1,24 @@
++project(NaturalMotion)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
++
++set(SRC_FILES
++    "_Unity/_unity_NaturalMotion_src.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})
