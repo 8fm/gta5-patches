@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/art/artfeedback.h b/src/dev_ng/rage/naturalmotion/include/art/artfeedback.h
+--- a/src/dev_ng/rage/naturalmotion/include/art/artfeedback.h
++++ b/src/dev_ng/rage/naturalmotion/include/art/artfeedback.h
+@@ -1,8 +1,8 @@
+ #ifndef NM_ART_FEEDBACK_H
+ #define NM_ART_FEEDBACK_H
+ 
+-#include "art/ARTBaseDefs.h"
+-#include "nmutils/NMTypes.h"
++#include "art/artbasedefs.h"
++#include "nmutils/nmtypes.h"
+ 
+ namespace ART
+ {

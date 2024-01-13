@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/rage/naturalmotion/vcproj/NaturalMotion/_Unity/_unity_NaturalMotion_src.cpp b/src/dev_ng/rage/naturalmotion/vcproj/NaturalMotion/_Unity/_unity_NaturalMotion_src.cpp
+--- a/src/dev_ng/rage/naturalmotion/vcproj/NaturalMotion/_Unity/_unity_NaturalMotion_src.cpp
++++ b/src/dev_ng/rage/naturalmotion/vcproj/NaturalMotion/_Unity/_unity_NaturalMotion_src.cpp
+@@ -12,16 +12,16 @@
+ #include "../../../src/fragmentnm/nmbehavior.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../src/art/ARTMemoryManager.cpp"
++#include "../../../src/art/artmemorymanager.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../src/art/bSpyServer.cpp"
++#include "../../../src/art/bspyserver.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../src/art/MessageParams.cpp"
++#include "../../../src/art/messageparams.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../src/nmutils/NMCustomMemory.cpp"
++#include "../../../src/nmutils/nmcustommemory.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../src/rockstar/NmRs1DofEffector.cpp"
+@@ -264,7 +264,7 @@
+ #include "../../../src/rockstar/NmRsCBU_ShotNewHit.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../src/rockstar/NmRsCBU_ShotOnGround.cpp"
++#include "../../../src/rockstar/NMRsCBU_ShotOnGround.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../src/rockstar/NmRsCBU_ShotPointGun.cpp"

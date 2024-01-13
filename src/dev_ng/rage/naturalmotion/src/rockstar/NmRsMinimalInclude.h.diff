@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsMinimalInclude.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsMinimalInclude.h
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsMinimalInclude.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsMinimalInclude.h
+@@ -33,7 +33,7 @@
+ #include "system/taskheader.h"
+ #include "math/amath.h"
+ 
+-#include "NMutils/NMtypes.h"
++#include "nmutils/nmtypes.h"
+ 
+ // Ensures bSpy debug draw functionality when character is not available
+ #if ART_ENABLE_BSPY

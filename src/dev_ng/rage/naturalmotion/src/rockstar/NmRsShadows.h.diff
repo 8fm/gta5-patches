@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsShadows.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsShadows.h
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsShadows.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsShadows.h
+@@ -22,7 +22,7 @@
+ #ifndef NM_RS_SHADOWS_H
+ #define NM_RS_SHADOWS_H
+ 
+-#include "NMutils/NMTypes.h"
++#include "nmutils/nmtypes.h"
+ 
+ #include "NmRsUtils.h" // Matrix types
+ 

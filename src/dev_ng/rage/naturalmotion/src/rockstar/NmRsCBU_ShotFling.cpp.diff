@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFling.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFling.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFling.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFling.cpp
+@@ -17,7 +17,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_StaggerFall.h" 

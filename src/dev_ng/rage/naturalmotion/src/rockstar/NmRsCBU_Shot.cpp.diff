@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Shot.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Shot.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Shot.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Shot.cpp
+@@ -21,13 +21,13 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_ArmsWindmill.h"
+ #include "NmRsCBU_ArmsWindmillAdaptive.h"
+ #include "NmRsCBU_BalancerCollisionsReaction.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_DynamicBalancer.h"
+ #include "NmRsCBU_SpineTwist.h"
+ #include "NmRsCBU_BodyWrithe.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dragged.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dragged.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dragged.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dragged.cpp
+@@ -20,7 +20,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_Pedal.h"

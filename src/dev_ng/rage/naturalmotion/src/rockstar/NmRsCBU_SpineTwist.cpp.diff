@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_SpineTwist.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_SpineTwist.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_SpineTwist.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_SpineTwist.cpp
+@@ -24,7 +24,7 @@
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+ 
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ namespace ART
+ {

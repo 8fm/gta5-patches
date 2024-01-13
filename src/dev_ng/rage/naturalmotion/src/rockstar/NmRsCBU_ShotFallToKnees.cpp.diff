@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFallToKnees.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFallToKnees.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFallToKnees.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotFallToKnees.cpp
+@@ -17,14 +17,14 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_DynamicBalancer.h"
+ #include "NmRsCBU_PointGun.h"
+ #include "NmRsCBU_RollDownStairs.h"
+-#include "NmRsCBU_Rollup.h"
++#include "NmRsCBU_RollUp.h"
+ #include "NmRsCBU_StaggerFall.h"
+ 
+ #include "NmRsLimbs.h"

@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
-@@ -21,7 +21,7 @@
+@@ -17,11 +17,11 @@
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+ #include "NmRsShadows.h"
+-#include "NmRsIk.h"
++#include "NmRsIK.h"
  #include "NmRsUtils.h"
  
  #if ART_ENABLE_BSPY_LIMBS

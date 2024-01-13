@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DynamicBalancer.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DynamicBalancer.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DynamicBalancer.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DynamicBalancer.cpp
+@@ -26,14 +26,14 @@
+ #include "NmRsCBU_DBMBalanceSolve.h"
+ #include "NmRsCBU_BalancerCollisionsReaction.h"
+ #include "NmRsCBU_BraceForImpact.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_FallOverWall.h"
+ #include "NmRsCBU_Grab.h"
+ #include "NmRsCBU_Shot.h"
+ #include "NmRsCBU_StaggerFall.h"
+ #include "NmRsCBU_Teeter.h"
+ 
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ namespace ART
+ {

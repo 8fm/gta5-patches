@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
+@@ -18,7 +18,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_BodyBalance.h" 
 @@ -1343,12 +1343,12 @@ namespace ART
      m_character->setFrictionPreScale(m_backFrictionMult, (bvmask_Trunk & ~bvmask_CervicalSpine));
  

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/phbullet/DiscreteCollisionDetectorInterface.h b/src/dev_ng/rage/base/src/phbullet/DiscreteCollisionDetectorInterface.h
+--- a/src/dev_ng/rage/base/src/phbullet/DiscreteCollisionDetectorInterface.h
++++ b/src/dev_ng/rage/base/src/phbullet/DiscreteCollisionDetectorInterface.h
+@@ -17,7 +17,7 @@ subject to the following restrictions:
+ #ifndef DISCRETE_COLLISION_DETECTOR_INTERFACE_H
+ #define DISCRETE_COLLISION_DETECTOR_INTERFACE_H
+ 
+-#include "phCore/constants.h"
++#include "phcore/constants.h"
+ #include "vectormath/classes.h"
+ #include "vectormath/legacyconvert.h"
+ 

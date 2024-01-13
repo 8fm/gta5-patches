@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsInclude.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsInclude.h
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsInclude.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsInclude.h
+@@ -48,8 +48,8 @@
+ #include "physics/shapetest.h"
+ 
+ 
+-#include "art/ARTInternal.h"
+-#include "art/ARTFeedback.h"
++#include "art/artinternal.h"
++#include "art/artfeedback.h"
+ 
+ #if ART_ENABLE_BSPY
+ #include "NmRsSpy.h"

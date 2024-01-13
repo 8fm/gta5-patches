@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/art/artmemory.h b/src/dev_ng/rage/naturalmotion/include/art/artmemory.h
+--- a/src/dev_ng/rage/naturalmotion/include/art/artmemory.h
++++ b/src/dev_ng/rage/naturalmotion/include/art/artmemory.h
+@@ -1,7 +1,7 @@
+ #ifndef NM_ART_MEMORY_H
+ #define NM_ART_MEMORY_H
+ 
+-#include "art/ARTMemoryManager.h"
++#include "art/artmemorymanager.h"
+ #include <stddef.h>
+ 
+ #define ARTCustomPlacementNew(loc, type) {\

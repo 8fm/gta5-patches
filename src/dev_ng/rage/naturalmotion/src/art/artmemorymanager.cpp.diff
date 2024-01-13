@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/art/artmemorymanager.cpp b/src/dev_ng/rage/naturalmotion/src/art/artmemorymanager.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/art/artmemorymanager.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/art/artmemorymanager.cpp
+@@ -1,4 +1,4 @@
+-#include "art/ARTInternal.h"
++#include "art/artinternal.h"
+ 
+ namespace ART
+ {

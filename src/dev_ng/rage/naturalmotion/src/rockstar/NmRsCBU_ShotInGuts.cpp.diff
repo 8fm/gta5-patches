@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotInGuts.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotInGuts.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotInGuts.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotInGuts.cpp
+@@ -19,7 +19,7 @@
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+ #include "NmRsEngine.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_BalancerCollisionsReaction.h"

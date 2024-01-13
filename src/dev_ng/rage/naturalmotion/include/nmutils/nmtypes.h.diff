@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h b/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
 --- a/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
 +++ b/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
+@@ -1,7 +1,7 @@
+ #ifndef NM_TYPES_H
+ #define NM_TYPES_H
+ 
+-#include "ClientPlatformIncludes.h"
++#include "clientplatformincludes.h"
+ 
+ /**
+  * Detect the compiler currently in use
 @@ -27,7 +27,7 @@
   * Automatically configure NM_PLATFORM_? from compiler defines
   */

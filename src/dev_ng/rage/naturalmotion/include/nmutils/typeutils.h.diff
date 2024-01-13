@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/nmutils/typeutils.h b/src/dev_ng/rage/naturalmotion/include/nmutils/typeutils.h
+--- a/src/dev_ng/rage/naturalmotion/include/nmutils/typeutils.h
++++ b/src/dev_ng/rage/naturalmotion/include/nmutils/typeutils.h
+@@ -1,7 +1,7 @@
+ #ifndef NM_TYPE_UTILS_H
+ #define NM_TYPE_UTILS_H
+ 
+-#include "nmutils/NMTypes.h"
++#include "nmutils/nmtypes.h"
+ 
+ namespace NMutils
+ {

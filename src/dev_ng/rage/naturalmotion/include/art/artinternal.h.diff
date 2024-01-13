@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/art/artinternal.h b/src/dev_ng/rage/naturalmotion/include/art/artinternal.h
+--- a/src/dev_ng/rage/naturalmotion/include/art/artinternal.h
++++ b/src/dev_ng/rage/naturalmotion/include/art/artinternal.h
+@@ -1,7 +1,7 @@
+ #ifndef NM_ART_INTERNAL_H
+ #define NM_ART_INTERNAL_H
+ 
+-#include "nmutils/NMTypes.h"
++#include "nmutils/nmtypes.h"
+ 
+ #if defined(NM_PLATFORM_CELL_PPU) || defined(NM_PLATFORM_WII)
+ # include <stdio.h>
+@@ -10,11 +10,11 @@
+ #endif // NM_PLATFORM_CELL_PPU || PLATFORM_WII
+ 
+ 
+-#include "art/ARTBaseDefs.h"
+-#include "nmutils/NMCustomMemory.h"
++#include "art/artbasedefs.h"
++#include "nmutils/nmcustommemory.h"
+ #include <vector> //seems only for memset, strlen, strncpy in rage\naturalmotion\src\art\messageparams.cpp for Xbox builds
+ 
+-#include "art/ARTMemory.h"
+-#include "art/ART.h"
++#include "art/artmemory.h"
++#include "art/art.h"
+ 
+ #endif // NM_ART_INTERNAL_H

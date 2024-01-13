@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_PointGun.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_PointGun.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_PointGun.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_PointGun.cpp
+@@ -15,7 +15,7 @@
+ 
+ #include "NmRsInclude.h"
+ #include "NmRsCBU_PointGun.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"

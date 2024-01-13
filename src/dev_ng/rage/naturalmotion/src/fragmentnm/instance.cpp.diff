@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/fragmentnm/instance.cpp b/src/dev_ng/rage/naturalmotion/src/fragmentnm/instance.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/fragmentnm/instance.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/fragmentnm/instance.cpp
+@@ -20,20 +20,20 @@
+ #include "profile/element.h"
+ #include "system/timer.h"
+ 
+-#include <art/ARTRockstar.h>
++#include <art/artrockstar.h>
+ #include <map>
+ #include <vector>
+ #include <list>
+-#include <art/ARTBaseDefs.h>
++#include <art/artbasedefs.h>
+ #include <art/art.h>
+-#include <art/MessageParams.h>
++#include <art/messageparams.h>
+ #if HACK_GTA4 // To fix compile error with bankrelease.
+-#include <NMutils/TypeUtils.h>
++#include <nmutils/typeutils.h>
+ #endif // HACK_GTA4
+ #include <rockstar/NmRsCommon.h>
+ #include <rockstar/NmRsInclude.h>
+ #include <rockstar/NmRsCharacter.h>
+-#include <NMutils/TypeUtils.h>
++#include <nmutils/typeutils.h>
+ #include "fragment/typephysicslod.h"
+ 
+ FRAGMENT_OPTIMISATIONS()

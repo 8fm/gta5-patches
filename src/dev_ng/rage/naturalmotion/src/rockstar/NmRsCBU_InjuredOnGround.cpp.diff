@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_InjuredOnGround.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_InjuredOnGround.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_InjuredOnGround.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_InjuredOnGround.cpp
+@@ -30,7 +30,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ #include "NmRsCBU_InjuredOnGround.h"
+ 
+ #include "NmRsCBU_TaskManager.h"

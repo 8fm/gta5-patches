@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotMelee.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotMelee.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotMelee.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShotMelee.cpp
+@@ -18,7 +18,7 @@
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+ #include "NmRsCBU_HeadLook.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_DynamicBalancer.h"
