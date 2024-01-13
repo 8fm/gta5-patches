@@ -9,7 +9,10 @@ for d in "${few_diffs[@]}"; do
   do
     CUR_DIFF="$PATCH_DIR/$f.diff"
     mkdir -p "$(dirname $CUR_DIFF)"
-    git diff $d "$f" | sed $'s/$/\r/' > $CUR_DIFF
+    case "$(uname -s)" in
+      Linux*) git diff $d "$f" | sed '2,3{/^index/d;}' | sed $'s/\r$//' > $CUR_DIFF ;;
+           *) git diff $d "$f" | sed '2,3{/^index/d;}' | sed $'s/$/\r/' > $CUR_DIFF ;;
+    esac
   done
 done
 echo "DONE"
