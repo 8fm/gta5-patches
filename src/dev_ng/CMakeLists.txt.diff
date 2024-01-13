@@ -1,6 +1,6 @@
 diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
-index 000000000..ca2681c70
+index 000000000..57104e082
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
 @@ -0,0 +1,52 @@
@@ -49,8 +49,8 @@ index 000000000..ca2681c70
 +add_subdirectory(rage/base/src/vcproj/RagePhysics)
 +add_subdirectory(rage/script/src/vcproj/RageScript)
 +add_subdirectory(rage/base/src/vcproj/RageSec)
-+add_subdirectory(rage/suite/src/vcproj/RageSuiteCreature)
 +endif()
++add_subdirectory(rage/suite/src/vcproj/RageSuiteCreature)
 +add_subdirectory(rage/scaleform/Src/vcproj/scaleformgfx)
 +
 +if (MSVC)
