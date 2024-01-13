@@ -1,6 +1,6 @@
 diff --git a/src/dev_ng/BuildOptions.cmake b/src/dev_ng/BuildOptions.cmake
 new file mode 100644
-index 000000000..c613d8ff5
+index 000000000..c16fcd14d
 --- /dev/null
 +++ b/src/dev_ng/BuildOptions.cmake
 @@ -0,0 +1,35 @@
@@ -26,7 +26,7 @@ index 000000000..c613d8ff5
 +    endif()
 +else()
 +    if (${GAME_CONFIG} STREQUAL "BankRelease")
-+        add_compile_options(-include ${CMAKE_SOURCE_DIR}/rage/base/src/forceinclude/win64_bankrelease.h)
++        add_compile_options(-include${CMAKE_SOURCE_DIR}/rage/base/src/forceinclude/win64_bankrelease.h)
 +    endif()
 +
 +    add_compile_options(-std=c++14 -fpermissive -Wno-narrowing)

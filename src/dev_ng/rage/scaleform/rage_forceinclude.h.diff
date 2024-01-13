@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/rage/scaleform/rage_forceinclude.h b/src/dev_ng/rage/scaleform/rage_forceinclude.h
+index fd728b2a9..d58393b96 100644
+--- a/src/dev_ng/rage/scaleform/rage_forceinclude.h
++++ b/src/dev_ng/rage/scaleform/rage_forceinclude.h
+@@ -23,13 +23,13 @@
+ #endif 
+ 
+ // Need to make sure winsock2.h gets #included before <windows.h> - otherwise we grab the winsock.h header file which conflicts.
+-#if __WIN32PC || RSG_DURANGO
++#if (__WIN32PC || RSG_DURANGO) && !__LINUX
+ # define STRICT
+ # pragma warning(push)
+ # pragma warning(disable: 4668)
+ # include <winsock2.h>
+ # include "../../../base/src/system/xtl.h"
+ # pragma warning(pop)
+-#elif __XENON
++#elif __XENON || __LINUX
+ # include "../../../base/src/system/xtl.h"
+ #endif

@@ -1,9 +1,9 @@
 diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
-index 000000000..fe9b61aa9
+index 000000000..ca2681c70
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
-@@ -0,0 +1,50 @@
+@@ -0,0 +1,52 @@
 +cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 +cmake_policy(VERSION 3.12)
 +
@@ -50,7 +50,9 @@ index 000000000..fe9b61aa9
 +add_subdirectory(rage/script/src/vcproj/RageScript)
 +add_subdirectory(rage/base/src/vcproj/RageSec)
 +add_subdirectory(rage/suite/src/vcproj/RageSuiteCreature)
++endif()
 +add_subdirectory(rage/scaleform/Src/vcproj/scaleformgfx)
 +
++if (MSVC)
 +add_subdirectory(game/VS_Project)
 +endif()
