@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/string/string.h b/src/dev_ng/rage/base/src/string/string.h
-index 3912d6e10..47dc78b00 100644
 --- a/src/dev_ng/rage/base/src/string/string.h
 +++ b/src/dev_ng/rage/base/src/string/string.h
 @@ -40,14 +40,14 @@ namespace rage {

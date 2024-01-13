@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp
-index b4a4b5c84..8aedef3f1 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmsWindmill.cpp
 @@ -386,8 +386,8 @@ namespace ART

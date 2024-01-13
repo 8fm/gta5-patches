@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp b/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp
-index bf9481936..168cedca1 100644
 --- a/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp
 +++ b/src/dev_ng/rage/base/src/cranimation/channelvariablequantize.cpp
 @@ -87,7 +87,7 @@ bool crAnimChannelVariableQuantizeFloat::CreateFloat(float* floats, int num, int

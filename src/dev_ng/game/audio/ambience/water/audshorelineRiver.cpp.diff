@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp b/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
-index 855958486..fe8ef7275 100644
 --- a/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
 +++ b/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
 @@ -890,7 +890,7 @@ void audShoreLineRiver::UpdateRiverSounds(const u8 closestRiverIdx)

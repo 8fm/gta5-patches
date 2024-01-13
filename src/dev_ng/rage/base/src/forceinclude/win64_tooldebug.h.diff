@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_tooldebug.h b/src/dev_ng/rage/base/src/forceinclude/win64_tooldebug.h
-index 12ca98822..631def429 100644
 --- a/src/dev_ng/rage/base/src/forceinclude/win64_tooldebug.h
 +++ b/src/dev_ng/rage/base/src/forceinclude/win64_tooldebug.h
 @@ -202,6 +202,11 @@ END_NS_RAGE

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/grcore/opengl.h b/src/dev_ng/rage/base/src/grcore/opengl.h
-index c735af9c3..b7c81e7af 100644
 --- a/src/dev_ng/rage/base/src/grcore/opengl.h
 +++ b/src/dev_ng/rage/base/src/grcore/opengl.h
 @@ -27,7 +27,7 @@

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h
-index a5ba51211..3a233b11a 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputData.h
 @@ -83,20 +83,20 @@ struct NmRsIKInputData

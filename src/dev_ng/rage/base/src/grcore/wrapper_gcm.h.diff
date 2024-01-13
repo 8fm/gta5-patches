@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h b/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h
-index db5caf7d2..0ebf2f717 100644
 --- a/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h
 +++ b/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h
 @@ -33,7 +33,7 @@ struct CellGcmContextData;

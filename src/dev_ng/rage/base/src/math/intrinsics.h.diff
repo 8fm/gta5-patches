@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/math/intrinsics.h b/src/dev_ng/rage/base/src/math/intrinsics.h
-index b03412f1f..26d401b99 100644
 --- a/src/dev_ng/rage/base/src/math/intrinsics.h
 +++ b/src/dev_ng/rage/base/src/math/intrinsics.h
 @@ -93,6 +93,29 @@ __forceinline unsigned char _BitScanReverse64(unsigned long *Index, unsigned lon

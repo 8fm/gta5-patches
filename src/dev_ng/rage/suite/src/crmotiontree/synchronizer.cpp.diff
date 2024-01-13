@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp b/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp
-index 8326cfc2b..a9feb61ea 100644
 --- a/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp
 +++ b/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp
 @@ -21,6 +21,8 @@

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp b/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
-index 82ca25717..00d575883 100644
 --- a/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
 +++ b/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
 @@ -928,7 +928,7 @@ void audShoreLineOcean::UpdateOceanBeachSound(const Vector3 &centrePoint,const V

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/math/amath.h b/src/dev_ng/rage/base/src/math/amath.h
-index 6e3b3f222..b21501937 100644
 --- a/src/dev_ng/rage/base/src/math/amath.h
 +++ b/src/dev_ng/rage/base/src/math/amath.h
 @@ -932,7 +932,7 @@ inline float Modf(float f, float* i)

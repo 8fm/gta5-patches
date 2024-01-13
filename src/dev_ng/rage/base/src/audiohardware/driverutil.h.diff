@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/audiohardware/driverutil.h b/src/dev_ng/rage/base/src/audiohardware/driverutil.h
-index 7d8ff2ca4..93de8b52c 100644
 --- a/src/dev_ng/rage/base/src/audiohardware/driverutil.h
 +++ b/src/dev_ng/rage/base/src/audiohardware/driverutil.h
 @@ -244,7 +244,7 @@ public:

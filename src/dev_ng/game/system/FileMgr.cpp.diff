@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/system/FileMgr.cpp b/src/dev_ng/game/system/FileMgr.cpp
-index 6c8144639..ba67dc046 100644
 --- a/src/dev_ng/game/system/FileMgr.cpp
 +++ b/src/dev_ng/game/system/FileMgr.cpp
 @@ -114,7 +114,7 @@

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/file/stream.cpp b/src/dev_ng/rage/base/src/file/stream.cpp
-index d2e4301b2..cbb4433ad 100644
 --- a/src/dev_ng/rage/base/src/file/stream.cpp
 +++ b/src/dev_ng/rage/base/src/file/stream.cpp
 @@ -598,7 +598,7 @@ int fiStream::ReadShort(unsigned short *dest,int num) {

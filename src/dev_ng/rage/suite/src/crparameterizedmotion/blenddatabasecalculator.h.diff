@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h b/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h
-index b5ec62bfc..3d86a8466 100644
 --- a/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h
 +++ b/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h
 @@ -13,6 +13,7 @@

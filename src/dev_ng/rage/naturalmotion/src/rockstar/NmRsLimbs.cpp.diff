@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
-index 6235bf5b3..49e9dc0e8 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.cpp
 @@ -21,7 +21,7 @@

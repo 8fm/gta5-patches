@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp b/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp
-index 29039c350..54a315f57 100644
 --- a/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp
 +++ b/src/dev_ng/rage/base/src/audiosoundtypes/sound.cpp
 @@ -360,7 +360,9 @@ audSound::~audSound()

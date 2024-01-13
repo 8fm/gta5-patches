@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/string/unicode.h b/src/dev_ng/rage/base/src/string/unicode.h
-index 4f94c6481..54cbfe5fa 100644
 --- a/src/dev_ng/rage/base/src/string/unicode.h
 +++ b/src/dev_ng/rage/base/src/string/unicode.h
 @@ -204,7 +204,9 @@ namespace rage

@@ -1,5 +1,4 @@
 diff --git a/tools_ng/bin/setenv.bat b/tools_ng/bin/setenv.bat
-index 2d1fbf797..61636f85e 100644
 --- a/tools_ng/bin/setenv.bat
 +++ b/tools_ng/bin/setenv.bat
 @@ -29,7 +29,7 @@ SET RS_TOOLSSRC=%RS_PROJROOT%\src\dev_ng\rage\framework\tools\src

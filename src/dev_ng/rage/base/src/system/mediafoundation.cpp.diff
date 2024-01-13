@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/system/mediafoundation.cpp b/src/dev_ng/rage/base/src/system/mediafoundation.cpp
-index 894a530c9..a73edae40 100644
 --- a/src/dev_ng/rage/base/src/system/mediafoundation.cpp
 +++ b/src/dev_ng/rage/base/src/system/mediafoundation.cpp
 @@ -5,9 +5,15 @@

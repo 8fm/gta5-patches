@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/scaleform/Include/GFxPlayer.h b/src/dev_ng/rage/scaleform/Include/GFxPlayer.h
-index 9ac959bfc..74f5c3f37 100644
 --- a/src/dev_ng/rage/scaleform/Include/GFxPlayer.h
 +++ b/src/dev_ng/rage/scaleform/Include/GFxPlayer.h
 @@ -30,7 +30,7 @@ THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR ANY PURPOSE.

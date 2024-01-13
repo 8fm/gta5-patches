@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h
-index c405a0625..a792802dd 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectors.h
 @@ -404,7 +404,7 @@ namespace ART

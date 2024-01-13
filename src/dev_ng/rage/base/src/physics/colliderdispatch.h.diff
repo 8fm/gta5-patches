@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/physics/colliderdispatch.h b/src/dev_ng/rage/base/src/physics/colliderdispatch.h
-index 8f6d54aed..e9b1cc16d 100644
 --- a/src/dev_ng/rage/base/src/physics/colliderdispatch.h
 +++ b/src/dev_ng/rage/base/src/physics/colliderdispatch.h
 @@ -7,8 +7,8 @@

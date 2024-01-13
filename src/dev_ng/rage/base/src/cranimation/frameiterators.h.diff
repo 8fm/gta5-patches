@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/cranimation/frameiterators.h b/src/dev_ng/rage/base/src/cranimation/frameiterators.h
-index 7b2c05de0..460a81f39 100644
 --- a/src/dev_ng/rage/base/src/cranimation/frameiterators.h
 +++ b/src/dev_ng/rage/base/src/cranimation/frameiterators.h
 @@ -842,7 +842,7 @@ bool crFrameIterator<_T>::IterateAnim(const crAnimation& anim, float time, crFra

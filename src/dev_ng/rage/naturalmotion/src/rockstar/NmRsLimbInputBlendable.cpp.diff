@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp
-index 83c0de8c2..2aeb64970 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.cpp
 @@ -62,7 +62,7 @@ void NmRsArmInputBlendable::sendComponents(const char* /* name */, BehaviourID /

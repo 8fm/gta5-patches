@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h
-index 1272068bc..b58a13700 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.h
 @@ -22,7 +22,7 @@

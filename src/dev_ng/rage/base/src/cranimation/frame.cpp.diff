@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/cranimation/frame.cpp b/src/dev_ng/rage/base/src/cranimation/frame.cpp
-index 72852a957..6123fb87f 100644
 --- a/src/dev_ng/rage/base/src/cranimation/frame.cpp
 +++ b/src/dev_ng/rage/base/src/cranimation/frame.cpp
 @@ -1149,7 +1149,7 @@ __forceinline void LegalIterator::IterateDofByType<QuatV>(const crFrameData::Dof

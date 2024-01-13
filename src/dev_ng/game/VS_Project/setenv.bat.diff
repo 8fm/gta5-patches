@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/VS_Project/setenv.bat b/src/dev_ng/game/VS_Project/setenv.bat
-index 107d55778..61f53be7a 100644
 --- a/src/dev_ng/game/VS_Project/setenv.bat
 +++ b/src/dev_ng/game/VS_Project/setenv.bat
 @@ -17,14 +17,14 @@ ECHO.%~dp0| FIND /I "dev_ng_live">nul && (

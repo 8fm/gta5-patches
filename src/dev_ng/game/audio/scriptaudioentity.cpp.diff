@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/audio/scriptaudioentity.cpp b/src/dev_ng/game/audio/scriptaudioentity.cpp
-index 4070da597..6bb8c5d1b 100644
 --- a/src/dev_ng/game/audio/scriptaudioentity.cpp
 +++ b/src/dev_ng/game/audio/scriptaudioentity.cpp
 @@ -7968,7 +7968,7 @@ void audScriptAudioEntity::PlayStreamFromEntityInternal(CEntity *entity)

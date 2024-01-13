@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h
-index 1a51dbc90..02a885188 100644
 --- a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h
 +++ b/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h
 @@ -67,13 +67,18 @@

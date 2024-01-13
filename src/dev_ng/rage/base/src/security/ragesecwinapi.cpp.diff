@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp b/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
-index 5da1ab256..80927be18 100644
 --- a/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
 +++ b/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
 @@ -86,7 +86,11 @@ namespace rage

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/text/TextFile.cpp b/src/dev_ng/game/text/TextFile.cpp
-index 69f6dc84b..811219774 100644
 --- a/src/dev_ng/game/text/TextFile.cpp
 +++ b/src/dev_ng/game/text/TextFile.cpp
 @@ -278,7 +278,7 @@ const char* CTextFile::GetLanguageFile(char *buffer, size_t bufferSize, bool bUs

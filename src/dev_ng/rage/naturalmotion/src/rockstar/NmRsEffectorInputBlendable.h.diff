@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h
-index a6c2fbf8e..86eb678fa 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputBlendable.h
 @@ -28,7 +28,7 @@

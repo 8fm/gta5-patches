@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_beta.h b/src/dev_ng/rage/base/src/forceinclude/win64_beta.h
-index 1bbde58fb..2b2b58255 100644
 --- a/src/dev_ng/rage/base/src/forceinclude/win64_beta.h
 +++ b/src/dev_ng/rage/base/src/forceinclude/win64_beta.h
 @@ -204,6 +204,11 @@ END_NS_RAGE

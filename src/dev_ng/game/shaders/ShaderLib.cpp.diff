@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/shaders/ShaderLib.cpp b/src/dev_ng/game/shaders/ShaderLib.cpp
-index 7bab76cff..83b0a3567 100644
 --- a/src/dev_ng/game/shaders/ShaderLib.cpp
 +++ b/src/dev_ng/game/shaders/ShaderLib.cpp
 @@ -244,7 +244,11 @@ namespace rage

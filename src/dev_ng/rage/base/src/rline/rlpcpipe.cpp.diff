@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp b/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
-index b0015459b..95a319bb9 100644
 --- a/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
 +++ b/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
 @@ -209,7 +209,7 @@ bool rlPcPipeSignInMessage::Init(RockstarId id)

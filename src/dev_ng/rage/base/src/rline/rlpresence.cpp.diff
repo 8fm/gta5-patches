@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/base/src/rline/rlpresence.cpp
-index 715f6e5d3..4ea1375f9 100644
 --- a/src/dev_ng/rage/base/src/rline/rlpresence.cpp
 +++ b/src/dev_ng/rage/base/src/rline/rlpresence.cpp
 @@ -2892,7 +2892,7 @@ rlPresence::RefreshSigninState(const int gamerIdx)

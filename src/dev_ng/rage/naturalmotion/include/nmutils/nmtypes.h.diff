@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h b/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
-index 79ae6c0dc..2a1b4f47e 100644
 --- a/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
 +++ b/src/dev_ng/rage/naturalmotion/include/nmutils/nmtypes.h
 @@ -27,7 +27,7 @@

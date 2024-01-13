@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
-index 1a9eec10e..e562d652e 100644
 --- a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
 +++ b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
 @@ -7768,12 +7768,15 @@ void audAmbientAudioEntity::SerialiseSoundName(char* xmlMessage, char* tempbuffe

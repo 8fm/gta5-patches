@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp b/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp
-index 0e111ea7e..4c4550a22 100644
 --- a/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp
 +++ b/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp
 @@ -87,9 +87,9 @@ void crExpressionStream::Process(const ExprStreamHelper& ph) const

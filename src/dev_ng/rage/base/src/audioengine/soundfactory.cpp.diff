@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp b/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp
-index 31279bbf8..7d217ea4e 100644
 --- a/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp
 +++ b/src/dev_ng/rage/base/src/audioengine/soundfactory.cpp
 @@ -140,7 +140,7 @@ audSound *audSoundFactory::GetInstanceFromMetadata(const void *metadata, audSoun

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/audioengine/soundpool.cpp b/src/dev_ng/rage/base/src/audioengine/soundpool.cpp
-index b6aa9f4b7..9d13dbf63 100644
 --- a/src/dev_ng/rage/base/src/audioengine/soundpool.cpp
 +++ b/src/dev_ng/rage/base/src/audioengine/soundpool.cpp
 @@ -929,6 +929,7 @@ void audSoundPool::PointerRangeTrapCheck(void* TRAP_ONLY(p), u32 TRAP_ONLY(size)

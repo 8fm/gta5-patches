@@ -1,6 +1,5 @@
 diff --git a/src/dev_ng/game/vs_project1_lib/CMakeLists.txt b/src/dev_ng/game/vs_project1_lib/CMakeLists.txt
 new file mode 100644
-index 000000000..21a6e0d88
 --- /dev/null
 +++ b/src/dev_ng/game/vs_project1_lib/CMakeLists.txt
 @@ -0,0 +1,43 @@

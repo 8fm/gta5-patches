@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
-index 9388e9182..a866e3906 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
 @@ -1214,7 +1214,7 @@ namespace ART

@@ -1,6 +1,5 @@
 diff --git a/src/dev_ng/rage/suite/src/vcproj/RageSuiteCreature/CMakeLists.txt b/src/dev_ng/rage/suite/src/vcproj/RageSuiteCreature/CMakeLists.txt
 new file mode 100644
-index 000000000..18ed62d98
 --- /dev/null
 +++ b/src/dev_ng/rage/suite/src/vcproj/RageSuiteCreature/CMakeLists.txt
 @@ -0,0 +1,24 @@

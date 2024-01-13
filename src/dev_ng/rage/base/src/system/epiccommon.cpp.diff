@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/system/epiccommon.cpp b/src/dev_ng/rage/base/src/system/epiccommon.cpp
-index 82d70f172..0145a5275 100644
 --- a/src/dev_ng/rage/base/src/system/epiccommon.cpp
 +++ b/src/dev_ng/rage/base/src/system/epiccommon.cpp
 @@ -124,8 +124,10 @@ const char* EOSLoginStatusToString(const EOS_ELoginStatus status)

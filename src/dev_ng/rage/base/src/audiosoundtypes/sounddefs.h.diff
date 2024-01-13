@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h b/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h
-index 72da52fb4..5da19acc1 100644
 --- a/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h
 +++ b/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h
 @@ -306,7 +306,7 @@ namespace rage

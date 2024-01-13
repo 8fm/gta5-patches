@@ -1,6 +1,5 @@
 diff --git a/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt b/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt
 new file mode 100644
-index 000000000..cee98f5ab
 --- /dev/null
 +++ b/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt
 @@ -0,0 +1,77 @@

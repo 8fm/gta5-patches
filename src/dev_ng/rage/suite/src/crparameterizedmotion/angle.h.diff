@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h b/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h
-index de57b2f70..ae95f2298 100644
 --- a/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h
 +++ b/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h
 @@ -152,6 +152,8 @@ protected:

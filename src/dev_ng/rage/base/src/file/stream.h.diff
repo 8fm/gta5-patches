@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/file/stream.h b/src/dev_ng/rage/base/src/file/stream.h
-index f5785562b..73c4dd4aa 100644
 --- a/src/dev_ng/rage/base/src/file/stream.h
 +++ b/src/dev_ng/rage/base/src/file/stream.h
 @@ -12,7 +12,7 @@

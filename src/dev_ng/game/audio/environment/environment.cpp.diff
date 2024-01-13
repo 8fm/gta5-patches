@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/audio/environment/environment.cpp b/src/dev_ng/game/audio/environment/environment.cpp
-index 5c3a90cc4..7232cb1b9 100644
 --- a/src/dev_ng/game/audio/environment/environment.cpp
 +++ b/src/dev_ng/game/audio/environment/environment.cpp
 @@ -1846,7 +1846,7 @@ void naEnvironment::UpdateInterestingTrees()

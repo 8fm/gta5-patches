@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h b/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h
-index c8303c573..48ca4bd22 100644
 --- a/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h
 +++ b/src/dev_ng/rage/base/src/grcore/orbisdurangoresourcebase.h
 @@ -1,8 +1,8 @@

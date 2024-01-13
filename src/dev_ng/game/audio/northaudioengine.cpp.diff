@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/audio/northaudioengine.cpp b/src/dev_ng/game/audio/northaudioengine.cpp
-index de6aef9b1..b721abac0 100644
 --- a/src/dev_ng/game/audio/northaudioengine.cpp
 +++ b/src/dev_ng/game/audio/northaudioengine.cpp
 @@ -753,7 +753,7 @@ void audNorthAudioEngine::GenerateMemoryReport(const char *destFileName)

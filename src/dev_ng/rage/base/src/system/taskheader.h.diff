@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/system/taskheader.h b/src/dev_ng/rage/base/src/system/taskheader.h
-index 5324921aa..2ff7330d2 100644
 --- a/src/dev_ng/rage/base/src/system/taskheader.h
 +++ b/src/dev_ng/rage/base/src/system/taskheader.h
 @@ -58,7 +58,7 @@ struct sysTaskParameters {

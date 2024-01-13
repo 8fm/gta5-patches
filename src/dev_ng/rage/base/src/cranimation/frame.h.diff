@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/cranimation/frame.h b/src/dev_ng/rage/base/src/cranimation/frame.h
-index 593a8ec78..730cc1e4f 100644
 --- a/src/dev_ng/rage/base/src/cranimation/frame.h
 +++ b/src/dev_ng/rage/base/src/cranimation/frame.h
 @@ -14,6 +14,8 @@

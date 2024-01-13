@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp
-index 54a940593..4dde564d7 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsEffectorInputWrapper.cpp
 @@ -91,7 +91,7 @@ namespace ART

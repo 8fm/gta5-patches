@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/physics/debugPlayback.h b/src/dev_ng/rage/base/src/physics/debugPlayback.h
-index e0ae9d518..7fb536f08 100644
 --- a/src/dev_ng/rage/base/src/physics/debugPlayback.h
 +++ b/src/dev_ng/rage/base/src/physics/debugPlayback.h
 @@ -8,7 +8,7 @@

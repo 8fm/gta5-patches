@@ -1,6 +1,5 @@
 diff --git a/src/dev_ng/rage/base/src/vcproj/RageCore/CMakeLists.txt b/src/dev_ng/rage/base/src/vcproj/RageCore/CMakeLists.txt
 new file mode 100644
-index 000000000..aadf579eb
 --- /dev/null
 +++ b/src/dev_ng/rage/base/src/vcproj/RageCore/CMakeLists.txt
 @@ -0,0 +1,34 @@

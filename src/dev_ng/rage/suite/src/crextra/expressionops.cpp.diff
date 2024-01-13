@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/suite/src/crextra/expressionops.cpp b/src/dev_ng/rage/suite/src/crextra/expressionops.cpp
-index cadea762d..0872af470 100644
 --- a/src/dev_ng/rage/suite/src/crextra/expressionops.cpp
 +++ b/src/dev_ng/rage/suite/src/crextra/expressionops.cpp
 @@ -2455,31 +2455,31 @@ void crExpressionOpUnary::Process(ProcessHelper& ph) const

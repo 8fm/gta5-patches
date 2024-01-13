@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
-index 0c9b0d484..3737d1781 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BalancerCollisionsReaction.cpp
 @@ -1343,12 +1343,12 @@ namespace ART

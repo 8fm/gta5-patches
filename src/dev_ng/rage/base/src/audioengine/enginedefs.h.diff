@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/audioengine/enginedefs.h b/src/dev_ng/rage/base/src/audioengine/enginedefs.h
-index 79da8ff8c..5f9681cdf 100644
 --- a/src/dev_ng/rage/base/src/audioengine/enginedefs.h
 +++ b/src/dev_ng/rage/base/src/audioengine/enginedefs.h
 @@ -7,7 +7,7 @@

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/paging/array.h b/src/dev_ng/rage/base/src/paging/array.h
-index 48ddd4351..576b4d417 100644
 --- a/src/dev_ng/rage/base/src/paging/array.h
 +++ b/src/dev_ng/rage/base/src/paging/array.h
 @@ -42,7 +42,7 @@ public:

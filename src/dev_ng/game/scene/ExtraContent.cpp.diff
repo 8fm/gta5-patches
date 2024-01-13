@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/scene/ExtraContent.cpp b/src/dev_ng/game/scene/ExtraContent.cpp
-index 75e22b995..ac83d74d6 100644
 --- a/src/dev_ng/game/scene/ExtraContent.cpp
 +++ b/src/dev_ng/game/scene/ExtraContent.cpp
 @@ -98,7 +98,7 @@ RAGE_DEFINE_CHANNEL(dlc, DIAG_SEVERITY_DISPLAY, DIAG_SEVERITY_DISPLAY, DIAG_SEVE

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/Directory.Build.props b/src/dev_ng/Directory.Build.props
-index b6c0bb302..57358d075 100644
 --- a/src/dev_ng/Directory.Build.props
 +++ b/src/dev_ng/Directory.Build.props
 @@ -69,7 +69,7 @@

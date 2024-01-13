@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/game/Peds/PedMotionData.h b/src/dev_ng/game/Peds/PedMotionData.h
-index db59fc92f..76e2dc4fd 100644
 --- a/src/dev_ng/game/Peds/PedMotionData.h
 +++ b/src/dev_ng/game/Peds/PedMotionData.h
 @@ -290,11 +290,11 @@ public:

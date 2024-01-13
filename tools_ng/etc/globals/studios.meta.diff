@@ -1,5 +1,4 @@
 diff --git a/tools_ng/etc/globals/studios.meta b/tools_ng/etc/globals/studios.meta
-index 79efa8db0..6389c9cc2 100644
 --- a/tools_ng/etc/globals/studios.meta
 +++ b/tools_ng/etc/globals/studios.meta
 @@ -4,13 +4,14 @@

@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/audioengine/soundset.cpp b/src/dev_ng/rage/base/src/audioengine/soundset.cpp
-index f9883a8dc..bec12a3dc 100644
 --- a/src/dev_ng/rage/base/src/audioengine/soundset.cpp
 +++ b/src/dev_ng/rage/base/src/audioengine/soundset.cpp
 @@ -23,7 +23,7 @@ namespace rage

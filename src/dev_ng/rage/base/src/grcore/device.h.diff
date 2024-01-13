@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/grcore/device.h b/src/dev_ng/rage/base/src/grcore/device.h
-index df206010d..4bae5f1ee 100644
 --- a/src/dev_ng/rage/base/src/grcore/device.h
 +++ b/src/dev_ng/rage/base/src/grcore/device.h
 @@ -41,7 +41,7 @@

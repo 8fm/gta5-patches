@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h
-index 7232f24a4..5e6478474 100644
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputBlendable.h
 @@ -52,7 +52,7 @@ public:

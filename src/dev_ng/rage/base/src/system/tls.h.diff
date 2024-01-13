@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/system/tls.h b/src/dev_ng/rage/base/src/system/tls.h
-index 9167dfb68..bb2cb5fe6 100644
 --- a/src/dev_ng/rage/base/src/system/tls.h
 +++ b/src/dev_ng/rage/base/src/system/tls.h
 @@ -17,7 +17,7 @@

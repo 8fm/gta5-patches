@@ -1,5 +1,4 @@
 diff --git a/tools_ng/etc/globals/rag.meta b/tools_ng/etc/globals/rag.meta
-index ce392b655..c9ffb6766 100644
 --- a/tools_ng/etc/globals/rag.meta
 +++ b/tools_ng/etc/globals/rag.meta
 @@ -4,12 +4,13 @@

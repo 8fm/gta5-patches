@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/system/wndproc.h b/src/dev_ng/rage/base/src/system/wndproc.h
-index 84661ae56..ca568edc4 100644
 --- a/src/dev_ng/rage/base/src/system/wndproc.h
 +++ b/src/dev_ng/rage/base/src/system/wndproc.h
 @@ -14,10 +14,10 @@ namespace rage {

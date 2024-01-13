@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/framework/src/video/media_common.h b/src/dev_ng/rage/framework/src/video/media_common.h
-index be5786010..0dc2ad5ba 100644
 --- a/src/dev_ng/rage/framework/src/video/media_common.h
 +++ b/src/dev_ng/rage/framework/src/video/media_common.h
 @@ -55,7 +55,7 @@ struct IMFAttributes;

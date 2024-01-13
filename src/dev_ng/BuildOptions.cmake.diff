@@ -1,6 +1,5 @@
 diff --git a/src/dev_ng/BuildOptions.cmake b/src/dev_ng/BuildOptions.cmake
 new file mode 100644
-index 000000000..c16fcd14d
 --- /dev/null
 +++ b/src/dev_ng/BuildOptions.cmake
 @@ -0,0 +1,35 @@

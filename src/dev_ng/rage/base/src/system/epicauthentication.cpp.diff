@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/system/epicauthentication.cpp b/src/dev_ng/rage/base/src/system/epicauthentication.cpp
-index 622a9e4f8..fe17f416f 100644
 --- a/src/dev_ng/rage/base/src/system/epicauthentication.cpp
 +++ b/src/dev_ng/rage/base/src/system/epicauthentication.cpp
 @@ -489,8 +489,10 @@ void sysEpicAuthentication::LoginStatusChangedCallback(const EOS_Auth_LoginStatu

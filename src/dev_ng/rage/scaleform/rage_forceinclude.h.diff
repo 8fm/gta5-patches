@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/scaleform/rage_forceinclude.h b/src/dev_ng/rage/scaleform/rage_forceinclude.h
-index fd728b2a9..d58393b96 100644
 --- a/src/dev_ng/rage/scaleform/rage_forceinclude.h
 +++ b/src/dev_ng/rage/scaleform/rage_forceinclude.h
 @@ -23,13 +23,13 @@
