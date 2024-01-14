@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.h b/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.h
+--- a/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.h
++++ b/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.h
+@@ -1,12 +1,12 @@
+ #ifndef PHBOUND_BOUNDGEOM_SECOND_SURFACE_H
+ #define PHBOUND_BOUNDGEOM_SECOND_SURFACE_H
+ 
+-#include "phCore/constants.h"
++#include "phcore/constants.h"
+ #include "physics/inst.h"
+ 
+ #if HACK_GTA4_BOUND_GEOM_SECOND_SURFACE_DATA
+ 
+-#include "boundGeom.h"
++#include "boundgeom.h"
+ #include "primitives.h"
+ #include "vector/vector3.h"
+ 

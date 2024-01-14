@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/physics/debugcontacts.h b/src/dev_ng/rage/base/src/physics/debugcontacts.h
+--- a/src/dev_ng/rage/base/src/physics/debugcontacts.h
++++ b/src/dev_ng/rage/base/src/physics/debugcontacts.h
+@@ -6,7 +6,7 @@
+ 
+ #ifndef __PHYSICS_DEBUG_CONTACTS_H__
+ #define __PHYSICS_DEBUG_CONTACTS_H__
+-#include "debugevents.h"
++#include "debugEvents.h"
+ 
+ #if PDR_ENABLED
+ 

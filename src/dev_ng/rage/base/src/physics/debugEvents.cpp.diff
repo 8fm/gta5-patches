@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/physics/debugEvents.cpp b/src/dev_ng/rage/base/src/physics/debugEvents.cpp
+--- a/src/dev_ng/rage/base/src/physics/debugEvents.cpp
++++ b/src/dev_ng/rage/base/src/physics/debugEvents.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-20011 Rockstar Games.  All Rights Reserved. 
+ // 
+ 
+-#include "debugevents.h"
++#include "debugEvents.h"
+ 
+ #if DR_ENABLED
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/phbullet/IterativeCast.cpp b/src/dev_ng/rage/base/src/phbullet/IterativeCast.cpp
+--- a/src/dev_ng/rage/base/src/phbullet/IterativeCast.cpp
++++ b/src/dev_ng/rage/base/src/phbullet/IterativeCast.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2012 Rockstar Games.  All Rights Reserved. 
+ // 
+ 
+-#include "iterativecast.h"
++#include "IterativeCast.h"
+ 
+ #include "phbound/bound.h"
+ #include "phbound/support.h"
