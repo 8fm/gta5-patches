@@ -4,8 +4,8 @@ PATCH_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 echo "PATCH_DIR=$PATCH_DIR"
 few_diffs=( "--" "--cached" )
 for d in "${few_diffs[@]}"; do
-  echo "git diff --name-only $d $1"
-  git diff --name-only $d $1 | while read f
+  echo "git diff --name-only $d $@"
+  git diff --name-only $d $@ | while read f
   do
     CUR_DIFF="$PATCH_DIR/$f.diff"
     mkdir -p "$(dirname $CUR_DIFF)"
