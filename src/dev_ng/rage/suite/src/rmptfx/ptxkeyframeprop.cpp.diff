@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframeprop.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframeprop.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframeprop.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframeprop.cpp
+@@ -11,9 +11,9 @@
+ 
+ // includes (rmptfx)
+ #include "rmptfx/ptxbiaslink.h"
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxdebug.h"
+-#include "rmptfx/ptxinterface.h"
++#include "rmptfx/ptxInterface.h"
+ #include "rmptfx/ptxmanager.h"
+ 
+ // includes (rage)

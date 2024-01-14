@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxShadervar.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxShadervar.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxShadervar.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxShadervar.cpp
+@@ -5,10 +5,10 @@
+ // 
+ 
+ // includes (us)
+-#include "ptxshadervar.h"
++#include "ptxShadervar.h"
+ #include "ptxshadervar_parser.h"
+ 
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxfxlist.h"
+ #include "rmptfx/ptxmanager.h"

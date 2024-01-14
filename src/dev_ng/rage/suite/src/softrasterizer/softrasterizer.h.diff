@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h b/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h
 --- a/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h
 +++ b/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h
-@@ -20,7 +20,7 @@
+@@ -16,11 +16,11 @@
+ #include "data/base.h"
+ 
+ #include "softrasterizer/boxoccluder.h"
+-#include "softrasterizer/occludemodel.h"
++#include "softrasterizer/occludeModel.h"
  #include "softrasterizer/tiler.h"
  
  #if __BANK

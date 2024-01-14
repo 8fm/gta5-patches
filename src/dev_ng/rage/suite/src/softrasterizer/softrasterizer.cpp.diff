@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.cpp b/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.cpp
+--- a/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.cpp
++++ b/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.cpp
+@@ -15,7 +15,7 @@
+ #include "grcore/quads.h"
+ #endif
+ #include "vectormath/legacyconvert.h"
+-#include "softrasterizer/boxOccluder.h"
++#include "softrasterizer/boxoccluder.h"
+ #include "system/new.h"
+ 
+ #include "system/dependencyscheduler.h"

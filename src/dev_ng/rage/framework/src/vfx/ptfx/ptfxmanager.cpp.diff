@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxmanager.cpp b/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxmanager.cpp
+--- a/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxmanager.cpp
++++ b/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxmanager.cpp
+@@ -13,7 +13,7 @@
+ #include "rmptfx/ptxmanager.h"
+ #include "system/param.h"
+ #if RMPTFX_EDITOR
+-#include "rmptfx/ptxinterface.h"
++#include "rmptfx/ptxInterface.h"
+ #endif
+ 
+ // includes (framework)

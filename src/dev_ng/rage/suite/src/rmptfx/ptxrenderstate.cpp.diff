@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxrenderstate.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxrenderstate.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxrenderstate.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxrenderstate.cpp
+@@ -9,7 +9,7 @@
+ #include "rmptfx/ptxrenderstate_parser.h"
+ 
+ // includes (rmptfx)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxconfig.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxmanager.h"

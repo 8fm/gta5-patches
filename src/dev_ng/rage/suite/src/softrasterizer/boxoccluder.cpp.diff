@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder.cpp b/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder.cpp
+--- a/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder.cpp
++++ b/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder.cpp
+@@ -3,7 +3,7 @@
+ 
+ using namespace rage::Vec;
+ 
+-#include "softrasterizer/BoxOccluder.h"
++#include "softrasterizer/boxoccluder.h"
+ #include "math/amath.h"
+ #include "profile/profiler.h"
+ #include "softrasterizer/softrasterizer.h"

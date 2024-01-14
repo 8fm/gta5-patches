@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/breakableglass/crackstemplate.h b/src/dev_ng/rage/suite/src/breakableglass/crackstemplate.h
+--- a/src/dev_ng/rage/suite/src/breakableglass/crackstemplate.h
++++ b/src/dev_ng/rage/suite/src/breakableglass/crackstemplate.h
+@@ -30,7 +30,7 @@
+ #include "atl/singleton.h"
+ #include "parser/macros.h"
+ #include "shaderlib/rage_constants.h"
+-#include "vector/Vector3.h"
++#include "vector/vector3.h"
+ #include "vector/matrix34.h"
+ #include "grcore/texture.h"
+ #include "grcore/effect.h"

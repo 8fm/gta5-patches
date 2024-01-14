@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.h b/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.h
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.h
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.h
+@@ -11,7 +11,7 @@
+ // includes (rmptfx)
+ #include "rmptfx/ptxconfig.h"
+ #include "rmptfx/ptxkeyframeprop.h"
+-#include "rmptfx/ptxtimeline.h"
++#include "rmptfx/ptxTimeLine.h"
+ 
+ // includes (rage)
+ #include "math/random.h"

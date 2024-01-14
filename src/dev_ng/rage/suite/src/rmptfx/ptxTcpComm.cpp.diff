@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxTcpComm.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxTcpComm.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxTcpComm.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxTcpComm.cpp
+@@ -5,7 +5,7 @@
+ // 
+ 
+ // includes (us)
+-#include "rmptfx/ptxtcpcomm.h"
++#include "rmptfx/ptxTcpComm.h"
+ 
+ // includes (rmptfx)
+ #include "rmptfx/ptxchannel.h"
