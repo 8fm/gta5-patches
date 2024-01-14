@@ -50,6 +50,22 @@ diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev
  #define __WIN32PC	1
  #define __PAGING	1
  #define __GAMETOOL	0
+@@ -118,13 +128,13 @@ END_NS_RAGE
+ #define RSG_SPU         0
+ #define RSG_WIN32       1
+ #define RSG_XENON       0
+-#define RSG_PC          1
++#define RSG_PC          1 && __WIN32
+ #define RSG_DURANGO     0
+ #define RSG_ORBIS       0
+ #define RSG_WINRT		0
+ #define RSG_XDK			0
+ #define RSG_GDK			0
+-#define RSG_LINUX		0
++#define RSG_LINUX		1 && __LINUX
+ #define RSG_IOS			0
+ #define RSG_ANDROID		0
+ #define RSG_WINPHONE	0
 @@ -148,12 +158,21 @@ END_NS_RAGE
  #define PS3_ONLY(...)
  #define PPU_ONLY(...)
