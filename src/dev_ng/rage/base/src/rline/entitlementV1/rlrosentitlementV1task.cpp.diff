@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/entitlementV1/rlrosentitlementV1task.cpp b/src/dev_ng/rage/base/src/rline/entitlementV1/rlrosentitlementV1task.cpp
+--- a/src/dev_ng/rage/base/src/rline/entitlementV1/rlrosentitlementV1task.cpp
++++ b/src/dev_ng/rage/base/src/rline/entitlementV1/rlrosentitlementV1task.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 2012 Rockstar Games.  All Rights Reserved. 
+ // 
+ 
+-#include "rline/entitlementV1/rlRosEntitlementV1.h"
++#include "rline/entitlementV1/rlrosentitlementV1.h"
+ 
+ #if ENABLE_ENTITLEMENT_V1
+ 
