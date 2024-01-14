@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/voicechat.cpp b/src/dev_ng/rage/suite/src/avchat/voicechat.cpp
+--- a/src/dev_ng/rage/suite/src/avchat/voicechat.cpp
++++ b/src/dev_ng/rage/suite/src/avchat/voicechat.cpp
+@@ -203,7 +203,7 @@ static const float AVC_SPEEX_DOWN_SCALE = 1 / AVC_SPEEX_UP_SCALE;
+ 
+ #endif  //USE_SPEEX
+ 
+-#if __WIN32PC
++#if __WIN32PC && RSG_PC
+ static RVHardwareDevice* m_CaptureDevice;
+ static RVHardwareDevice* m_PlaybackDevice;
+ static bool m_CaptureDeviceUnplugged = false;
+@@ -962,7 +962,7 @@ VoiceChat::SetVpdThreshold(const unsigned threshold)
+         vcAssert(threshold <= MAX_VPD_THRESHOLD);
+         m_VpdThreshold = (int) threshold;
+ 
+-#if __WIN32PC
++#if __WIN32PC && RSG_PC
+         vcDebug("SetVpdThreshold :: %u", m_VpdThreshold);
+ 
+         if(IsCaptureDeviceAvailable())

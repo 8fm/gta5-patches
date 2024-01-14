@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/breakableglass/bgdrawable.cpp b/src/dev_ng/rage/suite/src/breakableglass/bgdrawable.cpp
+--- a/src/dev_ng/rage/suite/src/breakableglass/bgdrawable.cpp
++++ b/src/dev_ng/rage/suite/src/breakableglass/bgdrawable.cpp
+@@ -537,7 +537,7 @@ void bgDrawable::SetMatrices(const float *transforms, int numTransforms, int var
+ 	GRCDEVICE.EndVertexShaderConstantF(SKINNING_CBUFFER);
+ #elif __PS3
+ 	GCM_DEBUG(GCM::cellGcmSetVertexProgramParameterBlock(GCM_CONTEXT,varAddress,numTransforms*3,transforms));
+-#elif RSG_PC && __D3D11
++#elif __D3D11 && (RSG_PC || RSG_LINUX)
+ 	//On PC do this the same way the skinning matrices are done in grmGeometryQB::DrawSkinned
+ 	GRCDEVICE.SetVertexShaderConstantF(varAddress,transforms,numTransforms*3,0,g_SkinningBase->GetDataPtr());
+ 	g_SkinningBase->Unlock();

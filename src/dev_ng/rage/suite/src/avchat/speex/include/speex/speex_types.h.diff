@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/speex/include/speex/speex_types.h b/src/dev_ng/rage/suite/src/avchat/speex/include/speex/speex_types.h
+--- a/src/dev_ng/rage/suite/src/avchat/speex/include/speex/speex_types.h
++++ b/src/dev_ng/rage/suite/src/avchat/speex/include/speex/speex_types.h
+@@ -22,7 +22,7 @@
+ #ifndef _SPEEX_TYPES_H
+ #define _SPEEX_TYPES_H
+ 
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || RSG_ORBIS || __LINUX
+      typedef int spx_int32_t;
+      typedef unsigned int spx_uint32_t;
+      typedef short spx_int16_t;

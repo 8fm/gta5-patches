@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/script/src/scr_scaleform/scrscaleform.cpp b/src/dev_ng/rage/script/src/scr_scaleform/scrscaleform.cpp
+--- a/src/dev_ng/rage/script/src/scr_scaleform/scrscaleform.cpp
++++ b/src/dev_ng/rage/script/src/scr_scaleform/scrscaleform.cpp
+@@ -113,7 +113,9 @@ void sfCallRageScriptFromFlash::Callback(GFxMovieView* movieView, const char* me
+ #pragma warning(disable: 6263) // "_alloca" used in a loop. Not worried about blowing the stack here because the loop is relatively short.
+ #endif
+ 
++#if !__LINUX // TODO: check Linux
+ 				CompileTimeAssert(sizeof(wchar_t) == sizeof(char16));
++#endif
+ 				values[i].String = scrEncodeString(WIDE_TO_UTF8((const char16*)args[i].GetStringW()));
+ 
+ #if __WIN32

@@ -2,13 +2,17 @@ diff --git a/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt b/src/dev_ng/gam
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt
-@@ -0,0 +1,77 @@
+@@ -0,0 +1,81 @@
 +project(RageMisc)
 +
 +set(TARGET_TYPE "StaticLib")
 +include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
 +
 +add_definitions(-DHAVE_CONFIG_H=__XENON -DOVERRIDE_SPEEX_ERROR=1 -DOVERRIDE_SPEEX_WARNING_INT=1 -DOVERRIDE_SPEEX_WARNING=1)
++if(NOT MSVC)
++    add_definitions(-Dlinux -DSS_LEFT=0x00000000L -DSS_NOPREFIX=0x00000080L)
++    remove_definitions(-DWIN64) # RageMisc don't need WIN64 define in Linux
++endif()
 +
 +set(SRC_FILES
 +    "_Unity/_unity_RageMisc_scaleform_scr_scaleform.cpp"

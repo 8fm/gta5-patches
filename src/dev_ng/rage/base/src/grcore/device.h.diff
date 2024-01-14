@@ -19,3 +19,12 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device.h b/src/dev_ng/rage/base/src
  		grcEntry bool IsCreated() { return (GetCurrent() != NULL); }
  #endif
  
+@@ -882,7 +882,7 @@ namespace rage {
+ 
+ 		grcEntry void SetProgramResources() grcPure;
+ 
+-#if RSG_PC || RSG_DURANGO
++#if RSG_PC || RSG_DURANGO || RSG_LINUX
+ 		grcEntry void CreateShaderConstantBuffer(int ByteSize, grcBuffer **pData NOTFINAL_ONLY(, const char* pName)) grcPure;
+ 
+ 		grcEntry void CreateVertexShader(u8 *programData, u32 programSize, grcVertexShader **Program) grcPure;

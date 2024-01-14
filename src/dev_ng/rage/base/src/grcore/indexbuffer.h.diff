@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/indexbuffer.h b/src/dev_ng/rage/base/src/grcore/indexbuffer.h
+--- a/src/dev_ng/rage/base/src/grcore/indexbuffer.h
++++ b/src/dev_ng/rage/base/src/grcore/indexbuffer.h
+@@ -69,7 +69,7 @@ public:
+ 	DECLARE_PLACE(grcIndexBuffer);
+ 
+ 	static grcIndexBuffer* Create(int indexCount, bool dynamic = true, void* preAllocatedMemory = NULL);
+-#if __D3D11 && RSG_PC
++#if __D3D11 && (RSG_PC || RSG_LINUX)
+ 	static grcIndexBuffer* Clone(class grcIndexBuffer *pExisting);
+ 	static grcIndexBuffer* CreateWithData(int indexCount, grcBufferCreateType CreateType, const void* preAllocatedMemory, bool AllocateCPUCopy);
+ #elif RSG_DURANGO || RSG_ORBIS

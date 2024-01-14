@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/cutscene/cutseventargs.h b/src/dev_ng/rage/suite/src/cutscene/cutseventargs.h
+--- a/src/dev_ng/rage/suite/src/cutscene/cutseventargs.h
++++ b/src/dev_ng/rage/suite/src/cutscene/cutseventargs.h
+@@ -7,7 +7,7 @@
+ #ifndef CUTSCENE_CUTSEVENTARGS_H 
+ #define CUTSCENE_CUTSEVENTARGS_H 
+ 
+-#include "cutfile\cutfeventargs.h"
++#include "cutfile/cutfeventargs.h"
+ 
+ namespace rage {
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxdraw.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxdraw.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxdraw.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxdraw.cpp
+@@ -428,7 +428,7 @@ void ptxDrawInterface::Init()
+ 	fvf0.SetTextureChannel(4, true, grcFvf::grcdsHalf4);
+ 	fvf0.SetTextureChannel(5, true, grcFvf::grcdsHalf4);
+ 	//fvf0.SetPosChannel(false);
+-#if RSG_PC
++#if RSG_PC || RSG_LINUX
+ 	sm_pHiResVertBuffer = grcVertexBuffer::CreateWithData(PTXDRAW_NUM_VERTS_PER_SPRITE_HIRES_INDEXED, fvf0, grcsBufferCreate_NeitherReadNorWrite, (void *)singleSpriteVertHiRes, false);
+ 	sm_pLoResVertBuffer = grcVertexBuffer::CreateWithData(PTXDRAW_NUM_VERTS_PER_SPRITE_LORES_INDEXED, fvf0, grcsBufferCreate_NeitherReadNorWrite, (void *)singleSpriteVertLoRes, false);
+ 	sm_pProjVertBuffer = grcVertexBuffer::CreateWithData(PTXDRAW_NUM_VERTS_PER_SPRITE_PROJ_INDEXED, fvf0, grcsBufferCreate_NeitherReadNorWrite, (void *)singleSpriteVertProj, false);

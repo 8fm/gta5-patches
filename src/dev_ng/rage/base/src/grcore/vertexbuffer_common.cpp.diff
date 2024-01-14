@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/vertexbuffer_common.cpp b/src/dev_ng/rage/base/src/grcore/vertexbuffer_common.cpp
+--- a/src/dev_ng/rage/base/src/grcore/vertexbuffer_common.cpp
++++ b/src/dev_ng/rage/base/src/grcore/vertexbuffer_common.cpp
+@@ -181,7 +181,7 @@ grcVertexBuffer* grcVertexBuffer::Create(int vertCount, const grcFvf& pFvf, bool
+ }
+ 
+ 
+-#if __D3D11	&& RSG_PC
++#if __D3D11 && (RSG_PC || RSG_LINUX)
+ grcVertexBuffer* grcVertexBuffer::Create(int vertCount, const grcFvf& pFvf, grcBufferCreateType CreateType, grcsBufferSyncType SyncType, void* preAllocatedMemory, bool AllocateCPUCopy)
+ {
+ 	bool bDynamic = (CreateType == grcsBufferCreate_NeitherReadNorWrite) ? false : true;
