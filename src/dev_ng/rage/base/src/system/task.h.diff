@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/task.h b/src/dev_ng/rage/base/src/system/task.h
+--- a/src/dev_ng/rage/base/src/system/task.h
++++ b/src/dev_ng/rage/base/src/system/task.h
+@@ -143,7 +143,7 @@ public:
+ 	
+ 	static void DispatchLocally( const sysPreparedTaskHandle& prepHdle);
+ 
+-#if __WIN32 || __PSP2 || RSG_ORBIS
++#if __WIN32 || __PSP2 || RSG_ORBIS || __LINUX
+ 	// PURPOSE:	Create a new scheduler object and add it to the system.
+ 	// PARAMS:	name - Name for the scheduler (For debugger thread view) (up to 13 characters)
+ 	//			stackSize - Thread stack size of each worker thread

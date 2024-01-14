@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/base/src/pheffects/wind.cpp b/src/dev_ng/rage/base/src/pheffects/wind.cpp
+--- a/src/dev_ng/rage/base/src/pheffects/wind.cpp
++++ b/src/dev_ng/rage/base/src/pheffects/wind.cpp
+@@ -18,10 +18,10 @@
+ #include "system/cache.h"
+ 
+ #if __BANK
+-#include "bank\bkmgr.h"
+-#include "bank\bank.h"
+-#include "bank\combo.h"
+-#include "bank\slider.h"
++#include "bank/bkmgr.h"
++#include "bank/bank.h"
++#include "bank/combo.h"
++#include "bank/slider.h"
+ #endif
+ 
+ WIND_OPTIMISATIONS()

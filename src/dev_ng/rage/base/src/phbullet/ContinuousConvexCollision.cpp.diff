@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/phbullet/ContinuousConvexCollision.cpp b/src/dev_ng/rage/base/src/phbullet/ContinuousConvexCollision.cpp
+--- a/src/dev_ng/rage/base/src/phbullet/ContinuousConvexCollision.cpp
++++ b/src/dev_ng/rage/base/src/phbullet/ContinuousConvexCollision.cpp
+@@ -13,7 +13,7 @@ subject to the following restrictions:
+ 3. This notice may not be removed or altered from any source distribution.
+ */
+ 
+-#include "vector\vector3_consts_spu.cpp"
++#include "vector/vector3_consts_spu.cpp"
+ 
+ #include "ContinuousConvexCollision.h"
+ #include "phbound/bound.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/physics/shapetest.cpp b/src/dev_ng/rage/base/src/physics/shapetest.cpp
+--- a/src/dev_ng/rage/base/src/physics/shapetest.cpp
++++ b/src/dev_ng/rage/base/src/physics/shapetest.cpp
+@@ -6614,7 +6614,7 @@ void phShapeTestTaskData::Init ()
+ 	m_TaskParameters.UserData[ParamIndex_ModifyReaderCountMutex].asPtr = g_GlobalPhysicsLock.GetModifyReaderCountMutexPtr();
+ #else
+ 	// Don't need to pass these via parameters on 360/PC.
+-	CompileTimeAssert(__WIN32 || RSG_ORBIS);
++	CompileTimeAssert(__WIN32 || RSG_ORBIS || __LINUX);
+ 	m_TaskParameters.UserData[ParamIndex_GlobalReaderCount].asPtr = NULL;
+ 	m_TaskParameters.UserData[ParamIndex_PhysicsMutex].asPtr = NULL;
+ 	m_TaskParameters.UserData[ParamIndex_AllowNewReaderMutex].asPtr = NULL;

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/physics/archetype.cpp b/src/dev_ng/rage/base/src/physics/archetype.cpp
+--- a/src/dev_ng/rage/base/src/physics/archetype.cpp
++++ b/src/dev_ng/rage/base/src/physics/archetype.cpp
+@@ -305,7 +305,7 @@ bool phArchetype::Save (const char* name, eBoundDestination dest, const char* bo
+ }
+ 
+ 
+-bool phArchetype::Save (fiAsciiTokenizer & token, eBoundDestination WIN32PC_ONLY(dest),
++bool phArchetype::Save (fiAsciiTokenizer & token, eBoundDestination WIN32PC_ONLY(dest) LINUX_ONLY(dest),
+ 						const char* UNUSED_PARAM(boundFilename))
+ {
+ 	token.Put("version: 100\n");

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/physics/simulator.cpp b/src/dev_ng/rage/base/src/physics/simulator.cpp
+--- a/src/dev_ng/rage/base/src/physics/simulator.cpp
++++ b/src/dev_ng/rage/base/src/physics/simulator.cpp
+@@ -68,6 +68,8 @@
+ 
+ #if RSG_ORBIS
+ #include <kernel.h>
++#elif RSG_LINUX
++#include <climits>
+ #endif
+ 
+ #define INCLUDE_DETAIL_PHYS_SIM_TIMEBARS 0

@@ -14,7 +14,7 @@ diff --git a/src/dev_ng/rage/base/src/string/string.h b/src/dev_ng/rage/base/src
  #endif
  
 -#ifdef _MSC_VER 
-+#if _MSC_VER < 1900
++#if __WIN32 && _MSC_VER < 1900
  #define snprintf _snprintf
  #endif
  
