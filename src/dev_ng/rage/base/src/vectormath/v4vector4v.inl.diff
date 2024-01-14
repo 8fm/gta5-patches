@@ -1,5 +1,4 @@
 diff --git a/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl b/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl
-index 1e08b2a04..058335daf 100644
 --- a/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl
 +++ b/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl
 @@ -331,6 +331,8 @@ namespace Vec
