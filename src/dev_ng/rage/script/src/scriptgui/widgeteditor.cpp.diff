@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp b/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp
+--- a/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp
++++ b/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp
+@@ -271,6 +271,11 @@ void scrWidgetEditor::RemoteUpdate()
+ #if __WIN32PC
+ #include "system/xtl.h"
+ 
++#if __LINUX
++#define SS_LEFT     0x00000000L
++#define SS_NOPREFIX 0x00000080L
++#endif
++
+ void scrWidgetEditor::WindowCreate() 
+ {
+ 	if ( !bkRemotePacket::IsConnectedToRag() )
