@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/net/nethardware.cpp b/src/dev_ng/rage/base/src/net/nethardware.cpp
+--- a/src/dev_ng/rage/base/src/net/nethardware.cpp
++++ b/src/dev_ng/rage/base/src/net/nethardware.cpp
+@@ -20,7 +20,7 @@
+ #include <libnetctl.h>
+ #include "rline/rlnp.h"			//For rlNp::IsOnline
+ #include "rline/rlnpcommon.h"
+-#elif RSG_PC
++#elif RSG_PC || RSG_LINUX // missing rline for Linux source code
+ #include "rline/ros/rlros.h"	//For rlRos::IsOnline()
+ #elif RSG_LINUX
+ #include "rline/ggp/rlggp.h"	// For IsOnline()
+@@ -306,7 +306,7 @@ netHardware::Update()
+ 			isOnline = g_rlNp.IsOnline(i);
+ #elif __RGSC_DLL
+ 		isOnline = netHardware::IsLinkConnected();
+-#elif RSG_LINUX
++#elif RSG_LINUX && 0 // missing rline for Linux source code
+ 		isOnline = g_rlGgp.IsOnline();
+ #elif RL_SC_PLATFORMS
+         for(int i = 0; i < RL_MAX_LOCAL_GAMERS && !isOnline; ++i)

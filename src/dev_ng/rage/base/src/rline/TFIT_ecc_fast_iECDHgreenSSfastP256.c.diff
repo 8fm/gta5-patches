@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/TFIT_ecc_fast_iECDHgreenSSfastP256.c b/src/dev_ng/rage/base/src/rline/TFIT_ecc_fast_iECDHgreenSSfastP256.c
+--- a/src/dev_ng/rage/base/src/rline/TFIT_ecc_fast_iECDHgreenSSfastP256.c
++++ b/src/dev_ng/rage/base/src/rline/TFIT_ecc_fast_iECDHgreenSSfastP256.c
+@@ -2,7 +2,7 @@
+ #define _INTPTR 1
+ 
+ #endif
+-#include "..\file\file_config.h"
++#include "../file/file_config.h"
+ #include "TFIT_ecc_fast_iECDHgreenSSfastP256.h"
+ 
+ #if RSG_PC

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.cpp b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.cpp
+--- a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.cpp
++++ b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.cpp
+@@ -3,7 +3,7 @@
+ // Jason Hughes
+ //-------------------
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "../First.h"
+ #include "heartbeat.h"

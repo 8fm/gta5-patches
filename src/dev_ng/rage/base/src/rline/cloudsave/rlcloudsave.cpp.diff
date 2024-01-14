@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/cloudsave/rlcloudsave.cpp b/src/dev_ng/rage/base/src/rline/cloudsave/rlcloudsave.cpp
+--- a/src/dev_ng/rage/base/src/rline/cloudsave/rlcloudsave.cpp
++++ b/src/dev_ng/rage/base/src/rline/cloudsave/rlcloudsave.cpp
+@@ -1328,7 +1328,7 @@ namespace rage
+ 			if(m_HttpRequest.GetResponseHeaderValue("SCS-File-Version", fileVersionBuf, &bufLen))
+ 			{
+ 				u64 fileVersion = 0;
+-				if (sscanf_s(fileVersionBuf, "%" I64FMT "u", &fileVersion))
++				if (sscanf(fileVersionBuf, "%" I64FMT "u", &fileVersion))
+ 				{
+ 					// rlVerify that the file version we recovered matched what we expected in the manifest
+ 					rverify(fileVersion == m_SaveFile->GetLatestServerVersion(), catchall, );

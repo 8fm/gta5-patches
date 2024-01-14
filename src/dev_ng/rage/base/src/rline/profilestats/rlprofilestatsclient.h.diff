@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/base/src/rline/profilestats/rlprofilestatsclient.h b/src/dev_ng/rage/base/src/rline/profilestats/rlprofilestatsclient.h
+--- a/src/dev_ng/rage/base/src/rline/profilestats/rlprofilestatsclient.h
++++ b/src/dev_ng/rage/base/src/rline/profilestats/rlprofilestatsclient.h
+@@ -9,8 +9,8 @@
+ 
+ #include "rlprofilestatscommon.h"
+ #include "rlprofilestatstasks.h"
+-#include "rline\rltask.h"
+-#include "net\status.h"
++#include "rline/rltask.h"
++#include "net/status.h"
+ 
+ namespace rage
+ {

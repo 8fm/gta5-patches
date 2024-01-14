@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlsessioninfo.h b/src/dev_ng/rage/base/src/rline/rlsessioninfo.h
+--- a/src/dev_ng/rage/base/src/rline/rlsessioninfo.h
++++ b/src/dev_ng/rage/base/src/rline/rlsessioninfo.h
+@@ -163,7 +163,7 @@ public:
+ 	static const unsigned MAX_EXPORTED_SIZE_IN_BYTES = rlXblSessionHandle::MAX_EXPORTED_SIZE_IN_BYTES +
+ 													   sizeof(rlSessionToken) +
+ 													   rlPeerAddress::MAX_EXPORTED_SIZE_IN_BYTES;
+-#elif RSG_PC
++#elif RSG_PC || RSG_LINUX
+ 	static const unsigned MAX_EXPORTED_SIZE_IN_BYTES = rlPeerAddress::MAX_EXPORTED_SIZE_IN_BYTES + 
+ 													   sizeof(u64) +
+ 													   sizeof(rlSessionToken);
+@@ -234,7 +234,7 @@ private:
+     rlNpMatchId m_WepApiMatchId;
+ #endif
+ 
+-#if RSG_XBOX || RSG_NP || RSG_PC
++#if RSG_XBOX || RSG_NP || RSG_PC || RSG_LINUX
+ 	rlSessionToken m_SessionToken;
+ 	rlPeerAddress m_HostPeerAddr;
+ #endif

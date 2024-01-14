@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/base/src/net/netsocket.h b/src/dev_ng/rage/base/src/net/netsocket.h
+--- a/src/dev_ng/rage/base/src/net/netsocket.h
++++ b/src/dev_ng/rage/base/src/net/netsocket.h
+@@ -80,9 +80,12 @@ enum netAddressFamily
+ // From WinSock2.h - to avoid having to include Windows headers in this header
+ //typedef UINT_PTR SOCKET;
+ #if RSG_CPU_X64
+-typedef unsigned __int64 netSocketFd;
++typedef uint64_t netSocketFd;
+ #else
+-typedef unsigned __int32 netSocketFd;
++typedef uint32_t netSocketFd;
++#endif
++#if __LINUX
++#define INVALID_SOCKET -1
+ #endif
+ #define NET_INVALID_SOCKET_FD (INVALID_SOCKET)
+ #define NET_IS_VALID_SOCKET_FD(fd) (fd != NET_INVALID_SOCKET_FD)

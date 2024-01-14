@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlgamerhandle.h b/src/dev_ng/rage/base/src/rline/rlgamerhandle.h
+--- a/src/dev_ng/rage/base/src/rline/rlgamerhandle.h
++++ b/src/dev_ng/rage/base/src/rline/rlgamerhandle.h
+@@ -7,7 +7,7 @@
+ #ifndef RLINE_RLGAMERHANDLE
+ #define RLINE_RLGAMERHANDLE
+ 
+-#include "net\net.h"
++#include "net/net.h"
+ 
+ namespace rage
+ {
+@@ -18,7 +18,7 @@ namespace rage
+ //  If a platform can't, any import of the service's handle will fail.
+ #define RLGAMERHANDLE_XBL       RSG_XBL || RSG_DURANGO
+ #define RLGAMERHANDLE_NP        RSG_NP
+-#define RLGAMERHANDLE_SC		RSG_PC
++#define RLGAMERHANDLE_SC		RSG_PC || RSG_LINUX
+ 
+ //PURPOSE
+ //  rlGamerHandle provides a container for platform-specific gamer

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp b/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp
+@@ -469,7 +469,7 @@ rlFriendsReader::Update()
+ 
+ bool
+ rlFriendsReader::Read(const int localGamerIndex,
+-#if RSG_NP || RSG_PC || RSG_DURANGO
++#if RSG_NP || RSG_PC || RSG_DURANGO || RSG_LINUX
+ #if __RGSC_DLL
+ 					   const unsigned /*firstFriendIndex*/,
+ #else

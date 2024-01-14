@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/base/src/rline/clan/rlclanclient.h b/src/dev_ng/rage/base/src/rline/clan/rlclanclient.h
+--- a/src/dev_ng/rage/base/src/rline/clan/rlclanclient.h
++++ b/src/dev_ng/rage/base/src/rline/clan/rlclanclient.h
+@@ -9,9 +9,9 @@
+ 
+ #include "rlclancommon.h"
+ #include "rlclantasks.h"
+-#include "rline\rltask.h"
+-#include "atl\bitset.h"
+-#include "net\status.h"
++#include "rline/rltask.h"
++#include "atl/bitset.h"
++#include "net/status.h"
+ 
+ namespace rage
+ {

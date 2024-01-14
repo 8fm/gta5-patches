@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/base/src/rline/rl.h b/src/dev_ng/rage/base/src/rline/rl.h
 --- a/src/dev_ng/rage/base/src/rline/rl.h
 +++ b/src/dev_ng/rage/base/src/rline/rl.h
+@@ -55,7 +55,7 @@ typedef s32 PlayerAccountId;
+ 
+ #define RL_MAX_BUF_FOR_UTF_CHARS(i) ((i*4)+1) // 4-byte UTF8
+ 
+-#define RL_SC_PLATFORMS		(RSG_PC || RSG_ANDROID || RSG_IOS || RSG_OSX || RSG_NX || RSG_P)
++#define RL_SC_PLATFORMS		(RSG_PC || RSG_ANDROID || RSG_IOS || RSG_OSX || RSG_LINUX || RSG_NX || RSG_P)
+ 
+ #if RL_SC_PLATFORMS
+ #define SC_PLATFORMS_ONLY(...) __VA_ARGS__
 @@ -169,7 +169,7 @@ enum
  	RL_PRESENCE_MAX_FIELDS		= 3,
  	RL_MAX_PARTY_SIZE			= 32,

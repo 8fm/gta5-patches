@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlfriend.h b/src/dev_ng/rage/base/src/rline/rlfriend.h
+--- a/src/dev_ng/rage/base/src/rline/rlfriend.h
++++ b/src/dev_ng/rage/base/src/rline/rlfriend.h
+@@ -290,7 +290,7 @@ public:
+ 
+ private:
+ 
+-#if RSG_NP
++#if RSG_NP || RSG_LINUX
+ 	rlFriendsReference  m_FriendReference;
+ 	u8                  m_PresenceBlob[RL_PRESENCE_MAX_BUF_SIZE];
+ 	unsigned            m_PresenceBlobSize;

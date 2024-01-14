@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/base/src/rline/unlocks/rlunlocksclient.h b/src/dev_ng/rage/base/src/rline/unlocks/rlunlocksclient.h
+--- a/src/dev_ng/rage/base/src/rline/unlocks/rlunlocksclient.h
++++ b/src/dev_ng/rage/base/src/rline/unlocks/rlunlocksclient.h
+@@ -9,9 +9,9 @@
+ 
+ #include "rlunlockscommon.h"
+ #include "rlunlockstasks.h"
+-#include "rline\rltask.h"
+-#include "atl\bitset.h"
+-#include "net\status.h"
++#include "rline/rltask.h"
++#include "atl/bitset.h"
++#include "net/status.h"
+ 
+ namespace rage
+ {

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/peeraddress.cpp b/src/dev_ng/rage/base/src/net/peeraddress.cpp
+--- a/src/dev_ng/rage/base/src/net/peeraddress.cpp
++++ b/src/dev_ng/rage/base/src/net/peeraddress.cpp
+@@ -14,7 +14,7 @@
+ #include "string/stringutil.h"
+ #include <string.h>
+ 
+-#if RSG_LINUX
++#if RSG_LINUX && 0 // missing rline for Linux source code
+ #if (YETI_VERSION >= YETI_MAKE_VERSION(1, 33, 0))
+ #include <ggp/gamelet_config.h>
+ #include <ggp/multiplayer.h>

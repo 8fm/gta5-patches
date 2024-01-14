@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/base/src/rline/clan/rlclan.h b/src/dev_ng/rage/base/src/rline/clan/rlclan.h
+--- a/src/dev_ng/rage/base/src/rline/clan/rlclan.h
++++ b/src/dev_ng/rage/base/src/rline/clan/rlclan.h
+@@ -9,10 +9,10 @@
+ 
+ #include "file/handle.h"
+ #include "rlclancommon.h"
+-#include "rline\rltask.h"
+-#include "atl\delegate.h"
+-#include "file\handle.h"
+-#include "net\status.h"
++#include "rline/rltask.h"
++#include "atl/delegate.h"
++#include "file/handle.h"
++#include "net/status.h"
+ 
+ namespace rage
+ {
