@@ -1,0 +1,71 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bkmgr.cpp b/src/dev_ng/rage/base/src/bank/bkmgr.cpp
+--- a/src/dev_ng/rage/base/src/bank/bkmgr.cpp
++++ b/src/dev_ng/rage/base/src/bank/bkmgr.cpp
+@@ -154,7 +154,7 @@ bkManager::bkManager(const char *appName) : bkGroup(NullCB,appName?appName:bkRem
+ 	if (!bkRemotePacket::IsServer())
+ 		RemoteCreate();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (bkWidget::sm_EnableWindows)
+ 	{
+ 		WindowCreate();
+@@ -845,7 +845,7 @@ void bkManager::Invoke(bkInvokeDelegate::DelType del, size_t udata)
+ 	}
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #pragma warning(disable: 4668)
+ #include <commdlg.h>
+ #pragma warning(error: 4668)
+@@ -859,7 +859,7 @@ const char*	bkManager::OpenFile(const char *mask,bool save,const char *descripti
+ 		return NULL;
+ 	}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	char			filter[128];
+ 	static char		name[128];
+ 	OPENFILENAME	fileName;
+@@ -995,7 +995,7 @@ bool bkManager::OpenFile(char *dest,int maxDest,const char *mask,bool save,const
+ 		else 
+ 			return false;
+ 	}
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	else 
+ 	{
+ 		char			filter[128];
+@@ -1035,7 +1035,7 @@ bool bkManager::OpenFile(char *dest,int maxDest,const char *mask,bool save,const
+ }
+ 
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ HWND bkManager::sm_Owner;
+ 
+@@ -1081,7 +1081,7 @@ bkPane* bkManager::GetPane() {
+ #endif
+ 
+ void bkManager::RaiseAllBanks(bool /*ontop*/) {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (m_Pane)
+ 	{
+ 		BringWindowToTop(m_Pane->GetOuterHandle());
+@@ -1097,11 +1097,11 @@ void bkManager::RaiseAllBanks(bool /*ontop*/) {
+ 
+ 
+ bool bkManager::GetNextMessage(bool 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 							   blockFlag
+ #endif
+ 							   ) {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	MSG msg;
+ 	while (!blockFlag ? PeekMessage(&msg,0,0,0,PM_REMOVE) : GetMessage(&msg,0,0,0)) {
+ 		TranslateMessage(&msg);

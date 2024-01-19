@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/data/aes.h b/src/dev_ng/rage/base/src/data/aes.h
+--- a/src/dev_ng/rage/base/src/data/aes.h
++++ b/src/dev_ng/rage/base/src/data/aes.h
+@@ -59,7 +59,7 @@ namespace rage {
+ #elif __RGSC_DLL
+ #define AES_KEY_ID_DEFAULT	AES_KEY_ID_RGSC
+ #elif HACK_GTA4
+-	#if RSG_PC
++	#if RSG_PC || RSG_LINUX
+ 		#define AES_KEY_ID_DEFAULT	AES_KEY_ID_WBC_GTA5_PC
+ 	#elif RSG_ORBIS
+ 		#define AES_KEY_ID_DEFAULT	AES_MULTIKEY_ID_GTA5_PS4

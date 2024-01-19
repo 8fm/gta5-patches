@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/bank/widget.h b/src/dev_ng/rage/base/src/bank/widget.h
+--- a/src/dev_ng/rage/base/src/bank/widget.h
++++ b/src/dev_ng/rage/base/src/bank/widget.h
+@@ -234,7 +234,7 @@ public:
+ 	//
+ 	static void SetShownLineCount(int count);
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// PURPOSE
+ 	// Called at the beginning of tools that are WIN32 that don't wish to have buttons.
+ 	static void DisableWindows() { sm_EnableWindows = false; }
+@@ -250,7 +250,7 @@ protected:
+ 
+ 	virtual void InternalDestroy();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	static bool sm_EnableWindows;
+ 	virtual void WindowCreate() = 0;
+ 	virtual void WindowUpdate();

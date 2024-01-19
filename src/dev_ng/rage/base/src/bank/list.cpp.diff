@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/list.cpp b/src/dev_ng/rage/base/src/bank/list.cpp
+--- a/src/dev_ng/rage/base/src/bank/list.cpp
++++ b/src/dev_ng/rage/base/src/bank/list.cpp
+@@ -171,7 +171,7 @@ void bkList::RemoteHandler(const bkRemotePacket& packet) {
+ void bkList::Update() {
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void bkList::WindowCreate() 

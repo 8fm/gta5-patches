@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/rage/base/src/system/cache.h b/src/dev_ng/rage/base/src/system/cache.h
+--- a/src/dev_ng/rage/base/src/system/cache.h
++++ b/src/dev_ng/rage/base/src/system/cache.h
+@@ -13,9 +13,9 @@
+ #include <spu_intrinsics.h>
+ #elif __PPU
+ #include <ppu_intrinsics.h>
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ #include <emmintrin.h>
+-#elif RSG_ORBIS
++#elif RSG_ORBIS || RSG_LUNUX
+ #include <emmintrin.h>
+ #include <xmmintrin.h>
+ #elif RSG_DURANGO
+@@ -28,7 +28,7 @@
+ #include <stddef.h>
+ #endif
+ 
+-#if RSG_ORBIS || RSG_DURANGO || RSG_PC
++#if RSG_ORBIS || RSG_DURANGO || RSG_PC || RSG_LINUX
+ // PURPOSE: Use in place of ALIGNAS to align a variable or class to a cache line
+ #define RSG_CACHE_LINE_SIZE 64
+ #elif RSG_PS3 || RSG_XENON
+@@ -61,7 +61,7 @@ static inline void WritebackDC(const void *base,size_t bytes) {
+ 		start += 128;
+ 	} while (start <= end);
+ }
+-#elif RSG_DURANGO || RSG_ORBIS || RSG_PC
++#elif RSG_DURANGO || RSG_ORBIS || RSG_PC  || RSG_LINUX
+ static inline void WritebackDC(const void *base,size_t bytes) {
+ #	if __WIN32PC
+ 		const size_t cacheLineSize = g_DataCacheLineSize;

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/system/exec.cpp b/src/dev_ng/rage/base/src/system/exec.cpp
+--- a/src/dev_ng/rage/base/src/system/exec.cpp
++++ b/src/dev_ng/rage/base/src/system/exec.cpp
+@@ -14,7 +14,7 @@
+ 
+ namespace rage {
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ int sysExec(const char *commandLine) {
+ 	return system(commandLine);
+ }
+@@ -45,7 +45,7 @@ bool sysGetEnv(const char *NOTFINAL_ONLY(env),char *NOTFINAL_ONLY(dest),int NOTF
+ #endif
+ }
+ 
+-#if __WIN32PC || __XENON
++#if (__WIN32PC && !__LINUX) || __XENON
+ sysLibrary* sysLoadLibrary(const char *path) {
+ 	return (sysLibrary*) ::LoadLibrary(path);
+ }

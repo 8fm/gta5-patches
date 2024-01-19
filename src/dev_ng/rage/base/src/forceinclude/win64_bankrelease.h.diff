@@ -41,11 +41,11 @@ diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev
  #define __PSP2		0
  #define __CAFE		0
 +#ifdef _WIN32
- #define __LINUX		0
 +#define __WIN32		1
+ #define __LINUX		0
 +#else
-+#define __LINUX		1
 +#define __WIN32		0
++#define __LINUX		1
 +#endif // _WIN32
  #define __WIN32PC	1
  #define __PAGING	1

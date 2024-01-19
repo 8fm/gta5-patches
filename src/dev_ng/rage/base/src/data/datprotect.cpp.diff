@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/data/datprotect.cpp b/src/dev_ng/rage/base/src/data/datprotect.cpp
+--- a/src/dev_ng/rage/base/src/data/datprotect.cpp
++++ b/src/dev_ng/rage/base/src/data/datprotect.cpp
+@@ -48,7 +48,7 @@ datSign(const u8* dataToProtect,
+ 	// we'll add 32-20 = 12 bytes of salt data to the signature
+ 	mthRandom r(sysTimer::GetSystemMsTime());
+ 	u32 random_number = r.GetInt();
+-#if __PPU || __PSP2 || RSG_ORBIS
++#if __PPU || __PSP2 || RSG_ORBIS || RSG_LINUX
+ 	u64 timestamp = time(NULL);
+ #else
+ 	__time64_t timestamp = _time64(NULL);

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/parser/psodebug.h b/src/dev_ng/rage/base/src/parser/psodebug.h
+--- a/src/dev_ng/rage/base/src/parser/psodebug.h
++++ b/src/dev_ng/rage/base/src/parser/psodebug.h
+@@ -6,7 +6,7 @@
+ 
+ #include "psofile.h"
+ 
+-#include "diag\restservice.h"
++#include "diag/restservice.h"
+ 
+ #if !__FINAL
+ namespace rage

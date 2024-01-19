@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bkgroup.cpp b/src/dev_ng/rage/base/src/bank/bkgroup.cpp
+--- a/src/dev_ng/rage/base/src/bank/bkgroup.cpp
++++ b/src/dev_ng/rage/base/src/bank/bkgroup.cpp
+@@ -994,7 +994,7 @@ bkAngle* bkGroup::AddAngle( const char *title, Vector2 *data, float min, float m
+ 
+ 
+ // Specifies on what platforms the color picker dialog box is supported
+-#define __CLR_DIALOG (__WIN32PC)
++#define __CLR_DIALOG (__WIN32PC && !__LINUX)
+ 
+ #if __CLR_DIALOG
+ 
+@@ -1171,7 +1171,7 @@ bkColor* bkGroup::AddColor(const char * title,Vec3V * color)
+ 	return AddColor(title,color,1.0f / 256, NullCB);
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void bkGroup::WindowCreate() {

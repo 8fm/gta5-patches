@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bkvector.h b/src/dev_ng/rage/base/src/bank/bkvector.h
+--- a/src/dev_ng/rage/base/src/bank/bkvector.h
++++ b/src/dev_ng/rage/base/src/bank/bkvector.h
+@@ -139,7 +139,7 @@ private:
+ 
+ 	int m_drawLocalExpanded;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	void WindowCreate();
+ 	void WindowUpdate();
+ 	void WindowDestroy();
+@@ -203,7 +203,7 @@ inline void bkVector::SetStep( float step )
+ 	m_step = step;
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ inline int bkVector::GetComponentInFocus() const
+ {

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/XMessageBox.cpp b/src/dev_ng/rage/base/src/bank/XMessageBox.cpp
+--- a/src/dev_ng/rage/base/src/bank/XMessageBox.cpp
++++ b/src/dev_ng/rage/base/src/bank/XMessageBox.cpp
+@@ -108,7 +108,7 @@
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #ifndef _MFC_VER
+ #include "system/xtl.h"
+ #define GetClassName GetClassNameA

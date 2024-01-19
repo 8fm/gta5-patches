@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/vectormath/vectorutility.cpp b/src/dev_ng/rage/base/src/vectormath/vectorutility.cpp
+--- a/src/dev_ng/rage/base/src/vectormath/vectorutility.cpp
++++ b/src/dev_ng/rage/base/src/vectormath/vectorutility.cpp
+@@ -2,7 +2,7 @@
+ #include "vectorutility.h"
+ #include "vectormath.h"
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #pragma warning(disable:4668)
+ #include <intrin.h>
+ #pragma warning(error:4668)
+@@ -63,7 +63,7 @@ namespace rage
+ 		return Temp.u;
+ 	}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	eProcVendor GetProcVendor()
+ 	{
+ 		// References:
+@@ -200,7 +200,7 @@ namespace Vec
+ #endif
+ 	}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	eSSESupport GetSSESupportLevel()
+ 	{
+ 		// References:

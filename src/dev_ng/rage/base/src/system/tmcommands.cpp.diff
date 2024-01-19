@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/tmcommands.cpp b/src/dev_ng/rage/base/src/system/tmcommands.cpp
+--- a/src/dev_ng/rage/base/src/system/tmcommands.cpp
++++ b/src/dev_ng/rage/base/src/system/tmcommands.cpp
+@@ -454,7 +454,7 @@ void sysTmInit(bool waitConnect, u32 timeoutMs)
+ #	undef TMCMD_HEADER
+ 
+ 
+-#elif RSG_PC
++#elif RSG_PC || RSG_LINUX
+ 
+ 	extern "C" void sysTmCmdNop_Internal();
+ 	extern "C" void sysTmCmdPrintAllThreadStacks_Internal();

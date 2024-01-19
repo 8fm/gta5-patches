@@ -1,0 +1,125 @@
+diff --git a/src/dev_ng/rage/base/src/system/ipc.cpp b/src/dev_ng/rage/base/src/system/ipc.cpp
+--- a/src/dev_ng/rage/base/src/system/ipc.cpp
++++ b/src/dev_ng/rage/base/src/system/ipc.cpp
+@@ -28,7 +28,7 @@
+ #include <stdarg.h>
+ #include <stdio.h>
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #  pragma comment(lib, "winmm.lib")
+ #include <xmmintrin.h>
+ #elif __XENON
+@@ -52,6 +52,10 @@
+ #include <time.h>		// for timespec
+ #include <altivec.h>
+ #pragma comment(lib, "pthread")
++#elif RSG_LINUX
++#include <semaphore.h>
++#include <sys/time.h>
++#include <unistd.h>
+ #elif RSG_ORBIS
+ #include <semaphore.h>
+ #include <sys/errno.h>
+@@ -253,7 +257,7 @@ void sysIpcWaitSema(sysIpcSema sema,unsigned count) {
+ #			endif
+ 		} while (--count);
+ 
+-#	elif ORBIS_USE_POSIX_SEMAPHORES && 1
++#	elif ORBIS_USE_POSIX_SEMAPHORES && !__LINUX
+ 		// Temporary workaround for bug in sem_wait where caller may never get woken up.
+ 		// https://ps4.scedev.net/support/issue/35767/
+ 
+@@ -352,6 +356,11 @@ bool sysIpcWaitSemaTimed(sysIpcSema sema,unsigned milliseconds) {
+ 				sceKernelGettimeofday(&tv);
+ 				tv.tv_usec += milliseconds * 1000;
+ 				struct timespec ts = { tv.tv_sec + (tv.tv_usec/1000000), (tv.tv_usec % 1000000) * 1000 };
++#			elif RSG_LINUX
++				struct timeval tv;
++				gettimeofday(&tv, 0);
++				tv.tv_usec += milliseconds * 1000;
++				struct timespec ts = { tv.tv_sec + (tv.tv_usec / 1000000), (tv.tv_usec % 1000000) * 1000 };
+ #			else
+ 				sys_time_sec_t sec;
+ 				sys_time_nsec_t nsec;
+@@ -559,6 +568,8 @@ bool sysIpcTryLockMutexCommand(sysIpcMutex mutex TELEMETRY_ARGS(, char const *st
+ 	bool bRet = sys_lwmutex_trylock((sys_lwmutex_t*)mutex) == CELL_OK;
+ #elif RSG_ORBIS
+ 	bool bRet = scePthreadMutexTrylock((ScePthreadMutex*)&mutex) == 0;
++#elif RSG_LINUX
++	bool bRet = true; // TODO: add Linux support with sem_wait
+ #elif __PSP2
+ 	bool bRet = sceKernelTryLockMutex((SceUID)mutex,1) == 0;
+ #endif
+@@ -604,7 +615,7 @@ void sysIpcDeleteMutex(sysIpcMutex mutex) {
+ #endif
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ // ipcTime calls timeGetTime.  Many programs never actually use ipcTime, which causes a linker warning on WINMM.LIB.
+ // But if we remove the pragma, those same programs don't link.  Solution -- put a dummy call in elsewhere.
+ static struct winmm_hack_t {
+@@ -693,7 +704,7 @@ bool sysIpcEstimateStackUsage(unsigned &outCurrent,unsigned &outMax) {
+ #if __FINAL || __PSP2 || RSG_DURANGO /* TODO */
+ 	outCurrent = outMax = 0;
+ 	return false;
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ 	MEMORY_BASIC_INFORMATION memInfo;
+ 	if(VirtualQuery(&memInfo, &memInfo, sizeof(memInfo)) != sizeof(memInfo))
+ 	{
+@@ -769,7 +780,7 @@ void sysIpcComputeStackRange(void **stackTop, void **stackBottom)
+ 	scePthreadAttrGetstackaddr(&attr, stackBottom); 
+ 	scePthreadAttrDestroy(&attr); 
+ 	*stackTop = (char*)*stackBottom + stackSize;
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ 	// Use the TIB would be preferable (Faster and easier), but the TIB only contains the
+ 	// stack commit size, not the reserve size, and since this function is likely called early
+ 	// on in the thread lifetime, the committed stack region is likely much smaller than the
+@@ -1000,6 +1011,8 @@ sysIpcThreadId sysIpcGetThreadId() {
+ 	return (sysIpcThreadId) threadInfo;
+ #elif RSG_ORBIS
+ 	return (sysIpcThreadId) scePthreadSelf();
++#elif RSG_LINUX
++	return (sysIpcThreadId) pthread_self();
+ #else
+ 	return (sysIpcThreadId) GetCurrentThread();
+ #endif
+@@ -1036,7 +1049,7 @@ sysIpcThreadId sysIpcCreateThread(sysIpcThreadFunc func,void *closure,unsigned s
+ #else
+ sysIpcThreadId sysIpcCreateThread(sysIpcThreadFunc func,void *closure,unsigned stackSize,sysIpcPriority priority,const char *threadName,int XENON_ONLY(cpu) PSP2_ONLY(cpu) ORBIS_ONLY(cpu) DURANGO_ONLY(cpu), const char *threadTtyName) {
+ 
+-#if RSG_PC 
++#if RSG_PC || RSG_LINUX
+ 	// affinityMask will be ignored, so just pass in -1 
+ 	u32 mask = (u32)-1;
+ #elif RSG_DURANGO
+@@ -1250,7 +1263,7 @@ bool sysIpcWaitThreadExit(sysIpcThreadId id) {
+ 
+ 
+ void sysIpcSetThreadProcessor(sysIpcThreadId WIN32PC_ONLY(id) XENON_ONLY(id) DURANGO_ONLY(id) ORBIS_ONLY(id), int WIN32PC_ONLY(cpu) XENON_ONLY(cpu) DURANGO_ONLY(cpu) ORBIS_ONLY(cpu)) {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #if RSG_PC && !__RESOURCECOMPILER && !__TOOL
+ 	if (!PARAM_useSystemThreadManagement.Get())
+ #endif // RSG_PC
+@@ -1311,7 +1324,7 @@ int sysIpcGetThreadProcessor(sysIpcThreadId id)
+ 
+ 
+ int sysIpcGetProcessorCount() {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	SYSTEM_INFO info;
+ 	GetSystemInfo(&info);
+ 	return info.dwNumberOfProcessors;
+@@ -1319,6 +1332,8 @@ int sysIpcGetProcessorCount() {
+ 	return 6;
+ #elif RSG_ORBIS
+ 	return 6;
++#elif RSG_LINUX
++	return sysconf(_SC_NPROCESSORS_ONLN);
+ #else
+ 	return __PPU+1;
+ #endif

@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/bank/slider.cpp b/src/dev_ng/rage/base/src/bank/slider.cpp
+--- a/src/dev_ng/rage/base/src/bank/slider.cpp
++++ b/src/dev_ng/rage/base/src/bank/slider.cpp
+@@ -115,7 +115,7 @@ void bkSliderVal<ScalarV>::Changed()
+ 	bkSliderVal<float>::Changed();
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ static WNDPROC s_OldSliderEditWinProc;
+ 
+@@ -324,7 +324,7 @@ int bkSlider::WindowResize(int x,int y,int width,int height) {
+ #endif
+ 
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #define MAKE_CASE_CHECK(state,chr)	(state | (chr << 16))
+ 
+ bool bkSlider::ValidateString(const char* string,bool okOnly) const
+@@ -553,7 +553,7 @@ void bkSlider::SetFont(bool bold) {
+ 
+ 
+ bool bkSlider::SetFocus() {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (m_Edit)
+ 		::SetFocus(m_Edit);
+ #endif

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/rage/base/src/system/stockallocator.cpp b/src/dev_ng/rage/base/src/system/stockallocator.cpp
+--- a/src/dev_ng/rage/base/src/system/stockallocator.cpp
++++ b/src/dev_ng/rage/base/src/system/stockallocator.cpp
+@@ -40,7 +40,9 @@ void *stockAllocator::Allocate(size_t size,size_t ASSERT_ONLY(align),int /*heapI
+ 	{
+ 		Errorf("Attempting to allocate %u bytes on a locked heap",(u32)size);
+ 	}
+-#if __WIN32PC
++#if __LINUX
++	return aligned_alloc(size, align);
++#elif __WIN32PC
+ 	return _aligned_malloc(size, align); 
+ #else
+ 	AssertMsg(((align & 0xf)==0) , "need at least 16 byte alignment");
+@@ -68,7 +70,7 @@ void stockAllocator::Free(const void *ptr) {
+ 		Errorf("Attempting to free memory from a locked heap (%p)",ptr);
+ 	}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	_aligned_free(const_cast<void*>(ptr)); 
+ #else
+ 	free(const_cast<void*>(ptr));

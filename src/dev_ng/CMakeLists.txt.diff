@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
-@@ -0,0 +1,52 @@
+@@ -0,0 +1,54 @@
 +cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 +cmake_policy(VERSION 3.12)
 +
@@ -39,7 +39,9 @@ new file mode 100644
 +add_subdirectory(rage/naturalmotion/vcproj/NaturalMotion)
 +if (MSVC)
 +add_subdirectory(rage/base/src/vcproj/RageAudio)
++endif()
 +add_subdirectory(rage/base/src/vcproj/RageCore)
++if (MSVC)
 +add_subdirectory(rage/base/src/vcproj/RageCreature)
 +add_subdirectory(rage/framework/src/vcproj/RageFramework)
 +add_subdirectory(rage/base/src/vcproj/RageGraphics)

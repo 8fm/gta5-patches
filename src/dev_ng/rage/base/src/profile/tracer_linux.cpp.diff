@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/profile/tracer_linux.cpp b/src/dev_ng/rage/base/src/profile/tracer_linux.cpp
+--- a/src/dev_ng/rage/base/src/profile/tracer_linux.cpp
++++ b/src/dev_ng/rage/base/src/profile/tracer_linux.cpp
+@@ -192,7 +192,7 @@ struct Parser
+ 		int whitespaceCount = skipWhitespaces ? SkipWhitespaces() : 0;
+ 		Assert(whitespaceCount < _Size);
+ 		int length = (int)_Size - whitespaceCount;
+-		strncpy_s(dest, _Size, cursor, length);
++		strncpy(dest, cursor, length);
+ 		Skip(length);
+ 		return _Size;
+ 	}
+@@ -201,7 +201,7 @@ struct Parser
+ 	int ReadString(char (&dest)[_Size], int maxLength)
+ 	{
+ 		int length = Min(maxLength, (int)_Size - 1);
+-		strncpy_s(dest, _Size, cursor, length);
++		strncpy(dest, cursor, length);
+ 		Skip(length);
+ 		return length;
+ 	}

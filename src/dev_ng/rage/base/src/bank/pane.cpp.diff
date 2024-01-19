@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/pane.cpp b/src/dev_ng/rage/base/src/bank/pane.cpp
+--- a/src/dev_ng/rage/base/src/bank/pane.cpp
++++ b/src/dev_ng/rage/base/src/bank/pane.cpp
+@@ -11,7 +11,7 @@
+ #include "system/param.h"
+ #include "system/bootmgr.h"
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #pragma comment(lib,"comctl32.lib")
+ #include "system/xtl.h"
+ #pragma warning(disable: 4668)

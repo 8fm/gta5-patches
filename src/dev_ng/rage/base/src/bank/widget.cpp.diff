@@ -1,0 +1,64 @@
+diff --git a/src/dev_ng/rage/base/src/bank/widget.cpp b/src/dev_ng/rage/base/src/bank/widget.cpp
+--- a/src/dev_ng/rage/base/src/bank/widget.cpp
++++ b/src/dev_ng/rage/base/src/bank/widget.cpp
+@@ -126,7 +126,7 @@ bkWidget& bkWidget::AddChild(bkWidget& newChild) {
+ 	*c = &newChild;
+ 	newChild.m_Parent = this;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (sm_EnableWindows && !IsClosedGroup())
+ 		newChild.WindowCreate();
+ #endif
+@@ -234,7 +234,7 @@ int bkWidget::sm_ShownLineCount = 10;
+ bkWidget* bkWidget::sm_Focus;
+ bool bkWidget::sm_setWidgetId = true;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #if __TOOL
+ bool bkWidget::sm_EnableWindows = false; //This would be best tied to a command line option
+ #else
+@@ -306,7 +306,7 @@ bool bkWidget::IsClosedGroup() const {
+ 
+ void bkWidget::Rebuild()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	SetClosed();
+ 
+ 	if ( sm_EnableWindows )
+@@ -363,7 +363,7 @@ void bkWidget::InternalDestroy() {
+ 
+ 	Detach();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (sm_EnableWindows)
+ 		WindowDestroy();
+ #endif
+@@ -384,7 +384,7 @@ void bkWidget::InternalDestroy() {
+ bkWidget& bkWidget::FinishCreate() {
+ 	if (bkRemotePacket::IsConnected())
+ 		RemoteCreate();
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (GetPane())
+ 		GetPane()->SetNeedsResize();
+ #endif
+@@ -395,13 +395,13 @@ bkWidget& bkWidget::FinishCreate() {
+ void bkWidget::FinishUpdate() {
+ 	if (bkRemotePacket::IsConnected())
+ 		RemoteUpdate();
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	WindowUpdate();
+ #endif
+ }
+ 
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ void bkWidget::WindowUpdate() {
+ }
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/buddyallocator.h b/src/dev_ng/rage/base/src/system/buddyallocator.h
+--- a/src/dev_ng/rage/base/src/system/buddyallocator.h
++++ b/src/dev_ng/rage/base/src/system/buddyallocator.h
+@@ -144,7 +144,7 @@ private:
+ 	RAGE_MEMORY_DEBUG_ONLY(size_t m_watermark;)
+ };
+ 
+-#if RSG_PC
++#if RSG_PC || RSG_LINUX
+ 
+ class sysMemGrowBuddyAllocator: public sysMemBuddyAllocator
+ {

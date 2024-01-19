@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/rage/base/src/diag/channel.cpp b/src/dev_ng/rage/base/src/diag/channel.cpp
+--- a/src/dev_ng/rage/base/src/diag/channel.cpp
++++ b/src/dev_ng/rage/base/src/diag/channel.cpp
+@@ -555,7 +555,7 @@ static void NativeOutputString(const char *str)
+ {
+ 	#if RSG_PC || RSG_DURANGO
+ 		OutputDebugString(str);
+-	#elif RSG_ORBIS
++	#elif RSG_ORBIS || RSG_LINUX
+ 		printf("%s", str);
+ 	#else
+ 		#error Unhandled platform
+@@ -1394,7 +1394,7 @@ u64 diagChannel::GetPosixTime()
+ static sysCriticalSectionToken printToken;
+ #endif
+ 
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || RSG_ORBIS || RSG_LINUX
+ static size_t StripColorization(char *dest,size_t destSize,const char *src)
+ {
+ 	char *d = dest;
+@@ -1422,7 +1422,7 @@ static size_t StripColorization(char *dest,size_t destSize,const char *src)
+ 
+ void diagPrintDefault(const char *msg)
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ 	// All escape sequences used at start of line are five characters long.
+ 	char temp[CHANNEL_MESSAGE_SIZE];
+@@ -1493,7 +1493,7 @@ void diagPrintDefault(const char *msg)
+ 	/* 0=PPU, 1=PPU stderr, 2=SPU, 3=USER1, 4=USER2, ... 15=USER13 */
+ 	int channel = (msg[0]=='[' && msg[1]=='S' && msg[2]=='P' && msg[3]=='U' && msg[5]==']')? SYS_TTYP2 : SYS_TTYP0;
+ 	sys_tty_write(channel,msg,strlen(msg),&pWriteLen);
+-#elif __PSP2 || RSG_ORBIS
++#elif __PSP2 || RSG_ORBIS || RSG_LINUX
+ 	/// for now...
+ 	char temp[CHANNEL_MESSAGE_SIZE];
+ 	size_t len = StripColorization(temp,sizeof(temp),msg);

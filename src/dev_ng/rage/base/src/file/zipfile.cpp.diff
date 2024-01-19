@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/file/zipfile.cpp b/src/dev_ng/rage/base/src/file/zipfile.cpp
+--- a/src/dev_ng/rage/base/src/file/zipfile.cpp
++++ b/src/dev_ng/rage/base/src/file/zipfile.cpp
+@@ -651,7 +651,7 @@ u64 fiZipfile::Seek64(fiHandle _handle,s64 offset,fiSeekWhence whence) const {
+ u64 fiZipfile::GetFileTime(const char * filename) const {
+ 	zipDirEntry *e = FindEntry(filename + m_RelativeOffset);
+ 	if (e) {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		u64 localTime;
+ 		FileTimeToLocalFileTime((FILETIME*)&e->FileTime,(FILETIME*)&localTime);
+ 		return localTime;

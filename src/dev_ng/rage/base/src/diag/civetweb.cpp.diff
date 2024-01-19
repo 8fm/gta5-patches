@@ -1,0 +1,69 @@
+diff --git a/src/dev_ng/rage/base/src/diag/civetweb.cpp b/src/dev_ng/rage/base/src/diag/civetweb.cpp
+--- a/src/dev_ng/rage/base/src/diag/civetweb.cpp
++++ b/src/dev_ng/rage/base/src/diag/civetweb.cpp
+@@ -78,7 +78,7 @@
+ #include <winxnet.h>
+ #endif
+ 
+-#elif __WIN32PC || RSG_DURANGO
++#elif (__WIN32PC && !__LINUX) || RSG_DURANGO
+ #define STRICT
+ #pragma warning(disable: 4668)
+ #include <winsock2.h>
+@@ -86,7 +86,7 @@
+ #include <stdint.h>
+ #endif // __WIN32PC
+ #pragma warning(error: 4668)
+-#elif RSG_NP
++#elif RSG_NP || RSG_LINUX
+ #if RSG_PS3
+ #include <netex/errno.h>
+ #include <sys/poll.h>
+@@ -94,6 +94,10 @@
+ #include <errno.h>
+ #include <net.h>
+ #define SO_NBIO SCE_NET_SO_NBIO
++#elif RSG_LINUX
++#include <climits>
++#include <fcntl.h>
++#undef sleep
+ #endif
+ #include <netinet/in.h>     //NOTE: Must come before sockinfo.h, because it doesn't include it itself.
+ #include <netinet/tcp.h>
+@@ -125,13 +129,13 @@
+ 	#define WINCDECL 
+ #endif
+ 
+-#if RSG_PS3 || RSG_ORBIS
++#if RSG_PS3 || RSG_ORBIS || RSG_LINUX
+ 	typedef int SOCKET;
+ 	#define ERRNO errno
+ 	#define INVALID_SOCKET (-1)
+ #endif
+ 
+-#if RSG_XENON || RSG_ORBIS
++#if RSG_XENON || RSG_ORBIS || RSG_LINUX
+ 	struct pollfd {
+ 		SOCKET fd;
+ 		short events;
+@@ -157,6 +161,11 @@
+ 	#define closesocket sceNetSocketClose
+ #endif
+ 
++#if RSG_LINUX
++	extern int close(int __fd); // #include <unistd.h>
++	#define closesocket close
++#endif
++
+ #if !RSG_ORBIS && !defined(INT64_MAX)
+ 	#define INT64_MAX  9223372036854775807
+ #endif
+@@ -1475,6 +1484,8 @@ static int set_non_blocking_mode(SOCKET listener)
+ #elif RSG_WIN32
+ 	u_long nonblocking = 1;
+ 	ioctlsocket((SOCKET)listener, FIONBIO, &nonblocking);
++#elif RSG_LINUX
++	fcntl(listener, F_SETFL, fcntl(listener, F_GETFL, 0) | O_NONBLOCK);
+ #else
+ 	int nonblocking = 1;
+ 	setsockopt((int)listener, SOL_SOCKET, SO_NBIO, (char*)&nonblocking, sizeof(nonblocking));

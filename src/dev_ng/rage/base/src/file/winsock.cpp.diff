@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/file/winsock.cpp b/src/dev_ng/rage/base/src/file/winsock.cpp
+--- a/src/dev_ng/rage/base/src/file/winsock.cpp
++++ b/src/dev_ng/rage/base/src/file/winsock.cpp
+@@ -23,7 +23,7 @@
+ #include <winxnet.h>
+ #pragma comment(lib, "xlive.lib")
+ #endif // __XENON
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ 
+ #pragma comment(lib, "Ws2_32.lib")
+ 
+@@ -168,7 +168,7 @@ void InitWinSock(int XENON_ONLY(argc), char** XENON_ONLY(argv)) {
+         }
+ #endif
+ 
+-#if __XENON || __WIN32PC
++#if __XENON || (__WIN32PC && !__LINUX)
+ 
+         //Clear out prior config possibly set by external libs like Deja.
+ #if __LIVE
+@@ -299,7 +299,7 @@ void InitWinSock(int XENON_ONLY(argc), char** XENON_ONLY(argv)) {
+ void ShutdownWinSock() {
+     if (--s_RefCount == 0)
+     {
+-#if __XENON || __WIN32PC
++#if __XENON || (__WIN32PC && !__LINUX)
+ 
+ #if __LIVE
+ 
