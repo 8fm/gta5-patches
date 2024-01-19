@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/cranimation/vcrwidget.cpp b/src/dev_ng/rage/base/src/cranimation/vcrwidget.cpp
+--- a/src/dev_ng/rage/base/src/cranimation/vcrwidget.cpp
++++ b/src/dev_ng/rage/base/src/cranimation/vcrwidget.cpp
+@@ -15,7 +15,7 @@ namespace rage {
+ 
+ //#############################################################################
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ static WNDPROC s_oldWindowEditMessageCallback;
+ 
+@@ -125,7 +125,7 @@ int crVCRWidget::GetGuid() const { return GetStaticGuid(); }
+ 
+ bool crVCRWidget::SetFocus()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+     if ( m_windowHandles[m_buttonInFocus] != NULL )
+     {
+         ::SetFocus( m_windowHandles[m_buttonInFocus] );
+@@ -157,7 +157,7 @@ void crVCRWidget::RemoteUpdate()
+     // do nothing
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ void crVCRWidget::WindowCreate()
+ {
