@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/atl/Uuid.cpp b/src/dev_ng/rage/base/src/atl/Uuid.cpp
+--- a/src/dev_ng/rage/base/src/atl/Uuid.cpp
++++ b/src/dev_ng/rage/base/src/atl/Uuid.cpp
+@@ -35,7 +35,7 @@
+ 	 + Changed the way time is being checked to use rage code. We now use rage::sysTimer::GetSystemMsTime() 
+ */
+ 
+-#include "uuid.h"
++#include "Uuid.h"
+ 
+ #include "system/timer.h"
+ 
