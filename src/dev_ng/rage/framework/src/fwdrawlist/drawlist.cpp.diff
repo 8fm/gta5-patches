@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.cpp b/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.cpp
+--- a/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.cpp
++++ b/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.cpp
+@@ -7,7 +7,7 @@
+ // CREATED : 30/8/06
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "drawList.h"
++#include "drawlist.h"
+ 
+ #include "drawlist_channel.h"
+ #include "drawlistmgr.h"

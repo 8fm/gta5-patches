@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_vfx_fwutil_fwmaths_fwaudio.cpp b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_vfx_fwutil_fwmaths_fwaudio.cpp
+--- a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_vfx_fwutil_fwmaths_fwaudio.cpp
++++ b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_vfx_fwutil_fwmaths_fwaudio.cpp
+@@ -78,7 +78,7 @@
+ #include "../../../vfx/ptfx/ptfxhistory.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../vfx/ptfx/ptfxIterator.cpp"
++#include "../../../vfx/ptfx/PtFxIterator.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../vfx/ptfx/ptfxmanager.cpp"
+@@ -129,7 +129,7 @@
+ #include "../../../vfx/vehicleglass/vehicleglasswindow.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwutil/flags.cpp"
++#include "../../../fwutil/Flags.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../fwutil/idgen.cpp"
+@@ -144,7 +144,7 @@
+ #include "../../../fwutil/popups.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwutil/profanityFilter.cpp"
++#include "../../../fwutil/ProfanityFilter.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../fwutil/PtrList.cpp"

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/transform.h b/src/dev_ng/rage/framework/src/entity/transform.h
+--- a/src/dev_ng/rage/framework/src/entity/transform.h
++++ b/src/dev_ng/rage/framework/src/entity/transform.h
+@@ -7,8 +7,8 @@
+ #define SCENE_TRANSFORM_H_
+ 
+ #include "atl/pagedpool.h"
+-#include "fwtl/pool.h"
+-#include "fwtl/pagedpool.h"
++#include "fwtl/Pool.h"
++#include "fwtl/Pagedpool.h"
+ #include "math/amath.h"
+ #include "streaming/streamingengine.h"
+ #include "vector/vector3.h"

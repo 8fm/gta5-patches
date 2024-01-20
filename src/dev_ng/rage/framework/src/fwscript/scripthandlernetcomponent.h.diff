@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.h b/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.h
+--- a/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.h
++++ b/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.h
+@@ -17,7 +17,7 @@
+ #include "atl/inlist.h"
+ #include "data/base.h"
+ #include "data/bitbuffer.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ namespace rage
+ {

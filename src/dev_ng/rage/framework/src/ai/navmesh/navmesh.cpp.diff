@@ -1,6 +1,20 @@
 diff --git a/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp b/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp
 --- a/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp
 +++ b/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp
+@@ -3,11 +3,11 @@
+ #include "ai/navmesh/navmesh.h"
+ 
+ // Rage headers
+-#include "math/simpleMath.h"
++#include "math/simplemath.h"
+ #include "spatialdata/sphere.h"
+ 
+ // Framework headers
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ // Game headers
+ #include "data/safestruct.h"
 @@ -78,7 +78,7 @@ CompileTimeAssertSize(TAdjPoly,8,8);
  CompileTimeAssertSize(TShortMinMax,12,12);
  CompileTimeAssertSize(TNavMeshPoly,40,48);

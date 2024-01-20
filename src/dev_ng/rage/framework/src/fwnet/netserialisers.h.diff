@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netserialisers.h b/src/dev_ng/rage/framework/src/fwnet/netserialisers.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netserialisers.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netserialisers.h
+@@ -13,8 +13,8 @@
+ #include "fwnet/netlog.h"
+ #include "fwnet/netlogginginterface.h"
+ 
+-#include "vector/Matrix34.h"
+-#include "vector/Quaternion.h"
++#include "vector/matrix34.h"
++#include "vector/quaternion.h"
+ 
+ 
+ //-------------------------------------------------------------------------------

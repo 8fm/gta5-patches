@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwtl/Pagedpool.h b/src/dev_ng/rage/framework/src/fwtl/Pagedpool.h
+--- a/src/dev_ng/rage/framework/src/fwtl/Pagedpool.h
++++ b/src/dev_ng/rage/framework/src/fwtl/Pagedpool.h
+@@ -13,7 +13,7 @@
+ #include <string.h>
+ 
+ // rage headers:
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "paging/rscbuilder.h"
+ #include "streaming/streamingallocator.h"
+ #include "streaming/streamingengine.h"

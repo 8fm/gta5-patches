@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/world/EntityDesc.h b/src/dev_ng/rage/framework/src/fwscene/world/EntityDesc.h
+--- a/src/dev_ng/rage/framework/src/fwscene/world/EntityDesc.h
++++ b/src/dev_ng/rage/framework/src/fwscene/world/EntityDesc.h
+@@ -12,7 +12,7 @@
+ 
+ #include "vector/vector3.h"
+ #include "math/float16.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ #include "fwscene/lod/LodTypes.h"
+ #include "spatialdata/aabb.h"
+ #include "spatialdata/sphere.h"

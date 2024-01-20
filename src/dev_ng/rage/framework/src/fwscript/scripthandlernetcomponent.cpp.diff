@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.cpp b/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.cpp
+--- a/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.cpp
++++ b/src/dev_ng/rage/framework/src/fwscript/scripthandlernetcomponent.cpp
+@@ -4,15 +4,15 @@
+ // Copyright (C) 1999-2009 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "fwscript/scriptHandlerNetComponent.h"
++#include "fwscript/scripthandlernetcomponent.h"
+ 
+ #include "fwsys/timer.h"
+ 
+ #include "fwmaths/random.h"
+-#include "fwnet/netArrayHandlerTypes.h"
+-#include "fwnet/netArrayMgr.h"
+-#include "fwnet/netLogUtils.h"
+-#include "fwnet/netObjectMgrBase.h"
++#include "fwnet/netarrayhandlertypes.h"
++#include "fwnet/netarraymgr.h"
++#include "fwnet/netlogutils.h"
++#include "fwnet/netobjectmgrbase.h"
+ #include "fwnet/optimisations.h"
+ #include "fwscript/scripthandlermessages.h"
+ #include "fwscript/scripthandlermgr.h"

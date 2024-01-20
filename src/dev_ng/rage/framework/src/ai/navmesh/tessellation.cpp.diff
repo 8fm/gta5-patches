@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/navmesh/tessellation.cpp b/src/dev_ng/rage/framework/src/ai/navmesh/tessellation.cpp
+--- a/src/dev_ng/rage/framework/src/ai/navmesh/tessellation.cpp
++++ b/src/dev_ng/rage/framework/src/ai/navmesh/tessellation.cpp
+@@ -4,7 +4,7 @@
+ #include "requests.h"
+ 
+ #include "vector/geometry.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ NAVMESH_OPTIMISATIONS()
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scripthandler.h b/src/dev_ng/rage/framework/src/fwscript/scripthandler.h
+--- a/src/dev_ng/rage/framework/src/fwscript/scripthandler.h
++++ b/src/dev_ng/rage/framework/src/fwscript/scripthandler.h
+@@ -10,7 +10,7 @@
+ // framework includes
+ #include "fwscript/scriptid.h"
+ #include "fwscript/scriptobjinfo.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // rage includes
+ #include "atl/dlist.h"

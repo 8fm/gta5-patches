@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/dwdstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/dwdstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/dwdstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/dwdstore.cpp
+@@ -13,7 +13,7 @@ STREAMING_OPTIMISATIONS()
+ #include "fwscene/texLod.h"
+ 
+ #include "fwscene/stores/txdstore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/gameskeleton.h"
+ 
+ namespace rage {

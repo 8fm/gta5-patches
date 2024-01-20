@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/txdstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/txdstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/txdstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/txdstore.cpp
+@@ -10,7 +10,7 @@
+ 
+ #include "fwscene/texLod.h"
+ #include "fwscene/stores/txdstore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/gameskeleton.h"
+ 
+ #include "streaming/strindexdebugmanager.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netobjectmgrbase.h b/src/dev_ng/rage/framework/src/fwnet/netobjectmgrbase.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netobjectmgrbase.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netobjectmgrbase.h
+@@ -19,7 +19,7 @@
+ #include "fwnet/netsyncdataul.h"
+ #include "fwnet/netsyncnode.h"
+ #include "fwnet/netutils.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ namespace rage
+ {

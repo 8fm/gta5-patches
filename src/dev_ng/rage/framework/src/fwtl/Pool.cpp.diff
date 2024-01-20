@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/rage/framework/src/fwtl/Pool.cpp b/src/dev_ng/rage/framework/src/fwtl/Pool.cpp
+--- a/src/dev_ng/rage/framework/src/fwtl/Pool.cpp
++++ b/src/dev_ng/rage/framework/src/fwtl/Pool.cpp
+@@ -1,5 +1,5 @@
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "diag/trap.h"
+ #include "system/memmanager.h"
+ #include "system/memvisualize.h"

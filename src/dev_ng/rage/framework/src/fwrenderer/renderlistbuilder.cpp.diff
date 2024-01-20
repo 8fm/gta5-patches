@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwrenderer/renderlistbuilder.cpp b/src/dev_ng/rage/framework/src/fwrenderer/renderlistbuilder.cpp
+--- a/src/dev_ng/rage/framework/src/fwrenderer/renderlistbuilder.cpp
++++ b/src/dev_ng/rage/framework/src/fwrenderer/renderlistbuilder.cpp
+@@ -17,7 +17,7 @@
+ #include "fwscene/world/EntityDesc.h"
+ #include "fwscene/scan/VisibilityFlags.h"
+ #include "fwrenderer/renderlistgroup.h"
+-#include "fwscene/scan/scan.h"
++#include "fwscene/scan/Scan.h"
+ #include "fwdebug/picker.h"
+ 
+ DRAWLIST_OPTIMISATIONS()

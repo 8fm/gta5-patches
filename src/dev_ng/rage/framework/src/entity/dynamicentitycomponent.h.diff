@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/dynamicentitycomponent.h b/src/dev_ng/rage/framework/src/entity/dynamicentitycomponent.h
+--- a/src/dev_ng/rage/framework/src/entity/dynamicentitycomponent.h
++++ b/src/dev_ng/rage/framework/src/entity/dynamicentitycomponent.h
+@@ -3,7 +3,7 @@
+ #define ENTITY_DYNAMICENTITYCOMPONENT_H
+ 
+ #include "fwanimation/animdefines.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwtl/regdrefs.h"
+ #include "system/smallocator.h"
+ #include "vector/quaternion.h"

@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp b/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp
 --- a/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp
 +++ b/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp
+@@ -48,7 +48,7 @@
+ #include "grcore/debugdraw.h"
+ #include "fwdrawlist/drawlistmgr.h"
+ #include "fwsys/timer.h"
+-#include "vfx/ptfx/PtFxManager.h"
++#include "vfx/ptfx/ptfxmanager.h"
+ 
+ // ====================== Platform Dependent =========================
+ 
 @@ -865,7 +865,7 @@ static int maxForceDrawListEmpty = 5;  //There should always be an empty drawlis
  
  void fwRenderThreadInterface::DefaultRenderFunction()

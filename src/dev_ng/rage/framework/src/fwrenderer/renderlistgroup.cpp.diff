@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwrenderer/renderlistgroup.cpp b/src/dev_ng/rage/framework/src/fwrenderer/renderlistgroup.cpp
+--- a/src/dev_ng/rage/framework/src/fwrenderer/renderlistgroup.cpp
++++ b/src/dev_ng/rage/framework/src/fwrenderer/renderlistgroup.cpp
+@@ -11,7 +11,7 @@
+ #include "system/dependencyscheduler.h"
+ 
+ #include "renderListSortJob.h"
+-#include "renderPhaseBase.h"
++#include "RenderPhaseBase.h"
+ 
+ #include "entity/entity.h"
+ #include "fwsys/gameskeleton.h"

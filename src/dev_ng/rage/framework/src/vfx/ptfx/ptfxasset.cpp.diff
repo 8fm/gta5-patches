@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxasset.cpp b/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxasset.cpp
 --- a/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxasset.cpp
 +++ b/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxasset.cpp
-@@ -10,7 +10,7 @@
+@@ -10,11 +10,11 @@
  // includes (rage)
  #include "grcore/debugdraw.h"
  #include "rmptfx/ptxdebug.h"
@@ -10,3 +10,8 @@ diff --git a/src/dev_ng/rage/framework/src/vfx/ptfx/ptfxasset.cpp b/src/dev_ng/r
  #include "rmptfx/ptxmanager.h"
  
  // includes (framework)
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "vfx/channel.h"
+ #include "vfx/optimisations.h"
+ #include "vfx/ptfx/ptfxcallbacks.h"

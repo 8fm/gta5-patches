@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwutil/ProfanityFilter.cpp b/src/dev_ng/rage/framework/src/fwutil/ProfanityFilter.cpp
+--- a/src/dev_ng/rage/framework/src/fwutil/ProfanityFilter.cpp
++++ b/src/dev_ng/rage/framework/src/fwutil/ProfanityFilter.cpp
+@@ -6,7 +6,7 @@
+ using namespace rage;
+ 
+ #include "ProfanityFilter.h"
+-#include "ProfanityFilter_parser.h"
++#include "profanityFilter_parser.h"
+ 
+ #include "file/limits.h"
+ #include "fwsys/fileExts.h"

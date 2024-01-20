@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netlogutils.h b/src/dev_ng/rage/framework/src/fwnet/netlogutils.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netlogutils.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netlogutils.h
+@@ -9,7 +9,7 @@
+ 
+ #include "net/netsequence.h"
+ #include "fwnet/netlog.h"		// ENABLE_NETWORK_LOGGING
+-#include "fwnet/netTypes.h"
++#include "fwnet/nettypes.h"
+ 
+ namespace rage
+ {

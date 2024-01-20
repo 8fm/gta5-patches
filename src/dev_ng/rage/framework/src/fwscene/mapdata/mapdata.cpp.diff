@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.cpp b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.cpp
+@@ -12,8 +12,8 @@
+ #include "entity/archetype.h"
+ #include "entity/archetypemanager.h"
+ #include "fwscene/lod/LodAttach.h"
+-#include "fwscene/world/worldmgr.h"
+-#include "fwscene/world/streamedscenegraphnode.h"
++#include "fwscene/world/WorldMgr.h"
++#include "fwscene/world/StreamedSceneGraphNode.h"
+ #include "fwscene/stores/mapdatastore.h"
+ #include "fwscene/stores/maptypesstore.h"
+ #include "streaming/streamingvisualize.h"

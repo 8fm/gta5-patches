@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwmaths/geomutil.cpp b/src/dev_ng/rage/framework/src/fwmaths/geomutil.cpp
+--- a/src/dev_ng/rage/framework/src/fwmaths/geomutil.cpp
++++ b/src/dev_ng/rage/framework/src/fwmaths/geomutil.cpp
+@@ -3,8 +3,8 @@
+ // (c) 2011 RockstarNorth
+ // ======================
+ 
+-#include "phBound/BoundSphere.h"
+-#include "phCore/Segment.h"
++#include "phbound/boundsphere.h"
++#include "phcore/segment.h"
+ #include "physics/shapetest.h"
+ #include "spatialdata/sphere.h"
+ #include "spatialdata/aabb.h"

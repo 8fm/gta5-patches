@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scriptinterface.cpp b/src/dev_ng/rage/framework/src/fwscript/scriptinterface.cpp
+--- a/src/dev_ng/rage/framework/src/fwscript/scriptinterface.cpp
++++ b/src/dev_ng/rage/framework/src/fwscript/scriptinterface.cpp
+@@ -4,10 +4,10 @@
+ // Copyright (C) 1999-2009 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "fwscript/scriptInterface.h"
++#include "fwscript/scriptinterface.h"
+ 
+ #include "fwnet/optimisations.h"
+-#include "fwscript/scriptHandlerMgr.h"
++#include "fwscript/scripthandlermgr.h"
+ #include "fwscript/scriptobjinfo.h"
+ 
+ namespace rage

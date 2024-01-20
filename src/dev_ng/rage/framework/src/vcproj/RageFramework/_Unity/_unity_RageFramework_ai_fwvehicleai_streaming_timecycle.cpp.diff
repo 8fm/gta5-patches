@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_ai_fwvehicleai_streaming_timecycle.cpp b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_ai_fwvehicleai_streaming_timecycle.cpp
+--- a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_ai_fwvehicleai_streaming_timecycle.cpp
++++ b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_ai_fwvehicleai_streaming_timecycle.cpp
+@@ -81,7 +81,7 @@
+ #include "../../../streaming/defragmentation.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../streaming/cacheloader.cpp"
++#include "../../../streaming/CacheLoader.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../streaming/packfilemanager.cpp"

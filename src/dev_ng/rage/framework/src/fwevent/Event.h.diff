@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwevent/Event.h b/src/dev_ng/rage/framework/src/fwevent/Event.h
+--- a/src/dev_ng/rage/framework/src/fwevent/Event.h
++++ b/src/dev_ng/rage/framework/src/fwevent/Event.h
+@@ -12,7 +12,7 @@
+ #include "atl/string.h"
+ #endif
+ 
+-#include "fwevent/eventregdref.h"
++#include "fwevent/EventRegdRef.h"
+ #include "system/ipc.h"
+ #include "system/threadtype.h"
+ 

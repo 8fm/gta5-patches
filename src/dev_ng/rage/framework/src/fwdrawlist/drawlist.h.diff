@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.h b/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.h
+--- a/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.h
++++ b/src/dev_ng/rage/framework/src/fwdrawlist/drawlist.h
+@@ -31,7 +31,7 @@
+ #include "system/threadtype.h"
+ 
+ // Framework headers
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ #include "streaming/streamingdefs.h"
+ 
+ #define ENTITY_GPU_TIME (__BANK ? 2 : 0)

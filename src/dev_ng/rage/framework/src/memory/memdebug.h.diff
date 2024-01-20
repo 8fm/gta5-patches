@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/memory/memdebug.h b/src/dev_ng/rage/framework/src/memory/memdebug.h
+--- a/src/dev_ng/rage/framework/src/memory/memdebug.h
++++ b/src/dev_ng/rage/framework/src/memory/memdebug.h
+@@ -7,7 +7,7 @@
+ #if RAGE_MEMORY_DEBUG
+ #include "atl/pool.h"
+ #include "fwtl/assetstore.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "system/poolallocator.h"
+ #include "system/buddyallocator.h"
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwsys/game.cpp b/src/dev_ng/rage/framework/src/fwsys/game.cpp
+--- a/src/dev_ng/rage/framework/src/fwsys/game.cpp
++++ b/src/dev_ng/rage/framework/src/fwsys/game.cpp
+@@ -14,8 +14,8 @@
+ #include "fwscene/stores/clothstore.h"
+ #include "fwscene/stores/maptypesstore.h"
+ #include "fwscene/stores/mapdatastore.h"
+-#include "fwscene/scan/scan.h"
+-#include "fwscene/search/search.h"
++#include "fwscene/scan/Scan.h"
++#include "fwscene/search/Search.h"
+ #include "profile/timebars.h"
+ #include "streaming/packfilemanager.h"
+ 

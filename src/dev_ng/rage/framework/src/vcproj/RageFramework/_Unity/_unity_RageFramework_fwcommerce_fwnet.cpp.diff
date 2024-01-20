@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwcommerce_fwnet.cpp b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwcommerce_fwnet.cpp
+--- a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwcommerce_fwnet.cpp
++++ b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwcommerce_fwnet.cpp
+@@ -126,7 +126,7 @@
+ #include "../../../fwnet/netscgameconfigparser.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwnet/netscgamerdatamgr.cpp"
++#include "../../../fwnet/netscgamerDataMgr.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../fwnet/netprofanityfilter.cpp"

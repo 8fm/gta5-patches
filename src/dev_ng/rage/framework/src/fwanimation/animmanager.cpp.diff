@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/framework/src/fwanimation/animmanager.cpp b/src/dev_ng/rage/framework/src/fwanimation/animmanager.cpp
+--- a/src/dev_ng/rage/framework/src/fwanimation/animmanager.cpp
++++ b/src/dev_ng/rage/framework/src/fwanimation/animmanager.cpp
+@@ -1,4 +1,4 @@
+-#include "AnimManager.h"
++#include "animmanager.h"
+ 
+ // Rage headers
+ #include "cranimation/animation.h"
+@@ -20,7 +20,7 @@
+ #include "fwanimation/directorcomponentcreature.h"
+ #include "fwscene/stores/blendshapestore.h"
+ #include "fwscene/stores/expressionsdictionarystore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/gameskeleton.h"
+ #include "paging/rscbuilder.h"
+ #include "vector/quaternion.h"

@@ -1,0 +1,6 @@
+diff --git a/src/dev_ng/rage/framework/src/fwanimation/pointcloud.cpp b/src/dev_ng/rage/framework/src/fwanimation/pointcloud.cpp
+--- a/src/dev_ng/rage/framework/src/fwanimation/pointcloud.cpp
++++ b/src/dev_ng/rage/framework/src/fwanimation/pointcloud.cpp
+@@ -1 +1 @@
+-#include "PointCloud.h"
++#include "pointcloud.h"

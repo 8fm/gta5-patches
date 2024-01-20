@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwanimation/animdirector.h b/src/dev_ng/rage/framework/src/fwanimation/animdirector.h
+--- a/src/dev_ng/rage/framework/src/fwanimation/animdirector.h
++++ b/src/dev_ng/rage/framework/src/fwanimation/animdirector.h
+@@ -22,7 +22,7 @@
+ #include "cranimation/framefilters.h"
+ #include "entity/entity.h"
+ #include "fwsys/gameskeleton.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "paging/ref.h"
+ #include "system/ipc.h"
+ #include "system/lockfreering.h"

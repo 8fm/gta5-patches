@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwutil/QuadTree.h b/src/dev_ng/rage/framework/src/fwutil/QuadTree.h
+--- a/src/dev_ng/rage/framework/src/fwutil/QuadTree.h
++++ b/src/dev_ng/rage/framework/src/fwutil/QuadTree.h
+@@ -9,8 +9,8 @@
+ #include "vector/vector3.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
+-#include "fwmaths/rect.h"
++#include "fwtl/Pool.h"
++#include "fwmaths/Rect.h"
+ #include "fwutil/PtrList.h"
+ 
+ namespace rage {

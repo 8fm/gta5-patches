@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/task/taskflags.h b/src/dev_ng/rage/framework/src/ai/task/taskflags.h
+--- a/src/dev_ng/rage/framework/src/ai/task/taskflags.h
++++ b/src/dev_ng/rage/framework/src/ai/task/taskflags.h
+@@ -11,7 +11,7 @@
+ #include "system/bit.h"
+ 
+ // Framework headers
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ 
+ namespace rage
+ {

@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/rage/framework/src/fwtl/assetstore.h b/src/dev_ng/rage/f
 -#include "fwtl\nameregistrar.h"
 -#include "fwtl\pool.h"
 +#include "fwtl/nameregistrar.h"
-+#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
  #include "streaming/streamingallocator.h"
  #include "streaming/streamingengine.h"
 -#include "streaming\streamingmodule.h"

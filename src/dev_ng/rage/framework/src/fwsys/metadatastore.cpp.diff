@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwsys/metadatastore.cpp b/src/dev_ng/rage/framework/src/fwsys/metadatastore.cpp
+--- a/src/dev_ng/rage/framework/src/fwsys/metadatastore.cpp
++++ b/src/dev_ng/rage/framework/src/fwsys/metadatastore.cpp
+@@ -6,7 +6,7 @@
+ 
+ //Framework headers
+ #include "fwsys/metadatastore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/gameskeleton.h"
+ #include "streaming/streamingvisualize.h"
+ 

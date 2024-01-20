@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.cpp b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.cpp
+@@ -16,7 +16,7 @@
+ #include "fwscene/world/SceneGraphNode.h"
+ #include "fwscene/world/StreamedSceneGraphNode.h"
+ #include "fwscene/scan/ScanEntities.h"
+-#include "fwscene/world/worldmgr.h"
++#include "fwscene/world/WorldMgr.h"
+ #include "streaming/streamingvisualize.h"
+ 
+ #include "diag/art_channel.h"

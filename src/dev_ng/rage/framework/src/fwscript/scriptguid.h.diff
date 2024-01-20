@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scriptguid.h b/src/dev_ng/rage/framework/src/fwscript/scriptguid.h
+--- a/src/dev_ng/rage/framework/src/fwscript/scriptguid.h
++++ b/src/dev_ng/rage/framework/src/fwscript/scriptguid.h
+@@ -10,7 +10,7 @@
+ #include "entity/extensiblebase.h"
+ #include "entity/extensionlist.h"
+ #include "script/scrchannel.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ namespace rage {
+ 

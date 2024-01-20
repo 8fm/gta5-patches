@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netblenderlininterp.h b/src/dev_ng/rage/framework/src/fwnet/netblenderlininterp.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netblenderlininterp.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netblenderlininterp.h
+@@ -8,7 +8,7 @@
+ #define NETBLENDERLININTERP_H
+ 
+ //rage includes
+-#include "vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ // game includes
+ #include "fwnet/netblender.h"

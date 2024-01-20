@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwlocalisation/debugLanguageStrings.cpp b/src/dev_ng/rage/framework/src/fwlocalisation/debugLanguageStrings.cpp
+--- a/src/dev_ng/rage/framework/src/fwlocalisation/debugLanguageStrings.cpp
++++ b/src/dev_ng/rage/framework/src/fwlocalisation/debugLanguageStrings.cpp
+@@ -18,7 +18,7 @@
+ #include "system/threadtype.h"
+ 
+ // Framework includes
+-#include "DebugLanguageStrings.h"
++#include "debugLanguageStrings.h"
+ #include "localisation_channel.h"
+ #include "textUtil.h"
+ 

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/framework/src/fwdebug/vectormap.cpp b/src/dev_ng/rage/framework/src/fwdebug/vectormap.cpp
+--- a/src/dev_ng/rage/framework/src/fwdebug/vectormap.cpp
++++ b/src/dev_ng/rage/framework/src/fwdebug/vectormap.cpp
+@@ -12,7 +12,7 @@
+ #include "input/keyboard.h"
+ #include "input/keys.h"
+ #include "input/mapper.h"
+-#include "math/vecMath.h"
++#include "math/vecmath.h"
+ #include "spatialdata/aabb.h"
+ #include "vector/colors.h"
+ 
+@@ -20,7 +20,7 @@
+ #include "grcore/debugdraw.h"
+ #include "fwmaths/angle.h"
+ #include "fwmaths/random.h"
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ #include "fwsys/timer.h"
+ 
+ 

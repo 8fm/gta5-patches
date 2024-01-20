@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.cpp
+@@ -3,7 +3,7 @@
+ 
+ // C headers
+ // Rage headers
+-#include "NetworkDefStore.h"
++#include "networkdefstore.h"
+ 
+ // Framework headers
+ #include "fwsys/fileExts.h"

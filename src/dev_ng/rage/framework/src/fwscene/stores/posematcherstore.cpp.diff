@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.cpp
+@@ -2,7 +2,7 @@
+ 
+ // C headers
+ // Rage headers
+-#include "PoseMatcherStore.h"
++#include "posematcherstore.h"
+ 
+ // Framework headers
+ #include "fwsys/fileExts.h"
