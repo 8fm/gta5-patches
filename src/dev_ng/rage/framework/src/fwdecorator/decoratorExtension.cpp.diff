@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/rage/framework/src/fwdecorator/decoratorExtension.cpp b/src/dev_ng/rage/framework/src/fwdecorator/decoratorExtension.cpp
+--- a/src/dev_ng/rage/framework/src/fwdecorator/decoratorExtension.cpp
++++ b/src/dev_ng/rage/framework/src/fwdecorator/decoratorExtension.cpp
+@@ -11,14 +11,14 @@
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+ //rage
+-#include "bank\bkmgr.h"
+-#include "bank\bank.h"
++#include "bank/bkmgr.h"
++#include "bank/bank.h"
+ 
+ //Framework
+-#include "fwsys\gameskeleton.h"
+-#include "fwdecorator\decoratorInterface.h"
+-#include "fwdecorator\decoratorExtension.h"
+-#include "fwdecorator\decorator_channel.h"
++#include "fwsys/gameskeleton.h"
++#include "fwdecorator/decoratorInterface.h"
++#include "fwdecorator/decoratorExtension.h"
++#include "fwdecorator/decorator_channel.h"
+ 
+ DECORATOR_OPTIMISATIONS();
+ 

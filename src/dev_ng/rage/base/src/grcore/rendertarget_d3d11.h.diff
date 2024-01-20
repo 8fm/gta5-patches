@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.h b/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.h
+--- a/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.h
++++ b/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.h
+@@ -1,7 +1,7 @@
+ #ifndef GRCORE_RENDER_TARGET_DX11_H
+ #define GRCORE_RENDER_TARGET_DX11_H
+ 
+-#if	RSG_PC
++#if	RSG_PC || RSG_LINUX
+ 
+ #include	"atl/array.h"
+ #include	"grcore/device.h"

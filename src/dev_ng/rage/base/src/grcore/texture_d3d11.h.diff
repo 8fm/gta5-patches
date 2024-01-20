@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/texture_d3d11.h b/src/dev_ng/rage/base/src/grcore/texture_d3d11.h
+--- a/src/dev_ng/rage/base/src/grcore/texture_d3d11.h
++++ b/src/dev_ng/rage/base/src/grcore/texture_d3d11.h
+@@ -1,7 +1,7 @@
+ #ifndef GRCORE_TEXTUREDX11_H
+ #define GRCORE_TEXTUREDX11_H
+ 
+-#if	RSG_PC // && __D3D11 toolbuilder_gta5_dev_rex_2_targets doesn`t like __D3D11 being here.
++#if	RSG_PC || RSG_LINUX // && __D3D11 toolbuilder_gta5_dev_rex_2_targets doesn`t like __D3D11 being here.
+ 
+ #include	"atl/array.h"
+ #include	"grcore/device.h"

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
+@@ -33,7 +33,7 @@ if (PARAM_breakOnBoundsAdded.Get(break_on_added))																\
+ 	if (atString(GetName(index)).IndexOf(break_on_added) != atString::npos)										\
+ 	{																											\
+ 		char message[RAGE_MAX_PATH];																			\
+-		sprintf_s(message, RAGE_MAX_PATH, "[bounds][added] %s:%d: %s\n", __FUNCTION__, __LINE__, GetName(index));	\
++		sprintf(message, "[bounds][added] %s:%d: %s\n", __FUNCTION__, __LINE__, GetName(index));				\
+ 		BreakOn(message);																						\
+ 	}																											\
+ }																												\
+@@ -45,7 +45,7 @@ if (PARAM_breakOnBoundsRemoved.Get(break_on_removed))															\
+ 	if (atString(GetName(index)).IndexOf(break_on_removed) != atString::npos)									\
+ 	{																											\
+ 		char message[RAGE_MAX_PATH];																			\
+-		sprintf_s(message, RAGE_MAX_PATH, "[bounds][removed] %s:%d: %s\n", __FUNCTION__, __LINE__, GetName(index));	\
++		sprintf(message, "[bounds][removed] %s:%d: %s\n", __FUNCTION__, __LINE__, GetName(index));				\
+ 		BreakOn(message);																						\
+ 	}																											\
+ }																												\

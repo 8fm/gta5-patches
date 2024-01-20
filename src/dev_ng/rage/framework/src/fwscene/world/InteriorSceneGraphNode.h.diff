@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/world/InteriorSceneGraphNode.h b/src/dev_ng/rage/framework/src/fwscene/world/InteriorSceneGraphNode.h
+--- a/src/dev_ng/rage/framework/src/fwscene/world/InteriorSceneGraphNode.h
++++ b/src/dev_ng/rage/framework/src/fwscene/world/InteriorSceneGraphNode.h
+@@ -201,7 +201,7 @@ public:
+ 	const fwEntity* GetEntity(const int i) const							{ return m_container->GetEntity(i); }
+ };
+ 
+-CompileTimeAssertSize( fwInteriorSceneGraphNode, 16, RSG_ORBIS? 24 : 32 );
++CompileTimeAssertSize( fwInteriorSceneGraphNode, 16, (RSG_ORBIS || RSG_LINUX)? 24 : 32 );
+ CompileTimeAssertSize( fwRoomSceneGraphNode, 28, 48 );
+ CompileTimeAssertSize( fwPortalSceneGraphNode, 96, 128 );
+ 

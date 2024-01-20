@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/navmesh/datatypes.h b/src/dev_ng/rage/framework/src/ai/navmesh/datatypes.h
+--- a/src/dev_ng/rage/framework/src/ai/navmesh/datatypes.h
++++ b/src/dev_ng/rage/framework/src/ai/navmesh/datatypes.h
+@@ -977,7 +977,6 @@ public:
+ 
+ 	// NAME : CalcHash
+ 	// PURPOSE : Calculate a hash value for Vector3
+-	/*
+ 	static inline u32 CalcHash(const Vector3 & vPos, const float fGridSize, const u32 iHashTableSize)
+ 	{
+ 		const s32 iX = (s32) (vPos.x / fGridSize);
+@@ -986,7 +985,6 @@ public:
+ 
+ 		return CalcHash(iX, iY, iZ, iHashTableSize);
+ 	}
+-	*/
+ 	// NAME : Add
+ 	// PURPOSE : Add an item
+ 	inline void Add(T * pItem, const Vector3 & vPos)

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp b/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp
+--- a/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp
++++ b/src/dev_ng/rage/framework/src/fwrenderer/renderthread.cpp
+@@ -865,7 +865,7 @@ static int maxForceDrawListEmpty = 5;  //There should always be an empty drawlis
+ 
+ void fwRenderThreadInterface::DefaultRenderFunction()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #if __FINAL || (defined(__RGSC_DLL) && __RGSC_DLL)
+ 	if (!GRCDEVICE.IsReady() WIN32PC_ONLY(|| (dumpDrawListsTillEmpty)) || (!GRCDEVICE.GetHasFocus() && GRCDEVICE.IsAllowPauseOnFocusLoss()) /* || GRCDEVICE.BlockUpdateThread()*/)
+ #else

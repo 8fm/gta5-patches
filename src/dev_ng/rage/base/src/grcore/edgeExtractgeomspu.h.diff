@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/edgeExtractgeomspu.h b/src/dev_ng/rage/base/src/grcore/edgeExtractgeomspu.h
+--- a/src/dev_ng/rage/base/src/grcore/edgeExtractgeomspu.h
++++ b/src/dev_ng/rage/base/src/grcore/edgeExtractgeomspu.h
+@@ -7,10 +7,10 @@
+ #ifndef GRCORE_EDGEEXTRACTGEOMSPU_H 
+ #define GRCORE_EDGEEXTRACTGEOMSPU_H 
+ 
+-#include "grcore\effect_config.h"
++#include "grcore/effect_config.h"
+ #include "grcorespu.h"
+-#include "vector\vector3.h"
+-#include "vector\vector4.h"
++#include "vector/vector3.h"
++#include "vector/vector4.h"
+ 
+ namespace rage {
+ 

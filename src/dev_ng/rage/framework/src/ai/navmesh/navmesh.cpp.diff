@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp b/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp
+--- a/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp
++++ b/src/dev_ng/rage/framework/src/ai/navmesh/navmesh.cpp
+@@ -78,7 +78,7 @@ CompileTimeAssertSize(TAdjPoly,8,8);
+ CompileTimeAssertSize(TShortMinMax,12,12);
+ CompileTimeAssertSize(TNavMeshPoly,40,48);
+ CompileTimeAssertSize(TNavMeshQuadTreeLeafData,16,32);
+-CompileTimeAssertSize(CNavMeshQuadTree,64,RSG_ORBIS? 84 : 96);
++CompileTimeAssertSize(CNavMeshQuadTree,64, (RSG_ORBIS || RSG_LINUX)? 84 : 96);
+ CompileTimeAssertSize(TCoverPointFlags,2,2);
+ CompileTimeAssertSize(CNavMeshCoverPoint,8,8);
+ CompileTimeAssertSize(CSpecialLinkInfo,28,28);

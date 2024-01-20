@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/attachmententityextension.cpp b/src/dev_ng/rage/framework/src/entity/attachmententityextension.cpp
+--- a/src/dev_ng/rage/framework/src/entity/attachmententityextension.cpp
++++ b/src/dev_ng/rage/framework/src/entity/attachmententityextension.cpp
+@@ -7,13 +7,13 @@
+ #include "physics/simulator.h"
+ #include "physics/constraintmgr.h"
+ #include "profile/profiler.h"
+-#include "vectormath\vec3v.h"
++#include "vectormath/vec3v.h"
+ #include "grcore/debugdraw.h"
+-#include "vector\colors.h"
++#include "vector/colors.h"
+ 
+ //framework
+-#include "entity\transform.h"
+-#include "fwsys\timer.h"
++#include "entity/transform.h"
++#include "fwsys/timer.h"
+ 
+ namespace rage {
+ 

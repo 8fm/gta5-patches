@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwutil/KeyGen.cpp b/src/dev_ng/rage/framework/src/fwutil/KeyGen.cpp
+--- a/src/dev_ng/rage/framework/src/fwutil/KeyGen.cpp
++++ b/src/dev_ng/rage/framework/src/fwutil/KeyGen.cpp
+@@ -14,7 +14,7 @@
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+ // Rage headers
+-#include "string\stringhash.h"
++#include "string/stringhash.h"
+ #include "KeyGen.h"
+ 
+ namespace rage {

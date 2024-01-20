@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwmaths/angle.cpp b/src/dev_ng/rage/framework/src/fwmaths/angle.cpp
+--- a/src/dev_ng/rage/framework/src/fwmaths/angle.cpp
++++ b/src/dev_ng/rage/framework/src/fwmaths/angle.cpp
+@@ -3,8 +3,8 @@
+ // description:	common angle related methods
+ 
+ // Rage headers
+-#include "math\amath.h"
+-#include "math\channel.h"
++#include "math/amath.h"
++#include "math/channel.h"
+ #include "angle.h"
+ 
+ namespace rage {

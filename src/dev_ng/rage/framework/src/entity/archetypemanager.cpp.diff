@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/archetypemanager.cpp b/src/dev_ng/rage/framework/src/entity/archetypemanager.cpp
+--- a/src/dev_ng/rage/framework/src/entity/archetypemanager.cpp
++++ b/src/dev_ng/rage/framework/src/entity/archetypemanager.cpp
+@@ -9,12 +9,12 @@
+ //
+ //
+ // Rage headers
+-#include "atl\binmap.h"
+-#include "diag\art_channel.h"
+-#include "file\asset.h"
+-#include "file\packfile.h"
+-#include "fragment\resourceversions.h"
+-#include "paging\rscbuilder.h"
++#include "atl/binmap.h"
++#include "diag/art_channel.h"
++#include "file/asset.h"
++#include "file/packfile.h"
++#include "fragment/resourceversions.h"
++#include "paging/rscbuilder.h"
+ #include "grcore/effect.h"
+ #if __BANK
+ #include "fragment/tune.h"

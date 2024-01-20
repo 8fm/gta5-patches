@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/streaming/streamingvisualize.cpp b/src/dev_ng/rage/framework/src/streaming/streamingvisualize.cpp
+--- a/src/dev_ng/rage/framework/src/streaming/streamingvisualize.cpp
++++ b/src/dev_ng/rage/framework/src/streaming/streamingvisualize.cpp
+@@ -314,7 +314,7 @@ strStreamingVisualize::strStreamingVisualize(const bool startWorker)
+ 			strcat(clientInfo.m_SymbolFile,".cmp");
+ 	}
+ 
+-#elif __WIN32PC // __XENON
++#elif __WIN32PC && !__LINUX // __XENON
+ 	// sysStack::InitClass() hasn't been called yet, we'll have to figure out the
+ 	// location of the symbol file ourselves.
+ 	//	safecpy(clientInfo.m_SymbolFile, sysStack::GetSymbolFilename());

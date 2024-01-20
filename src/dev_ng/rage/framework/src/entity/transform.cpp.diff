@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/transform.cpp b/src/dev_ng/rage/framework/src/entity/transform.cpp
+--- a/src/dev_ng/rage/framework/src/entity/transform.cpp
++++ b/src/dev_ng/rage/framework/src/entity/transform.cpp
+@@ -121,7 +121,7 @@ QuatV_Out fwSimpleTransform::GetOrientation() const
+ 
+ const int NUM_TESTS = 10000;
+ 
+-#if __PS3 || RSG_ORBIS
++#if __PS3 || RSG_ORBIS || RSG_LINUX
+ void foo( float ) __attribute__((noinline));
+ void foo( Vec3V_In ) __attribute__((noinline));
+ void foo( Vector3::Vector3Param ) __attribute__((noinline));

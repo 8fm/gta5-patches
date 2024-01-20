@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/world/EntityContainer.h b/src/dev_ng/rage/framework/src/fwscene/world/EntityContainer.h
+--- a/src/dev_ng/rage/framework/src/fwscene/world/EntityContainer.h
++++ b/src/dev_ng/rage/framework/src/fwscene/world/EntityContainer.h
+@@ -357,8 +357,8 @@ inline fwSoAEntityContainer* fwBaseEntityContainer::AsTypeSoA()
+ }
+ 
+ CompileTimeAssertSize(fwBaseEntityContainer, 20, 40);
+-CompileTimeAssertSize(fwEntityContainer, 24, RSG_ORBIS? 40 : 48);
+-CompileTimeAssertSize(fwFixedEntityContainer, 24, RSG_ORBIS? 40 : 48);
++CompileTimeAssertSize(fwEntityContainer, 24, (RSG_ORBIS || RSG_LINUX)? 40 : 48);
++CompileTimeAssertSize(fwFixedEntityContainer, 24, (RSG_ORBIS || RSG_LINUX)? 40 : 48);
+ CompileTimeAssertSize(fwSoAEntityContainer, 20, 40);
+ 
+ CompileTimeAssertSize(fwEntityDescSoA, 56, 104);  // If you get this error you must update #define SIZEOF_ENTITY_DESC_SOA to the new size

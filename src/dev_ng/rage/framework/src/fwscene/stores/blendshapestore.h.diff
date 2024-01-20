@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/blendshapestore.h b/src/dev_ng/rage/framework/src/fwscene/stores/blendshapestore.h
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/blendshapestore.h
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/blendshapestore.h
+@@ -4,9 +4,9 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "grblendshapes\blendshapes_config.h"
+-#include "grblendshapes\manager.h"
+-#include "fwtl\assetstore.h"
++#include "grblendshapes/blendshapes_config.h"
++#include "grblendshapes/manager.h"
++#include "fwtl/assetstore.h"
+ 
+ #if ENABLE_BLENDSHAPES
+ 

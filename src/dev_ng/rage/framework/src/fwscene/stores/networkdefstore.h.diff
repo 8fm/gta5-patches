@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.h b/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.h
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.h
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/networkdefstore.h
+@@ -4,8 +4,8 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "fwtl\assetstore.h"
+-#include "move\move_network.h"
++#include "fwtl/assetstore.h"
++#include "move/move_network.h"
+ 
+ namespace rage {
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/attachmententityextension.h b/src/dev_ng/rage/framework/src/entity/attachmententityextension.h
+--- a/src/dev_ng/rage/framework/src/entity/attachmententityextension.h
++++ b/src/dev_ng/rage/framework/src/entity/attachmententityextension.h
+@@ -8,8 +8,8 @@
+ #include "vector/vector3.h"
+ #include "vectormath/mat34v.h"
+ 
+-#include "physics\constrainthandle.h"
+-#include "atl\queue.h"
++#include "physics/constrainthandle.h"
++#include "atl/queue.h"
+ 
+ namespace rage {
+ 

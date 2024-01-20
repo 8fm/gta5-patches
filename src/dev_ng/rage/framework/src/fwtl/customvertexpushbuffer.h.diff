@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/framework/src/fwtl/customvertexpushbuffer.h b/src/dev_ng/rage/framework/src/fwtl/customvertexpushbuffer.h
+--- a/src/dev_ng/rage/framework/src/fwtl/customvertexpushbuffer.h
++++ b/src/dev_ng/rage/framework/src/fwtl/customvertexpushbuffer.h
+@@ -44,7 +44,7 @@ class Vector4;
+ #endif
+ 
+ #define VTXBUFFER_USES_NOOP							(0)
+-#define VTXBUFFER_USES_DEFAULTVERTEXBUFFER			(RSG_PC)
++#define VTXBUFFER_USES_DEFAULTVERTEXBUFFER			(RSG_PC || RSG_LINUX)
+ 
+ struct traitParam
+ {
+@@ -1032,7 +1032,7 @@ public:
+ //
+ //
+ //
+-template<class T> inline void VtxPushBuffer<T>::Init(grcDrawMode drawMode, u32 WIN32PC_ONLY(VertexCount))
++template<class T> inline void VtxPushBuffer<T>::Init(grcDrawMode drawMode, u32 WIN32PC_ONLY(VertexCount) LINUX_ONLY(VertexCount))
+ {
+ 	// custom vertexbuffer stuff:
+ 	grcFvf fvf;

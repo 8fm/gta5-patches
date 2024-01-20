@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/camerarelativeextension.h b/src/dev_ng/rage/framework/src/entity/camerarelativeextension.h
+--- a/src/dev_ng/rage/framework/src/entity/camerarelativeextension.h
++++ b/src/dev_ng/rage/framework/src/entity/camerarelativeextension.h
+@@ -6,7 +6,7 @@
+ #include "entity/extensionlist.h"
+ #include "fwutil/PtrList.h"
+ 
+-#include "vectormath\mat34v.h"
++#include "vectormath/mat34v.h"
+ 
+ namespace rage {
+ 

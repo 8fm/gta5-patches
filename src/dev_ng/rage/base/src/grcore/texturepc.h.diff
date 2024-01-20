@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/texturepc.h b/src/dev_ng/rage/base/src/grcore/texturepc.h
+--- a/src/dev_ng/rage/base/src/grcore/texturepc.h
++++ b/src/dev_ng/rage/base/src/grcore/texturepc.h
+@@ -7,7 +7,7 @@
+ #ifndef GRCORE_TEXTUREPC_H
+ #define GRCORE_TEXTUREPC_H
+ 
+-#if	RSG_PC || RSG_DURANGO
++#if	RSG_PC || RSG_DURANGO || RSG_LINUX
+ 
+ #include	"atl/array.h"
+ #include	"grcore/config.h"
+@@ -144,7 +144,7 @@ class	grcTexturePC	:	public	grcTexture
+ 		static u32  GetTextureQuality() { return m_uQualityOverride == INVALID ? m_uQuality : m_uQualityOverride; }
+ 		static u32  GetMipLevelScaleQuality(u32 uImageType, u32 uWidth, u32 uHeight, u32 uMipCount, u32 uFormat);
+ 
+-#if RSG_PC
++#if RSG_PC || RSG_LINUX
+ 		static grcTexture*	GetPrivateData(const grcTextureObject *pTexObj);
+ 
+ 		u32 GetFormat() const { return m_nFormat; }
+@@ -251,7 +251,7 @@ public:
+ };
+ 
+ 
+-#if RSG_PC
++#if RSG_PC || RSG_LINUX
+ class	grcRenderTargetPC	:	public	grcRenderTarget
+ {
+ 	friend class grcTextureFactoryPC;

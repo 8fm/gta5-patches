@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/framework/src/fwcontrol/WaypointRecordingRoute.cpp b/src/dev_ng/rage/framework/src/fwcontrol/WaypointRecordingRoute.cpp
+--- a/src/dev_ng/rage/framework/src/fwcontrol/WaypointRecordingRoute.cpp
++++ b/src/dev_ng/rage/framework/src/fwcontrol/WaypointRecordingRoute.cpp
+@@ -1,11 +1,11 @@
+-#include "fwcontrol\WaypointRecordingRoute.h"
++#include "fwcontrol/WaypointRecordingRoute.h"
+ 
+ // Rage headers
+-#include "file\stream.h"
++#include "file/stream.h"
+ 
+ // Framework headers
+-#include "fwmaths\Angle.h"
+-#include "vector\geometry.h"
++#include "fwmaths/Angle.h"
++#include "vector/geometry.h"
+ 
+ using namespace rage;
+ 

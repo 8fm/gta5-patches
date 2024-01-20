@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/navmesh/splitarray.h b/src/dev_ng/rage/framework/src/ai/navmesh/splitarray.h
+--- a/src/dev_ng/rage/framework/src/ai/navmesh/splitarray.h
++++ b/src/dev_ng/rage/framework/src/ai/navmesh/splitarray.h
+@@ -1,8 +1,8 @@
+ #ifndef SPLITARRAY_H
+ #define SPLITARRAY_H
+ 
+-#include "data\resource.h"
+-#include "data\struct.h"
++#include "data/resource.h"
++#include "data/struct.h"
+ #include "math/amath.h"
+ 
+ #ifndef COMPILE_TOOL_MESH

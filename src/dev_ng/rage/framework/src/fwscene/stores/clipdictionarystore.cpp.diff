@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.cpp
+@@ -9,13 +9,13 @@
+ #include "crclip/clipanimations.h"
+ #include "crmetadata/tag.h"
+ #include "crmetadata/tags.h"
+-#include "file\asset.h"
+-#include "file\packfile.h"
++#include "file/asset.h"
++#include "file/packfile.h"
+ #include "fwsys/fileExts.h"
+-#include "fwsys\timer.h"
+-#include "paging\rscbuilder.h"
+-#include "streaming\defragmentation.h"
+-#include "streaming\streaming_channel.h"
++#include "fwsys/timer.h"
++#include "paging/rscbuilder.h"
++#include "streaming/defragmentation.h"
++#include "streaming/streaming_channel.h"
+ #include "system/param.h"
+ 
+ namespace rage {
