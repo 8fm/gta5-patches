@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/device_win32.cpp b/src/dev_ng/rage/base/src/grcore/device_win32.cpp
+--- a/src/dev_ng/rage/base/src/grcore/device_win32.cpp
++++ b/src/dev_ng/rage/base/src/grcore/device_win32.cpp
+@@ -2407,7 +2407,7 @@ void grcDevice::ComputeMaximizedWindowDimensions(RECT &rect)
+ 	if (height > width)
+ 	{
+ 		height = (u32)((float)width / grcDevice::sm_minAspectRatio); 
+-		rect.top = max(bestDesc.DesktopCoordinates.top, (bestDesc.DesktopCoordinates.top + bestDesc.DesktopCoordinates.bottom)/2 - height/2);
++		rect.top = std::max(bestDesc.DesktopCoordinates.top, (bestDesc.DesktopCoordinates.top + bestDesc.DesktopCoordinates.bottom)/2 - height/2);
+ 		rect.bottom = rect.top + height;
+ 	}
+ }
+@@ -2478,7 +2478,7 @@ bool grcDevice::ComputeWindowDimensions(RECT &rect, unsigned int windowFlags)
+ 	{
+ 		rect.left = (desc.DesktopCoordinates.left + desc.DesktopCoordinates.right)/2 - width/2;
+ 		rect.right = rect.left + width;
+-		rect.top = max(desc.DesktopCoordinates.top, (desc.DesktopCoordinates.top + desc.DesktopCoordinates.bottom)/2 - height/2);
++		rect.top = std::max(desc.DesktopCoordinates.top, (desc.DesktopCoordinates.top + desc.DesktopCoordinates.bottom)/2 - height/2);
+ 		rect.bottom = rect.top + height;
+ 	}
+ 	pcdDisplayf("Post-ComputeWindowDimensions LT: %dx%d RB: %dx%d in ChangeDevice", rect.left, rect.top, rect.right, rect.bottom);

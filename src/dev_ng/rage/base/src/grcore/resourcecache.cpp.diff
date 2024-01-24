@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/resourcecache.cpp b/src/dev_ng/rage/base/src/grcore/resourcecache.cpp
+--- a/src/dev_ng/rage/base/src/grcore/resourcecache.cpp
++++ b/src/dev_ng/rage/base/src/grcore/resourcecache.cpp
+@@ -1385,7 +1385,7 @@ s64 grcResourceCache::GetTotalFreeMemory(MemoryType eType, bool bIgnoreCache) co
+ 			iTotalFreeAppMemory = sysMemTotalFreeAppMemory();
+ 			iTotalFreeMemory = sysMemTotalFreeMemory();
+ 
+-			uNextUpdate = min(max(iTotalFreeAppMemory, auMemoryLimits[0]), auMemoryLimits[1]);
++			uNextUpdate = std::min(std::max(iTotalFreeAppMemory, auMemoryLimits[0]), auMemoryLimits[1]);
+ 			uNextUpdate = (u64)(((uNextUpdate - auMemoryLimits[0]) / (float)(auMemoryLimits[1] - auMemoryLimits[0])) * (auUpdateRate[1] - auUpdateRate[0]) + auUpdateRate[0]);
+ 		}
+ 
+@@ -3984,17 +3984,17 @@ void grcResourceCache::DumpMemoryStats()
+ 		if (info.State == MEM_FREE) 
+ 		{	
+ 			uFree += info.RegionSize;
+-			uLargestFree = max(info.RegionSize, uLargestFree);
++			uLargestFree = std::max(info.RegionSize, uLargestFree);
+ 		}
+ 		else if (info.State == MEM_COMMIT)
+ 		{
+ 			uCommited += info.RegionSize;
+-			uLargestCommitted = max(info.RegionSize, uLargestCommitted);
++			uLargestCommitted = std::max(info.RegionSize, uLargestCommitted);
+ 		}
+ 		else if (info.State == MEM_RESERVE)
+ 		{
+ 			uReserved += info.RegionSize;
+-			uLargestReserved = max(info.RegionSize, uLargestReserved);
++			uLargestReserved = std::max(info.RegionSize, uLargestReserved);
+ 		}
+ 	}
+ 
