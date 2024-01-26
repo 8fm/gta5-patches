@@ -1,0 +1,110 @@
+diff --git a/src/dev_ng/rage/base/src/system/platformdefs.h b/src/dev_ng/rage/base/src/system/platformdefs.h
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/system/platformdefs.h
+@@ -0,0 +1,105 @@
++#pragma once
++
++#if __LINUX
++
++#define MAX_PATH PATH_MAX + 1
++#define wcsncpy_s wcsncpy
++
++template <typename T, size_t N> size_t _countof(T (&arr)[N])
++{
++    return std::extent<T[N]>::value;
++}
++
++inline int strcpy_s(char *dest, size_t num, const char *source)
++{
++    if(!dest)
++        return EINVAL;
++
++    if(0 == num)
++    {
++        dest[0] = '\0';
++        return ERANGE;
++    }
++
++    if(!source)
++    {
++        dest[0] = '\0';
++        return EINVAL;
++    }
++
++    size_t i;
++    for(i = 0; i < num; i++)
++    {
++        if((dest[i] = source[i]) == '\0')
++            return 0;
++    }
++    dest[0] = '\0';
++    return ERANGE;
++}
++
++inline int strncpy_s(char* dest, size_t dst_size, const char* source, size_t num)
++{
++    if (!dest || (0 == dst_size))
++        return EINVAL;
++
++    if (0 == num)
++    {
++        dest[0] = '\0';
++        return 0;
++    }
++
++    if (!source)
++    {
++        dest[0] = '\0';
++        return EINVAL;
++    }
++
++    size_t i, end;
++    if (num < dst_size)
++        end = num;
++    else
++        end = dst_size - 1;
++
++    for (i = 0; i < end && source[i]; i++)
++        dest[i] = source[i];
++
++    if (!source[i] || end == num)
++    {
++        dest[i] = '\0';
++        return 0;
++    }
++
++    dest[0] = '\0';
++
++    return EINVAL;
++}
++
++inline int strcat_s(char * dest, size_t num, const char * source)
++{
++    if(!dest)
++        return EINVAL;
++
++    if(!source)
++    {
++        dest[0] = '\0';
++        return EINVAL;
++    }
++
++    size_t i, j;
++    for(i = 0; i < num; i++)
++    {
++        if(dest[i] == '\0')
++        {
++            for(j = 0; (j + i) < num; j++)
++            {
++                if((dest[j + i] = source[j]) == '\0')
++                    return 0;
++            }
++        }
++    }
++
++    dest[0] = '\0';
++    return ERANGE;
++}
++
++#endif // __LINUX

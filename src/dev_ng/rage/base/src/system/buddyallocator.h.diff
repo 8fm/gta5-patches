@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/rage/base/src/system/buddyallocator.h b/src/dev_ng/rage/
  };
  
 -#if RSG_PC
-+#if RSG_PC || RSG_LINUX
++#if RSG_PC && !RSG_LINUX
  
  class sysMemGrowBuddyAllocator: public sysMemBuddyAllocator
  {

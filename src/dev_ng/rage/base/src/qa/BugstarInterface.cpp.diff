@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/qa/BugstarInterface.cpp b/src/dev_ng/rage/base/src/qa/BugstarInterface.cpp
+--- a/src/dev_ng/rage/base/src/qa/BugstarInterface.cpp
++++ b/src/dev_ng/rage/base/src/qa/BugstarInterface.cpp
+@@ -20,7 +20,7 @@
+ 
+ #include "grcore/device.h" // Need for NV_SUPPORT macro
+ 
+-#if RSG_PC && !RSG_TOOL
++#if RSG_PC && !RSG_TOOL && !RSG_LINUX
+ #pragma warning(disable: 4668)
+ #include <shlobj.h>
+ #pragma warning(error: 4668)
+@@ -516,7 +516,7 @@ void qaBugstarInterface::CreateBug(qaBug& bug, const char* filename, int id, con
+ 	char screenshotStereoCustFieldName[RAGE_MAX_PATH] = "Attachment_";
+ 	u32 bodyMessageLength	= 0;
+ 
+-#if RSG_PC && NV_SUPPORT && !__RGSC_DLL
++#if RSG_PC && NV_SUPPORT && !__RGSC_DLL && !RSG_LINUX
+ 	if (GRCDEVICE.IsStereoEnabled() && GRCDEVICE.CanUseStereo())
+ 	{
+ 		char stereoImagePath[MAX_PATH] = {0};

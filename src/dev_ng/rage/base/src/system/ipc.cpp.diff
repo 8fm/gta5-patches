@@ -38,7 +38,7 @@ diff --git a/src/dev_ng/rage/base/src/system/ipc.cpp b/src/dev_ng/rage/base/src/
 +				struct timeval tv;
 +				gettimeofday(&tv, 0);
 +				tv.tv_usec += milliseconds * 1000;
-+				struct timespec ts = { tv.tv_sec + (tv.tv_usec / 1000000), (tv.tv_usec % 1000000) * 1000 };
++				struct timespec ts = { tv.tv_sec + (tv.tv_usec/1000000), (tv.tv_usec % 1000000) * 1000 };
  #			else
  				sys_time_sec_t sec;
  				sys_time_nsec_t nsec;
@@ -87,15 +87,6 @@ diff --git a/src/dev_ng/rage/base/src/system/ipc.cpp b/src/dev_ng/rage/base/src/
  #else
  	return (sysIpcThreadId) GetCurrentThread();
  #endif
-@@ -1036,7 +1049,7 @@ sysIpcThreadId sysIpcCreateThread(sysIpcThreadFunc func,void *closure,unsigned s
- #else
- sysIpcThreadId sysIpcCreateThread(sysIpcThreadFunc func,void *closure,unsigned stackSize,sysIpcPriority priority,const char *threadName,int XENON_ONLY(cpu) PSP2_ONLY(cpu) ORBIS_ONLY(cpu) DURANGO_ONLY(cpu), const char *threadTtyName) {
- 
--#if RSG_PC 
-+#if RSG_PC || RSG_LINUX
- 	// affinityMask will be ignored, so just pass in -1 
- 	u32 mask = (u32)-1;
- #elif RSG_DURANGO
 @@ -1250,7 +1263,7 @@ bool sysIpcWaitThreadExit(sysIpcThreadId id) {
  
  

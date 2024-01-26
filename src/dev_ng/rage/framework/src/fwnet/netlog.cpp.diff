@@ -11,30 +11,3 @@ diff --git a/src/dev_ng/rage/framework/src/fwnet/netlog.cpp b/src/dev_ng/rage/fr
  
  // Rage headers
  #include "system/bootmgr.h"
-@@ -37,7 +38,7 @@ NETWORK_OPTIMISATIONS()
- 
- extern __THREAD int RAGE_LOG_DISABLE;
- 
--#if RSG_PC && !__NO_OUTPUT
-+#if (RSG_PC || RSG_LINUX) && !__NO_OUTPUT
- namespace rage
- {
- 	XPARAM(processinstance);
-@@ -54,7 +55,7 @@ PARAM(enablenetlogs, "[network] enables network logging");
- PARAM(maxloginstances, "[network] limits the number of instances of a individual log file that can be generated before old files are overwritten");
- XPARAM(localnetlogs);
- 
--#if RSG_DURANGO || RSG_PC || RSG_ORBIS
-+#if RSG_DURANGO || RSG_PC || RSG_ORBIS || RSG_LINUX
- 
- // This is required on Xbox 1 as IPv6 addresses aren't in a friendly format for prefixing to log files (IPv4 addresses are prefixed on other platforms)
- // PC uses the same system as a PC may have multiple IP addresses (including 127.0.0.1, which isn't helpful for this usage)
-@@ -1978,7 +1979,7 @@ void netLogImpl::GetDebugStatisticsText(char *buffer, const unsigned bufferSize)
- 
- void netLogImpl::GetFileName(char *filename, u32 filenameSize) const
- {
--	strcpy_s(filename, filenameSize, m_FileName);
-+	strcpy(filename, m_FileName);
- 	SetUpFilename(filename, filenameSize);
- }
- 

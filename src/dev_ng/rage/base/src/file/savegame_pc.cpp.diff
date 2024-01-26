@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/file/savegame_pc.cpp b/src/dev_ng/rage/base/src/file/savegame_pc.cpp
+--- a/src/dev_ng/rage/base/src/file/savegame_pc.cpp
++++ b/src/dev_ng/rage/base/src/file/savegame_pc.cpp
+@@ -6,7 +6,7 @@
+ #include "file/file_config.h"
+ #include "savegame.h"
+ 
+-#if RSG_PC && !USE_STEAM_CLOUD_SAVES
++#if RSG_PC && !USE_STEAM_CLOUD_SAVES && !RSG_LINUX
+ 
+ #include "device.h"
+ #include "asset.h"

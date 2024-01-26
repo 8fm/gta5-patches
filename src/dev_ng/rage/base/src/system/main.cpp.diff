@@ -45,3 +45,30 @@ diff --git a/src/dev_ng/rage/base/src/system/main.cpp b/src/dev_ng/rage/base/src
  	// Restore the timer resolution, just to play nice -- will only happen
  	//	for people that exit the game legally.
  	timeEndPeriod(1);
+@@ -675,7 +675,7 @@ bool CommonMain_Prologue(int argc,char **argv)
+ {
+ 	g_IsStaticInitializationFinished = true;
+ 
+-#if RSG_PC && (!defined(__RGSC_DLL) || !__RGSC_DLL)
++#if RSG_PC && (!defined(__RGSC_DLL) || !__RGSC_DLL) && !RSG_LINUX
+ 	WerSetFlags(WER_FAULT_REPORTING_FLAG_NOHEAP);
+ #endif // RSG_PC
+ 
+@@ -838,7 +838,7 @@ bool CommonMain_Prologue(int argc,char **argv)
+ 
+ 		if (memVisualize.HasResource())
+ 		{
+-#if RSG_DURANGO || RSG_ORBIS
++#if RSG_DURANGO || RSG_ORBIS || RSG_LINUX
+ 			t->InitHeap("Resource", master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL)->GetHeapBase(), master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL)->GetHeapSize());
+ #else
+ 			const sysMemAllocator* pResVirtAllocator = master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL);
+@@ -1266,7 +1266,7 @@ int CommonMain(int argc, char **argv)
+ 	sceSystemServiceHideSplashScreen();
+ #endif	// RSG_ORBIS
+ 
+-#if RSG_PC && !__FINAL
++#if RSG_PC && !__FINAL && !RSG_LINUX
+ 	if(IsDebuggerPresent())
+ 	{
+ 		SetEnvironmentVariableA("_NO_DEBUG_HEAP", "1");

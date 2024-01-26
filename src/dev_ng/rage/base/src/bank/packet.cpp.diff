@@ -10,12 +10,3 @@ diff --git a/src/dev_ng/rage/base/src/bank/packet.cpp b/src/dev_ng/rage/base/src
  		char szWindowTitle[512];
  		/* Get the console window title. */ 
  		GetConsoleTitle(szWindowTitle, 512); 
-@@ -410,7 +410,7 @@ bool bkRemotePacket::ConnectToRag(bool viewerApp)
- 
- #if RSG_PC && RSG_CPU_X86
- 		const char *platformString = "Win32";
--#elif RSG_PC && RSG_CPU_X64
-+#elif (RSG_PC || RSG_LINUX) && RSG_CPU_X64
- 		const char *platformString = "Win64";
- #elif RSG_XENON
- 		const char *platformString = "Xbox360";

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlpcpipe.h b/src/dev_ng/rage/base/src/rline/rlpcpipe.h
+--- a/src/dev_ng/rage/base/src/rline/rlpcpipe.h
++++ b/src/dev_ng/rage/base/src/rline/rlpcpipe.h
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2010 Rockstar Games.  All Rights Reserved. 
+ // 
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ #ifndef RLINE_RLPCPIPE_H
+ #define RLINE_RLPCPIPE_H

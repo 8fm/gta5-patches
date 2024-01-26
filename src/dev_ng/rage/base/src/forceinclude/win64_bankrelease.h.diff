@@ -50,17 +50,16 @@ diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev
  #define __WIN32PC	1
  #define __PAGING	1
  #define __GAMETOOL	0
-@@ -116,15 +126,15 @@ END_NS_RAGE
+@@ -116,7 +126,7 @@ END_NS_RAGE
  #define RSG_PS3         0
  #define RSG_PPU         0
  #define RSG_SPU         0
 -#define RSG_WIN32       1
 +#define RSG_WIN32       (1 && __WIN32)
  #define RSG_XENON       0
--#define RSG_PC          1
-+#define RSG_PC          (1 && __WIN32)
+ #define RSG_PC          1
  #define RSG_DURANGO     0
- #define RSG_ORBIS       0
+@@ -124,7 +134,7 @@ END_NS_RAGE
  #define RSG_WINRT		0
  #define RSG_XDK			0
  #define RSG_GDK			0
@@ -69,29 +68,25 @@ diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev
  #define RSG_IOS			0
  #define RSG_ANDROID		0
  #define RSG_WINPHONE	0
-@@ -148,12 +158,21 @@ END_NS_RAGE
+@@ -148,11 +158,16 @@ END_NS_RAGE
  #define PS3_ONLY(...)
  #define PPU_ONLY(...)
  #define SPU_ONLY(...)
-+#if __LINUX
-+#define WIN32_ONLY(...)
-+#else
- #define WIN32_ONLY(...)     __VA_ARGS__
-+#endif
+-#define WIN32_ONLY(...)     __VA_ARGS__
  #define XENON_ONLY(...)
  #define PSP2_ONLY(...)
  #define CAFE_ONLY(...)
 +#if __LINUX
++#define WIN32_ONLY(...)
 +#define LINUX_ONLY(...)     __VA_ARGS__
-+#define WIN32PC_ONLY(...)
 +#else
++#define WIN32_ONLY(...)     __VA_ARGS__
  #define LINUX_ONLY(...)
- #define WIN32PC_ONLY(...)   __VA_ARGS__
 +#endif
+ #define WIN32PC_ONLY(...)   __VA_ARGS__
  #define ORBIS_ONLY(...)		
  #define PROSPERO_ONLY(...)
- #define NP_ONLY(...)		
-@@ -166,10 +185,17 @@ END_NS_RAGE
+@@ -166,10 +181,17 @@ END_NS_RAGE
  #define GDK_ONLY(...)
  #define XBOX_ONLY(...)		
  
@@ -109,7 +104,7 @@ diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev
  #define RESTRICT
  #define MAY_ALIAS
  
-@@ -204,6 +230,11 @@ END_NS_RAGE
+@@ -204,6 +226,11 @@ END_NS_RAGE
  #define __TOOL		0
  #define __EXPORTER	0
  #define	__PROFILE	0
@@ -121,7 +116,7 @@ diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev
  #define RSG_DEV		__DEV
  #define RSG_BANK	__BANK
  #define RSG_ASSERT	__ASSERT
-@@ -252,6 +283,14 @@ END_NS_RAGE
+@@ -252,6 +279,14 @@ END_NS_RAGE
  #	define __forceinline inline
  #endif
  

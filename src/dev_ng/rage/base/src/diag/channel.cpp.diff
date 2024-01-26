@@ -1,15 +1,38 @@
 diff --git a/src/dev_ng/rage/base/src/diag/channel.cpp b/src/dev_ng/rage/base/src/diag/channel.cpp
 --- a/src/dev_ng/rage/base/src/diag/channel.cpp
 +++ b/src/dev_ng/rage/base/src/diag/channel.cpp
-@@ -555,7 +555,7 @@ static void NativeOutputString(const char *str)
+@@ -129,7 +129,7 @@ void diagTerminate()
+ 		__debugbreak();
+ 	}
+ 
+-#if RSG_PS3 || RSG_ORBIS
++#if RSG_PS3 || RSG_ORBIS || RSG_LINUX
+ 	_Exit(1);
+ #elif __XENON
+ 	XLaunchNewImage( XLAUNCH_KEYWORD_DEFAULT_APP, 0 );
+@@ -147,7 +147,7 @@ void diagTerminate()
+ 
+ void diagTerminate(rage::FatalErrorCode WIN32PC_ONLY(errorCode), bool WIN32PC_ONLY(silent))
  {
- 	#if RSG_PC || RSG_DURANGO
- 		OutputDebugString(str);
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (rage::diagErrorCodes::IsErrorCodeValid(errorCode) || !rage::diagErrorCodes::IsErrorCodesLoaded())
+ 	{
+ 		const size_t TITLE_STRING_LENGTH = 256;
+@@ -553,10 +553,10 @@ static __THREAD bool s_DontDoDiagPrintCallback = false;
+ 
+ static void NativeOutputString(const char *str)
+ {
+-	#if RSG_PC || RSG_DURANGO
+-		OutputDebugString(str);
 -	#elif RSG_ORBIS
-+	#elif RSG_ORBIS || RSG_LINUX
++	#if RSG_ORBIS || RSG_LINUX
  		printf("%s", str);
++	#elif RSG_PC || RSG_DURANGO
++		OutputDebugString(str);
  	#else
  		#error Unhandled platform
+ 	#endif
 @@ -1394,7 +1394,7 @@ u64 diagChannel::GetPosixTime()
  static sysCriticalSectionToken printToken;
  #endif

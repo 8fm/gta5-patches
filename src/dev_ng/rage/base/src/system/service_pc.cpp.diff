@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/service_pc.cpp b/src/dev_ng/rage/base/src/system/service_pc.cpp
+--- a/src/dev_ng/rage/base/src/system/service_pc.cpp
++++ b/src/dev_ng/rage/base/src/system/service_pc.cpp
+@@ -11,7 +11,7 @@
+ #include "system/epic.h"
+ #include "system/threadtype.h"
+ 
+-#if RSG_PC && !__TOOL
++#if RSG_PC && !__TOOL && !RSG_LINUX
+ #include "grcore/device.h"
+ #include "system/param.h"
+ #include "system/timer.h"

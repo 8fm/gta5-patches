@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/rage/base/src/profile/core.cpp b/src/dev_ng/rage/base/src/profile/core.cpp
+--- a/src/dev_ng/rage/base/src/profile/core.cpp
++++ b/src/dev_ng/rage/base/src/profile/core.cpp
+@@ -51,12 +51,12 @@
+ #include <sys/types.h>
+ #include <sys/resource.h>
+ #include <sys/syscall.h>
+-#include <unistd.h>
++#include "system/platformdefs.h"
+ #endif
+ 
+ #include "system/xtl.h"
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <psapi.h>
+ #endif
+ 
+@@ -2402,7 +2402,7 @@ void AddInternalTags()
+ 		Profiler::AttachTag(rockyAllocationsOverheadTag, pAllocator->GetAllocationsOverheadMs());
+ 
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		#define ATTACH_SYS_MEM_TAG(NAME, VALUE) { static Profiler::TagDescription* tag = Profiler::TagDescription::Create(NAME); Profiler::AttachTag(tag, VALUE); }
+ 
+ 		MEMORYSTATUSEX statex = { 0 };
+@@ -2891,7 +2891,7 @@ bool Core::GenerateBudgets(rage::atArray<EventCounterGroup>& budgets, const Budg
+ 
+ 	const char* budgetsPath = RS_TOOLSROOT"/bin/RockyProfiler/PerformanceBudgetsTotal";
+ 
+-#if RSG_LINUX
++#if RSG_LINUX && 0
+ 	if (g_SysService.IsCloud())
+ 		budgetsPath = "/mnt/developer/PerformanceBudgets";
+ #endif

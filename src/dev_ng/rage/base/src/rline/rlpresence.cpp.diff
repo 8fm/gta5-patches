@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::SetIntAttribute(localGamerIndex, name, value, bNeedsCommitIfDirty);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->SetIntAttribute(localGamerIndex, name, value);
@@ -22,7 +22,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::SetDoubleAttribute(localGamerIndex, name, value,bNeedsCommitIfDirty);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->SetDoubleAttribute(localGamerIndex, name, value);
@@ -38,7 +38,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::SetStringAttribute(localGamerIndex, name, value, bNeedsCommitIfDirty);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->SetStringAttribute(localGamerIndex, name, value);
@@ -54,7 +54,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::GetIntAttribute(localGamerIndex, name, value);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->GetIntAttribute(localGamerIndex, name, value);
@@ -70,7 +70,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::GetDoubleAttribute(localGamerIndex, name, value);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->GetDoubleAttribute(localGamerIndex, name, value);
@@ -86,7 +86,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::GetStringAttribute(localGamerIndex, name, value, sizeofValue);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->GetStringAttribute(localGamerIndex, name, value, sizeofValue);
@@ -102,7 +102,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::GetAttributesForGamer(localGamerIndex, gamerHandle, attrs, numAttrs, status);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	bool success = false;
  
  	GetAttributesForGamerTask* task;
@@ -120,7 +120,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
      return rlScPresence::Subscribe(localGamerIndex, channels, numChannels);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->Subscribe(localGamerIndex, channels, numChannels);
@@ -136,7 +136,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
      return rlScPresence::Unsubscribe(localGamerIndex, channels, numChannels);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->Unsubscribe(localGamerIndex, channels, numChannels);
@@ -152,7 +152,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
      return rlScPresence::UnsubscribeAll(localGamerIndex);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		return g_rlPc.GetPresenceManager()->UnsubscribeAll(localGamerIndex);
@@ -168,7 +168,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
                                  paramNameValueCsv,
                                  message);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	if (g_rlPc.GetPresenceManager() != NULL)
  	{
  		rgsc::PresenceMessage rgscMessage;
@@ -186,7 +186,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
  #if SC_PRESENCE
  	return rlScPresence::PostMessage(localGamerindex, recipients, numRecipients, message, ttlSeconds);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	bool success = false;
  
  	netFireAndForgetTask<PostMessageTask>* task;
@@ -204,7 +204,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
                                  numRecords,
                                  status);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	bool success = false;
  
  	QueryTask* task;
@@ -222,7 +222,7 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
                                      count,
                                      status);
 -#else
-+#elif RSG_PC
++#elif !RSG_LINUX
  	bool success = false;
  
  	QueryCountTask* task;
@@ -244,12 +244,3 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
          //Make sure we're preventing people from seeing secret
          //stuff in our games during dev.
          rlGamerInfo::CheckDevPrivacyPrivilegesAndBail(newGamerInfo.GetLocalIndex());
-@@ -3301,7 +3329,7 @@ rlPresence::OnScMessage(const int localGamerIndex,
- 	{
- 		GetRgscConcreteInstance()->_GetPresenceManager()->OnSocialClubEvent(message);
- 	}
--#elif RSG_PC
-+#elif RSG_PC || RSG_LINUX
- 	// messages that don't get handled in the Social Club DLL get sent up to the game.
- 	rlPresenceEventScMessage e(m_GamerPresences[localGamerIndex].m_GamerInfo, message, sender);
- 	m_Delegator.Dispatch(&e);
