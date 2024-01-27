@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediaencoder_mmf.cpp b/src/dev_ng/rage/framework/src/video/mediaencoder_mmf.cpp
+--- a/src/dev_ng/rage/framework/src/video/mediaencoder_mmf.cpp
++++ b/src/dev_ng/rage/framework/src/video/mediaencoder_mmf.cpp
+@@ -15,7 +15,7 @@
+ #define __RGSC_DLL 0
+ #endif
+ 
+-#if ( RSG_PC || RSG_DURANGO ) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if ( RSG_PC || RSG_DURANGO ) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ #if RSG_PC
+ PARAM(disableEncodeVerify,"MP4 Encoder: Disable verify key");

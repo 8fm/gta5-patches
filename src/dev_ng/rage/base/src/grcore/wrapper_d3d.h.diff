@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h b/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h
+--- a/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h
++++ b/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h
+@@ -23,7 +23,7 @@
+ #if RSG_PC
+ #if __D3D11_1
+ #include "grcore/DxErr.h"
+-#else
++#elif !__LINUX
+ #include <DxErr.h>
+ #pragma comment(lib,"DxErr.lib")
+ #endif
+@@ -1989,7 +1989,7 @@ public:
+ 
+ 
+ 		// Returns true if the passed stages sampler states need to be changed and updates contents.
+-		bool RageDirect3DDeviceContext11::WillShaderResourcesChange(UINT & StartSlot, UINT & NumViews, ID3D11ShaderResourceView * const *ppShaderResourceViews, ID3D11ShaderResourceView ** ppShadowStates)
++		bool WillShaderResourcesChange(UINT & StartSlot, UINT & NumViews, ID3D11ShaderResourceView * const *ppShaderResourceViews, ID3D11ShaderResourceView ** ppShadowStates)
+ 		{
+ 			if (NumViews == 1)
+ 			{	// This code-path now not hit for pixel shaders - so fast-path 1 item as that's all that ever gets called right now.

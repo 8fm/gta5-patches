@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/sinkwriter.h b/src/dev_ng/rage/framework/src/video/sinkwriter.h
+--- a/src/dev_ng/rage/framework/src/video/sinkwriter.h
++++ b/src/dev_ng/rage/framework/src/video/sinkwriter.h
+@@ -16,7 +16,7 @@
+ #define __RGSC_DLL 0
+ #endif
+ 
+-#if ( RSG_PC || RSG_DURANGO ) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if ( RSG_PC || RSG_DURANGO ) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ #ifndef _SINKWRITER_H_
+ #define _SINKWRITER_H_

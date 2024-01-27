@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediaencoder_win.cpp b/src/dev_ng/rage/framework/src/video/mediaencoder_win.cpp
+--- a/src/dev_ng/rage/framework/src/video/mediaencoder_win.cpp
++++ b/src/dev_ng/rage/framework/src/video/mediaencoder_win.cpp
+@@ -18,8 +18,10 @@
+ 
+ // Windows
+ #pragma warning(disable: 4668)
+-#include <Windows.h>
++#include <windows.h>
++#if !RSG_LINUX
+ #include <winerror.h>
++#endif
+ #pragma warning(error: 4668)
+ 
+ // rage

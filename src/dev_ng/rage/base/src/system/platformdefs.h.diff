@@ -2,11 +2,12 @@ diff --git a/src/dev_ng/rage/base/src/system/platformdefs.h b/src/dev_ng/rage/ba
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/rage/base/src/system/platformdefs.h
-@@ -0,0 +1,105 @@
+@@ -0,0 +1,106 @@
 +#pragma once
 +
 +#if __LINUX
 +
++#define __out_opt
 +#define MAX_PATH PATH_MAX + 1
 +#define wcsncpy_s wcsncpy
 +

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediatimer.h b/src/dev_ng/rage/framework/src/video/mediatimer.h
+--- a/src/dev_ng/rage/framework/src/video/mediatimer.h
++++ b/src/dev_ng/rage/framework/src/video/mediatimer.h
+@@ -17,7 +17,7 @@
+ // framework
+ #include "media_common.h"
+ 
+-#define MEDIA_TIMER_SYSTEM ( !RSG_PC && !RSG_DURANGO )
++#define MEDIA_TIMER_SYSTEM ( (!RSG_PC && !RSG_DURANGO) || RSG_LINUX )
+ 
+ namespace rage
+ {

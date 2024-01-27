@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.cpp b/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.cpp
+--- a/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.cpp
++++ b/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.cpp
+@@ -10,7 +10,7 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ #include "mediaencoder_video_class_factory.h"
+ 
+-#if RSG_PC && !__RESOURCECOMPILER
++#if RSG_PC && !__RESOURCECOMPILER && !RSG_LINUX
+ 
+ #pragma warning(push)
+ #pragma warning(disable: 4668)

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlfriendsmanager.h b/src/dev_ng/rage/base/src/rline/rlfriendsmanager.h
+--- a/src/dev_ng/rage/base/src/rline/rlfriendsmanager.h
++++ b/src/dev_ng/rage/base/src/rline/rlfriendsmanager.h
+@@ -270,7 +270,7 @@ public:
+ #if RSG_NP
+ 	static void OnNpEvent(rlNp* np, const rlNpEvent* evt);
+ 	static void UpdateFriendPresence(const int localGamerIndex, const rlSceNpAccountId accountId, const rlSceNpOnlineId& onlineId, bool bIsOnline, bool bIsInSameTitle, const void *data, const unsigned dataSize, bool bRaiseEvent = true);
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 	static void OnPcEvent(rlPc* pc, const rlPcEvent* evt);
+ #elif RSG_DURANGO
+ 	static void OnXblEvent(rlXbl* xbl, const rlXblEvent* evt);

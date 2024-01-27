@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/d3dwrapper.h b/src/dev_ng/rage/base/src/grcore/d3dwrapper.h
+--- a/src/dev_ng/rage/base/src/grcore/d3dwrapper.h
++++ b/src/dev_ng/rage/base/src/grcore/d3dwrapper.h
+@@ -13,6 +13,7 @@
+ #include "system/xtl.h"
+ #include "system/d3d9.h"
+ #include "system/d3d11.h"
++#include "system/platformdefs.h"
+ 
+ namespace rage {
+ 

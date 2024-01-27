@@ -17,6 +17,24 @@ diff --git a/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp b/src/dev_n
  #include "system/param.h"
  #include "system/platform.h"
  
+@@ -28,7 +28,7 @@
+ #include "system/exec.h"
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <windef.h>
+ #include <winbase.h>
+ #endif
+@@ -429,7 +429,7 @@ void strCacheLoader::Shutdown()
+ 		}
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(PARAM_exitaftercachesave.Get())
+ 	{
+ 		cacheloaderDisplayf("Completed processing cachefile - terminating per -exitaftercachesave option.");
 @@ -1216,7 +1216,7 @@ void strCacheLoader::BuildCacheFilename(const char* const pFilename)
  				"%s%s_cache_packaged_%c%s%s.dat", deviceAndPath,
  				ASSET.FileName(baseName),
