@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlementtask.cpp b/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlementtask.cpp
+--- a/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlementtask.cpp
++++ b/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlementtask.cpp
+@@ -16,7 +16,7 @@
+ 
+ #if RSG_PC  // Entitlements are only for PC
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include "rline/rlpc.h"
+ #include "../../../suite/src/rgsc/rgsc/rgsc/public_interface/rgsc_interface.h"
+ #endif

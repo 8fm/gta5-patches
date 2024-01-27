@@ -1,0 +1,102 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlfriend.cpp b/src/dev_ng/rage/base/src/rline/rlfriend.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlfriend.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlfriend.cpp
+@@ -117,7 +117,7 @@ void rlFriend::Clear()
+ 	m_FriendReference.Clear();
+ 	m_PresenceBlobSize = 0;
+ 	sysMemSet(m_PresenceBlob, 0, sizeof(m_PresenceBlob));
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 	m_ScFriend.Clear();
+ 	m_Flags = 0;
+ #elif RSG_DURANGO
+@@ -132,7 +132,7 @@ rlGamerHandle* rlFriend::GetGamerHandle(rlGamerHandle* hGamer) const
+ 
+ #if RSG_ORBIS
+     hGamer->ResetNp(g_rlNp.GetEnvironment(), m_FriendReference.m_Id.m_AccountId, &m_FriendReference.m_Id.m_OnlineId);
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+     hGamer->ResetSc(m_ScFriend.m_RockstarId);
+ #elif RSG_DURANGO
+ 	hGamer->ResetXbl(m_FriendReference.m_Id.m_Xuid);
+@@ -144,7 +144,7 @@ const char* rlFriend::GetName() const
+ {
+ #if RSG_ORBIS
+     return m_FriendReference.m_Id.m_OnlineId.data;
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+     return m_ScFriend.m_Nickname;
+ #elif RSG_DURANGO
+ 	return m_XblFriendInfo.m_Nickname;
+@@ -168,7 +168,7 @@ const bool rlFriend::IsValid() const
+ {
+ #if RSG_ORBIS
+ 	return m_FriendReference.IsValid();
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 	return m_ScFriend.IsValid();
+ #elif RSG_DURANGO
+ 	return m_FriendReference.IsValid();
+@@ -179,7 +179,7 @@ const bool rlFriend::IsValid() const
+ 
+ bool rlFriend::IsOnline() const
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	return m_ScFriend.m_IsOnline;
+ #else
+    return m_FriendReference.m_bIsOnline;
+@@ -188,7 +188,7 @@ bool rlFriend::IsOnline() const
+ 
+ bool rlFriend::IsInSameTitle() const
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	return m_ScFriend.m_IsPlayingSameTitle;
+ #else
+ 	return m_FriendReference.m_bIsInSameTitle;
+@@ -197,7 +197,7 @@ bool rlFriend::IsInSameTitle() const
+ 
+ bool rlFriend::IsInSession() const
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	return (m_Flags & FLAG_IS_IN_JOINABLE_SESSION) != 0;
+ #else
+ 	return m_FriendReference.m_bIsInSession;
+@@ -216,7 +216,7 @@ bool rlFriend::IsFavorite() const
+ 
+ void rlFriend::SetIsOnline(bool bOnline)
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	m_ScFriend.m_IsOnline = bOnline;
+ #else
+ 	m_FriendReference.m_bIsOnline = bOnline;
+@@ -225,7 +225,7 @@ void rlFriend::SetIsOnline(bool bOnline)
+ 
+ void rlFriend::SetIsInSameTitle(bool bInSameTitle)
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	m_ScFriend.m_IsPlayingSameTitle = bInSameTitle;
+ #else
+ 	m_FriendReference.m_bIsInSameTitle = bInSameTitle;
+@@ -240,7 +240,7 @@ void rlFriend::SetIsOnline(bool bIsOnline, bool bIsPlayingSameTitle)
+ 
+ void rlFriend::SetIsInSession(bool bInSession)
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (bInSession)
+ 	{
+ 		m_Flags |= FLAG_IS_IN_JOINABLE_SESSION;
+@@ -377,7 +377,7 @@ bool rlFriend::GetPresenceBlob(const int localGamerIndex, void* blob, unsigned*
+ 	}
+ }
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ void rlFriend::Reset(const rlScFriend& scFriend, unsigned flags)
+ {

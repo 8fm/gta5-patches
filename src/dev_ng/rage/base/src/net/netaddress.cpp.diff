@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/rage/base/src/net/netaddress.cpp b/src/dev_ng/rage/base/src/net/netaddress.cpp
+--- a/src/dev_ng/rage/base/src/net/netaddress.cpp
++++ b/src/dev_ng/rage/base/src/net/netaddress.cpp
+@@ -11,11 +11,12 @@
+ #include "nethardware.h"
+ #include "string/string.h"
+ #include "system/memops.h"
++#include "system/platformdefs.h"
+ 
+ #include <stdio.h>
+ #include <tuple>
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #include "system/xtl.h"
+ #include <winsock2.h>
+ #include <ws2tcpip.h>

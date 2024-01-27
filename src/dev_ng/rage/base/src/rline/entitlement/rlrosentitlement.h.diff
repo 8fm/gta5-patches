@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.h b/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.h
+--- a/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.h
++++ b/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.h
+@@ -30,7 +30,7 @@
+ #if defined(MASTER_NO_ENTITLEMENTS)
+ #define RSG_ENTITLEMENT_ENABLED 0
+ #else
+-#define RSG_ENTITLEMENT_ENABLED (1 && RSG_PC && !PRELOADED_SOCIAL_CLUB)
++#define RSG_ENTITLEMENT_ENABLED (1 && RSG_PC && !PRELOADED_SOCIAL_CLUB && !RSG_LINUX)
+ #endif
+ 
+ #if __STEAM_BUILD

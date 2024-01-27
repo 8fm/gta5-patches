@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/netsocket.cpp b/src/dev_ng/rage/base/src/net/netsocket.cpp
+--- a/src/dev_ng/rage/base/src/net/netsocket.cpp
++++ b/src/dev_ng/rage/base/src/net/netsocket.cpp
+@@ -17,7 +17,7 @@
+ 
+ #if RSG_NP
+ #include <sys/select.h>
+-#elif RSG_PC || RSG_DURANGO
++#elif (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #define STRICT
+ #pragma warning(push)
+ #pragma warning(disable: 4668)

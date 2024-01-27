@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/natpcp.cpp b/src/dev_ng/rage/base/src/net/natpcp.cpp
+--- a/src/dev_ng/rage/base/src/net/natpcp.cpp
++++ b/src/dev_ng/rage/base/src/net/natpcp.cpp
+@@ -19,7 +19,7 @@
+ #include "system/timer.h"
+ #include "rline/ros/rlros.h"
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #define STRICT
+ #pragma warning(push)
+ #pragma warning(disable: 4668)

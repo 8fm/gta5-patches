@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/resolver.cpp b/src/dev_ng/rage/base/src/net/resolver.cpp
+--- a/src/dev_ng/rage/base/src/net/resolver.cpp
++++ b/src/dev_ng/rage/base/src/net/resolver.cpp
+@@ -31,7 +31,7 @@
+ #include <netinet/in.h>
+ #include <arpa/inet.h>
+ #include <net.h>
+-#elif RSG_PC || RSG_DURANGO
++#elif (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #define STRICT
+ #pragma warning(disable: 4668)
+ #include <winsock2.h>

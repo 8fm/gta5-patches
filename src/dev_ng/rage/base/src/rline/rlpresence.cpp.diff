@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/base/src/rline/rlpresence.cpp
 --- a/src/dev_ng/rage/base/src/rline/rlpresence.cpp
 +++ b/src/dev_ng/rage/base/src/rline/rlpresence.cpp
+@@ -972,7 +972,7 @@ rlPresence::NotifyInviteAccepted(
+     }
+ }
+ 
+-#if RSG_PC && !__RGSC_DLL
++#if RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ // tasks that marshal presence calls to the DLL
+ class GetAttributesForGamerTask : public netTask
+ {
 @@ -2042,12 +2042,14 @@ rlPresence::SetIntAttribute(const int localGamerIndex,
  {
  #if SC_PRESENCE
@@ -244,3 +253,48 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
          //Make sure we're preventing people from seeing secret
          //stuff in our games during dev.
          rlGamerInfo::CheckDevPrivacyPrivilegesAndBail(newGamerInfo.GetLocalIndex());
+@@ -3607,7 +3635,7 @@ rlPresence::NativeGetStatusString(const rlGamerInfo& /*gamerInfo*/,
+ 	return false;
+ }
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ // this is here to avoid including windows platform headers.
+ static rlPcEventDelegator::Delegate m_PcDlgt;
+@@ -4154,7 +4182,7 @@ static bool IsSignedIn(const int localGamerIndex)
+ 
+ 		isSignedin = GetRgscConcreteInstance()->_GetProfileManager()->IsSignedInInternal();
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ 		isSignedin = g_rlPc.IsInitialized() && g_rlPc.GetProfileManager()->IsSignedIn();
+ #else
+@@ -4185,7 +4213,7 @@ static bool IsOnline(const int localGamerIndex)
+ 
+ 		isOnline = GetRgscConcreteInstance()->_GetProfileManager()->IsOnlineInternal();
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ 		isOnline = g_rlPc.IsInitialized() && g_rlPc.GetProfileManager()->IsOnline() && rlRos::IsOnline(0);
+ 
+@@ -4303,7 +4331,7 @@ static bool GetGamerHandle(const int localGamerIndex, rlGamerHandle *handle)
+ 			success = true;
+ 		}
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 		if(g_rlPc.IsInitialized())
+ 		{
+ 			rgsc::Profile profile;
+@@ -4374,7 +4402,7 @@ static bool GetOfflineName(const int localGamerIndex,
+ 			}
+ 		}
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ 		if(g_rlPc.IsInitialized())
+ 		{

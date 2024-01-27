@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlsessioninfo.cpp b/src/dev_ng/rage/base/src/rline/rlsessioninfo.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlsessioninfo.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlsessioninfo.cpp
+@@ -34,7 +34,7 @@ const rlSessionInfo rlSessionInfo::INVALID_SESSION_INFO;
+ //Make sure our ToString() buffer spec is large enough
+ CompileTimeAssert(rlSessionInfo::TO_STRING_BUFFER_SIZE <= RLSC_PRESENCE_STRING_MAX_SIZE);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ // we send the gsinfo attribute to the SC DLL, make sure it fits
+ CompileTimeAssert(rlSessionInfo::TO_STRING_BUFFER_SIZE <= rgsc::RGSC_PRESENCE_STRING_MAX_SIZE);
+ #endif

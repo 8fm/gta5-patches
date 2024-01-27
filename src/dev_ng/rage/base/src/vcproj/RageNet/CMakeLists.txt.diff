@@ -2,13 +2,16 @@ diff --git a/src/dev_ng/rage/base/src/vcproj/RageNet/CMakeLists.txt b/src/dev_ng
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/rage/base/src/vcproj/RageNet/CMakeLists.txt
-@@ -0,0 +1,64 @@
+@@ -0,0 +1,67 @@
 +project(RageNet)
 +
 +set(TARGET_TYPE "StaticLib")
 +include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
 +
 +add_definitions(-DCURL_STATICLIB -DWOLFSSL_USER_SETTINGS)
++if(NOT MSVC)
++    add_definitions(-D__STDC_WANT_LIB_EXT1__=1)
++endif()
 +
 +set(SRC_FILES
 +    "_Unity/_unity_RageNet_net.cpp"

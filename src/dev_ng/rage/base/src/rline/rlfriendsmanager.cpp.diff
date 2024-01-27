@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlfriendsmanager.cpp b/src/dev_ng/rage/base/src/rline/rlfriendsmanager.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlfriendsmanager.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlfriendsmanager.cpp
+@@ -15,6 +15,7 @@
+ #include "system/nelem.h"
+ #include "system/timer.h"
+ #include "string/stringhash.h"
++#include "system/platformdefs.h"
+ 
+ #if RSG_NP
+ #include "rline/rlnpcommon.h"
+@@ -731,7 +732,7 @@ namespace rage
+ 	{
+ #if __RGSC_DLL
+ 		return sm_NeedToRefreshFriends || IsReading();
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 		return g_rlPc.GetPlayerManager() != NULL && g_rlPc.GetPlayerManager()->IsSyncingFriends();
+ #else
+ 		return false;
+@@ -1306,7 +1307,7 @@ namespace rage
+ 			g_rlXbl.GetPlayerManager()->UpdateFriends(localGamerIndex, page, startIndex - page->m_StartIndex, numFriends, &sm_XblPresenceSessionStatus);
+ 
+ 			sm_bSortFriends = true;
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 			// Request the SC DLL to update your friends list first
+ 			if (g_rlPc.GetPlayerManager())
+ 			{

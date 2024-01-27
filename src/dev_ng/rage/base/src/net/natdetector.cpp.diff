@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/net/natdetector.cpp b/src/dev_ng/rage/base/src/net/natdetector.cpp
+--- a/src/dev_ng/rage/base/src/net/natdetector.cpp
++++ b/src/dev_ng/rage/base/src/net/natdetector.cpp
+@@ -23,7 +23,7 @@
+ 
+ #include "status.h"
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #define STRICT
+ #pragma warning(push)
+ #pragma warning(disable: 4668)
+@@ -2161,7 +2161,7 @@ netNatDetector::Shutdown()
+ void
+ netNatDetector::UpdateRgsc()
+ {
+-#if RSG_PC && !__RGSC_DLL
++#if RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ #if GTA_VERSION
+ 	if(g_rlPc.GetNetworkInterface())
+ #else
+@@ -2572,7 +2572,7 @@ netNatDetector::UpdateNatTypeDiscovery()
+ 		// wait until we have our CreateTicketResponse before using server resources
+ 		if(isAnyOnline)
+ 		{
+-#if RSG_PC && !__RGSC_DLL
++#if RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ 			// send the 'adjustable UDP send interval' tunable to the DLL
+ 			rgsc::NetworkInfo info;
+ 			info.SetAllowAdjustablePingInterval(sm_AllowAdjustableUdpSendInterval);

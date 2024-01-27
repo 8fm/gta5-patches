@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlsystemui.cpp b/src/dev_ng/rage/base/src/rline/rlsystemui.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlsystemui.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlsystemui.cpp
+@@ -271,7 +271,7 @@ rlSystemUi::IsUiShowing() const
+ {
+ 	static bool last = false;
+ 	bool cur;
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	cur = g_rlPc.IsUiShowing() STEAMBUILD_ONLY(|| g_SysService.IsUiOverlaid());
+ #elif RSG_DURANGO
+ 	cur = g_rlXbl.GetSystemUi()->IsUiShowing();
+@@ -532,7 +532,7 @@ rlSystemUi::NativeShowFriendSearchUi(const int /*localGamerIndex*/)
+ 	return false;
+ }
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ bool
+ rlSystemUi::NativeInit()

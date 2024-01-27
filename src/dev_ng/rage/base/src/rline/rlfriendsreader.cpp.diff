@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp b/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlfriendsreader.cpp
+@@ -33,7 +33,7 @@ RAGE_DEFINE_SUBCHANNEL(rline, friendsreader);
+ #undef __rage_channel
+ #define __rage_channel rline_friendsreader
+ 
+-#if RSG_PC && !__RGSC_DLL
++#if RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ 
+ class FriendsReaderTask : public netTask
+ {
+@@ -541,7 +541,7 @@ rlFriendsReader::Read(const int localGamerIndex,
+ 									  numFriends,
+ 									  totalFriends,
+ 									  status);
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ 	*numFriends = maxFriends;
+ 	FriendsReaderTask* task;

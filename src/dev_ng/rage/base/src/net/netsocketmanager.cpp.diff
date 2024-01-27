@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/netsocketmanager.cpp b/src/dev_ng/rage/base/src/net/netsocketmanager.cpp
+--- a/src/dev_ng/rage/base/src/net/netsocketmanager.cpp
++++ b/src/dev_ng/rage/base/src/net/netsocketmanager.cpp
+@@ -20,7 +20,7 @@
+ #include "system/param.h"
+ #include "system/timer.h"
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #define STRICT
+ #pragma warning(push)
+ #pragma warning(disable: 4668)
