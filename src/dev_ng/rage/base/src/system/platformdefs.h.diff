@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/rage/base/src/system/platformdefs.h b/src/dev_ng/rage/ba
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/rage/base/src/system/platformdefs.h
-@@ -0,0 +1,106 @@
+@@ -0,0 +1,108 @@
 +#pragma once
 +
 +#if __LINUX
@@ -10,6 +10,8 @@ new file mode 100644
 +#define __out_opt
 +#define MAX_PATH PATH_MAX + 1
 +#define wcsncpy_s wcsncpy
++
++typedef uint64_t DWORD64;
 +
 +template <typename T, size_t N> size_t _countof(T (&arr)[N])
 +{
