@@ -1,13 +1,9 @@
 diff --git a/src/dev_ng/rage/suite/src/avchat/voice/rv.h b/src/dev_ng/rage/suite/src/avchat/voice/rv.h
 --- a/src/dev_ng/rage/suite/src/avchat/voice/rv.h
 +++ b/src/dev_ng/rage/suite/src/avchat/voice/rv.h
-@@ -28,7 +28,9 @@
- #include "atl/delegate.h"
- #include "atl/functor.h"
- 
-+#if !RSG_LINUX
- #include <winsock.h>
-+#endif
- #include <ctype.h>
- #include <assert.h>
- 
+@@ -1,4 +1,4 @@
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ // 
+ // voice/rv.h 
+ // 

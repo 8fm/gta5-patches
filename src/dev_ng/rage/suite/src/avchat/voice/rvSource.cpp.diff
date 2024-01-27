@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/voice/rvSource.cpp b/src/dev_ng/rage/suite/src/avchat/voice/rvSource.cpp
+--- a/src/dev_ng/rage/suite/src/avchat/voice/rvSource.cpp
++++ b/src/dev_ng/rage/suite/src/avchat/voice/rvSource.cpp
+@@ -1,4 +1,4 @@
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ // 
+ // voice/rvSource.cpp
+ // 

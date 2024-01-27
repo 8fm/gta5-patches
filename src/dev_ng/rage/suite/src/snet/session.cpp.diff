@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/suite/src/snet/session.cpp b/src/dev_ng/rage/suite/src/snet/session.cpp
+--- a/src/dev_ng/rage/suite/src/snet/session.cpp
++++ b/src/dev_ng/rage/suite/src/snet/session.cpp
+@@ -1107,7 +1107,7 @@ snSession::SetPresenceAttributeNames(const char* attrSessionToken,
+ void
+ snSession::ClearPresenceAttributeNames()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Clear the additional session info on shutdown
+ 	if (g_rlPc.IsInitialized())
+ 	{
+@@ -2224,7 +2224,7 @@ snSession::Update(const unsigned curTime)
+ 			}
+ 		}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(g_rlPc.IsInitialized())
+ 		{
+ 			if (strcmp(m_AttrIsJoinable, rlScAttributeId::IsGameJoinable.Name) == 0)
+@@ -5941,7 +5941,7 @@ snSession::UpdatePresenceAttributes(const int localGamerIndex, const bool leftGa
+             }
+         }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(g_rlPc.IsInitialized())
+ 		{
+ 			// Only update the SCUI with the game session, ignoring transition sessions etc.

@@ -1,0 +1,111 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/voicechat.cpp b/src/dev_ng/rage/suite/src/avchat/voicechat.cpp
+--- a/src/dev_ng/rage/suite/src/avchat/voicechat.cpp
++++ b/src/dev_ng/rage/suite/src/avchat/voicechat.cpp
+@@ -203,7 +203,7 @@ static const float AVC_SPEEX_DOWN_SCALE = 1 / AVC_SPEEX_UP_SCALE;
+ 
+ #endif  //USE_SPEEX
+ 
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ static RVHardwareDevice* m_CaptureDevice;
+ static RVHardwareDevice* m_PlaybackDevice;
+ static bool m_CaptureDeviceUnplugged = false;
+@@ -557,7 +557,7 @@ VoiceChat::VoiceChat()
+ 	PortManagerSingleton::Instantiate();
+ #endif // RSG_ORBIS
+ #endif  //USE_SPEEX
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 	m_CaptureMode = CAPTURE_MODE_PUSH_TO_TALK;
+ 	m_LocalTalkerSpeakingVolume = 0.0f;
+ 	m_PackFrameStamp = true;
+@@ -962,7 +962,7 @@ VoiceChat::SetVpdThreshold(const unsigned threshold)
+         vcAssert(threshold <= MAX_VPD_THRESHOLD);
+         m_VpdThreshold = (int) threshold;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+         vcDebug("SetVpdThreshold :: %u", m_VpdThreshold);
+ 
+         if(IsCaptureDeviceAvailable())
+@@ -1000,7 +1000,7 @@ void VoiceChat::SetVpdThresholdPTT(const unsigned threshold)
+ 		vcAssert(threshold <= MAX_VPD_THRESHOLD);
+ 		m_VpdThresholdPTT = (int) threshold;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		vcDebug("SetVpdThresholdPTT :: %u", m_VpdThresholdPTT);
+ 
+ 		if(IsCaptureDeviceAvailable())
+@@ -1033,7 +1033,7 @@ void VoiceChat::SetCaptureHoldTimeMs(const u32 holdTimeMs)
+ 		vcAssert(holdTimeMs <= MAX_VPD_HOLD_TIME_MS);
+ 		m_CaptureHoldTimeMs = holdTimeMs;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		vcDebug("SetCaptureHoldTimeMs :: %u", m_CaptureHoldTimeMs);
+ 
+ 		if(IsCaptureDeviceAvailable())
+@@ -1663,7 +1663,7 @@ VoiceChat::MicHasFocus()
+ bool
+ VoiceChat::IsMuted(const rlGamerHandle& WIN32PC_ONLY(hGamer) DURANGO_ONLY(hGamer))
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+     return g_rlPc.GetPlayerManager()->IsBlocked(hGamer.GetRockstarId());
+ #elif RSG_DURANGO
+ 	int talkerIdx = GetTalkerInfoIndex(hGamer);
+@@ -1740,7 +1740,7 @@ VoiceChat::HasHeadset(const int DURANGO_ONLY(localGamerIndex)) const
+         vcError("VoiceChat not initialized");
+     }
+     
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+     return this->NativeHasHeadset(0);
+ #elif USE_SPEEX
+     return m_MicDevNum >= 0;
+@@ -1812,7 +1812,7 @@ VoiceChat::GetLoudness(const int PROCESS_RAW_DATA_ONLY(localGamerIndex)) const
+ 
+ #if RSG_DURANGO
+ 	loudness = VoiceChatDurangoSingleton::GetInstance().GetMicLoudness();
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 	loudness = GetLocalTalkerSpeakingVolume();
+ #endif // RSG_DURANGO
+ 
+@@ -2060,7 +2060,7 @@ VoiceChat::Update()
+ 		{
+ 			//Build and send packet
+ 			bool allSent = this->BuildPacket();
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			if(!m_MuteChatBecauseFocusLost)
+ 			{
+ 				this->SendFrame();
+@@ -2321,7 +2321,7 @@ VoiceChat::BuildPacket()
+ 		u8* pktSize = &pktHdr[sizeofGamerId];
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		m_LocalTalkerSpeakingVolume = 0.0f;
+ 		m_PackFrameStamp = true;
+ #endif // RSG_PC
+@@ -2501,7 +2501,7 @@ VoiceChat::SendFrame()
+ 
+ 		if(m_PktCursor > m_VoicePacket)
+ 		{
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			Talker* localTalker = m_LocalTalkers[0];
+ 			if(localTalker && (m_LocalEchoEnabled || m_IsVoiceTestMode))
+ 			{
+@@ -4105,7 +4105,7 @@ VoiceChat::Worker(void* arg)
+ }
+ #endif	// USE_SPEEX
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ // we don't support multiple local gamers on PC
+ CompileTimeAssert(RL_MAX_LOCAL_GAMERS == 1);

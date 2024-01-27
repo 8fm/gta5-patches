@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/voicechat.h b/src/dev_ng/rage/suite/src/avchat/voicechat.h
+--- a/src/dev_ng/rage/suite/src/avchat/voicechat.h
++++ b/src/dev_ng/rage/suite/src/avchat/voicechat.h
+@@ -1023,7 +1023,7 @@ public:
+     unsigned GetHeadsetPort() const { return m_HeadsetPort; }
+ #endif
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ public:
+ 	static const int MAX_DEVICES = 64;
+ 	static const unsigned int DEFAULT_DEVICE_ID = 0;
+@@ -1142,6 +1142,9 @@ private:
+ 	wchar_t m_PlaybackDeviceName[64]; // RV_DEVICE_NAME_LEN
+ 	float m_CaptureDeviceVolume;
+ 	float m_PlaybackDeviceVolume;	
++#else
++private:
++	volatile bool m_IsVoiceTestMode;
+ #endif
+ 
+ #if __BANK
