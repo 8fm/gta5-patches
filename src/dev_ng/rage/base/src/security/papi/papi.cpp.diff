@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/security/papi/papi.cpp b/src/dev_ng/rage/base/src/security/papi/papi.cpp
+--- a/src/dev_ng/rage/base/src/security/papi/papi.cpp
++++ b/src/dev_ng/rage/base/src/security/papi/papi.cpp
+@@ -1,6 +1,6 @@
+ #include "papi.h"
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ RAGE_DECLARE_CHANNEL(ragesecengine)
+ RAGE_DEFINE_SUBCHANNEL(ragesecengine, papi)
+ namespace rage

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/bink/movie.cpp b/src/dev_ng/rage/suite/src/bink/movie.cpp
+--- a/src/dev_ng/rage/suite/src/bink/movie.cpp
++++ b/src/dev_ng/rage/suite/src/bink/movie.cpp
+@@ -241,7 +241,7 @@ void bwMovie::Init()
+ 		sm_UsingRAGEAudio = false;
+ 		Displayf("Attempt to play bink audio using bink engine");
+ 
+-	#if RSG_PC
++	#if RSG_PC && !RSG_LINUX
+ 		// According to Jeff Roberts, if you pass in NULL they'll make the DSOUND object 
+ 		BinkSoundUseDirectSound(NULL);
+ 		sm_uNumSpeakers = 2;	// TODO: Multichannel on PC?

@@ -1,6 +1,14 @@
 diff --git a/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp b/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
 --- a/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
 +++ b/src/dev_ng/rage/base/src/security/ragesecwinapi.cpp
+@@ -1,6 +1,6 @@
+ #include "ragesecwinapi.h"
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ namespace rage
+ {
+ 	using namespace papi;
 @@ -86,7 +86,11 @@ namespace rage
  			GetModuleFileNameW = (GetModuleFileNameWFnPtr)GetProcAddress(hKernel32, "GetModuleFileNameA");
  			ReadProcessMemory = (ReadProcessMemoryFnPtr)GetProcAddress(hKernel32, "ReadProcessMemory");

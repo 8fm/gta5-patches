@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/security/ragesecwinapi.h b/src/dev_ng/rage/base/src/security/ragesecwinapi.h
+--- a/src/dev_ng/rage/base/src/security/ragesecwinapi.h
++++ b/src/dev_ng/rage/base/src/security/ragesecwinapi.h
+@@ -1,7 +1,7 @@
+ #ifndef SECURITY_RAGESECWINAPI_H
+ #define SECURITY_RAGESECWINAPI_H
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include "system/xtl.h"
+ #include "papi/papi.h"
+ 
