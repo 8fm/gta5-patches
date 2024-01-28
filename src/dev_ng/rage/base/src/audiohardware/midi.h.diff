@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/midi.h b/src/dev_ng/rage/base/src/audiohardware/midi.h
+--- a/src/dev_ng/rage/base/src/audiohardware/midi.h
++++ b/src/dev_ng/rage/base/src/audiohardware/midi.h
+@@ -1,7 +1,7 @@
+ #ifndef AUD_MIDI_H
+ #define AUD_MIDI_H
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ #include "mmsystem.h"
+ #endif
+@@ -53,7 +53,7 @@ namespace rage
+ 
+ 		void AddMessageToQueue(const audMidiMessage &message);
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		static void CALLBACK MidiInProc(
+ 			HMIDIIN hMidiIn,  
+ 			UINT wMsg,        

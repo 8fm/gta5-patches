@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/base/src/audioasiolib/asiolist.cpp b/src/dev_ng/rage/base/src/audioasiolib/asiolist.cpp
+--- a/src/dev_ng/rage/base/src/audioasiolib/asiolist.cpp
++++ b/src/dev_ng/rage/base/src/audioasiolib/asiolist.cpp
+@@ -1,4 +1,4 @@
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #pragma warning(disable: 4668)
+ #include <windows.h>
+ #include "iasiodrv.h"

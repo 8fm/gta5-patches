@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/switchsound.cpp b/src/dev_ng/rage/base/src/audiosoundtypes/switchsound.cpp
+--- a/src/dev_ng/rage/base/src/audiosoundtypes/switchsound.cpp
++++ b/src/dev_ng/rage/base/src/audiosoundtypes/switchsound.cpp
+@@ -5,7 +5,7 @@
+ // 
+ 
+ #include "switchsound.h"
+-#include "audiohardware\channel.h"
++#include "audiohardware/channel.h"
+ 
+ #include "audioengine/soundfactory.h"
+ 

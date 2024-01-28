@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/base/src/audioasiolib/asiolist.h b/src/dev_ng/rage/base/src/audioasiolib/asiolist.h
+--- a/src/dev_ng/rage/base/src/audioasiolib/asiolist.h
++++ b/src/dev_ng/rage/base/src/audioasiolib/asiolist.h
+@@ -1,4 +1,4 @@
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #ifndef __asiolist__
+ #define __asiolist__

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/device_asio.h b/src/dev_ng/rage/base/src/audiohardware/device_asio.h
+--- a/src/dev_ng/rage/base/src/audiohardware/device_asio.h
++++ b/src/dev_ng/rage/base/src/audiohardware/device_asio.h
+@@ -7,7 +7,7 @@
+ #ifndef AUD_DEVICE_ASIO_H
+ #define AUD_DEVICE_ASIO_H
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "audioasiolib/asiosys.h"
+ #include "audioasiolib/asio.h"

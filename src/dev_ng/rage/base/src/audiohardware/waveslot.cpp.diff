@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/waveslot.cpp b/src/dev_ng/rage/base/src/audiohardware/waveslot.cpp
+--- a/src/dev_ng/rage/base/src/audiohardware/waveslot.cpp
++++ b/src/dev_ng/rage/base/src/audiohardware/waveslot.cpp
+@@ -25,6 +25,7 @@
+ #include "grcore/debugdraw.h"
+ 
+ #include "fwsys/config.h"
++#include <climits>
+ 
+ #if !__SPU
+ #include "bank/text.h"

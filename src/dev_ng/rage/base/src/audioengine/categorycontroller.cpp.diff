@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/categorycontroller.cpp b/src/dev_ng/rage/base/src/audioengine/categorycontroller.cpp
+--- a/src/dev_ng/rage/base/src/audioengine/categorycontroller.cpp
++++ b/src/dev_ng/rage/base/src/audioengine/categorycontroller.cpp
+@@ -13,6 +13,7 @@
+ #include "audiohardware/driver.h"
+ #include "audioengine/engine.h"
+ #include "math/simplemath.h"
++#include <climits>
+ 
+ 
+ #if __BANK

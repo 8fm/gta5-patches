@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/device_pc.h b/src/dev_ng/rage/base/src/audiohardware/device_pc.h
+--- a/src/dev_ng/rage/base/src/audiohardware/device_pc.h
++++ b/src/dev_ng/rage/base/src/audiohardware/device_pc.h
+@@ -7,7 +7,7 @@
+ #ifndef AUD_MIXERDEVICEPC_H
+ #define AUD_MIXERDEVICEPC_H
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "device.h"
+ 
