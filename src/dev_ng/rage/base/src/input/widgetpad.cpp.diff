@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/input/widgetpad.cpp b/src/dev_ng/rage/base/src/input/widgetpad.cpp
+--- a/src/dev_ng/rage/base/src/input/widgetpad.cpp
++++ b/src/dev_ng/rage/base/src/input/widgetpad.cpp
+@@ -263,7 +263,7 @@ void ioWidgetPad::RemoteHandler( const bkRemotePacket& packet )
+ 	}
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void ioWidgetPad::WindowCreate() 

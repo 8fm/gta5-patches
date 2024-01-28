@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/input/remote_input_defs.h b/src/dev_ng/rage/base/src/input/remote_input_defs.h
+--- a/src/dev_ng/rage/base/src/input/remote_input_defs.h
++++ b/src/dev_ng/rage/base/src/input/remote_input_defs.h
+@@ -7,7 +7,7 @@
+ #ifndef INPUT_REMOTE_INPUT_DEFS_H
+ #define INPUT_REMOTE_INPUT_DEFS_H
+ 
+-#define REMOTE_INPUT_SUPPORT !__FINAL
++#define REMOTE_INPUT_SUPPORT (!__FINAL && !RSG_LINUX)
+ 
+ #define REMOTE_INPUT_PLATFORMS (RSG_ORBIS || RSG_DURANGO || RSG_PC)
+ 

@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/system/new.h b/src/dev_ng/rage/base/src/system/new.h
+--- a/src/dev_ng/rage/base/src/system/new.h
++++ b/src/dev_ng/rage/base/src/system/new.h
+@@ -8,6 +8,7 @@
+ #define SYSTEM_NEW_H
+ 
+ #include <new>
++#include <cstddef>
+ 
+ #include "system/new_config.h"
+ 

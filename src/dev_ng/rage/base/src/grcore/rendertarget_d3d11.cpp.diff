@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.cpp b/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.cpp
+--- a/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.cpp
++++ b/src/dev_ng/rage/base/src/grcore/rendertarget_d3d11.cpp
+@@ -24,12 +24,14 @@
+ #include	"vector/matrix34.h"
+ #include	"system/param.h"
+ #include	"system/xtl.h"
++#if !__LINUX
+ #include	<wbemidl.h>
++#endif
+ 
+ #include	"wrapper_d3d.h"
+ 
+ // DOM-IGNORE-BEGIN 
+-#if RSG_PC
++#if RSG_PC && NV_SUPPORT
+ #include "../../../3rdParty/NVidia/nvapi.h"
+ #endif
+ // DOM-IGNORE-END

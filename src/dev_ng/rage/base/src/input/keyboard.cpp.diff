@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/input/keyboard.cpp b/src/dev_ng/rage/base/src/input/keyboard.cpp
+--- a/src/dev_ng/rage/base/src/input/keyboard.cpp
++++ b/src/dev_ng/rage/base/src/input/keyboard.cpp
+@@ -667,7 +667,7 @@ void ioKeyboard::SetUseKeypadMode(bool keypadMode, bool forceUpdate)
+ #endif // __PPU
+ 
+ 
+-#elif RSG_PC // IS_CONSOLE && !RSG_DURANGO
++#elif RSG_PC && !RSG_LINUX // IS_CONSOLE && !RSG_DURANGO
+ static LPDIRECTINPUTW s_keybDI;
+ bool ioKeyboard::sm_UsingRawInput = false;
+ bool ioKeyboard::sm_CapsLockToggled = false;

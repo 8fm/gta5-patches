@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/effect_d3d11.cpp b/src/dev_ng/rage/base/src/grcore/effect_d3d11.cpp
+--- a/src/dev_ng/rage/base/src/grcore/effect_d3d11.cpp
++++ b/src/dev_ng/rage/base/src/grcore/effect_d3d11.cpp
+@@ -23,8 +23,8 @@
+ #	include <D3D11Shader_x.h>
+ #	include <D3DCompiler_x.h>
+ #else
+-#	include <D3D11Shader.h>
+-#	include <D3DCompiler.h>
++#	include <d3d11shader.h>
++#	include <d3dcompiler.h>
+ #endif
+ 
+ namespace rage
+@@ -86,7 +86,7 @@ void grcVertexProgram::Bind(const grcVertexDeclaration *decl) const
+ 			for (UINT i=0; i<desc.InputParameters; i++)
+ 			{
+ 				// Skip built-in attributes
+-				if (!strncmpi(shaderInputs[i].SemanticName, "SV_", 3))
++				if (!strnicmp(shaderInputs[i].SemanticName, "SV_", 3))
+ 				{
+ 					break;
+ 				}

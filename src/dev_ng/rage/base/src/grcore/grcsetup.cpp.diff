@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/grcsetup.cpp b/src/dev_ng/rage/base/src/grcore/grcsetup.cpp
+--- a/src/dev_ng/rage/base/src/grcore/grcsetup.cpp
++++ b/src/dev_ng/rage/base/src/grcore/grcsetup.cpp
+@@ -52,7 +52,7 @@
+ #include "system/timemgr.h"
+ #include "system/wndproc.h"
+ 
+-#if __WIN32
++#if __WIN32 || __LINUX
+ #include "system/xtl.h"
+ #include "grcore/vertexbuffer.h"
+ #include "grcore/indexbuffer.h"

@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/effect_load.cpp b/src/dev_ng/rage/base/src/grcore/effect_load.cpp
+--- a/src/dev_ng/rage/base/src/grcore/effect_load.cpp
++++ b/src/dev_ng/rage/base/src/grcore/effect_load.cpp
+@@ -78,7 +78,7 @@
+ 	#include "wrapper_gnm.h"
+ #endif	// __WIN32, RSG_ORBIS
+ 
+-#if !__TOOL && !__RESOURCECOMPILER && RSG_PC
++#if !__TOOL && !__RESOURCECOMPILER && RSG_PC && !RSG_LINUX
+ 	#include <d3dx11async.h>
+ 	#define D3DCompileFromMemory D3DX11CompileFromMemory
+ #endif
+@@ -1219,7 +1219,7 @@ void grcFragmentProgram::Load(fiStream &S, const char* currentLoadingEffect)
+ 	grcAssertf((u32)bytesRead == programSize, "Couldn't read full fragment program from stream. Program size = %d, bytes read = %d", programSize, bytesRead);
+ 	Program = NULL;
+ 
+-#if __WIN32
++#if ( RSG_PC && __D3D11 ) || RSG_DURANGO
+ 	bool createShader = true;
+ #endif // __WIN32
+ 
+@@ -3440,7 +3440,11 @@ void grcEffect::LoadSourceShader(const char* pszShader, void* &ProgramData, u32
+ 			if (PARAM_useDebugShaders.Get())
+ 				uCompileFlags |= D3D10_SHADER_PREFER_FLOW_CONTROL | D3D10_SHADER_SKIP_OPTIMIZATION | D3D10_SHADER_DEBUG;
+ 
++#if RSG_LINUX // TODO: check Linux
++			if (false)
++#else
+ 			if (FAILED(D3DCompileFromMemory(pTempData, size, NULL, NULL, NULL, entry, pzShaderModel, uCompileFlags, NULL, NULL, &code, &errors, &result)))
++#endif
+ 			{
+ 				// We can do something here to spit out the errors that were thrown during the compile.
+ 				char* errorListing = rage_new char[errors->GetBufferSize()];

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grmodel/namedbuckets.cpp b/src/dev_ng/rage/base/src/grmodel/namedbuckets.cpp
+--- a/src/dev_ng/rage/base/src/grmodel/namedbuckets.cpp
++++ b/src/dev_ng/rage/base/src/grmodel/namedbuckets.cpp
+@@ -7,7 +7,7 @@
+ #include "namedbuckets.h"
+ 
+ #include "atl/string.h"
+-#include "atl/atFixedString.h"
++#include "atl/atfixedstring.h"
+ #include "grcore/channel.h"
+ 
+ #include <map>

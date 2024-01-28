@@ -1,16 +1,56 @@
 diff --git a/src/dev_ng/rage/base/src/grcore/device.h b/src/dev_ng/rage/base/src/grcore/device.h
 --- a/src/dev_ng/rage/base/src/grcore/device.h
 +++ b/src/dev_ng/rage/base/src/grcore/device.h
-@@ -41,7 +41,7 @@
+@@ -21,6 +21,7 @@
+ #include "system/service.h"
+ #include "grcore/effect.h"
+ #include "grcore/monitor.h"
++#include "system/platformdefs.h"
+ 
+ #if RSG_DURANGO
+ #include <xdk.h>
+@@ -31,9 +32,9 @@
+ #define DEVICE_USE_FAST_TEXTURES	( 1 && RSG_DURANGO && __D3D11_MONO_DRIVER && !(__RESOURCECOMPILER || __TOOL) )
+ #define DEVICE_RESOLVE_RT_CONFLICTS	( 1 && RSG_PC && __D3D11 )
+ 
+-#define ATI_SUPPORT		(RSG_PC && !__RESOURCECOMPILER && !__TOOL && !__GAMETOOL)
+-#define ATI_EXTENSIONS	(RSG_PC && __D3D11 && !__RESOURCECOMPILER && !__TOOL && !__GAMETOOL)
+-#define NV_SUPPORT		(RSG_PC && !__RESOURCECOMPILER && !__TOOL && !__GAMETOOL)
++#define ATI_SUPPORT		(RSG_PC && !__RESOURCECOMPILER && !__TOOL && !__GAMETOOL && !RSG_LINUX)
++#define ATI_EXTENSIONS	(RSG_PC && __D3D11 && !__RESOURCECOMPILER && !__TOOL && !__GAMETOOL && !RSG_LINUX)
++#define NV_SUPPORT		(RSG_PC && !__RESOURCECOMPILER && !__TOOL && !__GAMETOOL && !RSG_LINUX)
+ 
+ #define DEVICE_CLIP_PLANES	(__D3D11 || RSG_ORBIS)
+ #define DEVICE_MSAA			(__D3D11 || RSG_ORBIS)
+@@ -41,9 +42,9 @@
  #define DEVICE_GPU_WAIT		(__PPU || RSG_DURANGO || RSG_ORBIS)
  #define DEVICE_IM_INSTANCED_INDEXED	(__D3D11 || RSG_ORBIS)
  
 -#define USE_AMD_SHADOW_LIB	(RSG_PC && 1)
 +#define USE_AMD_SHADOW_LIB	0 //(RSG_PC && 1)
  
- #define USE_NV_TXAA RSG_PC && !__GAMETOOL
+-#define USE_NV_TXAA RSG_PC && !__GAMETOOL
++#define USE_NV_TXAA RSG_PC && !__GAMETOOL && !RSG_LINUX
  #if USE_NV_TXAA
-@@ -614,7 +614,7 @@ namespace rage {
+ #define TXAA_ONLY(x)	x
+ #else
+@@ -304,7 +305,7 @@ namespace rage {
+ 		grcmrtColor1,
+ 		grcmrtColor2,
+ 		grcmrtColor3,
+-#if __WIN32
++#if __WIN32 || __LINUX
+ 		grcmrtColor4,
+ 		grcmrtColor5,
+ 		grcmrtColor6,
+@@ -608,13 +609,13 @@ namespace rage {
+ 		// Abstraction of a Direct3D HRESULT.
+ 		typedef u32 Result;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		static int InitSingleton();
+ #else
  		static int InitSingleton() { return 1; }
  #endif
  
@@ -19,3 +59,30 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device.h b/src/dev_ng/rage/base/src
  		grcEntry bool IsCreated() { return (GetCurrent() != NULL); }
  #endif
  
+@@ -1693,7 +1694,7 @@ namespace rage {
+ 	grcEntry void SetDxFeatureLevel(u32 uMajor, u32 uMinor = 0)	{ sm_DxFeatureLevel = uMajor * 100; Assert(uMinor < 100); sm_DxFeatureLevel += (uMinor < 100) ? uMinor : 0; }
+ 	grcEntry u32  GetDxFeatureLevel() { return sm_DxFeatureLevel; }	
+ 
+-#if RSG_PC && __D3D11
++#if RSG_PC && __D3D11 && !RSG_LINUX
+ 	grcEntry void CheckVideoEncodingOverride();
+ #endif
+ #if RSG_PC
+@@ -2370,7 +2371,7 @@ public:
+ 	grcEntry void SetInReset(bool bReset) { sm_bIssuingReset = bReset; }
+ 
+ 
+-#if __D3D11
++#if __D3D11 && !RSG_LINUX
+ 	grcEntry bool ProcessResizeBuffersWhileEncoding();
+ #endif
+ 	// PURPOSE: Check wheather the device has changed states
+@@ -2683,7 +2684,7 @@ public:
+ #if RSG_DURANGO
+ 	grcEntry void ForceSetContextState();
+ #endif
+-#if __D3D11
++#if __D3D11 && !RSG_LINUX
+ 	static void ComputeMaximizedWindowDimensions(tagRECT &rect);
+ 	static bool ComputeWindowDimensions(tagRECT &rect, unsigned int windowFlags);
+ #endif

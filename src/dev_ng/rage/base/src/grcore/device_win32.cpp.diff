@@ -1,7 +1,103 @@
 diff --git a/src/dev_ng/rage/base/src/grcore/device_win32.cpp b/src/dev_ng/rage/base/src/grcore/device_win32.cpp
 --- a/src/dev_ng/rage/base/src/grcore/device_win32.cpp
 +++ b/src/dev_ng/rage/base/src/grcore/device_win32.cpp
-@@ -2407,7 +2407,7 @@ void grcDevice::ComputeMaximizedWindowDimensions(RECT &rect)
+@@ -11,11 +11,13 @@
+ #include "file/file_config.h"
+ 
+ #if __WIN32PC
++#if !__LINUX
+ #pragma warning(disable: 4668)
+ #include <winsock2.h>
+ #include <Wtsapi32.h>
+ #pragma comment(lib,"Wtsapi32.lib")
+ #pragma warning(error: 4668)
++#endif
+ 
+ #include "system/xtl.h"
+ #include "system/d3d9.h"
+@@ -34,10 +36,12 @@
+ #include "resourcecache.h"
+ #include "texture.h"
+ #include "viewport.h"
++#if !__LINUX
+ #include <ddraw.h>
+ #include <wbemidl.h>
++#endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <dbt.h>
+ #endif
+ 
+@@ -51,12 +55,14 @@
+ #include <dxdiag.h>
+ #endif // __D3D9
+ #define COMPILE_MULTIMON_STUBS
++#if !__LINUX
+ #include <multimon.h>
+ #include <strsafe.h>
+ 
+ #pragma comment(lib,"wbemuuid.lib")
+ #pragma comment(lib,"user32.lib")
+ #pragma comment(lib,"d3d9.lib")
++#endif
+ 
+ // #include <shellscalingapi.h>
+ 
+@@ -142,7 +148,7 @@ PARAM(BlockOnLostFocus, "[RenderThread] Block when game loses focus");
+ #endif
+ 
+ #if __WIN32PC || RSG_DURANGO
+-int grcDevice::sm_ThreadId = -1;
++__THREAD int grcDevice::sm_ThreadId = -1;
+ sysIpcSema grcDevice::sm_Controller = NULL;
+ sysIpcCurrentThreadId grcDevice::sm_CreationOwner = sysIpcCurrentThreadIdInvalid;
+ bool grcDevice::sm_AllowUpdateThreadBlock = true;
+@@ -261,7 +267,9 @@ Functor1<float> grcDevice::sm_StereoSepChangeCb;
+ Functor1<float> grcDevice::sm_StereoConvChangeCb;
+ #endif
+ 
++#if __D3D9
+ WINDOWPLACEMENT s_WindowedPlacement;
++#endif
+ extern unsigned int g_grcDepthFormat;
+ #endif
+ 
+@@ -324,12 +332,14 @@ typedef HRESULT ( WINAPI* LPCREATEDXGIFACTORY )( REFIID, void** );
+ typedef HRESULT ( WINAPI* LPDIRECTDRAWCREATE )( GUID FAR *lpGUID, LPDIRECTDRAW FAR *lplpDD, IUnknown FAR *pUnkOuter );
+ #endif // (__SHADERMODEL < 40)
+ 
++#if __D3D9
+ typedef BOOL    ( WINAPI* PfnCoSetProxyBlanket )( IUnknown* pProxy, DWORD dwAuthnSvc, DWORD dwAuthzSvc,
+                                                   OLECHAR* pServerPrincName, DWORD dwAuthnLevel, DWORD dwImpLevel,
+                                                   RPC_AUTH_IDENTITY_HANDLE pAuthInfo, DWORD dwCapabilities );
+ 
+ //-----------------------------------------------------------------------------
+ BOOL CALLBACK MonitorEnumProc( HMONITOR hMonitor, HDC hdcMonitor, LPRECT lprcMonitor, LPARAM dwData );
++#endif // __D3D9
+ HRESULT GetDeviceIDFromHMonitor( HMONITOR hm, WCHAR* strDeviceID, int cchDeviceID );
+ HRESULT GetVideoMemoryViaWMI( HMONITOR hMonitor, SIZE_T* pdwAdapterRam );
+ HRESULT GetVideoMemoryViaD3D9( HMONITOR hMonitor, SIZE_T* pdwAvailableTextureMem );
+@@ -1582,6 +1592,7 @@ static void dont_handle() {}
+ void (*grcDevice::DeviceChangeHandler)() = dont_handle;
+ #endif
+ 
++#if !RSG_LINUX
+ static LRESULT CALLBACK grcWindowProc(HWND hwnd,UINT msg,WPARAM wParam,LPARAM lParam) 
+ {
+ 	// NOTE: Depending upon the type of suspend we might not receive a suspend event. If this happens
+@@ -2368,8 +2379,9 @@ static LRESULT CALLBACK grcWindowProc(HWND hwnd,UINT msg,WPARAM wParam,LPARAM lP
+ 	}
+ 	return g_WindowProc(hwnd,msg,wParam,lParam);
+ }
++#endif // !RSG_LINUX
+ 
+-#if __D3D11
++#if __D3D11 && !RSG_LINUX
+ void grcDevice::ComputeMaximizedWindowDimensions(RECT &rect)
+ {
+ 	const grcAdapterD3D11* adapter = (grcAdapterD3D11*)grcAdapterManager::GetInstance()->GetAdapter(0);
+@@ -2407,7 +2419,7 @@ void grcDevice::ComputeMaximizedWindowDimensions(RECT &rect)
  	if (height > width)
  	{
  		height = (u32)((float)width / grcDevice::sm_minAspectRatio); 
@@ -10,7 +106,7 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_win32.cpp b/src/dev_ng/rage/
  		rect.bottom = rect.top + height;
  	}
  }
-@@ -2478,7 +2478,7 @@ bool grcDevice::ComputeWindowDimensions(RECT &rect, unsigned int windowFlags)
+@@ -2478,7 +2490,7 @@ bool grcDevice::ComputeWindowDimensions(RECT &rect, unsigned int windowFlags)
  	{
  		rect.left = (desc.DesktopCoordinates.left + desc.DesktopCoordinates.right)/2 - width/2;
  		rect.right = rect.left + width;
@@ -19,3 +115,51 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_win32.cpp b/src/dev_ng/rage/
  		rect.bottom = rect.top + height;
  	}
  	pcdDisplayf("Post-ComputeWindowDimensions LT: %dx%d RB: %dx%d in ChangeDevice", rect.left, rect.top, rect.right, rect.bottom);
+@@ -2486,8 +2498,11 @@ bool grcDevice::ComputeWindowDimensions(RECT &rect, unsigned int windowFlags)
+ }
+ #endif
+ 
+-HWND grcDevice::CreateDeviceWindow(HWND parent) 
++HWND__* grcDevice::CreateDeviceWindow(HWND__* parent)
+ {
++#if RSG_LINUX
++	HWND__* result;
++#else
+ 	static HINSTANCE hShCore = LoadLibrary("Shcore.dll");
+ 	if (hShCore)
+ 	{
+@@ -2691,6 +2706,7 @@ HWND grcDevice::CreateDeviceWindow(HWND parent)
+ 
+ 	SetThreadExecutionState(ES_CONTINUOUS | ES_DISPLAY_REQUIRED);
+ 
++#endif // RSG_LINUX
+ 	return result;
+ }
+ 
+@@ -2963,7 +2979,7 @@ void grcDevice::InitializeStereoSystem(bool
+ void grcDevice::Manage() 
+ {
+ 	WIN32PC_ONLY(TELEMETRY_START_ZONE(PZONE_NORMAL, __FILE__,__LINE__,"grcDevice::Manage()"));
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// Do not enter sleep mode or dim the display.
+ 	SetThreadExecutionState(ES_DISPLAY_REQUIRED | ES_SYSTEM_REQUIRED);
+ 
+@@ -3252,7 +3268,7 @@ void grcDevice::UnregisterAllDeviceLostCallbacks()
+ 
+ bool grcDevice::GetHasFocus()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #if __BANK
+ 
+ 	static bool usingRag = PARAM_rag.Get();
+@@ -3285,7 +3301,7 @@ bool grcDevice::GetHasFocus()
+ 
+ #endif //__WIN32PC || RSG_DURANGO
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ sysIpcThreadId grcDevice::sm_FocusQueryThreadId = sysIpcThreadIdInvalid;
+ static bool sm_bRunFocusQueryThread = false;
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grmodel/curvedmodel.cpp b/src/dev_ng/rage/base/src/grmodel/curvedmodel.cpp
+--- a/src/dev_ng/rage/base/src/grmodel/curvedmodel.cpp
++++ b/src/dev_ng/rage/base/src/grmodel/curvedmodel.cpp
+@@ -23,7 +23,7 @@
+ 
+ #include "grcore/im.h"
+ #include "grmodel/setup.h"
+-#include "curvedModel.h"
++#include "curvedmodel.h"
+ 
+ #include "curve/curvecatrom.h"
+ 

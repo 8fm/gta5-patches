@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grblendshapes/blendshapes.cpp b/src/dev_ng/rage/base/src/grblendshapes/blendshapes.cpp
+--- a/src/dev_ng/rage/base/src/grblendshapes/blendshapes.cpp
++++ b/src/dev_ng/rage/base/src/grblendshapes/blendshapes.cpp
+@@ -8,7 +8,7 @@
+ 
+ #include "grblendshapes/morphable.h"
+ #include "grblendshapes/target.h"
+-#include "grblendshapes/targetData.h"
++#include "grblendshapes/targetdata.h"
+ #include "grblendshapes/manager.h"
+ #include "grmodel/model.h"		// for edge hackery
+ #include "grmodel/geometry.h"		// for edge hackery

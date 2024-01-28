@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageGraphics/_Unity/_unity_RageGraphics_grcore.cpp b/src/dev_ng/rage/base/src/vcproj/RageGraphics/_Unity/_unity_RageGraphics_grcore.cpp
+--- a/src/dev_ng/rage/base/src/vcproj/RageGraphics/_Unity/_unity_RageGraphics_grcore.cpp
++++ b/src/dev_ng/rage/base/src/vcproj/RageGraphics/_Unity/_unity_RageGraphics_grcore.cpp
+@@ -318,7 +318,7 @@
+ #include "../../../grcore/edgegeom_unity.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../grcore/edgeextractgeomspu.cpp"
++#include "../../../grcore/edgeExtractgeomspu.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../grcore/edge_callbacks_mc4.cpp"

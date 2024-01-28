@@ -1,7 +1,17 @@
 diff --git a/src/dev_ng/rage/base/src/grcore/texture_d3d11.cpp b/src/dev_ng/rage/base/src/grcore/texture_d3d11.cpp
 --- a/src/dev_ng/rage/base/src/grcore/texture_d3d11.cpp
 +++ b/src/dev_ng/rage/base/src/grcore/texture_d3d11.cpp
-@@ -1050,7 +1050,7 @@ grcDevice::Result grcTextureDX11::CreateInternal(CREATE_INTERNAL_INFO &CreateInf
+@@ -25,7 +25,9 @@
+ #include	"vector/matrix34.h"
+ #include	"system/param.h"
+ #include	"system/xtl.h"
++#if !__LINUX
+ #include	<wbemidl.h>
++#endif
+ 
+ #include	<d3d9.h>
+ #include	"wrapper_d3d.h"
+@@ -1050,7 +1052,7 @@ grcDevice::Result grcTextureDX11::CreateInternal(CREATE_INTERNAL_INFO &CreateInf
  
  					u32 noOfRows = GetRowCount(uMip);
  

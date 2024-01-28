@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/device_d3d.cpp b/src/dev_ng/rage/base/src/grcore/device_d3d.cpp
+--- a/src/dev_ng/rage/base/src/grcore/device_d3d.cpp
++++ b/src/dev_ng/rage/base/src/grcore/device_d3d.cpp
+@@ -51,8 +51,10 @@
+ #include "grcore/texture.h"
+ #include "grmodel/shaderfx.h"
+ 
++#if !__LINUX
+ #include <dxdiag.h>
+ #include <strsafe.h>
++#endif
+ #include "texture.h"
+ #include "texturepc.h"
+ #include "texture_d3d9.h"
+@@ -116,7 +118,7 @@ ASSERT_ONLY(rage::u32 s_ConditionalQueryInProgress = 0xFFFFFFFF);
+ 
+ #if __WIN32PC
+ void (*rage::grcDevice::sm_ResetCallback)(grcDeviceHandle *,grcPresentParameters *);
+-void (*rage::grcDevice::sm_PresentCallback)(grcDeviceHandle *current,const tagRECT*,const tagRECT*,HWND override,const tagRGNDATA*);
++void (*rage::grcDevice::sm_PresentCallback)(grcDeviceHandle *current,const tagRECT*,const tagRECT*,HWND__ *override,const tagRGNDATA*);
+ void (*rage::grcDevice::sm_PresentHandler)(int syncInterval, u32 uFlags);
+ void (*rage::grcDevice::sm_PostPresentCallback)();
+ #endif
+@@ -1616,7 +1618,7 @@ static D3DVBLANKDATA g_vblankData;
+ const D3DASYNCBLOCK AsyncBlockFrameIsNotVisible = 2;
+ const D3DASYNCBLOCK AsyncBlockFrameIsVisible = 4;
+ 
+-// In VC++ volatile ensures that the compiler don’t cache values for excessive 
++// In VC++ volatile ensures that the compiler don't cache values for excessive 
+ // time. This is useful since we read and write from different threads
+ volatile D3DASYNCBLOCK g_AsyncBlock[ ASYNCSWAP_NUM_FRONTBUFFERS ] = { AsyncBlockFrameIsNotVisible, AsyncBlockFrameIsNotVisible, AsyncBlockFrameIsNotVisible };
+ 

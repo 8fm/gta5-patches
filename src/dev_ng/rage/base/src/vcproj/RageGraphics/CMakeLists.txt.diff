@@ -68,7 +68,7 @@ new file mode 100644
 +add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 +
 +target_include_directories(${PROJECT_NAME} PRIVATE
-+    "$ENV{DXSDK_DIR}Include"
++    ${DIRECTX_INCLUDE_DIRS}
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
 +    ${CMAKE_SOURCE_DIR}/rage/base/src
