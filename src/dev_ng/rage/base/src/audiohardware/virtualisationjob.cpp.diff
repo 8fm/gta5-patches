@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/virtualisationjob.cpp b/src/dev_ng/rage/base/src/audiohardware/virtualisationjob.cpp
+--- a/src/dev_ng/rage/base/src/audiohardware/virtualisationjob.cpp
++++ b/src/dev_ng/rage/base/src/audiohardware/virtualisationjob.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2006 Rockstar Games.  All Rights Reserved. 
+ // 
+ 
+-#include "VirtualisationJob.h"
++#include "virtualisationjob.h"
+ 
+ #if __SPU
+ 

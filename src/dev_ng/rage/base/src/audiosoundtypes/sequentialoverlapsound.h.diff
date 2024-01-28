@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/sequentialoverlapsound.h b/src/dev_ng/rage/base/src/audiosoundtypes/sequentialoverlapsound.h
+--- a/src/dev_ng/rage/base/src/audiosoundtypes/sequentialoverlapsound.h
++++ b/src/dev_ng/rage/base/src/audiosoundtypes/sequentialoverlapsound.h
+@@ -10,7 +10,7 @@
+ 
+ #include "sound.h"
+ 
+-#include "soundDefs.h"
++#include "sounddefs.h"
+ 
+ namespace rage {
+ 
