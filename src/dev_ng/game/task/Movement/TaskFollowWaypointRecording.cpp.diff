@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.cpp b/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.cpp
+--- a/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.cpp
++++ b/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.cpp
+@@ -3,21 +3,21 @@
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedMoveBlend\PedMoveBlendInWater.h"
+-#include "Peds\PedMoveBlend\PedMoveBlendOnSkis.h"
+-#include "Peds\PedDebugVisualiser.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Task\Movement\TaskIdle.h"
+-#include "Task\Movement\TaskGotoPoint.h"
+-#include "Task\Movement\TaskNavMesh.h"
+-#include "Task\Movement\Jumping\TaskInAir.h"
+-#include "Task\Movement\Jumping\TaskJump.h"
+-#include "Task\General\TaskBasic.h"
++#include "Peds/Ped.h"
++#include "Peds/PedMoveBlend/PedMoveBlendInWater.h"
++#include "Peds/PedMoveBlend/PedMoveBlendOnSkis.h"
++#include "Peds/PedDebugVisualiser.h"
++#include "Peds/PedIntelligence.h"
++#include "Task/Movement/TaskIdle.h"
++#include "Task/Movement/TaskGotoPoint.h"
++#include "Task/Movement/TaskNavMesh.h"
++#include "Task/Movement/Jumping/TaskInAir.h"
++#include "Task/Movement/Jumping/TaskJump.h"
++#include "Task/General/TaskBasic.h"
+ #include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task\Weapons\WeaponController.h"
+-#include "Task\Weapons\Gun\TaskGun.h"
+-#include "math\angmath.h"
++#include "Task/Weapons/WeaponController.h"
++#include "Task/Weapons/Gun/TaskGun.h"
++#include "math/angmath.h"
+ 
+ AI_OPTIMISATIONS()
+ 

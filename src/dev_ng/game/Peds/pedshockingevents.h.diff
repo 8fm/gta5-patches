@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/pedshockingevents.h b/src/dev_ng/game/Peds/pedshockingevents.h
+--- a/src/dev_ng/game/Peds/pedshockingevents.h
++++ b/src/dev_ng/game/Peds/pedshockingevents.h
+@@ -12,7 +12,7 @@
+ #include "atl/queue.h"
+ 
+ // game includes
+-#include "Event\ShockingEventEnums.h"
++#include "Event/ShockingEventEnums.h"
+ 
+ class CPedShockingEvent
+ {

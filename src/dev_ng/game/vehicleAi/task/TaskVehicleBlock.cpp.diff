@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleBlock.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleBlock.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleBlock.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleBlock.cpp
+@@ -3,13 +3,13 @@
+ // Game headers
+ #include "Vehicles/Automobile.h"
+ #include "Vehicles/vehicle.h"
+-#include "VehicleAi\task\TaskVehicleMissionBase.h"
+-#include "VehicleAi\task\TaskVehicleGoto.h"
++#include "VehicleAi/task/TaskVehicleMissionBase.h"
++#include "VehicleAi/task/TaskVehicleGoto.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi\task\TaskVehiclePark.h"
+-#include "VehicleAi\task\TaskVehicleTempAction.h"
+-#include "VehicleAi\VehicleIntelligence.h"
+-#include "VehicleAi\VehicleNavigationHelper.h"
++#include "VehicleAi/task/TaskVehiclePark.h"
++#include "VehicleAi/task/TaskVehicleTempAction.h"
++#include "VehicleAi/VehicleIntelligence.h"
++#include "VehicleAi/VehicleNavigationHelper.h"
+ #include "peds/ped.h"
+ 
+ AI_OPTIMISATIONS()

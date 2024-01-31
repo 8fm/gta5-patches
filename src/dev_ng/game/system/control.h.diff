@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/control.h b/src/dev_ng/game/system/control.h
+--- a/src/dev_ng/game/system/control.h
++++ b/src/dev_ng/game/system/control.h
+@@ -74,7 +74,7 @@
+ #endif // USE_STEAM_CONTROLLER
+ 
+ // Framework headers
+-////#include "fwmaths\maths.h"
++////#include "fwmaths/maths.h"
+ 
+ // Game headers
+ 

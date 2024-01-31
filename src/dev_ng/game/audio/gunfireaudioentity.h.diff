@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/gunfireaudioentity.h b/src/dev_ng/game/audio/gunfireaudioentity.h
+--- a/src/dev_ng/game/audio/gunfireaudioentity.h
++++ b/src/dev_ng/game/audio/gunfireaudioentity.h
+@@ -10,7 +10,7 @@
+ #include "atl/array.h"
+ #include "audio_channel.h"
+ #include "audio/environment/environment.h"
+-#include "audioengine\tracker.h"
++#include "audioengine/tracker.h"
+ #include "scene/RegdRefTypes.h"
+ #include "audioengine/soundset.h"
+ 

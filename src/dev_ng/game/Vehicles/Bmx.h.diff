@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Vehicles/Bmx.h b/src/dev_ng/game/Vehicles/Bmx.h
+--- a/src/dev_ng/game/Vehicles/Bmx.h
++++ b/src/dev_ng/game/Vehicles/Bmx.h
+@@ -13,12 +13,12 @@
+ #include "physics/intersection.h"
+ 
+ // Game headers
+-#include "renderer\hierarchyIds.h"
+-#include "vehicles\handlingMgr.h"
+-#include "vehicles\vehicle.h"
+-#include "vehicles\wheel.h"
++#include "renderer/hierarchyIds.h"
++#include "vehicles/handlingMgr.h"
++#include "vehicles/vehicle.h"
++#include "vehicles/wheel.h"
+ 
+-#include "network\objects\entities\netObjBike.h"
++#include "network/objects/entities/netObjBike.h"
+ 
+ namespace rage { class CNodeAddress; }
+ 

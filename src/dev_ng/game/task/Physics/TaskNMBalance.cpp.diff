@@ -1,0 +1,66 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMBalance.cpp b/src/dev_ng/game/task/Physics/TaskNMBalance.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMBalance.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMBalance.cpp
+@@ -5,12 +5,12 @@
+ 
+ // C headers
+ // Rage headers
+-#include "crskeleton\Skeleton.h"
+-#include "fragment\Cache.h"
+-#include "fragment\Instance.h"
+-#include "fragment\Type.h"
+-#include "fragment\TypeChild.h"
+-#include "fragmentnm\messageparams.h"
++#include "crskeleton/Skeleton.h"
++#include "fragment/Cache.h"
++#include "fragment/Instance.h"
++#include "fragment/Type.h"
++#include "fragment/TypeChild.h"
++#include "fragmentnm/messageparams.h"
+ #include "fragmentnm/nm_channel.h"
+ #include "pharticulated/articulatedcollider.h"
+ #include "physics/Collider.h"
+@@ -21,31 +21,31 @@
+ #include "fwanimation/animmanager.h"
+ #include "fwanimation/pointcloud.h"
+ #include "grcore/debugdraw.h"
+-#include "fwmaths\Angle.h"
++#include "fwmaths/Angle.h"
+ 
+ // Game headers
+ 
+ #include "camera/CamInterface.h"
+ #include "debug/DebugScene.h"
+-#include "Event\EventDamage.h"
++#include "Event/EventDamage.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Network\NetworkInterface.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\PedPlacement.h"
++#include "Network/NetworkInterface.h"
+ #include "Peds/Ped.h"
+-#include "PedGroup\PedGroup.h"
+-#include "Physics\GtaInst.h"
+-#include "Physics\Physics.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PedPlacement.h"
++#include "Peds/Ped.h"
++#include "PedGroup/PedGroup.h"
++#include "Physics/GtaInst.h"
++#include "Physics/Physics.h"
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task\General\TaskBasic.h"
+-#include "Task\Movement\Jumping\TaskInAir.h"
++#include "Task/General/TaskBasic.h"
++#include "Task/Movement/Jumping/TaskInAir.h"
+ #include "Task/Physics/NmDebug.h"
+ #include "Task/Physics/TaskNMBalance.h"
+ #include "Task/Physics/TaskNMBrace.h"
+ #include "vehicles/vehicle.h"
+-#include "Vfx\Misc\Fire.h"
++#include "Vfx/Misc/Fire.h"
+ #include "Weapons/Weapon.h"
+ 
+ AI_OPTIMISATIONS()

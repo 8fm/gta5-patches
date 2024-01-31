@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Default/TaskAmbient.cpp b/src/dev_ng/game/task/Default/TaskAmbient.cpp
+--- a/src/dev_ng/game/task/Default/TaskAmbient.cpp
++++ b/src/dev_ng/game/task/Default/TaskAmbient.cpp
+@@ -64,7 +64,7 @@
+ #include "Task/Vehicle/TaskCar.h"
+ #include "Task/Vehicle/TaskEnterVehicle.h"
+ #include "vehicleAi/task/TaskVehicleAnimation.h"
+-#include "vehicles\automobile.h"
++#include "vehicles/automobile.h"
+ #include "Task/Default/TaskPlayer.h"
+ #include "Frontend/NewHud.h"
+ 

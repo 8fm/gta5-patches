@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
+--- a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
++++ b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
+@@ -17,7 +17,7 @@
+ #include "physics/tunable.h"
+ 
+ // Framework headers
+-#include "fwanimation\expressionsets.h"
++#include "fwanimation/expressionsets.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ 
+ // game headers

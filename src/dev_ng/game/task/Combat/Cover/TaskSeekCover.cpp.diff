@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp b/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp
+--- a/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp
++++ b/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp
+@@ -18,17 +18,17 @@
+ #include "Physics/GtaArchetype.h"
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task\Combat\Cover\Cover.h"
++#include "Task/Combat/Cover/Cover.h"
+ #include "Task/Combat/Cover/coverfilter.h"
+-#include "Task\General\TaskBasic.h"
++#include "Task/General/TaskBasic.h"
+ #include "Task/Combat/TaskCombat.h" // For common defines
+ #include "Task/Combat/TaskNewCombat.h"
+ #include "Task/Motion/TaskMotionBase.h"
+ #include "Task/Movement/TaskNavMesh.h"
+-#include "Task\Combat\Cover\TaskSeekCover.h"
++#include "Task/Combat/Cover/TaskSeekCover.h"
+ #include "Task/Combat/Cover/TaskCover.h"
+ #include "Task/Vehicle/TaskCar.h"
+-#include "Task\General\TaskSecondary.h"
++#include "Task/General/TaskSecondary.h"
+ #include "vehicles/vehicle.h"
+ #include "weapons/Weapon.h"
+ 

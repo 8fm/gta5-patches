@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.h b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.h
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.h
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.h
+@@ -9,7 +9,7 @@
+ 
+ #include "Camera/Base/BaseCamera.h"
+ #include "camera/cinematic/cinematicdirector.h"
+-#include "vehicleAi\task\TaskVehicleAnimation.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
+ 
+ class camCinematicVehicleTrackingCameraMetadata;
+ 

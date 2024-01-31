@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/NetworkInterface.cpp b/src/dev_ng/game/network/NetworkInterface.cpp
+--- a/src/dev_ng/game/network/NetworkInterface.cpp
++++ b/src/dev_ng/game/network/NetworkInterface.cpp
+@@ -21,7 +21,7 @@
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "frontend/landing_page\LandingPage.h"
++#include "frontend/landing_page/LandingPage.h"
+ #include "frontend/loadingscreens.h"
+ #include "frontend/MiniMap.h"
+ #include "network/Arrays/NetworkArrayMgr.h"

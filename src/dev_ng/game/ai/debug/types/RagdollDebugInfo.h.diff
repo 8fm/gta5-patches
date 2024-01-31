@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.h b/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.h
+@@ -1,11 +1,11 @@
+ #pragma once
+ 
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
++#include "ai/debug/system/AIDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+-#include "scene\RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CRagdollDebugInfo : public CAIDebugInfo
+ {

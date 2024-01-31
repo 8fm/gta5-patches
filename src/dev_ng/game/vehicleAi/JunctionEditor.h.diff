@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vehicleAi/JunctionEditor.h b/src/dev_ng/game/vehicleAi/JunctionEditor.h
+--- a/src/dev_ng/game/vehicleAi/JunctionEditor.h
++++ b/src/dev_ng/game/vehicleAi/JunctionEditor.h
+@@ -5,8 +5,8 @@
+ 
+ #if __JUNCTION_EDITOR
+ 
+-#include "atl\array.h"
+-#include "bank\bank.h"
++#include "atl/array.h"
++#include "bank/bank.h"
+ 
+ class CJunctionEditor
+ {

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/LanguageSelect.cpp b/src/dev_ng/game/frontend/LanguageSelect.cpp
+--- a/src/dev_ng/game/frontend/LanguageSelect.cpp
++++ b/src/dev_ng/game/frontend/LanguageSelect.cpp
+@@ -18,7 +18,7 @@
+ #include "Frontend/ui_channel.h"
+ #include "frontend/scaleform/scaleformmgr.h"
+ #include "Frontend/WarningScreen.h"
+-#include "frontend\ButtonEnum.h"
++#include "frontend/ButtonEnum.h"
+ #include "Renderer/PostProcessFX.h"
+ #include "Renderer/Util/ShaderUtil.h"
+ #include "Renderer/rendertargets.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/viewports/ViewportFader.h b/src/dev_ng/game/camera/viewports/ViewportFader.h
+--- a/src/dev_ng/game/camera/viewports/ViewportFader.h
++++ b/src/dev_ng/game/camera/viewports/ViewportFader.h
+@@ -5,7 +5,7 @@
+ #ifndef INC_VIEWPORTFADER_H_
+ #define INC_VIEWPORTFADER_H_
+ 
+-#include "Debug\debug.h"
++#include "Debug/debug.h"
+ 
+ #define VIEWPORTFADER_PRINTSTACKTRACE  (!__NO_OUTPUT)
+ 

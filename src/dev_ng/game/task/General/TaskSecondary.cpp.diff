@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/General/TaskSecondary.cpp b/src/dev_ng/game/task/General/TaskSecondary.cpp
+--- a/src/dev_ng/game/task/General/TaskSecondary.cpp
++++ b/src/dev_ng/game/task/General/TaskSecondary.cpp
+@@ -19,11 +19,11 @@
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "Streaming/Streaming.h"
+ #include "Task/Animation/TaskAnims.h"
+-#include "Task\General\TaskBasic.h"
++#include "Task/General/TaskBasic.h"
+ #include "Task/Movement/TaskGoto.h"
+ #include "Task/Movement/TaskNavMesh.h"
+-#include "Task\Default\TaskPlayer.h"
+-#include "Task\General\TaskSecondary.h"
++#include "Task/Default/TaskPlayer.h"
++#include "Task/General/TaskSecondary.h"
+ #include "Task/System/TaskTypes.h"
+ #include "Task/Vehicle/TaskEnterVehicle.h"
+ #include "Task/Vehicle/TaskInVehicle.h"

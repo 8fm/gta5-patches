@@ -1,0 +1,56 @@
+diff --git a/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp b/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp
+--- a/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp
++++ b/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp
+@@ -42,24 +42,24 @@
+ #include "system/findsize.h"
+ 
+ // Framework headers
+-#include "fwmaths\random.h"
+-#include "fwmaths\vector.h"
+-#include "fwsys\timer.h"
++#include "fwmaths/random.h"
++#include "fwmaths/vector.h"
++#include "fwsys/timer.h"
+ 
+ // Game headers
+-#include "scene\world\gameWorld.h"
+-#include "debug\debug.h"
+-#include "system\UseTuner.h"
++#include "scene/world/gameWorld.h"
++#include "debug/debug.h"
++#include "system/UseTuner.h"
+ 
+-#include "renderer\Renderer.h"
+-#include "renderer\Lights\lights.h"
++#include "renderer/Renderer.h"
++#include "renderer/Lights/lights.h"
+ 
+-#include "Objects\ProceduralInfo.h"				// PROCPLANT_xxx
+-#include "Renderer\PlantsGrassRenderer.h"
+-#include "..\shader_source\Vegetation\Grass\grass_regs.h"
++#include "Objects/ProceduralInfo.h"				// PROCPLANT_xxx
++#include "Renderer/PlantsGrassRenderer.h"
++#include "../shader_source/Vegetation/Grass/grass_regs.h"
+ 
+ #if PLANTS_USE_LOD_SETTINGS
+-#include "renderer\PlantsGrassRenderer_parser.h"
++#include "renderer/PlantsGrassRenderer_parser.h"
+ #endif
+ 
+ #if RSG_ORBIS
+@@ -103,11 +103,11 @@ RENDER_OPTIMISATIONS();
+ #if PSN_PLANTSMGR_SPU_RENDER
+ 	// game includes:
+ 	#include "PlantsGrassRendererSPU.h"
+-	#include "grcore\wrapper_gcm.h"
++	#include "grcore/wrapper_gcm.h"
+ 	using namespace cell::Gcm;
+-	#include "grcore\indexbuffer.h"
+-	#include "grcore\vertexbuffer.h"
+-	#include "grmodel\modelfactory.h"
++	#include "grcore/indexbuffer.h"
++	#include "grcore/vertexbuffer.h"
++	#include "grmodel/modelfactory.h"
+ 
+ 	// default alignment for command buffers in Main memory:
+ 	#define PLANTSMGR_CMD_DEF_ALIGN			(16)	// 128 align is not required, as SPU doesn't touch this

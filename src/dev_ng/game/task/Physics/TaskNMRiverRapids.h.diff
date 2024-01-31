@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMRiverRapids.h b/src/dev_ng/game/task/Physics/TaskNMRiverRapids.h
+--- a/src/dev_ng/game/task/Physics/TaskNMRiverRapids.h
++++ b/src/dev_ng/game/task/Physics/TaskNMRiverRapids.h
+@@ -8,7 +8,7 @@
+ 
+ // Game headers
+ #include "Task/System/Task.h"
+-#include "Task\System\TaskTypes.h"
++#include "Task/System/TaskTypes.h"
+ #include "Task/Physics/TaskNM.h"
+ 
+ // ------------------------------------------------------------------------------

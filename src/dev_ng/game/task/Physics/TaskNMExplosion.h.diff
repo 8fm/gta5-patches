@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMExplosion.h b/src/dev_ng/game/task/Physics/TaskNMExplosion.h
+--- a/src/dev_ng/game/task/Physics/TaskNMExplosion.h
++++ b/src/dev_ng/game/task/Physics/TaskNMExplosion.h
+@@ -8,7 +8,7 @@
+ 
+ // Game headers
+ #include "Task/System/Task.h"
+-#include "Task\System\TaskTypes.h"
++#include "Task/System/TaskTypes.h"
+ #include "Task/System/Tuning.h"
+ #include "Task/Physics/TaskNM.h"
+ #include "Task/Physics/TaskNMBrace.h"

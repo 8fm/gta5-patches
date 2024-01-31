@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/text/TextFile.h b/src/dev_ng/game/text/TextFile.h
+--- a/src/dev_ng/game/text/TextFile.h
++++ b/src/dev_ng/game/text/TextFile.h
+@@ -17,16 +17,16 @@
+ #if __BANK
+ #include "atl/map.h"
+ #endif	//	__BANK
+-#include "atl\array.h"
++#include "atl/array.h"
+ #include "atl/binmap.h"
+-#include "file\asynchstream.h"
+-#include "string\unicode.h"
++#include "file/asynchstream.h"
++#include "string/unicode.h"
+ 
+-#include "system\tls.h"
++#include "system/tls.h"
+ 
+ // Game headers
+-#include "..\system\filemgr.h"
+-#include "..\scene\ExtraContentDefs.h"
++#include "../system/filemgr.h"
++#include "../scene/ExtraContentDefs.h"
+ 
+ namespace rage { class fiPackfile; }
+ 

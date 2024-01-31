@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/Peds/Horse/horseComponent.cpp b/src/dev_ng/game/Peds/Horse/horseComponent.cpp
+--- a/src/dev_ng/game/Peds/Horse/horseComponent.cpp
++++ b/src/dev_ng/game/Peds/Horse/horseComponent.cpp
+@@ -4,10 +4,10 @@
+ #include "fwpheffects/ropedatamanager.h"
+ #include "fwpheffects/ropemanager.h"
+ 
+-#include "Peds\Horse\horseComponent.h"
+-#include "Peds\Horse\horseTune.h"
+-#include "Peds\ped.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/Horse/horseComponent.h"
++#include "Peds/Horse/horseTune.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "physics/Rope.h"
+ #include "task/Motion/TaskMotionBase.h"
+ #include "task/Response/TaskFlee.h"

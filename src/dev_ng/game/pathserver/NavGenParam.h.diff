@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/pathserver/NavGenParam.h b/src/dev_ng/game/pathserver/NavGenParam.h
+--- a/src/dev_ng/game/pathserver/NavGenParam.h
++++ b/src/dev_ng/game/pathserver/NavGenParam.h
+@@ -6,7 +6,7 @@
+ //	This file just holds the PARAM extern variable for the "-navgen" switch
+ //***********************************************************************************
+ 
+-#include "system\param.h"
++#include "system/param.h"
+ 
+ #if __SPU
+ #define NAVMESH_EXPORT	0

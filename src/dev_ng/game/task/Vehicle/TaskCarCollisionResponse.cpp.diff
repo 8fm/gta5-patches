@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskCarCollisionResponse.cpp b/src/dev_ng/game/task/Vehicle/TaskCarCollisionResponse.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskCarCollisionResponse.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskCarCollisionResponse.cpp
+@@ -41,11 +41,11 @@
+ #include "Vfx/Misc/Fire.h"
+ #include "Vfx/VfxHelper.h"
+ #include "Weapons/Weapon.h"
+-#include "vehicleAi\vehicleintelligence.h"
+-#include "vehicleAi\Task\TaskVehicleGoTo.h"
+-#include "vehicleAi\Task\TaskVehicleBlock.h"
+-#include "vehicleAi\Task\TaskVehicleCruise.h"
+-#include "vehicleAi\Task\TaskVehicleFleeBoat.h"
++#include "vehicleAi/vehicleintelligence.h"
++#include "vehicleAi/Task/TaskVehicleGoTo.h"
++#include "vehicleAi/Task/TaskVehicleBlock.h"
++#include "vehicleAi/Task/TaskVehicleCruise.h"
++#include "vehicleAi/Task/TaskVehicleFleeBoat.h"
+ 
+ AI_OPTIMISATIONS()
+ 

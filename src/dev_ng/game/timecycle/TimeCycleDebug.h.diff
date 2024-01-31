@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/timecycle/TimeCycleDebug.h b/src/dev_ng/game/timecycle/TimeCycleDebug.h
+--- a/src/dev_ng/game/timecycle/TimeCycleDebug.h
++++ b/src/dev_ng/game/timecycle/TimeCycleDebug.h
+@@ -11,8 +11,8 @@
+ #ifndef TIMECYCLEDEBUG_H
+ #define TIMECYCLEDEBUG_H
+ 
+-#include "vector\vector3.h"
+-#include "timecycle\tcdebug.h"
++#include "vector/vector3.h"
++#include "timecycle/tcdebug.h"
+ #include "control/replay/ReplaySettings.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////

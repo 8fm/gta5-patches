@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Compression/Quantization.h b/src/dev_ng/game/control/replay/Compression/Quantization.h
+--- a/src/dev_ng/game/control/replay/Compression/Quantization.h
++++ b/src/dev_ng/game/control/replay/Compression/Quantization.h
+@@ -5,7 +5,7 @@
+ #ifndef _QUANTIZATION_H_
+ #define _QUANTIZATION_H_
+ 
+-#include "control\replay\ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 

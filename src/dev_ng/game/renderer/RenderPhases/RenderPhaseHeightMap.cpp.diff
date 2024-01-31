@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp
+@@ -43,7 +43,7 @@
+ #include "Vfx/VisualEffects.h"
+ #include "Vfx/VfxHelper.h"
+ #include "Vfx/Systems/VfxWeather.h"
+-#include "scene\world\GameWorldHeightMap.h"
++#include "scene/world/GameWorldHeightMap.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ #define HEIGHTMAP_USE_SHADOW_SHADER (__XENON)

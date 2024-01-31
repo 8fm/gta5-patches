@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/ai/debug/types/WantedDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/WantedDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/WantedDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/WantedDebugInfo.cpp
+@@ -1,12 +1,12 @@
+-#include "ai\debug\types\WantedDebugInfo.h"
++#include "ai/debug/types/WantedDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ // game headers
+ #include "Game/Dispatch/DispatchManager.h"
+-#include "game\Wanted.h"
+-#include "Peds\Ped.h"
+-#include "script\script_hud.h"
++#include "game/Wanted.h"
++#include "Peds/Ped.h"
++#include "script/script_hud.h"
+ 
+ CWantedDebugInfo::CWantedDebugInfo(const CPed* pPed, DebugInfoPrintParams printParams)
+ 	: CAIDebugInfo(printParams)

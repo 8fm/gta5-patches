@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMSlungOverShoulder.cpp b/src/dev_ng/game/task/Physics/TaskNMSlungOverShoulder.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMSlungOverShoulder.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMSlungOverShoulder.cpp
+@@ -6,12 +6,12 @@
+ 
+ // C headers
+ // Rage headers
+-#include "crskeleton\Skeleton.h"
+-#include "fragment\Cache.h"
+-#include "fragment\Instance.h"
+-#include "fragment\Type.h"
+-#include "fragment\TypeChild.h"
+-#include "fragmentnm\messageparams.h"
++#include "crskeleton/Skeleton.h"
++#include "fragment/Cache.h"
++#include "fragment/Instance.h"
++#include "fragment/Type.h"
++#include "fragment/TypeChild.h"
++#include "fragmentnm/messageparams.h"
+ #include "pharticulated/articulatedcollider.h"
+ #include "physics/shapetest.h"
+ #include "Physics/constrainthinge.h"
+@@ -22,7 +22,7 @@
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Peds\Ped.h"
++#include "Peds/Ped.h"
+ #include "Task/Physics/NmDebug.h"
+ #include "Task/Physics/TaskNMSlungOverShoulder.h"
+ #include "task/motion/TaskMotionBase.h"

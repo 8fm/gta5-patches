@@ -1,0 +1,59 @@
+diff --git a/src/dev_ng/game/Peds/QueriableInterface.cpp b/src/dev_ng/game/Peds/QueriableInterface.cpp
+--- a/src/dev_ng/game/Peds/QueriableInterface.cpp
++++ b/src/dev_ng/game/Peds/QueriableInterface.cpp
+@@ -5,39 +5,39 @@
+ // Implements a small queriable set of ped intelligence interface, thats compact enough to be sent between
+ // machines during network games.  All external ped queries (originating from another ped or an independent system)in 
+ // the game should be using this interface.
+-#include "Peds\QueriableInterface.h"
++#include "Peds/QueriableInterface.h"
+ 
+ // Framework headers
+ #include "fwscene/search/Search.h"
+ 
+ //Game headers
+ #include "Objects/DummyObject.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\PedTaskRecord.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PedTaskRecord.h"
+ 
+ #include "scene/world/GameWorld.h"
+ #include "Task/Animation/TaskMoVEScripted.h"
+-#include "Task\Combat\Cover\TaskCover.h"
+-#include "Task\Combat\Cover\TaskStayInCover.h"
+-#include "Task\Combat\TaskCombat.h"
+-#include "Task\Combat\TaskNewCombat.h"
+-#include "Task\Combat\TaskDamageDeath.h"
+-#include "Task\Combat\TaskThreatResponse.h"
++#include "Task/Combat/Cover/TaskCover.h"
++#include "Task/Combat/Cover/TaskStayInCover.h"
++#include "Task/Combat/TaskCombat.h"
++#include "Task/Combat/TaskNewCombat.h"
++#include "Task/Combat/TaskDamageDeath.h"
++#include "Task/Combat/TaskThreatResponse.h"
+ #include "Task/Combat/TaskSharkAttack.h"
+ #include "Task/Combat/Subtasks/TaskHeliChase.h"
+ #include "Task/Combat/Subtasks/TaskVariedAimPose.h"
+-#include "task\Default\Patrol\TaskPatrol.h"
+-#include "Task\Default\TaskAmbient.h"
++#include "task/Default/Patrol/TaskPatrol.h"
++#include "Task/Default/TaskAmbient.h"
+ #include "Task/Default/TaskArrest.h"
+ #include "Task/Default/TaskCuffed.h"
+ #include "Task/Default/TaskIncapacitated.h"
+ #include "Task/Default/TaskSlopeScramble.h"
+ #include "task/Default/TaskUnalerted.h"
+-#include "Task\Default\TaskWander.h"
+-#include "Task\General\TaskBasic.h"
+-#include "Task\General\TaskGeneralSweep.h"
+-#include "Task\General\TaskSecondary.h"
++#include "Task/Default/TaskWander.h"
++#include "Task/General/TaskBasic.h"
++#include "Task/General/TaskGeneralSweep.h"
++#include "Task/General/TaskSecondary.h"
+ #include "Task/Movement/Jumping/TaskFallGetUp.h"
+ #include "Task/Movement/Jumping/TaskJump.h"
+ #include "Task/Movement/Climbing/TaskRappel.h"

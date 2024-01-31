@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Core/main.cpp b/src/dev_ng/game/Core/main.cpp
+--- a/src/dev_ng/game/Core/main.cpp
++++ b/src/dev_ng/game/Core/main.cpp
+@@ -301,7 +301,7 @@ char *XEX_TITLE_ID = "CUSA00411";	// default to european, gets overridden later
+ #pragma GCC diagnostic pop
+ }
+ #endif	//__XENON
+-#include "system\performancetimer.h"
++#include "system/performancetimer.h"
+ 
+ #if __PPU && !__FINAL
+ #include "system/stack.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayController.h b/src/dev_ng/game/control/replay/ReplayController.h
+--- a/src/dev_ng/game/control/replay/ReplayController.h
++++ b/src/dev_ng/game/control/replay/ReplayController.h
+@@ -6,7 +6,7 @@
+ #if GTA_REPLAY
+ 
+ #include "ReplaySupportClasses.h"
+-#include "Misc\ReplayPacket.h"
++#include "Misc/ReplayPacket.h"
+ #include "ReplayPacketIDs.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

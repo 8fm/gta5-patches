@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/templates/StaticStore.h b/src/dev_ng/game/templates/StaticStore.h
+--- a/src/dev_ng/game/templates/StaticStore.h
++++ b/src/dev_ng/game/templates/StaticStore.h
+@@ -13,7 +13,7 @@
+ #ifndef INC_STATIC_STORE_H_
+ #define INC_STATIC_STORE_H_
+ 
+-#include "debug\debug.h"
++#include "debug/debug.h"
+ 
+ //
+ // Template class that stores an array of objects. Objects can only be allocated. All objects are deallocated when 

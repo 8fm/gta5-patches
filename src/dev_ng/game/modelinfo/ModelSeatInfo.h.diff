@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/ModelSeatInfo.h b/src/dev_ng/game/modelinfo/ModelSeatInfo.h
+--- a/src/dev_ng/game/modelinfo/ModelSeatInfo.h
++++ b/src/dev_ng/game/modelinfo/ModelSeatInfo.h
+@@ -7,7 +7,7 @@
+ #ifndef INC_SEAT_MODELINFO_H_
+ #define INC_SEAT_MODELINFO_H_
+ 
+-#include "ai\debug\types\VehicleDebugInfo.h"
++#include "ai/debug/types/VehicleDebugInfo.h"
+ #include "Animation/AnimBones.h"
+ #include "modelinfo/modelinfo_channel.h"
+ #include "scene/RegdRefTypes.h"

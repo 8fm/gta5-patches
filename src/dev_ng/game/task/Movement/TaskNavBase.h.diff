@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskNavBase.h b/src/dev_ng/game/task/Movement/TaskNavBase.h
+--- a/src/dev_ng/game/task/Movement/TaskNavBase.h
++++ b/src/dev_ng/game/task/Movement/TaskNavBase.h
+@@ -1,9 +1,9 @@
+ #ifndef TASK_NAVBASE_H
+ #define TASK_NAVBASE_H
+ 
+-#include "fwmaths\angle.h"
+-#include "vectormath\mathops.h"
+-#include "Task\System\TaskMove.h"
++#include "fwmaths/angle.h"
++#include "vectormath/mathops.h"
++#include "Task/System/TaskMove.h"
+ 
+ //***************************************************************************************
+ //	Filename : TaskNavBase

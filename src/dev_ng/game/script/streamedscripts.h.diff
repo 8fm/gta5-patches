@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/script/streamedscripts.h b/src/dev_ng/game/script/streamedscripts.h
+--- a/src/dev_ng/game/script/streamedscripts.h
++++ b/src/dev_ng/game/script/streamedscripts.h
+@@ -10,11 +10,11 @@
+ 
+ // C headers
+ // Rage headers
+-#include "script\program.h"
++#include "script/program.h"
+ // Game headers
+-#include "script\script_channel.h"
+-#include "fwtl\assetstore.h"
+-#include "script\script_memory_tracking.h"
++#include "script/script_channel.h"
++#include "fwtl/assetstore.h"
++#include "script/script_memory_tracking.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

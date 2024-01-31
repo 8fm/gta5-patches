@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/General/NetworkSerialisers.h b/src/dev_ng/game/network/General/NetworkSerialisers.h
+--- a/src/dev_ng/game/network/General/NetworkSerialisers.h
++++ b/src/dev_ng/game/network/General/NetworkSerialisers.h
+@@ -11,8 +11,8 @@
+ #include "fwnet/nettypes.h"
+ #include "data/bitbuffer.h"
+ #include "modelInfo/ModelInfo.h"
+-#include "peds\CombatData.h"
+-#include "vehicles\Metadata\VehicleEnterExitFlags.h"
++#include "peds/CombatData.h"
++#include "vehicles/Metadata/VehicleEnterExitFlags.h"
+ 
+ typedef CVehicleEnterExitFlags::FlagsBitSet VehicleEnterExitFlags;
+ typedef CCombatData::BehaviourFlagsBitSet CombatBehaviorFlags;

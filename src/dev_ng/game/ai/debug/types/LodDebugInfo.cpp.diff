@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/ai/debug/types/LodDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/LodDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/LodDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/LodDebugInfo.cpp
+@@ -1,4 +1,4 @@
+-#include "ai\debug\types\LodDebugInfo.h"
++#include "ai/debug/types/LodDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 

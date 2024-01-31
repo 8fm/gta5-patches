@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventHandler.cpp b/src/dev_ng/game/event/EventHandler.cpp
+--- a/src/dev_ng/game/event/EventHandler.cpp
++++ b/src/dev_ng/game/event/EventHandler.cpp
+@@ -5,7 +5,7 @@
+ #include "ai/aichannel.h"
+ 
+ // Game headers
+-#include "ai\debug\system\AIDebugLogManager.h"
++#include "ai/debug/system/AIDebugLogManager.h"
+ #include "Event/Event.h"
+ #include "Event/Events.h"
+ #include "Event/EventDamage.h"

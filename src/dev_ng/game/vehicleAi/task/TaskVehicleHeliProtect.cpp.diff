@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleHeliProtect.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleHeliProtect.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleHeliProtect.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleHeliProtect.cpp
+@@ -3,12 +3,12 @@
+ //
+ 
+ #include "Vehicles/vehicle.h"
+-#include "VehicleAi\task\TaskVehicleHeliProtect.h"
+-#include "VehicleAi\task\TaskVehicleGotoHelicopter.h"
+-#include "vehicleAi\VehicleIntelligence.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\ped.h"
+-#include "scene\world\GameWorldHeightMap.h"
++#include "VehicleAi/task/TaskVehicleHeliProtect.h"
++#include "VehicleAi/task/TaskVehicleGotoHelicopter.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorldHeightMap.h"
+ 
+ 
+ AI_OPTIMISATIONS()

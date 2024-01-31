@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/audio/ambience/auddirectionalambience.cpp b/src/dev_ng/game/audio/ambience/auddirectionalambience.cpp
+--- a/src/dev_ng/game/audio/ambience/auddirectionalambience.cpp
++++ b/src/dev_ng/game/audio/ambience/auddirectionalambience.cpp
+@@ -5,16 +5,16 @@
+ // 
+ 
+ #include "auddirectionalambience.h"
+-#include "audio\waveslotmanager.h"
++#include "audio/waveslotmanager.h"
+ #include "ambientaudioentity.h"
+ #include "audambientzone.h"
+-#include "audio\northaudioengine.h"
+-#include "audiohardware\driver.h"
+-#include "audioengine\engine.h"
+-#include "game\Clock.h"
+-#include "scene\world\GameWorldHeightMap.h"
+-#include "game\weather.h"
+-#include "water\audshorelineOcean.h"
++#include "audio/northaudioengine.h"
++#include "audiohardware/driver.h"
++#include "audioengine/engine.h"
++#include "game/Clock.h"
++#include "scene/world/GameWorldHeightMap.h"
++#include "game/weather.h"
++#include "water/audshorelineOcean.h"
+ 
+ AUDIO_AMBIENCE_OPTIMISATIONS()
+ 

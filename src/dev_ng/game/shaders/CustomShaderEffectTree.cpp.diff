@@ -1,0 +1,51 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectTree.cpp b/src/dev_ng/game/shaders/CustomShaderEffectTree.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectTree.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectTree.cpp
+@@ -10,30 +10,30 @@
+ //
+ 
+ // Rage headers
+-#include "math\amath.h"
+-#include "grmodel\ShaderFx.h"
+-#include "grmodel\Geometry.h"
+-#include "grcore\texturereference.h"
++#include "math/amath.h"
++#include "grmodel/ShaderFx.h"
++#include "grmodel/Geometry.h"
++#include "grcore/texturereference.h"
+ #include "rmcore/drawable.h"
+-#include "pheffects\wind.h"
++#include "pheffects/wind.h"
+ 
+ #include "fwdrawlist/drawlistmgr.h"
+ #include "fwdebug/picker.h"
+ 
+ // Game headers
+-#include "debug\debug.h"
+-#include "renderer\PlantsGrassRenderer.h"
+-#include "Peds\ped.h"
+-#include "objects\Object.h"
+-#include "objects\ProceduralInfo.h"
+-#include "scene\Entity.h"
+-#include "scene\world\GameWorld.h"
+-#include "scene\world\GameWorldWaterHeight.h"
+-#include "vehicles\Vehicle.h"
++#include "debug/debug.h"
++#include "renderer/PlantsGrassRenderer.h"
++#include "Peds/ped.h"
++#include "objects/Object.h"
++#include "objects/ProceduralInfo.h"
++#include "scene/Entity.h"
++#include "scene/world/GameWorld.h"
++#include "scene/world/GameWorldWaterHeight.h"
++#include "vehicles/Vehicle.h"
+ #include "CustomShaderEffectTree.h"
+-#include "shaders\ShaderLib.h"
+-#include "renderer\DrawLists\drawlist.h"
+-#include "renderer\RenderPhases\RenderPhaseCascadeShadows.h"
++#include "shaders/ShaderLib.h"
++#include "renderer/DrawLists/drawlist.h"
++#include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ 
+ #include "../shader_source/Lighting/Shadows/cascadeshadows_common.fxh"
+ 

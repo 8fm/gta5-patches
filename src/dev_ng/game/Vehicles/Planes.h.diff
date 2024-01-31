@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Vehicles/Planes.h b/src/dev_ng/game/Vehicles/Planes.h
+--- a/src/dev_ng/game/Vehicles/Planes.h
++++ b/src/dev_ng/game/Vehicles/Planes.h
+@@ -5,12 +5,12 @@
+ #ifndef _PLANE_H_
+ #define _PLANE_H_
+ 
+-#include "vehicles\automobile.h"
+-#include "vehicles\landinggear.h"
+-#include "vehicles\Propeller.h"
+-#include "vehicles\train.h"
++#include "vehicles/automobile.h"
++#include "vehicles/landinggear.h"
++#include "vehicles/Propeller.h"
++#include "vehicles/train.h"
+ 
+-#include "network\objects\entities\netObjPlane.h"
++#include "network/objects/entities/netObjPlane.h"
+ #include "System/PadGestures.h"						// for define
+ 
+ #define PLANE_TURNING_CIRCLE_TAXIIING (5.0f)

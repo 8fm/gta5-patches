@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/streamedscripts.cpp b/src/dev_ng/game/script/streamedscripts.cpp
+--- a/src/dev_ng/game/script/streamedscripts.cpp
++++ b/src/dev_ng/game/script/streamedscripts.cpp
+@@ -11,7 +11,7 @@
+ #include "system/timer.h"
+ 
+ // Game headers
+-#include "script\streamedscripts.h"
++#include "script/streamedscripts.h"
+ #include "script/script_helper.h"
+ #include "streaming/streaming.h"
+ #include "streaming/packfilemanager.h"

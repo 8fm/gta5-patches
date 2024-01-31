@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.cpp b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.cpp
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.cpp
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.cpp
+@@ -1,8 +1,8 @@
+ #include "PedMoveBlendLowGravity.h"
+ #include "fwanimation/animmanager.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedMoveBlend\PedMoveBlendOnFoot.h"
+-#include "Streaming\Streaming.h"
+-#include "System\Control.h"
+-#include "Task\Default\TaskPlayer.h"
++#include "Peds/Ped.h"
++#include "Peds/PedMoveBlend/PedMoveBlendOnFoot.h"
++#include "Streaming/Streaming.h"
++#include "System/Control.h"
++#include "Task/Default/TaskPlayer.h"
+ #include "debug/DebugScene.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/GrabHelper.h b/src/dev_ng/game/task/Physics/GrabHelper.h
+--- a/src/dev_ng/game/task/Physics/GrabHelper.h
++++ b/src/dev_ng/game/task/Physics/GrabHelper.h
+@@ -11,7 +11,7 @@
+ #include "atl/string.h"
+ // Game headers
+ #include "Task/System/Task.h"
+-#include "Task\System\TaskTypes.h"
++#include "Task/System/TaskTypes.h"
+ #include "Task/Physics/TaskNM.h"
+ #include "system/FileMgr.h"
+ #include "Animation/AnimBones.h"

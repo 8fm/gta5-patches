@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer.cpp b/src/dev_ng/game/pathserver/PathServer.cpp
+--- a/src/dev_ng/game/pathserver/PathServer.cpp
++++ b/src/dev_ng/game/pathserver/PathServer.cpp
+@@ -1,4 +1,4 @@
+-#include "PathServer\PathServer.h"
++#include "PathServer/PathServer.h"
+ 
+ // Rage headers
+ #include "bank/bkmgr.h"
+@@ -24,7 +24,7 @@
+ #include "task/Movement/TaskNavBase.h"
+ #include "Vfx/Misc/Fire.h"
+ #if !__FINAL
+-#include "PathServer\ExportCollision.h"
++#include "PathServer/ExportCollision.h"
+ #endif
+ 
+ PARAM(nonav, "turns off navmesh/navnode streaming & streaming-module registration");

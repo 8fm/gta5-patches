@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp b/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp
+@@ -3,11 +3,11 @@
+ 
+ //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
+ // Rage headers
+-#include "crskeleton\Skeleton.h"
+-#include "fragment\Cache.h"
+-#include "fragment\Instance.h"
+-#include "fragment\Type.h"
+-#include "fragmentnm\messageparams.h"
++#include "crskeleton/Skeleton.h"
++#include "fragment/Cache.h"
++#include "fragment/Instance.h"
++#include "fragment/Type.h"
++#include "fragmentnm/messageparams.h"
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"

@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeCylinder.cpp b/src/dev_ng/game/scene/volume/VolumeCylinder.cpp
+--- a/src/dev_ng/game/scene/volume/VolumeCylinder.cpp
++++ b/src/dev_ng/game/scene/volume/VolumeCylinder.cpp
+@@ -3,26 +3,26 @@
+ // Started	:	2/5/11
+ //
+ 
+-#include "scene\volume\VolumeCylinder.h"
++#include "scene/volume/VolumeCylinder.h"
+ 
+ #if VOLUME_SUPPORT
+ 
+ // rage includes
+-#include "math\amath.h"
+-#include "vector\geometry.h"
+-#include "vector\color32.h"
+-#include "grcore\debugdraw.h"
+-#include "grcore\debugdraw.h"
+-#include "grcore\im.h"
+-#include "file\stream.h"
+-#include "bank\bkmgr.h"
++#include "math/amath.h"
++#include "vector/geometry.h"
++#include "vector/color32.h"
++#include "grcore/debugdraw.h"
++#include "grcore/debugdraw.h"
++#include "grcore/im.h"
++#include "file/stream.h"
++#include "bank/bkmgr.h"
+ 
+ // framework includes
+ 
+ // game includes
+ 
+-#include "scene\volume\VolumeManager.h"
+-#include "scene\volume\VolumeTool.h"
++#include "scene/volume/VolumeManager.h"
++#include "scene/volume/VolumeTool.h"
+ 
+ FW_INSTANTIATE_CLASS_POOL(CVolumeCylinder, 256, atHashString("VolumeCylinder",0x9d200c95));
+ INSTANTIATE_RTTI_CLASS(CVolumeCylinder,0xA1D7A95F)

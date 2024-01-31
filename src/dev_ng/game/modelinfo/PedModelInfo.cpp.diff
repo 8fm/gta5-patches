@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/PedModelInfo.cpp b/src/dev_ng/game/modelinfo/PedModelInfo.cpp
+--- a/src/dev_ng/game/modelinfo/PedModelInfo.cpp
++++ b/src/dev_ng/game/modelinfo/PedModelInfo.cpp
+@@ -62,7 +62,7 @@
+ #include "scene/texlod.h"
+ #include "shaders/CustomShaderEffectBase.h"
+ #include "stats/StatsMgr.h"
+-#include "stats\StatsInterface.h"
++#include "stats/StatsInterface.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingengine.h"
+ #include "system/FileMgr.h"

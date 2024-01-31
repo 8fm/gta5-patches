@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/Vehicles/Bmx.cpp b/src/dev_ng/game/Vehicles/Bmx.cpp
+--- a/src/dev_ng/game/Vehicles/Bmx.cpp
++++ b/src/dev_ng/game/Vehicles/Bmx.cpp
+@@ -13,13 +13,13 @@
+ // Framework headers
+ 
+ // Game headers
+-#include "vehicles\bike.h"
+-#include "vehicles\bmx.h"
+-#include "debug\debugglobals.h"
+-#include "Stats\StatsMgr.h"
+-#include "Peds\ped.h"
+-#include "scene\world\GameWorld.h"
+-#include "network\Events\NetworkEventTypes.h"
++#include "vehicles/bike.h"
++#include "vehicles/bmx.h"
++#include "debug/debugglobals.h"
++#include "Stats/StatsMgr.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
++#include "network/Events/NetworkEventTypes.h"
+ 
+ ENTITY_OPTIMISATIONS()
+ VEHICLE_OPTIMISATIONS()

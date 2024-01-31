@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.cpp b/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.cpp
+--- a/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.cpp
++++ b/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.cpp
+@@ -1,23 +1,23 @@
+ // File Header
+-#include "Task\Motion\Vehicle\TaskMotionInTurret.h"
++#include "Task/Motion/Vehicle/TaskMotionInTurret.h"
+ 
+ #if ENABLE_MOTION_IN_TURRET_TASK
+ 
+ // Game Headers
+-#include "animation\MoveVehicle.h"
+-#include "camera\CamInterface.h"
+-#include "camera\cinematic\CinematicDirector.h"
++#include "animation/MoveVehicle.h"
++#include "camera/CamInterface.h"
++#include "camera/cinematic/CinematicDirector.h"
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
+-#include "camera\gameplay\GameplayDirector.h"
+-#include "camera\gameplay\aim\ThirdPersonPedAimCamera.h"
+-#include "camera\helpers\ControlHelper.h"
+-#include "Peds\PedIntelligence.h"
+-#include "renderer\RenderPhases\RenderPhaseCascadeShadows.h"
+-#include "System\Control.h"
+-#include "Task\Vehicle\TaskInVehicle.h"
+-#include "Task\Vehicle\TaskVehicleWeapon.h"
+-#include "Vehicles\Metadata\VehicleSeatInfo.h"
+-#include "vehicles\Metadata\VehicleMetadataManager.h"
++#include "camera/gameplay/GameplayDirector.h"
++#include "camera/gameplay/aim/ThirdPersonPedAimCamera.h"
++#include "camera/helpers/ControlHelper.h"
++#include "Peds/PedIntelligence.h"
++#include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
++#include "System/Control.h"
++#include "Task/Vehicle/TaskInVehicle.h"
++#include "Task/Vehicle/TaskVehicleWeapon.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
++#include "vehicles/Metadata/VehicleMetadataManager.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

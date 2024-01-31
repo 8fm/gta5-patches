@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/TaskDuckAndCover.cpp b/src/dev_ng/game/task/Response/TaskDuckAndCover.cpp
+--- a/src/dev_ng/game/task/Response/TaskDuckAndCover.cpp
++++ b/src/dev_ng/game/task/Response/TaskDuckAndCover.cpp
+@@ -9,7 +9,7 @@
+ #include "animation/Move.h"
+ #include "animation/MovePed.h"
+ 
+-#include "System\Control.h"
++#include "System/Control.h"
+ 
+ AI_OPTIMISATIONS()
+ 

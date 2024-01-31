@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnSkis.cpp b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnSkis.cpp
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnSkis.cpp
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnSkis.cpp
+@@ -25,9 +25,9 @@
+ #include "debug/DebugScene.h"
+ 
+ #if __BANK
+-#include "bank\bkmgr.h"
+-#include "bank\bank.h"
+-#include "bank\combo.h"
+-#include "bank\slider.h"
++#include "bank/bkmgr.h"
++#include "bank/bank.h"
++#include "bank/combo.h"
++#include "bank/slider.h"
+ #include "peds/Ped.h"
+ #endif

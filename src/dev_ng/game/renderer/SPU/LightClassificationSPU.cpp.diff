@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/renderer/SPU/LightClassificationSPU.cpp b/src/dev_ng/game/renderer/SPU/LightClassificationSPU.cpp
+--- a/src/dev_ng/game/renderer/SPU/LightClassificationSPU.cpp
++++ b/src/dev_ng/game/renderer/SPU/LightClassificationSPU.cpp
+@@ -34,14 +34,14 @@
+ #include "math/float16.h"
+ #include "fwmaths/vectorutil.h"
+ 
+-#include "scene\2dEffect.h"
+-#include "renderer\Lights\LightCommon.h"
+-#include "renderer\Lights\LightSource.h"
+-#include "renderer\Lights\TiledLightingSettings.h"
++#include "scene/2dEffect.h"
++#include "renderer/Lights/LightCommon.h"
++#include "renderer/Lights/LightSource.h"
++#include "renderer/Lights/TiledLightingSettings.h"
+ 
+ #define CSPULIGHTCLASSIFICATIONINFO_DEF_STRUCT
+-#include "renderer\SpuPM\SpuPmMgr.h"
+-#include "renderer\SpuPM\SpuPmMgrSPU.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgrSPU.h"
+ 
+ 
+ CSPULightClassificationInfo* g_lcInfo=0;
+@@ -59,7 +59,7 @@ static LightStats*					sm_lightStats=0;
+ #define STOP_TIMER(index)
+ u32 spuScratchAddr=0;
+ 
+-#include "..\Lights\LightClassification.inl"
++#include "../Lights/LightClassification.inl"
+ 
+ CSPUPostProcessDriverInfo* LightClassificationSPU_cr0(char *_end, void *infoPacketSource, unsigned int infoPacketSize)
+ {	

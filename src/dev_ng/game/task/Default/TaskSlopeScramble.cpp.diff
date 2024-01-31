@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Default/TaskSlopeScramble.cpp b/src/dev_ng/game/task/Default/TaskSlopeScramble.cpp
+--- a/src/dev_ng/game/task/Default/TaskSlopeScramble.cpp
++++ b/src/dev_ng/game/task/Default/TaskSlopeScramble.cpp
+@@ -10,12 +10,12 @@
+ #include "math/angmath.h"
+ #include "Debug/debugscene.h"
+ #include "Peds/PedIntelligence.h"
+-#include "System\Control.h"
++#include "System/Control.h"
+ #include "Task/Default/TaskPlayer.h"
+ #include "Task/Physics/TaskNMHighFall.h"
+ #include "Task/System/MotionTaskData.h"
+ #include "physics/physics.h"
+-#include "physics\gtaInst.h"
++#include "physics/gtaInst.h"
+ #include "Task/Motion/Locomotion/TaskMotionAiming.h"
+ #include "Task/Combat/TaskCombatMelee.h"
+ 

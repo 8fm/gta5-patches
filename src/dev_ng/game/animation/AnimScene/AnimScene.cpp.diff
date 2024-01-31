@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/AnimScene.cpp b/src/dev_ng/game/animation/AnimScene/AnimScene.cpp
+--- a/src/dev_ng/game/animation/AnimScene/AnimScene.cpp
++++ b/src/dev_ng/game/animation/AnimScene/AnimScene.cpp
+@@ -18,11 +18,11 @@
+ #include "animation/AnimScene/AnimSceneEntityIterator.h"
+ #include "animation/AnimScene/AnimSceneEventIterator.h"
+ #include "peds/ped.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "task/Animation/TaskAnims.h"
+-#include "task\Scenario\Types\TaskUseScenario.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ #include "vehicles/vehicle.h"
+-#include "vehicleAi\VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "objects/object.h"
+ #if __BANK
+ #include "camera/base/BaseCamera.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/entities/AnimSceneEntities.cpp b/src/dev_ng/game/animation/AnimScene/entities/AnimSceneEntities.cpp
+--- a/src/dev_ng/game/animation/AnimScene/entities/AnimSceneEntities.cpp
++++ b/src/dev_ng/game/animation/AnimScene/entities/AnimSceneEntities.cpp
+@@ -3,7 +3,7 @@
+ #include "AnimSceneEntities_parser.h"
+ 
+ // rage includes
+-#include "cutfile\cutfevent.h" // required for AnimatedModelEntity below
++#include "cutfile/cutfevent.h" // required for AnimatedModelEntity below
+ #include "grcore/debugdraw.h"
+ 
+ // framework includes

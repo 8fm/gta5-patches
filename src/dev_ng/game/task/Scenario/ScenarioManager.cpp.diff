@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioManager.cpp b/src/dev_ng/game/task/Scenario/ScenarioManager.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioManager.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioManager.cpp
+@@ -68,7 +68,7 @@
+ #include "Vehicles/cargen.h"
+ #include "Vehicles/Trailer.h"
+ #include "Vehicles/train.h"
+-#include "vehicles\boat.h"
++#include "vehicles/boat.h"
+ #include "Vehicles/VehicleFactory.h"
+ #include "Vehicles/vehiclepopulation.h"
+ #include "Vehicles/LandingGear.h"

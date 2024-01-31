@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/HttpUpload/HttpUpload.cpp b/src/dev_ng/game/control/replay/HttpUpload/HttpUpload.cpp
+--- a/src/dev_ng/game/control/replay/HttpUpload/HttpUpload.cpp
++++ b/src/dev_ng/game/control/replay/HttpUpload/HttpUpload.cpp
+@@ -4,7 +4,7 @@
+ #if GTA_REPLAY && defined(ENABLE_BROWSER) && ENABLE_BROWSER
+ 
+ #include "control/replay/replay.h"
+-#include "..\..\gta\source\WebBrowser\WebBrowser.h"
++#include "../../gta/source/WebBrowser/WebBrowser.h"
+ #include "parser/treenode.h"
+ #include "parser/manager.h"
+ #include "frontend/UIUpload.h"

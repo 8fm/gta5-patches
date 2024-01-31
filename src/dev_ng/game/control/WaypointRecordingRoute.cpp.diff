@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/control/WaypointRecordingRoute.cpp b/src/dev_ng/game/control/WaypointRecordingRoute.cpp
+--- a/src/dev_ng/game/control/WaypointRecordingRoute.cpp
++++ b/src/dev_ng/game/control/WaypointRecordingRoute.cpp
+@@ -1,10 +1,10 @@
+ #include "control/WaypointRecordingRoute.h"
+ 
+ // Rage headers
+-#include "file\stream.h"
++#include "file/stream.h"
+ 
+ // Framework headers
+-#include "fwmaths\Angle.h"
++#include "fwmaths/Angle.h"
+ 
+ // Game headers
+ #if __BANK && !defined(RAGEBUILDER)	// Ragebuilder doesn't know about bank_float, et al

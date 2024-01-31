@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/System/TaskHelpers.h b/src/dev_ng/game/task/System/TaskHelpers.h
+--- a/src/dev_ng/game/task/System/TaskHelpers.h
++++ b/src/dev_ng/game/task/System/TaskHelpers.h
+@@ -43,7 +43,7 @@
+ #include "Task/System/Tuning.h"
+ #include "animation/Move_config.h"
+ #include "VehicleAi/VehicleNodeList.h"
+-#include "control\WaypointRecording.h"
++#include "control/WaypointRecording.h"
+ 
+ // rage forward declarations
+ namespace rage {

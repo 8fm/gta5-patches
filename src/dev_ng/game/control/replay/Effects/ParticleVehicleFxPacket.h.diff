@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleVehicleFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticleVehicleFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticleVehicleFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticleVehicleFxPacket.h
+@@ -11,12 +11,12 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control\replay\Effects\ParticlePacket.h"
+-#include "control\replay\packetbasics.h"
++#include "control/replay/Effects/ParticlePacket.h"
++#include "control/replay/packetbasics.h"
+ #include "control/replay/Vehicle/VehiclePacket.h"
+ #if INCLUDE_FROM_GAME
+-#include "Vehicles\VehicleStorage.h"
+-#include "vfx\decal\decalsettings.h"
++#include "Vehicles/VehicleStorage.h"
++#include "vfx/decal/decalsettings.h"
+ #include "vfx/decals/DecalManager.h"
+ #endif
+ 

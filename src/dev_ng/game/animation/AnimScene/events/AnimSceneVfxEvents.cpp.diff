@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimSceneVfxEvents.cpp b/src/dev_ng/game/animation/AnimScene/events/AnimSceneVfxEvents.cpp
+--- a/src/dev_ng/game/animation/AnimScene/events/AnimSceneVfxEvents.cpp
++++ b/src/dev_ng/game/animation/AnimScene/events/AnimSceneVfxEvents.cpp
+@@ -10,16 +10,16 @@
+ #include "vfx/ptfx/ptfxmanager.h"
+ 
+ // game includes
+-#include "ai\ambient\ConditionalAnimManager.h"
++#include "ai/ambient/ConditionalAnimManager.h"
+ #include "animation/AnimScene/AnimScene.h"
+ #include "animation/AnimScene/entities/AnimSceneEntities.h"
+ #include "animation/AnimScene/events/AnimSceneEventInitialisers.h"
+ #include "animation/EventTags.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "streaming/streaming.h"
+ #include "task/Animation/TaskScriptedAnimation.h"
+-#include "vehicleAi\VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "vfx/systems/VfxEntity.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,45 @@
+diff --git a/src/dev_ng/game/system/PadGestures.cpp b/src/dev_ng/game/system/PadGestures.cpp
+--- a/src/dev_ng/game/system/PadGestures.cpp
++++ b/src/dev_ng/game/system/PadGestures.cpp
+@@ -4,11 +4,11 @@
+ 
+ // Rage headers
+ #if __BANK
+-#include "bank\bkmgr.h"
+-#include "bank\bank.h"
+-#include "bank\combo.h"
+-#include "bank\slider.h"
+-#include "bank\group.h"
++#include "bank/bkmgr.h"
++#include "bank/bank.h"
++#include "bank/combo.h"
++#include "bank/slider.h"
++#include "bank/group.h"
+ #endif
+ 
+ // Framework headers
+@@ -18,17 +18,17 @@
+ 
+ // Game headers
+ #include "System/pad.h"
+-#include "frontend\PauseMenu.h"
+-#include "system\controlmgr.h"
++#include "frontend/PauseMenu.h"
++#include "system/controlmgr.h"
+ #include "peds/Ped.h"
+-#include "scene\world\gameWorld.h"
++#include "scene/world/gameWorld.h"
+ 
+ #if __BANK
+ #include "camera/viewports/ViewportManager.h"
+-#include "Vehicles\Heli.h"
+-#include "Vehicles\Planes.h" 
+-#include "Vehicles\Bike.h"
+-#include "Vehicles\Boat.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/Planes.h" 
++#include "Vehicles/Bike.h"
++#include "Vehicles/Boat.h"
+ 	static bool sbDebugSensors = false;
+ 	static bool sbDebugOrientation = false;
+ 	static bool sbDebugBikePitchDeadzone = false;

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/Peds/Horse/horseComponent.h b/src/dev_ng/game/Peds/Horse/horseComponent.h
+--- a/src/dev_ng/game/Peds/Horse/horseComponent.h
++++ b/src/dev_ng/game/Peds/Horse/horseComponent.h
+@@ -8,11 +8,11 @@
+ 
+ #include "parser/manager.h"
+ 
+-#include "Peds\Horse\horseAgitation.h"
+-#include "Peds\Horse\horseBrake.h"
+-#include "Peds\Horse\horseFreshness.h"
+-#include "Peds\Horse\horseObstacleAvoidance.h"
+-#include "Peds\Horse\horseSpeed.h"
++#include "Peds/Horse/horseAgitation.h"
++#include "Peds/Horse/horseBrake.h"
++#include "Peds/Horse/horseFreshness.h"
++#include "Peds/Horse/horseObstacleAvoidance.h"
++#include "Peds/Horse/horseSpeed.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ class hrsSimTune;

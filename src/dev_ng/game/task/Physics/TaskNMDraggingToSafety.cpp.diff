@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.cpp b/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.cpp
+@@ -5,7 +5,7 @@
+ // --- Include Files ------------------------------------------------------------
+ 
+ // Rage headers
+-#include "pharticulated\articulatedcollider.h"
++#include "pharticulated/articulatedcollider.h"
+ #include "phbound/boundcomposite.h"
+ #include "physics/constraintdistance.h"
+ #include "physics/constraintfixed.h"

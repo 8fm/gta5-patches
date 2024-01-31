@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/System/TaskFSMClone.cpp b/src/dev_ng/game/task/System/TaskFSMClone.cpp
+--- a/src/dev_ng/game/task/System/TaskFSMClone.cpp
++++ b/src/dev_ng/game/task/System/TaskFSMClone.cpp
+@@ -5,15 +5,15 @@
+ //				visually simulating the peds AI to make it look as if it were running locally.
+ //
+ 
+-#include "ai\debugstatehistory.h"
++#include "ai/debugstatehistory.h"
+ 
+-#include "Task\System\TaskFSMClone.h"
++#include "Task/System/TaskFSMClone.h"
+ 
+-#include "Camera\CamInterface.h"
+-#include "Event\Events.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Renderer\Renderer.h"
++#include "Camera/CamInterface.h"
++#include "Event/Events.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Renderer/Renderer.h"
+ #include "scene/lod/LodScale.h"
+ 
+ AI_OPTIMISATIONS()

@@ -1,0 +1,55 @@
+diff --git a/src/dev_ng/game/Peds/PedFactory.cpp b/src/dev_ng/game/Peds/PedFactory.cpp
+--- a/src/dev_ng/game/Peds/PedFactory.cpp
++++ b/src/dev_ng/game/Peds/PedFactory.cpp
+@@ -5,7 +5,7 @@
+ //				Adam Croston.
+ // CREATED :	
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "Peds\pedfactory.h"
++#include "Peds/pedfactory.h"
+ 
+ // rage includes
+ #include "debug/Debug.h"
+@@ -19,33 +19,33 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "frontend/MiniMap.h"
+ #include "game/ModelIndices.h"
+-#include "fwanimation\directorcomponentragdoll.h"
+-#include "ModelInfo\pedmodelinfo.h"
++#include "fwanimation/directorcomponentragdoll.h"
++#include "ModelInfo/pedmodelinfo.h"
+ #include "network/live/livemanager.h"
+ #include "network/Network.h"
+ #include "network/NetworkInterface.h"
+ #include "Network/Objects/NetworkObjectPopulationMgr.h"
+ #include "network/players/NetGamePlayer.h"
+ #include "peds/PedHelmetComponent.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\pedtype.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/pedtype.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendOnFoot.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendInWater.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendOnSkis.h"
+ #include "peds/Ped.h"
+ #include "peds/PedCloth.h"
+ #include "peds/pedpopulation.h"
+-#include "Peds\PedWeapons\PedTargeting.h"
++#include "Peds/PedWeapons/PedTargeting.h"
+ #include "Peds/rendering/PedProps.h"
+ #include "peds/rendering/PedVariationDS.h"
+ #include "peds/rendering/PedVariationStream.h"
+ #include "peds/rendering/PedVariationPack.h"
+-#include "Peds\QueriableInterface.h"
++#include "Peds/QueriableInterface.h"
+ #include "Peds/pedpopulation.h"			// For CPedPopulation.
+ #include "physics/physics.h"
+-#include "pickups\PickupManager.h"
+-#include "Task\Default\TaskWander.h"
+-#include "Task\General\TaskBasic.h"
++#include "pickups/PickupManager.h"
++#include "Task/Default/TaskWander.h"
++#include "Task/General/TaskBasic.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/handlers/GameScriptEntity.h"
+ #include "script/script.h"

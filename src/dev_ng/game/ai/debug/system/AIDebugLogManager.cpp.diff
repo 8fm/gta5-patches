@@ -1,0 +1,67 @@
+diff --git a/src/dev_ng/game/ai/debug/system/AIDebugLogManager.cpp b/src/dev_ng/game/ai/debug/system/AIDebugLogManager.cpp
+--- a/src/dev_ng/game/ai/debug/system/AIDebugLogManager.cpp
++++ b/src/dev_ng/game/ai/debug/system/AIDebugLogManager.cpp
+@@ -1,36 +1,36 @@
+-#include "ai\debug\system\AIDebugLogManager.h"
++#include "ai/debug/system/AIDebugLogManager.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ // rage headers
+-#include "fwnet\netinterface.h"
++#include "fwnet/netinterface.h"
+ 
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
+-#include "ai\debug\types\AnimationDebugInfo.h"
+-#include "ai\debug\types\AttachmentsDebugInfo.h"
+-#include "ai\debug\types\CombatDebugInfo.h"
+-#include "ai\debug\types\DamageDebugInfo.h"
+-#include "ai\debug\types\EventsDebugInfo.h"
+-#include "ai\debug\types\LodDebugInfo.h"
+-#include "ai\debug\types\MovementDebugInfo.h"
+-#include "ai\debug\types\PedDebugInfo.h"
+-#include "ai\debug\types\RagdollDebugInfo.h"
+-#include "ai\debug\types\RelationshipDebugInfo.h"
+-#include "ai\debug\types\ScriptHistoryDebugInfo.h"
+-#include "ai\debug\types\TaskDebugInfo.h"
+-#include "ai\debug\types\VehicleControlDebugInfo.h"
+-#include "ai\debug\types\VehicleDebugInfo.h"
+-#include "ai\debug\types\VehicleFlagDebugInfo.h"
+-#include "ai\debug\types\VehicleNodeListDebugInfo.h"
+-#include "ai\debug\types\VehicleStuckDebugInfo.h"
+-#include "ai\debug\types\VehicleTaskDebugInfo.h"
+-#include "ai\debug\types\WantedDebugInfo.h"
+-#include "ai\debug\types\TargetingDebugInfo.h"
+-#include "camera\system\debug\CameraDebugInfo.h"
+-#include "Peds\Ped.h"
+-#include "scene\DynamicEntity.h"
+-#include "scene\world\GameWorld.h"
++#include "ai/debug/system/AIDebugInfo.h"
++#include "ai/debug/types/AnimationDebugInfo.h"
++#include "ai/debug/types/AttachmentsDebugInfo.h"
++#include "ai/debug/types/CombatDebugInfo.h"
++#include "ai/debug/types/DamageDebugInfo.h"
++#include "ai/debug/types/EventsDebugInfo.h"
++#include "ai/debug/types/LodDebugInfo.h"
++#include "ai/debug/types/MovementDebugInfo.h"
++#include "ai/debug/types/PedDebugInfo.h"
++#include "ai/debug/types/RagdollDebugInfo.h"
++#include "ai/debug/types/RelationshipDebugInfo.h"
++#include "ai/debug/types/ScriptHistoryDebugInfo.h"
++#include "ai/debug/types/TaskDebugInfo.h"
++#include "ai/debug/types/VehicleControlDebugInfo.h"
++#include "ai/debug/types/VehicleDebugInfo.h"
++#include "ai/debug/types/VehicleFlagDebugInfo.h"
++#include "ai/debug/types/VehicleNodeListDebugInfo.h"
++#include "ai/debug/types/VehicleStuckDebugInfo.h"
++#include "ai/debug/types/VehicleTaskDebugInfo.h"
++#include "ai/debug/types/WantedDebugInfo.h"
++#include "ai/debug/types/TargetingDebugInfo.h"
++#include "camera/system/debug/CameraDebugInfo.h"
++#include "Peds/Ped.h"
++#include "scene/DynamicEntity.h"
++#include "scene/world/GameWorld.h"
+ 
+ PARAM(dontLogRandomPeds, "[debug] Disable random peds logs");
+ PARAM(addGameplayLogOnBugCreation , "[debug] Enable automatic adding of gameplay logs when a bug is created");

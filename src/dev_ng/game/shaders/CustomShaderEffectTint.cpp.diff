@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectTint.cpp b/src/dev_ng/game/shaders/CustomShaderEffectTint.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectTint.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectTint.cpp
+@@ -10,26 +10,26 @@
+ //
+ //
+ // Rage headers:
+-#include "grcore\textureGcm.h"
++#include "grcore/textureGcm.h"
+ #if __XENON
+ 	#include "system/xtl.h"
+ 	#define DBG 0
+ 	#include <xgraphics.h>
+ 	#undef DBG
+ #endif
+-#include "grcore\texturexenon.h"
+-#include "grcore\grcorespu.h"
+-#include "diag\art_channel.h"
++#include "grcore/texturexenon.h"
++#include "grcore/grcorespu.h"
++#include "diag/art_channel.h"
+ 
+ #include "fwdrawlist/drawlistmgr.h"
+ 
+ // Game headers:
+-#include "renderer\render_channel.h"	// renderWarningf()...
+-#include "shaders\ShaderLib.h"
+-#include "scene\Entity.h"
+-#include "streaming\defragmentation.h"
+-#include "renderer\GtaDrawable.h"
+-#include "shaders\CustomShaderEffectTint.h"
++#include "renderer/render_channel.h"	// renderWarningf()...
++#include "shaders/ShaderLib.h"
++#include "scene/Entity.h"
++#include "streaming/defragmentation.h"
++#include "renderer/GtaDrawable.h"
++#include "shaders/CustomShaderEffectTint.h"
+ 
+ //#include "system/findsize.h"
+ //FindSize(CCustomShaderEffectTint);

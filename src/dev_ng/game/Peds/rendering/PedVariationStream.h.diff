@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedVariationStream.h b/src/dev_ng/game/Peds/rendering/PedVariationStream.h
+--- a/src/dev_ng/game/Peds/rendering/PedVariationStream.h
++++ b/src/dev_ng/game/Peds/rendering/PedVariationStream.h
+@@ -12,7 +12,7 @@
+ #include "fwscene/stores/dwdstore.h"
+ 
+ #include "scene/RegdRefTypes.h"
+-#include "peds\rendering\pedVariationDS.h"
++#include "peds/rendering/pedVariationDS.h"
+ #include "scene/DataFileMgr.h"
+ 
+ #define PED_FP_ANIMPOSTFX_GROUP_ID (64)

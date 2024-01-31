@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/BlendFromNmData.cpp b/src/dev_ng/game/task/Physics/BlendFromNmData.cpp
+--- a/src/dev_ng/game/task/Physics/BlendFromNmData.cpp
++++ b/src/dev_ng/game/task/Physics/BlendFromNmData.cpp
+@@ -15,7 +15,7 @@
+ #include "ai/task/taskchannel.h"
+ #include "fwanimation/clipsets.h"
+ 
+-#include "task\System\TaskMove.h"
++#include "task/System/TaskMove.h"
+ #include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"
+ #include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.h"
+ 

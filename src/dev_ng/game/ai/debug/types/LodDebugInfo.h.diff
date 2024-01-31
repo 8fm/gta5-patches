@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ai/debug/types/LodDebugInfo.h b/src/dev_ng/game/ai/debug/types/LodDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/LodDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/LodDebugInfo.h
+@@ -1,7 +1,7 @@
+ #pragma once
+ 
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
++#include "ai/debug/system/AIDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 

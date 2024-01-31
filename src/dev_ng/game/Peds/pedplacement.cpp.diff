@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/Peds/pedplacement.cpp b/src/dev_ng/game/Peds/pedplacement.cpp
+--- a/src/dev_ng/game/Peds/pedplacement.cpp
++++ b/src/dev_ng/game/Peds/pedplacement.cpp
+@@ -12,15 +12,15 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "ModelInfo\PedModelInfo.h"
+-#include "ModelInfo\VehicleModelInfo.h"
+-#include "scene\world\gameWorld.h"
+-#include "Peds\pedplacement.h"
+-#include "Peds\pedtype.h"
++#include "ModelInfo/PedModelInfo.h"
++#include "ModelInfo/VehicleModelInfo.h"
++#include "scene/world/gameWorld.h"
++#include "Peds/pedplacement.h"
++#include "Peds/pedtype.h"
+ #include "peds/Ped.h"
+-#include "Physics\GtaArchetype.h"
+-#include "Physics\GtaInst.h"
+-#include "Physics\Physics.h"
++#include "Physics/GtaArchetype.h"
++#include "Physics/GtaInst.h"
++#include "Physics/Physics.h"
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "vehicles/vehicle.h"
+ 

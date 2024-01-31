@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleCruiseBoat.h b/src/dev_ng/game/vehicleAi/task/TaskVehicleCruiseBoat.h
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleCruiseBoat.h
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleCruiseBoat.h
+@@ -8,7 +8,7 @@
+ 
+ #include "Task/System/Task.h"
+ #include "Task/System/TaskHelpers.h"
+-#include "VehicleAi\task\TaskVehicleMissionBase.h"
++#include "VehicleAi/task/TaskVehicleMissionBase.h"
+ 
+ 
+ class CTaskVehicleCruiseBoat : public CTaskVehicleMissionBase

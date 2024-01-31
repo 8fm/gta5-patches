@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleThreePointTurn.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleThreePointTurn.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleThreePointTurn.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleThreePointTurn.cpp
+@@ -9,7 +9,7 @@
+ #include "control/trafficLights.h"
+ #include "renderer/Water.h"
+ #include "scene/world/gameWorld.h"
+-#include "VehicleAi\task\TaskVehicleMissionBase.h"
++#include "VehicleAi/task/TaskVehicleMissionBase.h"
+ #include "physics/physics.h"
+ 
+ AI_OPTIMISATIONS()

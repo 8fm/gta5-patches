@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/bugstar/BugstarAssetLookup.h b/src/dev_ng/game/debug/bugstar/BugstarAssetLookup.h
+--- a/src/dev_ng/game/debug/bugstar/BugstarAssetLookup.h
++++ b/src/dev_ng/game/debug/bugstar/BugstarAssetLookup.h
+@@ -7,7 +7,7 @@
+ 
+ #if BUGSTAR_INTEGRATION_ACTIVE
+ 
+-#include "atl\map.h"
++#include "atl/map.h"
+ 
+ namespace rage {
+ 

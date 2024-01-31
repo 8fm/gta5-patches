@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp b/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp
+--- a/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp
++++ b/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp
+@@ -7,7 +7,7 @@
+ 
+ #include "BaseTypes.h"
+ 
+-#include "renderer\Renderer.h"			// JW- had to move this up here to get a successful compile...
++#include "renderer/Renderer.h"			// JW- had to move this up here to get a successful compile...
+ 
+ #include "grcore/viewport.h"
+ #include "grcore/viewport_inline.h"

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Combat/Cover/cover.cpp b/src/dev_ng/game/task/Combat/Cover/cover.cpp
+--- a/src/dev_ng/game/task/Combat/Cover/cover.cpp
++++ b/src/dev_ng/game/task/Combat/Cover/cover.cpp
+@@ -37,12 +37,12 @@
+ #include "script/script_channel.h"
+ #include "script/script_itemsets.h"
+ #include "Task/Combat/TaskCombat.h"
+-#include "Task\Combat\Cover\Cover.h"
++#include "Task/Combat/Cover/Cover.h"
+ #include "Task/Combat/Cover/coverfilter.h"
+-#include "Task/Combat/Cover\coversupport.h"
+-#include "Task\Combat\Cover\TaskCover.h"
++#include "Task/Combat/Cover/coversupport.h"
++#include "Task/Combat/Cover/TaskCover.h"
+ #include "Task/Default/TaskPlayer.h"
+-#include "Task\Movement\TaskMoveWithinAttackWindow.h"
++#include "Task/Movement/TaskMoveWithinAttackWindow.h"
+ #include "Vehicles/Automobile.h"
+ #include "Vfx/Misc/Fire.h"
+ 

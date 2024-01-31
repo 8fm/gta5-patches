@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/trafficlights.h b/src/dev_ng/game/control/trafficlights.h
+--- a/src/dev_ng/game/control/trafficlights.h
++++ b/src/dev_ng/game/control/trafficlights.h
+@@ -14,7 +14,7 @@
+ 
+ #include "vehicles/automobile.h"
+ #include "modelinfo/BaseModelInfoExtensions.h"
+-#include "vehicleAi\junctions.h"
++#include "vehicleAi/junctions.h"
+ 
+ namespace rage { class CPathNode; }
+ namespace rage { class CPathNodeLink; }

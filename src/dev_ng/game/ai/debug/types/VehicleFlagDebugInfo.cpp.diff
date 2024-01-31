@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.cpp
+@@ -1,10 +1,10 @@
+-#include "ai\debug\types\VehicleFlagDebugInfo.h"
++#include "ai/debug/types/VehicleFlagDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ #include "fragment/type.h"
+-#include "vehicles\vehicle.h"
+-#include "vehicleAi\VehicleIntelligence.h"
++#include "vehicles/vehicle.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ 
+ CVehicleFlagDebugInfo::CVehicleFlagDebugInfo(const CVehicle* pVeh, DebugInfoPrintParams printParams, s32 iNumberOfLines)
+ : CVehicleDebugInfo(pVeh, printParams, iNumberOfLines)

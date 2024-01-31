@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectPed.h b/src/dev_ng/game/shaders/CustomShaderEffectPed.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectPed.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectPed.h
+@@ -12,7 +12,7 @@
+ #ifndef __CCUSTOMSHADEREFFECTPED_H__
+ #define __CCUSTOMSHADEREFFECTPED_H__
+ 
+-#include "shaders\CustomShaderEffectBase.h"
++#include "shaders/CustomShaderEffectBase.h"
+ 
+ #include "grblendshapes/blendshapes_config.h"
+ #include "grblendshapes/manager.h"

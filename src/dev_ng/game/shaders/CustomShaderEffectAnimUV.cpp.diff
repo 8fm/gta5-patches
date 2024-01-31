@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.cpp b/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.cpp
+@@ -5,7 +5,7 @@
+ //	19/11/2007	-	Andrzej:	- Update(): anim time synchronization between entities and their lods added;
+ //
+ // The gta5 'testbed' level has an example of an AnimUV.
+-#include "shaders\CustomShaderEffectAnimUV.h"
++#include "shaders/CustomShaderEffectAnimUV.h"
+ 
+ //Rage includes
+ #include "cranimation/frame.h"

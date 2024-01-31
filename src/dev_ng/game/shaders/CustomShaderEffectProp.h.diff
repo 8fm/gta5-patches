@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectProp.h b/src/dev_ng/game/shaders/CustomShaderEffectProp.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectProp.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectProp.h
+@@ -11,9 +11,9 @@
+ #ifndef __CCUSTOMSHADEREFFECTPROP_H__
+ #define __CCUSTOMSHADEREFFECTPROP_H__
+ 
+-#include "rmcore\drawable.h"
+-#include "shaders\CustomShaderEffectBase.h"
+-#include "shaders\CustomShaderEffectTint.h"
++#include "rmcore/drawable.h"
++#include "shaders/CustomShaderEffectBase.h"
++#include "shaders/CustomShaderEffectTint.h"
+ 
+ 
+ #define	CSE_PROP_EDITABLEVALUES				(__BANK)

@@ -1,0 +1,58 @@
+diff --git a/src/dev_ng/game/control/WaypointRecording.cpp b/src/dev_ng/game/control/WaypointRecording.cpp
+--- a/src/dev_ng/game/control/WaypointRecording.cpp
++++ b/src/dev_ng/game/control/WaypointRecording.cpp
+@@ -2,36 +2,36 @@
+ 
+ //game includes
+ 
+-#include "control\gamelogic.h"
+-#include "fwsys\fileExts.h"
++#include "control/gamelogic.h"
++#include "fwsys/fileExts.h"
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+-#include "core\game.h"
++#include "core/game.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Peds\AssistedMovement.h"
+-#include "Peds\ped.h"
+-#include "Peds\PedFactory.h"
++#include "Peds/AssistedMovement.h"
++#include "Peds/ped.h"
++#include "Peds/PedFactory.h"
+ #include "peds/Ped.h"
+-#include "Peds\PedMoveBlend\PedMoveBlendInWater.h"
+-#include "Peds\PedMoveBlend\PedMoveBlendOnSkis.h"
+-#include "Peds\PedDebugVisualiser.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/PedMoveBlend/PedMoveBlendInWater.h"
++#include "Peds/PedMoveBlend/PedMoveBlendOnSkis.h"
++#include "Peds/PedDebugVisualiser.h"
++#include "Peds/PedIntelligence.h"
+ #include "physics/physics.h"
+-#include "Scene\World\GameWorld.h"
++#include "Scene/World/GameWorld.h"
+ #include "streaming/streaming.h"			
+-#include "Task\Motion\Locomotion\TaskMotionPed.h"
+-#include "Task\Movement\TaskGoto.h"
+-#include "Task\Movement\TaskFollowWaypointRecording.h"
+-#include "Task\Movement\Jumping\TaskJump.h"
+-#include "Task\General\TaskBasic.h"
+-#include "vehicleAi\task\TaskVehicleFollowRecording.h"
++#include "Task/Motion/Locomotion/TaskMotionPed.h"
++#include "Task/Movement/TaskGoto.h"
++#include "Task/Movement/TaskFollowWaypointRecording.h"
++#include "Task/Movement/Jumping/TaskJump.h"
++#include "Task/General/TaskBasic.h"
++#include "vehicleAi/task/TaskVehicleFollowRecording.h"
+ #include "debug/DebugScene.h"
+ #include "Task/Vehicle/TaskCar.h"
+ 
+ //rage includes
+ 
+-#include "math\angmath.h"
++#include "math/angmath.h"
+ 
+ AI_OPTIMISATIONS()
+ 

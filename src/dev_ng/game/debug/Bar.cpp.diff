@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Bar.cpp b/src/dev_ng/game/debug/Bar.cpp
+--- a/src/dev_ng/game/debug/Bar.cpp
++++ b/src/dev_ng/game/debug/Bar.cpp
+@@ -45,7 +45,7 @@
+ #include "Network/Network.h"
+ #include "Network/Bandwidth/NetworkBandwidthManager.h"
+ #include "Network/Objects/NetworkObjectPopulationMgr.h"
+-#include "modelinfo\PedModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
+ #include "streaming/populationstreaming.h"
+ 
+ PARAM(debugdisplaystate, "[debug] Control what debug information to display! Use with a value (debugdisplaystate=off|standard|coords_only).");

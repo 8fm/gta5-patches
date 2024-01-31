@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMSimple.cpp b/src/dev_ng/game/task/Physics/TaskNMSimple.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMSimple.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMSimple.cpp
+@@ -3,13 +3,13 @@
+ 
+ //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
+ // Rage headers
+-#include "crskeleton\Skeleton.h"
+-#include "fragment\Cache.h"
+-#include "fragment\Instance.h"
+-#include "fragment\Type.h"
+-#include "fragment\TypeChild.h"
+-#include "fragmentnm\messageparams.h"
+-#include "pharticulated\articulatedbody.h"
++#include "crskeleton/Skeleton.h"
++#include "fragment/Cache.h"
++#include "fragment/Instance.h"
++#include "fragment/Type.h"
++#include "fragment/TypeChild.h"
++#include "fragmentnm/messageparams.h"
++#include "pharticulated/articulatedbody.h"
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp b/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp
+@@ -3,7 +3,7 @@
+ 
+ //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
+ // Rage headers
+-#include "fragmentnm\messageparams.h"
++#include "fragmentnm/messageparams.h"
+ 
+ // Framework headers
+ #include "fwdebug/Picker.h"

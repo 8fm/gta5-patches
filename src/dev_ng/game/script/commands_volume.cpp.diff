@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/script/commands_volume.cpp b/src/dev_ng/game/script/commands_volume.cpp
+--- a/src/dev_ng/game/script/commands_volume.cpp
++++ b/src/dev_ng/game/script/commands_volume.cpp
+@@ -1,15 +1,15 @@
+ // Rage headers
+-#include "script\wrapper.h"
++#include "script/wrapper.h"
+ 
+ // Framework headers
+ #include "fwscript/scriptguid.h"
+ 
+ // Game headers
+-#include "scene\volume\VolumeManager.h"
+-#include "scene\volume\VolumeAggregate.h"
+-#include "script\script.h"
+-#include "script\script_channel.h"
+-#include "script\handlers\GameScriptResources.h"
++#include "scene/volume/VolumeManager.h"
++#include "scene/volume/VolumeAggregate.h"
++#include "script/script.h"
++#include "script/script_channel.h"
++#include "script/handlers/GameScriptResources.h"
+ 
+ namespace volume_commands
+ {

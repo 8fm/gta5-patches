@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Transmission.cpp b/src/dev_ng/game/Vehicles/Transmission.cpp
+--- a/src/dev_ng/game/Vehicles/Transmission.cpp
++++ b/src/dev_ng/game/Vehicles/Transmission.cpp
+@@ -37,7 +37,7 @@
+ #include "timecycle/TimeCycle.h"
+ #endif
+ //#if __BANK
+-//	#include "text\text.h"
++//	#include "text/text.h"
+ //#endif
+ 
+ VEHICLE_OPTIMISATIONS()

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/system/keyboard.h b/src/dev_ng/game/system/keyboard.h
+--- a/src/dev_ng/game/system/keyboard.h
++++ b/src/dev_ng/game/system/keyboard.h
+@@ -12,8 +12,8 @@
+ #define INC_KEYBOARD_H_
+ 
+ // Rage headers
+-#include "atl\array.h"
+-#include "atl\string.h"
++#include "atl/array.h"
++#include "atl/string.h"
+ #include "input/mapper_defs.h"
+ 
+ //replay include

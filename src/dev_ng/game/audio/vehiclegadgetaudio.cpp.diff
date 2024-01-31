@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/audio/vehiclegadgetaudio.cpp b/src/dev_ng/game/audio/vehiclegadgetaudio.cpp
+--- a/src/dev_ng/game/audio/vehiclegadgetaudio.cpp
++++ b/src/dev_ng/game/audio/vehiclegadgetaudio.cpp
+@@ -1,10 +1,10 @@
+ #include "vehiclegadgetaudio.h"
+ #include "northaudioengine.h"
+ #include "vehicleaudioentity.h"
+-#include "VehicleAi\Task\TaskVehicleAnimation.h"
++#include "VehicleAi/Task/TaskVehicleAnimation.h"
+ #include "camera/CamInterface.h"
+ #include "camera/cinematic/CinematicDirector.h"
+-#include "audiosoundtypes\sound.h"
++#include "audiosoundtypes/sound.h"
+ 
+ AUDIO_VEHICLES_OPTIMISATIONS()
+ 

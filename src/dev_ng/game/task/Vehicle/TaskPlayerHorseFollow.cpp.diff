@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp b/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp
+@@ -12,7 +12,7 @@
+ #include "Vehicles/vehicle.h"
+ #include "Peds/Ped.h"
+ #include "Task/Vehicle/HelperFunctions.h"
+-#include "Peds\Horse\horseComponent.h"
++#include "Peds/Horse/horseComponent.h"
+ #include "Peds/Horse/horseSpeed.h"
+ #include "Task/Movement/TaskGotoPoint.h"
+ #include "Peds/PedIntelligence.h"

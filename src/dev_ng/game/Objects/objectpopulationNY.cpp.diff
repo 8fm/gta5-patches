@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Objects/objectpopulationNY.cpp b/src/dev_ng/game/Objects/objectpopulationNY.cpp
+--- a/src/dev_ng/game/Objects/objectpopulationNY.cpp
++++ b/src/dev_ng/game/Objects/objectpopulationNY.cpp
+@@ -13,8 +13,8 @@
+ 
+ // game includes
+ #include "core/game.h"
+-#include "objects\objectpopulation.h"
+-#include "objects\objectpopulationNY.h"
++#include "objects/objectpopulation.h"
++#include "objects/objectpopulationNY.h"
+ 
+ /////////////////////////////////////////////////////////////////////////////////
+ // FUNCTION : InitLevel

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.h b/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.h
+@@ -9,7 +9,7 @@
+ #ifndef __CUSTOMSHADEREFFECT_ANIMUV__
+ #define __CUSTOMSHADEREFFECT_ANIMUV__
+ 
+-#include "shaders\CustomShaderEffectBase.h"
++#include "shaders/CustomShaderEffectBase.h"
+ 
+ 
+ #define	CSE_ANIM_EDITABLEVALUES				(__BANK)

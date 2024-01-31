@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/script/commands_clock.cpp b/src/dev_ng/game/script/commands_clock.cpp
+--- a/src/dev_ng/game/script/commands_clock.cpp
++++ b/src/dev_ng/game/script/commands_clock.cpp
+@@ -1,12 +1,12 @@
+ 
+ // Rage headers
+-#include "script\wrapper.h"
++#include "script/wrapper.h"
+ // Game headers
+-#include "game\clock.h"
+-#include "network\NetworkInterface.h"
+-#include "script\script.h"
+-#include "script\script_helper.h"
+-#include "stats\StatsInterface.h"
++#include "game/clock.h"
++#include "network/NetworkInterface.h"
++#include "script/script.h"
++#include "script/script_helper.h"
++#include "stats/StatsInterface.h"
+ 
+ //For localtime
+ #include <time.h>

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp
+@@ -11,7 +11,7 @@
+ #include "Task/Motion/Locomotion/TaskInWater.h"
+ #include "Task/Motion/Locomotion/TaskQuadLocomotion.h"
+ #include "Task/System/MotionTaskData.h"
+-#include "Peds\Horse\horseComponent.h"
++#include "Peds/Horse/horseComponent.h"
+ 
+ AI_OPTIMISATIONS() 
+ 

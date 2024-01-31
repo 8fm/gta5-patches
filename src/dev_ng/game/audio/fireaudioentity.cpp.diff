@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/fireaudioentity.cpp b/src/dev_ng/game/audio/fireaudioentity.cpp
+--- a/src/dev_ng/game/audio/fireaudioentity.cpp
++++ b/src/dev_ng/game/audio/fireaudioentity.cpp
+@@ -16,7 +16,7 @@
+ #include "audioengine/curve.h"
+ #include "audioengine/engineutil.h"
+ #include "Peds/PedFootstepHelper.h"
+-#include "vfx\misc/fire.h"
++#include "vfx/misc/fire.h"
+ #include "weapons/Weapon.h"
+ 
+ #include "debugaudio.h"

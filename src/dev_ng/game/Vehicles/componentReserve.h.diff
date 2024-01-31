@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Vehicles/componentReserve.h b/src/dev_ng/game/Vehicles/componentReserve.h
+--- a/src/dev_ng/game/Vehicles/componentReserve.h
++++ b/src/dev_ng/game/Vehicles/componentReserve.h
+@@ -7,8 +7,8 @@
+ 
+ // Game headers
+ #include "modelinfo/ModelSeatInfo.h"
+-#include "scene\RegdRefTypes.h"
+-#include "vehicles\VehicleDefines.h"
++#include "scene/RegdRefTypes.h"
++#include "vehicles/VehicleDefines.h"
+ 
+ class CBaseModelInfo;
+ class CComponentReservationManager;

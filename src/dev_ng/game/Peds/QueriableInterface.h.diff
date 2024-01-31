@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/QueriableInterface.h b/src/dev_ng/game/Peds/QueriableInterface.h
+--- a/src/dev_ng/game/Peds/QueriableInterface.h
++++ b/src/dev_ng/game/Peds/QueriableInterface.h
+@@ -12,7 +12,7 @@
+ #include "fwnet/netserialisers.h"
+ 
+ // Game headers
+-//#include "animation\AnimIds.h"
++//#include "animation/AnimIds.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "network/NetworkInterface.h"
+ #include "network/General/NetworkSerialisers.h"

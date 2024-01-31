@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/shaders/CustomDrawableShaderVar.cpp b/src/dev_ng/game/shaders/CustomDrawableShaderVar.cpp
+--- a/src/dev_ng/game/shaders/CustomDrawableShaderVar.cpp
++++ b/src/dev_ng/game/shaders/CustomDrawableShaderVar.cpp
+@@ -4,12 +4,12 @@
+ //
+ 
+ // rage headers:
+-#include "grcore\texture.h"
+-#include "rmcore\drawable.h"
++#include "grcore/texture.h"
++#include "rmcore/drawable.h"
+ 
+ // game headers:
+-#include "shaders\CustomDrawableShaderVar.h"
+-#include "debug\Debug.h"		// Assert()...
++#include "shaders/CustomDrawableShaderVar.h"
++#include "debug/Debug.h"		// Assert()...
+ 
+ 
+ 

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/animation/PMDictionaryStore.cpp b/src/dev_ng/game/animation/PMDictionaryStore.cpp
+--- a/src/dev_ng/game/animation/PMDictionaryStore.cpp
++++ b/src/dev_ng/game/animation/PMDictionaryStore.cpp
+@@ -8,14 +8,14 @@
+ // C headers
+ // Rage headers
+ #include "crparameterizedmotion/parameterizedmotiondictionary.h"
+-#include "file\asset.h"
+-#include "file\packfile.h"
+-#include "fwsys\fileExts.h"
+-#include "paging\rscbuilder.h"
++#include "file/asset.h"
++#include "file/packfile.h"
++#include "fwsys/fileExts.h"
++#include "paging/rscbuilder.h"
+ 
+ // Game headers
+ #include "anim_channel.h"
+-#include "network\NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+ #include "PMDictionaryStore.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Editing/CommonEditing.h b/src/dev_ng/game/debug/Editing/CommonEditing.h
+--- a/src/dev_ng/game/debug/Editing/CommonEditing.h
++++ b/src/dev_ng/game/debug/Editing/CommonEditing.h
+@@ -6,7 +6,7 @@
+ // =============================================================================================== //
+ // INCLUDES
+ // =============================================================================================== //
+-#include "bank\console.h"
++#include "bank/console.h"
+ 
+ namespace DebugEditing
+ {

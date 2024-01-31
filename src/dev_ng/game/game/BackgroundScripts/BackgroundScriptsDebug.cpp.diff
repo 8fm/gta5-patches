@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/BackgroundScripts/BackgroundScriptsDebug.cpp b/src/dev_ng/game/game/BackgroundScripts/BackgroundScriptsDebug.cpp
+--- a/src/dev_ng/game/game/BackgroundScripts/BackgroundScriptsDebug.cpp
++++ b/src/dev_ng/game/game/BackgroundScripts/BackgroundScriptsDebug.cpp
+@@ -9,7 +9,7 @@
+ // rage
+ #include "bank/bank.h"
+ #include "bank/bkmgr.h"
+-#include "bank\button.h"
++#include "bank/button.h"
+ #include "fwsys/gameskeleton.h"
+ #include "string/stringutil.h"
+ 

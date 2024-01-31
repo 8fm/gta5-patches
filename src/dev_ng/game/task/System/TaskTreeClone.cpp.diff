@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/System/TaskTreeClone.cpp b/src/dev_ng/game/task/System/TaskTreeClone.cpp
+--- a/src/dev_ng/game/task/System/TaskTreeClone.cpp
++++ b/src/dev_ng/game/task/System/TaskTreeClone.cpp
+@@ -1,12 +1,12 @@
+ //Game headers.
+-#include "Task\System\TaskTreeClone.h"
+-
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\QueriableInterface.h"
+-#include "Task\Combat\TaskDamageDeath.h"
+-#include "Task\General\TaskBasic.h"
+-#include "Task\System\TaskFSMClone.h"
++#include "Task/System/TaskTreeClone.h"
++
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/QueriableInterface.h"
++#include "Task/Combat/TaskDamageDeath.h"
++#include "Task/General/TaskBasic.h"
++#include "Task/System/TaskFSMClone.h"
+ #include "Network/NetworkInterface.h"
+ #include "fwnet/neteventmgr.h"
+ 

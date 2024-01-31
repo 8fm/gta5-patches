@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/RegdRefTypes.h b/src/dev_ng/game/scene/RegdRefTypes.h
+--- a/src/dev_ng/game/scene/RegdRefTypes.h
++++ b/src/dev_ng/game/scene/RegdRefTypes.h
+@@ -82,7 +82,7 @@
+ #ifndef REGD_REF_TYPES_H_
+ #define REGD_REF_TYPES_H_
+ 
+-#include "fwtl\regdrefs.h"
++#include "fwtl/regdrefs.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

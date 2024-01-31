@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/ai/debug/types/EventsDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/EventsDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/EventsDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/EventsDebugInfo.cpp
+@@ -1,8 +1,8 @@
+-#include "ai\debug\types\EventsDebugInfo.h"
++#include "ai/debug/types/EventsDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+-#include "Peds\PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ 
+ bool CEventsDebugInfo::ValidateInput()
+ {

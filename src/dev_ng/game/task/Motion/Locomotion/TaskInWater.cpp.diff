@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp
+@@ -6,15 +6,15 @@
+ #include "Camera/CamInterface.h"
+ #include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "control\replay\replay.h"
+-#include "debug\DebugScene.h"
++#include "control/replay/replay.h"
++#include "debug/DebugScene.h"
+ #include "fwanimation/directorcomponentragdoll.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/rendering/PedProps.h"
+ #include "Peds/rendering/PedVariationPack.h"
+-#include "renderer\Water.h"
+-#include "task\Default\TaskPlayer.h"
+-#include "task\Motion\Locomotion\TaskHumanLocomotion.h"
++#include "renderer/Water.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
+ #include "Task/Movement/TaskIdle.h"
+ #include "Task/Physics/TaskNM.h"
+ #include "Task/Physics/TaskNMHighFall.h"

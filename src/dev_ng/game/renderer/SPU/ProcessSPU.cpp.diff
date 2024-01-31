@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/SPU/ProcessSPU.cpp b/src/dev_ng/game/renderer/SPU/ProcessSPU.cpp
+--- a/src/dev_ng/game/renderer/SPU/ProcessSPU.cpp
++++ b/src/dev_ng/game/renderer/SPU/ProcessSPU.cpp
+@@ -22,8 +22,8 @@
+ #include <spu_printf.h>
+ 
+ 
+-#include "renderer\SpuPM\SpuPmMgr.h"
+-#include "renderer\SpuPM\SpuPmMgrSPU.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgrSPU.h"
+ 
+ 
+ 

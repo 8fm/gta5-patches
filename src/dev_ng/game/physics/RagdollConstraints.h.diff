@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/RagdollConstraints.h b/src/dev_ng/game/physics/RagdollConstraints.h
+--- a/src/dev_ng/game/physics/RagdollConstraints.h
++++ b/src/dev_ng/game/physics/RagdollConstraints.h
+@@ -7,7 +7,7 @@
+ #ifndef RAGDOLL_CONSTRAINT_H
+ #define RAGDOLL_CONSTRAINT_H
+ 
+-#include "physics\physics.h"
++#include "physics/physics.h"
+ 
+ class CPed;
+ 

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp b/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp
+--- a/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp
++++ b/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp
+@@ -14,7 +14,7 @@
+ #include "system/task.h"
+ #include "spatialdata/sphere.h"
+ #include "fwsys/gameskeleton.h"
+-#include "entity\transform.h"
++#include "entity/transform.h"
+ 
+ // Framework headers
+ 
+@@ -56,7 +56,7 @@ PF_TIMER(Unspecified_Probes, Probes);
+ 
+ 
+ #if RECORD_SHAPE_TEST_TASK_MANAGER_INTERACTION
+-	#include "atl\array.h"
++	#include "atl/array.h"
+ 	#define MAX_SHAPE_TEST_TASK_HANDLES_RECORDED (50) //Only really needs to be MAX_ASYNCHRONOUS_PROCESSING_SHAPE_TESTS, but this will count leakage
+ 	atFixedArray<sysTaskHandle, MAX_SHAPE_TEST_TASK_HANDLES_RECORDED> g_DebugRecordTaskManagerInteractionShapeTestHandles;
+ 	u32 g_DebugRecordTaskManagerInteractionShapeTestHandlesHighWaterMark = 0u;

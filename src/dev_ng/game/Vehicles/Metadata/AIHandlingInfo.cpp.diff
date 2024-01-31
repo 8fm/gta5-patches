@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.cpp b/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.cpp
+--- a/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.cpp
++++ b/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.cpp
+@@ -1,9 +1,9 @@
+ #include "AIHandlingInfo.h"
+ #include "AIHandlingInfo_parser.h"
+ 
+-#include "bank\bank.h"
+-#include "fwsys\gameskeleton.h"
+-#include "parser\manager.h"
++#include "bank/bank.h"
++#include "fwsys/gameskeleton.h"
++#include "parser/manager.h"
+     
+ // Instantiate pools
+ FW_INSTANTIATE_CLASS_POOL(CAIHandlingInfo, CAIHandlingInfo::ms_iMaxAIHandlingInfos, atHashString("CAIHandlingInfo",0x4fce10c));

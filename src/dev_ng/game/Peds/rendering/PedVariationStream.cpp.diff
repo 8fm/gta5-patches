@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedVariationStream.cpp b/src/dev_ng/game/Peds/rendering/PedVariationStream.cpp
+--- a/src/dev_ng/game/Peds/rendering/PedVariationStream.cpp
++++ b/src/dev_ng/game/Peds/rendering/PedVariationStream.cpp
+@@ -100,11 +100,11 @@
+ #include "streaming/populationstreaming.h"
+ #include "system/filemgr.h"
+ #include "System/timer.h"
+-#include "Task\General\TaskBasic.h"
++#include "Task/General/TaskBasic.h"
+ #include "Task/Scenario/Info/ScenarioInfo.h"
+ #include "Task/Scenario/ScenarioManager.h"
+ #include "Task/Scenario/TaskScenario.h"
+-#include "Task\Vehicle\TaskCarAccessories.h"
++#include "Task/Vehicle/TaskCarAccessories.h"
+ #include "Tools/smokeTest.h"
+ #include "Vehicles/VehicleFactory.h"
+ #include "shaders/ShaderHairSort.h"

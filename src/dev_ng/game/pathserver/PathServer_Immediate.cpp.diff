@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_Immediate.cpp b/src/dev_ng/game/pathserver/PathServer_Immediate.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_Immediate.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_Immediate.cpp
+@@ -1,17 +1,17 @@
+ 
+ // Rage headers
+-#include "file\device.h"
+-#include "file\stream.h"
+-#include "data\struct.h"
+-#include "file\asset.h"
+-#include "paging\rscbuilder.h"
++#include "file/device.h"
++#include "file/stream.h"
++#include "data/struct.h"
++#include "file/asset.h"
++#include "paging/rscbuilder.h"
+ #include "vector/geometry.h"
+ 
+ // Framework headers
+ #include "pathserver/PathServer.h"
+ #include "ai/navmesh/priqueue.h"
+-#include "fwmaths\random.h"
+-#include "fwmaths\vector.h"
++#include "fwmaths/random.h"
++#include "fwmaths/vector.h"
+ 
+ #ifdef GTA_ENGINE
+ AI_NAVIGATION_OPTIMISATIONS()

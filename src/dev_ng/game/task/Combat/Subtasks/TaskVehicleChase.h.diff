@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.h b/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.h
+@@ -8,9 +8,9 @@
+ #include "atl/array.h"
+ 
+ // Game headers
+-#include "scene\RegdRefTypes.h"
+-#include "Task\System\Task.h"
+-#include "Task\System\TaskHelpers.h"
++#include "scene/RegdRefTypes.h"
++#include "Task/System/Task.h"
++#include "Task/System/TaskHelpers.h"
+ #include "Task/System/Tuning.h"
+ 
+ // Forward declarations (struct)

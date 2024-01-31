@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/Peds/Gangs.cpp b/src/dev_ng/game/Peds/Gangs.cpp
+--- a/src/dev_ng/game/Peds/Gangs.cpp
++++ b/src/dev_ng/game/Peds/Gangs.cpp
+@@ -2,21 +2,21 @@
+ // Author	:	Graeme Williamson
+ // Started	:	10/11/00
+ 
+-#include "Peds\gangs.h"
++#include "Peds/gangs.h"
+ 
+ // Rage header
+ #include "audioengine/widgets.h"
+ 
+ // Framework headers
+-#include "fwmaths\random.h"
++#include "fwmaths/random.h"
+ 
+ // Game headers
+-#include "Game\modelindices.h"
+-#include "Streaming\streaming.h"
+-#include "Streaming\populationstreaming.h"
+-#include "Task\System\Task.h"
+-#include "Weapons\Weapon.h"
+-#include "Weapons\WeaponTypes.h"
++#include "Game/modelindices.h"
++#include "Streaming/streaming.h"
++#include "Streaming/populationstreaming.h"
++#include "Task/System/Task.h"
++#include "Weapons/Weapon.h"
++#include "Weapons/WeaponTypes.h"
+ 
+ AI_OPTIMISATIONS()
+ 

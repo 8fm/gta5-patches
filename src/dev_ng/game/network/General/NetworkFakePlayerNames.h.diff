@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/General/NetworkFakePlayerNames.h b/src/dev_ng/game/network/General/NetworkFakePlayerNames.h
+--- a/src/dev_ng/game/network/General/NetworkFakePlayerNames.h
++++ b/src/dev_ng/game/network/General/NetworkFakePlayerNames.h
+@@ -9,7 +9,7 @@
+ #ifndef NETWORK_FAKE_PLAYER_NAMES_H
+ #define NETWORK_FAKE_PLAYER_NAMES_H
+ 
+-#include "scene\RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ #include "vector/color32.h"
+ 
+ class CPed;

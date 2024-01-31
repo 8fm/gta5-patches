@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.h b/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.h
+@@ -1,8 +1,8 @@
+ #pragma once
+ 
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
+-#include "scene\RegdRefTypes.h"
++#include "ai/debug/system/AIDebugInfo.h"
++#include "scene/RegdRefTypes.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 

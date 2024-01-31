@@ -1,0 +1,71 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMBrace.cpp b/src/dev_ng/game/task/Physics/TaskNMBrace.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMBrace.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMBrace.cpp
+@@ -5,12 +5,12 @@
+ 
+ // C headers
+ // Rage headers
+-#include "crskeleton\Skeleton.h"
+-#include "fragment\Cache.h"
+-#include "fragment\Instance.h"
+-#include "fragment\Type.h"
+-#include "fragment\TypeChild.h"
+-#include "fragmentnm\messageparams.h"
++#include "crskeleton/Skeleton.h"
++#include "fragment/Cache.h"
++#include "fragment/Instance.h"
++#include "fragment/Type.h"
++#include "fragment/TypeChild.h"
++#include "fragmentnm/messageparams.h"
+ #include "fragmentnm/nm_channel.h"
+ #include "pharticulated/articulatedcollider.h"
+ #include "phbound/boundcomposite.h"
+@@ -20,33 +20,33 @@
+ #include "fwanimation/animmanager.h"
+ #include "fwanimation/pointcloud.h"
+ #include "grcore/debugdraw.h"
+-#include "fwmaths\Angle.h"
++#include "fwmaths/Angle.h"
+ 
+ // Game headers
+ //#include "Task/Physics/NmDebug.h"
+-#include "Animation\FacialData.h"
++#include "Animation/FacialData.h"
+ #include "camera/CamInterface.h"
+-#include "Event\EventDamage.h"
++#include "Event/EventDamage.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Network\NetworkInterface.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\PedMotionData.h"
+-#include "Peds\PedPlacement.h"
++#include "Network/NetworkInterface.h"
+ #include "Peds/Ped.h"
+-#include "PedGroup\PedGroup.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PedMotionData.h"
++#include "Peds/PedPlacement.h"
++#include "Peds/Ped.h"
++#include "PedGroup/PedGroup.h"
+ #include "Physics/debugcontacts.h"
+-#include "Physics\GtaInst.h"
+-#include "Physics\Physics.h"
++#include "Physics/GtaInst.h"
++#include "Physics/Physics.h"
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task\General\TaskBasic.h"
+-#include "Task\Movement\TaskAnimatedFallback.h"
+-#include "Task\Movement\Jumping\TaskInAir.h"
++#include "Task/General/TaskBasic.h"
++#include "Task/Movement/TaskAnimatedFallback.h"
++#include "Task/Movement/Jumping/TaskInAir.h"
+ #include "Task/Physics/TaskNMBrace.h"
+ #include "task/Physics/TaskNMHighFall.h"
+ #include "vehicles/vehicle.h"
+-#include "Vfx\Misc\Fire.h"
++#include "Vfx/Misc/Fire.h"
+ 
+ AI_OPTIMISATIONS()
+ 

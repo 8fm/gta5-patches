@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/ai/debug/system/AIDebugLogManager.h b/src/dev_ng/game/ai/debug/system/AIDebugLogManager.h
+--- a/src/dev_ng/game/ai/debug/system/AIDebugLogManager.h
++++ b/src/dev_ng/game/ai/debug/system/AIDebugLogManager.h
+@@ -1,7 +1,7 @@
+ #pragma once
+ 
+-#include "ai\task\task.h"
+-#include "scene\RegdRefTypes.h"
++#include "ai/task/task.h"
++#include "scene/RegdRefTypes.h"
+ 
+ #define AI_DEBUG_OUTPUT_ENABLED __BANK	// TODO: We could have some file output in release builds
+ 
+@@ -61,8 +61,8 @@
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ // rage headers
+-#include "fwnet\netlogginginterface.h"
+-#include "fwnet\netlog.h"
++#include "fwnet/netlogginginterface.h"
++#include "fwnet/netlog.h"
+ 
+ class CEntity;
+ class CDynamicEntity;

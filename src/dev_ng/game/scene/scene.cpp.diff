@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
+--- a/src/dev_ng/game/scene/scene.cpp
++++ b/src/dev_ng/game/scene/scene.cpp
+@@ -32,7 +32,7 @@
+ #include "fwpheffects/ropedatamanager.h"
+ 
+ // Game headers
+-#include "ai\debug\system\AIDebugLogManager.h"
++#include "ai/debug/system/AIDebugLogManager.h"
+ #include "animation/move.h"
+ #include "animation/MovePed.h"
+ #include "animation/MoveObject.h"

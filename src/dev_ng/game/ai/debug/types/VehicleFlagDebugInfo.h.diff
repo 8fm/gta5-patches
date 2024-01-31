@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.h b/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.h
+@@ -1,6 +1,6 @@
+ #pragma once
+ // game headers
+-#include "ai\debug\types\VehicleDebugInfo.h"
++#include "ai/debug/types/VehicleDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 

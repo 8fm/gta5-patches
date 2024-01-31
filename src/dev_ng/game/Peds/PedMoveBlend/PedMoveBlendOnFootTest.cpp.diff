@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.cpp b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.cpp
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.cpp
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.cpp
+@@ -1,10 +1,10 @@
+ #include "PedMoveBlendOnFootTest.h"
+ 
+-#include "peds\Ped.h"
+-#include "peds\PedIntelligence.h"
+-#include "task\Motion\Locomotion\TaskLocomotion.h"
+-#include "task\Default\TaskPlayer.h"
+-#include "math\vecmath.h"
++#include "peds/Ped.h"
++#include "peds/PedIntelligence.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Default/TaskPlayer.h"
++#include "math/vecmath.h"
+ #include "debug/DebugScene.h"
+ 
+ 

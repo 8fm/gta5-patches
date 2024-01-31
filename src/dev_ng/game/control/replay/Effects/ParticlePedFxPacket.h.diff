@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h
+@@ -11,7 +11,7 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control\replay\Effects\ParticlePacket.h"
++#include "control/replay/Effects/ParticlePacket.h"
+ 
+ class CPed;
+ 

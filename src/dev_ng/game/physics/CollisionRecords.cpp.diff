@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/physics/CollisionRecords.cpp b/src/dev_ng/game/physics/CollisionRecords.cpp
+--- a/src/dev_ng/game/physics/CollisionRecords.cpp
++++ b/src/dev_ng/game/physics/CollisionRecords.cpp
+@@ -7,13 +7,13 @@
+ #include "CollisionRecords.h"
+ 
+ //Rage headers
+-#include "fwsys\timer.h"
++#include "fwsys/timer.h"
+ #include "physics/iterator.h"
+ 
+ //Game headers
+-#include "physics\physics.h"
+-#include "scene\Physical.h"
+-#include "Vehicles\vehicle.h"
++#include "physics/physics.h"
++#include "scene/Physical.h"
++#include "Vehicles/vehicle.h"
+ #include "Peds/Ped.h"
+ #include "Objects/Object.h"
+ #include "Pickups/Pickup.h"

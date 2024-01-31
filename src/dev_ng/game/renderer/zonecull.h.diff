@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/zonecull.h b/src/dev_ng/game/renderer/zonecull.h
+--- a/src/dev_ng/game/renderer/zonecull.h
++++ b/src/dev_ng/game/renderer/zonecull.h
+@@ -15,8 +15,8 @@
+ #include "vfx/vfxlist.h"
+ 
+ //#include "basetypes.h"
+-#include "renderer\color.h"
+-//#include "scene\Entity.h"
++#include "renderer/color.h"
++//#include "scene/Entity.h"
+ //#include "pools.h" rage conversion
+ 
+ 

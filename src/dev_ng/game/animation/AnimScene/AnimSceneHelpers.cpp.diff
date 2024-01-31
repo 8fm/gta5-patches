@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/AnimSceneHelpers.cpp b/src/dev_ng/game/animation/AnimScene/AnimSceneHelpers.cpp
+--- a/src/dev_ng/game/animation/AnimScene/AnimSceneHelpers.cpp
++++ b/src/dev_ng/game/animation/AnimScene/AnimSceneHelpers.cpp
+@@ -3,7 +3,7 @@
+ 
+ // game includes
+ #include "animation/AnimScene/AnimScene.h"
+-#include "animation\AnimScene\AnimSceneManager.h"
++#include "animation/AnimScene/AnimSceneManager.h"
+ #include "animation/AnimScene/entities/AnimSceneEntities.h"
+ #include "peds/Ped.h"
+ 

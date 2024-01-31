@@ -1,0 +1,43 @@
+diff --git a/src/dev_ng/game/event/Event.cpp b/src/dev_ng/game/event/Event.cpp
+--- a/src/dev_ng/game/event/Event.cpp
++++ b/src/dev_ng/game/event/Event.cpp
+@@ -6,27 +6,27 @@
+ 
+ // Game headers
+ #include "AI/stats.h"
+-#include "Event\Event.h"
+-#include "Event\Events.h"
++#include "Event/Event.h"
++#include "Event/Events.h"
+ #include "Event/EventMovement.h"	// CEventClimbNavMeshOnRoute, for largest event size calculations.
+-#include "Event\EventNames.h"
+-#include "Event\EventResponseFactory.h"
++#include "Event/EventNames.h"
++#include "Event/EventResponseFactory.h"
+ #include "Event/EventShocking.h"
+ #include "Event/EventSound.h"
+ #include "Network/NetworkInterface.h"
+ #include "Peds/Ped.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/EntityIterator.h"
+ #include "scene/portals/InteriorInst.h"
+ #include "scene/portals/InteriorProxy.h"
+ #include "scene/portals/PortalInst.h"
+-#include "Task\Combat\TaskCombat.h"
+-#include "Task\Combat\TaskThreatResponse.h"
+-#include "Task\Movement\TaskCollisionResponse.h"
+-#include "Task\General\TaskBasic.h"
+-#include "Task\Response\TaskFlee.h"
+-#include "Task\General\TaskSecondary.h"
+-#include "vehicleAi\VehicleIntelligence.h"
++#include "Task/Combat/TaskCombat.h"
++#include "Task/Combat/TaskThreatResponse.h"
++#include "Task/Movement/TaskCollisionResponse.h"
++#include "Task/General/TaskBasic.h"
++#include "Task/Response/TaskFlee.h"
++#include "Task/General/TaskSecondary.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ 
+ using namespace AIStats;
+ 

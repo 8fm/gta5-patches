@@ -1,0 +1,43 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeManager.cpp b/src/dev_ng/game/scene/volume/VolumeManager.cpp
+--- a/src/dev_ng/game/scene/volume/VolumeManager.cpp
++++ b/src/dev_ng/game/scene/volume/VolumeManager.cpp
+@@ -5,7 +5,7 @@
+ // CREATED :	3/5/2011
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Scene\Volume\VolumeManager.h"
++#include "Scene/Volume/VolumeManager.h"
+ 
+ #if VOLUME_SUPPORT
+ ///////////////////////////////////////////////////////////////////////////////
+@@ -13,20 +13,20 @@
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+ //rage
+-#include "bank\bkmgr.h"
+-#include "bank\bank.h"
+-#include "grcore\debugdraw.h"
+-#include "grcore\im.h"
++#include "bank/bkmgr.h"
++#include "bank/bank.h"
++#include "grcore/debugdraw.h"
++#include "grcore/im.h"
+ 
+ //framework
+-#include "fwsys\gameskeleton.h"
++#include "fwsys/gameskeleton.h"
+ 
+ //Game
+-#include "Scene\Volume\VolumeBox.h"
+-#include "Scene\Volume\VolumeCylinder.h"
+-#include "Scene\Volume\VolumeSphere.h"
+-#include "Scene\Volume\VolumeAggregate.h"
+-#include "Scene\Volume\VolumeTool.h"
++#include "Scene/Volume/VolumeBox.h"
++#include "Scene/Volume/VolumeCylinder.h"
++#include "Scene/Volume/VolumeSphere.h"
++#include "Scene/Volume/VolumeAggregate.h"
++#include "Scene/Volume/VolumeTool.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  GLOBAL VARIABLES

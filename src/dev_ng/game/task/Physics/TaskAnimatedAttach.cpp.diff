@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp b/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp
+--- a/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp
++++ b/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp
+@@ -18,7 +18,7 @@
+ 
+ // Framework headers:
+ #include "fwanimation/animdirector.h"
+-#include "fwsys\timer.h"
++#include "fwsys/timer.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

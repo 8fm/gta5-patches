@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/physics/CollisionRecords.h b/src/dev_ng/game/physics/CollisionRecords.h
+--- a/src/dev_ng/game/physics/CollisionRecords.h
++++ b/src/dev_ng/game/physics/CollisionRecords.h
+@@ -8,12 +8,12 @@
+ #define COLLISION_RECORDS_H
+ 
+ //Rage headers
+-#include "phcore\materialmgr.h"
+-#include "atl\array.h"
++#include "phcore/materialmgr.h"
++#include "atl/array.h"
+ 
+ //Game headers
+-#include "scene\Entity.h"
+-#include "scene\RegdRefTypes.h"
++#include "scene/Entity.h"
++#include "scene/RegdRefTypes.h"
+ 
+ //Parameters
+ #define COLLISIONHISTORY_RECORDSTORESIZE 600

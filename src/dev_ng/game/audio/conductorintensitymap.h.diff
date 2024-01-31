@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/audio/conductorintensitymap.h b/src/dev_ng/game/audio/conductorintensitymap.h
+--- a/src/dev_ng/game/audio/conductorintensitymap.h
++++ b/src/dev_ng/game/audio/conductorintensitymap.h
+@@ -7,8 +7,8 @@
+ #ifndef AUD_CONDUCTORMAP_H
+ #define AUD_CONDUCTORMAP_H
+ 
+-#include "vector\vector3.h"
+-#include "atl\array.h"
++#include "vector/vector3.h"
++#include "atl/array.h"
+ 
+ #if __BANK
+  #include "bank/bkmgr.h"

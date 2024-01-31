@@ -1,6 +1,17 @@
 diff --git a/src/dev_ng/game/Peds/PedMotionData.h b/src/dev_ng/game/Peds/PedMotionData.h
 --- a/src/dev_ng/game/Peds/PedMotionData.h
 +++ b/src/dev_ng/game/Peds/PedMotionData.h
+@@ -2,8 +2,8 @@
+ #define INC_PED_MOTION_DATA_H
+ 
+ // Rage headers
+-#include "fwanimation\anim_channel.h"
+-#include "fwanimation\animdefines.h"
++#include "fwanimation/anim_channel.h"
++#include "fwanimation/animdefines.h"
+ #include "fwsys/timer.h"
+ #include "fwutil/Flags.h"
+ #include "vector/vector2.h"
 @@ -290,11 +290,11 @@ public:
  	void SetScriptedMinMoveBlendRatio(float fScriptedMinMoveBlendRatio) { m_fScriptedMinMoveBlendRatio = fScriptedMinMoveBlendRatio; }	
  	void SetGaitReducedMaxMoveBlendRatio(float fGaitReducedMaxMoveBlendRatio) { m_fGaitReducedMaxMoveBlendRatio = fGaitReducedMaxMoveBlendRatio; }		

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/clouds/CloudListController.cpp b/src/dev_ng/game/vfx/clouds/CloudListController.cpp
+--- a/src/dev_ng/game/vfx/clouds/CloudListController.cpp
++++ b/src/dev_ng/game/vfx/clouds/CloudListController.cpp
+@@ -10,8 +10,8 @@
+ #include "CloudListController_parser.h"
+ 
+ #include "CloudHat.h"
+-#include "math\random.h"
+-#include "bank\bank.h"
++#include "math/random.h"
++#include "bank/bank.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  OPTIMISATIONS - TURN ON IN OPTIMISATIONS.H

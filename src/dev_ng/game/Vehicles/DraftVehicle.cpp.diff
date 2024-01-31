@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/Vehicles/DraftVehicle.cpp b/src/dev_ng/game/Vehicles/DraftVehicle.cpp
+--- a/src/dev_ng/game/Vehicles/DraftVehicle.cpp
++++ b/src/dev_ng/game/Vehicles/DraftVehicle.cpp
+@@ -8,22 +8,22 @@
+ #include "physics/constraintmgr.h"
+ #include "physics/constraintspherical.h"
+ #include "physics/constraintrotation.h"
+-#include "physics\constraintcylindrical.h"
+-#include "physics\constraintdistance.h"
++#include "physics/constraintcylindrical.h"
++#include "physics/constraintdistance.h"
+ #include "physics/simulator.h"
+ 
+ // Game Headers
+ #include "camera/CamInterface.h"
+ #include "peds/pedfactory.h"
+-#include "peds\pedIntelligence.h"
+-//#include "renderer\hierarchyIds.h"
+-#include "scene\world\GameWorld.h"
+-#include "streaming\streaming.h"
++#include "peds/pedIntelligence.h"
++//#include "renderer/hierarchyIds.h"
++#include "scene/world/GameWorld.h"
++#include "streaming/streaming.h"
+ #include "Task/Vehicle/TaskDraftHorse.h"
+ #include "Peds/Horse/horseComponent.h"
+ //#include "Task/Vehicle/TaskRideHorse.h"
+-#include "vehicles\handlingMgr.h"
+-//#include "vehicles\vehicle.h"
++#include "vehicles/handlingMgr.h"
++//#include "vehicles/vehicle.h"
+ 
+ VEHICLE_OPTIMISATIONS();
+ 

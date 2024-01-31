@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer.h b/src/dev_ng/game/pathserver/PathServer.h
+--- a/src/dev_ng/game/pathserver/PathServer.h
++++ b/src/dev_ng/game/pathserver/PathServer.h
+@@ -4,8 +4,8 @@
+ 
+ #include "ai/navmesh/datatypes.h"
+ #include "ai/navmesh/requests.h"
+-#include "PathServer\PathServerThread.h"
+-#include "PathServer\NavGenParam.h"
++#include "PathServer/PathServerThread.h"
++#include "PathServer/NavGenParam.h"
+ 
+ #ifdef GTA_ENGINE
+ #include "atl/binheap.h"

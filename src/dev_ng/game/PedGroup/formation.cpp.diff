@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/PedGroup/formation.cpp b/src/dev_ng/game/PedGroup/formation.cpp
+--- a/src/dev_ng/game/PedGroup/formation.cpp
++++ b/src/dev_ng/game/PedGroup/formation.cpp
+@@ -3,17 +3,17 @@
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+-#include "fwmaths\angle.h"
++#include "fwmaths/angle.h"
+ 
+ // Game headers
+ #include "formation.h"
+-#include "peds\pedIntelligence.h"
+-#include "Task\System\Task.h"
++#include "peds/pedIntelligence.h"
++#include "Task/System/Task.h"
+ #include "peds/Ped.h"
+-#include "modelinfo\vehiclemodelinfo.h"
+-#include "game\modelindices.h"
+-#include "Task\General\TaskBasic.h"
+-#include "objects\object.h"
++#include "modelinfo/vehiclemodelinfo.h"
++#include "game/modelindices.h"
++#include "Task/General/TaskBasic.h"
++#include "objects/object.h"
+ 
+ #include "data/aes_init.h"
+ AES_INIT_8;

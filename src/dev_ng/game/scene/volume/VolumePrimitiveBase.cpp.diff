@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumePrimitiveBase.cpp b/src/dev_ng/game/scene/volume/VolumePrimitiveBase.cpp
+--- a/src/dev_ng/game/scene/volume/VolumePrimitiveBase.cpp
++++ b/src/dev_ng/game/scene/volume/VolumePrimitiveBase.cpp
+@@ -2,10 +2,10 @@
+ 
+ #if VOLUME_SUPPORT
+ 
+-#include "math\amath.h"
+-#include "vector\geometry.h"
+-#include "vector\color32.h"
+-#include "grcore\im.h"
++#include "math/amath.h"
++#include "vector/geometry.h"
++#include "vector/color32.h"
++#include "grcore/im.h"
+ 
+ INSTANTIATE_RTTI_CLASS(CVolumePrimitiveBase,0x510B809D)
+ 

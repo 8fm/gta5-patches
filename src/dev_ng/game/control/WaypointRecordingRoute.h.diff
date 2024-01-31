@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/WaypointRecordingRoute.h b/src/dev_ng/game/control/WaypointRecordingRoute.h
+--- a/src/dev_ng/game/control/WaypointRecordingRoute.h
++++ b/src/dev_ng/game/control/WaypointRecordingRoute.h
+@@ -1,7 +1,7 @@
+ #ifndef WAYPOINT_RECORDING_ROUTE_H
+ #define WAYPOINT_RECORDING_ROUTE_H
+ 
+-#include "fwcontrol\WaypointRecordingRoute.h"
++#include "fwcontrol/WaypointRecordingRoute.h"
+ 
+ //************************************************************
+ // CWaypointRecordingRoute

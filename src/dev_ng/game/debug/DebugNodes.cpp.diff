@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/debug/DebugNodes.cpp b/src/dev_ng/game/debug/DebugNodes.cpp
+--- a/src/dev_ng/game/debug/DebugNodes.cpp
++++ b/src/dev_ng/game/debug/DebugNodes.cpp
+@@ -2,11 +2,11 @@
+ 
+ #include "DebugNodes.h"
+ 
+-#include "script\thread.h"
+-#include "script\wrapper.h"
+-#include "net\netaddress.h"
+-#include "net\tcp.h"
+-#include "bank\msgbox.h"
++#include "script/thread.h"
++#include "script/wrapper.h"
++#include "net/netaddress.h"
++#include "net/tcp.h"
++#include "bank/msgbox.h"
+ 
+ #define __DEBUGNODESYS 0
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////

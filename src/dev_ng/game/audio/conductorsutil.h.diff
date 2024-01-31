@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/conductorsutil.h b/src/dev_ng/game/audio/conductorsutil.h
+--- a/src/dev_ng/game/audio/conductorsutil.h
++++ b/src/dev_ng/game/audio/conductorsutil.h
+@@ -1,7 +1,7 @@
+ #ifndef AUD_CONDUCTORSUTIL_H
+ #define AUD_CONDUCTORSUTIL_H
+ 
+-#include "vector\vector3.h"
++#include "vector/vector3.h"
+ 
+ class CEntity;
+ namespace conductors

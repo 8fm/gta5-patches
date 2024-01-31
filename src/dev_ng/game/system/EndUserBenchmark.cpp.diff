@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/system/EndUserBenchmark.cpp b/src/dev_ng/game/system/EndUserBenchmark.cpp
+--- a/src/dev_ng/game/system/EndUserBenchmark.cpp
++++ b/src/dev_ng/game/system/EndUserBenchmark.cpp
+@@ -5,10 +5,10 @@
+ #include "time.h"
+ #include "fwsys/timer.h"
+ #include "grcore/diag_d3d.h"
+-#include "grcore\adapter_d3d11.h"
+-#include "script\script.h"
+-#include "script\streamedscripts.h"
+-#include "script\thread.h"
++#include "grcore/adapter_d3d11.h"
++#include "script/script.h"
++#include "script/streamedscripts.h"
++#include "script/thread.h"
+ #include "camera/CamInterface.h"
+ #include "network/NetworkInterface.h"
+ 

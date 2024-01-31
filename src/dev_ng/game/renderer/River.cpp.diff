@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/River.cpp b/src/dev_ng/game/renderer/River.cpp
+--- a/src/dev_ng/game/renderer/River.cpp
++++ b/src/dev_ng/game/renderer/River.cpp
+@@ -21,8 +21,8 @@
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "vfx/sky/Sky.h"
+ 
+-#include "grcore\texture_gnm.h"
+-#include "grcore\wrapper_gnm.h"
++#include "grcore/texture_gnm.h"
++#include "grcore/wrapper_gnm.h"
+ 
+ #include "system/xtl.h"
+ #if __D3D
