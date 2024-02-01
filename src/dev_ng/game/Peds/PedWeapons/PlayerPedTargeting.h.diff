@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/Peds/PedWeapons/PlayerPedTargeting.h b/src/dev_ng/game/Peds/PedWeapons/PlayerPedTargeting.h
+--- a/src/dev_ng/game/Peds/PedWeapons/PlayerPedTargeting.h
++++ b/src/dev_ng/game/Peds/PedWeapons/PlayerPedTargeting.h
+@@ -2,15 +2,15 @@
+ #define PLAYER_PED_TARGETING_H
+ 
+ // Rage
+-#include "Vector/Color32.h"
+-#include "Vector/Vector3.h"
++#include "vector/color32.h"
++#include "vector/vector3.h"
+ 
+ // Game headers
+-#include "Frontend/UIReticule.h"
+-#include "Physics/WorldProbe/ShapeTestResults.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Tuning.h"
+-#include "Weapons/TargetSequence.h"
++#include "frontend/UIReticule.h"
++#include "physics/WorldProbe/shapetestresults.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Tuning.h"
++#include "weapons/TargetSequence.h"
+ 
+ // Forward declarations
+ class CEntity;

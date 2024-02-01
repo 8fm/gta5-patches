@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/game/Dispatch/IncidentManager.h b/src/dev_ng/game/game/Dispatch/IncidentManager.h
+--- a/src/dev_ng/game/game/Dispatch/IncidentManager.h
++++ b/src/dev_ng/game/game/Dispatch/IncidentManager.h
+@@ -5,13 +5,13 @@
+ #ifndef INC_INCIDENT_MANAGER_H_
+ #define INC_INCIDENT_MANAGER_H_
+ // Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ // Framework headers
+ #include "ai/aichannel.h"
+ #include "scene/Entity.h"
+ // Game headers
+-#include "Game/Dispatch/DispatchEnums.h"
+-#include "Game/Dispatch/Incidents.h"
++#include "game/Dispatch/DispatchEnums.h"
++#include "game/Dispatch/Incidents.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ class CIncident;

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/ik/solvers/TorsoSolver.cpp b/src/dev_ng/game/ik/solvers/TorsoSolver.cpp
+--- a/src/dev_ng/game/ik/solvers/TorsoSolver.cpp
++++ b/src/dev_ng/game/ik/solvers/TorsoSolver.cpp
+@@ -17,8 +17,8 @@
+ #include "debug/DebugScene.h"
+ #include "fwdebug/picker.h"
+ #include "ik/IkManager.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "weapons/Weapon.h"
+ 
+ #define TORSO_SOLVER_POOL_MAX 64	//sets the maximum number of these solvers in the pool

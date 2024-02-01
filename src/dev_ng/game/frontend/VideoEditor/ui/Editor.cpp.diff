@@ -1,0 +1,52 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Editor.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/Editor.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Editor.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Editor.cpp
+@@ -47,36 +47,36 @@
+ #include "frontend/MousePointer.h"
+ #include "frontend/NewHud.h"
+ #include "frontend/HudTools.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/ui_channel.h"
+ #include "frontend/WarningScreen.h"
+ #include "frontend/landing_page/LandingPage.h"
+ 
+ #include "renderer/sprite2d.h"
+ #include "replaycoordinator/ReplayEditorParameters.h"
+ #include "replaycoordinator/storage/Montage.h"
+-#include "replaycoordinator/Storage/MontageMusicClip.h"
+-#include "replaycoordinator/Storage/MontageText.h"
++#include "replaycoordinator/storage/MontageMusicClip.h"
++#include "replaycoordinator/storage/MontageText.h"
+ 
+ #include "camera/CamInterface.h"
+ #include "control/replay/replay.h"
+ #include "control/replay/ReplayRecording.h"
+ #include "control/videorecording/videorecording.h"
+-#include "Network/Live/NetworkRichPresence.h"
++#include "network/Live/NetworkRichPresence.h"
+ #include "network/NetworkInterface.h"
+-#include "Network/xlast/presenceutil.h"
++#include "network/xlast/presenceutil.h"
+ #include "Peds/ped.h"
+ #include "text/TextFormat.h"
+ #include "scene/world/GameWorld.h"
+-#include "System/controlMgr.h"
++#include "system/controlMgr.h"
+ #include "streaming/streaming.h"
+ 
+-#include "Text/Messages.h"
+-#include "Text/Text.h"
+-#include "Text/TextFile.h"
+-#include "Text/TextFormat.h"
++#include "text/messages.h"
++#include "text/text.h"
++#include "text/TextFile.h"
++#include "text/TextFormat.h"
+ #include "text/TextConversion.h"
+-#include "Network/Cloud/VideoUploadManager.h"
++#include "network/Cloud/VideoUploadManager.h"
+ 
+ #include "audiohardware/driver.h"
+ 

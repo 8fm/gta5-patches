@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.cpp b/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.cpp
 --- a/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.cpp
 +++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.cpp
-@@ -12,11 +12,11 @@
+@@ -12,12 +12,12 @@
  #include "system/threadpool.h"
  #include "diag/output.h"		// for DIAG_CONTEXT_MESSAGE
  
@@ -10,11 +10,13 @@ diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.cpp b/src/dev_ng/
 -#include "Frontend\Scaleform\pauseMenuLUT.h"
 -#include "Frontend\Scaleform\ScaleformMgr.h"
 -#include "Frontend\Scaleform\ScaleformDef.h"
-+#include "Frontend/Scaleform/ScaleformStore.h"
-+#include "Frontend/Scaleform/Colour.h"
-+#include "Frontend/Scaleform/pauseMenuLUT.h"
-+#include "Frontend/Scaleform/ScaleformMgr.h"
-+#include "Frontend/Scaleform/ScaleformDef.h"
- #include "Network/NetworkInterface.h"
+-#include "Network/NetworkInterface.h"
++#include "frontend/Scaleform/ScaleFormStore.h"
++#include "frontend/Scaleform/colour.h"
++#include "frontend/Scaleform/pauseMenuLUT.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/Scaleform/ScaleFormDef.h"
++#include "network/NetworkInterface.h"
  
  #include "fwscene/stores/txdstore.h" 
+ #include "fwsys/fileExts.h"

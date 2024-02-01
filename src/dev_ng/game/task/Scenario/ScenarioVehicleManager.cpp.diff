@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.cpp b/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.cpp
+@@ -19,7 +19,7 @@
+ #include "fwscene/stores/staticboundsstore.h"
+ #include "game/config.h"
+ #include "Peds/PedIntelligence.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "task/Scenario/ScenarioVehicleManager_parser.h"
+ 

@@ -1,0 +1,61 @@
+diff --git a/src/dev_ng/game/Stats/StatsDataMgr.cpp b/src/dev_ng/game/Stats/StatsDataMgr.cpp
+--- a/src/dev_ng/game/Stats/StatsDataMgr.cpp
++++ b/src/dev_ng/game/Stats/StatsDataMgr.cpp
+@@ -13,8 +13,8 @@
+ #include "parser/treenode.h"
+ #include "parser/manager.h"
+ #include "String/stringhash.h"
+-#include "Diag/output.h"
+-#include "System/param.h"
++#include "diag/output.h"
++#include "system/param.h"
+ #include "data/callback.h"
+ #include "rline/profilestats/rlprofilestatscommon.h"
+ #include "script/thread.h"
+@@ -37,9 +37,9 @@
+ #include "Stats/StatsInterface.h"
+ 
+ // Game headers
+-#include "core/game.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Text/TextFile.h"
++#include "Core/game.h"
++#include "scene/DataFileMgr.h"
++#include "text/TextFile.h"
+ #include "script/script_channel.h"
+ #include "script/script.h"
+ #include "Peds/PlayerInfo.h"
+@@ -48,15 +48,15 @@
+ #include "frontend/ContextMenu.h"
+ 
+ // network headers
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Network.h"
+-#include "Network/players/NetGamePlayer.h"
+-#include "Network/Stats/NetworkStockMarketStats.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Shop/Catalog.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Cloud/UserContentManager.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/Network.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Stats/NetworkStockMarketStats.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Shop/Catalog.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Cloud/UserContentManager.h"
+ 
+ #include "text/TextConversion.h"
+ #include "Core/gamesessionstatemachine.h"
+@@ -64,7 +64,7 @@
+ #include "SaveLoad/GenericGameStorage.h"
+ 
+ #if RSG_DURANGO
+-#include "Network/Live/Events_durango.h"
++#include "network/Live/Events_durango.h"
+ #endif
+ 
+ #if __ASSERT

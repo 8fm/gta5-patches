@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/script/commands_camera.cpp b/src/dev_ng/game/script/commands_camera.cpp
+--- a/src/dev_ng/game/script/commands_camera.cpp
++++ b/src/dev_ng/game/script/commands_camera.cpp
+@@ -36,14 +36,14 @@
+ #include "camera/system/CameraManager.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "frontend/PauseMenu.h"
+-#include "peds/ped.h"
+-#include "peds/pedpopulation.h"
++#include "Peds/ped.h"
++#include "Peds/pedpopulation.h"
+ #include "renderer/PostProcessFX.h"
+ #include "script/script_channel.h"
+ #include "script/Handlers/GameScriptResources.h"
+ #include "script/script_helper.h"
+ #include "task/Animation/TaskScriptedAnimation.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ #include "control/replay/replay.h"
+ 

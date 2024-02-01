@@ -1,7 +1,17 @@
 diff --git a/src/dev_ng/game/Vehicles/DraftVehicle.cpp b/src/dev_ng/game/Vehicles/DraftVehicle.cpp
 --- a/src/dev_ng/game/Vehicles/DraftVehicle.cpp
 +++ b/src/dev_ng/game/Vehicles/DraftVehicle.cpp
-@@ -8,22 +8,22 @@
+@@ -1,29 +1,29 @@
+ 
+-#include "vehicles/DraftVehicle.h"
++#include "Vehicles/DraftVehicle.h"
+  
+ // Rage Headers
+-//#include "phCore/segment.h"
+-//#include "phCore/isect.h"
++//#include "phcore/segment.h"
++//#include "phcore/isect.h"
+ #include "physics/constrainthandle.h"
  #include "physics/constraintmgr.h"
  #include "physics/constraintspherical.h"
  #include "physics/constraintrotation.h"
@@ -13,22 +23,25 @@ diff --git a/src/dev_ng/game/Vehicles/DraftVehicle.cpp b/src/dev_ng/game/Vehicle
  
  // Game Headers
  #include "camera/CamInterface.h"
- #include "peds/pedfactory.h"
+-#include "peds/pedfactory.h"
 -#include "peds\pedIntelligence.h"
 -//#include "renderer\hierarchyIds.h"
 -#include "scene\world\GameWorld.h"
 -#include "streaming\streaming.h"
-+#include "peds/pedIntelligence.h"
-+//#include "renderer/hierarchyIds.h"
+-#include "Task/Vehicle/TaskDraftHorse.h"
++#include "Peds/PedFactory.h"
++#include "Peds/PedIntelligence.h"
++//#include "renderer/HierarchyIds.h"
 +#include "scene/world/GameWorld.h"
 +#include "streaming/streaming.h"
- #include "Task/Vehicle/TaskDraftHorse.h"
++#include "task/Vehicle/TaskDraftHorse.h"
  #include "Peds/Horse/horseComponent.h"
- //#include "Task/Vehicle/TaskRideHorse.h"
+-//#include "Task/Vehicle/TaskRideHorse.h"
 -#include "vehicles\handlingMgr.h"
 -//#include "vehicles\vehicle.h"
-+#include "vehicles/handlingMgr.h"
-+//#include "vehicles/vehicle.h"
++//#include "task/Vehicle/TaskRideHorse.h"
++#include "Vehicles/handlingMgr.h"
++//#include "Vehicles/vehicle.h"
  
  VEHICLE_OPTIMISATIONS();
  

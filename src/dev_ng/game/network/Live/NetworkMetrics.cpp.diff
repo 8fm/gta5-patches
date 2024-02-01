@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkMetrics.cpp b/src/dev_ng/game/network/Live/NetworkMetrics.cpp
+--- a/src/dev_ng/game/network/Live/NetworkMetrics.cpp
++++ b/src/dev_ng/game/network/Live/NetworkMetrics.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2012 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "peds/PlayerInfo.h"
++#include "Peds/PlayerInfo.h"
+ 
+ // Rage headers
+ #include "file/stream.h"
+@@ -19,20 +19,20 @@
+ #include "fwnet/netchannel.h"
+ 
+ //Network headers
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/Sessions/NetworkSession.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/Sessions/NetworkSession.h"
+ #include "network/SocialClubServices/SocialClubFeedTilesMgr.h"
+ #include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+-#include "Network/Voice/NetworkVoice.h"
++#include "network/Voice/NetworkVoice.h"
+ 
+ //Game headers
+ #include "frontend/landing_page/LandingPage.h"
+ #include "frontend/landing_page/LandingPageArbiter.h"
+ #include "frontend/page_deck/items/uiCloudSupport.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/MoneyInterface.h"
+ #include "system/FileMgr.h"

@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.cpp b/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.cpp
+@@ -10,14 +10,14 @@
+ //
+ #include "NetworkScriptWorldStateManager.h"
+ 
+-#include "fwnet/NetLogUtils.h"
+-#include "fwscript/ScriptInterface.h"
+-
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Script/Script.h"
++#include "fwnet/netlogutils.h"
++#include "fwscript/scriptinterface.h"
++
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Sessions/NetworkSession.h"
++#include "script/script.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

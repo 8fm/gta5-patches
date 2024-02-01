@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/switch/SwitchCamera.cpp b/src/dev_ng/game/camera/switch/SwitchCamera.cpp
+--- a/src/dev_ng/game/camera/switch/SwitchCamera.cpp
++++ b/src/dev_ng/game/camera/switch/SwitchCamera.cpp
+@@ -15,7 +15,7 @@
+ #include "camera/helpers/FrameInterpolator.h"
+ #include "camera/system/CameraManager.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/PostProcessFX.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "scene/world/GameWorldHeightMap.h"

@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/renderer/PostScan.cpp b/src/dev_ng/game/renderer/PostScan.cpp
+--- a/src/dev_ng/game/renderer/PostScan.cpp
++++ b/src/dev_ng/game/renderer/PostScan.cpp
+@@ -23,27 +23,27 @@
+ #include "system/spinlockedobject.h"
+ 
+ // game includes
+-#include "camera/camInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/base/BaseCamera.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+ 
+ #include "control/replay/replay.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/Rendering/DebugLighting.h"
+ #include "debug/Rendering/DebugLights.h"
+-#include "objects/objectpopulation.h"
+-#include "objects/DummyObject.h"
++#include "Objects/objectpopulation.h"
++#include "Objects/DummyObject.h"
+ #include "modelinfo/MloModelInfo.h"
+ #include "modelinfo/TimeModelInfo.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/Mirrors.h"
+ #include "renderer/RenderPhases/RenderPhaseParaboloidShadows.h"
+ #include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/Renderphases/RenderPhaseMirrorReflection.h"
+-#include "renderer/shadows/shadows.h"
++#include "renderer/Shadows/Shadows.h"
+ #include "renderer/Lights/LightEntity.h"
+ #include "renderer/Lights/LODLights.h"
+ #include "renderer/renderListGroup.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/hud_colour.cpp b/src/dev_ng/game/frontend/hud_colour.cpp
+--- a/src/dev_ng/game/frontend/hud_colour.cpp
++++ b/src/dev_ng/game/frontend/hud_colour.cpp
+@@ -18,7 +18,7 @@
+ // game headers:
+ #include "frontend/hud_colour.h"
+ #include "frontend/ui_channel.h"
+-#include "scene/datafilemgr.h"
++#include "scene/DataFileMgr.h"
+ #include "system/FileMgr.h"
+ #include "text/TextFile.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/MovePed.cpp b/src/dev_ng/game/animation/MovePed.cpp
+--- a/src/dev_ng/game/animation/MovePed.cpp
++++ b/src/dev_ng/game/animation/MovePed.cpp
+@@ -20,7 +20,7 @@
+ #include "fwanimation/clipsets.h"
+ #include "fwscene/stores/framefilterdictionarystore.h"
+ #include "data/resource.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/DynamicEntity.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingrequest.h"

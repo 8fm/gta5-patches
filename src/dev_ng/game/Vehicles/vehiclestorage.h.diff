@@ -1,12 +1,16 @@
 diff --git a/src/dev_ng/game/Vehicles/vehiclestorage.h b/src/dev_ng/game/Vehicles/vehiclestorage.h
 --- a/src/dev_ng/game/Vehicles/vehiclestorage.h
 +++ b/src/dev_ng/game/Vehicles/vehiclestorage.h
-@@ -11,7 +11,7 @@
+@@ -11,10 +11,10 @@
  #ifndef _VEHICLESTORAGE_H_
  #define _VEHICLESTORAGE_H_
  
 -//#include "vehicles\vehicle.h"
-+//#include "vehicles/vehicle.h"
++//#include "Vehicles/vehicle.h"
  #include "modelinfo/VehicleModelInfoVariation.h"
  
- #include "physics/WorldProbe/worldprobe.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ #include "shaders/CustomShaderEffectVehicle.h"
+ 

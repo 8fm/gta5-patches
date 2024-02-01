@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp b/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp
+--- a/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp
++++ b/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp
+@@ -4,7 +4,7 @@
+ // CREATED : 15-10-2008
+ 
+ // File header
+-#include "Task/Default/Patrol/TaskPatrol.h"
++#include "task/Default/Patrol/TaskPatrol.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"
+@@ -14,17 +14,17 @@
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Task/Combat/TaskReact.h"
+-#include "Task/Default/AmbientAnimationManager.h"
+-#include "Task/Default/Patrol/PatrolRoutes.h"
+-#include "Task/Default/TaskChat.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Scenario/Info/ScenarioInfo.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "Peds/ped.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "task/Combat/TaskReact.h"
++#include "task/Default/AmbientAnimationManager.h"
++#include "task/Default/Patrol/PatrolRoutes.h"
++#include "task/Default/TaskChat.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ 
+ #if !__FINAL
+ #include "scene/world/GameWorld.h"

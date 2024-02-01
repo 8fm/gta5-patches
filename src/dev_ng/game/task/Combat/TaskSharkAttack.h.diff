@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskSharkAttack.h b/src/dev_ng/game/task/Combat/TaskSharkAttack.h
+--- a/src/dev_ng/game/task/Combat/TaskSharkAttack.h
++++ b/src/dev_ng/game/task/Combat/TaskSharkAttack.h
+@@ -3,14 +3,14 @@
+ 
+ // Game headers
+ #include "ai/AITarget.h"
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ #include "Peds/ped.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
++#include "task/System/Tuning.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ // Rage headers
+ #include "fwanimation/animdefines.h"

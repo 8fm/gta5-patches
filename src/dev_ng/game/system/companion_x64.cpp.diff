@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/companion_x64.cpp b/src/dev_ng/game/system/companion_x64.cpp
+--- a/src/dev_ng/game/system/companion_x64.cpp
++++ b/src/dev_ng/game/system/companion_x64.cpp
+@@ -7,7 +7,7 @@
+ 
+ #if COMPANION_APP
+ #include "file/tcpip.h"
+-#include "control/replay/file/FileStorePC.h"
++#include "control/replay/File/FileStorePC.h"
+ 
+ #define LIMIT_DEVICE_PAIRING_TO_ROCKSTARID 1
+ PARAM(CompanionNoSCNeeded, "Companion won't do filtering based on SocialClub ID");

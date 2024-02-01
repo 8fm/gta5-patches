@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/frontend/FrontendStatsMgr.cpp b/src/dev_ng/game/frontend/FrontendStatsMgr.cpp
+--- a/src/dev_ng/game/frontend/FrontendStatsMgr.cpp
++++ b/src/dev_ng/game/frontend/FrontendStatsMgr.cpp
+@@ -17,7 +17,7 @@
+ // Game Headers
+ #include "FrontendStatsMgr.h"
+ #include "frontend/ui_channel.h"
+-#include "Scene/DataFileMgr.h"
++#include "scene/DataFileMgr.h"
+ #include "scene/extracontent.h"
+ 
+ // Framework headers
+@@ -30,9 +30,9 @@
+ #include "Stats/StatsInterface.h"
+ #include "Stats/StatsUtils.h"
+ 
+-#include "Text/TextConversion.h"
+-#include "Network/Live/livemanager.h"
+-#include "modelinfo/vehiclemodelinfo.h"
++#include "text/TextConversion.h"
++#include "network/Live/livemanager.h"
++#include "modelinfo/VehicleModelInfo.h"
+ 
+ #if __PPU
+ #include <sysutil/sysutil_common.h>

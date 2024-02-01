@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/ReplayPacket.h b/src/dev_ng/game/control/replay/Misc/ReplayPacket.h
+--- a/src/dev_ng/game/control/replay/Misc/ReplayPacket.h
++++ b/src/dev_ng/game/control/replay/Misc/ReplayPacket.h
+@@ -1,18 +1,18 @@
+ #ifndef REPLAY_PACKET_H
+ #define REPLAY_PACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/ReplayEnums.h"
++#include "control/replay/ReplayEnums.h"
+ #include "control/replay/replay_channel.h"
+ #include "control/replay/PacketBasics.h"
+ #include "control/replay/ReplaySupportClasses.h"
+ #include "timecycle/TimeCycle.h"
+ #include "vfx/decal/decalmanager.h"
+-#include "Vfx/Decals/DecalManager.h"
++#include "vfx/decals/DecalManager.h"
+ 
+ #define FLOAT_1_0_TO_U8	(255.0f)
+ #define U8_TO_FLOAT_0_1	(1.0f / 255.0f)

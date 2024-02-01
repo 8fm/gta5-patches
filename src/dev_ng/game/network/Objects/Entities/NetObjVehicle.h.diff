@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjVehicle.h b/src/dev_ng/game/network/Objects/Entities/NetObjVehicle.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjVehicle.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjVehicle.h
+@@ -10,11 +10,11 @@
+ 
+ #include "fwnet/netlog.h"
+ 
+-#include "network/objects/entities/NetObjPhysical.h"
+-#include "network/objects/synchronisation/syncnodes/vehiclesyncnodes.h"
+-#include "task/system/TaskHelpers.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicleai/VehicleNodeList.h"
++#include "network/Objects/Entities/NetObjPhysical.h"
++#include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
++#include "task/System/TaskHelpers.h"
++#include "Vehicles/vehicle.h"
++#include "vehicleAi/VehicleNodeList.h"
+ 
+ #define LARGEST_NETOBJVEHICLE_CLASS (ALIGN_TO_16(sizeof(CNetObjPlane))) // must be aligned to 16!
+ 

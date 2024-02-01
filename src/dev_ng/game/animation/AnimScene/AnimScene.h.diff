@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/AnimScene.h b/src/dev_ng/game/animation/AnimScene/AnimScene.h
+--- a/src/dev_ng/game/animation/AnimScene/AnimScene.h
++++ b/src/dev_ng/game/animation/AnimScene/AnimScene.h
+@@ -5,7 +5,7 @@
+ #include "atl/array.h"
+ #include "atl/binmap.h"
+ #include "atl/hashstring.h"
+-#include "physics/debugplayback.h"
++#include "physics/debugPlayback.h"
+ #include "parser/macros.h"
+ 
+ // framework includes

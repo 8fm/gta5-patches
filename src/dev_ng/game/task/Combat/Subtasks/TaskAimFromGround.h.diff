@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskAimFromGround.h b/src/dev_ng/game/task/Combat/Subtasks/TaskAimFromGround.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskAimFromGround.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskAimFromGround.h
+@@ -7,9 +7,9 @@
+ #ifndef INC_TASKAIMFROMGROUND_H_
+ #define INC_TASKAIMFROMGROUND_H_
+ 
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Weapons/WeaponTarget.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/Weapons/WeaponTarget.h"
+ 
+ class CTaskAimGunScripted;
+ 

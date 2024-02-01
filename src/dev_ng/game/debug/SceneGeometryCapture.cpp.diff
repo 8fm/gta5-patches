@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/debug/SceneGeometryCapture.cpp b/src/dev_ng/game/debug/SceneGeometryCapture.cpp
+--- a/src/dev_ng/game/debug/SceneGeometryCapture.cpp
++++ b/src/dev_ng/game/debug/SceneGeometryCapture.cpp
+@@ -41,8 +41,8 @@
+ #include "debug/SceneGeometryCapture.h"
+ #include "modelinfo/BaseModelInfo.h"
+ #include "Objects/DummyObject.h"
+-#include "Objects/Object.h"
+-#include "Peds/Ped.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+ #include "physics/WorldProbe/WorldProbe.h"
+ #include "renderer/Renderer.h"
+@@ -53,7 +53,7 @@
+ #include "scene/EntityTypes.h"
+ #include "scene/LoadScene.h"
+ #include "scene/world/GameWorldHeightMap.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ namespace rage { XPARAM(nopopups); }
+ 

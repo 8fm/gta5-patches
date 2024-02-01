@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedTrigger.cpp b/src/dev_ng/game/task/Response/Info/AgitatedTrigger.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedTrigger.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedTrigger.cpp
+@@ -1,9 +1,9 @@
+ // File header
+-#include "Task/Response/Info/AgitatedTrigger.h"
++#include "task/Response/Info/AgitatedTrigger.h"
+ 
+ // Game headers
+ #include "modelinfo/PedModelInfo.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedType.h"
+ #include "task/Response/Info/AgitatedManager.h"
+ 

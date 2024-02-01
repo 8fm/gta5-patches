@@ -1,0 +1,79 @@
+diff --git a/src/dev_ng/game/script/commands_stats.cpp b/src/dev_ng/game/script/commands_stats.cpp
+--- a/src/dev_ng/game/script/commands_stats.cpp
++++ b/src/dev_ng/game/script/commands_stats.cpp
+@@ -27,38 +27,38 @@
+ #include "Stats/stats_channel.h"
+ 
+ // Network Headers
+-#include "Network/Network.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/players/NetworkPlayerMgr.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Live/NetworkDebugTelemetry.h"
+-#include "Network/Live/NetworkSCPresenceUtil.h"
++#include "network/Network.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/NetworkInterface.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkDebugTelemetry.h"
++#include "network/Live/NetworkSCPresenceUtil.h"
+ #if RSG_GEN9
+ #include "network/Live/NetworkLandingPageStatsMgr.h"
+ #endif // RSG_GEN9
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
+-#include "Network/Stats/networkleaderboardsessionmgr.h"
+-#include "Network/Stats/NetworkLeaderboardCommon.h"
+-#include "Network/Stats/NetworkStockMarketStats.h"
+-#include "Network/SocialClubServices/SocialClubCommunityEventMgr.h"
+-#include "Network/Cloud/Tunables.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
++#include "network/Stats/NetworkLeaderboardSessionMgr.h"
++#include "network/Stats/NetworkLeaderboardCommon.h"
++#include "network/Stats/NetworkStockMarketStats.h"
++#include "network/SocialClubServices/SocialClubCommunityEventMgr.h"
++#include "network/Cloud/Tunables.h"
+ 
+ #if __NET_SHOP_ACTIVE
+-#include "Network/Shop/Catalog.h"
++#include "network/Shop/Catalog.h"
+ #endif //__NET_SHOP_ACTIVE
+-#include "Network/Shop/VehicleCatalog.h"
++#include "network/Shop/VehicleCatalog.h"
+ 
+ // Game headers
+ #include "event/EventNetwork.h"
+-#include "Game/cheat.h"
+-#include "Scene/world/GameWorld.h"
++#include "game/cheat.h"
++#include "scene/world/GameWorld.h"
+ #include "Peds/PlayerInfo.h"
+-#include "Script/script.h"
++#include "script/script.h"
+ #include "fwsys/timer.h"
+-#include "Debug/bugstar/BugstarIntegrationSwitch.h"
++#include "debug/bugstar/BugstarIntegrationSwitch.h"
+ #include "script/script_channel.h"
+ #include "script/script_helper.h"
+ #include "modelinfo/PedModelInfo.h"
+@@ -70,13 +70,13 @@
+ #include "weapons/components/WeaponComponent.h"
+ #include "weapons/info/WeaponInfoManager.h"
+ #include "weapons/info/ItemInfo.h"
+-#include "script/handlers/GameScriptHandlerNetwork.h"
++#include "script/Handlers/GameScriptHandlerNetwork.h"
+ #include "control/stuntjump.h"
+ 
+ #include "Stats/MoneyInterface.h"
+ 
+ #if IS_GEN9_PLATFORM || GEN9_UI_SIMULATION_ENABLED
+-#include "peds/CriminalCareer/CriminalCareerService.h"
++#include "Peds/CriminalCareer/CriminalCareerService.h"
+ #endif
+ 
+ SCRIPT_OPTIMISATIONS()

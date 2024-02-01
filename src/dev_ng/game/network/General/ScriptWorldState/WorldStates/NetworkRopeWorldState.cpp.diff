@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRopeWorldState.cpp b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRopeWorldState.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRopeWorldState.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRopeWorldState.cpp
+@@ -11,13 +11,13 @@
+ #include "grcore/debugdraw.h"
+ 
+ #include "fwpheffects/ropemanager.h"
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ 
+-#include "Network/NetworkInterface.h"
+-#include "Physics/GtaArchetype.h"
+-#include "Physics/Physics.h"
+-#include "Script/Script.h"
+-#include "Script/Handlers/GameScriptResources.h"
++#include "network/NetworkInterface.h"
++#include "physics/gtaArchetype.h"
++#include "physics/physics.h"
++#include "script/script.h"
++#include "script/Handlers/GameScriptResources.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

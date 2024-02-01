@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxScript.cpp b/src/dev_ng/game/vfx/systems/VfxScript.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxScript.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxScript.cpp
+@@ -27,7 +27,7 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game 
+-#include "Scene/DataFileMgr.h"
++#include "scene/DataFileMgr.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/FragmentPacket.h b/src/dev_ng/game/control/replay/Entity/FragmentPacket.h
+--- a/src/dev_ng/game/control/replay/Entity/FragmentPacket.h
++++ b/src/dev_ng/game/control/replay/Entity/FragmentPacket.h
+@@ -6,7 +6,7 @@
+ #ifndef INC_FRAGMENTPACKET_H_
+ #define INC_FRAGMENTPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 

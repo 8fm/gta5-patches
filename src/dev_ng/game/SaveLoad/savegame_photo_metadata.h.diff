@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_metadata.h b/src/dev_ng/game/SaveLoad/savegame_photo_metadata.h
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_metadata.h
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_metadata.h
+@@ -8,7 +8,7 @@
+ #include "rline/rl.h"
+ #include "rline/clan/rlclancommon.h"
+ #include "spatialdata/aabb.h"
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ // Game headers
+ #include "game/Clock.h"

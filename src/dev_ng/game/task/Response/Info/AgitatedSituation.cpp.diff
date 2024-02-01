@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedSituation.cpp b/src/dev_ng/game/task/Response/Info/AgitatedSituation.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedSituation.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedSituation.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Response/Info/AgitatedSituation.h"
++#include "task/Response/Info/AgitatedSituation.h"
+ 
+ // Game headers
+ #include "task/Response/Info/AgitatedConditions.h"

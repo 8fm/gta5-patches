@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioInfo.h b/src/dev_ng/game/task/Scenario/info/ScenarioInfo.h
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioInfo.h
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioInfo.h
+@@ -6,16 +6,16 @@
+ #include "atl/hashstring.h"
+ #include "atl/string.h"
+ #include "fwanimation/animdefines.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/rtti.h"
+ #include "parser/macros.h"
+ #include "vector/quaternion.h"
+ #include "vector/vector3.h"
+ 
+ // Game headers
+-#include "AI/Ambient/ConditionalAnims.h"
+-#include "Task/Scenario/Info/ScenarioInfoFlags.h"
+-#include "Task/Scenario/Info/ScenarioTypes.h"
++#include "ai/ambient/ConditionalAnims.h"
++#include "task/Scenario/info/ScenarioInfoFlags.h"
++#include "task/Scenario/info/ScenarioTypes.h"
+ 
+ // Forward declarations
+ class CAmbientModelSet;

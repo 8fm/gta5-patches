@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.cpp b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.cpp
+--- a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.cpp
++++ b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.cpp
+@@ -24,12 +24,12 @@
+ // game
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/Effects/ProjectedTexturePacket.h"
+ #include "Core/game.h"
+ #include "crskeleton/skeleton.h"
+ #include "debug/DebugGlobals.h"
+-#include "Network/Objects/Entities/NetObjVehicle.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
+ #include "Objects/object.h"
+ #include "Peds/ped.h"
+ #include "physics/gtaMaterialDebug.h"
+@@ -38,16 +38,16 @@
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "scene/world/GameWorld.h"
+-#include "vehicles/vehicleDamage.h"
++#include "Vehicles/vehicleDamage.h"
+ #include "Vehicles/VehicleFactory.h"
+-#include "vfx/Particles/PtFxCollision.h"
++#include "vfx/particles/PtFxCollision.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+ #include "vfx/vehicleglass/VehicleGlassComponent.h"
+ #include "vfx/vehicleglass/VehicleGlassSmashTest.h"
+ #include "vfx/vfx_channel.h"
+ #include "vfx/channel.h"
+-#include "vehicleAI/Task/TaskVehicleAnimation.h"
+-#include "TimeCycle/TimeCycle.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
++#include "timecycle/TimeCycle.h"
+ 
+ VEHICLE_GLASS_OPTIMISATIONS()
+ //OPTIMISATIONS_OFF()

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/replaycoordinator/ReplayMontageGenerator.cpp b/src/dev_ng/game/replaycoordinator/ReplayMontageGenerator.cpp
+--- a/src/dev_ng/game/replaycoordinator/ReplayMontageGenerator.cpp
++++ b/src/dev_ng/game/replaycoordinator/ReplayMontageGenerator.cpp
+@@ -9,7 +9,7 @@
+ #include "control/replay/replay.h"
+ #include "control/replay/ReplaySettings.h"
+ #include "control/replay/ReplaySupportClasses.h"
+-#include "control/replay/file/device_replay.h"
++#include "control/replay/File/device_replay.h"
+ #include "replaycoordinator/replay_coordinator_channel.h"
+ #include "replaycoordinator/ReplayEditorParameters.h"
+ #include "replaycoordinator/storage/Montage.h"

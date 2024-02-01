@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/network/Cloud/CloudManager.cpp b/src/dev_ng/game/network/Cloud/CloudManager.cpp
+--- a/src/dev_ng/game/network/Cloud/CloudManager.cpp
++++ b/src/dev_ng/game/network/Cloud/CloudManager.cpp
+@@ -1,8 +1,8 @@
+ //===========================================================================
+ // Copyright (C) 1999-2012 Rockstar Games.  All Rights Reserved.             
+ //===========================================================================
+-#include "Network/Cloud/CloudManager.h"
+-#include "Network/Cloud/CloudCache.h"
++#include "network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudCache.h"
+ 
+ // rage headers
+ #include "bank/bank.h"
+@@ -22,9 +22,9 @@
+ #include "streaming/streamingengine.h"
+ 
+ // game headers
+-#include "Event/EventGroup.h"
+-#include "Event/EventNetwork.h"
+-#include "Network/NetworkInterface.h"
++#include "event/EventGroup.h"
++#include "event/EventNetwork.h"
++#include "network/NetworkInterface.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

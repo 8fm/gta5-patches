@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Combat/CombatDirector.h b/src/dev_ng/game/task/Combat/CombatDirector.h
+--- a/src/dev_ng/game/task/Combat/CombatDirector.h
++++ b/src/dev_ng/game/task/Combat/CombatDirector.h
+@@ -4,15 +4,15 @@
+ // Rage headers
+ #include "atl/array.h"
+ #include "atl/queue.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwtl/regdrefs.h"
+ #include "fwutil/Flags.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ // Game headers
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward Declarations
+ class CCombatOrders;

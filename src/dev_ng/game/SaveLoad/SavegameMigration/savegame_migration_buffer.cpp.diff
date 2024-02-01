@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_buffer.cpp b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_buffer.cpp
+--- a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_buffer.cpp
++++ b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_buffer.cpp
+@@ -5,7 +5,7 @@
+ 
+ 
+ // Game headers
+-#include "Network/Network.h"
++#include "network/Network.h"
+ #include "SaveLoad/savegame_channel.h"
+ 
+ 

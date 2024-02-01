@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/base/BaseCamera.cpp b/src/dev_ng/game/camera/base/BaseCamera.cpp
+--- a/src/dev_ng/game/camera/base/BaseCamera.cpp
++++ b/src/dev_ng/game/camera/base/BaseCamera.cpp
+@@ -21,7 +21,7 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraManager.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ #if __BANK
+ #include "bank/bank.h"

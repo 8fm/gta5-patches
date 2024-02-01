@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/LookAtDampingHelper.cpp b/src/dev_ng/game/camera/helpers/LookAtDampingHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/LookAtDampingHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/LookAtDampingHelper.cpp
+@@ -13,7 +13,7 @@
+ 
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

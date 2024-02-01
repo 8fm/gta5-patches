@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/weapons/WeaponDebug.cpp b/src/dev_ng/game/weapons/WeaponDebug.cpp
+--- a/src/dev_ng/game/weapons/WeaponDebug.cpp
++++ b/src/dev_ng/game/weapons/WeaponDebug.cpp
+@@ -1,24 +1,24 @@
+ // File header
+-#include "Weapons/WeaponDebug.h"
++#include "weapons/WeaponDebug.h"
+ 
+ // Rage includes
+ #include "Bank/BkMgr.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Shaders/CustomShaderEffectWeapon.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Weapons/Bullet.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/Info/WeaponAnimationsManager.h"
+-#include "Weapons/Inventory/PedInventoryLoadOut.h"
+-#include "Weapons/Projectiles/ProjectileManager.h"
+-#include "Weapons/ThrownWeaponInfo.h"
+-#include "Weapons/Weapon.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
++#include "shaders/CustomShaderEffectWeapon.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "weapons/Bullet.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/info/WeaponAnimationsManager.h"
++#include "weapons/inventory/PedInventoryLoadOut.h"
++#include "weapons/projectiles/ProjectileManager.h"
++#include "weapons/ThrownWeaponInfo.h"
++#include "weapons/Weapon.h"
+ 
+ #if __BANK // Only included in __BANK builds
+ 

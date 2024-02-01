@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/task/Crimes/TaskStealVehicle.cpp b/src/dev_ng/game/task/Crimes/TaskStealVehicle.cpp
+--- a/src/dev_ng/game/task/Crimes/TaskStealVehicle.cpp
++++ b/src/dev_ng/game/task/Crimes/TaskStealVehicle.cpp
+@@ -5,23 +5,23 @@
+ //
+ 
+ // File header
+-#include "Task/crimes/TaskStealVehicle.h"
++#include "task/crimes/TaskStealVehicle.h"
+ 
+ // Rage Headers
+ #include "fwvehicleai/pathfindtypes.h"
+ #include "math/angmath.h"
+ 
+ // Game Headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskCarUtils.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskGoToVehicleDoor.h"
+-#include "VehicleAi/pathfind.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskCarUtils.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskGoToVehicleDoor.h"
++#include "vehicleAi/pathfind.h"
+ #include "Vehicles/Bike.h"
+-#include "Vehicles/Train.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/train.h"
++#include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()
+ 

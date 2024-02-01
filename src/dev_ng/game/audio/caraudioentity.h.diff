@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/caraudioentity.h b/src/dev_ng/game/audio/caraudioentity.h
+--- a/src/dev_ng/game/audio/caraudioentity.h
++++ b/src/dev_ng/game/audio/caraudioentity.h
+@@ -14,7 +14,7 @@
+ #include "audioengine/environment.h"
+ #include "bank/bkmgr.h"
+ #include "renderer/HierarchyIds.h"
+-#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
+ 
+ #include "audio/vehicleengine/transmission.h"
+ #include "audio/vehicleengine/turbo.h"

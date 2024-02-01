@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxGadget.cpp b/src/dev_ng/game/vfx/systems/VfxGadget.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxGadget.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxGadget.cpp
+@@ -23,11 +23,11 @@
+ 
+ // game
+ #include "Core/Game.h"
+-#include "Peds/Ped.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxTrail.h"
+-#include "Vfx/Systems/VfxPed.h"
+-#include "Vfx/VfxHelper.h"
++#include "Peds/ped.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxTrail.h"
++#include "vfx/systems/VfxPed.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/physics/WorldProbe/shapetestdesc.cpp b/src/dev_ng/game/physics/WorldProbe/shapetestdesc.cpp
+--- a/src/dev_ng/game/physics/WorldProbe/shapetestdesc.cpp
++++ b/src/dev_ng/game/physics/WorldProbe/shapetestdesc.cpp
+@@ -2,8 +2,8 @@
+ 
+ #include "scene/Entity.h"
+ #include "Peds/ped.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/vehicle.h"
+ 
+ PHYSICS_OPTIMISATIONS()
+ 

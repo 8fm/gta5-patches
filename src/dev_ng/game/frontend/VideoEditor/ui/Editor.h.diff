@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Editor.h b/src/dev_ng/game/frontend/VideoEditor/ui/Editor.h
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Editor.h
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Editor.h
+@@ -27,15 +27,15 @@
+ #include "video/VideoPlayback.h"
+ 
+ // game headers
+-#include "control/replay/file/FileData.h"
++#include "control/replay/File/FileData.h"
+ #include "renderer/sprite2d.h"
+ #include "replaycoordinator/ReplayEditorParameters.h"
+-#include "replaycoordinator/Storage/MontageMusicClip.h"
+-#include "replaycoordinator/Storage/MontageText.h"
++#include "replaycoordinator/storage/MontageMusicClip.h"
++#include "replaycoordinator/storage/MontageText.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/VideoEditor/Core/VideoEditorProject.h"
+ #include "system/control.h"
+-#include "Text/TextFormat.h"
++#include "text/TextFormat.h"
+ 
+ #include "frontend/VideoEditor/ui/TextTemplate.h"
+ 

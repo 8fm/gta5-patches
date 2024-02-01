@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.cpp b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.cpp
+@@ -12,15 +12,15 @@
+ #include "vector/geometry.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "vfx/ptfx/ptfxscript.h"
+-#include "vfx/systems/vfxscript.h"
++#include "vfx/systems/VfxScript.h"
+ 
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ 
+-#include "Network/NetworkInterface.h"
+-#include "Network/Objects/Entities/NetObjPed.h"
++#include "network/NetworkInterface.h"
++#include "network/Objects/Entities/NetObjPed.h"
+ #include "Peds/ped.h"
+-#include "script/handlers/GameScriptResources.h"
+-#include "script/Script.h"
++#include "script/Handlers/GameScriptResources.h"
++#include "script/script.h"
+ 
+ #include "control/replay/Effects/ParticleMiscFxPacket.h"
+ 

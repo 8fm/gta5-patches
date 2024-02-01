@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/camera/gameplay/follow/FollowPedCamera.cpp b/src/dev_ng/game/camera/gameplay/follow/FollowPedCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/follow/FollowPedCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/follow/FollowPedCamera.cpp
+@@ -18,20 +18,20 @@
+ #include "camera/helpers/FrameShaker.h"
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/PedMotionData.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PedMotionData.h"
+ #include "task/Combat/TaskCombatMelee.h"
+ #include "task/Default/TaskPlayer.h"
+ #include "task/Motion/Locomotion/TaskMotionPed.h"
+ #include "task/Movement/Climbing/TaskLadderClimb.h"
+ #include "task/Movement/Climbing/TaskRappel.h"
+-#include "Task/Movement/Climbing/TaskVault.h"
+-#include "Task/Movement/Jumping/TaskJump.h"
++#include "task/Movement/Climbing/TaskVault.h"
++#include "task/Movement/Jumping/TaskJump.h"
+ #include "task/Movement/TaskFall.h"
+ #include "task/Movement/TaskGetUp.h"
+ #include "task/Vehicle/TaskEnterVehicle.h"
+-#include "vehicles/train.h"
++#include "Vehicles/train.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

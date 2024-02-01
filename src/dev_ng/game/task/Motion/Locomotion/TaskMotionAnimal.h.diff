@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.h
+@@ -11,7 +11,7 @@
+ 
+ #if ENABLE_HORSE
+ 
+-#include "task/motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ class CTaskMotionAnimal : public CTaskMotionBase
+ {

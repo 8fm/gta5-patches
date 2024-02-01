@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/ProfileSettings.h b/src/dev_ng/game/frontend/ProfileSettings.h
+--- a/src/dev_ng/game/frontend/ProfileSettings.h
++++ b/src/dev_ng/game/frontend/ProfileSettings.h
+@@ -20,7 +20,7 @@ namespace rage
+     class bkBank;
+ }
+ // Game headers
+-#include "Network/Live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "SaveLoad/savegame_defines.h"
+ #include "SaveLoad/savegame_queued_operations.h"
+ #include "system/control.h"

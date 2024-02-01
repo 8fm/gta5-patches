@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp
 --- a/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp
 +++ b/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp
-@@ -1,10 +1,10 @@
+@@ -1,11 +1,11 @@
 -#include "ai\debug\types\PedDebugInfo.h"
 +#include "ai/debug/types/PedDebugInfo.h"
  
@@ -10,9 +10,11 @@ diff --git a/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp b/src/dev_ng/game/a
 -#include "Peds\Ped.h"
 -#include "Peds\PedIntelligence.h"
 -#include "task\Combat\Cover\TaskCover.h"
-+#include "Peds/Ped.h"
+-#include "Task/Movement/TaskParachute.h"
++#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
 +#include "task/Combat/Cover/TaskCover.h"
- #include "Task/Movement/TaskParachute.h"
++#include "task/Movement/TaskParachute.h"
  
  EXTERN_PARSER_ENUM(ePedConfigFlags);
+ EXTERN_PARSER_ENUM(ePedResetFlags);

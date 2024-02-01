@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/HintHelper.cpp b/src/dev_ng/game/camera/helpers/HintHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/HintHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/HintHelper.cpp
+@@ -13,7 +13,7 @@
+ #include "camera/helpers/LookAtDampingHelper.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/system/CameraFactory.h"
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

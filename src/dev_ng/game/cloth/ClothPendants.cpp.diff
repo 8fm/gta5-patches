@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/cloth/ClothPendants.cpp b/src/dev_ng/game/cloth/ClothPendants.cpp
+--- a/src/dev_ng/game/cloth/ClothPendants.cpp
++++ b/src/dev_ng/game/cloth/ClothPendants.cpp
+@@ -1,8 +1,8 @@
+ #include "ClothPendants.h"
+ #include "ClothArchetype.h"
+-#include "Scene/Entity.h"
++#include "scene/Entity.h"
+ 
+-#include "Vector/vector3.h"
++#include "vector/vector3.h"
+ #include "vector/matrix34.h"
+ 
+ #if NORTH_CLOTHS

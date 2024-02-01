@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskWrithe.h b/src/dev_ng/game/task/Combat/TaskWrithe.h
+--- a/src/dev_ng/game/task/Combat/TaskWrithe.h
++++ b/src/dev_ng/game/task/Combat/TaskWrithe.h
+@@ -1,13 +1,13 @@
+ #ifndef TASK_WRITHE_H
+ #define TASK_WRITHE_H
+ 
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/Weapons/WeaponTarget.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskHelpers.h"
++#include "task/Weapons/WeaponTarget.h"
+ #include "Peds/ped.h"
+-#include "peds/QueriableInterface.h"
++#include "Peds/QueriableInterface.h"
+ 
+ class CTaskWrithe : public CTaskFSMClone
+ {

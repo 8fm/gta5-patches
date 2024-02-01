@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateTypes.cpp b/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateTypes.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateTypes.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateTypes.cpp
+@@ -3,20 +3,20 @@
+ // description: Different NetworkEvent types
+ // written by:  Daniel Yelland
+ //
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateTypes.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateTypes.h"
+ 
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"
+ 
+-#include "network/general/scriptworldstate/worldstates/NetworkCarGenWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkEntityAreaWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkRoadNodeWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkPopGroupOverrideWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkPopMultiplierAreaWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkPtFXWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkRopeWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkScenarioBlockingAreaWorldState.h"
+-#include "network/general/scriptworldstate/worldstates/NetworkVehiclePlayerLockingWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkCarGenWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkEntityAreaWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkRoadNodeWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkPopMultiplierAreaWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkRopeWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkScenarioBlockingAreaWorldState.h"
++#include "network/General/ScriptWorldState/WorldStates/NetworkVehiclePlayerLockingWorldState.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedContext.cpp b/src/dev_ng/game/task/Response/Info/AgitatedContext.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedContext.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedContext.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Response/Info/AgitatedContext.h"
++#include "task/Response/Info/AgitatedContext.h"
+ 
+ AI_OPTIMISATIONS()
+ 

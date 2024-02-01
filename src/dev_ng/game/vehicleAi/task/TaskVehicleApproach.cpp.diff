@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.cpp
+@@ -4,14 +4,14 @@
+ // Game headers
+ #include "game/Dispatch/DispatchHelpers.h"
+ #include "game/Dispatch/DispatchServices.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Vehicles/Automobile.h"
+ #include "Vehicles/vehicle.h"
+ #include "vehicleAi/pathfind.h"
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+ #include "vehicleAi/task/TaskVehicleTempAction.h"
+-#include "VehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ 
+ AI_OPTIMISATIONS()
+ 

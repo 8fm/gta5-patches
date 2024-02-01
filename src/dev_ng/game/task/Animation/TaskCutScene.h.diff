@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskCutScene.h b/src/dev_ng/game/task/Animation/TaskCutScene.h
+--- a/src/dev_ng/game/task/Animation/TaskCutScene.h
++++ b/src/dev_ng/game/task/Animation/TaskCutScene.h
+@@ -12,8 +12,8 @@
+ //Rage
+ 
+ //Game
+-#include "Task/Animation/TaskCutScene.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/Animation/TaskCutScene.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ class CTaskCutScene : public CTaskFSMClone
+ {

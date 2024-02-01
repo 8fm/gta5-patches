@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/pedshockingevents.cpp b/src/dev_ng/game/Peds/pedshockingevents.cpp
+--- a/src/dev_ng/game/Peds/pedshockingevents.cpp
++++ b/src/dev_ng/game/Peds/pedshockingevents.cpp
+@@ -5,7 +5,7 @@
+ // AUTHOR :		Mike Currington.
+ // CREATED :	28/10/10
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "Peds/PedShockingEvents.h"
++#include "Peds/pedshockingevents.h"
+ 
+ // rage includes
+ #include "fwmaths/random.h"

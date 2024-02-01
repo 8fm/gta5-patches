@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/CinematicTrainShot.cpp b/src/dev_ng/game/camera/cinematic/shot/CinematicTrainShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/CinematicTrainShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/CinematicTrainShot.cpp
+@@ -10,7 +10,7 @@
+ #include "camera/cinematic/camera/tracking/CinematicTrainTrackCamera.h"
+ #include "camera/cinematic/context/CinematicInVehicleContext.h"
+ 
+-#include "vehicles/train.h"
++#include "Vehicles/train.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

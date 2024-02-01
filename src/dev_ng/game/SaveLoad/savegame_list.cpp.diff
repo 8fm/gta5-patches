@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_list.cpp b/src/dev_ng/game/SaveLoad/savegame_list.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_list.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_list.cpp
+@@ -13,8 +13,8 @@
+ #include "SaveLoad/savegame_photo_local_list.h"
+ #include "SaveLoad/savegame_users_and_devices.h"
+ #include "SaveLoad/savegame_new_game_checks.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Text/TextConversion.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "text/TextConversion.h"
+ 
+ SAVEGAME_OPTIMISATIONS()
+ 

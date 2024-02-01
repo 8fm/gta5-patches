@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhase.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhase.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhase.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhase.cpp
+@@ -3,7 +3,7 @@
+ // (C) Rockstar North Ltd.
+ // Started - 11/2005 - Derek Ward
+ //**********************************
+-#include "Renderer/RenderPhases/RenderPhase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ 
+ // Rage headers
+ #include "fwscene/scan/RenderPhaseCullShape.h"
+@@ -12,10 +12,10 @@
+ // Game hdrs
+ #include "camera/viewports/Viewport.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+-#include "Renderer/RenderSettings.h"
+-#include "scene/portals/portalTracker.h"
++#include "renderer/RenderSettings.h"
++#include "scene/portals/PortalTracker.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Renderer/clip_stat.h"
++#include "renderer/clip_stat.h"
+ 
+ 
+ // Static class members

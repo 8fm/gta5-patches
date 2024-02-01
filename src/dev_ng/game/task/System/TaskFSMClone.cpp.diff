@@ -9,18 +9,18 @@ diff --git a/src/dev_ng/game/task/System/TaskFSMClone.cpp b/src/dev_ng/game/task
 +#include "ai/debugstatehistory.h"
  
 -#include "Task\System\TaskFSMClone.h"
-+#include "Task/System/TaskFSMClone.h"
++#include "task/System/TaskFSMClone.h"
  
 -#include "Camera\CamInterface.h"
 -#include "Event\Events.h"
 -#include "Peds\Ped.h"
 -#include "Peds\PedIntelligence.h"
 -#include "Renderer\Renderer.h"
-+#include "Camera/CamInterface.h"
-+#include "Event/Events.h"
-+#include "Peds/Ped.h"
++#include "camera/CamInterface.h"
++#include "event/Events.h"
++#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
-+#include "Renderer/Renderer.h"
++#include "renderer/Renderer.h"
  #include "scene/lod/LodScale.h"
  
  AI_OPTIMISATIONS()

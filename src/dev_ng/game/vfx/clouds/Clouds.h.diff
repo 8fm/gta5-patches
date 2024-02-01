@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/clouds/Clouds.h b/src/dev_ng/game/vfx/clouds/Clouds.h
+--- a/src/dev_ng/game/vfx/clouds/Clouds.h
++++ b/src/dev_ng/game/vfx/clouds/Clouds.h
+@@ -8,7 +8,7 @@
+ #define CLOUDS_H
+ 
+ // Game includes
+-#include "Vfx/clouds/CloudHatSettings.h"
++#include "vfx/clouds/CloudHatSettings.h"
+ #include "vfx/VisualEffects.h"
+ 
+ // Rage includes

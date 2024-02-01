@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/modelinfo/BaseModelInfo.h b/src/dev_ng/game/modelinfo/BaseModelInfo.h
+--- a/src/dev_ng/game/modelinfo/BaseModelInfo.h
++++ b/src/dev_ng/game/modelinfo/BaseModelInfo.h
+@@ -25,13 +25,13 @@
+ #include "fragment/drawable.h"
+ #endif
+ 
+-#include "cloth/clothmgr.h"
++#include "cloth/ClothMgr.h"
+ #include "streaming/streamingmodule.h"
+ #include "audio/gameobjects.h"
+ #include "phbound/bound.h"
+ #include "scene/2dEffect.h"
+ #include "spatialdata/aabb.h"
+-#include "Animation/AnimBones.h"
++#include "animation/AnimBones.h"
+ #include "scene/lod/LodScale.h"
+ 
+ #if !__SPU

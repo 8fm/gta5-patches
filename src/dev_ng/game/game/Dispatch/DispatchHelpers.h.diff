@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/game/Dispatch/DispatchHelpers.h b/src/dev_ng/game/game/Dispatch/DispatchHelpers.h
+--- a/src/dev_ng/game/game/Dispatch/DispatchHelpers.h
++++ b/src/dev_ng/game/game/Dispatch/DispatchHelpers.h
+@@ -15,9 +15,9 @@
+ #include "game/Wanted.h"
+ #include "Peds/Area.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/TaskHelperFSM.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/TaskHelperFSM.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CBoat;

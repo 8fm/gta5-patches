@@ -1,0 +1,56 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskAnims.cpp b/src/dev_ng/game/task/Animation/TaskAnims.cpp
+--- a/src/dev_ng/game/task/Animation/TaskAnims.cpp
++++ b/src/dev_ng/game/task/Animation/TaskAnims.cpp
+@@ -1,5 +1,5 @@
+ // Class header
+-#include "Task/Animation/TaskAnims.h"
++#include "task/Animation/TaskAnims.h"
+ 
+ // Rage headers
+ #include "cranimation/animtolerance.h"
+@@ -16,32 +16,32 @@
+ #include "fwanimation/directorcomponentcreature.h"
+ #include "fwanimation/directorcomponentragdoll.h"
+ #include "fwanimation/directorcomponentsyncedscene.h"
+-#include "fwmaths/Angle.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/angle.h"
++#include "fwmaths/Vector.h"
+ #include "fwscene/stores/expressionsdictionarystore.h"
+ #include "fwscene/stores/framefilterdictionarystore.h"
+ 
+ // Game headers
+-#include "Animation/AnimBones.h"
+-#include "Animation/AnimDefines.h"
+-#include "Animation/debug/AnimViewer.h"
++#include "animation/AnimBones.h"
++#include "animation/AnimDefines.h"
++#include "animation/debug/AnimViewer.h"
+ #include "animation/MoveObject.h"
+ #include "animation/MovePed.h"
+ #include "animation/MoveVehicle.h"
+ #include "animation/EventTags.h"
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "event/EventDamage.h"
+-#include "network/general/NetworkSynchronisedScene.h"
+-#include "Peds/Ped.h"
++#include "network/General/NetworkSynchronisedScene.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "physics/gtaInst.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/commands_ped.h"
+-#include "Streaming/Streaming.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Physics/TaskNmBalance.h"
+-#include "Task/Physics/TaskNMJumpRollFromRoadVehicle.h"
+-#include "vehicleAI/VehicleAILodManager.h"
++#include "streaming/Streaming.h"
++#include "task/General/TaskBasic.h"
++#include "task/Physics/TaskNmBalance.h"
++#include "task/Physics/TaskNMJumpRollFromRoadVehicle.h"
++#include "vehicleAi/VehicleAILodManager.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/train.h"
+ 

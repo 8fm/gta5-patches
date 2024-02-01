@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxLiquid.cpp b/src/dev_ng/game/vfx/systems/VfxLiquid.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxLiquid.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxLiquid.cpp
+@@ -22,8 +22,8 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Scene/DataFileMgr.h"
+-#include "Vfx/Decals/DecalManager.h"
++#include "scene/DataFileMgr.h"
++#include "vfx/decals/DecalManager.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

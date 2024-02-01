@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.cpp b/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.cpp
+--- a/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.cpp
++++ b/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Modifiers/WeaponAccuracyModifier.h"
++#include "weapons/modifiers/WeaponAccuracyModifier.h"
+ 
+ // Parser
+ #include "WeaponAccuracyModifier_parser.h"

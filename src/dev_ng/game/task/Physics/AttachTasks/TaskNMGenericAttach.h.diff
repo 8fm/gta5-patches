@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.h b/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.h
+--- a/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.h
++++ b/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.h
+@@ -6,10 +6,10 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "Task/Physics/GrabHelper.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/Physics/GrabHelper.h"
++#include "task/Physics/TaskNM.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskTypes.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

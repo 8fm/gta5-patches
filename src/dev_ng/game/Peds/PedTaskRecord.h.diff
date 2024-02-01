@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/Peds/PedTaskRecord.h b/src/dev_ng/game/Peds/PedTaskRecord.h
+--- a/src/dev_ng/game/Peds/PedTaskRecord.h
++++ b/src/dev_ng/game/Peds/PedTaskRecord.h
+@@ -1,10 +1,10 @@
+ #ifndef PED_SCRIPTED_TASK_RECORD_H
+ #define PED_SCRIPTED_TASK_RECORD_H
+ 
+-#include "Debug/Debug.h"
+-#include "Scene/Entity.h"
+-#include "Event/Event.h"
+-#include "Scene/RegdRefTypes.h"
++#include "debug/Debug.h"
++#include "scene/Entity.h"
++#include "event/Event.h"
++#include "scene/RegdRefTypes.h"
+ #include "ai/task/taskregdref.h"
+ 
+ namespace rage { class aiTask; }

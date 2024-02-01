@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderTargetMgr.cpp b/src/dev_ng/game/renderer/RenderTargetMgr.cpp
+--- a/src/dev_ng/game/renderer/RenderTargetMgr.cpp
++++ b/src/dev_ng/game/renderer/RenderTargetMgr.cpp
+@@ -4,7 +4,7 @@
+ //
+ 
+ // --- Include Files ------------------------------------------------------------
+-#include "renderer/rendertargetmgr.h"
++#include "renderer/RenderTargetMgr.h"
+ // C headers
+ // Rage headers
+ #include "fragment/drawable.h"

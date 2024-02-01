@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/LightPacket.h b/src/dev_ng/game/control/replay/Misc/LightPacket.h
+--- a/src/dev_ng/game/control/replay/Misc/LightPacket.h
++++ b/src/dev_ng/game/control/replay/Misc/LightPacket.h
+@@ -1,11 +1,11 @@
+ #ifndef LIGHT_PACKET_H
+ #define LIGHT_PACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "Control/replay/ReplayEventManager.h"
++#include "control/replay/ReplayEventManager.h"
+ #include "renderer/Lights/LightCommon.h"
+ #include "renderer/Lights/lights.h"
+ #include "cutfile/cutfeventargs.h"

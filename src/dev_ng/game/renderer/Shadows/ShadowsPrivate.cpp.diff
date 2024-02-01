@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/renderer/Shadows/ShadowsPrivate.cpp b/src/dev_ng/game/renderer/Shadows/ShadowsPrivate.cpp
+--- a/src/dev_ng/game/renderer/Shadows/ShadowsPrivate.cpp
++++ b/src/dev_ng/game/renderer/Shadows/ShadowsPrivate.cpp
+@@ -4,10 +4,10 @@
+ // ===================================
+ 
+ // Game headers
+-#include "renderer/util/util.h"
++#include "renderer/Util/util.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/shadows/shadowsprivate.h"
+-#include "debug/debugdraw/debugvolume.h"
++#include "renderer/Shadows/shadowsprivate.h"
++#include "debug/Debugdraw/debugvolume.h"
+ 
+ RENDER_OPTIMISATIONS()
+ 

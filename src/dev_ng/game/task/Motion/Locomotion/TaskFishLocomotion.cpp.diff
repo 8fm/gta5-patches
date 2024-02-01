@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskFishLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskFishLocomotion.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskFishLocomotion.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskFishLocomotion.cpp
+@@ -8,17 +8,17 @@
+ #include "math/angmath.h"
+ 
+ 
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "animation/MovePed.h"
+-#include "Event/EventDamage.h"
+-#include "Event/Events.h"
++#include "event/EventDamage.h"
++#include "event/Events.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/WaterTestHelper.h"
+-#include "Task/Motion/Locomotion/TaskLocomotion.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Physics/TaskNMRelax.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
++#include "physics/WaterTestHelper.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Physics/TaskNMRelax.h"
++#include "task/System/TaskHelpers.h"
++#include "camera/Gameplay/GameplayDirector.h"
+ 
+ 
+ AI_OPTIMISATIONS()

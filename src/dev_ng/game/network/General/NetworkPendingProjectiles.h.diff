@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/network/General/NetworkPendingProjectiles.h b/src/dev_ng/game/network/General/NetworkPendingProjectiles.h
+--- a/src/dev_ng/game/network/General/NetworkPendingProjectiles.h
++++ b/src/dev_ng/game/network/General/NetworkPendingProjectiles.h
+@@ -11,11 +11,11 @@
+ class CEntity;
+ class CPed;
+ 
+-#include "Network/General/NetworkFXId.h"
++#include "network/General/NetworkFXId.h"
+ #include "vector/matrix34.h"
+ #include "vector/vector3.h"
+ #include "weapons/WeaponEnums.h"
+-#include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ // rage includes
+ #include "vector/quaternion.h"

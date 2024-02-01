@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/environment/microphones.cpp b/src/dev_ng/game/audio/environment/microphones.cpp
+--- a/src/dev_ng/game/audio/environment/microphones.cpp
++++ b/src/dev_ng/game/audio/environment/microphones.cpp
+@@ -40,7 +40,7 @@
+ #include "camera/helpers/FrameInterpolator.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "camera/system/CameraManager.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "camera/replay/ReplayRecordedCamera.h"
+ #include "grcore/debugdraw.h"
+ 

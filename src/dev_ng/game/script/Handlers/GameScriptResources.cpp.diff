@@ -1,9 +1,57 @@
 diff --git a/src/dev_ng/game/script/Handlers/GameScriptResources.cpp b/src/dev_ng/game/script/Handlers/GameScriptResources.cpp
 --- a/src/dev_ng/game/script/Handlers/GameScriptResources.cpp
 +++ b/src/dev_ng/game/script/Handlers/GameScriptResources.cpp
-@@ -1,4 +1,4 @@
+@@ -1,11 +1,11 @@
 -#include "script\handlers\GameScriptResources.h"
-+#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptResources.h"
  
  //game includes
  #include "ai/BlockingBounds.h"
+ #include "camera/CamInterface.h"
+ #include "camera/base/BaseCamera.h"
+ #include "camera/scripted/ScriptDirector.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "control/record.h"
+ #include "event/decision/EventDecisionMakerManager.h"
+ #include "frontend/MiniMap.h"
+@@ -15,15 +15,15 @@
+ #include "game/Dispatch/DispatchManager.h"
+ #include "game/Dispatch/DispatchServices.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "pedgroup/PedGroup.h"
+-#include "peds/ped.h"
+-#include "peds/pedpopulation.h"
+-#include "peds/PopCycle.h"
+-#include "peds/Relationships.h"
++#include "PedGroup/PedGroup.h"
++#include "Peds/ped.h"
++#include "Peds/pedpopulation.h"
++#include "Peds/PopCycle.h"
++#include "Peds/Relationships.h"
+ #include "Peds/PedScriptResource.h"
+ #include "Peds/VehicleCombatAvoidanceArea.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "pickups/PickupPlacement.h"
+ #include "scene/volume/VolumeManager.h"
+ #include "script/script_debug.h"
+@@ -39,13 +39,13 @@
+ #include "vehicleAi/roadspeedzone.h"
+ #include "vfx/misc/Checkpoints.h"
+ #include "vfx/misc/Fire.h"
+-#include "Vfx/Misc/MovieManager.h"
+-#include "Vfx/Misc/MovieMeshManager.h"
++#include "vfx/misc/MovieManager.h"
++#include "vfx/misc/MovieMeshManager.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "vfx/ptfx/ptfxscript.h"
+-#include "vfx/systems/vfxscript.h"
++#include "vfx/systems/VfxScript.h"
+ #include "weapons/weaponscriptresource.h"
+-#include "vehicles/metadata/vehiclescriptresource.h"
++#include "Vehicles/Metadata/vehiclescriptresource.h"
+ 
+ // Framework headers
+ #include "fwanimation/directorcomponentsyncedscene.h"

@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/audio/environment/audwarpmanager.cpp b/src/dev_ng/game/audio/environment/audwarpmanager.cpp
+--- a/src/dev_ng/game/audio/environment/audwarpmanager.cpp
++++ b/src/dev_ng/game/audio/environment/audwarpmanager.cpp
+@@ -7,14 +7,14 @@
+ #include "scene/LoadScene.h"
+ #include "scene/FocusEntity.h"
+ #include "Peds/pedplacement.h"
+-#include "peds/pedpopulation.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Peds/pedpopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "fwscene/stores/staticboundsstore.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "debug/TextureViewer/TextureViewerPrivate.h" // need this for DEBUG_TEXTURE_VIEWER_STREAMINGITERATOR_USAGEMAPS_AUTO, although it would be cleaner to provide an accessor ..
+ 
+-#include "vehicles/Automobile.h"
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/VehicleFactory.h"
+ 
+ AUDIO_ENVIRONMENT_OPTIMISATIONS()
+ //OPTIMISATIONS_OFF()

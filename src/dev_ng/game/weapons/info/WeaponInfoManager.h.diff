@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponInfoManager.h b/src/dev_ng/game/weapons/info/WeaponInfoManager.h
+--- a/src/dev_ng/game/weapons/info/WeaponInfoManager.h
++++ b/src/dev_ng/game/weapons/info/WeaponInfoManager.h
+@@ -14,10 +14,10 @@
+ #include "parsercore/utils.h"
+ 
+ // Game headers
+-#include "Weapons/Info/ItemInfo.h"
+-#include "Weapons/Info/VehicleWeaponInfo.h"
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/WeaponChannel.h"
++#include "weapons/info/ItemInfo.h"
++#include "weapons/info/VehicleWeaponInfo.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/WeaponChannel.h"
+ 
+ #include "scene/DataFileMgr.h"
+ 

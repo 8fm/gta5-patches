@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h b/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h
+--- a/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h
++++ b/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h
+@@ -11,7 +11,7 @@
+ 
+ // Rage Headers
+ #include "fwanimation/animdefines.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/Flags.h"
+ #include "parser/macros.h"
+ 

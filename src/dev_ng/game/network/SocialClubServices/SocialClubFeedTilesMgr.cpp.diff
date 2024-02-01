@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubFeedTilesMgr.cpp b/src/dev_ng/game/network/SocialClubServices/SocialClubFeedTilesMgr.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubFeedTilesMgr.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubFeedTilesMgr.cpp
+@@ -1,4 +1,4 @@
+-#include "socialclubfeedtilesmgr.h"
++#include "SocialClubFeedTilesMgr.h"
+ 
+ #if GEN9_STANDALONE_ENABLED
+ 
+@@ -20,10 +20,10 @@
+ 
+ // Game
+ #include "network/Crews/NetworkCrewDataMgr.h"
+-#include "network/general/networkutil.h"
+-#include "core/gamesessionstatemachine.h"
+-#include "event/eventnetwork.h"
+-#include "event/eventgroup.h"
++#include "network/General/networkutil.h"
++#include "Core/gamesessionstatemachine.h"
++#include "event/EventNetwork.h"
++#include "event/EventGroup.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

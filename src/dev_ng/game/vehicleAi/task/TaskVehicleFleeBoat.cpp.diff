@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleFleeBoat.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleFleeBoat.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleFleeBoat.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleFleeBoat.cpp
+@@ -3,10 +3,10 @@
+ // April 24, 2013
+ //
+ 
+-#include "VehicleAi/task/TaskVehicleFleeBoat.h"
+-#include "VehicleAi/task/TaskVehicleGoToBoat.h"
+-#include "VehicleAi/VehicleIntelligence.h"
+-#include "Task/System/TaskHelpers.h"
++#include "vehicleAi/task/TaskVehicleFleeBoat.h"
++#include "vehicleAi/task/TaskVehicleGoToBoat.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "task/System/TaskHelpers.h"
+ 
+ 
+ AI_OPTIMISATIONS()

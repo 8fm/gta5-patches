@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Movement/Jumping/TaskInAir.h b/src/dev_ng/game/task/Movement/Jumping/TaskInAir.h
+--- a/src/dev_ng/game/task/Movement/Jumping/TaskInAir.h
++++ b/src/dev_ng/game/task/Movement/Jumping/TaskInAir.h
+@@ -2,7 +2,7 @@
+ #define TASK_IN_AIR_H
+ 
+ // Game headers
+-#include "Task/System/TaskComplex.h"
++#include "task/System/TaskComplex.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CTaskComplexStuckInAir

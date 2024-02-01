@@ -1,6 +1,23 @@
 diff --git a/src/dev_ng/game/system/FileMgr.cpp b/src/dev_ng/game/system/FileMgr.cpp
 --- a/src/dev_ng/game/system/FileMgr.cpp
 +++ b/src/dev_ng/game/system/FileMgr.cpp
+@@ -55,13 +55,13 @@
+ #include "modelinfo/ModelInfo.h"
+ #include "renderer/color.h"
+ #include "renderer/renderthread.h"
+-#include "scene/datafilemgr.h"
++#include "scene/DataFileMgr.h"
+ #include "scene/extracontent.h"
+ #include "scene/scene.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ #include "system/StreamingInstall.winrt.h"
+ #include "system/system.h"
+-#include "text/Text.h"
++#include "text/text.h"
+ #include "text/TextConversion.h"
+ #include "debug/Debug.h"
+ #else
 @@ -114,7 +114,7 @@
  	#define PLATFORM_DEBUG_PACK     "xboxone_debug.rpf"	// contains all unshippable data for packaged non-final builds
  #else	// pc, anything else

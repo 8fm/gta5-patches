@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/texLod.h b/src/dev_ng/game/scene/texLod.h
+--- a/src/dev_ng/game/scene/texLod.h
++++ b/src/dev_ng/game/scene/texLod.h
+@@ -21,7 +21,7 @@
+ #include "fwscene/texLod.h"
+ 
+ // game includes
+-#include "modelinfo/modelinfo.h"
++#include "modelinfo/ModelInfo.h"
+ 
+ namespace rage {
+ template<class T> class pgDictionary;

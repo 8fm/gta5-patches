@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/renderer/RenderSettings.cpp b/src/dev_ng/game/renderer/RenderSettings.cpp
+--- a/src/dev_ng/game/renderer/RenderSettings.cpp
++++ b/src/dev_ng/game/renderer/RenderSettings.cpp
+@@ -8,7 +8,7 @@
+ //**********************************
+ 
+ #if !__SPU
+-#include "Renderer/RenderSettings.h"
++#include "renderer/RenderSettings.h"
+ 
+ // C++ hdrs
+ #include "stdio.h"
+@@ -17,8 +17,8 @@
+ // Rage hdrs
+ // Core hdrs
+ #include "renderer/DrawLists/drawListMgr.h"
+-#include "renderer/RenderPhases/renderPhase.h" // CIRCULAR REFERENCE
+-#include "renderer/renderThread.h"
++#include "renderer/RenderPhases/RenderPhase.h" // CIRCULAR REFERENCE
++#include "renderer/RenderThread.h"
+ #include "system/system.h"
+ 
+ #else // !__SPU

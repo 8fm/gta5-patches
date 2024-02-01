@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/network/Live/FriendClanData.h b/src/dev_ng/game/network/Live/FriendClanData.h
 --- a/src/dev_ng/game/network/Live/FriendClanData.h
 +++ b/src/dev_ng/game/network/Live/FriendClanData.h
-@@ -8,9 +8,9 @@
+@@ -8,13 +8,13 @@
  #define FRIEND_CLAN_DATA
  
  // rage
@@ -12,4 +12,10 @@ diff --git a/src/dev_ng/game/network/Live/FriendClanData.h b/src/dev_ng/game/net
 +#include "data/base.h"
  
  // game
- #include "Frontend/CCrewMenu.h" // for VISIBLE_CREW_ITEMS
+-#include "Frontend/CCrewMenu.h" // for VISIBLE_CREW_ITEMS
+-#include "Network/Live/ClanNetStatusArray.h"
++#include "frontend/CCrewMenu.h" // for VISIBLE_CREW_ITEMS
++#include "network/Live/ClanNetStatusArray.h"
+ 
+ class CGroupClanData: public datBase
+ {

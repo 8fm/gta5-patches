@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/ik/solvers/HeadSolver.h b/src/dev_ng/game/ik/solvers/HeadSolver.h
+--- a/src/dev_ng/game/ik/solvers/HeadSolver.h
++++ b/src/dev_ng/game/ik/solvers/HeadSolver.h
+@@ -24,11 +24,11 @@
+ 
+ #include "crbody/iksolverbase.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vector/vector3.h"
+ #include "vector/matrix34.h"
+-#include "Animation/AnimBones.h"
+-#include "Animation/debug/AnimDebug.h"
++#include "animation/AnimBones.h"
++#include "animation/debug/AnimDebug.h"
+ #include "scene/RegdRefTypes.h"
+ #include "vector/matrix34.h" 
+ 

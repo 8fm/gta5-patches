@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/timecycle/TimeCycleAsyncQueryMgr.cpp b/src/dev_ng/game/timecycle/TimeCycleAsyncQueryMgr.cpp
+--- a/src/dev_ng/game/timecycle/TimeCycleAsyncQueryMgr.cpp
++++ b/src/dev_ng/game/timecycle/TimeCycleAsyncQueryMgr.cpp
+@@ -9,7 +9,7 @@
+ #include "system/dependencyscheduler.h"
+ 
+ // game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "scene/Entity.h"
+ #include "timecycle/CalcAmbientScaleAsync.h"
+ #include "timecycle/tcmodifier.h"

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskRideTrain.h b/src/dev_ng/game/task/Vehicle/TaskRideTrain.h
+--- a/src/dev_ng/game/task/Vehicle/TaskRideTrain.h
++++ b/src/dev_ng/game/task/Vehicle/TaskRideTrain.h
+@@ -13,9 +13,9 @@
+ #include "ai/task/taskregdref.h"
+ 
+ // Game Headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ #include "Vehicles/handlingMgr.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////

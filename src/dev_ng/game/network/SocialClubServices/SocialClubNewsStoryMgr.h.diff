@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.h b/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.h
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.h
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.h
+@@ -10,7 +10,7 @@
+ #include "atl/string.h"
+ 
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "scene/DownloadableTextureManager.h"
+ #include "text/TextFormat.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugView.h b/src/dev_ng/game/debug/Rendering/DebugView.h
+--- a/src/dev_ng/game/debug/Rendering/DebugView.h
++++ b/src/dev_ng/game/debug/Rendering/DebugView.h
+@@ -10,7 +10,7 @@
+ #include "grcore/effect.h"
+ 
+ // game
+-#include "Debug/Rendering/DebugRendering.h"
++#include "debug/Rendering/DebugRendering.h"
+ 
+ #if __BANK
+ 

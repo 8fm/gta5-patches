@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveToTacticalPoint.cpp b/src/dev_ng/game/task/Movement/TaskMoveToTacticalPoint.cpp
+--- a/src/dev_ng/game/task/Movement/TaskMoveToTacticalPoint.cpp
++++ b/src/dev_ng/game/task/Movement/TaskMoveToTacticalPoint.cpp
+@@ -4,7 +4,7 @@
+ #include "task/Movement/TaskMoveToTacticalPoint.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/TacticalAnalysis.h"
+ #include "task/Combat/TaskNewCombat.h"

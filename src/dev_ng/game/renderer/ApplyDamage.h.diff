@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/ApplyDamage.h b/src/dev_ng/game/renderer/ApplyDamage.h
+--- a/src/dev_ng/game/renderer/ApplyDamage.h
++++ b/src/dev_ng/game/renderer/ApplyDamage.h
+@@ -6,7 +6,7 @@
+ #ifndef INC_APPLYDAMAGE_H_
+ #define INC_APPLYDAMAGE_H_
+ 
+-#include "shader_source/vehicles/vehicle_common_values.h"
++#include "shader_source/Vehicles/vehicle_common_values.h"
+ 
+ #if GPU_DAMAGE_WRITE_ENABLED
+ 

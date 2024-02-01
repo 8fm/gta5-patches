@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Combat/Cover/cover.h b/src/dev_ng/game/task/Combat/Cover/cover.h
+--- a/src/dev_ng/game/task/Combat/Cover/cover.h
++++ b/src/dev_ng/game/task/Combat/Cover/cover.h
+@@ -24,13 +24,13 @@
+ // Framework headers
+ #include "ai/aichannel.h"
+ #include "fwutil/PtrList.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "AI/AITarget.h"
+-#include "Scene/Entity.h"
+-#include "Scene/Physical.h"
+-#include "Scene/RegdRefTypes.h"
++#include "ai/AITarget.h"
++#include "scene/Entity.h"
++#include "scene/Physical.h"
++#include "scene/RegdRefTypes.h"
+ #include "task/Combat/Cover/coversupport.h"
+ 
+ //forward decs

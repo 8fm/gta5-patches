@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/LanguageSelect.h b/src/dev_ng/game/frontend/LanguageSelect.h
+--- a/src/dev_ng/game/frontend/LanguageSelect.h
++++ b/src/dev_ng/game/frontend/LanguageSelect.h
+@@ -11,7 +11,7 @@
+ #define LANGUAGESELECT_H_
+ 
+ #include "atl/hashstring.h"
+-#include "Scaleform/scaleform.h"
++#include "scaleform/scaleform.h"
+ #include "system/language.h"
+ 
+ class CScaleformMovieWrapper;

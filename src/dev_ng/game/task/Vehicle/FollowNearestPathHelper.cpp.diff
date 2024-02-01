@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.cpp b/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.cpp
+--- a/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.cpp
++++ b/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.cpp
+@@ -2,7 +2,7 @@
+ 
+ #if ENABLE_HORSE
+ 
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ AI_OPTIMISATIONS()
+ // OPTIMISATIONS_OFF()

@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/game/Dispatch/DispatchHelpers.cpp b/src/dev_ng/game/game/Dispatch/DispatchHelpers.cpp
+--- a/src/dev_ng/game/game/Dispatch/DispatchHelpers.cpp
++++ b/src/dev_ng/game/game/Dispatch/DispatchHelpers.cpp
+@@ -11,9 +11,9 @@
+ //Game headers
+ #include "camera/CamInterface.h"
+ #include "debug/VectorMap.h"
+-#include "game/dispatch/DispatchData.h"
++#include "game/Dispatch/DispatchData.h"
+ #include "game/Dispatch/Orders.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/VehicleCombatAvoidanceArea.h"

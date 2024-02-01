@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/apps/appdata.cpp b/src/dev_ng/game/apps/appdata.cpp
+--- a/src/dev_ng/game/apps/appdata.cpp
++++ b/src/dev_ng/game/apps/appdata.cpp
+@@ -15,12 +15,12 @@ SCRIPT_OPTIMISATIONS()
+ #include "rline/ros/rlros.h"
+ #include "rline/cloud/rlcloud.h"
+ 
+-#include "modelinfo/vehiclemodelinfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "modelinfo/VehicleModelInfoColors.h"
+ #include "renderer/Entities/VehicleDrawHandler.h"
+ #include "scene/world/GameWorld.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "script/script.h"
+ #include "script/script_channel.h"
+ 

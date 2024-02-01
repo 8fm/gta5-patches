@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_queued_operations.cpp b/src/dev_ng/game/SaveLoad/savegame_queued_operations.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_queued_operations.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_queued_operations.cpp
+@@ -11,11 +11,11 @@
+ #include "camera/CamInterface.h"
+ #include "control/replay/File/ReplayFileManager.h"
+ #include "control/gamelogic.h"
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "frontend/loadingscreens.h"
+ #include "frontend/ProfileSettings.h"
+ 
+-#include "Network/Cloud/UserContentManager.h"
++#include "network/Cloud/UserContentManager.h"
+ 
+ #include "network/NetworkInterface.h"
+ #include "renderer/rendertargets.h"				//	for VideoResManager::GetNativeWidth() and GetNativeHeight()

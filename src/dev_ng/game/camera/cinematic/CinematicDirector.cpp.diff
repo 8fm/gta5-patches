@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/camera/cinematic/CinematicDirector.cpp b/src/dev_ng/game/camera/cinematic/CinematicDirector.cpp
+--- a/src/dev_ng/game/camera/cinematic/CinematicDirector.cpp
++++ b/src/dev_ng/game/camera/cinematic/CinematicDirector.cpp
+@@ -41,21 +41,21 @@
+ #include "frontend/MobilePhone.h"
+ #include "game/ModelIndices.h"
+ #include "network/NetworkInterface.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/QueriableInterface.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/QueriableInterface.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "system/Control.h"
+ #include "task/Animation/TaskAnims.h"
+ #include "task/Animation/TaskScriptedAnimation.h"
+ #include "task/Weapons/Gun/TaskGun.h"
+-#include "task/combat/TaskCombatMelee.h"
+-#include "task/combat/Subtasks/TaskVehicleCombat.h"
+-#include "task/movement/TaskParachute.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Combat/Subtasks/TaskVehicleCombat.h"
++#include "task/Movement/TaskParachute.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
+ #include "tools/SectorTools.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/train.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/train.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

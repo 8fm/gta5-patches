@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Default/TaskWander.h b/src/dev_ng/game/task/Default/TaskWander.h
+--- a/src/dev_ng/game/task/Default/TaskWander.h
++++ b/src/dev_ng/game/task/Default/TaskWander.h
+@@ -9,16 +9,16 @@
+ #define TASK_WANDER_H
+ 
+ // Game headers
+-#include "AI/ambient/ConditionalAnimManager.h"
+-#include "ModelInfo/PedModelInfo.h"
+-#include "Peds/PedDefines.h"
++#include "ai/ambient/ConditionalAnimManager.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/pedDefines.h"
+ #include "Peds/PedMotionData.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/Helpers/PavementFloodFillHelper.h"
+-#include "Task/Helpers/PropManagementHelper.h"
+-#include "Task/System/Task.h"
+-#include "Task/Scenario/ScenarioManager.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/Helpers/PavementFloodFillHelper.h"
++#include "task/Helpers/PropManagementHelper.h"
++#include "task/System/Task.h"
++#include "task/Scenario/ScenarioManager.h"
+ 
+ #define FIND_SHELTER 0
+ 

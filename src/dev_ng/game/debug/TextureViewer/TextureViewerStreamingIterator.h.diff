@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIterator.h b/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIterator.h
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIterator.h
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIterator.h
+@@ -6,7 +6,7 @@
+ #ifndef _DEBUG_TEXTUREVIEWER_STREAMINGITERATOR_H_
+ #define _DEBUG_TEXTUREVIEWER_STREAMINGITERATOR_H_
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if DEBUG_TEXTURE_VIEWER_STREAMINGITERATOR
+ 

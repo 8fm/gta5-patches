@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleRippleFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleRippleFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleRippleFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleRippleFxPacket.cpp
+@@ -9,13 +9,13 @@
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+ #include "animation/AnimBones.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "physics/Floater.h"
+ #include "renderer/Water.h"
+-#include "vehicles/boat.h"
+-#include "vehicles/heli.h"
+-#include "vfx/Systems/VfxWater.h"
+-#include "Vfx/Systems/VfxRipple.h"
++#include "Vehicles/Boat.h"
++#include "Vehicles/Heli.h"
++#include "vfx/systems/VfxWater.h"
++#include "vfx/systems/VfxRipple.h"
+ 
+ #if DEBUG_REPLAY_PFX
+ 	#include "control/replay/ReplayInternal.h"

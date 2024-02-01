@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PlayerSpecialAbility.h b/src/dev_ng/game/Peds/PlayerSpecialAbility.h
+--- a/src/dev_ng/game/Peds/PlayerSpecialAbility.h
++++ b/src/dev_ng/game/Peds/PlayerSpecialAbility.h
+@@ -16,7 +16,7 @@
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"
+-#include "stats/StatsTypes.h"
++#include "Stats/StatsTypes.h"
+ #include "control/replay/ReplaySettings.h"
+ 
+ class CPlayerSpecialAbility;

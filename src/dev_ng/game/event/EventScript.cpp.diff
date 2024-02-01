@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventScript.cpp b/src/dev_ng/game/event/EventScript.cpp
+--- a/src/dev_ng/game/event/EventScript.cpp
++++ b/src/dev_ng/game/event/EventScript.cpp
+@@ -7,7 +7,7 @@
+ // --- Include Files ------------------------------------------------------------
+ 
+ #include "event/EventScript.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ #include "script/script.h"
+ 

@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/game/network/Voice/NetworkVoice.cpp b/src/dev_ng/game/network/Voice/NetworkVoice.cpp
+--- a/src/dev_ng/game/network/Voice/NetworkVoice.cpp
++++ b/src/dev_ng/game/network/Voice/NetworkVoice.cpp
+@@ -1,7 +1,7 @@
+ //
+ // name:        NetworkVoice.h
+ //
+-#include "Network/Voice/NetworkVoice.h"
++#include "network/Voice/NetworkVoice.h"
+ 
+ // framework/engine headers
+ #include "fwnet/netchannel.h"
+@@ -19,23 +19,23 @@
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+ #include "frontend/ProfileSettings.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Bandwidth/NetworkBandwidthManager.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Network/Players/NetworkPlayerMgr.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Sessions/NetworkVoiceSession.h"
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
+-#include "Peds/Ped.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Bandwidth/NetworkBandwidthManager.h"
++#include "network/Live/livemanager.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Sessions/NetworkVoiceSession.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
++#include "Peds/ped.h"
+ #include "scene/world/GameWorld.h"
+ #include "Stats/StatsInterface.h"
+ 
+ #if RSG_PC
+-#include "Frontend/PauseMenu.h"
++#include "frontend/PauseMenu.h"
+ #include "system/controlMgr.h"
+ #endif // RSG_PC
+ 

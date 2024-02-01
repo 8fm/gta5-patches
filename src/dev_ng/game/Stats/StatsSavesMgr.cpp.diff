@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/Stats/StatsSavesMgr.cpp b/src/dev_ng/game/Stats/StatsSavesMgr.cpp
+--- a/src/dev_ng/game/Stats/StatsSavesMgr.cpp
++++ b/src/dev_ng/game/Stats/StatsSavesMgr.cpp
+@@ -26,18 +26,18 @@
+ #include "SaveLoad/GenericGameStorage.h"
+ #include "SaveLoad/savegame_list.h"
+ #include "SaveLoad/savegame_defines.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Network.h"
+-#include "Network/Sessions/NetworkSession.h"
++#include "network/NetworkInterface.h"
++#include "network/Network.h"
++#include "network/Sessions/NetworkSession.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "script/script_channel.h"
+ #include "script/script.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ #if !__NO_OUTPUT
+-#include "stats/StatsMgr.h"
+-#include "stats/StatsDataMgr.h"
++#include "Stats/StatsMgr.h"
++#include "Stats/StatsDataMgr.h"
+ XPARAM(spewDirtySavegameStats);
+ #endif // !__NO_OUTPUT
+ 

@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h b/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h
 --- a/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h
 +++ b/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h
+@@ -30,7 +30,7 @@
+ 	#include "renderer/DrawLists/drawListMgr.h"
+ 	#define CSPULIGHTCLASSIFICATIONINFO_DEF_STRUCT
+ 		#include "renderer/Lights/TiledLightingSettings.h"
+-	#include "renderer/lights/LightSource.h"
++	#include "renderer/Lights/LightSource.h"
+ 	#include "renderer/Deferred/DeferredConfig.h"
+ #endif
+ 
 @@ -316,7 +316,7 @@ struct CWBAllocBlockHeader
  };
  

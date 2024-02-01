@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineCombat.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineCombat.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineCombat.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineCombat.cpp
+@@ -2,10 +2,10 @@
+ // PURPOSE : Subtask of combat used for submarine combat
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskSubmarineCombat.h"
++#include "task/Combat/Subtasks/TaskSubmarineCombat.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "task/Combat/TaskCombat.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/task/TaskVehicleGoToSubmarine.h"

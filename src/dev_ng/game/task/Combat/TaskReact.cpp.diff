@@ -1,0 +1,66 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskReact.cpp b/src/dev_ng/game/task/Combat/TaskReact.cpp
+--- a/src/dev_ng/game/task/Combat/TaskReact.cpp
++++ b/src/dev_ng/game/task/Combat/TaskReact.cpp
+@@ -3,39 +3,39 @@
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "Animation/moveped.h"
+-#include "Game/ModelIndices.h"
+-#include "Task/Combat/TaskReact.h"
+-#include "Event/EventReactions.h"			// For adding new reaction events
+-#include "Peds/Ped.h"
++#include "animation/moveped.h"
++#include "game/ModelIndices.h"
++#include "task/Combat/TaskReact.h"
++#include "event/EventReactions.h"			// For adding new reaction events
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"			// For accessing pedintelligence
+ #include "Peds/PedWeapons/PedTargeting.h"	// For LOS targetting of ped targer
+-#include "Peds/Rendering/PedVariationPack.h"
++#include "Peds/rendering/PedVariationPack.h"
+ #include "streaming/streaming.h"			// For CStreaming::HasObjectLoaded(), etc.
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Default/TaskChat.h"
+-#include "Task/Default/Patrol/TaskPatrol.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
+-#include "Task/Movement/TaskCollisionResponse.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Default/TaskChat.h"
++#include "task/Default/Patrol/TaskPatrol.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/WeaponController.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Movement/TaskCollisionResponse.h"
+ 
+ #if __BANK
+ #include "camera/CamInterface.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedFactory.h"
+ #include "script/script.h"
+ #include "fwsys/timer.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Physics/TaskBlendFromNM.h"
+-#include "Physics/Physics.h"
++#include "scene/world/GameWorld.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Physics/TaskBlendFromNM.h"
++#include "physics/physics.h"
+ #include "debug/DebugScene.h"
+ #endif // __BANK
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/MinimapMenuComponent.cpp b/src/dev_ng/game/frontend/MinimapMenuComponent.cpp
+--- a/src/dev_ng/game/frontend/MinimapMenuComponent.cpp
++++ b/src/dev_ng/game/frontend/MinimapMenuComponent.cpp
+@@ -6,7 +6,7 @@
+ #include "audio/frontendaudioentity.h"
+ #include "script/commands_hud.h"
+ #include "frontend/HudTools.h"
+-#include "Frontend/CMapMenu.h"
++#include "frontend/CMapMenu.h"
+ 
+ CMiniMapMenuComponent sMiniMapMenuComponent;
+ 

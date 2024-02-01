@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/pathzones.cpp b/src/dev_ng/game/vehicleAi/pathzones.cpp
+--- a/src/dev_ng/game/vehicleAi/pathzones.cpp
++++ b/src/dev_ng/game/vehicleAi/pathzones.cpp
+@@ -1,7 +1,7 @@
+ #include "pathzones.h"
+ #include "parser/manager.h"
+ #include "scene/DataFileMgr.h"
+-#include "core/game.h"
++#include "Core/game.h"
+ 
+ // Parser files
+ #include "PathZones_parser.h"

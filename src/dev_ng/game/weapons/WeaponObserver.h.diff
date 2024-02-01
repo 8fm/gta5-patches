@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/WeaponObserver.h b/src/dev_ng/game/weapons/WeaponObserver.h
+--- a/src/dev_ng/game/weapons/WeaponObserver.h
++++ b/src/dev_ng/game/weapons/WeaponObserver.h
+@@ -8,7 +8,7 @@
+ #define WEAPON_OBSERVER_H
+ 
+ // Game headers
+-#include "fwtl/RegdRefs.h"
++#include "fwtl/regdrefs.h"
+ 
+ class CWeaponObserver : public fwRefAwareBase
+ {

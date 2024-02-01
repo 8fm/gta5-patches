@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.h b/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.h
+@@ -11,7 +11,7 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control/replay/effects/ParticlePacket.h"
++#include "control/replay/Effects/ParticlePacket.h"
+ 
+ //=====================================================================================================
+ class CPacketProjectile : public CPacketEvent, public CPacketEntityInfo<0>

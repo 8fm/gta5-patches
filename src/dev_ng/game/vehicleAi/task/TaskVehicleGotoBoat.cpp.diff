@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGotoBoat.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleGotoBoat.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleGotoBoat.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleGotoBoat.cpp
+@@ -5,11 +5,11 @@
+ 
+ #include "math/vecmath.h"
+ 
+-#include "VehicleAi/task/TaskVehicleGoToBoat.h"
+-#include "VehicleAi/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi/Task/TaskVehiclePark.h"
+-#include "VehicleAi/VehicleIntelligence.h"
+-#include "Task/System/TaskHelpers.h"
++#include "vehicleAi/task/TaskVehicleGoToBoat.h"
++#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "task/System/TaskHelpers.h"
+ #include "Peds/ped.h"
+ 
+ AI_OPTIMISATIONS()

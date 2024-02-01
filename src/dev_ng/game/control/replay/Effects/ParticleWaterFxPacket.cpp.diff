@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.cpp
+@@ -12,14 +12,14 @@
+ #include "audio/boataudioentity.h"
+ #include "control/gamelogic.h"
+ #include "game/ModelIndices.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "vfx/ptfx/ptfxattach.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "vfx/particles/ptfxdefines.h"
+ #include "vfx/systems/VfxVehicle.h"
+ #include "vfx/VfxImmediateInterface.h"
+ #include "scene/world/GameWorld.h"
+-#include "vehicles/Submarine.h"
++#include "Vehicles/Submarine.h"
+ #include "control/replay/Compression/Quantization.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

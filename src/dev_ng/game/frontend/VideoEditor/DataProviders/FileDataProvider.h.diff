@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.h b/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.h
+--- a/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.h
++++ b/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.h
+@@ -26,7 +26,7 @@
+ #include "fwutil/xmacro.h"
+ 
+ // game
+-#include "control/replay/file/FileData.h"
++#include "control/replay/File/FileData.h"
+ #include "control/replay/File/device_replay.h"
+ #include "frontend/ui_channel.h"
+ 

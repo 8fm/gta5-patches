@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/scene/portals/LayoutManager.cpp b/src/dev_ng/game/scene/portals/LayoutManager.cpp
+--- a/src/dev_ng/game/scene/portals/LayoutManager.cpp
++++ b/src/dev_ng/game/scene/portals/LayoutManager.cpp
+@@ -1,6 +1,6 @@
+ #include "LayoutManager.h"
+ 
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/scene_channel.h"
+ #include "scene/portals/Portal.h"
+ #include "bank/bkmgr.h"

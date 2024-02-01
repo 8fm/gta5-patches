@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp b/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp
+--- a/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp
++++ b/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp
+@@ -3,8 +3,8 @@
+ // 
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Movement/TaskGotoPointAvoidance.h"
++#include "task/Movement/TaskGotoPoint.h"
++#include "task/Movement/TaskGotoPointAvoidance.h"
+ 
+ 
+ // Rage headers

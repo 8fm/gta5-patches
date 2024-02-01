@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/racingline.h b/src/dev_ng/game/vehicleAi/racingline.h
+--- a/src/dev_ng/game/vehicleAi/racingline.h
++++ b/src/dev_ng/game/vehicleAi/racingline.h
+@@ -11,7 +11,7 @@
+ #include "vehicleAi/junctions.h"
+ #include "fwmaths/random.h"
+ #include "fwsys/timer.h"
+-#include "scene/physical.h"
++#include "scene/Physical.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ 

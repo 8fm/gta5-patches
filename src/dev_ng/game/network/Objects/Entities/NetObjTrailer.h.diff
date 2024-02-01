@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.h b/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.h
+@@ -8,7 +8,7 @@
+ #ifndef NETOBJTRAILER_H
+ #define NETOBJTRAILER_H
+ 
+-#include "network/objects/entities/NetObjAutomobile.h"
++#include "network/Objects/Entities/NetObjAutomobile.h"
+ 
+ class CNetObjTrailer : public CNetObjAutomobile
+ {

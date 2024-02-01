@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.cpp
+@@ -9,7 +9,7 @@
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+ //#include "maths/angle.h"
+-#include "vehicles/Heli.h"
++#include "Vehicles/Heli.h"
+ #include "audio/heliaudioentity.h"
+ #include "fwpheffects/ropemanager.h"
+ 

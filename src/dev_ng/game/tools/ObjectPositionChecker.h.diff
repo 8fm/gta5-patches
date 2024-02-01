@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/tools/ObjectPositionChecker.h b/src/dev_ng/game/tools/ObjectPositionChecker.h
+--- a/src/dev_ng/game/tools/ObjectPositionChecker.h
++++ b/src/dev_ng/game/tools/ObjectPositionChecker.h
+@@ -10,7 +10,7 @@
+ 
+ // Game headers
+ #include "SectorToolsParam.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ 
+ #if (SECTOR_TOOLS_EXPORT)
+ 

@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/pickups/Data/PickupDataManager.cpp b/src/dev_ng/game/pickups/Data/PickupDataManager.cpp
+--- a/src/dev_ng/game/pickups/Data/PickupDataManager.cpp
++++ b/src/dev_ng/game/pickups/Data/PickupDataManager.cpp
+@@ -5,11 +5,11 @@
+ #include "parser/manager.h"
+ 
+ // Game headers
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "pickups/PickupActions.h"
+ #include "pickups/PickupRewards.h"
+ #include "pickups/PickupManager.h"
+-#include "pickups/data/PickupDataManager_parser.h"
++#include "pickups/Data/PickupDataManager_parser.h"
+ #include "scene/dlc_channel.h"
+ 
+ WEAPON_OPTIMISATIONS()

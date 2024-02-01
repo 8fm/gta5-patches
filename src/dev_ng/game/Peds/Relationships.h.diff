@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Peds/Relationships.h b/src/dev_ng/game/Peds/Relationships.h
+--- a/src/dev_ng/game/Peds/Relationships.h
++++ b/src/dev_ng/game/Peds/Relationships.h
+@@ -7,11 +7,11 @@
+ #ifndef _RELATIONSHIPS_H_
+ #define _RELATIONSHIPS_H_
+ 
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "Peds/RelationshipEnums.h"
+ #include "atl/hashstring.h"
+ #include "Peds/ped_channel.h"		// pedAssert
+-#include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ #include "task/System/Tuning.h"
+ 

@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.cpp
+@@ -5,16 +5,16 @@
+ //
+ 
+ // File header
+-#include "Task/Motion/Locomotion/TaskMotionAimingTransition.h"
++#include "task/Motion/Locomotion/TaskMotionAimingTransition.h"
+ 
+ // Rage headers
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOTION_OPTIMISATIONS()

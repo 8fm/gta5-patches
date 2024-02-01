@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionParachuting.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionParachuting.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionParachuting.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionParachuting.h
+@@ -8,8 +8,8 @@
+ #define TASK_MOTION_PARACHUTING_H
+ 
+ #include "Peds/ped.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/System/TaskHelpers.h"
+ 
+ class CTaskMotionParachuting : public CTaskMotionBase
+ {

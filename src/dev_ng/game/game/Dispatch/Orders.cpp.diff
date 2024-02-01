@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/game/Dispatch/Orders.cpp b/src/dev_ng/game/game/Dispatch/Orders.cpp
+--- a/src/dev_ng/game/game/Dispatch/Orders.cpp
++++ b/src/dev_ng/game/game/Dispatch/Orders.cpp
+@@ -2,14 +2,14 @@
+ // Purpose	:	Defines incidents that exist in the world
+ // Started	:	13/05/2010
+ 
+-#include "Game/Dispatch/Orders.h"
++#include "game/Dispatch/Orders.h"
+ 
+ // Game headers
+ #include "game/Dispatch/Incidents.h"
+-#include "Game/Dispatch/OrderManager.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "peds/ped.h"
+-#include "peds/pedIntelligence.h"
++#include "game/Dispatch/OrderManager.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "PedGroup/PedGroup.h"
+ #include "task/Response/TaskGangs.h"	//for CTaskGangPatrol
+ #include "weapons/inventory/PedInventoryLoadOut.h"

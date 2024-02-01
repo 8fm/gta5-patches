@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.cpp
+@@ -5,16 +5,16 @@
+ //
+ 
+ #include "rline/rlgamerinfo.h"
+-#include "network/network.h"
+-#include "network/general/NetworkStreamingRequestManager.h"
+-#include "network/objects/entities/NetObjPed.h"
+-#include "network/objects/entities/NetObjPlayer.h"
+-#include "network/objects/synchronisation/syncnodes/PlayerSyncNodes.h"
++#include "network/Network.h"
++#include "network/General/NetworkStreamingRequestManager.h"
++#include "network/Objects/Entities/NetObjPed.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h"
+ #include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"
+ #include "Peds/ped.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Task/General/Phone/TaskMobilePhone.h"
++#include "network/Players/NetGamePlayer.h"
++#include "task/General/Phone/TaskMobilePhone.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

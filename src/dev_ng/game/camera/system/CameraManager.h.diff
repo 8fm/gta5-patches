@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/system/CameraManager.h b/src/dev_ng/game/camera/system/CameraManager.h
+--- a/src/dev_ng/game/camera/system/CameraManager.h
++++ b/src/dev_ng/game/camera/system/CameraManager.h
+@@ -14,7 +14,7 @@
+ #include "camera/debug/ShakeDebugger.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "control/replay/ReplaySettings.h"
+-#include "peds/pedDefines.h"
++#include "Peds/pedDefines.h"
+ #include "scene/RegdRefTypes.h"
+ #include "vector/color32.h"
+ 

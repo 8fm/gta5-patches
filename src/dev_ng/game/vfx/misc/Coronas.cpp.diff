@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/vfx/misc/Coronas.cpp b/src/dev_ng/game/vfx/misc/Coronas.cpp
+--- a/src/dev_ng/game/vfx/misc/Coronas.cpp
++++ b/src/dev_ng/game/vfx/misc/Coronas.cpp
+@@ -34,15 +34,15 @@
+ #include "Core/Game.h"
+ #include "camera/CamInterface.h"
+ #include "debug/Rendering/DebugLights.h"
+-#include "Renderer/Renderer.h"
+-#include "Renderer/RenderTargets.h"
+-#include "Renderer/Sprite2d.h"
+-#include "Renderer/Util/ShaderUtil.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Shaders/ShaderLib.h"
++#include "renderer/Renderer.h"
++#include "renderer/RenderTargets.h"
++#include "renderer/Sprite2d.h"
++#include "renderer/Util/ShaderUtil.h"
++#include "scene/world/GameWorld.h"
++#include "shaders/ShaderLib.h"
+ #include "timecycle/TimeCycle.h"
+-#include "TimeCycle/TimeCycleConfig.h"
+-#include "Renderer/Water.h"
++#include "timecycle/TimeCycleConfig.h"
++#include "renderer/Water.h"
+ 
+ #if __D3D11
+ #include "grcore/texturefactory_d3d11.h"

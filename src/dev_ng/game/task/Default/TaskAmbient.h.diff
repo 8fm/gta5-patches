@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Default/TaskAmbient.h b/src/dev_ng/game/task/Default/TaskAmbient.h
+--- a/src/dev_ng/game/task/Default/TaskAmbient.h
++++ b/src/dev_ng/game/task/Default/TaskAmbient.h
+@@ -9,17 +9,17 @@
+ 
+ // Framework headers
+ #include "fwutil/Flags.h"
+-#include "event/event.h"
++#include "event/Event.h"
+ 
+ // Game headers
+-#include "AI/AITarget.h"
++#include "ai/AITarget.h"
+ #include "ik/IkRequest.h"
+-#include "Task/Helpers/PropManagementHelper.h"
++#include "task/Helpers/PropManagementHelper.h"
+ #include "task/Scenario/ScenarioAnimDebugHelper.h"
+-#include "Task/Scenario/Info/ScenarioInfoConditions.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
++#include "task/System/TaskFSMClone.h"
+ #include "Peds/QueriableInterface.h"
+ 
+ // Forward declarations

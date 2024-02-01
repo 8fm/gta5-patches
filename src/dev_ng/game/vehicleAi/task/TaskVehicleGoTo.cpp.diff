@@ -12,13 +12,13 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoTo.cpp b/src/dev_ng/gam
 -#include "VehicleAi\task\TaskVehicleGoToSubmarine.h"
 -#include "VehicleAi\task\TaskVehiclePark.h"
 -#include "VehicleAi\VehicleIntelligence.h"
-+#include "VehicleAi/task/TaskVehicleCruise.h"
-+#include "VehicleAi/task/TaskVehicleGoToAutomobile.h"
-+#include "VehicleAi/task/TaskVehicleGoToHelicopter.h"
-+#include "VehicleAi/task/TaskVehicleGoToPlane.h"
-+#include "VehicleAi/task/TaskVehicleGoToSubmarine.h"
-+#include "VehicleAi/task/TaskVehiclePark.h"
-+#include "VehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleCruise.h"
++#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
++#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
++#include "vehicleAi/task/TaskVehicleGoToPlane.h"
++#include "vehicleAi/task/TaskVehicleGoToSubmarine.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
++#include "vehicleAi/VehicleIntelligence.h"
  
  AI_OPTIMISATIONS()
  AI_VEHICLE_OPTIMISATIONS()

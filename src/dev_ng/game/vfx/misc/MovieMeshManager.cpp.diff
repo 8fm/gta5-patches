@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp b/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp
+--- a/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp
++++ b/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp
+@@ -18,7 +18,7 @@ VFX_MISC_OPTIMISATIONS()
+ 
+ // game
+ #include "Core/Game.h"
+-#include "System/FileMgr.h"
++#include "system/FileMgr.h"
+ #include "renderer/RenderTargetMgr.h"
+ #include "vfx/misc/MovieManager.h"
+ #include "vfx/misc/Fire.h"
+@@ -29,7 +29,7 @@ VFX_MISC_OPTIMISATIONS()
+ #include "scene/RegdRefTypes.h"
+ #include "script/script.h"
+ #include "streaming/streaming.h"
+-#include "objects/objectpopulation.h"
++#include "Objects/objectpopulation.h"
+ #include "scene/world/GameWorld.h"
+ #include "animation/MoveObject.h"
+ 

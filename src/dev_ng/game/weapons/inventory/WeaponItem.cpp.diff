@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/weapons/inventory/WeaponItem.cpp b/src/dev_ng/game/weapons/inventory/WeaponItem.cpp
+--- a/src/dev_ng/game/weapons/inventory/WeaponItem.cpp
++++ b/src/dev_ng/game/weapons/inventory/WeaponItem.cpp
+@@ -1,23 +1,23 @@
+ // File header
+-#include "Weapons/Inventory/WeaponItem.h"
++#include "weapons/inventory/WeaponItem.h"
+ 
+ #include "fwanimation/animmanager.h"
+ #include "fwanimation/clipsets.h"
+ #include "streaming/streamingvisualize.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "Network/NetworkInterface.h"
+-#include "Peds/Ped.h"
+-#include "Pickups/Data/PickupDataManager.h"
+-#include "Pickups/PickupManager.h"
+-#include "Weapons/Components/WeaponComponent.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/Info/WeaponAnimationsManager.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Inventory/AmmoItem.h"
++#include "debug/DebugScene.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
++#include "pickups/Data/PickupDataManager.h"
++#include "pickups/PickupManager.h"
++#include "weapons/components/WeaponComponent.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/info/WeaponAnimationsManager.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/inventory/AmmoItem.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/tools/StreamingMemUsage.cpp b/src/dev_ng/game/tools/StreamingMemUsage.cpp
+--- a/src/dev_ng/game/tools/StreamingMemUsage.cpp
++++ b/src/dev_ng/game/tools/StreamingMemUsage.cpp
+@@ -23,16 +23,16 @@
+ #include "Objects/DummyObject.h"
+ #include "Objects/object.h"
+ #include "pathserver/PathServer.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "renderer/water.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "renderer/Water.h"
+ #include "scene/AnimatedBuilding.h"
+ #include "scene/Building.h"
+ #include "scene/scene.h"
+ #include "scene/portals/InteriorInst.h"
+ #include "scene/portals/PortalInst.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingengine.h"
+ #include "streaming/streamingmodule.h"

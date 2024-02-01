@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/page_deck/uiPageConfig.h b/src/dev_ng/game/frontend/page_deck/uiPageConfig.h
+--- a/src/dev_ng/game/frontend/page_deck/uiPageConfig.h
++++ b/src/dev_ng/game/frontend/page_deck/uiPageConfig.h
+@@ -33,7 +33,7 @@
+ // game
+ #include "frontend/page_deck/uiPageId.h"
+ #include "frontend/page_deck/uiPageInfo.h"
+-#include "frontend/scaleform/scaleformmgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ 
+ class CPageBase;
+ 

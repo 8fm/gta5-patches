@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/weapons/inventory/WeaponItemRepository.h b/src/dev_ng/game/weapons/inventory/WeaponItemRepository.h
+--- a/src/dev_ng/game/weapons/inventory/WeaponItemRepository.h
++++ b/src/dev_ng/game/weapons/inventory/WeaponItemRepository.h
+@@ -2,8 +2,8 @@
+ #define WEAPON_ITEM_REPOSITORY_H
+ 
+ // Game headers
+-#include "Weapons/Inventory/InventoryItemRepository.h"
+-#include "Weapons/Inventory/WeaponItem.h"
++#include "weapons/inventory/InventoryItemRepository.h"
++#include "weapons/inventory/WeaponItem.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CWeaponItemRepository

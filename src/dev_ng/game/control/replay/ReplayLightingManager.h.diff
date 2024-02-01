@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayLightingManager.h b/src/dev_ng/game/control/replay/ReplayLightingManager.h
+--- a/src/dev_ng/game/control/replay/ReplayLightingManager.h
++++ b/src/dev_ng/game/control/replay/ReplayLightingManager.h
+@@ -1,7 +1,7 @@
+ #ifndef REPLAY_LIGHTING_MANAGER_H
+ #define REPLAY_LIGHTING_MANAGER_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 

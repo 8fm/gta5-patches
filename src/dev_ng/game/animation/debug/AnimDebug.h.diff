@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/animation/debug/AnimDebug.h b/src/dev_ng/game/animation/debug/AnimDebug.h
 --- a/src/dev_ng/game/animation/debug/AnimDebug.h
 +++ b/src/dev_ng/game/animation/debug/AnimDebug.h
-@@ -23,7 +23,7 @@
+@@ -22,8 +22,8 @@
+ #include "bank/text.h"
  
  // Gta includes
- #include "Scene/DynamicEntity.h"
+-#include "Scene/DynamicEntity.h"
 -#include "animation\AnimScene\AnimSceneEntity.h"
++#include "scene/DynamicEntity.h"
 +#include "animation/AnimScene/AnimSceneEntity.h"
  
  // Rage forward declarations

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/loader/mapTypes.cpp b/src/dev_ng/game/scene/loader/mapTypes.cpp
+--- a/src/dev_ng/game/scene/loader/mapTypes.cpp
++++ b/src/dev_ng/game/scene/loader/mapTypes.cpp
+@@ -15,7 +15,7 @@
+ 
+ //game include 
+ #include "modelinfo/BaseModelInfo.h"
+-#include "modelInfo/CompEntityModelInfo.h"
++#include "modelinfo/CompEntityModelInfo.h"
+ #include "scene/scene_channel.h"
+ #include "system/memmanager.h"
+ 

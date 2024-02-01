@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.h b/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.h
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.h
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.h
+@@ -8,7 +8,7 @@
+ #include "atl/array.h"
+ #include "atl/string.h"
+ 
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ namespace rage
+ {

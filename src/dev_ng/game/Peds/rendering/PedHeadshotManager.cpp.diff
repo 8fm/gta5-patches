@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp b/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp
+--- a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp
++++ b/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp
+@@ -41,21 +41,21 @@
+ #include "fwdrawlist/drawlist.h"
+ 
+ // Game headers:
+-#include "animation/animBones.h"
++#include "animation/AnimBones.h"
+ #include "debug/MarketingTools.h"
+ #include "camera/CamInterface.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedFactory.h"
+ #include "Peds/PlayerPed.h"
+ #include "Peds/rendering/pedVariationPack.h"
+-#include "peds/rendering/PedVariationDebug.h"
+-#include "renderer/DrawLists/drawlistMgr.h"
++#include "Peds/rendering/PedVariationDebug.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "scene/EntityTypes.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "script/thread.h"
+ #include "script/script.h"
+-#include "Shaders/CustomShaderEffectPed.h"
++#include "shaders/CustomShaderEffectPed.h"
+ #include "Stats/StatsInterface.h"
+ #include "streaming/streaming.h"
+ #include "system/interlocked.h"

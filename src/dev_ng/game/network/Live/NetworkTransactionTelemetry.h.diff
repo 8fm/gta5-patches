@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkTransactionTelemetry.h b/src/dev_ng/game/network/Live/NetworkTransactionTelemetry.h
+--- a/src/dev_ng/game/network/Live/NetworkTransactionTelemetry.h
++++ b/src/dev_ng/game/network/Live/NetworkTransactionTelemetry.h
+@@ -15,16 +15,16 @@
+ #include "string/stringhash.h"
+ // Game headers
+ #include "NetworkTelemetry.h"
+-#include "Scene/World/GameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/MoneyInterface.h"
+ #include "script/script.h"
+-#include "Network/NetworkTypes.h"
+-#include "Network/SocialClubServices/SocialClubCommunityEventMgr.h"
++#include "network/NetworkTypes.h"
++#include "network/SocialClubServices/SocialClubCommunityEventMgr.h"
+ 
+ #if __NET_SHOP_ACTIVE
+-#include "Network/Shop/GameTransactionsSessionMgr.h"
+-#include "Network/Shop/NetworkShopping.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/Shop/NetworkShopping.h"
+ #endif //__NET_SHOP_ACTIVE
+ 
+ class MetricBaseChar

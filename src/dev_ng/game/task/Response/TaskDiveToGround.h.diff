@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Response/TaskDiveToGround.h b/src/dev_ng/game/task/Response/TaskDiveToGround.h
+--- a/src/dev_ng/game/task/Response/TaskDiveToGround.h
++++ b/src/dev_ng/game/task/Response/TaskDiveToGround.h
+@@ -5,8 +5,8 @@
+ #define TASK_DIVE_TO_GROUND_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
+ 
+ class CTaskDiveToGround : public CTaskFSMClone
+ {

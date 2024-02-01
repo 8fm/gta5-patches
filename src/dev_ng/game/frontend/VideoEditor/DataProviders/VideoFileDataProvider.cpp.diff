@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataProvider.cpp b/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataProvider.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataProvider.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataProvider.cpp
+@@ -28,7 +28,7 @@
+ // game
+ #include "system/FileMgr.h"
+ 
+-#include "control/replay/file/ReplayFileManager.h"
++#include "control/replay/File/ReplayFileManager.h"
+ 
+ #if RSG_ORBIS
+ #include "renderer/rendertargets.h"

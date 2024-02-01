@@ -1,0 +1,54 @@
+diff --git a/src/dev_ng/game/pickups/Pickup.cpp b/src/dev_ng/game/pickups/Pickup.cpp
+--- a/src/dev_ng/game/pickups/Pickup.cpp
++++ b/src/dev_ng/game/pickups/Pickup.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Pickups/Data/PickupDataManager.h"
++#include "pickups/Data/PickupDataManager.h"
+ 
+ // rage headers
+ #include "phbound/boundcomposite.h"
+@@ -7,24 +7,24 @@
+ // game headers
+ #include "audio/ambience/ambientaudioentity.h"
+ #include "camera/CamInterface.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/restart.h"
+ #include "frontend/MobilePhone.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "peds/Action/ActionManager.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/PlayerInfo.h" 
++#include "network/Events/NetworkEventTypes.h"
++#include "Peds/Action/ActionManager.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PlayerInfo.h" 
+ #include "physics/gtaArchetype.h"
+ #include "physics/gtaInst.h"
+ #include "physics/physics.h"
+-#include "Pickups/Pickup.h"
+-#include "Pickups/PickupManager.h"
+-#include "Pickups/PickupRewards.h"
++#include "pickups/Pickup.h"
++#include "pickups/PickupManager.h"
++#include "pickups/PickupRewards.h"
+ #include "renderer/OcclusionQueries.h"
+ #include "renderer/Water.h"
+ #include "script/script_channel.h"
+-#include "scene/world/gameworld.h"
++#include "scene/world/GameWorld.h"
+ #include "script/Handlers/GameScriptEntity.h"
+ #include "system/control.h"
+ #include "task/Combat/TaskCombatMelee.h"
+@@ -38,7 +38,7 @@
+ #include "script/script_hud.h"
+ 
+ // framework headers
+-#include "fwscript/scriptInterface.h"
++#include "fwscript/scriptinterface.h"
+ #include "fwsys/timer.h"
+ #include "fwnet/netblender.h"
+ #include "fwnet/netblenderlininterp.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.h b/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.h
+@@ -8,7 +8,7 @@
+ #define WEAPON_COMPONENT_PROGRAMMABLE_TARGETING_H
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponent.h"
++#include "weapons/components/WeaponComponent.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

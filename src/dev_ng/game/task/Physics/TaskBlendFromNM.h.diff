@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskBlendFromNM.h b/src/dev_ng/game/task/Physics/TaskBlendFromNM.h
+--- a/src/dev_ng/game/task/Physics/TaskBlendFromNM.h
++++ b/src/dev_ng/game/task/Physics/TaskBlendFromNM.h
+@@ -12,10 +12,10 @@
+ // C headers
+ // Game headers
+ #include "fwanimation/posematcher.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/BlendFromNmData.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/BlendFromNmData.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

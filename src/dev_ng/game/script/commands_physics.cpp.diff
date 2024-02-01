@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/script/commands_physics.cpp b/src/dev_ng/game/script/commands_physics.cpp
+--- a/src/dev_ng/game/script/commands_physics.cpp
++++ b/src/dev_ng/game/script/commands_physics.cpp
+@@ -19,13 +19,13 @@
+ 
+ // Game headers
+ #include "network/NetworkInterface.h"
+-#include "objects/object.h"
++#include "Objects/object.h"
+ #include "physics/physics.h"
+ #include "physics/simulator.h"
+ #include "script/Handlers/GameScriptResources.h"
+ #include "script/script.h"
+ #include "script/script_helper.h"
+-#include "control/replay/misc/RopePacket.h"
++#include "control/replay/Misc/RopePacket.h"
+ 
+ // network includes
+ 

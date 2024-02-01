@@ -1,0 +1,59 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskSharkAttack.cpp b/src/dev_ng/game/task/Combat/TaskSharkAttack.cpp
+--- a/src/dev_ng/game/task/Combat/TaskSharkAttack.cpp
++++ b/src/dev_ng/game/task/Combat/TaskSharkAttack.cpp
+@@ -1,5 +1,5 @@
+ // Class Header
+-#include "Task/Combat/TaskSharkAttack.h"
++#include "task/Combat/TaskSharkAttack.h"
+ 
+ // Rage Headers
+ #include "crclip/clip.h"
+@@ -11,30 +11,30 @@
+ // Game Headers
+ #include "animation/EventTags.h"
+ #include "audio/speechaudioentity.h"
+-#include "Camera/Base/BaseCamera.h"
+-#include "Camera/CamInterface.h"
++#include "camera/Base/BaseCamera.h"
++#include "camera/CamInterface.h"
+ #include "camera/syncedscene/SyncedSceneDirector.h"
+-#include "Camera/Scripted/ScriptDirector.h"
+-#include "Event/Events.h"
++#include "camera/scripted/ScriptDirector.h"
++#include "event/Events.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PlayerInfo.h"
+ #include "Peds/PedMotionData.h"
+ #include "Peds/rendering/PedDamage.h"
+-#include "Physics/WaterTestHelper.h"
+-#include "Physics/WorldProbe/shapetestmgr.h"
+-#include "Physics/WorldProbe/shapetestcapsuledesc.h"
+-#include "Physics/WorldProbe/shapetestresults.h"
+-#include "Physics/WorldProbe/wpcommon.h"
++#include "physics/WaterTestHelper.h"
++#include "physics/WorldProbe/shapetestmgr.h"
++#include "physics/WorldProbe/shapetestcapsuledesc.h"
++#include "physics/WorldProbe/shapetestresults.h"
++#include "physics/WorldProbe/wpcommon.h"
+ #include "system/controlMgr.h"
+-#include "Task/Animation/TaskAnims.h"
+-#include "Task/Combat/TaskCombatMounted.h"
+-#include "Task/Combat/TaskDamageDeath.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Motion/Locomotion/TaskFishLocomotion.h"
+-#include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Vfx/Systems/VfxBlood.h"
++#include "task/Animation/TaskAnims.h"
++#include "task/Combat/TaskCombatMounted.h"
++#include "task/Combat/TaskDamageDeath.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskFishLocomotion.h"
++#include "task/Movement/TaskGotoPoint.h"
++#include "task/Response/TaskFlee.h"
++#include "vfx/systems/VfxBlood.h"
+ 
+ AI_OPTIMISATIONS()
+ 

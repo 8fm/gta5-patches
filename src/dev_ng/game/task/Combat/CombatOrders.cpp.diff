@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Combat/CombatOrders.cpp b/src/dev_ng/game/task/Combat/CombatOrders.cpp
+--- a/src/dev_ng/game/task/Combat/CombatOrders.cpp
++++ b/src/dev_ng/game/task/Combat/CombatOrders.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Combat/CombatOrders.h"
++#include "task/Combat/CombatOrders.h"
+ 
+ AI_OPTIMISATIONS()
+ 

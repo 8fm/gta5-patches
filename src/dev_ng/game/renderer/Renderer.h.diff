@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Renderer.h b/src/dev_ng/game/renderer/Renderer.h
+--- a/src/dev_ng/game/renderer/Renderer.h
++++ b/src/dev_ng/game/renderer/Renderer.h
+@@ -16,7 +16,7 @@
+ #endif //RAGE_SUPPORT_TESSELLATION_TECHNIQUES
+ 
+ // Game headers
+-#include "Renderer/RenderListGroup.h"
++#include "renderer/renderListGroup.h"
+ 
+ namespace rage
+ {

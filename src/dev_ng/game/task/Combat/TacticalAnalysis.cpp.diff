@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/TacticalAnalysis.cpp b/src/dev_ng/game/task/Combat/TacticalAnalysis.cpp
+--- a/src/dev_ng/game/task/Combat/TacticalAnalysis.cpp
++++ b/src/dev_ng/game/task/Combat/TacticalAnalysis.cpp
+@@ -12,7 +12,7 @@
+ #include "Peds/ped.h"
+ #include "physics/gtaArchetype.h"
+ #include "physics/WorldProbe/shapetestprobedesc.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ // Parser headers
+ #include "task/Combat/TacticalAnalysis_parser.h"

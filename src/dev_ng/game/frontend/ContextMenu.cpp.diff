@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/frontend/ContextMenu.cpp b/src/dev_ng/game/frontend/ContextMenu.cpp
+--- a/src/dev_ng/game/frontend/ContextMenu.cpp
++++ b/src/dev_ng/game/frontend/ContextMenu.cpp
+@@ -3,21 +3,21 @@
+ #include "rline/rlsystemui.h"
+ 
+ // game
+-#include "Frontend/ContextMenu.h"
+-#include "Frontend/CFriendsMenu.h"
+-#include "Frontend/ReportMenu.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ui_channel.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Voice/NetworkVoice.h"
++#include "frontend/ContextMenu.h"
++#include "frontend/CFriendsMenu.h"
++#include "frontend/ReportMenu.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/ui_channel.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkClan.h"
++#include "network/NetworkInterface.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Voice/NetworkVoice.h"
+ #include "Stats/StatsInterface.h"
+-#include "Text/TextConversion.h"
+-#include "Text/TextFile.h"
++#include "text/TextConversion.h"
++#include "text/TextFile.h"
+ 
+ #if __XENON
+ #include <xparty.h>

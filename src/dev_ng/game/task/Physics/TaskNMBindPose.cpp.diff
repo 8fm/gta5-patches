@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp b/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp
+@@ -10,11 +10,11 @@
+ #include "crskeleton/Skeleton.h"
+ #include "fragmentnm/messageparams.h"
+ // Game headers:
+-#include "Event/Events.h"
+-#include "Peds/Ped.h"
++#include "event/Events.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Streaming/streaming.h"
+-#include "Task/Physics/TaskNMBindPose.h"
++#include "streaming/streaming.h"
++#include "task/Physics/TaskNMBindPose.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

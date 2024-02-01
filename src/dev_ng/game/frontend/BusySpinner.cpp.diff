@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/frontend/BusySpinner.cpp b/src/dev_ng/game/frontend/BusySpinner.cpp
+--- a/src/dev_ng/game/frontend/BusySpinner.cpp
++++ b/src/dev_ng/game/frontend/BusySpinner.cpp
+@@ -13,11 +13,11 @@
+ #include "frontend/GameStreamMgr.h"
+ #include "frontend/BusySpinner.h"
+ #include "frontend/MobilePhone.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ #include "SaveLoad/savegame_channel.h"
+ #include "SaveLoad/savegame_messages.h"
+-#include "Text/Messages.h"
+-#include "Text/TextConversion.h"
++#include "text/messages.h"
++#include "text/TextConversion.h"
+ 
+ #if RSG_ORBIS
+ #include "control/videorecording/videorecording.h"

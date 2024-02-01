@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseTreeImposters.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseTreeImposters.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseTreeImposters.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseTreeImposters.cpp
+@@ -15,17 +15,17 @@
+ #include "profile/profiler.h"
+ // Game headers
+ #include "camera/viewports/Viewport.h"
+-#include "game/clock.h"
+-#include "modelinfo/modelinfo.h"
+-//#include "Renderer/DeferredLightingHelper.h"
+-#include "renderer/DrawLists/drawlistMgr.h"
+-#include "Renderer/occlusion.h"
++#include "game/Clock.h"
++#include "modelinfo/ModelInfo.h"
++//#include "renderer/DeferredLightingHelper.h"
++#include "renderer/DrawLists/drawListMgr.h"
++#include "renderer/occlusion.h"
+ #include "renderer/renderListGroup.h"
+ #include "renderer/treeimposters.h"
+ #include "renderer/TreeImposters.h"
+ #include "scene/scene.h"
+-#include "shaders/shaderlib.h"
+-#include "Vfx/VisualEffects.h"
++#include "shaders/ShaderLib.h"
++#include "vfx/VisualEffects.h"
+ 
+ #if USE_TREE_IMPOSTERS
+ 

@@ -1,0 +1,69 @@
+diff --git a/src/dev_ng/game/task/Crimes/TaskPursueCriminal.cpp b/src/dev_ng/game/task/Crimes/TaskPursueCriminal.cpp
+--- a/src/dev_ng/game/task/Crimes/TaskPursueCriminal.cpp
++++ b/src/dev_ng/game/task/Crimes/TaskPursueCriminal.cpp
+@@ -5,40 +5,40 @@
+ //
+ 
+ // File header
+-#include "Task/crimes/TaskPursueCriminal.h"
++#include "task/crimes/TaskPursueCriminal.h"
+ 
+ // Rage Headers
+ #include "math/angmath.h"
+ #include "grcore/debugdraw.h"
+ 
+ // Game Headers
+-#include "Animation/Move.h"
+-#include "Animation/MovePed.h"
+-#include "Event/Events.h"
+-#include "Game/Dispatch/OrderManager.h"
+-#include "Game/Dispatch/IncidentManager.h"
+-#include "Peds/Ped.h"
++#include "animation/Move.h"
++#include "animation/MovePed.h"
++#include "event/Events.h"
++#include "game/Dispatch/OrderManager.h"
++#include "game/Dispatch/IncidentManager.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Crimes/TaskReactToPursuit.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Movement/TaskGoToPointAiming.h"
+-#include "Task/Movement/TaskMoveFollowEntityOffset.h"
+-#include "Task/Movement/TaskSeekEntity.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Service/Police/TaskPolicePatrol.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskCarUtils.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "Task/Vehicle/TaskGoToVehicleDoor.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Crimes/TaskReactToPursuit.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Movement/TaskGoToPointAiming.h"
++#include "task/Movement/TaskMoveFollowEntityOffset.h"
++#include "task/Movement/TaskSeekEntity.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Service/Police/TaskPolicePatrol.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskCarUtils.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "task/Vehicle/TaskGoToVehicleDoor.h"
+ #include "Vehicles/Bike.h"
+-#include "Vehicles/Train.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/train.h"
++#include "Vehicles/vehicle.h"
+ #include "vehicleAi/pathfind.h"
+-#include "vehicleAi/Task/TaskVehicleGoTo.h"
+-#include "vehicleAi/Task/TaskVehiclePark.h"
++#include "vehicleAi/task/TaskVehicleGoTo.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
+ 
+ 
+ AI_OPTIMISATIONS()

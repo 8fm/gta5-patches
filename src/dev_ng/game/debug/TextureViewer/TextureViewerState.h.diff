@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerState.h b/src/dev_ng/game/debug/TextureViewer/TextureViewerState.h
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerState.h
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerState.h
+@@ -6,14 +6,14 @@
+ #ifndef _DEBUG_TEXTUREVIEWER_TEXTUREVIEWERSTATE_H_
+ #define _DEBUG_TEXTUREVIEWER_TEXTUREVIEWERSTATE_H_
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if __BANK
+ 
+ #include "atl/array.h"                               // atArray
+ #include "paging/ref.h"                              // pgRef
+-#include "fwmaths/rect.h"                            // fwBox2D
+-#include "debug/textureviewer/textureviewersearch.h" // CAssetRef
++#include "fwmaths/Rect.h"                            // fwBox2D
++#include "debug/TextureViewer/TextureViewersearch.h" // CAssetRef
+ namespace rage { class grcTexture; }
+ namespace rage { class Vector3; }
+ 

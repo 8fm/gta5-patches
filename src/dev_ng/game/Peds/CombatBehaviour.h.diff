@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/Peds/CombatBehaviour.h b/src/dev_ng/game/Peds/CombatBehaviour.h
+--- a/src/dev_ng/game/Peds/CombatBehaviour.h
++++ b/src/dev_ng/game/Peds/CombatBehaviour.h
+@@ -12,13 +12,13 @@
+ // Rage Headers
+ #include "ai/task/taskchannel.h"
+ #include "bank/combo.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/Flags.h"
+ #include "parser/macros.h"
+ 
+ // Game Headers
+ #include "Peds/CombatData.h"
+-#include "Weapons/FiringPattern.h"
++#include "weapons/FiringPattern.h"
+ 
+ #if __WIN32
+ 	#pragma warning(push)

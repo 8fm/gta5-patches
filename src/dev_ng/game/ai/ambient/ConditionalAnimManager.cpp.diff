@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/ai/ambient/ConditionalAnimManager.cpp b/src/dev_ng/game/ai/ambient/ConditionalAnimManager.cpp
+--- a/src/dev_ng/game/ai/ambient/ConditionalAnimManager.cpp
++++ b/src/dev_ng/game/ai/ambient/ConditionalAnimManager.cpp
+@@ -1,5 +1,5 @@
+ // Class header
+-#include "AI/Ambient/ConditionalAnimManager.h"
++#include "ai/ambient/ConditionalAnimManager.h"
+ 
+ // Rage headers
+ #include "bank/bkmgr.h"
+@@ -9,7 +9,7 @@
+ #include "ConditionalAnimManager.h"
+ #include "Peds/ped.h"
+ #include "Peds/pedpopulation.h"
+-#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ 
+ // Parser files

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_player_ped.cpp b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_player_ped.cpp
+--- a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_player_ped.cpp
++++ b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_player_ped.cpp
+@@ -4,7 +4,7 @@
+ 
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedHelmetComponent.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/rendering/PedVariationPack.h"

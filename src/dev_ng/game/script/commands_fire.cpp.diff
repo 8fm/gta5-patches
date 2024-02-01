@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/script/commands_fire.cpp b/src/dev_ng/game/script/commands_fire.cpp
+--- a/src/dev_ng/game/script/commands_fire.cpp
++++ b/src/dev_ng/game/script/commands_fire.cpp
+@@ -2,16 +2,16 @@
+ // Rage headers
+ #include "script/wrapper.h"
+ // Game headers
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "script/Handlers/GameScriptResources.h"
+ #include "script/script.h"
+ #include "script/script_helper.h"
+ #include "security/plugins/scripthook.h"
+ #include "network/NetworkInterface.h"
+-#include "vehicles/vehicle.h"
+-#include "peds/ped.h"
+-#include "vfx/misc/fire.h"
+-#include "weapons/explosion.h"
++#include "Vehicles/vehicle.h"
++#include "Peds/ped.h"
++#include "vfx/misc/Fire.h"
++#include "weapons/Explosion.h"
+ 
+ #include "network/Live/NetworkTelemetry.h"
+ #include "network/General/NetworkAssetVerifier.h"

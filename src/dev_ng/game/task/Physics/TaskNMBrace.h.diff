@@ -1,17 +1,28 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMBrace.h b/src/dev_ng/game/task/Physics/TaskNMBrace.h
 --- a/src/dev_ng/game/task/Physics/TaskNMBrace.h
 +++ b/src/dev_ng/game/task/Physics/TaskNMBrace.h
-@@ -7,11 +7,11 @@
+@@ -7,15 +7,15 @@
  // --- Include Files ------------------------------------------------------------
  
  // Game headers
 -#include "Peds\ped.h"
-+#include "Peds/ped.h"
- 
- #include "Task/Movement/Jumping/TaskFallGetUp.h"
- #include "Task/System/Task.h"
+-
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
+-#include "Task/System/Task.h"
 -#include "Task\System\TaskTypes.h"
-+#include "Task/System/TaskTypes.h"
- #include "Task/Physics/TaskNM.h"
- #include "Task/Physics/TaskNMBrace.h"
- #include "Task/Physics/ThreatenedHelper.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNMBrace.h"
+-#include "Task/Physics/ThreatenedHelper.h"
+-#include "Network/General/NetworkUtil.h"
++#include "Peds/ped.h"
++
++#include "task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/TaskNMBrace.h"
++#include "task/Physics/ThreatenedHelper.h"
++#include "network/General/NetworkUtil.h"
+ // ------------------------------------------------------------------------------
+ 
+ //

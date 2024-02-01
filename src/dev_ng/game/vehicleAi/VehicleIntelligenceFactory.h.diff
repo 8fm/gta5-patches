@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleIntelligenceFactory.h b/src/dev_ng
  #define VEHICLE_INTELLIGENCE_FACTORY_H
  
 -#include "Debug\Debug.h"
-+#include "Debug/Debug.h"
++#include "debug/Debug.h"
  
  class CVehicle;
  class CVehicleIntelligence;

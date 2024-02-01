@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/scene/playerswitch/PlayerSwitchDebug.cpp b/src/dev_ng/game/scene/playerswitch/PlayerSwitchDebug.cpp
+--- a/src/dev_ng/game/scene/playerswitch/PlayerSwitchDebug.cpp
++++ b/src/dev_ng/game/scene/playerswitch/PlayerSwitchDebug.cpp
+@@ -12,11 +12,11 @@
+ #if __BANK
+ 
+ #include "grcore/debugdraw.h"
+-#include "peds/ped.h"
+-#include "peds/PedFactory.h"
+-#include "peds/pedpopulation.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/rendering/PedVariationDebug.h"
++#include "Peds/ped.h"
++#include "Peds/PedFactory.h"
++#include "Peds/pedpopulation.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/rendering/PedVariationDebug.h"
+ #include "scene/FocusEntity.h"
+ #include "scene/lod/LodMgr.h"
+ #include "scene/world/GameWorld.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h b/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h
+@@ -16,7 +16,7 @@
+ #include "audio/scriptaudioentity.h"
+ #include "audio/ambience/ambientaudioentity.h"
+ #include "audio/pedscenariomanager.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/PacketBasics.h"
+ 
+ const u8 PacketSizeU8 = 0;
+ //////////////////////////////////////////////////////////////////////////

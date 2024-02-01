@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.cpp b/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.cpp
+--- a/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.cpp
++++ b/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.cpp
+@@ -1,7 +1,7 @@
+ // FILE :    TaskTakeOffPedVariation.h
+ 
+ // File header
+-#include "Task/Movement/TaskTakeOffPedVariation.h"
++#include "task/Movement/TaskTakeOffPedVariation.h"
+ 
+ // Game headers
+ #include "animation/EventTags.h"
+@@ -18,7 +18,7 @@
+ #include "shaders/CustomShaderEffectProp.h"
+ #include "task/Animation/TaskAnims.h"
+ #include "weapons/inventory/PedWeaponManager.h"
+-#include "Task/Movement/TaskParachute.h"
++#include "task/Movement/TaskParachute.h"
+ #include "control/replay/replay.h"
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+ #include "camera/CamInterface.h"

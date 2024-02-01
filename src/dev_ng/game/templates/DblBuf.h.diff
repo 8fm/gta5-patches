@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/templates/DblBuf.h b/src/dev_ng/game/templates/DblB
  #define INC_DBLBUF_H_
  
 -#include "renderer\renderthread.h"
-+#include "renderer/renderthread.h"
++#include "renderer/RenderThread.h"
  
  template<class T>
  class CDblBuf

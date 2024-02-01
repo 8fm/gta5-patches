@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/network/Bandwidth/NetworkBandwidthManager.cpp b/src/dev_ng/game/network/Bandwidth/NetworkBandwidthManager.cpp
+--- a/src/dev_ng/game/network/Bandwidth/NetworkBandwidthManager.cpp
++++ b/src/dev_ng/game/network/Bandwidth/NetworkBandwidthManager.cpp
+@@ -12,15 +12,15 @@
+ #include "NetworkBandwidthManager.h"
+ 
+ #include "frontend/ProfileSettings.h"
+-#include "Network/Network.h"
++#include "network/Network.h"
+ #include "network/Cloud/Tunables.h"
+-#include "Network/Debug/NetworkDebug.h"
+-#include "Network/Live/NetworkMetrics.h"
+-#include "Network/Objects/NetworkObjectPopulationMgr.h"
+-#include "Network/Objects/Entities/NetObjAutomobile.h"
+-#include "Network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Peds/Ped.h"
++#include "network/Debug/NetworkDebug.h"
++#include "network/Live/NetworkMetrics.h"
++#include "network/Objects/NetworkObjectPopulationMgr.h"
++#include "network/Objects/Entities/NetObjAutomobile.h"
++#include "network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h"
++#include "network/Players/NetGamePlayer.h"
++#include "Peds/ped.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

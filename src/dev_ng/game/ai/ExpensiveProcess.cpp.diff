@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ai/ExpensiveProcess.cpp b/src/dev_ng/game/ai/ExpensiveProcess.cpp
+--- a/src/dev_ng/game/ai/ExpensiveProcess.cpp
++++ b/src/dev_ng/game/ai/ExpensiveProcess.cpp
+@@ -13,7 +13,7 @@
+ #include "profile/page.h"
+ 
+ // Game headers
+-#include "Peds/PedDefines.h"
++#include "Peds/pedDefines.h"
+ #include "Vehicles/VehicleDefines.h"
+ 
+ AI_OPTIMISATIONS()

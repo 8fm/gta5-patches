@@ -1,12 +1,16 @@
 diff --git a/src/dev_ng/game/renderer/fw/RenderPhaseList.h b/src/dev_ng/game/renderer/fw/RenderPhaseList.h
 --- a/src/dev_ng/game/renderer/fw/RenderPhaseList.h
 +++ b/src/dev_ng/game/renderer/fw/RenderPhaseList.h
-@@ -19,7 +19,7 @@
- #include "Renderer/RenderSettings.h" 
+@@ -16,10 +16,10 @@
+ // Rage hdrs
+ #include "atl/array.h"
+ // Core hdrs
+-#include "Renderer/RenderSettings.h" 
++#include "renderer/RenderSettings.h" 
  
  // GTA hdrs
 -#include "debug\debug.h"
-+#include "debug/debug.h"
++#include "debug/Debug.h"
  
  // Frefs
  class CRenderPhase;

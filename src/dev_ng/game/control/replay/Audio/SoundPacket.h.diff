@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/SoundPacket.h b/src/dev_ng/game/control/replay/Audio/SoundPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/SoundPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/SoundPacket.h
+@@ -6,14 +6,14 @@
+ #ifndef INC_SOUNDPACKET_H_
+ #define INC_SOUNDPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "control/replay/packetbasics.h"
++#include "control/replay/PacketBasics.h"
+ #include "control/replay/ReplayTrackingInfo.h"
+-#include "control/replay/misc/ReplayPacket.h"
+-#include "control/replay/effects/particlepacket.h"
++#include "control/replay/Misc/ReplayPacket.h"
++#include "control/replay/Effects/ParticlePacket.h"
+ 
+ #include "atl/map.h"
+ #include "audioengine/metadataref.h"

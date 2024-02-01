@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskBomb.cpp b/src/dev_ng/game/task/Weapons/TaskBomb.cpp
+--- a/src/dev_ng/game/task/Weapons/TaskBomb.cpp
++++ b/src/dev_ng/game/task/Weapons/TaskBomb.cpp
+@@ -1,16 +1,16 @@
+ // File header
+-#include "Task/Weapons/TaskBomb.h"
++#include "task/Weapons/TaskBomb.h"
+ 
+ // Game headers
+-#include "Network/General/NetworkPendingProjectiles.h"
++#include "network/General/NetworkPendingProjectiles.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/Physics.h"
+-#include "System/control.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/Movement/TaskSlideToCoord.h"
+-#include "Task/Weapons/TaskSwapWeapon.h"
+-#include "Weapons/Weapon.h"
++#include "physics/physics.h"
++#include "system/control.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskSlideToCoord.h"
++#include "task/Weapons/TaskSwapWeapon.h"
++#include "weapons/Weapon.h"
+ #include "weapons/projectiles/ProjectileManager.h"
+ #include "weapons/projectiles/Projectile.h"
+ 

@@ -1,0 +1,100 @@
+diff --git a/src/dev_ng/game/network/Sessions/NetworkSession.cpp b/src/dev_ng/game/network/Sessions/NetworkSession.cpp
+--- a/src/dev_ng/game/network/Sessions/NetworkSession.cpp
++++ b/src/dev_ng/game/network/Sessions/NetworkSession.cpp
+@@ -28,50 +28,50 @@
+ #endif
+ 
+ // framework includes
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ #include "fwnet/netchannel.h"
+ #include "fwnet/netutils.h"
+ #include "fwnet/netplayer.h"
+ #include "fwnet/netremotelog.h"
+ 
+ // network includes
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Commerce/CommerceManager.h"
+-#include "Network/Debug/NetworkBot.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkSCPresenceUtil.h"
+-#include "Network/Live/PlayerCardDataManager.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Network/Players/NetworkPlayerMgr.h"
+-#include "Network/roaming/RoamingBubbleMgr.h"
+-#include "Network/roaming/RoamingMessages.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/Sessions/NetworkSessionMessages.h"
+-#include "Network/Sessions/NetworkVoiceSession.h"
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
+-#include "Network/Voice/NetworkVoice.h"
+-#include "Network/xlast/Fuzzy.schema.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Commerce/CommerceManager.h"
++#include "network/Debug/NetworkBot.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Live/NetworkClan.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkSCPresenceUtil.h"
++#include "network/Live/PlayerCardDataManager.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "network/Roaming/RoamingBubbleMgr.h"
++#include "network/Roaming/RoamingMessages.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/Sessions/NetworkSessionMessages.h"
++#include "network/Sessions/NetworkVoiceSession.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
++#include "network/Voice/NetworkVoice.h"
++#include "network/xlast/Fuzzy.schema.h"
+ #include "network/Cloud/Tunables.h"
+ 
+ // game includes
+-#include "Event/EventGroup.h"
+-#include "Event/EventNetwork.h"
++#include "event/EventGroup.h"
++#include "event/EventNetwork.h"
+ #include "frontend/CFriendsMenu.h"
+ #include "frontend/ContextMenu.h"
+-#include "Frontend/loadingscreens.h"
++#include "frontend/loadingscreens.h"
+ #include "frontend/ProfileSettings.h"
+ #include "frontend/WarningScreen.h"
+-#include "Frontend/ReportMenu.h"
++#include "frontend/ReportMenu.h"
+ #include "Peds/PedWeapons/PedTargetEvaluator.h"
+ #include "Peds/PlayerInfo.h"
+ #include "game/BackgroundScripts/BackgroundScripts.h"
+ #include "game/Clock.h"
+ #include "game/weather.h"
+-#include "Control/gamelogic.h"
++#include "control/gamelogic.h"
+ #include "SaveLoad/savegame_queue.h"
+ #include "script/commands_network.h"
+ #include "script/streamedscripts.h"
+@@ -81,8 +81,8 @@
+ #include "streaming/populationstreaming.h"
+ #include "streaming/streaming.h"
+ #include "system/controlMgr.h"
+-#include "stats/StatsInterface.h"
+-#include "stats/StatsTypes.h"
++#include "Stats/StatsInterface.h"
++#include "Stats/StatsTypes.h"
+ 
+ #if __DEV
+ #include "text/messages.h"
+@@ -90,7 +90,7 @@
+ #endif // __DEV
+ 
+ #if RSG_DURANGO
+-#include "Network/Live/Events_durango.h"
++#include "network/Live/Events_durango.h"
+ #endif
+ 
+ RAGE_DEFINE_SUBCHANNEL(net, mminfo, DIAG_SEVERITY_DEBUG3)

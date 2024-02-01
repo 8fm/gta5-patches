@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileRocket.cpp b/src/dev_ng/game/weapons/projectiles/ProjectileRocket.cpp
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileRocket.cpp
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileRocket.cpp
+@@ -1,18 +1,18 @@
+ // File header
+-#include "Weapons/Projectiles/ProjectileRocket.h"
++#include "weapons/projectiles/ProjectileRocket.h"
+ 
+ // Game headers
+-#include "Audio/WeaponAudioEntity.h"
+-#include "Debug/DebugScene.h"
+-#include "Peds/Ped.h"
++#include "audio/weaponaudioentity.h"
++#include "debug/DebugScene.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/World/GameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "Vehicles/Planes.h"
+ 
+ // Debug includes
+ #if __BANK
+-#include "Physics/PhysicsHelpers.h"
+-#include "Weapons/Projectiles/ProjectileManager.h"
++#include "physics/PhysicsHelpers.h"
++#include "weapons/projectiles/ProjectileManager.h"
+ #endif
+ 
+ // Macro to disable optimisations if set

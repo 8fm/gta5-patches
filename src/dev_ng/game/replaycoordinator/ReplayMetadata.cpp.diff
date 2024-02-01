@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/replaycoordinator/ReplayMetadata.cpp b/src/dev_ng/game/replaycoordinator/ReplayMetadata.cpp
+--- a/src/dev_ng/game/replaycoordinator/ReplayMetadata.cpp
++++ b/src/dev_ng/game/replaycoordinator/ReplayMetadata.cpp
+@@ -12,7 +12,7 @@
+ #include "control/replay/ReplayInternal.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/StatsMgr.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "frontend/VideoEditor/VideoEditorInterface.h"
+ 
+ #define REPLAY_VIDEO_NUMBER_CACHED			10

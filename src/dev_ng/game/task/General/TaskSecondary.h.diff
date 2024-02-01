@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/General/TaskSecondary.h b/src/dev_ng/game/task/General/TaskSecondary.h
+--- a/src/dev_ng/game/task/General/TaskSecondary.h
++++ b/src/dev_ng/game/task/General/TaskSecondary.h
+@@ -2,13 +2,13 @@
+ #define TASK_SECONDARY_H
+ 
+ // Rage headers
+-#include "ATL/String.h"
++#include "atl/string.h"
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskTypes.h"
+ 
+ class CEntity;
+ 

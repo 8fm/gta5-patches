@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/game/game/Dispatch/Incidents.cpp b/src/dev_ng/game/game/Dispatch/Incidents.cpp
+--- a/src/dev_ng/game/game/Dispatch/Incidents.cpp
++++ b/src/dev_ng/game/game/Dispatch/Incidents.cpp
+@@ -2,7 +2,7 @@
+ // Purpose	:	Defines incidents that exist in the world
+ // Started	:	13/05/2010
+ 
+-#include "Game/Dispatch/Incidents.h"
++#include "game/Dispatch/Incidents.h"
+ 
+ // Framework headers
+ #include "fwnet/netplayer.h"
+@@ -10,12 +10,12 @@
+ #include "fwscene/stores/staticboundsstore.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "Game/Dispatch/DispatchData.h"
+-#include "Game/Dispatch/DispatchManager.h"
++#include "debug/DebugScene.h"
++#include "game/Dispatch/DispatchData.h"
++#include "game/Dispatch/DispatchManager.h"
+ #include "game/Dispatch/DispatchServices.h"
+-#include "Game/Dispatch/IncidentManager.h"
+-#include "Game/zones.h"
++#include "game/Dispatch/IncidentManager.h"
++#include "game/zones.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "network/Arrays/NetworkArrayMgr.h"
+ #include "network/Objects/Entities/NetObjPlayer.h"
+@@ -23,11 +23,11 @@
+ #include "Peds/pedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "scene/Entity.h"
+-#include "scene/portals/portalTracker.h"
++#include "scene/portals/PortalTracker.h"
+ #include "task/Combat/CombatManager.h"
+ #include "task/Combat/TaskNewCombat.h"
+ #include "vehicleAi/pathfind.h"
+-#include "Vfx/misc/Fire.h"
++#include "vfx/misc/Fire.h"
+ 
+ 
+ 

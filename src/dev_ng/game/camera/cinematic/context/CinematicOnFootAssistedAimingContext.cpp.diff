@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicOnFootAssistedAimingContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicOnFootAssistedAimingContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicOnFootAssistedAimingContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicOnFootAssistedAimingContext.cpp
+@@ -8,7 +8,7 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/gameplay/aim/ThirdPersonAimCamera.h"
+ #include "camera/gameplay/aim/ThirdPersonPedAssistedAimCamera.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "weapons/info/WeaponInfo.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicOnFootAssistedAimingContext,0xEBC19D36)

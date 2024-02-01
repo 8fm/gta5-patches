@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp
+--- a/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp
++++ b/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp
+@@ -25,9 +25,9 @@
+ #include "vfx/channel.h"
+ 
+ // game
+-#include "ModelInfo/VehicleModelInfo.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Vehicles/Vehicle.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "scene/DataFileMgr.h"
++#include "Vehicles/vehicle.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

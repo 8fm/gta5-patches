@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/commands_datafile.cpp b/src/dev_ng/game/script/commands_datafile.cpp
+--- a/src/dev_ng/game/script/commands_datafile.cpp
++++ b/src/dev_ng/game/script/commands_datafile.cpp
+@@ -15,7 +15,7 @@
+ #include "net/task.h"
+ #include "rline/cloud/rlcloud.h"
+ #include "script/wrapper.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ #include "system/nelem.h"
+ #include "system/threadpool.h"
+ 

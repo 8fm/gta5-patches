@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/SocialClubMenu.h b/src/dev_ng/game/frontend/SocialClubMenu.h
+--- a/src/dev_ng/game/frontend/SocialClubMenu.h
++++ b/src/dev_ng/game/frontend/SocialClubMenu.h
+@@ -21,9 +21,9 @@
+ // game
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/WarningScreen.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Network/Live/SocialClubMgr.h"
+-#include "Network/SocialClubUpdates/SocialClubPolicyManager.h"
++#include "frontend/PauseMenu.h"
++#include "network/Live/SocialClubMgr.h"
++#include "network/SocialClubUpdates/SocialClubPolicyManager.h"
+ #include "text/TextFile.h"
+ #include "scene/DownloadableTextureManager.h"
+ 

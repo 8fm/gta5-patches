@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp b/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp
+--- a/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp
++++ b/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp
+@@ -40,7 +40,7 @@
+ #include "renderer/ScreenshotManager.h"
+ #include "renderer/PostProcessFx.h"
+ #include "SaveLoad/GenericGameStorage.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "physics/physics.h"
+ #include "SaveLoad/savegame_autoload.h"
+ #include "SaveLoad/savegame_channel.h"
+@@ -65,7 +65,7 @@
+ #include "SaveLoad/SavegameMigration/savegame_import.h"
+ #include "SaveLoad/SavegameScriptData/script_save_data.h"
+ //	#include "scene/ExtraContent.h"
+-//	#include "Scene/portals/Portal.h"
++//	#include "scene/portals/Portal.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/commands_misc.h"
+@@ -77,14 +77,14 @@
+ #include "script/script_debug.h"
+ #include "script/script_hud.h"
+ #include "Stats/StatsInterface.h"
+-//	#include "stats/StatsUtils.h"
++//	#include "Stats/StatsUtils.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingengine.h"
+ #include "streaming/streamingrequestlist.h"
+-#include "Text/TextConversion.h"
++#include "text/TextConversion.h"
+ #include "text/TextFile.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "System/controlMgr.h"
++#include "system/controlMgr.h"
+ #if GTA_REPLAY && __ASSERT
+ #include "control/replay/replay.h"
+ #endif

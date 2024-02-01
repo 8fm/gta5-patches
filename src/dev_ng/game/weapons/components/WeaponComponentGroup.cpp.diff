@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentGroup.cpp b/src/dev_ng/game/weapons/components/WeaponComponentGroup.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentGroup.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentGroup.cpp
+@@ -5,10 +5,10 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentGroup.h"
++#include "weapons/components/WeaponComponentGroup.h"
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponentFactory.h"
++#include "weapons/components/WeaponComponentFactory.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

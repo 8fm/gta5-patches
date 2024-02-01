@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Combat/CombatDirector.cpp b/src/dev_ng/game/task/Combat/CombatDirector.cpp
+--- a/src/dev_ng/game/task/Combat/CombatDirector.cpp
++++ b/src/dev_ng/game/task/Combat/CombatDirector.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Combat/CombatDirector.h"
++#include "task/Combat/CombatDirector.h"
+ 
+ // Game headers
+ #include "audio/scannermanager.h"
+@@ -8,10 +8,10 @@
+ #include "event/Events.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task/Combat/CombatSituation.h"
+-#include "Task/Combat/TaskNewCombat.h"
++#include "task/Combat/CombatSituation.h"
++#include "task/Combat/TaskNewCombat.h"
+ #include "task/Combat/TaskThreatResponse.h"
+ #include "task/Combat/Subtasks/TaskAdvance.h"
+ #include "weapons/info/WeaponInfoManager.h"

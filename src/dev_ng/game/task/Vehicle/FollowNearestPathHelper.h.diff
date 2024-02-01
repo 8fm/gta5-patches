@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.h b/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.h
+--- a/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.h
++++ b/src/dev_ng/game/task/Vehicle/FollowNearestPathHelper.h
+@@ -17,8 +17,8 @@
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"
+-#include "vehicleai/pathfind.h"
+-#include "Task/System/Tuning.h"
++#include "vehicleAi/pathfind.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ 

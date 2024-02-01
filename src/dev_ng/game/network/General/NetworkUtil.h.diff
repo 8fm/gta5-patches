@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/network/General/NetworkUtil.h b/src/dev_ng/game/network/General/NetworkUtil.h
+--- a/src/dev_ng/game/network/General/NetworkUtil.h
++++ b/src/dev_ng/game/network/General/NetworkUtil.h
+@@ -8,14 +8,14 @@
+ #define NETWORK_UTIL_H
+ 
+ #include "network/NetworkTypes.h"
+-#include "network/networkinterface.h"
+-#include "network/general/NetworkColours.h"
++#include "network/NetworkInterface.h"
++#include "network/General/NetworkColours.h"
+ #include "network/Objects/Entities/NetObjProximityMigrateable.h"
+ #include "network/Objects/NetworkObjectMgr.h"
+ #include "network/Players/NetGamePlayer.h"
+ #include "network/Players/NetworkPlayerMgr.h"
+-#include "scene/dynamicentity.h"
+-#include "task/system/TaskClassInfo.h"
++#include "scene/DynamicEntity.h"
++#include "task/System/TaskClassInfo.h"
+ #include "vector/vector3.h"
+ 
+ // framework includes

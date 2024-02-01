@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleExplosionInfo.h b/src/dev_ng/game/Vehicles/Metadata/VehicleExplosionInfo.h
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleExplosionInfo.h
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleExplosionInfo.h
+@@ -11,7 +11,7 @@
+ #include "vector/vector3.h"
+ #include "vectormath/classes.h"
+ 
+-#include "Weapons/WeaponEnums.h"
++#include "weapons/WeaponEnums.h"
+ 
+ class CVehicleExplosionLOD
+ {

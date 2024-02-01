@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp b/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
+@@ -16,10 +16,10 @@
+ // Game headers
+ #include "camera/CamInterface.h"
+ #include "camera/Cinematic/CinematicDirector.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "game/ModelIndices.h"
+-#include "objects/Object.h"
+-#include "objects/ProceduralInfo.h"
++#include "Objects/object.h"
++#include "Objects/ProceduralInfo.h"
+ #include "Peds/ped.h"
+ #include "renderer/render_channel.h"
+ #include "renderer/PlantsGrassRenderer.h"
+@@ -28,10 +28,10 @@
+ #include "scene/EntityBatch.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script_channel.h"
+-#include "vehicles/Vehicle.h"
+-#include "vehicles/Automobile.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
+ #include "shaders/ShaderLib.h"
+-#include "renderer/DrawLists/drawlist.h"
++#include "renderer/DrawLists/drawList.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ 
+ #if HACK_RDR3

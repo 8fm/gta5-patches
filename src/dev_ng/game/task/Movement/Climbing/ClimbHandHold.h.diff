@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.h b/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.h
+--- a/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.h
++++ b/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.h
+@@ -2,14 +2,14 @@
+ #define CLIMB_HANDHOLD_H
+ 
+ // Rage headers
+-#include "math/simpleMath.h"
++#include "math/simplemath.h"
+ 
+ // Framework headers
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ #include "fwmaths/geomutil.h"
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ #include "physics/gtaMaterialManager.h"
+ 
+ // Forward declarations

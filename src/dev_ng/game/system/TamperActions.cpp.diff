@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/system/TamperActions.cpp b/src/dev_ng/game/system/TamperActions.cpp
+--- a/src/dev_ng/game/system/TamperActions.cpp
++++ b/src/dev_ng/game/system/TamperActions.cpp
+@@ -14,8 +14,8 @@
+ #include "script/commands_player.h"
+ #include "Stats/StatsInterface.h"
+ #include "script/commands_fire.h"
+-#include "Network/Players/NetworkPlayerMgr.h"
+-#include "Network/General/NetworkAssetVerifier.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "network/General/NetworkAssetVerifier.h"
+ #include "vfx/systems/VfxWheel.h"
+ #include "vfx/systems/VfxPed.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.cpp
+@@ -6,7 +6,7 @@
+ //
+ 
+ // game headers
+-#include "network/objects/entities/NetObjDynamicEntity.h"
++#include "network/Objects/Entities/NetObjDynamicEntity.h"
+ #include "network/Objects/NetworkObjectMgr.h"
+ 
+ // Framework headers

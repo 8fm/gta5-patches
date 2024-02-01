@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.cpp
+@@ -4,7 +4,7 @@
+ // written by:    
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/SubmarineSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

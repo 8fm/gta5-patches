@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentClip.h b/src/dev_ng/game/weapons/components/WeaponComponentClip.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponentClip.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponentClip.h
+@@ -11,7 +11,7 @@
+ #include "atl/hashstring.h"
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponent.h"
++#include "weapons/components/WeaponComponent.h"
+ 
+ // Forward declarations
+ class CWeaponComponentData;

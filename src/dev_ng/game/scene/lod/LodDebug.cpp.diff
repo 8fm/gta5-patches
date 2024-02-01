@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/scene/lod/LodDebug.cpp b/src/dev_ng/game/scene/lod/LodDebug.cpp
+--- a/src/dev_ng/game/scene/lod/LodDebug.cpp
++++ b/src/dev_ng/game/scene/lod/LodDebug.cpp
+@@ -12,7 +12,7 @@
+ #if __BANK
+ 
+ #include "atl/string.h"
+-#include "Renderer/Lights/LightEntity.h"
++#include "renderer/Lights/LightEntity.h"
+ #include "scene/AnimatedBuilding.h"
+ #include "Objects/object.h"
+ #include "bank/bank.h"
+@@ -24,15 +24,15 @@
+ #include "grcore/setup.h"
+ #include "input/mouse.h"
+ #include "renderer/sprite2d.h"
+-#include "Text/Text.h"
+-#include "Text/TextConversion.h"
++#include "text/text.h"
++#include "text/TextConversion.h"
+ #include "scene/Building.h"
+ #include "scene/Entity.h"
+ #include "fwscene/search/SearchVolumes.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/lod/LodMgr.h"
+ #include "scene/lod/LodScale.h"
+-#include "objects/DummyObject.h"
++#include "Objects/DummyObject.h"
+ #include "fwscene/stores/fragmentstore.h"
+ #include "fwscene/stores/drawablestore.h"
+ #include "fwscene/stores/mapdatastore.h"

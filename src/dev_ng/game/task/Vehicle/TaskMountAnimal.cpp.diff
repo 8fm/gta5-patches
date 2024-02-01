@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskMountAnimal.cpp b/src/dev_ng/game/task/Vehicle/TaskMountAnimal.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskMountAnimal.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskMountAnimal.cpp
+@@ -8,32 +8,32 @@
+ //-------------------------------------------------------------------------
+ 
+ // File header
+-#include "Task/Vehicle/TaskMountAnimal.h"
++#include "task/Vehicle/TaskMountAnimal.h"
+ 
+ #if ENABLE_HORSE
+ 
+ // Game header
+ #include "animation/MovePed.h"
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "event/ShockingEvents.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/Horse/horseComponent.h"
+-#include "Scene/World/GameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "task/Combat/TaskCombat.h"
+-#include "Task/Motion/Locomotion/TaskHorseLocomotion.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Movement/TaskMoveFollowLeader.h"
+-#include "Task/Movement/TaskSeekEntity.h"
++#include "task/Motion/Locomotion/TaskHorseLocomotion.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskMoveFollowLeader.h"
++#include "task/Movement/TaskSeekEntity.h"
+ #include "task/Response/TaskFlee.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskGoToVehicleDoor.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskGoToVehicleDoor.h"
+ #include "task/Vehicle/TaskMountAnimal.h"
+-#include "Task/Vehicle/TaskRideHorse.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
++#include "task/Vehicle/TaskRideHorse.h"
++#include "task/Vehicle/TaskVehicleBase.h"
+ #include "Vehicles/Metadata/VehicleLayoutInfo.h"
+ #include "Vehicles/Metadata/VehicleEntryPointInfo.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"

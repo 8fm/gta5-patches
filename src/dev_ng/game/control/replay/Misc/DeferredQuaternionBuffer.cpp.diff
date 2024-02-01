@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/DeferredQuaternionBuffer.cpp b/src/dev_ng/game/control/replay/Misc/DeferredQuaternionBuffer.cpp
+--- a/src/dev_ng/game/control/replay/Misc/DeferredQuaternionBuffer.cpp
++++ b/src/dev_ng/game/control/replay/Misc/DeferredQuaternionBuffer.cpp
+@@ -1,5 +1,5 @@
+ 
+-#include "Control/replay/Misc/DeferredQuaternionBuffer.h"
++#include "control/replay/Misc/DeferredQuaternionBuffer.h"
+ 
+ #if GTA_REPLAY
+ 

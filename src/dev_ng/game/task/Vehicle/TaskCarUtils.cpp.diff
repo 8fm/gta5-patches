@@ -1,0 +1,67 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp b/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp
+@@ -1,43 +1,43 @@
+ // Framework headers
+ #include "fwanimation/animmanager.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ #include "fwmaths/Vector.h"
+ 
+ // Game headers
+ 
+ #include "animation/AnimDefines.h"
+ #include "camera/CamInterface.h"
+-#include "Event/Events.h"
+-#include "ModelInfo/VehicleModelInfo.h"
++#include "event/Events.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendManager.h"
+ #include "Peds/PedPlacement.h"
+-#include "Peds/Ped.h"
+-#include "Physics/GtaArchetype.h"
+-#include "Physics/GtaInst.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Renderer/Hierarchyids.h"
+-#include "Script/Script.h"
++#include "Peds/ped.h"
++#include "physics/gtaArchetype.h"
++#include "physics/gtaInst.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "renderer/HierarchyIds.h"
++#include "script/script.h"
+ #include "script/script_cars_and_peds.h"
+-#include "Streaming/Streaming.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskCarAccessories.h"
+-#include "Task/Vehicle/TaskCarUtils.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/System/TaskHelpers.h"
++#include "streaming/Streaming.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskCarAccessories.h"
++#include "task/Vehicle/TaskCarUtils.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/System/TaskHelpers.h"
+ #include "Vehicles/Automobile.h"
+ #include "Vehicles/Bike.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/Metadata/VehicleLayoutInfo.h"
+-#include "Vfx/Misc/Fire.h"
++#include "vfx/misc/Fire.h"
+ 
+ //network includes
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+ //rage headers
+ #include "crSkeleton/Skeleton.h"

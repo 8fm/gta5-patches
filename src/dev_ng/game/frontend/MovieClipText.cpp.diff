@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/frontend/MovieClipText.cpp b/src/dev_ng/game/frontend/MovieClipText.cpp
+--- a/src/dev_ng/game/frontend/MovieClipText.cpp
++++ b/src/dev_ng/game/frontend/MovieClipText.cpp
+@@ -12,14 +12,14 @@
+ #include "system/param.h"
+ 
+ // game:
+-#include "Frontend/MovieClipText.h"
+-#include "Frontend/MiniMapCommon.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "System/controlMgr.h"
+-#include "Text/Text.h"
+-#include "Text/TextConversion.h"
+-#include "Text/TextFormat.h"
++#include "frontend/MovieClipText.h"
++#include "frontend/MiniMapCommon.h"
++#include "frontend/ui_channel.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "system/controlMgr.h"
++#include "text/text.h"
++#include "text/TextConversion.h"
++#include "text/TextFormat.h"
+ 
+ #define BLANK_SPACE_CHARACTER ("\xE2\x80\xA1") // Double dagger [on certain fonts this has been edited to be a very wide space]
+ //#define BLANK_SPACE_CHARACTER (" ") // just a regular ol' space

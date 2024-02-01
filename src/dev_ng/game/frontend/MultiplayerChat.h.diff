@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/MultiplayerChat.h b/src/dev_ng/game/frontend/MultiplayerChat.h
+--- a/src/dev_ng/game/frontend/MultiplayerChat.h
++++ b/src/dev_ng/game/frontend/MultiplayerChat.h
+@@ -8,7 +8,7 @@
+ 
+ 
+ //Game
+-#include "Network/Live/NetworkClan.h"
++#include "network/Live/NetworkClan.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "system/controlMgr.h"
+ 

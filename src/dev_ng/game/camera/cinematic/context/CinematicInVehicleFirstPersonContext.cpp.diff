@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleFirstPersonContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleFirstPersonContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleFirstPersonContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleFirstPersonContext.cpp
+@@ -13,7 +13,7 @@
+ #include "camera/gameplay/aim/ThirdPersonAimCamera.h"
+ #include "camera/gameplay/aim/ThirdPersonPedAimCamera.h"
+ #include "camera/helpers/ControlHelper.h"
+-#include "Peds/Ped.h" 
++#include "Peds/ped.h" 
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicInVehicleFirstPersonContext,0x3151FECC)
+ 

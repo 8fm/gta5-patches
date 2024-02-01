@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/Vehicles/DraftVehicle.h b/src/dev_ng/game/Vehicles/DraftVehicle.h
 --- a/src/dev_ng/game/Vehicles/DraftVehicle.h
 +++ b/src/dev_ng/game/Vehicles/DraftVehicle.h
-@@ -1,7 +1,7 @@
+@@ -1,8 +1,8 @@
  #ifndef __INC_DRAFTVEH_H__
  #define __INC_DRAFTVEH_H__
  
 -//#include "physics\constrainthandle.h"
+-#include "vehicles/automobile.h"
 +//#include "physics/constrainthandle.h"
- #include "vehicles/automobile.h"
++#include "Vehicles/Automobile.h"
  #include "streaming/streamingrequest.h"
  
+ //////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/Projectile.h b/src/dev_ng/game/weapons/projectiles/Projectile.h
+--- a/src/dev_ng/game/weapons/projectiles/Projectile.h
++++ b/src/dev_ng/game/weapons/projectiles/Projectile.h
+@@ -2,8 +2,8 @@
+ #define PROJECTILE_H
+ 
+ // Game headers
+-#include "Objects/Object.h"
+-#include "Network/General/NetworkUtil.h"
++#include "Objects/object.h"
++#include "network/General/NetworkUtil.h"
+ 
+ // Forward declarations
+ class CAmmoProjectileInfo;

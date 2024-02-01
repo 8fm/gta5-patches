@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/weapons/info/AmmoInfo.cpp b/src/dev_ng/game/weapons/info/AmmoInfo.cpp
+--- a/src/dev_ng/game/weapons/info/AmmoInfo.cpp
++++ b/src/dev_ng/game/weapons/info/AmmoInfo.cpp
+@@ -5,16 +5,16 @@
+ //
+ 
+ // File header
+-#include "Weapons/Info/AmmoInfo.h"
++#include "weapons/info/AmmoInfo.h"
+ 
+ // Parser files
+ #include "AmmoInfo_parser.h"
+ 
+ // Game headers
+-#include "Vfx/Systems/VfxVehicle.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "weapons/info/WeaponInfoManager.h"
+ #include "Stats/StatsInterface.h"
+-#include "Peds/Ped.h" 
++#include "Peds/ped.h" 
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

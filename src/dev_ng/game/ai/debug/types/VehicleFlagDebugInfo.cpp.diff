@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/ai/debug/types/VehicleFlagDebugInfo.cpp b/src/dev_n
  #include "fragment/type.h"
 -#include "vehicles\vehicle.h"
 -#include "vehicleAi\VehicleIntelligence.h"
-+#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
 +#include "vehicleAi/VehicleIntelligence.h"
  
  CVehicleFlagDebugInfo::CVehicleFlagDebugInfo(const CVehicle* pVeh, DebugInfoPrintParams printParams, s32 iNumberOfLines)

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/PickupPacket.cpp b/src/dev_ng/game/control/replay/Entity/PickupPacket.cpp
+--- a/src/dev_ng/game/control/replay/Entity/PickupPacket.cpp
++++ b/src/dev_ng/game/control/replay/Entity/PickupPacket.cpp
+@@ -12,7 +12,7 @@
+ #include "control/gamelogic.h"
+ #include "control/trafficlights.h"
+ #include "pickups/Pickup.h"
+-#include "scene/portals/portal.h"
++#include "scene/portals/Portal.h"
+ #include "scene/world/GameWorld.h"
+ #include "shaders/CustomShaderEffectWeapon.h"
+ 

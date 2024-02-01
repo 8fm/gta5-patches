@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ik/solvers/QuadLegSolverProxy.h b/src/dev_ng/game/ik/solvers/QuadLegSolverProxy.h
+--- a/src/dev_ng/game/ik/solvers/QuadLegSolverProxy.h
++++ b/src/dev_ng/game/ik/solvers/QuadLegSolverProxy.h
+@@ -13,7 +13,7 @@
+ 
+ #include "SolverProxy.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "ik/IkConfig.h"
+ #include "ik/IkRequest.h"
+ 

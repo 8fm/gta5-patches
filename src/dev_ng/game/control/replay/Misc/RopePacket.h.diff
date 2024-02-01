@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/RopePacket.h b/src/dev_ng/game/control/replay/Misc/RopePacket.h
+--- a/src/dev_ng/game/control/replay/Misc/RopePacket.h
++++ b/src/dev_ng/game/control/replay/Misc/RopePacket.h
+@@ -1,8 +1,8 @@
+ #ifndef ROPE_PACKET_H
+ #define ROPE_PACKET_H
+ 
+-#include "Control/replay/ReplayEventManager.h"
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplayEventManager.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 

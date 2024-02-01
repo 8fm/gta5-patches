@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicFallFromHeliContext.h b/src/dev_ng/game/camera/cinematic/context/CinematicFallFromHeliContext.h
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicFallFromHeliContext.h
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicFallFromHeliContext.h
+@@ -8,7 +8,7 @@
+ #define CINEMATIC_FALL_FROM_HELI_CONTEXT_H
+ 
+ #include "camera/cinematic/context/BaseCinematicContext.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ class camCinematicContextMetadata;
+ class camBaseCinematicShot; 

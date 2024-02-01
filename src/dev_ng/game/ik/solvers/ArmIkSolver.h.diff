@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ik/solvers/ArmIkSolver.h b/src/dev_ng/game/ik/solvers/ArmIkSolver.h
+--- a/src/dev_ng/game/ik/solvers/ArmIkSolver.h
++++ b/src/dev_ng/game/ik/solvers/ArmIkSolver.h
+@@ -8,7 +8,7 @@
+ #define ARMIKSOLVER_H
+ 
+ #include "crbody/iksolver.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vectormath/vec3v.h"
+ #include "vectormath/mat34v.h"
+ #include "scene/RegdRefTypes.h"

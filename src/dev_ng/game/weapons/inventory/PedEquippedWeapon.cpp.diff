@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.cpp b/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.cpp
+--- a/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.cpp
++++ b/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.cpp
+@@ -1,21 +1,21 @@
+ // File header
+-#include "Weapons/Inventory/PedEquippedWeapon.h"
++#include "weapons/inventory/PedEquippedWeapon.h"
+ 
+ // Game headers
+ #include "FrontEnd/NewHud.h"
+-#include "ModelInfo/WeaponModelInfo.h"
+-#include "Peds/Ped.h"
++#include "modelinfo/WeaponModelInfo.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/gtaInst.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Weapons/Components/WeaponComponent.h"
+-#include "Weapons/Components/WeaponComponentFactory.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/Projectiles/Projectile.h"
+-#include "Weapons/Projectiles/ProjectileFactory.h"
+-#include "Weapons/Projectiles/ProjectileManager.h"
+-#include "Weapons/WeaponFactory.h"
+-#include "Weapons/WeaponManager.h"
++#include "physics/gtaInst.h"
++#include "scene/world/GameWorld.h"
++#include "weapons/components/WeaponComponent.h"
++#include "weapons/components/WeaponComponentFactory.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/projectiles/Projectile.h"
++#include "weapons/projectiles/ProjectileFactory.h"
++#include "weapons/projectiles/ProjectileManager.h"
++#include "weapons/WeaponFactory.h"
++#include "weapons/WeaponManager.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

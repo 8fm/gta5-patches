@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/OverviewScreen.h b/src/dev_ng/game/debug/OverviewScreen.h
+--- a/src/dev_ng/game/debug/OverviewScreen.h
++++ b/src/dev_ng/game/debug/OverviewScreen.h
+@@ -5,7 +5,7 @@
+ 
+ #include "atl/array.h"
+ 
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ 
+ #include "streaming/streamingdebuggraph.h"
+ 

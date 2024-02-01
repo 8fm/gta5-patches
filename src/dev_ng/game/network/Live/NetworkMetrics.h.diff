@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkMetrics.h b/src/dev_ng/game/network/Live/NetworkMetrics.h
+--- a/src/dev_ng/game/network/Live/NetworkMetrics.h
++++ b/src/dev_ng/game/network/Live/NetworkMetrics.h
+@@ -9,7 +9,7 @@
+ 
+ #include "vector/vector3.h"
+ #include "rline/rltelemetry.h"
+-#include "network/networkinterface.h"
++#include "network/NetworkInterface.h"
+ #include "network/NetworkTypes.h"
+ #include "network/Live/NetworkMetricsChannels.h"
+ #include "Stats/StatsTypes.h"

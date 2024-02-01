@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/streamingdebuggraphextensions.h b/src/dev_ng/game/streaming/streamingdebuggraphextensions.h
+--- a/src/dev_ng/game/streaming/streamingdebuggraphextensions.h
++++ b/src/dev_ng/game/streaming/streamingdebuggraphextensions.h
+@@ -9,7 +9,7 @@
+ #include "vector/color32.h"
+ #include "fwscene/lod/LodTypes.h"
+ #include "fwscene/stores/dwdstore.h"
+-#include "scene/datafilemgr.h"
++#include "scene/DataFileMgr.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingdebug.h"
+ #include "streaming/streamingengine.h"

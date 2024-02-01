@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurretMoveNetworkMetadata.h b/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurretMoveNetworkMetadata.h
+--- a/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurretMoveNetworkMetadata.h
++++ b/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurretMoveNetworkMetadata.h
+@@ -15,7 +15,7 @@
+ #include "fwanimation/animdefines.h"
+ 
+ // Game Headers
+-//#include "Task/System/TaskMoveNetworkHelpers.h"
++//#include "task/System/TaskMoveNetworkHelpers.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

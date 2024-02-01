@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceVeh.cpp b/src/dev_ng/game/control/replay/ReplayInterfaceVeh.cpp
+--- a/src/dev_ng/game/control/replay/ReplayInterfaceVeh.cpp
++++ b/src/dev_ng/game/control/replay/ReplayInterfaceVeh.cpp
+@@ -14,21 +14,21 @@
+ #include "Peds/ped.h"
+ #include "replaycoordinator/ReplayCoordinator.h"
+ #include "scene/world/GameWorld.h"
+-#include "Streaming/streaming.h"
+-#include "vehicles/Bike.h"
+-#include "vehicles/Bmx.h"
++#include "streaming/streaming.h"
++#include "Vehicles/Bike.h"
++#include "Vehicles/Bmx.h"
+ #include "Vehicles/Boat.h"
+-#include "vehicles/Heli.h"
+-#include "vehicles/Planes.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/Planes.h"
+ #include "Vehicles/VehicleFactory.h"
+ #include "Vehicles/Submarine.h"
+ #include "Vehicles/Trailer.h"
+-#include "vehicles/AmphibiousAutomobile.h"
++#include "Vehicles/AmphibiousAutomobile.h"
+ #include "Effects/ParticleVehicleFxPacket.h"
+ #include "vector/vector3.h"
+ #include "vfx/misc/Fire.h"
+-#include "Control/Replay/Entity/FragmentPacket.h"
+-#include "Control/Garages.h"
++#include "control/replay/Entity/FragmentPacket.h"
++#include "control/Garages.h"
+ #include "control/replay/Vehicle/WheelPacket.h"
+ 
+ #include "ReplayInterfaceImpl.h"

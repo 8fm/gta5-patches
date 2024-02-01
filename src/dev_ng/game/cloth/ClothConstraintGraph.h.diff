@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/cloth/ClothConstraintGraph.h b/src/dev_ng/game/cloth/ClothConstraintGraph.h
+--- a/src/dev_ng/game/cloth/ClothConstraintGraph.h
++++ b/src/dev_ng/game/cloth/ClothConstraintGraph.h
+@@ -1,7 +1,7 @@
+ #ifndef CLOTH_CONSTRAINT_GRAPH_H
+ #define CLOTH_CONSTRAINT_GRAPH_H
+ 
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ 
+ class ConstraintGroup;
+ 

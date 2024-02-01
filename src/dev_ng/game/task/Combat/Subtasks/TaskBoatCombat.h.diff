@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.h b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.h
+@@ -7,9 +7,9 @@
+ // Game headers
+ #include "ai/AITarget.h"
+ #include "physics/WorldProbe/shapetestresults.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CBoat;

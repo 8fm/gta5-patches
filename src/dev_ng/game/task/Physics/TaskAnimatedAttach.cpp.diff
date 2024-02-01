@@ -1,7 +1,23 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp b/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp
 --- a/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskAnimatedAttach.cpp
-@@ -18,7 +18,7 @@
+@@ -7,18 +7,18 @@
+ 
+ #include "animation/MovePed.h"
+ #include "debug/DebugScene.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "physics/physics.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Physics/AttachTasks/TaskNMGenericAttach.h"
+-#include "Task/Physics/TaskAnimatedAttach.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Physics/AttachTasks/TaskNMGenericAttach.h"
++#include "task/Physics/TaskAnimatedAttach.h"
++#include "task/System/TaskTypes.h"
+ #include "text/TextConversion.h"
  
  // Framework headers:
  #include "fwanimation/animdirector.h"

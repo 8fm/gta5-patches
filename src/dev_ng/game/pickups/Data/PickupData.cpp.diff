@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/pickups/Data/PickupData.cpp b/src/dev_ng/game/pickups/Data/PickupData.cpp
+--- a/src/dev_ng/game/pickups/Data/PickupData.cpp
++++ b/src/dev_ng/game/pickups/Data/PickupData.cpp
+@@ -1,14 +1,14 @@
+ // File header
+-#include "Pickups/Data/PickupData.h"
++#include "pickups/Data/PickupData.h"
+ 
+ // Rage headers
+ #include "audioengine/engine.h"
+ 
+ // Game headers
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "Pickups/Data/PickupDataManager.h"
+-#include "Pickups/PickupRewards.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "pickups/Data/PickupDataManager.h"
++#include "pickups/PickupRewards.h"
+ #include "streaming/streaming.h"
+ 
+ WEAPON_OPTIMISATIONS()

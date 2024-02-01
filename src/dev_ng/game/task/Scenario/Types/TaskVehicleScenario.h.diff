@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.h
+@@ -8,7 +8,7 @@
+ #define TASK_SCENARIO_TYPES_TASK_VEHICLE_SCENARIO_H
+ 
+ #include "task/Scenario/TaskScenario.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ class CScenarioVehicleInfo;
+ 

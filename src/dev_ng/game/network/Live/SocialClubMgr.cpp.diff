@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Live/SocialClubMgr.cpp b/src/dev_ng/game/network/Live/SocialClubMgr.cpp
+--- a/src/dev_ng/game/network/Live/SocialClubMgr.cpp
++++ b/src/dev_ng/game/network/Live/SocialClubMgr.cpp
+@@ -16,10 +16,10 @@
+ //game
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/Live/SocialClubMgr.h"
+-#include "Network/SocialClubUpdates/SocialClubPolicyManager.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/SocialClubMgr.h"
++#include "network/SocialClubUpdates/SocialClubPolicyManager.h"
+ 
+ #include <time.h>
+ 

@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderPed.cpp b/src/dev_ng/game/network/Objects/Prediction/NetBlenderPed.cpp
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderPed.cpp
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderPed.cpp
+@@ -4,19 +4,19 @@
+ // description: Network blender used by peds
+ 
+ // game includes
+-#include "network/objects/prediction/NetBlenderPed.h"
++#include "network/Objects/Prediction/NetBlenderPed.h"
+ 
+ #include "animation/MovePed.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "physics/gtainst.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "physics/gtaInst.h"
+ #include "physics/physics.h"
+ #include "renderer/Water.h"
+-#include "task/motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ //
+ // rage includes
+ #include "fwanimation/directorcomponentragdoll.h"
+-#include "pharticulated/ArticulatedCollider.h"
++#include "pharticulated/articulatedcollider.h"
+ 
+ // the number of ped network blenders required is the number of peds plus the number of players 
+ static const unsigned MAX_NET_PED_BLENDERS = MAX_NUM_NETOBJPEDS + MAX_NUM_NETOBJPLAYERS;

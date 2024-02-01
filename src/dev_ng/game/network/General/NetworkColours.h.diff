@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/General/NetworkColours.h b/src/dev_ng/game/network/General/NetworkColours.h
+--- a/src/dev_ng/game/network/General/NetworkColours.h
++++ b/src/dev_ng/game/network/General/NetworkColours.h
+@@ -7,7 +7,7 @@
+ #ifndef NETWORK_COLOURS_H
+ #define NETWORK_COLOURS_H
+ 
+-#include "fwnet/NetTypes.h"
++#include "fwnet/nettypes.h"
+ #include "renderer/color.h"
+ 
+ namespace rage

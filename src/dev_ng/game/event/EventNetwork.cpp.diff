@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/event/EventNetwork.cpp b/src/dev_ng/game/event/EventNetwork.cpp
+--- a/src/dev_ng/game/event/EventNetwork.cpp
++++ b/src/dev_ng/game/event/EventNetwork.cpp
+@@ -16,11 +16,11 @@
+ 
+ // Framework headers
+ #include "fwnet/netplayer.h"
+-#include "fwscript/scriptInterface.h"
++#include "fwscript/scriptinterface.h"
+ #include "fwnet/netblenderlininterp.h"
+ 
+ // Script headers
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptIds.h"
+ #include "script/script.h"
+ #include "script/script_channel.h"
+ 
+@@ -34,12 +34,12 @@
+ // Game headers
+ #include "event/EventGroup.h"
+ #include "Peds/PedFlagsMeta.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "scene/Physical.h"
+ #include "weapons/info/WeaponInfo.h"
+ #include "weapons/info/WeaponInfoManager.h"
+-#include "VehicleAi/VehicleIntelligence.h"
+-#include "VehicleAi/VehicleNodeList.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/VehicleNodeList.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+ #include "frontend/FrontendStatsMgr.h"
+ 

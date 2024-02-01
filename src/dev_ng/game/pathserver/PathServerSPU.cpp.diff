@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/pathserver/PathServerSPU.cpp b/src/dev_ng/game/pathserver/PathServerSPU.cpp
 --- a/src/dev_ng/game/pathserver/PathServerSPU.cpp
 +++ b/src/dev_ng/game/pathserver/PathServerSPU.cpp
-@@ -5,7 +5,7 @@
+@@ -5,8 +5,8 @@
  
  // GTA Includes
  #include "basetypes.h"
 -#include "renderer\Renderer.h"			// JW- had to move this up here to get a successful compile...
+-#include "scene/world/gameWorld.h"
 +#include "renderer/Renderer.h"			// JW- had to move this up here to get a successful compile...
- #include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
  
  // Rage Includes
+ #include "math/intrinsics.h"

@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp b/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp
+--- a/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp
++++ b/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp
+@@ -8,20 +8,20 @@
+ #include "grcore/debugdraw.h"
+ 
+ // network headers
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+ #include "camera/scripted/ScriptDirector.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedIntelligence/PedAiLod.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Renderer/Occlusion.h"
++#include "renderer/Occlusion.h"
+ #include "renderer/Renderer.h"
+ #include "scene/FocusEntity.h"
+ #include "scene/lod/LodScale.h"
+-#include "Scene/World/GameWorld.h"
++#include "scene/world/GameWorld.h"
+ 
+ // rage headers
+ #include "fwscene/stores/staticboundsstore.h"

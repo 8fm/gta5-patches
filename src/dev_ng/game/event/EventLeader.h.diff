@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/event/EventLeader.h b/src/dev_ng/game/event/EventLeader.h
+--- a/src/dev_ng/game/event/EventLeader.h
++++ b/src/dev_ng/game/event/EventLeader.h
+@@ -2,8 +2,8 @@
+ #define INC_EVENT_LEADER_H
+ 
+ // Game headers
+-#include "Event/Event.h"
+-#include "Event/EventPriorities.h"
++#include "event/Event.h"
++#include "event/EventPriorities.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

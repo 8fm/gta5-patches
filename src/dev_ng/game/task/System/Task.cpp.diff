@@ -1,0 +1,71 @@
+diff --git a/src/dev_ng/game/task/System/Task.cpp b/src/dev_ng/game/task/System/Task.cpp
+--- a/src/dev_ng/game/task/System/Task.cpp
++++ b/src/dev_ng/game/task/System/Task.cpp
+@@ -5,45 +5,45 @@
+ //
+ 
+ // File header
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ 
+ #include "fwanimation/clipsets.h"
+ #include "ai/debugstatehistory.h"
+ #include "system/threadtype.h"
+ 
+ // Game headers
+-#include "Event/Events.h"
++#include "event/Events.h"
+ #include "Objects/ObjectIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedTaskRecord.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/Combat/TaskNewCombat.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Combat/TaskNewCombat.h"
+ #include "task/Combat/Subtasks/TaskReactToBuddyShot.h"
+ #include "task/Combat/Subtasks/TaskVehicleCombat.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Default/TaskWander.h"
+-#include "Task/Helpers/TaskConversationHelper.h"
+-#include "Task/Motion/Locomotion/TaskBirdLocomotion.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Default/TaskWander.h"
++#include "task/Helpers/TaskConversationHelper.h"
++#include "task/Motion/Locomotion/TaskBirdLocomotion.h"
++#include "task/Motion/TaskMotionBase.h"
+ #include "task/Movement/TaskGetUp.h"
+-#include "Task/Physics/GrabHelper.h"
++#include "task/Physics/GrabHelper.h"
+ #include "task/Response/TaskReactAndFlee.h"
+ #include "task/Response/TaskReactToImminentExplosion.h"
+-#include "Task/Response/TaskShockingEvents.h"
++#include "task/Response/TaskShockingEvents.h"
+ #include "task/Scenario/Types/TaskCowerScenario.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/System/TaskClassInfo.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "VehicleAi/VehicleIntelligence.h"
+-#include "VehicleAi/task/TaskVehicleCruise.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "task/System/TaskClassInfo.h"
++#include "task/System/TaskHelpers.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleCruise.h"
+ 
+ #if __BANK
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #endif 
+ 
+ AI_OPTIMISATIONS()

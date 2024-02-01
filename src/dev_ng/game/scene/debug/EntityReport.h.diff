@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/debug/EntityReport.h b/src/dev_ng/game/scene/debug/EntityReport.h
+--- a/src/dev_ng/game/scene/debug/EntityReport.h
++++ b/src/dev_ng/game/scene/debug/EntityReport.h
+@@ -17,7 +17,7 @@
+ #include "bank/bank.h"
+ #include "bank/bkmgr.h"
+ #include "rmcore/drawable.h"
+-#include "vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ class CEntity;
+ class CGtaPvsEntry;

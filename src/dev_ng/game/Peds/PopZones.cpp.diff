@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/Peds/PopZones.cpp b/src/dev_ng/game/Peds/PopZones.cpp
+--- a/src/dev_ng/game/Peds/PopZones.cpp
++++ b/src/dev_ng/game/Peds/PopZones.cpp
+@@ -4,7 +4,7 @@
+ // Started	:	19.06.00
+ // Purpose	:	To keep track of population areas on the map.
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "peds/popzones.h"
++#include "Peds/PopZones.h"
+ 
+ // C headers
+ #include <stdio.h>
+@@ -22,17 +22,17 @@
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+-#include "debug/vectormap.h"
+-#include "game/clock.h"
+-#include "game/dispatch/DispatchData.h"
+-#include "peds/popcycle.h"
+-#include "peds/playerinfo.h"
+-#include "peds/ped.h"
+-#include "scene/world/gameWorld.h"
++#include "debug/VectorMap.h"
++#include "game/Clock.h"
++#include "game/Dispatch/DispatchData.h"
++#include "Peds/PopCycle.h"
++#include "Peds/playerinfo.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
+ #include "script/script.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ #include "vfx/metadata/VfxRegionInfo.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "text/textconversion.h"
+ 
+ using namespace AIStats;

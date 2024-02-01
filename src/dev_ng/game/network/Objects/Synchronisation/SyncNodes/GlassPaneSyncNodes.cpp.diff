@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/GlassPaneSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/GlassPaneSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/GlassPaneSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/GlassPaneSyncNodes.cpp
+@@ -4,14 +4,14 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/GlassPaneSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/GlassPaneSyncNodes.h"
+ 
+ #include "fwnet/netlog.h"
+ 
+-#include "network/network.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptMgr.h"
++#include "network/Network.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptMgr.h"
+ #include "script/script.h"
+ 
+ NETWORK_OPTIMISATIONS()

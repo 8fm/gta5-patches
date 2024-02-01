@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.h b/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.h
+@@ -1,8 +1,8 @@
+ #ifndef TASK_QUAD_LOCOMOTION_H
+ #define TASK_QUAD_LOCOMOTION_H
+ 
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/System/Tuning.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/System/Tuning.h"
+ 
+ //*********************************************************************
+ //	CTaskQuadLocomotion

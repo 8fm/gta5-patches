@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/audio/radioaudioentity.cpp b/src/dev_ng/game/audio/radioaudioentity.cpp
+--- a/src/dev_ng/game/audio/radioaudioentity.cpp
++++ b/src/dev_ng/game/audio/radioaudioentity.cpp
+@@ -28,12 +28,12 @@
+ #include "game/ModelIndices.h"
+ #include "grcore/debugdraw.h"
+ #include "network/NetworkInterface.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+-#include "system/ControlMgr.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "system/controlMgr.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ #if GTA_REPLAY
+ #include "frontend/VideoEditor/Core/VideoProjectAudioTrackProvider.h"

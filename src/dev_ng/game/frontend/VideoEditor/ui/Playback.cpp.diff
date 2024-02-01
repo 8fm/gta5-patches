@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp
+@@ -36,8 +36,8 @@
+ #include "frontend/PauseMenu.h"
+ #include "frontend/ProfileSettings.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
++#include "frontend/ui_channel.h"
+ #include "frontend/VideoEditor/ui/Editor.h"
+ #include "frontend/VideoEditor/ui/Menu.h"
+ #include "frontend/VideoEditor/ui/InstructionalButtons.h"

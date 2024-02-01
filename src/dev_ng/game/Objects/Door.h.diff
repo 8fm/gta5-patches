@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Objects/Door.h b/src/dev_ng/game/Objects/Door.h
+--- a/src/dev_ng/game/Objects/Door.h
++++ b/src/dev_ng/game/Objects/Door.h
+@@ -2,10 +2,10 @@
+ #define DOOR_H
+ 
+ // Game headers
+-//#include "network/Objects/entities/NetObjDoor.h"
++//#include "network/Objects/Entities/NetObjDoor.h"
+ #include "audio/dooraudioentity.h"
+-#include "Objects/Object.h"
+-#include "network/objects/entities/NetObjDoor.h"
++#include "Objects/object.h"
++#include "network/Objects/Entities/NetObjDoor.h"
+ 
+ class CDoorTuning;
+ class CDoorSystemData;

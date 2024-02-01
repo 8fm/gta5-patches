@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleGroupShot.cpp b/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleGroupShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleGroupShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleGroupShot.cpp
+@@ -7,7 +7,7 @@
+ #include "camera/cinematic/shot/CinematicInVehicleGroupShot.h"
+ #include "camera/cinematic/camera/tracking/CinematicGroupCamera.h"
+ #include "fwnet/netinterface.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicVehicleGroupShot,0xE1344CF8)
+ 

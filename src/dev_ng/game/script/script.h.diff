@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/script/script.h b/src/dev_ng/game/script/script.h
+--- a/src/dev_ng/game/script/script.h
++++ b/src/dev_ng/game/script/script.h
+@@ -26,7 +26,7 @@
+ #include "debug/DebugRecorder.h"
+ #include "scene/RegdRefTypes.h"
+ #include "script/gta_thread.h"
+-#include "script/handlers/GameScriptMgr.h"
++#include "script/Handlers/GameScriptMgr.h"
+ 
+ #define NULL_IN_SCRIPTING_LANGUAGE	(0)		//	was -1 in SA - is 0 in Rage scripting language
+ #define DUMMY_ENTRY_IN_MODEL_ENUM_FOR_SCRIPTING_LANGUAGE	(0)		//	Rage script compiler complains if a command that expects a model enum entry is passed -1 or NULL so we have a special entry (= 0) in model_enums.sc
+@@ -51,14 +51,14 @@ public:
+ 	void EndReplayStatsStructure();
+ //	End of "When a Replay Mission is passed"
+ 
+-//	When a Load happens and the script detects that it’s a Replay save file
++//	When a Load happens and the script detects that it's a Replay save file
+ 	bool HaveReplayStatsBeenStored() { return m_bStatsHaveBeenStored; }
+ 	s32 GetReplayStatMissionId() { return m_nMissionId; }
+ 	s32 GetReplayStatMissionType() { return m_nMissionType; }
+ 	s32 GetNumberOfMissionStats();
+ 	s32 GetStatValueAtIndex(s32 arrayIndex);
+ 	void ClearReplayStatsStructure();
+-//	End of "When a Load happens and the script detects that it’s a Replay save file"
++//	End of "When a Load happens and the script detects that it's a Replay save file"
+ 
+ #if __ASSERT
+ 	bool IsReplayStatsStructureBeingConstructed() { return m_bConstructingStructureOfStats; }

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskVault.h b/src/dev_ng/game/task/Movement/Climbing/TaskVault.h
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskVault.h
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskVault.h
+@@ -8,12 +8,12 @@
+ #define TASK_VAULT_H
+ 
+ // Game headers
+-#include "Task/Movement/Climbing/ClimbHandHold.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/Movement/Climbing/ClimbHandHold.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ #include "Peds/QueriableInterface.h"
+ #include "network/General/NetworkUtil.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ enum VaultFlags
+ {

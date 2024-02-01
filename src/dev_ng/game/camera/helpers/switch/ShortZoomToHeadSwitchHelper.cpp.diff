@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/switch/ShortZoomToHeadSwitchHelper.cpp b/src/dev_ng/game/camera/helpers/switch/ShortZoomToHeadSwitchHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/switch/ShortZoomToHeadSwitchHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/switch/ShortZoomToHeadSwitchHelper.cpp
+@@ -10,7 +10,7 @@
+ 
+ #include "camera/CamInterface.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

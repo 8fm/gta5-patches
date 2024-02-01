@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/inventory/InventoryListener.h b/src/dev_ng/game/weapons/inventory/InventoryListener.h
+--- a/src/dev_ng/game/weapons/inventory/InventoryListener.h
++++ b/src/dev_ng/game/weapons/inventory/InventoryListener.h
+@@ -8,7 +8,7 @@
+ #define INVENTORY_LISTENER_H
+ 
+ // Game headers
+-#include "fwtl/RegdRefs.h"
++#include "fwtl/regdrefs.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CInventoryListener

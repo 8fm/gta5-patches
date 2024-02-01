@@ -1,0 +1,48 @@
+diff --git a/src/dev_ng/game/frontend/MobilePhone.cpp b/src/dev_ng/game/frontend/MobilePhone.cpp
+--- a/src/dev_ng/game/frontend/MobilePhone.cpp
++++ b/src/dev_ng/game/frontend/MobilePhone.cpp
+@@ -1,7 +1,7 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ // FILE    : MobilePhone.cpp
+ 
+-#include "Frontend/MobilePhone.h"
++#include "frontend/MobilePhone.h"
+ 
+ // Rage headers
+ #include "bank/bkmgr.h"
+@@ -13,8 +13,8 @@
+ // Game headers
+ #include "camera/viewports/ViewportManager.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+-#include "peds/ped.h"
+-#include "Streaming/Streaming.h"
++#include "Peds/ped.h"
++#include "streaming/Streaming.h"
+ #include "audio/radioaudioentity.h"
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+@@ -22,19 +22,19 @@
+ #include "camera/gameplay/aim/ThirdPersonPedAimCamera.h"
+ #include "camera/helpers/Collision.h"
+ #include "camera/viewports/Viewport.h"
+-#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
+ #include "frontend/WarningScreen.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/DrawLists/DrawListNY.h"
+ #include "renderer/RenderPhases/RenderPhaseStdNY.h"
+ #include "renderer/RenderPhases/renderphaseStd.h"
+-#include "renderer/lights/lights.h"
+-#include "renderer/rendertargetmgr.h"
++#include "renderer/Lights/lights.h"
++#include "renderer/RenderTargetMgr.h"
+ #include "renderer/rendertargets.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ #include "shaders/CustomShaderEffectTint.h"
+-#include "Task/General/Phone/TaskMobilePhone.h"
++#include "task/General/Phone/TaskMobilePhone.h"
+ 
+ // Defines
+ #define PHOTO_X_SIZE		256

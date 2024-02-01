@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderTargetMgr.h b/src/dev_ng/game/renderer/RenderTargetMgr.h
+--- a/src/dev_ng/game/renderer/RenderTargetMgr.h
++++ b/src/dev_ng/game/renderer/RenderTargetMgr.h
+@@ -7,7 +7,7 @@
+ #define INC_RENDERTARGETMGR_H_
+ 
+ // --- Include Files ------------------------------------------------------------
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #include "renderer/RenderPhases/RenderPhase.h"
+ #include "renderer/RenderPhases/RenderPhaseStd.h"

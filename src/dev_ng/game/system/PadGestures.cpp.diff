@@ -1,7 +1,11 @@
 diff --git a/src/dev_ng/game/system/PadGestures.cpp b/src/dev_ng/game/system/PadGestures.cpp
 --- a/src/dev_ng/game/system/PadGestures.cpp
 +++ b/src/dev_ng/game/system/PadGestures.cpp
-@@ -4,11 +4,11 @@
+@@ -1,14 +1,14 @@
+-#include "System/PadGestures.h"
++#include "system/PadGestures.h"
+ 
+ #if USE_SIXAXIS_GESTURES
  
  // Rage headers
  #if __BANK
@@ -18,17 +22,20 @@ diff --git a/src/dev_ng/game/system/PadGestures.cpp b/src/dev_ng/game/system/Pad
  #endif
  
  // Framework headers
-@@ -18,17 +18,17 @@
+@@ -17,18 +17,18 @@
+ //#include "fwmaths/Maths.h"
  
  // Game headers
- #include "System/pad.h"
+-#include "System/pad.h"
 -#include "frontend\PauseMenu.h"
 -#include "system\controlmgr.h"
-+#include "frontend/PauseMenu.h"
-+#include "system/controlmgr.h"
- #include "peds/Ped.h"
+-#include "peds/Ped.h"
 -#include "scene\world\gameWorld.h"
-+#include "scene/world/gameWorld.h"
++#include "system/pad.h"
++#include "frontend/PauseMenu.h"
++#include "system/controlMgr.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
  
  #if __BANK
  #include "camera/viewports/ViewportManager.h"

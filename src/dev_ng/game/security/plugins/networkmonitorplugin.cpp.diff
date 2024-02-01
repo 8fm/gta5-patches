@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/security/plugins/networkmonitorplugin.cpp b/src/dev_ng/game/security/plugins/networkmonitorplugin.cpp
+--- a/src/dev_ng/game/security/plugins/networkmonitorplugin.cpp
++++ b/src/dev_ng/game/security/plugins/networkmonitorplugin.cpp
+@@ -10,7 +10,7 @@
+ #include "security/plugins/networkmonitorplugin.h"
+ #include "security/ragesecplugin.h"
+ #include "security/ragesecenginetasks.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ 
+ 
+ using namespace rage;

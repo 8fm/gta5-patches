@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/gadgets/GadgetSkis.h b/src/dev_ng/game/weapons/gadgets/GadgetSkis.h
+--- a/src/dev_ng/game/weapons/gadgets/GadgetSkis.h
++++ b/src/dev_ng/game/weapons/gadgets/GadgetSkis.h
+@@ -2,7 +2,7 @@
+ #define GADGET_SKIS_H
+ 
+ // Game headers
+-#include "Weapons/Gadgets/Gadget.h"
++#include "weapons/Gadgets/Gadget.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CGadgetSkis

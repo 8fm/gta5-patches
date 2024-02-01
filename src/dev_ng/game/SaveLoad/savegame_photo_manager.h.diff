@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_manager.h b/src/dev_ng/game/SaveLoad/savegame_photo_manager.h
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_manager.h
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_manager.h
+@@ -6,7 +6,7 @@
+ #include "atl/array.h"
+ 
+ // Game headers
+-#include "Renderer/ScreenshotManager.h"
++#include "renderer/ScreenshotManager.h"
+ #include "SaveLoad/savegame_date.h"
+ #include "SaveLoad/savegame_defines.h"
+ #include "SaveLoad/savegame_photo_buffer.h"

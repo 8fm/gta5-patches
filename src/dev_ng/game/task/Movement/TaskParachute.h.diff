@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskParachute.h b/src/dev_ng/game/task/Movement/TaskParachute.h
+--- a/src/dev_ng/game/task/Movement/TaskParachute.h
++++ b/src/dev_ng/game/task/Movement/TaskParachute.h
+@@ -9,14 +9,14 @@
+ *********************************************************************/
+ 
+ // Game headers
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/QueriableInterface.h"
+ #include "physics/PhysicsHelpers.h"
+-#include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ #include "streaming/streamingrequest.h"
+-#include "Task/Physics/TaskNMPose.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "task/Physics/TaskNMPose.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ #include "network/Debug/NetworkDebug.h"
+ 
+ //-----------------------------------------------------------------------------------------

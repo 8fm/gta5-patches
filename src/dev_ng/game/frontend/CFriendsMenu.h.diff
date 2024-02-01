@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/frontend/CFriendsMenu.h b/src/dev_ng/game/frontend/CFriendsMenu.h
+--- a/src/dev_ng/game/frontend/CFriendsMenu.h
++++ b/src/dev_ng/game/frontend/CFriendsMenu.h
+@@ -8,15 +8,15 @@
+ #include "rline/presence/rlpresencequery.h"
+ 
+ // game
+-#include "Frontend/CScriptMenu.h"
+-#include "Frontend/ScaleformMenuHelper.h"
+-#include "Frontend/CCrewMenu.h"
+-#include "Frontend/SimpleTimer.h"
+-#include "Frontend/UIPaginator.h"
+-#include "Network/Live/FriendClanData.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Network/Live/PlayerCardDataManager.h"
+-#include "Text/TextFile.h"
++#include "frontend/CScriptMenu.h"
++#include "frontend/ScaleformMenuHelper.h"
++#include "frontend/CCrewMenu.h"
++#include "frontend/SimpleTimer.h"
++#include "frontend/UIPaginator.h"
++#include "network/Live/FriendClanData.h"
++#include "network/Live/NetworkClan.h"
++#include "network/Live/PlayerCardDataManager.h"
++#include "text/TextFile.h"
+ 
+ #define PLAYER_CARD_STAT_NOT_FOUND (-1)
+ #define PLAYER_CARD_MAX_COLUMNS (6)

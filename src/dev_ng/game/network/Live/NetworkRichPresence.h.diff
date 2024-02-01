@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkRichPresence.h b/src/dev_ng/game/network/Live/NetworkRichPresence.h
+--- a/src/dev_ng/game/network/Live/NetworkRichPresence.h
++++ b/src/dev_ng/game/network/Live/NetworkRichPresence.h
+@@ -10,7 +10,7 @@
+ // Rage headers
+ #include "atl/dlist.h"
+ #include "data/base.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "atl/delegate.h"
+ #include "rline/rl.h"
+ 

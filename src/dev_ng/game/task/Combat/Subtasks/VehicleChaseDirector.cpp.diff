@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/VehicleChaseDirector.cpp b/src/dev_ng/game/task/Combat/Subtasks/VehicleChaseDirector.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/VehicleChaseDirector.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/VehicleChaseDirector.cpp
+@@ -1,9 +1,9 @@
+ // File header
+-#include "Task/Combat/Subtasks/VehicleChaseDirector.h"
++#include "task/Combat/Subtasks/VehicleChaseDirector.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"
+-#include "task/combat/Subtasks/TaskVehicleChase.h"
++#include "task/Combat/Subtasks/TaskVehicleChase.h"
+ #include "vehicleAi/pathfind.h"
+ #include "vehicleAi/task/TaskVehiclePursue.h"
+ #include "Vehicles/vehicle.h"

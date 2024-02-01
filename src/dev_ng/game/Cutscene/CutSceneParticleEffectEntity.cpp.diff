@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.cpp
+@@ -20,12 +20,12 @@
+ 
+ 
+ //Game Headers
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "cutscene/CutSceneParticleEffectEntity.h"
+ #include "cutscene/AnimatedModelEntity.h"
+-#include "Cutscene/cutscene_channel.h"
+-#include "Vfx/Systems/VfxScript.h"
+-#include "Vfx/Decals/DecalManager.h"
++#include "cutscene/cutscene_channel.h"
++#include "vfx/systems/VfxScript.h"
++#include "vfx/decals/DecalManager.h"
+ 
+ 
+ /////////////////////////////////////////////////////////////////////////////////

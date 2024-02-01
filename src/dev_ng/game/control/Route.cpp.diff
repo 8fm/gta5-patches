@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/control/Route.cpp b/src/dev_ng/game/control/Route.cpp
+--- a/src/dev_ng/game/control/Route.cpp
++++ b/src/dev_ng/game/control/Route.cpp
+@@ -1,5 +1,5 @@
+-#include "control/route.h"
+-#include "fwmaths/vector.h"
++#include "control/Route.h"
++#include "fwmaths/Vector.h"
+ 
+ FW_INSTANTIATE_CLASS_POOL_SPILLOVER(CPointRoute, 40, 0.66f, atHashString("PointRoute",0xffd1343d));
+ FW_INSTANTIATE_CLASS_POOL_SPILLOVER(CPatrolRoute, 6, 0.75f, atHashString("PatrolRoute",0xd7e71231));

@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleTempAction.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleTempAction.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleTempAction.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleTempAction.cpp
+@@ -2,9 +2,9 @@
+ 
+ 
+ // Game headers
+-#include "VehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/vehicle.h"
+-#include "Vehicles/planes.h"
++#include "Vehicles/Planes.h"
+ #include "Vehicles/Submarine.h"
+ #include "audio/vehicleaudioentity.h"
+ 

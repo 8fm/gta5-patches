@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/gameplay/aim/FirstPersonHeadTrackingAimCamera.cpp b/src/dev_ng/game/camera/gameplay/aim/FirstPersonHeadTrackingAimCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/aim/FirstPersonHeadTrackingAimCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/aim/FirstPersonHeadTrackingAimCamera.cpp
+@@ -10,8 +10,8 @@
+ #include "camera/helpers/BaseFrameShaker.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "scene/portals/Portal.h"
+-#include "stats/StatsInterface.h"
+-#include "peds/ped.h"
++#include "Stats/StatsInterface.h"
++#include "Peds/ped.h"
+ #include "input/headtracking.h"
+ 
+ CAMERA_OPTIMISATIONS()

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/glassPaneSyncing/GlassPane.h b/src/dev_ng/game/glassPaneSyncing/GlassPane.h
+--- a/src/dev_ng/game/glassPaneSyncing/GlassPane.h
++++ b/src/dev_ng/game/glassPaneSyncing/GlassPane.h
+@@ -4,8 +4,8 @@
+ //---
+ 
+ #include "glassPaneSyncing/GlassPaneInfo.h"
+-#include "fwnet/NetGameObjectBase.h"
+-#include "Network/Objects/Entities/NetObjGame.h"
++#include "fwnet/netgameobjectbase.h"
++#include "network/Objects/Entities/NetObjGame.h"
+ #include "network/Objects/Entities/NetObjGlassPane.h"
+ 
+ //---

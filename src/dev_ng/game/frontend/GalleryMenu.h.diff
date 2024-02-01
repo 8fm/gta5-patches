@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/GalleryMenu.h b/src/dev_ng/game/frontend/GalleryMenu.h
+--- a/src/dev_ng/game/frontend/GalleryMenu.h
++++ b/src/dev_ng/game/frontend/GalleryMenu.h
+@@ -5,7 +5,7 @@
+ #include "CMenuBase.h"
+ 
+ #include "rline/rlpresence.h"
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ #include "grcore/texture.h"
+ 
+ // Game headers

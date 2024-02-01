@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.cpp
+@@ -5,23 +5,23 @@
+ // written by:  John Gurney
+ //
+ 
+-#include "network/Objects/entities/NetObjPickupPlacement.h"
++#include "network/Objects/Entities/NetObjPickupPlacement.h"
+ 
+ // game headers
+-#include "network/network.h"
++#include "network/Network.h"
+ #include "network/Debug/NetworkDebug.h"
+ #include "network/Events/NetworkEventTypes.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "peds/ped.h"
+-#include "peds/ped.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Players/NetGamePlayer.h"
++#include "Peds/ped.h"
++#include "Peds/ped.h"
+ #include "pickups/Pickup.h"
+ #include "pickups/PickupManager.h"
+ #include "script/Handlers/GameScriptIds.h"
+ #include "script/Handlers/GameScriptMgr.h"
+ #include "script/script.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ #include "text/text.h"
+ #include "text/TextConversion.h"
+ 

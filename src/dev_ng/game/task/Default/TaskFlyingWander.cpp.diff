@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Default/TaskFlyingWander.cpp b/src/dev_ng/game/task/Default/TaskFlyingWander.cpp
+--- a/src/dev_ng/game/task/Default/TaskFlyingWander.cpp
++++ b/src/dev_ng/game/task/Default/TaskFlyingWander.cpp
+@@ -4,11 +4,11 @@
+ // Copyright (C) 1999-2011 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "Scene/World/GameWorldHeightMap.h"
+-#include "Task/Default/TaskFlyingWander.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskFlyToPoint.h"
++#include "scene/world/GameWorldHeightMap.h"
++#include "task/Default/TaskFlyingWander.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskFlyToPoint.h"
+ 
+ 
+ CTaskFlyingWander::Tunables CTaskFlyingWander::sm_Tunables;

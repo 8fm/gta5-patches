@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/network/Shop/GameTransactionsTasks.cpp b/src/dev_ng/game/network/Shop/GameTransactionsTasks.cpp
+--- a/src/dev_ng/game/network/Shop/GameTransactionsTasks.cpp
++++ b/src/dev_ng/game/network/Shop/GameTransactionsTasks.cpp
+@@ -1,4 +1,4 @@
+-#include "Network/NetworkTypes.h"
++#include "network/NetworkTypes.h"
+ 
+ #if __NET_SHOP_ACTIVE
+ 
+@@ -15,10 +15,10 @@
+ 
+ #include "fwnet/netchannel.h"
+ 
+-#include "Network/NetworkInterface.h"
+-#include "Network/Shop/Catalog.h"
+-#include "Network/Shop/GameTransactionsSessionMgr.h"
+-#include "Network/Shop/NetworkGameTransactions.h"
++#include "network/NetworkInterface.h"
++#include "network/Shop/Catalog.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/Shop/NetworkGameTransactions.h"
+ #include "debug/Debug.h"
+ 
+ NETWORK_OPTIMISATIONS();
+@@ -38,7 +38,7 @@ XPARAM(catalogVersion);
+ #endif //!__FINAL
+ 
+ #ifdef __NET_GAMETRANS_FAKE_LATENCY
+-#include "Network/Shop/NetworkShopping.h"	
++#include "network/Shop/NetworkShopping.h"	
+ #endif // __NET_GAMETRANS_FAKE_LATENCY
+ 
+ 

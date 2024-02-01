@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeManager.h b/src/dev_ng/game/scene/volume/VolumeManager.h
+--- a/src/dev_ng/game/scene/volume/VolumeManager.h
++++ b/src/dev_ng/game/scene/volume/VolumeManager.h
+@@ -11,7 +11,7 @@
+ #include "vector/color32.h"
+ 
+ // game includes
+-#include "Scene/Volume/Volume.h"
++#include "scene/volume/Volume.h"
+ 
+ #if VOLUME_SUPPORT
+ 

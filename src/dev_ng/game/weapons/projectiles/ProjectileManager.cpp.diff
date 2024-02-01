@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileManager.cpp b/src/dev_ng/game/weapons/projectiles/ProjectileManager.cpp
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileManager.cpp
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileManager.cpp
+@@ -1,24 +1,24 @@
+ // File header
+-#include "Weapons/Projectiles/ProjectileManager.h"
++#include "weapons/projectiles/ProjectileManager.h"
+ 
+ // Game headers
+ #include "fwtl/regdrefs.h"
+-#include "Network/Arrays/NetworkArrayMgr.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/general/NetworkPendingProjectiles.h"
+-#include "Peds/Ped.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/NetworkInterface.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/General/NetworkPendingProjectiles.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Script/script_areas.h"
+-#include "Task/Weapons/TaskBomb.h"
+-#include "Task/Weapons/TaskProjectile.h"
+-#include "Text/messages.h"
+-#include "Text/TextFile.h"
+-#include "Weapons/Info/AmmoInfo.h"
+-#include "Weapons/Projectiles/Projectile.h"
+-#include "Weapons/Projectiles/ProjectileFactory.h"
+-#include "Weapons/Projectiles/ProjectileRocket.h"
++#include "scene/world/GameWorld.h"
++#include "script/script_areas.h"
++#include "task/Weapons/TaskBomb.h"
++#include "task/Weapons/TaskProjectile.h"
++#include "text/messages.h"
++#include "text/TextFile.h"
++#include "weapons/info/AmmoInfo.h"
++#include "weapons/projectiles/Projectile.h"
++#include "weapons/projectiles/ProjectileFactory.h"
++#include "weapons/projectiles/ProjectileRocket.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

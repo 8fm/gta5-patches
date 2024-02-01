@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.cpp
+@@ -4,10 +4,10 @@
+ //
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskCharge.h"
++#include "task/Combat/Subtasks/TaskCharge.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskNewCombat.h"
+ #include "task/Movement/TaskNavMesh.h"

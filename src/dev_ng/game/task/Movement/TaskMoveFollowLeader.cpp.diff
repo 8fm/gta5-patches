@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp b/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp
+--- a/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp
++++ b/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp
+@@ -3,12 +3,12 @@
+ #include "TaskMoveFollowLeader.h"
+ 
+ #include "PedGroup/Formation.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendInWater.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Movement/TaskSeekEntity.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskSeekEntity.h"
+ 
+ 
+ AI_OPTIMISATIONS()

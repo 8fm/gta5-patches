@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/BaseCinematicShot.cpp b/src/dev_ng/game/camera/cinematic/shot/BaseCinematicShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/BaseCinematicShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/BaseCinematicShot.cpp
+@@ -12,8 +12,8 @@
+ #include "camera/gameplay/aim/ThirdPersonAimCamera.h"
+ #include "camera/system/CameraMetadata.h"
+ 
+-#include "vehicles/vehicle.h"
+-#include "peds/ped.h"
++#include "Vehicles/vehicle.h"
++#include "Peds/ped.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camBaseCinematicShot,0xCE7F4CBE)
+ 

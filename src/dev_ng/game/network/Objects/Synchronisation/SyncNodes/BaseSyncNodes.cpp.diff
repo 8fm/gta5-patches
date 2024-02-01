@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.cpp
+@@ -3,13 +3,13 @@
+ // description: Project base network sync node classes
+ // written by:    John Gurney
+ //
+-#include "Network/Debug/NetworkDebug.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "network/objects/synchronisation/syncnodes/BaseSyncNodes.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
+-#include "network/players/NetGamePlayer.h"
+-#include "peds/ped.h"
+-#include "scene/physical.h"
++#include "network/Debug/NetworkDebug.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Players/NetGamePlayer.h"
++#include "Peds/ped.h"
++#include "scene/Physical.h"
+ 
+ #if __BANK
+ #include "grcore/debugdraw.h"

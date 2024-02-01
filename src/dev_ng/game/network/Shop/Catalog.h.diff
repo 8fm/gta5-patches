@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/network/Shop/Catalog.h b/src/dev_ng/game/network/Shop/Catalog.h
+--- a/src/dev_ng/game/network/Shop/Catalog.h
++++ b/src/dev_ng/game/network/Shop/Catalog.h
+@@ -24,10 +24,10 @@
+ #include "fwnet/netchannel.h"
+ 
+ // Game headers
+-#include "stats/StatsInterface.h"
+-#include "stats/StatsTypes.h"
++#include "Stats/StatsInterface.h"
++#include "Stats/StatsTypes.h"
+ #include "network/NetworkTypes.h"
+-#include "network/cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "system/threadpool.h"
+ 
+ class netInventory;

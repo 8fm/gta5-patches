@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.cpp b/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.cpp
+--- a/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.cpp
++++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.cpp
+@@ -21,7 +21,7 @@
+ 
+ // Rage headers
+ #include "atl/hashstring.h"
+-#include "Scaleform/scaleform.h"
++#include "scaleform/scaleform.h"
+ #include "scr_scaleform/scaleform.h"
+ #include "frontend/ui_channel.h"
+ #include "string/stringutil.h"
+@@ -29,8 +29,8 @@
+ #include "vector/color32.h"
+ 
+ // Game headers
+-#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ 
+ SCALEFORM_OPTIMISATIONS();
+ //OPTIMISATIONS_OFF()

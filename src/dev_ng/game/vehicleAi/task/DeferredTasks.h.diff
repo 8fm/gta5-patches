@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/DeferredTasks.h b/src/dev_ng/game/vehicleAi/task/DeferredTasks.h
+--- a/src/dev_ng/game/vehicleAi/task/DeferredTasks.h
++++ b/src/dev_ng/game/vehicleAi/task/DeferredTasks.h
+@@ -3,7 +3,7 @@
+ 
+ #include "physics/lockconfig.h"
+ #include "system/taskheader.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ class CTask;
+ 

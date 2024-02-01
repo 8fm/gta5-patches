@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassSmashTest.cpp b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassSmashTest.cpp
+--- a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassSmashTest.cpp
++++ b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassSmashTest.cpp
+@@ -15,7 +15,7 @@
+ 
+ #include "file/default_paths.h"
+ #include "system/nelem.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ #include "fwutil/xmacro.h"
+ 
+@@ -826,7 +826,7 @@ CompileTimeAssert(__DEV);
+ #include "debug/DebugGeometryUtil.h"
+ #include "debug/DebugGlobals.h"
+ #include "modelinfo/modelinfo_channel.h"
+-#include "Network/Objects/Entities/NetObjVehicle.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
+ #include "Objects/object.h"
+ #include "Peds/ped.h"
+ #include "physics/gtaMaterialDebug.h"
+@@ -836,7 +836,7 @@ CompileTimeAssert(__DEV);
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "scene/world/GameWorld.h"
+ #include "Vehicles/VehicleFactory.h"
+-#include "vfx/Particles/PtFxCollision.h"
++#include "vfx/particles/PtFxCollision.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+ #include "vfx/vehicleglass/VehicleGlassSmashTest.h"
+ 

@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/system/AutoGPUCapture.cpp b/src/dev_ng/game/system/AutoGPUCapture.cpp
+--- a/src/dev_ng/game/system/AutoGPUCapture.cpp
++++ b/src/dev_ng/game/system/AutoGPUCapture.cpp
+@@ -14,22 +14,22 @@
+ 
+ #include "debug/Debug.h"
+ #include "debug/DebugLocation.h"
+-#include "peds/ped.h"
+-#include "peds/pedpopulation.h"
+-#include "system/controlmgr.h"
++#include "Peds/ped.h"
++#include "Peds/pedpopulation.h"
++#include "system/controlMgr.h"
+ #include "system/FileMgr.h"
+ #include "scene/world/GameWorld.h"
+ #include "streaming/streamingdebuggraph.h"
+ #include "text/text.h"
+ #include "text/textconversion.h"
+ #include "script/script.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ #include "grmodel/setup.h"
+ #include <limits>
+ 
+ #if !__FINAL
+-#include "Network/Live/NetworkDebugTelemetry.h"
++#include "network/Live/NetworkDebugTelemetry.h"
+ #endif
+ 
+ #if ENABLE_STATS_CAPTURE

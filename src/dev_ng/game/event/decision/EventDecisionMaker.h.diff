@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/event/decision/EventDecisionMaker.h b/src/dev_ng/game/event/decision/EventDecisionMaker.h
+--- a/src/dev_ng/game/event/decision/EventDecisionMaker.h
++++ b/src/dev_ng/game/event/decision/EventDecisionMaker.h
+@@ -3,10 +3,10 @@
+ 
+ // Rage headers
+ #include "atl/array.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Game headers
+-#include "Event/System/EventData.h"
++#include "event/system/EventData.h"
+ 
+ // Forward declarations
+ class CEventDataDecisionMaker;

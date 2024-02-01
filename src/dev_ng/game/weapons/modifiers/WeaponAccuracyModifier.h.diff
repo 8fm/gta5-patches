@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.h b/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.h
+--- a/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.h
++++ b/src/dev_ng/game/weapons/modifiers/WeaponAccuracyModifier.h
+@@ -11,7 +11,7 @@
+ #include "parser/macros.h"
+ 
+ // Game headers
+-#include "Weapons/WeaponAccuracy.h"
++#include "weapons/WeaponAccuracy.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

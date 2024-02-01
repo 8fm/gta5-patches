@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/frontend/loadingscreens.cpp b/src/dev_ng/game/frontend/loadingscreens.cpp
+--- a/src/dev_ng/game/frontend/loadingscreens.cpp
++++ b/src/dev_ng/game/frontend/loadingscreens.cpp
+@@ -56,8 +56,8 @@
+ #include "audio/superconductor.h"
+ #include "camera/viewports/ViewportManager.h"  // for detecting widescreen
+ #include "control/gamelogic.h"
+-#include "core/app.h"
+-#include "text/Text.h"
++#include "Core/app.h"
++#include "text/text.h"
+ #include "text/TextConversion.h"
+ #include "renderer/MeshBlendManager.h"
+ #include "renderer/renderthread.h"
+@@ -77,11 +77,11 @@
+ #include "frontend/GameStreamMgr.h"
+ #include "frontend/ProfileSettings.h"
+ #include "frontend/BusySpinner.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/SocialClubServices/SocialClubCommunityEventMgr.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/SocialClubServices/SocialClubCommunityEventMgr.h"
+ #include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+ #include "parser/manager.h"
+-#include "peds/pedpopulation.h"
++#include "Peds/pedpopulation.h"
+ #include "SaveLoad/savegame_messages.h"
+ #include "scene/scene.h"
+ #include "scene/ExtraContent.h"
+@@ -93,9 +93,9 @@
+ #include "system/pad.h"
+ #include "system/service.h"
+ #include "file/asset.h"
+-#include "Network/Live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "scene/DownloadableTextureManager.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "vfx/misc/MovieManager.h"
+ #include "renderer/PostProcessFX.h"
+ 

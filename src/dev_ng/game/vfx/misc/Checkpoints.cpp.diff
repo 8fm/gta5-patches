@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/vfx/misc/Checkpoints.cpp b/src/dev_ng/game/vfx/misc/Checkpoints.cpp
+--- a/src/dev_ng/game/vfx/misc/Checkpoints.cpp
++++ b/src/dev_ng/game/vfx/misc/Checkpoints.cpp
+@@ -24,15 +24,15 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // Game header
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "Core/Game.h"
+ #include "FrontEnd/MobilePhone.h"
+-#include "Physics/WorldProbe/WorldProbe.h"
+-#include "Renderer/PostProcessFXHelper.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Vfx/Misc/Markers.h"
+-#include "Vfx/Decals/DecalManager.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "renderer/PostProcessFXHelper.h"
++#include "scene/world/GameWorld.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/misc/Markers.h"
++#include "vfx/decals/DecalManager.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.h b/src/dev_ng/game/Cutscene/CutSceneSoundEntity.h
+--- a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.h
++++ b/src/dev_ng/game/Cutscene/CutSceneSoundEntity.h
+@@ -15,7 +15,7 @@
+ #include "cutfile/cutfobject.h"
+ 
+ //Game Headers
+-#include "cutscene/CutSceneDefine.h"
++#include "Cutscene/CutSceneDefine.h"
+ 
+ #if !__NO_OUTPUT
+ #define cutsceneSoundEntityDebugf(pObject, fmt,...) if ( ((Channel_cutscene.TtyLevel == DIAG_SEVERITY_DEBUG3) || (Channel_cutscene.FileLevel == DIAG_SEVERITY_DEBUG3)) && pObject ) { char debugStr[256]; CCutSceneAudioEntity::CommonDebugStr(pObject, debugStr); cutsceneDebugf1("%s" fmt,debugStr,##__VA_ARGS__); }

@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/event/EventNames.cpp b/src/dev_ng/game/event/EventNames.cpp
+--- a/src/dev_ng/game/event/EventNames.cpp
++++ b/src/dev_ng/game/event/EventNames.cpp
+@@ -1,20 +1,20 @@
+ // File header
+-#include "Event/EventNames.h"
++#include "event/EventNames.h"
+ 
+ // Framework headers
+ #include "ai/aichannel.h"
+ 
+ // Game headers
+-#include "Event/EventDamage.h"
+-#include "Event/EventLeader.h"
+-#include "Event/EventMovement.h"
+-#include "Event/EventNetwork.h"
+-#include "Event/Events.h"
+-#include "Event/EventReactions.h"
+-#include "Event/EventScript.h"
+-#include "Event/EventShocking.h"
+-#include "Event/EventSound.h"
+-#include "Event/EventWeapon.h"
++#include "event/EventDamage.h"
++#include "event/EventLeader.h"
++#include "event/EventMovement.h"
++#include "event/EventNetwork.h"
++#include "event/Events.h"
++#include "event/EventReactions.h"
++#include "event/EventScript.h"
++#include "event/EventShocking.h"
++#include "event/EventSound.h"
++#include "event/EventWeapon.h"
+ 
+ #if !__NO_OUTPUT
+ // Static initialisation

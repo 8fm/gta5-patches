@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.cpp b/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.cpp
+--- a/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.cpp
++++ b/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.cpp
+@@ -23,13 +23,13 @@
+ #include "fwsys/timer.h"
+ 
+ //Game headers
+-#include "networkleaderboardsessionmgr.h "
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkClan.h"
++#include "NetworkLeaderboardSessionMgr.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkClan.h"
+ #include "Stats/StatsInterface.h"
+ 
+ NETWORK_OPTIMISATIONS()

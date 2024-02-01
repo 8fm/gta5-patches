@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/frontend/KeyMappingMenu.cpp b/src/dev_ng/game/frontend/KeyMappingMenu.cpp
+--- a/src/dev_ng/game/frontend/KeyMappingMenu.cpp
++++ b/src/dev_ng/game/frontend/KeyMappingMenu.cpp
+@@ -1,15 +1,15 @@
+-#include "Frontend/KeyMappingMenu.h"
++#include "frontend/KeyMappingMenu.h"
+ 
+ #if KEYBOARD_MOUSE_SUPPORT
+ 
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ScaleformMenuHelper.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/ButtonEnum.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/ScaleformMenuHelper.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/ButtonEnum.h"
++#include "frontend/ui_channel.h"
+ #include "system/control.h"
+ #include "system/controlMgr.h"
+-#include "Frontend/UIContexts.h"
++#include "frontend/UIContexts.h"
+ 
+ #define INVALID_RETURN_INDEX -1
+ #define RESTORE_DEFAULTS_ID -3000 // just a random number to get it to behave

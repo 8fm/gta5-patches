@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/task/Response/TaskGangs.cpp b/src/dev_ng/game/task/Response/TaskGangs.cpp
+--- a/src/dev_ng/game/task/Response/TaskGangs.cpp
++++ b/src/dev_ng/game/task/Response/TaskGangs.cpp
+@@ -1,6 +1,6 @@
+ #include "task/Response/TaskGangs.h"
+ 
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Vehicles/vehicle.h"
+ #include "task/Combat/TaskNewCombat.h"
+ #include "task/Combat/TaskThreatResponse.h"

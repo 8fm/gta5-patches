@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/shaders/ShaderLib.h b/src/dev_ng/game/shaders/ShaderLib.h
+--- a/src/dev_ng/game/shaders/ShaderLib.h
++++ b/src/dev_ng/game/shaders/ShaderLib.h
+@@ -7,7 +7,7 @@
+ #define	INC_SHADER_LIB_H_
+ 
+ #include "grcore/stateblock.h"
+-#include "grmodel/ShaderFx.h"
++#include "grmodel/shaderfx.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/Deferred/GBuffer.h"
+ #include "vectormath/threadvector.h"

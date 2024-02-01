@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/Oscillator.h b/src/dev_ng/game/camera/helpers/Oscillator.h
+--- a/src/dev_ng/game/camera/helpers/Oscillator.h
++++ b/src/dev_ng/game/camera/helpers/Oscillator.h
+@@ -8,7 +8,7 @@
+ #define CAMERA_OSCILLATOR_H
+ 
+ #include "camera/base/BaseObject.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ 
+ class camOscillatorMetadata;
+ 

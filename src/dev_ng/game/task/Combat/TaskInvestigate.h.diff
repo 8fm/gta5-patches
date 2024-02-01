@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskInvestigate.h b/src/dev_ng/game/task/Combat/TaskInvestigate.h
+--- a/src/dev_ng/game/task/Combat/TaskInvestigate.h
++++ b/src/dev_ng/game/task/Combat/TaskInvestigate.h
+@@ -8,11 +8,11 @@
+ 
+ // Game headers
+ #include "Cover/cover.h"
+-#include "Event/System/EventData.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/Combat/TaskSearch.h"
+-#include "Task/Default/TaskChat.h"
+-#include "Task/System/TaskHelpers.h"
++#include "event/system/EventData.h"
++#include "scene/RegdRefTypes.h"
++#include "task/Combat/TaskSearch.h"
++#include "task/Default/TaskChat.h"
++#include "task/System/TaskHelpers.h"
+ 
+ class CTaskMoveFollowNavMesh;
+ 

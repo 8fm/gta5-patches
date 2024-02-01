@@ -1,0 +1,52 @@
+diff --git a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp b/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp
+--- a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp
++++ b/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp
+@@ -1,31 +1,31 @@
+ #include "VehicleAILodManager.h"
+ 
+ // Game headers
+-#include "Camera/CamInterface.h"
+-#include "Camera/Viewports/ViewportManager.h"
+-#include "Camera/scripted/ScriptDirector.h"
+-#include "Control/replay/replay.h"
++#include "camera/CamInterface.h"
++#include "camera/Viewports/ViewportManager.h"
++#include "camera/scripted/ScriptDirector.h"
++#include "control/replay/replay.h"
+ #include "debug/VectorMap.h"
+-#include "game/dispatch/Incidents.h"
+-#include "Peds/PedPopulation.h"
+-#include "Renderer/Occlusion.h"
++#include "game/Dispatch/Incidents.h"
++#include "Peds/pedpopulation.h"
++#include "renderer/Occlusion.h"
+ #include "scene/lod/LodScale.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Scene/EntityIterator.h"
++#include "scene/world/GameWorld.h"
++#include "scene/EntityIterator.h"
+ #include "streaming/streaming.h"
+-#include "VehicleAI/VehicleAiLod.h"
+-#include "VehicleAI/VehicleIntelligence.h"
+-#include "VehicleAI/Task/TaskVehicleMissionBase.h"
+-#include "Vehicles/Vehicle.h"
+-#include "Vehicles/VehiclePopulation.h"
++#include "vehicleAi/VehicleAiLod.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "Vehicles/virtualroad.h"
+ #include "ai/debug/system/AIDebugLogManager.h"
+ 
+ // Rage headers
+ #if __BANK
+-#include "Camera/CamInterface.h"
+-#include "Camera/Debug/DebugDirector.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
++#include "camera/CamInterface.h"
++#include "camera/Debug/DebugDirector.h"
++#include "camera/Gameplay/GameplayDirector.h"
+ #endif
+ #include "GrCore/DebugDraw.h"
+ 

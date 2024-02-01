@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/radioemitter.cpp b/src/dev_ng/game/audio/radioemitter.cpp
+--- a/src/dev_ng/game/audio/radioemitter.cpp
++++ b/src/dev_ng/game/audio/radioemitter.cpp
+@@ -14,7 +14,7 @@
+ #include "audiohardware/driverdefs.h"
+ #include "audio/caraudioentity.h"
+ #include "audio/northaudioengine.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Peds/ped.h"
+ #include "scene/world/GameWorld.h"
+ 

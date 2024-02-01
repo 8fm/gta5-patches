@@ -1,0 +1,47 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskWeaponBlocked.cpp b/src/dev_ng/game/task/Weapons/TaskWeaponBlocked.cpp
+--- a/src/dev_ng/game/task/Weapons/TaskWeaponBlocked.cpp
++++ b/src/dev_ng/game/task/Weapons/TaskWeaponBlocked.cpp
+@@ -1,29 +1,29 @@
+ // Class header
+-#include "Task/Weapons/TaskWeaponBlocked.h"
++#include "task/Weapons/TaskWeaponBlocked.h"
+ 
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "ik/IkManager.h"
+-#include "ModelInfo/VehicleModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "Objects/Door.h"
+-#include "Peds/Ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/PlayerInfo.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PlayerInfo.h"
+ #include "phbound/boundcomposite.h"
+-#include "Physics/archetype.h"
+-#include "Physics/Physics.h"
++#include "physics/archetype.h"
++#include "physics/physics.h"
+ #include "renderer/Mirrors.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "task/Combat/TaskCombatMelee.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Vehicles/Vehicle.h"
+-#include "Weapons/Weapon.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "task/Weapons/WeaponController.h"
++#include "Vehicles/vehicle.h"
++#include "weapons/Weapon.h"
+ #include "Objects/DoorTuning.h"
+ 
+ // Macro to disable optimisations if set

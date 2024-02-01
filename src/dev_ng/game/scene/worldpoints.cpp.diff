@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/scene/worldpoints.cpp b/src/dev_ng/game/scene/worldpoints.cpp
+--- a/src/dev_ng/game/scene/worldpoints.cpp
++++ b/src/dev_ng/game/scene/worldpoints.cpp
+@@ -18,11 +18,11 @@
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "peds/PlayerInfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "Peds/PlayerInfo.h"
+ #include "network/NetworkInterface.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/worldpoints.h"
+ #include "script/script.h"
+ #include "script/script_brains.h"

@@ -1,0 +1,47 @@
+diff --git a/src/dev_ng/game/Peds/PedIntelligence.h b/src/dev_ng/game/Peds/PedIntelligence.h
+--- a/src/dev_ng/game/Peds/PedIntelligence.h
++++ b/src/dev_ng/game/Peds/PedIntelligence.h
+@@ -21,11 +21,11 @@ class CTaskSimpleMoveSwim;
+ class CTaskMove;
+ 
+ // Game headers
+-#include "AI/EntityScanner.h"
+-#include "Event/EventGroup.h"
+-#include "Event/EventHandler.h"
+-#include "Event/decision/EventDecisionMakerResponse.h"
+-#include "PathServer/PathServer.h"
++#include "ai/EntityScanner.h"
++#include "event/EventGroup.h"
++#include "event/EventHandler.h"
++#include "event/decision/EventDecisionMakerResponse.h"
++#include "pathserver/PathServer.h"
+ #include "Peds/CombatBehaviour.h"
+ #include "Peds/FleeBehaviour.h"
+ #include "Peds/NavCapabilities.h"
+@@ -38,17 +38,17 @@ class CTaskMove;
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "Peds/QueriableInterface.h"
+ #include "Peds/Relationships.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/Combat/CombatDirector.h"
+-#include "Task/Default/AmbientAudio.h"
+-#include "Task/Movement/Climbing/ClimbDetector.h"
++#include "scene/RegdRefTypes.h"
++#include "task/Combat/CombatDirector.h"
++#include "task/Default/AmbientAudio.h"
++#include "task/Movement/Climbing/ClimbDetector.h"
+ #include "task/Movement/Climbing/TaskDropDown.h"
+ #include "task/Scenario/ScenarioPoint.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskManager.h"
+-#include "Task/System/TaskTreeClone.h"
+-#include "Weapons/FiringPattern.h"
+-#include "Templates/CircularArray.h"
++#include "task/System/Task.h"
++#include "task/System/TaskManager.h"
++#include "task/System/TaskTreeClone.h"
++#include "weapons/FiringPattern.h"
++#include "templates/CircularArray.h"
+ 
+ //
+ // Config

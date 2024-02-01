@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentVariantModel.cpp b/src/dev_ng/game/weapons/components/WeaponComponentVariantModel.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentVariantModel.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentVariantModel.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentVariantModel.h"
++#include "weapons/components/WeaponComponentVariantModel.h"
+ 
+ // Game headers
+ 

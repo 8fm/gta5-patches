@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp b/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp
+--- a/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp
++++ b/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp
+@@ -8,16 +8,16 @@
+ 
+ 
+ #include "control/trafficLights.h"
+-#include "objects/dummyobject.h"
+-#include "objects/object.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
+ #include "Objects/ProcObjects.h"
+ #include "physics/physics.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "scene/FileLoader.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+ #include "streaming/streaming.h"
+-#include "system/fileMgr.h"
+-#include "vehicles/virtualroad.h"
++#include "system/FileMgr.h"
++#include "Vehicles/virtualroad.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

@@ -1,10 +1,12 @@
 diff --git a/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.cpp b/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.cpp
 --- a/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.cpp
 +++ b/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.cpp
-@@ -1,5 +1,5 @@
+@@ -1,6 +1,6 @@
  
 -#include "Control\replay\ReplayInterfaceObj.h"
+-#include "Control/replay/Entity/DestroyedMapObjectsPacket.h"
 +#include "Control/replay/ReplayInterfaceObj.h"
- #include "Control/replay/Entity/DestroyedMapObjectsPacket.h"
++#include "control/replay/Entity/DestroyedMapObjectsPacket.h"
  
  #if GTA_REPLAY
+ 

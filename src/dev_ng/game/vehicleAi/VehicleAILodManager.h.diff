@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vehicleAi/VehicleAILodManager.h b/src/dev_ng/game/vehicleAi/VehicleAILodManager.h
+--- a/src/dev_ng/game/vehicleAi/VehicleAILodManager.h
++++ b/src/dev_ng/game/vehicleAi/VehicleAILodManager.h
+@@ -6,8 +6,8 @@
+ #define VEHICLE_AILOD_MANAGER_H
+ 
+ #include "fragment/type.h"
+-#include "Vector/Vector3.h"
+-#include "VectorMath/Vec3V.h"
++#include "vector/vector3.h"
++#include "vectormath/vec3v.h"
+ #include "Vehicles/VehicleDefines.h"
+ 
+ #include "atl/array.h"

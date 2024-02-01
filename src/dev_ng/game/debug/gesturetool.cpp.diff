@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/debug/gesturetool.cpp b/src/dev_ng/game/debug/gesturetool.cpp
+--- a/src/dev_ng/game/debug/gesturetool.cpp
++++ b/src/dev_ng/game/debug/gesturetool.cpp
+@@ -15,13 +15,13 @@
+ // Game headers
+ 
+ #include "gesturetool.h"
+-#include "ModelInfo/PedModelInfo.h"
+-#include "Peds/Ped.h"
+-#include "Renderer/renderer.h"
+-#include "Frontend/MiniMap.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/ped.h"
++#include "renderer/renderer.h"
++#include "frontend/MiniMap.h"
+ 
+-#include "Text/Text.h"
+-#include "Text/TextConversion.h"
++#include "text/text.h"
++#include "text/TextConversion.h"
+ 
+ 
+ bool CGestureTool::m_active(false);

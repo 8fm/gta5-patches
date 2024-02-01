@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRoadNodeWorldState.h b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRoadNodeWorldState.h
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRoadNodeWorldState.h
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkRoadNodeWorldState.h
+@@ -7,9 +7,9 @@
+ #ifndef NETWORK_ROAD_NODE_WORLD_STATE_H
+ #define NETWORK_ROAD_NODE_WORLD_STATE_H
+ 
+-#include "fwtl/pool.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateManager.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateTypes.h"
++#include "fwtl/Pool.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateManager.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateTypes.h"
+ 
+ //PURPOSE
+ // Describes a region of the map in which road nodes have been disabled by a script

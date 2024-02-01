@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxProjectile.cpp b/src/dev_ng/game/vfx/systems/VfxProjectile.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxProjectile.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxProjectile.cpp
+@@ -24,17 +24,17 @@
+ #include "vfx/ptfx/ptfxwrapper.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
++#include "camera/CamInterface.h"
++#include "camera/Gameplay/Aim/FirstPersonShooterCamera.h"
+ #include "control/replay/replay.h"
+ #include "control/replay/Effects/ParticleWeaponFxPacket.h"
+ #include "control/replay/Effects/ParticleFireFxPacket.h"
+-#include "ModelInfo/WeaponModelInfo.h"
+-#include "Objects/Object.h"
+-#include "Peds/Ped.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Weapons/Projectiles/Projectile.h"
++#include "modelinfo/WeaponModelInfo.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/VfxHelper.h"
++#include "weapons/projectiles/Projectile.h"
+ #include "renderer/RenderPhases/RenderPhaseFX.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////

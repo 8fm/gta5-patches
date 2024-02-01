@@ -1,0 +1,75 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleCombat.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleCombat.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleCombat.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleCombat.cpp
+@@ -4,7 +4,7 @@
+ // AUTHOR :  Phil H
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskVehicleCombat.h"
++#include "task/Combat/Subtasks/TaskVehicleCombat.h"
+ 
+ // Rage headers
+ #include "grcore/debugdraw.h"
+@@ -12,42 +12,42 @@
+ // Game headers
+ #include "audio/vehicleaudioentity.h"
+ #include "audio/caraudioentity.h"
+-#include "Network/Cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ #include "Objects/Door.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Peds/Ped.h"
+-#include "peds/PedIKSettings.h"
++#include "Peds/ped.h"
++#include "Peds/PedIKSettings.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "Peds/VehicleCombatAvoidanceArea.h"
+-#include "Task/Vehicle/TaskInVehicle.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/Subtasks/TaskBoatCombat.h"
+-#include "Task/Combat/Subtasks/TaskHeliCombat.h"
+-#include "Task/Combat/Subtasks/TaskShootAtTarget.h"
+-#include "Task/Combat/Subtasks/TaskShootOutTire.h"
+-#include "Task/Combat/Subtasks/TaskSubmarineCombat.h"
+-#include "Task/Combat/Subtasks/TaskVehicleChase.h"
+-#include "Task/Service/Swat/TaskSwat.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
+-#include "vehicles/Boat.h"
++#include "task/Vehicle/TaskInVehicle.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/Subtasks/TaskBoatCombat.h"
++#include "task/Combat/Subtasks/TaskHeliCombat.h"
++#include "task/Combat/Subtasks/TaskShootAtTarget.h"
++#include "task/Combat/Subtasks/TaskShootOutTire.h"
++#include "task/Combat/Subtasks/TaskSubmarineCombat.h"
++#include "task/Combat/Subtasks/TaskVehicleChase.h"
++#include "task/Service/Swat/TaskSwat.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "Vehicles/Boat.h"
+ #include "Vehicles/Heli.h"
+ #include "Vehicles/Metadata/AIHandlingInfo.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+-#include "vehicles/Train.h"
++#include "Vehicles/train.h"
+ #include "vehicleAi/task/TaskVehicleApproach.h"
+ #include "vehicleAi/task/TaskVehicleAttack.h"
+ #include "vehicleAi/task/TaskVehicleFleeBoat.h"
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+-#include "vehicleAi/task/TaskVehicleGoto.h"
++#include "vehicleAi/task/TaskVehicleGoTo.h"
+ #include "vehicleAi/task/TaskVehicleBlock.h"
+ #include "vehicleAi/task/TaskVehiclePark.h"
+ #include "vehicleAi/task/TaskVehicleTempAction.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

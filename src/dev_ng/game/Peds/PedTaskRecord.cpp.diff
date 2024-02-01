@@ -13,13 +13,13 @@ diff --git a/src/dev_ng/game/Peds/PedTaskRecord.cpp b/src/dev_ng/game/Peds/PedTa
 -#include "Task\General\TaskBasic.h"
 +#include "Peds/PedTaskRecord.h"
 +#include "Peds/PedIntelligence.h"
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
 +#include "PedGroup/PedGroup.h"
-+#include "Event/Events.h"
-+#include "Script/gta_thread.h"
-+#include "Script/ScriptTaskTypes.h"
-+#include "Task/System/Task.h"
-+#include "Task/General/TaskBasic.h"
++#include "event/Events.h"
++#include "script/gta_thread.h"
++#include "script/ScriptTaskTypes.h"
++#include "task/System/Task.h"
++#include "task/General/TaskBasic.h"
  
  AI_OPTIMISATIONS()
  

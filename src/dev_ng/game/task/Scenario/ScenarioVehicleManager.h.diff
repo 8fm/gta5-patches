@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.h b/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.h
+--- a/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.h
++++ b/src/dev_ng/game/task/Scenario/ScenarioVehicleManager.h
+@@ -8,7 +8,7 @@
+ #define TASK_SCENARIO_SCENARIOVEHICLEMANAGER_H
+ 
+ #include "atl/array.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ class CAmbientModelSet;
+ class CAmbientModelSetFilter;

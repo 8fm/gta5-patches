@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp
+--- a/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp
++++ b/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp
+@@ -25,11 +25,11 @@
+ #include "vfx/channel.h"
+ 
+ // game
+-#include "Game/Clock.h"
+-#include "Game/Weather.h"
++#include "game/Clock.h"
++#include "game/Weather.h"
+ #include "Peds/PopCycle.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Vfx/VfxHelper.h"
++#include "scene/DataFileMgr.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

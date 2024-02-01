@@ -1,0 +1,70 @@
+diff --git a/src/dev_ng/game/event/EventWeapon.cpp b/src/dev_ng/game/event/EventWeapon.cpp
+--- a/src/dev_ng/game/event/EventWeapon.cpp
++++ b/src/dev_ng/game/event/EventWeapon.cpp
+@@ -1,44 +1,44 @@
+ // File header
+-#include "Event/EventWeapon.h"
++#include "event/EventWeapon.h"
+ 
+ // Framework headers
+ #include "ai/aichannel.h"
+-#include "fwMaths/geomutil.h"
++#include "fwmaths/geomutil.h"
+ 
+ // Game headers
+ #include "Audio/PoliceScanner.h"
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "Event/EventResponseFactory.h"
++#include "event/EventResponseFactory.h"
+ #include "game/Wanted.h"
+ #include "PedGroup/PedGroup.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerSpecialAbility.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "system/ControlMgr.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Combat/TaskInvestigate.h"
+-#include "Task/Combat/TaskReact.h"
+-#include "Task/Combat/Subtasks/TaskDraggingToSafety.h"
+-#include "Task/Response/TaskAgitated.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Response/TaskReactToDeadPed.h"
+-#include "Task/Response/TaskReactAndFlee.h"
+-#include "Task/Scenario/Types/TaskCowerScenario.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "system/controlMgr.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Combat/TaskInvestigate.h"
++#include "task/Combat/TaskReact.h"
++#include "task/Combat/Subtasks/TaskDraggingToSafety.h"
++#include "task/Response/TaskAgitated.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Response/TaskReactToDeadPed.h"
++#include "task/Response/TaskReactAndFlee.h"
++#include "task/Scenario/Types/TaskCowerScenario.h"
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+-#include "vehicleAI/VehicleIntelligence.h"
+-#include "Vehicles/Vehicle.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/train.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ // Testing Tense Anims In New Cover Task
+ #if __BANK
+-#include "Task/Combat/Cover/TaskCover.h"
++#include "task/Combat/Cover/TaskCover.h"
+ #endif
+ 
+ #include "event/EventWeapon_parser.h"

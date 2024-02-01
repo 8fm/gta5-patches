@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Vehicles/cargen.h b/src/dev_ng/game/Vehicles/cargen.h
+--- a/src/dev_ng/game/Vehicles/cargen.h
++++ b/src/dev_ng/game/Vehicles/cargen.h
+@@ -15,8 +15,8 @@
+ 
+ #include "atl/queue.h"
+ #include "atl/pool.h"
+-#include "modelInfo/vehicleModelInfo.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "task/Scenario/ScenarioChaining.h"
+ #include "vector/vector3.h"
+ 

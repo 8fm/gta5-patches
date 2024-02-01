@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.cpp b/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.cpp
+--- a/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.cpp
++++ b/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.cpp
+@@ -24,18 +24,18 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Game/Weather.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "game/Weather.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Peds/Ped.h"
+-#include "Renderer/RenderPhases/RenderPhaseHeightMap.h"
+-#include "Renderer/PostProcessFX.h"
++#include "Peds/ped.h"
++#include "renderer/RenderPhases/RenderPhaseHeightMap.h"
++#include "renderer/PostProcessFX.h"
+ #include "renderer/rendertargets.h"
+ #include "Timecycle/TimeCycleConfig.h"
+-#include "Vfx/Systems/VfxWeather.h"
+-#include "Vfx/GPUParticles/PtFxGPUManager.h"
+-#include "Vfx/VfxHelper.h"
+-#include "TimeCycle/TimeCycle.h"
++#include "vfx/systems/VfxWeather.h"
++#include "vfx/gpuparticles/PtFxGPUManager.h"
++#include "vfx/VfxHelper.h"
++#include "timecycle/TimeCycle.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

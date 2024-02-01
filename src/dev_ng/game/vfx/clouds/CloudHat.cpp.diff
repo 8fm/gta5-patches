@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vfx/clouds/CloudHat.cpp b/src/dev_ng/game/vfx/clouds/CloudHat.cpp
+--- a/src/dev_ng/game/vfx/clouds/CloudHat.cpp
++++ b/src/dev_ng/game/vfx/clouds/CloudHat.cpp
+@@ -19,14 +19,14 @@
+ #include "pheffects/wind.h"
+ #include "fwscene/stores/drawablestore.h"
+ //#include "streaming/streamingmodule.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/rendertargets.h"
+ #include "grprofile/pix.h"
+ #include "system/param.h"
+ //#include "system/timemgr.h"
+ #include "fwsys/timer.h"
+ #include "CloudHatSettings.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "timecycle/TimeCycle.h"
+ #include "vfx/sky/Sky.h"
+ 

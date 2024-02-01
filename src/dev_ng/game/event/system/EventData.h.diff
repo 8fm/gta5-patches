@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/system/EventData.h b/src/dev_ng/game/event/system/EventData.h
+--- a/src/dev_ng/game/event/system/EventData.h
++++ b/src/dev_ng/game/event/system/EventData.h
+@@ -4,7 +4,7 @@
+ // Rage Headers
+ #include "atl/array.h"
+ #include "atl/hashstring.h"
+-#include "Parser/macros.h"
++#include "parser/macros.h"
+ 
+ // Game headers
+ 

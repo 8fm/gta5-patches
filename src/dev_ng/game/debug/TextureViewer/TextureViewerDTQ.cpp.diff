@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerDTQ.cpp b/src/dev_ng/game/debug/TextureViewer/TextureViewerDTQ.cpp
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerDTQ.cpp
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerDTQ.cpp
+@@ -3,7 +3,7 @@
+ // (c) 2010 RockstarNorth
+ // ========================================
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if __BANK
+ 
+@@ -20,13 +20,13 @@
+ 
+ // Framework headers
+ #include "fwutil/xmacro.h"
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ 
+ // Game headers
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ 
+-#include "debug/textureviewer/textureviewerDTQ.h"
++#include "debug/TextureViewer/TextureViewerDTQ.h"
+ 
+ DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()
+ 

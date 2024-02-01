@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/camera/gameplay/aim/ThirdPersonVehicleAimCamera.cpp b/src/dev_ng/game/camera/gameplay/aim/ThirdPersonVehicleAimCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/aim/ThirdPersonVehicleAimCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/aim/ThirdPersonVehicleAimCamera.cpp
+@@ -9,10 +9,10 @@
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/Ped.h"
+-#include "peds/PedWeapons/PedTargetEvaluator.h"
+-#include "vehicles/Metadata/VehicleLayoutInfo.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "Peds/ped.h"
++#include "Peds/PedWeapons/PedTargetEvaluator.h"
++#include "Vehicles/Metadata/VehicleLayoutInfo.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

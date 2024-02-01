@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/racingline.cpp b/src/dev_ng/game/vehicleAi/racingline.cpp
+--- a/src/dev_ng/game/vehicleAi/racingline.cpp
++++ b/src/dev_ng/game/vehicleAi/racingline.cpp
+@@ -7,7 +7,7 @@
+ #include "vehicleAi/racingline.h"
+ 
+ // Framework headers
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+ #include "debug/DebugScene.h"
+ #include "vehicleAi/pathfind.h"

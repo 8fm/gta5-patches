@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.h b/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.h
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.h
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.h
+@@ -21,7 +21,7 @@
+ // Game
+ #include "socialclubfeed.h"
+ #include "scene/downloadabletexturemanager.h"
+-#include "network/cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "network/crews/NetworkCrewEmblemMgr.h"
+ 
+ struct EmblemDescriptor;

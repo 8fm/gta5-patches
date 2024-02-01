@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.h b/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.h
+--- a/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.h
++++ b/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.h
+@@ -9,8 +9,8 @@
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/System/Tuning.h"
++#include "task/Physics/TaskNM.h"
++#include "task/System/Tuning.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CTaskNMDraggingToSafety

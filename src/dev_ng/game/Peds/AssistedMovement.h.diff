@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/AssistedMovement.h b/src/dev_ng/game/Peds/AssistedMovement.h
+--- a/src/dev_ng/game/Peds/AssistedMovement.h
++++ b/src/dev_ng/game/Peds/AssistedMovement.h
+@@ -8,7 +8,7 @@
+ #define _ASSISTEDMOVEMENT_H_
+ 
+ #include "AssistedMovementStore.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ #define __PLAYER_ASSISTED_MOVEMENT							1
+ #define __PLAYER_ASSISTED_MOVEMENT_WHILST_STRAFING			0

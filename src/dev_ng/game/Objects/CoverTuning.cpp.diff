@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/Objects/CoverTuning.cpp b/src/dev_ng/game/Objects/CoverTuning.cpp
+--- a/src/dev_ng/game/Objects/CoverTuning.cpp
++++ b/src/dev_ng/game/Objects/CoverTuning.cpp
+@@ -4,9 +4,9 @@
+ // Copyright (C) 1999-2012 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "ModelInfo/ModelInfo.h"
++#include "modelinfo/ModelInfo.h"
+ #include "Objects/CoverTuning.h"
+-#include "Objects/Object.h"
++#include "Objects/object.h"
+ #include "bank/bank.h"
+ #include "parser/manager.h"
+ #include "fwsys/fileExts.h"

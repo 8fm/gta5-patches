@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/PickupPacket.h b/src/dev_ng/game/control/replay/Entity/PickupPacket.h
+--- a/src/dev_ng/game/control/replay/Entity/PickupPacket.h
++++ b/src/dev_ng/game/control/replay/Entity/PickupPacket.h
+@@ -6,13 +6,13 @@
+ #ifndef INC_PICKUPPACKET_H_
+ #define INC_PICKUPPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+ #include "control/replay/ReplaySupportClasses.h"
+ #include "control/replay/Misc/InterpPacket.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/PacketBasics.h"
+ #include "streaming/streamingdefs.h"
+ 
+ class CObject;

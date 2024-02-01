@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGoTo.h b/src/dev_ng/game/task/Movement/TaskGoTo.h
+--- a/src/dev_ng/game/task/Movement/TaskGoTo.h
++++ b/src/dev_ng/game/task/Movement/TaskGoTo.h
+@@ -2,15 +2,15 @@
+ #define TASK_GO_TO_H
+ 
+ //Game headers.
+-#include "Control/Route.h"
+-#include "Pathserver/PathServer.h"
++#include "control/Route.h"
++#include "pathserver/PathServer.h"
+ #include "Peds/PedEventScanner.h"
+-#include "Task/Movement/TaskIdle.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskComplex.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/Tuning.h"
++#include "task/Movement/TaskIdle.h"
++#include "task/System/Task.h"
++#include "task/System/TaskComplex.h"
++#include "task/System/TaskMove.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/Tuning.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+  
+ 

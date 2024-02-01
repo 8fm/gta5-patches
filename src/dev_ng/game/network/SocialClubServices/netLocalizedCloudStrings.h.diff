@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.h b/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.h
+--- a/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.h
++++ b/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.h
+@@ -10,7 +10,7 @@
+ #include "data/growbuffer.h"
+ #include "net/status.h"
+ 
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ //FWD
+ class netLocalizedStringInCloudRequest;

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/gpuparticles/PtFxGPUManager.h b/src/dev_ng/game/vfx/gpuparticles/PtFxGPUManager.h
+--- a/src/dev_ng/game/vfx/gpuparticles/PtFxGPUManager.h
++++ b/src/dev_ng/game/vfx/gpuparticles/PtFxGPUManager.h
+@@ -21,7 +21,7 @@
+ #include "grcore/viewport.h"
+ 
+ // game
+-#include "Vfx/GPUParticles/PtFxGPUSystems.h"
++#include "vfx/gpuparticles/PtFxGPUSystems.h"
+ #include "vfx/vfx_shared.h"
+ 
+ 

@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/control/slownesszones.cpp b/src/dev_ng/game/control/slownesszones.cpp
+--- a/src/dev_ng/game/control/slownesszones.cpp
++++ b/src/dev_ng/game/control/slownesszones.cpp
+@@ -16,16 +16,16 @@
+ 
+ // game headers
+ #include "control/slownesszones.h"
+-#include "core/game.h"
+-#include "vehicles/vehicle.h"
+-#include "debug/vectormap.h"
+-#include "Control/GameLogic.h"
+-#include "Peds/Ped.h"
++#include "Core/game.h"
++#include "Vehicles/vehicle.h"
++#include "debug/VectorMap.h"
++#include "control/GameLogic.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+ 
+ // Parser headers
+ #include "slownesszones_parser.h"
+-#include "Scene/Scene.h"
++#include "scene/Scene.h"
+ 
+ 
+ CSlownessZoneManager	CSlownessZoneManager::m_SlownessZonesManagerInstance;

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/cloth/ClothArchetype.h b/src/dev_ng/game/cloth/ClothArchetype.h
+--- a/src/dev_ng/game/cloth/ClothArchetype.h
++++ b/src/dev_ng/game/cloth/ClothArchetype.h
+@@ -1,7 +1,7 @@
+ #ifndef CLOTH_ARCHETYPE_H
+ #define CLOTH_ARCHETYPE_H
+ 
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "ClothMgr.h"
+ #include "ClothParticles.h"
+ #include "ClothConstraints.h"
+@@ -10,7 +10,7 @@
+ #include "ClothCapsuleBounds.h"
+ class CDynamicEntity;
+ #include "entity/extensionlist.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "streaming/streamingmodule.h"
+ 
+ #include "crSkeleton/skeleton.h"

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.h b/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.h
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.h
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.h
+@@ -9,10 +9,10 @@
+ 
+ // Game headers
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Weapons/WeaponController.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
++#include "task/Weapons/WeaponController.h"
+ 
+ // Forward declarations
+ class CWeaponComponentReloadData;

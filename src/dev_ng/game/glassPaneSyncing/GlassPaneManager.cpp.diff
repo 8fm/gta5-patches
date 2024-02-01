@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.cpp b/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.cpp
+--- a/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.cpp
++++ b/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.cpp
+@@ -1,9 +1,9 @@
+ #include "glassPaneSyncing/GlassPaneInfo.h"
+ #include "glassPaneSyncing/GlassPaneManager.h"
+ #include "scene/world/GameWorld.h"
+-#include "Peds/Ped.h"
+-#include "objects/DummyObject.h"
+-#include "Vfx/misc/LODLightManager.h" // hashing func in GenerateHash() 
++#include "Peds/ped.h"
++#include "Objects/DummyObject.h"
++#include "vfx/misc/LODLightManager.h" // hashing func in GenerateHash() 
+ 
+ NETWORK_OPTIMISATIONS()
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.h b/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.h
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.h
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.h
+@@ -10,7 +10,7 @@
+ #include "rline/inbox/rlinbox.h"
+ #include "rline/rlpresence.h"
+ 
+-#include "Network/SocialClubServices/netGamePresenceEvent.h"
++#include "network/SocialClubServices/netGamePresenceEvent.h"
+ 
+ namespace rage 
+ {

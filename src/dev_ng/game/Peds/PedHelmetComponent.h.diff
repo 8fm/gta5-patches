@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedHelmetComponent.h b/src/dev_ng/game/Peds/PedHelmetComponent.h
+--- a/src/dev_ng/game/Peds/PedHelmetComponent.h
++++ b/src/dev_ng/game/Peds/PedHelmetComponent.h
+@@ -13,7 +13,7 @@
+ 
+ // game includes
+ #include "Peds/rendering/PedProps.h"
+-#include "Peds/rendering/pedvariationds.h"
++#include "Peds/rendering/PedVariationDS.h"
+ 
+ // Forward definitions
+ class CPed;

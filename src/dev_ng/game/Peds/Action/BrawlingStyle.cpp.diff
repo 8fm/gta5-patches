@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/Action/BrawlingStyle.cpp b/src/dev_ng/game/Peds/Action/BrawlingStyle.cpp
+--- a/src/dev_ng/game/Peds/Action/BrawlingStyle.cpp
++++ b/src/dev_ng/game/Peds/Action/BrawlingStyle.cpp
+@@ -6,7 +6,7 @@
+ #include "Peds/Action/BrawlingStyle.h"
+ 
+ // Game headers
+-#include "scene/datafilemgr.h"
++#include "scene/DataFileMgr.h"
+ 
+ // Parser headers
+ #include "parser/manager.h"

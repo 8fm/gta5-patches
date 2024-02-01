@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskHeliChase.h b/src/dev_ng/game/task/Combat/Subtasks/TaskHeliChase.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskHeliChase.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskHeliChase.h
+@@ -7,10 +7,10 @@
+ // Game headers
+ #include "ai/AITarget.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CHeli;

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_filenames.cpp b/src/dev_ng/game/SaveLoad/savegame_filenames.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_filenames.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_filenames.cpp
+@@ -15,7 +15,7 @@
+ #include "SaveLoad/savegame_photo_manager.h"
+ #include "SaveLoad/savegame_photo_unique_id.h"
+ #include "SaveLoad/savegame_save.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ #include "text/messages.h"
+ #include "text/TextConversion.h"
+ #include "modelinfo/PedModelInfo.h"

@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkCarGenWorldState.cpp b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkCarGenWorldState.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkCarGenWorldState.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkCarGenWorldState.cpp
+@@ -10,11 +10,11 @@
+ #include "bank/bank.h"
+ #include "vector/geometry.h"
+ 
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ 
+-#include "Network/NetworkInterface.h"
+-#include "peds/Ped.h"
+-#include "Vehicles/CarGen.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
++#include "Vehicles/cargen.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

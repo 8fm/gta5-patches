@@ -1,0 +1,54 @@
+diff --git a/src/dev_ng/game/game/Wanted.cpp b/src/dev_ng/game/game/Wanted.cpp
+--- a/src/dev_ng/game/game/Wanted.cpp
++++ b/src/dev_ng/game/game/Wanted.cpp
+@@ -12,7 +12,7 @@
+ #include "audio/scriptaudioentity.h"
+ #include "audioengine/engine.h"
+ #include "control/gamelogic.h"
+-#include "control/Replay/ReplayBufferMarker.h"
++#include "control/replay/ReplayBufferMarker.h"
+ #include "debug/Debug.h"
+ #include "debug/DebugScene.h"
+ #include "debug/DebugWanted.h"
+@@ -35,12 +35,12 @@
+ #include "game/Wanted.h"
+ #include "game/Wanted_parser.h"
+ #include "game/localisation.h"
+-#include "modelinfo/vehiclemodelinfo.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/PedMotionData.h"
+-#include "peds/PlayerInfo.h"
+-#include "Scene/DataFileMgr.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PedMotionData.h"
++#include "Peds/PlayerInfo.h"
++#include "scene/DataFileMgr.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/scene.h"
+ #include "scene/EntityIterator.h"
+@@ -55,18 +55,18 @@
+ #include "text/messages.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/Trailer.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ //#include "modelindices.h"
+ 
+ 
+-#include "Network/Live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "network/Live/NetworkTelemetry.h"
+ #include "game/zones.h"
+ 
+ // network includes
+-#include "network/events/NetworkEventTypes.h"
++#include "network/Events/NetworkEventTypes.h"
+ #include "network/Objects/Entities/NetObjPlayer.h"
+-#include "network/players/NetGamePlayer.h"
++#include "network/Players/NetGamePlayer.h"
+ #include "network/NetworkInterface.h"
+ 
+ #include "data/aes_init.h"

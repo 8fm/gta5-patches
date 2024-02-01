@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.cpp b/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.cpp
+--- a/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.cpp
++++ b/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.h"
++#include "task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.h"
+ 
+ // Rage Headers
+ #include "bank/bkmgr.h"
+@@ -16,14 +16,14 @@
+ #include "ScriptedGunTaskInfoMetadataMgr_parser.h"
+ 
+ // Game Headers
+-#include "Debug/DebugScene.h"
+-#include "Event/Events.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "event/Events.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/Gun/TaskAimGunScripted.h"
+-#include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"
++#include "scene/world/GameWorld.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/Gun/TaskAimGunScripted.h"
++#include "task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/HidePacket.cpp b/src/dev_ng/game/control/replay/Misc/HidePacket.cpp
+--- a/src/dev_ng/game/control/replay/Misc/HidePacket.cpp
++++ b/src/dev_ng/game/control/replay/Misc/HidePacket.cpp
+@@ -4,7 +4,7 @@
+ 
+ #include "vectormath/vec3v.h"
+ 
+-#include "scene/building.h"
++#include "scene/Building.h"
+ #include "scene/world/GameWorld.h"
+ #include "vfx/misc/LODLightManager.h"				// for hash
+ 

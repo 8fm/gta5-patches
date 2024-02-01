@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/scene/lod/LodMgr.cpp b/src/dev_ng/game/scene/lod/LodMgr.cpp
+--- a/src/dev_ng/game/scene/lod/LodMgr.cpp
++++ b/src/dev_ng/game/scene/lod/LodMgr.cpp
+@@ -10,8 +10,8 @@
+ #include "scene/lod/LodMgr.h"
+ 
+ #include "modelinfo/BaseModelInfo.h"
+-#include "modelInfo/ModelInfo.h"
+-#include "modelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "renderer/Renderer.h"	// just for GetPreStreamDistance()
+ #include "scene/Entity.h"
+ #include "scene/ContinuityMgr.h"

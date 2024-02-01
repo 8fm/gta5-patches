@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.cpp b/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.cpp
+--- a/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.cpp
++++ b/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.cpp
+@@ -3,7 +3,7 @@
+ // AUTHOR :  Phil H
+ // CREATED : 29-10-2008
+ 
+-#include "Task/Default/Patrol/PatrolRoutes.h"
++#include "task/Default/Patrol/PatrolRoutes.h"
+ 
+ #include "grcore/debugdraw.h"
+ 
+@@ -11,16 +11,16 @@
+ #include "camera/CamInterface.h"
+ #include "game/ModelIndices.h"
+ #include "fwmaths/random.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "Peds/pedpopulation.h"
+ #include "Peds/ped.h"
+-#include "Peds/pedIntelligence.h"
+-#include "Scene/FileLoader.h"
+-#include "scene/world/gameWorld.h"
++#include "Peds/PedIntelligence.h"
++#include "scene/FileLoader.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/worldpoints.h"
+ #include "task/Default/patrol/TaskPatrol.h"
+-#include "Task/Scenario/ScenarioManager.h"
++#include "task/Scenario/ScenarioManager.h"
+ #include "task/System/TaskManager.h"
+ 
+ // Rage headers

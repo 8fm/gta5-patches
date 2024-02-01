@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.cpp
+@@ -9,7 +9,7 @@
+ #include "camera/helpers/Collision.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "crskeleton/skeleton.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "camera/CamInterface.h"
+ 
+ CAMERA_OPTIMISATIONS()

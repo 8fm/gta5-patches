@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.cpp b/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.cpp
+--- a/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.cpp
++++ b/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.cpp
+@@ -10,9 +10,9 @@
+ #include "Objects/object.h"
+ #include "Peds/ped.h"
+ #include "script/script.h"
+-#include "vehicles/train.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/train.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/VehicleFactory.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CAnimSceneForceMotionStateEvent - force the motion state on a ped. Used for walking blend outs, etc

@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/templates/LinkList.h b/src/dev_ng/game/templates/Li
  #define INC_LINKLIST_H_
  
 -#include "debug\debug.h"
-+#include "debug/debug.h"
++#include "debug/Debug.h"
  
  template<class T> class CLinkList;
  

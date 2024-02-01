@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/game/Dispatch/DispatchServices.h b/src/dev_ng/game/game/Dispatch/DispatchServices.h
+--- a/src/dev_ng/game/game/Dispatch/DispatchServices.h
++++ b/src/dev_ng/game/game/Dispatch/DispatchServices.h
+@@ -12,12 +12,12 @@
+ // Game includes
+ #include "game/Dispatch/DispatchEnums.h"
+ #include "game/Dispatch/DispatchHelpers.h"
+-#include "game/dispatch/Orders.h"
++#include "game/Dispatch/Orders.h"
+ #include "streaming/streamingrequest.h"
+ #include "task/System/TaskHelperFSM.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
+-#include "vehicles/vehicle.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
++#include "Vehicles/vehicle.h"
+ 
+ #if __BANK
+ #include "vector/colors.h"

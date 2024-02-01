@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/System/TaskManager.cpp b/src/dev_ng/game/task/System/TaskManager.cpp
+--- a/src/dev_ng/game/task/System/TaskManager.cpp
++++ b/src/dev_ng/game/task/System/TaskManager.cpp
+@@ -1,13 +1,13 @@
+ // File header
+-#include "Task/System/TaskManager.h"
++#include "task/System/TaskManager.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedTaskRecord.h"
+-#include "Task/Default/TaskWander.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Vehicles/Vehicle.h"
++#include "task/Default/TaskWander.h"
++#include "task/System/TaskFSMClone.h"
++#include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()
+ 

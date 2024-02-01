@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxWeather.h b/src/dev_ng/game/vfx/systems/VfxWeather.h
+--- a/src/dev_ng/game/vfx/systems/VfxWeather.h
++++ b/src/dev_ng/game/vfx/systems/VfxWeather.h
+@@ -19,8 +19,8 @@
+ // rage
+ 
+ // game
+-#include "Task/System/TaskHelpers.h"
+-#include "Vfx/GPUParticles/PtFxGPUManager.h"
++#include "task/System/TaskHelpers.h"
++#include "vfx/gpuparticles/PtFxGPUManager.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

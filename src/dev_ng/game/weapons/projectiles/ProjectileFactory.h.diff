@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileFactory.h b/src/dev_ng/game/weapons/projectiles/ProjectileFactory.h
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileFactory.h
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileFactory.h
+@@ -2,7 +2,7 @@
+ #define PROJECTILE_FACTORY_H
+ 
+ // Game headers
+-#include "Weapons/WeaponEnums.h"
++#include "weapons/WeaponEnums.h"
+ 
+ // Forward declarations
+ class CEntity;

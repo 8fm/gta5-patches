@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatStrafe.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatStrafe.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatStrafe.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatStrafe.cpp
+@@ -2,17 +2,17 @@
+ // PURPOSE : Subtask of boat combat used to strafe a target
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskBoatStrafe.h"
++#include "task/Combat/Subtasks/TaskBoatStrafe.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "renderer/Water.h"
+ #include "task/Combat/Subtasks/TaskVehicleCombat.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+ #include "vehicleAi/task/TaskVehicleTempAction.h"
+-#include "Vehicles/boat.h"
++#include "Vehicles/Boat.h"
+ #include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()

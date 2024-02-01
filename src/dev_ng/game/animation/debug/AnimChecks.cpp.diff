@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/animation/debug/AnimChecks.cpp b/src/dev_ng/game/animation/debug/AnimChecks.cpp
+--- a/src/dev_ng/game/animation/debug/AnimChecks.cpp
++++ b/src/dev_ng/game/animation/debug/AnimChecks.cpp
+@@ -10,9 +10,9 @@
+ #include "fwanimation/animmanager.h"
+ #include "animation/debug/AnimChecks.h"
+ #include "animation/debug/AnimDebug.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "streaming/streaming.h"			// For CStreaming::LoadAllRequestedObjects(), etc.
+-#include "Task/Combat/TaskCombatMelee.h"
++#include "task/Combat/TaskCombatMelee.h"
+ 
+ // Rage includes
+ #include "crmetadata/properties.h"

@@ -1,9 +1,20 @@
 diff --git a/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp b/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp
 --- a/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp
 +++ b/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp
-@@ -1,4 +1,4 @@
+@@ -1,12 +1,12 @@
 -#include "script\handlers\GameScriptEntity.h"
-+#include "script/handlers/GameScriptEntity.h"
++#include "script/Handlers/GameScriptEntity.h"
  
  #include "network/Debug/NetworkDebug.h"
  #include "network/Objects/Entities/NetObjPhysical.h"
+ #include "Objects/object.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/Physical.h"
+-#include "script/handlers/GameScriptHandlerNetwork.h"
+-#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptHandlerNetwork.h"
++#include "script/Handlers/GameScriptResources.h"
+ #include "script/script_channel.h"
+ #include "script/script.h"
+ #include "script/script_debug.h"

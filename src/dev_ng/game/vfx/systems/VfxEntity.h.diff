@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxEntity.h b/src/dev_ng/game/vfx/systems/VfxEntity.h
+--- a/src/dev_ng/game/vfx/systems/VfxEntity.h
++++ b/src/dev_ng/game/vfx/systems/VfxEntity.h
+@@ -22,7 +22,7 @@
+ #include "vectormath/classes.h"
+ 
+ // game
+-#include "Scene/2dEffect.h"
++#include "scene/2dEffect.h"
+ #include "control/replay/ReplaySettings.h"
+ 
+ 

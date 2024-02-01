@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/Live/Events_durango.winrt.cpp b/src/dev_ng/game/network/Live/Events_durango.winrt.cpp
+--- a/src/dev_ng/game/network/Live/Events_durango.winrt.cpp
++++ b/src/dev_ng/game/network/Live/Events_durango.winrt.cpp
+@@ -11,14 +11,14 @@
+ 
+ #include "diag/seh.h"
+ #include "events_durango.h"
+-#include "Network/xlast/Events.man.h"
+-#include "Network/xlast/Events_JA.man.h"
+-#include "Network/xlast/Fuzzy.schema.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkRichPresence.h"
++#include "network/xlast/Events.man.h"
++#include "network/xlast/Events_JA.man.h"
++#include "network/xlast/Fuzzy.schema.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkRichPresence.h"
+ #include "rline/durango/rlxbl_interface.h"
+ #include "rline/durango/private/rlxblcommon.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "rline/durango/private/rlxblinternal.h"
+ #include "rline/durango/rlxblachievements_interface.h"
+ #include "frontend/FrontendStatsMgr.h"

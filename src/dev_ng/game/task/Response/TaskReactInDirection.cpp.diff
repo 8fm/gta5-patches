@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/TaskReactInDirection.cpp b/src/dev_ng/game/task/Response/TaskReactInDirection.cpp
+--- a/src/dev_ng/game/task/Response/TaskReactInDirection.cpp
++++ b/src/dev_ng/game/task/Response/TaskReactInDirection.cpp
+@@ -1,7 +1,7 @@
+ // FILE :    TaskReactInDirection.h
+ 
+ // File header
+-#include "Task/Response/TaskReactInDirection.h"
++#include "task/Response/TaskReactInDirection.h"
+ 
+ // Game headers
+ #include "animation/Move.h"

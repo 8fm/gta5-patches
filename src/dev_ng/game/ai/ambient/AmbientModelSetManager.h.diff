@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ai/ambient/AmbientModelSetManager.h b/src/dev_ng/game/ai/ambient/AmbientModelSetManager.h
+--- a/src/dev_ng/game/ai/ambient/AmbientModelSetManager.h
++++ b/src/dev_ng/game/ai/ambient/AmbientModelSetManager.h
+@@ -2,7 +2,7 @@
+ #define INC_AMBIENT_MODEL_SET_MANAGER_H
+ 
+ // Game headers
+-#include "AI/Ambient/AmbientModelSet.h"
++#include "ai/ambient/AmbientModelSet.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CAmbientPedModelSet

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkEntityAreaWorldState.h b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkEntityAreaWorldState.h
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkEntityAreaWorldState.h
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkEntityAreaWorldState.h
+@@ -8,9 +8,9 @@
+ #ifndef NETWORK_ENTITY_AREA_WORLD_STATE_H
+ #define NETWORK_ENTITY_AREA_WORLD_STATE_H
+ 
+-#include "fwtl/pool.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateManager.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateTypes.h"
++#include "fwtl/Pool.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateManager.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateTypes.h"
+ 
+ //PURPOSE
+ // Describes an area that can be reserved by script

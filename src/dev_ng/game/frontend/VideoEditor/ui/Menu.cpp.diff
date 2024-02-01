@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Menu.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/Menu.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Menu.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Menu.cpp
+@@ -45,26 +45,26 @@
+ #include "frontend/hud_colour.h"
+ #include "frontend/MousePointer.h"
+ #include "frontend/NewHud.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/PauseMenu.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ #include "frontend/WarningScreen.h"
+ 
+ #include "frontend/VideoEditor/Views/FileViewFilter.h"
+ #include "replaycoordinator/ReplayAudioTrackProvider.h"
+ #include "replaycoordinator/ReplayEditorParameters.h"
+ #include "replaycoordinator/storage/Montage.h"
+-#include "replaycoordinator/Storage/MontageText.h"
++#include "replaycoordinator/storage/MontageText.h"
+ 
+ #include "Peds/ped.h"
+-#include "text/Text.h"
++#include "text/text.h"
+ #include "text/TextFormat.h"
+ #include "text/TextConversion.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+-#include "System/controlMgr.h"
++#include "system/controlMgr.h"
+ 
+-#include "Network/Cloud/VideoUploadManager.h"
++#include "network/Cloud/VideoUploadManager.h"
+ 
+ FRONTEND_OPTIMISATIONS();
+ //OPTIMISATIONS_OFF();

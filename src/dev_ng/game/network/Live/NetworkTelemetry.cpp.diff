@@ -1,0 +1,81 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkTelemetry.cpp b/src/dev_ng/game/network/Live/NetworkTelemetry.cpp
+--- a/src/dev_ng/game/network/Live/NetworkTelemetry.cpp
++++ b/src/dev_ng/game/network/Live/NetworkTelemetry.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2012 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "peds/PlayerInfo.h"
++#include "Peds/PlayerInfo.h"
+ 
+ #if RSG_SCE
+ #include <libnetctl.h>
+@@ -27,21 +27,21 @@
+ #include "fwcommerce/CommerceUtil.h"
+ 
+ // Network headers
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Live/NetworkDebugTelemetry.h"
+-#include "Network/Live/NetworkSCPresenceUtil.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkDebugTelemetry.h"
++#include "network/Live/NetworkSCPresenceUtil.h"
++#include "network/Live/livemanager.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Sessions/NetworkGameConfig.h"
+ #include "network/Sessions/NetworkSession.h"
+ #include "network/Sessions/NetworkVoiceSession.h"
+ #include "network/Live/NetworkRemoteCheaterDetector.h"
+ #include "network/Events/NetworkEventTypes.h"
+-#include "Network/SocialClubServices/SocialClubCommunityEventMgr.h"
++#include "network/SocialClubServices/SocialClubCommunityEventMgr.h"
+ #include "network/SocialClubServices/SocialClubFeedTilesMgr.h"
+-#include "Network/Voice/NetworkVoice.h"
++#include "network/Voice/NetworkVoice.h"
+ 
+ // Stats headers
+ #include "Stats/StatsInterface.h"
+@@ -50,20 +50,20 @@
+ 
+ // Game headers
+ #include "audio/northaudioengine.h"
+-#include "Core/Game.h"
++#include "Core/game.h"
+ #if RSG_GEN9
+-#include "core/gameedition.h"
++#include "Core/gameedition.h"
+ #endif
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "frontend/landing_page/LandingPage.h"
+ #include "frontend/landing_page/LandingPageArbiter.h"
+ #include "frontend/landing_page/messages/uiLandingPageMessages.h"
+ #include "frontend/page_deck/items/uiCloudSupport.h"
+ #include "frontend/UIContexts.h"
+-#include "Game/ModelIndices.h"
+-#include "peds/ped.h"
+-#include "peds/pedmotiondata.h"
+-#include "scene/world/gameWorld.h"
++#include "game/ModelIndices.h"
++#include "Peds/ped.h"
++#include "Peds/PedMotionData.h"
++#include "scene/world/GameWorld.h"
+ #include "audio/radioaudioentity.h"
+ #include "frontend/ProfileSettings.h"
+ #include "modelinfo/MloModelInfo.h"
+@@ -73,7 +73,7 @@
+ #include "security/ragesecgameinterface.h"
+ 
+ #if GEN9_STANDALONE_ENABLED
+-#include "peds/CriminalCareer/CriminalCareerDefs.h"
++#include "Peds/CriminalCareer/CriminalCareerDefs.h"
+ #endif
+ 
+ #if RSG_PC

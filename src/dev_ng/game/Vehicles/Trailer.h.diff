@@ -1,14 +1,18 @@
 diff --git a/src/dev_ng/game/Vehicles/Trailer.h b/src/dev_ng/game/Vehicles/Trailer.h
 --- a/src/dev_ng/game/Vehicles/Trailer.h
 +++ b/src/dev_ng/game/Vehicles/Trailer.h
-@@ -1,8 +1,8 @@
+@@ -1,10 +1,10 @@
  #ifndef __INC_TRAILER_H__
  #define __INC_TRAILER_H__
  
 -#include "network\objects\entities\netObjTrailer.h"
 -#include "physics\constrainthandle.h"
-+#include "network/objects/entities/netObjTrailer.h"
+-#include "vehicles/automobile.h"
+-#include "vehicles/VehicleGadgets.h"
++#include "network/Objects/Entities/NetObjTrailer.h"
 +#include "physics/constrainthandle.h"
- #include "vehicles/automobile.h"
- #include "vehicles/VehicleGadgets.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/VehicleGadgets.h"
  
+ //////////////////////////////////////////////////////////////////////////
+ // Class to encapsulate the collision on the 

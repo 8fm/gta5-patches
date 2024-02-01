@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.h b/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.h
+--- a/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.h
++++ b/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.h
+@@ -2,8 +2,8 @@
+ #define TASK_PLAYER_WEAPON_H
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CTaskPlayerWeapon

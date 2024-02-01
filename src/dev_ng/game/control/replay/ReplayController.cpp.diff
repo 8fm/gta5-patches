@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayController.cpp b/src/dev_ng/game/control/replay/ReplayController.cpp
+--- a/src/dev_ng/game/control/replay/ReplayController.cpp
++++ b/src/dev_ng/game/control/replay/ReplayController.cpp
+@@ -3,8 +3,8 @@
+ 
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/Misc/ReplayPacket.h"
+-#include "Control/replay/Streaming/ReplayStreaming.h"
++#include "control/replay/Misc/ReplayPacket.h"
++#include "control/replay/Streaming/ReplayStreaming.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ ReplayController::ReplayController(CAddressInReplayBuffer& currAddress, CBufferInfo& bufferInfo, FrameRef startingFrame)

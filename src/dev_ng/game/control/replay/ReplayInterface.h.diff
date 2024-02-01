@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterface.h b/src/dev_ng/game/control/replay/ReplayInterface.h
+--- a/src/dev_ng/game/control/replay/ReplayInterface.h
++++ b/src/dev_ng/game/control/replay/ReplayInterface.h
+@@ -10,7 +10,7 @@
+ #include "atl/map.h"
+ 
+ #include "system/criticalsection.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ 
+ #include "replay_channel.h"
+ #include "ReplayController.h"
+@@ -18,7 +18,7 @@
+ #include "ReplaySupportClasses.h"
+ #include "ReplayModelManager.h"
+ #include "Misc/InterpPacket.h"
+-#include "Scene/EntityTypes.h"
++#include "scene/EntityTypes.h"
+ 
+ namespace rage
+ {

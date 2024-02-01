@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxFire.cpp b/src/dev_ng/game/vfx/systems/VfxFire.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxFire.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxFire.cpp
+@@ -25,16 +25,16 @@
+ 
+ // game
+ #include "control/replay/replay.h"
+-#include "control/replay/effects/ParticleFireFxPacket.h"
+-#include "Peds/Ped.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Renderer/Lights/Lights.h"
+-#include "Scene/Entity.h"
+-#include "Vfx/Misc/Fire.h"
+-#include "Vfx/Particles/PtFxDefines.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxVehicle.h"
+-#include "Vfx/VfxHelper.h"
++#include "control/replay/Effects/ParticleFireFxPacket.h"
++#include "Peds/ped.h"
++#include "physics/gtaMaterialManager.h"
++#include "renderer/Lights/Lights.h"
++#include "scene/Entity.h"
++#include "vfx/misc/Fire.h"
++#include "vfx/Particles/PtFxDefines.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

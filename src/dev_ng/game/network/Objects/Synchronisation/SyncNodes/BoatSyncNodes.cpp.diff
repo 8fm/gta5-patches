@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BoatSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BoatSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BoatSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BoatSyncNodes.cpp
+@@ -4,8 +4,8 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/BoatSyncNodes.h"
+-#include "vehicles/Boat.h"
++#include "network/Objects/Synchronisation/SyncNodes/BoatSyncNodes.h"
++#include "Vehicles/Boat.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

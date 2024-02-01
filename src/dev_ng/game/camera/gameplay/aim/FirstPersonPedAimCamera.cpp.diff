@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/gameplay/aim/FirstPersonPedAimCamera.cpp b/src/dev_ng/game/camera/gameplay/aim/FirstPersonPedAimCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/aim/FirstPersonPedAimCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/aim/FirstPersonPedAimCamera.cpp
+@@ -11,8 +11,8 @@
+ #include "camera/helpers/Collision.h"
+ #include "camera/helpers/ControlHelper.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/portals/Portal.h"
+ 
+ CAMERA_OPTIMISATIONS()

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/animation/debug/AnimViewer.h b/src/dev_ng/game/animation/debug/AnimViewer.h
+--- a/src/dev_ng/game/animation/debug/AnimViewer.h
++++ b/src/dev_ng/game/animation/debug/AnimViewer.h
+@@ -23,7 +23,7 @@
+ #include "fwdebug/debugbank.h"
+ 
+ // Gta includes
+-#include "animation/animbones.h"
++#include "animation/AnimBones.h"
+ #include "animation/debug/animdebug.h"
+ #include "animation/moveped.h"
+ #include "animation/pmdictionarystore.h"
+@@ -31,8 +31,8 @@
+ #include "fwanimation/directorcomponentragdoll.h"
+ #include "fwanimation/move.h"
+ #include "fwanimation/movedump.h"
+-#include "scene/dynamicentity.h"
+-#include "scene/regdreftypes.h"
++#include "scene/DynamicEntity.h"
++#include "scene/RegdRefTypes.h"
+ #include "task/Animation/AnimTaskFlags.h"
+ 
+ // Rage forward declarations

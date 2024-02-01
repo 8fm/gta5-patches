@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedPerception.cpp b/src/dev_ng/game/Peds/PedIntelligence/PedPerception.cpp
+--- a/src/dev_ng/game/Peds/PedIntelligence/PedPerception.cpp
++++ b/src/dev_ng/game/Peds/PedIntelligence/PedPerception.cpp
+@@ -10,12 +10,12 @@
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Debug/VectorMap.h"
+-#include "Peds/Ped.h"
+-#include "Peds/Ped.h"
++#include "debug/VectorMap.h"
++#include "Peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/Physics.h"
+-#include "Scene/World/GameWorld.h"
++#include "physics/physics.h"
++#include "scene/world/GameWorld.h"
+ // rage headers
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"

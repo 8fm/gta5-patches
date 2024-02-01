@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp b/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp
-@@ -3,11 +3,11 @@
+@@ -3,23 +3,23 @@
  
  //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
  // Rage headers
@@ -18,3 +18,21 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMBuoyancy.cpp b/src/dev_ng/game/t
  
  // Framework headers
  #include "grcore/debugdraw.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"
+-#include "Task/Motion/Locomotion/TaskInWater.h"
+-#include "Task/Physics/TaskNMBuoyancy.h"
+-#include "Task/Physics/TaskNMRiverRapids.h"
+-#include "Task/Physics/TaskNMShot.h"
+-#include "Task/Physics/NmDebug.h"
+-#include "Renderer/Water.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
++#include "task/Physics/TaskNMBuoyancy.h"
++#include "task/Physics/TaskNMRiverRapids.h"
++#include "task/Physics/TaskNMShot.h"
++#include "task/Physics/NmDebug.h"
++#include "renderer/Water.h"
+ 
+ //----------------------------------------------------------------------------------------------------------------------------------------------------
+ 

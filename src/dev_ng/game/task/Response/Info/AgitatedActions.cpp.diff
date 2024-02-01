@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedActions.cpp b/src/dev_ng/game/task/Response/Info/AgitatedActions.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedActions.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedActions.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Response/Info/AgitatedActions.h"
++#include "task/Response/Info/AgitatedActions.h"
+ 
+ // Game headers
+ #include "ai/AITarget.h"
+@@ -8,19 +8,19 @@
+ #include "event/Events.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskNewCombat.h"
+-#include "Task/Combat/TaskThreatResponse.h"
++#include "task/Combat/TaskThreatResponse.h"
+ #include "task/Default/TaskAmbient.h"
+ #include "task/General/TaskBasic.h"
+ #include "task/General/Phone/TaskCallPolice.h"
+-#include "Task/Movement/TaskIdle.h"
++#include "task/Movement/TaskIdle.h"
+ #include "task/Movement/TaskSeekEntity.h"
+-#include "Task/Response/Info/AgitatedConditions.h"
+-#include "Task/Response/TaskAgitated.h"
+-#include "Task/Response/TaskConfront.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Response/TaskReactAndFlee.h"
++#include "task/Response/Info/AgitatedConditions.h"
++#include "task/Response/TaskAgitated.h"
++#include "task/Response/TaskConfront.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Response/TaskReactAndFlee.h"
+ #include "task/Response/TaskShockingEvents.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "task/Vehicle/TaskEnterVehicle.h"
+ #include "task/Vehicle/TaskExitVehicle.h"

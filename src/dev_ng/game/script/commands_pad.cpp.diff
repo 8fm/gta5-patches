@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/script/commands_pad.cpp b/src/dev_ng/game/script/commands_pad.cpp
+--- a/src/dev_ng/game/script/commands_pad.cpp
++++ b/src/dev_ng/game/script/commands_pad.cpp
+@@ -8,13 +8,13 @@
+ #include "script/commands_hud.h"
+ #include "script/script.h"
+ #include "script/script_helper.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "system/controlMgr.h"
+ #include "system/control.h"
+ #include "system/pad.h"
+ #include "text/textformat.h"
+-#include "peds/ped.h"
+-#include "peds/PedWeapons/PedTargetEvaluator.h"
++#include "Peds/ped.h"
++#include "Peds/PedWeapons/PedTargetEvaluator.h"
+ #include "script/script_hud.h"
+ #include "script/thread.h"
+ #include "math/amath.h"

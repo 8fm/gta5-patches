@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.h b/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.h
+@@ -1,11 +1,11 @@
+ #ifndef CUTSCENE_AUDIO_PACKET_H_
+ #define CUTSCENE_AUDIO_PACKET_H_
+ 
+-#include "Control/replay/ReplayController.h"
++#include "control/replay/ReplayController.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/Audio/SoundPacket.h"
++#include "control/replay/Audio/SoundPacket.h"
+ #include "audio/speechaudioentity.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

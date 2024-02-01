@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/LODLightManager.h b/src/dev_ng/game/vfx/misc/LODLightManager.h
+--- a/src/dev_ng/game/vfx/misc/LODLightManager.h
++++ b/src/dev_ng/game/vfx/misc/LODLightManager.h
+@@ -22,7 +22,7 @@
+ #include "scene/loader/MapData_Misc.h"
+ #include "scene/Entity.h"
+ #include "game/Clock.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "camera/viewports/Viewport.h"
+ #endif
+ 

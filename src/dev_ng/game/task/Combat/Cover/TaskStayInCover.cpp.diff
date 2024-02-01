@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.cpp b/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.cpp
+--- a/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.cpp
++++ b/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.cpp
+@@ -8,21 +8,21 @@
+ #include "ai/task/taskchannel.h"
+ 
+ //Game headers.
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Combat/Cover/TaskSeekCover.h"
+-#include "Task/Combat/Cover/TaskStayInCover.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Combat/Cover/TaskSeekCover.h"
++#include "task/Combat/Cover/TaskStayInCover.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/WeaponController.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ //Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ AI_OPTIMISATIONS()
+ 

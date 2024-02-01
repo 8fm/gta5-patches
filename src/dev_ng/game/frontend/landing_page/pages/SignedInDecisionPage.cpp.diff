@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/landing_page/pages/SignedInDecisionPage.cpp b/src/dev_ng/game/frontend/landing_page/pages/SignedInDecisionPage.cpp
+--- a/src/dev_ng/game/frontend/landing_page/pages/SignedInDecisionPage.cpp
++++ b/src/dev_ng/game/frontend/landing_page/pages/SignedInDecisionPage.cpp
+@@ -15,7 +15,7 @@
+ 
+ // game
+ #include "frontend/ui_channel.h"
+-#include "network/live/livemanager.h"
++#include "network/Live/livemanager.h"
+ 
+ FWUI_DEFINE_TYPE( CSignedInDecisionPage, 0x19C78702 );
+ 

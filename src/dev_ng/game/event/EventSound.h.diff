@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventSound.h b/src/dev_ng/game/event/EventSound.h
+--- a/src/dev_ng/game/event/EventSound.h
++++ b/src/dev_ng/game/event/EventSound.h
+@@ -10,7 +10,7 @@
+ #include "event/EventEditable.h"
+ #include "event/EventPriorities.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ //-----------------------------------------------------------------------------
+ 

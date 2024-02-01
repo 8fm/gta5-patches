@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/renderer/MeshBlendManager.cpp b/src/dev_ng/game/renderer/MeshBlendManager.cpp
+--- a/src/dev_ng/game/renderer/MeshBlendManager.cpp
++++ b/src/dev_ng/game/renderer/MeshBlendManager.cpp
+@@ -9,7 +9,7 @@
+ #if __BANK
+ #include "bank/slider.h"
+ #include "grcore/debugdraw.h"
+-#include "peds/rendering/PedVariationDebug.h"
++#include "Peds/rendering/PedVariationDebug.h"
+ #endif
+ #include "grcore/gfxcontext.h"
+ #include "grcore/quads.h"
+@@ -26,7 +26,7 @@
+ #include "fwscene/stores/txdstore.h"
+ #include "fwsys/gameskeleton.h"
+ 
+-#include "peds/ped_channel.h"
++#include "Peds/ped_channel.h"
+ 
+ #include "shaders/ShaderLib.h"
+ #include "shaders/CustomShaderEffectPed.h"

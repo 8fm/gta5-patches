@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.h b/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.h
+--- a/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.h
++++ b/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.h
+@@ -11,16 +11,16 @@
+ #include "fwnet/netarrayhandlertypes.h"
+ 
+ // game headers
+-#include "Game/Dispatch/IncidentManager.h"
+-#include "Game/Dispatch/OrderManager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/General/NetworkWorldGridOwnership.h"
+-#include "Network/General/NetworkStreamingRequestManager.h"
+-#include "Network/General/NetworkSerialisers.h"
++#include "game/Dispatch/IncidentManager.h"
++#include "game/Dispatch/OrderManager.h"
++#include "network/NetworkInterface.h"
++#include "network/General/NetworkWorldGridOwnership.h"
++#include "network/General/NetworkStreamingRequestManager.h"
++#include "network/General/NetworkSerialisers.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Script/Handlers/GameScriptIds.h"
+-#include "Weapons/Projectiles/ProjectileManager.h"
+-#include "Weapons/Projectiles/Projectile.h"
++#include "script/Handlers/GameScriptIds.h"
++#include "weapons/projectiles/ProjectileManager.h"
++#include "weapons/projectiles/Projectile.h"
+ 
+ class CNetworkArrayMgr;
+ class CPedGroup;

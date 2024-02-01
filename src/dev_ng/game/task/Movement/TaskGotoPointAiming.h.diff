@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGotoPointAiming.h b/src/dev_ng/game/task/Movement/TaskGotoPointAiming.h
+--- a/src/dev_ng/game/task/Movement/TaskGotoPointAiming.h
++++ b/src/dev_ng/game/task/Movement/TaskGotoPointAiming.h
+@@ -2,13 +2,13 @@
+ #define TASK_GOTO_POINT_AIMING_H
+ 
+ // Game headers
+-#include "Peds/PedDefines.h"
++#include "Peds/pedDefines.h"
+ #include "Peds/QueriableInterface.h"
+-#include "AI/AITarget.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "ai/AITarget.h"
++#include "network/General/NetworkUtil.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ class CTaskGoToPointAiming : public CTaskFSMClone
+ {

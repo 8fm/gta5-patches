@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.cpp b/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.cpp
+@@ -32,17 +32,17 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "control/record.h"
+ #include "frontend/PauseMenu.h"
+-#include "network/objects/entities/NetObjPlayer.h"
+-#include "peds/PedIntelligence.h"
+-#include "Task/Animation/TaskScriptedAnimation.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "Peds/PedIntelligence.h"
++#include "task/Animation/TaskScriptedAnimation.h"
+ #include "task/Motion/Locomotion/TaskMotionPed.h"
+ #include "task/Movement/Climbing/TaskVault.h"
+ #include "task/Movement/TaskParachute.h"
+ #include "task/Vehicle/TaskEnterVehicle.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/Trailer.h"
+-#include "vehicles/Wheel.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Trailer.h"
++#include "Vehicles/Wheel.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

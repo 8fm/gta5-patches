@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/system/SettingsManager.cpp b/src/dev_ng/game/system/SettingsManager.cpp
+--- a/src/dev_ng/game/system/SettingsManager.cpp
++++ b/src/dev_ng/game/system/SettingsManager.cpp
+@@ -13,7 +13,7 @@
+ 
+ #include "control/replay/replay.h"
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/Lights/LightEntity.h"
+ #include "renderer/Lights/TiledLighting.h"
+@@ -26,7 +26,7 @@
+ #include "scene/EntityBatch.h"
+ #include "streaming/streaming.h"
+ #include "timecycle/TimeCycle.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ #include "system/SettingsDefaults.h"
+ 

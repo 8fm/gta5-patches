@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleScenarioLayoutInfo.cpp b/src/dev_ng/game/Vehicles/Metadata/VehicleScenarioLayoutInfo.cpp
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleScenarioLayoutInfo.cpp
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleScenarioLayoutInfo.cpp
+@@ -5,7 +5,7 @@
+ #include "parser/manager.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "scene/loader/MapData_Extensions.h"
+ #include "Vehicles/vehicle_channel.h"
+ #include "Vehicles/Metadata/VehicleScenarioLayoutInfo_parser.h"

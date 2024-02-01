@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.h
+@@ -7,8 +7,8 @@
+ #ifndef AUTOMOBILE_SYNC_NODES_H
+ #define AUTOMOBILE_SYNC_NODES_H
+ 
+-#include "fwmaths/Angle.h"
+-#include "network/objects/synchronisation/SyncNodes/VehicleSyncNodes.h"
++#include "fwmaths/angle.h"
++#include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
+ 
+ class CAutomobileCreationDataNode;
+ 

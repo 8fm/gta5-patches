@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioSpawnHistory.cpp b/src/dev_ng/game/task/Scenario/ScenarioSpawnHistory.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioSpawnHistory.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioSpawnHistory.cpp
+@@ -8,17 +8,17 @@
+ #include "ai/aichannel.h"
+ 
+ // Game headers
+-#include "Network/Network.h"
+-#include "Network/Objects/Entities/NetObjVehicle.h"
++#include "network/Network.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
+ #include "Peds/ped.h"
+ #include "scene/world/GameWorld.h"
+-#include "task/Scenario/Info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioInfo.h"
+ #include "task/Scenario/ScenarioDebug.h"
+ #include "task/Scenario/ScenarioManager.h"
+ #include "task/Scenario/ScenarioPointManager.h"
+ #include "task/Scenario/ScenarioPointRegion.h"
+ #if __ASSERT
+-#include "Task/Scenario/info/ScenarioInfoManager.h" 
++#include "task/Scenario/info/ScenarioInfoManager.h" 
+ #endif
+ #include "Vehicles/vehicle.h"
+ 

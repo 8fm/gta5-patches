@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/AirDefence.h b/src/dev_ng/game/weapons/AirDefence.h
+--- a/src/dev_ng/game/weapons/AirDefence.h
++++ b/src/dev_ng/game/weapons/AirDefence.h
+@@ -8,7 +8,7 @@
+ 
+ #include "atl/array.h"
+ #include "entity/extensiblebase.h"
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ #include "vectormath/vec3v.h"
+ 
+ class CAirDefenceZone : public fwExtensibleBase

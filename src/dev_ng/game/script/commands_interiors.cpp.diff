@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/commands_interiors.cpp b/src/dev_ng/game/script/commands_interiors.cpp
+--- a/src/dev_ng/game/script/commands_interiors.cpp
++++ b/src/dev_ng/game/script/commands_interiors.cpp
+@@ -29,7 +29,7 @@
+ #include "control/replay/replay.h"
+ #include "control/replay/Misc/InteriorPacket.h"
+ #include "replaycoordinator/ReplayCoordinator.h"
+-#include "Vfx/Decals/DecalManager.h"
++#include "vfx/decals/DecalManager.h"
+ 
+ struct sInteriorFile
+ {

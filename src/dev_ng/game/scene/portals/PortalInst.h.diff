@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/portals/PortalInst.h b/src/dev_ng/game/scene/portals/PortalInst.h
+--- a/src/dev_ng/game/scene/portals/PortalInst.h
++++ b/src/dev_ng/game/scene/portals/PortalInst.h
+@@ -8,7 +8,7 @@
+ // Framework headers
+ 
+ // Game headers
+-#include "scene/building.h"
++#include "scene/Building.h"
+ 
+ class CInteriorInst;
+ 

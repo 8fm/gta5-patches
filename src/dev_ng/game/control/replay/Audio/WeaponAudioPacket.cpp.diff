@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.cpp b/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.cpp
+--- a/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.cpp
++++ b/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.cpp
+@@ -10,7 +10,7 @@
+ #include "control/replay/ReplayInternal.h"
+ #include "audio/northaudioengine.h"
+ #include "audio/pedaudioentity.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ tPacketVersion g_PacketWeaponSoundFireEvent_v1 = 1;
+ //////////////////////////////////////////////////////////////////////////

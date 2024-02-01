@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/gunfightconductor.cpp b/src/dev_ng/game/audio/gunfightconductor.cpp
+--- a/src/dev_ng/game/audio/gunfightconductor.cpp
++++ b/src/dev_ng/game/audio/gunfightconductor.cpp
+@@ -6,7 +6,7 @@
+ #include "debug/DebugScene.h"
+ #include "gunfightconductor.h"
+ #include "northaudioengine.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/PedIntelligence.h"
+ #include "profile/profiler.h"
+ #include "fwsys/timer.h"

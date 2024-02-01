@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.h b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.h
+--- a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.h
++++ b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.h
+@@ -10,7 +10,7 @@
+ #include "camera/base/BaseCamera.h"
+ #include "camera/helpers/DampedSpring.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ class camCinematicMountedCameraMetadata;
+ class camControlHelper;

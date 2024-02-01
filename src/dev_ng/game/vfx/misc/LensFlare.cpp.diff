@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/misc/LensFlare.cpp b/src/dev_ng/game/vfx/misc/LensFlare.cpp
+--- a/src/dev_ng/game/vfx/misc/LensFlare.cpp
++++ b/src/dev_ng/game/vfx/misc/LensFlare.cpp
+@@ -5,8 +5,8 @@
+ //
+ 
+ // INCLUDES
+-#include "Vfx/misc/LensFlare.h"
+-#include "Vfx/misc/LensFlare_parser.h"
++#include "vfx/misc/LensFlare.h"
++#include "vfx/misc/LensFlare_parser.h"
+ 
+ #if __BANK
+ #include "bank/widget.h"

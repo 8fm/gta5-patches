@@ -9,15 +9,15 @@ diff --git a/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp b/src/dev_ng/game/
 -#include "fwmaths\vector.h"
 -#include "fwsys\timer.h"
 +#include "fwmaths/random.h"
-+#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
 +#include "fwsys/timer.h"
  
  // Game headers
 -#include "scene\world\gameWorld.h"
 -#include "debug\debug.h"
 -#include "system\UseTuner.h"
-+#include "scene/world/gameWorld.h"
-+#include "debug/debug.h"
++#include "scene/world/GameWorld.h"
++#include "debug/Debug.h"
 +#include "system/UseTuner.h"
  
 -#include "renderer\Renderer.h"
@@ -29,7 +29,7 @@ diff --git a/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp b/src/dev_ng/game/
 -#include "Renderer\PlantsGrassRenderer.h"
 -#include "..\shader_source\Vegetation\Grass\grass_regs.h"
 +#include "Objects/ProceduralInfo.h"				// PROCPLANT_xxx
-+#include "Renderer/PlantsGrassRenderer.h"
++#include "renderer/PlantsGrassRenderer.h"
 +#include "../shader_source/Vegetation/Grass/grass_regs.h"
  
  #if PLANTS_USE_LOD_SETTINGS

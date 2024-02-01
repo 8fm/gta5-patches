@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/MultiplayerChat.cpp b/src/dev_ng/game/frontend/MultiplayerChat.cpp
+--- a/src/dev_ng/game/frontend/MultiplayerChat.cpp
++++ b/src/dev_ng/game/frontend/MultiplayerChat.cpp
+@@ -9,7 +9,7 @@
+ #include "MultiplayerChat.h"
+ #include "PauseMenu.h"
+ #include "frontend/TextInputBox.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ #include "network/Voice/NetworkVoice.h"
+ 
+ #define KEY_HELD_THRESHOLD 100

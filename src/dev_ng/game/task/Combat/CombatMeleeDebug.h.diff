@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/CombatMeleeDebug.h b/src/dev_ng/game/task/Combat/CombatMeleeDebug.h
+--- a/src/dev_ng/game/task/Combat/CombatMeleeDebug.h
++++ b/src/dev_ng/game/task/Combat/CombatMeleeDebug.h
+@@ -3,7 +3,7 @@
+ 
+ #include "vector/vector3.h"
+ #include <vector>
+-#include "Debug/DebugDrawStore.h"
++#include "debug/DebugDrawStore.h"
+ 
+ // Rage includes
+ #include "atl/string.h"

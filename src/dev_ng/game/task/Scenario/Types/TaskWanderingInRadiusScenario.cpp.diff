@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskWanderingInRadiusScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskWanderingInRadiusScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskWanderingInRadiusScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskWanderingInRadiusScenario.cpp
+@@ -3,10 +3,10 @@
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ 
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/Default/TaskWander.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/Default/TaskWander.h"
+ 
+-#include "Task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioInfo.h"
+ 
+ AI_OPTIMISATIONS()
+ 

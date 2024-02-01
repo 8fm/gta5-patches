@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/AnimatedBuilding.h b/src/dev_ng/game/scene/AnimatedBuilding.h
+--- a/src/dev_ng/game/scene/AnimatedBuilding.h
++++ b/src/dev_ng/game/scene/AnimatedBuilding.h
+@@ -11,7 +11,7 @@
+ // C headers
+ // Rage headers
+ #include "fwanimation/animdirector.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ // Game headers
+ #include "DynamicEntity.h"
+ 

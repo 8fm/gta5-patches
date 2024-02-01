@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/text/TextFormat.cpp b/src/dev_ng/game/text/TextFormat.cpp
+--- a/src/dev_ng/game/text/TextFormat.cpp
++++ b/src/dev_ng/game/text/TextFormat.cpp
+@@ -19,16 +19,16 @@
+ #include "string/string.h"
+ #include "string/unicode.h"
+ 
+-#include "Text/TextFormat.h"
++#include "text/TextFormat.h"
+ 
+-#include "Text/TextConversion.h"
++#include "text/TextConversion.h"
+ 
+ #include "renderer/sprite2d.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/PostProcessFXHelper.h"
+ #include "renderer/RenderTargets.h"
+-#include "replaycoordinator/Storage/MontageText.h"
+-#include "system/controlmgr.h"  // mapper stuff
++#include "replaycoordinator/storage/MontageText.h"
++#include "system/controlMgr.h"  // mapper stuff
+ #include "system/param.h"
+ #include "shaders/ShaderLib.h"
+ 

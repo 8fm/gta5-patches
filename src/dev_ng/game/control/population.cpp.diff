@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/control/population.cpp b/src/dev_ng/game/control/population.cpp
+--- a/src/dev_ng/game/control/population.cpp
++++ b/src/dev_ng/game/control/population.cpp
+@@ -9,17 +9,17 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+ // Framework Headers
+-#include "fwmaths/keyholetests.h"
++#include "fwmaths/KeyholeTests.h"
+ 
+ // Game includes
+ #include "population.h"
+ #if !__SPU // including this file in VehPopUpdateDensitiesJob.cpp
+-#include "debug/vectormap.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/Ped.h"
++#include "debug/VectorMap.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/ped.h"
+ #include "Peds/pedpopulation.h"
+ #include "vehicleAi/VehicleAILodManager.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #endif
+ AI_OPTIMISATIONS()
+ 

@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/camera/viewports/ViewportManager.cpp b/src/dev_ng/game/camera/viewports/ViewportManager.cpp
+--- a/src/dev_ng/game/camera/viewports/ViewportManager.cpp
++++ b/src/dev_ng/game/camera/viewports/ViewportManager.cpp
+@@ -46,9 +46,9 @@
+ #include "camera/viewports/Viewport.h"
+ #include "camera/scripted/ScriptDirector.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "frontend/HudTools.h"
+-#include "Frontend/Credits.h"
++#include "frontend/Credits.h"
+ #include "frontend/MobilePhone.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/Mirrors.h"
+@@ -74,14 +74,14 @@
+ #include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
+ #include "renderer/RenderTargetMgr.h"
+ #include "renderer/RenderTargets.h"
+-#include "renderer/renderThread.h"
++#include "renderer/RenderThread.h"
+ #include "renderer/Renderer.h"
+ #include "renderer/PostScan.h"
+ #include "renderer/Shadows/ParaboloidShadows.h"
+ #include "renderer/Water.h"
+ #include "scene/lod/LodMgr.h"
+ #include "scene/portals/Portal.h"
+-#include "shaders/shaderlib.h"
++#include "shaders/ShaderLib.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingrequestlist.h"
+ #include "streaming/streamingvisualize.h"

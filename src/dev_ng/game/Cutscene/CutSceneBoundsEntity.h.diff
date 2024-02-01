@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.h b/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.h
+--- a/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.h
++++ b/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.h
+@@ -18,7 +18,7 @@
+ #include "scene/Entity.h"
+ #include "cutfile/cutfobject.h"
+ #include "cutscene/cutsEntity.h"
+-#include "cutscene/cutscenedefine.h"
++#include "cutscene/CutSceneDefine.h"
+ #include "cutscene/cutsevent.h"
+ #include "cutscene/cutsmanager.h"
+ #include "cutscene/cutseventargs.h"

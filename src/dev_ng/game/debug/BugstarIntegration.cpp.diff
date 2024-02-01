@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/debug/BugstarIntegration.cpp b/src/dev_ng/game/debug/BugstarIntegration.cpp
+--- a/src/dev_ng/game/debug/BugstarIntegration.cpp
++++ b/src/dev_ng/game/debug/BugstarIntegration.cpp
+@@ -19,14 +19,14 @@
+ #include "camera/Viewports/Viewport.h"
+ #include "camera/Viewports/ViewportManager.h"
+ #include "debug/BlockView.h"
+-#include "peds/ped.h"
+-#include "peds/pedfactory.h"
++#include "Peds/ped.h"
++#include "Peds/PedFactory.h"
+ #include "physics/physics.h"
+-#include "scene/world/gameworld.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclefactory.h"
+-#include "objects/DummyObject.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/VehicleFactory.h"
++#include "Objects/DummyObject.h"
+ #include "parser/manager.h"						// XML
+ #include "parser/tree.h"
+ #include "system/exec.h"

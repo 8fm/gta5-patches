@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/MobilePhone.h b/src/dev_ng/game/frontend/MobilePhone.h
+--- a/src/dev_ng/game/frontend/MobilePhone.h
++++ b/src/dev_ng/game/frontend/MobilePhone.h
+@@ -5,7 +5,7 @@
+ #include "fwutil/xmacro.h"
+ #include "vector/vector3.h"
+ #include "camera/helpers/DampedSpring.h"
+-#include "Game/ModelIndices.h"
++#include "game/ModelIndices.h"
+ 
+ namespace rage {
+ 	class grcRenderTarget;

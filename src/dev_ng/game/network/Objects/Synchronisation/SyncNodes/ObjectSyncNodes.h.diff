@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.h
+@@ -7,11 +7,11 @@
+ #ifndef OBJECT_SYNC_NODES_H
+ #define OBJECT_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/PhysicalSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h"
+ 
+-#include "network/general/NetworkUtil.h"
+-#include "script/handlers/GameScriptIds.h"
+-#include "script/handlers/GameScriptMgr.h"
++#include "network/General/NetworkUtil.h"
++#include "script/Handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptMgr.h"
+ 
+ class CObject;
+ class CObjectCreationDataNode;

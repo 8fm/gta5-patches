@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/sky/SkySettings.cpp b/src/dev_ng/game/vfx/sky/SkySettings.cpp
+--- a/src/dev_ng/game/vfx/sky/SkySettings.cpp
++++ b/src/dev_ng/game/vfx/sky/SkySettings.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // INCLUDES
+-#include "Vfx/Sky/SkySettings.h"
++#include "vfx/Sky/SkySettings.h"
+ 
+ // rage
+ #include "grcore/texture.h"

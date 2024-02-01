@@ -1,0 +1,64 @@
+diff --git a/src/dev_ng/game/Vehicles/vehicle.h b/src/dev_ng/game/Vehicles/vehicle.h
+--- a/src/dev_ng/game/Vehicles/vehicle.h
++++ b/src/dev_ng/game/Vehicles/vehicle.h
+@@ -15,41 +15,41 @@
+ #include "fwanimation/animdirector.h"
+ 
+ // Framework headers
+-#include "fwmaths/vector.h"
+-#include "fwtl/pool.h"
++#include "fwmaths/Vector.h"
++#include "fwtl/Pool.h"
+ #include "fwvehicleai/pathfindtypes.h"
+ #include "entity/extensionlist.h"
+ 
+ // Game headers
+ #include "ai/spatialarray.h"
+ #include "audio/vehicleaudioentity.h"
+-#include "Debug/DebugDrawStore.h"
++#include "debug/DebugDrawStore.h"
+ #include "game/ModelIndices.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "modelinfo/VehicleModelInfoFlags.h"
+ #include "modelinfo/VehicleModelInfoVariation.h"
+ #include "modelinfo/VehicleModelInfoFlags.h"
+-#include "Pathserver/PathServer_DataTypes.h"
++#include "pathserver/PathServer_DataTypes.h"
+ #include "physics/gtaInst.h"
+ #include "renderer/HierarchyIds.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/Entities/VehicleDrawHandler.h"
+-#include "scene/physical.h"
++#include "scene/Physical.h"
+ #include "scene/ContinuityMgr.h"
+-#include "vehicleAI/VehicleAILod.h"
+-#include "vehicles/AnchorHelper.h"
+-#include "vehicles/componentReserve.h"
+-#include "vehicles/door.h"
+-#include "vehicles/handlingMgr.h"
+-#include "vehicles/transmission.h"
+-#include "vehicles/vehicleDamage.h"
+-#include "vehicles/VehicleDefines.h"
+-#include "vehicles/VehicleFlags.h"
+-#include "vehicles/vehicleLightSwitch.h"
+-#include "vehicles/wheel.h"
+-#include "weapons/weaponTypes.h"
++#include "vehicleAi/VehicleAILod.h"
++#include "Vehicles/AnchorHelper.h"
++#include "Vehicles/componentReserve.h"
++#include "Vehicles/door.h"
++#include "Vehicles/handlingMgr.h"
++#include "Vehicles/Transmission.h"
++#include "Vehicles/vehicleDamage.h"
++#include "Vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleFlags.h"
++#include "Vehicles/vehicleLightSwitch.h"
++#include "Vehicles/wheel.h"
++#include "weapons/WeaponTypes.h"
+ #include "system/poolallocator.h"
+-#include "System/PadGestures.h"						// for define
++#include "system/PadGestures.h"						// for define
+ 
+ #define MAX_CARGO_VEHICLES 6
+ 

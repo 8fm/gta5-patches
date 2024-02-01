@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.h
+@@ -2,15 +2,15 @@
+ #define INC_TASK_USE_SCENARIO_H
+ 
+ #include "ai/AITarget.h"
+-#include "Event/Event.h"
++#include "event/Event.h"
+ #include "fwanimation/animdefines.h"		// fwSyncedSceneId
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Helpers/PropManagementHelper.h"
+-#include "Task/Helpers/PavementFloodFillHelper.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Scenario/TaskScenario.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Helpers/PropManagementHelper.h"
++#include "task/Helpers/PavementFloodFillHelper.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Scenario/TaskScenario.h"
+ #include "task/Scenario/ScenarioAnimDebugHelper.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ class CTaskAmbientMigrateHelper;
+ class CTaskUseScenario;

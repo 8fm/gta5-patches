@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Response/TaskGrowlAndFlee.h b/src/dev_ng/game/task/Response/TaskGrowlAndFlee.h
+--- a/src/dev_ng/game/task/Response/TaskGrowlAndFlee.h
++++ b/src/dev_ng/game/task/Response/TaskGrowlAndFlee.h
+@@ -2,12 +2,12 @@
+ #define TASK_GROWL_AND_FLEE_H
+ 
+ // Game headers
+-#include "Animation/AnimDefines.h"
+-#include "Scene/Entity.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "animation/AnimDefines.h"
++#include "scene/Entity.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ //************************************************
+ //Class:  CTaskGrowlAndFlee

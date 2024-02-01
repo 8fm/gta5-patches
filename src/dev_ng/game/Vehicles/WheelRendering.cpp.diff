@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/Vehicles/WheelRendering.cpp b/src/dev_ng/game/Vehicles/WheelRendering.cpp
+--- a/src/dev_ng/game/Vehicles/WheelRendering.cpp
++++ b/src/dev_ng/game/Vehicles/WheelRendering.cpp
+@@ -2,12 +2,12 @@
+ // including wheel.cpp everywhere
+ 
+ #include "control/replay/replay.h"
+-#include "vehicles/AmphibiousAutomobile.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/wheel.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/Heli.h"
++#include "Vehicles/AmphibiousAutomobile.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/wheel.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Heli.h"
+ #include "crskeleton/skeletondata.h"
+ #include "fwmaths/vectorutil.h"
+ 

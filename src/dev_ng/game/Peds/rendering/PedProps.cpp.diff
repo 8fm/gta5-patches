@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedProps.cpp b/src/dev_ng/game/Peds/
  #if !__SPU
  
 -#include "Peds\rendering\pedprops.h"
-+#include "Peds/rendering/pedprops.h"
++#include "Peds/rendering/PedProps.h"
  
  #if __BANK
 -	#include "bank\bkmgr.h"
@@ -26,22 +26,28 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedProps.cpp b/src/dev_ng/game/Peds/
  #endif //__BANK
  #include "crskeleton/skeleton.h"
  #include "crskeleton/skeletondata.h"
-@@ -24,20 +24,20 @@
+@@ -22,22 +22,22 @@
+ 
+ //game headers
  #include "animation/CreatureMetadata.h"
- #include "Control/Replay/Replay.h"
- #include "ModelInfo/PedModelInfo.h"
+-#include "Control/Replay/Replay.h"
+-#include "ModelInfo/PedModelInfo.h"
 -#include "Peds\ped.h"
 -#include "Peds\rendering\pedVariationPack.h"
 -#include "Peds\rendering\pedVariationStream.h"
-+#include "Peds/ped.h"
-+#include "Peds/rendering/pedVariationPack.h"
-+#include "Peds/rendering/pedVariationStream.h"
- #include "peds/rendering/PedVariationDebug.h"
- #include "peds/rendering/pedvariationstream.h"
+-#include "peds/rendering/PedVariationDebug.h"
+-#include "peds/rendering/pedvariationstream.h"
 -#include "scene\fileLoader.h"
 -#include "scene\world\gameworld.h"
-+#include "scene/fileLoader.h"
-+#include "scene/world/gameworld.h"
++#include "control/replay/replay.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationPack.h"
++#include "Peds/rendering/PedVariationStream.h"
++#include "Peds/rendering/PedVariationDebug.h"
++#include "Peds/rendering/PedVariationStream.h"
++#include "scene/FileLoader.h"
++#include "scene/world/GameWorld.h"
  #include "script/script.h"
  #include "shaders/CustomShaderEffectPed.h"
  #include "streaming/ScriptPreload.h"
@@ -51,8 +57,8 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedProps.cpp b/src/dev_ng/game/Peds/
 -#include "renderer\renderer.h"
 +#include "streaming/streaming.h"
 +#include "streaming/streamingmodule.h"
-+#include "system/filemgr.h"
-+#include "renderer/renderer.h"
++#include "system/FileMgr.h"
++#include "renderer/Renderer.h"
  #include "scene/ExtraMetadataMgr.h"
  #if GTA_REPLAY
  #include "control/replay/ReplayExtensions.h"

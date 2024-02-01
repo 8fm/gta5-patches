@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.cpp b/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.cpp
+@@ -1,9 +1,9 @@
+-#include "Task/Vehicle/TaskMountFollowNearestRoad.h"
++#include "task/Vehicle/TaskMountFollowNearestRoad.h"
+ 
+ #if ENABLE_HORSE
+ 
+-#include "peds/ped.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "Peds/ped.h"
++#include "task/Movement/TaskNavMesh.h"
+ 
+ AI_OPTIMISATIONS()
+ // OPTIMISATIONS_OFF()

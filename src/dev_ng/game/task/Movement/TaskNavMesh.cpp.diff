@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskNavMesh.cpp b/src/dev_ng/game/task/Movement/TaskNavMesh.cpp
+--- a/src/dev_ng/game/task/Movement/TaskNavMesh.cpp
++++ b/src/dev_ng/game/task/Movement/TaskNavMesh.cpp
+@@ -3,19 +3,19 @@
+ 
+ // Framework headers
+ #include "fwmaths/Random.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ // Game headers
+ #include "camera/viewports/ViewportManager.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/Jumping/TaskJump.h"
+-#include "Task/Movement/Climbing/TaskLadderClimb.h"
+-#include "Task/Movement/Climbing/TaskGoToAndClimbLadder.h"
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Movement/TaskSlideToCoord.h"
+-#include "PathServer/PathServer.h"
+-#include "Peds/Ped.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/Jumping/TaskJump.h"
++#include "task/Movement/Climbing/TaskLadderClimb.h"
++#include "task/Movement/Climbing/TaskGoToAndClimbLadder.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskSlideToCoord.h"
++#include "pathserver/PathServer.h"
++#include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedIntelligence.h"
+ 

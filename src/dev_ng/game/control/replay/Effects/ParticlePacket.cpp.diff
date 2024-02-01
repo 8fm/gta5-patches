@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticlePacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticlePacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticlePacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticlePacket.cpp
+@@ -9,7 +9,7 @@
+ 
+ #include "string.h"
+ #include "system/FileMgr.h"
+-#include "control/replay/misc/ReplayPacket.h"
++#include "control/replay/Misc/ReplayPacket.h"
+ 
+ 
+ 

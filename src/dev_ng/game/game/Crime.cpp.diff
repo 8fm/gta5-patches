@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/game/Crime.cpp b/src/dev_ng/game/game/Crime.cpp
+--- a/src/dev_ng/game/game/Crime.cpp
++++ b/src/dev_ng/game/game/Crime.cpp
+@@ -8,19 +8,19 @@
+ #include "audioengine/widgets.h"
+ #include "game/CrimeInformation.h"
+ #include "game/Dispatch/DispatchData.h"
+-#include "Game/Dispatch/Incidents.h"
++#include "game/Dispatch/Incidents.h"
+ #include "game/localisation.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/StatsMgr.h"
+-#include "game/wanted.h"
+-#include "scene/world/gameWorld.h"
++#include "game/Wanted.h"
++#include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ #include "script/script_hud.h"
+ #include "task/Service/Swat/TaskSwat.h"
+ #include "text/messages.h"
+-#include "vehicles/heli.h"
++#include "Vehicles/Heli.h"
+ #include "modelinfo/PedModelInfo.h"
+ 
+ AI_OPTIMISATIONS()

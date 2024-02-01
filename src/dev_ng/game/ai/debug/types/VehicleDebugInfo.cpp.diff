@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.cpp
+@@ -13,23 +13,23 @@
+ #include "ai/debug/types/VehicleStuckDebugInfo.h"
+ #include "ai/debug/types/VehicleControlDebugInfo.h"
+ #include "ai/debug/types/VehicleFlagDebugInfo.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PlayerInfo.h"
+ #include "Peds/Relationships.h"
+ #include "modelinfo/ModelSeatInfo.h"
+-#include "Network/General/NetworkVehicleModelDoorLockTable.h"
+-#include "Network/Objects/Entities/NetObjVehicle.h"
++#include "network/General/NetworkVehicleModelDoorLockTable.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
+ #include "script/commands_player.h"
+ #include "script/script.h"
+ #include "system/controlMgr.h"
+ #include "task/Vehicle/TaskVehicleBase.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/Heli.h"
+-#include "VehicleAI/VehicleAiLod.h"
+-#include "VehicleAI/VehicleIntelligence.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Heli.h"
++#include "vehicleAi/VehicleAiLod.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "text/messages.h"
+ 
+ extern const char* parser_CVehicleEnterExitFlags__Flags_Strings[];

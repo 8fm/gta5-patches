@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugLights.h b/src/dev_ng/game/debug/Rendering/DebugLights.h
+--- a/src/dev_ng/game/debug/Rendering/DebugLights.h
++++ b/src/dev_ng/game/debug/Rendering/DebugLights.h
+@@ -14,7 +14,7 @@
+ #include "atl/map.h"
+ #include "scene/2dEffect.h"
+ #include "renderer/Lights/Lights.h"
+-#include "Debug/Rendering/DebugRendering.h"
++#include "debug/Rendering/DebugRendering.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ // =============================================================================================== //

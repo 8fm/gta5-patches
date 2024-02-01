@@ -1,25 +1,53 @@
 diff --git a/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp b/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp
 --- a/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp
 +++ b/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.cpp
-@@ -18,17 +18,17 @@
- #include "Physics/GtaArchetype.h"
- #include "physics/WorldProbe/worldprobe.h"
+@@ -9,31 +9,31 @@
+ #include "fwmaths/angle.h"
+ 
+ //Game headers.
+-#include "debug/debugscene.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Physics/GtaArchetype.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "Peds/ped.h"
++#include "physics/gtaArchetype.h"
++#include "physics/WorldProbe/WorldProbe.h"
  #include "scene/world/GameWorld.h"
 -#include "Task\Combat\Cover\Cover.h"
-+#include "Task/Combat/Cover/Cover.h"
- #include "Task/Combat/Cover/coverfilter.h"
+-#include "Task/Combat/Cover/coverfilter.h"
 -#include "Task\General\TaskBasic.h"
-+#include "Task/General/TaskBasic.h"
- #include "Task/Combat/TaskCombat.h" // For common defines
- #include "Task/Combat/TaskNewCombat.h"
- #include "Task/Motion/TaskMotionBase.h"
- #include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Combat/TaskCombat.h" // For common defines
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskNavMesh.h"
 -#include "Task\Combat\Cover\TaskSeekCover.h"
-+#include "Task/Combat/Cover/TaskSeekCover.h"
- #include "Task/Combat/Cover/TaskCover.h"
- #include "Task/Vehicle/TaskCar.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Vehicle/TaskCar.h"
 -#include "Task\General\TaskSecondary.h"
-+#include "Task/General/TaskSecondary.h"
- #include "vehicles/vehicle.h"
+-#include "vehicles/vehicle.h"
++#include "task/Combat/Cover/cover.h"
++#include "task/Combat/Cover/coverfilter.h"
++#include "task/General/TaskBasic.h"
++#include "task/Combat/TaskCombat.h" // For common defines
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Combat/Cover/TaskSeekCover.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/General/TaskSecondary.h"
++#include "Vehicles/vehicle.h"
  #include "weapons/Weapon.h"
  
+ //Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_COVER_OPTIMISATIONS()

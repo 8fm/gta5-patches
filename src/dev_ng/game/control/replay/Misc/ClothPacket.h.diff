@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/ClothPacket.h b/src/dev_ng/game/control/replay/Misc/ClothPacket.h
+--- a/src/dev_ng/game/control/replay/Misc/ClothPacket.h
++++ b/src/dev_ng/game/control/replay/Misc/ClothPacket.h
+@@ -1,13 +1,13 @@
+ #ifndef __CLOTH_PACKET_H__
+ #define __CLOTH_PACKET_H__
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "Control/replay/PacketBasics.h"
+-#include "Control/replay/Misc/LinkedPacket.h"
++#include "control/replay/PacketBasics.h"
++#include "control/replay/Misc/LinkedPacket.h"
+ #include "control/replay/ReplaySupportClasses.h"
+ #include "fwpheffects/clothmanager.h"
+ 

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Cloud/Tunables.cpp b/src/dev_ng/game/network/Cloud/Tunables.cpp
+--- a/src/dev_ng/game/network/Cloud/Tunables.cpp
++++ b/src/dev_ng/game/network/Cloud/Tunables.cpp
+@@ -1,9 +1,9 @@
+ 
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Cloud/CloudManager.h"
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "script/script.h"
+ //Rage includes
+ #include "bank/bank.h"

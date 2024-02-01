@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Vehicles/handlingMgr.h b/src/dev_ng/game/Vehicles/handlingMgr.h
+--- a/src/dev_ng/game/Vehicles/handlingMgr.h
++++ b/src/dev_ng/game/Vehicles/handlingMgr.h
+@@ -11,13 +11,13 @@
+ #ifndef HANDLING_DATA_MGR
+ #define HANDLING_DATA_MGR
+ 
+-//#include "vehicles/AnchorHelper.h"
+-#include "vehicles/VehicleDefines.h"
+-#include "fwtl/pool.h"
++//#include "Vehicles/AnchorHelper.h"
++#include "Vehicles/VehicleDefines.h"
++#include "fwtl/Pool.h"
+ #include "modelinfo/VehicleModelInfoColors.h"
+ 
+ #if !__SPU
+-#include "system/fileMgr.h"
++#include "system/FileMgr.h"
+ #endif
+ #include "vector/vector3.h"
+ #include "fwtl/Pool.h"

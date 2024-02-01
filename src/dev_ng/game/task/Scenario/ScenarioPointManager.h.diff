@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioPointManager.h b/src/dev_ng/game/task/Scenario/ScenarioPointManager.h
+--- a/src/dev_ng/game/task/Scenario/ScenarioPointManager.h
++++ b/src/dev_ng/game/task/Scenario/ScenarioPointManager.h
+@@ -13,7 +13,7 @@
+ // Game headers
+ #include "ai/spatialarraynode.h"
+ #include "scene/loader/MapData_Extensions.h"
+-#include "task/scenario/ScenarioPoint.h"
++#include "task/Scenario/ScenarioPoint.h"
+ 
+ 
+ // Forward definitions

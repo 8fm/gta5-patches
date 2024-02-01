@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.h
+@@ -1,7 +1,7 @@
+ #ifndef TASK_DEAD_BODY_SCENARIO_H
+ #define TASK_DEAD_BODY_SCENARIO_H
+ 
+-#include "Task/Scenario/TaskScenario.h"
++#include "task/Scenario/TaskScenario.h"
+ 
+ //*************************************************************************************
+ //Class:  CTaskDeadBodyScenario

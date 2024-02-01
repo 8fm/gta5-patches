@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/scene/Building.cpp b/src/dev_ng/game/scene/Building.cpp
+--- a/src/dev_ng/game/scene/Building.cpp
++++ b/src/dev_ng/game/scene/Building.cpp
+@@ -2,12 +2,12 @@
+ // Author	:	Richard Jobling
+ // Started	:	22/06/99
+ 
+-#include "scene/building.h"
++#include "scene/Building.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/world/VisibilityMasks.h"
+ #include "streaming/streamingengine.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ 
+ #if __DEV
+ // required for pool full CB

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/pickups/Pickup.h b/src/dev_ng/game/pickups/Pickup.h
+--- a/src/dev_ng/game/pickups/Pickup.h
++++ b/src/dev_ng/game/pickups/Pickup.h
+@@ -2,9 +2,9 @@
+ #define PICKUP_H
+ 
+ // Game headers
+-#include "network/Objects/entities/NetObjPickup.h"
+-#include "Objects/Object.h"
+-#include "Pickups/Data/PickupIds.h"
++#include "network/Objects/Entities/NetObjPickup.h"
++#include "Objects/object.h"
++#include "pickups/Data/PickupIds.h"
+ 
+ class CPickupData;
+ class CPickupPlacement;

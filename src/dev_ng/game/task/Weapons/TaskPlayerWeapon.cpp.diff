@@ -1,0 +1,58 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.cpp b/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.cpp
+--- a/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.cpp
++++ b/src/dev_ng/game/task/Weapons/TaskPlayerWeapon.cpp
+@@ -1,33 +1,33 @@
+ // Class header
+-#include "Task/Weapons/TaskPlayerWeapon.h"
++#include "task/Weapons/TaskPlayerWeapon.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "Event/EventWeapon.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/MobilePhone.h"
++#include "debug/DebugScene.h"
++#include "event/EventWeapon.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/MobilePhone.h"
+ #include "PedGroup/PedGroup.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "Peds/ped.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "system/control.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Weapons/Gun/GunFlags.h"
+-#include "Task/Weapons/TaskProjectile.h"
+-#include "Task/Weapons/TaskWeapon.h"
+-#include "Task/Weapons/TaskWeaponBlocked.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+-#include "Vehicles/Vehicle.h"
+-#include "Weapons/Weapon.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Weapons/Gun/GunFlags.h"
++#include "task/Weapons/TaskProjectile.h"
++#include "task/Weapons/TaskWeapon.h"
++#include "task/Weapons/TaskWeaponBlocked.h"
++#include "task/Weapons/WeaponController.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "Vehicles/vehicle.h"
++#include "weapons/Weapon.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

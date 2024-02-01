@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/CameraPacket.h b/src/dev_ng/game/control/replay/Misc/CameraPacket.h
+--- a/src/dev_ng/game/control/replay/Misc/CameraPacket.h
++++ b/src/dev_ng/game/control/replay/Misc/CameraPacket.h
+@@ -1,12 +1,12 @@
+ #ifndef CAMERA_PACKET_H
+ #define CAMERA_PACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control/replay/misc/InterpPacket.h"
++#include "control/replay/Misc/InterpPacket.h"
+ #include "control/replay/PacketBasics.h"
+ #include "camera/viewports/ViewportFader.h"
+ 

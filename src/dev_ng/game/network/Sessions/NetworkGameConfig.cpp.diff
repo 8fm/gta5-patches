@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/network/Sessions/NetworkGameConfig.cpp b/src/dev_ng/game/network/Sessions/NetworkGameConfig.cpp
+--- a/src/dev_ng/game/network/Sessions/NetworkGameConfig.cpp
++++ b/src/dev_ng/game/network/Sessions/NetworkGameConfig.cpp
+@@ -3,7 +3,7 @@
+ // description: Game configuration.  Used to host games and to search
+ //				for games that match the parameters in the config.
+ 
+-#include "network/sessions/NetworkGameConfig.h"
++#include "network/Sessions/NetworkGameConfig.h"
+ 
+ // rage includes
+ #include "fwnet/netchannel.h"
+@@ -12,22 +12,22 @@
+ #include "script/thread.h"
+ 
+ // network includes
+-#include "network/network.h"
+-#include "network/cloud/tunables.h"
+-#include "network/cloud/UserContentManager.h"
++#include "network/Network.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Cloud/UserContentManager.h"
+ #include "network/General/NetworkAssetVerifier.h"
+ #include "network/General/NetworkUtil.h"
+ #include "network/Live/livemanager.h"
+ #include "network/xlast/Fuzzy.schema.h"
+ 
+ // game includes
+-#include "Frontend/PauseMenu.h"
++#include "frontend/PauseMenu.h"
+ #include "Peds/PlayerInfo.h"
+ #include "Peds/PedWeapons/PedTargetEvaluator.h"
+ #include "Peds/PedWeapons/PlayerPedTargeting.h"
+ #include "scene/world/GameWorld.h"
+-#include "stats/StatsInterface.h"
+-#include "stats/StatsMgr.h"
++#include "Stats/StatsInterface.h"
++#include "Stats/StatsMgr.h"
+ #include "scene/ExtraContent.h"
+ 
+ NETWORK_OPTIMISATIONS()

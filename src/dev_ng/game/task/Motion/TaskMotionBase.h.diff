@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/TaskMotionBase.h b/src/dev_ng/game/task/Motion/TaskMotionBase.h
+--- a/src/dev_ng/game/task/Motion/TaskMotionBase.h
++++ b/src/dev_ng/game/task/Motion/TaskMotionBase.h
+@@ -15,8 +15,8 @@
+ 
+ 
+ // Game includes
+-#include "task/system/Task.h"
+-#include "Peds/Pedmoveblend/PedMoveBlendBase.h"
++#include "task/System/Task.h"
++#include "Peds/PedMoveBlend/PedMoveBlendBase.h"
+ #include "Peds/ped.h"
+ 
+ //**********************************************************************************************************

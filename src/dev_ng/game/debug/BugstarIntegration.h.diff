@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/BugstarIntegration.h b/src/dev_ng/game/debug/BugstarIntegration.h
+--- a/src/dev_ng/game/debug/BugstarIntegration.h
++++ b/src/dev_ng/game/debug/BugstarIntegration.h
+@@ -30,7 +30,7 @@
+ #include "vector/vector3.h"
+ #include "system/messagequeue.h"
+ #include "net/http.h"
+-#include "fwnet/HttpQuery.h"
++#include "fwnet/httpquery.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

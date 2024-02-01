@@ -1,0 +1,69 @@
+diff --git a/src/dev_ng/game/renderer/Lights/lights.cpp b/src/dev_ng/game/renderer/Lights/lights.cpp
+--- a/src/dev_ng/game/renderer/Lights/lights.cpp
++++ b/src/dev_ng/game/renderer/Lights/lights.cpp
+@@ -2,7 +2,7 @@
+ // INCLUDES
+ // =============================================================================================== //
+ 
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ 
+ // STL
+ #include <set>
+@@ -30,17 +30,17 @@
+ #include "camera/CamInterface.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "cutscene/CutSceneCameraEntity.h"
+ #include "debug/budgetdisplay.h"
+ #include "debug/Rendering/DebugLights.h"
+ #include "debug/Rendering/DebugLighting.h"
+ #include "debug/Rendering/DebugDeferred.h"
+-#include "Game/Weather.h"
+-#include "Peds/Ped.h"
+-#include "Pickups/Pickup.h"
+-#include "Pickups/Data/PickupData.h"
+-#include "Renderer/Renderer.h"
++#include "game/Weather.h"
++#include "Peds/ped.h"
++#include "pickups/Pickup.h"
++#include "pickups/Data/PickupData.h"
++#include "renderer/Renderer.h"
+ #include "renderer/Occlusion.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/SSAO.h"
+@@ -53,25 +53,25 @@
+ #include "renderer/Lights/TiledLighting.h"
+ #include "renderer/Lights/LODLights.h"
+ #include "renderer/Shadows/Shadows.h"
+-#include "renderer/Shadows/paraboloidshadows.h"
++#include "renderer/Shadows/ParaboloidShadows.h"
+ #include "renderer/render_channel.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/RenderPhases/RenderPhaseHeightMap.h"
+ #include "renderer/Util/ShaderUtil.h"
+ #include "renderer/Water.h"
+-#include "Scene/playerswitch/PlayerSwitchInterface.h"
+-#include "Scene/Portals/Portal.h"
+-#include "Scene/2deffect.h"
+-#include "Scene/world/GameWorldHeightMap.h"
++#include "scene/playerswitch/PlayerSwitchInterface.h"
++#include "scene/portals/Portal.h"
++#include "scene/2dEffect.h"
++#include "scene/world/GameWorldHeightMap.h"
+ #include "streaming/streaming.h"
+-#include "TimeCycle/TimeCycle.h"
++#include "timecycle/TimeCycle.h"
+ #include "vfx/VfxHelper.h"
+ #include "timecycle/TimeCycleConfig.h"
+ #include "fwscene/scan/ScanNodes.h"
+ #include "fwscene/scan/ScreenQuad.h"
+ #if __BANK
+ #include "debug/BudgetDisplay.h"
+-#include "Cutscene/CutSceneDebugManager.h"
++#include "cutscene/CutSceneDebugManager.h"
+ #endif
+ #include "weapons/projectiles/Projectile.h"
+ 

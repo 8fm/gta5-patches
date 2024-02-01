@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/network/Arrays/NetworkArrayMgr.cpp b/src/dev_ng/game/network/Arrays/NetworkArrayMgr.cpp
+--- a/src/dev_ng/game/network/Arrays/NetworkArrayMgr.cpp
++++ b/src/dev_ng/game/network/Arrays/NetworkArrayMgr.cpp
+@@ -4,18 +4,18 @@
+ // Copyright (C) 1999-2009 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "network/arrays/NetworkArrayMgr.h"
++#include "network/Arrays/NetworkArrayMgr.h"
+ 
+ #include "fwscript/scripthandler.h"
+ #include "fwscript/scripthandlernetcomponent.h"
+-#include "fwscript/scriptInterface.h"
++#include "fwscript/scriptinterface.h"
+ 
+ #include "game/config.h"
+ #include "network/Arrays/NetworkArrayHandlerTypes.h"
+-#include "network/network.h"
++#include "network/Network.h"
+ #include "network/NetworkInterface.h"
+-#include "network/players/NetGamePlayer.h"
+-#include "script/handlers/GameScriptIds.h"
++#include "network/Players/NetGamePlayer.h"
++#include "script/Handlers/GameScriptIds.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

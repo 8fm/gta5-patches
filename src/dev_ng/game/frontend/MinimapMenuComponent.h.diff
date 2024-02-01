@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/MinimapMenuComponent.h b/src/dev_ng/game/frontend/MinimapMenuComponent.h
+--- a/src/dev_ng/game/frontend/MinimapMenuComponent.h
++++ b/src/dev_ng/game/frontend/MinimapMenuComponent.h
+@@ -2,7 +2,7 @@
+ #define __MINIMAPCOMPONENT_H__
+ 
+ 
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ #include "atl/map.h"
+ #include "frontend/MiniMapCommon.h"
+ 

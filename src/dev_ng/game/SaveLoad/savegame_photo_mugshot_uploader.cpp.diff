@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.cpp b/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.cpp
+@@ -3,7 +3,7 @@
+ 
+ 
+ // Game headers
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "SaveLoad/savegame_channel.h"
+ #include "system/system.h"
+ 

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/text/PagedText.h b/src/dev_ng/game/text/PagedText.h
+--- a/src/dev_ng/game/text/PagedText.h
++++ b/src/dev_ng/game/text/PagedText.h
+@@ -8,13 +8,13 @@
+ #define PAGED_TEXT_H
+ 
+ // rage
+-#include "fwnet/netCloudFileDownloadHelper.h"
++#include "fwnet/netcloudfiledownloadhelper.h"
+ #include "net/http.h"
+ #include "string/stringbuilder.h"
+ 
+ // game
+-#include "Frontend/SimpleTimer.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "frontend/SimpleTimer.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ #define MAX_PAGES_OF_TEXT (4)
+ 

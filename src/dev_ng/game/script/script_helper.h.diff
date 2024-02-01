@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/script/script_helper.h b/src/dev_ng/game/script/scr
 -#include "script\handlers\GameScriptHandlerNetwork.h"
 -#include "script\script_channel.h"
 -#include "script\script.h"
-+#include "script/handlers/GameScriptHandlerNetwork.h"
++#include "script/Handlers/GameScriptHandlerNetwork.h"
 +#include "script/script_channel.h"
 +#include "script/script.h"
  

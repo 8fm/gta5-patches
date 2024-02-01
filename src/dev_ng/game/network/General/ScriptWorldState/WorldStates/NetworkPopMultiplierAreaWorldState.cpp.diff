@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopMultiplierAreaWorldState.cpp b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopMultiplierAreaWorldState.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopMultiplierAreaWorldState.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopMultiplierAreaWorldState.cpp
+@@ -9,11 +9,11 @@
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"
+ 
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ 
+-#include "Network/NetworkInterface.h"
+-#include "peds/Ped.h"
+-#include "Game/PopMultiplierAreas.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
++#include "game/PopMultiplierAreas.h"
+ 
+ //--------------------------------------------------------
+ 

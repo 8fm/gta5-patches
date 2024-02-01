@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Movement/Jumping/TaskJump.h b/src/dev_ng/game/task/Movement/Jumping/TaskJump.h
+--- a/src/dev_ng/game/task/Movement/Jumping/TaskJump.h
++++ b/src/dev_ng/game/task/Movement/Jumping/TaskJump.h
+@@ -2,9 +2,9 @@
+ #define TASK_JUMP_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ #include "GapHelper.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/TaskFSMClone.h"
+ #include "Peds/QueriableInterface.h"
+ 
+ class CControl;

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkClan.h b/src/dev_ng/game/network/Live/NetworkClan.h
+--- a/src/dev_ng/game/network/Live/NetworkClan.h
++++ b/src/dev_ng/game/network/Live/NetworkClan.h
+@@ -21,7 +21,7 @@
+ #include "network/Crews/NetworkCrewEmblemMgr.h"
+ #include "network/Crews/NetworkCrewMetadata.h"
+ #include "frontend/WarningScreen.h"
+-#include "Network/Live/ClanNetStatusArray.h"
++#include "network/Live/ClanNetStatusArray.h"
+ 
+ namespace rage
+ {

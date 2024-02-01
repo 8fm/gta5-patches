@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Response/TaskShove.cpp b/src/dev_ng/game/task/Response/TaskShove.cpp
+--- a/src/dev_ng/game/task/Response/TaskShove.cpp
++++ b/src/dev_ng/game/task/Response/TaskShove.cpp
+@@ -1,7 +1,7 @@
+ // FILE :    TaskShove.h
+ 
+ // File header
+-#include "Task/Response/TaskShove.h"
++#include "task/Response/TaskShove.h"
+ 
+ // Rage headers
+ #include "fwanimation/clipsets.h"
+@@ -14,7 +14,7 @@
+ #include "event/EventShocking.h"
+ #include "event/ShockingEvents.h"
+ #include "Peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "physics/gtaArchetype.h"
+ #include "physics/WorldProbe/shapetestspheredesc.h"
+ #include "task/Response/TaskShoved.h"

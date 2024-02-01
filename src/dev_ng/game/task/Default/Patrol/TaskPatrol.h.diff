@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Default/Patrol/TaskPatrol.h b/src/dev_ng/game/task/Default/Patrol/TaskPatrol.h
+--- a/src/dev_ng/game/task/Default/Patrol/TaskPatrol.h
++++ b/src/dev_ng/game/task/Default/Patrol/TaskPatrol.h
+@@ -10,8 +10,8 @@
+ #include "ai/aichannel.h"
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
+ 
+ class CPed;
+ class CPatrolNode;

@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/scene/portals/InteriorProxy.cpp b/src/dev_ng/game/scene/portals/InteriorProxy.cpp
+--- a/src/dev_ng/game/scene/portals/InteriorProxy.cpp
++++ b/src/dev_ng/game/scene/portals/InteriorProxy.cpp
+@@ -24,9 +24,9 @@
+ // game headers
+ #include "audio/northaudioengine.h"
+ #include "control/replay/replay.h"
+-#include "modelInfo/MloModelInfo.h"
++#include "modelinfo/MloModelInfo.h"
+ #include "network/General/NetworkUtil.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/scene_channel.h"
+ #include "scene/loader/mapFileMgr.h"
+ #include "scene/lod/lodMgr.h"
+@@ -34,8 +34,8 @@
+ #include "scene/portals/interiorgroupmanager.h"
+ #include "scene/portals/Portal.h"
+ #include "scene/world/GameWorld.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "scene/dlc_channel.h"
+ 
+ STREAMING_OPTIMISATIONS()

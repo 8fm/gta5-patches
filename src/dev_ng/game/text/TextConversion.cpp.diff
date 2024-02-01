@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/text/TextConversion.cpp b/src/dev_ng/game/text/TextConversion.cpp
+--- a/src/dev_ng/game/text/TextConversion.cpp
++++ b/src/dev_ng/game/text/TextConversion.cpp
+@@ -7,16 +7,16 @@
+ // Copyright (C) 1999-2009 Rockstar Games.  All Rights Reserved.
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "Text/TextConversion.h"
++#include "text/TextConversion.h"
+ 
+ // framework
+ #include "fwlocalisation/languagePack.h"
+ #include "fwlocalisation/templateString.h"
+ 
+ // game
+-#include "Text/TextFormat.h"
++#include "text/TextFormat.h"
+ #include "frontend/PauseMenu.h"
+-#include "Frontend/hud_colour.h"
++#include "frontend/hud_colour.h"
+ 
+ TEXT_OPTIMISATIONS();
+ 

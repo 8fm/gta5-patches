@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioTypes.cpp b/src/dev_ng/game/task/Scenario/info/ScenarioTypes.cpp
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioTypes.cpp
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioTypes.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Scenario/Info/ScenarioTypes.h"
++#include "task/Scenario/info/ScenarioTypes.h"
+ 
+ // Parser headers
+ #include "ScenarioTypes_parser.h"

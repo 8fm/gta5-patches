@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.h
+@@ -8,9 +8,9 @@
+ #include "ai/AITarget.h"
+ #include "ai/ambient/ConditionalAnims.h"
+ #include "event/Event.h"
+-#include "Task/Scenario/Info/ScenarioInfoConditions.h"
+-#include "Task/Scenario/TaskScenario.h"
+-#include "Task/System/Tuning.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
++#include "task/Scenario/TaskScenario.h"
++#include "task/System/Tuning.h"
+ 
+ 
+ //-------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventDefines.h b/src/dev_ng/game/event/EventDefines.h
+--- a/src/dev_ng/game/event/EventDefines.h
++++ b/src/dev_ng/game/event/EventDefines.h
+@@ -2,7 +2,7 @@
+ #define INC_EVENT_DEFINES_H
+ 
+ // Game headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // Sounds

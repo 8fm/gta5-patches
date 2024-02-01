@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneOverlayEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneOverlayEntity.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneOverlayEntity.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneOverlayEntity.cpp
+@@ -15,7 +15,7 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "cutscene/CutSceneOverlayEntity.h"
+ #include "cutscene/cutscene_channel.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "cutscene/CutSceneCustomEvents.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "renderer/RenderTargetMgr.h"

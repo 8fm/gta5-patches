@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/streaming/streamingcleanup.h b/src/dev_ng/game/stre
  
  // game headers
 -#include "fwtl\linklist.h"
-+#include "fwtl/linklist.h"
++#include "fwtl/LinkList.h"
  #include "scene/streamer/SceneScoring.h"
  #include "streaming/streamingdefs.h"
  

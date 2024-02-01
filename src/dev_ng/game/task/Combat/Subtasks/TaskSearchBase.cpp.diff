@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.cpp
+@@ -2,13 +2,13 @@
+ // PURPOSE : Base class for the search subtasks
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskSearchBase.h"
++#include "task/Combat/Subtasks/TaskSearchBase.h"
+ 
+ // Rage headers
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "Vehicles/vehicle.h"

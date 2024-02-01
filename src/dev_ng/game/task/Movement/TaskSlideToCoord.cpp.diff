@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskSlideToCoord.cpp b/src/dev_ng/game/task/Movement/TaskSlideToCoord.cpp
+--- a/src/dev_ng/game/task/Movement/TaskSlideToCoord.cpp
++++ b/src/dev_ng/game/task/Movement/TaskSlideToCoord.cpp
+@@ -3,10 +3,10 @@
+ // rage headers
+ #include "math/angmath.h"
+ //game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Animation/TaskAnims.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Animation/TaskAnims.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
+ 
+ AI_OPTIMISATIONS()
+ 

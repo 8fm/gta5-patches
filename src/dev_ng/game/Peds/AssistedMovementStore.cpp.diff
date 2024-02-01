@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/Peds/AssistedMovementStore.cpp b/src/dev_ng/game/Peds/AssistedMovementStore.cpp
+--- a/src/dev_ng/game/Peds/AssistedMovementStore.cpp
++++ b/src/dev_ng/game/Peds/AssistedMovementStore.cpp
+@@ -6,18 +6,18 @@
+ #include "ai/aichannel.h"
+ #include "grcore/debugdraw.h"
+ // R*N includes
+-#include "Camera/CamInterface.h"
+-#include "Camera/Debug/DebugDirector.h"
+-#include "Camera/Helpers/Frame.h"
+-#include "Control/WaypointRecording.h"
+-#include "Control/WaypointRecordingRoute.h"
++#include "camera/CamInterface.h"
++#include "camera/Debug/DebugDirector.h"
++#include "camera/helpers/Frame.h"
++#include "control/WaypointRecording.h"
++#include "control/WaypointRecordingRoute.h"
+ #include "Objects/Door.h"
+ #include "pathserver/ExportCollision.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedGeometryAnalyser.h"
+-#include "Renderer/Water.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "renderer/Water.h"
++#include "task/Default/TaskPlayer.h"
+ 
+ 
+ //*****************************************************************************************************

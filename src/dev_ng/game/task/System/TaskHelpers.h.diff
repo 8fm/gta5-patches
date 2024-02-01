@@ -1,11 +1,48 @@
 diff --git a/src/dev_ng/game/task/System/TaskHelpers.h b/src/dev_ng/game/task/System/TaskHelpers.h
 --- a/src/dev_ng/game/task/System/TaskHelpers.h
 +++ b/src/dev_ng/game/task/System/TaskHelpers.h
-@@ -43,7 +43,7 @@
- #include "Task/System/Tuning.h"
+@@ -15,7 +15,7 @@
+ #include "fwanimation/animdirector.h"
+ #include "fwanimation/animhelpers.h"
+ #include "fwanimation/move.h" // for Move::Handle
+-#include "fwMaths/random.h"
++#include "fwmaths/random.h"
+ #include "fwsys/timer.h"
+ #include "fwutil/Flags.h"
+ #include "move/move_observer.h"
+@@ -23,27 +23,27 @@
+ 
+ // Game headers
+ #include "ai/AnimBlackboard.h"
+-#include "AI/Ambient/ConditionalAnims.h"
++#include "ai/ambient/ConditionalAnims.h"
+ #include "animation/AnimDefines.h"
+ #include "animation/EventTags.h"
+ #include "animation/PMDictionaryStore.h"
+ #include "camera/helpers/DampedSpring.h"
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "ik/IkRequest.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "Peds/pedDefines.h"
+ #include "pathserver/PathServer_DataTypes.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "scene/DynamicEntity.h"
+ #include "streaming/PrioritizedClipSetStreamer.h"
+-#include "Streaming/streamingrequest.h"
+-#include "Task/Physics/BlendFromNmData.h"
++#include "streaming/streamingrequest.h"
++#include "task/Physics/BlendFromNmData.h"
+ #include "task/System/AsyncProbeHelper.h"
+-#include "task/system/TaskHelperFSM.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/TaskHelperFSM.h"
++#include "task/System/Tuning.h"
  #include "animation/Move_config.h"
- #include "VehicleAi/VehicleNodeList.h"
+-#include "VehicleAi/VehicleNodeList.h"
 -#include "control\WaypointRecording.h"
++#include "vehicleAi/VehicleNodeList.h"
 +#include "control/WaypointRecording.h"
  
  // rage forward declarations

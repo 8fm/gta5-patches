@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.h b/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.h
+--- a/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.h
++++ b/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.h
+@@ -8,12 +8,12 @@
+ #define SOCIALCLUB_VERSIONED_FILE_H
+ 
+ // rage
+-#include "fwnet/netCloudFileDownloadHelper.h"
++#include "fwnet/netcloudfiledownloadhelper.h"
+ #include "system/timer.h"
+ 
+ // game
+-#include "Frontend/ProfileSettings.h"
+-#include "Text/PagedText.h"
++#include "frontend/ProfileSettings.h"
++#include "text/PagedText.h"
+ 
+ class SocialClubVersionedFile
+ {

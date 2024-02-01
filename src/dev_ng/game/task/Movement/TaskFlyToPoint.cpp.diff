@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskFlyToPoint.cpp b/src/dev_ng/game/task/Movement/TaskFlyToPoint.cpp
+--- a/src/dev_ng/game/task/Movement/TaskFlyToPoint.cpp
++++ b/src/dev_ng/game/task/Movement/TaskFlyToPoint.cpp
+@@ -1,18 +1,18 @@
+ // File header
+-#include "Task/Movement/TaskFlyToPoint.h"
++#include "task/Movement/TaskFlyToPoint.h"
+ 
+ // Rage headers
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "AI/stats.h"
++#include "ai/stats.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/WildlifeManager.h"
+-#include "Scene/world/GameWorldHeightMap.h"
+-#include "Task/Movement/TaskSeekEntity.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Motion/Locomotion/TaskLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskBirdLocomotion.h"
++#include "scene/world/GameWorldHeightMap.h"
++#include "task/Movement/TaskSeekEntity.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Motion/Locomotion/TaskBirdLocomotion.h"
+ 
+ using namespace AIStats;
+ 

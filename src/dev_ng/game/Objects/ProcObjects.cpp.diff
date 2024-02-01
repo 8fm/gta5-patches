@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/game/Objects/ProcObjects.cpp b/src/dev_ng/game/Objects/ProcObjects.cpp
+--- a/src/dev_ng/game/Objects/ProcObjects.cpp
++++ b/src/dev_ng/game/Objects/ProcObjects.cpp
+@@ -26,23 +26,23 @@
+ #include "system/criticalsection.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "Network/NetworkInterface.h"
+-#include "Objects/Object.h"
+-#include "Physics/GtaInst.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Physics/Physics.h"
+-#include "Renderer/PlantsMgr.h"
+-#include "Scene/Building.h"
+-#include "Scene/FileLoader.h"
+-#include "Scene/InstancePriority.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Streaming/Streaming.h"
+-#include "Shaders/CustomShaderEffectBase.h"
+-#include "Shaders/CustomShaderEffectTint.h"
+-#include "TimeCycle/TimeCycleConfig.h"
++#include "camera/CamInterface.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "network/NetworkInterface.h"
++#include "Objects/object.h"
++#include "physics/gtaInst.h"
++#include "physics/gtaMaterialManager.h"
++#include "physics/physics.h"
++#include "renderer/PlantsMgr.h"
++#include "scene/Building.h"
++#include "scene/FileLoader.h"
++#include "scene/InstancePriority.h"
++#include "scene/world/GameWorld.h"
++#include "streaming/Streaming.h"
++#include "shaders/CustomShaderEffectBase.h"
++#include "shaders/CustomShaderEffectTint.h"
++#include "timecycle/TimeCycleConfig.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

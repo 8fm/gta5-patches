@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/Vehicles/Automobile.h b/src/dev_ng/game/Vehicles/Automobile.h
+--- a/src/dev_ng/game/Vehicles/Automobile.h
++++ b/src/dev_ng/game/Vehicles/Automobile.h
+@@ -10,16 +10,16 @@
+ #define _AUTOMOBILE_H_
+ 
+ // Rage Headers
+-#include "phCore/segment.h"
++#include "phcore/segment.h"
+ #include "physics/constrainthandle.h"
+ #include "physics/intersection.h"
+ 
+ // Game Headers
+-#include "renderer/hierarchyIds.h"
+-#include "vehicles/handlingMgr.h"
+-#include "vehicles/vehicle.h"
++#include "renderer/HierarchyIds.h"
++#include "Vehicles/handlingMgr.h"
++#include "Vehicles/vehicle.h"
+ 
+-#include "network/objects/entities/netObjAutomobile.h"
++#include "network/Objects/Entities/NetObjAutomobile.h"
+ 
+ 
+ class phInstGta;

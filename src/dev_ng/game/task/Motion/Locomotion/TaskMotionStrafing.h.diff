@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.h
+@@ -2,7 +2,7 @@
+ #define TASK_MOTION_STRAFING_H
+ 
+ #include "Peds/ped.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ //*********************************************************************
+ //	CTaskMotionStrafing

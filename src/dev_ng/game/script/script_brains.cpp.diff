@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/script/script_brains.cpp b/src/dev_ng/game/script/script_brains.cpp
+--- a/src/dev_ng/game/script/script_brains.cpp
++++ b/src/dev_ng/game/script/script_brains.cpp
+@@ -4,17 +4,17 @@
+ 
+ // Game headers
+ #include "control/gamelogic.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "network/NetworkInterface.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/worldpoints.h"
+ #include "script/script.h"
+ #include "script/script_helper.h"
+ #include "script/streamedscripts.h"
+ #include "streaming/streamingvisualize.h"
+-#include "debug/debugglobals.h"
++#include "debug/Debugglobals.h"
+ #include "scene/DataFileMgr.h"
+ #include "control/replay/ReplaySettings.h"
+ 

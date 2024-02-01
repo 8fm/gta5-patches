@@ -1,12 +1,31 @@
 diff --git a/src/dev_ng/game/tools/PerformanceStats.cpp b/src/dev_ng/game/tools/PerformanceStats.cpp
 --- a/src/dev_ng/game/tools/PerformanceStats.cpp
 +++ b/src/dev_ng/game/tools/PerformanceStats.cpp
-@@ -39,7 +39,7 @@
+@@ -37,20 +37,20 @@
+ #include "Objects/ProcObjects.h"
+ #include "pathserver/PathServer.h"
  #include "Peds/ped.h"
- #include "Peds/Ped.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
  #include "Peds/pedpopulation.h"
 -#include "physics\physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
 +#include "physics/physics.h"
- #include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
  #include "renderer/PlantsMgr.h"
- #include "renderer/water.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "scene/scene.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "script/gta_thread.h"
+ #include "script/script.h"
+ #include "script/script_brains.h"
+ #include "streaming/streaming.h"		// For CStreaming::LoadAllRequestedObjects(), etc. /FF
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ // Platform SDK headers
+ #if __XENON

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentScope.h b/src/dev_ng/game/weapons/components/WeaponComponentScope.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponentScope.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponentScope.h
+@@ -10,7 +10,7 @@
+ #include "vector/color32.h"
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponent.h"
++#include "weapons/components/WeaponComponent.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

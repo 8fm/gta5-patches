@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.h
+@@ -11,8 +11,8 @@
+ 
+ #if ENABLE_DRUNK
+ 
+-#include "Task/System/Task.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/System/Task.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ 
+ class CTaskMotionDrunk : public CTaskMotionBase

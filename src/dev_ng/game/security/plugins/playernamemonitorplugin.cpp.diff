@@ -1,16 +1,18 @@
 diff --git a/src/dev_ng/game/security/plugins/playernamemonitorplugin.cpp b/src/dev_ng/game/security/plugins/playernamemonitorplugin.cpp
 --- a/src/dev_ng/game/security/plugins/playernamemonitorplugin.cpp
 +++ b/src/dev_ng/game/security/plugins/playernamemonitorplugin.cpp
-@@ -10,9 +10,9 @@
+@@ -9,10 +9,10 @@
+ #include "security/plugins/playernamemonitorplugin.h"
  #include "security/ragesecplugin.h"
  #include "security/ragesecenginetasks.h"
- #include "stats/StatsInterface.h"
+-#include "stats/StatsInterface.h"
 -#include "Peds\ped.h"
 -#include "Peds\PlayerInfo.h"
 -#include "rline\rlgamerinfo.h "
++#include "Stats/StatsInterface.h"
 +#include "Peds/ped.h"
 +#include "Peds/PlayerInfo.h"
-+#include "rline/rlgamerinfo.h "
++#include "rline/rlgamerinfo.h"
  #include "security/ragesechashutility.h"
  
  using namespace rage;

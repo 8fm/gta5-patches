@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/Tunable.cpp b/src/dev_ng/game/physics/Tunable.cpp
+--- a/src/dev_ng/game/physics/Tunable.cpp
++++ b/src/dev_ng/game/physics/Tunable.cpp
+@@ -8,7 +8,7 @@
+ #include "Objects/object.h"
+ #include "physics/physics_channel.h"
+ #include "scene/Entity.h"
+-#include "scene/datafilemgr.h"
++#include "scene/DataFileMgr.h"
+ 
+ // Parser headers:
+ #include "physics/Tunable_parser.h"

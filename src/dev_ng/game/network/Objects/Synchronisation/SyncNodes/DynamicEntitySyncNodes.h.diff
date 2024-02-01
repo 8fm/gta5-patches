@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DynamicEntitySyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DynamicEntitySyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DynamicEntitySyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DynamicEntitySyncNodes.h
+@@ -7,7 +7,7 @@
+ #ifndef DYNAMIC_ENTITY_SYNC_NODES_H
+ #define DYNAMIC_ENTITY_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/EntitySyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/EntitySyncNodes.h"
+ 
+ class CDynamicEntityGameStateDataNode;
+ 

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/ai/EntityScanner.h b/src/dev_ng/game/ai/EntityScanner.h
+--- a/src/dev_ng/game/ai/EntityScanner.h
++++ b/src/dev_ng/game/ai/EntityScanner.h
+@@ -12,10 +12,10 @@
+ #include "fwscene/search/Search.h"
+ 
+ // Game headers
+-#include "AI/ExpensiveProcess.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Peds/Ped.h"
++#include "ai/ExpensiveProcess.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/TaskHelpers.h"
++#include "Peds/ped.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

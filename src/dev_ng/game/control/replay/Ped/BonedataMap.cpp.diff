@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Ped/BonedataMap.cpp b/src/dev_ng/game/control/replay/Ped/BonedataMap.cpp
+--- a/src/dev_ng/game/control/replay/Ped/BonedataMap.cpp
++++ b/src/dev_ng/game/control/replay/Ped/BonedataMap.cpp
+@@ -7,7 +7,7 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "Control/replay/replay_channel.h"
++#include "control/replay/replay_channel.h"
+ #include "animation/AnimBones.h"
+ #include "debug/Debug.h"
+ 

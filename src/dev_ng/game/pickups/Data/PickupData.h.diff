@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/pickups/Data/PickupData.h b/src/dev_ng/game/pickups/Data/PickupData.h
+--- a/src/dev_ng/game/pickups/Data/PickupData.h
++++ b/src/dev_ng/game/pickups/Data/PickupData.h
+@@ -5,10 +5,10 @@
+ #include "atl/hashstring.h"
+ #include "data/base.h"
+ #include "fwanimation/boneids.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "parser/macros.h"
+ #include "vector/vector3.h"
+-#include "Weapons/WeaponEnums.h"
++#include "weapons/WeaponEnums.h"
+ 
+ // game headers
+ #include "pickups/Data/PickupIds.h"

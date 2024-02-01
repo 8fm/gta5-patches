@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/leveldata.cpp b/src/dev_ng/game/control/leveldata.cpp
+--- a/src/dev_ng/game/control/leveldata.cpp
++++ b/src/dev_ng/game/control/leveldata.cpp
+@@ -15,7 +15,7 @@
+ #include "fwscene/stores/psostore.h"
+ 
+ // Game headers
+-#include "core/core_channel.h"
++#include "Core/core_channel.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

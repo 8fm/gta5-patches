@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/NetworkInterface.h b/src/dev_ng/game/network/NetworkInterface.h
+--- a/src/dev_ng/game/network/NetworkInterface.h
++++ b/src/dev_ng/game/network/NetworkInterface.h
+@@ -23,7 +23,7 @@
+ #include "network/Live/livemanager.h"
+ #include "network/Objects/NetworkObjectMgr.h"
+ #include "network/Players/NetworkPlayerMgr.h"
+-#include "peds/pedDefines.h"
++#include "Peds/pedDefines.h"
+ #include "renderer/HierarchyIds.h"
+ #include "task/Physics/NmDefines.h"
+ #include "frontend/hud_colour.h"

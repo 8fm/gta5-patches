@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioManager.h b/src/dev_ng/game/task/Scenario/ScenarioManager.h
+--- a/src/dev_ng/game/task/Scenario/ScenarioManager.h
++++ b/src/dev_ng/game/task/Scenario/ScenarioManager.h
+@@ -7,8 +7,8 @@
+ #include "Peds/PedType.h"
+ #include "Peds/pedpopulation.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/Scenario/Info/ScenarioTypes.h"
+-#include "Task/Scenario/ScenarioSpawnHistory.h"
++#include "task/Scenario/info/ScenarioTypes.h"
++#include "task/Scenario/ScenarioSpawnHistory.h"
+ #include "ai/ambient/AmbientModelSet.h"
+ 
+ // Forward Declarations

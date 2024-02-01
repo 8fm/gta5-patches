@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/Move.h b/src/dev_ng/game/animation/Move.h
+--- a/src/dev_ng/game/animation/Move.h
++++ b/src/dev_ng/game/animation/Move.h
+@@ -5,7 +5,7 @@
+ // rage includes
+ #include "atl/functor.h"
+ #include "Move_config.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "atl/array.h"
+ #include "atl/hashstring.h"
+ #include "crmotiontree/iterator.h"

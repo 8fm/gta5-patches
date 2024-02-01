@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskCollisionResponse.h b/src/dev_ng/game/task/Movement/TaskCollisionResponse.h
+--- a/src/dev_ng/game/task/Movement/TaskCollisionResponse.h
++++ b/src/dev_ng/game/task/Movement/TaskCollisionResponse.h
+@@ -2,15 +2,15 @@
+ #define TASK_COLLISION_RESPONSE_H
+ 
+ //Game headers.
+-#include "animation/animdefines.h"
++#include "animation/AnimDefines.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskGoToPoint.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskGoToPoint.h"
+ 
+ class CVehicle;
+ class CPed;

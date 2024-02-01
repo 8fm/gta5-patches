@@ -1,0 +1,45 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxMaterial.cpp b/src/dev_ng/game/vfx/systems/VfxMaterial.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxMaterial.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxMaterial.cpp
+@@ -28,26 +28,26 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Control/Replay/Replay.h"
+-#include "Control/Replay/Effects/ParticleMaterialFxPacket.h"
+-#include "Control/Replay/Effects/ProjectedTexturePacket.h"
++#include "control/replay/Replay.h"
++#include "control/replay/Effects/ParticleMaterialFxPacket.h"
++#include "control/replay/Effects/ProjectedTexturePacket.h"
+ #include "Core/Game.h"
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "modelinfo/VehicleModelInfoColors.h"
+-#include "Peds/Ped.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Scene/Entity.h"
++#include "Peds/ped.h"
++#include "physics/gtaMaterialManager.h"
++#include "scene/DataFileMgr.h"
++#include "scene/Entity.h"
+ #include "Vehicles/Automobile.h"
+-#include "Vehicles/Vehicle.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Metadata/VfxVehicleInfo.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxTrail.h"
+-#include "Vfx/VfxHelper.h"
++#include "Vehicles/vehicle.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/metadata/VfxVehicleInfo.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxTrail.h"
++#include "vfx/VfxHelper.h"
+ 
+ #if __BANK
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #endif
+ 
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/event/EventWeapon.h b/src/dev_ng/game/event/EventWeapon.h
+--- a/src/dev_ng/game/event/EventWeapon.h
++++ b/src/dev_ng/game/event/EventWeapon.h
+@@ -2,8 +2,8 @@
+ #define INC_EVENT_WEAPON
+ 
+ // Game headers
+-#include "Event/EventEditable.h"
+-#include "Event/EventPriorities.h"
++#include "event/EventEditable.h"
++#include "event/EventPriorities.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ class CPed;

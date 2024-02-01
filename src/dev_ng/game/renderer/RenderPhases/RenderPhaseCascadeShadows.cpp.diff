@@ -1,7 +1,16 @@
 diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
 --- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
 +++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
-@@ -84,9 +84,9 @@
+@@ -75,7 +75,7 @@
+ #include "fwrenderer/renderlistgroup.h"
+ 
+ #include "camera/viewports/ViewportManager.h"
+-#include "camera/viewports/viewport.h"
++#include "camera/viewports/Viewport.h"
+ #include "camera/base/BaseCamera.h"
+ #include "camera/CamInterface.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+@@ -84,12 +84,12 @@
  #include "camera/switch/SwitchCamera.h"
  #include "camera/switch/SwitchDirector.h"
  #include "camera/cinematic/CinematicDirector.h"
@@ -13,7 +22,11 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
 +#include "camera/gameplay/aim/FirstPersonPedAimCamera.h"
  #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
  #include "control/gamelogic.h"
- #include "cutscene/CutSceneManagerNew.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/BankUtil.h"
+ #include "debug/BlockView.h"
+ #include "debug/DebugDraw/DebugCameraLock.h"
 @@ -99,7 +99,7 @@
  #include "debug/Rendering/DebugDeferred.h"
  #include "debug/TextureViewer/TextureViewer.h" // filthy hack for CDebugTextureViewerInterface::GetWorldPosUnderMouse
@@ -23,16 +36,18 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
  #include "game/Clock.h"
  #include "modelinfo/MloModelInfo.h"
  #include "Peds/ped.h"
-@@ -128,9 +128,9 @@
+@@ -128,10 +128,10 @@
  #include "vfx/VfxHelper.h"
  #include "timecycle/TimeCycleConfig.h"
  #include "timecycle/TimeCycle.h"
 -#include "task\Movement\TaskParachute.h"
 -#include "task\Movement\TaskFall.h"
 -#include "Peds\PedIntelligence.h"
+-#include "vehicles/vehicle.h"
 +#include "task/Movement/TaskParachute.h"
 +#include "task/Movement/TaskFall.h"
 +#include "Peds/PedIntelligence.h"
- #include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
  #include "../../shader_source/Lighting/Shadows/cascadeshadows_common.fxh"
  #include "control/replay/replay.h"
+ 

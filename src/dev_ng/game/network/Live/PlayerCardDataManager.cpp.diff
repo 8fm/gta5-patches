@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/network/Live/PlayerCardDataManager.cpp b/src/dev_ng/game/network/Live/PlayerCardDataManager.cpp
+--- a/src/dev_ng/game/network/Live/PlayerCardDataManager.cpp
++++ b/src/dev_ng/game/network/Live/PlayerCardDataManager.cpp
+@@ -11,19 +11,19 @@
+ #include "net/nethardware.h"
+ 
+ //game
+-#include "Frontend/ui_channel.h"
+-#include "Network/Cloud/UserContentManager.h"
+-#include "Network/Network.h"
+-#include "Network/Live/PlayerCardDataManager.h"
+-#include "Network/Live/PlayerCardDataParserHelper.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Sessions/NetworkSessionUtils.h"
++#include "frontend/ui_channel.h"
++#include "network/Cloud/UserContentManager.h"
++#include "network/Network.h"
++#include "network/Live/PlayerCardDataManager.h"
++#include "network/Live/PlayerCardDataParserHelper.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Sessions/NetworkSessionUtils.h"
+ #include "Peds/PlayerInfo.h"
+ #include "Stats/StatsInterface.h"
+ #include "frontend/PauseMenuData.h"
+-#include "Script/script_channel.h"
++#include "script/script_channel.h"
+ #include "Stats/StatsTypes.h"
+ 
+ #if RSG_DURANGO

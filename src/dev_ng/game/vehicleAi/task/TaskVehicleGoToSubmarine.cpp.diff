@@ -1,15 +1,22 @@
 diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToSubmarine.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToSubmarine.cpp
 --- a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToSubmarine.cpp
 +++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToSubmarine.cpp
-@@ -5,9 +5,9 @@
+@@ -3,12 +3,12 @@
+ // Game headers
+ #include "Vehicles/Submarine.h"
  #include "debug/DebugScene.h"
- #include "scene/world/gameWorld.h"
- #include "peds/Ped.h"
+-#include "scene/world/gameWorld.h"
+-#include "peds/Ped.h"
 -#include "physics\PhysicsHelpers.h"
-+#include "physics/PhysicsHelpers.h"
- #include "system/ControlMgr.h"
+-#include "system/ControlMgr.h"
 -#include "vehicleAi\task\TaskVehiclePark.h"
+-#include "vehicleai/task/taskvehicleanimation.h"
++#include "scene/world/GameWorld.h"
++#include "Peds/ped.h"
++#include "physics/PhysicsHelpers.h"
++#include "system/controlMgr.h"
 +#include "vehicleAi/task/TaskVehiclePark.h"
- #include "vehicleai/task/taskvehicleanimation.h"
++#include "vehicleAi/task/taskvehicleanimation.h"
  
  AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

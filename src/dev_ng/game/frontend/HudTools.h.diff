@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/HudTools.h b/src/dev_ng/game/frontend/HudTools.h
+--- a/src/dev_ng/game/frontend/HudTools.h
++++ b/src/dev_ng/game/frontend/HudTools.h
+@@ -18,7 +18,7 @@
+ #include "vector/vector3.h"
+ 
+ //game
+-#include "Text/Messages.h"
++#include "text/messages.h"
+ 
+ 
+ 

@@ -1,0 +1,50 @@
+diff --git a/src/dev_ng/game/task/Default/TaskWander.cpp b/src/dev_ng/game/task/Default/TaskWander.cpp
+--- a/src/dev_ng/game/task/Default/TaskWander.cpp
++++ b/src/dev_ng/game/task/Default/TaskWander.cpp
+@@ -5,30 +5,30 @@
+ //
+ 
+ // File header
+-#include "Task/Default/TaskWander.h"
++#include "task/Default/TaskWander.h"
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Event/EventShocking.h"
+-#include "Event/ShockingEvents.h"
+-#include "Game/ModelIndices.h"
+-#include "Game/Weather.h"
++#include "event/EventShocking.h"
++#include "event/ShockingEvents.h"
++#include "game/ModelIndices.h"
++#include "game/Weather.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PopZones.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Crimes/RandomEventManager.h"
+-#include "Task/Crimes/TaskStealVehicle.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskMoveWander.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Movement/TaskCollisionResponse.h"
+-#include "Task/Scenario/Info/ScenarioInfoManager.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
++#include "scene/world/GameWorld.h"
++#include "task/Crimes/RandomEventManager.h"
++#include "task/Crimes/TaskStealVehicle.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskMoveWander.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskCollisionResponse.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "task/Vehicle/TaskExitVehicle.h"
+ #include "task/Weapons/TaskSwapWeapon.h"
+ 
+ AI_OPTIMISATIONS()

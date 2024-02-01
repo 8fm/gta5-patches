@@ -1,0 +1,45 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedDamage.cpp b/src/dev_ng/game/Peds/rendering/PedDamage.cpp
+--- a/src/dev_ng/game/Peds/rendering/PedDamage.cpp
++++ b/src/dev_ng/game/Peds/rendering/PedDamage.cpp
+@@ -39,31 +39,31 @@
+ #include "fwdrawlist/drawlistmgr.h"
+ 
+ // Game headers:
+-#include "animation/animBones.h"
++#include "animation/AnimBones.h"
+ #include "camera/CamInterface.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/MarketingTools.h"
+ #include "frontend/WarningScreen.h"
+ #include "game/localisation.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
++#include "network/Live/NetworkClan.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ #include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+ #include "Peds/PlayerPed.h"
+ #include "Peds/rendering/PedHeadshotManager.h"
+ #include "Peds/rendering/pedVariationPack.h"
+-#include "peds/rendering/PedVariationDebug.h"
+-#include "renderer/DrawLists/drawlistMgr.h"
++#include "Peds/rendering/PedVariationDebug.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "scene/dlc_channel.h"
+-#include "scene/world/gameWorld.h"
+-#include "Shaders/CustomShaderEffectPed.h"
++#include "scene/world/GameWorld.h"
++#include "shaders/CustomShaderEffectPed.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/UI3DDrawManager.h"
+ #include "renderer/Util/Util.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+ 
+ #if RSG_PC

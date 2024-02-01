@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/recklessdriving.h b/src/dev_ng/game/control/recklessdriving.h
+--- a/src/dev_ng/game/control/recklessdriving.h
++++ b/src/dev_ng/game/control/recklessdriving.h
+@@ -11,7 +11,7 @@
+ #ifndef _RECKLESSDRIVING_H_
+ 	#define _RECKLESSDRIVING_H_
+ 
+-#include "peds/PlayerInfo.h"
++#include "Peds/PlayerInfo.h"
+ 
+ 
+ 

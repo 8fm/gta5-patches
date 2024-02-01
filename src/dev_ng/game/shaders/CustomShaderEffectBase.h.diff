@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectBase.h b/src/dev_ng/game/shaders/CustomShaderEffectBase.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectBase.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectBase.h
+@@ -13,9 +13,9 @@
+ #define __CCUSTOMSHADEREFFECTBASE_H__
+ 
+ // Rage includes:
+-#include "grcore/Effect_Typedefs.h"
+-#include "grcore/Effect_Config.h"
+-#include "grmodel/ShaderGroupVar.h"
++#include "grcore/effect_typedefs.h"
++#include "grcore/effect_config.h"
++#include "grmodel/shadergroupvar.h"
+ #include "vector/vector3.h"
+ #include "vector/vector4.h"
+ #include "system/memops.h"

@@ -1,0 +1,89 @@
+diff --git a/src/dev_ng/game/network/Commerce/CommerceManager.h b/src/dev_ng/game/network/Commerce/CommerceManager.h
+--- a/src/dev_ng/game/network/Commerce/CommerceManager.h
++++ b/src/dev_ng/game/network/Commerce/CommerceManager.h
+@@ -9,7 +9,7 @@
+ #include "system/memmanager.h"
+ 
+ #if RSG_PC
+-#include "Network/Shop/NetworkGameTransactions.h"
++#include "network/Shop/NetworkGameTransactions.h"
+ #endif
+ 
+ #if __BANK
+@@ -319,45 +319,45 @@ private:
+ 
+ 	[fwPool]
+ 	The following pools ARE NOT allocated from flex allocator.  All other fwPools ARE allocated from flex allocator.
+-	•	CVehicleStructure
+-	•	naEnvironmentGroup
+-	•	CMovePedPooledObject
+-	•	audVehicleAudioEntity
+-	•	CObject
+-	•	fwDecoratorExtension
+-	•	fwAnimDirectorComponent (many pools)
+-	•	fwAttachmentEntityExtension
+-	•	CTaskInfo
+-	•	CPed
+-	•	CPedIntelligence
++	-	CVehicleStructure
++	-	naEnvironmentGroup
++	-	CMovePedPooledObject
++	-	audVehicleAudioEntity
++	-	CObject
++	-	fwDecoratorExtension
++	-	fwAnimDirectorComponent (many pools)
++	-	fwAttachmentEntityExtension
++	-	CTaskInfo
++	-	CPed
++	-	CPedIntelligence
+ 
+ 	[atPool]
+ 	The following pools ARE allocated from flex allocator.  All other atPools ARE NOT allocated from flex allocator.
+-	•	CarGeneratorPool
+-	•	crCreatureComponentPhysical
+-	•	fwArchetypeManager
+-	•	phInst
+-	•	crmtNodeFactory
+-	•	phGlassInst
+-	•	bgDrawable
+-	•	fragCachePoolManager
+-	•	m_ClothsPool
+-	•	m_CharClothsPool
+-	•	crCreatureComponent
+-	•	crCommonPool
++	-	CarGeneratorPool
++	-	crCreatureComponentPhysical
++	-	fwArchetypeManager
++	-	phInst
++	-	crmtNodeFactory
++	-	phGlassInst
++	-	bgDrawable
++	-	fragCachePoolManager
++	-	m_ClothsPool
++	-	m_CharClothsPool
++	-	crCreatureComponent
++	-	crCommonPool
+ 
+ 	[New Gamestate Update (game.cpp)]
+ 	I created a new game state (COMMERCE_MAIN_UPDATE) to minimize page faults while in the marketplace.
+-	•	RegisterCommerceMainUpdateFunctions
++	-	RegisterCommerceMainUpdateFunctions
+ 
+ 	[Do not call debug functions]
+ 	To further minimize page faults, I try to avoid calling debug functions while in the marketplate.
+-	•	CDebugScene
+-	•	CStreamingDebug
+-	•	CDebug
+-	•	CStreaming
+-	•	CStreamingRequestList
+-	•	WorldProbe::CShapeTestTaskData
+-	•	WorldProbe::CShapeTestManager
++	-	CDebugScene
++	-	CStreamingDebug
++	-	CDebug
++	-	CStreaming
++	-	CStreamingRequestList
++	-	WorldProbe::CShapeTestTaskData
++	-	WorldProbe::CShapeTestManager
+ */
+ 

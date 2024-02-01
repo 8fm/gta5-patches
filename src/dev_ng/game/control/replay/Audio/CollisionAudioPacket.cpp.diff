@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/CollisionAudioPacket.cpp b/src/dev_ng/game/control/replay/Audio/CollisionAudioPacket.cpp
+--- a/src/dev_ng/game/control/replay/Audio/CollisionAudioPacket.cpp
++++ b/src/dev_ng/game/control/replay/Audio/CollisionAudioPacket.cpp
+@@ -5,9 +5,9 @@
+ #if GTA_REPLAY
+ 
+ #include "scene/Entity.h"
+-#include "objects/object.h"
++#include "Objects/object.h"
+ #include "audiosoundtypes/sound.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ const u8 CollisionTypeIsRollBit = 0;
+ //////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.cpp b/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.cpp
+--- a/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.cpp
++++ b/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.cpp
+@@ -16,9 +16,9 @@
+ #include "ik/solvers/ArmIkSolver.h"
+ #include "ik/solvers/TorsoVehicleSolverProxy.h"
+ #include "Peds/ped.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/Bike.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Bike.h"
+ 
+ #define TORSOVEHICLE_SOLVER_POOL_MAX		16
+ #define ENABLE_TORSOVEHICLE_SOLVER_WIDGETS	0

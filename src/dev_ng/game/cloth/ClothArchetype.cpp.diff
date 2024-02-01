@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/cloth/ClothArchetype.cpp b/src/dev_ng/game/cloth/ClothArchetype.cpp
+--- a/src/dev_ng/game/cloth/ClothArchetype.cpp
++++ b/src/dev_ng/game/cloth/ClothArchetype.cpp
+@@ -2,9 +2,9 @@
+ #include "ClothMgr.h"
+ #include "Core/Game.h"
+ #include "Peds/PlayerInfo.h"
+-#include "Peds/Ped.h"
+-#include "Scene/Entity.h"
+-#include "Scene/DataFileMgr.h"
++#include "Peds/ped.h"
++#include "scene/Entity.h"
++#include "scene/DataFileMgr.h"
+ 
+ #if NORTH_CLOTHS
+ 

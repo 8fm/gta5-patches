@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/camera/replay/ReplayPresetCamera.cpp b/src/dev_ng/game/camera/replay/ReplayPresetCamera.cpp
+--- a/src/dev_ng/game/camera/replay/ReplayPresetCamera.cpp
++++ b/src/dev_ng/game/camera/replay/ReplayPresetCamera.cpp
+@@ -20,10 +20,10 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/system/CameraFactory.h"
+ 
+-#include "Frontend/VideoEditor/VideoEditorInterface.h"
++#include "frontend/VideoEditor/VideoEditorInterface.h"
+ #include "Peds/ped.h"
+ #include "system/controlMgr.h"
+-#include "vehicles/Trailer.h"
++#include "Vehicles/Trailer.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

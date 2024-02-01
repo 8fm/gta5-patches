@@ -1,12 +1,18 @@
 diff --git a/src/dev_ng/game/ai/AITarget.h b/src/dev_ng/game/ai/AITarget.h
 --- a/src/dev_ng/game/ai/AITarget.h
 +++ b/src/dev_ng/game/ai/AITarget.h
-@@ -5,7 +5,7 @@
- #include "Vector/Vector3.h"
+@@ -2,11 +2,11 @@
+ #define AI_TARGET_H
+ 
+ // Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
  
  // Game headers
 -#include "Network\General\NetworkUtil.h"
-+#include "Network/General/NetworkUtil.h"
- #include "Scene/RegdRefTypes.h"
+-#include "Scene/RegdRefTypes.h"
++#include "network/General/NetworkUtil.h"
++#include "scene/RegdRefTypes.h"
  
  // Forward declarations
+ class CEntity;

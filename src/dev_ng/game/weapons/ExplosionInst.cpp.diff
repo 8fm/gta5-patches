@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/weapons/ExplosionInst.cpp b/src/dev_ng/game/weapons/ExplosionInst.cpp
+--- a/src/dev_ng/game/weapons/ExplosionInst.cpp
++++ b/src/dev_ng/game/weapons/ExplosionInst.cpp
+@@ -9,16 +9,16 @@
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+-#include "Control/GameLogic.h"
+-#include "ModelInfo/VehicleModelInfo.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Players/NetworkPlayerMgr.h"
+-#include "Peds/Ped.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Renderer/Water.h"
+-#include "Vehicles/Vehicle.h"
+-#include "Vfx/VfxHelper.h"
++#include "control/GameLogic.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "Peds/ped.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "renderer/Water.h"
++#include "Vehicles/vehicle.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ FW_INSTANTIATE_BASECLASS_POOL_SPILLOVER(phGtaExplosionInst, CExplosionManager::MAX_EXPLOSIONS, 0.63f, atHashString("ExplosionType",0xe4379a4c), sizeof(phGtaExplosionInst));

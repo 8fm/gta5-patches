@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventResponse.h b/src/dev_ng/game/event/EventResponse.h
+--- a/src/dev_ng/game/event/EventResponse.h
++++ b/src/dev_ng/game/event/EventResponse.h
+@@ -2,7 +2,7 @@
+ #define INC_EVENT_RESPONSE_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ 
+ class CEventResponse
+ {

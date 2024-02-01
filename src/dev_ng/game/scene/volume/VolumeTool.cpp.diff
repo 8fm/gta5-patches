@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeTool.cpp b/src/dev_ng/game/scene/volume/VolumeTool.cpp
+--- a/src/dev_ng/game/scene/volume/VolumeTool.cpp
++++ b/src/dev_ng/game/scene/volume/VolumeTool.cpp
+@@ -5,7 +5,7 @@
+ // CREATED :	10/21/2011
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Scene/Volume/VolumeTool.h"
++#include "scene/volume/VolumeTool.h"
+ 
+ #if __BANK && VOLUME_SUPPORT
+ 
+@@ -21,12 +21,12 @@
+ 
+ //Game
+ 
+-#include "Scene/Volume/VolumeManager.h"
++#include "scene/volume/VolumeManager.h"
+ #include "script/script.h"
+ #include "camera/CamInterface.h"
+ #include "camera/base/BaseCamera.h"
+ #include "system/controlMgr.h"
+-#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptResources.h"
+ #include "camera/debug/DebugDirector.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedInventory.h b/src/dev_ng/game/weapons/inventory/PedInventory.h
+--- a/src/dev_ng/game/weapons/inventory/PedInventory.h
++++ b/src/dev_ng/game/weapons/inventory/PedInventory.h
+@@ -8,9 +8,9 @@
+ #define PED_INVENTORY_H
+ 
+ // Game headers
+-#include "Weapons/Inventory/AmmoItemRepository.h"
+-#include "Weapons/Inventory/WeaponItemRepository.h"
+-#include "Weapons/WeaponObserver.h"
++#include "weapons/inventory/AmmoItemRepository.h"
++#include "weapons/inventory/WeaponItemRepository.h"
++#include "weapons/WeaponObserver.h"
+ 
+ // Forward declarations
+ class CPed;

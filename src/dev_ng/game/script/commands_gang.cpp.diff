@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/script/commands_gang.cpp b/src/dev_ng/game/script/c
 +#include "script/wrapper.h"
  // Game headers
 -#include "peds\gangs.h"
-+#include "peds/gangs.h"
++#include "Peds/Gangs.h"
  
  namespace gang_commands
  {

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/AnimSceneManager.cpp b/src/dev_ng/game/animation/AnimScene/AnimSceneManager.cpp
+--- a/src/dev_ng/game/animation/AnimScene/AnimSceneManager.cpp
++++ b/src/dev_ng/game/animation/AnimScene/AnimSceneManager.cpp
+@@ -9,8 +9,8 @@
+ 
+ // game headers
+ #include "AnimSceneDictionary.h"
+-#include "peds/ped.h"
+-#include "peds/PedFactory.h"
++#include "Peds/ped.h"
++#include "Peds/PedFactory.h"
+ 
+ 
+ ANIM_OPTIMISATIONS()

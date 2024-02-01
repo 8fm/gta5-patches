@@ -1,12 +1,30 @@
 diff --git a/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp b/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp
 --- a/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp
 +++ b/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.cpp
-@@ -12,7 +12,7 @@
+@@ -1,8 +1,8 @@
+-#include "Task/Vehicle/TaskPlayerHorseFollow.h"
++#include "task/Vehicle/TaskPlayerHorseFollow.h"
+ 
+ #if ENABLE_HORSE
+ 
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Movement/TaskGotoPoint.h"
+ #include "task/Vehicle/PlayerHorseSpeedMatch.h"
+@@ -10,11 +10,11 @@
+ #include "task/Vehicle/HelperFunctions.h"
+ #include "vector/vector3.h"
  #include "Vehicles/vehicle.h"
- #include "Peds/Ped.h"
- #include "Task/Vehicle/HelperFunctions.h"
+-#include "Peds/Ped.h"
+-#include "Task/Vehicle/HelperFunctions.h"
 -#include "Peds\Horse\horseComponent.h"
++#include "Peds/ped.h"
++#include "task/Vehicle/HelperFunctions.h"
 +#include "Peds/Horse/horseComponent.h"
  #include "Peds/Horse/horseSpeed.h"
- #include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Movement/TaskGotoPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
  #include "Peds/PedIntelligence.h"
+ 
+ AI_OPTIMISATIONS()

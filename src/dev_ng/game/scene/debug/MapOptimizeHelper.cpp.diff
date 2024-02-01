@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/scene/debug/MapOptimizeHelper.cpp b/src/dev_ng/game/scene/debug/MapOptimizeHelper.cpp
+--- a/src/dev_ng/game/scene/debug/MapOptimizeHelper.cpp
++++ b/src/dev_ng/game/scene/debug/MapOptimizeHelper.cpp
+@@ -24,12 +24,12 @@ SCENE_OPTIMISATIONS();
+ #include "file/packfile.h"
+ #include "fwscene/mapdata/mapdata.h"
+ #include "fwscene/mapdata/mapdatadebug.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/ped.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/ped.h"
+ #include "scene/debug/SceneIsolator.h"
+ #include "scene/lod/LodDebug.h"
+ #include "scene/lod/LodMgr.h"
+-#include "scene/world/gameworld.h"
++#include "scene/world/GameWorld.h"
+ #include "streaming/streamingengine.h"
+ #include "streaming/streamingdebug.h"
+ #include "streaming/packfilemanager.h"

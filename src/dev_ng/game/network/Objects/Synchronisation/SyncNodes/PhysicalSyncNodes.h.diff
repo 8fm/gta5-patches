@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h
+@@ -8,9 +8,9 @@
+ #define PHYSICAL_SYNC_NODES_H
+ 
+ #include "network/General/NetworkUtil.h"
+-#include "network/objects/synchronisation/SyncNodes/DynamicEntitySyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/DynamicEntitySyncNodes.h"
+ 
+-#include "vector/Quaternion.h"
++#include "vector/quaternion.h"
+ 
+ class CPhysicalGameStateDataNode;
+ class CPhysicalScriptGameStateDataNode;

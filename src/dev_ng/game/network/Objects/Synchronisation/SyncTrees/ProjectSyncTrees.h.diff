@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h
+@@ -7,22 +7,22 @@
+ #ifndef PROJECT_SYNC_TREES_H
+ #define PROJECT_SYNC_TREES_H
+ 
+-#include "network/objects/synchronisation/syncnodes/AutomobileSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/BikeSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/BoatSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/DoorSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/SubmarineSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/HeliSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/ObjectSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/PedSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/PickupSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/PickupPlacementSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/GlassPaneSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/PlayerSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/ProximityMigrateableSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/TrainSyncNodes.h"
+-#include "network/objects/synchronisation/syncnodes/PlaneSyncNodes.h"
+-#include "network/objects/synchronisation/synctrees/ProjectSyncTree.h"
++#include "network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/BikeSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/BoatSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PedSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PickupSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/GlassPaneSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/TrainSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTree.h"
+ 
+ // activation flags
+ enum

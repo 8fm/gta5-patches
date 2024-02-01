@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.h b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.h
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.h
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.h
+@@ -5,8 +5,8 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Weapons/WeaponController.h"
++#include "task/System/TaskTypes.h"
++#include "task/Weapons/WeaponController.h"
+ 
+ // Forward declarations
+ class CGunIkInfo;

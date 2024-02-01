@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Debug.h b/src/dev_ng/game/debug/Debug.h
+--- a/src/dev_ng/game/debug/Debug.h
++++ b/src/dev_ng/game/debug/Debug.h
+@@ -15,7 +15,7 @@
+ 
+ // Game header
+ #include "debug/bugstar/BugstarIntegrationSwitch.h"
+-#include "templates/dblBuf.h"
++#include "templates/DblBuf.h"
+ #include "control/replay/ReplaySettings.h"
+ 
+ // macro for marking stuff that needs to be fixed

@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/Vehicles/wheel.h b/src/dev_ng/game/Vehicles/wheel.h
+--- a/src/dev_ng/game/Vehicles/wheel.h
++++ b/src/dev_ng/game/Vehicles/wheel.h
+@@ -15,17 +15,17 @@
+ #include "physics/shapetest.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Control/Replay/ReplaySettings.h"
+-#include "Modelinfo/VehicleModelInfo.h"
+-#include "Renderer/HierarchyIds.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Vfx/Systems/VfxLiquid.h"
+-#include "Weapons/WeaponEnums.h"
++#include "control/replay/ReplaySettings.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "renderer/HierarchyIds.h"
++#include "scene/RegdRefTypes.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/systems/VfxLiquid.h"
++#include "weapons/WeaponEnums.h"
+ 
+ namespace rage {
+ 	class phArticulatedBodyPart;

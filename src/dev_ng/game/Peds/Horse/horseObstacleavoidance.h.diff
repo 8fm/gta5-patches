@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.h b/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.h
+--- a/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.h
++++ b/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.h
+@@ -7,7 +7,7 @@
+ 
+ #include "horseControl.h"
+ #include "parser/manager.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "task/System/TaskHelpers.h"
+ 
+ class CPed;

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfacePed.cpp b/src/dev_ng/game/control/replay/ReplayInterfacePed.cpp
+--- a/src/dev_ng/game/control/replay/ReplayInterfacePed.cpp
++++ b/src/dev_ng/game/control/replay/ReplayInterfacePed.cpp
+@@ -10,7 +10,7 @@
+ #include "scene/world/GameWorld.h"
+ 
+ #include "camera/viewports/ViewportManager.h"
+-#include "Control/Replay/Ped/BonedataMap.h"
++#include "control/replay/Ped/BonedataMap.h"
+ 
+ 
+ const char*	CReplayInterfaceTraits<CPed>::strShort = "PED";

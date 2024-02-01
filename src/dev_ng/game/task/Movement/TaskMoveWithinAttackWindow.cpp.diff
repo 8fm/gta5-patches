@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.cpp b/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.cpp
+--- a/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.cpp
++++ b/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.cpp
+@@ -3,19 +3,19 @@
+ // CREATED : 21-02-2012
+ 
+ // File header
+-#include "Task/Movement/TaskMoveWithinAttackWindow.h"
++#include "task/Movement/TaskMoveWithinAttackWindow.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/CombatManager.h"
+-#include "Task/Combat/Cover/coverfilter.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "task/Combat/CombatManager.h"
++#include "task/Combat/Cover/coverfilter.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Movement/TaskNavMesh.h"
+ 
+ // Rage headers
+ #include "math/angmath.h"

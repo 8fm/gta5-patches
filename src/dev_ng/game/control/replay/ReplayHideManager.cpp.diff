@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayHideManager.cpp b/src/dev_ng/game/control/replay/ReplayHideManager.cpp
+--- a/src/dev_ng/game/control/replay/ReplayHideManager.cpp
++++ b/src/dev_ng/game/control/replay/ReplayHideManager.cpp
+@@ -2,7 +2,7 @@
+ 
+ #if GTA_REPLAY
+ 
+-#include "scene/building.h"
++#include "scene/Building.h"
+ #include "Objects/DummyObject.h"
+ #include "control/replay/ReplayController.h"
+ 

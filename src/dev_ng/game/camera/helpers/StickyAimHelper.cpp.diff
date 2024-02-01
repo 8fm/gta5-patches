@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/camera/helpers/StickyAimHelper.cpp b/src/dev_ng/game/camera/helpers/StickyAimHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/StickyAimHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/StickyAimHelper.cpp
+@@ -14,12 +14,12 @@
+ #include "camera/scripted/BaseSplineCamera.h"
+ #include "camera/system/CameraFactory.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Peds/Ped.h" 
++#include "Peds/ped.h" 
+ #include "Peds/PlayerInfo.h"
+ #include "Peds/PlayerSpecialAbility.h"
+ #include "Peds/PedWeapons/PedTargetEvaluator.h"
+ #include "Peds/PedWeapons/PlayerPedTargeting.h"
+-#include "Weapons/Info/WeaponInfo.h"
++#include "weapons/info/WeaponInfo.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/record.h b/src/dev_ng/game/control/record.h
 --- a/src/dev_ng/game/control/record.h
 +++ b/src/dev_ng/game/control/record.h
-@@ -20,8 +20,8 @@
+@@ -20,17 +20,17 @@
  #include "bank/bank.h"
  #include "file/device.h"
  #include "paging/base.h"
@@ -11,4 +11,15 @@ diff --git a/src/dev_ng/game/control/record.h b/src/dev_ng/game/control/record.h
 +#include "atl/string.h"
  #include "vector/quaternion.h"
  #include "streaming/streamingdefs.h"
+ 
+ // game includes
+ #include "scene/RegdRefTypes.h"
+-#include "system/fileMgr.h"
++#include "system/FileMgr.h"
+ #include "vector/matrix34.h"
+ #include "vector/vector3.h"
+-#include "VehicleAI/vehmission.h"
++#include "vehicleAi/vehmission.h"
+ 
+ #include "fwcontrol/record.h"
  

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/DampedSpring.cpp b/src/dev_ng/game/camera/helpers/DampedSpring.cpp
+--- a/src/dev_ng/game/camera/helpers/DampedSpring.cpp
++++ b/src/dev_ng/game/camera/helpers/DampedSpring.cpp
+@@ -6,7 +6,7 @@
+ 
+ #include "camera/helpers/DampedSpring.h"
+ 
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ 
+ #include "math/amath.h"
+ 

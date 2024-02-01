@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicWaterCrashContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicWaterCrashContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicWaterCrashContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicWaterCrashContext.cpp
+@@ -8,7 +8,7 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "control/gamelogic.h"
+ #include "Vehicles/vehicle.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/Physical.h"
+ #include "fwsys/timer.h"
+ 

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/frontend/PCGamepadCalibration.cpp b/src/dev_ng/game/frontend/PCGamepadCalibration.cpp
+--- a/src/dev_ng/game/frontend/PCGamepadCalibration.cpp
++++ b/src/dev_ng/game/frontend/PCGamepadCalibration.cpp
+@@ -1,13 +1,13 @@
+-#include "Frontend/PCGamepadCalibration.h"
++#include "frontend/PCGamepadCalibration.h"
+ 
+ #if RSG_PC
+ 
+ #include "grprofile/timebars.h"
+-#include "Frontend/PauseMenu.h"
+-#include "System/controlMgr.h"
+-#include "Frontend/BusySpinner.h"
+-#include "Text/TextFormat.h"
+-#include "Text/TextConversion.h"
++#include "frontend/PauseMenu.h"
++#include "system/controlMgr.h"
++#include "frontend/BusySpinner.h"
++#include "text/TextFormat.h"
++#include "text/TextConversion.h"
+ #include "rline/rlpc.h"
+ 
+ #define GAMEPAD_FILENAME "GAMEPAD_CALIBRATION"

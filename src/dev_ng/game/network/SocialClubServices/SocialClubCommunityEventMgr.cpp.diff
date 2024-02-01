@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.cpp b/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubCommunityEventMgr.cpp
+@@ -8,9 +8,9 @@
+ 
+ #include "fwnet/netchannel.h"
+ 
+-#include "Network/NetworkInterface.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Cloud/Tunables.h"
++#include "network/NetworkInterface.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Cloud/Tunables.h"
+ 
+ using namespace rage;
+ 

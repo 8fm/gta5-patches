@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/game/MapZones.cpp b/src/dev_ng/game/game/MapZones.cpp
+--- a/src/dev_ng/game/game/MapZones.cpp
++++ b/src/dev_ng/game/game/MapZones.cpp
+@@ -7,8 +7,8 @@
+ #include "grcore/debugdraw.h"
+ #include "fwsys/gameskeleton.h"
+ #include "physics/gtaArchetype.h"
+-#include "fwmaths/vector.h"
+-#include "Scene/scene.h"
++#include "fwmaths/Vector.h"
++#include "scene/scene.h"
+ #include "debug/DebugScene.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/gamelogic.h"

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/CSelectionWheel.cpp b/src/dev_ng/game/frontend/CSelectionWheel.cpp
+--- a/src/dev_ng/game/frontend/CSelectionWheel.cpp
++++ b/src/dev_ng/game/frontend/CSelectionWheel.cpp
+@@ -4,8 +4,8 @@
+ #include "frontend/ui_channel.h"
+ #include "system/controlMgr.h"
+ #include "fwmaths/angle.h"
+-#include "Renderer/PostProcessFXHelper.h"
+-#include "Network/Network.h"
++#include "renderer/PostProcessFXHelper.h"
++#include "network/Network.h"
+ #include "Peds/PlayerInfo.h"
+ 
+ #include "scaleform/tweenstar.h"

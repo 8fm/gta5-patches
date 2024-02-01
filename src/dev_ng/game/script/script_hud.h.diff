@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/script_hud.h b/src/dev_ng/game/script/script_hud.h
+--- a/src/dev_ng/game/script/script_hud.h
++++ b/src/dev_ng/game/script/script_hud.h
+@@ -14,7 +14,7 @@
+ #include "frontend/hud_colour.h"
+ #include "frontend/MousePointer.h"
+ #include "renderer/color.h"
+-#include "renderer/rendertargetmgr.h"
++#include "renderer/RenderTargetMgr.h"
+ #include "text/TextConversion.h"
+ 
+ 

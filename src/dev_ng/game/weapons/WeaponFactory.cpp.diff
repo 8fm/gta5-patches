@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/weapons/WeaponFactory.cpp b/src/dev_ng/game/weapons/WeaponFactory.cpp
+--- a/src/dev_ng/game/weapons/WeaponFactory.cpp
++++ b/src/dev_ng/game/weapons/WeaponFactory.cpp
+@@ -1,13 +1,13 @@
+ // File header
+-#include "Weapons/WeaponFactory.h"
++#include "weapons/WeaponFactory.h"
+ 
+ // Game headers
+-#include "Weapons/Gadgets/Gadget.h"
+-#include "Weapons/Gadgets/GadgetParachute.h"
+-#include "Weapons/Gadgets/GadgetJetpack.h"
+-#include "Weapons/Gadgets/GadgetSkis.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/WeaponTypes.h"
++#include "weapons/Gadgets/Gadget.h"
++#include "weapons/Gadgets/GadgetParachute.h"
++#include "weapons/Gadgets/GadgetJetpack.h"
++#include "weapons/Gadgets/GadgetSkis.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/WeaponTypes.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

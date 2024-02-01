@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/TrainSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/TrainSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/TrainSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/TrainSyncNodes.cpp
+@@ -4,7 +4,7 @@
+ // written by:    
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/TrainSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/TrainSyncNodes.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

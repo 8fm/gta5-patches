@@ -1,0 +1,61 @@
+diff --git a/src/dev_ng/game/game/Dispatch/DispatchManager.cpp b/src/dev_ng/game/game/Dispatch/DispatchManager.cpp
+--- a/src/dev_ng/game/game/Dispatch/DispatchManager.cpp
++++ b/src/dev_ng/game/game/Dispatch/DispatchManager.cpp
+@@ -2,28 +2,28 @@
+ // Purpose	:	Manages the separate dispatch subsystems
+ // Started	:	13/05/2010
+ 
+-#include "Game/Dispatch/DispatchManager.h"
++#include "game/Dispatch/DispatchManager.h"
+ 
+ // Game includes
+-#include "Control/Gamelogic.h"
+-#include "Debug/DebugScene.h"
+-#include "Game/Dispatch/DispatchData.h"
+-#include "Game/Dispatch/DispatchServices.h"
+-#include "Game/Dispatch/IncidentManager.h"
+-#include "Game/Dispatch/OrderManager.h"
+-#include "Network/Objects/NetworkObjectPopulationMgr.h"
+-#include "Network/Objects/Entities/NetObjHeli.h"
+-#include "Network/Objects/Entities/NetObjPed.h"
+-#include "Network/Objects/Entities/NetObjVehicle.h"
+-#include "peds/ped.h"
+-#include "peds/PedFactory.h"
++#include "control/Gamelogic.h"
++#include "debug/DebugScene.h"
++#include "game/Dispatch/DispatchData.h"
++#include "game/Dispatch/DispatchServices.h"
++#include "game/Dispatch/IncidentManager.h"
++#include "game/Dispatch/OrderManager.h"
++#include "network/Objects/NetworkObjectPopulationMgr.h"
++#include "network/Objects/Entities/NetObjHeli.h"
++#include "network/Objects/Entities/NetObjPed.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "Peds/ped.h"
++#include "Peds/PedFactory.h"
+ #include "Peds/PedIntelligence.h"
+-#include "peds/PopCycle.h"
+-#include "peds/PopZones.h"
+-#include "peds/rendering/PedVariationDebug.h"
++#include "Peds/PopCycle.h"
++#include "Peds/PopZones.h"
++#include "Peds/rendering/PedVariationDebug.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task/Service/Fire/TaskFirePatrol.h"
+-#include "Task/vehicle/TaskCar.h"
++#include "task/Service/Fire/TaskFirePatrol.h"
++#include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/VehicleFactory.h"
+ #include "Vehicles/vehiclepopulation.h"
+@@ -616,8 +616,8 @@ void CDispatchManager::InitWidgets()
+ 
+ #include "game/Dispatch/incidents.h"
+ #include "scene/world/GameWorld.h"
+-#include "Game/Dispatch/OrderManager.h"
+-#include "Game/Dispatch/Orders.h"
++#include "game/Dispatch/OrderManager.h"
++#include "game/Dispatch/Orders.h"
+ void CDispatchManager::AddFireIncident()
+ {
+ 	CEntity* pSourceEntity = CGameWorld::FindLocalPlayer();

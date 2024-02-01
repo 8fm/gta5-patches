@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/task/Default/AmbientAnimationManager.cpp b/src/dev_ng/game/task/Default/AmbientAnimationManager.cpp
+--- a/src/dev_ng/game/task/Default/AmbientAnimationManager.cpp
++++ b/src/dev_ng/game/task/Default/AmbientAnimationManager.cpp
+@@ -4,24 +4,24 @@
+ 
+ // Game Headers
+ #include "animation/Move.h"
+-#include "Game/Clock.h"
++#include "game/Clock.h"
+ #include "game/weather.h"
+-#include "Game/ModelIndices.h"
+-#include "Peds/Ped.h"
++#include "game/ModelIndices.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Scene/World/GameWorld.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/EntityIterator.h"
+ #include "streaming/streaming.h"		// For CStreaming::RequestObject(), etc.
+-#include "Task/Default/AmbientAnimationManager.h"
+-#include "AI/Ambient/AmbientModelSetManager.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/info/ScenarioInfoManager.h"
+-#include "Task/Scenario/TaskScenario.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Weapons/Weapon.h"
++#include "task/Default/AmbientAnimationManager.h"
++#include "ai/ambient/AmbientModelSetManager.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/General/TaskBasic.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
++#include "task/Scenario/TaskScenario.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "weapons/Weapon.h"
+ 
+ AI_OPTIMISATIONS()
+ 

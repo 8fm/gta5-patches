@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatChase.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatChase.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatChase.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatChase.cpp
+@@ -2,16 +2,16 @@
+ // PURPOSE : Subtask of boat combat used to chase a target
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskBoatChase.h"
++#include "task/Combat/Subtasks/TaskBoatChase.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "task/Combat/Subtasks/BoatChaseDirector.h"
+ #include "task/Combat/Subtasks/TaskVehicleCombat.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehiclePursue.h"
+-#include "Vehicles/boat.h"
++#include "Vehicles/Boat.h"
+ #include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()

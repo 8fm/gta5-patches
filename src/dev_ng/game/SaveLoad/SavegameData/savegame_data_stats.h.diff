@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.h b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.h
+--- a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.h
++++ b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.h
+@@ -8,7 +8,7 @@
+ 
+ // Game headers
+ #include "SaveLoad/savegame_defines.h"
+-#include "stats/StatsMgr.h"
++#include "Stats/StatsMgr.h"
+ 
+ 
+ // Forward declarations

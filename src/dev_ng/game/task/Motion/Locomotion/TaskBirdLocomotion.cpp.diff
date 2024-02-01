@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.cpp
+@@ -1,25 +1,25 @@
+ #include "TaskBirdLocomotion.h"
+ 
+ #include "fwmaths/random.h"
+-#include "fwScene/scan/Scan.h"
+-#include "fwScene/scan/ScanCascadeShadows.h"
++#include "fwscene/scan/Scan.h"
++#include "fwscene/scan/ScanCascadeShadows.h"
+ #include "spatialdata/aabb.h"
+ 
+ #include "ai/stats.h"
+ #include "animation/MovePed.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "debug/DebugScene.h"
+-#include "Event/Events.h"
+-#include "peds/PedIntelligence.h"
++#include "event/Events.h"
++#include "Peds/PedIntelligence.h"
+ #include "Peds/pedplacement.h"
+ #include "Peds/PedMotionData.h"
+-#include "Physics/CollisionRecords.h"
++#include "physics/CollisionRecords.h"
+ #include "physics/WorldProbe/WorldProbe.h"
+ #include "physics/WorldProbe/shapetestcapsuledesc.h"
+ #include "physics/WorldProbe/shapetestresults.h"
+-#include "Task/Combat/TaskDamageDeath.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/System/MotionTaskData.h"
++#include "task/Combat/TaskDamageDeath.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/System/MotionTaskData.h"
+ 
+ AI_OPTIMISATIONS()
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/bugstar/MissionLookup.cpp b/src/dev_ng/game/debug/bugstar/MissionLookup.cpp
+--- a/src/dev_ng/game/debug/bugstar/MissionLookup.cpp
++++ b/src/dev_ng/game/debug/bugstar/MissionLookup.cpp
+@@ -2,7 +2,7 @@
+ 
+ #include "debug/BugstarIntegration.h"
+ #include "MissionLookup.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ #include "parser/manager.h"						// XML
+ #include "parser/tree.h"
+ #include "string/string.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/PhysicsHelpers.cpp b/src/dev_ng/game/physics/PhysicsHelpers.cpp
+--- a/src/dev_ng/game/physics/PhysicsHelpers.cpp
++++ b/src/dev_ng/game/physics/PhysicsHelpers.cpp
+@@ -11,7 +11,7 @@
+ #include "fwmaths/angle.h"
+ 
+ // Game headers
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "scene/Physical.h"
+ 
+ PHYSICS_OPTIMISATIONS()

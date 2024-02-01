@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/scene/portals/portalDebugHelper.cpp b/src/dev_ng/game/scene/portals/portalDebugHelper.cpp
+--- a/src/dev_ng/game/scene/portals/portalDebugHelper.cpp
++++ b/src/dev_ng/game/scene/portals/portalDebugHelper.cpp
+@@ -23,17 +23,17 @@
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+-#include "core/game.h"
+-#include "modelInfo/MLOmodelInfo.h"
+-#include "peds/ped.h"
++#include "Core/game.h"
++#include "modelinfo/MLOmodelInfo.h"
++#include "Peds/ped.h"
+ #include "renderer/Lights/LightEntity.h"
+ #include "renderer/RenderPhases/RenderPhase.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+ #include "debug/GtaPicker.h"
+ #include "scene/scene_channel.h"
+-#include "scene/portals/portal.h"
+-#include "scene/portals/portalTracker.h"
+-#include "Scene/World/GameWorld.h"
++#include "scene/portals/Portal.h"
++#include "scene/portals/PortalTracker.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/LoadScene.h"
+ #include "scene/loader/MapData.h"
+ #include "scene/lod/LodMgr.h"

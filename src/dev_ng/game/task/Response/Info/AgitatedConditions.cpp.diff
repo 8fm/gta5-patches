@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedConditions.cpp b/src/dev_ng/game/task/Response/Info/AgitatedConditions.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedConditions.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedConditions.cpp
+@@ -1,15 +1,15 @@
+ // File header
+-#include "Task/Response/Info/AgitatedConditions.h"
++#include "task/Response/Info/AgitatedConditions.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/Default/TaskUnalerted.h"
+-#include "Task/Response/TaskAgitated.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Default/TaskUnalerted.h"
++#include "task/Response/TaskAgitated.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ #include "task/Weapons/Gun/TaskVehicleDriveBy.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()
+ 

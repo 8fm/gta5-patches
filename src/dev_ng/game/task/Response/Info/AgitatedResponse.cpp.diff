@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedResponse.cpp b/src/dev_ng/game/task/Response/Info/AgitatedResponse.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedResponse.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedResponse.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Response/Info/AgitatedResponse.h"
++#include "task/Response/Info/AgitatedResponse.h"
+ 
+ AI_OPTIMISATIONS()
+ 

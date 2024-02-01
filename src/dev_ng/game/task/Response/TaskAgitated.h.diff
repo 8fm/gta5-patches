@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Response/TaskAgitated.h b/src/dev_ng/game/task/Response/TaskAgitated.h
+--- a/src/dev_ng/game/task/Response/TaskAgitated.h
++++ b/src/dev_ng/game/task/Response/TaskAgitated.h
+@@ -10,9 +10,9 @@
+ 
+ // Game headers
+ #include "task/Response/info/AgitatedEnums.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CAgitatedAction;

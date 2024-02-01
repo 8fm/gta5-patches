@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjEntity.h b/src/dev_ng/game/network/Objects/Entities/NetObjEntity.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjEntity.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjEntity.h
+@@ -8,11 +8,11 @@
+ #ifndef NETOBJENTITY_H
+ #define NETOBJENTITY_H
+ 
+-#include "network/objects/entities/NetObjProximityMigrateable.h"
++#include "network/Objects/Entities/NetObjProximityMigrateable.h"
+ 
+-#include "network/objects/synchronisation/syncnodes/entitysyncnodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/EntitySyncNodes.h"
+ 
+-#include "Scene/Entity.h"
++#include "scene/Entity.h"
+ 
+ namespace rage
+ {

@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.h b/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.h
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.h
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.h
+@@ -1,13 +1,13 @@
+ #ifndef INC_TASK_LADDER_CLIMB_H
+ #define INC_TASK_LADDER_CLIMB_H
+ 
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
+ #include "fwanimation/move.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/Movement/Climbing/TaskGoToAndClimbLadder.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/Movement/Climbing/TaskGoToAndClimbLadder.h"
+ 
+ //-----------------------------------------------------------------------------------------
+ RAGE_DECLARE_CHANNEL(ladder)

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/EntityBatch_Def.h b/src/dev_ng/game/scene/EntityBatch_Def.h
+--- a/src/dev_ng/game/scene/EntityBatch_Def.h
++++ b/src/dev_ng/game/scene/EntityBatch_Def.h
+@@ -7,7 +7,7 @@
+ #ifndef SCENE_ENTITY_BATCH_DEF_H_
+ #define SCENE_ENTITY_BATCH_DEF_H_
+ 
+-#include "shader_source/util/BatchInstancing.fxh" //For GRASS_BATCH_CS_CULLING defines... and some others
++#include "shader_source/Util/BatchInstancing.fxh" //For GRASS_BATCH_CS_CULLING defines... and some others
+ #include "system/noncopyable.h"
+ #include "grcore/effect_typedefs.h"
+ #include "grmodel/shadergroupvar.h"

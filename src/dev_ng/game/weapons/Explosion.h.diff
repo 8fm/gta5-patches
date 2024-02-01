@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/weapons/Explosion.h b/src/dev_ng/game/weapons/Explosion.h
+--- a/src/dev_ng/game/weapons/Explosion.h
++++ b/src/dev_ng/game/weapons/Explosion.h
+@@ -10,14 +10,14 @@
+ #include "physics/collider.h"
+ #include "physics/instbehavior.h"
+ #include "phbound/boundcapsule.h"
+-#include "weapons/explosioninst.h"
++#include "weapons/ExplosionInst.h"
+ 
+ // Game headers
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "scene/entity.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/Entity.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Weapons/WeaponTypes.h"
+-#include "vehicles/wheel.h"
++#include "weapons/WeaponTypes.h"
++#include "Vehicles/wheel.h"
+ 
+ // Forward declarations
+ class phInstGta;

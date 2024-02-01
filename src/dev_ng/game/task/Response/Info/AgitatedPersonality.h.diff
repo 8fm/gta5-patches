@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedPersonality.h b/src/dev_ng/game/task/Response/Info/AgitatedPersonality.h
+--- a/src/dev_ng/game/task/Response/Info/AgitatedPersonality.h
++++ b/src/dev_ng/game/task/Response/Info/AgitatedPersonality.h
+@@ -8,7 +8,7 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Task/Response/Info/AgitatedContext.h"
++#include "task/Response/Info/AgitatedContext.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CAgitatedPersonality

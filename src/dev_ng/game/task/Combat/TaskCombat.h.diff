@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskCombat.h b/src/dev_ng/game/task/Combat/TaskCombat.h
+--- a/src/dev_ng/game/task/Combat/TaskCombat.h
++++ b/src/dev_ng/game/task/Combat/TaskCombat.h
+@@ -24,10 +24,10 @@
+ #include "Peds/QueriableInterface.h"
+ #include "task/Combat/TacticalAnalysis.h"
+ #include "task/Movement/TaskMoveToTacticalPoint.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ 
+ class CEntity;
+ class CVehMission;

@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/control/restart.cpp b/src/dev_ng/game/control/restart.cpp
+--- a/src/dev_ng/game/control/restart.cpp
++++ b/src/dev_ng/game/control/restart.cpp
+@@ -11,16 +11,16 @@
+ #include "ai/navmesh/navmeshstore.h"
+ #include "ai/navmesh/pathserverbase.h"
+ #include "pathserver/PathServer.h"
+-#include "vehicleAi/pathFind.h"
++#include "vehicleAi/pathfind.h"
+ #include "control/restart.h"
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "Stats/StatsMgr.h"
+ #include "game/zones.h"
+-#include "network/players/NetworkPlayerMgr.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "math/angmath.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/streamer/streamvolume.h"
+ #include "vector/vector2.h"
+ #include "Stats/StatsInterface.h"

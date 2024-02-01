@@ -7,7 +7,7 @@ diff --git a/src/dev_ng/game/vfx/systems/VfxLightning.h b/src/dev_ng/game/vfx/sy
  #include "VfxLightningSettings.h"
 -#include "Vfx\clouds\CloudHat.h"
 -#include "timecycle\TimeCycle.h"
-+#include "Vfx/clouds/CloudHat.h"
++#include "vfx/clouds/CloudHat.h"
 +#include "timecycle/TimeCycle.h"
  
  ///////////////////////////////////////////////////////////////////////////////

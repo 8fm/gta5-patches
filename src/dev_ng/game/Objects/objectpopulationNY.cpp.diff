@@ -1,14 +1,16 @@
 diff --git a/src/dev_ng/game/Objects/objectpopulationNY.cpp b/src/dev_ng/game/Objects/objectpopulationNY.cpp
 --- a/src/dev_ng/game/Objects/objectpopulationNY.cpp
 +++ b/src/dev_ng/game/Objects/objectpopulationNY.cpp
-@@ -13,8 +13,8 @@
+@@ -12,9 +12,9 @@
+ #include "profile/timebars.h"
  
  // game includes
- #include "core/game.h"
+-#include "core/game.h"
 -#include "objects\objectpopulation.h"
 -#include "objects\objectpopulationNY.h"
-+#include "objects/objectpopulation.h"
-+#include "objects/objectpopulationNY.h"
++#include "Core/game.h"
++#include "Objects/objectpopulation.h"
++#include "Objects/objectpopulationNY.h"
  
  /////////////////////////////////////////////////////////////////////////////////
  // FUNCTION : InitLevel

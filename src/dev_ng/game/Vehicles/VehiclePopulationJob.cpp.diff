@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp b/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp
 --- a/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp
 +++ b/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp
-@@ -7,7 +7,7 @@
+@@ -1,19 +1,19 @@
+ // Vehicle population SPU update
+ // flavius.alecu: 25/10/2011
+ 
+-#include "math/simpleMath.h"
++#include "math/simplemath.h"
+ 
+ #include "vehiclepopulation.h"
  
  #include "BaseTypes.h"
  
@@ -10,3 +17,11 @@ diff --git a/src/dev_ng/game/Vehicles/VehiclePopulationJob.cpp b/src/dev_ng/game
  
  #include "grcore/viewport.h"
  #include "grcore/viewport_inline.h"
+ #include "VehiclePopulationAsync.h"
+-#include "vector/Vector4.h"
+-#include "scene/world/gameWorld.h"
++#include "vector/vector4.h"
++#include "scene/world/GameWorld.h"
+ #include "system/timer.h"
+ #include "fwscene/world/WorldLimits.h"
+ 

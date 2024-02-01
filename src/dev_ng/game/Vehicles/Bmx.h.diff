@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/Vehicles/Bmx.h b/src/dev_ng/game/Vehicles/Bmx.h
 --- a/src/dev_ng/game/Vehicles/Bmx.h
 +++ b/src/dev_ng/game/Vehicles/Bmx.h
-@@ -13,12 +13,12 @@
+@@ -9,16 +9,16 @@
+ #define _BMX_H_
+ 
+ // Rage headers
+-#include "phCore/segment.h"
++#include "phcore/segment.h"
  #include "physics/intersection.h"
  
  // Game headers
@@ -9,13 +14,13 @@ diff --git a/src/dev_ng/game/Vehicles/Bmx.h b/src/dev_ng/game/Vehicles/Bmx.h
 -#include "vehicles\handlingMgr.h"
 -#include "vehicles\vehicle.h"
 -#include "vehicles\wheel.h"
-+#include "renderer/hierarchyIds.h"
-+#include "vehicles/handlingMgr.h"
-+#include "vehicles/vehicle.h"
-+#include "vehicles/wheel.h"
++#include "renderer/HierarchyIds.h"
++#include "Vehicles/handlingMgr.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/wheel.h"
  
 -#include "network\objects\entities\netObjBike.h"
-+#include "network/objects/entities/netObjBike.h"
++#include "network/Objects/Entities/NetObjBike.h"
  
  namespace rage { class CNodeAddress; }
  

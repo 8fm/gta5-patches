@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_garages.h b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_garages.h
+--- a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_garages.h
++++ b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_garages.h
+@@ -7,7 +7,7 @@
+ // Game headers
+ #include "control/garages.h"
+ #include "SaveLoad/savegame_defines.h"
+-#include "vehicles/vehiclestorage.h"
++#include "Vehicles/vehiclestorage.h"
+ 
+ 
+ // Forward declarations

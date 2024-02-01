@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.h
+@@ -6,13 +6,13 @@
+ #ifndef INC_MARKFXPACKET_H_
+ #define INC_MARKFXPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Effects/ParticlePacket.h"
+-#include "control/replay/packetbasics.h"
++#include "control/replay/PacketBasics.h"
+ 
+ namespace rage
+ {class ptxEffectInst;}

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Peds/AssistedMovementStore.h b/src/dev_ng/game/Peds/AssistedMovementStore.h
+--- a/src/dev_ng/game/Peds/AssistedMovementStore.h
++++ b/src/dev_ng/game/Peds/AssistedMovementStore.h
+@@ -2,8 +2,8 @@
+ #define ASSISTEDMOVEMENTSTORE_H
+ 
+ //Rage headers.
+-#include "Script/thread.h"
+-#include "Vector/Vector3.h"
++#include "script/thread.h"
++#include "vector/vector3.h"
+ #include "fwvehicleai/pathfindtypes.h"
+ #include "system/memops.h"
+ 

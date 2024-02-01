@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/MousePointer.cpp b/src/dev_ng/game/frontend/MousePointer.cpp
+--- a/src/dev_ng/game/frontend/MousePointer.cpp
++++ b/src/dev_ng/game/frontend/MousePointer.cpp
+@@ -22,7 +22,7 @@
+ #include "frontend/VideoEditor/ui/Editor.h"
+ #include "frontend/TextInputBox.h"
+ 
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ #include "renderer/DrawLists/drawList.h"
+ 
+ #if RSG_PC

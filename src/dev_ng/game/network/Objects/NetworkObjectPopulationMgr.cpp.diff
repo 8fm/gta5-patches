@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.cpp b/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.cpp
+--- a/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.cpp
++++ b/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.cpp
+@@ -13,21 +13,21 @@
+ #include "fwnet/netutils.h"
+ #include "fwscript/scriptinterface.h"
+ 
+-#include "Peds/Ped.h"
+-#include "Network/Network.h"
++#include "Peds/ped.h"
++#include "network/Network.h"
+ #include "network/Bandwidth/NetworkBandwidthManager.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Network/Objects/Entities/NetObjVehicle.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "Network/Players/NetworkPlayerMgr.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Sessions/NetworkSession.h"
+-
+-#include "Scene/World/GameWorld.h"
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptIDs.h"
+-#include "Script/Script.h"
+-#include "Vehicles/VehiclePopulation.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Sessions/NetworkSession.h"
++
++#include "scene/world/GameWorld.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptIds.h"
++#include "script/script.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.h b/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.h
+--- a/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.h
++++ b/src/dev_ng/game/task/Combat/Cover/TaskStayInCover.h
+@@ -6,9 +6,9 @@
+ #ifndef TASK_STAY_IN_COVER_H
+ #define TASK_STAY_IN_COVER_H
+ 
+-#include "Task/System/TaskTypes.h"
+-#include "Scene/RefMacros.h"
+-#include "Scene/Entity.h"
++#include "task/System/TaskTypes.h"
++#include "scene/RefMacros.h"
++#include "scene/Entity.h"
+ 
+ class CTaskStayInCover : public CTask
+ {

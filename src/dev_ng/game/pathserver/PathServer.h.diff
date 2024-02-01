@@ -1,14 +1,22 @@
 diff --git a/src/dev_ng/game/pathserver/PathServer.h b/src/dev_ng/game/pathserver/PathServer.h
 --- a/src/dev_ng/game/pathserver/PathServer.h
 +++ b/src/dev_ng/game/pathserver/PathServer.h
-@@ -4,8 +4,8 @@
+@@ -4,14 +4,14 @@
  
  #include "ai/navmesh/datatypes.h"
  #include "ai/navmesh/requests.h"
 -#include "PathServer\PathServerThread.h"
 -#include "PathServer\NavGenParam.h"
-+#include "PathServer/PathServerThread.h"
-+#include "PathServer/NavGenParam.h"
++#include "pathserver/PathServerThread.h"
++#include "pathserver/NavGenParam.h"
  
  #ifdef GTA_ENGINE
  #include "atl/binheap.h"
+ #include "control/population.h"				// For CPopGenShape
+-#include "PathServer/PathServer_Store.h"
+-#include "PathServer/PathServer_Ped.h"
++#include "pathserver/PathServer_Store.h"
++#include "pathserver/PathServer_Ped.h"
+ #include "task/Combat/Cover/cover.h"		// For CCoverBoundingArea and CCover::MAX_BOUNDING_AREAS.
+ #else
+ #include "viewer_dummystore.h"

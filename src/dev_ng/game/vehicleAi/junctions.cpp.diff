@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/vehicleAi/junctions.cpp b/src/dev_ng/game/vehicleAi/junctions.cpp
 --- a/src/dev_ng/game/vehicleAi/junctions.cpp
 +++ b/src/dev_ng/game/vehicleAi/junctions.cpp
-@@ -11,8 +11,8 @@
+@@ -9,10 +9,10 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ 
  #include "ai/stats.h"
- #include "core/game.h"
+-#include "core/game.h"
++#include "Core/game.h"
  #include "camera/CamInterface.h"
 -#include "camera\debug\DebugDirector.h"
 -#include "camera\helpers\Frame.h"
@@ -12,3 +15,31 @@ diff --git a/src/dev_ng/game/vehicleAi/junctions.cpp b/src/dev_ng/game/vehicleAi
  #include "control/trafficlights.h"
  #include "game/ModelIndices.h"
  #include "grcore/debugdraw.h"
+@@ -22,17 +22,17 @@
+ #include "parser/psoparserbuilder.h"
+ #include "parser/visitorxml.h"
+ #include "scene/DataFileMgr.h"
+-#include "scene/world/gameworld.h"
+-#include "VehicleAi/driverpersonality.h"
++#include "scene/world/GameWorld.h"
++#include "vehicleAi/driverpersonality.h"
+ #include "vehicleAi/junctions.h"
+-#include "vehicleAi/vehicleintelligence.h"
+-#include "vehicleAi/Task/TaskVehicleCruise.h"
+-#include "vehicleAi/Task/TaskVehicleTempAction.h"
+-#include "vehicleAi/Task/TaskVehicleGoToAutomobile.h"
+-#include "vehicles/train.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclepopulation.h"
+-#include "vehicles/virtualroad.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleCruise.h"
++#include "vehicleAi/task/TaskVehicleTempAction.h"
++#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
++#include "Vehicles/train.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehiclepopulation.h"
++#include "Vehicles/virtualroad.h"
+ 
+ // Parser files
+ #include "Junctions_parser.h"

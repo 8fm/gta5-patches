@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Cutscene/CutsceneObject.h b/src/dev_ng/game/Cutscene/CutsceneObject.h
+--- a/src/dev_ng/game/Cutscene/CutsceneObject.h
++++ b/src/dev_ng/game/Cutscene/CutsceneObject.h
+@@ -16,11 +16,11 @@
+ // game headers:
+ 
+ #include "cutscene/CutSceneDefine.h"
+-#include "Objects/Object.h"
++#include "Objects/object.h"
+ #include "animation/AnimBones.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "Peds/rendering/pedVariationPack.h"
+-#include "peds/rendering/PedProps.h"
++#include "Peds/rendering/PedProps.h"
+ 
+ enum eCUTSCENE_OBJECT_TYPE
+ {

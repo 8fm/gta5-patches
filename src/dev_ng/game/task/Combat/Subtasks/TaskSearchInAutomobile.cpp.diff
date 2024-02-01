@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInAutomobile.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInAutomobile.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInAutomobile.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInAutomobile.cpp
+@@ -2,10 +2,10 @@
+ // PURPOSE : Subtask of search used while in an automobile
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskSearchInAutomobile.h"
++#include "task/Combat/Subtasks/TaskSearchInAutomobile.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"

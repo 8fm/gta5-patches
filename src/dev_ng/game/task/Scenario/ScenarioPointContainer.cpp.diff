@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioPointContainer.cpp b/src/dev_ng/game/task/Scenario/ScenarioPointContainer.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioPointContainer.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioPointContainer.cpp
+@@ -12,7 +12,7 @@
+ //Game Headers
+ #include "ai/ambient/AmbientModelSetManager.h"
+ #include "Peds/population_channel.h"
+-#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ #include "task/Scenario/ScenarioManager.h"
+ #include "task/Scenario/ScenarioPoint.h"
+ #include "task/Scenario/ScenarioPointGroup.h"

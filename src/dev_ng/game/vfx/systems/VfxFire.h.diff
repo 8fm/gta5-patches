@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxFire.h b/src/dev_ng/game/vfx/systems/VfxFire.h
+--- a/src/dev_ng/game/vfx/systems/VfxFire.h
++++ b/src/dev_ng/game/vfx/systems/VfxFire.h
+@@ -20,7 +20,7 @@
+ #include "atl/hashstring.h"
+ 
+ // game
+-#include "Physics/GtaMaterial.h"
++#include "physics/gtaMaterial.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

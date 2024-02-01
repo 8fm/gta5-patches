@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Vehicles/componentReserve.cpp b/src/dev_ng/game/Vehicles/componentReserve.cpp
+--- a/src/dev_ng/game/Vehicles/componentReserve.cpp
++++ b/src/dev_ng/game/Vehicles/componentReserve.cpp
+@@ -7,11 +7,11 @@
+ // 
+ // // Game headers
+ #include "debug/DebugVehicleInteraction.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "modelinfo/BaseModelInfo.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "network/events/NetworkEventTypes.h"
++#include "network/Events/NetworkEventTypes.h"
+ 
+ AI_OPTIMISATIONS()
+ 

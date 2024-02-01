@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Util/ShmooFile.cpp b/src/dev_ng/game/renderer/Util/ShmooFile.cpp
+--- a/src/dev_ng/game/renderer/Util/ShmooFile.cpp
++++ b/src/dev_ng/game/renderer/Util/ShmooFile.cpp
+@@ -10,7 +10,7 @@
+ #include "grcore/channel.h"
+ #include "grmodel/shader.h"
+ 
+-#include "renderer/util/shmoofile.h"
++#include "renderer/Util/shmoofile.h"
+ 
+ #include "ShmooFile_parser.h"
+ 

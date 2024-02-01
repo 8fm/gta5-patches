@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/pickups/PickupPlacement.h b/src/dev_ng/game/pickups/PickupPlacement.h
+--- a/src/dev_ng/game/pickups/PickupPlacement.h
++++ b/src/dev_ng/game/pickups/PickupPlacement.h
+@@ -5,8 +5,8 @@
+ #include "network/Objects/Entities/NetObjPickupPlacement.h"
+ #include "pickups/Data/PickupIds.h"
+ #include "script/Handlers/GameScriptEntity.h"
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptIds.h"
+ 
+ // framework includes
+ #include "fwscript/scripthandler.h"

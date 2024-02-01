@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/ControllerLabelMgr.cpp b/src/dev_ng/game/frontend/ControllerLabelMgr.cpp
+--- a/src/dev_ng/game/frontend/ControllerLabelMgr.cpp
++++ b/src/dev_ng/game/frontend/ControllerLabelMgr.cpp
+@@ -10,10 +10,10 @@
+ #include "parser/manager.h"
+ 
+ #include "ControllerLabelMgr.h"
+-#include "Text/TextConversion.h"
++#include "text/TextConversion.h"
+ #include "frontend/ui_channel.h"
+ #include "frontend/PauseMenu.h"
+-#include "Scene/DataFileMgr.h"
++#include "scene/DataFileMgr.h"
+ 
+ #include "fwsys/timer.h"
+ #include "fwsys/gameskeleton.h"

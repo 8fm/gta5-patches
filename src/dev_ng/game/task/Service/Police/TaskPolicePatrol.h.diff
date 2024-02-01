@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Service/Police/TaskPolicePatrol.h b/src/dev_ng/game/task/Service/Police/TaskPolicePatrol.h
+--- a/src/dev_ng/game/task/Service/Police/TaskPolicePatrol.h
++++ b/src/dev_ng/game/task/Service/Police/TaskPolicePatrol.h
+@@ -7,14 +7,14 @@
+ 
+ //Game headers
+ #include "game/Dispatch/DispatchHelpers.h"
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/Default/TaskUnalerted.h"
++#include "scene/RegdRefTypes.h"
++#include "task/Default/TaskUnalerted.h"
+ #include "task/Scenario/ScenarioPoint.h"
+ #include "task/Scenario/ScenarioChaining.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ 
+ //Forward declarations
+ class CEvent;

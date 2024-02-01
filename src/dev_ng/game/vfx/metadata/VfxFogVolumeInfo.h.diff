@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.h b/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.h
+--- a/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.h
++++ b/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.h
+@@ -24,7 +24,7 @@
+ // framework
+ 
+ // game
+-#include "Vfx/Misc/FogVolume.h"
++#include "vfx/misc/FogVolume.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

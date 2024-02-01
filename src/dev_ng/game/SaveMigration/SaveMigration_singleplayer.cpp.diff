@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.cpp b/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.cpp
+--- a/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.cpp
++++ b/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.cpp
+@@ -5,8 +5,8 @@
+ 
+ // Game headers
+ #include "SaveLoad/GenericGameStorage.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ #if __BANK
+ #include "bank/bkmgr.h"

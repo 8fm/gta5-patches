@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/WorldProbe/debug.cpp b/src/dev_ng/game/physics/WorldProbe/debug.cpp
+--- a/src/dev_ng/game/physics/WorldProbe/debug.cpp
++++ b/src/dev_ng/game/physics/WorldProbe/debug.cpp
+@@ -2,7 +2,7 @@
+ 
+ #if WORLD_PROBE_DEBUG
+ 
+-#include "network/live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "physics/WorldProbe/shapetesttask.h"
+ 
+ #include "fwdebug/debugdraw.h"

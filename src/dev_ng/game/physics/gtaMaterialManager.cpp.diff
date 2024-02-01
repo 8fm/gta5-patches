@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/gtaMaterialManager.cpp b/src/dev_ng/game/physics/gtaMaterialManager.cpp
+--- a/src/dev_ng/game/physics/gtaMaterialManager.cpp
++++ b/src/dev_ng/game/physics/gtaMaterialManager.cpp
+@@ -16,7 +16,7 @@
+ #include "gtaMaterialManager_parser.h"
+ 
+ // game
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ 
+ #include "parser/manager.h"
+ 

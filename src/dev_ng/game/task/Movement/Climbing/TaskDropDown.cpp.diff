@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.cpp b/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.cpp
+@@ -5,19 +5,19 @@
+ //
+ 
+ // File header
+-#include "Task/Movement/Climbing/TaskDropDown.h"
++#include "task/Movement/Climbing/TaskDropDown.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "peds/PedCapsule.h"
+-#include "Animation/MovePed.h"
+-#include "Event/Event.h"
+-#include "Event/EventDamage.h"
+-#include "Task/Movement/TaskFall.h"
+-#include "System/ControlMgr.h"
++#include "Peds/PedCapsule.h"
++#include "animation/MovePed.h"
++#include "event/Event.h"
++#include "event/EventDamage.h"
++#include "task/Movement/TaskFall.h"
++#include "system/controlMgr.h"
+ #include "math/angmath.h"
+-#include "Task/Movement/Climbing/TaskVault.h"
++#include "task/Movement/Climbing/TaskVault.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOVEMENT_OPTIMISATIONS()

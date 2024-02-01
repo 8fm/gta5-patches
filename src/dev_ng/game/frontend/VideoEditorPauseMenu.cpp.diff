@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditorPauseMenu.cpp b/src/dev_ng/game/frontend/VideoEditorPauseMenu.cpp
+--- a/src/dev_ng/game/frontend/VideoEditorPauseMenu.cpp
++++ b/src/dev_ng/game/frontend/VideoEditorPauseMenu.cpp
+@@ -7,18 +7,18 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Frontend/VideoEditorPauseMenu.h"
++#include "frontend/VideoEditorPauseMenu.h"
+ 
+ #if GTA_REPLAY
+ #include "audio/frontendaudioentity.h"
+ #include "control/replay/ReplaySettings.h"
+-#include "Frontend/ButtonEnum.h"
+-#include "Frontend/CMenuBase.h"
+-#include "Frontend/VideoEditor/ui/Editor.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Script/Script.h"
++#include "frontend/ButtonEnum.h"
++#include "frontend/CMenuBase.h"
++#include "frontend/VideoEditor/ui/Editor.h"
++#include "frontend/PauseMenu.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
++#include "script/script.h"
+ 
+ FRONTEND_OPTIMISATIONS()
+ 

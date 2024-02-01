@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/page_deck/PageProvider.h b/src/dev_ng/game/frontend/page_deck/PageProvider.h
+--- a/src/dev_ng/game/frontend/page_deck/PageProvider.h
++++ b/src/dev_ng/game/frontend/page_deck/PageProvider.h
+@@ -24,7 +24,7 @@
+ #include "parser/macros.h"
+ 
+ // game
+-#include "frontend/page_deck/uiEntrypointId.h"
++#include "frontend/page_deck/uiEntryPointId.h"
+ #include "frontend/page_deck/uiPageTransitioner.h"
+ 
+ 

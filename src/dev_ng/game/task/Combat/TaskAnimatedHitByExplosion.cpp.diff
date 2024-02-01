@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskAnimatedHitByExplosion.cpp b/src/dev_ng/game/task/Combat/TaskAnimatedHitByExplosion.cpp
+--- a/src/dev_ng/game/task/Combat/TaskAnimatedHitByExplosion.cpp
++++ b/src/dev_ng/game/task/Combat/TaskAnimatedHitByExplosion.cpp
+@@ -6,9 +6,9 @@
+ 
+ // game headers
+ #include "Peds/ped.h"
+-#include "Task/Combat/TaskAnimatedHitByExplosion.h"
++#include "task/Combat/TaskAnimatedHitByExplosion.h"
+ #include "task/Combat/TaskDamageDeath.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
+ #include "event/Events.h"
+ 
+ AI_OPTIMISATIONS()

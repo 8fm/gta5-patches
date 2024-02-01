@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/frontend/SocialClubMenu.cpp b/src/dev_ng/game/frontend/SocialClubMenu.cpp
+--- a/src/dev_ng/game/frontend/SocialClubMenu.cpp
++++ b/src/dev_ng/game/frontend/SocialClubMenu.cpp
+@@ -21,17 +21,17 @@
+ #include "frontend/SocialClubMenu.h"
+ #include "frontend/BusySpinner.h"
+ #include "frontend/PauseMenu.h"
+-#include "frontend/scaleform/ScaleFormMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/ProfileSettings.h"
+ #include "frontend/ui_channel.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Sessions/NetworkSession.h"
++#include "network/Live/livemanager.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Sessions/NetworkSession.h"
+ #include "system/controlMgr.h"
+ #include "text/messages.h"
+ #include "text/TextConversion.h"
+-#include "System/ControlMgr.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "system/controlMgr.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ 
+ #if RSG_PC
+ #include "rline/rlpc.h"

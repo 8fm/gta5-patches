@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponSwapData.cpp b/src/dev_ng/game/weapons/info/WeaponSwapData.cpp
+--- a/src/dev_ng/game/weapons/info/WeaponSwapData.cpp
++++ b/src/dev_ng/game/weapons/info/WeaponSwapData.cpp
+@@ -5,8 +5,8 @@
+ //
+ 
+ // File header
+-#include "Weapons/Info/WeaponSwapData.h"
+-#include "Weapons/WeaponChannel.h"
++#include "weapons/info/WeaponSwapData.h"
++#include "weapons/WeaponChannel.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ INSTANTIATE_RTTI_CLASS(CWeaponSwapData,0x2A13047C);

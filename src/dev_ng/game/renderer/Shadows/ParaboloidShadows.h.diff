@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Shadows/ParaboloidShadows.h b/src/dev_ng/game/renderer/Shadows/ParaboloidShadows.h
+--- a/src/dev_ng/game/renderer/Shadows/ParaboloidShadows.h
++++ b/src/dev_ng/game/renderer/Shadows/ParaboloidShadows.h
+@@ -8,7 +8,7 @@
+ 
+ #include "fwscene/world/InteriorLocation.h"
+ #include "fwutil/idgen.h"
+-#include "renderer/renderphases/renderphase.h" // for eDeferredShadowType
++#include "renderer/RenderPhases/RenderPhase.h" // for eDeferredShadowType
+ #include "renderer/Shadows/Shadows.h"
+ #include "renderer/Shadows/ShadowTypes.h"
+ 

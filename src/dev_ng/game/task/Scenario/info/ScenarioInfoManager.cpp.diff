@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioInfoManager.cpp b/src/dev_ng/game/task/Scenario/info/ScenarioInfoManager.cpp
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioInfoManager.cpp
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioInfoManager.cpp
+@@ -1,5 +1,5 @@
+ // Class header
+-#include "Task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ 
+ // Rage headers
+ #include "bank/bkmgr.h"
+@@ -8,18 +8,18 @@
+ #include "file/device.h"
+ 
+ // Game headers
+-#include "AI/Ambient/AmbientModelSetManager.h"
+-#include "AI/Ambient/ConditionalAnimManager.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "ai/ambient/AmbientModelSetManager.h"
++#include "ai/ambient/ConditionalAnimManager.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/2dEffect.h"
++#include "scene/2dEffect.h"
+ #include "task/Default/TaskAmbient.h"
+ #include "task/Scenario/ScenarioPoint.h"
+ #include "task/Scenario/ScenarioPointManager.h"
+ #include "task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/Scenario/Info/ScenarioInfoConditions.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
+ #include "vehicleAi/task/TaskVehiclePark.h"
+ 
+ // Parser files

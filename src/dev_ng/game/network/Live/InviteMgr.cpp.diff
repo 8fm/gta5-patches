@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/network/Live/InviteMgr.cpp b/src/dev_ng/game/network/Live/InviteMgr.cpp
+--- a/src/dev_ng/game/network/Live/InviteMgr.cpp
++++ b/src/dev_ng/game/network/Live/InviteMgr.cpp
+@@ -11,15 +11,15 @@
+ #include "rline/rlgamerinfo.h"
+ 
+ //game
+-#include "Network/Live/InviteMgr.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/Cloud/UserContentManager.h"
+-#include "Network/Network.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
+-#include "Network/xlast/Fuzzy.schema.h"
++#include "network/Live/InviteMgr.h"
++#include "network/Live/livemanager.h"
++#include "network/Cloud/UserContentManager.h"
++#include "network/Network.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
++#include "network/xlast/Fuzzy.schema.h"
+ 
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"

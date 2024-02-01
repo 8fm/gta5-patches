@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/SocialClubUpdates/SocialClubPolicyManager.cpp b/src/dev_ng/game/network/SocialClubUpdates/SocialClubPolicyManager.cpp
+--- a/src/dev_ng/game/network/SocialClubUpdates/SocialClubPolicyManager.cpp
++++ b/src/dev_ng/game/network/SocialClubUpdates/SocialClubPolicyManager.cpp
+@@ -15,10 +15,10 @@
+ #include "system/nelem.h"
+ 
+ // game
+-#include "Network/SocialClubUpdates/SocialClubPolicyManager.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Live/Livemanager.h"
+-#include "Network/Live/SocialClubMgr.h"
++#include "network/SocialClubUpdates/SocialClubPolicyManager.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/SocialClubMgr.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ //OPTIMISATIONS_OFF()

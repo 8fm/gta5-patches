@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Shadows/Shadows.h b/src/dev_ng/game/renderer/Shadows/Shadows.h
+--- a/src/dev_ng/game/renderer/Shadows/Shadows.h
++++ b/src/dev_ng/game/renderer/Shadows/Shadows.h
+@@ -60,7 +60,7 @@ extern CShadows gShadows;
+ class CLightSource;
+ 
+ // Game headers
+-#include "renderer/shadows/paraboloidshadows.h"
++#include "renderer/Shadows/ParaboloidShadows.h"
+ 
+ #endif // !__SPU
+ #endif // _RENDERER_SHADOWS_SHADOWS_H_

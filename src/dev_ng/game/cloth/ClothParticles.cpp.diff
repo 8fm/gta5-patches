@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/cloth/ClothParticles.cpp b/src/dev_ng/game/cloth/ClothParticles.cpp
+--- a/src/dev_ng/game/cloth/ClothParticles.cpp
++++ b/src/dev_ng/game/cloth/ClothParticles.cpp
+@@ -1,6 +1,6 @@
+ #include "ClothParticles.h"
+ #include "ClothArchetype.h"
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ 
+ #include "vector/matrix34.h"
+ 

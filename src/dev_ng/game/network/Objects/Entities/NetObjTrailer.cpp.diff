@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjTrailer.cpp
+@@ -5,18 +5,18 @@
+ // written by:  Daniel Yelland
+ //
+ 
+-#include "network/objects/entities/NetObjTrailer.h"
++#include "network/Objects/Entities/NetObjTrailer.h"
+ 
+ // game headers
+-#include "network/network.h"
+-#include "network/debug/NetworkDebug.h"
+-#include "network/events/NetworkEventTypes.h"
+-#include "network/objects/prediction/NetBlenderVehicle.h"
+-#include "network/general/NetworkUtil.h"
+-#include "peds/ped.h"
+-#include "peds/pedintelligence.h"
+-#include "renderer/DrawLists/drawListNY.h"
+-#include "vehicles/Trailer.h"
++#include "network/Network.h"
++#include "network/Debug/NetworkDebug.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Objects/Prediction/NetBlenderVehicle.h"
++#include "network/General/NetworkUtil.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "renderer/DrawLists/DrawListNY.h"
++#include "Vehicles/Trailer.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ NETWORK_OBJECT_OPTIMISATIONS()

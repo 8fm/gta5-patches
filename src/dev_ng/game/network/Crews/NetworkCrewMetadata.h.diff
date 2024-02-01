@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Crews/NetworkCrewMetadata.h b/src/dev_ng/game/network/Crews/NetworkCrewMetadata.h
+--- a/src/dev_ng/game/network/Crews/NetworkCrewMetadata.h
++++ b/src/dev_ng/game/network/Crews/NetworkCrewMetadata.h
+@@ -12,7 +12,7 @@
+ #include "rline/clan/rlclancommon.h"
+ 
+ //Game headers
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ namespace rage {
+ 	class bkGroup;

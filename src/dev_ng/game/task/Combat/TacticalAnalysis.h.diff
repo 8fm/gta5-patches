@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/TacticalAnalysis.h b/src/dev_ng/game/task/Combat/TacticalAnalysis.h
+--- a/src/dev_ng/game/task/Combat/TacticalAnalysis.h
++++ b/src/dev_ng/game/task/Combat/TacticalAnalysis.h
+@@ -5,7 +5,7 @@
+ 
+ // Rage headers
+ #include "atl/array.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/Flags.h"
+ 
+ // Game headers

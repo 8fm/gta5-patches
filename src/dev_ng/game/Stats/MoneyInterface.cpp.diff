@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/Stats/MoneyInterface.cpp b/src/dev_ng/game/Stats/MoneyInterface.cpp
+--- a/src/dev_ng/game/Stats/MoneyInterface.cpp
++++ b/src/dev_ng/game/Stats/MoneyInterface.cpp
+@@ -28,18 +28,18 @@
+ #include "Stats/StatsDataMgr.h"
+ #include "Stats/StatsUtils.h"
+ #include "Stats/StatsSavesMgr.h"
+-#include "Network/Live/Livemanager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Live/NetworkTransactionTelemetry.h"
+-#include "Network/Shop/NetworkGameTransactions.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Event/EventNetwork.h"
+-#include "Event/EventGroup.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTransactionTelemetry.h"
++#include "network/Shop/NetworkGameTransactions.h"
++#include "network/Cloud/Tunables.h"
++#include "event/EventNetwork.h"
++#include "event/EventGroup.h"
+ #include "network/Shop/NetworkShopping.h"
+ 
+ #if RSG_DURANGO
+-#include "Network/Live/Events_durango.h"
++#include "network/Live/Events_durango.h"
+ #endif
+ 
+ FRONTEND_STATS_OPTIMISATIONS()

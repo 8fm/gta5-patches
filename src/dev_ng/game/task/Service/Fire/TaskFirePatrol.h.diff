@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.h b/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.h
+--- a/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.h
++++ b/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.h
+@@ -6,11 +6,11 @@
+ #define INC_TASK_FIRE_DEFAULT_H
+ 
+ //Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/Default/TaskUnalerted.h"
+-#include "Task/Scenario/ScenarioChaining.h"
+-#include "Task/Scenario/ScenarioPoint.h"
+-#include "Task/System/Task.h"
++#include "scene/RegdRefTypes.h"
++#include "task/Default/TaskUnalerted.h"
++#include "task/Scenario/ScenarioChaining.h"
++#include "task/Scenario/ScenarioPoint.h"
++#include "task/System/Task.h"
+ 
+ class CFire;
+ class CFireOrder;

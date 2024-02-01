@@ -1,0 +1,43 @@
+diff --git a/src/dev_ng/game/weapons/Weapon.h b/src/dev_ng/game/weapons/Weapon.h
+--- a/src/dev_ng/game/weapons/Weapon.h
++++ b/src/dev_ng/game/weapons/Weapon.h
+@@ -11,23 +11,23 @@
+ #include "fwanimation/boneids.h"
+ 
+ // Game headers
+-#include "Audio/WeaponAudioEntity.h"
+-#include "ModelInfo/WeaponModelInfo.h"
++#include "audio/weaponaudioentity.h"
++#include "modelinfo/WeaponModelInfo.h"
+ #include "Peds/PedWeapons/PlayerPedTargeting.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Scene/DynamicEntity.h"
+-#include "Task/system/TaskHelpers.h"
+-#include "Weapons/Components/WeaponComponentClip.h"
+-#include "Weapons/Components/WeaponComponentFlashLight.h"
+-#include "Weapons/Components/WeaponComponentProgrammableTargeting.h"
+-#include "Weapons/Components/WeaponComponentSuppressor.h"
+-#include "Weapons/Components/WeaponComponentScope.h"
+-#include "Weapons/Components/WeaponComponentVariantModel.h"
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/WeaponChannel.h"
+-#include "Weapons/WeaponEnums.h"
+-#include "Weapons/WeaponObserver.h"
+-#include "Weapons/WeaponDamage.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/DynamicEntity.h"
++#include "task/System/TaskHelpers.h"
++#include "weapons/components/WeaponComponentClip.h"
++#include "weapons/components/WeaponComponentFlashLight.h"
++#include "weapons/components/WeaponComponentProgrammableTargeting.h"
++#include "weapons/components/WeaponComponentSuppressor.h"
++#include "weapons/components/WeaponComponentScope.h"
++#include "weapons/components/WeaponComponentVariantModel.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/WeaponChannel.h"
++#include "weapons/WeaponEnums.h"
++#include "weapons/WeaponObserver.h"
++#include "weapons/WeaponDamage.h"
+ 
+ // Forward declarations
+ class CWeaponComponentLaserSight;

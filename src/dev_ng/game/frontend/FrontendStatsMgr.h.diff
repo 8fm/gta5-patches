@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/FrontendStatsMgr.h b/src/dev_ng/game/frontend/FrontendStatsMgr.h
+--- a/src/dev_ng/game/frontend/FrontendStatsMgr.h
++++ b/src/dev_ng/game/frontend/FrontendStatsMgr.h
+@@ -10,7 +10,7 @@
+ #include "atl/array.h"
+ #include "Stats/StatsTypes.h"
+ #include "Stats/StatsInterface.h"
+-#include "Text/TextFile.h"
++#include "text/TextFile.h"
+ 
+ // --- Forward Definitions ------------------------------------------------------
+ namespace rage

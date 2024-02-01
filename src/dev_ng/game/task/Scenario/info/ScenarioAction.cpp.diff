@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioAction.cpp b/src/dev_ng/game/task/Scenario/info/ScenarioAction.cpp
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioAction.cpp
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioAction.cpp
+@@ -1,12 +1,12 @@
+-#include "Task/Scenario/Info/ScenarioAction.h"
++#include "task/Scenario/info/ScenarioAction.h"
+ 
+ //Game Headers
+-#include "Event/EventResponse.h"
+-#include "Event/EventWeapon.h"
+-#include "Peds/Ped.h"
++#include "event/EventResponse.h"
++#include "event/EventWeapon.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ 
+ //RAGE Headers
+ #include "fwanimation/animdefines.h"

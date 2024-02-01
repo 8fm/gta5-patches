@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/renderer/sprite2d.cpp b/src/dev_ng/game/renderer/sprite2d.cpp
+--- a/src/dev_ng/game/renderer/sprite2d.cpp
++++ b/src/dev_ng/game/renderer/sprite2d.cpp
+@@ -45,9 +45,9 @@
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/Viewport.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Frontend/ui_channel.h"
+-#include "Renderer/rendertargets.h"
+-#include "Renderer/Deferred/GBuffer.h"
++#include "frontend/ui_channel.h"
++#include "renderer/rendertargets.h"
++#include "renderer/Deferred/GBuffer.h"
+ #include "shaders/ShaderLib.h"
+ #include "streaming/streaming.h"
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/system/AutoGPUCapture.h b/src/dev_ng/game/system/AutoGPUCapture.h
+--- a/src/dev_ng/game/system/AutoGPUCapture.h
++++ b/src/dev_ng/game/system/AutoGPUCapture.h
+@@ -1,8 +1,8 @@
+ #ifndef INC_AUTO_GPU_CAPTURE_H_
+ #define INC_AUTO_GPU_CAPTURE_H_
+ 
+-#include "debug/debug.h"
+-#include "scene/datafilemgr.h"
++#include "debug/Debug.h"
++#include "scene/DataFileMgr.h"
+ #include "math/math.h"
+ #include "script/gta_thread.h"
+ 

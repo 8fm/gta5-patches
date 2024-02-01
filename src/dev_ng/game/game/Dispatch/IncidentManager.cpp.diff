@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/game/Dispatch/IncidentManager.cpp b/src/dev_ng/game/game/Dispatch/IncidentManager.cpp
+--- a/src/dev_ng/game/game/Dispatch/IncidentManager.cpp
++++ b/src/dev_ng/game/game/Dispatch/IncidentManager.cpp
+@@ -2,17 +2,17 @@
+ // Purpose	:	Manages currently active incidents
+ // Started	:	13/05/2010
+ 
+-#include "Game/Dispatch/IncidentManager.h"
++#include "game/Dispatch/IncidentManager.h"
+ 
+ // Game headers
+ #include "debug/DebugScene.h"
+-#include "Game/Dispatch/Incidents.h"
+-#include "Game/Dispatch/DispatchManager.h"
+-#include "Game/Dispatch/OrderManager.h"
+-#include "Game/Dispatch/Orders.h"
+-#include "Game/zones.h"
+-#include "Network/Arrays/NetworkArrayHandlerTypes.h"
+-#include "Network/Arrays/NetworkArrayMgr.h"
++#include "game/Dispatch/Incidents.h"
++#include "game/Dispatch/DispatchManager.h"
++#include "game/Dispatch/OrderManager.h"
++#include "game/Dispatch/Orders.h"
++#include "game/zones.h"
++#include "network/Arrays/NetworkArrayHandlerTypes.h"
++#include "network/Arrays/NetworkArrayMgr.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "scene/Entity.h"

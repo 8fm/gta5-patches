@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.h b/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.h
+--- a/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.h
++++ b/src/dev_ng/game/network/Objects/NetworkObjectPopulationMgr.h
+@@ -7,9 +7,9 @@
+ #ifndef NETWORK_OBJECT_POPULATION_MGR_H
+ #define NETWORK_OBJECT_POPULATION_MGR_H
+ 
+-#include "fwnet/NetObject.h"
+-#include "fwscript/scriptObjInfo.h"
+-#include "debug/bar.h"
++#include "fwnet/netobject.h"
++#include "fwscript/scriptobjinfo.h"
++#include "debug/Bar.h"
+ 
+ class CGameScriptHandler;
+ class CNetObjGame;

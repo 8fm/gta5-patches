@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjPhysical.h b/src/dev_ng/game/network/Objects/Entities/NetObjPhysical.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjPhysical.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjPhysical.h
+@@ -11,9 +11,9 @@
+ #include "vector/quaternion.h"
+ 
+ #include "network/General/NetworkGhostCollisions.h"
+-#include "network/objects/entities/NetObjDynamicEntity.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "network/objects/synchronisation/syncnodes/physicalsyncnodes.h"
++#include "network/Objects/Entities/NetObjDynamicEntity.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h"
+ 
+ // framework includes
+ #include "entity/attachmententityextension.h"

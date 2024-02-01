@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/page_deck/items/CloudCardItem.cpp b/src/dev_ng/game/frontend/page_deck/items/CloudCardItem.cpp
+--- a/src/dev_ng/game/frontend/page_deck/items/CloudCardItem.cpp
++++ b/src/dev_ng/game/frontend/page_deck/items/CloudCardItem.cpp
+@@ -17,7 +17,7 @@
+ // game
+ #include "frontend/landing_page/items/NewsItem.h"
+ #include "frontend/ui_channel.h"
+-#include "network/live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "network/SocialClubServices/SocialClubFeedTilesMgr.h"
+ 
+ FWUI_DEFINE_TYPE(CCloudCardItem, 0x89348EE8);

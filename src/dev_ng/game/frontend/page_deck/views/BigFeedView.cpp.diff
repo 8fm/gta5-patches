@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/page_deck/views/BigFeedView.cpp b/src/dev_ng/game/frontend/page_deck/views/BigFeedView.cpp
+--- a/src/dev_ng/game/frontend/page_deck/views/BigFeedView.cpp
++++ b/src/dev_ng/game/frontend/page_deck/views/BigFeedView.cpp
+@@ -22,7 +22,7 @@
+ #include "frontend/NewHud.h"
+ #include "frontend/page_deck/IPageViewHost.h"
+ #include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+-#include "network/live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ FWUI_DEFINE_TYPE( CBigFeedView, 0x1C4F769A );
+ 

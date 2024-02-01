@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentClip.cpp b/src/dev_ng/game/weapons/components/WeaponComponentClip.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentClip.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentClip.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentClip.h"
++#include "weapons/components/WeaponComponentClip.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

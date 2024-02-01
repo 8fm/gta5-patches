@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Crimes/TaskPursueCriminal.h b/src/dev_ng/game/task/Crimes/TaskPursueCriminal.h
+--- a/src/dev_ng/game/task/Crimes/TaskPursueCriminal.h
++++ b/src/dev_ng/game/task/Crimes/TaskPursueCriminal.h
+@@ -11,10 +11,10 @@
+ 
+ // Game Headers
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Crimes/RandomEventManager.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "task/System/Tuning.h"
++#include "task/Crimes/RandomEventManager.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.cpp
+@@ -1,15 +1,15 @@
+-#include "Task/Scenario/Types/TaskCoupleScenario.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/Scenario/info/ScenarioInfo.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskMoveFollowEntityOffset.h"
+-#include "Task/Movement/TaskMoveWander.h"
+-#include "Event/Event.h"
++#include "task/Scenario/Types/TaskCoupleScenario.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskMoveFollowEntityOffset.h"
++#include "task/Movement/TaskMoveWander.h"
++#include "event/Event.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "physics/physics.h"
+-#include "Scene/EntityIterator.h"
++#include "scene/EntityIterator.h"
+ 
+ AI_OPTIMISATIONS()
+ 

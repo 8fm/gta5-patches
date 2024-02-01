@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/CameraPacket.cpp b/src/dev_ng/game/control/replay/Misc/CameraPacket.cpp
+--- a/src/dev_ng/game/control/replay/Misc/CameraPacket.cpp
++++ b/src/dev_ng/game/control/replay/Misc/CameraPacket.cpp
+@@ -12,8 +12,8 @@
+ #include "camera/helpers/Frame.h"
+ #include "camera/base/BaseCamera.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
+-#include "control/replay/Replay.h"
++#include "camera/Gameplay/GameplayDirector.h"
++#include "control/replay/replay.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ void CCamInterp::Init(const ReplayController& controller, CPacketCameraUpdate const* pPrevPacket)

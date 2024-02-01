@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/audio/scriptaudioentity.h b/src/dev_ng/game/audio/scriptaudioentity.h
+--- a/src/dev_ng/game/audio/scriptaudioentity.h
++++ b/src/dev_ng/game/audio/scriptaudioentity.h
+@@ -11,9 +11,9 @@
+ #include "atl/bitset.h"
+ #include "speechaudioentity.h"
+ #include "script/gta_thread.h"
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptIds.h"
+ #include "streamslot.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ #include "text/messages.h"
+ 
+ #include "hashactiontable.h"

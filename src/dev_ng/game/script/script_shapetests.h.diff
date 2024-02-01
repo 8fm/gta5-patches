@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/script_shapetests.h b/src/dev_ng/game/script/script_shapetests.h
+--- a/src/dev_ng/game/script/script_shapetests.h
++++ b/src/dev_ng/game/script/script_shapetests.h
+@@ -13,7 +13,7 @@
+ #include "entity/extensiblebase.h"
+ 
+ //Game headers
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ // ***************************************************************************
+ //	CScriptShapeTestManager

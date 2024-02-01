@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.h
+@@ -9,7 +9,7 @@
+ 
+ #include "pickups/Data/PickupIds.h"
+ #include "script/Handlers/GameScriptIds.h"
+-#include "Network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h"
+ 
+ //framework includes
+ #include "fwscript/scriptid.h" // for USE_SCRIPT_NAME

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionTennis.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionTennis.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionTennis.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionTennis.h
+@@ -2,7 +2,7 @@
+ #define TASK_MOTION_TENNIS_H
+ 
+ #include "Peds/ped.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ //*********************************************************************
+ //	CTaskMotionTennis

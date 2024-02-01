@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Vehicle/PlayerHorseSpeedMatch.h b/src/dev_ng/game/task/Vehicle/PlayerHorseSpeedMatch.h
+--- a/src/dev_ng/game/task/Vehicle/PlayerHorseSpeedMatch.h
++++ b/src/dev_ng/game/task/Vehicle/PlayerHorseSpeedMatch.h
+@@ -7,7 +7,7 @@
+ 
+ #include "scene/Physical.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/Vehicle/PlayerHorseFollowTargets.h"
++#include "task/Vehicle/PlayerHorseFollowTargets.h"
+ 
+ class CPed;
+ 

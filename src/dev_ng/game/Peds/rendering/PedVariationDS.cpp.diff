@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedVariationDS.cpp b/src/dev_ng/game/Peds/rendering/PedVariationDS.cpp
+--- a/src/dev_ng/game/Peds/rendering/PedVariationDS.cpp
++++ b/src/dev_ng/game/Peds/rendering/PedVariationDS.cpp
+@@ -21,11 +21,11 @@
+ #include "streaming/ScriptPreload.h"
+ #include "streaming/streaming.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "peds/Ped.h"
+-#include "Peds/Rendering/PedVariationPack.h"
+-#include "Physics/physics.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationPack.h"
++#include "physics/physics.h"
+ #include "control/replay/ReplayExtensions.h"
+-#include "control/replay/ped/PedPacket.h"
++#include "control/replay/Ped/PedPacket.h"
+ 
+ PARAM(noheadblend, "Disables ped head blend system");
+ 

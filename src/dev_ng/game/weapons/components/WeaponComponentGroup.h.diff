@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentGroup.h b/src/dev_ng/game/weapons/components/WeaponComponentGroup.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponentGroup.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponentGroup.h
+@@ -8,7 +8,7 @@
+ #define WEAPON_COMPONENT_GROUP_H
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponent.h"
++#include "weapons/components/WeaponComponent.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

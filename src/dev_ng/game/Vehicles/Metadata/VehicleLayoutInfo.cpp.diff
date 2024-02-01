@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleLayoutInfo.cpp b/src/dev_ng/game/Vehicles/Metadata/VehicleLayoutInfo.cpp
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleLayoutInfo.cpp
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleLayoutInfo.cpp
+@@ -7,9 +7,9 @@
+ #include "parser/manager.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "Peds/PlayerInfo.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Vehicles/vehicle.h"
+ #include "Vehicles/vehicle_channel.h"
+ #include "Vehicles/Metadata/VehicleEntryPointInfo.h"
+@@ -18,7 +18,7 @@
+ #include "Vehicles/Metadata/VehicleLayoutInfo_parser.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+ #include "Vehicles/Metadata/VehicleDebug.h"
+-#include "Task/Combat/Cover/TaskCover.h"
++#include "task/Combat/Cover/TaskCover.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

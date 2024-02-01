@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/audio/vehiclecollisionaudio.h b/src/dev_ng/game/audio/vehiclecollisionaudio.h
+--- a/src/dev_ng/game/audio/vehiclecollisionaudio.h
++++ b/src/dev_ng/game/audio/vehiclecollisionaudio.h
+@@ -15,11 +15,11 @@
+ #include "audioengine/soundset.h"
+ #include "bank/bkmgr.h"
+ #include "renderer/HierarchyIds.h"
+-#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
+ #include "audio_channel.h"
+ #include "gameobjects.h"
+ #include "collisionaudioentity.h"
+-#include "Vfx/Systems/VfxMaterial.h"
++#include "vfx/systems/VfxMaterial.h"
+ 
+ #include "audioentity.h"
+ 

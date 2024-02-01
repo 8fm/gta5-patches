@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugCamera.cpp b/src/dev_ng/game/debug/Rendering/DebugCamera.cpp
+--- a/src/dev_ng/game/debug/Rendering/DebugCamera.cpp
++++ b/src/dev_ng/game/debug/Rendering/DebugCamera.cpp
+@@ -7,7 +7,7 @@
+ // framework
+ 
+ // game
+-#include "Debug/Rendering/DebugCamera.h"
++#include "debug/Rendering/DebugCamera.h"
+ #include "camera/viewports/ViewportManager.h"
+ 
+ #if __BANK

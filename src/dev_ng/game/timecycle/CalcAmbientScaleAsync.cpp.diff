@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/timecycle/CalcAmbientScaleAsync.cpp b/src/dev_ng/game/timecycle/CalcAmbientScaleAsync.cpp
+--- a/src/dev_ng/game/timecycle/CalcAmbientScaleAsync.cpp
++++ b/src/dev_ng/game/timecycle/CalcAmbientScaleAsync.cpp
+@@ -6,7 +6,7 @@
+ 
+ #include "timecycle/tcmodifier.h"
+ 
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/Entity.h"
+ 
+ bool CalcAmbientScaleAsync::RunFromDependency(const sysDependency& dependency)

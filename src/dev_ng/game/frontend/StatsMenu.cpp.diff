@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/frontend/StatsMenu.cpp b/src/dev_ng/game/frontend/StatsMenu.cpp
+--- a/src/dev_ng/game/frontend/StatsMenu.cpp
++++ b/src/dev_ng/game/frontend/StatsMenu.cpp
+@@ -1,19 +1,19 @@
+ 
+ // game
+-#include "Frontend/StatsMenu.h"
++#include "frontend/StatsMenu.h"
+ 
+-#include "Frontend/FrontendStatsMgr.h"
++#include "frontend/FrontendStatsMgr.h"
+ #include "frontend/MousePointer.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ScaleformMenuHelper.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Network/NetworkInterface.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/ScaleformMenuHelper.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "network/NetworkInterface.h"
+ #include "Stats/StatsMgr.h"
+ #include "Stats/StatsUtils.h"
+-#include "Frontend/ButtonEnum.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/NewHud.h"
+-#include "Script/script_hud.h"
++#include "frontend/ButtonEnum.h"
++#include "frontend/ui_channel.h"
++#include "frontend/NewHud.h"
++#include "script/script_hud.h"
+ 
+ //OPTIMISATIONS_OFF()
+ FRONTEND_OPTIMISATIONS()

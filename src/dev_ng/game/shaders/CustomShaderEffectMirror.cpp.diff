@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectMirror.cpp b/src/dev_ng/game/shaders/CustomShaderEffectMirror.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectMirror.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectMirror.cpp
+@@ -18,7 +18,7 @@
+ #include "fwutil/xmacro.h"
+ 
+ // Game headers
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "renderer/Mirrors.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"

@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/frontend/Credits.h b/src/dev_ng/game/frontend/Credi
 -#include "text\text.h"
 -#include "Network\Cloud\CloudManager.h"
 +#include "text/text.h"
-+#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
  
  enum eCreditType
  {

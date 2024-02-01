@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.h b/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.h
+--- a/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.h
++++ b/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.h
+@@ -14,7 +14,7 @@
+ #include "rline/scpresence/rlscpresencemessage.h"
+ #include "rline/inbox/rlinbox.h"
+ 
+-#include "Network/SocialClubServices/netGamePresenceEvent.h"
++#include "network/SocialClubServices/netGamePresenceEvent.h"
+ 
+ namespace rage{
+ #if __BANK

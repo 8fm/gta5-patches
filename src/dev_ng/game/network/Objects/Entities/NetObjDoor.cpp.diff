@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjDoor.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjDoor.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjDoor.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjDoor.cpp
+@@ -4,16 +4,16 @@
+ //				door objects. See NetworkObject.h for a full description of all the methods.
+ //
+ 
+-#include "network/Objects/entities/NetObjDoor.h"
++#include "network/Objects/Entities/NetObjDoor.h"
+ 
+ // game headers
+-#include "Camera/CamInterface.h"
+-#include "Network/Debug/NetworkDebug.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
++#include "camera/CamInterface.h"
++#include "network/Debug/NetworkDebug.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Objects/NetworkObjectMgr.h"
+ #include "Objects/Door.h"
+-#include "peds/Ped.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "Peds/ped.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ #include "script/Handlers/GameScriptIds.h"
+ #include "script/Handlers/GameScriptMgr.h"
+ #include "script/script.h"

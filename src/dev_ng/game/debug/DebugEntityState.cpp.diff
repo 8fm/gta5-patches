@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/debug/DebugEntityState.cpp b/src/dev_ng/game/debug/DebugEntityState.cpp
+--- a/src/dev_ng/game/debug/DebugEntityState.cpp
++++ b/src/dev_ng/game/debug/DebugEntityState.cpp
+@@ -1,6 +1,6 @@
+ #include "DebugEntityState.h"
+ #include "physics/debugEvents.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "system/timemgr.h"
+ 

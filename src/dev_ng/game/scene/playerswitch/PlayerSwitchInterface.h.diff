@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/playerswitch/PlayerSwitchInterface.h b/src/dev_ng/game/scene/playerswitch/PlayerSwitchInterface.h
+--- a/src/dev_ng/game/scene/playerswitch/PlayerSwitchInterface.h
++++ b/src/dev_ng/game/scene/playerswitch/PlayerSwitchInterface.h
+@@ -11,7 +11,7 @@
+ #define _SCENE_PLAYERSWITCH_PLAYERSWITCHINTERFACE_H_
+ 
+ #include "parser/macros.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/playerswitch/PlayerSwitchMgrLong.h"
+ #include "scene/playerswitch/PlayerSwitchMgrShort.h"
+ #include "system/bit.h"

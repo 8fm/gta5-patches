@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.h
+@@ -1,7 +1,7 @@
+ #ifndef INC_TASK_CHAT_SCENARIO_H
+ #define INC_TASK_CHAT_SCENARIO_H
+ 
+-#include "Task/Scenario/TaskScenario.h"
++#include "task/Scenario/TaskScenario.h"
+ 
+ class CTaskChatScenario : public CTaskScenario
+ {

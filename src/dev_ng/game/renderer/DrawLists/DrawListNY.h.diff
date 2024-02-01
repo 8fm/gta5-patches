@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/DrawListNY.h b/src/dev_ng/game/renderer/DrawLists/DrawListNY.h
+--- a/src/dev_ng/game/renderer/DrawLists/DrawListNY.h
++++ b/src/dev_ng/game/renderer/DrawLists/DrawListNY.h
+@@ -12,7 +12,7 @@
+ #ifndef INC_DRAWLISTNY_H_
+ #define INC_DRAWLISTNY_H_
+ 
+-#include "renderer/DrawLists/DrawList.h"
++#include "renderer/DrawLists/drawList.h"
+ 
+ 
+ enum eInstructionIdNY {

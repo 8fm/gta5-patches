@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Service/Army/TaskArmy.cpp b/src/dev_ng/game/task/Service/Army/TaskArmy.cpp
+--- a/src/dev_ng/game/task/Service/Army/TaskArmy.cpp
++++ b/src/dev_ng/game/task/Service/Army/TaskArmy.cpp
+@@ -1,11 +1,11 @@
+ // FILE :    TaskArmy.cpp
+ 
+ // File header
+-#include "Task/Service/Army/TaskArmy.h"
++#include "task/Service/Army/TaskArmy.h"
+ 
+ // Game headers
+-#include "game/dispatch/Orders.h"
+-#include "Peds/Ped.h"
++#include "game/Dispatch/Orders.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskNewCombat.h"
+ #include "task/Default/TaskUnalerted.h"

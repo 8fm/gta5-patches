@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/TaskIntimidate.cpp b/src/dev_ng/game/task/Response/TaskIntimidate.cpp
+--- a/src/dev_ng/game/task/Response/TaskIntimidate.cpp
++++ b/src/dev_ng/game/task/Response/TaskIntimidate.cpp
+@@ -1,7 +1,7 @@
+ // FILE :    TaskIntimidate.h
+ 
+ // File header
+-#include "Task/Response/TaskIntimidate.h"
++#include "task/Response/TaskIntimidate.h"
+ 
+ // Game headers
+ #include "ai/ambient/ConditionalAnimManager.h"

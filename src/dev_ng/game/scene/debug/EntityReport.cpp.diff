@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/scene/debug/EntityReport.cpp b/src/dev_ng/game/scene/debug/EntityReport.cpp
+--- a/src/dev_ng/game/scene/debug/EntityReport.cpp
++++ b/src/dev_ng/game/scene/debug/EntityReport.cpp
+@@ -15,10 +15,10 @@
+ #include "fragment/type.h"
+ #include "fwscene/lod/LodTypes.h"
+ #include "fwscene/stores/mapdatastore.h"
+-#include "modelInfo/PedModelInfo.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/PedVariationDebug.h"
+-#include "peds/rendering/PedVariationStream.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationDebug.h"
++#include "Peds/rendering/PedVariationStream.h"
+ #include "physics/gtaArchetype.h"
+ #include "renderer/PostScan.h"
+ #include "scene/debug/SceneIsolator.h"

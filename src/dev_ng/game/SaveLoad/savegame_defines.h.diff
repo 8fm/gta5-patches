@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_defines.h b/src/dev_ng/game/SaveLoad/savegame_defines.h
+--- a/src/dev_ng/game/SaveLoad/savegame_defines.h
++++ b/src/dev_ng/game/SaveLoad/savegame_defines.h
+@@ -2,10 +2,10 @@
+ #ifndef SAVEGAME_DEFINES_H
+ #define SAVEGAME_DEFINES_H
+ 
+-#include "Control/Replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ #include "file/savegame.h"
+ #include "rline/ugc/rlugccommon.h"
+-#include "stats/StatsTypes.h"
++#include "Stats/StatsTypes.h"
+ 
+ #define USE_PROFILE_SAVEGAME	(__PPU || RSG_ORBIS || RSG_DURANGO)
+ 

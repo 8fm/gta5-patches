@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cutscene/AnimatedCamera.cpp b/src/dev_ng/game/camera/cutscene/AnimatedCamera.cpp
+--- a/src/dev_ng/game/camera/cutscene/AnimatedCamera.cpp
++++ b/src/dev_ng/game/camera/cutscene/AnimatedCamera.cpp
+@@ -19,7 +19,7 @@
+ #include "camera/scripted/ScriptDirector.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+ #include "debug/DebugScene.h"
+-#include "peds/PedDebugVisualiser.h"
++#include "Peds/PedDebugVisualiser.h"
+ //#include "crmetadata/property.h"
+ //#include "crmetadata/propertyattributes.h"
+ //#include "grcore/debugdraw.h"

@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskJetpack.h b/src/dev_ng/game/task/Movement/TaskJetpack.h
+--- a/src/dev_ng/game/task/Movement/TaskJetpack.h
++++ b/src/dev_ng/game/task/Movement/TaskJetpack.h
+@@ -2,11 +2,11 @@
+ #define __TASK_JETPACK_H__
+ 
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ #include "physics/PhysicsHelpers.h"
+-#include "peds/ped.h"
+-#include "Task/Movement/JetpackObject.h"
++#include "Peds/ped.h"
++#include "task/Movement/JetpackObject.h"
+ 
+ #if ENABLE_JETPACK
+ 

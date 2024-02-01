@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioChainingTests.cpp b/src/dev_ng/game/task/Scenario/ScenarioChainingTests.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioChainingTests.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioChainingTests.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ #include "task/Scenario/ScenarioChainingTests.h"
+-#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ #include "task/Scenario/ScenarioChaining.h"
+ #include "task/Scenario/ScenarioPointManager.h"
+ #include "task/Scenario/ScenarioPointRegion.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp
+@@ -19,7 +19,7 @@
+ #include "vfx/ptfx/ptfxattach.h"
+ #include "vfx/ptfx/ptfxconfig.h"
+ #include "vfx/ptfx/ptfxwrapper.h"
+-#include "Vfx/Systems/VfxProjectile.h"
++#include "vfx/systems/VfxProjectile.h"
+ #include "vfx/systems/VfxWheel.h"
+ #include "vfx/systems/VfxVehicle.h"
+ #include "control/replay/Compression/Quantization.h"

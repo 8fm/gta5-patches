@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.cpp b/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.cpp
+@@ -26,7 +26,7 @@
+ #include "replaycoordinator/ReplayCoordinator.h"
+ #include "replaycoordinator/ReplayMontageGenerator.h"
+ #include "system/controlMgr.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ FRONTEND_OPTIMISATIONS();
+ 

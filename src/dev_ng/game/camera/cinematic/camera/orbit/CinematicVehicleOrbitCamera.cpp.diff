@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp
+@@ -16,10 +16,10 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "fwmaths/random.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/Entity.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/trailer.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Trailer.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicVehicleOrbitCamera,0x34D973ED)
+ INSTANTIATE_RTTI_CLASS(camCinematicVehicleLowOrbitCamera,0xDEB1CCC5)

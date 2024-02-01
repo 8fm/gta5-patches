@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Default/TaskCuffed.h b/src/dev_ng/game/task/Default/TaskCuffed.h
+--- a/src/dev_ng/game/task/Default/TaskCuffed.h
++++ b/src/dev_ng/game/task/Default/TaskCuffed.h
+@@ -9,9 +9,9 @@
+ 
+ // Game headers
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ 
+ #define ENABLE_TASKS_ARREST_CUFFED 0
+ 

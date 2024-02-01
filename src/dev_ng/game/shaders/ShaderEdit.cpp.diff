@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/shaders/ShaderEdit.cpp b/src/dev_ng/game/shaders/ShaderEdit.cpp
+--- a/src/dev_ng/game/shaders/ShaderEdit.cpp
++++ b/src/dev_ng/game/shaders/ShaderEdit.cpp
+@@ -14,22 +14,22 @@
+ #include "streaming/packfilemanager.h"
+ 
+ // game
+-#include "Shaders/ShaderEdit.h"
+-#include "core/game.h"
++#include "shaders/ShaderEdit.h"
++#include "Core/game.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/Entity.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "streaming/streaming.h"
+ #include "input/mouse.h"
+-#include "Debug/Editing/ShaderEditing.h"
++#include "debug/Editing/ShaderEditing.h"
+ #include "debug/DebugScene.h"
+ #include "debug/GtaPicker.h"
+-#include "debug/textureviewer/textureviewer.h"
+-#include "peds/Ped.h"
+-#include "peds/rendering/PedVariationDS.h"
+-#include "peds/rendering/PedVariationPack.h"
+-#include "peds/rendering/PedVariationStream.h"
++#include "debug/TextureViewer/TextureViewer.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationDS.h"
++#include "Peds/rendering/PedVariationPack.h"
++#include "Peds/rendering/PedVariationStream.h"
+ #include "renderer/Debug/EntitySelect.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+ #include "system/controlMgr.h"

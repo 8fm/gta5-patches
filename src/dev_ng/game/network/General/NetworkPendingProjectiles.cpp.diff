@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/General/NetworkPendingProjectiles.cpp b/src/dev_ng/game/network/General/NetworkPendingProjectiles.cpp
+--- a/src/dev_ng/game/network/General/NetworkPendingProjectiles.cpp
++++ b/src/dev_ng/game/network/General/NetworkPendingProjectiles.cpp
+@@ -7,9 +7,9 @@
+ 
+ #include "NetworkPendingProjectiles.h"
+ 
+-#include "debug/debug.h"
+-#include "peds/ped.h"
+-#include "Weapons/projectiles/ProjectileManager.h"
++#include "debug/Debug.h"
++#include "Peds/ped.h"
++#include "weapons/projectiles/ProjectileManager.h"
+ #include "fwsys/timer.h"
+ 
+ NETWORK_OPTIMISATIONS()

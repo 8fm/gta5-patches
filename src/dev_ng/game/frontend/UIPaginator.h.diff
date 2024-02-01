@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/UIPaginator.h b/src/dev_ng/game/frontend/UIPaginator.h
+--- a/src/dev_ng/game/frontend/UIPaginator.h
++++ b/src/dev_ng/game/frontend/UIPaginator.h
+@@ -5,8 +5,8 @@
+ #include "atl/pool.h"
+ 
+ #include "rline/clan/rlclancommon.h"
+-#include "Frontend/PauseMenuData.h" // for scrollflags
+-#include "Frontend/CMenuBase.h" // MenuScreenId
++#include "frontend/PauseMenuData.h" // for scrollflags
++#include "frontend/CMenuBase.h" // MenuScreenId
+ #include "data/callback.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

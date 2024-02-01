@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/audio/boataudioentity.cpp b/src/dev_ng/game/audio/boataudioentity.cpp
+--- a/src/dev_ng/game/audio/boataudioentity.cpp
++++ b/src/dev_ng/game/audio/boataudioentity.cpp
+@@ -9,10 +9,10 @@
+ #include "grcore/debugdraw.h"
+ #include "northaudioengine.h"
+ #include "vehicleaudioentity.h"
+-#include "peds/ped.h"
+-#include "vehicles/boat.h"
+-#include "vehicles/vehicle.h"
+-#include "vfx/Systems/VfxWater.h"
++#include "Peds/ped.h"
++#include "Vehicles/Boat.h"
++#include "Vehicles/vehicle.h"
++#include "vfx/systems/VfxWater.h"
+ #include "weapons/Weapon.h"
+ #include "control/replay/replay.h"
+ #include "camera/cinematic/CinematicDirector.h"

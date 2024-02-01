@@ -1,0 +1,54 @@
+diff --git a/src/dev_ng/game/tools/SmokeTest.cpp b/src/dev_ng/game/tools/SmokeTest.cpp
+--- a/src/dev_ng/game/tools/SmokeTest.cpp
++++ b/src/dev_ng/game/tools/SmokeTest.cpp
+@@ -10,25 +10,25 @@
+ #include "grmodel/setup.h"
+ #include "grprofile/timebars.h"
+ // Game hdrs
+-#include "Camera/camInterface.h"
+-#include "Camera/debug/debugdirector.h"
+-#include "Camera/helpers/frame.h"
+-#include "Control/GameLogic.h"
++#include "camera/CamInterface.h"
++#include "camera/debug/debugdirector.h"
++#include "camera/helpers/frame.h"
++#include "control/GameLogic.h"
+ #include "Core/Game.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "frontend/MiniMap.h"
+-#include "Game/clock.h"
+-#include "Game/weather.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "game/clock.h"
++#include "game/weather.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "Peds/PedFactory.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/PedPopulation.h"
+-#include "Peds/Ped.h"
+-#include "peds/rendering/pedvariationDebug.h"
+-#include "Physics/gtaInst.h"
++#include "Peds/pedpopulation.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/pedvariationDebug.h"
++#include "physics/gtaInst.h"
+ #include "scene/scene.h"
+-#include "scene/animatedbuilding.h"
++#include "scene/AnimatedBuilding.h"
+ #include "scene/WarpManager.h"
+ #include "SectorTools.h"
+ #include "streaming/streaming.h"		// For CStreaming::LoadAllRequestedObjects(), etc.
+@@ -42,8 +42,8 @@
+ #include "Tools/TracingStats.h"
+ #include "Tools/ObjectProfiler.h"
+ #include "Vehicles/VehicleFactory.h"
+-#include "Weapons/Explosion.h"
+-#include "system/autogpucapture.h"
++#include "weapons/Explosion.h"
++#include "system/AutoGPUCapture.h"
+ 
+ 
+ // DON'T COMMIT

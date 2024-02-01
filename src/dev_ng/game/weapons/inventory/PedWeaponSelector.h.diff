@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedWeaponSelector.h b/src/dev_ng/game/weapons/inventory/PedWeaponSelector.h
+--- a/src/dev_ng/game/weapons/inventory/PedWeaponSelector.h
++++ b/src/dev_ng/game/weapons/inventory/PedWeaponSelector.h
+@@ -5,9 +5,9 @@
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/Inventory/PedInventorySelectOption.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/inventory/PedInventorySelectOption.h"
+ #include "system/control.h"
+ 
+ // Forward declarations

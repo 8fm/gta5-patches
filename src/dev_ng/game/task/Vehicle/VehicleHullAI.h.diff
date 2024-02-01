@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Vehicle/VehicleHullAI.h b/src/dev_ng/game/task/Vehicle/VehicleHullAI.h
+--- a/src/dev_ng/game/task/Vehicle/VehicleHullAI.h
++++ b/src/dev_ng/game/task/Vehicle/VehicleHullAI.h
+@@ -14,10 +14,10 @@
+ ////#include "fwmaths/Maths.h"
+ 
+ // Game headers
+-#include "ModelInfo/PedModelInfo.h"
+-#include "ModelInfo/VehicleModelInfoEnums.h"
+-#include "Renderer/HierarchyIds.h"
+-#include "Scene/RegdRefTypes.h"
++#include "modelinfo/PedModelInfo.h"
++#include "modelinfo/VehicleModelInfoEnums.h"
++#include "renderer/HierarchyIds.h"
++#include "scene/RegdRefTypes.h"
+ 
+ // Forwards declarations
+ namespace rage { class Matrix34; }

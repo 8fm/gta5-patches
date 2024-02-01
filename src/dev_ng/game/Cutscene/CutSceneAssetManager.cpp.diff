@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp b/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
+@@ -16,28 +16,28 @@
+ //Game Headers
+ #include "script/script.h"
+ #include "script/commands_interiors.h"
+-#include "Cutscene/cutscene_channel.h"
++#include "cutscene/cutscene_channel.h"
+ #include "cutscene/CutSceneDefine.h"
+-#include "Cutscene/CutSceneAssetManager.h"
+-#include "Cutscene/AnimatedModelEntity.h"
+-#include "Cutscene/CutSceneBoundsEntity.h"
+-#include "Cutscene/cutscene_channel.h"
+-#include "Cutscene/CutsceneCustomEvents.h"
++#include "cutscene/CutSceneAssetManager.h"
++#include "cutscene/AnimatedModelEntity.h"
++#include "cutscene/CutSceneBoundsEntity.h"
++#include "cutscene/cutscene_channel.h"
++#include "cutscene/CutsceneCustomEvents.h"
+ #include "entity/archetype.h"
+ #include "entity/archetypemanager.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "fwscene/stores/maptypesstore.h"
+-#include "peds/Ped.h"
+-#include "peds/rendering/PedVariationStream.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationStream.h"
+ #include "scene/entities/compEntity.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/texLod.h"
+ #include "streaming/streaming.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "script/commands_object.h"
+ #include "vfx/misc/MovieManager.h"
+-#include "Vfx/Systems/VfxScript.h"
++#include "vfx/systems/VfxScript.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////
+ 

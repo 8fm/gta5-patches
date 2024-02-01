@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDefLight.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDefLight.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDefLight.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDefLight.h
+@@ -13,7 +13,7 @@
+ // Game headers
+ #include "renderer/DrawLists/drawListMgr_config.h"
+ #include "renderer/RenderPhases/RenderPhase.h"
+-#include "renderer/SpuPm/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
+ 
+ #include "shader_source/Terrain/terrain_cb_switches.fxh"
+ 

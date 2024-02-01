@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Crews/NetworkCrewMetadata.cpp b/src/dev_ng/game/network/Crews/NetworkCrewMetadata.cpp
+--- a/src/dev_ng/game/network/Crews/NetworkCrewMetadata.cpp
++++ b/src/dev_ng/game/network/Crews/NetworkCrewMetadata.cpp
+@@ -13,8 +13,8 @@
+ #include "fwnet/netchannel.h"
+ 
+ //Game Headers
+-#include "Network/NetworkInterface.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "network/NetworkInterface.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ #if __BANK
+ #include "bank/bank.h"

@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/weapons/gadgets/GadgetParachute.cpp b/src/dev_ng/game/weapons/gadgets/GadgetParachute.cpp
+--- a/src/dev_ng/game/weapons/gadgets/GadgetParachute.cpp
++++ b/src/dev_ng/game/weapons/gadgets/GadgetParachute.cpp
+@@ -1,11 +1,11 @@
+ // File header
+-#include "Weapons/Gadgets/GadgetParachute.h"
++#include "weapons/Gadgets/GadgetParachute.h"
+ 
+ // Game includes
+-#include "Event/Events.h"
++#include "event/Events.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Movement/TaskParachute.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "task/Movement/TaskParachute.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/SurrogateCloudFileProvider.h b/src/dev_ng/game/scene/SurrogateCloudFileProvider.h
+--- a/src/dev_ng/game/scene/SurrogateCloudFileProvider.h
++++ b/src/dev_ng/game/scene/SurrogateCloudFileProvider.h
+@@ -25,7 +25,7 @@
+ #include "fwlocalisation/templateString.h"
+ 
+ // Game
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ class CloudListener;
+ 

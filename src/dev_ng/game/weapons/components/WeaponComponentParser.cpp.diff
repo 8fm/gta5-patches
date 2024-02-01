@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentParser.cpp b/src/dev_ng/game/weapons/components/WeaponComponentParser.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentParser.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentParser.cpp
+@@ -7,17 +7,17 @@
+ WEAPON_OPTIMISATIONS()
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponentClip.h"
+-#include "Weapons/Components/WeaponComponentFlashLight.h"
+-#include "Weapons/Components/WeaponComponentGroup.h"
+-#include "Weapons/Components/WeaponComponentLaserSight.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/Components/WeaponComponentProgrammableTargeting.h"
+-#include "Weapons/Components/WeaponComponentReloadData.h"
+-#include "Weapons/Components/WeaponComponentScope.h"
+-#include "Weapons/Components/WeaponComponentSuppressor.h"
+-#include "Weapons/Components/WeaponComponentVariantModel.h"
+-#include "Weapons/Info/WeaponSwapData.h"
++#include "weapons/components/WeaponComponentClip.h"
++#include "weapons/components/WeaponComponentFlashLight.h"
++#include "weapons/components/WeaponComponentGroup.h"
++#include "weapons/components/WeaponComponentLaserSight.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/components/WeaponComponentProgrammableTargeting.h"
++#include "weapons/components/WeaponComponentReloadData.h"
++#include "weapons/components/WeaponComponentScope.h"
++#include "weapons/components/WeaponComponentSuppressor.h"
++#include "weapons/components/WeaponComponentVariantModel.h"
++#include "weapons/info/WeaponSwapData.h"
+ 
+ // Parser header
+ #include "WeaponComponentParser_parser.h"

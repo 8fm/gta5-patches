@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/asyncprobes.h b/src/dev_ng/game/audio/asyncprobes.h
+--- a/src/dev_ng/game/audio/asyncprobes.h
++++ b/src/dev_ng/game/audio/asyncprobes.h
+@@ -3,7 +3,7 @@
+ 
+ #include "vector/vector3.h"
+ #include "scene/Entity.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "audiosoundtypes/sound.h"
+ //*********************************************************************
+ // audCachedLos and audCachedLosResults

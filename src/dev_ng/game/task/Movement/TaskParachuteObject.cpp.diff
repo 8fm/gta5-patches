@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskParachuteObject.cpp b/src/dev_ng/game/task/Movement/TaskParachuteObject.cpp
+--- a/src/dev_ng/game/task/Movement/TaskParachuteObject.cpp
++++ b/src/dev_ng/game/task/Movement/TaskParachuteObject.cpp
+@@ -1,10 +1,10 @@
+ // File header
+-#include "Task/Movement/TaskParachuteObject.h"
+-#include "Task/Movement/TaskParachute.h"
++#include "task/Movement/TaskParachuteObject.h"
++#include "task/Movement/TaskParachute.h"
+ 
+ // Game headers
+ #include "animation/MoveObject.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Objects/object.h"
+ 
+ AI_OPTIMISATIONS()

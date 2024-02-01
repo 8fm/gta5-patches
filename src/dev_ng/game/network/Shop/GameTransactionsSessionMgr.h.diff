@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.h b/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.h
+--- a/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.h
++++ b/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.h
+@@ -17,8 +17,8 @@
+ #include "system/ipc.h"
+ #include "fwnet/netchannel.h"
+ 
+-#include "Network/Shop/GameTransactionsTasks.h"
+-#include "Network/Shop/NetworkGameTransactions.h"
++#include "network/Shop/GameTransactionsTasks.h"
++#include "network/Shop/NetworkGameTransactions.h"
+ #include "Stats/StatsTypes.h"
+ 
+ RAGE_DECLARE_SUBCHANNEL(net, GameTransactions);

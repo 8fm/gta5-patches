@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayBufferMarker.cpp b/src/dev_ng/game/control/replay/ReplayBufferMarker.cpp
+--- a/src/dev_ng/game/control/replay/ReplayBufferMarker.cpp
++++ b/src/dev_ng/game/control/replay/ReplayBufferMarker.cpp
+@@ -5,7 +5,7 @@
+ #include "control/replay/replay.h"
+ #include "control/replay/ReplayRecording.h"
+ #include "scene/world/GameWorld.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ 
+ #if __DEV
+ #include "grcore/debugdraw.h"

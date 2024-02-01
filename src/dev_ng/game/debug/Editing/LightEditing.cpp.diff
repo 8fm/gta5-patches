@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/debug/Editing/LightEditing.cpp b/src/dev_ng/game/debug/Editing/LightEditing.cpp
+--- a/src/dev_ng/game/debug/Editing/LightEditing.cpp
++++ b/src/dev_ng/game/debug/Editing/LightEditing.cpp
+@@ -11,16 +11,16 @@
+ #include "fwdebug/picker.h"
+ 
+ // game
+-#include "Debug/Editing/LightEditing.h"
+-#include "Debug/Rendering/DebugLights.h"
++#include "debug/Editing/LightEditing.h"
++#include "debug/Rendering/DebugLights.h"
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+ #include "camera/viewports/viewportmanager.h"
+ #include "optimisations.h"
+ #include "renderer/GtaDrawable.h"
+-#include "renderer/lights/lights.h"
+-#include "renderer/lights/LightEntity.h"
++#include "renderer/Lights/lights.h"
++#include "renderer/Lights/LightEntity.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/portals/InteriorInst.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/System/TaskComplex.h b/src/dev_ng/game/task/System/TaskComplex.h
+--- a/src/dev_ng/game/task/System/TaskComplex.h
++++ b/src/dev_ng/game/task/System/TaskComplex.h
+@@ -9,7 +9,7 @@
+ #define TASK_COMPLEX_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ 
+ 
+ //

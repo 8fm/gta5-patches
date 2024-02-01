@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskIdle.h b/src/dev_ng/game/task/Movement/TaskIdle.h
+--- a/src/dev_ng/game/task/Movement/TaskIdle.h
++++ b/src/dev_ng/game/task/Movement/TaskIdle.h
+@@ -2,9 +2,9 @@
+ #define TASK_IDLE_H
+ 
+ #include "Peds/ped.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
++#include "task/System/TaskTypes.h"
+ 
+ // CLASS : CTaskMoveStandStill
+ // PURPOSE : Movement task which causes ped to stand still for specified time

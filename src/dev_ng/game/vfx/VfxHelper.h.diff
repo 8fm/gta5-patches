@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/vfx/VfxHelper.h b/src/dev_ng/game/vfx/VfxHelper.h
+--- a/src/dev_ng/game/vfx/VfxHelper.h
++++ b/src/dev_ng/game/vfx/VfxHelper.h
+@@ -19,22 +19,22 @@
+ // framework
+ #include "grcore/im.h"
+ #include "fwanimation/boneids.h"
+-#include "fwscene/world/interiorlocation.h"
++#include "fwscene/world/InteriorLocation.h"
+ #include "physics/levelbase.h"
+ 
+ // game
+-#include "Animation/AnimBones.h"
+-#include "Physics/gtaMaterial.h"
+-#include "Physics/gtaMaterialManager.h"
+-#include "Physics/WaterTestHelper.h"
+-#include "Renderer/Water.h"
+-#include "Scene/Portals/PortalTracker.h"
+-#include "Scene/RegdRefTypes.h"
++#include "animation/AnimBones.h"
++#include "physics/gtaMaterial.h"
++#include "physics/gtaMaterialManager.h"
++#include "physics/WaterTestHelper.h"
++#include "renderer/Water.h"
++#include "scene/portals/PortalTracker.h"
++#include "scene/RegdRefTypes.h"
+ #if !__SPU
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ #endif
+-#include "Weapons/WeaponEnums.h"
+-#include "control/replay/Replay.h"
++#include "weapons/WeaponEnums.h"
++#include "control/replay/replay.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

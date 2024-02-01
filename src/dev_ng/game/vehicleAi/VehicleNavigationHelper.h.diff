@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/VehicleNavigationHelper.h b/src/dev_ng/game/vehicleAi/VehicleNavigationHelper.h
+--- a/src/dev_ng/game/vehicleAi/VehicleNavigationHelper.h
++++ b/src/dev_ng/game/vehicleAi/VehicleNavigationHelper.h
+@@ -2,7 +2,7 @@
+ #define VEHICLE_NAGIVATION_HELPER_H
+ 
+ #include "vector/vector3.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ 
+ class CVehicle;
+ class CEntity;

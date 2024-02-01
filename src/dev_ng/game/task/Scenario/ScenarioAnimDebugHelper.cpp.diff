@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioAnimDebugHelper.cpp b/src/dev_ng/game/task/Scenario/ScenarioAnimDebugHelper.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioAnimDebugHelper.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioAnimDebugHelper.cpp
+@@ -28,7 +28,7 @@
+ #include "Peds/PedIntelligence.h"
+ #include "task/Default/AmbientAnimationManager.h"
+ #include "task/General/TaskBasic.h"
+-#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ #include "task/Scenario/ScenarioDebug.h"
+ #include "task/Scenario/TaskScenarioAnimDebug.h"
+ 

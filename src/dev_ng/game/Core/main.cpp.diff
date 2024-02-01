@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/Core/main.cpp b/src/dev_ng/game/Core/main.cpp
  
  #if __PPU && !__FINAL
  #include "system/stack.h"
+@@ -670,7 +670,7 @@ public:
+ 	virtual bool UploadDump(const wchar_t* dumpFilename, const wchar_t* logFilename, const atMap<atString, atString>* annotations, const char* url);
+ };
+ 
+-#include "Network/Cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ 
+ static void OnBacktraceEnabledTunableSet(bool enabled)
+ {

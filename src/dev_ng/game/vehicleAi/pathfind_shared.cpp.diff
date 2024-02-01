@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/vehicleAi/pathfind_shared.cpp b/src/dev_ng/game/vehicleAi/pathfind_shared.cpp
+--- a/src/dev_ng/game/vehicleAi/pathfind_shared.cpp
++++ b/src/dev_ng/game/vehicleAi/pathfind_shared.cpp
+@@ -1,4 +1,4 @@
+-#include "vehicleai/pathfind.h"
++#include "vehicleAi/pathfind.h"
+ 
+ #if !__SPU
+ #include "fwscene/world/WorldLimits.h"

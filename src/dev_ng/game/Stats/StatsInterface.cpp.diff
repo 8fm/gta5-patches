@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/Stats/StatsInterface.cpp b/src/dev_ng/game/Stats/StatsInterface.cpp
+--- a/src/dev_ng/game/Stats/StatsInterface.cpp
++++ b/src/dev_ng/game/Stats/StatsInterface.cpp
+@@ -33,18 +33,18 @@
+ #include "network/Cloud/Tunables.h"
+ #include "scene/DynamicEntity.h"
+ #include "scene/world/GameWorld.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/Relationships.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/Relationships.h"
+ #include "script/commands_stats.h"
+ #include "weapons/WeaponEnums.h"
+-#include "Modelinfo/PedModelInfo.h"
+-#include "Network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h"
++#include "modelinfo/PedModelInfo.h"
++#include "network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h"
+ #include "weapons/info/WeaponInfo.h"
+ #include "weapons/WeaponTypes.h"
+ 
+ #if __ASSERT
+-#include "Text/TextFile.h"
++#include "text/TextFile.h"
+ #include "system/stack.h"
+ #include "scene/scene.h"
+ #include "control/gamelogic.h"

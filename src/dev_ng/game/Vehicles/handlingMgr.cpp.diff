@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/handlingMgr.cpp b/src/dev_ng/game/Vehicles/handlingMgr.cpp
+--- a/src/dev_ng/game/Vehicles/handlingMgr.cpp
++++ b/src/dev_ng/game/Vehicles/handlingMgr.cpp
+@@ -9,7 +9,7 @@
+ // rage headers
+ // game headers
+ #include "core/game.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "modelInfo/vehicleModelInfo.h"
+ #include "scene/DataFileMgr.h"
+ #include "system/fileMgr.h"

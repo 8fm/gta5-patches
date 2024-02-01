@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandlerNetwork.h b/src/dev_ng/game/script/Handlers/GameScriptHandlerNetwork.h
+--- a/src/dev_ng/game/script/Handlers/GameScriptHandlerNetwork.h
++++ b/src/dev_ng/game/script/Handlers/GameScriptHandlerNetwork.h
+@@ -8,11 +8,11 @@
+ #define GAME_SCRIPT_HANDLER_NETWORK_H
+ 
+ // framework includes
+-#include "fwscript/scriptHandler.h"
+-#include "fwscript/scriptHandlerNetComponent.h"
++#include "fwscript/scripthandler.h"
++#include "fwscript/scripthandlernetcomponent.h"
+ 
+ // game includes
+-#include "script/handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptHandler.h"
+ 
+ class CGameScriptHandlerNetComponent;
+ class CPhysical;

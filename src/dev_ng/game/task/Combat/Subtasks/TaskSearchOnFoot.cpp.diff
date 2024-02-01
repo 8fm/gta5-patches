@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchOnFoot.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchOnFoot.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchOnFoot.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchOnFoot.cpp
+@@ -2,10 +2,10 @@
+ // PURPOSE : Subtask of search used while on foot
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskSearchOnFoot.h"
++#include "task/Combat/Subtasks/TaskSearchOnFoot.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "task/Combat/TaskCombat.h"
+ #include "task/General/TaskBasic.h"

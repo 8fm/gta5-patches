@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Shop/NetworkShopping.h b/src/dev_ng/game/network/Shop/NetworkShopping.h
+--- a/src/dev_ng/game/network/Shop/NetworkShopping.h
++++ b/src/dev_ng/game/network/Shop/NetworkShopping.h
+@@ -21,10 +21,10 @@
+ #include "parser/macros.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Game headers
+-#include "Network/Shop/NetworkGameTransactions.h"
++#include "network/Shop/NetworkGameTransactions.h"
+ 
+ //Return the friendly name of the transaction type.
+ OUTPUT_ONLY( const char*     NETWORK_SHOP_GET_TRANS_TYPENAME(const NetShopTransactionType type);     )

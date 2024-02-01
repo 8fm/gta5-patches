@@ -16,3 +16,12 @@ diff --git a/src/dev_ng/game/Peds/Horse/horseComponent.cpp b/src/dev_ng/game/Ped
  #include "physics/Rope.h"
  #include "task/Motion/TaskMotionBase.h"
  #include "task/Response/TaskFlee.h"
+@@ -15,7 +15,7 @@
+ #if ENABLE_HORSE
+ 
+ #include "Peds/PedIntelligence.h"
+-#include "Event/Events.h"
++#include "event/Events.h"
+ 
+ #include "horseComponent_parser.h"
+ 

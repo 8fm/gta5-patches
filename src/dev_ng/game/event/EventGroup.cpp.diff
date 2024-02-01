@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/event/EventGroup.cpp b/src/dev_ng/game/event/EventGroup.cpp
+--- a/src/dev_ng/game/event/EventGroup.cpp
++++ b/src/dev_ng/game/event/EventGroup.cpp
+@@ -1,19 +1,19 @@
+ // File header
+-#include "Event/EventGroup.h"
++#include "event/EventGroup.h"
+ 
+ // Framework headers
+ #include "ai/aichannel.h"
+ 
+ // Game headers
+-#include "Event/Events.h"
+-#include "Event/EventDamage.h"
+-#include "Event/EventNetwork.h"
+-#include "Event/EventReactions.h"	// CEventExplosionHeard
+-#include "Network/NetworkInterface.h"
+-#include "Peds/Ped.h"
++#include "event/Events.h"
++#include "event/EventDamage.h"
++#include "event/EventNetwork.h"
++#include "event/EventReactions.h"	// CEventExplosionHeard
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedDebugVisualiser.h"
+-#include "Script/script.h"
++#include "script/script.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "fwsys/timer.h"
+ 

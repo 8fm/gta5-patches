@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Cloud/Tunables.h b/src/dev_ng/game/network/Cloud/Tunables.h
+--- a/src/dev_ng/game/network/Cloud/Tunables.h
++++ b/src/dev_ng/game/network/Cloud/Tunables.h
+@@ -7,8 +7,8 @@
+ 
+ // game includes
+ #include "net/task.h"
+-#include "network/cloud/CloudManager.h"
+-#include "system/memorycheck.h"
++#include "network/Cloud/CloudManager.h"
++#include "system/MemoryCheck.h"
+ #include "system/threadpool.h"
+ 
+ #define TUNABLES_VERSION (1)

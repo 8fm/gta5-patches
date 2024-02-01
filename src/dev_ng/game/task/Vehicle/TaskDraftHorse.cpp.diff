@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskDraftHorse.cpp b/src/dev_ng/game/task/Vehicle/TaskDraftHorse.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskDraftHorse.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskDraftHorse.cpp
+@@ -1,4 +1,4 @@
+-#include "Task/Vehicle/TaskDraftHorse.h"
++#include "task/Vehicle/TaskDraftHorse.h"
+ 
+ #if ENABLE_HORSE
+ 
+@@ -7,11 +7,11 @@
+ #include "modelinfo/PedModelInfo.h"
+ #include "Peds/Horse/horseComponent.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Vehicle/TaskPlayerOnHorse.h"
+-#include "Task/default/TaskPlayer.h"
+-#include "Task/Motion/Locomotion/TaskHorseLocomotion.h"
++#include "task/Vehicle/TaskPlayerOnHorse.h"
++#include "task/default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskHorseLocomotion.h"
+ #include "task/Movement/Jumping/TaskJump.h"
+-#include "Task/Weapons/Gun/TaskVehicleDriveBy.h"
++#include "task/Weapons/Gun/TaskVehicleDriveBy.h"
+ #include "Vehicles/Metadata/VehicleLayoutInfo.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 

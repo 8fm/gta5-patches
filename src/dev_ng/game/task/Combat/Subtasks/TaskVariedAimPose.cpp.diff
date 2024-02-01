@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.cpp
+@@ -3,21 +3,21 @@
+ // CREATED : 09-21-2011
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskVariedAimPose.h"
++#include "task/Combat/Subtasks/TaskVariedAimPose.h"
+ 
+ // Rage headers
+ #include "profile/profiler.h"
+ 
+ // Game headers
+-#include "Event/EventWeapon.h"
++#include "event/EventWeapon.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Movement/TaskMoveWithinAttackWindow.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Movement/TaskMoveWithinAttackWindow.h"
+ #include "task/Weapons/Gun/TaskGun.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Combat/Subtasks/TaskShootAtTarget.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Combat/Subtasks/TaskShootAtTarget.h"
+ 
+ namespace AICombatStats
+ {

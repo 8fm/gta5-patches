@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp b/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp
+--- a/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp
++++ b/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // Class header
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ // Parser files
+ #include "WeaponInfoManager_parser.h"
+@@ -16,12 +16,12 @@
+ 
+ // Game headers
+ #include "Peds/ped.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Scene/DynamicEntity.h"
++#include "scene/DataFileMgr.h"
++#include "scene/DynamicEntity.h"
+ #include "scene/ExtraContent.h"
+-#include "Weapons/WeaponDebug.h"
+-#include "Weapons/WeaponManager.h"
+-#include "Weapons/WeaponTypes.h"
++#include "weapons/WeaponDebug.h"
++#include "weapons/WeaponManager.h"
++#include "weapons/WeaponTypes.h"
+ 
+ #include "network/General/NetworkHasherUtil.h"
+ 

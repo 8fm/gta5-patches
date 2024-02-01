@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeSphere.h b/src/dev_ng/game/scene/volume/VolumeSphere.h
+--- a/src/dev_ng/game/scene/volume/VolumeSphere.h
++++ b/src/dev_ng/game/scene/volume/VolumeSphere.h
+@@ -5,7 +5,7 @@
+ #ifndef _VOLUME_SPHERE_H_
+ #define _VOLUME_SPHERE_H_
+ 
+-#include "scene/volume/volume.h"
++#include "scene/volume/Volume.h"
+ 
+ #if VOLUME_SUPPORT
+ 

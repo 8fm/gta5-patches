@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/heliaudioentity.h b/src/dev_ng/game/audio/heliaudioentity.h
+--- a/src/dev_ng/game/audio/heliaudioentity.h
++++ b/src/dev_ng/game/audio/heliaudioentity.h
+@@ -10,7 +10,7 @@
+ #include "vehicleaudioentity.h"
+ #include "vehicleengine/vehicleengine.h"
+ #include "renderer/HierarchyIds.h"
+-#include "vehicles/LandingGear.h"
++#include "Vehicles/LandingGear.h"
+ #include "audiosoundtypes/retriggeredoverlappedsound.h"
+ 
+ #define NUM_NPC_PICH_SHIFTS 3

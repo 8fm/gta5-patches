@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/cutsceneaudioentity.cpp b/src/dev_ng/game/audio/cutsceneaudioentity.cpp
+--- a/src/dev_ng/game/audio/cutsceneaudioentity.cpp
++++ b/src/dev_ng/game/audio/cutsceneaudioentity.cpp
+@@ -16,7 +16,7 @@
+ #include "audiosoundtypes/streamingsound.h"
+ #include "audioengine/categorymanager.h"
+ #include "camera/CamInterface.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "scriptaudioentity.h"
+ 
+ #include "audioengine/controller.h"

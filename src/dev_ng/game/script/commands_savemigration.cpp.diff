@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/script/commands_savemigration.cpp b/src/dev_ng/game/script/commands_savemigration.cpp
+--- a/src/dev_ng/game/script/commands_savemigration.cpp
++++ b/src/dev_ng/game/script/commands_savemigration.cpp
+@@ -22,9 +22,9 @@
+ #include "Stats/StatsInterface.h"
+ 
+ // Network Headers
+-#include "Network/Network.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Network.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/NetworkInterface.h"
+ 
+ PARAM(debugSaveMigrationCommands, "Debug save migration commands.");
+ 

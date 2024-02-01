@@ -1,0 +1,50 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponInfo.cpp b/src/dev_ng/game/weapons/info/WeaponInfo.cpp
+--- a/src/dev_ng/game/weapons/info/WeaponInfo.cpp
++++ b/src/dev_ng/game/weapons/info/WeaponInfo.cpp
+@@ -5,30 +5,30 @@
+ //
+ 
+ // File header
+-#include "Weapons/Info/WeaponInfo.h"
++#include "weapons/info/WeaponInfo.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "ModelInfo/PedModelInfo.h"
+-#include "ModelInfo/WeaponModelInfo.h"
+-#include "Network/NetworkInterface.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "modelinfo/PedModelInfo.h"
++#include "modelinfo/WeaponModelInfo.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Pickups/PickupManager.h"
++#include "pickups/PickupManager.h"
+ #include "Stats/Stats_Channel.h"
+ #include "Stats/StatsInterface.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/General/Phone/TaskMobilePhone.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/General/Phone/TaskMobilePhone.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+ #include "Vehicles/Metadata/VehicleLayoutInfo.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/Info/AmmoInfo.h"
+-#include "Weapons/Info/WeaponAnimationsManager.h"
+-#include "Weapons/Info/WeaponSwapData.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/info/AmmoInfo.h"
++#include "weapons/info/WeaponAnimationsManager.h"
++#include "weapons/info/WeaponSwapData.h"
+ 
+ // Parser files
+ #include "WeaponInfo_parser.h"

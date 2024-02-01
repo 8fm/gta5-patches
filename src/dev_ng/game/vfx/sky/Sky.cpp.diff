@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/vfx/sky/Sky.cpp b/src/dev_ng/game/vfx/sky/Sky.cpp
+--- a/src/dev_ng/game/vfx/sky/Sky.cpp
++++ b/src/dev_ng/game/vfx/sky/Sky.cpp
+@@ -7,7 +7,7 @@
+ #include "rmcore/drawable.h"
+ 
+ // INCLUDES
+-#include "Vfx/Sky/Sky.h"
++#include "vfx/Sky/Sky.h"
+ 
+ // rage
+ #include "grmodel/modelfactory.h"
+@@ -39,7 +39,7 @@
+ #include "debug/Rendering/DebugDeferred.h"
+ #include "renderer/GtaDrawable.h"
+ #include "renderer/renderthread.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/RenderSettings.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+@@ -52,7 +52,7 @@
+ #include "timecycle/TimeCycleConfig.h"
+ #include "vfx/vfxHelper.h"
+ #include "vfx/vfx_channel.h"
+-#include "Vfx/Misc/Coronas.h"
++#include "vfx/misc/Coronas.h"
+ #include "vfx/sky/SkySettings.h"
+ #include "vfx/VfxSettings.h"
+ 

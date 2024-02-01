@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.cpp
+@@ -7,21 +7,21 @@
+ 
+ // Game headers
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Combat/Subtasks/TaskShootAtTarget.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/General/TaskSecondary.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Movement/TaskMoveFollowEntityOffset.h"
+-#include "Task/Weapons/Gun/GunFlags.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Task/Weapons/TaskProjectile.h"
+-#include "Task/Weapons/TaskSwapWeapon.h"
+-#include "Vehicles/Vehicle.h"
++#include "Peds/ped.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Combat/Subtasks/TaskShootAtTarget.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/General/TaskBasic.h"
++#include "task/General/TaskSecondary.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Movement/TaskMoveFollowEntityOffset.h"
++#include "task/Weapons/Gun/GunFlags.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/WeaponController.h"
++#include "task/Weapons/TaskProjectile.h"
++#include "task/Weapons/TaskSwapWeapon.h"
++#include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()
+ 

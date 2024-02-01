@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_users_and_devices.cpp b/src/dev_ng/game/SaveLoad/savegame_users_and_devices.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_users_and_devices.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_users_and_devices.cpp
+@@ -8,7 +8,7 @@
+ #include "file/savegame.h"
+ 
+ // Game headers
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "SaveLoad/GenericGameStorage.h"
+ #include "SaveLoad/savegame_users_and_devices.h"
+ 

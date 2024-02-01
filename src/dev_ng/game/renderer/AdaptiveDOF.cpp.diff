@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/AdaptiveDOF.cpp b/src/dev_ng/game/renderer/AdaptiveDOF.cpp
+--- a/src/dev_ng/game/renderer/AdaptiveDOF.cpp
++++ b/src/dev_ng/game/renderer/AdaptiveDOF.cpp
+@@ -18,8 +18,8 @@
+ #include "profile/page.h"
+ 
+ #include "AdaptiveDOF.h"
+-#include "peds/PedIntelligence.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Peds/PedIntelligence.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/DebugScene.h"
+ #include "frontend/Credits.h"
+ #include "renderer/Deferred/GBuffer.h"

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.cpp
+@@ -10,10 +10,10 @@
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "physics/physics.h"
+-#include "Task/Combat/Subtasks/TaskDraggedToSafety.h"
+-#include "Task/Combat/Subtasks/TaskDraggingToSafety.h"
+-#include "Task/Combat/TaskDamageDeath.h"
+-#include "Task/Physics/TaskNMDraggingToSafety.h"
++#include "task/Combat/Subtasks/TaskDraggedToSafety.h"
++#include "task/Combat/Subtasks/TaskDraggingToSafety.h"
++#include "task/Combat/TaskDamageDeath.h"
++#include "task/Physics/TaskNMDraggingToSafety.h"
+ #include "weapons/WeaponDamage.h"
+ 
+ AI_OPTIMISATIONS()

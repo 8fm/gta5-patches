@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/AnimSceneEntity.h b/src/dev_ng/game/animation/AnimScene/AnimSceneEntity.h
+--- a/src/dev_ng/game/animation/AnimScene/AnimSceneEntity.h
++++ b/src/dev_ng/game/animation/AnimScene/AnimSceneEntity.h
+@@ -6,7 +6,7 @@
+ #include "atl/hashstring.h"
+ #include "atl/string.h"
+ #include "data/base.h"
+-#include "physics/debugplayback.h"
++#include "physics/debugPlayback.h"
+ #include "parser/macros.h"
+ #include "script/value.h"
+ #include "script/thread.h"

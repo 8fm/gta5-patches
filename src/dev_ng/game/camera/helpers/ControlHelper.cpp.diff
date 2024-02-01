@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/ControlHelper.cpp b/src/dev_ng/game/camera/helpers/ControlHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/ControlHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/ControlHelper.cpp
+@@ -27,7 +27,7 @@
+ #include "control/replay/replay.h"
+ 
+ // CS: Includes for Haxx targeting code
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "scene/world/GameWorld.h"
+ 
+ CAMERA_OPTIMISATIONS()

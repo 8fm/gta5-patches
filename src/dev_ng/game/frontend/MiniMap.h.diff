@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/frontend/MiniMap.h b/src/dev_ng/game/frontend/MiniMap.h
+--- a/src/dev_ng/game/frontend/MiniMap.h
++++ b/src/dev_ng/game/frontend/MiniMap.h
+@@ -13,14 +13,14 @@
+ // rage
+ #include "grcore/stateblock.h"
+ #include "grcore/viewport.h"
+-#include "Scaleform/scaleform.h"
++#include "scaleform/scaleform.h"
+ 
+ // game
+-#include "Frontend/MiniMapCommon.h"
+-#include "Frontend/MinimapMenuComponent.h"
+-#include "Frontend/MinimapTunables.h"
++#include "frontend/MiniMapCommon.h"
++#include "frontend/MinimapMenuComponent.h"
++#include "frontend/MiniMapTunables.h"
+ #include "frontend/PauseMenu.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ #include "text/TextFile.h"
+ #include "vehicleAi/pathfind.h"
+ 

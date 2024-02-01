@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/CinematicBustedShot.cpp b/src/dev_ng/game/camera/cinematic/shot/CinematicBustedShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/CinematicBustedShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/CinematicBustedShot.cpp
+@@ -7,8 +7,8 @@
+ #include "camera/cinematic/shot/CinematicBustedShot.h"
+ 
+ #include "camera/cinematic/context/CinematicBustedContext.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicBustedShot,0x3B05DD63)
+ 

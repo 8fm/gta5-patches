@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.h b/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.h
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.h
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.h
+@@ -7,7 +7,7 @@
+ #define NETBLENDERHELI_H
+ 
+ // game includes
+-#include "network/objects/prediction/NetBlenderVehicle.h"
++#include "network/Objects/Prediction/NetBlenderVehicle.h"
+ 
+ // ===========================================================================================================================
+ // CHeliBlenderData

@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.cpp b/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.cpp
+@@ -16,17 +16,17 @@
+ #include "rmptfx/ptxeffectrule.h"
+ #include "vfx/ptfx/ptfxwrapper.h"
+ #include "vfx/ptfx/ptfxscript.h"
+-#include "vfx/systems/Vfxscript.h"
++#include "vfx/systems/VfxScript.h"
+ 
+ //Game includes
+-#include "cutscene/cutscenemanagernew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "cutscene/animatedModelEntity.h"
+ #include "cutscene/cutscene_channel.h"
+ #include "renderer/color.h"
+ #include "string/stringhash.h"
+ #include "CutSceneParticleEffectObject.h"
+ #include "cutfile/cutfobject.h"
+-#include "control/replay/effects/ParticleMiscFxPacket.h"
++#include "control/replay/Effects/ParticleMiscFxPacket.h"
+ /////////////////////////////////////////////////////////////////////////////////////
+ 
+ ANIM_OPTIMISATIONS ()

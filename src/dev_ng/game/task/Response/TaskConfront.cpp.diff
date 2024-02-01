@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/TaskConfront.cpp b/src/dev_ng/game/task/Response/TaskConfront.cpp
+--- a/src/dev_ng/game/task/Response/TaskConfront.cpp
++++ b/src/dev_ng/game/task/Response/TaskConfront.cpp
+@@ -2,7 +2,7 @@
+ // CREATED : 4/16/2012
+ 
+ // File header
+-#include "Task/Response/TaskConfront.h"
++#include "task/Response/TaskConfront.h"
+ 
+ // Game headers
+ #include "ai/ambient/ConditionalAnimManager.h"

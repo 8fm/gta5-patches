@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/MountableContent.cpp b/src/dev_ng/game/scene/MountableContent.cpp
+--- a/src/dev_ng/game/scene/MountableContent.cpp
++++ b/src/dev_ng/game/scene/MountableContent.cpp
+@@ -10,7 +10,7 @@
+ #include "file/asset.h"
+ #include "file/device.h"
+ #include "file/device_relative.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ #include "scene/DataFileMgr.h"
+ #include "scene/dlc_channel.h"
+ #include "script/streamedscripts.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/ModelInfo.h b/src/dev_ng/game/modelinfo/ModelInfo.h
+--- a/src/dev_ng/game/modelinfo/ModelInfo.h
++++ b/src/dev_ng/game/modelinfo/ModelInfo.h
+@@ -19,7 +19,7 @@
+ // Game headers
+ #include "debug/Debug.h"
+ #include "modelinfo/BaseModelInfo.h"
+-#include "scene/2deffect.h"
++#include "scene/2dEffect.h"
+ #include "templates/StaticStore.h"
+ 
+ #define DEBUGINFO_2DFX 0

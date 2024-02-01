@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/WeaponFactory.h b/src/dev_ng/game/weapons/WeaponFactory.h
+--- a/src/dev_ng/game/weapons/WeaponFactory.h
++++ b/src/dev_ng/game/weapons/WeaponFactory.h
+@@ -2,7 +2,7 @@
+ #define WEAPON_FACTORY_H
+ 
+ // Game headers
+-#include "Weapons/Weapon.h"
++#include "weapons/Weapon.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // WeaponFactory

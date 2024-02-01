@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.h b/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.h
+@@ -2,7 +2,7 @@
+ #define TASK_FLIGHTLESS_BIRD_LOCOMOTION_H
+ 
+ #include "Peds/ped.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ //*********************************************************************
+ //	CTaskFlightlessBirdLocomotion
+ //	The top-level motion task for the on-foot moveblender for a flightless bird. 

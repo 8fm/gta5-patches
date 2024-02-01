@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskCrawl.cpp b/src/dev_ng/game/task/Movement/TaskCrawl.cpp
+--- a/src/dev_ng/game/task/Movement/TaskCrawl.cpp
++++ b/src/dev_ng/game/task/Movement/TaskCrawl.cpp
+@@ -3,7 +3,7 @@
+ //
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "Task/movement/TaskCrawl.h"
++#include "task/Movement/TaskCrawl.h"
+ 
+ // C headers
+ // Rage headers
+@@ -11,14 +11,14 @@
+ // Framework headers
+ 
+ // Game headers
+-#include "Animation/MovePed.h"
+-#include "Event/Event.h"
+-#include "IK/Solvers/RootSlopeFixupSolver.h"
+-#include "Peds/Ped.h"
++#include "animation/MovePed.h"
++#include "event/Event.h"
++#include "ik/Solvers/RootSlopeFixupSolver.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
+-#include "Task/Physics/TaskNM.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Physics/TaskNM.h"
+ 
+ AI_OPTIMISATIONS()
+ NETWORK_OPTIMISATIONS()

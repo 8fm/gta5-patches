@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/control/trafficlights.h b/src/dev_ng/game/control/trafficlights.h
 --- a/src/dev_ng/game/control/trafficlights.h
 +++ b/src/dev_ng/game/control/trafficlights.h
-@@ -14,7 +14,7 @@
+@@ -12,9 +12,9 @@
+ #ifndef _TRAFFICLIGHTS_H_
+ #define _TRAFFICLIGHTS_H_
  
- #include "vehicles/automobile.h"
+-#include "vehicles/automobile.h"
++#include "Vehicles/Automobile.h"
  #include "modelinfo/BaseModelInfoExtensions.h"
 -#include "vehicleAi\junctions.h"
 +#include "vehicleAi/junctions.h"

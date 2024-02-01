@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/AnimSceneEditor.cpp b/src/dev_ng/game/animation/AnimScene/AnimSceneEditor.cpp
+--- a/src/dev_ng/game/animation/AnimScene/AnimSceneEditor.cpp
++++ b/src/dev_ng/game/animation/AnimScene/AnimSceneEditor.cpp
+@@ -16,18 +16,18 @@
+ // game headers
+ #include "animation/AnimScene/AnimScene.h"
+ #include "animation/AnimScene/AnimSceneManager.h"
+-#include "animation/animscene/entities/AnimSceneEntities.h"
++#include "animation/AnimScene/entities/AnimSceneEntities.h"
+ #include "animation/AnimScene/entities/AnimSceneEntityInitialisers.h"
+ #include "animation/AnimScene/events/AnimScenePlayAnimEvent.h"
+ #include "animation/AnimScene/events/AnimScenePlayCameraAnimEvent.h"
+ #include "animation/AnimScene/events/AnimSceneEventInitialisers.h"
+ #include "AnimSceneScrollbar.h"
+ #include "animation/debug/AnimDebug.h"
+-#include "peds/ped.h"
+-#include "scene/physical.h"
++#include "Peds/ped.h"
++#include "scene/Physical.h"
+ #include "system/controlMgr.h"
+ #include "debug/DebugScene.h"
+-#include "text/Text.h"
++#include "text/text.h"
+ 
+ ANIM_OPTIMISATIONS()
+ 

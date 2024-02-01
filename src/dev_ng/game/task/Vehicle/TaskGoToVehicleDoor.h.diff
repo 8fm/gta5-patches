@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskGoToVehicleDoor.h b/src/dev_ng/game/task/Vehicle/TaskGoToVehicleDoor.h
+--- a/src/dev_ng/game/task/Vehicle/TaskGoToVehicleDoor.h
++++ b/src/dev_ng/game/task/Vehicle/TaskGoToVehicleDoor.h
+@@ -11,12 +11,12 @@
+ // Rage includes
+ 
+ // R*N includes
+-#include "Control/Route.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/TaskHelpers.h"
++#include "control/Route.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskHelpers.h"
+ // Forwards Declarations
+ class CPed;
+ class CVehicle;

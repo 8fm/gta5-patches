@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/LookAheadHelper.cpp b/src/dev_ng/game/camera/helpers/LookAheadHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/LookAheadHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/LookAheadHelper.cpp
+@@ -12,7 +12,7 @@
+ 
+ #include "grcore/debugdraw.h"
+ #include "scene/Physical.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

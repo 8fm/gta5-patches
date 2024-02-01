@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/script/commands_clock.cpp b/src/dev_ng/game/script/
 -#include "script\script.h"
 -#include "script\script_helper.h"
 -#include "stats\StatsInterface.h"
-+#include "game/clock.h"
++#include "game/Clock.h"
 +#include "network/NetworkInterface.h"
 +#include "script/script.h"
 +#include "script/script_helper.h"

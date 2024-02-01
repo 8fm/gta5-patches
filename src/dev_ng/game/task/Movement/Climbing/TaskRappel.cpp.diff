@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskRappel.cpp b/src/dev_ng/game/task/Movement/Climbing/TaskRappel.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskRappel.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskRappel.cpp
+@@ -3,7 +3,7 @@
+ // CREATED : 18-10-2011
+ 
+ // File header
+-#include "Task/Movement/Climbing/TaskRappel.h"
++#include "task/Movement/Climbing/TaskRappel.h"
+ 
+ // Rage headers
+ #include "profile/profiler.h"
+@@ -18,13 +18,13 @@
+ #include "event/EventShocking.h"
+ #include "event/ShockingEvents.h"
+ #include "fwpheffects/ropemanager.h"
+-#include "game/dispatch/Orders.h"
+-#include "Peds/Ped.h"
++#include "game/Dispatch/Orders.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "physics/physics.h"
+-#include "system/controlmgr.h"
+-#include "Task/Physics/TaskNMHighFall.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
++#include "system/controlMgr.h"
++#include "task/Physics/TaskNMHighFall.h"
++#include "task/Vehicle/TaskExitVehicle.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/Heli.h"
+ 

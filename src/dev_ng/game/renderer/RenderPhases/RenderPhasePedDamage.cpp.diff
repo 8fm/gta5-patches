@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhasePedDamage.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhasePedDamage.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhasePedDamage.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhasePedDamage.cpp
+@@ -13,7 +13,7 @@
+ #include "Peds/rendering/PedDamage.h"   
+ #include "renderer/renderListGroup.h"
+ #include "renderer/RenderListBuilder.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ 
+ #include "Peds/rendering/PedOverlay.h"
+ 

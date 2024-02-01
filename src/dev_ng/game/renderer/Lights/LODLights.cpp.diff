@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/renderer/Lights/LODLights.cpp b/src/dev_ng/game/renderer/Lights/LODLights.cpp
+--- a/src/dev_ng/game/renderer/Lights/LODLights.cpp
++++ b/src/dev_ng/game/renderer/Lights/LODLights.cpp
+@@ -12,13 +12,13 @@
+ #include "system/dependencyscheduler.h"
+ 
+ // game headers
+-#include "Renderer/Lights/LODLights.h"
+-#include "Renderer/Deferred/DeferredLighting.h"
+-#include "Renderer/ProcessLodLightVisibility.h"
+-#include "Renderer/sprite2d.h"
+-#include "Renderer/Water.h"
+-#include "Renderer/RenderPhases/RenderPhase.h"
+-#include "Renderer/RenderPhases/RenderPhaseWaterReflection.h"
++#include "renderer/Lights/LODLights.h"
++#include "renderer/Deferred/DeferredLighting.h"
++#include "renderer/ProcessLodLightVisibility.h"
++#include "renderer/sprite2d.h"
++#include "renderer/Water.h"
++#include "renderer/RenderPhases/RenderPhase.h"
++#include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
+ #include "camera/CamInterface.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+ #include "debug/rendering/DebugLighting.h"
+@@ -34,7 +34,7 @@
+ #include "fwscene/scan/Scan.h"
+ #include "fwsys/gameskeleton.h"
+ #include "fwsys/timer.h"
+-#include "Renderer/Renderer.h"
++#include "renderer/Renderer.h"
+ #include "renderer/Occlusion.h"
+ #include "renderer/Util/ShaderUtil.h"
+ #include "renderer/Util/Util.h"

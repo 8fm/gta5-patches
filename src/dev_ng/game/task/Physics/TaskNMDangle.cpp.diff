@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMDangle.cpp b/src/dev_ng/game/task/Physics/TaskNMDangle.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMDangle.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMDangle.cpp
-@@ -6,12 +6,12 @@
+@@ -6,15 +6,15 @@
  
  // C headers
  // Rage headers
@@ -19,13 +19,23 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMDangle.cpp b/src/dev_ng/game/tas
 +#include "fragmentnm/messageparams.h"
  #include "pharticulated/articulatedcollider.h"
  #include "physics/shapetest.h"
- #include "Physics/constrainthinge.h"
-@@ -22,7 +22,7 @@
+-#include "Physics/constrainthinge.h"
++#include "physics/constrainthinge.h"
+ #include "physics/simulator.h"
+ #include "phbound/boundcomposite.h"
+ 
+@@ -22,10 +22,10 @@
  #include "grcore/debugdraw.h"
  
  // Game headers
 -#include "Peds\Ped.h"
-+#include "Peds/Ped.h"
- #include "Task/Physics/NmDebug.h"
- #include "Task/Physics/TaskNMDangle.h"
- #include "Physics/physics.h"
+-#include "Task/Physics/NmDebug.h"
+-#include "Task/Physics/TaskNMDangle.h"
+-#include "Physics/physics.h"
++#include "Peds/ped.h"
++#include "task/Physics/NmDebug.h"
++#include "task/Physics/TaskNMDangle.h"
++#include "physics/physics.h"
+ #include "physics/RagdollConstraints.h"
+ 
+ AI_OPTIMISATIONS()

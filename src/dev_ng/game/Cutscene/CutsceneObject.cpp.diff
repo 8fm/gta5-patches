@@ -1,0 +1,43 @@
+diff --git a/src/dev_ng/game/Cutscene/CutsceneObject.cpp b/src/dev_ng/game/Cutscene/CutsceneObject.cpp
+--- a/src/dev_ng/game/Cutscene/CutsceneObject.cpp
++++ b/src/dev_ng/game/Cutscene/CutsceneObject.cpp
+@@ -13,29 +13,29 @@
+ 
+ // game includes:
+ #include "animation/debug/AnimViewer.h"
+-#include "cutscene/CutSceneManagerNew.h"		//look to remove
++#include "Cutscene/CutSceneManagerNew.h"		//look to remove
+ #include "CutsceneObject.h"
+-#include "Cutscene/CutSceneAnimation.h"
++#include "cutscene/CutSceneAnimation.h"
+ #include "cutscene/AnimatedModelEntity.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "game/weather.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "Peds/Ped.h"
+-#include "peds/PedHelmetComponent.h"
+-#include "peds/rendering/PedVariationStream.h"
++#include "Peds/ped.h"
++#include "Peds/PedHelmetComponent.h"
++#include "Peds/rendering/PedVariationStream.h"
+ #include "physics/gtaInst.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+ #include "renderer/Entities/CutSceneDrawHandler.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "scene/DynamicEntity.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "shaders/CustomShaderEffectPed.h"
+-#include "TimeCycle/TimeCycleConfig.h"
++#include "timecycle/TimeCycleConfig.h"
+ #include "debug/DebugScene.h"
+ 
+ //channel
+-#include "Cutscene/cutscene_channel.h"
++#include "cutscene/cutscene_channel.h"
+ 
+ /////////////////////////////////////////////////////////////////////////////////
+ 

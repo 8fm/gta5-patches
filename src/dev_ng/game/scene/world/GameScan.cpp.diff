@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/scene/world/GameScan.cpp b/src/dev_ng/game/scene/world/GameScan.cpp
+--- a/src/dev_ng/game/scene/world/GameScan.cpp
++++ b/src/dev_ng/game/scene/world/GameScan.cpp
+@@ -5,16 +5,16 @@
+ #include "fwscene/world/SceneGraphVisitor.h"
+ #include "system/spinlockedobject.h"
+ 
+-#include "camera/camInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/base/basecamera.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/debug/DebugDirector.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/GtaPicker.h"
+ #include "debug/TiledScreenCapture.h"
+ #include "input/mouse.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/PostScan.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/RenderPhases/RenderPhaseDefLight.h"

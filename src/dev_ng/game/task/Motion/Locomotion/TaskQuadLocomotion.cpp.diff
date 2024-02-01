@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskQuadLocomotion.cpp
+@@ -8,11 +8,11 @@
+ #include "math/angmath.h"
+ #include "fwmaths/random.h"
+ 
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "animation/MovePed.h"
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "Event/EventShocking.h"
+-#include "Event/ShockingEvents.h"
++#include "event/EventShocking.h"
++#include "event/ShockingEvents.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedMotionData.h"
+@@ -21,11 +21,11 @@
+ #include "physics/WorldProbe/WorldProbe.h"
+ #include "physics/WorldProbe/shapetestcapsuledesc.h"
+ #include "physics/WorldProbe/shapetestresults.h"
+-#include "Task/Motion/Locomotion/TaskLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/System/MotionTaskData.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Movement/TaskGotoPoint.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/System/MotionTaskData.h"
+ 
+ AI_OPTIMISATIONS()
+ 

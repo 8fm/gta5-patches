@@ -1,9 +1,17 @@
 diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp
 --- a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp
 +++ b/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp
-@@ -6,15 +6,15 @@
- #include "Camera/CamInterface.h"
- #include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
+@@ -1,25 +1,25 @@
+ #include "TaskInWater.h"
+ 
+-#include "Animation/AnimManager.h"
++#include "animation/AnimManager.h"
+ #include "animation/Move.h"
+ #include "camera/base/BaseCamera.h"
+-#include "Camera/CamInterface.h"
+-#include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
++#include "camera/CamInterface.h"
++#include "camera/Gameplay/Aim/FirstPersonShooterCamera.h"
  #include "camera/gameplay/GameplayDirector.h"
 -#include "control\replay\replay.h"
 -#include "debug\DebugScene.h"
@@ -16,9 +24,19 @@ diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp b/src/dev_ng
 -#include "renderer\Water.h"
 -#include "task\Default\TaskPlayer.h"
 -#include "task\Motion\Locomotion\TaskHumanLocomotion.h"
+-#include "Task/Movement/TaskIdle.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNMHighFall.h"
+-#include "Task/Physics/TaskNMRiverRapids.h"
+-#include "task/motion/Locomotion/TaskMotionPed.h"
 +#include "renderer/Water.h"
 +#include "task/Default/TaskPlayer.h"
 +#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
- #include "Task/Movement/TaskIdle.h"
- #include "Task/Physics/TaskNM.h"
- #include "Task/Physics/TaskNMHighFall.h"
++#include "task/Movement/TaskIdle.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/TaskNMHighFall.h"
++#include "task/Physics/TaskNMRiverRapids.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
+ #include "task/System/MotionTaskData.h"
+ 
+ AI_OPTIMISATIONS()

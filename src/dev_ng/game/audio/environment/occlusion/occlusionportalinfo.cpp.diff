@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/environment/occlusion/occlusionportalinfo.cpp b/src/dev_ng/game/audio/environment/occlusion/occlusionportalinfo.cpp
+--- a/src/dev_ng/game/audio/environment/occlusion/occlusionportalinfo.cpp
++++ b/src/dev_ng/game/audio/environment/occlusion/occlusionportalinfo.cpp
+@@ -11,7 +11,7 @@
+ 
+ #include "camera/CamInterface.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "Objects/door.h"
++#include "Objects/Door.h"
+ 
+ #include "fwscene/stores/mapdatastore.h"
+ #include "control/replay/Audio/AmbientAudioPacket.h"

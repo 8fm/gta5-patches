@@ -1,20 +1,37 @@
 diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.h b/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.h
 --- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.h
 +++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.h
-@@ -6,11 +6,11 @@
- #include "Task/System/Task.h"
- #include "Task/System/TaskComplex.h"
- #include "Task/System/TaskHelpers.h"
+@@ -2,15 +2,15 @@
+ #define TASK_VEHICLE_PLAYER_H
+ 
+ // Gta headers.
+-#include "Renderer/HierarchyIds.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskComplex.h"
+-#include "Task/System/TaskHelpers.h"
 -#include "Task\System\TaskTypes.h"
 -#include "VehicleAi\racingline.h"
 -#include "VehicleAi\VehMission.h"
 -#include "VehicleAi\task\TaskVehicleMissionBase.h"
 -#include "modelinfo\PedModelInfo.h"
-+#include "Task/System/TaskTypes.h"
-+#include "VehicleAi/racingline.h"
-+#include "VehicleAi/VehMission.h"
-+#include "VehicleAi/task/TaskVehicleMissionBase.h"
++#include "renderer/HierarchyIds.h"
++#include "task/System/Task.h"
++#include "task/System/TaskComplex.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskTypes.h"
++#include "vehicleAi/racingline.h"
++#include "vehicleAi/VehMission.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
 +#include "modelinfo/PedModelInfo.h"
  
  class CVehicle;
  class CVehControls;
+@@ -24,7 +24,7 @@ class CHeli;
+ class CRotaryWingAircraft;
+ 
+ //Rage headers.
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ #include "vector/vector2.h"
+ 
+ //

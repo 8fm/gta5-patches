@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/html/htmlrenderphase.h b/src/dev_ng/game/frontend/html/htmlrenderphase.h
+--- a/src/dev_ng/game/frontend/html/htmlrenderphase.h
++++ b/src/dev_ng/game/frontend/html/htmlrenderphase.h
+@@ -13,8 +13,8 @@
+ // Game headers
+ //#include "HtmlDocument.h"
+ #include "HtmlRenderer.h"
+-//#include "debug/debug.h"
+-#include "renderer/RenderPhases/renderphase.h"
++//#include "debug/Debug.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

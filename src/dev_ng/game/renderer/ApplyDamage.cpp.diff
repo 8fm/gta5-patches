@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/renderer/ApplyDamage.cpp b/src/dev_ng/game/renderer/ApplyDamage.cpp
+--- a/src/dev_ng/game/renderer/ApplyDamage.cpp
++++ b/src/dev_ng/game/renderer/ApplyDamage.cpp
+@@ -50,12 +50,12 @@
+ #include "Peds/ped.h"
+ #include "pickups/Pickup.h"
+ #include "Vehicles/vehicle.h"
+-#include "Renderer/Util/ShaderUtil.h"
+-#include "Renderer/sprite2d.h"
++#include "renderer/Util/ShaderUtil.h"
++#include "renderer/sprite2d.h"
+ #include "system/system.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehicleDamage.h"
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehicleDamage.h"
++#include "Vehicles/VehicleFactory.h"
+ #include "control/replay/ReplayExtensions.h"
+ 
+ #if __XENON

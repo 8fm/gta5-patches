@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/script/commands_lobby.cpp b/src/dev_ng/game/script/commands_lobby.cpp
+--- a/src/dev_ng/game/script/commands_lobby.cpp
++++ b/src/dev_ng/game/script/commands_lobby.cpp
+@@ -5,11 +5,11 @@
+ 
+ // Game headers
+ #include "network/NetworkInterface.h"
+-#include "Network/players/NetworkPlayerMgr.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "scene/world/GameWorld.h"
+-#include "script/Script.h"
++#include "script/script.h"
+ 
+ SCRIPT_OPTIMISATIONS()
+ 

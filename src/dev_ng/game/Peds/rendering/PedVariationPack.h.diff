@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedVariationPack.h b/src/dev_ng/game
  #include "modelinfo/PedModelInfo.h"
  #include "scene/RegdRefTypes.h"
 -#include "peds\rendering\pedVariationDS.h"
-+#include "peds/rendering/pedVariationDS.h"
++#include "Peds/rendering/PedVariationDS.h"
  
  #define DIFF_TEX_NAME_LEN (20)
  

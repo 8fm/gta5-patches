@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/frontend/InfoMenu.cpp b/src/dev_ng/game/frontend/InfoMenu.cpp
+--- a/src/dev_ng/game/frontend/InfoMenu.cpp
++++ b/src/dev_ng/game/frontend/InfoMenu.cpp
+@@ -1,18 +1,18 @@
+ // game
+-#include "Frontend/InfoMenu.h"
+-
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ScaleformMenuHelper.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/ButtonEnum.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/GameStream.h"
+-#include "Frontend/GameStreamMgr.h"
+-#include "Text/TextConversion.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Network/SocialClubServices/SocialClubNewsStoryMgr.h"
++#include "frontend/InfoMenu.h"
++
++#include "frontend/PauseMenu.h"
++#include "frontend/ScaleformMenuHelper.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/ButtonEnum.h"
++#include "frontend/ui_channel.h"
++#include "frontend/GameStream.h"
++#include "frontend/GameStreamMgr.h"
++#include "text/TextConversion.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkClan.h"
++#include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+ #include "streaming/streaming.h"
+ #include "frontend/MousePointer.h"
+ 

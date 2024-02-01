@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/streamer/SceneStreamer.cpp b/src/dev_ng/game/scene/streamer/SceneStreamer.cpp
+--- a/src/dev_ng/game/scene/streamer/SceneStreamer.cpp
++++ b/src/dev_ng/game/scene/streamer/SceneStreamer.cpp
+@@ -18,7 +18,7 @@
+ #include "scene/portals/PortalTracker.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingvisualize.h"
+-#include "Renderer/RenderPhases/RenderPhase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ #include "scene/LoadScene.h"
+ #include "scene/portals/PortalTracker.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"

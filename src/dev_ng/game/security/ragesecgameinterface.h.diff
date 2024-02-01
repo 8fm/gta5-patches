@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/security/ragesecgameinterface.h b/src/dev_ng/game/security/ragesecgameinterface.h
+--- a/src/dev_ng/game/security/ragesecgameinterface.h
++++ b/src/dev_ng/game/security/ragesecgameinterface.h
+@@ -3,13 +3,13 @@
+ 
+ #include "security/ragesecengine.h"
+ #include "security/ragesecpluginmanager.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/General/NetworkAssetVerifier.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/General/NetworkAssetVerifier.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
+ #if RSG_PC
+-#include "Network/Shop/NetworkShopping.h"
++#include "network/Shop/NetworkShopping.h"
+ #endif
+ 
+ RAGE_DECLARE_CHANNEL(rageSecGame)

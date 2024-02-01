@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.cpp
+@@ -4,13 +4,13 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/network.h"
+-#include "network/general/NetworkStreamingRequestManager.h"
+-#include "network/objects/entities/NetObjVehicle.h"
+-#include "network/objects/synchronisation/syncnodes/VehicleSyncNodes.h"
++#include "network/Network.h"
++#include "network/General/NetworkStreamingRequestManager.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
+ #include "streaming/streaming.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+-#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
+ #include "vfx/vehicleglass/VehicleGlassComponent.h"
+ 
+ NETWORK_OPTIMISATIONS()

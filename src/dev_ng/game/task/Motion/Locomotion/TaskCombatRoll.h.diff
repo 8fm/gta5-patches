@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.h b/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.h
+@@ -2,7 +2,7 @@
+ #define TASK_COMBAT_ROLL_H
+ 
+ // Game headers
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CTaskCombatRoll

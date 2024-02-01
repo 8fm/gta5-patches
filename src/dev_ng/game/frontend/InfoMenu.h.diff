@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/InfoMenu.h b/src/dev_ng/game/frontend/InfoMenu.h
+--- a/src/dev_ng/game/frontend/InfoMenu.h
++++ b/src/dev_ng/game/frontend/InfoMenu.h
+@@ -4,7 +4,7 @@
+ #include "CMenuBase.h"
+ #include "text/messages.h"
+ #include "GameStream.h"
+-#include "Network/SocialClubServices/SocialClubNewsStoryMgr.h"
++#include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+ 
+ class CInfoMenu : public CMenuBase
+ {

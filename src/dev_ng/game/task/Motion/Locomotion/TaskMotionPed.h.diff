@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.h
+@@ -7,7 +7,7 @@
+ #ifndef TASK_MOTION_PED_H
+ #define TASK_MOTION_PED_H
+ 
+-#include "task/motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ #include "task/Motion/Locomotion/TaskLocomotion.h"
+ 
+ class CTaskHumanLocomotion;

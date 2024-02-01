@@ -1,12 +1,16 @@
 diff --git a/src/dev_ng/game/control/Route.h b/src/dev_ng/game/control/Route.h
 --- a/src/dev_ng/game/control/Route.h
 +++ b/src/dev_ng/game/control/Route.h
-@@ -19,7 +19,7 @@
+@@ -17,9 +17,9 @@
+ //#include "fwmaths/Maths.h"
+ 
  // Game headers
- #include "vehicleAi/pathFind.h"
- #include "debug/debug.h"
+-#include "vehicleAi/pathFind.h"
+-#include "debug/debug.h"
 -#include "Task\Animation/TaskAnims.h"
-+#include "Task/Animation/TaskAnims.h"
++#include "vehicleAi/pathfind.h"
++#include "debug/Debug.h"
++#include "task/Animation/TaskAnims.h"
  
  // Used to store dictionary name and anim name from script commands.
  class CAnimNameDescriptor

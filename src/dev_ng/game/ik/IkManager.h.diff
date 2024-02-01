@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/ik/IkManager.h b/src/dev_ng/game/ik/IkManager.h
+--- a/src/dev_ng/game/ik/IkManager.h
++++ b/src/dev_ng/game/ik/IkManager.h
+@@ -30,14 +30,14 @@
+ #include "vector/vector3.h"
+ 
+ // Game headers
+-#include "Animation/AnimBones.h"
++#include "animation/AnimBones.h"
+ #include "ik/solvers/ArmIkSolver.h"
+-#include "IKManagerSolverTypes.h"
++#include "IkManagerSolverTypes.h"
+ #include "crbody/iksolver.h"
+ #include "Peds/pedDefines.h"
+ 
+ #if __IK_DEV
+-#include "Animation/debug/AnimDebug.h"
++#include "animation/debug/AnimDebug.h"
+ #endif // __IK_DEV
+ 
+ #define IK_DEBUG_VERBOSE (0 && __IK_DEV )

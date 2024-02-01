@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.h b/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.h
+--- a/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.h
++++ b/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.h
+@@ -1,7 +1,7 @@
+ #ifndef SAVEMIGRATION_MULTIPLAYER_H
+ #define SAVEMIGRATION_MULTIPLAYER_H
+ 
+-#include "savemigration_common.h"
++#include "SaveMigration_common.h"
+ 
+ // Base
+ #include "atl/string.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/text/PagedText.cpp b/src/dev_ng/game/text/PagedText.cpp
+--- a/src/dev_ng/game/text/PagedText.cpp
++++ b/src/dev_ng/game/text/PagedText.cpp
+@@ -15,7 +15,7 @@
+ #include "streaming/streamingengine.h"
+ 
+ // game
+-#include "Text/PagedText.h"
++#include "text/PagedText.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ 
+ NETWORK_OPTIMISATIONS()

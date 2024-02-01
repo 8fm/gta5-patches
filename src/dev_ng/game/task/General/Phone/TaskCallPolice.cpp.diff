@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/General/Phone/TaskCallPolice.cpp b/src/dev_ng/game/task/General/Phone/TaskCallPolice.cpp
+--- a/src/dev_ng/game/task/General/Phone/TaskCallPolice.cpp
++++ b/src/dev_ng/game/task/General/Phone/TaskCallPolice.cpp
+@@ -8,8 +8,8 @@
+ #include "audio/speechaudioentity.h"
+ #include "game/WitnessInformation.h"
+ #include "game/Wanted.h"
+-#include "Peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/world/GameWorld.h"
+ #include "task/Default/AmbientAudio.h"
+ #include "task/General/Phone/TaskMobilePhone.h"

@@ -1,0 +1,56 @@
+diff --git a/src/dev_ng/game/scene/portals/PortalTracker.cpp b/src/dev_ng/game/scene/portals/PortalTracker.cpp
+--- a/src/dev_ng/game/scene/portals/PortalTracker.cpp
++++ b/src/dev_ng/game/scene/portals/PortalTracker.cpp
+@@ -6,7 +6,7 @@
+ ////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+-#include "scene/portals/portalTracker.h"
++#include "scene/portals/PortalTracker.h"
+ 
+ 
+ // Rage headers
+@@ -22,32 +22,32 @@
+ #include "camera/replay/ReplayFreeCamera.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/replay/replay.h"
+-#include "modelInfo/MLOmodelInfo.h"
+-#include "network/general/NetworkUtil.h"
+-#include "objects/object.h"
+-#include "objects/DummyObject.h"
++#include "modelinfo/MLOmodelInfo.h"
++#include "network/General/NetworkUtil.h"
++#include "Objects/object.h"
++#include "Objects/DummyObject.h"
+ #include "pathserver/ExportCollision.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "physics/gtaInst.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "scene/scene_channel.h"
+ #include "scene/portals/InteriorInst.h"
+ #include "scene/portals/Portal.h"
+-#include "scene/portals/portalInst.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/portals/PortalInst.h"
++#include "scene/world/GameWorld.h"
+ #include "fwdebug/picker.h"
+ #include "fwscene/search/SearchVolumes.h"
+ #include "streaming/streaming.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "weapons/projectiles/Projectile.h"
+ 
+ #if __BANK
+ #include "fwscene/scan/ScanNodesDebug.h"
+-#include "peds/PedDebugVisualiser.h"
++#include "Peds/PedDebugVisualiser.h"
+ #include "system/stack_collector.h"
+ #include "renderer/Debug/EntitySelect.h"
+-//#include "Renderer/font.h"
++//#include "renderer/font.h"
+ 
+ extern bool bShowPortalTrackerSafeZoneSpheres;
+ extern bool bShowPortalTrackerSafeZoneSphereForSelected;

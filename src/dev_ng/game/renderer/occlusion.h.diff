@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/occlusion.h b/src/dev_ng/game/renderer/occlusion.h
+--- a/src/dev_ng/game/renderer/occlusion.h
++++ b/src/dev_ng/game/renderer/occlusion.h
+@@ -18,7 +18,7 @@
+ #include "softrasterizer/softrasterizer.h"
+ #include "spatialdata/aabb.h"
+ 
+-#include "Camera/viewports/ViewportManager.h"
++#include "camera/viewports/ViewportManager.h"
+ 
+ namespace rage {
+ 	// fwd ref

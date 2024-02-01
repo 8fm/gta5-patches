@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskVehicleBase.h b/src/dev_ng/game/task/Vehicle/TaskVehicleBase.h
+--- a/src/dev_ng/game/task/Vehicle/TaskVehicleBase.h
++++ b/src/dev_ng/game/task/Vehicle/TaskVehicleBase.h
+@@ -13,11 +13,11 @@
+ 
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "network/General/NetworkUtil.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskTypes.h"
+ #include "Vehicles/Metadata/VehicleDebug.h"
+ #include "Vehicles/Metadata/VehicleEnterExitFlags.h"
+ #include "Vehicles/Metadata/VehicleEntryPointInfo.h"

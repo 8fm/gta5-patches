@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/timecycle/TimeCycleConfig.h b/src/dev_ng/game/timecycle/TimeCycleConfig.h
+--- a/src/dev_ng/game/timecycle/TimeCycleConfig.h
++++ b/src/dev_ng/game/timecycle/TimeCycleConfig.h
+@@ -23,8 +23,8 @@
+ #include "math/amath.h"
+ 
+ // game
+-#include "System/FileMgr.h"
+-#include "Vehicles/VehicleLightSwitch.h"
++#include "system/FileMgr.h"
++#include "Vehicles/vehicleLightSwitch.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

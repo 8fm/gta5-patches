@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/Markers.h b/src/dev_ng/game/vfx/misc/Markers.h
+--- a/src/dev_ng/game/vfx/misc/Markers.h
++++ b/src/dev_ng/game/vfx/misc/Markers.h
+@@ -26,7 +26,7 @@
+ #include "grmodel/shadergroupvar.h"
+ 
+ // game
+-#include "Renderer/Color.h"
++#include "renderer/color.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

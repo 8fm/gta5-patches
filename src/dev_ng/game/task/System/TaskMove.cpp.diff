@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/System/TaskMove.cpp b/src/dev_ng/game/task/System/TaskMove.cpp
+--- a/src/dev_ng/game/task/System/TaskMove.cpp
++++ b/src/dev_ng/game/task/System/TaskMove.cpp
+@@ -1,13 +1,13 @@
+ // File header
+-#include "Camera/CamInterface.h"
+-#include "Peds/Ped.h"
++#include "camera/CamInterface.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendBase.h"
+ #include "Math/angmath.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/Vehicle/TaskRideHorse.h"
+-#include "System/Control.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/System/TaskMove.h"
++#include "task/Vehicle/TaskRideHorse.h"
++#include "system/Control.h"
+ 
+ AI_OPTIMISATIONS()
+ 

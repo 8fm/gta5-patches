@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/debug/DebugAnimation.cpp b/src/dev_ng/game/debug/DebugAnimation.cpp
+--- a/src/dev_ng/game/debug/DebugAnimation.cpp
++++ b/src/dev_ng/game/debug/DebugAnimation.cpp
+@@ -7,9 +7,9 @@
+ #include "move/move_network.h"
+ #include "move/move_statedef.h"
+ #include "move/move_types_internal.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "physics/debugEvents.h"
+-#include "physics/debugplayback.h"
++#include "physics/debugPlayback.h"
+ #include "scene/Entity.h"
+ #include "system/timemgr.h"
+ 

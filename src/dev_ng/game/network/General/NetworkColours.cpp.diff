@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/General/NetworkColours.cpp b/src/dev_ng/game/network/General/NetworkColours.cpp
+--- a/src/dev_ng/game/network/General/NetworkColours.cpp
++++ b/src/dev_ng/game/network/General/NetworkColours.cpp
+@@ -8,8 +8,8 @@
+ #include "NetworkColours.h"
+ 
+ #include "frontend/hud_colour.h"
+-#include "frontend/minimap.h"
+-#include "network/network.h"
++#include "frontend/MiniMap.h"
++#include "network/Network.h"
+ 
+ #include "bank/bank.h"
+ 

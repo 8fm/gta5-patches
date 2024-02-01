@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/NavCapabilities.h b/src/dev_ng/game/Peds/NavCapabilities.h
+--- a/src/dev_ng/game/Peds/NavCapabilities.h
++++ b/src/dev_ng/game/Peds/NavCapabilities.h
+@@ -7,7 +7,7 @@
+ 
+ #include "atl/array.h"
+ #include "atl/hashstring.h"
+-#include "fwutil/flags.h" //fwFlags
++#include "fwutil/Flags.h" //fwFlags
+ #include "parser/macros.h"
+ #include "system/bit.h"
+ 

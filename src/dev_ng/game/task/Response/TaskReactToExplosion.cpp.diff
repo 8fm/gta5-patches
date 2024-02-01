@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Response/TaskReactToExplosion.cpp b/src/dev_ng/game/task/Response/TaskReactToExplosion.cpp
+--- a/src/dev_ng/game/task/Response/TaskReactToExplosion.cpp
++++ b/src/dev_ng/game/task/Response/TaskReactToExplosion.cpp
+@@ -2,18 +2,18 @@
+ // CREATED : 11-4-2011
+ 
+ // File header
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskThreatResponse.h"
+ #include "task/Combat/Cover/TaskCover.h"
+-#include "Task/Combat/Subtasks/TaskReactToBuddyShot.h"
+-#include "Task/Combat/Subtasks/TaskShellShocked.h"
+-#include "Task/Combat/Subtasks/TaskVariedAimPose.h"
+-#include "Task/Movement/TaskCollisionResponse.h"
++#include "task/Combat/Subtasks/TaskReactToBuddyShot.h"
++#include "task/Combat/Subtasks/TaskShellShocked.h"
++#include "task/Combat/Subtasks/TaskVariedAimPose.h"
++#include "task/Movement/TaskCollisionResponse.h"
+ #include "task/Response/TaskFlee.h"
+ #include "task/Response/TaskReactAndFlee.h"
+-#include "Task/Response/TaskReactToExplosion.h"
++#include "task/Response/TaskReactToExplosion.h"
+ 
+ AI_OPTIMISATIONS()
+ NETWORK_OPTIMISATIONS()

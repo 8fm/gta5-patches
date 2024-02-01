@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.h b/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.h
+--- a/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.h
++++ b/src/dev_ng/game/network/General/ScriptWorldState/NetworkScriptWorldStateManager.h
+@@ -12,7 +12,7 @@
+ #ifndef NETWORK_SCRIPT_WORLD_STATE_MANAGER_H
+ #define NETWORK_SCRIPT_WORLD_STATE_MANAGER_H
+ 
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptIds.h"
+ 
+ namespace rage
+ {

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/Debug/NetworkDebugPlayback.cpp b/src/dev_ng/game/network/Debug/NetworkDebugPlayback.cpp
+--- a/src/dev_ng/game/network/Debug/NetworkDebugPlayback.cpp
++++ b/src/dev_ng/game/network/Debug/NetworkDebugPlayback.cpp
+@@ -11,13 +11,13 @@
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "grcore/debugdraw.h"
+-#include "peds/Ped.h"
+-#include "peds/PedPopulation.h"
++#include "Peds/ped.h"
++#include "Peds/pedpopulation.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+ #include "streaming/streaming.h"
+-#include "system/ControlMgr.h"
++#include "system/controlMgr.h"
+ #include "system/FileMgr.h"
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/VehicleFactory.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

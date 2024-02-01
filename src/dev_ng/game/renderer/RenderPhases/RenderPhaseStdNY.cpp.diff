@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStdNY.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStdNY.cpp
 --- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStdNY.cpp
 +++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStdNY.cpp
-@@ -12,7 +12,7 @@
+@@ -12,33 +12,33 @@
  #include "grcore/debugdraw.h"
  #include "grcore/quads.h"
  #include "grcore/fastquad.h"
@@ -10,12 +10,14 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStdNY.cpp b/src/de
  #include "profile/timebars.h"
  // Game headers
  #include "camera/viewports/ViewportManager.h"
-@@ -21,19 +21,19 @@
+ #include "camera/viewports/Viewport.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
  #include "frontend/BusySpinner.h"
  #include "FrontEnd/HudTools.h"
  #include "FrontEnd/WarningScreen.h"
 -#include "Renderer\occlusion.h"
-+#include "Renderer/occlusion.h"
++#include "renderer/occlusion.h"
  #include "renderer/PostProcessFX.h"
  #include "renderer/Water.h"
 -#include "renderer\renderListGroup.h"
@@ -25,16 +27,22 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStdNY.cpp b/src/de
 -#include "Frontend\MobilePhone.h"
 -#include "Frontend\PauseMenu.h"
 -#include "game\clock.h"
-+#include "Frontend/MobilePhone.h"
-+#include "Frontend/PauseMenu.h"
-+#include "game/clock.h"
++#include "frontend/MobilePhone.h"
++#include "frontend/PauseMenu.h"
++#include "game/Clock.h"
  #include "SaveLoad/savegame_photo_manager.h"
 -#include "Scene\scene.h"
 -#include "Script\script.h"
 -#include "Vfx\VisualEffects.h"
-+#include "Scene/scene.h"
-+#include "Script/script.h"
-+#include "Vfx/VisualEffects.h"
++#include "scene/scene.h"
++#include "script/script.h"
++#include "vfx/VisualEffects.h"
  #if RSG_XENON
  #include "grcore/wrapper_d3d.h"
  #endif
+ #if __PPU
+-#include "Renderer/PostProcessFX.h"
++#include "renderer/PostProcessFX.h"
+ #endif // __PPU
+ // --- Defines ------------------------------------------------------------------
+ 

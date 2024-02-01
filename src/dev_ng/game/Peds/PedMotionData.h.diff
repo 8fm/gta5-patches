@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Peds/PedMotionData.h b/src/dev_ng/game/Peds/PedMotionData.h
 --- a/src/dev_ng/game/Peds/PedMotionData.h
 +++ b/src/dev_ng/game/Peds/PedMotionData.h
-@@ -2,8 +2,8 @@
+@@ -2,13 +2,13 @@
  #define INC_PED_MOTION_DATA_H
  
  // Rage headers
@@ -12,6 +12,12 @@ diff --git a/src/dev_ng/game/Peds/PedMotionData.h b/src/dev_ng/game/Peds/PedMoti
  #include "fwsys/timer.h"
  #include "fwutil/Flags.h"
  #include "vector/vector2.h"
+ 
+-#include "Game/Config.h"
++#include "game/config.h"
+ #include "PedMotionState.h"
+ 
+ // Move blend ratio speeds
 @@ -290,11 +290,11 @@ public:
  	void SetScriptedMinMoveBlendRatio(float fScriptedMinMoveBlendRatio) { m_fScriptedMinMoveBlendRatio = fScriptedMinMoveBlendRatio; }	
  	void SetGaitReducedMaxMoveBlendRatio(float fGaitReducedMaxMoveBlendRatio) { m_fGaitReducedMaxMoveBlendRatio = fGaitReducedMaxMoveBlendRatio; }		

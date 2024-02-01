@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleWantedShot.cpp b/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleWantedShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleWantedShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleWantedShot.cpp
+@@ -10,10 +10,10 @@
+ #include "camera/cinematic/context/CinematicInVehicleWantedContext.h"
+ #include "camera/cinematic/camera/tracking/CinematicPositionCamera.h"
+ 
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ 
+-#include "control/Replay/ReplayBufferMarker.h"
++#include "control/replay/ReplayBufferMarker.h"
+ #include "game/Dispatch/RoadBlock.h"
+ #include "task/Combat/Subtasks/TaskVehicleCombat.h"
+ #include "task/Combat/TaskNewCombat.h"

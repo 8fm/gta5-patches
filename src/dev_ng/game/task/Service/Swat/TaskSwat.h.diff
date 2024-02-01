@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Service/Swat/TaskSwat.h b/src/dev_ng/game/task/Service/Swat/TaskSwat.h
+--- a/src/dev_ng/game/task/Service/Swat/TaskSwat.h
++++ b/src/dev_ng/game/task/Service/Swat/TaskSwat.h
+@@ -6,11 +6,11 @@
+ // CREATED : 30-06-2009
+ 
+ //Game headers
+-#include "AI/AITarget.h"
++#include "ai/AITarget.h"
+ #include "game/Dispatch/DispatchHelpers.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ // Game forward declarations
+ class CHeli;

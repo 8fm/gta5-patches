@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/GameStream.cpp b/src/dev_ng/game/frontend/GameStream.cpp
+--- a/src/dev_ng/game/frontend/GameStream.cpp
++++ b/src/dev_ng/game/frontend/GameStream.cpp
+@@ -30,10 +30,10 @@
+ #include "frontend/SocialClubMenu.h"
+ #include "frontend/MovieClipText.h"
+ #include "renderer/rendertargets.h"
+-#include "Cutscene/CutsceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "text/TextFile.h"
+ #include "GameStream.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "system/controlMgr.h"
+ 
+ FRONTEND_OPTIMISATIONS()

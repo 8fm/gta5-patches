@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/FacialData.h b/src/dev_ng/game/animation/FacialData.h
+--- a/src/dev_ng/game/animation/FacialData.h
++++ b/src/dev_ng/game/animation/FacialData.h
+@@ -13,7 +13,7 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "animation/animdefines.h"
++#include "animation/AnimDefines.h"
+ 
+ class CPed;
+ 

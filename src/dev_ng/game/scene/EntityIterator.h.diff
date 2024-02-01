@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/scene/EntityIterator.h b/src/dev_ng/game/scene/EntityIterator.h
+--- a/src/dev_ng/game/scene/EntityIterator.h
++++ b/src/dev_ng/game/scene/EntityIterator.h
+@@ -1,10 +1,10 @@
+ #ifndef _ENTITY_ITERATOR_H_
+ #define _ENTITY_ITERATOR_H_
+ 
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ #include "Objects/object.h"
+-#include "objects/DummyObject.h"
+-#include "scene/building.h"
++#include "Objects/DummyObject.h"
++#include "scene/Building.h"
+ #include "scene/AnimatedBuilding.h"
+ #include "Peds/ped.h"
+ 

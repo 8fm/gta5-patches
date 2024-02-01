@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskCombatRoll.cpp
+@@ -1,9 +1,9 @@
+ // File header
+-#include "Task/Motion/Locomotion/TaskCombatRoll.h"
++#include "task/Motion/Locomotion/TaskCombatRoll.h"
+ 
+ // Game headers
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "task/Default/TaskPlayer.h"
+ 
+ // Statics
+ dev_float CTaskCombatRoll::ms_FwdMinAngle = PI * -0.75f;

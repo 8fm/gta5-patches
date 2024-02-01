@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/RopePacket.cpp b/src/dev_ng/game/control/replay/Misc/RopePacket.cpp
+--- a/src/dev_ng/game/control/replay/Misc/RopePacket.cpp
++++ b/src/dev_ng/game/control/replay/Misc/RopePacket.cpp
+@@ -6,7 +6,7 @@
+ #include "Objects/object.h"
+ #include "physics/physics.h"
+ #include "scene/Physical.h"
+-#include "vehicles/Heli.h"
++#include "Vehicles/Heli.h"
+ #include "Vehicles/vehicle.h"
+ 
+ atFixedArray<CReplayRopeManager::sRopeData, MAX_ROPES_TO_TRACK> CReplayRopeManager::m_ropeData;

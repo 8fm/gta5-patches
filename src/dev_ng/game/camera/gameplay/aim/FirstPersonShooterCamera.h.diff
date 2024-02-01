@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.h b/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.h
+--- a/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.h
++++ b/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.h
+@@ -9,7 +9,7 @@
+ 
+ #include "camera/gameplay/aim/FirstPersonAimCamera.h"
+ #include "camera/helpers/DampedSpring.h"
+-#include "peds/pedDefines.h"								// include for FPS_MODE_SUPPORTED define
++#include "Peds/pedDefines.h"								// include for FPS_MODE_SUPPORTED define
+ #include "system/control.h"									// include for KEYBOARD_MOUSE_SUPPORT define
+ 
+ #if FPS_MODE_SUPPORTED

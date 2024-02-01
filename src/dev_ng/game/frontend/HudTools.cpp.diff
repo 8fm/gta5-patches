@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/frontend/HudTools.cpp b/src/dev_ng/game/frontend/HudTools.cpp
+--- a/src/dev_ng/game/frontend/HudTools.cpp
++++ b/src/dev_ng/game/frontend/HudTools.cpp
+@@ -8,14 +8,14 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+ //game
+-#include "Frontend/HudTools.h"
++#include "frontend/HudTools.h"
+ 
+ #include "frontend/ProfileSettings.h"
+-#include "Camera/Base/BaseCamera.h"
+-#include "Camera/CamInterface.h"
+-#include "Camera/Viewports/ViewportManager.h"
+-#include "Frontend/NewHud.h"
+-#include "Renderer/Rendertargets.h"
++#include "camera/Base/BaseCamera.h"
++#include "camera/CamInterface.h"
++#include "camera/Viewports/ViewportManager.h"
++#include "frontend/NewHud.h"
++#include "renderer/Rendertargets.h"
+ #include "renderer/RenderPhases/RenderPhaseLensDistortion.h"
+ 
+ #include "input/headtracking.h"

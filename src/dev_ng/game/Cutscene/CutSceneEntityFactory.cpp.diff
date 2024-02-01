@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneEntityFactory.cpp b/src/dev_ng/game/Cutscene/CutSceneEntityFactory.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneEntityFactory.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneEntityFactory.cpp
+@@ -8,7 +8,7 @@
+ #include "CutsceneObject.h"
+ #include "Modelinfo\BaseModelInfo.h "
+ #include "Modelinfo\ModelInfo.h"
+-#include "Cutscene/cutscene_channel.h"
++#include "cutscene/cutscene_channel.h"
+ 
+ namespace CutsceneCreatureFactory
+ {

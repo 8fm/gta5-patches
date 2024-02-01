@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/event/EventReactions.h b/src/dev_ng/game/event/EventReactions.h
+--- a/src/dev_ng/game/event/EventReactions.h
++++ b/src/dev_ng/game/event/EventReactions.h
+@@ -2,10 +2,10 @@
+ #define INC_EVENT_REACTIONS_H
+ 
+ // Game Headers
+-#include "Event/EventEditable.h"
+-#include "Event/EventPriorities.h"
+-#include "AI/AITarget.h"
+-#include "Scene/RegdRefTypes.h"
++#include "event/EventEditable.h"
++#include "event/EventPriorities.h"
++#include "ai/AITarget.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CEventReactionEnemyPed : public CEvent
+ {
+@@ -213,7 +213,7 @@ private:
+ };
+ 
+ #if __BANK
+-#include "Debug/DebugDrawStore.h"
++#include "debug/DebugDrawStore.h"
+ 
+ class CEventDebug
+ {

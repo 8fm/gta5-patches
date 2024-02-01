@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMRiverRapids.cpp b/src/dev_ng/game/task/Physics/TaskNMRiverRapids.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMRiverRapids.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMRiverRapids.cpp
-@@ -3,11 +3,11 @@
+@@ -3,22 +3,22 @@
  
  //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
  // Rage headers
@@ -18,3 +18,18 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMRiverRapids.cpp b/src/dev_ng/gam
  
  // Framework headers
  #include "grcore/debugdraw.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"
+-#include "Task/Motion/Locomotion/TaskInWater.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
+ #include "task/Physics/TaskNMHighFall.h"
+-#include "Task/Physics/TaskNMRiverRapids.h"
+-#include "Task/Physics/NmDebug.h"
+-#include "Renderer/Water.h"
++#include "task/Physics/TaskNMRiverRapids.h"
++#include "task/Physics/NmDebug.h"
++#include "renderer/Water.h"
+ #include "system/controlMgr.h"
+ 
+ //----------------------------------------------------------------------------------------------------------------------------------------------------

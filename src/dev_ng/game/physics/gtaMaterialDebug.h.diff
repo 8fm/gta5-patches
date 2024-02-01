@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/gtaMaterialDebug.h b/src/dev_ng/game/physics/gtaMaterialDebug.h
+--- a/src/dev_ng/game/physics/gtaMaterialDebug.h
++++ b/src/dev_ng/game/physics/gtaMaterialDebug.h
+@@ -23,7 +23,7 @@
+ #include "phbound/primitives.h"
+ 
+ // game
+-#include "GtaMaterial.h"
++#include "gtaMaterial.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

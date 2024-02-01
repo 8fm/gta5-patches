@@ -1,12 +1,46 @@
 diff --git a/src/dev_ng/game/weapons/WeaponManager.cpp b/src/dev_ng/game/weapons/WeaponManager.cpp
 --- a/src/dev_ng/game/weapons/WeaponManager.cpp
 +++ b/src/dev_ng/game/weapons/WeaponManager.cpp
-@@ -4,7 +4,7 @@
+@@ -1,24 +1,24 @@
+ // File header
+-#include "Weapons/WeaponManager.h"
++#include "weapons/WeaponManager.h"
+ 
  // Game headers
- #include "Peds/PedDefines.h"	// For MAXNOOFPEDS
- #include "Task/Weapons/WeaponController.h"
+-#include "Peds/PedDefines.h"	// For MAXNOOFPEDS
+-#include "Task/Weapons/WeaponController.h"
 -#include "Weapons\AirDefence.h"
-+#include "Weapons/AirDefence.h"
- #include "Weapons/Bullet.h"
- #include "Weapons/Components/WeaponComponentManager.h"
- #include "Weapons/FiringPattern.h"
+-#include "Weapons/Bullet.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/FiringPattern.h"
+-#include "Weapons/Info/WeaponAnimationsManager.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Inventory/InventoryItem.h"
+-#include "Weapons/Inventory/PedInventoryLoadOut.h"
+-#include "Weapons/Projectiles/ProjectileManager.h"
+-#include "Weapons/ThrownWeaponInfo.h"
+-#include "Weapons/Weapon.h"
+-#include "Weapons/WeaponDebug.h"
+-#include "Weapons/WeaponScriptResource.h"
+-#include "Weapons/WeaponTypes.h"
+-#include "Weapons/WeaponFactory.h"
++#include "Peds/pedDefines.h"	// For MAXNOOFPEDS
++#include "task/Weapons/WeaponController.h"
++#include "weapons/AirDefence.h"
++#include "weapons/Bullet.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/FiringPattern.h"
++#include "weapons/info/WeaponAnimationsManager.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/inventory/InventoryItem.h"
++#include "weapons/inventory/PedInventoryLoadOut.h"
++#include "weapons/projectiles/ProjectileManager.h"
++#include "weapons/ThrownWeaponInfo.h"
++#include "weapons/Weapon.h"
++#include "weapons/WeaponDebug.h"
++#include "weapons/WeaponScriptResource.h"
++#include "weapons/WeaponTypes.h"
++#include "weapons/WeaponFactory.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CWeaponManager

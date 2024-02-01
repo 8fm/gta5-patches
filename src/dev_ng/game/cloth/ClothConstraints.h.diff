@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/cloth/ClothConstraints.h b/src/dev_ng/game/cloth/ClothConstraints.h
+--- a/src/dev_ng/game/cloth/ClothConstraints.h
++++ b/src/dev_ng/game/cloth/ClothConstraints.h
+@@ -2,7 +2,7 @@
+ #define CLOTH_CONSTRAINTS_H
+ 
+ #include "ClothParticles.h"
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ 
+ #define MAX_NUM_CLOTH_SEPARATION_CONSTRAINTS MAX_NUM_CLOTH_PARTICLES*4//Only allowing 4 constraints per particle
+ #define MAX_NUM_CLOTH_VOLUME_CONSTRAINTS MAX_NUM_CLOTH_PARTICLES*4//Only allowing 4 constraints per particle

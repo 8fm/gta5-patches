@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskInVehicle.h b/src/dev_ng/game/task/Vehicle/TaskInVehicle.h
+--- a/src/dev_ng/game/task/Vehicle/TaskInVehicle.h
++++ b/src/dev_ng/game/task/Vehicle/TaskInVehicle.h
+@@ -10,12 +10,12 @@
+ ////////////////////////////////////////////////////////////////////////////////
+ 
+ // Game Headers
+-#include "Camera/Helpers/DampedSpring.h"
++#include "camera/helpers/DampedSpring.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/motion/TaskMotionBase.h"
+-#include "Task/motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
++#include "task/System/Task.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Vehicle/TaskVehicleBase.h"
+ 
+ // Game forward declarations
+ class CCarDoor;

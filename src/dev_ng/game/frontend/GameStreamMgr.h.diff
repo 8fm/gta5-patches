@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/GameStreamMgr.h b/src/dev_ng/game/frontend/GameStreamMgr.h
+--- a/src/dev_ng/game/frontend/GameStreamMgr.h
++++ b/src/dev_ng/game/frontend/GameStreamMgr.h
+@@ -13,7 +13,7 @@
+ 
+ // rage
+ #include "atl/array.h"
+-#include "Scaleform/scaleform.h"
++#include "scaleform/scaleform.h"
+ #include "vector/vector2.h"
+ 
+ // game

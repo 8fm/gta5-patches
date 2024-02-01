@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/script/commands_money.cpp b/src/dev_ng/game/script/commands_money.cpp
+--- a/src/dev_ng/game/script/commands_money.cpp
++++ b/src/dev_ng/game/script/commands_money.cpp
+@@ -19,12 +19,12 @@
+ #include "atl/hashstring.h"
+ 
+ // Game headers
+-#include "Network/Commerce/CommerceManager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/NetworkTransactionTelemetry.h"
+-#include "Network/Shop/NetworkGameTransactions.h"
+-#include "Network/Shop/GameTransactionsSessionMgr.h"
+-#include "Network/Shop/NetworkShopping.h"
++#include "network/Commerce/CommerceManager.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/NetworkTransactionTelemetry.h"
++#include "network/Shop/NetworkGameTransactions.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/Shop/NetworkShopping.h"
+ #include "script/script.h"
+ #include "script/script_channel.h"
+ #include "script/script_helper.h"

@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeEditor.cpp b/src/dev_ng/game/scene/volume/VolumeEditor.cpp
+--- a/src/dev_ng/game/scene/volume/VolumeEditor.cpp
++++ b/src/dev_ng/game/scene/volume/VolumeEditor.cpp
+@@ -4,7 +4,7 @@
+ // AUTHOR :		Jason Jurecka.
+ // CREATED :	10/21/2011
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "Scene/Volume/VolumeEditor.h"
++#include "scene/volume/VolumeEditor.h"
+ 
+ #if __BANK && VOLUME_SUPPORT
+ 
+@@ -24,12 +24,12 @@
+ //Game
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/viewportmanager.h"
+-#include "Scene/Volume/VolumeAggregate.h"
+-#include "Scene/Volume/VolumePrimitiveBase.h"
+-#include "Scene/Volume/VolumeManager.h"
+-#include "Scene/Volume/VolumeTool.h"
++#include "scene/volume/VolumeAggregate.h"
++#include "scene/volume/VolumePrimitiveBase.h"
++#include "scene/volume/VolumeManager.h"
++#include "scene/volume/VolumeTool.h"
+ #include "script/script.h"
+-#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptResources.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  GLOBAL VARIABLES

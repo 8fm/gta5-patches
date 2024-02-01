@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Entities/DynamicEntityDrawHandler.cpp b/src/dev_ng/game/renderer/Entities/DynamicEntityDrawHandler.cpp
+--- a/src/dev_ng/game/renderer/Entities/DynamicEntityDrawHandler.cpp
++++ b/src/dev_ng/game/renderer/Entities/DynamicEntityDrawHandler.cpp
+@@ -31,7 +31,7 @@
+ #include "shaders/ShaderLib.h"
+ 
+ #if __BANK
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/VehicleFactory.h"
+ #endif // __BANK
+ 
+ RENDER_OPTIMISATIONS()

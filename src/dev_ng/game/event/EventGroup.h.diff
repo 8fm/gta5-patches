@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/event/EventGroup.h b/src/dev_ng/game/event/EventGroup.h
+--- a/src/dev_ng/game/event/EventGroup.h
++++ b/src/dev_ng/game/event/EventGroup.h
+@@ -3,17 +3,17 @@
+ 
+ // Rage headers
+ #include "atl/queue.h"
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ // Framework headers
+-#include "fwEvent/EventQueue.h"
++#include "fwevent/EventQueue.h"
+ 
+ // Game headers
+-#include "Event/Event.h"
+-#include "Event/EventNetwork.h"
+-#include "Network/NetworkInterface.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Script/script.h"
++#include "event/Event.h"
++#include "event/EventNetwork.h"
++#include "network/NetworkInterface.h"
++#include "scene/RegdRefTypes.h"
++#include "script/script.h"
+ #include "vehicleAi/task/DeferredTasks.h"
+ 
+ // Forward declarations

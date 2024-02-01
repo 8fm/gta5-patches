@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Core/game.h b/src/dev_ng/game/Core/game.h
+--- a/src/dev_ng/game/Core/game.h
++++ b/src/dev_ng/game/Core/game.h
+@@ -6,7 +6,7 @@
+ 
+ #include "fwsys/gameskeleton.h"
+ #include "fwutil/Gen9Settings.h"
+-#include "core/gamesessionstatemachine.h"
++#include "Core/gamesessionstatemachine.h"
+ 
+ // --- Forward Definitions ------------------------------------------------------
+ namespace rage

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/ClimbDebug.cpp b/src/dev_ng/game/task/Movement/Climbing/ClimbDebug.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/ClimbDebug.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/ClimbDebug.cpp
+@@ -1,11 +1,11 @@
+ // File header
+-#include "Task/Movement/Climbing/ClimbDebug.h"
++#include "task/Movement/Climbing/ClimbDebug.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Movement/Climbing/ClimbDetector.h"
+-#include "Task/Movement/Climbing/TaskVault.h"
++#include "debug/DebugScene.h"
++#include "scene/world/GameWorld.h"
++#include "task/Movement/Climbing/ClimbDetector.h"
++#include "task/Movement/Climbing/TaskVault.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOVEMENT_OPTIMISATIONS()

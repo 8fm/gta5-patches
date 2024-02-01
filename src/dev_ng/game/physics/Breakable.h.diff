@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/Breakable.h b/src/dev_ng/game/physics/Breakable.h
+--- a/src/dev_ng/game/physics/Breakable.h
++++ b/src/dev_ng/game/physics/Breakable.h
+@@ -17,7 +17,7 @@
+ #include "system/system.h"
+ #include "system/tls.h"
+ #include "debug/Debug.h"
+-#include "renderer/renderer.h"
++#include "renderer/Renderer.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  DEFINES

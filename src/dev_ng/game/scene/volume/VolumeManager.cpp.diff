@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/scene/volume/VolumeManager.cpp b/src/dev_ng/game/sc
  /////////////////////////////////////////////////////////////////////////////////
  
 -#include "Scene\Volume\VolumeManager.h"
-+#include "Scene/Volume/VolumeManager.h"
++#include "scene/volume/VolumeManager.h"
  
  #if VOLUME_SUPPORT
  ///////////////////////////////////////////////////////////////////////////////
@@ -33,11 +33,11 @@ diff --git a/src/dev_ng/game/scene/volume/VolumeManager.cpp b/src/dev_ng/game/sc
 -#include "Scene\Volume\VolumeSphere.h"
 -#include "Scene\Volume\VolumeAggregate.h"
 -#include "Scene\Volume\VolumeTool.h"
-+#include "Scene/Volume/VolumeBox.h"
-+#include "Scene/Volume/VolumeCylinder.h"
-+#include "Scene/Volume/VolumeSphere.h"
-+#include "Scene/Volume/VolumeAggregate.h"
-+#include "Scene/Volume/VolumeTool.h"
++#include "scene/volume/VolumeBox.h"
++#include "scene/volume/VolumeCylinder.h"
++#include "scene/volume/VolumeSphere.h"
++#include "scene/volume/VolumeAggregate.h"
++#include "scene/volume/VolumeTool.h"
  
  ///////////////////////////////////////////////////////////////////////////////
  //  GLOBAL VARIABLES

@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskThreatResponse.h b/src/dev_ng/game/task/Combat/TaskThreatResponse.h
+--- a/src/dev_ng/game/task/Combat/TaskThreatResponse.h
++++ b/src/dev_ng/game/task/Combat/TaskThreatResponse.h
+@@ -2,15 +2,15 @@
+ #define TASK_THREAT_RESPONSE_H
+ 
+ // Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ // Game headers
+ #include "modelinfo/PedModelInfo.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/Animation/TaskAnims.h"
+-#include "Task/Physics/BlendFromNmData.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskHelpers.h"
++#include "task/Animation/TaskAnims.h"
++#include "task/Physics/BlendFromNmData.h"
+ #include "Peds/QueriableInterface.h"
+ 
+ // Game forward declarations

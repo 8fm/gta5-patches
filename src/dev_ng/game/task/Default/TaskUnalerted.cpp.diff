@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Default/TaskUnalerted.cpp b/src/dev_ng/game/task/Default/TaskUnalerted.cpp
+--- a/src/dev_ng/game/task/Default/TaskUnalerted.cpp
++++ b/src/dev_ng/game/task/Default/TaskUnalerted.cpp
+@@ -25,19 +25,19 @@
+ #include "task/Weapons/TaskSwapWeapon.h"
+ #include "script/script_cars_and_peds.h"
+ #include "streaming/populationstreaming.h"
+-#include "Event/System/EventData.h"
++#include "event/system/EventData.h"
+ #include "ai/BlockingBounds.h"
+ #include "fwnet/netplayer.h"
+ #include "Peds/ped.h"
+ #include "Peds/NavCapabilities.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/pedpopulation.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "system/nelem.h"
+ #include "vehicleAi/driverpersonality.h"
+ #include "vehicleAi/task/TaskVehicleFlying.h"
+ #include "vehicleAi/task/TaskVehicleThreePointTurn.h"	//for ::IsPointOnRoad
+-#include "vehicles/Heli.h"
++#include "Vehicles/Heli.h"
+ #include "weapons/inventory/PedInventoryLoadOut.h"
+ #include "weapons/inventory/PedWeaponManager.h"
+ 

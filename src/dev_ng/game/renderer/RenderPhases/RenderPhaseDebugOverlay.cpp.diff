@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.cpp
+@@ -44,7 +44,7 @@
+ #include "fwutil/xmacro.h"
+ 
+ #include "camera/CamInterface.h"
+-#include "camera/viewports/viewport.h"
++#include "camera/viewports/Viewport.h"
+ #include "debug/AssetAnalysis/AssetAnalysisUtil.h"
+ #include "debug/colorizer.h"
+ #include "debug/DebugArchetypeProxy.h"
+@@ -60,22 +60,22 @@
+ #include "Peds/rendering/PedVariationDebug.h"
+ #include "physics/physics.h"
+ #include "renderer/Debug/EntitySelect.h"
+-#include "renderer/drawlists/drawlistmgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/Lights/LightEntity.h"
+-#include "renderer/renderlistbuilder.h"
+-#include "renderer/renderlistgroup.h"
+-#include "renderer/renderphases/renderphasecascadeshadows.h"
+-#include "renderer/renderphases/renderphasedebugoverlay.h"
++#include "renderer/RenderListBuilder.h"
++#include "renderer/renderListGroup.h"
++#include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
++#include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/occlusion.h"
+-#include "renderer/util/shaderutil.h"
++#include "renderer/Util/ShaderUtil.h"
+ #include "renderer/Water.h"
+ #include "scene/debug/PostScanDebug.h"
+ #include "scene/loader/MapData.h"
+ #include "scene/scene.h"
+ #include "scene/texLod.h"
+-#include "shaders/shaderlib.h"
++#include "shaders/ShaderLib.h"
+ #include "system/controlMgr.h"
+ #include "system/keyboard.h"
+ #include "Vehicles/vehicleDamage.h" // [VEHICLE DAMAGE]

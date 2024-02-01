@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Physics/AnimPoseHelper.cpp b/src/dev_ng/game/task/Physics/AnimPoseHelper.cpp
+--- a/src/dev_ng/game/task/Physics/AnimPoseHelper.cpp
++++ b/src/dev_ng/game/task/Physics/AnimPoseHelper.cpp
+@@ -11,9 +11,9 @@
+ #include "fwanimation/pointcloud.h"
+ #include "bank/slider.h"
+ // Game headers:
+-#include "Peds/Ped.h"
+-#include "Task/Physics/AnimPoseHelper.h"
+-#include "Task/Physics/TaskNM.h"
++#include "Peds/ped.h"
++#include "task/Physics/AnimPoseHelper.h"
++#include "task/Physics/TaskNM.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

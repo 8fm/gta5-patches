@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/frontend/UIReplayScaleformController.cpp b/src/dev_ng/game/frontend/UIReplayScaleformController.cpp
+--- a/src/dev_ng/game/frontend/UIReplayScaleformController.cpp
++++ b/src/dev_ng/game/frontend/UIReplayScaleformController.cpp
+@@ -7,7 +7,7 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Frontend/UIReplayScaleformController.h"
++#include "frontend/UIReplayScaleformController.h"
+ 
+ #if GTA_REPLAY
+ 
+@@ -15,7 +15,7 @@
+ #include "scene/world/GameWorld.h"
+ #include "control/replay/ReplayExtensions.h"
+ #include "control/replay/replay.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "frontend/NewHud.h"
+ #include "replaycoordinator/ReplayCoordinator.h"
+ #include "text/TextFile.h"

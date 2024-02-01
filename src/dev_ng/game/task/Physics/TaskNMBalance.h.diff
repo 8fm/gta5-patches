@@ -1,12 +1,21 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMBalance.h b/src/dev_ng/game/task/Physics/TaskNMBalance.h
 --- a/src/dev_ng/game/task/Physics/TaskNMBalance.h
 +++ b/src/dev_ng/game/task/Physics/TaskNMBalance.h
-@@ -10,7 +10,7 @@
+@@ -9,12 +9,12 @@
+ // --- Include Files ------------------------------------------------------------
  
  // Game headers
- #include "Task/System/Task.h"
+-#include "Task/System/Task.h"
 -#include "Task\System\TaskTypes.h"
-+#include "Task/System/TaskTypes.h"
- #include "Task/Physics/TaskNM.h"
- #include "Task/Physics/GrabHelper.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/GrabHelper.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/GrabHelper.h"
  #include "system/FileMgr.h"
+-#include "Animation/AnimBones.h"
++#include "animation/AnimBones.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ // ------------------------------------------------------------------------------

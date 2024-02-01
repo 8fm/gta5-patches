@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/TextInputBox.h b/src/dev_ng/game/frontend/TextInputBox.h
+--- a/src/dev_ng/game/frontend/TextInputBox.h
++++ b/src/dev_ng/game/frontend/TextInputBox.h
+@@ -10,7 +10,7 @@
+ // Game headers
+ #include "text/messages.h"
+ #include "text/GxtString.h"
+-#include "Frontend/CMenuBase.h"
++#include "frontend/CMenuBase.h"
+ #include "Scaleform/ScaleFormMgr.h"
+ 
+ class CTextInputBox : public ::rage::datBase

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/weapons/Bullet.h b/src/dev_ng/game/weapons/Bullet.h
+--- a/src/dev_ng/game/weapons/Bullet.h
++++ b/src/dev_ng/game/weapons/Bullet.h
+@@ -5,9 +5,9 @@
+ #include "physics/intersection.h"
+ 
+ // Game headers
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Weapons/Info/WeaponInfo.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/RegdRefTypes.h"
++#include "weapons/info/WeaponInfo.h"
+ 
+ // Forward declarations
+ namespace rage { class phPolygon; }

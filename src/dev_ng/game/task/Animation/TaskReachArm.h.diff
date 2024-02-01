@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskReachArm.h b/src/dev_ng/game/task/Animation/TaskReachArm.h
+--- a/src/dev_ng/game/task/Animation/TaskReachArm.h
++++ b/src/dev_ng/game/task/Animation/TaskReachArm.h
+@@ -5,9 +5,9 @@
+ 
+ // Game headers
+ #include "animation/AnimDefines.h"
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ #include "ik/IkManager.h"
+-#include "Ik/solvers/ArmIkSolver.h"
++#include "ik/solvers/ArmIkSolver.h"
+ 
+ 
+ class CTaskReachArm : public CTask

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneAssetManager.h b/src/dev_ng/game/Cutscene/CutSceneAssetManager.h
+--- a/src/dev_ng/game/Cutscene/CutSceneAssetManager.h
++++ b/src/dev_ng/game/Cutscene/CutSceneAssetManager.h
+@@ -16,7 +16,7 @@
+ #include "atl/vector.h"
+ 
+ //Game includes
+-#include "cutscene/CutSceneDefine.h"
++#include "Cutscene/CutSceneDefine.h"
+ #include "cutscene/cutsentity.h"
+ #include "streaming/streamingrequest.h"
+ 

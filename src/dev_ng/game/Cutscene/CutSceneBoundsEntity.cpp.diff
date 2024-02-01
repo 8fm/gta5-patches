@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneBoundsEntity.cpp
+@@ -15,17 +15,17 @@
+ #include "control/replay/ReplayHideManager.h"
+ #include "cutscene/CutSceneBoundsEntity.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+-#include "Cutscene/cutscene_channel.h"
++#include "cutscene/cutscene_channel.h"
+ #include "debug/DebugScene.h"
+ #include "fwscene/search/SearchVolumes.h"
+-#include "fwscene/world/worldmgr.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "fwscene/world/WorldMgr.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "Objects/object.h"
+ #include "Objects/Door.h"
+ #include "Objects/DummyObject.h"
+ #include "pathserver/PathServer.h"
+-#include "peds/pedpopulation.h"
++#include "Peds/pedpopulation.h"
+ #include "scene/world/GameWorld.h"
+ 
+ ANIM_OPTIMISATIONS()

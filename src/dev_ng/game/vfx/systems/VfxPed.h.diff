@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxPed.h b/src/dev_ng/game/vfx/systems/VfxPed.h
+--- a/src/dev_ng/game/vfx/systems/VfxPed.h
++++ b/src/dev_ng/game/vfx/systems/VfxPed.h
+@@ -20,11 +20,11 @@
+ #include "script/thread.h"
+ 
+ // game
+-#include "Animation/AnimBones.h"
+-#include "Physics/GtaMaterial.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Vfx/Systems/VfxMaterial.h"
+-#include "Vfx/Metadata/VfxPedInfo.h"
++#include "animation/AnimBones.h"
++#include "physics/gtaMaterial.h"
++#include "physics/gtaMaterialManager.h"
++#include "vfx/systems/VfxMaterial.h"
++#include "vfx/metadata/VfxPedInfo.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/Stats/StatsUtils.cpp b/src/dev_ng/game/Stats/StatsUtils.cpp
+--- a/src/dev_ng/game/Stats/StatsUtils.cpp
++++ b/src/dev_ng/game/Stats/StatsUtils.cpp
+@@ -19,14 +19,14 @@
+ #include "Stats/stats_channel.h"
+ 
+ // Network headers
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+ // Game headers
+-#include "Frontend/PauseMenu.h"
+-#include "Text/Text.h"
+-#include "Text/TextConversion.h"
++#include "frontend/PauseMenu.h"
++#include "text/text.h"
++#include "text/TextConversion.h"
+ #include "Peds/ped.h"
+-#include "Modelinfo/PedModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
+ #include "control/replay/replay.h"
+ 
+ FRONTEND_STATS_OPTIMISATIONS()

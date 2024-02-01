@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.h b/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.h
+--- a/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.h
++++ b/src/dev_ng/game/task/Vehicle/TaskPlayerHorseFollow.h
+@@ -5,10 +5,10 @@
+ 
+ #if ENABLE_HORSE
+ 
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskClassInfo.h"
++#include "task/System/Task.h"
++#include "task/System/TaskClassInfo.h"
+ #include "task/Vehicle/PlayerHorseSpeedMatch.h"
+-#include "Task/Vehicle/PlayerHorseFollowTargets.h"
++#include "task/Vehicle/PlayerHorseFollowTargets.h"
+ 
+ 
+ // A task for following a companion on horseback.

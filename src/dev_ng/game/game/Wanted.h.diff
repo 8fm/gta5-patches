@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/game/Wanted.h b/src/dev_ng/game/game/Wanted.h
+--- a/src/dev_ng/game/game/Wanted.h
++++ b/src/dev_ng/game/game/Wanted.h
+@@ -7,16 +7,16 @@
+ 
+ // Rage headers
+ #include "grcore/debugdraw.h"		// Only for DEBUG_DRAW.
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ // Game headers
+ #include "Crime.h"
+ #include "witness.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "parser/macros.h"
+ #include "scene/RegdRefTypes.h"
+ #include "task/Combat/TacticalAnalysis.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ 
+ class CEntity;

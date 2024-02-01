@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.cpp
+@@ -4,13 +4,13 @@
+ // written by:    
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/DoorSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.h"
+ 
+-#include "network/network.h"
++#include "network/Network.h"
+ #include "network/Objects/Entities/NetObjDoor.h"
+-#include "objects/door.h"
+-#include "objects/dummyobject.h"
+-#include "objects/object.h"
++#include "Objects/Door.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
+ #include "script/script.h"
+ 
+ NETWORK_OPTIMISATIONS()

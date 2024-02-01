@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugView.cpp b/src/dev_ng/game/debug/Rendering/DebugView.cpp
+--- a/src/dev_ng/game/debug/Rendering/DebugView.cpp
++++ b/src/dev_ng/game/debug/Rendering/DebugView.cpp
+@@ -12,12 +12,12 @@
+ #include "grcore/debugdraw.h"
+ 
+ // game
+-#include "Debug/Rendering/DebugView.h"
+-#include "Camera/viewports/Viewport.h"
++#include "debug/Rendering/DebugView.h"
++#include "camera/viewports/Viewport.h"
+ #include "renderer/Util/ShaderUtil.h"
+-#include "Debug/Rendering/DebugLights.h"
+-#include "Debug/Rendering/DebugRendering.h"
+-#include "Debug/Rendering/DebugDeferred.h"
++#include "debug/Rendering/DebugLights.h"
++#include "debug/Rendering/DebugRendering.h"
++#include "debug/Rendering/DebugDeferred.h"
+ #include "renderer/PostProcessFX.h"
+ 
+ #if __XENON

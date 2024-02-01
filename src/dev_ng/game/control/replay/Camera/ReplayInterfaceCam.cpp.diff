@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.cpp b/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.cpp
+--- a/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.cpp
++++ b/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.cpp
+@@ -3,11 +3,11 @@
+ #if GTA_REPLAY
+ 
+ #include "../ReplayInterfaceImpl.h"
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Control/Replay/ReplayInternal.h"
+-#include "Control/Replay/ReplayController.h"
+-#include "Streaming/streaming.h"
++#include "control/replay/ReplayInternal.h"
++#include "control/replay/ReplayController.h"
++#include "streaming/streaming.h"
+ #include "scene/world/GameWorld.h"
+ 
+ bool* CReplayInterfaceCamera::sm_pUseRecordedCamera = NULL;

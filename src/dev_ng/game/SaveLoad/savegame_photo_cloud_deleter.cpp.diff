@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_cloud_deleter.cpp b/src/dev_ng/game/SaveLoad/savegame_photo_cloud_deleter.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_cloud_deleter.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_cloud_deleter.cpp
+@@ -4,7 +4,7 @@
+ 
+ #if __LOAD_LOCAL_PHOTOS
+ 
+-#include "Network/Cloud/UserContentManager.h"
++#include "network/Cloud/UserContentManager.h"
+ #include "SaveLoad/savegame_channel.h"
+ 
+ 

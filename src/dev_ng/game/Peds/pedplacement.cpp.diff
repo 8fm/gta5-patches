@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Peds/pedplacement.cpp b/src/dev_ng/game/Peds/pedplacement.cpp
 --- a/src/dev_ng/game/Peds/pedplacement.cpp
 +++ b/src/dev_ng/game/Peds/pedplacement.cpp
-@@ -12,15 +12,15 @@
+@@ -12,17 +12,17 @@
  //
  /////////////////////////////////////////////////////////////////////////////////
  
@@ -10,18 +10,23 @@ diff --git a/src/dev_ng/game/Peds/pedplacement.cpp b/src/dev_ng/game/Peds/pedpla
 -#include "scene\world\gameWorld.h"
 -#include "Peds\pedplacement.h"
 -#include "Peds\pedtype.h"
-+#include "ModelInfo/PedModelInfo.h"
-+#include "ModelInfo/VehicleModelInfo.h"
-+#include "scene/world/gameWorld.h"
-+#include "Peds/pedplacement.h"
-+#include "Peds/pedtype.h"
- #include "peds/Ped.h"
+-#include "peds/Ped.h"
 -#include "Physics\GtaArchetype.h"
 -#include "Physics\GtaInst.h"
 -#include "Physics\Physics.h"
-+#include "Physics/GtaArchetype.h"
-+#include "Physics/GtaInst.h"
-+#include "Physics/Physics.h"
- #include "physics/WorldProbe/worldprobe.h"
- #include "vehicles/vehicle.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "vehicles/vehicle.h"
++#include "modelinfo/PedModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "scene/world/GameWorld.h"
++#include "Peds/pedplacement.h"
++#include "Peds/PedType.h"
++#include "Peds/ped.h"
++#include "physics/gtaArchetype.h"
++#include "physics/gtaInst.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()
  

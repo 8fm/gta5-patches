@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/radioslot.cpp b/src/dev_ng/game/audio/radioslot.cpp
+--- a/src/dev_ng/game/audio/radioslot.cpp
++++ b/src/dev_ng/game/audio/radioslot.cpp
+@@ -16,7 +16,7 @@
+ #include "northaudioengine.h"
+ #include "audio/environment/environment.h"
+ #include "audioengine/engine.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ 
+ #include "debugaudio.h"

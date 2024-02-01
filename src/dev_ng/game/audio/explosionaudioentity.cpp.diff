@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/audio/explosionaudioentity.cpp b/src/dev_ng/game/audio/explosionaudioentity.cpp
+--- a/src/dev_ng/game/audio/explosionaudioentity.cpp
++++ b/src/dev_ng/game/audio/explosionaudioentity.cpp
+@@ -17,13 +17,13 @@
+ #include "event/EventReactions.h"
+ #include "event/EventGroup.h"
+ #include "frontend/MiniMap.h"
+-#include "scene/entity.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Boat.h"
++#include "scene/Entity.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Boat.h"
+ #include "profile/profiler.h"
+ #include "weapons/ExplosionInst.h"
+-#include "peds/Ped.h"
+-#include "scene/world/gameWorld.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
+ #include "camera/CamInterface.h"
+ #include "control/replay/Audio/ExplosionAudioPacket.h"
+ 

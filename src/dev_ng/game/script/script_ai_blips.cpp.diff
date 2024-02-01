@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/script/script_ai_blips.cpp b/src/dev_ng/game/script/script_ai_blips.cpp
+--- a/src/dev_ng/game/script/script_ai_blips.cpp
++++ b/src/dev_ng/game/script/script_ai_blips.cpp
+@@ -6,7 +6,7 @@
+ #include "camera/CamInterface.h"
+ #include "frontend/MiniMap.h"
+ #include "frontend/Map/BlipEnums.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/world/GameWorld.h"
+ #include "game/ModelIndices.h"
+ #include "task/System/TaskTypes.h"
+@@ -14,7 +14,7 @@
+ // Network headers
+ #include "network/NetworkInterface.h"
+ #include "network/Live/livemanager.h"
+-#include "network/objects/entities/NetObjPlayer.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ 
+ #include "script/script.h"
+ #include "script/script_hud.h"

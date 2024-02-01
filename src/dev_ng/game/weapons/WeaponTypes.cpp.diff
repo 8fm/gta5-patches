@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/weapons/WeaponTypes.cpp b/src/dev_ng/game/weapons/WeaponTypes.cpp
+--- a/src/dev_ng/game/weapons/WeaponTypes.cpp
++++ b/src/dev_ng/game/weapons/WeaponTypes.cpp
+@@ -1,4 +1,4 @@
+-#include "Weapons/WeaponTypes.h"
++#include "weapons/WeaponTypes.h"
+ 
+ // Generic
+ const atHashWithStringNotFinal WEAPONTYPE_DROWNING("WEAPON_DROWNING",0xFF58C4FB);

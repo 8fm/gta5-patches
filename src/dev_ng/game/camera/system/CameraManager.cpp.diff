@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/camera/system/CameraManager.cpp b/src/dev_ng/game/camera/system/CameraManager.cpp
+--- a/src/dev_ng/game/camera/system/CameraManager.cpp
++++ b/src/dev_ng/game/camera/system/CameraManager.cpp
+@@ -41,8 +41,8 @@
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "peds/ped.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "Peds/ped.h"
+ #include "renderer/PostProcessFXHelper.h"
+ #include "script/script.h"
+ #include "system/controlMgr.h"
+@@ -50,7 +50,7 @@
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "text/TextConversion.h"
+ #include "weapons/Weapon.h"
+-#include "vehicles/MetaData/VehicleSeatInfo.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ bool DebugDisplayHangingCamera(void* pItem, void* UNUSED_PARAM(data));
+ 

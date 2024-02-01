@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/CSelectionWheel.h b/src/dev_ng/game/frontend/CSelectionWheel.h
+--- a/src/dev_ng/game/frontend/CSelectionWheel.h
++++ b/src/dev_ng/game/frontend/CSelectionWheel.h
+@@ -2,8 +2,8 @@
+ #define __CSELECTION_WHEEL__
+ 
+ #include "vector/vector2.h"
+-#include "Frontend/TimeWarper.h"
+-#include "Frontend/SimpleTimer.h"
++#include "frontend/TimeWarper.h"
++#include "frontend/SimpleTimer.h"
+ #include "Peds/PlayerArcadeInformation.h"
+ 
+ namespace rage

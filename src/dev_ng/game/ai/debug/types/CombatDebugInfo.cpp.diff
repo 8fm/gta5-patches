@@ -14,7 +14,7 @@ diff --git a/src/dev_ng/game/ai/debug/types/CombatDebugInfo.cpp b/src/dev_ng/gam
 -#include "task\Combat\Cover\TaskCover.h"
 -#include "task\Combat\TaskInvestigate.h"
 +#include "Peds/CombatBehaviour.h"
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
 +#include "task/Combat/Cover/TaskCover.h"
 +#include "task/Combat/TaskInvestigate.h"

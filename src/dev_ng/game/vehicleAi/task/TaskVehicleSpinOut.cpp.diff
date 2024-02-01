@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleSpinOut.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleSpinOut.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleSpinOut.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleSpinOut.cpp
+@@ -2,12 +2,12 @@
+ #include "TaskVehicleSpinOut.h"
+ 
+ // Game headers
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Vehicles/Automobile.h"
+ #include "Vehicles/vehicle.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi/task/TaskVehicleTempAction.h"
+-#include "VehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleTempAction.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedVariationStream.h b/src/dev_ng/ga
  
  #include "scene/RegdRefTypes.h"
 -#include "peds\rendering\pedVariationDS.h"
-+#include "peds/rendering/pedVariationDS.h"
++#include "Peds/rendering/PedVariationDS.h"
  #include "scene/DataFileMgr.h"
  
  #define PED_FP_ANIMPOSTFX_GROUP_ID (64)

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/ContextMenu.h b/src/dev_ng/game/frontend/ContextMenu.h
+--- a/src/dev_ng/game/frontend/ContextMenu.h
++++ b/src/dev_ng/game/frontend/ContextMenu.h
+@@ -13,9 +13,9 @@
+ #include "data/callback.h"
+ 
+ //game
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/UIContexts.h"
+-#include "Frontend/CMenuBase.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/UIContexts.h"
++#include "frontend/CMenuBase.h"
+ #include "Stats/StatsTypes.h"
+ 
+ namespace rage

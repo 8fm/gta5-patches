@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.cpp
+@@ -4,18 +4,18 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+ 
+-#include "network/network.h"
+-#include "network/general/NetworkStreamingRequestManager.h"
+-#include "network/objects/entities/NetObjPed.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "network/Network.h"
++#include "network/General/NetworkStreamingRequestManager.h"
++#include "network/Objects/Entities/NetObjPed.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "script/Handlers/GameScriptEntity.h"
+ #include "streaming/streaming.h"
+ #include "task/General/Phone/TaskMobilePhone.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "weapons/info/weaponinfomanager.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "weapons/info/WeaponInfoManager.h"
+ #include "Peds/NavCapabilities.h"
+ 
+ NETWORK_OPTIMISATIONS()

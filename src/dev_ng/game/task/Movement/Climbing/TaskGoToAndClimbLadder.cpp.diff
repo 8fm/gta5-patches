@@ -1,0 +1,60 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.cpp b/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.cpp
+@@ -3,38 +3,38 @@
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ #include "fwmaths/Vector.h"
+  
+ // Game headers
+-#include "Animation/MovePed.h"
++#include "animation/MovePed.h"
+ #include "camera/CamInterface.h"
+ #include "camera/helpers/Frame.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Movement/Climbing/TaskGoToAndClimbLadder.h"
+-#include "Task/Movement/Climbing/TaskLadderClimb.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Movement/Climbing/TaskGoToAndClimbLadder.h"
++#include "task/Movement/Climbing/TaskLadderClimb.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/Movement/TaskNavBase.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Movement/TaskSlideToCoord.h"
+-#include "Task/Animation/TaskAnims.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskNavBase.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskSlideToCoord.h"
++#include "task/Animation/TaskAnims.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendManager.h"
+-#include "Peds/Ped.h"
+-#include "Physics/gtaInst.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "Peds/ped.h"
++#include "physics/gtaInst.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "scene/world/GameWorld.h"
+ #include "fwscene/search/SearchVolumes.h"
+ #include "debug/DebugScene.h"
+-#include "Vfx/misc/LODLightManager.h" // hashing func in GenerateHash() 
++#include "vfx/misc/LODLightManager.h" // hashing func in GenerateHash() 
+ #include "physics/WorldProbe/shapetestbounddesc.h"
+-#include "Physics/WaterTestHelper.h"
++#include "physics/WaterTestHelper.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOVEMENT_OPTIMISATIONS()

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.h b/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.h
+--- a/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.h
++++ b/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.h
+@@ -1,13 +1,13 @@
+ #ifndef REPLAYINTERFACEGAME_H
+ #define REPLAYINTERFACEGAME_H
+ 
+-#include "Control/Replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/ReplayInterface.h"
+-#include "Control/Replay/ReplayEnums.h"
+-#include "control/Replay/ReplayInteriorManager.h"
++#include "control/replay/ReplayInterface.h"
++#include "control/replay/ReplayEnums.h"
++#include "control/replay/ReplayInteriorManager.h"
+ #include "../Misc/WaterPacket.h"
+ #include "../Misc/ClothPacket.h"
+ 

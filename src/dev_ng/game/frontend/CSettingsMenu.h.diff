@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/CSettingsMenu.h b/src/dev_ng/game/frontend/CSettingsMenu.h
+--- a/src/dev_ng/game/frontend/CSettingsMenu.h
++++ b/src/dev_ng/game/frontend/CSettingsMenu.h
+@@ -1,8 +1,8 @@
+ #ifndef __SETTINGS_MENU_H__
+ #define __SETTINGS_MENU_H__
+ 
+-#include "Frontend/CMenuBase.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/CMenuBase.h"
++#include "frontend/PauseMenu.h"
+ #include "system/EndUserBenchmark.h"
+ #include "atl/string.h"
+ #include "net/status.h"

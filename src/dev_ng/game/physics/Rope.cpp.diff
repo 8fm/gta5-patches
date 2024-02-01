@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/Rope.cpp b/src/dev_ng/game/physics/Rope.cpp
+--- a/src/dev_ng/game/physics/Rope.cpp
++++ b/src/dev_ng/game/physics/Rope.cpp
+@@ -17,7 +17,7 @@
+ #include "fwpheffects/ropedatamanager.h"
+ #include "physics/gtaArchetype.h"
+ 
+-#include "Peds/Rendering/PedVariationStream.h"
++#include "Peds/rendering/PedVariationStream.h"
+ #include "Peds/ped.h"
+ #include "renderer/Entities/PedDrawHandler.h"
+ 

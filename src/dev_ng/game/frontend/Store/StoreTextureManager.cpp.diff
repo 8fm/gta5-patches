@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/game/frontend/Store/StoreTextureManager.cpp b/src/dev_ng/game/frontend/Store/StoreTextureManager.cpp
+--- a/src/dev_ng/game/frontend/Store/StoreTextureManager.cpp
++++ b/src/dev_ng/game/frontend/Store/StoreTextureManager.cpp
+@@ -1,6 +1,6 @@
+-#include "Frontend/Store/StoreTextureManager.h"
+-#include "Frontend/Store/StoreUIChannel.h"
+-#include "Frontend/Store/StoreScreenMgr.h"
++#include "frontend/Store/StoreTextureManager.h"
++#include "frontend/Store/StoreUIChannel.h"
++#include "frontend/Store/StoreScreenMgr.h"
+ 
+ 
+ 

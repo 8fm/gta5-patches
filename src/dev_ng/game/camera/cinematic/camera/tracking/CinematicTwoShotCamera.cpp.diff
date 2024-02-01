@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicTwoShotCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicTwoShotCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicTwoShotCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicTwoShotCamera.cpp
+@@ -12,7 +12,7 @@
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

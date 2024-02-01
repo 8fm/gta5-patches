@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugOverlay.h
+@@ -8,7 +8,7 @@
+ 
+ #if __BANK
+ 
+-#include "renderer/renderphases/renderphase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ #include "../../shader_source/Debug/debug_overlay.fxh"
+ 
+ namespace rage { class Color32; }

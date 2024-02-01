@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneFadeEntity.h b/src/dev_ng/game/Cutscene/CutSceneFadeEntity.h
+--- a/src/dev_ng/game/Cutscene/CutSceneFadeEntity.h
++++ b/src/dev_ng/game/Cutscene/CutSceneFadeEntity.h
+@@ -15,7 +15,7 @@
+ #include "cutscene/cutsmanager.h"
+ #include "cutfile/cutfeventargs.h"
+ #include "cutfile/cutfobject.h"
+-#include "cutscene/CutSceneDefine.h"
++#include "Cutscene/CutSceneDefine.h"
+ 
+ // Game Headers
+ 

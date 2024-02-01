@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/camera/helpers/NearClipScanner.cpp b/src/dev_ng/game/camera/helpers/NearClipScanner.cpp
+--- a/src/dev_ng/game/camera/helpers/NearClipScanner.cpp
++++ b/src/dev_ng/game/camera/helpers/NearClipScanner.cpp
+@@ -20,12 +20,12 @@
+ #include "camera/scripted/ScriptedCamera.h"
+ #include "camera/system/CameraManager.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "physics/gtaInst.h"
+ #include "physics/gtaMaterialManager.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/Water.h"
+ #include "scene/world/GameWorldHeightMap.h"

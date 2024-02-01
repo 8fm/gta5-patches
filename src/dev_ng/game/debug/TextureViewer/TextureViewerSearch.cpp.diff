@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.cpp b/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.cpp
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.cpp
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.cpp
+@@ -3,7 +3,7 @@
+ // (c) 2010 RockstarNorth
+ // ===========================================
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if __BANK
+ 
+@@ -31,16 +31,16 @@
+ 
+ // Game headers
+ #include "debug/DebugArchetypeProxy.h"
+-#include "modelinfo/modelinfo.h"
+-#include "modelinfo/pedmodelinfo.h"
+-#include "modelinfo/vehiclemodelinfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "streaming/streaming.h"
+ #include "scene/loader/MapData.h"
+-#include "peds/rendering/pedvariationstream.h"
+-#include "peds/ped.h"
++#include "Peds/rendering/pedvariationstream.h"
++#include "Peds/ped.h"
+ 
+-#include "debug/textureviewer/textureviewerutil.h"
+-#include "debug/textureviewer/textureviewersearch.h"
++#include "debug/TextureViewer/TextureViewerutil.h"
++#include "debug/TextureViewer/TextureViewersearch.h"
+ 
+ #if DEBUG_TEXTURE_VIEWER_ENTITY_FILTERING
+ 	// yes, some of these are redundant, but i'm including every header file which defines a CEntity-derived class

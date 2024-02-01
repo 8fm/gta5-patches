@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.h b/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.h
+@@ -16,11 +16,11 @@
+ 
+ // Game headers
+ #include "frontend/hud_colour.h"
+-#include "Peds/Ped.h"
+-#include "network/objects/entities/NetObjPed.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
+-#include "network/objects/synchronisation/SyncNodes/PlayerSyncNodes.h"
+-#include "Network/Live/PlayerCardDataManager.h"
++#include "Peds/ped.h"
++#include "network/Objects/Entities/NetObjPed.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h"
++#include "network/Live/PlayerCardDataManager.h"
+ 
+ enum eWantedLevel;
+ 

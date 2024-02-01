@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/renderer/Lights/AsyncLightOcclusionMgr.cpp b/src/dev_ng/game/renderer/Lights/AsyncLightOcclusionMgr.cpp
+--- a/src/dev_ng/game/renderer/Lights/AsyncLightOcclusionMgr.cpp
++++ b/src/dev_ng/game/renderer/Lights/AsyncLightOcclusionMgr.cpp
+@@ -2,7 +2,7 @@
+ // INCLUDES
+ // =============================================================================================== //
+ 
+-#include "Renderer/Lights/AsyncLightOcclusionMgr.h"
++#include "renderer/Lights/AsyncLightOcclusionMgr.h"
+ 
+ // rage headers
+ #include "softrasterizer/scansetup.h"
+@@ -13,10 +13,10 @@
+ #include "system/dependencyscheduler.h"
+ 
+ // game headers
+-#include "Debug/Rendering/DebugLights.h"
+-#include "Renderer/Lights/Lights.h"
+-#include "Renderer/occlusion.h"
+-#include "Renderer/ProcessLightOcclusionAsync.h"
++#include "debug/Rendering/DebugLights.h"
++#include "renderer/Lights/Lights.h"
++#include "renderer/occlusion.h"
++#include "renderer/ProcessLightOcclusionAsync.h"
+ 
+ RENDER_OPTIMISATIONS()
+ 

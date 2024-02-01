@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/frontend/NewHud.h b/src/dev_ng/game/frontend/NewHud.h
+--- a/src/dev_ng/game/frontend/NewHud.h
++++ b/src/dev_ng/game/frontend/NewHud.h
+@@ -16,23 +16,23 @@
+ #include "vector/vector2.h"
+ 
+ //game
+-#include "Scaleform/scaleform.h"
+-#include "Scaleform/scaleformmgr.h"
+-#include "Text/Messages.h"
++#include "scaleform/scaleform.h"
++#include "Scaleform/ScaleFormMgr.h"
++#include "text/messages.h"
+ 
+-#include "Weapons/info/WeaponInfo.h"
++#include "weapons/info/WeaponInfo.h"
+ 
+ #include "control/replay/ReplaySettings.h"
+ #include "atl/hashstring.h"
+ 
+ // really do wish this were an interface class...
+-#include "Frontend/CWeaponWheel.h"
+-#include "Frontend/CRadioWheel.h"
+-#include "Frontend/HudTools.h"
+-#include "Frontend/hud_colour.h"
+-#include "Frontend/UIReticule.h"
+-#include "Frontend/UIReplayScaleformController.h"
+-#include "Network/Cloud/Tunables.h"
++#include "frontend/CWeaponWheel.h"
++#include "frontend/CRadioWheel.h"
++#include "frontend/HudTools.h"
++#include "frontend/hud_colour.h"
++#include "frontend/UIReticule.h"
++#include "frontend/UIReplayScaleformController.h"
++#include "network/Cloud/Tunables.h"
+ 
+ 
+ // FORWARD DECLARATIONS

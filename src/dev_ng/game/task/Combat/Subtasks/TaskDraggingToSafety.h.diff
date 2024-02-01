@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.h b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.h
+@@ -8,8 +8,8 @@
+ // Game headers
+ #include "physics/WorldProbe/shapetestresults.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CCoverPoint;

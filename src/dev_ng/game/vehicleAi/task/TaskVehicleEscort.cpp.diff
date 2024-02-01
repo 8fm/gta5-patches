@@ -9,8 +9,8 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleEscort.cpp b/src/dev_ng/g
 -#include "VehicleAi\task\TaskVehicleTempAction.h"
 -#include "vehicleAi\VehicleIntelligence.h"
 -#include "Peds\ped.h"
-+#include "VehicleAi/task/TaskVehiclePark.h"
-+#include "VehicleAi/task/TaskVehicleTempAction.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
++#include "vehicleAi/task/TaskVehicleTempAction.h"
 +#include "vehicleAi/VehicleIntelligence.h"
 +#include "Peds/ped.h"
  

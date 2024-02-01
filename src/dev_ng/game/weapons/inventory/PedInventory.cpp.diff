@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedInventory.cpp b/src/dev_ng/game/weapons/inventory/PedInventory.cpp
+--- a/src/dev_ng/game/weapons/inventory/PedInventory.cpp
++++ b/src/dev_ng/game/weapons/inventory/PedInventory.cpp
+@@ -5,13 +5,13 @@
+ //
+ 
+ // File header
+-#include "Weapons/Inventory/PedInventory.h"
++#include "weapons/inventory/PedInventory.h"
+ 
+ // Game headers
+ #include "modelinfo/PedModelInfo.h"
+-#include "Peds/Ped.h"
+-#include "Weapons/Inventory/PedInventoryLoadOut.h"
+-#include "Weapons/WeaponDebug.h"
++#include "Peds/ped.h"
++#include "weapons/inventory/PedInventoryLoadOut.h"
++#include "weapons/WeaponDebug.h"
+ #include "Stats/StatsInterface.h"
+ #if __ASSERT
+ #include "Stats/StatsMgr.h"

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/event/EventDamage.h b/src/dev_ng/game/event/EventDamage.h
+--- a/src/dev_ng/game/event/EventDamage.h
++++ b/src/dev_ng/game/event/EventDamage.h
+@@ -1,10 +1,10 @@
+ #ifndef EVENT_DAMAGE_H
+ #define EVENT_DAMAGE_H
+ 
+-#include "event/events.h"
++#include "event/Events.h"
+ #include "Peds/PlayerArcadeInformation.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ #include "task/Weapons/WeaponTarget.h"
+ #include "weapons/info/AmmoInfo.h"
+ 

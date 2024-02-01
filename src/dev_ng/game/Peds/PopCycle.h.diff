@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/Peds/PopCycle.h b/src/dev_ng/game/Peds/PopCycle.h
+--- a/src/dev_ng/game/Peds/PopCycle.h
++++ b/src/dev_ng/game/Peds/PopCycle.h
+@@ -18,9 +18,9 @@
+ #include "fwmaths/random.h"
+ 
+ // Game headers
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "game/Dispatch/DispatchData.h"
+-#include "Peds/pedtype.h"
++#include "Peds/PedType.h"
+ #include "Peds/PopZones.h"
+ 
+ class CPopZone;

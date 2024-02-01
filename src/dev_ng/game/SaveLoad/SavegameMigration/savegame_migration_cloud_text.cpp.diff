@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.cpp b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.cpp
+--- a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.cpp
++++ b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.cpp
+@@ -6,7 +6,7 @@
+ #if __ALLOW_EXPORT_OF_SP_SAVEGAMES
+ 
+ // Game headers
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ #include "SaveLoad/savegame_channel.h"
+ 
+ PARAM(savegameMigrationLoadLocalTextFile, "Instead of downloading a file containing the localized text for savegame migration, load a local copy of that file");

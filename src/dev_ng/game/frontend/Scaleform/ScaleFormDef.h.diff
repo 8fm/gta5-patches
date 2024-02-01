@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.h b/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.h
+--- a/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.h
++++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.h
+@@ -12,10 +12,10 @@
+ 
+ // Rage headers
+ #include "fwsys/timer.h"
+-#include "Scaleform/scaleform.h"
++#include "scaleform/scaleform.h"
+ 
+ // Game headers
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ 
+ #define MAX_ASSET_MOVIES (5)
+ 

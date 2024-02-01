@@ -1,0 +1,71 @@
+diff --git a/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.cpp b/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.cpp
+--- a/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.cpp
++++ b/src/dev_ng/game/task/Service/Fire/TaskFirePatrol.cpp
+@@ -3,42 +3,42 @@
+ // CREATED : 25-05-2009
+ 
+ // File header
+-#include "Task/Service/Fire/TaskFirePatrol.h"
++#include "task/Service/Fire/TaskFirePatrol.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"
+ 
+ // Game headers
+-#include "Event/Decision/EventDecisionMaker.h"
+-#include "Game/Dispatch/DispatchManager.h"
+-#include "Game/Dispatch/Incidents.h"
+-#include "Game/Dispatch/Orders.h"
+-#include "Peds/Ped.h"
++#include "event/decision/EventDecisionMaker.h"
++#include "game/Dispatch/DispatchManager.h"
++#include "game/Dispatch/Incidents.h"
++#include "game/Dispatch/Orders.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Default/TaskUnalerted.h"
+-#include "Task/Default/TaskWander.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/System/TaskTypes.h"
+-
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
+-#include "VehicleAI/driverpersonality.h"
+-#include "Task/Combat/Subtasks/TaskShootAtTarget.h"
+-#include "Task/Scenario/Info/ScenarioInfoManager.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/Default/TaskUnalerted.h"
++#include "task/Default/TaskWander.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/System/TaskTypes.h"
++
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
++#include "vehicleAi/driverpersonality.h"
++#include "task/Combat/Subtasks/TaskShootAtTarget.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "task/System/TaskHelpers.h"
+ #include "Vehicles/Automobile.h"
+ #include "Vehicles/componentReserve.h"
+ #include "Vehicles/vehicle.h"
+ #include "Vehicles/VehicleGadgets.h"
+-#include "VehicleAi/pathfind.h"
+-#include "VehicleAI/task/TaskVehicleCruise.h"
+-#include "VehicleAI/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi/task/TaskVehiclePark.h"
++#include "vehicleAi/pathfind.h"
++#include "vehicleAi/task/TaskVehicleCruise.h"
++#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+-#include "Vfx/Misc/Fire.h"
++#include "vfx/misc/Fire.h"
+ 
+ AI_OPTIMISATIONS()
+ 

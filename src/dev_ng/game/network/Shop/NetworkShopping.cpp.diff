@@ -1,6 +1,58 @@
 diff --git a/src/dev_ng/game/network/Shop/NetworkShopping.cpp b/src/dev_ng/game/network/Shop/NetworkShopping.cpp
 --- a/src/dev_ng/game/network/Shop/NetworkShopping.cpp
 +++ b/src/dev_ng/game/network/Shop/NetworkShopping.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2014 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "Network/NetworkTypes.h"
++#include "network/NetworkTypes.h"
+ 
+ #if __NET_SHOP_ACTIVE
+ 
+@@ -30,15 +30,15 @@
+ 
+ //Network Headers
+ #include "NetworkShopping.h"
+-#include "Network/Shop/NetworkShopping_parser.h"
+-#include "Network/Shop/Catalog.h"
+-#include "Network/Shop/Inventory.h"
+-#include "Network/Shop/GameTransactionsSessionMgr.h"
+-#include "Network/Network.h"
+-#include "Network/Debug/NetworkDebug.h"
+-#include "Event/EventNetwork.h"
+-#include "Event/EventGroup.h"
+-#include "Security/ragesecgameinterface.h"
++#include "network/Shop/NetworkShopping_parser.h"
++#include "network/Shop/Catalog.h"
++#include "network/Shop/Inventory.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/Network.h"
++#include "network/Debug/NetworkDebug.h"
++#include "event/EventNetwork.h"
++#include "event/EventGroup.h"
++#include "security/ragesecgameinterface.h"
+ #include "Stats/MoneyInterface.h"
+ 
+ NETWORK_OPTIMISATIONS()
+@@ -1074,7 +1074,7 @@ int CNetShopTransactionBasket::GetTotalPrice(bool& propertieTradeIsCredit, int&
+ 	//  1: the currency to use to purchase it
+ 	//		{
+ 	//			item: <CATEGORY_INVENTORY_CURRENCY itemId> The currency slot we want to pay for it out of.
+-	//			price: <number> the amount of currency we’re spending (should be the same as the item price),
++	//			price: <number> the amount of currency we're spending (should be the same as the item price),
+ 	//			value: <CATEGORY_CURRENCY_TYPE, the type of currency being used>
+ 	//		}
+ 	if (m_Action == NET_SHOP_ACTION_BUY_UNLOCK)
+@@ -1104,7 +1104,7 @@ int CNetShopTransactionBasket::GetTotalPrice(bool& propertieTradeIsCredit, int&
+ 	}
+ 	//NET_SHOP_ACTION_BUY_PROPERTY
+ 	//NET_SHOP_ACTION_BUY_WAREHOUSE
+-	//  0: Property to buy -- catalog price
++	//  0: Property to buy -- catalog price
+ 	//  1: Property to sell -- 50% of catalog price
+ 	else if (m_Action == NET_SHOP_ACTION_BUY_PROPERTY || m_Action == NET_SHOP_ACTION_BUY_WAREHOUSE)
+ 	{
 @@ -1828,7 +1828,7 @@ void CNetworkShoppingMgr::Init(sysMemAllocator* allocator)
  
  	sysMemAllocator::SetCurrent(*previousallocator);

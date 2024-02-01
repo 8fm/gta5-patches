@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/scene/ExtraContent.h b/src/dev_ng/game/scene/ExtraContent.h
+--- a/src/dev_ng/game/scene/ExtraContent.h
++++ b/src/dev_ng/game/scene/ExtraContent.h
+@@ -23,12 +23,12 @@
+ #include "system/service.h"
+ 
+ // Game headers
+-#include "network/live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "MountableContent.h"
+ #include "script/thread.h"
+ #include "streaming/streamingrequest.h"
+-#include "Network/Cloud/CloudManager.h"
+-#include "Scene/DataFileMgr.h"
++#include "network/Cloud/CloudManager.h"
++#include "scene/DataFileMgr.h"
+ #include "system/service.h"
+ #include "frontend/loadingscreens.h"
+ 

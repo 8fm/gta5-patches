@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Vehicles/vehiclepopulation.h b/src/dev_ng/game/Vehicles/vehiclepopulation.h
+--- a/src/dev_ng/game/Vehicles/vehiclepopulation.h
++++ b/src/dev_ng/game/Vehicles/vehiclepopulation.h
+@@ -25,8 +25,8 @@
+ #include "scene/EntityTypes.h"
+ #include "scene/RegdRefTypes.h"
+ #include "vehicleAi/pathfind.h"
+-#include "metadata/VehiclePopulationTuning.h"
+-#include "game/popmultiplierareas.h"
++#include "Metadata/VehiclePopulationTuning.h"
++#include "game/PopMultiplierAreas.h"
+ 
+ #include "game/Dispatch/DispatchServices.h"
+ #include "script/thread.h"

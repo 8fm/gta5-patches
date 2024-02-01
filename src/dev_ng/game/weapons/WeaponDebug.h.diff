@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/weapons/WeaponDebug.h b/src/dev_ng/game/weapons/WeaponDebug.h
+--- a/src/dev_ng/game/weapons/WeaponDebug.h
++++ b/src/dev_ng/game/weapons/WeaponDebug.h
+@@ -2,10 +2,10 @@
+ #define WEAPON_DEBUG_H
+ 
+ // Rage includes
+-#include "Bank/Bank.h"
++#include "bank/bank.h"
+ 
+ // Game headers
+-#include "Debug/DebugDrawStore.h"
++#include "debug/DebugDrawStore.h"
+ 
+ #if __BANK // Only included in __BANK builds
+ 

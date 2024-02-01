@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/EntityBatch.cpp b/src/dev_ng/game/scene/EntityBatch.cpp
+--- a/src/dev_ng/game/scene/EntityBatch.cpp
++++ b/src/dev_ng/game/scene/EntityBatch.cpp
+@@ -50,7 +50,7 @@
+ #include "scene/lod/LodScale.h"
+ #include "scene/world/VisibilityMasks.h"
+ #include "shaders/ShaderLib.h"
+-#include "Shaders/CustomShaderEffectGrass.h"
++#include "shaders/CustomShaderEffectGrass.h"
+ #include "timecycle/TimeCycle.h"
+ 
+ //Debug Only

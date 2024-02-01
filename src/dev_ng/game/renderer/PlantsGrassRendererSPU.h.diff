@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/PlantsGrassRendererSPU.h b/src/dev_ng/game/renderer/PlantsGrassRendererSPU.h
+--- a/src/dev_ng/game/renderer/PlantsGrassRendererSPU.h
++++ b/src/dev_ng/game/renderer/PlantsGrassRendererSPU.h
+@@ -11,7 +11,7 @@
+ // Tasks should only depend on taskheader.h, not task.h (which is the dispatching system)
+ #include "system/taskheader.h"
+ #include "spatialdata/transposedplaneset.h"	// spdTransposedPlaneSet8
+-#include "Debug/debug.h"
++#include "debug/debug.h"
+ #include "sdk_version.h"
+ #include "shader_source/Vegetation/Grass/grass_regs.h"
+ 

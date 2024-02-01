@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/physics/physics.h b/src/dev_ng/game/physics/physics.h
+--- a/src/dev_ng/game/physics/physics.h
++++ b/src/dev_ng/game/physics/physics.h
+@@ -17,9 +17,9 @@
+ #include "pathserver/NavGenParam.h"		// for NAVMESH_EXPORT
+ #include "scene/RegdRefTypes.h"
+ #include "scene/portals/InteriorInst.h"
+-#include "templates/linklist.h"
++#include "templates/LinkList.h"
+ #include "fwscene/search/Search.h"
+-#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
+ #include "WorldProbe/wpcommon.h"
+ 
+ // debug headers

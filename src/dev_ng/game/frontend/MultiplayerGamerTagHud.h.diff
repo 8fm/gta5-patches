@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/frontend/MultiplayerGamerTagHud.h b/src/dev_ng/game/frontend/MultiplayerGamerTagHud.h
+--- a/src/dev_ng/game/frontend/MultiplayerGamerTagHud.h
++++ b/src/dev_ng/game/frontend/MultiplayerGamerTagHud.h
+@@ -18,10 +18,10 @@
+ #include "system/criticalsection.h"
+ 
+ //game
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/hud_colour.h"
+-#include "Frontend/MultiplayerGamerTagList.h"
+-#include "Frontend/NewHud.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/hud_colour.h"
++#include "frontend/MultiplayerGamerTagList.h"
++#include "frontend/NewHud.h"
+ 
+ #include "fwnet/nettypes.h"
+ 

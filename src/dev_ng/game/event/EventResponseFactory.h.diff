@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventResponseFactory.h b/src/dev_ng/game/event/EventResponseFactory.h
+--- a/src/dev_ng/game/event/EventResponseFactory.h
++++ b/src/dev_ng/game/event/EventResponseFactory.h
+@@ -2,7 +2,7 @@
+ #define INC_EVENT_RESPONSE_FACTORY_H
+ 
+ // Game headers
+-#include "Task/System/TaskTypes.h"
++#include "task/System/TaskTypes.h"
+ 
+ // Forward declarations
+ class CEvent;

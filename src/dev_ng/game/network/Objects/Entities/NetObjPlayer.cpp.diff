@@ -1,0 +1,109 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjPlayer.cpp
+@@ -5,7 +5,7 @@
+ // written by:  John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjPlayer.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ 
+ // rage headers
+ #include "diag/output.h"
+@@ -13,7 +13,7 @@
+ // framework headers
+ #include "grcore/debugdraw.h"
+ #include "fwnet/neteventmgr.h"
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ #include "fwscene/stores/staticboundsstore.h"
+ #include "fwscript/scriptinterface.h"
+ #include "fwdecorator/decoratorExtension.h"
+@@ -21,7 +21,7 @@
+ 
+ // game headers
+ #include "audio/scriptaudioentity.h"
+-#include "camera/camInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/cinematic/CinematicDirector.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/gameplay/GameplayDirector.h"
+@@ -30,39 +30,39 @@
+ #include "frontend/MiniMap.h"
+ #include "frontend/MultiplayerGamerTagHud.h"
+ #include "game/Wanted.h"
+-#include "Network/Arrays/NetworkArrayMgr.h"
+-#include "Network/Arrays/NetworkArrayHandlerTypes.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/Arrays/NetworkArrayHandlerTypes.h"
+ #include "network/Network.h"
+ #include "network/NetworkInterface.h"
+ #include "network/Live/NetworkTelemetry.h"
+ #include "network/Debug/NetworkDebug.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "network/objects/entities/NetObjVehicle.h"
+-#include "network/objects/prediction/NetBlenderPed.h"
+-#include "network/objects/prediction/NetBlenderPhysical.h"
+-#include "network/players/NetworkPlayerMgr.h"
+-#include "network/roaming/RoamingBubbleMgr.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Objects/NetworkObjectPopulationMgr.h"
+-#include "Network/Voice/NetworkVoice.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "network/Objects/Prediction/NetBlenderPed.h"
++#include "network/Objects/Prediction/NetBlenderPhysical.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "network/Roaming/RoamingBubbleMgr.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Objects/NetworkObjectPopulationMgr.h"
++#include "network/Voice/NetworkVoice.h"
+ #include "PedGroup/PedGroup.h"
+-#include "peds/pedfactory.h"
+-#include "peds/PedIKSettings.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/Ped.h"
+-#include "peds/PedPhoneComponent.h"
+-#include "peds/pedpopulation.h"             // For CPedPopulation::AddPedToPopulationCount().
+-#include "peds/rendering/PedOverlay.h"
+-#include "peds/rendering/PedVariationDS.h"
++#include "Peds/PedFactory.h"
++#include "Peds/PedIKSettings.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedPhoneComponent.h"
++#include "Peds/pedpopulation.h"             // For CPedPopulation::AddPedToPopulationCount().
++#include "Peds/rendering/PedOverlay.h"
++#include "Peds/rendering/PedVariationDS.h"
+ #include "Peds/rendering/PedVariationStream.h"
+ #include "physics/physics.h"
+ #include "pickups/Pickup.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ #include "scene/FocusEntity.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script_hud.h"
+-#include "stats/stats_channel.h"
++#include "Stats/stats_channel.h"
+ #include "Stats/MoneyInterface.h"
+ #include "Stats/StatsInterface.h"
+ #include "streaming/populationstreaming.h"
+@@ -72,12 +72,12 @@
+ #include "task/Combat/TaskDamageDeath.h"
+ #include "task/Default/TaskPlayer.h"
+ #include "task/Default/TaskWander.h"
+-#include "vehicles/vehiclepopulation.h" // matching header
++#include "Vehicles/vehiclepopulation.h" // matching header
+ #include "weapons/inventory/PedInventoryLoadOut.h"
+ #include "weapons/projectiles/ProjectileManager.h"
+-#include "peds/PedWeapons/PedTargetEvaluator.h"
+-#include "Task/General/Phone/TaskMobilePhone.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
++#include "Peds/PedWeapons/PedTargetEvaluator.h"
++#include "task/General/Phone/TaskMobilePhone.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
+ #include "Peds/PedHelmetComponent.h"
+ #include "system/InfoState.h"
+ 

@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/network/General/NetworkSynchronisedScene.cpp b/src/dev_ng/game/network/General/NetworkSynchronisedScene.cpp
+--- a/src/dev_ng/game/network/General/NetworkSynchronisedScene.cpp
++++ b/src/dev_ng/game/network/General/NetworkSynchronisedScene.cpp
+@@ -13,22 +13,22 @@
+ 
+ #include "animation/Move.h"
+ #include "camera/CamInterface.h"
+-#include "Camera/Scripted/ScriptDirector.h"
++#include "camera/scripted/ScriptDirector.h"
+ #include "camera/scripted/ScriptedCamera.h"
+ #include "camera/syncedscene/SyncedSceneDirector.h"
+-#include "Debug/DebugScene.h"
+-#include "Event/Events.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "event/Events.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "scene/world/GameWorld.h"
+-#include "Script/ScriptTaskTypes.h"
+-#include "Task/Animation/TaskAnims.h"
++#include "script/ScriptTaskTypes.h"
++#include "task/Animation/TaskAnims.h"
+ #include "task/General/TaskBasic.h"
+-#include "vehicleai/VehicleIntelligence.h"
+-#include "vehicles/Train.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "Vehicles/train.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

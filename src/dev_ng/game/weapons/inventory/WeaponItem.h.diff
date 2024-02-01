@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/weapons/inventory/WeaponItem.h b/src/dev_ng/game/weapons/inventory/WeaponItem.h
+--- a/src/dev_ng/game/weapons/inventory/WeaponItem.h
++++ b/src/dev_ng/game/weapons/inventory/WeaponItem.h
+@@ -2,13 +2,13 @@
+ #define WEAPON_ITEM_H
+ 
+ // Game headers
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/components/WeaponComponent.h"
+-#include "Weapons/Inventory/InventoryItem.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/components/WeaponComponent.h"
++#include "weapons/inventory/InventoryItem.h"
+ 
+ #if __ASSERT
+ #include "fwsys/timer.h"
+-#include "Script/Thread.h"
++#include "script/Thread.h"
+ #endif // __ASSERT
+ 
+ //////////////////////////////////////////////////////////////////////////

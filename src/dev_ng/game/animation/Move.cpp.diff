@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/animation/Move.cpp b/src/dev_ng/game/animation/Move.cpp
+--- a/src/dev_ng/game/animation/Move.cpp
++++ b/src/dev_ng/game/animation/Move.cpp
+@@ -1,4 +1,4 @@
+-#include "animation/move.h"
++#include "animation/Move.h"
+ 
+ #include "crclip/clipplayer.h"
+ #include "crmotiontree/nodeblend.h"
+@@ -12,7 +12,7 @@
+ #endif //__DEV
+ #include "fwanimation/animdirector.h"
+ #include "data/resource.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/DynamicEntity.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingrequest.h"

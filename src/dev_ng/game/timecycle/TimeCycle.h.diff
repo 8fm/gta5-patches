@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/timecycle/TimeCycle.h b/src/dev_ng/game/timecycle/TimeCycle.h
+--- a/src/dev_ng/game/timecycle/TimeCycle.h
++++ b/src/dev_ng/game/timecycle/TimeCycle.h
+@@ -29,7 +29,7 @@
+ // game
+ #include "TimeCycleDebug.h"
+ #include "control/replay/ReplaySettings.h"
+-#include "Renderer/RenderThread.h"
++#include "renderer/RenderThread.h"
+ #include "vfx/VisualEffects.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////

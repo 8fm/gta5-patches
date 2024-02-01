@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.h b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchBase.h
+@@ -6,8 +6,8 @@
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CVehicle;

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderBoat.cpp b/src/dev_ng/game/network/Objects/Prediction/NetBlenderBoat.cpp
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderBoat.cpp
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderBoat.cpp
+@@ -3,12 +3,12 @@
+ // written by:	Daniel Yelland
+ // description:	Network blender used by boats
+ 
+-#include "network/objects/prediction/NetBlenderBoat.h"
++#include "network/Objects/Prediction/NetBlenderBoat.h"
+ 
+-#include "network/network.h"
+-#include "network/objects/entities/NetObjBoat.h"
++#include "network/Network.h"
++#include "network/Objects/Entities/NetObjBoat.h"
+ #include "renderer/Water.h"
+-#include "vehicles/boat.h"
++#include "Vehicles/Boat.h"
+ 
+ CompileTimeAssert(sizeof(CNetBlenderBoat) <= LARGEST_NET_PHYSICAL_BLENDER_CLASS);
+ 

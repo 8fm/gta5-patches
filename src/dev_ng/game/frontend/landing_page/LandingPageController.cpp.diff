@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/frontend/landing_page/LandingPageController.cpp b/src/dev_ng/game/frontend/landing_page/LandingPageController.cpp
+--- a/src/dev_ng/game/frontend/landing_page/LandingPageController.cpp
++++ b/src/dev_ng/game/frontend/landing_page/LandingPageController.cpp
+@@ -12,7 +12,7 @@
+ #if GEN9_LANDING_PAGE_ENABLED
+ 
+ // rage
+-#include "core/core_channel.h"
++#include "Core/core_channel.h"
+ #include "system/param.h"
+ 
+ // framework
+@@ -32,7 +32,7 @@
+ #include "frontend/MousePointer.h"
+ #include "frontend/UIContexts.h"
+ #include "Peds/CriminalCareer/CriminalCareerService.h"
+-#include "network/live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "network/SocialClubServices/SocialClubFeedTilesMgr.h"
+ #include "system/controlMgr.h"
+ #include "system/param.h"

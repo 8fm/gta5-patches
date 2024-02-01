@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Party/NetworkParty_bank.cpp b/src/dev_ng/game/network/Party/NetworkParty_bank.cpp
+--- a/src/dev_ng/game/network/Party/NetworkParty_bank.cpp
++++ b/src/dev_ng/game/network/Party/NetworkParty_bank.cpp
+@@ -14,7 +14,7 @@
+ #include "rline/rlfriend.h"
+ 
+ // game includes
+-#include "network/live/livemanager.h"
++#include "network/Live/livemanager.h"
+ 
+ RAGE_DEFINE_SUBCHANNEL(net, partybank, DIAG_SEVERITY_DEBUG3)
+ #undef __net_channel

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.cpp b/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.cpp
+--- a/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.cpp
++++ b/src/dev_ng/game/control/replay/Audio/ProjectileAudioPacket.cpp
+@@ -10,7 +10,7 @@
+ #include "control/replay/ReplayInternal.h"
+ 
+ #include "audio/pedaudioentity.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ //========================================================================================================================
+ CPacketProjectile::CPacketProjectile()

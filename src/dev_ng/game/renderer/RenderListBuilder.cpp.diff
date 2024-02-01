@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/renderer/RenderListBuilder.cpp b/src/dev_ng/game/renderer/RenderListBuilder.cpp
+--- a/src/dev_ng/game/renderer/RenderListBuilder.cpp
++++ b/src/dev_ng/game/renderer/RenderListBuilder.cpp
+@@ -24,7 +24,7 @@
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/Entities/EntityDrawHandler.h"
+ #include "renderer/Entities/InstancedEntityRenderer.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/PlantsGrassRenderer.h"
+ #include "renderer/PlantsMgr.h"
+ #include "renderer/PostProcessFX.h"
+@@ -33,7 +33,7 @@
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+ #include "renderer/RenderPhases/RenderPhaseHeightMap.h"
+-#include "renderer/shadows/shadows.h"
++#include "renderer/Shadows/Shadows.h"
+ #include "renderer/TreeImposters.h"
+ #include "renderer/PlantsGrassRendererSwitches.h"
+ #include "scene/lod/LodDrawable.h"

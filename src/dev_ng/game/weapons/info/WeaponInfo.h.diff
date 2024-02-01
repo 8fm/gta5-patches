@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponInfo.h b/src/dev_ng/game/weapons/info/WeaponInfo.h
+--- a/src/dev_ng/game/weapons/info/WeaponInfo.h
++++ b/src/dev_ng/game/weapons/info/WeaponInfo.h
+@@ -15,20 +15,20 @@
+ 
+ // Framework headers
+ #include "fwanimation/animdefines.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Animation/animdefines.h"
++#include "animation/AnimDefines.h"
+ #include "animation/AnimBones.h"
+-#include "pickups/data/PickupIds.h"
+-#include "Renderer/HierarchyIds.h"
+-#include "Scene/Entity.h"
++#include "pickups/Data/PickupIds.h"
++#include "renderer/HierarchyIds.h"
++#include "scene/Entity.h"
+ #include "Stats/StatsTypes.h"
+-#include "Weapons/Helpers/WeaponHelpers.h"
+-#include "Weapons/Info/ItemInfo.h"
+-#include "Weapons/Info/weaponinfoflags.h"
+-#include "Weapons/WeaponChannel.h"
+-#include "Weapons/WeaponEnums.h"
++#include "weapons/helpers/WeaponHelpers.h"
++#include "weapons/info/ItemInfo.h"
++#include "weapons/info/weaponinfoflags.h"
++#include "weapons/WeaponChannel.h"
++#include "weapons/WeaponEnums.h"
+ 
+ // Forward declarations
+ class CAmmoInfo;

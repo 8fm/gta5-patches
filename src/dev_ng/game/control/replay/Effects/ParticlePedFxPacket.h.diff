@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h
 --- a/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h
 +++ b/src/dev_ng/game/control/replay/Effects/ParticlePedFxPacket.h
-@@ -11,7 +11,7 @@
+@@ -6,12 +6,12 @@
+ #ifndef INC_PEDFXPACKET_H_
+ #define INC_PEDFXPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
  // Replay only setup for win32
  #if GTA_REPLAY
  

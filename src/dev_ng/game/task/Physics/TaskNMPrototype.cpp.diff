@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp b/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp
-@@ -3,7 +3,7 @@
+@@ -3,18 +3,18 @@
  
  //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
  // Rage headers
@@ -10,3 +10,17 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp b/src/dev_ng/game/
  
  // Framework headers
  #include "fwdebug/Picker.h"
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "event/events.h"
++#include "event/Events.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Physics/TaskNMPrototype.h"
+-#include "Task/Physics/NmDebug.h"
++#include "task/Physics/TaskNMPrototype.h"
++#include "task/Physics/NmDebug.h"
+ 
+ //----------------------------------------------------------------------------------------------------------------------------------------------------
+ 

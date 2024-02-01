@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vfx/particles/PtFxDebug.h b/src/dev_ng/game/vfx/particles/PtFxDebug.h
+--- a/src/dev_ng/game/vfx/particles/PtFxDebug.h
++++ b/src/dev_ng/game/vfx/particles/PtFxDebug.h
+@@ -18,10 +18,10 @@
+ ///////////////////////////////////////////////////////////////////////////////													
+ 
+ // game
+-#include "Vfx/Particles/PtFxDefines.h"
++#include "vfx/Particles/PtFxDefines.h"
+ #include "grcore/config.h"
+ #include "vectormath/classes.h"
+-#include "Vfx/vfx_shared.h"
++#include "vfx/vfx_shared.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  FORWARD DECLARATIONS

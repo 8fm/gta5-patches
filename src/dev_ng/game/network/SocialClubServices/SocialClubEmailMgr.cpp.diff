@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubEmailMgr.cpp b/src/dev_ng/game/network/SocialClubServices/SocialClubEmailMgr.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubEmailMgr.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubEmailMgr.cpp
+@@ -12,11 +12,11 @@
+ #include "fwnet/netchannel.h"
+ 
+ //Game
+-#include "Event/EventGroup.h"
+-#include "Network/general/NetworkUtil.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
+-#include "Network/Voice/NetworkVoice.h"
++#include "event/EventGroup.h"
++#include "network/General/NetworkUtil.h"
++#include "network/NetworkInterface.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
++#include "network/Voice/NetworkVoice.h"
+ #include "text/TextConversion.h"
+ 
+ NETWORK_OPTIMISATIONS();

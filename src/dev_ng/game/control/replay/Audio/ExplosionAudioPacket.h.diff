@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/ExplosionAudioPacket.h b/src/dev_ng/game/control/replay/Audio/ExplosionAudioPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/ExplosionAudioPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/ExplosionAudioPacket.h
+@@ -6,11 +6,11 @@
+ #ifndef INC_EXPLOSIONAUDIOPACKET_H_
+ #define INC_EXPLOSIONAUDIOPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "control/replay/effects/ParticlePacket.h"
++#include "control/replay/Effects/ParticlePacket.h"
+ 
+ #include "weapons/WeaponEnums.h"
+ 

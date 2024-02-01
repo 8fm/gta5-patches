@@ -1,14 +1,25 @@
 diff --git a/src/dev_ng/game/control/GarageEditor.cpp b/src/dev_ng/game/control/GarageEditor.cpp
 --- a/src/dev_ng/game/control/GarageEditor.cpp
 +++ b/src/dev_ng/game/control/GarageEditor.cpp
-@@ -11,8 +11,8 @@
+@@ -10,9 +10,9 @@
+ #include "GarageEditor.h"
  #include "Garages.h"
  #include "garages_parser.h"
- #include "objects/Door.h"
+-#include "objects/Door.h"
 -#include "grcore\debugdraw.h"
 -#include "grcore\setup.h"
++#include "Objects/Door.h"
 +#include "grcore/debugdraw.h"
 +#include "grcore/setup.h"
  
  AI_OPTIMISATIONS()
+ 
+@@ -21,7 +21,7 @@ AI_OPTIMISATIONS()
+ #include "camera/CamInterface.h"
+ #include "grcore/debugdraw.h"
+ #include "fwscene/world/WorldLimits.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "script/script.h"
+ #include "game/ModelIndices.h"
  

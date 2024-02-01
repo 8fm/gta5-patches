@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/script/commands_ny.cpp b/src/dev_ng/game/script/commands_ny.cpp
+--- a/src/dev_ng/game/script/commands_ny.cpp
++++ b/src/dev_ng/game/script/commands_ny.cpp
+@@ -2,22 +2,22 @@
+ #include "script/wrapper.h"
+ 
+ // Game headers
+-#include "Game/Wanted.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "game/Wanted.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "Peds/PedPhoneComponent.h"
+ #include "physics/physics.h"
+ #include "renderer/RenderTargetMgr.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/commands_graphics.h"
+-#include "script/Script.h"
++#include "script/script.h"
+ #include "script/script_hud.h"
+ #include "script/script_helper.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ // NY headers
+-#include "Frontend/MobilePhone.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "frontend/MobilePhone.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ 
+ namespace gta_commands

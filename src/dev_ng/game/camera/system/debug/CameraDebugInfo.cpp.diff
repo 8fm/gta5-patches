@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/system/debug/CameraDebugInfo.cpp b/src/dev_ng/game/camera/system/debug/CameraDebugInfo.cpp
+--- a/src/dev_ng/game/camera/system/debug/CameraDebugInfo.cpp
++++ b/src/dev_ng/game/camera/system/debug/CameraDebugInfo.cpp
+@@ -9,7 +9,7 @@
+ 
+ #include "camera/base/BaseCamera.h"
+ #include "camera/base/BaseDirector.h"
+-#include "camera/camInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
+ #include "camera/gameplay/aim/AimCamera.h"
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"

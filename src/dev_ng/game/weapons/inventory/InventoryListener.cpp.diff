@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/inventory/InventoryListener.cpp b/src/dev_ng/game/weapons/inventory/InventoryListener.cpp
+--- a/src/dev_ng/game/weapons/inventory/InventoryListener.cpp
++++ b/src/dev_ng/game/weapons/inventory/InventoryListener.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Inventory/InventoryListener.h"
++#include "weapons/inventory/InventoryListener.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

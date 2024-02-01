@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskChatScenario.cpp
+@@ -5,7 +5,7 @@
+ #include "TaskChatScenario.h"
+ #include "TaskUseScenario.h"
+ 
+-#include "Event/Event.h"
++#include "event/Event.h"
+ 
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"

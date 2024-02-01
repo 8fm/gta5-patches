@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/PMCPerfControl.h b/src/dev_ng/game/system/PMCPerfControl.h
+--- a/src/dev_ng/game/system/PMCPerfControl.h
++++ b/src/dev_ng/game/system/PMCPerfControl.h
+@@ -15,7 +15,7 @@
+ #if	__XENON && !__FINAL && __BANK
+ #include <pmcpb.h>
+ #include <pmcpbsetup.h>
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "bank/bkmgr.h"
+ #include "grcore/debugdraw.h"
+ #pragma comment(lib, "libpmcpb.lib")

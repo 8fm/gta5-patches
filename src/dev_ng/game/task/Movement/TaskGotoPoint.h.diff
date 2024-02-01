@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGotoPoint.h b/src/dev_ng/game/task/Movement/TaskGotoPoint.h
+--- a/src/dev_ng/game/task/Movement/TaskGotoPoint.h
++++ b/src/dev_ng/game/task/Movement/TaskGotoPoint.h
+@@ -3,10 +3,10 @@
+ 
+ #include "Peds/PedEventScanner.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/Movement/TaskIdle.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/TaskTypes.h" 
++#include "task/Movement/TaskIdle.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
++#include "task/System/TaskTypes.h" 
+ 
+ /////////////////
+ //Go to point

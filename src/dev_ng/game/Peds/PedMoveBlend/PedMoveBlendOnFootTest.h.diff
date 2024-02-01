@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.h b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.h
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.h
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootTest.h
+@@ -6,7 +6,7 @@
+ // This is a test for a new implementation of ped locomotion system,
+ // using MoVE networks and the ai motion task-tree.
+ 
+-#include "peds/PedMoveBlend/PedMoveBlendTypes.h"
++#include "Peds/PedMoveBlend/PedMoveBlendTypes.h"
+ #include "PedMoveBlendOnFoot.h"
+ #include "Peds/ped.h"
+ 

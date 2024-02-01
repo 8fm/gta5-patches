@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/Dispatch/OrderManager.h b/src/dev_ng/game/game/Dispatch/OrderManager.h
+--- a/src/dev_ng/game/game/Dispatch/OrderManager.h
++++ b/src/dev_ng/game/game/Dispatch/OrderManager.h
+@@ -5,7 +5,7 @@
+ #ifndef INC_ORDER_MANAGER_H_
+ #define INC_ORDER_MANAGER_H_
+ // Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ // Framework headers
+ #include "scene/Entity.h"
+ // Game headers

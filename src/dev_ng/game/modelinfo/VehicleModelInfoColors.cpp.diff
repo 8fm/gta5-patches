@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfoColors.cpp b/src/dev_ng/game/modelinfo/VehicleModelInfoColors.cpp
+--- a/src/dev_ng/game/modelinfo/VehicleModelInfoColors.cpp
++++ b/src/dev_ng/game/modelinfo/VehicleModelInfoColors.cpp
+@@ -13,12 +13,12 @@
+ #include "parser/visitorwidgets.h"
+ #include "scene/Entity.h"
+ #include "scene/EntityIterator.h"
+-#include "vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ #if __BANK
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "scene/ExtraContent.h"
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/VehicleFactory.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+ #endif
+ 

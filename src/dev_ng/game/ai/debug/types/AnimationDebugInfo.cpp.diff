@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp
+@@ -17,7 +17,7 @@
+ #include "ik/solvers/TorsoSolver.h"
+ #include "ik/solvers/TorsoVehicleSolver.h"
+ #include "ik/solvers/TorsoVehicleSolverProxy.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIKSettings.h"
+ #include "scene/DynamicEntity.h"
+ 

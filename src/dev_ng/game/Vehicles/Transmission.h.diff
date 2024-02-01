@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/Vehicles/Transmission.h b/src/dev_ng/game/Vehicles/Transmission.h
+--- a/src/dev_ng/game/Vehicles/Transmission.h
++++ b/src/dev_ng/game/Vehicles/Transmission.h
+@@ -6,9 +6,9 @@
+ #ifndef INC_TRANSMISSION_H_
+ #define INC_TRANSMISSION_H_
+ 
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "scene/RegdRefTypes.h"
+-#include "weapons/weaponenums.h"
++#include "weapons/WeaponEnums.h"
+ 
+ class CEntity;
+ class CVehicle;

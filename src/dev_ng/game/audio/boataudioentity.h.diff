@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/boataudioentity.h b/src/dev_ng/game/audio/boataudioentity.h
+--- a/src/dev_ng/game/audio/boataudioentity.h
++++ b/src/dev_ng/game/audio/boataudioentity.h
+@@ -17,7 +17,7 @@
+ 
+ #include "atl/bitset.h"
+ #include "scene/RegdRefTypes.h"
+-#include "vehicles/Boat.h"
++#include "Vehicles/Boat.h"
+ 
+ #include "audio/vehicleaudioentity.h"
+ #include "audio/vehicleengine/vehicleengine.h"

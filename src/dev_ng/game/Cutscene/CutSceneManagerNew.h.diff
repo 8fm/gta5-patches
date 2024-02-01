@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneManagerNew.h b/src/dev_ng/game/Cutscene/CutSceneManagerNew.h
+--- a/src/dev_ng/game/Cutscene/CutSceneManagerNew.h
++++ b/src/dev_ng/game/Cutscene/CutSceneManagerNew.h
+@@ -11,7 +11,7 @@
+ #define CUTSCENE_CUTSCENEMANAGER_H 
+ 
+ //Rage game files
+-#include "atl/Array.h"
++#include "atl/array.h"
+ #include "cutscene/cutsmanager.h"
+ #include "cutscene/cutsentity.h"
+ #include "cutfile/cutfeventargs.h"
+@@ -23,7 +23,7 @@
+ //Game header files
+ #if __BANK
+ 	#include "Cutscene/CutSceneDebugManager.h"
+-	#include "Debug/Editing/CutsceneEditing.h"
++	#include "debug/Editing/CutsceneEditing.h"
+ #endif
+ 
+ #include "Cutscene/CutSceneAssetManager.h"
+@@ -33,7 +33,7 @@
+ #include "scene/Entity.h"
+ #include "system/criticalsection.h"
+ 
+-#include "renderer/Sprite2d.h"	// for USE_MULTIHEAD_FADE
++#include "renderer/sprite2d.h"	// for USE_MULTIHEAD_FADE
+ 
+ #if !__NO_OUTPUT
+ #define cutsceneManagerErrorf(fmt,...) if ( (Channel_cutscene.TtyLevel >= DIAG_SEVERITY_ERROR) || (Channel_cutscene.FileLevel >= DIAG_SEVERITY_ERROR) ) { char debugStr[256]; CutSceneManager::CommonDebugStr(debugStr); cutsceneErrorf("%s" fmt, debugStr,##__VA_ARGS__); }
+@@ -67,7 +67,7 @@
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "system/autogpucapture.h"
++#include "system/AutoGPUCapture.h"
+ 
+ #if ENABLE_STATS_CAPTURE && __BANK
+ #	define ENABLE_CUTSCENE_TELEMETRY    1

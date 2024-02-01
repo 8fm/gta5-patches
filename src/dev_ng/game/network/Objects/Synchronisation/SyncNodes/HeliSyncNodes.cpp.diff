@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.cpp
+@@ -4,8 +4,8 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/HeliSyncNodes.h"
+-#include "vehicles/LandingGear.h"
++#include "network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.h"
++#include "Vehicles/LandingGear.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

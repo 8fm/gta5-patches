@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp b/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp
+--- a/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp
++++ b/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp
+@@ -5,8 +5,8 @@
+ 
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Motion/Locomotion/TaskHorseLocomotion.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/Motion/Locomotion/TaskHorseLocomotion.h"
++#include "task/System/TaskHelpers.h"
+ 
+ // Rage includes
+ #if __BANK
+@@ -16,7 +16,7 @@
+ #include "phbound/boundbox.h"
+ #include "phbound/boundcapsule.h"
+ #include "phbound/boundsphere.h"
+-#include "physics/debugevents.h"
++#include "physics/debugEvents.h"
+ #include "physics/inst.h"
+ #include "physics/levelnew.h"
+ #include "physics/physics.h"

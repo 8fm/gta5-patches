@@ -1,0 +1,103 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGetUp.cpp b/src/dev_ng/game/task/Movement/TaskGetUp.cpp
+--- a/src/dev_ng/game/task/Movement/TaskGetUp.cpp
++++ b/src/dev_ng/game/task/Movement/TaskGetUp.cpp
+@@ -3,7 +3,7 @@
+ //
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "Task/movement/TaskGetUp.h"
++#include "task/Movement/TaskGetUp.h"
+ 
+ // C headers
+ // Rage headers
+@@ -25,34 +25,34 @@
+ #include "fwanimation/directorcomponentragdoll.h"
+ #include "fwanimation/pointcloud.h"
+ #include "grcore/debugdraw.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+ // Game headers
+ #include "ai/stats.h"
+ #include "animation/AnimManager.h"
+-#include "Animation/moveped.h"
+-#include "Animation/debug/AnimViewer.h"
++#include "animation/moveped.h"
++#include "animation/debug/AnimViewer.h"
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/aim/FirstPersonAimCamera.h"
+ #include "camera/gameplay/aim/ThirdPersonAimCamera.h"
+ #include "camera/helpers/StickyAimHelper.h"
+-#include "Event/EventDamage.h"
++#include "event/EventDamage.h"
+ //#include "ik/ikmanagersolvertypes.h"
+ #include "ik/solvers/RootSlopeFixupSolver.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Objects/Prediction/NetBlenderPed.h"
+-#include "Peds/Ped.h"
++#include "network/NetworkInterface.h"
++#include "network/Objects/Prediction/NetBlenderPed.h"
++#include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedPlacement.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Physics/GtaInst.h"
+-#include "Physics/Physics.h"
+-#include "Physics/RagdollConstraints.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/gtaInst.h"
++#include "physics/physics.h"
++#include "physics/RagdollConstraints.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"
+ #include "task/Combat/TaskDamageDeath.h"
+@@ -60,28 +60,28 @@
+ #include "task/Combat/TaskThreatResponse.h"
+ #include "task/Combat/TaskWrithe.h"
+ #include "task/default/taskplayer.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Movement/TaskCrawl.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
+-#include "Task/Movement/Jumping/TaskInAir.h"
+-#include "Task/Movement/TaskParachute.h"
+-#include "Task/Response/TaskAgitated.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Combat/Subtasks/TaskAimFromGround.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Movement/TaskCrawl.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Movement/Jumping/TaskInAir.h"
++#include "task/Movement/TaskParachute.h"
++#include "task/Response/TaskAgitated.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Combat/Subtasks/TaskAimFromGround.h"
+ #include "task/Physics/TaskNMHighFall.h"
+ 
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Bike.h"
+-#include "Vfx/Misc/Fire.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Bike.h"
++#include "vfx/misc/Fire.h"
+ 
+ #include "weapons/inventory/PedWeaponManager.h"
+ #include "weapons/Weapon.h"
+ 
+-#include "Task/Physics/TaskNMRelax.h"
++#include "task/Physics/TaskNMRelax.h"
+ 
+-#include "Network/General/NetworkStreamingRequestManager.h"
++#include "network/General/NetworkStreamingRequestManager.h"
+ 
+ AI_OPTIMISATIONS()
+ 

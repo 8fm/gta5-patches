@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.h b/src/dev_ng/game/Peds/rendering/PedHeadshotManager.h
+--- a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.h
++++ b/src/dev_ng/game/Peds/rendering/PedHeadshotManager.h
+@@ -37,7 +37,7 @@
+ #include "renderer/Lights/LightSource.h"
+ #include "scene/RegdRefTypes.h"
+ #include "task/System/TaskHelpers.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ #define PHM_RT_RESIDENT (1 && (RSG_PC || RSG_DURANGO || RSG_ORBIS))
+ 

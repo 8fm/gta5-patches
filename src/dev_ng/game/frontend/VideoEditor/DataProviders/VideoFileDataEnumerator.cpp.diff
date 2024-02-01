@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataEnumerator.cpp b/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataEnumerator.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataEnumerator.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/DataProviders/VideoFileDataEnumerator.cpp
+@@ -16,11 +16,11 @@
+ 
+ #if defined(VIDEO_PLAYBACK_ENABLED) && VIDEO_PLAYBACK_ENABLED
+ 
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ #include "rline/rlnp.h"
+-#include "Network/Live/livemanager.h"
+-#include "control/replay/file/FileData.h"
+-#include "control/replay/file/ReplayFileManager.h"
++#include "network/Live/livemanager.h"
++#include "control/replay/File/FileData.h"
++#include "control/replay/File/ReplayFileManager.h"
+ 
+ 
+ CVideoFileDataEnumerator::CVideoFileDataEnumerator()

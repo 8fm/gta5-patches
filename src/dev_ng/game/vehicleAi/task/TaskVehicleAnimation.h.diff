@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.h b/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.h
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.h
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.h
+@@ -4,17 +4,17 @@
+ #include "streaming/streamingrequest.h"
+ 
+ // Gta headers.
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskComplex.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskTypes.h"
+-#include "VehicleAi/task/TaskVehicleMissionBase.h"
++#include "task/System/Task.h"
++#include "task/System/TaskComplex.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskTypes.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
+ 
+ class CVehicle;
+ class CVehControls;
+ 
+ //Rage headers.
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ #define DISPLAY_HELP_TEXT 0
+ //

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/scene/Entity.h b/src/dev_ng/game/scene/Entity.h
+--- a/src/dev_ng/game/scene/Entity.h
++++ b/src/dev_ng/game/scene/Entity.h
+@@ -17,8 +17,8 @@
+ // Game headers
+ #include "audio/entitytracker.h"
+ #include "audio/audioentity.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "scene/entityTypes.h"
++#include "modelinfo/ModelInfo.h"
++#include "scene/EntityTypes.h"
+ #include "scene/lod/LodDrawable.h"
+ #include "scene/world/VisibilityMasks.h"
+ #include "shaders/ShaderLib.h"

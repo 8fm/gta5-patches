@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleAutomobilePacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehicleAutomobilePacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleAutomobilePacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleAutomobilePacket.cpp
+@@ -8,9 +8,9 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "game/modelindices.h"
++#include "game/ModelIndices.h"
+ //#include "maths/angle.h"
+-#include "vehicles/Automobile.h"
++#include "Vehicles/Automobile.h"
+ 
+ //========================================================================================================================
+ void CPacketCarUpdate::Store(CAutomobile *pCar, bool storeCreateInfo)

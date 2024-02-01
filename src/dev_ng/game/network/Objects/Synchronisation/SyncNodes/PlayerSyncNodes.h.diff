@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlayerSyncNodes.h
+@@ -7,18 +7,18 @@
+ #ifndef PLAYER_SYNC_NODES_H
+ #define PLAYER_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/PedSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PedSyncNodes.h"
+ 
+ #include "rline/rlsessioninfo.h"
+ #include "rline/clan/rlclancommon.h"
+ 
+ // framework includes
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ #include "fwscene/world/WorldLimits.h"
+ 
+ // game includes
+ #include "PedGroup/PedGroup.h"
+-#include "Peds/Rendering/PedDamage.h"
++#include "Peds/rendering/PedDamage.h"
+ #include "Peds/rendering/PedOverlay.h"
+ #include "Peds/PlayerInfo.h"
+ 

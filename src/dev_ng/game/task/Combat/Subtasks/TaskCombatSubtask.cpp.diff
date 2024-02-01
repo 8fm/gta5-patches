@@ -1,12 +1,15 @@
 diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.cpp
 --- a/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.cpp
 +++ b/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.cpp
-@@ -13,7 +13,7 @@
+@@ -11,9 +11,9 @@
+ //#include "fwmaths/Maths.h"
+ 
  // Game headers
- #include "Peds/Ped.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
 -#include "Task\Combat\Subtasks\TaskCombatSubTask.h"
-+#include "Task/Combat/Subtasks/TaskCombatSubTask.h"
++#include "task/Combat/Subtasks/TaskCombatSubTask.h"
  
  
  //=========================================================================

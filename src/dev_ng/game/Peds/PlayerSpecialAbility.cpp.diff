@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp b/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp
+--- a/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp
++++ b/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp
+@@ -15,7 +15,7 @@
+ #include "control/replay/replay.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "game/ModelIndices.h"
+-#include "scene/datafilemgr.h"
++#include "scene/DataFileMgr.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "Ped.h"
+ #include "Peds/PedIntelligence.h"
+@@ -23,20 +23,20 @@
+ #include "scene/EntityIterator.h"
+ #include "scene/ExtraContent.h"
+ #if __BANK
+-#include "scene/world/gameworld.h"
++#include "scene/world/GameWorld.h"
+ #endif // __BANK
+ #include "Stats/StatsInterface.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "renderer/PostProcessFXHelper.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "system/control.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Movement/TaskFall.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Movement/TaskFall.h"
+ #include "task/System/TaskHelpers.h"
+-#include "vehicles/Vehicle.h"
+-#include "vehicles/Wheel.h"
+-#include "Vfx/Systems/VfxVehicle.h"
+-#include "Frontend/MobilePhone.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Wheel.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "frontend/MobilePhone.h"
+ 
+ // Parser headers
+ #include "PlayerSpecialAbility_parser.h"

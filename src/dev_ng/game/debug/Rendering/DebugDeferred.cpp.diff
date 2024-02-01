@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp b/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp
+--- a/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp
++++ b/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp
+@@ -17,12 +17,12 @@
+ 
+ // framework
+ #include "fwrenderer/renderlistbuilder.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/xmacro.h"
+ #include "fwutil/orientator.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/helpers/frame.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "debug/GtaPicker.h"
+@@ -42,13 +42,13 @@
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "renderer/Util/ShaderUtil.h"
+ #include "renderer/Util/Util.h"
+-#include "Scene/Building.h"
+-#include "Scene/AnimatedBuilding.h"
++#include "scene/Building.h"
++#include "scene/AnimatedBuilding.h"
+ #include "scene/EntityBatch.h"
+-#include "Scene/portals/InteriorInst.h"
++#include "scene/portals/InteriorInst.h"
+ #include "system/controlMgr.h"
+ #include "Objects/DummyObject.h"
+-#include "Objects/Object.h"
++#include "Objects/object.h"
+ 
+ RENDER_OPTIMISATIONS()
+ 

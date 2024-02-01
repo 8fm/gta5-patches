@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/network/Cloud/VideoUploadManager_Custom.cpp b/src/dev_ng/game/network/Cloud/VideoUploadManager_Custom.cpp
+--- a/src/dev_ng/game/network/Cloud/VideoUploadManager_Custom.cpp
++++ b/src/dev_ng/game/network/Cloud/VideoUploadManager_Custom.cpp
+@@ -1,9 +1,9 @@
+-#include "Network/Cloud/VideoUploadManager.h"
++#include "network/Cloud/VideoUploadManager.h"
+ 
+ #if defined(GTA_REPLAY) && GTA_REPLAY 
+ #if !USE_ORBIS_UPLOAD
+ 
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "string/stringhash.h"
+ #include "fwsys/timer.h"
+ #include "fwnet/netchannel.h"
+@@ -23,11 +23,11 @@
+ #endif
+ 
+ #include "frontend/PolicyMenu.h"
+-#include "Network/Cloud/UserContentManager.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Cloud/UserContentManager.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "frontend/VideoEditor/ui/Editor.h"
+ #include "control/replay/File/ReplayFileManager.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ 
+ #include "video/video_channel.h"
+ #include "frontend/GameStreamMgr.h"
+@@ -37,9 +37,9 @@
+ #include "frontend/VideoEditor/ui/Menu.h"
+ 
+ #include "replaycoordinator/ReplayMetadata.h"
+-#include "Network/SocialClubServices/SocialClubCommunityEventMgr.h"
++#include "network/SocialClubServices/SocialClubCommunityEventMgr.h"
+ 
+-#include "network/live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ #include "control/videorecording/videorecording.h"
+ 

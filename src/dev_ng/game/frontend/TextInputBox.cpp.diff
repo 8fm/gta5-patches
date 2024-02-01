@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/TextInputBox.cpp b/src/dev_ng/game/frontend/TextInputBox.cpp
+--- a/src/dev_ng/game/frontend/TextInputBox.cpp
++++ b/src/dev_ng/game/frontend/TextInputBox.cpp
+@@ -1,9 +1,9 @@
+ ﻿#if RSG_PC
+ #include "TextInputBox.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/ui_channel.h"
++#include "frontend/PauseMenu.h"
+ #include "system/keyboard.h"
+-#include "Frontend/NewHud.h"
++#include "frontend/NewHud.h"
+ 
+ #if __BANK
+ #include "bank/bkmgr.h"

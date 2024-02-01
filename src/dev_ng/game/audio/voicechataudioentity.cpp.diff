@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/voicechataudioentity.cpp b/src/dev_ng/game/audio/voicechataudioentity.cpp
+--- a/src/dev_ng/game/audio/voicechataudioentity.cpp
++++ b/src/dev_ng/game/audio/voicechataudioentity.cpp
+@@ -2,7 +2,7 @@
+ #include "audiohardware/device.h"
+ #include "audiohardware/driver.h"
+ #include "audioengine/engine.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "weapons/WeaponManager.h"
+ #include "weapons/WeaponTypes.h"
+ #include "northaudioengine.h"

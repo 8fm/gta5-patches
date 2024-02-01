@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInteriorManager.cpp b/src/dev_ng/game/control/replay/ReplayInteriorManager.cpp
+--- a/src/dev_ng/game/control/replay/ReplayInteriorManager.cpp
++++ b/src/dev_ng/game/control/replay/ReplayInteriorManager.cpp
+@@ -10,7 +10,7 @@
+ #include "fwutil/PtrList.h"
+ #include "scene/portals/InteriorInst.h"
+ #include "scene/portals/InteriorProxy.h"
+-#include "scene/portals/portalDebugHelper.h"
++#include "scene/portals/PortalDebugHelper.h"
+ 
+ //=====================================================================================================
+ atArray<const CPacketInterior*>	ReplayInteriorManager::m_interiorStates;

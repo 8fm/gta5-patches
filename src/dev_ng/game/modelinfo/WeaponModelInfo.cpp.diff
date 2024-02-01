@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
-@@ -17,7 +17,7 @@
+@@ -11,13 +11,13 @@
+ #include "rmcore/drawable.h"
+ #include "phbound/BoundSphere.h"
+ #include "phbound/BoundComposite.h"
+-#include "phcore/MaterialMgr.h"
++#include "phcore/materialmgr.h"
+ #include "phcore/phmath.h"
+ #include "physics/archetype.h"
  #include "physics/tunable.h"
  
  // Framework headers

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Response/TaskReactToDeadPed.h b/src/dev_ng/game/task/Response/TaskReactToDeadPed.h
+--- a/src/dev_ng/game/task/Response/TaskReactToDeadPed.h
++++ b/src/dev_ng/game/task/Response/TaskReactToDeadPed.h
+@@ -10,9 +10,9 @@
+ #define INC_TASK_REACT_TO_DEAD_PED_H
+ 
+ //Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Event/System/EventData.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "event/system/EventData.h"
+ 
+ // Class declaration
+ class CTaskReactToDeadPed : public CTask

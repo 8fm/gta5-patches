@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/audio/music/musicplayer.cpp b/src/dev_ng/game/audio/music/musicplayer.cpp
+--- a/src/dev_ng/game/audio/music/musicplayer.cpp
++++ b/src/dev_ng/game/audio/music/musicplayer.cpp
+@@ -24,8 +24,8 @@
+ #include "frontend/HudTools.h"
+ #include "system/param.h"
+ #include "system/controlMgr.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ 
+ #include "audio/debugaudio.h"
+ 

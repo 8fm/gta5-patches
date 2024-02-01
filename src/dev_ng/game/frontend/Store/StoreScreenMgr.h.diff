@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/Store/StoreScreenMgr.h b/src/dev_ng/game/frontend/Store/StoreScreenMgr.h
+--- a/src/dev_ng/game/frontend/Store/StoreScreenMgr.h
++++ b/src/dev_ng/game/frontend/Store/StoreScreenMgr.h
+@@ -3,7 +3,7 @@
+ 
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "renderer/sprite2d.h"
+-#include "ATL/String.h"
++#include "atl/string.h"
+ 
+ class cStoreAdvertScreen;
+ class cStoreAdvertData;

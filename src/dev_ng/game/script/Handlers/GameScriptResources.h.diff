@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptResources.h b/src/dev_ng/game/script/Handlers/GameScriptResources.h
+--- a/src/dev_ng/game/script/Handlers/GameScriptResources.h
++++ b/src/dev_ng/game/script/Handlers/GameScriptResources.h
+@@ -10,7 +10,7 @@
+ #include "vectormath/vec3v.h"
+ 
+ // framework includes
+-#include "entity/archetypeManager.h"
++#include "entity/archetypemanager.h"
+ #include "fwanimation/animdefines.h"
+ #include "fwanimation/clipsets.h"
+ #include "fwscript/scripthandler.h"
+@@ -18,8 +18,8 @@
+ 
+ // Game includes
+ #include "frontend/MiniMapCommon.h"
+-#include "modelinfo/pedmodelinfo.h"
+-#include "scene/volume/volume.h"
++#include "modelinfo/PedModelInfo.h"
++#include "scene/volume/Volume.h"
+ #include "script/script_memory_tracking.h"
+ 
+ namespace rage

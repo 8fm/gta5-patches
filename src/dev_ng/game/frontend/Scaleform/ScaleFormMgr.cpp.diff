@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp b/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp
+--- a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp
++++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp
+@@ -14,7 +14,7 @@
+ #include "grcore/allocscope.h"
+ #include "grcore/effect.h"
+ #include "scaleform/renderer.h"
+-#include "Scaleform/scaleform.h"
++#include "scaleform/scaleform.h"
+ #include "scr_scaleform/scaleform.h"
+ #include "script/thread.h"
+ #include "streaming/streamingengine.h"
+@@ -35,19 +35,19 @@
+ #include "audio/frontendaudioentity.h"
+ #include "camera/CamInterface.h"
+ #include "Core/Game.h"
+-#include "Debug/TextureViewer/TextureViewer.h"
+-#include "Frontend/MovieCLipText.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+-#include "Frontend/Scaleform/ScaleFormStore.h"
++#include "debug/TextureViewer/TextureViewer.h"
++#include "frontend/MovieCLipText.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
++#include "frontend/Scaleform/ScaleFormStore.h"
+ #if RSG_PC
+-#include "Frontend/MultiplayerChat.h"
++#include "frontend/MultiplayerChat.h"
+ #endif // RSG_PC
+ #include "game/Clock.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/rendertargets.h"
+ #include "scene/world/GameWorld.h"
+-#include "Script/Script_Hud.h"
++#include "script/Script_Hud.h"
+ #include "streaming/streaming.h"
+ #include "system/controlMgr.h"
+ #include "system/param.h"

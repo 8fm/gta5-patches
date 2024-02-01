@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.cpp
+@@ -5,7 +5,7 @@
+ // written by:	John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjProximityMigrateable.h"
++#include "network/Objects/Entities/NetObjProximityMigrateable.h"
+ 
+ // framework headers
+ #include "fwnet/netblenderlininterp.h"
+@@ -14,18 +14,18 @@
+ #include "fwscene/world/WorldLimits.h"
+ 
+ // game headers
+-#include "Network/Cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ #include "network/Debug/NetworkDebug.h"
+ #include "network/Events/NetworkEventTypes.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "network/objects/NetworkObjectPopulationMgr.h"
+-#include "Network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h"
+-#include "Network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+-#include "Peds/Ped.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Objects/NetworkObjectPopulationMgr.h"
++#include "network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ 

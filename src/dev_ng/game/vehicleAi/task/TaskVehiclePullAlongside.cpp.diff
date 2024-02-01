@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.cpp
+@@ -2,11 +2,11 @@
+ #include "vehicleAi/task/TaskVehiclePullAlongside.h"
+ 
+ // Game headers
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Vehicles/Automobile.h"
+ #include "Vehicles/vehicle.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleThreePointTurn.h"
+ 
+ AI_OPTIMISATIONS()

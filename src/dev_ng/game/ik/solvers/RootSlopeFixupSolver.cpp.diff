@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.cpp b/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.cpp
+--- a/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.cpp
++++ b/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.cpp
+@@ -17,7 +17,7 @@
+ #include "animation/anim_channel.h"
+ #include "animation/MovePed.h"
+ #include "ik/IkManager.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ 
+ #define ROOT_SLOPE_FIXUP_SOLVER_POOL_MAX 32
+ 

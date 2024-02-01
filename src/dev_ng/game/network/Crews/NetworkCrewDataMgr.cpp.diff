@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.cpp b/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.cpp
+--- a/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.cpp
++++ b/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.cpp
+@@ -1,13 +1,13 @@
+ #include "NetworkCrewDataMgr.h"
+ 
+-#include "Network/Stats/NetworkLeaderboardSessionMgr.h"
+-#include "Network/live/NetworkClan.h"
++#include "network/Stats/NetworkLeaderboardSessionMgr.h"
++#include "network/Live/NetworkClan.h"
+ #include "frontend/ui_channel.h"
+ #include "fwnet/netscgameconfigparser.h"
+ #include "fwsys/gameskeleton.h"
+ #include "game/config.h"
+ #include "network/NetworkInterface.h"
+-#include "network/live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "optimisations.h"
+ #include "rline/clan/rlclan.h"
+ #include "rline/ros/rlros.h"

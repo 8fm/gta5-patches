@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/streamslot.cpp b/src/dev_ng/game/audio/streamslot.cpp
+--- a/src/dev_ng/game/audio/streamslot.cpp
++++ b/src/dev_ng/game/audio/streamslot.cpp
+@@ -6,7 +6,7 @@
+ 
+ #include "audio_channel.h"
+ #include "streamslot.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "grcore/debugdraw.h"
+ #include "system/memory.h"
+ 

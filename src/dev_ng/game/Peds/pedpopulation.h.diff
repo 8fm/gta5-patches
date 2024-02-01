@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/Peds/pedpopulation.h b/src/dev_ng/game/Peds/pedpopulation.h
+--- a/src/dev_ng/game/Peds/pedpopulation.h
++++ b/src/dev_ng/game/Peds/pedpopulation.h
+@@ -23,9 +23,9 @@
+ #include "game/Dispatch/DispatchServices.h"
+ #include "control/population.h"
+ #include "modelinfo/ModelInfo.h"
+-#include "peds/peddefines.h"
+-#include "peds/pedtype.h"
+-#include "control/replay/Replay.h"
++#include "Peds/pedDefines.h"
++#include "Peds/PedType.h"
++#include "control/replay/replay.h"
+ 
+ 
+ // forward declarations

@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkVehiclePlayerLockingWorldState.cpp b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkVehiclePlayerLockingWorldState.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkVehiclePlayerLockingWorldState.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkVehiclePlayerLockingWorldState.cpp
+@@ -5,19 +5,19 @@
+ //
+ //
+ #include "NetworkVehiclePlayerLockingWorldState.h"
+-#include "Network/General/NetworkVehicleModelDoorLockTable.h"
++#include "network/General/NetworkVehicleModelDoorLockTable.h"
+ 
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"
+ 
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ 
+-#include "Network/NetworkInterface.h"
+-#include "peds/Ped.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
+ 
+ #include "fwdebug/picker.h"
+ 
+-#include "Network/Events/NetworkEventTypes.h"
++#include "network/Events/NetworkEventTypes.h"
+ #include "script/script.h"
+ 
+ 

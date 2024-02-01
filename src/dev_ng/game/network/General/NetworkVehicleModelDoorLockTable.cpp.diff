@@ -1,12 +1,19 @@
 diff --git a/src/dev_ng/game/network/General/NetworkVehicleModelDoorLockTable.cpp b/src/dev_ng/game/network/General/NetworkVehicleModelDoorLockTable.cpp
 --- a/src/dev_ng/game/network/General/NetworkVehicleModelDoorLockTable.cpp
 +++ b/src/dev_ng/game/network/General/NetworkVehicleModelDoorLockTable.cpp
-@@ -1,7 +1,7 @@
+@@ -1,10 +1,10 @@
  #include "NetworkVehicleModelDoorLockTable.h"
- #include "ModelInfo/ModelInfo.h"
- #include "Vehicles/Vehicle.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "Vehicles/Vehicle.h"
 -#include "Script\script.h"
-+#include "Script/script.h"
++#include "modelinfo/ModelInfo.h"
++#include "Vehicles/vehicle.h"
++#include "script/script.h"
  #include "scene/world/GameWorld.h"
- #include "peds/PlayerInfo.h"
- #include "peds/ped.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/ped.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/ped.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

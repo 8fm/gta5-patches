@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/scannermanager.h b/src/dev_ng/game/audio/scannermanager.h
+--- a/src/dev_ng/game/audio/scannermanager.h
++++ b/src/dev_ng/game/audio/scannermanager.h
+@@ -12,7 +12,7 @@
+ #if NA_POLICESCANNER_ENABLED
+ 
+ #include "gameobjects.h"
+-#include "game/crime.h"
++#include "game/Crime.h"
+ 
+ #include "audioentity.h"
+ 

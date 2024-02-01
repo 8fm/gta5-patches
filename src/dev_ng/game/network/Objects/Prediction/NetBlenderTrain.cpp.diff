@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.cpp b/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.cpp
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.cpp
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.cpp
+@@ -2,12 +2,12 @@
+ // name:		NetBlenderTrain.cpp
+ // written by:	Daniel Yelland
+ // description:	Network blender used by trains
+-#include "network/objects/prediction/NetBlenderTrain.h"
++#include "network/Objects/Prediction/NetBlenderTrain.h"
+ 
+-#include "peds/ped.h"
+-#include "network/network.h"
+-#include "network/objects/entities/NetObjTrain.h"
+-#include "vehicles/Train.h"
++#include "Peds/ped.h"
++#include "network/Network.h"
++#include "network/Objects/Entities/NetObjTrain.h"
++#include "Vehicles/train.h"
+ 
+ CompileTimeAssert(sizeof(CNetBlenderTrain) <= LARGEST_NET_PHYSICAL_BLENDER_CLASS);
+ 

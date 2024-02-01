@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/weapons/inventory/InventoryItem.cpp b/src/dev_ng/game/weapons/inventory/InventoryItem.cpp
+--- a/src/dev_ng/game/weapons/inventory/InventoryItem.cpp
++++ b/src/dev_ng/game/weapons/inventory/InventoryItem.cpp
+@@ -1,11 +1,11 @@
+ // File header
+-#include "Weapons/Inventory/InventoryItem.h"
++#include "weapons/inventory/InventoryItem.h"
+ 
+ // Game headers
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "Streaming/Streaming.h"
+-#include "Streaming/streamingvisualize.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "streaming/Streaming.h"
++#include "streaming/streamingvisualize.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

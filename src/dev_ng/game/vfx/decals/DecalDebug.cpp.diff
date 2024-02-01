@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/vfx/decals/DecalDebug.cpp b/src/dev_ng/game/vfx/decals/DecalDebug.cpp
+--- a/src/dev_ng/game/vfx/decals/DecalDebug.cpp
++++ b/src/dev_ng/game/vfx/decals/DecalDebug.cpp
+@@ -20,7 +20,7 @@
+ // rage
+ #include "bank/bank.h"
+ #include "phbound/boundcomposite.h"
+-#include "physics/gtainst.h"
++#include "physics/gtaInst.h"
+ 
+ // framework
+ #include "fwscene/stores/txdstore.h"
+@@ -31,17 +31,17 @@
+ #include "vfx/decal/decalmanager.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Peds/Ped.h"
+-#include "Physics/Physics.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Vfx/Systems/VfxBlood.h"
+-#include "Vfx/Systems/VfxLiquid.h"
+-#include "Vfx/Systems/VfxWheel.h"
++#include "camera/CamInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkClan.h"
++#include "Peds/ped.h"
++#include "physics/physics.h"
++#include "scene/world/GameWorld.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/systems/VfxBlood.h"
++#include "vfx/systems/VfxLiquid.h"
++#include "vfx/systems/VfxWheel.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

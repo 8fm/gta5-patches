@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.cpp
+@@ -13,20 +13,20 @@
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "camera/viewports/viewport.h"
++#include "camera/viewports/Viewport.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+ #include "scene/scene.h"
+ #include "scene/Entity.h"
+ #include "scene/DynamicEntity.h"
+-#include "vfx/visualeffects.h"
+-#include "renderer/util/util.h"
++#include "vfx/VisualEffects.h"
++#include "renderer/Util/util.h"
+ #include "renderer/occlusion.h"
+-#include "renderer/renderlistgroup.h"
+-#include "renderer/renderlistbuilder.h"
+-#include "renderer/renderphases/renderphaseparaboloidshadows.h"
+-#include "renderer/shadows/shadows.h"
+-#include "renderer/lights/LightSource.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/renderListGroup.h"
++#include "renderer/RenderListBuilder.h"
++#include "renderer/RenderPhases/renderphaseparaboloidshadows.h"
++#include "renderer/Shadows/Shadows.h"
++#include "renderer/Lights/LightSource.h"
++#include "renderer/Lights/lights.h"
+ 
+ RENDER_OPTIMISATIONS()
+ 

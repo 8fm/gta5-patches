@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/Vehicles/Heli.h b/src/dev_ng/game/Vehicles/Heli.h
+--- a/src/dev_ng/game/Vehicles/Heli.h
++++ b/src/dev_ng/game/Vehicles/Heli.h
+@@ -10,13 +10,13 @@
+ 
+ // game includes
+ #include "camera/helpers/HandShaker.h"
+-#include "vehicles/automobile.h"
+-#include "vehicles/Propeller.h"
+-#include "vehicles/landinggear.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Propeller.h"
++#include "Vehicles/LandingGear.h"
+ #include "scene/RegdRefTypes.h"
+-#include "vehicles/VehicleGadgets.h"
+-#include "network/objects/entities/netObjHeli.h"
+-#include "System/PadGestures.h"						// for define
++#include "Vehicles/VehicleGadgets.h"
++#include "network/Objects/Entities/NetObjHeli.h"
++#include "system/PadGestures.h"						// for define
+ 
+ extern float sfHeliAbandonedYawMult;
+ extern float sfHeliAbandonedPitchMult;

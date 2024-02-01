@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneCameraEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneCameraEntity.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneCameraEntity.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneCameraEntity.cpp
+@@ -23,11 +23,11 @@
+ #include "cutscene/cutscenecustomevents.h"
+ #include "cutscene/CutSceneAnimManager.h"
+ #include "cutscene/AnimatedModelEntity.h"
+-#include "camera/caminterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "Cutscene/cutscene_channel.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "cutscene/cutscene_channel.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/Water.h"

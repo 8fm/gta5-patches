@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjGame.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjGame.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjGame.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjGame.cpp
+@@ -4,14 +4,14 @@
+ // written by:	Daniel Yelland
+ //
+ 
+-#include "network/objects/entities/NetObjGame.h"
++#include "network/Objects/Entities/NetObjGame.h"
+ 
+ #include "network/Debug/NetworkDebug.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "network/objects/synchronisation/synctrees/ProjectSyncTrees.h"
+-#include "script/handlers/GameScriptHandlerNetwork.h"
+-#include "script/handlers/GameScriptIds.h"
+-#include "script/handlers/GameScriptMgr.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "script/Handlers/GameScriptHandlerNetwork.h"
++#include "script/Handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptMgr.h"
+ #include "script/script.h"
+ 
+ #include "fwnet/netsyncdata.h"

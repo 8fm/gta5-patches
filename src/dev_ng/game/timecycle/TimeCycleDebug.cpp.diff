@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/timecycle/TimeCycleDebug.cpp b/src/dev_ng/game/timecycle/TimeCycleDebug.cpp
+--- a/src/dev_ng/game/timecycle/TimeCycleDebug.cpp
++++ b/src/dev_ng/game/timecycle/TimeCycleDebug.cpp
+@@ -27,15 +27,15 @@
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+-#include "Game/Clock.h"
+-#include "Game/Weather.h"
+-#include "Renderer/PostProcessFX.h"
+-#include "Scene/DataFileMgr.h"
++#include "game/Clock.h"
++#include "game/Weather.h"
++#include "renderer/PostProcessFX.h"
++#include "scene/DataFileMgr.h"
+ #include "scene/portals/PortalTracker.h"
+ #include "timecycle/tcinstbox.h"
+-#include "TimeCycle/TimeCycle.h"
+-#include "TimeCycle/TimeCycleConfig.h"
+-#include "Debug/Rendering/DebugDeferred.h"
++#include "timecycle/TimeCycle.h"
++#include "timecycle/TimeCycleConfig.h"
++#include "debug/Rendering/DebugDeferred.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

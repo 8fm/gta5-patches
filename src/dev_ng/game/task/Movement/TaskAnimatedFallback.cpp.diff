@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskAnimatedFallback.cpp b/src/dev_ng/game/task/Movement/TaskAnimatedFallback.cpp
+--- a/src/dev_ng/game/task/Movement/TaskAnimatedFallback.cpp
++++ b/src/dev_ng/game/task/Movement/TaskAnimatedFallback.cpp
+@@ -3,7 +3,7 @@
+ //
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "Task/Movement/TaskAnimatedFallback.h"
++#include "task/Movement/TaskAnimatedFallback.h"
+ 
+ // C headers
+ // Rage headers
+@@ -20,11 +20,11 @@
+ 
+ // Game headers
+ #include "ik/solvers/RootSlopeFixupSolver.h"
+-#include "Event/EventDamage.h"
+-#include "Peds/Ped.h"
++#include "event/EventDamage.h"
++#include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
+-#include "Task/Movement/TaskGetUp.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Movement/TaskGetUp.h"
+ 
+ AI_OPTIMISATIONS()
+ 

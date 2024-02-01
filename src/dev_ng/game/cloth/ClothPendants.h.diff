@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/cloth/ClothPendants.h b/src/dev_ng/game/cloth/ClothPendants.h
+--- a/src/dev_ng/game/cloth/ClothPendants.h
++++ b/src/dev_ng/game/cloth/ClothPendants.h
+@@ -3,8 +3,8 @@
+ 
+ class CEntity;
+ 
+-#include "Debug/Debug.h"
+-#include "Scene/RegdRefTypes.h"
++#include "debug/Debug.h"
++#include "scene/RegdRefTypes.h"
+ 
+ #include "vector/vector3.h"
+ 

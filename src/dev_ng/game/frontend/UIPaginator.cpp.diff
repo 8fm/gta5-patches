@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/game/frontend/UIPaginator.cpp b/src/dev_ng/game/frontend/UIPaginator.cpp
+--- a/src/dev_ng/game/frontend/UIPaginator.cpp
++++ b/src/dev_ng/game/frontend/UIPaginator.cpp
+@@ -1,7 +1,7 @@
+ #include "ButtonEnum.h"
+-#include "Frontend/UIPaginator.h"
++#include "frontend/UIPaginator.h"
+ #include "frontend/ScaleformMenuHelper.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "rline/clan/rlclan.h"
+ #include "frontend/PauseMenu.h"
+ #include "frontend/ui_channel.h"

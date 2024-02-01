@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/music/musicaction.h b/src/dev_ng/game/audio/music/musicaction.h
+--- a/src/dev_ng/game/audio/music/musicaction.h
++++ b/src/dev_ng/game/audio/music/musicaction.h
+@@ -7,7 +7,7 @@
+ #ifndef AUD_MUSICACTION_H
+ #define AUD_MUSICACTION_H
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #if !RSG_FINAL
+ #define Implement_MusicActionName(x) const char *x::GetName() const { return audNorthAudioEngine::GetMetadataManager().GetNameFromNTO_Debug(m_Metadata->NameTableOffset); }

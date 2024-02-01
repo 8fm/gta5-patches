@@ -1,0 +1,43 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxExplosion.cpp b/src/dev_ng/game/vfx/systems/VfxExplosion.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxExplosion.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxExplosion.cpp
+@@ -26,24 +26,24 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "control/replay/Replay.h"
+-#include "control/replay/effects/ParticleWeaponFxPacket.h"
+-#include "control/replay/effects/ParticleFireFxPacket.h"
++#include "camera/CamInterface.h"
++#include "control/replay/replay.h"
++#include "control/replay/Effects/ParticleWeaponFxPacket.h"
++#include "control/replay/Effects/ParticleFireFxPacket.h"
+ #include "Core/Game.h"
+ #include "Peds/PlayerInfo.h"
+-#include "Peds/Ped.h"
+-#include "Physics/Physics.h"
+-#include "Renderer/Water.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Misc/Fire.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxBlood.h"
+-#include "Vfx/Systems/VfxWeapon.h"
++#include "Peds/ped.h"
++#include "physics/physics.h"
++#include "renderer/Water.h"
++#include "scene/DataFileMgr.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/misc/Fire.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxBlood.h"
++#include "vfx/systems/VfxWeapon.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Weapons/ExplosionInst.h"
++#include "vfx/VfxHelper.h"
++#include "weapons/ExplosionInst.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

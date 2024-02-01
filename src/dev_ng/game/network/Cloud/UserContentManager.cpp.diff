@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/network/Cloud/UserContentManager.cpp b/src/dev_ng/game/network/Cloud/UserContentManager.cpp
+--- a/src/dev_ng/game/network/Cloud/UserContentManager.cpp
++++ b/src/dev_ng/game/network/Cloud/UserContentManager.cpp
+@@ -1,7 +1,7 @@
+ //===========================================================================
+ // Copyright (C) 1999-2013 Rockstar Games.  All Rights Reserved.             
+ //===========================================================================
+-#include "Network/Cloud/UserContentManager.h"
++#include "network/Cloud/UserContentManager.h"
+ 
+ // rage includes
+ #include "bank/bank.h"
+@@ -23,11 +23,11 @@
+ #include "rline/youtube/rlyoutube.h"
+ 
+ // game includes
+-#include "Network/NetworkInterface.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "SaveLoad/SaveGame_Filenames.h"
++#include "network/NetworkInterface.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkClan.h"
++#include "SaveLoad/savegame_filenames.h"
+ #include "SaveLoad/savegame_scriptdatafile.h"
+ #include "text/text.h"
+ 

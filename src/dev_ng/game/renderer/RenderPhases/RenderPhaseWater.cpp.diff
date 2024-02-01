@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWater.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWater.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWater.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWater.cpp
+@@ -15,15 +15,15 @@
+ #include "profile/timebars.h"
+ 
+ // Framework Headers
+-#include "fwScene/scan/Scan.h"
++#include "fwscene/scan/Scan.h"
+ 
+ // Game headers
+ #include "renderer/DrawLists/drawListMgr.h"
+-#include "renderer/water.h"
+-#include "Vfx/Sky/Sky.h"
+-#include "Vfx/GPUParticles/PtFxGPUManager.h"
+-#include "Vfx/Systems/VfxWeather.h"
+-#include "Vfx/VfxHelper.h"
++#include "renderer/Water.h"
++#include "vfx/Sky/Sky.h"
++#include "vfx/gpuparticles/PtFxGPUManager.h"
++#include "vfx/systems/VfxWeather.h"
++#include "vfx/VfxHelper.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

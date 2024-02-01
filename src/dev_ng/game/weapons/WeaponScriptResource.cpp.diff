@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/weapons/WeaponScriptResource.cpp b/src/dev_ng/game/weapons/WeaponScriptResource.cpp
+--- a/src/dev_ng/game/weapons/WeaponScriptResource.cpp
++++ b/src/dev_ng/game/weapons/WeaponScriptResource.cpp
+@@ -3,14 +3,14 @@
+ #include "fwanimation/animmanager.h"
+ 
+ // File headers
+-#include "ModelInfo/ModelInfo.h"
+-#include "Network/NetworkInterface.h"
+-#include "Weapons/Components/WeaponComponent.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/WeaponScriptResource.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Info/WeaponAnimationsManager.h"
+-#include "Weapons/Inventory/AmmoItem.h"
++#include "modelinfo/ModelInfo.h"
++#include "network/NetworkInterface.h"
++#include "weapons/components/WeaponComponent.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/WeaponScriptResource.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/info/WeaponAnimationsManager.h"
++#include "weapons/inventory/AmmoItem.h"
+ #include "pickups/Data/PickupDataManager.h"
+ #include "pickups/PickupManager.h"
+ 

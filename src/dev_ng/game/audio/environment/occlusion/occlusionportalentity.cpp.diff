@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/environment/occlusion/occlusionportalentity.cpp b/src/dev_ng/game/audio/environment/occlusion/occlusionportalentity.cpp
+--- a/src/dev_ng/game/audio/environment/occlusion/occlusionportalentity.cpp
++++ b/src/dev_ng/game/audio/environment/occlusion/occlusionportalentity.cpp
+@@ -12,7 +12,7 @@
+ #include "breakableglass/breakable.h"
+ #include "fragment/typegroup.h"
+ 
+-#include "objects/door.h"
++#include "Objects/Door.h"
+ 
+ AUDIO_ENVIRONMENT_OPTIMISATIONS()
+ 

@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.cpp b/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentProgrammableTargeting.cpp
+@@ -5,15 +5,15 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentProgrammableTargeting.h"
++#include "weapons/components/WeaponComponentProgrammableTargeting.h"
+ 
+ // Game headers
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Physics/Physics.h"
+-#include "System/ControlMgr.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Weapons/WeaponDebug.h"
++#include "Peds/ped.h"
++#include "physics/physics.h"
++#include "system/controlMgr.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "weapons/WeaponDebug.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

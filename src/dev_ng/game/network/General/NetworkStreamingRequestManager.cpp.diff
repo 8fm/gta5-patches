@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/General/NetworkStreamingRequestManager.cpp b/src/dev_ng/game/network/General/NetworkStreamingRequestManager.cpp
+--- a/src/dev_ng/game/network/General/NetworkStreamingRequestManager.cpp
++++ b/src/dev_ng/game/network/General/NetworkStreamingRequestManager.cpp
+@@ -12,12 +12,12 @@
+ #include "system/timer.h"
+ 
+ // game headers
+-#include "Network/NetworkInterface.h"
+-#include "Network/Arrays/NetworkArrayMgr.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
++#include "network/NetworkInterface.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ #include "modelinfo/ModelInfo.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ 
+ 
+ NETWORK_OPTIMISATIONS()

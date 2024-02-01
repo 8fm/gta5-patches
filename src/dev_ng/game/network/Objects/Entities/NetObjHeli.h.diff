@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjHeli.h b/src/dev_ng/game/network/Objects/Entities/NetObjHeli.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjHeli.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjHeli.h
+@@ -8,7 +8,7 @@
+ #ifndef NETOBJHELI_H
+ #define NETOBJHELI_H
+ 
+-#include "network/objects/entities/NetObjAutomobile.h"
++#include "network/Objects/Entities/NetObjAutomobile.h"
+ 
+ struct CHeliBlenderData;
+ 

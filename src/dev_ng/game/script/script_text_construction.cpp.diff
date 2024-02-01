@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/script/script_text_construction.cpp b/src/dev_ng/game/script/script_text_construction.cpp
+--- a/src/dev_ng/game/script/script_text_construction.cpp
++++ b/src/dev_ng/game/script/script_text_construction.cpp
+@@ -6,10 +6,10 @@
+ #include "frontend/MiniMap.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/BusySpinner.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "scene/World/GameWorld.h"
++#include "network/NetworkInterface.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Players/NetGamePlayer.h"
++#include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ #include "script/script_helper.h"
+ #include "script/script_hud.h"

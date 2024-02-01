@@ -16,7 +16,7 @@ diff --git a/src/dev_ng/game/shaders/CustomShaderEffectWeapon.cpp b/src/dev_ng/g
  
  // Game headers
 -#include "debug\debug.h"
-+#include "debug/debug.h"
++#include "debug/Debug.h"
  #include "renderer/DrawLists/drawListMgr.h"
 -#include "scene\Entity.h"
 -#include "scene\world\GameWorld.h"

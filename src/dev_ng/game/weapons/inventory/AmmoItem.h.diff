@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/weapons/inventory/AmmoItem.h b/src/dev_ng/game/weapons/inventory/AmmoItem.h
+--- a/src/dev_ng/game/weapons/inventory/AmmoItem.h
++++ b/src/dev_ng/game/weapons/inventory/AmmoItem.h
+@@ -2,8 +2,8 @@
+ #define AMMO_ITEM_H
+ 
+ // Game headers
+-#include "Weapons/Info/AmmoInfo.h"
+-#include "Weapons/Inventory/InventoryItem.h"
++#include "weapons/info/AmmoInfo.h"
++#include "weapons/inventory/InventoryItem.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CAmmoItem

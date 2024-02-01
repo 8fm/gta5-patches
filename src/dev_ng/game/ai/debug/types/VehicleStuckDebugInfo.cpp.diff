@@ -9,7 +9,7 @@ diff --git a/src/dev_ng/game/ai/debug/types/VehicleStuckDebugInfo.cpp b/src/dev_
  
 -#include "vehicles\vehicle.h"
 -#include "vehicleAi\VehicleIntelligence.h"
-+#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
 +#include "vehicleAi/VehicleIntelligence.h"
  
  CVehicleStuckDebugInfo::CVehicleStuckDebugInfo(const CVehicle* pVeh, DebugInfoPrintParams printParams, s32 iNumberOfLines)

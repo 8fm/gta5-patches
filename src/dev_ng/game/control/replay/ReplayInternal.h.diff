@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInternal.h b/src/dev_ng/game/control/replay/ReplayInternal.h
+--- a/src/dev_ng/game/control/replay/ReplayInternal.h
++++ b/src/dev_ng/game/control/replay/ReplayInternal.h
+@@ -26,13 +26,13 @@
+ #include "atl/map.h"
+ 
+ #include "SaveLoad/savegame_queued_operations.h"
+-#include "Scene/Physical.h"
++#include "scene/Physical.h"
+ 
+ #if __BANK && GTA_REPLAY
+ #include "camera/system/CameraManager.h"
+ #endif // __BANK && GTA_REPLAY
+ 
+-#include "file/ReplayFileManager.h"
++#include "File/ReplayFileManager.h"
+ 
+ class naAudioEntity;
+ class audScene;

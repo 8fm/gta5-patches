@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/metadata/PtFxAssetInfo.cpp b/src/dev_ng/game/vfx/metadata/PtFxAssetInfo.cpp
+--- a/src/dev_ng/game/vfx/metadata/PtFxAssetInfo.cpp
++++ b/src/dev_ng/game/vfx/metadata/PtFxAssetInfo.cpp
+@@ -25,7 +25,7 @@
+ #include "vfx/channel.h"
+ 
+ // game
+-#include "Scene/DataFileMgr.h"
++#include "scene/DataFileMgr.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

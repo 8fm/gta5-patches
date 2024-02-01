@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/policescanner.h b/src/dev_ng/game/audio/policescanner.h
+--- a/src/dev_ng/game/audio/policescanner.h
++++ b/src/dev_ng/game/audio/policescanner.h
+@@ -14,7 +14,7 @@
+ #include "scannermanager.h"
+ 
+ #include "gameobjects.h"
+-#include "game/crime.h"
++#include "game/Crime.h"
+ 
+ #include "audioentity.h"
+ 

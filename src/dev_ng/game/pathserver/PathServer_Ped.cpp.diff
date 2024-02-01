@@ -3,7 +3,7 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Ped.cpp b/src/dev_ng/game/pat
 +++ b/src/dev_ng/game/pathserver/PathServer_Ped.cpp
 @@ -1,10 +1,10 @@
 -#include "PathServer\PathServer.h"
-+#include "PathServer/PathServer.h"
++#include "pathserver/PathServer.h"
  
  #ifdef GTA_ENGINE
  
@@ -15,15 +15,17 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Ped.cpp b/src/dev_ng/game/pat
  #include "fwscene/search/Search.h"
  
  // Game headers
-@@ -16,17 +16,17 @@
+@@ -15,18 +15,18 @@
+ #include "camera/viewports/Viewport.h"
  #include "camera/viewports/ViewportManager.h"
  #include "game/PopMultiplierAreas.h"
- #include "Debug/VectorMap.h"
+-#include "Debug/VectorMap.h"
 -#include "ModelInfo\PedModelInfo.h"
 -#include "Peds\Ped.h"
 -#include "Peds\PedDebugVisualiser.h"
-+#include "ModelInfo/PedModelInfo.h"
-+#include "Peds/Ped.h"
++#include "debug/VectorMap.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/ped.h"
 +#include "Peds/PedDebugVisualiser.h"
  #include "Peds/pedpopulation.h"
  #include "Peds/PedIntelligence.h"
@@ -34,7 +36,7 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Ped.cpp b/src/dev_ng/game/pat
  #include "task/Movement/TaskNavBase.h"
 -#include "VehicleAi\pathfind.h"
 -#include "Vehicles\vehicle.h"
-+#include "VehicleAi/pathfind.h"
++#include "vehicleAi/pathfind.h"
 +#include "Vehicles/vehicle.h"
  
  NAVMESH_OPTIMISATIONS()

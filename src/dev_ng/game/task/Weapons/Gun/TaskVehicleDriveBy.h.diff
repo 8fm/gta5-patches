@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskVehicleDriveBy.h b/src/dev_ng/game/task/Weapons/Gun/TaskVehicleDriveBy.h
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskVehicleDriveBy.h
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskVehicleDriveBy.h
+@@ -3,12 +3,12 @@
+ 
+ // Game headers
+ #include "Peds/QueriableInterface.h"
+-#include "System/Control.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Vehicles/metadata/VehicleSeatInfo.h"
+-#include "Weapons/Info/WeaponInfo.h"
++#include "system/Control.h"
++#include "task/System/Tuning.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/WeaponController.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
++#include "weapons/info/WeaponInfo.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 

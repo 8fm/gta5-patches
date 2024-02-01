@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/MoveObject.h b/src/dev_ng/game/animation/MoveObject.h
+--- a/src/dev_ng/game/animation/MoveObject.h
++++ b/src/dev_ng/game/animation/MoveObject.h
+@@ -7,7 +7,7 @@
+ #ifndef MOVE_OBJECT_H
+ #define MOVE_OBJECT_H
+ 
+-#include "animation/move.h"
++#include "animation/Move.h"
+ #include "task/System/TaskHelpers.h"
+ 
+ 

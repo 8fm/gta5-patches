@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/garages.h b/src/dev_ng/game/control/garages.h
+--- a/src/dev_ng/game/control/garages.h
++++ b/src/dev_ng/game/control/garages.h
+@@ -22,8 +22,8 @@
+ #include "audio/dooraudioentity.h"
+ #include "scene/Entity.h"
+ #include "scene/RegdRefTypes.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclestorage.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehiclestorage.h"
+ 
+ #define MAX_NUM_GARAGES (40)
+ #define GARAGE_NAME_LENGTH (7)

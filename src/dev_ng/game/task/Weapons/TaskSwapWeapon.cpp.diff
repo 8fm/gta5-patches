@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskSwapWeapon.cpp b/src/dev_ng/game/task/Weapons/TaskSwapWeapon.cpp
+--- a/src/dev_ng/game/task/Weapons/TaskSwapWeapon.cpp
++++ b/src/dev_ng/game/task/Weapons/TaskSwapWeapon.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Weapons/TaskSwapWeapon.h"
++#include "task/Weapons/TaskSwapWeapon.h"
+ 
+ #include "fwanimation/animdirector.h"
+ 
+@@ -9,23 +9,23 @@
+ #include "animation/MovePed.h"
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "Event/EventPriorities.h"
+-#include "Event/EventShocking.h"
+-#include "Event/ShockingEvents.h"
+-#include "Frontend/NewHud.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Peds/Ped.h"
++#include "event/EventPriorities.h"
++#include "event/EventShocking.h"
++#include "event/ShockingEvents.h"
++#include "frontend/NewHud.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedMotionData.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+-#include "Weapons/Weapon.h"
+-#include "Weapons/WeaponManager.h"
+-#include "Weapons/Components/WeaponComponent.h"
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Info/WeaponSwapData.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "weapons/Weapon.h"
++#include "weapons/WeaponManager.h"
++#include "weapons/components/WeaponComponent.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/info/WeaponSwapData.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/debug/Editing/LiveEditing.cpp b/src/dev_ng/game/debug/Editing/LiveEditing.cpp
+--- a/src/dev_ng/game/debug/Editing/LiveEditing.cpp
++++ b/src/dev_ng/game/debug/Editing/LiveEditing.cpp
+@@ -17,9 +17,9 @@
+ #include "fwscene/mapdata/mapdatadef.h"
+ #include "fwscene/stores/mapdatastore.h"
+ #include "fwscene/world/StreamedSceneGraphNode.h"
+-#include "objects/objectpopulation.h"
+-#include "objects/object.h"
+-#include "objects/DummyObject.h"
++#include "Objects/objectpopulation.h"
++#include "Objects/object.h"
++#include "Objects/DummyObject.h"
+ #include "parser/restparserservices.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/lod/LodDebug.h"

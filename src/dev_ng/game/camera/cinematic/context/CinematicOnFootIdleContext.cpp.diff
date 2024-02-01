@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicOnFootIdleContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicOnFootIdleContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicOnFootIdleContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicOnFootIdleContext.cpp
+@@ -12,7 +12,7 @@
+ #include "task/Motion/TaskMotionBase.h"
+ #include "task/Motion/Locomotion/TaskMotionAiming.h"
+ #include "tools/SectorTools.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicOnFootIdleContext,0x91B0873C)
+ 

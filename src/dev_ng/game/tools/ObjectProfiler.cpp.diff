@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/tools/ObjectProfiler.cpp b/src/dev_ng/game/tools/ObjectProfiler.cpp
+--- a/src/dev_ng/game/tools/ObjectProfiler.cpp
++++ b/src/dev_ng/game/tools/ObjectProfiler.cpp
+@@ -2,7 +2,7 @@
+ 
+ #include "ObjectProfiler.h"
+ #include "system/AutoGPUCapture.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "camera/CamInterface.h"
+ 
+ #include "ObjectProfiler_parser.h"

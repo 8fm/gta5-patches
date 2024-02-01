@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.cpp b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.cpp
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.cpp
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunFactory.cpp
+@@ -1,12 +1,12 @@
+ // Class header
+-#include "Task/Weapons/Gun/TaskAimGunFactory.h"
++#include "task/Weapons/Gun/TaskAimGunFactory.h"
+ 
+ // Game headers
+-#include "Scene/Entity.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+-#include "Task/Weapons/Gun/TaskAimGunScripted.h"
+-#include "Task/Weapons/Gun/TaskVehicleDriveBy.h"
++#include "scene/Entity.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "task/Weapons/Gun/TaskAimGunScripted.h"
++#include "task/Weapons/Gun/TaskVehicleDriveBy.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

@@ -1,12 +1,51 @@
 diff --git a/src/dev_ng/game/task/Combat/TaskSearch.cpp b/src/dev_ng/game/task/Combat/TaskSearch.cpp
 --- a/src/dev_ng/game/task/Combat/TaskSearch.cpp
 +++ b/src/dev_ng/game/task/Combat/TaskSearch.cpp
-@@ -4,7 +4,7 @@
+@@ -4,31 +4,31 @@
  // AUTHOR :  Phil H
  
  // File header
 -#include "Task\Combat\TaskSearch.h"
-+#include "Task/Combat/TaskSearch.h"
++#include "task/Combat/TaskSearch.h"
  
  // Game headers
- #include "Game/Clock.h"
+-#include "Game/Clock.h"
+-#include "Peds/Ped.h"
++#include "game/Clock.h"
++#include "Peds/ped.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "Task/Default/TaskChat.h"
+-#include "Task/Combat/Cover/Cover.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Combat/Cover/TaskSeekCover.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/Combat/TaskNewCombat.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "task/Default/TaskChat.h"
++#include "task/Combat/Cover/cover.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Combat/Cover/TaskSeekCover.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Combat/TaskNewCombat.h"
+ #include "task/Combat/Subtasks/TaskSearchInAutomobile.h"
+ #include "task/Combat/Subtasks/TaskSearchInBoat.h"
+ #include "task/Combat/Subtasks/TaskSearchInHeli.h"
+ #include "task/Combat/Subtasks/TaskSearchOnFoot.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskSeekEntity.h"
+-#include "Task/Weapons/WeaponController.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskSeekEntity.h"
++#include "task/Weapons/WeaponController.h"
+ #include "vehicleAi/task/TaskVehicleGoTo.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+ 

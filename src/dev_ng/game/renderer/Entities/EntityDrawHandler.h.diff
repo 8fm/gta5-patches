@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Entities/EntityDrawHandler.h b/src/dev_ng/game/renderer/Entities/EntityDrawHandler.h
+--- a/src/dev_ng/game/renderer/Entities/EntityDrawHandler.h
++++ b/src/dev_ng/game/renderer/Entities/EntityDrawHandler.h
+@@ -3,7 +3,7 @@
+ 
+ #include "entity/drawdata.h"
+ #include "fwdrawlist/drawlist.h"
+-#include "renderer/DrawLists/drawlist.h"
++#include "renderer/DrawLists/drawList.h"
+ #include "system/timemgr.h"
+ #include "system/threadtype.h"
+ 

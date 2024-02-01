@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjPed.h b/src/dev_ng/game/network/Objects/Entities/NetObjPed.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjPed.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjPed.h
+@@ -8,11 +8,11 @@
+ #ifndef NETOBJPED_H
+ #define NETOBJPED_H
+ 
+-#include "network/objects/entities/NetObjPhysical.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Entities/NetObjPhysical.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+ #include "scene/RegdRefTypes.h"
+-#include "task/general/TaskBasic.h"
+-#include "task/system/TaskTypes.h"
++#include "task/General/TaskBasic.h"
++#include "task/System/TaskTypes.h"
+ 
+ #define LARGEST_NETOBJPED_CLASS (ALIGN_TO_16(sizeof(CNetObjPlayer))) // must be aligned to 16!
+ 

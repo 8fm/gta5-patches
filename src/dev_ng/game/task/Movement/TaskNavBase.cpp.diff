@@ -1,0 +1,56 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskNavBase.cpp b/src/dev_ng/game/task/Movement/TaskNavBase.cpp
+--- a/src/dev_ng/game/task/Movement/TaskNavBase.cpp
++++ b/src/dev_ng/game/task/Movement/TaskNavBase.cpp
+@@ -5,32 +5,32 @@
+ 
+ // Game headers
+ #if !__FINAL
+-#include "Camera/CamInterface.h"
+-#include "Camera/Debug/DebugDirector.h"
+-#include "Camera/Helpers/Frame.h"
++#include "camera/CamInterface.h"
++#include "camera/Debug/DebugDirector.h"
++#include "camera/helpers/Frame.h"
+ #endif
+-#include "Event/EventMovement.h"
+-#include "Peds/Ped.h"
++#include "event/EventMovement.h"
++#include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendInWater.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendOnFoot.h"
+-#include "Renderer/Water.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Movement/TaskGetUp.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/Movement/TaskSlideToCoord.h"
+-#include "Task/Movement/Climbing/TaskLadderClimb.h"
+-#include "Task/Movement/Jumping/TaskInAir.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Motion/Locomotion/TaskQuadLocomotion.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/Vehicle/TaskCarUtils.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "Task/Vehicle/TaskGoToVehicleDoor.h"
++#include "renderer/Water.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Movement/TaskGetUp.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskSlideToCoord.h"
++#include "task/Movement/Climbing/TaskLadderClimb.h"
++#include "task/Movement/Jumping/TaskInAir.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Motion/Locomotion/TaskQuadLocomotion.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "task/Vehicle/TaskCarUtils.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "task/Vehicle/TaskGoToVehicleDoor.h"
+ 
+ FW_INSTANTIATE_CLASS_POOL_SPILLOVER(CNavMeshRoute, CONFIGURED_FROM_FILE, 0.45f, atHashString("NavMeshRoute",0xf66ca574));
+ 

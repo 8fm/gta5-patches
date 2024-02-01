@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMSimple.cpp b/src/dev_ng/game/task/Physics/TaskNMSimple.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMSimple.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMSimple.cpp
-@@ -3,13 +3,13 @@
+@@ -3,24 +3,24 @@
  
  //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
  // Rage headers
@@ -22,3 +22,19 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMSimple.cpp b/src/dev_ng/game/tas
  
  // Framework headers
  #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Event/EventDamage.h"
+-#include "Peds/Ped.h"
++#include "event/EventDamage.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskWrithe.h"
+-#include "Task/Physics/TaskNMSimple.h"
+-#include "Task/Physics/NmDebug.h"
++#include "task/Combat/TaskWrithe.h"
++#include "task/Physics/TaskNMSimple.h"
++#include "task/Physics/NmDebug.h"
+ 
+ //----------------------------------------------------------------------------------------------------------------------------------------------------
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/scene/EntityId.cpp b/src/dev_ng/game/scene/EntityId.cpp
+--- a/src/dev_ng/game/scene/EntityId.cpp
++++ b/src/dev_ng/game/scene/EntityId.cpp
+@@ -5,8 +5,8 @@
+ 
+ #include "EntityId.h"
+ #include "Objects/object.h"
+-#include "Pickups/Pickup.h"
+-#include "Vehicles/Vehicle.h"
++#include "pickups/Pickup.h"
++#include "Vehicles/vehicle.h"
+ 
+ //	Bug 190155 - GraemeW - I had to add this enum because there currently is no ENTITY_TYPE_PICKUP
+ //	We need a way to differentiate between objects and pickups

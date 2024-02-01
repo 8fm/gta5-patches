@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/boot_flow/BootupScreen.cpp b/src/dev_ng/game/frontend/boot_flow/BootupScreen.cpp
+--- a/src/dev_ng/game/frontend/boot_flow/BootupScreen.cpp
++++ b/src/dev_ng/game/frontend/boot_flow/BootupScreen.cpp
+@@ -15,9 +15,9 @@
+ 
+ // game
+ #include "frontend/ProfileSettings.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/SocialClubServices/SocialClubCommunityEventMgr.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
++#include "network/SocialClubServices/SocialClubCommunityEventMgr.h"
+ #include "text/messages.h"
+ #include "text/TextFile.h"
+ #include "scene/DynamicEntity.h"

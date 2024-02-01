@@ -1,12 +1,41 @@
 diff --git a/src/dev_ng/game/frontend/LanguageSelect.cpp b/src/dev_ng/game/frontend/LanguageSelect.cpp
 --- a/src/dev_ng/game/frontend/LanguageSelect.cpp
 +++ b/src/dev_ng/game/frontend/LanguageSelect.cpp
-@@ -18,7 +18,7 @@
- #include "Frontend/ui_channel.h"
- #include "frontend/scaleform/scaleformmgr.h"
- #include "Frontend/WarningScreen.h"
+@@ -9,23 +9,23 @@
+ 
+ #include "grprofile/timebars.h"
+ 
+-#include "Frontend/LanguageSelect.h"
++#include "frontend/LanguageSelect.h"
+ #include "audio/frontendaudioentity.h"
+-#include "Frontend/LoadingScreens.h"
+-#include "Frontend/NewHud.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/LoadingScreens.h"
++#include "frontend/NewHud.h"
++#include "frontend/PauseMenu.h"
+ #include "frontend/ProfileSettings.h"
+-#include "Frontend/ui_channel.h"
+-#include "frontend/scaleform/scaleformmgr.h"
+-#include "Frontend/WarningScreen.h"
 -#include "frontend\ButtonEnum.h"
+-#include "Renderer/PostProcessFX.h"
+-#include "Renderer/Util/ShaderUtil.h"
+-#include "Renderer/rendertargets.h"
+-#include "Renderer/MeshBlendManager.h"
+-#include "System/controlMgr.h"
++#include "frontend/ui_channel.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/WarningScreen.h"
 +#include "frontend/ButtonEnum.h"
- #include "Renderer/PostProcessFX.h"
- #include "Renderer/Util/ShaderUtil.h"
- #include "Renderer/rendertargets.h"
++#include "renderer/PostProcessFX.h"
++#include "renderer/Util/ShaderUtil.h"
++#include "renderer/rendertargets.h"
++#include "renderer/MeshBlendManager.h"
++#include "system/controlMgr.h"
+ #include "text/TextFile.h"
+-#include "Renderer/sprite2d.h"
++#include "renderer/sprite2d.h"
+ #include "system/appcontent.h"
+ 
+ FRONTEND_OPTIMISATIONS()

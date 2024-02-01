@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/Vehicles/LandingGear.cpp b/src/dev_ng/game/Vehicles/LandingGear.cpp
+--- a/src/dev_ng/game/Vehicles/LandingGear.cpp
++++ b/src/dev_ng/game/Vehicles/LandingGear.cpp
+@@ -1,4 +1,4 @@
+-#include "vehicles/LandingGear.h"
++#include "Vehicles/LandingGear.h"
+ 
+ // Rage includes 
+ #include "crskeleton/jointdata.h"
+@@ -7,9 +7,9 @@
+ 
+ // Game headers
+ #include "Vehicles/Heli.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehicle_channel.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehicle_channel.h"
+ #include "physics/gtaInst.h"
+ #include "debug/DebugScene.h"
+ #include "audio/planeaudioentity.h"

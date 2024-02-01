@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/network/Events/NetworkEventTypes.h b/src/dev_ng/game/network/Events/NetworkEventTypes.h
+--- a/src/dev_ng/game/network/Events/NetworkEventTypes.h
++++ b/src/dev_ng/game/network/Events/NetworkEventTypes.h
+@@ -16,17 +16,17 @@
+ #include "audio/radiostation.h"
+ #include "control/garages.h"
+ #include "event/EventDamage.h"
+-#include "event/eventnetwork.h"
+-#include "game/clock.h"
+-#include "game/crime.h"
++#include "event/EventNetwork.h"
++#include "game/Clock.h"
++#include "game/Crime.h"
+ #include "game/Dispatch/DispatchEnums.h"
+ #include "ik/IkManager.h"
+-#include "network/arrays/NetworkArrayHandlerTypes.h"
+-#include "Network/Live/PlayerCardDataManager.h"
+-#include "peds/RelationshipEnums.h" 
++#include "network/Arrays/NetworkArrayHandlerTypes.h"
++#include "network/Live/PlayerCardDataManager.h"
++#include "Peds/RelationshipEnums.h" 
+ #include "script/Handlers/GameScriptMgr.h"
+ #include "vehicleAi/pathfind.h"
+-#include "vfx/misc/fire.h"
++#include "vfx/misc/Fire.h"
+ #include "weapons/Explosion.h"
+ 
+ namespace rage

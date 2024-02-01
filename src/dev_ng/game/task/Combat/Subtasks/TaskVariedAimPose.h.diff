@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.h b/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskVariedAimPose.h
+@@ -6,12 +6,12 @@
+ #define TASK_VARIED_AIM_POSE_H
+ 
+ // Game headers
+-#include "peds/QueriableInterface.h"
++#include "Peds/QueriableInterface.h"
+ #include "physics/WorldProbe/shapetestresults.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ // Forward declarations
+ class CEventGunAimedAt;

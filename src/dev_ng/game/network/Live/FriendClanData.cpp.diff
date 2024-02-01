@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/network/Live/FriendClanData.cpp b/src/dev_ng/game/network/Live/FriendClanData.cpp
+--- a/src/dev_ng/game/network/Live/FriendClanData.cpp
++++ b/src/dev_ng/game/network/Live/FriendClanData.cpp
+@@ -5,12 +5,12 @@
+ //
+ 
+ //game
+-#include "Network/Live/FriendClanData.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/PlayerCardDataManager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Frontend/ui_channel.h"
++#include "network/Live/FriendClanData.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/PlayerCardDataManager.h"
++#include "network/NetworkInterface.h"
++#include "network/Sessions/NetworkSession.h"
++#include "frontend/ui_channel.h"
+ 
+ FRONTEND_NETWORK_OPTIMISATIONS()
+ //OPTIMISATIONS_OFF();

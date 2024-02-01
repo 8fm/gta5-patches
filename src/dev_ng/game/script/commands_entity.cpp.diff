@@ -1,0 +1,45 @@
+diff --git a/src/dev_ng/game/script/commands_entity.cpp b/src/dev_ng/game/script/commands_entity.cpp
+--- a/src/dev_ng/game/script/commands_entity.cpp
++++ b/src/dev_ng/game/script/commands_entity.cpp
+@@ -16,13 +16,13 @@
+ #include "camera/CamInterface.h"
+ #include "control/trafficlights.h"
+ #include "control/replay/replay.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "game/ModelIndices.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "animation/MoveVehicle.h"
+ #include "network/Events/NetworkEventTypes.h"
+ #include "network/Objects/Entities/NetObjVehicle.h"
+-#include "objects/ObjectIntelligence.h"
++#include "Objects/ObjectIntelligence.h"
+ #include "pathserver/PathServer.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+@@ -52,21 +52,21 @@
+ #include "script/script_helper.h"
+ #include "script/wrapper.h"
+ #include "task/Animation/TaskAnims.h"
+-#include "Task/Animation/TaskCutScene.h"
++#include "task/Animation/TaskCutScene.h"
+ #include "task/Animation/TaskScriptedAnimation.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/Boat.h"
+-#include "Vehicles/Train.h"
++#include "Vehicles/train.h"
+ #include "Vehicles/AmphibiousAutomobile.h"
+ #include "Vehicles/Trailer.h"
+ #include "Vehicles/VehicleFactory.h"
+ #include "Vehicles/vehiclepopulation.h"
+ #include "vfx/misc/LODLightManager.h"
+-#include "Event/EventDamage.h"
++#include "event/EventDamage.h"
+ #include "weapons/WeaponDamage.h"
+ #include "weapons/inventory/PedEquippedWeapon.h"
+ #include "weapons/components/WeaponComponent.h"
+-#include "weapons/weapon.h"
++#include "weapons/Weapon.h"
+ 
+ SCRIPT_OPTIMISATIONS()
+ ANIM_OPTIMISATIONS()

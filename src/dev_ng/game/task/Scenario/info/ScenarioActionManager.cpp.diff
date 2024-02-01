@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.cpp b/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.cpp
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.cpp
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.cpp
+@@ -1,4 +1,4 @@
+-#include "Task/Scenario/Info/ScenarioActionManager.h"
++#include "task/Scenario/info/ScenarioActionManager.h"
+ 
+ // Rage headers
+ #include "parser/macros.h"

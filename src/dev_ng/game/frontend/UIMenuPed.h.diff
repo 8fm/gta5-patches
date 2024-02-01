@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/UIMenuPed.h b/src/dev_ng/game/frontend/UIMenuPed.h
+--- a/src/dev_ng/game/frontend/UIMenuPed.h
++++ b/src/dev_ng/game/frontend/UIMenuPed.h
+@@ -6,8 +6,8 @@
+ #include "fwnet/nettypes.h"
+ 
+ // game
+-#include "Frontend/ScaleformMenuHelper.h"
+-#include "Scene/RegdRefTypes.h"
++#include "frontend/ScaleformMenuHelper.h"
++#include "scene/RegdRefTypes.h"
+ 
+ namespace rage
+ {

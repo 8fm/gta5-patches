@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/General/Phone/TaskMobilePhone.h b/src/dev_ng/game/task/General/Phone/TaskMobilePhone.h
+--- a/src/dev_ng/game/task/General/Phone/TaskMobilePhone.h
++++ b/src/dev_ng/game/task/General/Phone/TaskMobilePhone.h
+@@ -2,8 +2,8 @@
+ #define INC_TASK_MOBILEPHONE_H
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
+ 
+ 
+ class CTaskMobilePhone : public CTask

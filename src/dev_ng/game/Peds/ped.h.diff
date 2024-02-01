@@ -1,0 +1,77 @@
+diff --git a/src/dev_ng/game/Peds/ped.h b/src/dev_ng/game/Peds/ped.h
+--- a/src/dev_ng/game/Peds/ped.h
++++ b/src/dev_ng/game/Peds/ped.h
+@@ -13,51 +13,51 @@
+ #include "system/stack_collector.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Game headers
+ #include "ai/spatialarray.h"
+-#include "Audio/PedAudioEntity.h"
+-#include "Audio/SpeechAudioEntity.h"
+-#include "debug/debugrecorder.h"
+-#include "Ik/IkManager.h"
++#include "audio/pedaudioentity.h"
++#include "audio/speechaudioentity.h"
++#include "debug/DebugRecorder.h"
++#include "ik/IkManager.h"
+ #include "Peds/PedCapsule.h"
+-#include "Peds/PedDefines.h"
++#include "Peds/pedDefines.h"
+ #include "Peds/PedFlags.h"
+ #include "Peds/TaskData.h"
+ #include "Peds/PedIntelligence/PedAILod.h"
+ #include "Peds/PedFootstepHelper.h"
+ #include "Peds/PedMotionData.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendBase.h"
+-#include "Peds/PedShockingEvents.h"
++#include "Peds/pedshockingevents.h"
+ #include "Peds/PedType.h"
+ #include "Peds/PlayerInfo.h"
+ #include "Peds/Relationships.h"
+-#include "Physics/gtaInst.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/gtaInst.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "renderer/Entities/PedDrawHandler.h"
+-#include "Scene/Physical.h"
++#include "scene/Physical.h"
+ #include "security/obfuscatedtypes.h"
+ #include "security/ragesecgameinterface.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Animation/AnimTaskFlags.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Animation/AnimTaskFlags.h"
+ #include "timecycle/TimeCycleConfig.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Vfx/Systems/VfxLiquid.h"
+-#include "Vfx/Systems/VfxMaterial.h"
+-#include "Vfx/Systems/VfxPed.h"
+-#include "Weapons/Inventory/PedInventory.h"
+-#include "Weapons/Inventory/PedWeaponManager.h"
+-#include "Task/Movement/JetpackObject.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/systems/VfxLiquid.h"
++#include "vfx/systems/VfxMaterial.h"
++#include "vfx/systems/VfxPed.h"
++#include "weapons/inventory/PedInventory.h"
++#include "weapons/inventory/PedWeaponManager.h"
++#include "task/Movement/JetpackObject.h"
+ #include "Peds/Horse/horseDefines.h"
+ 
+ #if GTA_REPLAY
+-#include "control/replay/ped/PedPacket.h"
++#include "control/replay/Ped/PedPacket.h"
+ #endif // GTA_REPLAY
+ 
+ // Network headers
+-#include "Network/Objects/Entities/NetObjPed.h"
+-#include "Profile/Profiler.h"
++#include "network/Objects/Entities/NetObjPed.h"
++#include "profile/profiler.h"
+ 
+ RAGE_DECLARE_CHANNEL(viseme)
+ 

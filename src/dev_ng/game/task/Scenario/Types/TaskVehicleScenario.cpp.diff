@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskVehicleScenario.cpp
+@@ -4,12 +4,12 @@
+ // Copyright (C) 1999-2012 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/world/GameWorldHeightMap.h"
++#include "scene/world/GameWorldHeightMap.h"
+ #include "task/Scenario/Types/TaskVehicleScenario.h"
+ #include "task/Scenario/info/ScenarioInfoManager.h"
+-#include "task/scenario/ScenarioPointManager.h"
++#include "task/Scenario/ScenarioPointManager.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+ #include "vehicleAi/task/TaskVehicleFlying.h"

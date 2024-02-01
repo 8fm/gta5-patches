@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/DebugDrawStore.h b/src/dev_ng/game/debug/DebugDrawStore.h
+--- a/src/dev_ng/game/debug/DebugDrawStore.h
++++ b/src/dev_ng/game/debug/DebugDrawStore.h
+@@ -4,7 +4,7 @@
+ // Rage headers
+ #include "grcore/debugdraw.h"
+ #include "fwsys/timer.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "system/criticalsection.h"
+ #include "vectormath/classes.h"
+ 

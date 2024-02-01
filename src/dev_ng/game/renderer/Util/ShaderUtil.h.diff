@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Util/ShaderUtil.h b/src/dev_ng/game/renderer/Util/ShaderUtil.h
+--- a/src/dev_ng/game/renderer/Util/ShaderUtil.h
++++ b/src/dev_ng/game/renderer/Util/ShaderUtil.h
+@@ -11,7 +11,7 @@
+ #include "grcore/texture.h"
+ #include "camera/viewports/Viewport.h"
+ 
+-#include "renderer/util/shmoofile.h"
++#include "renderer/Util/shmoofile.h"
+ 
+ // =============================================================================================== //
+ // DEFINES

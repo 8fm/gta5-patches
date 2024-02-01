@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/PedGroup/PedGroup.h b/src/dev_ng/game/PedGroup/PedGroup.h
+--- a/src/dev_ng/game/PedGroup/PedGroup.h
++++ b/src/dev_ng/game/PedGroup/PedGroup.h
+@@ -7,10 +7,10 @@
+ 
+ //#include "General.h"
+ #include "network/General/NetworkUtil.h"
+-#include "pedgroup/formation.h"
+-#include "peds/pedtype.h"
+-#include "peds/peddefines.h"
+-#include "AI/AITarget.h"
++#include "PedGroup/formation.h"
++#include "Peds/PedType.h"
++#include "Peds/pedDefines.h"
++#include "ai/AITarget.h"
+ #include "script/thread.h"
+ #include "scene/DynamicEntity.h"
+ #include "scene/RegdRefTypes.h"

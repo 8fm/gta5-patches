@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp b/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp
+--- a/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp
++++ b/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp
+@@ -21,10 +21,10 @@
+ #include "rline/rlgamerinfo.h"
+ 
+ #if RSG_PC
+-#include "control/replay/file/FileStorePC.h"
++#include "control/replay/File/FileStorePC.h"
+ #endif
+ #if RSG_ORBIS
+-#include "control/replay/file/FileStoreOrbis.h"
++#include "control/replay/File/FileStoreOrbis.h"
+ #endif
+ #if RSG_DURANGO
+ #include "control/replay/File/FileStoreDurango.h"

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/ik/solvers/BodyLookSolver.h b/src/dev_ng/game/ik/solvers/BodyLookSolver.h
+--- a/src/dev_ng/game/ik/solvers/BodyLookSolver.h
++++ b/src/dev_ng/game/ik/solvers/BodyLookSolver.h
+@@ -20,14 +20,14 @@
+ 
+ #include "crbody/iksolverbase.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vectormath/mat34v.h"
+ #include "vectormath/quatv.h"
+ #include "vectormath/vec3v.h"
+ 
+-#include "Animation/debug/AnimDebug.h"
++#include "animation/debug/AnimDebug.h"
+ #include "ik/IkRequest.h"
+-#include "peds/PedIKSettings.h"
++#include "Peds/PedIKSettings.h"
+ 
+ class CBodyLookIkSolverProxy;
+ class CPed;

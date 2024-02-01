@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/scene/WarpManager.cpp b/src/dev_ng/game/scene/WarpManager.cpp
+--- a/src/dev_ng/game/scene/WarpManager.cpp
++++ b/src/dev_ng/game/scene/WarpManager.cpp
+@@ -7,15 +7,15 @@
+ #include "scene/LoadScene.h"
+ #include "scene/FocusEntity.h"
+ #include "Peds/pedplacement.h"
+-#include "peds/pedpopulation.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Peds/pedpopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "fwscene/stores/staticboundsstore.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "debug/TextureViewer/TextureViewerPrivate.h" // need this for DEBUG_TEXTURE_VIEWER_STREAMINGITERATOR_USAGEMAPS_AUTO, although it would be cleaner to provide an accessor ..
+ 
+-#include "vehicles/Automobile.h"
+-#include "vehicles/cargen.h"
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/cargen.h"
++#include "Vehicles/VehicleFactory.h"
+ #include "script/script.h"
+ #include "system/stack.h"
+ 

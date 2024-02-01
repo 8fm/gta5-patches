@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.cpp
+@@ -15,9 +15,9 @@
+ #include "camera/helpers/LookAtDampingHelper.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "fwmaths/random.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/Entity.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicPositionCamera,0x27A450BB)
+ 

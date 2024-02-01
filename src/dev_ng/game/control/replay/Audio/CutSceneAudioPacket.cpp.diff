@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.cpp b/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.cpp
+--- a/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.cpp
++++ b/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.cpp
+@@ -4,12 +4,12 @@
+ #include "audio/cutsceneaudioentity.h" 
+ #include "audio/northaudioengine.h"
+ #include "audio/pedaudioentity.h"
+-#include "Control/Replay/ReplayInterfacePed.h"
++#include "control/replay/ReplayInterfacePed.h"
+ #include "control/replay/ReplayInternal.h"
+ #include "control/replay/audio/SoundPacket.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "cutscene/CutSceneStore.h"
+-#include "peds/ped.h" 
++#include "Peds/ped.h" 
+ 
+ ////////////////////////////////////////////////////////////
+ CCutSceneAudioPacket::CCutSceneAudioPacket(u32 trackTime, u32 startTime)

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.h b/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskCharge.h
+@@ -13,7 +13,7 @@
+ // Game headers
+ #include "ai/AITarget.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ 
+ //=========================================================================
+ // CTaskCharge

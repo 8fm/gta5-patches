@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/speechaudioentity.h b/src/dev_ng/game/audio/speechaudioentity.h
+--- a/src/dev_ng/game/audio/speechaudioentity.h
++++ b/src/dev_ng/game/audio/speechaudioentity.h
+@@ -20,7 +20,7 @@
+ #include "cranimation/animation.h"
+ #include "crclip/clipdictionary.h"
+ #include "control/replay/ReplaySettings.h"
+-#include "fwScene/stores/clipdictionarystore.h"
++#include "fwscene/stores/clipdictionarystore.h"
+ #include "Peds/PedType.h"
+ #include "vector/vector3.h"
+ #include "scene/RegdRefTypes.h"

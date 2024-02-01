@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Vehicle/PlayerHorseFollowTargets.cpp b/src/dev_ng/game/task/Vehicle/PlayerHorseFollowTargets.cpp
+--- a/src/dev_ng/game/task/Vehicle/PlayerHorseFollowTargets.cpp
++++ b/src/dev_ng/game/task/Vehicle/PlayerHorseFollowTargets.cpp
+@@ -1,11 +1,11 @@
+-#include "Task/Vehicle/PlayerHorseFollowTargets.h"
++#include "task/Vehicle/PlayerHorseFollowTargets.h"
+ 
+ #if ENABLE_HORSE
+ 
+ #include "optimisations.h"
+ #include "Peds/ped.h"
+ #include "scene/Physical.h"
+-#include "Peds/Ped.h" 
++#include "Peds/ped.h" 
+ 
+ AI_OPTIMISATIONS()
+ 

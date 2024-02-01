@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Lights/LightInstance.h b/src/dev_ng/game/renderer/Lights/LightInstance.h
+--- a/src/dev_ng/game/renderer/Lights/LightInstance.h
++++ b/src/dev_ng/game/renderer/Lights/LightInstance.h
+@@ -12,7 +12,7 @@
+ 
+ // framework headers
+ #include "entity/extensionlist.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // =============================================================================================== //
+ // DEFINES

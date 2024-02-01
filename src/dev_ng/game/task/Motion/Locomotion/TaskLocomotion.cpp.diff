@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.cpp
+@@ -12,11 +12,11 @@
+ #include "animation/AnimManager.h"
+ #include "animation/MovePed.h"
+ #include "debug/DebugScene.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOTION_OPTIMISATIONS()

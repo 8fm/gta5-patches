@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/ik/solvers/QuadrupedReactSolver.h b/src/dev_ng/game/ik/solvers/QuadrupedReactSolver.h
+--- a/src/dev_ng/game/ik/solvers/QuadrupedReactSolver.h
++++ b/src/dev_ng/game/ik/solvers/QuadrupedReactSolver.h
+@@ -13,11 +13,11 @@
+ 
+ #include "crbody/iksolver.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vectormath/mat34v.h"
+ #include "vectormath/vec3v.h"
+ 
+-#include "Animation/debug/AnimDebug.h"
++#include "animation/debug/AnimDebug.h"
+ 
+ #define QUAD_REACT_SOLVER_POOL_MAX	8
+ 

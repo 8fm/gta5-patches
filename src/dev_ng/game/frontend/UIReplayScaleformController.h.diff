@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/UIReplayScaleformController.h b/src/dev_ng/game/frontend/UIReplayScaleformController.h
+--- a/src/dev_ng/game/frontend/UIReplayScaleformController.h
++++ b/src/dev_ng/game/frontend/UIReplayScaleformController.h
+@@ -9,7 +9,7 @@
+ #ifndef INC_UI_REPLAY_SCALEFORM_CONTROLLER_H_
+ #define INC_UI_REPLAY_SCALEFORM_CONTROLLER_H_
+ 
+-#include "control/replay/replaysettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 

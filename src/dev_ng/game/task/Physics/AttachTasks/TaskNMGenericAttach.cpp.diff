@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.cpp b/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.cpp
+--- a/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.cpp
++++ b/src/dev_ng/game/task/Physics/AttachTasks/TaskNMGenericAttach.cpp
+@@ -7,9 +7,9 @@
+ #include "fragmentnm/messageparams.h"
+ 
+ // Game headers:
+-#include "Peds/Ped.h"
+-#include "Task/Physics/TaskAnimatedAttach.h"
+-#include "Task/Physics/AttachTasks/TaskNMGenericAttach.h"
++#include "Peds/ped.h"
++#include "task/Physics/TaskAnimatedAttach.h"
++#include "task/Physics/AttachTasks/TaskNMGenericAttach.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

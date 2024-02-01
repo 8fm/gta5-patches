@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_manager.cpp b/src/dev_ng/game/SaveLoad/savegame_photo_manager.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_manager.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_manager.cpp
+@@ -15,8 +15,8 @@
+ // Game headers
+ //	#include "Core/game.h"
+ #include "game/user.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Cloud/UserContentManager.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Cloud/UserContentManager.h"
+ 
+ #include "frontend/HudTools.h"
+ 
+@@ -28,8 +28,8 @@
+ #include "SaveLoad/savegame_photo_local_metadata.h"
+ // #include "SaveLoad/savegame_photo_buffer.h"
+ // #include "SaveLoad/savegame_scriptdatafile.h"
+-//	#include "Renderer/sprite2d.h"
+-#include "Renderer/PostProcessFXHelper.h"
++//	#include "renderer/sprite2d.h"
++#include "renderer/PostProcessFXHelper.h"
+ // #include "renderer/rendertargets.h"
+ // 
+ #include <time.h>

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/ReplayRayFirePacket.h b/src/dev_ng/game/control/replay/Misc/ReplayRayFirePacket.h
+--- a/src/dev_ng/game/control/replay/Misc/ReplayRayFirePacket.h
++++ b/src/dev_ng/game/control/replay/Misc/ReplayRayFirePacket.h
+@@ -7,8 +7,8 @@
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+ #include "control/replay/Effects/ParticlePacket.h"
+-#include "Control/Replay/PacketBasics.h"
+-#include "modelInfo/CompEntityModelInfo.h"
++#include "control/replay/PacketBasics.h"
++#include "modelinfo/CompEntityModelInfo.h"
+ 
+ //-------------------------------------------------------------------------------
+ 

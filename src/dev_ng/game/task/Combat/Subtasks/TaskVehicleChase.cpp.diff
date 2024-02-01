@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskVehicleChase.cpp
+@@ -2,13 +2,13 @@
+ // PURPOSE : Subtask of combat used to chase a vehicle
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskVehicleChase.h"
++#include "task/Combat/Subtasks/TaskVehicleChase.h"
+ 
+ // Game headers
+-#include "control/Replay/ReplayBufferMarker.h"
++#include "control/replay/ReplayBufferMarker.h"
+ #include "event/EventShocking.h"
+ #include "event/ShockingEvents.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/Subtasks/TaskVehicleCombat.h"
+ #include "task/Combat/Subtasks/VehicleChaseDirector.h"

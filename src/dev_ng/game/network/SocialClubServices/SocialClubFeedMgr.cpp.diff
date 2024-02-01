@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.cpp b/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubFeedMgr.cpp
+@@ -17,8 +17,8 @@
+ #include "fwlocalisation/languagepack.h"
+ 
+ // Game
+-#include "Network/Cloud/CloudManager.h"
+-#include "Network/Crews/NetworkCrewDataMgr.h"
++#include "network/Cloud/CloudManager.h"
++#include "network/Crews/NetworkCrewDataMgr.h"
+ #include "network/Crews/NetworkCrewEmblemMgr.h"
+ 
+ #include "game/localisation.h"

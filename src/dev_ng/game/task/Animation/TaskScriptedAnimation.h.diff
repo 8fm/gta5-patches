@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskScriptedAnimation.h b/src/dev_ng/game/task/Animation/TaskScriptedAnimation.h
+--- a/src/dev_ng/game/task/Animation/TaskScriptedAnimation.h
++++ b/src/dev_ng/game/task/Animation/TaskScriptedAnimation.h
+@@ -7,11 +7,11 @@
+ // Game headers
+ #include "animation/AnimDefines.h"
+ #include "animation/AnimScene/AnimScene.h"
+-#include "animation/animscene/AnimSceneManager.h"
++#include "animation/AnimScene/AnimSceneManager.h"
+ #include "task/Animation/AnimTaskFlags.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "peds/ped.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "Peds/ped.h"
+ #include "Peds/QueriableInterface.h"
+ 
+ #if FPS_MODE_SUPPORTED

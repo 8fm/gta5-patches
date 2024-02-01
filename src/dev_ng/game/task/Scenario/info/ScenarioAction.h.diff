@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioAction.h b/src/dev_ng/game/task/Scenario/info/ScenarioAction.h
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioAction.h
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioAction.h
+@@ -7,7 +7,7 @@
+ #include "parser/macros.h"
+ 
+ // Game headers
+-#include "Task/Scenario/Info/ScenarioActionCondition.h"
++#include "task/Scenario/info/ScenarioActionCondition.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CScenarioAction

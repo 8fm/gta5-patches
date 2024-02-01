@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/HeliSyncNodes.h
+@@ -7,7 +7,7 @@
+ #ifndef HELI_SYNC_NODES_H
+ #define HELI_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/AutomobileSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.h"
+ 
+ class CHeliHealthDataNode;
+ class CHeliControlDataNode;

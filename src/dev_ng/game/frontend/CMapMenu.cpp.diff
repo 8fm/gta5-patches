@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/frontend/CMapMenu.cpp b/src/dev_ng/game/frontend/CMapMenu.cpp
+--- a/src/dev_ng/game/frontend/CMapMenu.cpp
++++ b/src/dev_ng/game/frontend/CMapMenu.cpp
+@@ -7,7 +7,7 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Frontend/CMapMenu.h"
++#include "frontend/CMapMenu.h"
+ #include "audio/frontendaudioentity.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "event/EventGroup.h"
+@@ -22,9 +22,9 @@
+ #include "frontend/ui_channel.h"
+ #include "frontend/Map/BlipEnums.h"
+ #include "frontend/MousePointer.h"
+-#include "Game/User.h"
+-#include "Game/Wanted.h"
+-#include "Renderer/sprite2d.h"
++#include "game/user.h"
++#include "game/Wanted.h"
++#include "renderer/sprite2d.h"
+ #include "scene/streamer/SceneStreamer.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+ #include "scene/world/GameWorld.h"
+@@ -34,8 +34,8 @@
+ #include "Stats/StatsTypes.h"
+ #include "text/TextConversion.h"
+ #include "text/TextFile.h"
+-#include "System/controlMgr.h"
+-#include "Scaleform/tweenstar.h"
++#include "system/controlMgr.h"
++#include "scaleform/tweenstar.h"
+ #include "control/gps.h"
+ 
+ 

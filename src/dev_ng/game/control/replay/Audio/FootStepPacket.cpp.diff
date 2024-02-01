@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/FootStepPacket.cpp b/src/dev_ng/game/control/replay/Audio/FootStepPacket.cpp
+--- a/src/dev_ng/game/control/replay/Audio/FootStepPacket.cpp
++++ b/src/dev_ng/game/control/replay/Audio/FootStepPacket.cpp
+@@ -7,13 +7,13 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control/replay/replayinternal.h"
++#include "control/replay/ReplayInternal.h"
+ #include "control/replay/ReplayInterfacePed.h"
+ 
+ #include "audio/northaudioengine.h"
+ #include "audio/pedaudioentity.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/PedVariationPack.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationPack.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // Ped foot step sound effect packet

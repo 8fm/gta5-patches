@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Party/NetworkParty.cpp b/src/dev_ng/game/network/Party/NetworkParty.cpp
+--- a/src/dev_ng/game/network/Party/NetworkParty.cpp
++++ b/src/dev_ng/game/network/Party/NetworkParty.cpp
+@@ -12,9 +12,9 @@
+ #include "rline/rlgamerinfo.h"
+ 
+ // game includes
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/NetworkTypes.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/NetworkInterface.h"
++#include "network/NetworkTypes.h"
+ #include "text/TextFile.h"
+ 
+ RAGE_DEFINE_SUBCHANNEL(net, party, DIAG_SEVERITY_DEBUG3)

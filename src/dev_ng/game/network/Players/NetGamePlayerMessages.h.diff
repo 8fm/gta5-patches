@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Players/NetGamePlayerMessages.h b/src/dev_ng/game/network/Players/NetGamePlayerMessages.h
+--- a/src/dev_ng/game/network/Players/NetGamePlayerMessages.h
++++ b/src/dev_ng/game/network/Players/NetGamePlayerMessages.h
+@@ -12,9 +12,9 @@
+ 
+ // game headers
+ #include "network/NetworkTypes.h"
+-#include "network/general/NetworkAssetVerifier.h"
+-#include "network/general/NetworkColours.h"
+-#include "network/players/NetGamePlayer.h"
++#include "network/General/NetworkAssetVerifier.h"
++#include "network/General/NetworkColours.h"
++#include "network/Players/NetGamePlayer.h"
+ #include "Peds/PedWeapons/PedTargetEvaluator.h"
+ 
+ //PURPOSE

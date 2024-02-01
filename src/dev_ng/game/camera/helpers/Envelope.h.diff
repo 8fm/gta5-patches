@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/Envelope.h b/src/dev_ng/game/camera/helpers/Envelope.h
+--- a/src/dev_ng/game/camera/helpers/Envelope.h
++++ b/src/dev_ng/game/camera/helpers/Envelope.h
+@@ -8,7 +8,7 @@
+ #define CAMERA_ENVELOPE_H
+ 
+ #include "camera/base/BaseObject.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "fwsys/timer.h"
+ 
+ class camEnvelopeMetadata;

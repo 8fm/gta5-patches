@@ -1,0 +1,50 @@
+diff --git a/src/dev_ng/game/Vehicles/AmphibiousAutomobile.cpp b/src/dev_ng/game/Vehicles/AmphibiousAutomobile.cpp
+--- a/src/dev_ng/game/Vehicles/AmphibiousAutomobile.cpp
++++ b/src/dev_ng/game/Vehicles/AmphibiousAutomobile.cpp
+@@ -1,23 +1,23 @@
+-#include "vehicles/AmphibiousAutomobile.h"
+-
+-#include "vehicles/Submarine.h"
+-#include "Peds/Ped.h"
+-#include "Physics/Floater.h"
+-#include "Physics/physics.h"
+-#include "Physics/PhysicsHelpers.h"
+-#include "Renderer/Water.h"
++#include "Vehicles/AmphibiousAutomobile.h"
++
++#include "Vehicles/Submarine.h"
++#include "Peds/ped.h"
++#include "physics/Floater.h"
++#include "physics/physics.h"
++#include "physics/PhysicsHelpers.h"
++#include "renderer/Water.h"
+ #include "renderer/River.h"
+ #include "system/control.h"
+-#include "System/controlMgr.h"
+-#include "Vfx/Systems/VfxWater.h"
++#include "system/controlMgr.h"
++#include "vfx/systems/VfxWater.h"
+ #include "debug/DebugScene.h"
+ #include "camera/CamInterface.h"
+ #include "Stats/StatsMgr.h"
+-#include "Vfx/Decals/DecalManager.h"
++#include "vfx/decals/DecalManager.h"
+ #include "scene/world/GameWorldHeightMap.h"
+-#include "Vfx/Misc/Fire.h"
+-#include "vfx/Systems/VfxVehicle.h"
+-#include "debug/debugglobals.h"
++#include "vfx/misc/Fire.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "debug/Debugglobals.h"
+ #include "network/Events/NetworkEventTypes.h"
+ #include "audio/boataudioentity.h"
+ #include "audio/caraudioentity.h"
+@@ -25,7 +25,7 @@
+ #include "audio/radioslot.h"
+ #include "frontend/NewHud.h"
+ #include "vehicleAi/task/TaskVehicleAnimation.h"
+-#include "vehicles/Boat.h"
++#include "Vehicles/Boat.h"
+ 
+ ENTITY_OPTIMISATIONS()
+ VEHICLE_OPTIMISATIONS()
