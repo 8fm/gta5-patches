@@ -9,3 +9,12 @@ diff --git a/src/dev_ng/game/security/ragesecgameinterface.cpp b/src/dev_ng/game
  #include "security/ragesecengine.h"
  #include "security/ragesecwinapi.h"
  #include "security/vftassert/vftassert.h"
+@@ -165,7 +165,7 @@ void rageSecGamePluginManager::Init(u32 initializationMode)
+ 	}	
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ HMODULE GetCurrentModule()
+ { // NB: XP+ solution!
+ 	HMODULE hModule = NULL;

@@ -17,3 +17,12 @@ diff --git a/src/dev_ng/game/scene/ExtraContent.h b/src/dev_ng/game/scene/ExtraC
  #include "system/service.h"
  #include "frontend/loadingscreens.h"
  
+@@ -129,7 +129,7 @@ public:
+ 
+ 	static void DumpInfo()
+ 	{
+-#if !RSG_ORBIS
++#if !RSG_ORBIS && !RSG_LINUX
+ 		Displayf("Dumping ownership info for %s, total entries: %d", GetRttiName(&m_entries), m_entries.GetNumUsed());
+ 		atMap<keyT, atHashString>::Iterator it = m_entries.CreateIterator();
+ 		it.Start();

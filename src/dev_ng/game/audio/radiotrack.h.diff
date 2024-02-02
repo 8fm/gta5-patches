@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/audio/radiotrack.h b/src/dev_ng/game/audio/radiotrack.h
+--- a/src/dev_ng/game/audio/radiotrack.h
++++ b/src/dev_ng/game/audio/radiotrack.h
+@@ -28,7 +28,7 @@ public:
+ 
+ 	void Init(const s32 category, const s32 trackIndex, const u32 trackSoundHash, const float startOffset, const bool isMixStationTrack, const bool isReverbStationTrack, const u32 stationNameHash);
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	void SetGainAndPostRoll(const f32 makeUpGain, const u32 postRoll)	{ m_MakeUpGain = makeUpGain; m_PostRoll = postRoll; }
+ #endif
+ 
+@@ -115,7 +115,7 @@ public:
+ 
+ 	u32 GetDuration() const
+ 	{
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		return m_Duration - m_PostRoll;
+ #else
+ 		return m_Duration;
+@@ -269,7 +269,7 @@ private:
+ 	bool m_FoundTrackTextIds;
+ 	bool m_FoundBeatMarkers;
+ 	bool m_IsUserTrack; // Keeping this out of the #if makes some of the code easier to read
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	audPrepareState audRadioTrack::CreateStreamer(u32 startOffset);
+ 
+ 	audMediaReader* m_MediaReader;

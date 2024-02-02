@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/network/Live/livemanager.h b/src/dev_ng/game/network/Live/livemanager.h
 --- a/src/dev_ng/game/network/Live/livemanager.h
 +++ b/src/dev_ng/game/network/Live/livemanager.h
-@@ -21,11 +21,11 @@
+@@ -21,18 +21,18 @@
  #include "rline/scmembership/rlscmembership.h"
  #include "system/service.h"
  
@@ -17,3 +17,11 @@ diff --git a/src/dev_ng/game/network/Live/livemanager.h b/src/dev_ng/game/networ
  #include "network/Facebook/Facebook.h"
  #include "network/Live/AchMgr.h"
  #include "network/Live/InviteMgr.h"
+ #include "network/Live/SocialClubMgr.h"
+ #include "network/Party/NetworkPartyInvites.h"
+ 
+-#define ENABLE_SINGLE_PLAYER_CLOUD_SAVES (RSG_PC && 1)
++#define ENABLE_SINGLE_PLAYER_CLOUD_SAVES (RSG_PC && !RSG_LINUX)
+ #if ENABLE_SINGLE_PLAYER_CLOUD_SAVES
+ #include "rline/rlpc.h"
+ #endif

@@ -57,8 +57,8 @@ new file mode 100644
 +add_subdirectory(game/vs_project2_lib)
 +add_subdirectory(game/vs_project3_lib)
 +add_subdirectory(game/vs_project4_lib)
-+add_subdirectory(game/VS_Project_network)
 +endif()
++add_subdirectory(game/VS_Project_network)
 +
 +add_subdirectory(rage/naturalmotion/vcproj/NaturalMotion)
 +add_subdirectory(rage/base/src/vcproj/RageAudio)

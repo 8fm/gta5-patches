@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/Sessions/NetworkGameConfig.h b/src/dev_ng/game/network/Sessions/NetworkGameConfig.h
+--- a/src/dev_ng/game/network/Sessions/NetworkGameConfig.h
++++ b/src/dev_ng/game/network/Sessions/NetworkGameConfig.h
+@@ -515,7 +515,7 @@ public:
+ 	//PURPOSE
+ 	//  Region matchmaking access
+ 	#if (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC
+-	__declspec(noinline) void ApplyRegion(bool bApplyRegion);
++	ROCKY_NOINLINE void ApplyRegion(bool bApplyRegion);
+ 	#else
+ 	void ApplyRegion(bool bApplyRegion);
+ 	#endif
+@@ -525,7 +525,7 @@ public:
+ 	//PURPOSE
+ 	//  Language matchmaking access
+ 	#if (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC
+-	__declspec(noinline) void ApplyLanguage(bool bApplyLanguage);
++	ROCKY_NOINLINE void ApplyLanguage(bool bApplyLanguage);
+ 	#else
+ 	void ApplyLanguage(bool bApplyLanguage);
+ 	#endif

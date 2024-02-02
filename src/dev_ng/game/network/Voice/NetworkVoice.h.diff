@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/Voice/NetworkVoice.h b/src/dev_ng/game/network/Voice/NetworkVoice.h
+--- a/src/dev_ng/game/network/Voice/NetworkVoice.h
++++ b/src/dev_ng/game/network/Voice/NetworkVoice.h
+@@ -50,7 +50,7 @@ enum eVoiceGroup
+ 	VOICEGROUP_NUM,
+ };
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ struct FrontendVoiceSettings
+ {
+ 	bool m_bEnabled;
+@@ -653,7 +653,7 @@ public:
+ 	void PlayerHasJoinedBubble(const rlGamerInfo& gamerInfo);
+ 	void PlayerHasLeftBubble(const rlGamerInfo& gamerInfo);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	bool IsTalkEnabled() const;
+ 	bool IsPushToTalkActive() { return (m_VoiceChat.GetCaptureMode() == VoiceChat::CAPTURE_MODE_PUSH_TO_TALK) && m_VoiceChat.GetPushToTalk(); }
+ 	void SetVoiceTestMode(bool bEnabled) { m_VoiceChat.SetVoiceTestMode(bEnabled); }

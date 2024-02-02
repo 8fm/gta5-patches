@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/userradiotrackmanager.h b/src/dev_ng/game/audio/userradiotrackmanager.h
+--- a/src/dev_ng/game/audio/userradiotrackmanager.h
++++ b/src/dev_ng/game/audio/userradiotrackmanager.h
+@@ -1,7 +1,7 @@
+ #ifndef __AEUSERRADIOTRACKMANAGER_H
+ #define __AEUSERRADIOTRACKMANAGER_H
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #ifndef __UNICODE_FILENAMES
+ #define __UNICODE_FILENAMES 1

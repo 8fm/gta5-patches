@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/audio/radiostation.h b/src/dev_ng/game/audio/radiostation.h
+--- a/src/dev_ng/game/audio/radiostation.h
++++ b/src/dev_ng/game/audio/radiostation.h
+@@ -531,7 +531,7 @@ public:
+ 
+ 	bool IsCurrentTrackNew() const;
+ 
+-#if RSG_PC // user music
++#if RSG_PC && !RSG_LINUX // user music
+ 	static audUserRadioTrackManager* GetUserRadioTrackManager() { return &sm_UserRadioTrackManager; }
+ 
+ 	bool IsUserStation() const
+@@ -800,7 +800,7 @@ private:
+ 	static bool sm_DebugHistory;
+ #endif
+ 
+-#if RSG_PC // user music
++#if RSG_PC && !RSG_LINUX // user music
+ 	static audUserRadioTrackManager sm_UserRadioTrackManager;
+ 	bool m_IsUserStation;
+ 

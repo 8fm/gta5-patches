@@ -14,3 +14,30 @@ diff --git a/src/dev_ng/game/network/Network.h b/src/dev_ng/game/network/Network
  
  namespace rage
  {
+@@ -60,7 +60,7 @@ public:
+ 	virtual void OnTunablesRead();
+ };
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ // Used to control the Exit flow on pc
+ class NetworkExitFlow
+ {
+@@ -308,7 +308,7 @@ public:
+ 	static CNetworkVoiceSession&	 GetNetworkVoiceSession(){ return sm_NetworkVoiceSession; }
+ 	static CNetworkVoice&			 GetVoice()				 { return sm_NetworkVoice; }
+ 
+-	#if __WIN32PC
++	#if __WIN32PC && !__LINUX
+ 	static CNetworkTextChat&		 GetTextChat()			 { return sm_NetworkTextChat; }
+ 	static NetworkExitFlow&			 GetNetworkExitFlow()	 { return sm_ExitToDesktopFlow;	}
+ 	#endif // __WIN32PC
+@@ -539,7 +539,7 @@ private:
+ 	static void OnRequestTrackerEvent(const char* sRuleName, const char* sRuleMatch, const unsigned nTokenLimit, const float nTokenRate);
+ #endif
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	static NetworkExitFlow sm_ExitToDesktopFlow;
+ #endif // __WIN32PC
+ 

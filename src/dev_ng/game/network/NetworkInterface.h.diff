@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/network/NetworkInterface.h b/src/dev_ng/game/networ
  #include "renderer/HierarchyIds.h"
  #include "task/Physics/NmDefines.h"
  #include "frontend/hud_colour.h"
+@@ -105,7 +105,7 @@ public:
+ 	static PhysicalPlayerIndex			GetLocalPhysicalPlayerIndex()	{ return GetLocalPlayer()->GetPhysicalPlayerIndex(); }
+ 	
+ 
+-	#if __WIN32PC
++	#if __WIN32PC && !__LINUX
+ 	static CNetworkTextChat&   			GetTextChat()					{ return CNetwork::GetTextChat(); }
+ 	static NetworkExitFlow&				GetNetworkExitFlow()			{ return CNetwork::GetNetworkExitFlow(); }
+ 	#endif

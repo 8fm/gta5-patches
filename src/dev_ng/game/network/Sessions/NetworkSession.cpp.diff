@@ -98,3 +98,48 @@ diff --git a/src/dev_ng/game/network/Sessions/NetworkSession.cpp b/src/dev_ng/ga
  #endif
  
  RAGE_DEFINE_SUBCHANNEL(net, mminfo, DIAG_SEVERITY_DEBUG3)
+@@ -186,7 +186,7 @@ PARAM(netSessionEnableActivityMatchmakingActivityIsland,	"[session] If present,
+ PARAM(netSessionOpenNetworkOnQuickmatch,	"[session] If present, opens the network when we quickmatch");
+ PARAM(netBubbleAlwaysCheckIfRequired,		"[session] If present, enforces that hosts always check if bubbles are required");
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <windows.h>
+ #include <psapi.h>
+ #endif
+@@ -13977,7 +13977,7 @@ void CNetworkSession::OnSessionEventTransition(snSession* pSession, const snEven
+             // remove player from voice
+             NetworkInterface::GetVoice().PlayerHasLeft(pEvent->m_RemovedGamer->m_GamerInfo);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			NetworkInterface::GetTextChat().PlayerHasLeft(pEvent->m_RemovedGamer->m_GamerInfo);
+ #endif
+ 
+@@ -17371,7 +17371,7 @@ void CNetworkSession::ProcessRemovedGamerEvent(snEventRemovedGamer* pEvent)
+     const rlGamerInfo& tGamerInfo = pEvent->m_GamerInfo;
+     NetworkInterface::GetVoice().PlayerHasLeft(tGamerInfo);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	//remove from text chat
+ 	NetworkInterface::GetTextChat().PlayerHasLeft(tGamerInfo);
+ #endif
+@@ -18417,7 +18417,7 @@ void CNetworkSession::SyncRadioStations(const u64 nSessionID, const rlGamerId& n
+ 		if(!pStation)
+ 			continue;
+ 
+-#if __WIN32PC // user music
++#if __WIN32PC && !__LINUX // user music
+ 		// can't sync stations playing user radio
+ 		if(pStation->IsUserStation())
+ 			continue;
+@@ -19323,7 +19323,7 @@ const char* CNetworkSession::Util_GetGamerLogString(const snSession* pSession, c
+ 
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #define NUMBER_HANDLES 256
+ void CNetworkSession::CheckDinputCount()
+ {

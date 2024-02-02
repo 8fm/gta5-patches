@@ -10,3 +10,39 @@ diff --git a/src/dev_ng/game/system/control.h b/src/dev_ng/game/system/control.h
  //replay
  #include "control/replay/ReplaySettings.h"
  
+@@ -820,7 +820,7 @@ public:
+ 	void CheckForSteamController();
+ #endif // USE_STEAM_CONTROLLER
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// PURPOSE: Sets the enable flag for using DirectInput devices.
+ 	void SetEnableDirectInputDevices(bool useDirectInputDevices) { m_UseExtraDevices = useDirectInputDevices; }
+ 
+@@ -1475,7 +1475,7 @@ private:
+ 	// The current mapping information.
+ 	CurrentMappingData m_currentMapping;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// The current gamepad definition settings.
+ 	struct JoystickDefinitionData
+ 	{
+@@ -1848,7 +1848,7 @@ private:
+ 	// Rag needs a copy of the mapping data for each input (to display information for each input)
+ 	RagData m_ragData[MAX_INPUTS];
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// Group Joystick definition data together.
+ 	struct JoystickDefinitionRagData
+ 	{
+@@ -1993,7 +1993,7 @@ inline bool CControl::ValidSecondaryDynamicMapping(const ControlInput::DynamicMa
+ }
+ #endif // KEYBOARD_MOUSE_SUPPORT
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ inline bool CControl::JoystickDefinitionData::IsAutoMapped( ioMapperParameter param )
+ {
+ 	return param == IOM_AXIS_LY_DOWN || param == IOM_AXIS_LX_RIGHT 

@@ -40,3 +40,12 @@ diff --git a/src/dev_ng/game/network/Cloud/VideoUploadManager_Custom.cpp b/src/d
  
  #include "control/videorecording/videorecording.h"
  
+@@ -3505,7 +3505,7 @@ void CVideoUploadManager_Custom::DeleteFileWorker::Perform()
+ 		ReplayFileManager::FixName(platformPath, m_pathAndFilename.c_str());
+ 		fullPathAndFilename = platformPath;
+ 		
+-#if (RSG_PC || RSG_DURANGO)
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX // TODO: add Linux support
+ 		resultCode = DeleteFileA(fullPathAndFilename.c_str()) ? 0 : -1;
+ #elif RSG_ORBIS
+ 		resultCode = sceKernelUnlink(fullPathAndFilename.c_str());
