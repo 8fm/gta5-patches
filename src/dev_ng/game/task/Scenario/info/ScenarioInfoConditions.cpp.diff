@@ -23,7 +23,7 @@ diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.cpp b/src
 -#include "Game/Weather.h"
 -#include "Peds/Ped.h"
 +#include "game/Clock.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
 -#include "Scene/World/GameWorld.h"

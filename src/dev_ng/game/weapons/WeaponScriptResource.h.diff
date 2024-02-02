@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/WeaponScriptResource.h b/src/dev_ng/game/weapons/WeaponScriptResource.h
+--- a/src/dev_ng/game/weapons/WeaponScriptResource.h
++++ b/src/dev_ng/game/weapons/WeaponScriptResource.h
+@@ -5,7 +5,7 @@
+ #include "streaming/streamingrequest.h"
+ 
+ // Framework headers
+-#include "fwAnimation/animdefines.h"
++#include "fwanimation/animdefines.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

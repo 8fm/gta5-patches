@@ -1,12 +1,22 @@
 diff --git a/src/dev_ng/game/vfx/systems/VfxLightning.cpp b/src/dev_ng/game/vfx/systems/VfxLightning.cpp
 --- a/src/dev_ng/game/vfx/systems/VfxLightning.cpp
 +++ b/src/dev_ng/game/vfx/systems/VfxLightning.cpp
-@@ -27,19 +27,19 @@
+@@ -19,27 +19,27 @@
+ #include "vectormath/classfreefuncsv.h"
+ 
+ // Framework headers
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
+ #include "fwsys/gameskeleton.h"
+ #include "fwsys/timer.h"
+ #include "vfx/channel.h"
+ #include "vfx/vfxwidget.h"
  
  // Game Headers
- #include "Audio/WeatherAudioEntity.h"
+-#include "Audio/WeatherAudioEntity.h"
 -#include "Camera/Viewports/ViewportManager.h"
-+#include "camera/Viewports/ViewportManager.h"
++#include "audio/weatheraudioentity.h"
++#include "camera/viewports/ViewportManager.h"
  #include "control/replay/replay.h"
  #include "control/replay/Effects/LightningFxPacket.h"
  #include "game/weather.h"

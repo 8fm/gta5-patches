@@ -41,7 +41,7 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseMirrorReflection.c
 -#include "Vfx/Sky/Sky.h"
 -#include "Vfx/GPUParticles/PtFxGPUManager.h"
 -#include "Vfx/particles/PtFxManager.h"
-+#include "vfx/Sky/Sky.h"
++#include "vfx/sky/Sky.h"
 +#include "vfx/gpuparticles/PtFxGPUManager.h"
 +#include "vfx/particles/PtFxManager.h"
  #include "vfx/VfxHelper.h"

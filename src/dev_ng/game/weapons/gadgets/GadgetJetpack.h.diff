@@ -7,7 +7,7 @@ diff --git a/src/dev_ng/game/weapons/gadgets/GadgetJetpack.h b/src/dev_ng/game/w
  // Game headers
 -#include "Weapons/Gadgets/Gadget.h"
 -#include "Task/Movement/JetpackObject.h"
-+#include "weapons/Gadgets/Gadget.h"
++#include "weapons/gadgets/Gadget.h"
 +#include "task/Movement/JetpackObject.h"
  
  #if ENABLE_JETPACK

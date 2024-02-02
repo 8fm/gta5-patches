@@ -24,8 +24,8 @@ diff --git a/src/dev_ng/game/task/Movement/Jumping/TaskInAir.cpp b/src/dev_ng/ga
 -#include "Task/Movement/TaskSlideToCoord.h"
 -#include "Task/Response/TaskFlee.h"
 -#include "Task/Movement/TaskFall.h"
-+#include "streaming/Streaming.h"		// For CStreaming::HasObjectLoaded(), etc.
-+#include "system/Control.h"
++#include "streaming/streaming.h"		// For CStreaming::HasObjectLoaded(), etc.
++#include "system/control.h"
 +#include "task/General/TaskBasic.h"
 +#include "task/Movement/Jumping/TaskFallGetUp.h"
 +#include "task/Movement/Jumping/TaskJump.h"

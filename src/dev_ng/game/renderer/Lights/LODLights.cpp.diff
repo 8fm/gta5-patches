@@ -22,12 +22,14 @@ diff --git a/src/dev_ng/game/renderer/Lights/LODLights.cpp b/src/dev_ng/game/ren
  #include "camera/CamInterface.h"
  #include "camera/cutscene/CutsceneDirector.h"
  #include "debug/rendering/DebugLighting.h"
-@@ -34,7 +34,7 @@
+@@ -34,8 +34,8 @@
  #include "fwscene/scan/Scan.h"
  #include "fwsys/gameskeleton.h"
  #include "fwsys/timer.h"
 -#include "Renderer/Renderer.h"
+-#include "renderer/Occlusion.h"
 +#include "renderer/Renderer.h"
- #include "renderer/Occlusion.h"
++#include "renderer/occlusion.h"
  #include "renderer/Util/ShaderUtil.h"
  #include "renderer/Util/Util.h"
+ #include "renderer/render_channel.h"

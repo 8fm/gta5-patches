@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/timecycle/TimeCycle.cpp b/src/dev_ng/game/timecycle/TimeCycle.cpp
 --- a/src/dev_ng/game/timecycle/TimeCycle.cpp
 +++ b/src/dev_ng/game/timecycle/TimeCycle.cpp
-@@ -41,37 +41,37 @@
- #include "control/gamelogic.h"
- #include "Core/Game.h"
+@@ -39,39 +39,39 @@
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
  #include "Cutscene/CutSceneManagerNew.h"
--#include "Cutscene/CutSceneCameraEntity.h"
-+#include "cutscene/CutSceneCameraEntity.h"
+ #include "control/gamelogic.h"
+-#include "Core/Game.h"
++#include "Core/game.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "Cutscene/CutSceneCameraEntity.h"
  #include "frontend/NewHud.h"
  #include "frontend/PauseMenu.h"
  #include "game/Clock.h"

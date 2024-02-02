@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/cloth/ClothCapsuleBounds.h b/src/dev_ng/game/cloth/ClothCapsuleBounds.h
+--- a/src/dev_ng/game/cloth/ClothCapsuleBounds.h
++++ b/src/dev_ng/game/cloth/ClothCapsuleBounds.h
+@@ -8,7 +8,7 @@
+ class CClothParticles;
+ #include "vector/vector3.h"
+ #include "vector/matrix34.h"
+-#include "crSkeleton/skeleton.h"
++#include "crskeleton/skeleton.h"
+ 
+ class CClothCapsuleBounds
+ {

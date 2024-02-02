@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/vfx/misc/DistantLights.cpp b/src/dev_ng/game/vfx/misc/DistantLights.cpp
 --- a/src/dev_ng/game/vfx/misc/DistantLights.cpp
 +++ b/src/dev_ng/game/vfx/misc/DistantLights.cpp
-@@ -48,36 +48,36 @@
+@@ -42,42 +42,42 @@
+ #include "vfx/vfxutil.h"
+ #include "grcore/debugdraw.h"
+ #include "fwsys/timer.h"
+-#include "fwscene/scan/scan.h"
++#include "fwscene/scan/Scan.h"
+ #include "fwscene/stores/txdstore.h"
+ #include "fwscene/world/WorldLimits.h"
  #include "vfx/vfxwidget.h"
  
  // Game header
@@ -11,10 +18,11 @@ diff --git a/src/dev_ng/game/vfx/misc/DistantLights.cpp b/src/dev_ng/game/vfx/mi
 +#include "camera/viewports/ViewportManager.h"
  #include "camera/gameplay/aim/FirstPersonAimCamera.h"
  #include "camera/gameplay/GameplayDirector.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Debug/Rendering/DebugLighting.h"
 -#include "Debug/VectorMap.h"
 -#include "Game/Clock.h"
++#include "Core/game.h"
 +#include "debug/Rendering/DebugLighting.h"
 +#include "debug/VectorMap.h"
 +#include "game/Clock.h"
@@ -43,8 +51,8 @@ diff --git a/src/dev_ng/game/vfx/misc/DistantLights.cpp b/src/dev_ng/game/vfx/mi
 +#include "renderer/Lights/LODLights.h"
 +#include "renderer/Mirrors.h"
 +#include "renderer/Renderer.h"
-+#include "renderer/Sprite2d.h"
-+#include "renderer/Occlusion.h"
++#include "renderer/sprite2d.h"
++#include "renderer/occlusion.h"
 +#include "renderer/Water.h"
 +#include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
 +#include "renderer/RenderPhases/RenderPhaseMirrorReflection.h"
@@ -53,7 +61,7 @@ diff --git a/src/dev_ng/game/vfx/misc/DistantLights.cpp b/src/dev_ng/game/vfx/mi
 +#include "scene/world/GameWorld.h"
 +#include "shaders/ShaderLib.h"
 +#include "system/FileMgr.h"
-+#include "system/System.h"
++#include "system/system.h"
 +#include "timecycle/TimeCycle.h"
 +#include "timecycle/TimeCycleConfig.h"
 +#include "vfx/VfxHelper.h"

@@ -23,7 +23,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskNavMesh.cpp b/src/dev_ng/game/tas
 +#include "task/Movement/Jumping/TaskJump.h"
 +#include "task/Movement/Climbing/TaskLadderClimb.h"
 +#include "task/Movement/Climbing/TaskGoToAndClimbLadder.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskNavMesh.h"
 +#include "task/Movement/TaskSlideToCoord.h"
 +#include "pathserver/PathServer.h"

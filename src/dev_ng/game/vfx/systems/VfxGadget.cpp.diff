@@ -1,17 +1,24 @@
 diff --git a/src/dev_ng/game/vfx/systems/VfxGadget.cpp b/src/dev_ng/game/vfx/systems/VfxGadget.cpp
 --- a/src/dev_ng/game/vfx/systems/VfxGadget.cpp
 +++ b/src/dev_ng/game/vfx/systems/VfxGadget.cpp
-@@ -23,11 +23,11 @@
+@@ -18,16 +18,16 @@
+ 
+ // framework
+ #include "vfx/channel.h"
+-#include "vfx/ptfx/ptfxAttach.h"
++#include "vfx/ptfx/ptfxattach.h"
+ #include "vfx/vfxwidget.h"
  
  // game
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Peds/Ped.h"
 -#include "Vfx/Particles/PtFxManager.h"
 -#include "Vfx/Systems/VfxTrail.h"
 -#include "Vfx/Systems/VfxPed.h"
 -#include "Vfx/VfxHelper.h"
++#include "Core/game.h"
 +#include "Peds/ped.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxTrail.h"
 +#include "vfx/systems/VfxPed.h"
 +#include "vfx/VfxHelper.h"

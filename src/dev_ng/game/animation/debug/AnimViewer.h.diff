@@ -1,16 +1,19 @@
 diff --git a/src/dev_ng/game/animation/debug/AnimViewer.h b/src/dev_ng/game/animation/debug/AnimViewer.h
 --- a/src/dev_ng/game/animation/debug/AnimViewer.h
 +++ b/src/dev_ng/game/animation/debug/AnimViewer.h
-@@ -23,7 +23,7 @@
+@@ -23,16 +23,16 @@
  #include "fwdebug/debugbank.h"
  
  // Gta includes
 -#include "animation/animbones.h"
+-#include "animation/debug/animdebug.h"
+-#include "animation/moveped.h"
+-#include "animation/pmdictionarystore.h"
 +#include "animation/AnimBones.h"
- #include "animation/debug/animdebug.h"
- #include "animation/moveped.h"
- #include "animation/pmdictionarystore.h"
-@@ -31,8 +31,8 @@
++#include "animation/debug/AnimDebug.h"
++#include "animation/MovePed.h"
++#include "animation/PMDictionaryStore.h"
+ #include "audio/speechaudioentity.h"
  #include "fwanimation/directorcomponentragdoll.h"
  #include "fwanimation/move.h"
  #include "fwanimation/movedump.h"

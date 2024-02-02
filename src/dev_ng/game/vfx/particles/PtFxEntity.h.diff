@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/vfx/particles/PtFxEntity.h b/src/dev_ng/game/vfx/pa
 -#include "Scene/Entity.h"
 -#include "Vfx/Particles/PtFxDefines.h"
 +#include "scene/Entity.h"
-+#include "vfx/Particles/PtFxDefines.h"
++#include "vfx/particles/PtFxDefines.h"
  
  
  #if PTFX_ALLOW_INSTANCE_SORTING

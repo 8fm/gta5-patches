@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/Vehicles/Transmission.cpp b/src/dev_ng/game/Vehicles/Transmission.cpp
 --- a/src/dev_ng/game/Vehicles/Transmission.cpp
 +++ b/src/dev_ng/game/Vehicles/Transmission.cpp
-@@ -11,18 +11,18 @@
+@@ -5,24 +5,24 @@
+ 
+ //rage headers
+ #include "grcore/debugdraw.h"
+-#include "math/vecMath.h"
++#include "math/vecmath.h"
+ 
+ //game headers
  #include "control/record.h"
  #include "event/EventShocking.h"
  #include "event/ShockingEvents.h"
@@ -21,8 +28,9 @@ diff --git a/src/dev_ng/game/Vehicles/Transmission.cpp b/src/dev_ng/game/Vehicle
 +#include "Vehicles/vehiclepopulation.h"
  #include "crskeleton/skeleton.h"
 -#include "vehicles/handlingMgr.h"
+-#include "Audio/caraudioentity.h"
 +#include "Vehicles/handlingMgr.h"
- #include "Audio/caraudioentity.h"
++#include "audio/caraudioentity.h"
  #include "system/controlMgr.h"
 -#include "Frontend/NewHud.h"
 +#include "frontend/NewHud.h"

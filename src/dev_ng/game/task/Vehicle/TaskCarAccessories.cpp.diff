@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp
 --- a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp
 +++ b/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp
-@@ -1,70 +1,70 @@
+@@ -1,73 +1,73 @@
  // Framework headers
  #include "ai/task/taskchannel.h"
  #include "grcore/debugdraw.h"
@@ -22,7 +22,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/ga
 -#include "Debug/DebugScene.h"
 -#include "Event/Event.h"
 -#include "Network/Live/NetworkTelemetry.h"
-+#include "control/Garages.h"
++#include "control/garages.h"
  #include "debug/DebugScene.h"
 -#include "Event/Events.h"
 -#include "Event/EventDamage.h"
@@ -73,7 +73,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/ga
 -#include "Task/Vehicle/TaskEnterVehicle.h"
 -#include "Task/Vehicle/TaskExitVehicle.h"
 -#include "Task/Vehicle/TaskInVehicle.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
 +#include "task/Combat/TaskDamageDeath.h"
 +#include "task/Default/TaskPlayer.h"
 +#include "task/General/TaskSecondary.h"
@@ -81,7 +81,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/ga
 +#include "task/Animation/TaskAnims.h"
 +#include "task/Movement/TaskSeekEntity.h"
 +#include "task/Movement/TaskCollisionResponse.h"
-+#include "task/Movement/TaskGoto.h"
++#include "task/Movement/TaskGoTo.h"
 +#include "task/Physics/TaskNMHighFall.h"
 +#include "task/Physics/TaskNMJumpRollFromRoadVehicle.h"
 +#include "task/Vehicle/TaskCar.h"
@@ -107,4 +107,8 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/ga
 +#include "network/NetworkInterface.h"
  
  //Rage headers
- #include "crSkeleton/skeleton.h"
+-#include "crSkeleton/skeleton.h"
++#include "crskeleton/skeleton.h"
+ 
+ AI_OPTIMISATIONS()
+ 

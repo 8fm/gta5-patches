@@ -25,12 +25,14 @@ diff --git a/src/dev_ng/game/control/replay/ReplayInternal.cpp b/src/dev_ng/game
  #include "vfx/misc/Fire.h"
  #include "weapons/projectiles/ProjectileManager.h"
  #include "text/TextConversion.h"
-@@ -35,8 +35,8 @@
+@@ -34,9 +34,9 @@
+ #include "fwscene/stores/staticboundsstore.h"
  #include "fwutil/keyGen.h"
  #include "game/localisation.h"
- #include "game/modelIndices.h"
+-#include "game/modelIndices.h"
 -#include "objects/DummyObject.h"
 -#include "objects/ProcObjects.h"
++#include "game/ModelIndices.h"
 +#include "Objects/DummyObject.h"
 +#include "Objects/ProcObjects.h"
  #include "physics/physics.h"

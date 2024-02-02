@@ -24,7 +24,7 @@ diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskFishLocomotion.cpp b/src
 +#include "task/Default/TaskPlayer.h"
 +#include "task/Physics/TaskNMRelax.h"
 +#include "task/System/TaskHelpers.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
  
  
  AI_OPTIMISATIONS()

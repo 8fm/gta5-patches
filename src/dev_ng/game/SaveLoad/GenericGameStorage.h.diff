@@ -16,7 +16,7 @@ diff --git a/src/dev_ng/game/SaveLoad/GenericGameStorage.h b/src/dev_ng/game/Sav
 -//	#include "text\text.h"
 -//	#include "scene\ExtraContent.h"
 +//	#include "game/Wanted.h"
-+//	#include "game/Weather.h"
++//	#include "game/weather.h"
 +//	#include "system/FileMgr.h"
 +//	#include "text/text.h"
 +//	#include "scene/ExtraContent.h"

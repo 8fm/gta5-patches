@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp
 --- a/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp
 +++ b/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp
-@@ -25,11 +25,11 @@
+@@ -21,15 +21,15 @@
+ 
+ // framework
+ #include "fwscene/stores/psostore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
  #include "vfx/channel.h"
  
  // game

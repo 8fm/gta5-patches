@@ -10,6 +10,15 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerDebugging.cpp b/sr
  
  #if __BANK
  
+@@ -12,7 +12,7 @@
+ 
+ // Framework headers
+ #include "fwutil/xmacro.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwscene/stores/txdstore.h"
+ #include "fwscene/stores/dwdstore.h"
+ #include "fwscene/stores/drawablestore.h"
 @@ -20,14 +20,14 @@
  #include "fwscene/stores/mapdatastore.h"
  

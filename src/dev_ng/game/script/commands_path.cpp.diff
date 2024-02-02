@@ -1,7 +1,11 @@
 diff --git a/src/dev_ng/game/script/commands_path.cpp b/src/dev_ng/game/script/commands_path.cpp
 --- a/src/dev_ng/game/script/commands_path.cpp
 +++ b/src/dev_ng/game/script/commands_path.cpp
-@@ -4,18 +4,18 @@
+@@ -1,21 +1,21 @@
+ // Rage headers
+-#include "fwscene/world/worldlimits.h"
++#include "fwscene/world/WorldLimits.h"
+ #include "script/wrapper.h"
  
  // Game headers
  #include "control/gps.h"

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Vehicles/door.cpp b/src/dev_ng/game/Vehicles/door.cpp
 --- a/src/dev_ng/game/Vehicles/door.cpp
 +++ b/src/dev_ng/game/Vehicles/door.cpp
-@@ -12,7 +12,7 @@
+@@ -12,35 +12,35 @@
  
  // Framework headers
  #include "fwmaths/angle.h"
@@ -10,8 +10,10 @@ diff --git a/src/dev_ng/game/Vehicles/door.cpp b/src/dev_ng/game/Vehicles/door.c
  
  // Game headers
  #include "animation/AnimBones.h"
-@@ -21,26 +21,26 @@
- #include "camera/Gameplay/GameplayDirector.h"
+ #include "audio/vehicleaudioentity.h"
+ #include "camera/CamInterface.h"
+-#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
  #include "camera/cinematic/CinematicDirector.h"
  #include "game/ModelIndices.h"
 -#include "modelInfo/vehicleModelInfo.h"
@@ -36,7 +38,7 @@ diff --git a/src/dev_ng/game/Vehicles/door.cpp b/src/dev_ng/game/Vehicles/door.c
 +#include "Vehicles/Automobile.h"
 +#include "Vehicles/door.h"
 +#include "Vehicles/vehicle_channel.h"
-+#include "vfx/VehicleGlass/VehicleGlassManager.h"
++#include "vfx/vehicleglass/VehicleGlassManager.h"
 +#include "task/Vehicle/TaskVehicleBase.h"
 +#include "task/Vehicle/TaskEnterVehicle.h"
  #include "script/script.h"

@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/vfx/misc/DistantLights2.cpp b/src/dev_ng/game/vfx/misc/DistantLights2.cpp
 --- a/src/dev_ng/game/vfx/misc/DistantLights2.cpp
 +++ b/src/dev_ng/game/vfx/misc/DistantLights2.cpp
-@@ -51,37 +51,37 @@
+@@ -45,43 +45,43 @@
+ //#include "fwmaths/Maths.h"
+ #include "grcore/debugdraw.h"
+ #include "fwsys/timer.h"
+-#include "fwscene/scan/scan.h"
++#include "fwscene/scan/Scan.h"
+ #include "fwscene/stores/txdstore.h"
+ #include "fwscene/world/WorldLimits.h"
  #include "vfx/vfxwidget.h"
  
  // Game header
@@ -9,13 +16,14 @@ diff --git a/src/dev_ng/game/vfx/misc/DistantLights2.cpp b/src/dev_ng/game/vfx/m
 +#include "camera/CamInterface.h"
  #include "camera/gameplay/GameplayDirector.h"
 -#include "Camera/viewports/ViewportManager.h"
-+#include "camera/viewports/ViewportManager.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Debug/Rendering/DebugLighting.h"
 -#include "Debug/VectorMap.h"
 -#include "Game/Clock.h"
 -#include "Network/Events/NetworkEventTypes.h"
 -#include "Network/Live/NetworkTelemetry.h"
++#include "camera/viewports/ViewportManager.h"
++#include "Core/game.h"
 +#include "debug/Rendering/DebugLighting.h"
 +#include "debug/VectorMap.h"
 +#include "game/Clock.h"
@@ -36,8 +44,8 @@ diff --git a/src/dev_ng/game/vfx/misc/DistantLights2.cpp b/src/dev_ng/game/vfx/m
 -#include "Scene/DataFileMgr.h"
 +#include "renderer/Lights/LODLights.h"
 +#include "renderer/Mirrors.h"
-+#include "renderer/Sprite2d.h"
-+#include "renderer/Occlusion.h"
++#include "renderer/sprite2d.h"
++#include "renderer/occlusion.h"
 +#include "renderer/Water.h"
 +#include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
 +#include "renderer/RenderPhases/RenderPhaseMirrorReflection.h"
@@ -55,7 +63,7 @@ diff --git a/src/dev_ng/game/vfx/misc/DistantLights2.cpp b/src/dev_ng/game/vfx/m
 +#include "scene/world/GameWorld.h"
 +#include "shaders/ShaderLib.h"
 +#include "system/FileMgr.h"
-+#include "system/System.h"
++#include "system/system.h"
 +#include "timecycle/TimeCycle.h"
 +#include "timecycle/TimeCycleConfig.h"
 +#include "vfx/VfxHelper.h"

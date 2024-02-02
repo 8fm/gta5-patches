@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/weapons/ExplosionInst.cpp b/src/dev_ng/game/weapons
 -#include "Renderer/Water.h"
 -#include "Vehicles/Vehicle.h"
 -#include "Vfx/VfxHelper.h"
-+#include "control/GameLogic.h"
++#include "control/gamelogic.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "network/Events/NetworkEventTypes.h"
 +#include "network/Players/NetworkPlayerMgr.h"

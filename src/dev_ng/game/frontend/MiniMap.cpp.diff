@@ -1,17 +1,19 @@
 diff --git a/src/dev_ng/game/frontend/MiniMap.cpp b/src/dev_ng/game/frontend/MiniMap.cpp
 --- a/src/dev_ng/game/frontend/MiniMap.cpp
 +++ b/src/dev_ng/game/frontend/MiniMap.cpp
-@@ -23,8 +23,8 @@
+@@ -23,9 +23,9 @@
  #include "camera/CamInterface.h"
  #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
  #include "camera/debug/DebugDirector.h"
 -#include "Control/gamelogic.h"
 -#include "Control/gps.h"
+-#include "Core/Game.h"
 +#include "control/gamelogic.h"
 +#include "control/gps.h"
- #include "Core/Game.h"
++#include "Core/game.h"
  #include "Cutscene/CutSceneManagerNew.h"
  #include "debug/LightProbe.h"
+ #include "debug/TiledScreenCapture.h"
 @@ -39,24 +39,24 @@
  #include "frontend/WarningScreen.h"
  #include "frontend/SocialClubMenu.h"
@@ -45,7 +47,12 @@ diff --git a/src/dev_ng/game/frontend/MiniMap.cpp b/src/dev_ng/game/frontend/Min
  #include "pickups/Data/PickupDataManager.h"
  #include "pickups/PickupManager.h"
  #include "scene/EntityIterator.h"
-@@ -68,11 +68,11 @@
+@@ -64,15 +64,15 @@
+ #include "script/script.h"
+ #include "script/script_hud.h"
+ #include "streaming/streamingvisualize.h"
+-#include "system/Control.h"
++#include "system/control.h"
  #include "system/controlMgr.h"
  #include "system/param.h"
  #include "task/Combat/TaskInvestigate.h"

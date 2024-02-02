@@ -33,7 +33,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskGoToVehicleDoor.cpp b/src/dev_ng/g
 +#include "task/General/TaskBasic.h"
 +#include "task/Motion/TaskMotionBase.h"
 +#include "task/Movement/TaskCollisionResponse.h"
-+#include "task/Movement/TaskGoto.h"
++#include "task/Movement/TaskGoTo.h"
 +#include "task/Movement/TaskNavMesh.h"
 +#include "task/Service/Police/TaskPolicePatrol.h"
 +#include "task/Vehicle/TaskCarUtils.h"

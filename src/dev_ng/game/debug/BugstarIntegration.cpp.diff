@@ -1,9 +1,14 @@
 diff --git a/src/dev_ng/game/debug/BugstarIntegration.cpp b/src/dev_ng/game/debug/BugstarIntegration.cpp
 --- a/src/dev_ng/game/debug/BugstarIntegration.cpp
 +++ b/src/dev_ng/game/debug/BugstarIntegration.cpp
-@@ -19,14 +19,14 @@
- #include "camera/Viewports/Viewport.h"
- #include "camera/Viewports/ViewportManager.h"
+@@ -16,17 +16,17 @@
+ 
+ // Game headers
+ #include "debug/Debug.h"
+-#include "camera/Viewports/Viewport.h"
+-#include "camera/Viewports/ViewportManager.h"
++#include "camera/viewports/Viewport.h"
++#include "camera/viewports/ViewportManager.h"
  #include "debug/BlockView.h"
 -#include "peds/ped.h"
 -#include "peds/pedfactory.h"

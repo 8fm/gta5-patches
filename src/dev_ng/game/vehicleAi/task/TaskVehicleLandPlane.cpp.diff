@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleLandPlane.cpp b/src/dev_n
 -#include "VehicleAi\VehicleIntelligence.h"
 +#include "Vehicles/Planes.h"
 +#include "vehicleAi/task/TaskVehicleLandPlane.h"
-+#include "vehicleAi/task/TaskVehicleGotoPlane.h"
++#include "vehicleAi/task/TaskVehicleGoToPlane.h"
 +#include "vehicleAi/pathfind.h"
 +#include "vehicleAi/VehicleIntelligence.h"
  

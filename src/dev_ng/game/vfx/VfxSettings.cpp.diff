@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/vfx/VfxSettings.cpp b/src/dev_ng/game/vfx/VfxSettings.cpp
 --- a/src/dev_ng/game/vfx/VfxSettings.cpp
 +++ b/src/dev_ng/game/vfx/VfxSettings.cpp
-@@ -22,7 +22,7 @@
+@@ -21,8 +21,8 @@
+ #include "vfx/channel.h"
  
  // game
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Scene/DataFileMgr.h"
++#include "Core/game.h"
 +#include "scene/DataFileMgr.h"
  
  

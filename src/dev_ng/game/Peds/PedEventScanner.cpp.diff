@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/Peds/PedEventScanner.cpp b/src/dev_ng/game/Peds/Ped
  #include "animation/MovePed.h"
  #include "camera/CamInterface.h"
 -#include "Control/Record.h"
-+#include "control/Record.h"
++#include "control/record.h"
  #include "Cutscene/CutSceneManagerNew.h"
 -#include "debug/vectormap.h"
 -#include "Event/EventDamage.h"

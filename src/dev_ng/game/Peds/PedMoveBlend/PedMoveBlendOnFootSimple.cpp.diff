@@ -10,6 +10,6 @@ diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFootSimple.cpp b/sr
 -#include "Task\Default\TaskPlayer.h"
 +#include "Peds/ped.h"
 +#include "Peds/PedMoveBlend/PedMoveBlendOnFoot.h"
-+#include "system/Control.h"
++#include "system/control.h"
 +#include "task/Default/TaskPlayer.h"
  #include "debug/DebugScene.h"

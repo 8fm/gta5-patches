@@ -1,23 +1,46 @@
 diff --git a/src/dev_ng/game/Vehicles/vehicleDamage.cpp b/src/dev_ng/game/Vehicles/vehicleDamage.cpp
 --- a/src/dev_ng/game/Vehicles/vehicleDamage.cpp
 +++ b/src/dev_ng/game/Vehicles/vehicleDamage.cpp
-@@ -49,57 +49,57 @@
+@@ -25,7 +25,7 @@
+ #endif
+ 
+ // Rage headers
+-#include "fragment/cacheManager.h"
++#include "fragment/cachemanager.h"
+ #include "fragment/instance.h"
+ #include "fragment/type.h"
+ #include "grcore/debugdraw.h"
+@@ -34,7 +34,7 @@
+ #include "grcore/texture.h"
+ #include "phbound/boundcomposite.h"
+ #include "phbound/boundgeom.h"
+-#include "phBound/support.h"
++#include "phbound/support.h"
+ #include "system/param.h"
+ #include "fwdebug/picker.h"
+ #include "creature/componentskeleton.h"	// CVehicleDamage::ReattachAllPanels
+@@ -47,59 +47,59 @@
+ #include "audio/scriptaudioentity.h"
+ #include "audio/speechaudioentity.h"
  #include "camera/CamInterface.h"
- #include "camera/Gameplay/GameplayDirector.h"
+-#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
  #include "camera/cinematic/CinematicDirector.h"
 -#include "Control/replay/Replay.h"
 +#include "control/replay/replay.h"
  #include "control/replay/ReplayBufferMarker.h"
  #include "control/replay/ReplayInterfaceVeh.h"
- #include "control/replay/vehicle/vehiclepacket.h"
+-#include "control/replay/vehicle/vehiclepacket.h"
 -#include "debug/debugglobals.h"
 -#include "event/events.h"
-+#include "debug/Debugglobals.h"
++#include "control/replay/Vehicle/VehiclePacket.h"
++#include "debug/DebugGlobals.h"
 +#include "event/Events.h"
  #include "event/EventDamage.h"
  #include "event/EventShocking.h"
  #include "event/ShockingEvents.h"
- #include "frontend/pausemenu.h"
+-#include "frontend/pausemenu.h"
++#include "frontend/PauseMenu.h"
  #include "network/Objects/Entities/NetObjPlayer.h"
  #include "Stats/StatsMgr.h"
 -#include "peds/popcycle.h"
@@ -55,10 +78,10 @@ diff --git a/src/dev_ng/game/Vehicles/vehicleDamage.cpp b/src/dev_ng/game/Vehicl
 +#include "Vehicles/Planes.h"
 +#include "Vehicles/vehicle.h"
 +#include "Vehicles/vehicleDamage.h" //  Dw  - migrated form top of file
-+#include "Vehicles/vehicleDamage_parser.h"
++#include "Vehicles/VehicleDamage_parser.h"
 +#include "Vehicles/VehicleDefines.h"
 +#include "Vehicles/VehicleFactory.h"
-+#include "Vehicles/vehiclegadgets.h"
++#include "Vehicles/VehicleGadgets.h"
 +#include "Vehicles/wheel.h"
 +#include "Vehicles/Trailer.h"
 +#include "Vehicles/Submarine.h"

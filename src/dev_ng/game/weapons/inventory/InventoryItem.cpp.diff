@@ -13,7 +13,7 @@ diff --git a/src/dev_ng/game/weapons/inventory/InventoryItem.cpp b/src/dev_ng/ga
 -#include "Streaming/streamingvisualize.h"
 +#include "modelinfo/ModelInfo.h"
 +#include "modelinfo/ModelInfo_Factories.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
 +#include "streaming/streamingvisualize.h"
  
  // Macro to disable optimisations if set

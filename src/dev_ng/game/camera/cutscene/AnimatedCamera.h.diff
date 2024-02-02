@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cutscene/AnimatedCamera.h b/src/dev_ng/game/camera/cutscene/AnimatedCamera.h
+--- a/src/dev_ng/game/camera/cutscene/AnimatedCamera.h
++++ b/src/dev_ng/game/camera/cutscene/AnimatedCamera.h
+@@ -10,7 +10,7 @@
+ #include "fwanimation/animdirector.h"
+ 
+ #include "camera/base/BaseCamera.h"
+-#include "cutscene/CutSceneAnimation.h"
++#include "Cutscene/CutSceneAnimation.h"
+ 
+ namespace rage
+ {

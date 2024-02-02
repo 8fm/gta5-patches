@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/task/Default/TaskCuffed.cpp b/src/dev_ng/game/task/
 +#include "animation/Move.h"
 +#include "animation/MovePed.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
 +#include "debug/DebugScene.h"
  #include "Math/angmath.h"
 -#include "Network/NetworkInterface.h"

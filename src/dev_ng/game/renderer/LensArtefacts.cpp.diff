@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/LensArtefacts.cpp b/src/dev_ng/game/renderer/LensArtefacts.cpp
+--- a/src/dev_ng/game/renderer/LensArtefacts.cpp
++++ b/src/dev_ng/game/renderer/LensArtefacts.cpp
+@@ -6,7 +6,7 @@
+ #include "grcore/texture.h"
+ #include "file/default_paths.h"
+ #include "fwscene/stores/psostore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "parser/manager.h"
+ #include "input/headtracking.h"
+ 

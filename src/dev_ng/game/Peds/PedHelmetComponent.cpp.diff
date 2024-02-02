@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/Peds/PedHelmetComponent.cpp b/src/dev_ng/game/Peds/
 -#include "Peds/Ped.h"
 -#include "peds/ped_channel.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Cinematic/CinematicDirector.h"
++#include "camera/cinematic/CinematicDirector.h"
 +#include "Peds/ped.h"
 +#include "Peds/ped_channel.h"
  #include "scene/ExtraMetadataMgr.h"

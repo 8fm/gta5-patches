@@ -1,8 +1,14 @@
 diff --git a/src/dev_ng/game/Vehicles/virtualroad.cpp b/src/dev_ng/game/Vehicles/virtualroad.cpp
 --- a/src/dev_ng/game/Vehicles/virtualroad.cpp
 +++ b/src/dev_ng/game/Vehicles/virtualroad.cpp
-@@ -11,18 +11,18 @@
- #include "GrCore/DebugDraw.h"
+@@ -7,22 +7,22 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+ //Rage headers
+-#include "Bank/BkMgr.h"
+-#include "GrCore/DebugDraw.h"
++#include "bank/bkmgr.h"
++#include "grcore/debugdraw.h"
  
  // Game headers
 -#include "camera/camInterface.h"
@@ -12,6 +18,8 @@ diff --git a/src/dev_ng/game/Vehicles/virtualroad.cpp b/src/dev_ng/game/Vehicles
 -#include "VehicleAi/PathFind.h"
 -#include "VehicleAi/VehicleIntelligence.h"
 -#include "VehicleAi/Task/TaskVehicleMissionBase.h"
+-#include "Vehicles/VirtualRoad.h"
+-#include "Vehicles/VehiclePopulation.h"
 +#include "camera/CamInterface.h"
 +#include "Peds/PedIntelligence.h"
 +#include "physics/gtaMaterialManager.h"
@@ -19,8 +27,7 @@ diff --git a/src/dev_ng/game/Vehicles/virtualroad.cpp b/src/dev_ng/game/Vehicles
 +#include "vehicleAi/pathfind.h"
 +#include "vehicleAi/VehicleIntelligence.h"
 +#include "vehicleAi/task/TaskVehicleMissionBase.h"
- #include "Vehicles/VirtualRoad.h"
--#include "Vehicles/VehiclePopulation.h"
++#include "Vehicles/virtualroad.h"
 +#include "Vehicles/vehiclepopulation.h"
  #include "scene/LoadScene.h"
 -#include "Scene/world/GameWorld.h"

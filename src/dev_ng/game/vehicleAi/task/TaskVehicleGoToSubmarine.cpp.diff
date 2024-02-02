@@ -16,7 +16,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToSubmarine.cpp b/src/d
 +#include "physics/PhysicsHelpers.h"
 +#include "system/controlMgr.h"
 +#include "vehicleAi/task/TaskVehiclePark.h"
-+#include "vehicleAi/task/taskvehicleanimation.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
  
  AI_OPTIMISATIONS()
  AI_VEHICLE_OPTIMISATIONS()

@@ -1,7 +1,19 @@
 diff --git a/src/dev_ng/game/Peds/rendering/PedDamage.cpp b/src/dev_ng/game/Peds/rendering/PedDamage.cpp
 --- a/src/dev_ng/game/Peds/rendering/PedDamage.cpp
 +++ b/src/dev_ng/game/Peds/rendering/PedDamage.cpp
-@@ -39,31 +39,31 @@
+@@ -30,40 +30,40 @@
+ 
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"
+-#include "crSkeleton/Skeleton.h"
+-#include "crSkeleton/SkeletonData.h"
+-#include "crSkeleton/BoneData.h"
++#include "crskeleton/skeleton.h"
++#include "crskeleton/SkeletonData.h"
++#include "crskeleton/BoneData.h"
+ #include "streaming/defragmentation.h"
+ #include "streaming/streamingengine.h"
+ #include "parser/manager.h"
  #include "fwdrawlist/drawlistmgr.h"
  
  // Game headers:

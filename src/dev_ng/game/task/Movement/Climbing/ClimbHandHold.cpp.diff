@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.cpp b/src/dev_
 +#include "scene/Physical.h"
  
 -#include "Vfx/VehicleGlass/VehicleGlassManager.h"
-+#include "vfx/VehicleGlass/VehicleGlassManager.h"
++#include "vfx/vehicleglass/VehicleGlassManager.h"
  
 -#include "vehicles/wheel.h"
 +#include "Vehicles/wheel.h"

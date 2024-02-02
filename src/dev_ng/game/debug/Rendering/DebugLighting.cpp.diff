@@ -14,11 +14,13 @@ diff --git a/src/dev_ng/game/debug/Rendering/DebugLighting.cpp b/src/dev_ng/game
  #include "debug/BudgetDisplay.h"
  #include "debug/GtaPicker.h"
  #include "debug/Rendering/DebugDeferred.h"
-@@ -38,7 +38,7 @@
+@@ -37,8 +37,8 @@
+ #include "renderer/Util/ShaderUtil.h"
  #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
  #include "scene/portals/InteriorProxy.h"
- #include "Timecycle/TimeCycle.h"
+-#include "Timecycle/TimeCycle.h"
 -#include "Vfx/Misc/Coronas.h"
++#include "timecycle/TimeCycle.h"
 +#include "vfx/misc/Coronas.h"
  
  #if __BANK

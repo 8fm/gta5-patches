@@ -37,7 +37,7 @@ diff --git a/src/dev_ng/game/audio/caraudioentity.cpp b/src/dev_ng/game/audio/ca
  #include "crskeleton/skeleton.h"
  #include "vfx/systems/VfxWheel.h"
 -#include "debug/debugglobals.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "grcore/debugdraw.h"
  #include "game/ModelIndices.h"
  #include "game/weather.h"

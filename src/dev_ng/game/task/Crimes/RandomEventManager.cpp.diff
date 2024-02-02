@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/task/Crimes/RandomEventManager.cpp b/src/dev_ng/gam
  
  // Required headers
 -#include "debug/debugglobals.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "game/Dispatch/DispatchData.h"
  #include "game/ModelIndices.h"
 -#include "game/wanted.h"

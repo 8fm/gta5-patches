@@ -7,7 +7,7 @@ diff --git a/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbit
  
 -#include "Camera/Base/BaseCamera.h"
 -#include "Camera/helpers/DampedSpring.h"
-+#include "camera/Base/BaseCamera.h"
++#include "camera/base/BaseCamera.h"
 +#include "camera/helpers/DampedSpring.h"
  
  class camCinematicVehicleOrbitCameraMetadata;

@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/Objects/objectpopulation.cpp b/src/dev_ng/game/Obje
 -#include "debug/debugglobals.h"
 -#include "debug/debugscene.h"
 -#include "debug/vectormap.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
 +#include "debug/DebugScene.h"
 +#include "debug/VectorMap.h"
  #include "frontend/MobilePhone.h"

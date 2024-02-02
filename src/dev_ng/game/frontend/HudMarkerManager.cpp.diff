@@ -8,9 +8,9 @@ diff --git a/src/dev_ng/game/frontend/HudMarkerManager.cpp b/src/dev_ng/game/fro
 -#include "Camera/Base/BaseCamera.h"
 -#include "Camera/CamInterface.h"
 -#include "Camera/Viewports/ViewportManager.h"
-+#include "camera/Base/BaseCamera.h"
++#include "camera/base/BaseCamera.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Viewports/ViewportManager.h"
++#include "camera/viewports/ViewportManager.h"
  
  #include "scene/world/GameWorld.h"
  #include "script/script_hud.h"

@@ -37,7 +37,7 @@ diff --git a/src/dev_ng/game/Vehicles/Submarine.cpp b/src/dev_ng/game/Vehicles/S
 +#include "scene/world/GameWorld.h"
 +#include "vfx/misc/Fire.h"
 +#include "vfx/systems/VfxVehicle.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "network/Events/NetworkEventTypes.h"
  #include "audio/boataudioentity.h"
  #include "audio/caraudioentity.h"

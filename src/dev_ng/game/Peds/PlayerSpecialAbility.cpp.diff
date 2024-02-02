@@ -34,7 +34,7 @@ diff --git a/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp b/src/dev_ng/game/Ped
 -#include "Vfx/Systems/VfxVehicle.h"
 -#include "Frontend/MobilePhone.h"
 +#include "Vehicles/vehicle.h"
-+#include "Vehicles/Wheel.h"
++#include "Vehicles/wheel.h"
 +#include "vfx/systems/VfxVehicle.h"
 +#include "frontend/MobilePhone.h"
  

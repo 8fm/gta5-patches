@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/control/gamelogic.cpp b/src/dev_ng/game/control/gam
  #include "audio/audioZones.h"
  #include "audio/northaudioengine.h"
  #include "audio/policescanner.h"
-@@ -22,15 +22,15 @@
+@@ -22,49 +22,49 @@
  #include "control/garages.h"
  #include "control/restart.h"
  #include "control/replay/replay.h"
@@ -29,8 +29,9 @@ diff --git a/src/dev_ng/game/control/gamelogic.cpp b/src/dev_ng/game/control/gam
  #include "game/Dispatch/DispatchManager.h"
  #include "game/Dispatch/IncidentManager.h"
  #include "game/Dispatch/OrderManager.h"
-@@ -38,33 +38,33 @@
- #include "game/modelIndices.h"
+ #include "game/Dispatch/RoadBlock.h"
+-#include "game/modelIndices.h"
++#include "game/ModelIndices.h"
  #include "Stats/StatsMgr.h"
  #include "game/weather.h"
 -#include "Network/Live/NetworkTelemetry.h"

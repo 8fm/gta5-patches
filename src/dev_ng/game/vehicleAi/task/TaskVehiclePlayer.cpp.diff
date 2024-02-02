@@ -1,15 +1,18 @@
 diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.cpp
 --- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.cpp
 +++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePlayer.cpp
-@@ -1,7 +1,7 @@
+@@ -1,9 +1,9 @@
  #include "TaskVehiclePlayer.h"
  
  // Framework headers
 -#include "fwmaths/vector.h"
 +#include "fwmaths/Vector.h"
  #include "fwmaths/angle.h"
- #include "math/vecMath.h"
+-#include "math/vecMath.h"
++#include "math/vecmath.h"
  
+ 
+ // Game headers
 @@ -11,14 +11,14 @@
  #include "camera/gameplay/follow/FollowVehicleCamera.h"
  #include "frontend/PauseMenu.h"

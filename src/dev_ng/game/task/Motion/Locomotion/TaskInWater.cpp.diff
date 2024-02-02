@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.cpp b/src/dev_ng
 -#include "Camera/CamInterface.h"
 -#include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Gameplay/Aim/FirstPersonShooterCamera.h"
++#include "camera/gameplay/aim/FirstPersonShooterCamera.h"
  #include "camera/gameplay/GameplayDirector.h"
 -#include "control\replay\replay.h"
 -#include "debug\DebugScene.h"

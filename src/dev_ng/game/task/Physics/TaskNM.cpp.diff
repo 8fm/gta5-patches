@@ -1,6 +1,18 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNM.cpp b/src/dev_ng/game/task/Physics/TaskNM.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNM.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNM.cpp
+@@ -5,9 +5,9 @@
+  
+ // C headers  
+ // Rage headers
+-#include "crskeleton/Skeleton.h"
++#include "crskeleton/skeleton.h"
+ #include "fragment/Cache.h"
+-#include "fragment/Instance.h"
++#include "fragment/instance.h"
+ #include "fragment/Type.h"
+ #include "fragment/TypeChild.h"
+ #include "fragmentnm/messageparams.h"
 @@ -24,7 +24,7 @@
  #include "fwanimation/pointcloud.h"
  #include "fwdebug/picker.h"

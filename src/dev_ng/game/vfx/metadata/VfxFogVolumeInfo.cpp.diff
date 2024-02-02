@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp
 --- a/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp
 +++ b/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp
-@@ -28,9 +28,9 @@
+@@ -23,14 +23,14 @@
+ 
+ // framework
+ #include "fwscene/stores/psostore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "vfx/channel.h"
  #include "vfx/vfxwidget.h"
  
  // game

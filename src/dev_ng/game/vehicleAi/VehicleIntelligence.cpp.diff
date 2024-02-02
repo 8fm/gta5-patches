@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/vehicleAi/VehicleIntelligence.cpp b/src/dev_ng/game/vehicleAi/VehicleIntelligence.cpp
 --- a/src/dev_ng/game/vehicleAi/VehicleIntelligence.cpp
 +++ b/src/dev_ng/game/vehicleAi/VehicleIntelligence.cpp
-@@ -5,17 +5,17 @@
+@@ -5,19 +5,19 @@
  #include "vehicleAi/VehicleIntelligence.h"
  #include "vehicleAi/task/TaskVehicleMissionBase.h"
  #include "vehicleAi/task/TaskVehiclePark.h"
@@ -22,8 +22,11 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleIntelligence.cpp b/src/dev_ng/game
 +#include "frontend/MiniMap.h"
 +#include "scene/world/GameWorld.h"
  #include "script/Handlers/GameScriptEntity.h"
- #include "ai/Task/Task.h"
+-#include "ai/Task/Task.h"
++#include "ai/task/task.h"
  #include "ai/debug/types/VehicleControlDebugInfo.h"
+ #include "ai/debug/types/VehicleDebugInfo.h"
+ #include "ai/debug/types/VehicleFlagDebugInfo.h"
 @@ -25,54 +25,54 @@
  #include "ai/debug/types/VehicleStuckDebugInfo.h"
  #include "ai/debug/types/VehicleTaskDebugInfo.h"
@@ -77,7 +80,7 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleIntelligence.cpp b/src/dev_ng/game
 -#include "vehicles/Trailer.h"
 +#include "vehicleAi/task/TaskVehicleApproach.h"
 +#include "vehicleAi/task/TaskVehicleGoTo.h"
-+#include "vehicleAi/task/TaskVehicleGotoAutomobile.h"
++#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
 +#include "vehicleAi/task/TaskVehicleGotoBoat.h"
 +#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
 +#include "vehicleAi/task/TaskVehicleGoToPlane.h"

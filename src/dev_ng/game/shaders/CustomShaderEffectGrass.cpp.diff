@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp b/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
 --- a/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
 +++ b/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
-@@ -16,10 +16,10 @@
+@@ -15,11 +15,11 @@
+ 
  // Game headers
  #include "camera/CamInterface.h"
- #include "camera/Cinematic/CinematicDirector.h"
+-#include "camera/Cinematic/CinematicDirector.h"
 -#include "debug/debug.h"
++#include "camera/cinematic/CinematicDirector.h"
 +#include "debug/Debug.h"
  #include "game/ModelIndices.h"
 -#include "objects/Object.h"

@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/script/script_brains.cpp b/src/dev_ng/game/script/s
  #include "script/streamedscripts.h"
  #include "streaming/streamingvisualize.h"
 -#include "debug/debugglobals.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "scene/DataFileMgr.h"
  #include "control/replay/ReplaySettings.h"
  

@@ -46,7 +46,7 @@ diff --git a/src/dev_ng/game/task/Animation/TaskAnims.cpp b/src/dev_ng/game/task
 -#include "Task/Physics/TaskNmBalance.h"
 -#include "Task/Physics/TaskNMJumpRollFromRoadVehicle.h"
 -#include "vehicleAI/VehicleAILodManager.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
 +#include "task/General/TaskBasic.h"
 +#include "task/Physics/TaskNmBalance.h"
 +#include "task/Physics/TaskNMJumpRollFromRoadVehicle.h"

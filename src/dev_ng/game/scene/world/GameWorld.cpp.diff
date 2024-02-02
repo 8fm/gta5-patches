@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/scene/world/GameWorld.cpp b/src/dev_ng/game/scene/world/GameWorld.cpp
 --- a/src/dev_ng/game/scene/world/GameWorld.cpp
 +++ b/src/dev_ng/game/scene/world/GameWorld.cpp
-@@ -8,7 +8,7 @@
+@@ -8,14 +8,14 @@
  //
  /////////////////////////////////////////////////////////////////////////////////
  
@@ -10,6 +10,14 @@ diff --git a/src/dev_ng/game/scene/world/GameWorld.cpp b/src/dev_ng/game/scene/w
  #include "scene/world/GameWorldHeightMap.h"
  
  // Rage headers
+ #include "system/nelem.h"
+ #include "system/threadtype.h"
+ #include "spatialdata/sphere.h"
+-#include "phbound/BoundBox.h"
++#include "phbound/boundbox.h"
+ #include "profile/timebars.h"
+ 
+ // Framework headers
 @@ -27,7 +27,7 @@
  #include "fwpheffects/ropemanager.h"
  #include "fwscene/world/WorldRepMulti.h"

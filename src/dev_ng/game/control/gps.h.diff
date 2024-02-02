@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/gps.h b/src/dev_ng/game/control/gps.h
+--- a/src/dev_ng/game/control/gps.h
++++ b/src/dev_ng/game/control/gps.h
+@@ -15,7 +15,7 @@
+ // rage includes
+ #include "script/thread.h"
+ #include "vector/vector3.h"
+-#include "fwControl/WaypointRecordingRoute.h"
++#include "fwcontrol/WaypointRecordingRoute.h"
+ 
+ // game includes
+ #include "scene/RegdRefTypes.h"

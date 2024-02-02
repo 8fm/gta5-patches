@@ -27,7 +27,7 @@ diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceVeh.cpp b/src/dev_ng/
 -#include "Control/Replay/Entity/FragmentPacket.h"
 -#include "Control/Garages.h"
 +#include "control/replay/Entity/FragmentPacket.h"
-+#include "control/Garages.h"
++#include "control/garages.h"
  #include "control/replay/Vehicle/WheelPacket.h"
  
  #include "ReplayInterfaceImpl.h"

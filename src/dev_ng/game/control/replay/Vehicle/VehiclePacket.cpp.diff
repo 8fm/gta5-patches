@@ -24,3 +24,12 @@ diff --git a/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.cpp b/src/dev_
  #include "scene/world/GameWorld.h"
  #include "script/commands_entity.h"
  
+@@ -28,7 +28,7 @@
+ #include "control/replay/Entity/FragmentPacket.h"
+ #include "control/replay/ReplayExtensions.h"
+ #include "control/replay/Vehicle/WheelPacket.h"
+-#include "control/replay/vehicle/ReplayWheelValues.h"
++#include "control/replay/Vehicle/ReplayWheelValues.h"
+ 
+ #include "control/replay/ReplayInterfaceVeh.h" // Urgh
+ 

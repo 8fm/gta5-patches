@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/OcclusionQueries.h b/src/dev_ng/game/renderer/OcclusionQueries.h
+--- a/src/dev_ng/game/renderer/OcclusionQueries.h
++++ b/src/dev_ng/game/renderer/OcclusionQueries.h
+@@ -12,7 +12,7 @@
+ #include "atl/array.h"
+ #include "atl/freelist.h"
+ #include "grcore/device.h"
+-#include "grcore/stateblock.h "
++#include "grcore/stateblock.h"
+ 
+ #include "fwdrawlist/drawlist.h"
+ #include "DrawLists/drawList.h"

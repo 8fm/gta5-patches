@@ -20,7 +20,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskCollisionResponse.h b/src/dev_ng/
 +#include "task/System/TaskHelpers.h"
 +#include "task/System/Tuning.h"
 +#include "task/Movement/TaskGoTo.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
  
  class CVehicle;
  class CPed;

@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/audio/environment/environmentgroup.cpp b/src/dev_ng
  #include "camera/CamInterface.h"
  #include "Cutscene/CutSceneManagerNew.h"
 -#include "debug/debugglobals.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "modelinfo/MloModelInfo.h"
  #include "modelinfo/MloModelInfo.h"
  #include "pathserver/PathServer.h"

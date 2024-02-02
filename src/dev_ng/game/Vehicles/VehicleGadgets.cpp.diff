@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/Vehicles/VehicleGadgets.cpp b/src/dev_ng/game/Vehicles/VehicleGadgets.cpp
 --- a/src/dev_ng/game/Vehicles/VehicleGadgets.cpp
 +++ b/src/dev_ng/game/Vehicles/VehicleGadgets.cpp
-@@ -9,7 +9,7 @@
+@@ -4,12 +4,12 @@
+ #include "crskeleton/jointdata.h"
+ #include "fragment/typegroup.h" 
+ #include "pharticulated/articulatedcollider.h"
+-#include "phbound/BoundComposite.h"
++#include "phbound/boundcomposite.h"
+ #include "phbound/boundbox.h"
  #include "physics/constraintspherical.h"
  #include "physics/constraintdistance.h"
  #include "physics/constraintfixed.h"
@@ -10,7 +16,7 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleGadgets.cpp b/src/dev_ng/game/Vehic
  
  // Framework headers
  #include "ai/aichannel.h"
-@@ -18,47 +18,47 @@
+@@ -18,49 +18,49 @@
  #include "grcore/debugdraw.h"
  
  // Game headers
@@ -22,11 +28,11 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleGadgets.cpp b/src/dev_ng/game/Vehic
 -#include "Camera/cinematic/camera/mounted/CinematicMountedCamera.h"
 -#include "Camera/viewports/ViewportManager.h"
 -#include "Camera/scripted/ScriptDirector.h"
-+#include "camera/Base/BaseCamera.h"
++#include "camera/base/BaseCamera.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Cinematic/CinematicDirector.h"
-+#include "camera/Debug/DebugDirector.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/cinematic/CinematicDirector.h"
++#include "camera/debug/DebugDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
 +#include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
 +#include "camera/viewports/ViewportManager.h"
 +#include "camera/scripted/ScriptDirector.h"
@@ -36,11 +42,12 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleGadgets.cpp b/src/dev_ng/game/Vehic
 -#include "Event/EventShocking.h"
 -#include "Event/ShockingEvents.h"
 -#include "Game/ModelIndices.h"
+-#include "FwPhEffects/ropemanager.h"
 +#include "debug/DebugScene.h"
 +#include "event/EventShocking.h"
 +#include "event/ShockingEvents.h"
 +#include "game/ModelIndices.h"
- #include "FwPhEffects/ropemanager.h"
++#include "fwpheffects/ropemanager.h"
  #include "modelinfo/VehicleModelInfoFlags.h"
 -#include "Network/Events/NetworkEventTypes.h"
 -#include "Peds/Ped.h"
@@ -80,7 +87,7 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleGadgets.cpp b/src/dev_ng/game/Vehic
 -#include "VehicleAi/VehicleIntelligence.h"
 -#include "VehicleAi/Task/TaskVehiclePlayer.h"
 -#include "Vehicles/Vehicle.h"
-+#include "system/Control.h"
++#include "system/control.h"
 +#include "task/Combat/TaskCombat.h"
 +#include "task/Motion/Vehicle/TaskMotionInTurret.h"
 +#include "task/Vehicle/TaskVehicleWeapon.h"
@@ -90,8 +97,11 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleGadgets.cpp b/src/dev_ng/game/Vehic
 +#include "vehicleAi/task/TaskVehiclePlayer.h"
 +#include "Vehicles/vehicle.h"
  #include "Vehicles/VehicleDefines.h"
- #include "Vehicles/Vehicle_Channel.h"
+-#include "Vehicles/Vehicle_Channel.h"
++#include "Vehicles/vehicle_channel.h"
  #include "Vehicles/Trailer.h"
+ #include "Vehicles/Planes.h"
+ #include "Vehicles/Boat.h"
 @@ -68,10 +68,10 @@
  #include "Vehicles/Submarine.h"
  #include "Vehicles/AmphibiousAutomobile.h"

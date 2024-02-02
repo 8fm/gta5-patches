@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/control/replay/Effects/ParticleVehicleFxPacket.h b/
  #if INCLUDE_FROM_GAME
 -#include "Vehicles\VehicleStorage.h"
 -#include "vfx\decal\decalsettings.h"
-+#include "Vehicles/VehicleStorage.h"
++#include "Vehicles/vehiclestorage.h"
 +#include "vfx/decal/decalsettings.h"
  #include "vfx/decals/DecalManager.h"
  #endif

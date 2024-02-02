@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/script/commands_ped.cpp b/src/dev_ng/game/script/co
 +#include "event/ShockingEvents.h"
  #include "frontend/MiniMap.h"
 -#include "Game/Localisation.h"
-+#include "game/Localisation.h"
++#include "game/localisation.h"
  #include "game/zones.h"
  #include "ik/IkConfig.h"
  #include "ik/IkManager.h"

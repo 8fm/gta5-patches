@@ -10,7 +10,14 @@ diff --git a/src/dev_ng/game/renderer/Lights/lights.cpp b/src/dev_ng/game/render
  
  // STL
  #include <set>
-@@ -30,17 +30,17 @@
+@@ -24,24 +24,24 @@
+ // Framework headers
+ #include "fwdrawlist/drawlist.h"
+ #include "fwdrawlist/drawlistmgr.h"
+-#include "fwscene/scan/scan.h"
++#include "fwscene/scan/Scan.h"
+ 
+ // Game headers
  #include "camera/CamInterface.h"
  #include "camera/cutscene/CutsceneDirector.h"
  #include "camera/viewports/ViewportManager.h"
@@ -26,14 +33,16 @@ diff --git a/src/dev_ng/game/renderer/Lights/lights.cpp b/src/dev_ng/game/render
 -#include "Pickups/Pickup.h"
 -#include "Pickups/Data/PickupData.h"
 -#include "Renderer/Renderer.h"
-+#include "game/Weather.h"
+-#include "renderer/Occlusion.h"
++#include "game/weather.h"
 +#include "Peds/ped.h"
 +#include "pickups/Pickup.h"
 +#include "pickups/Data/PickupData.h"
 +#include "renderer/Renderer.h"
- #include "renderer/Occlusion.h"
++#include "renderer/occlusion.h"
  #include "renderer/PostProcessFX.h"
  #include "renderer/SSAO.h"
+ #include "renderer/Deferred/DeferredLighting.h"
 @@ -53,25 +53,25 @@
  #include "renderer/Lights/TiledLighting.h"
  #include "renderer/Lights/LODLights.h"

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/renderer/Lights/LightGroup.cpp b/src/dev_ng/game/renderer/Lights/LightGroup.cpp
 --- a/src/dev_ng/game/renderer/Lights/LightGroup.cpp
 +++ b/src/dev_ng/game/renderer/Lights/LightGroup.cpp
-@@ -3,8 +3,8 @@
+@@ -3,10 +3,10 @@
  // =============================================================================================== //
  
  // Game headers
@@ -10,5 +10,8 @@ diff --git a/src/dev_ng/game/renderer/Lights/LightGroup.cpp b/src/dev_ng/game/re
 +#include "renderer/Lights/LightGroup.h"
 +#include "debug/Rendering/DebugLighting.h"
  #include "renderer/SpuPM/SpuPmMgr.h"
- #include "renderer/Lights/Lights.h"
+-#include "renderer/Lights/Lights.h"
++#include "renderer/Lights/lights.h"
  #include "timecycle/TimeCycle.h"
+ 
+ // Framework headers

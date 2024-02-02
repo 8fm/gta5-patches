@@ -1,7 +1,16 @@
 diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualEffects.cpp
 --- a/src/dev_ng/game/vfx/VisualEffects.cpp
 +++ b/src/dev_ng/game/vfx/VisualEffects.cpp
-@@ -21,99 +21,99 @@
+@@ -11,7 +11,7 @@
+ #include "bank/bkmgr.h"
+ #include "grcore/allocscope.h"
+ #include "physics/contact.h"
+-#include "profile/Timebars.h"
++#include "profile/timebars.h"
+ #include "rmptfx/ptxmanager.h"
+ #include "system/memory.h"
+ 
+@@ -21,105 +21,105 @@
  #include "vfx/channel.h"
  #include "vfx/vfxutil.h"
  #include "vfx/vfxwidget.h"
@@ -12,10 +21,11 @@ diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualE
 -#include "Camera/CamInterface.h"
 -#include "Camera/Viewports/ViewportManager.h"
 -#include "Control/replay/replay.h"
+-#include "Core/Game.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Viewports/ViewportManager.h"
++#include "camera/viewports/ViewportManager.h"
 +#include "control/replay/replay.h"
- #include "Core/Game.h"
++#include "Core/game.h"
  #include "Cutscene/CutSceneManagerNew.h"
 -#include "Debug/DebugScene.h"
 +#include "debug/DebugScene.h"
@@ -38,7 +48,7 @@ diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualE
 -#include "Renderer/PostProcessFxHelper.h"
 -#include "Renderer/Renderer.h"
 -#include "Renderer/RenderThread.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "game/wind.h"
 +#include "modelinfo/ModelSeatInfo.h"
 +#include "Peds/ped.h"
@@ -47,8 +57,8 @@ diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualE
 +#include "renderer/DrawLists/drawListMgr.h"
 +#include "renderer/Lights/lights.h"
 +#include "renderer/Lights/LODLights.h"
-+#include "renderer/PostProcessFx.h"
-+#include "renderer/PostProcessFxHelper.h"
++#include "renderer/PostProcessFX.h"
++#include "renderer/PostProcessFXHelper.h"
 +#include "renderer/Renderer.h"
 +#include "renderer/RenderThread.h"
  #include "renderer/RenderPhases/RenderPhaseReflection.h"
@@ -65,7 +75,7 @@ diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualE
 +#include "scene/Physical.h"
 +#include "scene/world/GameWorld.h"
 +#include "script/script.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
 +#include "timecycle/TimeCycle.h"
 +#include "timecycle/TimeCycleConfig.h"
  #include "Vehicles/Heli.h"
@@ -135,7 +145,7 @@ diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualE
 +#include "vfx/misc/LensFlare.h"
 +#include "vfx/misc/TerrainGrid.h"
 +
-+#include "vfx/Sky/Sky.h"
++#include "vfx/sky/Sky.h"
 +#include "vfx/metadata/PtFxAssetInfo.h"
 +#include "vfx/metadata/VfxFogVolumeInfo.h"
 +#include "vfx/metadata/VfxInteriorInfo.h"
@@ -144,7 +154,7 @@ diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualE
 +#include "vfx/metadata/VfxVehicleInfo.h"
 +#include "vfx/metadata/VfxWeaponInfo.h"
 +#include "vfx/misc/WaterCannon.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/decals/DecalManager.h"
 +#include "vfx/systems/VfxBlood.h"
 +#include "vfx/systems/VfxEntity.h"
@@ -172,7 +182,14 @@ diff --git a/src/dev_ng/game/vfx/VisualEffects.cpp b/src/dev_ng/game/vfx/VisualE
 +#include "vfx/VfxHelper.h"
 +#include "vfx/VfxSettings.h"
 +#include "vfx/vfx_channel.h"
-+#include "vfx/Clouds/Clouds.h"
++#include "vfx/clouds/Clouds.h"
  
  #include "shader_source/Vegetation/Trees/trees_shared.h"
  #include "shaders/CustomShaderEffectTree.h"
+ 
+ #if __DEV
+-#include "Tools/TracingStats.h"
++#include "tools/TracingStats.h"
+ #endif
+ 
+ 

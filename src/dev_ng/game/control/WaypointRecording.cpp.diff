@@ -42,7 +42,7 @@ diff --git a/src/dev_ng/game/control/WaypointRecording.cpp b/src/dev_ng/game/con
 -#include "Task\General\TaskBasic.h"
 -#include "vehicleAi\task\TaskVehicleFollowRecording.h"
 +#include "task/Motion/Locomotion/TaskMotionPed.h"
-+#include "task/Movement/TaskGoto.h"
++#include "task/Movement/TaskGoTo.h"
 +#include "task/Movement/TaskFollowWaypointRecording.h"
 +#include "task/Movement/Jumping/TaskJump.h"
 +#include "task/General/TaskBasic.h"

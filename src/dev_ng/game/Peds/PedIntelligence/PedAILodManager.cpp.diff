@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp b/src/dev_
  #include "Peds/PedIntelligence/PedAiLod.h"
  #include "Peds/PedIntelligence.h"
 -#include "Renderer/Occlusion.h"
-+#include "renderer/Occlusion.h"
++#include "renderer/occlusion.h"
  #include "renderer/Renderer.h"
  #include "scene/FocusEntity.h"
  #include "scene/lod/LodScale.h"

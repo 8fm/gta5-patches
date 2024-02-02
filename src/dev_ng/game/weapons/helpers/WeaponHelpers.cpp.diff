@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/weapons/helpers/WeaponHelpers.cpp b/src/dev_ng/game/weapons/helpers/WeaponHelpers.cpp
 --- a/src/dev_ng/game/weapons/helpers/WeaponHelpers.cpp
 +++ b/src/dev_ng/game/weapons/helpers/WeaponHelpers.cpp
-@@ -5,15 +5,15 @@
+@@ -5,19 +5,19 @@
  //
  
  // File header
@@ -20,3 +20,8 @@ diff --git a/src/dev_ng/game/weapons/helpers/WeaponHelpers.cpp b/src/dev_ng/game
  #include "physics/gtaArchetype.h"
  
  // Parser header
+-#include "WeaponHelpers_parser.h"
++#include "weaponhelpers_parser.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

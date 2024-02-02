@@ -22,7 +22,7 @@ diff --git a/src/dev_ng/game/vfx/misc/Puddles.cpp b/src/dev_ng/game/vfx/misc/Pud
 -#include "scene\world\GameWorld.h"
 +#include "Peds/ped.h"
 +#include "Peds/PedFootstepHelper.h"
-+#include "phEffects/wind.h"
++#include "pheffects/wind.h"
 +#include "renderer/Deferred/DeferredLighting.h"
 +#include "renderer/rendertargets.h"
 +#include "renderer/Water.h"

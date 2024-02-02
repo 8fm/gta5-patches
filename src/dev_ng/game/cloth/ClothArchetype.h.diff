@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/cloth/ClothArchetype.h b/src/dev_ng/game/cloth/Clot
  #include "ClothMgr.h"
  #include "ClothParticles.h"
  #include "ClothConstraints.h"
-@@ -10,7 +10,7 @@
+@@ -10,12 +10,12 @@
  #include "ClothCapsuleBounds.h"
  class CDynamicEntity;
  #include "entity/extensionlist.h"
@@ -18,4 +18,12 @@ diff --git a/src/dev_ng/game/cloth/ClothArchetype.h b/src/dev_ng/game/cloth/Clot
 +#include "fwtl/Pool.h"
  #include "streaming/streamingmodule.h"
  
- #include "crSkeleton/skeleton.h"
+-#include "crSkeleton/skeleton.h"
+-#include "crSkeleton/skeletondata.h"
+-#include "crSkeleton/bonedata.h"
++#include "crskeleton/skeleton.h"
++#include "crskeleton/skeletondata.h"
++#include "crskeleton/bonedata.h"
+ 
+ #if NORTH_CLOTHS
+ 

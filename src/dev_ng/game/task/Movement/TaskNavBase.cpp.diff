@@ -40,7 +40,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskNavBase.cpp b/src/dev_ng/game/tas
 +#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
 +#include "task/Movement/TaskGetUp.h"
 +#include "task/Movement/TaskGoTo.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskSlideToCoord.h"
 +#include "task/Movement/Climbing/TaskLadderClimb.h"
 +#include "task/Movement/Jumping/TaskInAir.h"

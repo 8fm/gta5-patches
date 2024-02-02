@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/vfx/metadata/VfxWeaponInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxWeaponInfo.cpp
 --- a/src/dev_ng/game/vfx/metadata/VfxWeaponInfo.cpp
 +++ b/src/dev_ng/game/vfx/metadata/VfxWeaponInfo.cpp
-@@ -25,7 +25,7 @@
+@@ -21,11 +21,11 @@
+ 
+ // framework
+ #include "fwscene/stores/psostore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
  #include "vfx/channel.h"
  
  // game

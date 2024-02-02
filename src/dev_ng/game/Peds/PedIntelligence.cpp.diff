@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/Peds/PedIntelligence.cpp b/src/dev_ng/game/Peds/PedIntelligence.cpp
 --- a/src/dev_ng/game/Peds/PedIntelligence.cpp
 +++ b/src/dev_ng/game/Peds/PedIntelligence.cpp
-@@ -6,65 +6,65 @@
+@@ -1,70 +1,70 @@
+ // Rage headers
+ #include "Profile/timebars.h"
+-#include "crskeleton/Skeleton.h"
++#include "crskeleton/skeleton.h"
+ #include "crskeleton/SkeletonData.h"
+ 
  // Framework headers
  #include "fwanimation/animmanager.h"
  #include "grcore/debugdraw.h"

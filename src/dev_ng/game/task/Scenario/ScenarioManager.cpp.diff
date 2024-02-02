@@ -25,7 +25,7 @@ diff --git a/src/dev_ng/game/task/Scenario/ScenarioManager.cpp b/src/dev_ng/game
 +#include "debug/DebugScene.h"
 +#include "game/Clock.h"
 +#include "game/ModelIndices.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "network/Network.h"
 +#include "Peds/ped.h"
  #include "Peds/PedCapsule.h"

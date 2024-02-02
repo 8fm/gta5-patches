@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskDraftHorse.cpp b/src/dev_ng/game/t
 -#include "Task/default/TaskPlayer.h"
 -#include "Task/Motion/Locomotion/TaskHorseLocomotion.h"
 +#include "task/Vehicle/TaskPlayerOnHorse.h"
-+#include "task/default/TaskPlayer.h"
++#include "task/Default/TaskPlayer.h"
 +#include "task/Motion/Locomotion/TaskHorseLocomotion.h"
  #include "task/Movement/Jumping/TaskJump.h"
 -#include "Task/Weapons/Gun/TaskVehicleDriveBy.h"

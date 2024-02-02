@@ -10,9 +10,12 @@ diff --git a/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp b/src/dev_ng/ga
  
  #include "pathfind.h"
  
-@@ -21,13 +21,13 @@
+@@ -19,15 +19,15 @@
+ #include "control/gps.h"
+ #endif 
  
- #include "BaseTypes.h"
+-#include "BaseTypes.h"
++#include "basetypes.h"
  
 -#include "renderer\Renderer.h"
 +#include "renderer/Renderer.h"

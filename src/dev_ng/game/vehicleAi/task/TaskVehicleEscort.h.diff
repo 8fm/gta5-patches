@@ -17,8 +17,8 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleEscort.h b/src/dev_ng/gam
 +#include "task/System/TaskHelpers.h"
 +#include "task/System/TaskTypes.h"
 +#include "vehicleAi/task/TaskVehicleMissionBase.h"
-+#include "vehicleAi/task/TaskVehicleGotoHelicopter.h"
-+#include "vehicleAi/task/TaskVehicleGotoAutomobile.h"
++#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
++#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
  
  class CVehicle;
  class CVehControls;

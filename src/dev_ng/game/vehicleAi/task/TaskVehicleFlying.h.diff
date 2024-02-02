@@ -20,7 +20,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleFlying.h b/src/dev_ng/gam
 +#include "task/System/TaskTypes.h"
 +#include "task/System/Tuning.h"
 +#include "vehicleAi/task/TaskVehicleMissionBase.h"
-+#include "vehicleAi/task/TaskVehicleGotoHelicopter.h"
++#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
  
  class CVehicle;
  class CVehControls;

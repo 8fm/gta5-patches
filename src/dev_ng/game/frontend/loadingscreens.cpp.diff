@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/frontend/loadingscreens.cpp b/src/dev_ng/game/frontend/loadingscreens.cpp
 --- a/src/dev_ng/game/frontend/loadingscreens.cpp
 +++ b/src/dev_ng/game/frontend/loadingscreens.cpp
-@@ -56,8 +56,8 @@
+@@ -56,11 +56,11 @@
  #include "audio/superconductor.h"
  #include "camera/viewports/ViewportManager.h"  // for detecting widescreen
  #include "control/gamelogic.h"
@@ -11,7 +11,11 @@ diff --git a/src/dev_ng/game/frontend/loadingscreens.cpp b/src/dev_ng/game/front
 +#include "text/text.h"
  #include "text/TextConversion.h"
  #include "renderer/MeshBlendManager.h"
- #include "renderer/renderthread.h"
+-#include "renderer/renderthread.h"
++#include "renderer/RenderThread.h"
+ #include "renderer/rendertargets.h"
+ #include "loadingscreens.h"
+ #include "frontend/BinkDefs.h"
 @@ -77,11 +77,11 @@
  #include "frontend/GameStreamMgr.h"
  #include "frontend/ProfileSettings.h"

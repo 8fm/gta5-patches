@@ -1,10 +1,13 @@
 diff --git a/src/dev_ng/game/vfx/systems/VfxVehicle.cpp b/src/dev_ng/game/vfx/systems/VfxVehicle.cpp
 --- a/src/dev_ng/game/vfx/systems/VfxVehicle.cpp
 +++ b/src/dev_ng/game/vfx/systems/VfxVehicle.cpp
-@@ -30,27 +30,27 @@
- #include "Audio/HeliAudioEntity.h"
- #include "Audio/planeaudioentity.h"
- #include "Core/Game.h"
+@@ -27,30 +27,30 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Audio/HeliAudioEntity.h"
+-#include "Audio/planeaudioentity.h"
+-#include "Core/Game.h"
 -#include "Control/Replay/Replay.h"
 -#include "Control/Replay/Effects/ParticleVehicleFxPacket.h"
 -#include "Game/ModelIndices.h"
@@ -16,10 +19,13 @@ diff --git a/src/dev_ng/game/vfx/systems/VfxVehicle.cpp b/src/dev_ng/game/vfx/sy
 -#include "Scene/World/GameWorld.h"
 -#include "TimeCycle/TimeCycle.h"
 -#include "VehicleAI/VehicleIntelligence.h"
-+#include "control/replay/Replay.h"
++#include "audio/heliaudioentity.h"
++#include "audio/planeaudioentity.h"
++#include "Core/game.h"
++#include "control/replay/replay.h"
 +#include "control/replay/Effects/ParticleVehicleFxPacket.h"
 +#include "game/ModelIndices.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "modelinfo/VehicleModelInfoColors.h"
 +#include "Peds/ped.h"
 +#include "renderer/Water.h"
@@ -40,7 +46,7 @@ diff --git a/src/dev_ng/game/vfx/systems/VfxVehicle.cpp b/src/dev_ng/game/vfx/sy
 +#include "vfx/decals/DecalManager.h"
 +#include "vfx/metadata/VfxVehicleInfo.h"
 +#include "vfx/misc/Fire.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxWater.h"
 +#include "vfx/systems/VfxWheel.h"
 +#include "vfx/VfxHelper.h"

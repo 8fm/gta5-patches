@@ -31,7 +31,7 @@ diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.cpp b
 -#include "Task/Animation/TaskAnims.h"
 +#include "task/General/TaskBasic.h"
 +#include "task/Motion/Locomotion/TaskMotionPed.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskNavBase.h"
 +#include "task/Movement/TaskNavMesh.h"
 +#include "task/Movement/TaskSlideToCoord.h"

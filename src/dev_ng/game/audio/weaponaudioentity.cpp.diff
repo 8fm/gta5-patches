@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/audio/weaponaudioentity.cpp b/src/dev_ng/game/audio
 -#include "Control/Replay/Replay.h"
 -#include "Control/Replay/Audio/WeaponAudioPacket.h"
 -#include "Control/Replay/Audio/BulletByAudioPacket.h"
-+#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
 +#include "control/replay/Audio/WeaponAudioPacket.h"
 +#include "control/replay/Audio/BulletByAudioPacket.h"
 +#include "camera/CamInterface.h"

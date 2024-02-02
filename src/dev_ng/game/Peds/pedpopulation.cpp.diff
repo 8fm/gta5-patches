@@ -25,7 +25,7 @@ diff --git a/src/dev_ng/game/Peds/pedpopulation.cpp b/src/dev_ng/game/Peds/pedpo
 -#include "debug/debugscene.h"
 -#include "event/events.h"
 +#include "debug/VectorMap.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
 +#include "debug/DebugScene.h"
 +#include "event/Events.h"
  #include "game/cheat.h"

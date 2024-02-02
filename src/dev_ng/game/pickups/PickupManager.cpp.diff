@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/pickups/PickupManager.cpp b/src/dev_ng/game/pickups/PickupManager.cpp
 --- a/src/dev_ng/game/pickups/PickupManager.cpp
 +++ b/src/dev_ng/game/pickups/PickupManager.cpp
-@@ -7,7 +7,7 @@
+@@ -7,21 +7,21 @@
  // Framework headers
  #include "fwnet/nettypes.h"
  #include "fwscene/world/WorldLimits.h"
@@ -10,7 +10,14 @@ diff --git a/src/dev_ng/game/pickups/PickupManager.cpp b/src/dev_ng/game/pickups
  #include "fwscene/stores/drawablestore.h"
  
  // Game headers
-@@ -21,7 +21,7 @@
+ #include "audio/scriptaudioentity.h"
+ #include "camera/CamInterface.h"
+ #include "control/replay/replay.h"
+-#include "Core/Game.h"
++#include "Core/game.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "weapons/Weapon.h"
+ #include "event/EventGroup.h"
  #include "event/EventNetwork.h"
  #include "network/Network.h"
  #include "network/Objects/Entities/NetObjGame.h"

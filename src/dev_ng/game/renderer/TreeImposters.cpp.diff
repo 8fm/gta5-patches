@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/renderer/TreeImposters.cpp b/src/dev_ng/game/render
  #include "grcore/image.h"
  #include "grcore/vertexbuffer.h"
  #include "grcore/vertexdecl.h"
+@@ -28,7 +28,7 @@
+ #include "game/wind.h"	
+ #include "renderer/Renderer.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/renderthread.h"
++#include "renderer/RenderThread.h"
+ #include "scene/Scene.h"
+ #include "shaders/CustomShaderEffectBase.h"
+ #include "shaders/CustomShaderEffectTree.h"

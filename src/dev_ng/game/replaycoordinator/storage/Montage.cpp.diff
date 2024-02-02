@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/replaycoordinator/storage/Montage.cpp b/src/dev_ng/game/replaycoordinator/storage/Montage.cpp
 --- a/src/dev_ng/game/replaycoordinator/storage/Montage.cpp
 +++ b/src/dev_ng/game/replaycoordinator/storage/Montage.cpp
-@@ -17,7 +17,7 @@
+@@ -17,10 +17,10 @@
  
  // game
  #include "audio/frontendaudioentity.h"
@@ -9,4 +9,8 @@ diff --git a/src/dev_ng/game/replaycoordinator/storage/Montage.cpp b/src/dev_ng/
 +#include "control/replay/replay.h"
  #include "control/replay/ReplaySettings.h"
  #include "debug/Debug.h"
- #include "FrontEnd/WarningScreen.h"
+-#include "FrontEnd/WarningScreen.h"
++#include "frontend/WarningScreen.h"
+ #include "frontend/VideoEditor/Core/VideoEditorUtil.h"
+ #include "replaycoordinator/ReplayAudioTrackProvider.h"
+ #include "replaycoordinator/replay_coordinator_channel.h"

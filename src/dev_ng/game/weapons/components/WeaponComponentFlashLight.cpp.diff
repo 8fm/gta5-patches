@@ -23,7 +23,7 @@ diff --git a/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.cpp b/
 +#include "network/Objects/Entities/NetObjPlayer.h"
 +#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
-+#include "renderer/Lights/Lights.h"
++#include "renderer/Lights/lights.h"
 +#include "system/controlMgr.h"
 +#include "task/Weapons/Gun/TaskAimGun.h"
 +#include "task/Weapons/Gun/TaskGun.h"

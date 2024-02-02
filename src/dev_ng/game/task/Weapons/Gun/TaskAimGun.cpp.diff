@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskAimGun.cpp b/src/dev_ng/game/t
 -#include "ModelInfo/WeaponModelInfo.h"
 -#include "Network/Objects/Entities/NetObjPlayer.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
 +#include "debug/DebugScene.h"
 +#include "modelinfo/WeaponModelInfo.h"
 +#include "network/Objects/Entities/NetObjPlayer.h"

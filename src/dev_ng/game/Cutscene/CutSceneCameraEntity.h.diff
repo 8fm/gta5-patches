@@ -1,8 +1,15 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h b/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h
 --- a/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h
 +++ b/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h
-@@ -16,7 +16,7 @@
- #include "cutscene/CutSceneDefine.h"
+@@ -11,12 +11,12 @@
+ #define CUTSCENE_CAMERAENTITY_H
+ 
+ //Rage Headers
+-#include "cutscene/cutscene_channel.h"
++#include "Cutscene/cutscene_channel.h"
+ #include "cutscene/cutsentity.h"
+-#include "cutscene/CutSceneDefine.h"
++#include "Cutscene/CutSceneDefine.h"
  #include "cutfile/cutfeventargs.h"
  #include "cutfile/cutfobject.h"
 -#include "fwutil/flags.h"

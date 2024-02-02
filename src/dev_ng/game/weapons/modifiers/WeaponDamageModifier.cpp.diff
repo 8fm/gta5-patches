@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/weapons/modifiers/WeaponDamageModifier.cpp b/src/dev_ng/game/weapons/modifiers/WeaponDamageModifier.cpp
 --- a/src/dev_ng/game/weapons/modifiers/WeaponDamageModifier.cpp
 +++ b/src/dev_ng/game/weapons/modifiers/WeaponDamageModifier.cpp
-@@ -5,7 +5,7 @@
+@@ -5,10 +5,10 @@
  //
  
  // File header
@@ -9,4 +9,8 @@ diff --git a/src/dev_ng/game/weapons/modifiers/WeaponDamageModifier.cpp b/src/de
 +#include "weapons/modifiers/WeaponDamageModifier.h"
  
  // Parser
- #include "WeaponDamageModifier_parser.h"
+-#include "WeaponDamageModifier_parser.h"
++#include "weapondamagemodifier_parser.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

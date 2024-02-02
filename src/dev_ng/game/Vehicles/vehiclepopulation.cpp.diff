@@ -24,16 +24,18 @@ diff --git a/src/dev_ng/game/Vehicles/vehiclepopulation.cpp b/src/dev_ng/game/Ve
  #include "vehicleAi/driverpersonality.h"
  #include "vehicleAi/task/TaskVehicleGoTo.h"
  #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
-@@ -55,49 +55,49 @@
+@@ -54,50 +54,50 @@
+ 
  #include "control/replay/replay.h"
  #include "control/trafficlights.h"
- #include "control/SlownessZones.h"
+-#include "control/SlownessZones.h"
 -#include "cutscene/CutSceneManagerNew.h"
 -#include "debug/debugglobals.h"
 -#include "debug/debugscene.h"
 -#include "debug/vectormap.h"
++#include "control/slownesszones.h"
 +#include "Cutscene/CutSceneManagerNew.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
 +#include "debug/DebugScene.h"
 +#include "debug/VectorMap.h"
  #include "game/Clock.h"
@@ -99,10 +101,11 @@ diff --git a/src/dev_ng/game/Vehicles/vehiclepopulation.cpp b/src/dev_ng/game/Ve
  #include "scene/streamer/SceneStreamerMgr.h"
  #include "script/script.h"
  #include "script/script_brains.h"
-@@ -109,42 +109,42 @@
+@@ -108,43 +108,43 @@
+ #include "streaming/streaming.h"
  #include "streaming/streamingvisualize.h"
  #include "fwsys/timer.h"
- #include "task/default/taskwander.h"
+-#include "task/default/taskwander.h"
 -#include "task/general/taskbasic.h"
 -#include "task/movement/tasknavmesh.h"
 -#include "Task/Scenario/ScenarioChaining.h"
@@ -130,20 +133,21 @@ diff --git a/src/dev_ng/game/Vehicles/vehiclepopulation.cpp b/src/dev_ng/game/Ve
 -#include "vehicles/VehiclePopulationAsync.h"
 -#include "vehicles/Trailer.h"
 -#include "vfx/misc/fire.h"
++#include "task/Default/TaskWander.h"
 +#include "task/General/TaskBasic.h"
-+#include "task/Movement/tasknavmesh.h"
++#include "task/Movement/TaskNavMesh.h"
 +#include "task/Scenario/ScenarioChaining.h"
-+#include "task/Scenario/scenariomanager.h"
++#include "task/Scenario/ScenarioManager.h"
 +#include "task/Scenario/ScenarioPointManager.h"
-+#include "task/Scenario/taskscenario.h"
-+#include "task/Vehicle/taskcar.h"
++#include "task/Scenario/TaskScenario.h"
++#include "task/Vehicle/TaskCar.h"
 +#include "task/Vehicle/TaskEnterVehicle.h"
 +#include "task/Vehicle/TaskCarAccessories.h"
 +#include "Vehicles/Metadata/VehicleLayoutInfo.h"
 +#include "Vehicles/AmphibiousAutomobile.h"
 +#include "Vehicles/train.h"
 +#include "Vehicles/Bike.h"
-+#include "Vehicles/bmx.h"
++#include "Vehicles/Bmx.h"
 +#include "Vehicles/Boat.h"
 +#include "Vehicles/Buses.h"
 +#include "Vehicles/cargen.h"
@@ -172,3 +176,12 @@ diff --git a/src/dev_ng/game/Vehicles/vehiclepopulation.cpp b/src/dev_ng/game/Ve
  #endif // __BANK
  
  
+@@ -173,7 +173,7 @@ PF_COUNTER(VehiclesInReusePool, VehiclePopulation);
+ #endif // __STATS
+ 
+ // Parser files
+-#include "metadata/VehiclePopulationTuning_parser.h"
++#include "Metadata/VehiclePopulationTuning_parser.h"
+ 
+ VEHICLE_OPTIMISATIONS()
+ AI_OPTIMISATIONS()

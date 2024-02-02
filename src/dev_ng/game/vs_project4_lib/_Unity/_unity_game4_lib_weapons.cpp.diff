@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_weapons.cpp b/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_weapons.cpp
+--- a/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_weapons.cpp
++++ b/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_weapons.cpp
+@@ -132,7 +132,7 @@
+ #include "../../weapons/info/WeaponInfo.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../weapons/info/WeaponInfoFlags.cpp"
++#include "../../weapons/info/weaponinfoflags.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../weapons/info/WeaponInfoManager.cpp"

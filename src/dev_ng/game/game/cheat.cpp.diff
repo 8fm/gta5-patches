@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/game/cheat.cpp b/src/dev_ng/game/game/cheat.cpp
 --- a/src/dev_ng/game/game/cheat.cpp
 +++ b/src/dev_ng/game/game/cheat.cpp
-@@ -17,15 +17,15 @@
+@@ -10,56 +10,56 @@
+ // Rage Headers
+ #include "physics/Archetype.h"
+ #include "phcore/phMath.h"
+-#include "phbound/BoundComposite.h"
++#include "phbound/boundcomposite.h"
+ #include "rmcore/Drawable.h"
+ #include "system/bootmgr.h"
+ #include "string/unicode.h"
  #include "diag/channel.h"
  
  // Framework Headers
@@ -21,7 +29,8 @@ diff --git a/src/dev_ng/game/game/cheat.cpp b/src/dev_ng/game/game/cheat.cpp
  #include "event/EventNetwork.h"
  #include "game/Clock.h"
  #include "game/ModelIndices.h"
-@@ -33,33 +33,33 @@
+-#include "game/Weather.h"
++#include "game/weather.h"
  #include "game/localisation.h"
  #include "modelinfo/PedModelInfo.h"
  #include "modelinfo/VehicleModelInfo.h"

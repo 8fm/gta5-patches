@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp b/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp
 --- a/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp
 +++ b/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp
-@@ -20,8 +20,8 @@
+@@ -20,26 +20,26 @@
  #include "fwscene/stores/staticboundsstore.h"
  
  // Game headers
@@ -11,8 +11,9 @@ diff --git a/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp b/src/dev_ng/ga
 +#include "camera/CamInterface.h"
  #include "camera/gameplay/GameplayDirector.h"
  #include "game/Clock.h"
- #include "game/Weather.h"
-@@ -29,17 +29,17 @@
+-#include "game/Weather.h"
++#include "game/weather.h"
+ #include "fwrenderer/renderthread.h"
  #include "Objects/DummyObject.h"
  #include "Objects/object.h"
  #include "pathserver/PathServer.h"

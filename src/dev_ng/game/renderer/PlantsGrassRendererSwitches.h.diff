@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/renderer/PlantsGrassRendererSwitches.h b/src/dev_ng/game/renderer/PlantsGrassRendererSwitches.h
+--- a/src/dev_ng/game/renderer/PlantsGrassRendererSwitches.h
++++ b/src/dev_ng/game/renderer/PlantsGrassRendererSwitches.h
+@@ -18,6 +18,6 @@
+ 	#define PLANTS_USE_LOD_SETTINGS		(0)
+ #endif
+ 
+-#include "shader_source/vegetation/grass/grass.fxh"
++#include "shader_source/Vegetation/Grass/grass.fxh"
+ 
+ #endif //__PLANTSGRASSRENDERERSWITCHES_H__

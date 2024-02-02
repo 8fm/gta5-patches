@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp
 --- a/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp
 +++ b/src/dev_ng/game/vfx/metadata/VfxVehicleInfo.cpp
-@@ -25,9 +25,9 @@
+@@ -21,13 +21,13 @@
+ 
+ // framework
+ #include "fwscene/stores/psostore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
  #include "vfx/channel.h"
  
  // game

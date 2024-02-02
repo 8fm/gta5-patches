@@ -32,3 +32,12 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Objects.cpp b/src/dev_ng/game
  #else	// GTA_ENGINE
  
  // This include for when developing the system outside of GTA
+@@ -32,7 +32,7 @@
+ #include "math/angmath.h"
+ #include "atl/array.h"
+ #include "fwmaths/random.h"
+-#include "fwscene/world/worldlimits.h"
++#include "fwscene/world/WorldLimits.h"
+ 
+ // Define this to have the pathfinder ignore objects which have fallen flat.  The "m_bIsCurrentlyAnObstacle" flag becomes reset if so.
+ #define __DEACTIVATE_FLAT_OBJECTS			1	//0

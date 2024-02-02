@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_vehicleai.cpp b/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_vehicleai.cpp
+--- a/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_vehicleai.cpp
++++ b/src/dev_ng/game/vs_project4_lib/_Unity/_unity_game4_lib_vehicleai.cpp
+@@ -9,16 +9,16 @@
+ #include "../../vehicleAi/FlyingVehicleAvoidance.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../vehicleAi/Junctions.cpp"
++#include "../../vehicleAi/junctions.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../vehicleAi/JunctionEditor.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../vehicleAi/PathFind.cpp"
++#include "../../vehicleAi/pathfind.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../vehicleAi/PathFind_Build.cpp"
++#include "../../vehicleAi/Pathfind_Build.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../vehicleAi/pathfind_shared.cpp"
+@@ -99,7 +99,7 @@
+ #include "../../vehicleAi/task/TaskVehicleGoToAutomobile.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../vehicleAi/task/TaskVehicleGoToBoat.cpp"
++#include "../../vehicleAi/task/TaskVehicleGotoBoat.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../vehicleAi/task/TaskVehicleGoToHelicopter.cpp"

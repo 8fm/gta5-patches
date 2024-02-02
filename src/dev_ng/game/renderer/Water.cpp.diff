@@ -1,12 +1,19 @@
 diff --git a/src/dev_ng/game/renderer/Water.cpp b/src/dev_ng/game/renderer/Water.cpp
 --- a/src/dev_ng/game/renderer/Water.cpp
 +++ b/src/dev_ng/game/renderer/Water.cpp
-@@ -42,15 +42,15 @@
- #include "Core/Game.h"
+@@ -37,20 +37,20 @@
+ 
+ #include "audio/northaudioengine.h"
+ #include "camera/CamInterface.h"
+-#include "camera/helpers/frame.h"
++#include "camera/helpers/Frame.h"
+ #include "control/replay/replay.h"
+-#include "Core/Game.h"
++#include "Core/game.h"
  #include "debug/Rendering/DebugDeferred.h"
  #include "debug/TiledScreenCapture.h"
 -#include "Game/Weather.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
  #include "streaming/streaming.h"
 -#include "vehicles/Boat.h"
 +#include "Vehicles/Boat.h"

@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/vfx/particles/PtFxDebug.cpp b/src/dev_ng/game/vfx/p
  ///////////////////////////////////////////////////////////////////////////////
  
 -#include "Vfx/Particles/PtFxDebug.h"
-+#include "vfx/Particles/PtFxDebug.h"
++#include "vfx/particles/PtFxDebug.h"
  
  // rage
  #include "rmptfx/ptxmanager.h"
@@ -24,8 +24,8 @@ diff --git a/src/dev_ng/game/vfx/particles/PtFxDebug.cpp b/src/dev_ng/game/vfx/p
 +#include "Peds/ped.h"
 +#include "scene/portals/Portal.h"
 +#include "scene/world/GameWorld.h"
-+#include "vfx/Particles/PtFxManager.h"
-+#include "vfx/particles/PtfxEntity.h"
++#include "vfx/particles/PtFxManager.h"
++#include "vfx/particles/PtFxEntity.h"
 +#include "vfx/VfxSettings.h"
 +#include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
  

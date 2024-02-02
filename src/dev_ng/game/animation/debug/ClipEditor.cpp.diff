@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/debug/ClipEditor.cpp b/src/dev_ng/game/animation/debug/ClipEditor.cpp
+--- a/src/dev_ng/game/animation/debug/ClipEditor.cpp
++++ b/src/dev_ng/game/animation/debug/ClipEditor.cpp
+@@ -31,7 +31,7 @@
+ #include "Objects/object.h"
+ #include "Peds/ped.h"
+ #include "system/FileMgr.h"
+-#include "task/default/TaskAmbient.h"
++#include "task/Default/TaskAmbient.h"
+ 
+ ANIM_OPTIMISATIONS()
+ 

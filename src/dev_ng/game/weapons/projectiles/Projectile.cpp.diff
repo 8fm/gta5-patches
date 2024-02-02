@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/weapons/projectiles/Projectile.cpp b/src/dev_ng/game/weapons/projectiles/Projectile.cpp
 --- a/src/dev_ng/game/weapons/projectiles/Projectile.cpp
 +++ b/src/dev_ng/game/weapons/projectiles/Projectile.cpp
-@@ -1,8 +1,8 @@
+@@ -1,64 +1,64 @@
  // File header
 -#include "Weapons/Projectiles/Projectile.h"
 +#include "weapons/projectiles/Projectile.h"
@@ -12,8 +12,9 @@ diff --git a/src/dev_ng/game/weapons/projectiles/Projectile.cpp b/src/dev_ng/gam
  
  // Rage headers
  #include "audiosoundtypes/sound.h" 
-@@ -10,55 +10,55 @@
- #include "fwscene/world/worldlimits.h"
+ #include "fwscene/stores/staticboundsstore.h"
+-#include "fwscene/world/worldlimits.h"
++#include "fwscene/world/WorldLimits.h"
  
  // Game headers
 -#include "Audio/WeaponAudioEntity.h"
@@ -42,17 +43,18 @@ diff --git a/src/dev_ng/game/weapons/projectiles/Projectile.cpp b/src/dev_ng/gam
 -#include "Network/Events/NetworkEventTypes.h"
 -#include "Network/Players/NetworkPlayerMgr.h"
 -#include "network/objects/entities/NetObjPlayer.h"
-+#include "network/Arrays/NetworkArrayHandlerTypes.h"
-+#include "network/Arrays/NetworkArrayMgr.h"
-+#include "network/Events/NetworkEventTypes.h"
-+#include "network/Players/NetworkPlayerMgr.h"
-+#include "network/Objects/Entities/NetObjPlayer.h"
- #include "Peds/Pedpopulation.h"
+-#include "Peds/Pedpopulation.h"
 -#include "Peds/Ped.h"
 -#include "peds/PedIntelligence.h"
 -#include "Physics/gtaInst.h"
 -#include "Physics/Physics.h"
 -#include "Renderer/Water.h"
++#include "network/Arrays/NetworkArrayHandlerTypes.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "Peds/pedpopulation.h"
 +#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
 +#include "physics/gtaInst.h"
@@ -86,10 +88,10 @@ diff --git a/src/dev_ng/game/weapons/projectiles/Projectile.cpp b/src/dev_ng/gam
 -#include "Weapons/WeaponDebug.h"
 -#include "Weapons/WeaponTypes.h"
 +#include "vfx/misc/Coronas.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxProjectile.h"
 +#include "vfx/systems/VfxWeapon.h"
-+#include "vfx/VehicleGlass/VehicleGlassManager.h"
++#include "vfx/vehicleglass/VehicleGlassManager.h"
 +#include "vfx/VfxHelper.h"
 +#include "task/Movement/TaskParachute.h"
 +#include "weapons/AirDefence.h"

@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/streaming/populationstreaming.cpp b/src/dev_ng/game
 +#include "Core/game.h"
 +#include "Core/gamesessionstatemachine.h"
 +#include "Cutscene/CutSceneManagerNew.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
 +#include "game/Clock.h"
  #include "game/Dispatch/DispatchServices.h"
 -#include "game/modelindices.h"

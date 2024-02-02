@@ -46,7 +46,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskGoTo.cpp b/src/dev_ng/game/task/M
 +#include "task/Vehicle/TaskExitVehicle.h"
 +#include "vehicleAi/task/TaskVehicleMissionBase.h"
 +#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
-+#include "vehicleAi/task/TaskVehicleGoToBoat.h"
++#include "vehicleAi/task/TaskVehicleGotoBoat.h"
 +#include "vehicleAi/task/TaskVehicleGoToPlane.h"
 +#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
 +#include "vehicleAi/task/TaskVehicleGoToLongRange.h"

@@ -23,7 +23,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskEnterVehicle.cpp b/src/dev_ng/game
 +#include "camera/CamInterface.h"
 +#include "camera/helpers/ControlHelper.h"
 +#include "camera/cinematic/CinematicDirector.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
 +#include "control/replay/ReplayBufferMarker.h"
 +#include "debug/DebugScene.h"
  #include "event/Events.h"

@@ -1,14 +1,19 @@
 diff --git a/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp
 --- a/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp
 +++ b/src/dev_ng/game/vfx/metadata/VfxRegionInfo.cpp
-@@ -25,11 +25,11 @@
+@@ -21,15 +21,15 @@
+ 
+ // framework
+ #include "fwscene/stores/psostore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
  #include "vfx/channel.h"
  
  // game
 -#include "Game/Clock.h"
 -#include "Game/Weather.h"
 +#include "game/Clock.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
  #include "Peds/PopCycle.h"
 -#include "Scene/DataFileMgr.h"
 -#include "Vfx/VfxHelper.h"

@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/audio/trainaudioentity.cpp b/src/dev_ng/game/audio/
  #include "game/zones.h"
  #include "crskeleton/skeleton.h"
 -#include "debug/debugglobals.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "grcore/debugdraw.h"
 -#include "modelinfo/vehiclemodelinfo.h"
 +#include "modelinfo/VehicleModelInfo.h"

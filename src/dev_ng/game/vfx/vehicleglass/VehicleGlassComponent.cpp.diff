@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp
 --- a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp
 +++ b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp
+@@ -19,7 +19,7 @@
+ #include "paging/handle.h"
+ #include "phbound/boundbvh.h"
+ #include "phbound/boundcomposite.h"
+-#include "phBound/support.h"
++#include "phbound/support.h"
+ #include "system/memops.h"
+ #include "system/typeinfo.h"
+ #include "system/xtl.h"
 @@ -34,16 +34,16 @@
  
  // game

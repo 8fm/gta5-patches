@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Vehicles/Propeller.cpp b/src/dev_ng/game/Vehicles/Propeller.cpp
 --- a/src/dev_ng/game/Vehicles/Propeller.cpp
 +++ b/src/dev_ng/game/Vehicles/Propeller.cpp
-@@ -1,27 +1,27 @@
+@@ -1,28 +1,28 @@
 -#include "vehicles/Propeller.h"
 +#include "Vehicles/Propeller.h"
  
@@ -9,8 +9,9 @@ diff --git a/src/dev_ng/game/Vehicles/Propeller.cpp b/src/dev_ng/game/Vehicles/P
  #include "fwmaths/random.h"
  
  #include "event/EventDamage.h"
- #include "game/modelIndices.h"
+-#include "game/modelIndices.h"
 -#include "peds/ped.h"
++#include "game/ModelIndices.h"
 +#include "Peds/ped.h"
  #include "physics/physics.h"
  #include "physics/gtaInst.h"
@@ -32,10 +33,12 @@ diff --git a/src/dev_ng/game/Vehicles/Propeller.cpp b/src/dev_ng/game/Vehicles/P
 -#include "Task/Physics/TaskNMBalance.h"
 -#include "vehicles/Heli.h"
 -#include "vehicles/Planes.h"
+-#include "game/modelIndices.h"
 +#include "vfx/systems/VfxBlood.h"
 +#include "task/Physics/TaskNMBalance.h"
 +#include "Vehicles/Heli.h"
 +#include "Vehicles/Planes.h"
- #include "game/modelIndices.h"
++#include "game/ModelIndices.h"
  
  #include "data/aes_init.h"
+ AES_INIT_E;

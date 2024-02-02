@@ -30,7 +30,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskParachute.cpp b/src/dev_ng/game/t
 -#include "Game/Config.h"
 -#include "Game/ModelIndices.h"
 +#include "control/Gamelogic.h"
-+#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
 +#include "event/Event.h"
 +#include "event/EventDamage.h"
 +#include "event/EventShocking.h"

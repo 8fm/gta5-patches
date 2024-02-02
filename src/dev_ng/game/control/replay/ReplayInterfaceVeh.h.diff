@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceVeh.h b/src/dev_ng/game/control/replay/ReplayInterfaceVeh.h
+--- a/src/dev_ng/game/control/replay/ReplayInterfaceVeh.h
++++ b/src/dev_ng/game/control/replay/ReplayInterfaceVeh.h
+@@ -7,20 +7,20 @@
+ 
+ #include "ReplayInterface.h"
+ 
+-#include "misc/ReplayPacket.h"
++#include "Misc/ReplayPacket.h"
+ #include "Vehicle/VehiclePacket.h"
+-#include "vehicle/VehicleAutomobilePacket.h"
++#include "Vehicle/VehicleAutomobilePacket.h"
+ #include "Vehicle/VehicleBikePacket.h"
+ #include "Vehicle/VehicleBoatPacket.h"
+-#include "vehicle/VehicleHeliPacket.h"
+-#include "vehicle/VehiclePlanePacket.h"
+-#include "vehicle/VehicleSubPacket.h"
+-#include "vehicle/VehicleTrailerPacket.h"
+-#include "vehicle/VehicleTrainPacket.h"
+-#include "vehicle/VehicleAmphAutoPacket.h"
+-#include "vehicle/VehicleAmphQuadPacket.h"
++#include "Vehicle/VehicleHeliPacket.h"
++#include "Vehicle/VehiclePlanePacket.h"
++#include "Vehicle/VehicleSubPacket.h"
++#include "Vehicle/VehicleTrailerPacket.h"
++#include "Vehicle/VehicleTrainPacket.h"
++#include "Vehicle/VehicleAmphAutoPacket.h"
++#include "Vehicle/VehicleAmphQuadPacket.h"
+ #include "Vehicles/vehiclestorage.h"
+-#include "entity/FragmentPacket.h"
++#include "Entity/FragmentPacket.h"
+ 
+ 
+ #define VEHPACKETDESCRIPTOR(id, et, type, recFunc, extFunc) CPacketDescriptor<CVehicle>(id, et, sizeof(type), #type, \

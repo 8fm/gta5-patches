@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.cpp b/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.cpp
 --- a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.cpp
 +++ b/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.cpp
-@@ -8,40 +8,40 @@
+@@ -4,44 +4,44 @@
+ #include "Vehicles/Metadata/VehicleDebug.h"
+ 
+ // Rage headers
+-#include "Bank/BkMgr.h"
++#include "bank/bkmgr.h"
  #include "fwdecorator/decoratorExtension.h"
  
  // Game headers
@@ -35,6 +40,7 @@ diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.cpp b/src/dev_ng/gam
 -#include "Task/Vehicle/TaskExitVehicle.h"
 -#include "Task/Vehicle/TaskVehicleBase.h"
 -#include "Task/Vehicle/TaskVehicleWeapon.h"
+-#include "Vehicles/Door.h"
 +#include "Peds/rendering/PedVariationPack.h"
 +#include "physics/physics.h"
 +#include "scene/Entity.h"
@@ -48,7 +54,7 @@ diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.cpp b/src/dev_ng/gam
 +#include "task/Vehicle/TaskExitVehicle.h"
 +#include "task/Vehicle/TaskVehicleBase.h"
 +#include "task/Vehicle/TaskVehicleWeapon.h"
- #include "Vehicles/Door.h"
++#include "Vehicles/door.h"
  #include "Vehicles/vehicle_channel.h"
 -#include "Vehicles/Vehicle.h"
 +#include "Vehicles/vehicle.h"

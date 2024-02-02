@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp b/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp
+--- a/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp
++++ b/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp
+@@ -10,8 +10,8 @@
+ #include "camera/cutscene/AnimatedCamera.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/system/CameraFactory.h"
+-#include "fwAnimation/animhelpers.h"
+-#include "fwAnimation/animdirector.h"
++#include "fwanimation/animhelpers.h"
++#include "fwanimation/animdirector.h"
+ #include "fwanimation/directorcomponentsyncedscene.h"
+ 
+ CAMERA_OPTIMISATIONS()

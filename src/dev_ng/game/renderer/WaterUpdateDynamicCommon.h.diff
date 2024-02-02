@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/WaterUpdateDynamicCommon.h b/src/dev_ng/game/renderer/WaterUpdateDynamicCommon.h
+--- a/src/dev_ng/game/renderer/WaterUpdateDynamicCommon.h
++++ b/src/dev_ng/game/renderer/WaterUpdateDynamicCommon.h
+@@ -16,7 +16,7 @@
+ #ifndef __WATERUPDATEDYNAMICCOMMON_H__
+ #define __WATERUPDATEDYNAMICCOMMON_H__
+ 
+-#include "math/vecMath.h"
++#include "math/vecmath.h"
+ #include "atl/array.h"
+ #include "waterdefines.h"
+ #include "control/replay/replay.h"

@@ -7,9 +7,10 @@ diff --git a/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.cpp b/src/dev_n
 +#include "weapons/inventory/PedEquippedWeapon.h"
  
  // Game headers
- #include "FrontEnd/NewHud.h"
+-#include "FrontEnd/NewHud.h"
 -#include "ModelInfo/WeaponModelInfo.h"
 -#include "Peds/Ped.h"
++#include "frontend/NewHud.h"
 +#include "modelinfo/WeaponModelInfo.h"
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"

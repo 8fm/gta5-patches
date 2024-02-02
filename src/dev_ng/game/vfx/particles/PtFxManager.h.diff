@@ -1,8 +1,14 @@
 diff --git a/src/dev_ng/game/vfx/particles/PtFxManager.h b/src/dev_ng/game/vfx/particles/PtFxManager.h
 --- a/src/dev_ng/game/vfx/particles/PtFxManager.h
 +++ b/src/dev_ng/game/vfx/particles/PtFxManager.h
-@@ -31,10 +31,10 @@
- #include "vfx/ptfx/ptfxManager.h"
+@@ -27,14 +27,14 @@
+ 
+ // framework
+ #include "vfx/vfxlist.h"
+-#include "vfx/ptfx/ptfxCallbacks.h"
+-#include "vfx/ptfx/ptfxManager.h"
++#include "vfx/ptfx/ptfxcallbacks.h"
++#include "vfx/ptfx/ptfxmanager.h"
  
  // game
 -#include "Streaming/StreamingRequest.h"
@@ -10,9 +16,9 @@ diff --git a/src/dev_ng/game/vfx/particles/PtFxManager.h b/src/dev_ng/game/vfx/p
 -#include "Vfx/Particles/PtFxDebug.h"
 -#include "Vfx/Particles/PtFxEntity.h"
 +#include "streaming/streamingrequest.h"
-+#include "vfx/Particles/PtFxCollision.h"
-+#include "vfx/Particles/PtFxDebug.h"
-+#include "vfx/Particles/PtFxEntity.h"
++#include "vfx/particles/PtFxCollision.h"
++#include "vfx/particles/PtFxDebug.h"
++#include "vfx/particles/PtFxEntity.h"
  
  
  ///////////////////////////////////////////////////////////////////////////////

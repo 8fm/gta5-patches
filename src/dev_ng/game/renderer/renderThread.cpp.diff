@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/renderer/renderThread.cpp b/src/dev_ng/game/rendere
  #include "frontend/credits.h"
  #include "frontend/PauseMenu.h"
  #include "frontend/WarningScreen.h"
-@@ -71,14 +71,14 @@
+@@ -71,19 +71,19 @@
  #include "frontend/profilesettings.h"
  #include "frontend/loadingscreens.h"
  #if RSG_PC
@@ -37,6 +37,12 @@ diff --git a/src/dev_ng/game/renderer/renderThread.cpp b/src/dev_ng/game/rendere
  #include "performance/clearinghouse.h"
  #include "renderer/DrawLists/drawListMgr.h"
  #include "renderer/Lights/LODLights.h"
+ #include "renderer/renderListGroup.h"
+-#include "renderer/renderthread.h"
++#include "renderer/RenderThread.h"
+ #include "renderer/Water.h"
+ #include "renderer/gtaDrawable.h"
+ #include "renderer/OcclusionQueries.h"
 @@ -117,18 +117,18 @@
  #include "profile/cputrace.h"
  #include "script/script.h"
@@ -50,7 +56,7 @@ diff --git a/src/dev_ng/game/renderer/renderThread.cpp b/src/dev_ng/game/rendere
  #include "vfx/misc/LensFlare.h"
 -#include "Vfx/Particles/PtFxManager.h"
 -#include "text/Text.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "text/text.h"
  #include "text/TextConversion.h"
  #include "text/TextFile.h"

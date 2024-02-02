@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/Stats/StatsMgr.cpp b/src/dev_ng/game/Stats/StatsMgr.cpp
 --- a/src/dev_ng/game/Stats/StatsMgr.cpp
 +++ b/src/dev_ng/game/Stats/StatsMgr.cpp
-@@ -33,40 +33,40 @@
+@@ -31,42 +31,42 @@
+ #include "Stats/StatsMgr_parser.h"
+ 
  // Game headers
- #include "Core/Game.h"
+-#include "Core/Game.h"
++#include "Core/game.h"
  #include "game/user.h"
 -#include "ModelInfo/PedModelInfo.h"
 -#include "Modelinfo/VehicleModelInfo.h"

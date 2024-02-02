@@ -4,7 +4,7 @@ diff --git a/src/dev_ng/game/weapons/gadgets/GadgetParachute.cpp b/src/dev_ng/ga
 @@ -1,11 +1,11 @@
  // File header
 -#include "Weapons/Gadgets/GadgetParachute.h"
-+#include "weapons/Gadgets/GadgetParachute.h"
++#include "weapons/gadgets/GadgetParachute.h"
  
  // Game includes
 -#include "Event/Events.h"

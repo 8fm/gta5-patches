@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/renderer/Deferred/DeferredLighting.h b/src/dev_ng/g
  #include "renderer/Deferred/DeferredConfig.h"
  #include "scene/loader/MapData_Extensions.h"
 -#include "renderer/util/shmooFile.h"
-+#include "renderer/Util/shmooFile.h"
++#include "renderer/Util/ShmooFile.h"
  #include "vfx/vfx_shared.h"
  
  // =============================================================================================== //

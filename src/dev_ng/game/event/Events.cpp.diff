@@ -93,7 +93,7 @@ diff --git a/src/dev_ng/game/event/Events.cpp b/src/dev_ng/game/event/Events.cpp
 +#include "task/Movement/TaskMoveFollowEntityOffset.h"
 +#include "task/Movement/TaskMoveFollowLeader.h"
 +#include "task/Movement/TaskNavMesh.h"
-+#include "task/Movement/TaskGoto.h"
++#include "task/Movement/TaskGoTo.h"
 +#include "task/Movement/TaskFollowWaypointRecording.h"
 +#include "task/Movement/TaskParachute.h"
 +#include "task/Movement/TaskFall.h"

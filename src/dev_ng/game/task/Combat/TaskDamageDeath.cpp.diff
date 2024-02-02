@@ -34,7 +34,7 @@ diff --git a/src/dev_ng/game/task/Combat/TaskDamageDeath.cpp b/src/dev_ng/game/t
  #include "game/Dispatch/Incidents.h"
  #include "game/Dispatch/Orders.h"
 -#include "Game/Localisation.h"
-+#include "game/Localisation.h"
++#include "game/localisation.h"
  #include "ik/solvers/RootSlopeFixupSolver.h"
 -#include "Network/NetworkInterface.h"
 -#include "Peds/Ped.h"
