@@ -24,3 +24,21 @@ diff --git a/src/dev_ng/game/text/TextFormat.cpp b/src/dev_ng/game/text/TextForm
  #include "system/param.h"
  #include "shaders/ShaderLib.h"
  
+@@ -3107,7 +3107,8 @@ bool CTextFormat::Icon::GetIconText(char* buffer, u32 bufferSize, const IconPara
+ 		}
+ 	}
+ 	else if(m_Type == KEYCODE_ID)
+-	{		
++	{
++#if !RSG_LINUX
+ 		const CControl::KeyInfo& info = CControl::GetKeyInfo(m_IconId);
+ 		Assertf(info.m_Icon != CControl::KeyInfo::INVALID_ICON || m_IconId == KEY_NULL, "Invalid key icon for keycode %u", m_IconId);
+ 
+@@ -3129,6 +3130,7 @@ bool CTextFormat::Icon::GetIconText(char* buffer, u32 bufferSize, const IconPara
+ 		{
+ 			formatf(buffer, bufferSize, KEYBOARD_ICON_FMT "%u", info.m_Icon);
+ 		}
++#endif // !RSG_LINUX
+ 
+ 		return true;
+ 	}

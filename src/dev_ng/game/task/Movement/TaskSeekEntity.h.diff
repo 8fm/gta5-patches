@@ -35,3 +35,12 @@ diff --git a/src/dev_ng/game/task/Movement/TaskSeekEntity.h b/src/dev_ng/game/ta
  
  ///////////////////////////////////
  // CTaskMoveSeekEntity calculators
+@@ -377,7 +377,7 @@ public:
+ 	FSM_Return SeekingEntity_OnUpdate(CPed * pPed);
+ 	FSM_Return StandStillThenQuit_OnUpdate(CPed * pPed);
+ 
+-    CEntity* GetSeekEntity() const {return m_pEntity;}
++	const CEntity* GetSeekEntity() const {return m_pEntity;}
+     
+     inline void SetEntitySeekPosCalculator(const _CalcType& seekPosCalculator) { m_entitySeekPosCalculator=seekPosCalculator; }
+ 	inline _CalcType*  GetEntitySeekPosCalculator(void) { return &m_entitySeekPosCalculator; }
