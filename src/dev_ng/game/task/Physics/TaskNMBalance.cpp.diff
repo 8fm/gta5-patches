@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMBalance.cpp b/src/dev_ng/game/task/Physics/TaskNMBalance.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMBalance.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMBalance.cpp
-@@ -5,12 +5,12 @@
+@@ -5,15 +5,15 @@
  
  // C headers
  // Rage headers
@@ -12,14 +12,18 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMBalance.cpp b/src/dev_ng/game/ta
 -#include "fragment\TypeChild.h"
 -#include "fragmentnm\messageparams.h"
 +#include "crskeleton/skeleton.h"
-+#include "fragment/Cache.h"
++#include "fragment/cache.h"
 +#include "fragment/instance.h"
-+#include "fragment/Type.h"
-+#include "fragment/TypeChild.h"
++#include "fragment/type.h"
++#include "fragment/typechild.h"
 +#include "fragmentnm/messageparams.h"
  #include "fragmentnm/nm_channel.h"
  #include "pharticulated/articulatedcollider.h"
- #include "physics/Collider.h"
+-#include "physics/Collider.h"
++#include "physics/collider.h"
+ #include "phbound/boundcomposite.h"
+ #include "physics/shapetest.h"
+ 
 @@ -21,32 +21,32 @@
  #include "fwanimation/animmanager.h"
  #include "fwanimation/pointcloud.h"
@@ -46,7 +50,7 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMBalance.cpp b/src/dev_ng/game/ta
 +#include "network/NetworkInterface.h"
 +#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
-+#include "Peds/PedPlacement.h"
++#include "Peds/pedplacement.h"
 +#include "Peds/ped.h"
 +#include "PedGroup/PedGroup.h"
 +#include "physics/gtaInst.h"

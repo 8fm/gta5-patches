@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/task/Crimes/TaskPursueCriminal.cpp b/src/dev_ng/gam
  
  // File header
 -#include "Task/crimes/TaskPursueCriminal.h"
-+#include "task/crimes/TaskPursueCriminal.h"
++#include "task/Crimes/TaskPursueCriminal.h"
  
  // Rage Headers
  #include "math/angmath.h"
@@ -44,7 +44,7 @@ diff --git a/src/dev_ng/game/task/Crimes/TaskPursueCriminal.cpp b/src/dev_ng/gam
 +#include "task/Combat/TaskThreatResponse.h"
 +#include "task/Crimes/TaskReactToPursuit.h"
 +#include "task/Motion/Locomotion/TaskMotionAiming.h"
-+#include "task/Movement/TaskGoToPointAiming.h"
++#include "task/Movement/TaskGotoPointAiming.h"
 +#include "task/Movement/TaskMoveFollowEntityOffset.h"
 +#include "task/Movement/TaskSeekEntity.h"
 +#include "task/Response/TaskFlee.h"

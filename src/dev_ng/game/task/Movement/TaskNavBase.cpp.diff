@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/task/Movement/TaskNavBase.cpp b/src/dev_ng/game/task/Movement/TaskNavBase.cpp
 --- a/src/dev_ng/game/task/Movement/TaskNavBase.cpp
 +++ b/src/dev_ng/game/task/Movement/TaskNavBase.cpp
-@@ -5,32 +5,32 @@
+@@ -1,36 +1,36 @@
+ #include "TaskNavBase.h"
+ 
+ // Rage headers
+-#include "Math/AngMath.h"
++#include "math/angmath.h"
  
  // Game headers
  #if !__FINAL
@@ -9,7 +14,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskNavBase.cpp b/src/dev_ng/game/tas
 -#include "Camera/Debug/DebugDirector.h"
 -#include "Camera/Helpers/Frame.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Debug/DebugDirector.h"
++#include "camera/debug/DebugDirector.h"
 +#include "camera/helpers/Frame.h"
  #endif
 -#include "Event/EventMovement.h"

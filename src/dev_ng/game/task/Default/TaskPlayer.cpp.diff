@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/task/Default/TaskPlayer.cpp b/src/dev_ng/game/task/Default/TaskPlayer.cpp
 --- a/src/dev_ng/game/task/Default/TaskPlayer.cpp
 +++ b/src/dev_ng/game/task/Default/TaskPlayer.cpp
-@@ -6,14 +6,14 @@
+@@ -1,19 +1,19 @@
+ // Rage headers
+-#include "Math/AngMath.h"
++#include "math/angmath.h"
+ #include "crskeleton/skeleton.h"
+ // Framework headers
+ #include "ai/task/taskchannel.h"
  #include "fwanimation/animmanager.h"
  #include "grcore/debugdraw.h"
  #include "fwmaths/angle.h"
@@ -36,7 +42,7 @@ diff --git a/src/dev_ng/game/task/Default/TaskPlayer.cpp b/src/dev_ng/game/task/
 -#include "Event/EventWeapon.h"
 -#include "Event/ShockingEvents.h"
 +#include "camera/gameplay/aim/ThirdPersonAimCamera.h"
-+#include "control/Gamelogic.h"
++#include "control/gamelogic.h"
 +#include "control/Route.h"
 +#include "debug/VectorMap.h"
 +#include "debug/DebugScene.h"
@@ -58,9 +64,12 @@ diff --git a/src/dev_ng/game/task/Default/TaskPlayer.cpp b/src/dev_ng/game/task/
  #include "PedGroup/PedGroup.h"
  #include "Peds/AssistedMovement.h"
  #include "Peds/PedDebugVisualiser.h"
-@@ -50,101 +50,101 @@
+@@ -48,103 +48,103 @@
+ #include "Peds/PedMoveBlend/PedMoveBlendBase.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendOnFoot.h"
  #include "Peds/PedMoveBlend/PedMoveBlendOnSkis.h"
- #include "Peds/PedPlacement.h"
+-#include "Peds/PedPlacement.h"
++#include "Peds/pedplacement.h"
  #include "Peds/PedWeapons/PedTargetEvaluator.h"
 -#include "Peds/Ped.h"
 -#include "Physics/Physics.h"
@@ -84,7 +93,7 @@ diff --git a/src/dev_ng/game/task/Default/TaskPlayer.cpp b/src/dev_ng/game/task/
 -#include "Task/Default/TaskArrest.h"
 -#include "Task/Default/TaskCuffed.h"
 +#include "streaming/streaming.h"
-+#include "system/Pad.h"
++#include "system/pad.h"
 +#include "task/Combat/Cover/cover.h"
 +#include "task/Combat/Cover/TaskCover.h"
 +#include "task/Combat/Cover/TaskSeekCover.h"

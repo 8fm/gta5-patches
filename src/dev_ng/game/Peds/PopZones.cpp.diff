@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/Peds/PopZones.cpp b/src/dev_ng/game/Peds/PopZones.c
  
  // C headers
  #include <stdio.h>
-@@ -22,17 +22,17 @@
+@@ -22,18 +22,18 @@
  #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"
@@ -25,7 +25,7 @@ diff --git a/src/dev_ng/game/Peds/PopZones.cpp b/src/dev_ng/game/Peds/PopZones.c
 +#include "game/Clock.h"
 +#include "game/Dispatch/DispatchData.h"
 +#include "Peds/PopCycle.h"
-+#include "Peds/playerinfo.h"
++#include "Peds/PlayerInfo.h"
 +#include "Peds/ped.h"
 +#include "scene/world/GameWorld.h"
  #include "script/script.h"
@@ -33,7 +33,9 @@ diff --git a/src/dev_ng/game/Peds/PopZones.cpp b/src/dev_ng/game/Peds/PopZones.c
 +#include "system/FileMgr.h"
  #include "vfx/metadata/VfxRegionInfo.h"
 -#include "vehicles/vehiclepopulation.h"
+-#include "text/textconversion.h"
 +#include "Vehicles/vehiclepopulation.h"
- #include "text/textconversion.h"
++#include "text/TextConversion.h"
  
  using namespace AIStats;
+ 

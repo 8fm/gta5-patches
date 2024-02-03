@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/shaders/CustomShaderEffectTint.cpp b/src/dev_ng/gam
  //
  // Rage headers:
 -#include "grcore\textureGcm.h"
-+#include "grcore/textureGcm.h"
++#include "grcore/texturegcm.h"
  #if __XENON
  	#include "system/xtl.h"
  	#define DBG 0

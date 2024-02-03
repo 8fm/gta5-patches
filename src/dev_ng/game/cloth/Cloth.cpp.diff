@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/cloth/Cloth.cpp b/src/dev_ng/game/cloth/Cloth.cpp
+--- a/src/dev_ng/game/cloth/Cloth.cpp
++++ b/src/dev_ng/game/cloth/Cloth.cpp
+@@ -5,9 +5,9 @@
+ #include "fwmaths/Vector.h"
+ 
+ // game headers
+-#include "Cloth/Cloth.h"
+-#include "Cloth/ClothArchetype.h"
+-#include "Cloth/ClothMgr.h"
++#include "cloth/Cloth.h"
++#include "cloth/ClothArchetype.h"
++#include "cloth/ClothMgr.h"
+ 
+ #if NORTH_CLOTHS
+ 

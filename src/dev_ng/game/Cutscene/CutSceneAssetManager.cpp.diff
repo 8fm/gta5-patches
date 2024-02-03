@@ -1,22 +1,17 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp b/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
-@@ -16,28 +16,28 @@
- //Game Headers
- #include "script/script.h"
+@@ -18,26 +18,26 @@
  #include "script/commands_interiors.h"
--#include "Cutscene/cutscene_channel.h"
-+#include "cutscene/cutscene_channel.h"
+ #include "Cutscene/cutscene_channel.h"
  #include "cutscene/CutSceneDefine.h"
 -#include "Cutscene/CutSceneAssetManager.h"
--#include "Cutscene/AnimatedModelEntity.h"
--#include "Cutscene/CutSceneBoundsEntity.h"
--#include "Cutscene/cutscene_channel.h"
--#include "Cutscene/CutsceneCustomEvents.h"
 +#include "cutscene/CutSceneAssetManager.h"
-+#include "cutscene/AnimatedModelEntity.h"
+ #include "Cutscene/AnimatedModelEntity.h"
+-#include "Cutscene/CutSceneBoundsEntity.h"
 +#include "cutscene/CutSceneBoundsEntity.h"
-+#include "cutscene/cutscene_channel.h"
+ #include "Cutscene/cutscene_channel.h"
+-#include "Cutscene/CutsceneCustomEvents.h"
 +#include "cutscene/CutsceneCustomEvents.h"
  #include "entity/archetype.h"
  #include "entity/archetypemanager.h"

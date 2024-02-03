@@ -9,7 +9,7 @@ diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.cpp b/src/de
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
 -#include "Task\Combat\Subtasks\TaskCombatSubTask.h"
-+#include "task/Combat/Subtasks/TaskCombatSubTask.h"
++#include "task/Combat/Subtasks/TaskCombatSubtask.h"
  
  
  //=========================================================================

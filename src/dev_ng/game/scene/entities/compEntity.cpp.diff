@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/game/scene/entities/compEntity.cpp b/src/dev_ng/game/scene/entities/compEntity.cpp
+--- a/src/dev_ng/game/scene/entities/compEntity.cpp
++++ b/src/dev_ng/game/scene/entities/compEntity.cpp
+@@ -18,23 +18,23 @@
+ #include "debug/GtaPicker.h"
+ #include "diag/art_channel.h"
+ #include "scene/entities/compEntity.h"
+-#include "scene/loader/maptypes.h"
++#include "scene/loader/mapTypes.h"
+ #include "scene/scene_channel.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ #include "script/script_brains.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "modelInfo/CompEntityModelInfo.h"
+-#include "objects/object.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "modelinfo/CompEntityModelInfo.h"
++#include "Objects/object.h"
+ #include "Objects/DummyObject.h"
+ #include "pathserver/ExportCollision.h"
+-#include "Vfx/Systems/VfxEntity.h"
+-#include "Vfx/VfxHelper.h"
++#include "vfx/systems/VfxEntity.h"
++#include "vfx/VfxHelper.h"
+ #include "vfx/misc/LODLightManager.h"
+ #include "fwdebug/picker.h"
+ 
+-#include "control/replay/misc/ReplayRayFirePacket.h"
++#include "control/replay/Misc/ReplayRayFirePacket.h"
+ #include "control/replay/ReplayRayFireManager.h"
+ #include "control/replay/ReplayIPLManager.h"
+ 
+@@ -896,7 +896,7 @@ void CCompEntity::IssueAssetRequests(eCompEntityAssetSet desiredAssets){
+ 		}
+ 
+ 		if (bCreateSwap){
+-			ASSERT_ONLY(bool bSuccess = )imapGroupMgr.CreateNewSwap(atHashString((u32) 0), atHashString(targetImapHash), m_imapSwapIndex, false);      // false means “not automatic”
++			ASSERT_ONLY(bool bSuccess = )imapGroupMgr.CreateNewSwap(atHashString((u32) 0), atHashString(targetImapHash), m_imapSwapIndex, false);      // false means "not automatic"
+ 			Assert(bSuccess);
+ 		}
+ 	}

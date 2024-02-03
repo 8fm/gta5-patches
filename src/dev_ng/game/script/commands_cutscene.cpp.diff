@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/script/commands_cutscene.cpp b/src/dev_ng/game/script/commands_cutscene.cpp
 --- a/src/dev_ng/game/script/commands_cutscene.cpp
 +++ b/src/dev_ng/game/script/commands_cutscene.cpp
-@@ -5,12 +5,12 @@
+@@ -3,13 +3,13 @@
+ 
+ // Game headers
  #include "Cutscene/CutSceneManagerNew.h"
- #include "cutscene/AnimatedModelEntity.h"
+-#include "cutscene/AnimatedModelEntity.h"
++#include "Cutscene/AnimatedModelEntity.h"
  #include "script/script_helper.h"
 -#include "peds/ped.h"
 -#include "peds/rendering/PedVariationPack.h"
@@ -11,9 +14,8 @@ diff --git a/src/dev_ng/game/script/commands_cutscene.cpp b/src/dev_ng/game/scri
 +#include "Peds/rendering/PedVariationPack.h"
  #include "Handlers/GameScriptEntity.h"
  #include "commands_entity.h"
- #include "cutscene/cutscene_channel.h"
--#include "Cutscene/CutSceneStore.h"
-+#include "cutscene/CutSceneStore.h"
+-#include "cutscene/cutscene_channel.h"
++#include "Cutscene/cutscene_channel.h"
+ #include "Cutscene/CutSceneStore.h"
  
  ANIM_OPTIMISATIONS();
- 

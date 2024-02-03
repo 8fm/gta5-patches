@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/Stats/StatsDataMgr.cpp b/src/dev_ng/game/Stats/StatsDataMgr.cpp
 --- a/src/dev_ng/game/Stats/StatsDataMgr.cpp
 +++ b/src/dev_ng/game/Stats/StatsDataMgr.cpp
-@@ -13,8 +13,8 @@
+@@ -12,9 +12,9 @@
+ #include "parser/tree.h"
  #include "parser/treenode.h"
  #include "parser/manager.h"
- #include "String/stringhash.h"
+-#include "String/stringhash.h"
 -#include "Diag/output.h"
 -#include "System/param.h"
++#include "string/stringhash.h"
 +#include "diag/output.h"
 +#include "system/param.h"
  #include "data/callback.h"

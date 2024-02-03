@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/script/commands_hud.cpp b/src/dev_ng/game/script/commands_hud.cpp
 --- a/src/dev_ng/game/script/commands_hud.cpp
 +++ b/src/dev_ng/game/script/commands_hud.cpp
+@@ -22,7 +22,7 @@
+ #include "frontend/hud_colour.h"
+ #include "frontend/MultiplayerGamerTagHud.h"
+ #include "frontend/MiniMap.h"
+-#include "frontend/MiniMapMenuComponent.h"
++#include "frontend/MinimapMenuComponent.h"
+ #include "frontend/HudMarkerManager.h"
+ #if RSG_PC
+ #include "frontend/MousePointer.h"
 @@ -33,17 +33,17 @@
  #include "frontend/GameStream.h"
  #include "frontend/GameStreamMgr.h"

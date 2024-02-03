@@ -16,7 +16,12 @@ diff --git a/src/dev_ng/game/scene/debug/SceneIsolator.cpp b/src/dev_ng/game/sce
  #include "rmcore/drawable.h"
  #include "fragment/type.h"
  #include "fwscene/stores/drawablestore.h"
-@@ -30,11 +30,11 @@ SCENE_OPTIMISATIONS()
+@@ -26,17 +26,17 @@ SCENE_OPTIMISATIONS()
+ #include "fwscene/stores/fragmentstore.h"
+ #include "fwscene/stores/txdstore.h"
+ #include "fwscene/world/EntityContainer.h"
+-#include "fwscene/world/entitydesc.h"
++#include "fwscene/world/EntityDesc.h"
  #include "grcore/viewport.h"
  #include "grcore/viewport.h"
  #include "input/mouse.h"
@@ -30,5 +35,8 @@ diff --git a/src/dev_ng/game/scene/debug/SceneIsolator.cpp b/src/dev_ng/game/sce
 +#include "scene/Entity.h"
 +#include "system/controlMgr.h"
  #include "text/text.h"
- #include "text/textconversion.h"
+-#include "text/textconversion.h"
++#include "text/TextConversion.h"
  #include "vector/color32.h"
+ #include "vector/color32.h"
+ 

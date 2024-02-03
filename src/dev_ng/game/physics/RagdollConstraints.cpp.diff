@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/physics/RagdollConstraints.cpp b/src/dev_ng/game/ph
 +#include "physics/RagdollConstraints.h"
 +#include "Peds/ped.h"
 +#include "Peds/pedDefines.h"
-+#include "Peds/peddebugvisualiser.h"
++#include "Peds/PedDebugVisualiser.h"
  
  CRagdollConstraintComponent::CRagdollConstraintComponent() :
  	m_ShouldCuffHandsWhenRagdolling(false),

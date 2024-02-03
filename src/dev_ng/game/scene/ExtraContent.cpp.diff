@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/scene/ExtraContent.cpp b/src/dev_ng/game/scene/ExtraContent.cpp
 --- a/src/dev_ng/game/scene/ExtraContent.cpp
 +++ b/src/dev_ng/game/scene/ExtraContent.cpp
-@@ -28,10 +28,10 @@
+@@ -28,15 +28,15 @@
  
  // Game headers
  #include "control/Gen9ExclusiveAssets.h"
@@ -14,7 +14,13 @@ diff --git a/src/dev_ng/game/scene/ExtraContent.cpp b/src/dev_ng/game/scene/Extr
  #include "network/Cloud/Tunables.h"
  #include "frontend/WarningScreen.h"
  #include "scene/dlc_channel.h"
-@@ -44,9 +44,9 @@
+ #include "scene/DownloadableTextureManager.h"
+-#include "scene/fileloader.h"
++#include "scene/FileLoader.h"
+ #include "scene/loader/mapFileMgr.h"
+ #include "scene/portals/LayoutManager.h"
+ #include "scene/loader/mapFileMgr.h"
+@@ -44,19 +44,19 @@
  #include "streaming/streaming.h"
  #include "streaming/streamingengine.h"
  #include "streaming/streaminginstall_psn.h"
@@ -26,13 +32,16 @@ diff --git a/src/dev_ng/game/scene/ExtraContent.cpp b/src/dev_ng/game/scene/Extr
 +#include "system/FileMgr.h"
  #include "system/device_xcontent.h"
  #include "system/xtl.h"
- #include "task/physics/BlendFromNMData.h"
-@@ -56,7 +56,7 @@
+-#include "task/physics/BlendFromNMData.h"
++#include "task/Physics/BlendFromNmData.h"
+ #include "text/TextConversion.h"
+ #include "ExtraContent_parser.h"
+ #include "scene/ExtraMetadataMgr.h"
  #include "scene/scene.h"
  #include "file/device_installer.h"
  #include "frontend/loadingscreens.h"
 -#include "Network/commerce/CommerceManager.h"
-+#include "network/commerce/CommerceManager.h"
++#include "network/Commerce/CommerceManager.h"
  #include "camera/CamInterface.h"
  #include "network/Live/NetworkTelemetry.h"
  #include "network/General/NetworkAssetVerifier.h"

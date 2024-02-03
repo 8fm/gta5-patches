@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_a_c.cpp b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_a_c.cpp
+--- a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_a_c.cpp
++++ b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_a_c.cpp
+@@ -12,7 +12,7 @@
+ #include "../../task/Animation/TaskCutScene.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../task/Animation/TaskMoveScripted.cpp"
++#include "../../task/Animation/TaskMoVEScripted.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../task/Animation/TaskReachArm.cpp"

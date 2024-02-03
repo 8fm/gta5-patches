@@ -1,0 +1,67 @@
+diff --git a/src/dev_ng/game/script/script.cpp b/src/dev_ng/game/script/script.cpp
+--- a/src/dev_ng/game/script/script.cpp
++++ b/src/dev_ng/game/script/script.cpp
+@@ -19,7 +19,7 @@
+ // Framework headers
+ #include "fwnet/nettypes.h"
+ #include "fwscene/stores/mapdatastore.h"
+-#include "fwscript/scriptInterface.h"
++#include "fwscript/scriptinterface.h"
+ 
+ // Security headers
+ #include "security/ragesecwinapi.h"
+@@ -29,21 +29,20 @@
+ #include "audio/scriptaudioentity.h"
+ #include "camera/CamInterface.h"
+ #include "control/replay/replay.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/BugstarIntegration.h"
+ #include "event/EventErrors.h"
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+ #include "frontend/landing_page/LandingPageArbiter.h"
+ #include "frontend/landing_page/LandingPageConfig.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "Objects/DummyObject.h"
+ #include "Objects/object.h"
+-#include "peds/ped.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "scene/MapChange.h"
+ #include "scene/ExtraContentDefs.h"
+ #include "scene/worldpoints.h"
+@@ -105,7 +104,7 @@
+ #include "script/script_cars_and_peds.h"
+ #include "script/script_debug.h"
+ #include "script/script_hud.h"
+-#include "script/handlers/GameScriptEntity.h"
++#include "script/Handlers/GameScriptEntity.h"
+ #include "script/Handlers/GameScriptResources.h"
+ #include "script/script_helper.h"
+ #include "script/streamedscripts.h"
+@@ -1485,7 +1484,7 @@ void CMissionReplayStats::EndReplayStatsStructure()
+ }
+ //	End of "When a Replay Mission is passed"
+ 
+-//	When a Load happens and the script detects that it’s a Replay save file
++//	When a Load happens and the script detects that it's a Replay save file
+ s32 CMissionReplayStats::GetNumberOfMissionStats()
+ {
+ 	if (scriptVerifyf(m_bStatsHaveBeenStored, "CMissionReplayStats::GetNumberOfMissionStats - stats haven't been stored"))
+@@ -1519,7 +1518,7 @@ void CMissionReplayStats::ClearReplayStatsStructure()
+ 
+ 	m_ArrayOfMissionStats.Reset();
+ }
+-//	End of "When a Load happens and the script detects that it’s a Replay save file"
++//	End of "When a Load happens and the script detects that it's a Replay save file"
+ 
+ 
+ 

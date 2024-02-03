@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/task/Combat/TaskReact.cpp b/src/dev_ng/game/task/Co
 -#include "Task/Combat/TaskReact.h"
 -#include "Event/EventReactions.h"			// For adding new reaction events
 -#include "Peds/Ped.h"
-+#include "animation/moveped.h"
++#include "animation/MovePed.h"
 +#include "game/ModelIndices.h"
 +#include "task/Combat/TaskReact.h"
 +#include "event/EventReactions.h"			// For adding new reaction events

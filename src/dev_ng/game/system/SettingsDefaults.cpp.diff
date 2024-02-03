@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/SettingsDefaults.cpp b/src/dev_ng/game/system/SettingsDefaults.cpp
+--- a/src/dev_ng/game/system/SettingsDefaults.cpp
++++ b/src/dev_ng/game/system/SettingsDefaults.cpp
+@@ -33,7 +33,7 @@
+ #include "renderer/Shadows/ParaboloidShadows.h"
+ #include "vfx/particles/PtFxManager.h"
+ 
+-#include "../../shader_source/Lighting/Shadows/cascadeshadows_common.fxh" // for CASCADE_SHADOWS_DO_SOFT_FILTERING
++#include "../shader_source/Lighting/Shadows/cascadeshadows_common.fxh" // for CASCADE_SHADOWS_DO_SOFT_FILTERING
+ 
+ #include "frontend/MobilePhone.h"
+ 

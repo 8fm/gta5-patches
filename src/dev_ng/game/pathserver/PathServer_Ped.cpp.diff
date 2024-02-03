@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Ped.cpp b/src/dev_ng/game/pat
  // Framework headers
 -#include "fwmaths\Random.h"
 -#include "fwvehicleai\pathfindtypes.h"
-+#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
 +#include "fwvehicleai/pathfindtypes.h"
  #include "fwscene/search/Search.h"
  

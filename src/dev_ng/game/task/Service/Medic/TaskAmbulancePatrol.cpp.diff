@@ -32,7 +32,7 @@ diff --git a/src/dev_ng/game/task/Service/Medic/TaskAmbulancePatrol.cpp b/src/de
 -#include "Task/Vehicle/TaskCar.h"
 -#include "Task/Vehicle/TaskEnterVehicle.h"
 -#include "Task/Vehicle/TaskExitVehicle.h"
-+#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
 +#include "task/Combat/TaskDamageDeath.h"
 +#include "task/Default/TaskUnalerted.h"
 +#include "task/Default/TaskWander.h"

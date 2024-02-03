@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/event/EventHandler.cpp b/src/dev_ng/game/event/EventHandler.cpp
 --- a/src/dev_ng/game/event/EventHandler.cpp
 +++ b/src/dev_ng/game/event/EventHandler.cpp
-@@ -1,19 +1,19 @@
+@@ -1,22 +1,22 @@
  // File header
 -#include "Event/EventHandler.h"
 +#include "event/EventHandler.h"
@@ -28,4 +28,8 @@ diff --git a/src/dev_ng/game/event/EventHandler.cpp b/src/dev_ng/game/event/Even
 +#include "task/System/TaskClassInfo.h"
  
  // rage headers
- #include "Profile/timebars.h"
+-#include "Profile/timebars.h"
++#include "profile/timebars.h"
+ 
+ AI_OPTIMISATIONS()
+ 

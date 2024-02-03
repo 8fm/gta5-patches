@@ -6,8 +6,9 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/ga
  #include "ai/task/taskchannel.h"
  #include "grcore/debugdraw.h"
 -#include "fwmaths/Angle.h"
+-#include "fwmaths/Random.h"
 +#include "fwmaths/angle.h"
- #include "fwmaths/Random.h"
++#include "fwmaths/random.h"
  #include "fwmaths/Vector.h"
  
  // Game headers
@@ -41,7 +42,8 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/ga
  #include "Peds/PedDebugVisualiser.h"
  #include "Peds/PedGeometryAnalyser.h"
  #include "Peds/PedIntelligence.h"
- #include "Peds/PedPlacement.h"
+-#include "Peds/PedPlacement.h"
++#include "Peds/pedplacement.h"
  #include "Peds/PopCycle.h"
 -#include "Physics/GtaArchetype.h"
 -#include "Physics/GtaInst.h"

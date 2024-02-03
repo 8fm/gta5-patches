@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/system/companion.cpp b/src/dev_ng/game/system/companion.cpp
+--- a/src/dev_ng/game/system/companion.cpp
++++ b/src/dev_ng/game/system/companion.cpp
+@@ -2,7 +2,7 @@
+ // companion.cpp
+ //--------------------------------------------------------------------------------------
+ 
+-#include "Companion.h"
++#include "companion.h"
+ 
+ #if COMPANION_APP
+ #if RSG_ORBIS
+@@ -17,7 +17,7 @@
+ #include "Stats/StatsMgr.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "Peds/PlayerInfo.h"
+-#include "control/GameLogic.h"
++#include "control/gamelogic.h"
+ #include "control/gps.h"
+ #include "camera/CamInterface.h"
+ 

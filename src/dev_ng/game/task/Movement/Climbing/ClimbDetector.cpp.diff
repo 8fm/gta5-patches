@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.cpp b/src/dev_
  
  // File header
 -#include "task/movement/climbing/climbdetector.h"
-+#include "task/Movement/Climbing/climbdetector.h"
++#include "task/Movement/Climbing/ClimbDetector.h"
  
  // Rage headers
  #include "phbound/boundcomposite.h"

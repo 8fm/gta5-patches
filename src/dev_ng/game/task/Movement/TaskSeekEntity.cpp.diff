@@ -5,8 +5,9 @@ diff --git a/src/dev_ng/game/task/Movement/TaskSeekEntity.cpp b/src/dev_ng/game/
  //Game heades.
  #include "fwanimation/animmanager.h"
 -#include "AI/Ambient/ConditionalAnimManager.h"
+-#include "PedGroup/Formation.h"
 +#include "ai/ambient/ConditionalAnimManager.h"
- #include "PedGroup/Formation.h"
++#include "PedGroup/formation.h"
  #include "PedGroup/PedGroup.h"
  #include "Peds/ped.h"
  #include "Peds/PedCapsule.h"

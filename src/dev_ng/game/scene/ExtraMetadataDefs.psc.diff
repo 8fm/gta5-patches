@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/scene/ExtraMetadataDefs.psc b/src/dev_ng/game/scene/ExtraMetadataDefs.psc
+--- a/src/dev_ng/game/scene/ExtraMetadataDefs.psc
++++ b/src/dev_ng/game/scene/ExtraMetadataDefs.psc
+@@ -3,9 +3,9 @@
+  generate="class">
+ 
+   <hinsert>
+-#include "peds/rendering/PedProps.h"
++#include "Peds/rendering/PedProps.h"
+ #include "modelinfo/VehicleModelInfoEnums.h"
+-#include "peds/rendering/PedVariationDS.h"
++#include "Peds/rendering/PedVariationDS.h"
+ #include "task/Physics/TaskNMSimple.h"
+ #include "task/Physics/TaskNMBrace.h"
+   </hinsert>

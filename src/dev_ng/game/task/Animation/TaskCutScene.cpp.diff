@@ -8,15 +8,9 @@ diff --git a/src/dev_ng/game/task/Animation/TaskCutScene.cpp b/src/dev_ng/game/t
  
  // Rage headers
  #include "audiohardware/device.h"
-@@ -14,18 +14,18 @@
- #include "animation/MovePed.h"
- #include "animation/MoveVehicle.h"
- #include "animation/EventTags.h"
--#include "Cutscene/cutscene_channel.h"
-+#include "cutscene/cutscene_channel.h"
+@@ -18,14 +18,14 @@
  #include "Cutscene/CutSceneManagerNew.h"
--#include "Cutscene/AnimatedModelEntity.h"
-+#include "cutscene/AnimatedModelEntity.h"
+ #include "Cutscene/AnimatedModelEntity.h"
  #include "Objects/object.h"
 -#include "peds/ped.h"
 -#include "vehicles/vehicle.h"

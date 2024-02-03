@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/task/General/TaskSecondary.cpp b/src/dev_ng/game/task/General/TaskSecondary.cpp
 --- a/src/dev_ng/game/task/General/TaskSecondary.cpp
 +++ b/src/dev_ng/game/task/General/TaskSecondary.cpp
-@@ -8,27 +8,27 @@
+@@ -1,34 +1,34 @@
+ // Framework headers
+ #include "fwanimation/animmanager.h" 
+ #include "fwmaths/angle.h"
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
+ #include "fwmaths/Vector.h"
+ 
+ //Game headers
  #include "animation/AnimDefines.h"
  
  #include "camera/CamInterface.h"

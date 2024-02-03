@@ -38,7 +38,7 @@ diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskVehicleDriveBy.cpp b/src/dev_n
 -#include "Task/Weapons/Gun/TaskReloadGun.h"
 -#include "Task/Weapons/TaskWeaponBlocked.h"
 +#include "modelinfo/WeaponModelInfo.h"
-+#include "scene/Playerswitch/PlayerSwitchInterface.h"
++#include "scene/playerswitch/PlayerSwitchInterface.h"
 +#include "scene/world/GameWorld.h"
 +#include "task/Combat/Cover/TaskCover.h"
 +#include "task/Combat/TaskNewCombat.h"

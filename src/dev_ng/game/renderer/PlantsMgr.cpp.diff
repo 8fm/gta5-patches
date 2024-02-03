@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/renderer/PlantsMgr.cpp b/src/dev_ng/game/renderer/P
  #include "fwscene/stores/txdstore.h"
  #include "system/findsize.h"
  #include "system/dependencyscheduler.h"
-@@ -60,37 +60,37 @@
+@@ -60,39 +60,39 @@
  #include "vector/geometry.h"
  
  // gta headers:
@@ -67,8 +67,11 @@ diff --git a/src/dev_ng/game/renderer/PlantsMgr.cpp b/src/dev_ng/game/renderer/P
 +#include "game/Clock.h"
 +#include "renderer/Lights/lights.h"
  #include "renderer/sprite2d.h"
- #include "renderer/gtadrawable.h"
+-#include "renderer/gtadrawable.h"
++#include "renderer/GtaDrawable.h"
  #include "streaming/streamingrequest.h"
+ #include "renderer/PlantsMgr.h"
+ #include "system/SettingsManager.h"
 @@ -151,7 +151,7 @@ PARAM(DisablePlantMgr, "Disable Plant Manager");
  
  #if __BANK

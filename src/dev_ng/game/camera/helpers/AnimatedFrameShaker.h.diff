@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/camera/helpers/AnimatedFrameShaker.h b/src/dev_ng/g
  #include "fwsys/timer.h"
  #include "fwanimation/animdirector.h"
  
+@@ -16,7 +16,7 @@
+ #include "scene/RegdRefTypes.h"
+ 
+ #include "atl/hashstring.h"
+-#include "cutscene/CutSceneAnimation.h"
++#include "Cutscene/CutSceneAnimation.h"
+ 
+ #if __BANK
+ class CDebugClipSelector;

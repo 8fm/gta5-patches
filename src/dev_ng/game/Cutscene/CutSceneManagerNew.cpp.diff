@@ -1,15 +1,22 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp b/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp
-@@ -41,7 +41,7 @@
+@@ -41,12 +41,12 @@
  #include "camera/debug/DebugDirector.h"
  #include "camera/viewports/ViewportManager.h"
  #include "control/replay/ReplayBufferMarker.h"
 -#include "core/game.h"
+-#include "cutscene/AnimatedModelEntity.h"
 +#include "Core/game.h"
- #include "cutscene/AnimatedModelEntity.h"
++#include "Cutscene/AnimatedModelEntity.h"
  #include "cutscene/CutsceneCustomEvents.h"
  #include "cutscene/CutSceneAnimManager.h"
+ #include "cutscene/CutSceneBoundsEntity.h"
+-#include "cutscene/CutSceneCameraEntity.h"
++#include "Cutscene/CutSceneCameraEntity.h"
+ #include "cutscene/CutSceneFadeEntity.h"
+ #include "cutscene/CutSceneLightEntity.h"
+ #include "cutscene/CutSceneParticleEffectEntity.h"
 @@ -64,19 +64,19 @@
  #include "frontend/MiniMap.h"
  #include "frontend/MobilePhone.h"
@@ -22,11 +29,12 @@ diff --git a/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp b/src/dev_ng/game/C
 +#include "Objects/object.h"
 +#include "Objects/ObjectIntelligence.h"
  #include "network/Live/NetworkTelemetry.h"
- #include "pathserver/pathserver.h"
+-#include "pathserver/pathserver.h"
 -#include "peds/Ped.h"
 -#include "peds/rendering/PedVariationPack.h"
 -#include "peds/rendering/PedVariationDS.h"
 -#include "peds/rendering/PedVariationStream.h"
++#include "pathserver/PathServer.h"
 +#include "Peds/ped.h"
 +#include "Peds/rendering/PedVariationPack.h"
 +#include "Peds/rendering/PedVariationDS.h"
@@ -48,12 +56,3 @@ diff --git a/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp b/src/dev_ng/game/C
  #include "string/stringutil.h"
  
  #if __BANK
-@@ -106,7 +106,7 @@
- #endif
- 
- //channel
--#include "Cutscene/cutscene_channel.h"
-+#include "cutscene/cutscene_channel.h"
- 
- ANIM_OPTIMISATIONS ()
- RAGE_DEFINE_CHANNEL(cutscene)

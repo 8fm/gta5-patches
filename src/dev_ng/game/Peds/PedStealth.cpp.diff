@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Peds/PedStealth.cpp b/src/dev_ng/game/Peds/PedStealth.cpp
 --- a/src/dev_ng/game/Peds/PedStealth.cpp
 +++ b/src/dev_ng/game/Peds/PedStealth.cpp
-@@ -3,9 +3,9 @@
+@@ -3,13 +3,13 @@
  // CREATED : 19-11-2008
  
  // associated header
@@ -13,3 +13,8 @@ diff --git a/src/dev_ng/game/Peds/PedStealth.cpp b/src/dev_ng/game/Peds/PedSteal
  #include "debug/VectorMap.h"
  
  // rage headers
+-#include "Profile/timebars.h"
++#include "profile/timebars.h"
+ 
+ AI_OPTIMISATIONS()
+ 

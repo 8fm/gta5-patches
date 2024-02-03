@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp b/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp
 --- a/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp
 +++ b/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp
-@@ -40,7 +40,7 @@
+@@ -38,9 +38,9 @@
+ #include "frontend/WarningScreen.h"
+ #include "frontend/MiniMap.h"
  #include "renderer/ScreenshotManager.h"
- #include "renderer/PostProcessFx.h"
+-#include "renderer/PostProcessFx.h"
++#include "renderer/PostProcessFX.h"
  #include "SaveLoad/GenericGameStorage.h"
 -#include "peds/Ped.h"
 +#include "Peds/ped.h"

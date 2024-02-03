@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/debug/Rendering/DebugRendering.cpp b/src/dev_ng/game/debug/Rendering/DebugRendering.cpp
 --- a/src/dev_ng/game/debug/Rendering/DebugRendering.cpp
 +++ b/src/dev_ng/game/debug/Rendering/DebugRendering.cpp
-@@ -18,8 +18,8 @@
+@@ -18,12 +18,12 @@
  #include "fwrenderer/RenderPhaseBase.h"
  
  // game
@@ -12,6 +12,11 @@ diff --git a/src/dev_ng/game/debug/Rendering/DebugRendering.cpp b/src/dev_ng/gam
  #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"
+-#include "camera/viewports/viewportmanager.h"
++#include "camera/viewports/ViewportManager.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/Deferred/DeferredConfig.h"
+ #include "renderer/Deferred/GBuffer.h"
 @@ -32,17 +32,17 @@
  #include "renderer/SpuPM/SpuPmMgr.h"
  #include "renderer/Util/ShaderUtil.h"

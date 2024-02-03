@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/Peds/PedEventScanner.cpp b/src/dev_ng/game/Peds/PedEventScanner.cpp
 --- a/src/dev_ng/game/Peds/PedEventScanner.cpp
 +++ b/src/dev_ng/game/Peds/PedEventScanner.cpp
-@@ -8,7 +8,7 @@
+@@ -2,13 +2,13 @@
+ #include <limits> 
+ 
+ // rage headers
+-#include "Profile/timebars.h"
++#include "profile/timebars.h"
+ #include "phbound/BoundSphere.h"
+ #include "phcore/Segment.h"
  #include "fragmentnm/nm_channel.h"
  
  // Framework headers

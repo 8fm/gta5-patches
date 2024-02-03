@@ -1,15 +1,17 @@
 diff --git a/src/dev_ng/game/frontend/FrontendStatsMgr.cpp b/src/dev_ng/game/frontend/FrontendStatsMgr.cpp
 --- a/src/dev_ng/game/frontend/FrontendStatsMgr.cpp
 +++ b/src/dev_ng/game/frontend/FrontendStatsMgr.cpp
-@@ -17,7 +17,7 @@
+@@ -17,8 +17,8 @@
  // Game Headers
  #include "FrontendStatsMgr.h"
  #include "frontend/ui_channel.h"
 -#include "Scene/DataFileMgr.h"
+-#include "scene/extracontent.h"
 +#include "scene/DataFileMgr.h"
- #include "scene/extracontent.h"
++#include "scene/ExtraContent.h"
  
  // Framework headers
+ #include "fwsys/timer.h"
 @@ -30,9 +30,9 @@
  #include "Stats/StatsInterface.h"
  #include "Stats/StatsUtils.h"

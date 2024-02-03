@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/task/Movement/TaskNavMesh.cpp b/src/dev_ng/game/task/Movement/TaskNavMesh.cpp
 --- a/src/dev_ng/game/task/Movement/TaskNavMesh.cpp
 +++ b/src/dev_ng/game/task/Movement/TaskNavMesh.cpp
-@@ -3,19 +3,19 @@
+@@ -2,20 +2,20 @@
+ #include "math/angmath.h"
  
  // Framework headers
- #include "fwmaths/Random.h"
+-#include "fwmaths/Random.h"
 -#include "fwmaths/vector.h"
++#include "fwmaths/random.h"
 +#include "fwmaths/Vector.h"
  
  // Game headers

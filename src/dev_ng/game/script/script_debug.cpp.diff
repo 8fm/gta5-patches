@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/script_debug.cpp b/src/dev_ng/game/script/script_debug.cpp
+--- a/src/dev_ng/game/script/script_debug.cpp
++++ b/src/dev_ng/game/script/script_debug.cpp
+@@ -8,7 +8,7 @@
+ #include "input/keys.h"
+ 
+ // Game headers
+-#include "animation/debug/animdebug.h"
++#include "animation/debug/AnimDebug.h"
+ #include "animation/debug/AnimPlacementTool.h"
+ #include "camera/CamInterface.h"
+ #include "control/restart.h"

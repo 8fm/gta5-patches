@@ -28,8 +28,9 @@ diff --git a/src/dev_ng/game/audio/weaponaudioentity.cpp b/src/dev_ng/game/audio
  #include "camera/replay/ReplayDirector.h"
  #include "scene/RefMacros.h"
  
- #include "weapons/info/weaponinfo.h"
+-#include "weapons/info/weaponinfo.h"
 -#include "weapons/weapon.h"
++#include "weapons/info/WeaponInfo.h"
 +#include "weapons/Weapon.h"
  
  AUDIO_WEAPONS_OPTIMISATIONS() 

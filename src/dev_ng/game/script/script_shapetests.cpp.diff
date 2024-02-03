@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/script_shapetests.cpp b/src/dev_ng/game/script/script_shapetests.cpp
+--- a/src/dev_ng/game/script/script_shapetests.cpp
++++ b/src/dev_ng/game/script/script_shapetests.cpp
+@@ -5,7 +5,7 @@
+ // 
+ 
+ // Rage headers
+-#include "fwsys/gameSkeleton.h"
++#include "fwsys/gameskeleton.h"
+ #include "fwscript/scriptguid.h"
+ 
+ // Game headers

@@ -40,7 +40,7 @@ diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunScripted.cpp b/src/dev_n
 -#include "Task/Vehicle/TaskVehicleWeapon.h"
 -#include "Weapons/Weapon.h"
 +#include "modelinfo/WeaponModelInfo.h"
-+#include "scene/Playerswitch/PlayerSwitchInterface.h"
++#include "scene/playerswitch/PlayerSwitchInterface.h"
 +#include "scene/world/GameWorld.h"
 +#include "task/Combat/Cover/TaskCover.h"
 +#include "task/Default/TaskPlayer.h"

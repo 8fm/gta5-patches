@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/scene/lod/LodMgr.cpp b/src/dev_ng/game/scene/lod/LodMgr.cpp
 --- a/src/dev_ng/game/scene/lod/LodMgr.cpp
 +++ b/src/dev_ng/game/scene/lod/LodMgr.cpp
-@@ -10,8 +10,8 @@
+@@ -10,15 +10,15 @@
  #include "scene/lod/LodMgr.h"
  
  #include "modelinfo/BaseModelInfo.h"
@@ -12,3 +12,11 @@ diff --git a/src/dev_ng/game/scene/lod/LodMgr.cpp b/src/dev_ng/game/scene/lod/Lo
  #include "renderer/Renderer.h"	// just for GetPreStreamDistance()
  #include "scene/Entity.h"
  #include "scene/ContinuityMgr.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "timecycle/TimeCycleConfig.h"
+ #include "fwscene/stores/boxstreamerassets.h"
+-#include "fwscene/Lod/LodAttach.h"
++#include "fwscene/lod/LodAttach.h"
+ #if __BANK
+ #include "scene/lod/LodDebug.h"
+ #endif

@@ -1,12 +1,15 @@
 diff --git a/src/dev_ng/game/scene/EntityExt_AltGfx.h b/src/dev_ng/game/scene/EntityExt_AltGfx.h
 --- a/src/dev_ng/game/scene/EntityExt_AltGfx.h
 +++ b/src/dev_ng/game/scene/EntityExt_AltGfx.h
-@@ -5,7 +5,7 @@
+@@ -5,9 +5,9 @@
  #ifndef _ENTITYEXT_ALTGFX_H_
  #define _ENTITYEXT_ALTGFX_H_
  
 -#include "fwtl/pool.h"
 +#include "fwtl/Pool.h"
  #include "scene/Entity.h"
- #include "streaming/streamingRequest.h"
+-#include "streaming/streamingRequest.h"
++#include "streaming/streamingrequest.h"
  
+ // management class for processing the entries in the AltGfx extension pools
+ class CEntityExt_AltGfxMgr{

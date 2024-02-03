@@ -1,6 +1,12 @@
 diff --git a/src/dev_ng/game/animation/EventTags.cpp b/src/dev_ng/game/animation/EventTags.cpp
 --- a/src/dev_ng/game/animation/EventTags.cpp
 +++ b/src/dev_ng/game/animation/EventTags.cpp
+@@ -1,4 +1,4 @@
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
+ #include "animation/EventTags.h"
+ #include "optimisations.h"
+ 
 @@ -15,7 +15,7 @@
  #include "camera/viewports/ViewportManager.h"
  #include "ik/IkManager.h"

@@ -23,7 +23,7 @@ diff --git a/src/dev_ng/game/audio/weatheraudioentity.cpp b/src/dev_ng/game/audi
  #include "scene/world/GameWorldHeightMap.h"
  #include "scene/portals/Portal.h"
 -#include "task/motion/Locomotion/taskmotionped.h" 
-+#include "task/Motion/Locomotion/taskmotionped.h" 
++#include "task/Motion/Locomotion/TaskMotionPed.h" 
  #include "renderer/Water.h"
  
  AUDIO_AMBIENCE_OPTIMISATIONS()

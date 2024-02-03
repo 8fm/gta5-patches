@@ -49,8 +49,9 @@ diff --git a/src/dev_ng/game/scene/DynamicEntity.cpp b/src/dev_ng/game/scene/Dyn
 -#include "peds/ped.h"
 +#include "Peds/ped.h"
  #include "modelinfo/PedModelInfo.h"
- #include "Peds/rendering/pedVariationPack.h"
+-#include "Peds/rendering/pedVariationPack.h"
 -#include "peds/rendering/PedVariationStream.h"
++#include "Peds/rendering/PedVariationPack.h"
 +#include "Peds/rendering/PedVariationStream.h"
  
  // #include "system/findsize.h"

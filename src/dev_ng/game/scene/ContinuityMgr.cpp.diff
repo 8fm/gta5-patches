@@ -6,8 +6,9 @@ diff --git a/src/dev_ng/game/scene/ContinuityMgr.cpp b/src/dev_ng/game/scene/Con
  #include "scene/ContinuityMgr.h"
  
 -#include "camera/camInterface.h"
+-#include "camera/base/basecamera.h"
 +#include "camera/CamInterface.h"
- #include "camera/base/basecamera.h"
++#include "camera/base/BaseCamera.h"
  #include "camera/viewports/ViewportManager.h"
  #include "camera/gameplay/GameplayDirector.h"
  #include "camera/debug/DebugDirector.h"

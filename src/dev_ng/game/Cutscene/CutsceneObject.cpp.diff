@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Cutscene/CutsceneObject.cpp b/src/dev_ng/game/Cutscene/CutsceneObject.cpp
 --- a/src/dev_ng/game/Cutscene/CutsceneObject.cpp
 +++ b/src/dev_ng/game/Cutscene/CutsceneObject.cpp
-@@ -13,29 +13,29 @@
+@@ -13,25 +13,25 @@
  
  // game includes:
  #include "animation/debug/AnimViewer.h"
@@ -9,9 +9,10 @@ diff --git a/src/dev_ng/game/Cutscene/CutsceneObject.cpp b/src/dev_ng/game/Cutsc
 +#include "Cutscene/CutSceneManagerNew.h"		//look to remove
  #include "CutsceneObject.h"
 -#include "Cutscene/CutSceneAnimation.h"
-+#include "cutscene/CutSceneAnimation.h"
- #include "cutscene/AnimatedModelEntity.h"
+-#include "cutscene/AnimatedModelEntity.h"
 -#include "game/clock.h"
++#include "cutscene/CutSceneAnimation.h"
++#include "Cutscene/AnimatedModelEntity.h"
 +#include "game/Clock.h"
  #include "game/weather.h"
  #include "modelinfo/PedModelInfo.h"
@@ -36,8 +37,3 @@ diff --git a/src/dev_ng/game/Cutscene/CutsceneObject.cpp b/src/dev_ng/game/Cutsc
  #include "debug/DebugScene.h"
  
  //channel
--#include "Cutscene/cutscene_channel.h"
-+#include "cutscene/cutscene_channel.h"
- 
- /////////////////////////////////////////////////////////////////////////////////
- 

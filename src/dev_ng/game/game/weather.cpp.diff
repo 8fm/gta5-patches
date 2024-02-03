@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
 --- a/src/dev_ng/game/game/weather.cpp
 +++ b/src/dev_ng/game/game/weather.cpp
-@@ -26,24 +26,24 @@
+@@ -21,29 +21,29 @@
+ #include "vectormath/classfreefuncsv.h"
+ 
+ // Framework headers
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
+ #include "fwsys/timer.h"
  #include "timecycle/channel.h"
  
  // Game Headers
@@ -28,7 +34,7 @@ diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
 +#include "network/Events/NetworkEventTypes.h"
 +#include "network/NetworkInterface.h"
 +#include "Peds/ped.h"
-+#include "renderer/PostProcessFx.h"
++#include "renderer/PostProcessFX.h"
 +#include "renderer/Water.h"
 +#include "scene/DataFileMgr.h"
 +#include "scene/portals/Portal.h"

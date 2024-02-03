@@ -10,13 +10,15 @@ diff --git a/src/dev_ng/game/task/Combat/Cover/TaskCover.cpp b/src/dev_ng/game/t
  
  // Rage Headers
  #include "fwanimation/animmanager.h"
-@@ -47,59 +47,59 @@
+@@ -46,60 +46,60 @@
+ #include "network/Objects/Prediction/NetBlenderPed.h"
  #include "Objects/Door.h"
  #include "PedGroup/PedGroup.h"
- #include "PedGroup/Formation.h"
+-#include "PedGroup/Formation.h"
 -#include "physics/WorldProbe/worldprobe.h"
 -#include "Physics/GtaInst.h"
 -#include "Physics/GtaMaterialManager.h"
++#include "PedGroup/formation.h"
 +#include "physics/WorldProbe/WorldProbe.h"
 +#include "physics/gtaInst.h"
 +#include "physics/gtaMaterialManager.h"
@@ -26,10 +28,11 @@ diff --git a/src/dev_ng/game/task/Combat/Cover/TaskCover.cpp b/src/dev_ng/game/t
  #include "Peds/MovingGround.h"
  #include "Peds/PedCapsule.h"
  #include "Peds/PedDebugVisualiser.h"
- #include "Peds/PedPlacement.h"
+-#include "Peds/PedPlacement.h"
 -#include "peds/PedIntelligence.h"
 -#include "peds/PedWeapons/PedTargeting.h"
 -#include "peds/Ped.h"
++#include "Peds/pedplacement.h"
 +#include "Peds/PedIntelligence.h"
 +#include "Peds/PedWeapons/PedTargeting.h"
 +#include "Peds/ped.h"

@@ -1,15 +1,18 @@
 diff --git a/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp b/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp
 --- a/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp
 +++ b/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp
-@@ -1,5 +1,5 @@
+@@ -1,26 +1,26 @@
  // File header
 -#include "Event/Decision/EventDecisionMakerResponse.h"
 +#include "event/decision/EventDecisionMakerResponse.h"
  
  // Rage headers
  #include "atl/bitset.h"
-@@ -9,18 +9,18 @@
- #include "fwmaths/Random.h"
+ 
+ // Framework headers
+ #include "ai/aichannel.h"
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
  
  // Game headers
 -#include "Event/Decision/EventDecisionMakerResponse_parser.h"

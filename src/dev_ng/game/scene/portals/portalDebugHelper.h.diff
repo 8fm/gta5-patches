@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/scene/portals/portalDebugHelper.h b/src/dev_ng/game
  
  // Game headers
 -#include "scene\portals\interiorInst.h"
-+#include "scene/portals/interiorInst.h"
++#include "scene/portals/InteriorInst.h"
  #include "fwscene/interiors/PortalTypes.h"
  
  

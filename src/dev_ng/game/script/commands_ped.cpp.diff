@@ -1,7 +1,30 @@
 diff --git a/src/dev_ng/game/script/commands_ped.cpp b/src/dev_ng/game/script/commands_ped.cpp
 --- a/src/dev_ng/game/script/commands_ped.cpp
 +++ b/src/dev_ng/game/script/commands_ped.cpp
-@@ -35,50 +35,50 @@
+@@ -13,12 +13,12 @@
+ #include "script/ScriptMetadataManager.h"
+ #include "script/thread.h"
+ #include "script/wrapper.h"
+-#include "system/TimeMgr.h"
++#include "system/timemgr.h"
+ #include "fwmaths/angle.h"
+ #include "fwscene/world/WorldLimits.h"
+ #include "phbound/boundcomposite.h"
+ #include "fwscene/stores/staticboundsstore.h"
+-#include "fragmentnm/nm_channel.h "
++#include "fragmentnm/nm_channel.h"
+ 
+ // Framework headers
+ #include "fwdecorator/decoratorExtension.h"
+@@ -28,57 +28,57 @@
+ #include "ai/BlockingBounds.h"
+ #include "ai/debug/system/AIDebugLogManager.h"
+ #include "animation/AnimBones.h"
+-#include "animation/Animdefines.h"
++#include "animation/AnimDefines.h"
+ #include "animation/AnimManager.h"
+ #include "animation/FacialData.h"
+ #include "camera/CamInterface.h"
  #include "camera/gameplay/GameplayDirector.h"
  #include "control/Gen9ExclusiveAssets.h"
  #include "debug/MarketingTools.h"
@@ -66,7 +89,7 @@ diff --git a/src/dev_ng/game/script/commands_ped.cpp b/src/dev_ng/game/script/co
 +#include "Peds/pedpopulation.h"
 +#include "Peds/PedScriptResource.h"
 +#include "Peds/RelationshipEnums.h"
-+#include "Peds/rendering/pedVariationPack.h"
++#include "Peds/rendering/PedVariationPack.h"
 +#include "Peds/rendering/PedVariationStream.h"
 +#include "Peds/rendering/PedDamage.h"
 +#include "Peds/rendering/PedOverlay.h"
@@ -74,7 +97,7 @@ diff --git a/src/dev_ng/game/script/commands_ped.cpp b/src/dev_ng/game/script/co
 +#include "Peds/PedWeapons/PedTargeting.h"
 +#include "Peds/ped.h"
 +#include "Peds/ped_channel.h"
-+#include "Peds/Popcycle.h"
++#include "Peds/PopCycle.h"
 +#include "Peds/PopZones.h"
  #include "physics/gtaInst.h"
  #include "physics/physics.h"

@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioAction.h b/src/dev_ng/game/task/Scenario/info/ScenarioAction.h
 --- a/src/dev_ng/game/task/Scenario/info/ScenarioAction.h
 +++ b/src/dev_ng/game/task/Scenario/info/ScenarioAction.h
-@@ -7,7 +7,7 @@
+@@ -2,12 +2,12 @@
+ #define SCENARIO_ACTION_H
+ 
+ // Rage headers
+-#include "Data/Base.h"
++#include "data/base.h"
+ #include "atl/array.h"
  #include "parser/macros.h"
  
  // Game headers

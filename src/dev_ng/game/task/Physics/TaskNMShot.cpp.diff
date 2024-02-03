@@ -1,18 +1,23 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMShot.cpp b/src/dev_ng/game/task/Physics/TaskNMShot.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMShot.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMShot.cpp
-@@ -5,9 +5,9 @@
+@@ -5,11 +5,11 @@
  
  // C headers
  // Rage headers
 -#include "crskeleton/Skeleton.h"
-+#include "crskeleton/skeleton.h"
- #include "fragment/Cache.h"
+-#include "fragment/Cache.h"
 -#include "fragment/Instance.h"
+-#include "fragment/Type.h"
+-#include "fragment/TypeChild.h"
++#include "crskeleton/skeleton.h"
++#include "fragment/cache.h"
 +#include "fragment/instance.h"
- #include "fragment/Type.h"
- #include "fragment/TypeChild.h"
++#include "fragment/type.h"
++#include "fragment/typechild.h"
  #include "fragmentnm/messageparams.h"
+ #include "fragmentnm/manager.h"
+ #include "pharticulated/articulatedcollider.h"
 @@ -20,39 +20,39 @@
  #include "fwanimation/animmanager.h"
  #include "fwanimation/pointcloud.h"
@@ -37,7 +42,8 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMShot.cpp b/src/dev_ng/game/task/
 +#include "network/Objects/Entities/NetObjPlayer.h"
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
- #include "Peds/PedPlacement.h"
+-#include "Peds/PedPlacement.h"
++#include "Peds/pedplacement.h"
  #include "PedGroup/PedGroup.h"
 -#include "Physics/GtaInst.h"
 -#include "Physics/Physics.h"

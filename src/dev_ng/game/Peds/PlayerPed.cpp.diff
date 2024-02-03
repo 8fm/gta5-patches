@@ -69,7 +69,7 @@ diff --git a/src/dev_ng/game/Peds/PlayerPed.cpp b/src/dev_ng/game/Peds/PlayerPed
 -#include "Network/NetworkInterface.h"
 -#include "Network/players/NetworkPlayerMgr.h"
 +#include "modelinfo/VehicleModelInfo.h"
-+#include "modelinfo/weaponmodelinfo.h"
++#include "modelinfo/WeaponModelInfo.h"
 +#include "network/Events/NetworkEventTypes.h"
 +#include "network/NetworkInterface.h"
 +#include "network/Players/NetworkPlayerMgr.h"

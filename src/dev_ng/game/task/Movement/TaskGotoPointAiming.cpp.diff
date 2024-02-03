@@ -4,7 +4,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskGotoPointAiming.cpp b/src/dev_ng/
 @@ -1,15 +1,15 @@
  // File header
 -#include "Task/Movement/TaskGoToPointAiming.h"
-+#include "task/Movement/TaskGoToPointAiming.h"
++#include "task/Movement/TaskGotoPointAiming.h"
  
  // Game headers
  #include "Peds/PedIntelligence.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/companion_http.cpp b/src/dev_ng/game/system/companion_http.cpp
+--- a/src/dev_ng/game/system/companion_http.cpp
++++ b/src/dev_ng/game/system/companion_http.cpp
+@@ -4,7 +4,7 @@
+ 
+ #if RSG_PC
+ 
+-#include "Companion.h"
++#include "companion.h"
+ 
+ #if COMPANION_APP
+ #include "companion_http.h"

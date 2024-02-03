@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskMoveWander.cpp b/src/dev_ng/game/
 -#include "PathServer/PathServer.h"
 -#include "Peds/Ped.h"
 -#include "Task/General/TaskBasic.h"
-+#include "control/TrafficLights.h"
++#include "control/trafficlights.h"
 +#include "event/EventShocking.h"
 +#include "event/ShockingEvents.h"
 +#include "game/weather.h"
@@ -36,7 +36,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskMoveWander.cpp b/src/dev_ng/game/
 +#include "task/Movement/TaskGoTo.h"
 +#include "task/Movement/TaskNavMesh.h"
 +#include "task/Crimes/RandomEventManager.h"
-+#include "vehicleAi/Junctions.h"
++#include "vehicleAi/junctions.h"
  
  AI_OPTIMISATIONS()
  AI_NAVIGATION_OPTIMISATIONS()

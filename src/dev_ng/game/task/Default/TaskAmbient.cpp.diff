@@ -35,8 +35,9 @@ diff --git a/src/dev_ng/game/task/Default/TaskAmbient.cpp b/src/dev_ng/game/task
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
  #include "Peds/PedMoveBlend/PedMoveBlendOnFoot.h"
- #include "Peds/relationships.h"
+-#include "Peds/relationships.h"
 -#include "Scene/World/GameWorld.h"
++#include "Peds/Relationships.h"
 +#include "scene/world/GameWorld.h"
  #include "scene/EntityIterator.h"
  #include "streaming/streaming.h"		// For CStreaming::HasObjectLoaded(), etc.

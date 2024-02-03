@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/renderer/Deferred/DeferredLighting.cpp b/src/dev_ng/game/renderer/Deferred/DeferredLighting.cpp
 --- a/src/dev_ng/game/renderer/Deferred/DeferredLighting.cpp
 +++ b/src/dev_ng/game/renderer/Deferred/DeferredLighting.cpp
-@@ -26,7 +26,7 @@
+@@ -26,13 +26,13 @@
  #include "system/nelem.h"
  #include "system/xtl.h"
  #include "system/pad.h"
@@ -10,6 +10,13 @@ diff --git a/src/dev_ng/game/renderer/Deferred/DeferredLighting.cpp b/src/dev_ng
  #include "system/system.h"
  #include "system/memory.h"
  #include "vector/vector3.h"
+ #include "bank/bank.h"
+ #include "file/asset.h"
+-#include "Math/amath.h"
++#include "math/amath.h"
+ 
+ #if __D3D
+ 	#include "grcore/wrapper_d3d.h"
 @@ -46,7 +46,7 @@
  
  // framework headers

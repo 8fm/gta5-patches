@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Combat/CombatMeleeDebug.cpp b/src/dev_ng/game/task/Combat/CombatMeleeDebug.cpp
 --- a/src/dev_ng/game/task/Combat/CombatMeleeDebug.cpp
 +++ b/src/dev_ng/game/task/Combat/CombatMeleeDebug.cpp
-@@ -1,22 +1,22 @@
+@@ -1,23 +1,23 @@
  // File header
 -#include "Task/Combat/CombatMeleeDebug.h"
 +#include "task/Combat/CombatMeleeDebug.h"
@@ -25,12 +25,14 @@ diff --git a/src/dev_ng/game/task/Combat/CombatMeleeDebug.cpp b/src/dev_ng/game/
 -#include "Task/Movement/TaskGoTo.h"
 -#include "Task/Movement/TaskSlideToCoord.h"
 -#include "Weapons/Weapon.h"
+-#include "event/eventDamage.h"
 +#include "scene/world/GameWorld.h"
 +#include "task/Combat/TaskCombatMelee.h"
 +#include "task/General/TaskBasic.h"
 +#include "task/Movement/TaskGoTo.h"
 +#include "task/Movement/TaskSlideToCoord.h"
 +#include "weapons/Weapon.h"
- #include "event/eventDamage.h"
++#include "event/EventDamage.h"
  
  AI_OPTIMISATIONS()
+ 

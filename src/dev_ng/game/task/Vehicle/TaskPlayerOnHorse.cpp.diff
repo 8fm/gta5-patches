@@ -1,14 +1,16 @@
 diff --git a/src/dev_ng/game/task/Vehicle/TaskPlayerOnHorse.cpp b/src/dev_ng/game/task/Vehicle/TaskPlayerOnHorse.cpp
 --- a/src/dev_ng/game/task/Vehicle/TaskPlayerOnHorse.cpp
 +++ b/src/dev_ng/game/task/Vehicle/TaskPlayerOnHorse.cpp
-@@ -1,4 +1,4 @@
+@@ -1,27 +1,27 @@
 -#include "Task/Vehicle/TaskPlayerOnHorse.h"
 +#include "task/Vehicle/TaskPlayerOnHorse.h"
  
  #if ENABLE_HORSE
  
-@@ -7,21 +7,21 @@
- #include "event/eventDamage.h"
+ //Game headers
+ #include "camera/CamInterface.h"
+-#include "event/eventDamage.h"
++#include "event/EventDamage.h"
  #include "math/angmath.h"
  #include "Peds/Horse/horseComponent.h"
 -#include "Peds/Ped.h"

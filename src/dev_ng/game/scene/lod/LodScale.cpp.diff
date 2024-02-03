@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/scene/lod/LodScale.cpp b/src/dev_ng/game/scene/lod/LodScale.cpp
 --- a/src/dev_ng/game/scene/lod/LodScale.cpp
 +++ b/src/dev_ng/game/scene/lod/LodScale.cpp
-@@ -15,11 +15,11 @@
+@@ -14,12 +14,12 @@
+ #include "camera/cinematic/camera/tracking/CinematicStuntCamera.h"
  #include "camera/gameplay/GameplayDirector.h"
  #include "camera/viewports/ViewportManager.h"
- #include "cutscene/CutSceneCameraEntity.h"
+-#include "cutscene/CutSceneCameraEntity.h"
 -#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneCameraEntity.h"
 +#include "Cutscene/CutSceneManagerNew.h"
  #include "fwrenderer/RenderPhaseBase.h"
  #include "fwsys/timer.h"

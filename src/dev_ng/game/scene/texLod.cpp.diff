@@ -13,11 +13,11 @@ diff --git a/src/dev_ng/game/scene/texLod.cpp b/src/dev_ng/game/scene/texLod.cpp
 -#include "peds/rendering/pedvariationdebug.h"
 +#include "Peds/ped.h"
 +#include "Peds/PlayerPed.h"
-+#include "Peds/rendering/pedvariationdebug.h"
++#include "Peds/rendering/PedVariationDebug.h"
  #include "renderer/Renderer.h"
  #include "scene/Entity.h"
  #include "scene/lod/LodScale.h"
-@@ -75,9 +75,9 @@
+@@ -75,14 +75,14 @@
  #include "debug/TextureViewer/TextureViewer.h"
  #include "debug/TextureViewer/TextureViewerSearch.h" // for CTxdRef, GetAssociatedTxds_ModelInfo
  #include "debug/GtaPicker.h"
@@ -30,3 +30,9 @@ diff --git a/src/dev_ng/game/scene/texLod.cpp b/src/dev_ng/game/scene/texLod.cpp
  #include "scene/FocusEntity.h"
  
  #if __BANK
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "String.h"
++#include "string.h"
+ 
+ fwTxd*			CTexLod::m_pHighTxd = NULL;
+ fwTxd*			CTexLod::m_pHigh2Txd = NULL;

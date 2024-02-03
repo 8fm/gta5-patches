@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/scene/loader/mapTypes.cpp b/src/dev_ng/game/scene/loader/mapTypes.cpp
 --- a/src/dev_ng/game/scene/loader/mapTypes.cpp
 +++ b/src/dev_ng/game/scene/loader/mapTypes.cpp
-@@ -15,7 +15,7 @@
+@@ -15,13 +15,13 @@
  
  //game include 
  #include "modelinfo/BaseModelInfo.h"
@@ -9,4 +9,11 @@ diff --git a/src/dev_ng/game/scene/loader/mapTypes.cpp b/src/dev_ng/game/scene/l
 +#include "modelinfo/CompEntityModelInfo.h"
  #include "scene/scene_channel.h"
  #include "system/memmanager.h"
+ 
+ //pargen includes
+ #include "MapData_Extensions.h"
+-#include "mapTypes_parser.h"
++#include "MapTypes_parser.h"
+ 
+ SCENE_OPTIMISATIONS();
  

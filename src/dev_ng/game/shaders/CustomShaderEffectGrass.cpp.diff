@@ -1,7 +1,16 @@
 diff --git a/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp b/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
 --- a/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
 +++ b/src/dev_ng/game/shaders/CustomShaderEffectGrass.cpp
-@@ -15,11 +15,11 @@
+@@ -8,18 +8,18 @@
+ 
+ // Rage headers
+ #include "fwdrawlist/drawlistmgr.h"
+-#include "grmodel/ShaderFx.h"
+-#include "grmodel/Geometry.h"
++#include "grmodel/shaderfx.h"
++#include "grmodel/geometry.h"
+ #include "grcore/texturereference.h"
+ #include "rmcore/drawable.h"
  
  // Game headers
  #include "camera/CamInterface.h"

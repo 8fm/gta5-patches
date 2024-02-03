@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h b/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h
 --- a/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h
 +++ b/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h
-@@ -5,11 +5,11 @@
+@@ -1,15 +1,15 @@
+ #ifndef SCENARIO_ACTION_CONDITION_H
+ #define SCENARIO_ACTION_CONDITION_H
+ 
+-#include "Data/Base.h"
++#include "data/base.h"
  #include "atl/array.h"
  #include "parser/macros.h"
  

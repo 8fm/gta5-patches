@@ -10,13 +10,7 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseReflection.cpp b/s
  #include "fwscene/scan/Scan.h"
  #include "fwscene/scan/ScanResults.h"
  #include "fwscene/scan/RenderPhaseCullShape.h"
-@@ -56,14 +56,14 @@
- #include "camera/system/CameraManager.h"
- #include "camera/viewports/Viewport.h"
- #include "camera/viewports/ViewportManager.h"
--#include "Cutscene/CutSceneCameraEntity.h"
-+#include "cutscene/CutSceneCameraEntity.h"
- #include "Cutscene/CutSceneManagerNew.h"
+@@ -61,9 +61,9 @@
  #include "debug/LightProbe.h"
  #include "debug/rendering/DebugDeferred.h"
  #include "debug/TiledScreenCapture.h"

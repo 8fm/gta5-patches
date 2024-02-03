@@ -1,12 +1,19 @@
 diff --git a/src/dev_ng/game/scene/Physical.cpp b/src/dev_ng/game/scene/Physical.cpp
 --- a/src/dev_ng/game/scene/Physical.cpp
 +++ b/src/dev_ng/game/scene/Physical.cpp
-@@ -25,11 +25,11 @@
+@@ -19,17 +19,17 @@
+ #include "phsolver/contactmgr.h"
+ #include "physics/archetype.h"
+ #include "physics/sleep.h"
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
+ #include "fwmaths/Vector.h"
+ #include "fwscene/world/WorldLimits.h"
  #include "physics/constraintspherical.h"
  #include "physics/constraintfixed.h"
  #include "physics/constraintattachment.h"
 -#include "vehicles/metadata/vehicleseatinfo.h"
-+#include "Vehicles/Metadata/vehicleseatinfo.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
  #include "phbound/support.h"
  
  #if __BANK
@@ -15,20 +22,26 @@ diff --git a/src/dev_ng/game/scene/Physical.cpp b/src/dev_ng/game/scene/Physical
  #include "scene/EntityIterator.h"
  #endif
  
-@@ -43,34 +43,34 @@
- #include "Cloth/Cloth.h"
- #include "Cloth/ClothMgr.h"
+@@ -40,56 +40,56 @@
+ 
+ // Game headers
+ #include "modelinfo/ModelInfo.h"
+-#include "Cloth/Cloth.h"
+-#include "Cloth/ClothMgr.h"
++#include "cloth/Cloth.h"
++#include "cloth/ClothMgr.h"
  #include "control/gamelogic.h"
 -#include "Debug/debugscene.h"
-+#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
  #include "event/EventGroup.h"
  #include "event/EventScript.h"
 -#include "Frontend/MiniMapCommon.h"
-+#include "frontend/MiniMapCommon.h"
- #include "game/Cheat.h"
+-#include "game/Cheat.h"
 -#include "game/modelindices.h"
 -#include "modelinfo/Vehiclemodelinfo.h"
 -#include "Network/NetworkInterface.h"
++#include "frontend/MiniMapCommon.h"
++#include "game/cheat.h"
 +#include "game/ModelIndices.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "network/NetworkInterface.h"
@@ -64,14 +77,15 @@ diff --git a/src/dev_ng/game/scene/Physical.cpp b/src/dev_ng/game/scene/Physical
  #include "scene/Physical.h"
  #include "scene/scene.h"
 -#include "scene/world/gameWorld.h"
+-#include "scene/world/gameWorldWaterHeight.h"
 +#include "scene/world/GameWorld.h"
- #include "scene/world/gameWorldWaterHeight.h"
++#include "scene/world/GameWorldWaterHeight.h"
  #include "script/Handlers/GameScriptEntity.h"
  #include "script/script.h"
-@@ -78,18 +78,18 @@
+ #include "security/plugins/linkdatareporterplugin.h"
  #include "security/obfuscatedtypes.h"
  #include "system/TamperActions.h"
- #include "system/Timer.h"
+-#include "system/Timer.h"
 -#include "Task/Motion/TaskMotionBase.h"
 -#include "vehicles/Automobile.h"
 -#include "vehicles/Bike.h"
@@ -80,6 +94,7 @@ diff --git a/src/dev_ng/game/scene/Physical.cpp b/src/dev_ng/game/scene/Physical
 -#include "vehicles/Vehicle.h"
 -#include "vehicles/train.h"
 -#include "renderer/water.h"
++#include "system/timer.h"
 +#include "task/Motion/TaskMotionBase.h"
 +#include "Vehicles/Automobile.h"
 +#include "Vehicles/Bike.h"

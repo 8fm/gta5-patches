@@ -14,7 +14,7 @@ diff --git a/src/dev_ng/game/task/Default/TaskSlopeScramble.cpp b/src/dev_ng/gam
  #include "event/Events.h"
  #include "math/angmath.h"
 -#include "Debug/debugscene.h"
-+#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
  #include "Peds/PedIntelligence.h"
 -#include "System\Control.h"
 -#include "Task/Default/TaskPlayer.h"

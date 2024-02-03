@@ -9,8 +9,9 @@ diff --git a/src/dev_ng/game/Cutscene/CutsceneObject.h b/src/dev_ng/game/Cutscen
 +#include "Objects/object.h"
  #include "animation/AnimBones.h"
  #include "modelinfo/VehicleModelInfo.h"
- #include "Peds/rendering/pedVariationPack.h"
+-#include "Peds/rendering/pedVariationPack.h"
 -#include "peds/rendering/PedProps.h"
++#include "Peds/rendering/PedVariationPack.h"
 +#include "Peds/rendering/PedProps.h"
  
  enum eCUTSCENE_OBJECT_TYPE

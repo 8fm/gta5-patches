@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Combat/TaskNewCombat.cpp b/src/dev_ng/game/task/Combat/TaskNewCombat.cpp
 --- a/src/dev_ng/game/task/Combat/TaskNewCombat.cpp
 +++ b/src/dev_ng/game/task/Combat/TaskNewCombat.cpp
-@@ -8,73 +8,73 @@
+@@ -8,73 +8,72 @@
  #include <limits>
  
  // Game headers
@@ -9,7 +9,8 @@ diff --git a/src/dev_ng/game/task/Combat/TaskNewCombat.cpp b/src/dev_ng/game/tas
 +#include "ai/ambient/ConditionalAnimManager.h"
  #include "animation/FacialData.h"
  #include "animation/MovePed.h"
- #include "Audio/policescanner.h"
+-#include "Audio/policescanner.h"
++#include "audio/policescanner.h"
  #include "debug/DebugScene.h"
 -#include "Event/Events.h"
 -#include "Event/EventDamage.h"
@@ -31,7 +32,6 @@ diff --git a/src/dev_ng/game/task/Combat/TaskNewCombat.cpp b/src/dev_ng/game/tas
  #include "PedGroup/formation.h"
 -#include "Peds/Ped.h"
 -#include "Peds/Ped.h"
-+#include "Peds/ped.h"
 +#include "Peds/ped.h"
  #include "Peds/PedGeometryAnalyser.h"
  #include "Peds/PedIntelligence.h"
@@ -126,7 +126,7 @@ diff --git a/src/dev_ng/game/task/Combat/TaskNewCombat.cpp b/src/dev_ng/game/tas
  #include "Vehicles/Heli.h"
  #include "Vehicles/Metadata/VehicleMetadataManager.h"
  #include "Vehicles/Metadata/VehicleSeatInfo.h"
-@@ -91,7 +91,7 @@ AI_COVER_OPTIMISATIONS()
+@@ -91,7 +90,7 @@ AI_COVER_OPTIMISATIONS()
  NETWORK_OPTIMISATIONS()
  
  #if __BANK

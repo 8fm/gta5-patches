@@ -70,7 +70,7 @@ diff --git a/src/dev_ng/game/task/Service/Police/TaskPolicePatrol.cpp b/src/dev_
 +#include "task/General/TaskBasic.h"
 +#include "task/Movement/TaskNavMesh.h"
 +#include "task/Movement/TaskGoTo.h"
-+#include "task/Movement/TaskGoToPointAiming.h"
++#include "task/Movement/TaskGotoPointAiming.h"
 +#include "task/Physics/TaskBlendFromNM.h"
 +#include "task/Physics/TaskNMRelax.h"
 +#include "task/Vehicle/TaskCar.h"

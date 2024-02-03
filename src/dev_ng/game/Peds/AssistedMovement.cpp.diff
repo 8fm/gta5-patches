@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/Peds/AssistedMovement.cpp b/src/dev_ng/game/Peds/AssistedMovement.cpp
 --- a/src/dev_ng/game/Peds/AssistedMovement.cpp
 +++ b/src/dev_ng/game/Peds/AssistedMovement.cpp
-@@ -13,19 +13,19 @@
+@@ -7,25 +7,25 @@
+ #include "AssistedMovement.h"
+ 
+ // Rage includes
+-#include "Math/angmath.h"
++#include "math/angmath.h"
+ 
+ // Framework includes
  #include "fwmaths/vectorutil.h"
  
  // Game includes
@@ -9,7 +16,7 @@ diff --git a/src/dev_ng/game/Peds/AssistedMovement.cpp b/src/dev_ng/game/Peds/As
 -#include "Camera/Debug/DebugDirector.h"
 -#include "Camera/Helpers/Frame.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Debug/DebugDirector.h"
++#include "camera/debug/DebugDirector.h"
 +#include "camera/helpers/Frame.h"
  #include "pathserver/ExportCollision.h"
  #include "Peds/PedCapsule.h"

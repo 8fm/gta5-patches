@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/script/commands_event.cpp b/src/dev_ng/game/script/
 -#include "Script/Script_Channel.h"
 +#include "script/Handlers/GameScriptResources.h"
 +#include "script/script.h"
-+#include "script/Script_Channel.h"
++#include "script/script_channel.h"
  #include "task/Response/Info/AgitatedManager.h"
  
  // Macro to disable optimisations if set

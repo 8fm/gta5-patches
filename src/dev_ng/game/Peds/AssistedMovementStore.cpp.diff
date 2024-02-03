@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/Peds/AssistedMovementStore.cpp b/src/dev_ng/game/Peds/AssistedMovementStore.cpp
 --- a/src/dev_ng/game/Peds/AssistedMovementStore.cpp
 +++ b/src/dev_ng/game/Peds/AssistedMovementStore.cpp
-@@ -6,18 +6,18 @@
+@@ -1,23 +1,23 @@
+ #include "AssistedMovementStore.h"
+ 
+ // Rage includes
+-#include "Math/angmath.h"
++#include "math/angmath.h"
+ // Framework includes
  #include "ai/aichannel.h"
  #include "grcore/debugdraw.h"
  // R*N includes
@@ -11,7 +17,7 @@ diff --git a/src/dev_ng/game/Peds/AssistedMovementStore.cpp b/src/dev_ng/game/Pe
 -#include "Control/WaypointRecording.h"
 -#include "Control/WaypointRecordingRoute.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Debug/DebugDirector.h"
++#include "camera/debug/DebugDirector.h"
 +#include "camera/helpers/Frame.h"
 +#include "control/WaypointRecording.h"
 +#include "control/WaypointRecordingRoute.h"

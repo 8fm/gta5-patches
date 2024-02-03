@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/scene/lod/LodDebug.cpp b/src/dev_ng/game/scene/lod/LodDebug.cpp
 --- a/src/dev_ng/game/scene/lod/LodDebug.cpp
 +++ b/src/dev_ng/game/scene/lod/LodDebug.cpp
-@@ -12,7 +12,7 @@
+@@ -12,27 +12,27 @@
  #if __BANK
  
  #include "atl/string.h"
@@ -10,7 +10,12 @@ diff --git a/src/dev_ng/game/scene/lod/LodDebug.cpp b/src/dev_ng/game/scene/lod/
  #include "scene/AnimatedBuilding.h"
  #include "Objects/object.h"
  #include "bank/bank.h"
-@@ -24,15 +24,15 @@
+ #include "bank/bkmgr.h"
+ #include "debug/DebugScene.h"
+-#include "debug/editing/LiveEditing.h"
++#include "debug/Editing/LiveEditing.h"
+ #include "debug/GtaPicker.h"
+ #include "grcore/debugdraw.h"
  #include "grcore/setup.h"
  #include "input/mouse.h"
  #include "renderer/sprite2d.h"

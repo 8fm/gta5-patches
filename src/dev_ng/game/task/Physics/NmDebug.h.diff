@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/NmDebug.h b/src/dev_ng/game/task/Physics/NmDebug.h
+--- a/src/dev_ng/game/task/Physics/NmDebug.h
++++ b/src/dev_ng/game/task/Physics/NmDebug.h
+@@ -6,7 +6,7 @@
+ #define INC_NMDEBUG_H_
+ 
+ #include "animation/AnimBones.h"
+-#include "vector/Matrix34.h"
++#include "vector/matrix34.h"
+ 
+ #define NUM_FEEDBACK_HISTORY_ELEMENTS 30
+ 

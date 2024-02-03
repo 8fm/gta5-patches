@@ -20,7 +20,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskCrawl.cpp b/src/dev_ng/game/task/
 -#include "Peds/Ped.h"
 +#include "animation/MovePed.h"
 +#include "event/Event.h"
-+#include "ik/Solvers/RootSlopeFixupSolver.h"
++#include "ik/solvers/RootSlopeFixupSolver.h"
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
 -#include "Task/Motion/Locomotion/TaskMotionPed.h"

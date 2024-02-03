@@ -1,18 +1,23 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNM.cpp b/src/dev_ng/game/task/Physics/TaskNM.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNM.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNM.cpp
-@@ -5,9 +5,9 @@
+@@ -5,11 +5,11 @@
   
  // C headers  
  // Rage headers
 -#include "crskeleton/Skeleton.h"
-+#include "crskeleton/skeleton.h"
- #include "fragment/Cache.h"
+-#include "fragment/Cache.h"
 -#include "fragment/Instance.h"
+-#include "fragment/Type.h"
+-#include "fragment/TypeChild.h"
++#include "crskeleton/skeleton.h"
++#include "fragment/cache.h"
 +#include "fragment/instance.h"
- #include "fragment/Type.h"
- #include "fragment/TypeChild.h"
++#include "fragment/type.h"
++#include "fragment/typechild.h"
  #include "fragmentnm/messageparams.h"
+ #include "fragmentnm/manager.h"
+ #include "pharticulated/articulatedcollider.h"
 @@ -24,7 +24,7 @@
  #include "fwanimation/pointcloud.h"
  #include "fwdebug/picker.h"
@@ -43,8 +48,9 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNM.cpp b/src/dev_ng/game/task/Phys
 +#include "network/Objects/Prediction/NetBlenderPed.h"
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
- #include "Peds/PedPlacement.h"
+-#include "Peds/PedPlacement.h"
 -#include "Peds/Ped.h"
++#include "Peds/pedplacement.h"
 +#include "Peds/ped.h"
  #include "Peds/PlayerSpecialAbility.h"
  #include "PedGroup/PedGroup.h"
@@ -135,7 +141,7 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNM.cpp b/src/dev_ng/game/task/Phys
 -#include "Weapons/WeaponDebug.h"
 -#include "peds/peddebugvisualiser.h"
 +#include "weapons/WeaponDebug.h"
-+#include "Peds/peddebugvisualiser.h"
++#include "Peds/PedDebugVisualiser.h"
  #include "system/param.h"
  
  #if ART_ENABLE_BSPY

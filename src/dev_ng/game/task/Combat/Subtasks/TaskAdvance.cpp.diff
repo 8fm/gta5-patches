@@ -18,7 +18,7 @@ diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp b/src/dev_ng/g
  #include "task/Movement/TaskMoveToTacticalPoint.h"
  #include "task/Movement/TaskSeekEntity.h"
 -#include "network\events\NetworkEventTypes.h"
-+#include "network/events/NetworkEventTypes.h"
++#include "network/Events/NetworkEventTypes.h"
  
  AI_OPTIMISATIONS()
  

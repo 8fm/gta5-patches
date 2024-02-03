@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/frontend/CMapMenu.h b/src/dev_ng/game/frontend/CMapMenu.h
 --- a/src/dev_ng/game/frontend/CMapMenu.h
 +++ b/src/dev_ng/game/frontend/CMapMenu.h
-@@ -12,7 +12,7 @@
+@@ -12,10 +12,10 @@
  
  #include "atl/string.h"
  #include "parser/macros.h"
@@ -9,4 +9,8 @@ diff --git a/src/dev_ng/game/frontend/CMapMenu.h b/src/dev_ng/game/frontend/CMap
 +#include "text/TextFile.h"
  #include "CScriptMenu.h"
  #include "system/control.h"
- #include "frontend/minimapcommon.h"
+-#include "frontend/minimapcommon.h"
++#include "frontend/MiniMapCommon.h"
+ #include "frontend/ButtonEnum.h"
+ 
+ #define ZOOM_LEVEL_START_MP			(ZOOM_LEVEL_2)
