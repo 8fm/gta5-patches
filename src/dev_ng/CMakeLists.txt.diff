@@ -55,8 +55,8 @@ new file mode 100644
 +if (MSVC)
 +add_subdirectory(game/vs_project1_lib)
 +add_subdirectory(game/vs_project2_lib)
-+add_subdirectory(game/vs_project3_lib)
 +endif()
++add_subdirectory(game/vs_project3_lib)
 +add_subdirectory(game/vs_project4_lib)
 +add_subdirectory(game/VS_Project_network)
 +

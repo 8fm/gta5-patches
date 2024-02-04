@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/system/FileMgr.cpp b/src/dev_ng/game/system/FileMgr.cpp
 --- a/src/dev_ng/game/system/FileMgr.cpp
 +++ b/src/dev_ng/game/system/FileMgr.cpp
+@@ -5,7 +5,7 @@
+ #include "system/FileMgr.h"
+ 
+ // C headers
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "direct.h"
+ #pragma warning(disable: 4668)
+ #include <shlobj.h>
 @@ -54,14 +54,14 @@
  #include "frontend/WarningScreen.h"
  #include "modelinfo/ModelInfo.h"
@@ -111,3 +120,24 @@ diff --git a/src/dev_ng/game/system/FileMgr.cpp b/src/dev_ng/game/system/FileMgr
  		const char* pUpdateFolder;
  		if (PARAM_update.Get(pUpdateFolder))
  		{
+@@ -1180,7 +1180,7 @@ void CFileMgr::Initialise()
+ 	PF_START_STARTUPBAR("Init image list");
+ 	strPackfileManager::InitImageList();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// These need to be passed in once we know where they'll come from
+ 	ms_appPath = "\\Rockstar Games\\GTA V\\";
+ 	ms_userPath = "\\Rockstar Games\\GTA V\\";
+@@ -1347,9 +1347,11 @@ void CFileMgr::SetPCDir(atFixedString<MAX_DIRNAME_CHARS>& baseDir, const char* s
+ 
+ 		safecpy(ms_dirName, baseDir.c_str(), sizeof(ms_dirName));
+ 		USES_CONVERSION;
++#if !RSG_LINUX // TODO: add Linux support
+ 		int result = SHCreateDirectoryExW(NULL, reinterpret_cast<const wchar_t*>(UTF8_TO_WIDE(ms_dirName)), NULL);
+ 		if(result != ERROR_SUCCESS && result != ERROR_ALREADY_EXISTS)
+ 		{	Assertf(0, "Can't create directory: %s \n", ms_dirName);}
++#endif // !RSG_LINUX
+ 	}
+ 	ASSET.SetPath(ms_dirName);
+ }

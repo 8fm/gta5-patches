@@ -12,3 +12,23 @@ diff --git a/src/dev_ng/game/system/TamperActions.cpp b/src/dev_ng/game/system/T
  #include "vfx/systems/VfxWheel.h"
  #include "vfx/systems/VfxPed.h"
  
+@@ -23,7 +23,9 @@
+ 
+ #if TAMPERACTIONS_ENABLED
+ 
+-#if RSG_PC || RSG_DURANGO
++#if RSG_LINUX
++	#define NOINLINE __attribute__ ((__noinline__))
++#elif RSG_PC || RSG_DURANGO
+ 	#define NOINLINE __declspec(noinline)
+ #endif
+ 
+@@ -31,7 +33,7 @@
+ #define ASSERT_TAMPER_ACTION !__FINAL
+ 
+ // Fake assert so we get an assert-like message box in bank release
+-#if __ASSERT
++#if __ASSERT || RSG_LINUX
+ 	#define AssertMsgBox(msg) Assertf(false, msg)
+ #else
+ 	#define AssertMsgBox(msg) do { static bool ignored = false; \

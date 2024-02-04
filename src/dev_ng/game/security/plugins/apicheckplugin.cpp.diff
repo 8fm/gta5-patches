@@ -1,0 +1,57 @@
+diff --git a/src/dev_ng/game/security/plugins/apicheckplugin.cpp b/src/dev_ng/game/security/plugins/apicheckplugin.cpp
+--- a/src/dev_ng/game/security/plugins/apicheckplugin.cpp
++++ b/src/dev_ng/game/security/plugins/apicheckplugin.cpp
+@@ -25,7 +25,7 @@ RAGE_DEFINE_SUBCHANNEL(net, apicheck, DIAG_SEVERITY_DEBUG3)
+ 
+ static u32 sm_apicTrashValue	= 0;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <psapi.h>
+ 
+ #define API_NUMBER_OS_MODULES_TRACKED 5
+@@ -141,7 +141,7 @@ struct BTS {
+ extern scrCommandHash<scrCmd> s_CommandHash;
+ __forceinline void ApiCheckPlugin_CheckHashBucket(RageSecPluginGameReactionObject* obj)
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	s_CommandHash.Lookup(0);
+ 	BTS ** bts = (BTS**)(&s_CommandHash);
+ 	gnetDebug3("0x%08X - Start Time: %d", API_CHECK_ID, sysTimer::GetSystemMsTime());
+@@ -257,7 +257,7 @@ __forceinline void ApiCheckPlugin_CheckNativeAddress(RageSecPluginGameReactionOb
+ 		if (printOnce) { gnetDebug3("0x%08X - SHA - CheckNative - %p - %08X", API_CHECK_ID, nativePtr, *nativePtr); }
+ 
+ 		wc_Sha256Update(&lclCommandShaObj, (const byte*)nativePtr, sizeof(u32));
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		// Check to be sure it's in our process space
+ 		// Do NOT change this to IS_MODULE_OUT_OF_BOUNDARIES_OR_JUMP; optimized builds will have some jumps.
+ 		// This is intentional.
+@@ -305,7 +305,7 @@ __forceinline bool ApiCheckPlugin_CheckMultiplayer()
+ 
+ __forceinline void ApiCheckPlugin_CheckOSFunctionCalls(RageSecPluginGameReactionObject* obj)
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(IS_MODULE_OUT_OF_BOUNDARIES_OR_JUMP(OSModuleList::NTDLL, (u64)NtDll::NtQueryVirtualMemory))
+ 	{
+ 		gnetAssertf(false, "0x%08X - NtQueryVirtualMemory was unexpectedly hooked. Please create a B* on Amir Soofi", API_CHECK_ID);
+@@ -369,7 +369,7 @@ __forceinline void ApiCheckPlugin_CheckOSFunctionCalls(RageSecPluginGameReaction
+ 
+ bool ApiCheckPlugin_Create()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	//@@: location APICHECKPLUGIN_CREATE_ENTRY 
+ 	HANDLE hProcess = GetCurrentProcess();
+ 	
+@@ -409,7 +409,7 @@ bool ApiCheckPlugin_Work()
+ 
+ 		// 0x369920AC Will serve as an identifier for NTDLL, as those are the ones we're going to crush first
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		/* Check #1: Check if Ntdll and Kernel32 APIs are outside their respective module boundaries */
+ 		ApiCheckPlugin_CheckOSFunctionCalls(&obj);
+ 

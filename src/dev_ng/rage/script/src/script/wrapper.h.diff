@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/script/src/script/wrapper.h b/src/dev_ng/rage/script/src/script/wrapper.h
+--- a/src/dev_ng/rage/script/src/script/wrapper.h
++++ b/src/dev_ng/rage/script/src/script/wrapper.h
+@@ -1300,7 +1300,7 @@ inline void CallFunction(SCRIPTNAME void(*fn)(T0, T1, T2, T3, T4, T5, T6, T7, T8
+ 	ApiCheckPlugin_AddNative((u64)fn);\
+ 	::rage::scrThread::RegisterCommand(hashcode, scrWrapped_ ## name::Call SCRIPT_DEBUGGING_ONLY(, #name, __FILE__, ::rage::scrSignature(::rage::scrWrapper::GetFunctionSignature(fn))))
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #define SCR_REGISTER_SECURE_HONEYPOT(name, hashcode, fn) \
+ struct scrWrapped_ ## name {\
+ 	static void Call(::rage::scrThread::Info& s) ATTR_COLD {\

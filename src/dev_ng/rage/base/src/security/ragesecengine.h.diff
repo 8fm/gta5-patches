@@ -1,12 +1,37 @@
 diff --git a/src/dev_ng/rage/base/src/security/ragesecengine.h b/src/dev_ng/rage/base/src/security/ragesecengine.h
 --- a/src/dev_ng/rage/base/src/security/ragesecengine.h
 +++ b/src/dev_ng/rage/base/src/security/ragesecengine.h
-@@ -42,7 +42,7 @@
+@@ -28,25 +28,25 @@
+ // #defines for each feature in RageSec, such that we can conditionally turn them on and off.
+ #define RAGE_SEC_ENABLE_PLUGIN_ACTIONS					1
+ #define RAGE_SEC_TASK_API_CHECK							1 && (RSG_PC || RSG_DURANGO || RSG_ORBIS)
+-#define RAGE_SEC_TASK_BASIC_DEBUGGER_CHECK				1 && RSG_PC
+-#define RAGE_SEC_TASK_CLOCK_GUARD						1 && RSG_PC
++#define RAGE_SEC_TASK_BASIC_DEBUGGER_CHECK				1 && RSG_PC && !RSG_LINUX
++#define RAGE_SEC_TASK_CLOCK_GUARD						1 && RSG_PC && !RSG_LINUX
+ #define RAGE_SEC_TASK_VIDEO_MODIFICATION_CHECK			1 && RSG_PC
+ #define RAGE_SEC_TASK_LINK_DATA_REPORTER				1
+ #define RAGE_SEC_TASK_NETWORK_MONITOR_CHECK				0
+ #define RAGE_SEC_TASK_REVOLVING_CHECKER					1 && RSG_PC
+ #define RAGE_SEC_TASK_RTMA								1
+ #define RAGE_SEC_TASK_RTMA_HELPER						1
+-#define RAGE_SEC_TASK_SCRIPTHOOK						1 && RSG_PC
++#define RAGE_SEC_TASK_SCRIPTHOOK						1 && RSG_PC && !RSG_LINUX
+ #define RAGE_SEC_TASK_TUNABLES_VERIFIER					1 && RSG_PC
+-#define RAGE_SEC_TASK_VEH_DEBUGGER						1 && RSG_PC
++#define RAGE_SEC_TASK_VEH_DEBUGGER						1 && RSG_PC && !RSG_LINUX
  #define RAGE_SEC_IN_SEPARATE_THREAD						0
  #define RAGE_SEC_ENABLE_REACTIONS						1
  #define RAGE_SEC_ENABLE_REBALANCING						1
 -#define RAGE_SEC_ENABLE_VFT_ASSERT						1 && RSG_PC
+-#define RAGE_SEC_TASK_EC								1 && RSG_PC
 +#define RAGE_SEC_ENABLE_VFT_ASSERT						1 && RSG_PC && !RSG_LINUX
- #define RAGE_SEC_TASK_EC								1 && RSG_PC
++#define RAGE_SEC_TASK_EC								1 && RSG_PC && !RSG_LINUX
  #define RAGE_SEC_ENABLE_YUBIKEY							0 && RSG_PC
- #define RAGE_SEC_TASK_CE_DETECTION						1 && RSG_PC
+-#define RAGE_SEC_TASK_CE_DETECTION						1 && RSG_PC
+-#define RAGE_SEC_TASK_DLLNAMECHECK						1 && RSG_PC
++#define RAGE_SEC_TASK_CE_DETECTION						1 && RSG_PC && !RSG_LINUX
++#define RAGE_SEC_TASK_DLLNAMECHECK						1 && RSG_PC && !RSG_LINUX
+ #define RAGE_SEC_TASK_PLAYERNAME_MONITOR_CHECK			1
+ #define RAGE_SEC_TASK_SCRIPT_VARIABLE_VERIFY			1 && RSG_PC
+ 

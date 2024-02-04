@@ -121,3 +121,21 @@ diff --git a/src/dev_ng/game/script/commands_misc.cpp b/src/dev_ng/game/script/c
  #include "commands_misc.h"
  #endif
  
+@@ -5472,7 +5472,7 @@ s32 CommandGetBenchmarkPassCount()
+ 
+ void CommandQuitGame()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	CPauseMenu::SetGameWantsToExitToWindows(true);
+ 	NetworkInterface::GetNetworkExitFlow().StartShutdownTasks();
+ #endif
+@@ -5480,7 +5480,7 @@ void CommandQuitGame()
+ 
+ void CommandRestartGame()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	CPauseMenu::SetGameWantsToRestart(true); 
+ 	NetworkInterface::GetNetworkExitFlow().StartShutdownTasks(); 
+ #endif

@@ -47,6 +47,15 @@ diff --git a/src/dev_ng/game/script/script.cpp b/src/dev_ng/game/script/script.c
  #include "script/Handlers/GameScriptResources.h"
  #include "script/script_helper.h"
  #include "script/streamedscripts.h"
+@@ -1092,7 +1091,7 @@ void CTheScripts::InternalProcess(void)
+ 
+ 	NetworkInterface::UpdateBeforeScripts();
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	NtDll::VerifyProtection();
+ 	Kernel32::VerifyProtection();
+ #endif
 @@ -1485,7 +1484,7 @@ void CMissionReplayStats::EndReplayStatsStructure()
  }
  //	End of "When a Replay Mission is passed"
@@ -65,3 +74,12 @@ diff --git a/src/dev_ng/game/script/script.cpp b/src/dev_ng/game/script/script.c
  
  
  
+@@ -2691,7 +2690,7 @@ bool CDLCScript::ContainsScript(atLiteralHashValue nameHash)
+ 	return false;
+ }
+ 
+-#if RSG_PC && ENABLE_SCRIPT_TAMPER_CHECKER
++#if RSG_PC && ENABLE_SCRIPT_TAMPER_CHECKER && !RSG_LINUX
+ 
+ atRangeArray<bool, scrProgram::MAX_GLOBAL_BLOCKS> CScriptGlobalTamperChecker::ms_abValidPage;
+ bool CScriptGlobalTamperChecker::ms_bTamperingDetected = false;

@@ -10,3 +10,122 @@ diff --git a/src/dev_ng/game/system/SettingsDefaults.cpp b/src/dev_ng/game/syste
  
  #include "frontend/MobilePhone.h"
  
+@@ -142,7 +142,7 @@ void CreateRenderTarget(const char * DEV_ONLY(pName), grcRenderTargetType , int
+ 		SettingsDefaults::GetLoggingStream()->Write(theText, (int)strlen(theText));
+ 	}
+ #endif
+-	s64 textureSize = nWidth * nHeight * (nBitsPerPixel / 8) * (params ? (params->Multisample ? params->Multisample : 1) : 1);
++	s64 textureSize = nWidth * nHeight * (nBitsPerPixel / 8) * (params ? (params->Multisample ? (unsigned int)params->Multisample : 1) : 1);
+ 	const u64 RequiredAlignment =  (nWidth < 256 || nHeight < 256) ? D3DRUNTIME_MEMORYALIGNMENT : D3D_AMD_LARGEALIGNMENT;
+ 	textureSize = (textureSize + (RequiredAlignment - 1)) & ~(RequiredAlignment - 1);
+ 
+@@ -1776,6 +1776,9 @@ struct IntelDeviceInfoV2
+ #define GGF_E_D3D_ERROR				-4
+ long SettingsDefaults::getIntelDeviceInfo( unsigned int VendorId, IntelDeviceInfoHeader *pIntelDeviceInfoHeader, void *pIntelDeviceInfoBuffer )
+ {
++#if RSG_LINUX // TODO: add Linux support
++	return GGF_ERROR;
++#else
+ 	// The device information is stored in a D3D counter.
+ 	// We must create a D3D device, find the Intel counter 
+ 	// and query the counter info
+@@ -1973,6 +1976,7 @@ long SettingsDefaults::getIntelDeviceInfo( unsigned int VendorId, IntelDeviceInf
+ 	SAFE_RELEASE( pDevice );
+ 
+ 	return GGF_SUCCESS;
++#endif // RSG_LINUX
+ }
+ 
+ typedef enum
+@@ -2041,7 +2045,9 @@ void SettingsDefaults::initAdapter()
+ {
+ 	if (grcAdapterManager::GetInstance() == NULL) 
+ 	{
++#if !RSG_LINUX // TODO: add Linux support
+ 		m_hDXGI = LoadLibrary("dxgi.dll");
++#endif // !RSG_LINUX
+ 		grcAdapterManager::InitClass(DXGI_FORMAT_R8G8B8A8_UNORM, 1100);
+ 		m_bcreatedAdapter = true;
+ 	}
+@@ -2058,7 +2064,9 @@ void SettingsDefaults::shutdownAdapter()
+ 	else
+ 	{
+ 		grcAdapterManager::ShutdownClass();
++#if !RSG_LINUX // TODO: add Linux support
+ 		FreeLibrary((HINSTANCE)m_hDXGI);
++#endif // !RSG_LINUX
+ 	}
+ }
+ 
+@@ -2105,7 +2113,7 @@ void SettingsDefaults::initResolutionToMax()
+ 		pAdapter->GetMode(&oDisplayWindow, mode);
+ 		m_defaultDisplayWindow.uWidth = max(oDisplayWindow.uWidth, m_defaultDisplayWindow.uWidth);
+ 		m_defaultDisplayWindow.uHeight = max(oDisplayWindow.uHeight, m_defaultDisplayWindow.uHeight);
+-		m_defaultDisplayWindow.uRefreshRate = max(oDisplayWindow.uRefreshRate, m_defaultDisplayWindow.uRefreshRate);
++		m_defaultDisplayWindow.uRefreshRate = max((u32)oDisplayWindow.uRefreshRate, (u32)m_defaultDisplayWindow.uRefreshRate);
+ 	}
+ 	pAdapter->GetWidestMode (&m_defaultDisplayWindow);
+ 	m_defaultAspectRatio = (float)m_defaultDisplayWindow.uWidth / (float)m_defaultDisplayWindow.uHeight;
+@@ -2132,6 +2140,7 @@ void SettingsDefaults::GetResolutionToClosestMode(grcDisplayWindow& currentSetti
+ 
+ void SettingsDefaults::SetDXVersion()
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	int directXVersion = 1100;
+ 	switch (directXVersion) 
+ 	{
+@@ -2203,6 +2212,7 @@ void SettingsDefaults::SetDXVersion()
+ 				m_defaultDirectXVersion = 900;
+ 			}
+ 	}
++#endif // !RSG_LINUX
+ 
+ }
+ 
+@@ -2854,6 +2864,7 @@ void SettingsDefaults::InitializeToMaximumDefaultSettings()
+ 
+ void SettingsDefaults::LimitDefaultsForWeakCpu()
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	char vendorStr[12];
+ 	u32 cpuInfo[4];
+ 	__cpuid((int*)cpuInfo, 0);
+@@ -2882,6 +2893,7 @@ void SettingsDefaults::LimitDefaultsForWeakCpu()
+ 			m_Defaults.m_graphics.m_GrassQuality = CSettings::Low;
+ 		}
+ 	}
++#endif // !RSG_LINUX
+ }
+ 
+ void SettingsDefaults::minimumSpecNoCheapShaders() {
+@@ -2943,6 +2955,7 @@ void SettingsDefaults::PerformMinSpecTests()
+ 
+ void SettingsDefaults::VerifyCpuSpecs()
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	char vendorStr[12];
+ 	u32 cpuInfo[4];
+ 	__cpuid((int*)cpuInfo, 0);
+@@ -3002,6 +3015,7 @@ void SettingsDefaults::VerifyCpuSpecs()
+ 		// Unknown CPU Vendor. Might not be able to run the game.
+ 		DisplayMinReqMsgBox(ERR_SYS_MINREQ_CPU);
+ 	}
++#endif // !RSG_LINUX
+ }
+ 
+ void SettingsDefaults::DisplayMinReqMsgBox(int errorCode)
+@@ -3017,12 +3031,14 @@ void SettingsDefaults::DisplayMinReqMsgBox(int errorCode)
+ 		return;
+ #endif
+ 
++#if !RSG_LINUX
+ 	int msgBoxResult =  MessageBoxW(NULL, rage::diagErrorCodes::GetErrorMessageString(static_cast<rage::FatalErrorCode>(errorCode)), rage::diagErrorCodes::GetErrorMessageString(ERR_SYS_MINREQ_TITLE), MB_OKCANCEL | MB_ICONWARNING | MB_SETFOREGROUND | MB_TOPMOST);
+ 	if (msgBoxResult == IDCANCEL)
+ 	{
+ 		ShellExecuteW(NULL, L"open", rage::diagErrorCodes::GetErrorMessageString(ERR_SYS_MINREQ_URL), NULL, NULL, SW_SHOWMAXIMIZED);
+ 		ExitProcess(1);
+ 	}
++#endif // !RSG_LINUX
+ }
+ 
+ bool SettingsDefaults::IsLowQualitySystem(const Settings &settings)

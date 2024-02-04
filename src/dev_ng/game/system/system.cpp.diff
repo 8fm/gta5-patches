@@ -66,3 +66,39 @@ diff --git a/src/dev_ng/game/system/system.cpp b/src/dev_ng/game/system/system.c
  #endif	//!__NO_OUTPUT
  
  #define FORCE_FRAME_LIMIT (RSG_PC||RSG_DURANGO) // Please do not set this based on !RSG_FINAL -- that just leads to trouble
+@@ -255,7 +255,7 @@ void dlCmdEndRender::ExecuteStatic(dlCmdBase &)
+ #endif // FORCE_FRAME_LIMIT
+ static sysTimer gFrameTimer;
+ 
+-#if __D3D && __WIN32PC
++#if __D3D && __WIN32PC && !__LINUX
+ static D3DDEVINFO_RESOURCEMANAGER  gD3dResourceData;
+ #endif
+ 
+@@ -273,7 +273,7 @@ __THREAD bool gb_mainThread = false;
+ 
+ void SetWindowsSystemParameters()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	SystemParametersInfo(SPI_SETSCREENSAVEACTIVE, FALSE, NULL, 0);
+ #endif
+ }
+@@ -611,7 +611,7 @@ bool CSystem::Init(const char* pAppName)
+ 		GRCDEVICE.SetLetterBox(false);
+ #endif
+ 
+-#if __WIN32PC && __BANK
++#if __WIN32PC && __BANK && !__LINUX
+ 	// Our "native" windows are incompatible with render thread owning the D3D device.  Use RAG or local widgets.
+ 	bkWidget::DisableWindows();
+ #endif
+@@ -678,7 +678,7 @@ bool CSystem::Init(const char* pAppName)
+ 		gRenderThreadInterface.Init(PRIO_RENDER_THREAD,RenderThreadInit);
+ 
+ 		CSystem::ClearThisThreadId(SYS_THREAD_RENDER); // this is no longer the render thread
+-#if __BANK && RSG_PC
++#if __BANK && RSG_PC && !RSG_LINUX
+ 		grcResourceCache::GetInstance().InitWidgets();
+ #endif // __BANK
+ 

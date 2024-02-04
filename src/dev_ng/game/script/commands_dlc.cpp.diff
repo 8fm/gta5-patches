@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/commands_dlc.cpp b/src/dev_ng/game/script/commands_dlc.cpp
+--- a/src/dev_ng/game/script/commands_dlc.cpp
++++ b/src/dev_ng/game/script/commands_dlc.cpp
+@@ -54,7 +54,7 @@ bool CommandIsDLCPresent(int hash)
+ 	{
+ 		return NetworkInterface::IsRockstarDev();
+ 	}
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+     //This DLC is a pure backend entitlement on PC.
+     else if ( hash == (int)ATSTRINGHASH("spPreorder",0xFC1D67B6))
+     {

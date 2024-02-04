@@ -19,3 +19,51 @@ diff --git a/src/dev_ng/game/system/SettingsManager.cpp b/src/dev_ng/game/system
  
  #include "system/SettingsDefaults.h"
  
+@@ -1243,7 +1243,7 @@ void CSettingsManager::Load()
+ 	else
+ 		Displayf("[settings] Loaded settings successfully.");
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (m_settings.m_video.m_AdapterIndex >= grcAdapterManager::GetInstance()->GetAdapterCount())
+ 	{
+ 		m_settings.m_video.m_AdapterIndex = 0;
+@@ -1286,7 +1286,7 @@ void CSettingsManager::Load()
+ 
+ bool CSettingsManager::Save(Settings& saveSettings)
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	IDXGIAdapter* pDeviceAdapter = ((const grcAdapterD3D11*)grcAdapterManager::GetInstance()->GetAdapter(saveSettings.m_video.m_AdapterIndex))->GetDeviceAdapter();
+ 	AssertMsg(pDeviceAdapter, "Could not get the current device adapter");
+ 
+@@ -1597,12 +1597,14 @@ void CSettingsManager::ResolveDeviceChanged()
+ 	}
+ 	else
+ 	{
++#if !RSG_LINUX
+ 		LONG_PTR result = GetWindowLongPtr( g_hwndMain, GWL_STYLE );
+ 		if (result & WS_POPUP)
+ 		{
+ 			m_settings.m_video.m_Windowed = 2;
+ 		}
+ 		else
++#endif // !RSG_LINUX
+ 		{
+ 			m_settings.m_video.m_Windowed = 1;
+ 		}
+@@ -1883,12 +1885,14 @@ Settings CSettingsManager::GetUISettings()
+ 	}
+ 	else
+ 	{
++#if !RSG_LINUX
+ 		LONG_PTR result = GetWindowLongPtr( g_hwndMain, GWL_STYLE );
+ 		if (result & WS_POPUP)
+ 		{
+ 			internalSettings.m_video.m_Windowed = 2;
+ 		}
+ 		else
++#endif // !RSG_LINUX
+ 		{
+ 			internalSettings.m_video.m_Windowed = 1;
+ 		}

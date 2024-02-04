@@ -61,3 +61,66 @@ diff --git a/src/dev_ng/game/Stats/StatsDataMgr.cpp b/src/dev_ng/game/Stats/Stat
  #endif
  
  #if __ASSERT
+@@ -2208,7 +2208,7 @@ CStatsDataMgr::Clear()
+ 	while(m_aStatsData.GetCount() > 0)
+ 	{
+ 		sStatDataPtr* ppStat = *m_aStatsData.Begin();
+-		sStatData*     pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : 0;
++		sStatData*     pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : nullptr;
+ 
+ 		if (pStat)
+ 		{
+@@ -3156,7 +3156,7 @@ CStatsDataMgr::HandleEventProfileStats(const rlProfileStatsEvent* evt)
+ 			if(statVerify(synchEvt->m_Value))
+ 			{
+ 				sStatDataPtr* ppStat = GetStatPtr(STAT_ID(synchEvt->m_StatId));
+-				sStatData* pStat     = ppStat && ppStat->KeyIsvalid() ? *ppStat : 0;
++				sStatData* pStat     = ppStat && ppStat->KeyIsvalid() ? *ppStat : nullptr;
+ 
+ 				if(pStat)
+ 				{
+@@ -3298,7 +3298,7 @@ CStatsDataMgr::HandleEventProfileStats(const rlProfileStatsEvent* evt)
+ 			if(statVerify(localValueEvt->m_Value))
+ 			{
+ 				sStatDataPtr* ppStat = GetStatPtr(STAT_ID(localValueEvt->m_StatId));
+-				sStatData* pStat     = ppStat && ppStat->KeyIsvalid() ? *ppStat : 0;
++				sStatData* pStat     = ppStat && ppStat->KeyIsvalid() ? *ppStat : nullptr;
+ 				if(pStat)
+ 				{
+ 					if (pStat->GetDesc().GetSynched())
+@@ -3352,7 +3352,7 @@ CStatsDataMgr::HandleEventProfileStats(const rlProfileStatsEvent* evt)
+ #endif // __DEV
+ 
+ 			sStatDataPtr *ppStat = GetStatPtr(STAT_ID(flushEvt->m_StatId));
+-			sStatData *pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : 0;
++			sStatData *pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : nullptr;
+ 
+ 			// This event is triggered in response to us publishing the stat, so it should be safe to verify that
+ 			// this stat is indeed a profile stat.
+@@ -3386,7 +3386,7 @@ void
+ CStatsDataMgr::OnSynchCommunityStats(const int statId, const float result)
+ {
+ 	sStatDataPtr* ppStat = GetStatPtr(STAT_ID(statId));
+-	sStatData*     pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : 0;
++	sStatData*     pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : nullptr;
+ 	if (pStat && statVerify(pStat->GetDesc().GetIsCommunityStat()) && statVerify(!pStat->GetDesc().GetIsProfileStat()))
+ 	{
+ 		if(pStat->GetDesc().GetIsOnlineData())
+@@ -4693,7 +4693,7 @@ void CStatsDataMgr::Bank_CreateSpWidgets()
+ 					while ((iter != CStatsMgr::GetStatsDataMgr().StatIterEnd()))
+ 					{
+ 						sStatDataPtr* ppStat = *iter;
+-						sStatData*     pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : 0;
++						sStatData*     pStat = ppStat && ppStat->KeyIsvalid() ? *ppStat : nullptr;
+ 
+ 						if (pStat && !pStat->GetDesc().GetIsOnlineData())
+ 						{
+@@ -4895,7 +4895,7 @@ void CStatsDataMgr::Bank_CreateMpWidgets()
+ void
+ CStatsDataMgr::Bank_AddStatWidgetValue(bkBank* bank, sStatDataPtr* ppStat)
+ {
+-	sStatData* pStat = ppStat ? *ppStat : 0;
++	sStatData* pStat = ppStat ? *ppStat : nullptr;
+ 	
+ 	if (bank && pStat && !pStat->IsObfuscated())
+ 	{

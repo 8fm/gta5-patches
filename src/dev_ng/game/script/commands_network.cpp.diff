@@ -1,6 +1,12 @@
 diff --git a/src/dev_ng/game/script/commands_network.cpp b/src/dev_ng/game/script/commands_network.cpp
 --- a/src/dev_ng/game/script/commands_network.cpp
 +++ b/src/dev_ng/game/script/commands_network.cpp
+@@ -1,4 +1,4 @@
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <tchar.h>
+ #endif
+ 
 @@ -20,32 +20,32 @@
  #include "fwanimation/directorcomponentsyncedscene.h"
  #include "fwnet/netarrayhandler.h"
@@ -162,3 +168,74 @@ diff --git a/src/dev_ng/game/script/commands_network.cpp b/src/dev_ng/game/scrip
  #include "debug/DebugScene.h"
  #endif // __DEV
  
+@@ -438,7 +438,7 @@ bool CommandNetworkIsGuest()
+ 
+ bool CommandNetworkIsScOfflineMode()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	return g_rlPc.GetUiInterface()->IsReadyToAcceptCommands() && g_rlPc.GetUiInterface()->IsOfflineMode();
+ #else
+ 	return false;
+@@ -6574,7 +6574,7 @@ bool CommandNetworkPlayerIsRockstarDev(int nPlayerIndex)
+ }
+ 
+ #if (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC
+-__declspec(noinline) bool CommandNetworkPlayerIsCheater(int nPlayerIndex)
++ROCKY_NOINLINE bool CommandNetworkPlayerIsCheater(int nPlayerIndex)
+ #else
+ bool CommandNetworkPlayerIsCheater(int nPlayerIndex)
+ #endif
+@@ -7286,14 +7286,14 @@ void CommandNetworkRemainInGameChat(const bool bRemainInGameChat)
+ 
+ void CommandNetworkSetScriptControllingTeams(const bool WIN32PC_ONLY(bOverride))
+ {
+-	#if RSG_PC
++	#if RSG_PC && !RSG_LINUX
+ 	NetworkInterface::GetTextChat().SetScriptControllingTeams(bOverride);
+ 	#endif
+ }
+ 
+ bool CommandNetworkSetonSameTeamForText(const int WIN32PC_ONLY(playerIndex), const bool WIN32PC_ONLY(bSameTeam) )
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ 	if (!NetworkInterface::GetTextChat().GetScriptControllingTeams())
+ 		return false;
+@@ -7346,7 +7346,7 @@ void CommandNetworkSetTeamOnlyChat(const bool teamOnlyChat)
+ 
+ void CommandNetworkSetTeamOnlyTextChat(const bool WIN32PC_ONLY(teamOnlyChat))
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	WriteToScriptLogFile(SCRIPTLOG_ALWAYS, "NETWORK_SET_TEAM_ONLY_TEXT_CHAT");
+ 	NetworkInterface::GetTextChat().SetTeamOnlyChat(teamOnlyChat);
+ #endif
+@@ -7567,7 +7567,7 @@ void CommandNetworkDisableVoiceBandwidthRestriction(const int playerIndex)
+ 
+ void CommandNetworkSetSpectatorToNonSpectatorTextChat(const bool WIN32PC_ONLY(isEnabled))
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	NetworkInterface::GetTextChat().SetSpectatorToNonSpectatorChat(isEnabled);
+ #endif // RSG_PC
+ }
+@@ -14562,7 +14562,7 @@ bool CommandCheckForStoreAge()
+ }
+ 
+ #if (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC
+-__declspec(noinline) bool CommandNetworkIsCheater()
++ROCKY_NOINLINE bool CommandNetworkIsCheater()
+ #else
+ bool CommandNetworkIsCheater()
+ #endif
+@@ -16755,7 +16755,7 @@ bool CommandIsTitleUpdateRequired()
+ void  CommandNetworkQuitMultiplayerToDesktop()
+ {
+ 	scriptDebugf1("%s:NETWORK_QUIT_MP_TO_DESKTOP - Called.", CTheScripts::GetCurrentScriptNameAndProgramCounter());
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	NetworkInterface::GetNetworkExitFlow().StartExitSaveFlow();
+ #else
+ 	scriptAssertf(0, "%s:NETWORK_QUIT_MP_TO_DESKTOP - This function is PC only", CTheScripts::GetCurrentScriptNameAndProgramCounter());
