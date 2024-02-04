@@ -1,14 +1,20 @@
 diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp b/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp
-@@ -21,11 +21,11 @@
+@@ -17,15 +17,15 @@
+ #include "crskeleton/skeletondata.h"
+ #include "diag/art_channel.h"
+ #include "file/default_paths.h"
+-#include "fragment/typeGroup.h"
++#include "fragment/typegroup.h"
  #include "parser/manager.h"
  #include "parser/psofile.h"
  #include "parser/restparserservices.h"
 -#include "phbound/BoundBox.h"
-+#include "phbound/boundbox.h"
- #include "phbound/BoundCapsule.h"
+-#include "phbound/BoundCapsule.h"
 -#include "phbound/BoundComposite.h"
++#include "phbound/boundbox.h"
++#include "phbound/boundcapsule.h"
 +#include "phbound/boundcomposite.h"
  #include "phbound/boundbvh.h"
 -#include "phBound/support.h"
@@ -36,7 +42,7 @@ diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp b/src/dev_ng/game/mo
  #include "modelinfo/VehicleModelInfoColors.h"
  #include "modelinfo/VehicleModelInfoExtensions.h"
  #include "modelinfo/VehicleModelInfoPlates.h"
-@@ -63,10 +63,10 @@
+@@ -63,11 +63,11 @@
  #include "modelinfo/VehicleModelInfoVariation.h"
  #include "modelinfo/VehicleModelInfo.h"
  #include "modelinfo/VehicleModelInfoData_parser.h"
@@ -45,10 +51,12 @@ diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp b/src/dev_ng/game/mo
  #include "pathserver/ExportCollision.h"
  #include "pathserver/NavGenParam.h"
 -#include "physics/gtainst.h"
+-#include "physics/floater.h"
 +#include "physics/gtaInst.h"
- #include "physics/floater.h"
++#include "physics/Floater.h"
  #include "renderer/HierarchyIds.h"
  #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "renderer/DrawLists/drawList.h"
 @@ -80,28 +80,28 @@
  #include "streaming/streaming.h"
  #include "streaming/streamingvisualize.h"
@@ -80,7 +88,7 @@ diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp b/src/dev_ng/game/mo
 +#include "Vehicles/Metadata/VehicleEntryPointInfo.h"
 +#include "Vehicles/Metadata/VehicleLayoutInfo.h"
 +#include "Vehicles/Metadata/VehicleScenarioLayoutInfo.h"
-+#include "Vehicles/HandlingMgr.h"
++#include "Vehicles/handlingMgr.h"
 +#include "Vehicles/Planes.h"
 +#include "Vehicles/train.h"
 +#include "Vehicles/vehicle.h"

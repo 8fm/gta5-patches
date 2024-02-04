@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp b/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp
 --- a/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp
 +++ b/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp
-@@ -10,12 +10,12 @@
+@@ -3,19 +3,19 @@
+ // CREATED : 30-09-2009
+ 
+ // class header
+-#include "Peds/PedIntelligence/PedAiLod.h"
++#include "Peds/PedIntelligence/PedAILod.h"
+ 
+ // Rage headers
+ #include "grcore/debugdraw.h"
  
  // Game headers
  #include "ai/stats.h"

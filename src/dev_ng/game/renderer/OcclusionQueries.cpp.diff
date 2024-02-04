@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/renderer/OcclusionQueries.cpp b/src/dev_ng/game/renderer/OcclusionQueries.cpp
 --- a/src/dev_ng/game/renderer/OcclusionQueries.cpp
 +++ b/src/dev_ng/game/renderer/OcclusionQueries.cpp
-@@ -10,7 +10,7 @@
+@@ -10,8 +10,8 @@
  
  #include "renderer/OcclusionQueries.h"
  #include "renderer/Deferred/DeferredConfig.h"
 -#include "renderer/Sprite2d.h"
+-#include "system/FindSize.h"
 +#include "renderer/sprite2d.h"
- #include "system/FindSize.h"
++#include "system/findsize.h"
  
  atRangeArray<OcclusionQueries::OcclusionQuery,MAX_OCCLUSION_QUERIES> OcclusionQueries::s_OcclusionQueryArray;
+ atFreeList<u8,MAX_OCCLUSION_QUERIES> OcclusionQueries::s_OcclusionQueryFreeList;

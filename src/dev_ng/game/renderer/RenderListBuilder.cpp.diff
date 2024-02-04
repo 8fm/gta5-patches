@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/renderer/RenderListBuilder.cpp b/src/dev_ng/game/renderer/RenderListBuilder.cpp
 --- a/src/dev_ng/game/renderer/RenderListBuilder.cpp
 +++ b/src/dev_ng/game/renderer/RenderListBuilder.cpp
-@@ -24,7 +24,7 @@
+@@ -19,12 +19,12 @@
+ #include "fwscene/scan/Scan.h"
+ 
+ // GTA includes
+-#include "entities/EntityDrawHandler.h"
++#include "Entities/EntityDrawHandler.h"
+ #include "physics/physics.h"
  #include "renderer/Deferred/DeferredLighting.h"
  #include "renderer/Entities/EntityDrawHandler.h"
  #include "renderer/Entities/InstancedEntityRenderer.h"
@@ -19,3 +25,12 @@ diff --git a/src/dev_ng/game/renderer/RenderListBuilder.cpp b/src/dev_ng/game/re
  #include "renderer/TreeImposters.h"
  #include "renderer/PlantsGrassRendererSwitches.h"
  #include "scene/lod/LodDrawable.h"
+@@ -45,7 +45,7 @@
+ #include "Objects/object.h"
+ #include "Vehicles/vehicle.h"
+ #include "renderer/rendertargets.h"
+-#include "vfx/particles/ptfxmanager.h"
++#include "vfx/particles/PtFxManager.h"
+ 
+ RENDER_OPTIMISATIONS()
+ //OPTIMISATIONS_OFF()

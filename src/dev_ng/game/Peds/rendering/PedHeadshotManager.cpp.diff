@@ -9,8 +9,8 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp b/src/dev_ng/
 -#include "crSkeleton/SkeletonData.h"
 -#include "crSkeleton/BoneData.h"
 +#include "crskeleton/skeleton.h"
-+#include "crskeleton/SkeletonData.h"
-+#include "crskeleton/BoneData.h"
++#include "crskeleton/skeletondata.h"
++#include "crskeleton/bonedata.h"
  #include "streaming/streamingengine.h"
  #include "system/memory.h"
  

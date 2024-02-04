@@ -10,15 +10,15 @@ diff --git a/src/dev_ng/game/renderer/Shadows/ParaboloidShadows.cpp b/src/dev_ng
  #include "grcore/allocscope.h"
  #include "grcore/debugdraw.h"
  #include "system/typeinfo.h"
-@@ -17,20 +17,20 @@
+@@ -17,14 +17,14 @@
  #include "renderer/Lights/LightEntity.h"
  #include "renderer/Lights/LightCulling.h"
  #include "renderer/Util/Util.h" // SAFE_DELETE, SAFE_RELEASE
 -#include "renderer/spupm/spupmmgr.h"
 -#include "renderer/shadows/shadowsprivate.h"
 -#include "renderer/shadows/paraboloidshadows.h"
-+#include "renderer/SpuPM/spupmmgr.h"
-+#include "renderer/Shadows/shadowsprivate.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
++#include "renderer/Shadows/ShadowsPrivate.h"
 +#include "renderer/Shadows/ParaboloidShadows.h"
  #include "scene/portals/Portal.h"
  #include "scene/portals/PortalTracker.h"
@@ -30,10 +30,3 @@ diff --git a/src/dev_ng/game/renderer/Shadows/ParaboloidShadows.cpp b/src/dev_ng
  
  #if __BANK
  #include "debug/Rendering/DebugLighting.h"
- #include "debug/Rendering/DebugLights.h"
- #include "debug/BudgetDisplay.h"
--#include "Cutscene/CutSceneDebugManager.h"
-+#include "cutscene/CutSceneDebugManager.h"
- #endif
- 
- #if RSG_ORBIS

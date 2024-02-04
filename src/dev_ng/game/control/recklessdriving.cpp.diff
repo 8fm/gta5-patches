@@ -15,9 +15,10 @@ diff --git a/src/dev_ng/game/control/recklessdriving.cpp b/src/dev_ng/game/contr
 +#include "vehicleAi/pathfind.h"
 +#include "Vehicles/Bike.h"
  #include "physics/gtamaterial.h"
- #include "physics/gtamaterialmanager.h"
+-#include "physics/gtamaterialmanager.h"
 -#include "modelinfo/vehiclemodelinfo.h"
 -#include "stats/StatsMgr.h"
++#include "physics/gtaMaterialManager.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "Stats/StatsMgr.h"
  

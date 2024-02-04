@@ -1,6 +1,17 @@
 diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
 --- a/src/dev_ng/game/game/weather.cpp
 +++ b/src/dev_ng/game/game/weather.cpp
+@@ -12,8 +12,8 @@
+ //  INCLUDES
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Weather.h"
+-#include "Weather_parser.h"
++#include "weather.h"
++#include "weather_parser.h"
+ 
+ // Rage headers
+ #include "pheffects/wind.h"
 @@ -21,29 +21,29 @@
  #include "vectormath/classfreefuncsv.h"
  
@@ -40,7 +51,7 @@ diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
 +#include "scene/portals/Portal.h"
 +#include "system/controlMgr.h"
 +#include "system/TamperActions.h"
-+#include "timecycle/Timecycle.h"
++#include "timecycle/TimeCycle.h"
  #include "timecycle/TimeCycleConfig.h"
 -#include "Vfx/VfxHelper.h"
 -#include "Vfx/Systems/VfxWeather.h"

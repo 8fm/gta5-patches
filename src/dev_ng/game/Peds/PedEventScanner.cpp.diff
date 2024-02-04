@@ -6,9 +6,11 @@ diff --git a/src/dev_ng/game/Peds/PedEventScanner.cpp b/src/dev_ng/game/Peds/Ped
  
  // rage headers
 -#include "Profile/timebars.h"
+-#include "phbound/BoundSphere.h"
+-#include "phcore/Segment.h"
 +#include "profile/timebars.h"
- #include "phbound/BoundSphere.h"
- #include "phcore/Segment.h"
++#include "phbound/boundsphere.h"
++#include "phcore/segment.h"
  #include "fragmentnm/nm_channel.h"
  
  // Framework headers
@@ -50,7 +52,7 @@ diff --git a/src/dev_ng/game/Peds/PedEventScanner.cpp b/src/dev_ng/game/Peds/Ped
 +#include "event/ShockingEvents.h"
 +#include "event/system/EventData.h"
 +#include "event/system/EventDataManager.h"
-+#include "game/Cheat.h"
++#include "game/cheat.h"
 +#include "game/localisation.h"
 +#include "game/ModelIndices.h"
  #include "game/Riots.h"

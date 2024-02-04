@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/renderer/TreeImposters.cpp b/src/dev_ng/game/renderer/TreeImposters.cpp
 --- a/src/dev_ng/game/renderer/TreeImposters.cpp
 +++ b/src/dev_ng/game/renderer/TreeImposters.cpp
-@@ -11,7 +11,7 @@
+@@ -11,12 +11,12 @@
  #include "file/asset.h"
  //#include "fwmaths/Maths.h"
  #include "fwmaths/random.h"
@@ -10,12 +10,20 @@ diff --git a/src/dev_ng/game/renderer/TreeImposters.cpp b/src/dev_ng/game/render
  #include "grcore/image.h"
  #include "grcore/vertexbuffer.h"
  #include "grcore/vertexdecl.h"
-@@ -28,7 +28,7 @@
+ #include "grmodel/modelfactory.h"
+-#include "grModel/shaderFX.h"
++#include "grmodel/shaderfx.h"
+ #include "grmodel/shadergroup.h"
+ #include "pheffects/wind.h"
+ #include "rmcore/drawable.h"
+@@ -28,8 +28,8 @@
  #include "game/wind.h"	
  #include "renderer/Renderer.h"
  #include "renderer/rendertargets.h"
 -#include "renderer/renderthread.h"
+-#include "scene/Scene.h"
 +#include "renderer/RenderThread.h"
- #include "scene/Scene.h"
++#include "scene/scene.h"
  #include "shaders/CustomShaderEffectBase.h"
  #include "shaders/CustomShaderEffectTree.h"
+ #include "system/param.h"

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/physics/gtaInst.cpp b/src/dev_ng/game/physics/gtaInst.cpp
 --- a/src/dev_ng/game/physics/gtaInst.cpp
 +++ b/src/dev_ng/game/physics/gtaInst.cpp
-@@ -5,48 +5,48 @@
+@@ -5,57 +5,57 @@
  // Game headers
  #include "ai/debug/types/AnimationDebugInfo.h"
  #include "audio/collisionaudioentity.h"
@@ -41,7 +41,7 @@ diff --git a/src/dev_ng/game/physics/gtaInst.cpp b/src/dev_ng/game/physics/gtaIn
 -#include "Task/Physics/TaskRageRagdoll.h"
 -#include "Task/Combat/TaskDamageDeath.h"
 +#include "task/Motion/Locomotion/TaskMotionPed.h"
-+#include "task/physics/NmDebug.h"
++#include "task/Physics/NmDebug.h"
 +#include "task/Physics/TaskNM.h"
 +#include "task/Physics/TaskNMBalance.h"
 +#include "task/Physics/TaskNMSlungOverShoulder.h"
@@ -72,3 +72,15 @@ diff --git a/src/dev_ng/game/physics/gtaInst.cpp b/src/dev_ng/game/physics/gtaIn
  #include "game/ModelIndices.h"
  
  // Rage headers
+ #include "crskeleton/skeleton.h"
+ #include "crskeleton/skeletondata.h"
+ #include "fragmentnm/manager.h"
+-#include "fragmentnm/nm_channel.h "
+-#include "fragment/typeChild.h"
+-#include "fragment/typeGroup.h"
++#include "fragmentnm/nm_channel.h"
++#include "fragment/typechild.h"
++#include "fragment/typegroup.h"
+ #include "fwanimation/animmanager.h"
+ #include "fwanimation/animdirector.h"
+ #include "fwanimation/directorcomponentsyncedscene.h"

@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/renderer/Util/Util.cpp b/src/dev_ng/game/renderer/U
  #include "fwutil/xmacro.h"
  
 -#include "renderer/util/util.h"
-+#include "renderer/Util/util.h"
++#include "renderer/Util/Util.h"
  
  #if !__NO_OUTPUT
  

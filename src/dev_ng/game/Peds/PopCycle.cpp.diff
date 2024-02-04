@@ -1,7 +1,23 @@
 diff --git a/src/dev_ng/game/Peds/PopCycle.cpp b/src/dev_ng/game/Peds/PopCycle.cpp
 --- a/src/dev_ng/game/Peds/PopCycle.cpp
 +++ b/src/dev_ng/game/Peds/PopCycle.cpp
-@@ -24,44 +24,44 @@
+@@ -10,8 +10,8 @@
+ 
+ 
+ // Std headers
+-#include <Stdio.h>
+-#include <String.h>
++#include <stdio.h>
++#include <string.h>
+ 
+ // Rage headers
+ #include "fwsys/fileExts.h"
+@@ -20,48 +20,48 @@
+ // Framework headers
+ #include "grcore/debugdraw.h"
+ #include "fwmaths/random.h"
+-#include "fwSys/fileExts.h"
++#include "fwsys/fileExts.h"
  
  // Game headers
  #include "ai/ambient/AmbientModelSet.h"
@@ -19,7 +35,7 @@ diff --git a/src/dev_ng/game/Peds/PopCycle.cpp b/src/dev_ng/game/Peds/PopCycle.c
 +#include "game/cheat.h"
 +#include "game/Clock.h"
 +#include "game/Dispatch/DispatchData.h"
-+#include "game/modelindices.h"
++#include "game/ModelIndices.h"
 +#include "game/Performance.h"
  #include "game/PopMultiplierAreas.h"
 -#include "Game/weather.h"
@@ -50,7 +66,7 @@ diff --git a/src/dev_ng/game/Peds/PopCycle.cpp b/src/dev_ng/game/Peds/PopCycle.c
 +//#include "renderer/font.h"
 +#include "renderer/zonecull.h"
 +#include "scene/DataFileMgr.h"
-+#include "scene/fileloader.h"
++#include "scene/FileLoader.h"
 +#include "Peds/PlayerInfo.h"
 +#include "scene/FocusEntity.h"
 +#include "scene/world/GameWorld.h"

@@ -23,9 +23,10 @@ diff --git a/src/dev_ng/game/renderer/Lights/lights.cpp b/src/dev_ng/game/render
  #include "camera/viewports/ViewportManager.h"
 -#include "cutscene/CutSceneManagerNew.h"
 -#include "cutscene/CutSceneCameraEntity.h"
+-#include "debug/budgetdisplay.h"
 +#include "Cutscene/CutSceneManagerNew.h"
 +#include "Cutscene/CutSceneCameraEntity.h"
- #include "debug/budgetdisplay.h"
++#include "debug/BudgetDisplay.h"
  #include "debug/Rendering/DebugLights.h"
  #include "debug/Rendering/DebugLighting.h"
  #include "debug/Rendering/DebugDeferred.h"
@@ -44,7 +45,7 @@ diff --git a/src/dev_ng/game/renderer/Lights/lights.cpp b/src/dev_ng/game/render
  #include "renderer/PostProcessFX.h"
  #include "renderer/SSAO.h"
  #include "renderer/Deferred/DeferredLighting.h"
-@@ -53,25 +53,25 @@
+@@ -53,18 +53,18 @@
  #include "renderer/Lights/TiledLighting.h"
  #include "renderer/Lights/LODLights.h"
  #include "renderer/Shadows/Shadows.h"
@@ -69,11 +70,3 @@ diff --git a/src/dev_ng/game/renderer/Lights/lights.cpp b/src/dev_ng/game/render
  #include "vfx/VfxHelper.h"
  #include "timecycle/TimeCycleConfig.h"
  #include "fwscene/scan/ScanNodes.h"
- #include "fwscene/scan/ScreenQuad.h"
- #if __BANK
- #include "debug/BudgetDisplay.h"
--#include "Cutscene/CutSceneDebugManager.h"
-+#include "cutscene/CutSceneDebugManager.h"
- #endif
- #include "weapons/projectiles/Projectile.h"
- 

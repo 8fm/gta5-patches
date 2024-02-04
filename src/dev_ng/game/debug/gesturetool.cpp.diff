@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/debug/gesturetool.cpp b/src/dev_ng/game/debug/gestu
 -#include "Frontend/MiniMap.h"
 +#include "modelinfo/PedModelInfo.h"
 +#include "Peds/ped.h"
-+#include "renderer/renderer.h"
++#include "renderer/Renderer.h"
 +#include "frontend/MiniMap.h"
  
 -#include "Text/Text.h"

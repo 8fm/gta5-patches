@@ -1,6 +1,13 @@
 diff --git a/src/dev_ng/game/renderer/River.cpp b/src/dev_ng/game/renderer/River.cpp
 --- a/src/dev_ng/game/renderer/River.cpp
 +++ b/src/dev_ng/game/renderer/River.cpp
+@@ -1,5 +1,5 @@
+ // game headers
+-#include "river.h"
++#include "River.h"
+ 
+ #include "audio/northaudioengine.h"
+ #include "game/Clock.h"
 @@ -18,11 +18,11 @@
  #include "scene/RegdRefTypes.h"
  #include "spatialdata/aabb.h"

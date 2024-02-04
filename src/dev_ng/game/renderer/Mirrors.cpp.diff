@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/renderer/Mirrors.cpp b/src/dev_ng/game/renderer/Mir
  #include "fwscene/scan/Scan.h"
  #include "fwscene/scan/ScanDebug.h" // [MIRROR FLIP]
  #include "fwscene/world/InteriorSceneGraphNode.h"
-@@ -53,7 +53,7 @@
+@@ -53,13 +53,13 @@
  #include "renderer/Mirrors.h"
  #include "renderer/Renderer.h"
  #include "renderer/rendertargets.h"
@@ -19,3 +19,10 @@ diff --git a/src/dev_ng/game/renderer/Mirrors.cpp b/src/dev_ng/game/renderer/Mir
  #include "renderer/sprite2d.h"
  #include "renderer/Util/ShaderUtil.h"
  #include "renderer/Water.h"
+ #include "scene/debug/PostScanDebug.h"
+ #include "scene/portals/PortalTracker.h"
+-#include "scene/Scene.h"
++#include "scene/scene.h"
+ 
+ #define MIRROR_RT_NAME "MIRROR_RT"
+ #define MIRROR_RT_NAME_RESOLVED "MIRROR_RT_RESOLVED"

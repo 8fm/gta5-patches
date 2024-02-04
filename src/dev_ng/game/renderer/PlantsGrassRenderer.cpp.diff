@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp b/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp
 --- a/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp
 +++ b/src/dev_ng/game/renderer/PlantsGrassRenderer.cpp
+@@ -30,7 +30,7 @@
+ #include "grcore/im.h"
+ #include "grmodel/geometry.h"
+ #include "grcore/grcorespu.h"
+-#include "rmcore/Instance.h"
++#include "rmcore/instance.h"
+ #include "system/task.h"
+ #include "grcore/indexbuffer.h"
+ #include "grcore/texturegcm.h"
 @@ -42,24 +42,24 @@
  #include "system/findsize.h"
  

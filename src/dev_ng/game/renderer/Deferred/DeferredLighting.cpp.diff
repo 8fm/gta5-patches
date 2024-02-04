@@ -26,7 +26,7 @@ diff --git a/src/dev_ng/game/renderer/Deferred/DeferredLighting.cpp b/src/dev_ng
  #include "fwmaths/angle.h"
  #include "fwmaths/vectorutil.h"
  #include "fwscene/stores/txdstore.h"
-@@ -57,30 +57,30 @@
+@@ -57,47 +57,47 @@
  #include "camera/cutscene/CutsceneDirector.h"
  #include "camera/viewports/Viewport.h"
  #include "camera/viewports/ViewportManager.h"
@@ -71,7 +71,13 @@ diff --git a/src/dev_ng/game/renderer/Deferred/DeferredLighting.cpp b/src/dev_ng
  #include "renderer/Lights/TiledLighting.h"
  #include "renderer/PostProcessFX.h"
  #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
-@@ -93,11 +93,11 @@
+ #include "renderer/RenderPhases/RenderPhaseHeightMap.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/river.h"
++#include "renderer/River.h"
+ #include "renderer/sprite2d.h"		//CSprite2d::DrawTxRect()...
+ #include "renderer/SpuPM/SpuPmMgr.h"
  #include "renderer/SSAO.h"
  #include "renderer/Util/ShaderUtil.h"
  #include "renderer/Util/Util.h"

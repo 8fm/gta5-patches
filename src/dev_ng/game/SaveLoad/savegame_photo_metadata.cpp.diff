@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_metadata.cpp b/src/dev_ng/game/SaveLoad/savegame_photo_metadata.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_metadata.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_metadata.cpp
+@@ -14,10 +14,10 @@
+ #include "audio/radioaudioentity.h"
+ #include "frontend/MobilePhone.h"
+ #include "game/user.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/Sessions/NetworkSession.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/NetworkClan.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/Sessions/NetworkSession.h"
+ #include "Peds/PedIntelligence.h"
+ #include "renderer/occlusion.h"
+ #include "SaveLoad/savegame_channel.h"
+@@ -354,12 +354,12 @@ bool CSavegamePhotoMetadata::ShouldCorrectAkamaiOnUpload()
+ */
+ //	"mode" - string indicating the game mode, e.g. (SP, FREEMODE, DEATHMATCH, C&C etc)
+ //	In code, we only know about the containing mode at the moment (freemode). 
+-//	I’m working on transition sessions with Bobby at the moment, from that you can grab an activity type which will let you know the sub-mode (DM, race, base-jump, etc)
++//	I'm working on transition sessions with Bobby at the moment, from that you can grab an activity type which will let you know the sub-mode (DM, race, base-jump, etc)
+ #define GAME_MODE_KEY						"mode"
+ 
+ 
+ //	"mid": "unique mission id e.g. 501276516e8d7d22fd67c32d" Mission UGC ID (free missions only)
+-//	Script would need to give us this. They’ll know – just give them a script command to fill this in.
++//	Script would need to give us this. They'll know - just give them a script command to fill this in.
+ #define UGC_MISSION_UNIQUE_ID_KEY			"mid"
+ 
+ //	"sid" - string containing session id (MP only)

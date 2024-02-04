@@ -36,7 +36,7 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
  #include "game/Clock.h"
  #include "modelinfo/MloModelInfo.h"
  #include "Peds/ped.h"
-@@ -128,10 +128,10 @@
+@@ -128,16 +128,16 @@
  #include "vfx/VfxHelper.h"
  #include "timecycle/TimeCycleConfig.h"
  #include "timecycle/TimeCycle.h"
@@ -51,3 +51,11 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
  #include "../../shader_source/Lighting/Shadows/cascadeshadows_common.fxh"
  #include "control/replay/replay.h"
  
+ #if __BANK
+-#include "cutscene/CutsceneCameraEntity.h"
+-#include "cutscene/CutSceneDebugManager.h"
++#include "Cutscene/CutSceneCameraEntity.h"
++#include "Cutscene/CutSceneDebugManager.h"
+ #endif
+ 
+ // Undefine this to turn off all NV shadow changes.  There is also a Rag widget boolean to disable them dynamically.

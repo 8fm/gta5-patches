@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_h_o.cpp b/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_h_o.cpp
+--- a/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_h_o.cpp
++++ b/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_h_o.cpp
+@@ -24,7 +24,7 @@
+ #include "../../Peds/Horse/horseFreshness.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../Peds/Horse/horseObstacleAvoidance.cpp"
++#include "../../Peds/Horse/horseObstacleavoidance.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../Peds/Horse/horseSpeed.cpp"

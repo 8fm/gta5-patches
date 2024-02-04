@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/renderer/Renderer.cpp b/src/dev_ng/game/renderer/Renderer.cpp
 --- a/src/dev_ng/game/renderer/Renderer.cpp
 +++ b/src/dev_ng/game/renderer/Renderer.cpp
-@@ -33,7 +33,7 @@
+@@ -27,13 +27,13 @@
+ #include "system/xtl.h"
+ #include "grprofile/pix.h"
+ #include "system/system.h"
+-#include "system/taskscheduler.h"
++#include "system/TaskScheduler.h"
+ #include "vector/geometry.h"
+ 
  // Framework headers
  #include "fwanimation/directorcomponentmotiontree.h"
  #include "fwmaths/angle.h"
@@ -30,12 +37,13 @@ diff --git a/src/dev_ng/game/renderer/Renderer.cpp b/src/dev_ng/game/renderer/Re
 -#include "debug/debugdraw/debugvolume.h"
 -#include "debug/textureviewer/textureviewer.h"
 -#include "game/clock.h"
-+#include "debug/Debugdraw/debugvolume.h"
++#include "debug/DebugDraw/DebugVolume.h"
 +#include "debug/TextureViewer/TextureViewer.h"
 +#include "game/Clock.h"
  #include "frontend/GolfTrail.h"
  #include "frontend/VideoEditor/VideoEditorInterface.h"
- #include "modelinfo/MLOModelInfo.h"
+-#include "modelinfo/MLOModelInfo.h"
++#include "modelinfo/MloModelInfo.h"
  #include "modelinfo/TimeModelInfo.h"
  #include "modelinfo/VehicleModelInfo.h"
 -#include "objects/Object.h"
@@ -88,15 +96,15 @@ diff --git a/src/dev_ng/game/renderer/Renderer.cpp b/src/dev_ng/game/renderer/Re
  #include "scene/EntityBatch.h"
  #include "scene/portals/FrustumDebug.h"
 -#include "scene/portals/portal.h"
--#include "scene/portals/portalDebugHelper.h"
++#include "scene/portals/Portal.h"
+ #include "scene/portals/portalDebugHelper.h"
 -#include "scene/portals/portalInst.h"
 -#include "scene/portals/portalTracker.h"
-+#include "scene/portals/Portal.h"
-+#include "scene/portals/PortalDebugHelper.h"
 +#include "scene/portals/PortalInst.h"
 +#include "scene/portals/PortalTracker.h"
  #include "scene/streamer/SceneStreamerMgr.h"
- #include "scene/Scene.h"
+-#include "scene/Scene.h"
++#include "scene/scene.h"
  #include "scene/worldpoints.h"
  #include "scene/world/GameScan.h"
 -#include "scene/world/gameWorld.h"
@@ -113,11 +121,13 @@ diff --git a/src/dev_ng/game/renderer/Renderer.cpp b/src/dev_ng/game/renderer/Re
  #include "streaming/streaming.h"
  #include "streaming/streamingengine.h"
  #include "streaming/streamingmodule.h"
- #include "timeCycle/TimeCycle.h"
- #include "timeCycle/TimeCycleAsyncQueryMgr.h"
+-#include "timeCycle/TimeCycle.h"
+-#include "timeCycle/TimeCycleAsyncQueryMgr.h"
 -#include "vehicles/Automobile.h" //needed so we can tell some SPU code about automobiles
 -#include "vehicles/VehicleLightAsyncMgr.h"
 -#include "vehicles/vehiclepopulation.h"
++#include "timecycle/TimeCycle.h"
++#include "timecycle/TimeCycleAsyncQueryMgr.h"
 +#include "Vehicles/Automobile.h" //needed so we can tell some SPU code about automobiles
 +#include "Vehicles/VehicleLightAsyncMgr.h"
 +#include "Vehicles/vehiclepopulation.h"

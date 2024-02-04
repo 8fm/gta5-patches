@@ -61,7 +61,7 @@ diff --git a/src/dev_ng/game/Peds/PlayerPed.cpp b/src/dev_ng/game/Peds/PlayerPed
 +#include "frontend/Radar.h"
 +#include "game/cheat.h"
 +#include "game/localisation.h"
-+#include "game/modelindices.h"
++#include "game/ModelIndices.h"
  #include "Stats/StatsMgr.h"
 -#include "ModelInfo/vehiclemodelinfo.h"
 -#include "ModelInfo/weaponmodelinfo.h"

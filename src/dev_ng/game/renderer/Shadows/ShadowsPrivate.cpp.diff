@@ -6,12 +6,12 @@ diff --git a/src/dev_ng/game/renderer/Shadows/ShadowsPrivate.cpp b/src/dev_ng/ga
  
  // Game headers
 -#include "renderer/util/util.h"
-+#include "renderer/Util/util.h"
++#include "renderer/Util/Util.h"
  #include "renderer/rendertargets.h"
 -#include "renderer/shadows/shadowsprivate.h"
 -#include "debug/debugdraw/debugvolume.h"
-+#include "renderer/Shadows/shadowsprivate.h"
-+#include "debug/Debugdraw/debugvolume.h"
++#include "renderer/Shadows/ShadowsPrivate.h"
++#include "debug/DebugDraw/DebugVolume.h"
  
  RENDER_OPTIMISATIONS()
  

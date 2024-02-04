@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/modelinfo/BaseModelInfo.cpp b/src/dev_ng/game/modelinfo/BaseModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/BaseModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/BaseModelInfo.cpp
-@@ -50,32 +50,32 @@
+@@ -45,37 +45,37 @@
+ // Game headers
+ #include "audio/emitteraudioentity.h"
+ #include "audio/northaudioengine.h"
+-#include "cloth/clotharchetype.h"
++#include "cloth/ClothArchetype.h"
+ #include "control/trafficlights.h"
  #include "control/replay/ReplayMovieControllerNew.h"
  #include "debug/DebugArchetypeProxy.h"
  #include "game/ModelIndices.h"
@@ -10,13 +16,15 @@ diff --git a/src/dev_ng/game/modelinfo/BaseModelInfo.cpp b/src/dev_ng/game/model
 -#include "modelinfo/timemodelinfo.h"
 -#include "modelinfo/vehiclemodelinfo.h"
 -#include "physics/gtainst.h"
+-#include "physics/gtamaterial.h"
+-#include "physics/gtamaterialmanager.h"
 +#include "modelinfo/ModelInfo.h"
 +#include "modelinfo/ModelInfo_Factories.h"
 +#include "modelinfo/TimeModelInfo.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "physics/gtaInst.h"
- #include "physics/gtamaterial.h"
- #include "physics/gtamaterialmanager.h"
++#include "physics/gtaMaterial.h"
++#include "physics/gtaMaterialManager.h"
  #include "physics/Tunable.h"
 -#include "renderer/gtadrawable.h"
 -#include "renderer/hierarchyids.h"
@@ -28,10 +36,12 @@ diff --git a/src/dev_ng/game/modelinfo/BaseModelInfo.cpp b/src/dev_ng/game/model
  #include "scene/loader/MapData_Buildings.h"
  #include "scene/EntityBatch.h"
  #include "scene/texLod.h"
- #include "shaders/customshadereffectbase.h"
+-#include "shaders/customshadereffectbase.h"
++#include "shaders/CustomShaderEffectBase.h"
  #include "streaming/streaming.h"
- #include "tools/sectortools.h"
+-#include "tools/sectortools.h"
 -#include "vehicles/VehicleGadgets.h"
++#include "tools/SectorTools.h"
 +#include "Vehicles/VehicleGadgets.h"
  #include "Objects/Door.h"
  #include "Objects/DoorTuning.h"

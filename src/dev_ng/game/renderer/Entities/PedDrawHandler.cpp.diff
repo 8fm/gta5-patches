@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp b/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp
 --- a/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp
 +++ b/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp
+@@ -10,7 +10,7 @@
+ // Rage Headers
+ 
+ // Framework Headers
+-#include "fwscene/Scan/Scandebug.h"
++#include "fwscene/scan/ScanDebug.h"
+ 
+ // Game Headers
+ #include "camera/CamInterface.h"
 @@ -23,11 +23,11 @@
  #include "Peds/PlayerPed.h"
  #include "Peds/rendering/PedVariationDS.h"
