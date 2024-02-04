@@ -40,3 +40,12 @@ diff --git a/src/dev_ng/game/SaveLoad/GenericGameStorage.cpp b/src/dev_ng/game/S
  #if GTA_REPLAY && __ASSERT
  #include "control/replay/replay.h"
  #endif
+@@ -526,7 +526,7 @@ void CGenericGameStorage::Shutdown(unsigned shutdownMode)
+ 		//	Graeme - maybe I should be emptying the savegame queue or something, rather than doing this
+ 		while (CGenericGameStorage::IsSavegameSaveInProgress())
+ 		{
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			// the Social Club UI needs updates in order to close the UI/respond to user input, etc.
+ 			g_rlPc.Update();
+ #endif

@@ -35,3 +35,12 @@ diff --git a/src/dev_ng/game/renderer/SSAO.cpp b/src/dev_ng/game/renderer/SSAO.c
  HDAO2 - Updated HDAO, using compute shaders
  ===================================================================================================
  */
+@@ -3632,7 +3632,7 @@ const grcTexture* SSAO::GetSSAOTexture()
+ 	case ssaotechnique_mrssao:
+ 		{
+ 			int LodToApply = 1;
+-			LodToApply = min(sm_MR_CurrentSettings.m_BottomLod, sm_MR_CurrentSettings.m_LodToApply);
++			LodToApply = Min(sm_MR_CurrentSettings.m_BottomLod, sm_MR_CurrentSettings.m_LodToApply);
+ 	#if MR_SSAO_FORCE_MAX_LOD1
+ 			LodToApply = max(1, LodToApply);
+ 	#endif //MR_SSAO_FORCE_MAX_LOD1

@@ -36,7 +36,7 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
  #include "game/Clock.h"
  #include "modelinfo/MloModelInfo.h"
  #include "Peds/ped.h"
-@@ -128,16 +128,16 @@
+@@ -128,20 +128,20 @@
  #include "vfx/VfxHelper.h"
  #include "timecycle/TimeCycleConfig.h"
  #include "timecycle/TimeCycle.h"
@@ -59,3 +59,149 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
  #endif
  
  // Undefine this to turn off all NV shadow changes.  There is also a Rag widget boolean to disable them dynamically.
+-#define USE_NV_SHADOW_LIB RSG_PC
++#define USE_NV_SHADOW_LIB (RSG_PC && !RSG_LINUX)
+ 
+ #if USE_NV_SHADOW_LIB
+ 
+@@ -2162,56 +2162,7 @@ public:
+ 		m_currDepthBiasClamp	= 0.0f;
+ 	}
+ 
+-	grcRasterizerStateHandle Create(float depthBias, float slopeBias, float depthBiasClamp, u32 WIN32PC_ONLY(updateid))
+-	{
+-		grcRasterizerStateHandle state = grcStateBlock::RS_Invalid;
+-
+-#if RSG_PC
+-		float	delta = fabsf(m_currDepthBias - depthBias);
+-#endif
+-
+-#if !__FINAL
+-		if(!(m_stateIndex >= 0 && m_stateIndex < N))
+-		{
+-			grcDebugf1("[CascadeShadows] State index invalid: %d/%d", m_stateIndex, N);
+-		}
+-#endif
+-
+-		if ((m_currDepthBias == depthBias WIN32PC_ONLY(|| delta < 0.0001f))	&&
+-			m_currSlopeBias			== slopeBias		&&
+-			m_currDepthBiasClamp	== depthBiasClamp	&&
+-			m_stateIndex >= 0 && m_stateIndex < N WIN32PC_ONLY(BANK_ONLY(&& gCascadeShadows.m_debug.m_rasterStateCacheEnabled) && m_updateId == updateid))
+-		{
+-			state = m_states[m_stateIndex];
+-		}
+-		else
+-		{
+-			m_stateIndex = (m_stateIndex + 1)%N;
+-
+-			if (m_states[m_stateIndex] != grcStateBlock::RS_Invalid)
+-			{
+-				grcStateBlock::DestroyRasterizerState(m_states[m_stateIndex]); // destroy oldest state
+-			}
+-
+-			grcRasterizerStateDesc desc = m_desc; // copy desc
+-
+-			desc.DepthBiasDX9			= depthBias;
+-			desc.SlopeScaledDepthBias	= slopeBias;
+-			desc.DepthBiasClamp			= depthBiasClamp;
+-
+-			state = grcStateBlock::CreateRasterizerState(desc);
+-
+-			m_states[m_stateIndex]	= state;
+-			m_currDepthBias			= depthBias;
+-			m_currSlopeBias			= slopeBias;
+-			m_currDepthBiasClamp	= depthBiasClamp;
+-#if RSG_PC
+-			m_updateId				= updateid;
+-#endif
+-		}
+-
+-		return state;
+-	}
++	grcRasterizerStateHandle Create(float depthBias, float slopeBias, float depthBiasClamp, u32 WIN32PC_ONLY(updateid));
+ 
+ private:
+ 	grcRasterizerStateDesc   m_desc;
+@@ -3388,6 +3339,60 @@ CCSMGlobals gCascadeShadows;
+ 
+ // ================================================================================================
+ 
++template <int N>
++grcRasterizerStateHandle CCSMDepthBiasStateBuffer<N>::Create(float depthBias, float slopeBias, float depthBiasClamp, u32 WIN32PC_ONLY(updateid))
++{
++	grcRasterizerStateHandle state = grcStateBlock::RS_Invalid;
++
++#if RSG_PC
++	float	delta = fabsf(m_currDepthBias - depthBias);
++#endif
++
++#if !__FINAL
++	if(!(m_stateIndex >= 0 && m_stateIndex < N))
++	{
++		grcDebugf1("[CascadeShadows] State index invalid: %d/%d", m_stateIndex, N);
++	}
++#endif
++
++	if ((m_currDepthBias == depthBias WIN32PC_ONLY(|| delta < 0.0001f))	&&
++		m_currSlopeBias			== slopeBias		&&
++		m_currDepthBiasClamp	== depthBiasClamp	&&
++		m_stateIndex >= 0 && m_stateIndex < N WIN32PC_ONLY(BANK_ONLY(&& gCascadeShadows.m_debug.m_rasterStateCacheEnabled) && m_updateId == updateid))
++	{
++		state = m_states[m_stateIndex];
++	}
++	else
++	{
++		m_stateIndex = (m_stateIndex + 1)%N;
++
++		if (m_states[m_stateIndex] != grcStateBlock::RS_Invalid)
++		{
++			grcStateBlock::DestroyRasterizerState(m_states[m_stateIndex]); // destroy oldest state
++		}
++
++		grcRasterizerStateDesc desc = m_desc; // copy desc
++
++		desc.DepthBiasDX9			= depthBias;
++		desc.SlopeScaledDepthBias	= slopeBias;
++		desc.DepthBiasClamp			= depthBiasClamp;
++
++		state = grcStateBlock::CreateRasterizerState(desc);
++
++		m_states[m_stateIndex]	= state;
++		m_currDepthBias			= depthBias;
++		m_currSlopeBias			= slopeBias;
++		m_currDepthBiasClamp	= depthBiasClamp;
++#if RSG_PC
++		m_updateId				= updateid;
++#endif
++	}
++
++	return state;
++}
++
++// ================================================================================================
++
+ void ShadowRevealSetup::Init(const char shaderName[])
+ {
+ 	shader = grmShaderFactory::GetInstance().Create();
+@@ -6289,7 +6294,11 @@ void CCSMGlobals::CreateRenderTargets()
+ 			m_depthBiasPrecisionScale = Vec4V(V_ONE);
+ 			m_slopeBiasPrecisionScale = 1.0f;
+ 
+-			if(BANK_ONLY(gCascadeShadows.m_debug.m_modulateDepthSlopEnabled &&) WIN32PC_ONLY(!gCascadeShadows.m_enableNvidiaShadows &&) CSettingsManager::GetInstance().GetSettings().m_graphics.m_ShadowQuality > CSettings::High)
++			if(BANK_ONLY(gCascadeShadows.m_debug.m_modulateDepthSlopEnabled &&)
++#if USE_NV_SHADOW_LIB
++				WIN32PC_ONLY(!gCascadeShadows.m_enableNvidiaShadows &&)
++#endif
++				CSettingsManager::GetInstance().GetSettings().m_graphics.m_ShadowQuality > CSettings::High)
+ 			{
+ 				m_depthBiasPrecisionScale = Vec4V(1.0f, 0.8f, 0.6f, 0.4f);
+ 				m_slopeBiasPrecisionScale = 0.6f;
+@@ -9588,7 +9597,7 @@ static void CSMSetRenderStates(const CCSMState& state, int cascadeIndex, bool XE
+ 	case 3: shadowDepthBias = depthBias.GetWf(); shadowSlopeBias = slopeBias.GetWf(); shadowDepthBiasClamp = depthBiasClamp.GetWf(); break;
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	float delta = fabsf(gCascadeShadows.m_CachedDepthBias[cascadeIndexForDepthSlopeBias]- shadowDepthBias);
+ 	if(delta > g_RasterCacheThreshold)
+ 	{

@@ -58,3 +58,28 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Debug.cpp b/src/dev_ng/game/p
  
  #else	// GTA_ENGINE
  
+@@ -256,13 +256,13 @@ void CPathServer::DrawPolyVolumeDebug(CNavMesh * pNavMesh, int iPolyIndex, Color
+ }
+ 
+ void
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ CPathServer::DebugPolyText(CNavMesh * pNavMesh, u32 iPolyIndex)
+ #else
+ CPathServer::DebugPolyText(CNavMesh * UNUSED_PARAM(pNavMesh), u32 UNUSED_PARAM(iPolyIndex))
+ #endif
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	TNavMeshPoly * pPoly = pNavMesh->GetPoly(iPolyIndex);
+ 	Assert(pPoly->GetNavMeshIndex() == pNavMesh->GetIndexOfMesh());
+ 
+@@ -3803,7 +3803,7 @@ void PathServer_TestColPolyVsPaths()
+ 
+ void PathServer_TestLOS()
+ {
+-#if defined(GTA_ENGINE) && !__FINAL && __BANK && __WIN32PC && (!IS_CONSOLE)
++#if defined(GTA_ENGINE) && !__FINAL && __BANK && __WIN32PC && (!IS_CONSOLE) && !__LINUX
+ 
+ 	CPed * pPlayer = FindPlayerPed();
+ 	if(!pPlayer) return;

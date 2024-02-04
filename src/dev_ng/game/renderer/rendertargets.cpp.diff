@@ -23,3 +23,12 @@ diff --git a/src/dev_ng/game/renderer/rendertargets.cpp b/src/dev_ng/game/render
  #include "../shader_source/Lighting/Shadows/cascadeshadows_common.fxh"
  #include "control/replay/ReplaySupportClasses.h"
  
+@@ -2613,7 +2613,7 @@ void CRenderTargets::AddWidgets(bkBank &bank)
+ 	grcBlendStateDesc BSDesc;
+ 	BSDesc.BlendRTDesc[0].BlendEnable = true;
+ 	BSDesc.BlendRTDesc[0].BlendOp = grcRSV::BLENDOP_ADD;
+-#if !__WIN32 && !RSG_ORBIS
++#if !__WIN32 && !RSG_ORBIS && !RSG_LINUX
+ 	BSDesc.BlendRTDesc[0].SrcBlend = grcRSV::BLEND_CONSTANTALPHA;
+ 	BSDesc.BlendRTDesc[0].DestBlend = grcRSV::BLEND_INVCONSTANTALPHA;
+ 	BSDesc.BlendRTDesc[0].BlendOpAlpha = grcRSV::BLENDOP_ADD;

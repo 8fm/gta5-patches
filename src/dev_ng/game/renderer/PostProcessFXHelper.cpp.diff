@@ -41,3 +41,12 @@ diff --git a/src/dev_ng/game/renderer/PostProcessFXHelper.cpp b/src/dev_ng/game/
  
  PARAM(animpostfx_debug, "animpostfx_debug");
  PARAM(animpostfx_save_path, "animpostfx_save_path");
+@@ -2625,7 +2625,7 @@ void AnimPostFXManager::EditTool::OnStartTestStackFX(int idx)
+ 
+ 	atHashString name(&(ms_testStackName[idx][0]));
+ 
+-	if (m_testStackDuration > 0)
++	if (m_testStackDuration[idx] > 0) // m_testStackDuration > 0
+ 	{
+ 		ANIMPOSTFXMGR.Start(name, m_testStackDuration[idx], m_bTestLoopEnabled[idx], false, false, 0U, AnimPostFXManager::kDefault);
+ 	}

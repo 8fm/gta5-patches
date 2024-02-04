@@ -2,14 +2,21 @@ diff --git a/src/dev_ng/game/vs_project2_lib/CMakeLists.txt b/src/dev_ng/game/vs
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/game/vs_project2_lib/CMakeLists.txt
-@@ -0,0 +1,41 @@
+@@ -0,0 +1,48 @@
 +project(game2_lib)
 +
 +set(TARGET_TYPE "StaticLib")
 +include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
 +
-+add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
-+add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
++if (MSVC)
++    add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
++    add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
++else()
++    add_compile_options(-include${CMAKE_SOURCE_DIR}/game/basetypes.h)
++    add_compile_options(-include${CMAKE_SOURCE_DIR}/game/game_config.h)
++    add_definitions(-Dlinux)
++    remove_definitions(-DWIN64)
++endif()
 +
 +set(SRC_FILES
 +    "_Unity/_unity_game2_lib_game_glasspanesyncing_ik_modelinfo.cpp"
@@ -32,7 +39,7 @@ new file mode 100644
 +add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 +
 +target_include_directories(${PROJECT_NAME} PRIVATE
-+    "$ENV{DXSDK_DIR}Include"
++    ${DIRECTX_INCLUDE_DIRS}
 +    ${CMAKE_SOURCE_DIR}/game
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
 +    ${CMAKE_SOURCE_DIR}/rage/base/src
