@@ -22,11 +22,11 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerUtil.cpp b/src/dev
 +#include "modelinfo/ModelInfo.h"
 +#include "modelinfo/PedModelInfo.h"
 +#include "modelinfo/VehicleModelInfo.h"
-+#include "Peds/rendering/pedvariationstream.h"
++#include "Peds/rendering/PedVariationStream.h"
 +#include "Peds/ped.h"
  
 -#include "debug/textureviewer/textureviewerutil.h"
-+#include "debug/TextureViewer/TextureViewerutil.h"
++#include "debug/TextureViewer/TextureViewerUtil.h"
  
  DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()
  

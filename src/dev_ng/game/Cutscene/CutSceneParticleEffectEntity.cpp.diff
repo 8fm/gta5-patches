@@ -6,9 +6,10 @@ diff --git a/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.cpp b/src/dev
  
  //Game Headers
 -#include "cutscene/CutSceneManagerNew.h"
-+#include "Cutscene/CutSceneManagerNew.h"
- #include "cutscene/CutSceneParticleEffectEntity.h"
+-#include "cutscene/CutSceneParticleEffectEntity.h"
 -#include "cutscene/AnimatedModelEntity.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneParticleEffectEntity.h"
 +#include "Cutscene/AnimatedModelEntity.h"
  #include "Cutscene/cutscene_channel.h"
 -#include "Vfx/Systems/VfxScript.h"

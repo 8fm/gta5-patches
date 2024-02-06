@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayRecording.cpp b/src/dev_ng/game/control/replay/ReplayRecording.cpp
+--- a/src/dev_ng/game/control/replay/ReplayRecording.cpp
++++ b/src/dev_ng/game/control/replay/ReplayRecording.cpp
+@@ -8,7 +8,7 @@
+ #include "script/script.h"
+ #include "script/thread.h"
+ #include "ReplayBufferMarker.h"
+-#include "Replay.h"
++#include "replay.h"
+ 
+ #if __BANK
+ #include "camera/system/CameraManager.h"

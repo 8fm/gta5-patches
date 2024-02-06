@@ -27,9 +27,9 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerEntry.cpp b/src/de
 -#include "debug/textureviewer/textureviewerutil.h"
 -#include "debug/textureviewer/textureviewerentry.h"
 -#include "debug/textureviewer/textureviewerwindow.h"
-+#include "debug/TextureViewer/TextureViewerutil.h"
-+#include "debug/TextureViewer/TextureViewerentry.h"
-+#include "debug/TextureViewer/TextureViewerwindow.h"
++#include "debug/TextureViewer/TextureViewerUtil.h"
++#include "debug/TextureViewer/TextureViewerEntry.h"
++#include "debug/TextureViewer/TextureViewerWindow.h"
  #include "scene/texLod.h"
  
  DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()

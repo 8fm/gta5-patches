@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.cpp
 --- a/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.cpp
 +++ b/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.cpp
-@@ -7,7 +7,7 @@
+@@ -7,14 +7,14 @@
  // Replay only setup for win32
  #if GTA_REPLAY
  
@@ -10,3 +10,11 @@ diff --git a/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.cpp b/
  #include "control/replay/ReplayInternal.h"
  #include "vfx/decals/DecalManager.h"
  #include "vfx/ptfx/ptfxattach.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "scene/world/GameWorld.h"
+ 
+-#include "vfx/systems/vfxBlood.h"
++#include "vfx/systems/VfxBlood.h"
+ 
+ 
+ //////////////////////////////////////////////////////////////////////////

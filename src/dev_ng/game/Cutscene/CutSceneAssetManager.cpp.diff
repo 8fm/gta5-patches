@@ -1,19 +1,24 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp b/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneAssetManager.cpp
-@@ -18,26 +18,26 @@
+@@ -10,14 +10,14 @@
+ //Rage headers
+ #include "cutscene/cutsevent.h"
+ #include "cutscene/cutseventargs.h"
+-#include "vfx/ptfx/ptfxmanager.h "
++#include "vfx/ptfx/ptfxmanager.h"
+ 
+ 
+ //Game Headers
+ #include "script/script.h"
  #include "script/commands_interiors.h"
  #include "Cutscene/cutscene_channel.h"
- #include "cutscene/CutSceneDefine.h"
--#include "Cutscene/CutSceneAssetManager.h"
-+#include "cutscene/CutSceneAssetManager.h"
+-#include "cutscene/CutSceneDefine.h"
++#include "Cutscene/CutSceneDefine.h"
+ #include "Cutscene/CutSceneAssetManager.h"
  #include "Cutscene/AnimatedModelEntity.h"
--#include "Cutscene/CutSceneBoundsEntity.h"
-+#include "cutscene/CutSceneBoundsEntity.h"
- #include "Cutscene/cutscene_channel.h"
--#include "Cutscene/CutsceneCustomEvents.h"
-+#include "cutscene/CutsceneCustomEvents.h"
- #include "entity/archetype.h"
+ #include "Cutscene/CutSceneBoundsEntity.h"
+@@ -27,17 +27,17 @@
  #include "entity/archetypemanager.h"
  #include "frontend/Scaleform/ScaleFormMgr.h"
  #include "fwscene/stores/maptypesstore.h"

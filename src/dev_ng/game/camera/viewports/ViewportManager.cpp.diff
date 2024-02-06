@@ -13,7 +13,7 @@ diff --git a/src/dev_ng/game/camera/viewports/ViewportManager.cpp b/src/dev_ng/g
  #include "frontend/MobilePhone.h"
  #include "renderer/DrawLists/drawListMgr.h"
  #include "renderer/Mirrors.h"
-@@ -73,21 +73,21 @@
+@@ -73,22 +73,22 @@
  #include "renderer/RenderPhases/RenderPhaseWater.h"
  #include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
  #include "renderer/RenderTargetMgr.h"
@@ -35,7 +35,9 @@ diff --git a/src/dev_ng/game/camera/viewports/ViewportManager.cpp b/src/dev_ng/g
  #include "system/performancetimer.h"
  #include "system/SettingsManager.h"
 -#include "system/taskscheduler.h"
+-#include "system/usetuner.h"
 +#include "system/TaskScheduler.h"
- #include "system/usetuner.h"
++#include "system/UseTuner.h"
  
  #if __D3D11
+ #include "grcore/texturefactory_d3d11.h"

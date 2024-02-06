@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/frontend/DisplayCalibration.cpp b/src/dev_ng/game/f
 -#include "Frontend/LoadingScreens.h"
 -#include "Frontend/PauseMenu.h"
 +#include "frontend/MousePointer.h"
-+#include "frontend/LoadingScreens.h"
++#include "frontend/loadingscreens.h"
 +#include "frontend/PauseMenu.h"
  #include "frontend/ProfileSettings.h"
 -#include "Frontend/ui_channel.h"

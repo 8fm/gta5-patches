@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/control/replay/Preload/ReplayPreloader.cpp b/src/dev_ng/game/control/replay/Preload/ReplayPreloader.cpp
+--- a/src/dev_ng/game/control/replay/Preload/ReplayPreloader.cpp
++++ b/src/dev_ng/game/control/replay/Preload/ReplayPreloader.cpp
+@@ -1,5 +1,5 @@
+ #include "ReplayPreloader.h"
+-#include "../Replay.h"
++#include "../replay.h"
+ #include "../ReplayInternal.h"
+ #include "../ReplayEventManager.h"
+ #include "../ReplayInterfaceManager.h"

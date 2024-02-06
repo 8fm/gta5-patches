@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp
 --- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp
 +++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp
+@@ -9,7 +9,7 @@
+ #include "profile/group.h"
+ #include "profile/page.h"
+ 
+-#include "camera/cinematic/cinematicdirector.h"
++#include "camera/cinematic/CinematicDirector.h"
+ #include "camera/helpers/BaseFrameShaker.h"
+ #include "camera/helpers/Collision.h"
+ #include "camera/helpers/InconsistentBehaviourZoomHelper.h"
 @@ -17,10 +17,10 @@
  #include "camera/helpers/LookAtDampingHelper.h"
  #include "camera/system/CameraMetadata.h"

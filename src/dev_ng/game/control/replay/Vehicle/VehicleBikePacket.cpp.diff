@@ -9,7 +9,7 @@ diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleBikePacket.cpp b/src/
 -#include "vehicles/BMX.h"
 -#include "vehicles/Automobile.h"
 +#include "Vehicles/Bike.h"
-+#include "Vehicles/BMX.h"
++#include "Vehicles/Bmx.h"
 +#include "Vehicles/Automobile.h"
  
  

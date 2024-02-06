@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp
 --- a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp
 +++ b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp
+@@ -7,7 +7,7 @@
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
+ 
+ #include "camera/CamInterface.h"
+-#include "camera/cinematic/cinematicdirector.h"
++#include "camera/cinematic/CinematicDirector.h"
+ #include "camera/cinematic/camera/mounted/CinematicMountedPartCamera.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/gameplay/follow/FollowVehicleCamera.h"
 @@ -26,19 +26,19 @@
  #include "camera/cinematic/camera/tracking/CinematicCamManCamera.h"
  #include "frontend/MobilePhone.h"

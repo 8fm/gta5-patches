@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/frontend/Credits.cpp b/src/dev_ng/game/frontend/Cre
 -#include "frontend\NewHud.h"
 -#include "frontend\Hud_Colour.h"
 +#include "frontend/NewHud.h"
-+#include "frontend/Hud_Colour.h"
++#include "frontend/hud_colour.h"
  #include "renderer/sprite2d.h"
  #include "streaming/streaming.h"
 -#include "system\ControlMgr.h"

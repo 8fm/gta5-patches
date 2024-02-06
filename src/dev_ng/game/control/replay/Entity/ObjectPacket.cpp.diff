@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp b/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp
 --- a/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp
 +++ b/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp
-@@ -8,7 +8,7 @@
+@@ -8,20 +8,20 @@
  
  #include "vectormath/classfreefuncsf.h"
  
@@ -10,7 +10,10 @@ diff --git a/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp b/src/dev_ng
  #include "animation/MoveObject.h"
  #include "debug/Debug.h"
  #include "control/replay/replay.h"
-@@ -18,10 +18,10 @@
+ #include "control/replay/ReplayInternal.h"
+ #include "control/replay/ReplayExtensions.h"
+-#include "control/replay/entity/FragmentPacket.h"
++#include "control/replay/Entity/FragmentPacket.h"
  #include "control/gamelogic.h"
  #include "control/trafficlights.h"
  #include "scene/AnimatedBuilding.h"

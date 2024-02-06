@@ -1,12 +1,12 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneAnimation.cpp b/src/dev_ng/game/Cutscene/CutSceneAnimation.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneAnimation.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneAnimation.cpp
-@@ -13,7 +13,7 @@
+@@ -12,7 +12,7 @@
+ #include "fwanimation/directorcomponentcreature.h"
  
  //Game includes
- #include "CutScene/CutSceneAnimation.h"
--#include "Cutscene/cutscene_channel.h"
-+#include "cutscene/cutscene_channel.h"
+-#include "CutScene/CutSceneAnimation.h"
++#include "Cutscene/CutSceneAnimation.h"
+ #include "Cutscene/cutscene_channel.h"
  #include "vectormath/legacyconvert.h"
  /////////////////////////////////////////////////////////////////////////////////////
- 

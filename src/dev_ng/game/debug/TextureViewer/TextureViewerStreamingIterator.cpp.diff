@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIterator.
  // ======================================================
  
 -#include "debug/textureviewer/textureviewerstreamingiterator.h"
-+#include "debug/TextureViewer/TextureViewerstreamingiterator.h"
++#include "debug/TextureViewer/TextureViewerStreamingIterator.h"
  
  #if DEBUG_TEXTURE_VIEWER_STREAMINGITERATOR
  
@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIterator.
  #include "streaming/packfilemanager.h"
  
 -#include "debug/textureviewer/textureviewerutil.h" // for StringMatch
-+#include "debug/TextureViewer/TextureViewerutil.h" // for StringMatch
++#include "debug/TextureViewer/TextureViewerUtil.h" // for StringMatch
  
  RENDER_OPTIMISATIONS() // what?
  

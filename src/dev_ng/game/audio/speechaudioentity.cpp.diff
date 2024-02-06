@@ -35,7 +35,7 @@ diff --git a/src/dev_ng/game/audio/speechaudioentity.cpp b/src/dev_ng/game/audio
 -#include "vehicles/vehicle.h"
 -#include "task/motion/taskmotionbase.h"
 +#include "Vehicles/vehicle.h"
-+#include "task/Motion/taskmotionbase.h"
++#include "task/Motion/TaskMotionBase.h"
  #include "task/Movement/TaskParachute.h"
  #include "task/Vehicle/TaskInVehicle.h"
 -#include "camera/debug/debugdirector.h"

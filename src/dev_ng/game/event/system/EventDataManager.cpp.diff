@@ -7,7 +7,8 @@ diff --git a/src/dev_ng/game/event/system/EventDataManager.cpp b/src/dev_ng/game
 +#include "event/system/EventDataManager.h"
  
  // Rage headers
- #include "Parser/manager.h"
+-#include "Parser/manager.h"
++#include "parser/manager.h"
  
  // Game headers
 -#include "core/game.h"

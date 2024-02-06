@@ -20,3 +20,12 @@ diff --git a/src/dev_ng/game/audio/environment/audwarpmanager.cpp b/src/dev_ng/g
  
  AUDIO_ENVIRONMENT_OPTIMISATIONS()
  //OPTIMISATIONS_OFF()
+@@ -23,7 +23,7 @@ AUDIO_ENVIRONMENT_OPTIMISATIONS()
+ //////////////////////////////////////////////////////////////////////////
+ #if __BANK
+ 
+-#include "audWarpManager.h"
++#include "audwarpmanager.h"
+ 
+ RegdPhy					audWarpManager::m_pPhysical;
+ audWarpManager::eState	audWarpManager::m_eState;

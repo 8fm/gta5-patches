@@ -1,9 +1,14 @@
 diff --git a/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp b/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp
 --- a/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp
 +++ b/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp
-@@ -12,14 +12,14 @@
- #include "vfx/systems/vfxBlood.h"
- #include "vfx/systems/vfxWeapon.h"
+@@ -9,17 +9,17 @@
+ 
+ #include "control/replay/ReplayInternal.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "vfx/systems/vfxBlood.h"
+-#include "vfx/systems/vfxWeapon.h"
++#include "vfx/systems/VfxBlood.h"
++#include "vfx/systems/VfxWeapon.h"
  #include "vfx/decals/DecalManager.h"
 -#include "peds/ped.h"
 -#include "peds/rendering/PedDamage.h"

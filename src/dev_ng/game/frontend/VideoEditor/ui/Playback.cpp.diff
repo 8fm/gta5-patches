@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp
 --- a/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp
 +++ b/src/dev_ng/game/frontend/VideoEditor/ui/Playback.cpp
+@@ -14,7 +14,7 @@
+ #include "math/amath.h"
+ #include "rline/rlgamerinfo.h"
+ #include "rline/rlsystemui.h"
+-#include "scaleform/Include/GFxPlayer.h"
++#include "Scaleform/Include/GFxPlayer.h"
+ 
+ // framework
+ #include "fwlocalisation/templateString.h"
 @@ -36,8 +36,8 @@
  #include "frontend/PauseMenu.h"
  #include "frontend/ProfileSettings.h"

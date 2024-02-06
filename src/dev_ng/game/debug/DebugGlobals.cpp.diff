@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/DebugGlobals.cpp b/src/dev_ng/game/debug/DebugGlobals.cpp
+--- a/src/dev_ng/game/debug/DebugGlobals.cpp
++++ b/src/dev_ng/game/debug/DebugGlobals.cpp
+@@ -3,7 +3,7 @@
+ // Started	:	15/6/00
+ 
+ // game headers
+-#include "debugglobals.h"
++#include "DebugGlobals.h"
+ 
+ #if !__FINAL
+ bool	gbBigWhiteDebugLightSwitchedOn = false;

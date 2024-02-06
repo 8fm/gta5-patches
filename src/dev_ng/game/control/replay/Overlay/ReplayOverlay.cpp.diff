@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp b/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp
 --- a/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp
 +++ b/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp
-@@ -8,14 +8,14 @@
+@@ -2,20 +2,20 @@
+ #include "ReplayOverlay.h"
+ 
+ #if GTA_REPLAY_OVERLAY
+-#include "../Replay.h"
++#include "../replay.h"
+ #include "../ReplaySupportClasses.h"
+ #include "../Streaming/ReplayStreaming.h"
  #include "../ReplayInterfaceManager.h"
  #include "../ReplayEventManager.h"
  #include "../ReplayExtensions.h"

@@ -69,7 +69,7 @@ diff --git a/src/dev_ng/game/audio/caraudioentity.cpp b/src/dev_ng/game/audio/ca
 +#include "Vehicles/vehicle.h"
 +#include "Vehicles/Trailer.h"
 +#include "vfx/systems/VfxVehicle.h"
-+#include "Peds/pedeventscanner.h"
++#include "Peds/PedEventScanner.h"
 +#include "Peds/PopCycle.h"
 +#include "Peds/PedIntelligence.h"
 +#include "Peds/ped.h"

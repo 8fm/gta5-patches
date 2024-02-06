@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneStore.cpp b/src/dev_ng/game/Cutscene/CutSceneStore.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneStore.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneStore.cpp
+@@ -8,7 +8,7 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "cutscene/CutSceneStore.h"
++#include "Cutscene/CutSceneStore.h"
+ #include "fwsys/fileExts.h"
+ #include "parser/psofile.h"
+ // --- Globals ------------------------------------------------------------------

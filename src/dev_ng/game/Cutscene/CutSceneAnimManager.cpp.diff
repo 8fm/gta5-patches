@@ -1,12 +1,17 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneAnimManager.cpp b/src/dev_ng/game/Cutscene/CutSceneAnimManager.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneAnimManager.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneAnimManager.cpp
-@@ -11,7 +11,7 @@
+@@ -11,10 +11,10 @@
  #include "fwsys/timer.h"
  
  //Game headers
 -#include "cutscene/CutSceneManagerNew.h"
+-#include "cutscene/CutSceneAnimManager.h"
 +#include "Cutscene/CutSceneManagerNew.h"
- #include "cutscene/CutSceneAnimManager.h"
++#include "Cutscene/CutSceneAnimManager.h"
  #include "Cutscene/cutscene_channel.h"
- #include "streaming/streaming.h "
+-#include "streaming/streaming.h "
++#include "streaming/streaming.h"
+ 
+ ANIM_OPTIMISATIONS()
+ 

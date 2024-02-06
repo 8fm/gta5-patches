@@ -33,13 +33,13 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.cpp b/src/d
  #include "scene/loader/MapData.h"
 -#include "peds/rendering/pedvariationstream.h"
 -#include "peds/ped.h"
-+#include "Peds/rendering/pedvariationstream.h"
++#include "Peds/rendering/PedVariationStream.h"
 +#include "Peds/ped.h"
  
 -#include "debug/textureviewer/textureviewerutil.h"
 -#include "debug/textureviewer/textureviewersearch.h"
-+#include "debug/TextureViewer/TextureViewerutil.h"
-+#include "debug/TextureViewer/TextureViewersearch.h"
++#include "debug/TextureViewer/TextureViewerUtil.h"
++#include "debug/TextureViewer/TextureViewerSearch.h"
  
  #if DEBUG_TEXTURE_VIEWER_ENTITY_FILTERING
  	// yes, some of these are redundant, but i'm including every header file which defines a CEntity-derived class

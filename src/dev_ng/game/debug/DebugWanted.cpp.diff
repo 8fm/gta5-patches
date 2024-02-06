@@ -2,7 +2,8 @@ diff --git a/src/dev_ng/game/debug/DebugWanted.cpp b/src/dev_ng/game/debug/Debug
 --- a/src/dev_ng/game/debug/DebugWanted.cpp
 +++ b/src/dev_ng/game/debug/DebugWanted.cpp
 @@ -1,6 +1,6 @@
- #include "debugwanted.h"
+-#include "debugwanted.h"
++#include "DebugWanted.h"
  #include "physics/debugEvents.h"
 -#include "peds/ped.h"
 +#include "Peds/ped.h"

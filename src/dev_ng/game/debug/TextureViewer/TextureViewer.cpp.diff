@@ -64,8 +64,8 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewer.cpp b/src/dev_ng/
  
 -#include "debug/textureviewer/textureviewerentry.inl"
 -#include "debug/textureviewer/textureviewerpopulate.inl"
-+#include "debug/TextureViewer/TextureViewerentry.inl"
-+#include "debug/TextureViewer/TextureViewerpopulate.inl"
++#include "debug/TextureViewer/TextureViewerEntry.inl"
++#include "debug/TextureViewer/TextureViewerPopulate.inl"
  
  CDebugTextureViewer::CDebugTextureViewer()
  {

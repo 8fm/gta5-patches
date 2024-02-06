@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp
 --- a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp
 +++ b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.cpp
+@@ -9,7 +9,7 @@
+ 
+ #include "control/replay/ReplayInternal.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "control/replay/replayinterfaceped.h"
++#include "control/replay/ReplayInterfacePed.h"
+ 
+ #include "vfx/channel.h"
+ #include "vfx/systems/VfxFire.h"
 @@ -19,7 +19,7 @@
  #include "vfx/ptfx/ptfxattach.h"
  #include "vfx/ptfx/ptfxconfig.h"

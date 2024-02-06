@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayMgrProxy.cpp b/src/dev_ng/game/control/replay/ReplayMgrProxy.cpp
+--- a/src/dev_ng/game/control/replay/ReplayMgrProxy.cpp
++++ b/src/dev_ng/game/control/replay/ReplayMgrProxy.cpp
+@@ -2,7 +2,7 @@
+ 
+ #if GTA_REPLAY
+ 
+-#include "Replay.h"
++#include "replay.h"
+ 
+ bool CReplayMgrProxy::IsEditModeActive()
+ {

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/replay/replay.cpp b/src/dev_ng/game/control/replay/replay.cpp
 --- a/src/dev_ng/game/control/replay/replay.cpp
 +++ b/src/dev_ng/game/control/replay/replay.cpp
-@@ -4,12 +4,12 @@
+@@ -4,13 +4,13 @@
  
  #include "audio/speechmanager.h"
  #include "audio/scriptaudioentity.h"
@@ -11,8 +11,9 @@ diff --git a/src/dev_ng/game/control/replay/replay.cpp b/src/dev_ng/game/control
  #include "ReplayInterfaceObj.h"
  #include "ReplayInterfaceVeh.h"
  #include "ReplayAttachmentManager.h"
--#include "Game/ReplayInterfaceGame.h"
-+#include "game/ReplayInterfaceGame.h"
- #include "audio/SoundPacket.h"
+ #include "Game/ReplayInterfaceGame.h"
+-#include "audio/SoundPacket.h"
++#include "Audio/SoundPacket.h"
  
  #include "Effects/ParticleMiscFxPacket.h"
+ 

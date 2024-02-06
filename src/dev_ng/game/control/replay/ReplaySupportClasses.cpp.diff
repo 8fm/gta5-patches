@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplaySupportClasses.cpp b/src/dev_ng/game/control/replay/ReplaySupportClasses.cpp
+--- a/src/dev_ng/game/control/replay/ReplaySupportClasses.cpp
++++ b/src/dev_ng/game/control/replay/ReplaySupportClasses.cpp
+@@ -3,7 +3,7 @@
+ #if GTA_REPLAY
+ 
+ #include <time.h>
+-#include "misc/replayPacket.h"
++#include "Misc/ReplayPacket.h"
+ #include "ReplayRecorder.h"
+ #include "file/device.h"
+ #include "fwsys/timer.h"

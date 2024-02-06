@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/audio/speechmanager.cpp b/src/dev_ng/game/audio/speechmanager.cpp
 --- a/src/dev_ng/game/audio/speechmanager.cpp
 +++ b/src/dev_ng/game/audio/speechmanager.cpp
+@@ -7,7 +7,7 @@
+ #include "northaudioengine.h"
+ #include "speechmanager.h"
+ #include "scriptaudioentity.h"
+-#include "control/replay/audio/SpeechAudioPacket.h"
++#include "control/replay/Audio/SpeechAudioPacket.h"
+ 
+ #include "audiohardware/waveslot.h"
+ #include "audioengine/engine.h"
 @@ -16,9 +16,9 @@
  #include "speechaudioentity.h"
  #include "virtcxtresolves.h"

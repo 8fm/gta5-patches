@@ -1,7 +1,21 @@
 diff --git a/src/dev_ng/game/debug/Debug.cpp b/src/dev_ng/game/debug/Debug.cpp
 --- a/src/dev_ng/game/debug/Debug.cpp
 +++ b/src/dev_ng/game/debug/Debug.cpp
-@@ -64,26 +64,26 @@
+@@ -2,7 +2,7 @@
+ // Author	:	G. Speirs
+ // Started	:	10/08/99
+ 
+-#include "debug.h"
++#include "Debug.h"
+ 
+ // STD headers
+ #if __XENON
+@@ -60,30 +60,30 @@
+ #include "ai/debug/system/AIDebugLogManager.h"
+ #include "audio/dynamicmixer.h"
+ #include "audio/northaudioengine.h"
+-#include "animation/debug/animviewer.h"
++#include "animation/debug/AnimViewer.h"
  #include "camera/CamInterface.h"
  #include "camera/base/BaseCamera.h"
  #include "camera/debug/FreeCamera.h"
@@ -122,3 +136,12 @@ diff --git a/src/dev_ng/game/debug/Debug.cpp b/src/dev_ng/game/debug/Debug.cpp
  #include "text/messages.h"
  #include "control/videorecording/videorecording.h"
  
+@@ -162,7 +162,7 @@
+ #if BUGSTAR_INTEGRATION_ACTIVE
+ 
+ // Rage Headers
+-#include "qa/bugstarinterface.h"
++#include "qa/BugstarInterface.h"
+ 
+ // Game Headers
+ #include "BugstarIntegration.h"

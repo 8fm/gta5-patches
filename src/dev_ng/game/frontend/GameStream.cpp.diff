@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/frontend/GameStream.cpp b/src/dev_ng/game/frontend/GameStream.cpp
 --- a/src/dev_ng/game/frontend/GameStream.cpp
 +++ b/src/dev_ng/game/frontend/GameStream.cpp
+@@ -21,7 +21,7 @@
+ #include "frontend/PauseMenu.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/ui_channel.h"
+-#include "frontend/Loadingscreens.h"
++#include "frontend/loadingscreens.h"
+ #include "frontend/NewHud.h"
+ #include "frontend/MiniMap.h"
+ #include "frontend/Credits.h"
 @@ -30,10 +30,10 @@
  #include "frontend/SocialClubMenu.h"
  #include "frontend/MovieClipText.h"

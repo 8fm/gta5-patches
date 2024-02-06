@@ -1,6 +1,14 @@
 diff --git a/src/dev_ng/game/debug/BlockView.cpp b/src/dev_ng/game/debug/BlockView.cpp
 --- a/src/dev_ng/game/debug/BlockView.cpp
 +++ b/src/dev_ng/game/debug/BlockView.cpp
+@@ -1,6 +1,6 @@
+ #if !__FINAL
+ 
+-#include "blockview.h"
++#include "BlockView.h"
+ #include "atl/array.h"
+ #include "atl/string.h"
+ #include "bank/bkmgr.h"
 @@ -12,8 +12,8 @@
  #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"

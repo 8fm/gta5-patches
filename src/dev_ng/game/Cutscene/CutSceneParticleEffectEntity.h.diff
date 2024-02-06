@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.h b/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.h
+--- a/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.h
++++ b/src/dev_ng/game/Cutscene/CutSceneParticleEffectEntity.h
+@@ -19,7 +19,7 @@
+ //Rage Headers
+ 
+ //Game Headers
+-#include "cutscene/CutSceneParticleEffectObject.h"
++#include "Cutscene/CutSceneParticleEffectObject.h"
+ 
+ /////////////////////////////////////////////////////////////////////////////////
+ 

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/restart.cpp b/src/dev_ng/game/control/restart.cpp
 --- a/src/dev_ng/game/control/restart.cpp
 +++ b/src/dev_ng/game/control/restart.cpp
-@@ -11,16 +11,16 @@
+@@ -11,17 +11,17 @@
  #include "ai/navmesh/navmeshstore.h"
  #include "ai/navmesh/pathserverbase.h"
  #include "pathserver/PathServer.h"
@@ -20,7 +20,9 @@ diff --git a/src/dev_ng/game/control/restart.cpp b/src/dev_ng/game/control/resta
 +#include "Peds/PedIntelligence.h"
  #include "math/angmath.h"
 -#include "scene/world/gameWorld.h"
+-#include "scene/streamer/streamvolume.h"
 +#include "scene/world/GameWorld.h"
- #include "scene/streamer/streamvolume.h"
++#include "scene/streamer/StreamVolume.h"
  #include "vector/vector2.h"
  #include "Stats/StatsInterface.h"
+ #include "camera/CamInterface.h"

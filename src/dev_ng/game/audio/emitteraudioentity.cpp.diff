@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/audio/emitteraudioentity.cpp b/src/dev_ng/game/audio/emitteraudioentity.cpp
+--- a/src/dev_ng/game/audio/emitteraudioentity.cpp
++++ b/src/dev_ng/game/audio/emitteraudioentity.cpp
+@@ -26,21 +26,21 @@
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ 
+ #include "grcore/debugdraw.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "scene/scene.h"
+ #include "game/weather.h"
+-#include "scene/entity.h"
+-#include "objects/object.h"
++#include "scene/Entity.h"
++#include "Objects/object.h"
+ #include "control/gamelogic.h"
+ #include "scene/RefMacros.h"
+ #include "scene/2dEffect.h"
+ #include "renderer/Lights/LightSource.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ #include "fwsys/timer.h"
+ #include "string/stringutil.h"
+-#include "TimeCycle/TimeCycle.h"
+-#include "Vfx/Misc/Coronas.h"
+-#include "Vfx/VfxHelper.h"
++#include "timecycle/TimeCycle.h"
++#include "vfx/misc/Coronas.h"
++#include "vfx/VfxHelper.h"
+ #include "camera/CamInterface.h"
+ #include "frontend/loadingscreens.h"
+ 
+@@ -761,7 +761,7 @@ void audEmitterAudioEntity::UnregisterEmittersForEntity(CEntity *entity)
+ 			m_NumEntities--;
+ 			entity->SetAudioBin(0xff);
+ 
+-			// shuffle this bin around if ít's below the first free bin
++			// shuffle this bin around if it's below the first free bin
+ 			if(bin < m_FirstFreeBin)
+ 			{
+ 				// swap with the last full bin

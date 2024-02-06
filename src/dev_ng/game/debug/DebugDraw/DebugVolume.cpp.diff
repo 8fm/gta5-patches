@@ -7,8 +7,8 @@ diff --git a/src/dev_ng/game/debug/DebugDraw/DebugVolume.cpp b/src/dev_ng/game/d
  #include "renderer/color.h"
 -#include "debug/debugdraw/debugvolume.h"
 -#include "debug/debugdraw/debugvolume_kDOP18.h"
-+#include "debug/Debugdraw/debugvolume.h"
-+#include "debug/Debugdraw/debugvolume_kDOP18.h"
++#include "debug/DebugDraw/DebugVolume.h"
++#include "debug/DebugDraw/DebugVolume_kDOP18.h"
  
  RENDER_OPTIMISATIONS()
  

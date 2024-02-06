@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/control/GarageEditor.cpp b/src/dev_ng/game/control/GarageEditor.cpp
 --- a/src/dev_ng/game/control/GarageEditor.cpp
 +++ b/src/dev_ng/game/control/GarageEditor.cpp
-@@ -10,9 +10,9 @@
+@@ -8,11 +8,11 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ 
  #include "GarageEditor.h"
- #include "Garages.h"
+-#include "Garages.h"
++#include "garages.h"
  #include "garages_parser.h"
 -#include "objects/Door.h"
 -#include "grcore\debugdraw.h"

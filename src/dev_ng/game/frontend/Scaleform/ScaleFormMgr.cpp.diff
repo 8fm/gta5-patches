@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp b/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp
 --- a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp
 +++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp
-@@ -14,7 +14,7 @@
+@@ -9,12 +9,12 @@
+ 
+ // Rage headers
+ #include "fwscene/stores/txdstore.h"
+-#include "fwsys/FileExts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/timer.h"
  #include "grcore/allocscope.h"
  #include "grcore/effect.h"
  #include "scaleform/renderer.h"
@@ -22,7 +28,7 @@ diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp b/src/dev_ng/ga
 -#include "Frontend/Scaleform/ScaleFormStore.h"
 +#include "Core/game.h"
 +#include "debug/TextureViewer/TextureViewer.h"
-+#include "frontend/MovieCLipText.h"
++#include "frontend/MovieClipText.h"
 +#include "frontend/Scaleform/ScaleFormMgr.h"
 +#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
 +#include "frontend/Scaleform/ScaleFormStore.h"
@@ -36,7 +42,7 @@ diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp b/src/dev_ng/ga
  #include "renderer/rendertargets.h"
  #include "scene/world/GameWorld.h"
 -#include "Script/Script_Hud.h"
-+#include "script/Script_Hud.h"
++#include "script/script_hud.h"
  #include "streaming/streaming.h"
  #include "system/controlMgr.h"
  #include "system/param.h"

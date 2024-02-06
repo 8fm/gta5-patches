@@ -6,8 +6,9 @@ diff --git a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp b/src/dev_ng/game/
  //Rage Headers
  #include "audio/cutsceneaudioentity.h"
 -#include "camera/caminterface.h"
+-#include "cutscene/CutSceneSoundEntity.h"
 +#include "camera/CamInterface.h"
- #include "cutscene/CutSceneSoundEntity.h"
++#include "Cutscene/CutSceneSoundEntity.h"
  #include "cutfile/cutfobject.h"
  #include "cutscene/cutsevent.h"
  #include "cutscene/cutsmanager.h"

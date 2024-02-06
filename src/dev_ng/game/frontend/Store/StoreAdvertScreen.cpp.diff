@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp b/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp
 --- a/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp
 +++ b/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp
-@@ -1,13 +1,13 @@
+@@ -1,14 +1,14 @@
  
 -#include "Frontend/Store/StoreAdvertScreen.h"
 -
@@ -12,6 +12,7 @@ diff --git a/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp b/src/dev_ng/g
 -#include "Frontend/Store/StoreTextureManager.h"
 -#include "Frontend/WarningScreen.h"
 -#include "Network/Live/livemanager.h"
+-#include "network/commerce/CommerceManager.h"
 +#include "frontend/Store/StoreAdvertScreen.h"
 +
 +#include "frontend/BusySpinner.h"
@@ -21,6 +22,7 @@ diff --git a/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp b/src/dev_ng/g
 +#include "frontend/Store/StoreTextureManager.h"
 +#include "frontend/WarningScreen.h"
 +#include "network/Live/livemanager.h"
- #include "network/commerce/CommerceManager.h"
++#include "network/Commerce/CommerceManager.h"
  #include "system/controlMgr.h"
  #include "system/pad.h"
+ 

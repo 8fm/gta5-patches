@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h b/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h
 --- a/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h
 +++ b/src/dev_ng/game/control/replay/Audio/AmbientAudioPacket.h
-@@ -16,7 +16,7 @@
+@@ -12,11 +12,11 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "control/replay/audio/SoundPacket.h"
++#include "control/replay/Audio/SoundPacket.h"
  #include "audio/scriptaudioentity.h"
  #include "audio/ambience/ambientaudioentity.h"
  #include "audio/pedscenariomanager.h"

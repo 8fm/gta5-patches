@@ -1,0 +1,52 @@
+diff --git a/src/dev_ng/game/frontend/CCrewMenu.cpp b/src/dev_ng/game/frontend/CCrewMenu.cpp
+--- a/src/dev_ng/game/frontend/CCrewMenu.cpp
++++ b/src/dev_ng/game/frontend/CCrewMenu.cpp
+@@ -3,26 +3,26 @@
+ 
+ #include "fwnet/netscgameconfigparser.h"
+ 
+-#include "Frontend/CCrewMenu.h"
+-
+-#include "Frontend/ButtonEnum.h"
+-#include "Frontend/Scaleform/ScaleformMgr.h"
+-#include "Frontend/CFriendsMenu.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/SocialClubMenu.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/livemanager.h"
++#include "frontend/CCrewMenu.h"
++
++#include "frontend/ButtonEnum.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/CFriendsMenu.h"
++#include "frontend/ui_channel.h"
++#include "frontend/SocialClubMenu.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
+ #include "rline/rlstats.h"
+ #include "frontend/MousePointer.h"
+ 
+-#include "Network/Crews/NetworkCrewDataMgr.h"
+-#include "Network/crews/NetworkCrewMetadata.h"
+-#include "Network/Stats/NetworkLeaderboardSessionMgr.h"
++#include "network/Crews/NetworkCrewDataMgr.h"
++#include "network/Crews/NetworkCrewMetadata.h"
++#include "network/Stats/NetworkLeaderboardSessionMgr.h"
+ 
+ #include <time.h>
+ 
+ #include "text/GxtString.h"
+-#include "Network/Live/PlayerCardDataManager.h"
++#include "network/Live/PlayerCardDataManager.h"
+ 
+ // helper to maintain readability for atHashWithString objects, when ultimately we don't really need 'em
+ #if __DEV
+@@ -2593,7 +2593,7 @@ int SortMemberships(const void* va, const void* vb)
+ 	const rlClanMembershipData* b = reinterpret_cast<const rlClanMembershipData*>(vb);
+ 
+ 	// primary memberships to the top.
+-	// B* 1129370: Screw the primary clan! Alphabetical order über alles!
++	// B* 1129370: Screw the primary clan! Alphabetical order uber alles!
+ 	/*
+ 	if( a->m_IsPrimary )
+ 		return -1;

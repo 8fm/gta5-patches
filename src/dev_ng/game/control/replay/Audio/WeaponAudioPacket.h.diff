@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.h b/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/WeaponAudioPacket.h
+@@ -12,7 +12,7 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "control/replay/audio/SoundPacket.h"
++#include "control/replay/Audio/SoundPacket.h"
+ #include "audio/weaponaudioentity.h"
+ 
+ #include "audiosoundtypes/soundcontrol.h"

@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/audio/radioaudioentity.cpp b/src/dev_ng/game/audio/radioaudioentity.cpp
 --- a/src/dev_ng/game/audio/radioaudioentity.cpp
 +++ b/src/dev_ng/game/audio/radioaudioentity.cpp
+@@ -14,7 +14,7 @@
+ #include "camera/CamInterface.h"
+ #include "camera/scripted/ScriptedFlyCamera.h"
+ #include "cutsceneaudioentity.h"
+-#include "frontendAudioEntity.h"
++#include "frontendaudioentity.h"
+ #include "music/musicplayer.h"
+ #include "northaudioengine.h"
+ #include "radioaudioentity.h"
 @@ -28,12 +28,12 @@
  #include "game/ModelIndices.h"
  #include "grcore/debugdraw.h"

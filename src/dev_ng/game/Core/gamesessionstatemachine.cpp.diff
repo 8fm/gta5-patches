@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/
  
  // rage headers
  #include "bank/msgbox.h"
-@@ -21,8 +21,8 @@
+@@ -21,30 +21,30 @@
  #include "camera/viewports/ViewportManager.h"
  #include "control/gamelogic.h"
  #include "control/ScriptRouterLink.h"
@@ -21,7 +21,10 @@ diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/
  #include "frontend/CSettingsMenu.h"
  #include "frontend/DisplayCalibration.h"
  #include "frontend/GameStreamMgr.h"
-@@ -32,9 +32,9 @@
+ #include "frontend/landing_page/LandingPageArbiter.h"
+-#include "frontend/languageselect.h"
++#include "frontend/LanguageSelect.h"
+ #include "frontend/loadingscreens.h"
  #include "frontend/WarningScreen.h"
  #include "frontend/ProfileSettings.h"
  #include "frontend/Scaleform/ScaleFormStore.h"
@@ -32,9 +35,15 @@ diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/
 +#include "network/Network.h"
  #include "network/NetworkInterface.h"
  #include "rline/rlsystemui.h"
- #include "saveload/genericgamestorage.h"
-@@ -44,7 +44,7 @@
- #include "saveload/savegame_load.h"
+-#include "saveload/genericgamestorage.h"
+-#include "saveload/savegame_autoload.h"
++#include "SaveLoad/GenericGameStorage.h"
++#include "SaveLoad/savegame_autoload.h"
+ #include "SaveLoad/savegame_frontend.h"
+-#include "saveload/savegame_list.h"
+-#include "saveload/savegame_load.h"
++#include "SaveLoad/savegame_list.h"
++#include "SaveLoad/savegame_load.h"
  #include "security/yubikey/yubikeymanager.h"
  #include "streaming/streamingvisualize.h"
 -#include "system/controlmgr.h"

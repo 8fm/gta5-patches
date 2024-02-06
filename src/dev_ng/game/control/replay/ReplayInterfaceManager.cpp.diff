@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp b/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp
 --- a/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp
 +++ b/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp
-@@ -5,7 +5,7 @@
+@@ -4,8 +4,8 @@
+ 
  #include "scene/Entity.h"
  
- #include "Replay.h"
+-#include "Replay.h"
 -#include "Control/Replay/ReplayController.h"
++#include "replay.h"
 +#include "control/replay/ReplayController.h"
  #include "control/replay/ReplayInterface.h"
  

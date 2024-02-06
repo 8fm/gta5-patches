@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysis.cpp b/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysis.cpp
+--- a/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysis.cpp
++++ b/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysis.cpp
+@@ -102,7 +102,7 @@ TODO --
+ #include "vfx/ptfx/ptfxasset.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ 
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "debug/AssetAnalysis/AssetAnalysis.h"
+ #include "debug/AssetAnalysis/AssetAnalysisCommon.h"
+ #include "debug/AssetAnalysis/AssetAnalysisUtil.h"
+@@ -1531,7 +1531,7 @@ static u64 WriteArchetypeInstance(const CEntity* entity, const CBaseModelInfo* m
+ 					lodWarningFlags |= BIT(0);
+ 				}
+ 
+-				// check if lod distance is too small when considering distance to parent’s pivot
++				// check if lod distance is too small when considering distance to parent's pivot
+ 				g_LodMgr.GetBasisPivot(const_cast<CEntity*>(entity), RC_VECTOR3(lodPivot));
+ 				const spdSphere lodRangeSphere(lodPivot, ScalarV((float)entityLodDistance));
+ 				const spdSphere entityBoundingSphere = entity->GetBoundSphere();

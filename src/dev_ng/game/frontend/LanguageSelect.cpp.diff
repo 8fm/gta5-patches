@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/frontend/LanguageSelect.cpp b/src/dev_ng/game/front
 -#include "Frontend/LoadingScreens.h"
 -#include "Frontend/NewHud.h"
 -#include "Frontend/PauseMenu.h"
-+#include "frontend/LoadingScreens.h"
++#include "frontend/loadingscreens.h"
 +#include "frontend/NewHud.h"
 +#include "frontend/PauseMenu.h"
  #include "frontend/ProfileSettings.h"

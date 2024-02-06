@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp b/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp
 --- a/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp
 +++ b/src/dev_ng/game/camera/syncedscene/SyncedSceneDirector.cpp
-@@ -10,8 +10,8 @@
+@@ -6,12 +6,12 @@
+ 
+ #include "camera/syncedscene/SyncedSceneDirector.h"
+ 
+-#include "camera/base/baseCamera.h"
++#include "camera/base/BaseCamera.h"
  #include "camera/cutscene/AnimatedCamera.h"
  #include "camera/system/CameraMetadata.h"
  #include "camera/system/CameraFactory.h"

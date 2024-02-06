@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/vs_project1_lib/_Unity/_unity_game1_lib_frontend_h_o.cpp b/src/dev_ng/game/vs_project1_lib/_Unity/_unity_game1_lib_frontend_h_o.cpp
+--- a/src/dev_ng/game/vs_project1_lib/_Unity/_unity_game1_lib_frontend_h_o.cpp
++++ b/src/dev_ng/game/vs_project1_lib/_Unity/_unity_game1_lib_frontend_h_o.cpp
+@@ -9,7 +9,7 @@
+ #include "../../frontend/loadingscreens.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../frontend/Input/uiInputCommon.cpp"
++#include "../../frontend/input/uiInputCommon.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../frontend/landing_page/LandingPage.cpp"
+@@ -42,7 +42,7 @@
+ #include "../../frontend/landing_page/layout/LandingOnlineLayout.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../frontend/landing_page/Messages/uiLandingPageMessages.cpp"
++#include "../../frontend/landing_page/messages/uiLandingPageMessages.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../frontend/landing_page/pages/FTUECompleteDecisionPage.cpp"
+@@ -120,7 +120,7 @@
+ #include "../../frontend/MiniMapRenderThread.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../frontend/MiniMapMenuComponent.cpp"
++#include "../../frontend/MinimapMenuComponent.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../frontend/MiniMapTunables.cpp"

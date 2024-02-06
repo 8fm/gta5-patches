@@ -14,7 +14,7 @@ diff --git a/src/dev_ng/game/camera/viewports/ViewportFader.cpp b/src/dev_ng/gam
  #include "camera/viewports/ViewportManager.h"
  
 -#include "Frontend/Pausemenu.h"
-+#include "frontend/Pausemenu.h"
++#include "frontend/PauseMenu.h"
  
  #include "renderer/PostProcessFX.h"
 -#include "renderer/renderThread.h"

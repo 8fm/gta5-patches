@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerState.h b/src/dev_
 -#include "fwmaths/rect.h"                            // fwBox2D
 -#include "debug/textureviewer/textureviewersearch.h" // CAssetRef
 +#include "fwmaths/Rect.h"                            // fwBox2D
-+#include "debug/TextureViewer/TextureViewersearch.h" // CAssetRef
++#include "debug/TextureViewer/TextureViewerSearch.h" // CAssetRef
  namespace rage { class grcTexture; }
  namespace rage { class Vector3; }
  

@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp b/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp
 --- a/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp
 +++ b/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp
+@@ -4,7 +4,7 @@
+ 
+ //game
+ 
+-#include "control/replay/streaming/ReplayStreaming.h"
++#include "control/replay/Streaming/ReplayStreaming.h"
+ #include "control/replay/replay.h"
+ #include "control/replay/replay_channel.h"
+ #include "control/replay/ReplayControl.h"
 @@ -21,10 +21,10 @@
  #include "rline/rlgamerinfo.h"
  

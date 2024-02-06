@@ -1,0 +1,62 @@
+diff --git a/src/dev_ng/game/camera/debug/FreeCamera.cpp b/src/dev_ng/game/camera/debug/FreeCamera.cpp
+--- a/src/dev_ng/game/camera/debug/FreeCamera.cpp
++++ b/src/dev_ng/game/camera/debug/FreeCamera.cpp
+@@ -22,10 +22,10 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "debug/TiledScreenCapture.h"
+-#include "Frontend/PauseMenu.h"
+-#include "peds/Ped.h"
++#include "frontend/PauseMenu.h"
++#include "Peds/ped.h"
+ #include "physics/physics.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "scene/EntityIterator.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+ #include "system/controlMgr.h"
+@@ -105,25 +105,25 @@ camFreeCamera::~camFreeCamera()
+ 	m_CameraWidgetData = NULL; 
+ }
+ #endif
+-// ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+-// ¦ Left Stick			- Rotate camera
+-// ¦ [],X				- Move forward / backward.
+-// ¦ Right Stick		- N S E W movement.
+-// ¦ L1 & Right Stick	- Movement in the plane of the projection plane.
+-// ¦ Triangle			- Allow roll with L1 and R1 (L1 & R1 resets roll)
+-// ¦ R2					- Warp player to camera position.
+-// ¦ L3					- Select movement speed slow, normal, fast 
+-// ¦ R2					- Drop player.
+-// ¦
+-// ¦ If RDR controls are enabled, use RDR control scheme:
+-// ¦ Left Stick			- Move forward / backward & strafe left / right
+-// ¦ Right Stick		- Rotate Camera
+-// ¦ L1 & Left Stick	- N S E W movement. (Left stick left/right = W/E, buttons X/A = N/S)
+-// ¦ Triangle			- (Same as above) Allow roll with L1 and R1 (L1 & R1 resets roll).
+-// ¦ DPad				- (Same as above) left/right changes FOV. Down resets FOV. Up toggles slow movement
+-// ¦ R2					- Same as above
+-// ¦
+-// ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
++// |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
++// | Left Stick			- Rotate camera
++// | [],X				- Move forward / backward.
++// | Right Stick		- N S E W movement.
++// | L1 & Right Stick	- Movement in the plane of the projection plane.
++// | Triangle			- Allow roll with L1 and R1 (L1 & R1 resets roll)
++// | R2					- Warp player to camera position.
++// | L3					- Select movement speed slow, normal, fast 
++// | R2					- Drop player.
++// |
++// | If RDR controls are enabled, use RDR control scheme:
++// | Left Stick			- Move forward / backward & strafe left / right
++// | Right Stick		- Rotate Camera
++// | L1 & Left Stick	- N S E W movement. (Left stick left/right = W/E, buttons X/A = N/S)
++// | Triangle			- (Same as above) Allow roll with L1 and R1 (L1 & R1 resets roll).
++// | DPad				- (Same as above) left/right changes FOV. Down resets FOV. Up toggles slow movement
++// | R2					- Same as above
++// |
++// |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ bool camFreeCamera::Update()
+ {
+ #if __BANK
