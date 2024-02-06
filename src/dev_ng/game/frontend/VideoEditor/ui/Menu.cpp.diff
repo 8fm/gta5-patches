@@ -34,3 +34,13 @@ diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Menu.cpp b/src/dev_ng/game/
  
  FRONTEND_OPTIMISATIONS();
  //OPTIMISATIONS_OFF();
+@@ -749,7 +749,9 @@ bool CVideoEditorMenu::CheckForUserConfirmationScreens()
+ 			else if (TriggerHash == ATSTRINGHASH("TRIGGER_QUIT", 0xCD88E447))
+ 			{
+ 				CPauseMenu::SetGameWantsToExitToWindows(true);
++#if !RSG_LINUX // TODO: add Linux support and fix class NetworkExitFlow
+ 				NetworkInterface::GetNetworkExitFlow().StartShutdownTasks();
++#endif
+ 			}
+ 			#endif
+ 			else if (TriggerHash == ATSTRINGHASH("WANT_TO_SAVE_BEFORE_EXIT",0x05756e16))

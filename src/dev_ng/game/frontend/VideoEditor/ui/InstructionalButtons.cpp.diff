@@ -19,3 +19,12 @@ diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp b/
  #include "system/controlMgr.h"
  
  #if RSG_ORBIS
+@@ -186,7 +186,7 @@ void CVideoEditorInstructionalButtons::Update()
+ 
+ void CVideoEditorInstructionalButtons::Render()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+     // hide instructional buttons if SCUI is showing ...hints are confusing
+     if (g_rlPc.IsUiShowing())
+         return;

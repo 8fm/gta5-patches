@@ -42,3 +42,12 @@ diff --git a/src/dev_ng/game/frontend/Store/StoreMainScreen.cpp b/src/dev_ng/gam
  #include "system/controlMgr.h"
  #include "system/pad.h"
  #include "Stats/MoneyInterface.h"
+@@ -1149,7 +1149,7 @@ void cStoreMainScreen::Render()
+         return;
+     }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// hide instructional buttons if SCUI is showing ...hints are confusing
+ 	if (!g_rlPc.IsUiShowing())
+ #endif

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/File/ReplayFileManager.h b/src/dev_ng/game/control/replay/File/ReplayFileManager.h
+--- a/src/dev_ng/game/control/replay/File/ReplayFileManager.h
++++ b/src/dev_ng/game/control/replay/File/ReplayFileManager.h
+@@ -516,7 +516,7 @@ private:
+ 	
+ 	static void FileThread(void*);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	static void WatchDirectory(void*);
+ #endif
+ 

@@ -105,3 +105,12 @@ diff --git a/src/dev_ng/game/control/replay/ReplayInternal.cpp b/src/dev_ng/game
  #include "control/replay/Misc/GlassPackets.h"
  #include "control/replay/Misc/MoviePacket.h"
  #include "control/replay/Misc/MovieTargetPacket.h"
+@@ -8508,7 +8508,7 @@ bool CReplayMgrInternal::IsSaveReplayButtonPressed()
+ //========================================================================================================================
+ bool CReplayMgrInternal::IsDiskSpaceAvailable( size_t const size )
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	char szPath[RAGE_MAX_PATH];
+ 
+ 	// need to call this to make the user data directory is created.

@@ -30,3 +30,12 @@ diff --git a/src/dev_ng/game/frontend/ReportMenu.cpp b/src/dev_ng/game/frontend/
  
  #define REPORTMENU_DATA_XML_FILENAME	"common:/data/ui/reportplayer.xml"
  #define REPORTMENU_MOVIE_NAME			"MP_RESULTS_PANEL"
+@@ -1294,7 +1294,7 @@ void CReportMenu::GenerateMPPlayerReport(const netPlayer &fromPlayer, eReportTyp
+ 		rw.WriteString("sessionId",szSessionId);
+ 		if (eReportType == ReportType_TextChat_Annoying || eReportType == ReportType_TextChat_Hate)
+ 		{
+-	#if RSG_PC
++	#if RSG_PC && !RSG_LINUX
+ 			NetworkInterface::GetTextChat().GetChatHistoryWithPlayer(fromPlayer.GetGamerInfo().GetGamerHandle().GetRockstarId(), &rw);
+ 	#else
+ 			Assertf(0, "TextChat report not supported on this platform");

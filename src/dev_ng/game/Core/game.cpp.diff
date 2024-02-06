@@ -410,3 +410,45 @@ diff --git a/src/dev_ng/game/Core/game.cpp b/src/dev_ng/game/Core/game.cpp
  #include "network/NetworkInterface.h"
  #include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
  #include "game/PopMultiplierAreas.h"
+@@ -1336,7 +1335,9 @@ void CGame::InitLevel(int level)
+ 		m_GameSkeleton.Init(INIT_BEFORE_MAP_LOADED);
+ 		PF_POP_STARTUPBAR();
+ 
+-	WIN32PC_ONLY(CApp::CheckExit());
++#if RSG_PC && !RSG_LINUX
++	CApp::CheckExit();
++#endif
+ 
+ 	//g_DrawableStore.PlaceDummies();
+ 
+@@ -1362,13 +1363,17 @@ void CGame::InitLevel(int level)
+ 	}
+ 	PF_POP_STARTUPBAR();
+ 
+-	WIN32PC_ONLY(CApp::CheckExit());
++#if RSG_PC && !RSG_LINUX
++	CApp::CheckExit();
++#endif
+ 
+ 		PF_PUSH_STARTUPBAR("Init after map loaded");
+ 		m_GameSkeleton.Init(INIT_AFTER_MAP_LOADED);
+ 		PF_POP_STARTUPBAR();
+ 
+-	WIN32PC_ONLY(CApp::CheckExit());
++#if RSG_PC && !RSG_LINUX
++	CApp::CheckExit();
++#endif
+ 
+ #if __BANK
+ 	PF_START_STARTUPBAR("Init widgets");
+@@ -1514,7 +1519,9 @@ void CGame::InitSession(int level, bool bLoadingAPreviouslySavedGame)
+ 	CStreaming::MarkFirstInitComplete();
+ 	PF_POP_STARTUPBAR();
+ 
+-	WIN32PC_ONLY(CApp::CheckExit());
++#if RSG_PC && !RSG_LINUX
++	CApp::CheckExit();
++#endif
+ 
+ #if !__FINAL
+ 	CStreaming::EndRecordingStartupSequence();

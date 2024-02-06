@@ -28,3 +28,21 @@ diff --git a/src/dev_ng/game/audio/radioaudioentity.cpp b/src/dev_ng/game/audio/
  
  #if GTA_REPLAY
  #include "frontend/VideoEditor/Core/VideoProjectAudioTrackProvider.h"
+@@ -3808,7 +3808,7 @@ void ForceNextPlayerStation()
+ 	}	
+ }
+ 
+-#if __WIN32PC // user music
++#if __WIN32PC && !__LINUX // user music
+ void NextTrackCB()
+ {
+ 	audRadioStation::FindStation("RADIO_19_USER")->NextTrack();
+@@ -3859,7 +3859,7 @@ void audRadioAudioEntity::AddWidgets(bkBank &bank)
+ 		bank.AddSlider("RadioPositionedToStereoTime", &g_RadioPositionedToStereoTime, 0.f, 10000.f, 0.01f);
+ 		bank.AddToggle("Enable Positioned Player Radio", &g_PositionedPlayerVehicleRadioEnabled);		
+ 
+-#if __WIN32PC // user music
++#if __WIN32PC && !RSG_LINUX // user music
+ 		bank.PushGroup("User Music", false);
+ 			bank.AddToggle("Show User Music Data", &g_RadioAudioEntity.sm_DebugUserMusic);
+ 			bank.AddButton("NextTrack", CFA(NextTrackCB));

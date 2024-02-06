@@ -25,3 +25,12 @@ diff --git a/src/dev_ng/game/frontend/SocialClubMenu.cpp b/src/dev_ng/game/front
  
  #if RSG_PC
  #include "rline/rlpc.h"
+@@ -1206,7 +1206,7 @@ void SocialClubLegalsMenu::Render()
+ 	{
+ 		m_scMovie.Render();
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		// hide instructional buttons if SCUI is showing ...hints are confusing
+ 		if (!g_rlPc.IsUiShowing())
+ #endif

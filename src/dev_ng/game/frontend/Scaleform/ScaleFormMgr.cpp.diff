@@ -46,3 +46,12 @@ diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp b/src/dev_ng/ga
  #include "streaming/streaming.h"
  #include "system/controlMgr.h"
  #include "system/param.h"
+@@ -6222,7 +6222,7 @@ void CScaleformMgr::RenderMovie(s32 iIndex, float fTimeStep, bool bUpdateWhenPau
+ {
+ #define FRAMES_TO_CONSIDER_STILL_RENDERING (3)
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (((SMultiplayerChat::IsInstantiated() &&
+ 		SMultiplayerChat::GetInstance().IsChatTyping()) ||
+ 		(STextInputBox::IsInstantiated() &&

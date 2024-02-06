@@ -23,3 +23,30 @@ diff --git a/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp b/src/dev
  #endif
  #if RSG_DURANGO
  #include "control/replay/File/FileStoreDurango.h"
+@@ -183,7 +183,7 @@ void ReplayFileManager::Startup()
+ 	{
+ 		{
+ 			sysMemAutoUseAllocator replayAlloc(*MEMMANAGER.GetReplayAllocator());
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX // TODO: add Linux support
+ 			sm_Device = rage_new FileStorePC();
+ #elif RSG_ORBIS
+ 			sm_Device = rage_new FileStoreOrbis();
+@@ -2501,7 +2501,7 @@ void ReplayFileManager::StartFileThread()
+ 		replayAssertf(sm_FileThreadID != sysIpcThreadIdInvalid, "Could not create the ReplayFileManager thread, out of memory?");
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if( sm_FileNotificationThreadID == sysIpcThreadIdInvalid )
+ 	{
+ 		sm_WatchDirectory = true;
+@@ -2566,7 +2566,7 @@ void ReplayFileManager::StopFileThread()
+ 	}
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void ReplayFileManager::WatchDirectory(void*)
+ {
+ 	DWORD dwWaitStatus; 

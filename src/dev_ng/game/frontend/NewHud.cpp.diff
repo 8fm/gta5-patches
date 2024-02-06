@@ -91,3 +91,12 @@ diff --git a/src/dev_ng/game/frontend/NewHud.cpp b/src/dev_ng/game/frontend/NewH
  
  //OPTIMISATIONS_OFF()
  FRONTEND_OPTIMISATIONS()
+@@ -4643,7 +4643,7 @@ void CNewHud::DeviceReset()
+ /////////////////////////////////////////////////////////////////////////////////////
+ bool CNewHud::CanRenderHud()
+ {
+-#if RSG_PC & GTA_REPLAY
++#if RSG_PC && GTA_REPLAY && !RSG_LINUX
+ 	if (g_rlPc.IsUiShowing())
+ 	{
+ 		if (!CReplayCoordinator::IsExportingToVideoFile())

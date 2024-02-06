@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/frontend/landing_page/LegacyLandingScreen.cpp b/src/dev_ng/game/frontend/landing_page/LegacyLandingScreen.cpp
+--- a/src/dev_ng/game/frontend/landing_page/LegacyLandingScreen.cpp
++++ b/src/dev_ng/game/frontend/landing_page/LegacyLandingScreen.cpp
+@@ -111,7 +111,9 @@ bool CLegacyLandingScreen::Update()
+ 
+     PF_FRAMEINIT_TIMEBARS(0);
+ 
++#if !RSG_LINUX
+     CApp::CheckExit();
++#endif
+ 
+     sysIpcSleep(33);
+     fwTimer::Update();
+@@ -287,7 +289,9 @@ bool CLegacyLandingScreen::Update()
+             if(result == FE_WARNING_YES)
+             {
+                 CPauseMenu::SetGameWantsToExitToWindows(true);
++#if !RSG_LINUX // TODO: add Linux support and fix class NetworkExitFlow
+                 NetworkInterface::GetNetworkExitFlow().StartShutdownTasks();
++#endif
+             }
+             else if (result == FE_WARNING_NO)
+             {

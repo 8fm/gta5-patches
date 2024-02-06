@@ -10,6 +10,15 @@ diff --git a/src/dev_ng/game/audio/radiotrack.h b/src/dev_ng/game/audio/radiotra
  	void SetGainAndPostRoll(const f32 makeUpGain, const u32 postRoll)	{ m_MakeUpGain = makeUpGain; m_PostRoll = postRoll; }
  #endif
  
+@@ -36,7 +36,7 @@ public:
+ 
+ 	void Update(u32 timeInMs, bool isFrozen);
+ 	audPrepareState Prepare(u32 startOffset);
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	audPrepareState PrepareUserTrack(u32 startOffset);
+ #endif
+ 	void Play(void);
 @@ -115,7 +115,7 @@ public:
  
  	u32 GetDuration() const

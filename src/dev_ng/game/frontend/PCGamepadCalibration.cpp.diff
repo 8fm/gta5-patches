@@ -5,7 +5,8 @@ diff --git a/src/dev_ng/game/frontend/PCGamepadCalibration.cpp b/src/dev_ng/game
 -#include "Frontend/PCGamepadCalibration.h"
 +#include "frontend/PCGamepadCalibration.h"
  
- #if RSG_PC
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
  
  #include "grprofile/timebars.h"
 -#include "Frontend/PauseMenu.h"

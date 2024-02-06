@@ -1,6 +1,12 @@
 diff --git a/src/dev_ng/game/audio/userradiotrackmanager.cpp b/src/dev_ng/game/audio/userradiotrackmanager.cpp
 --- a/src/dev_ng/game/audio/userradiotrackmanager.cpp
 +++ b/src/dev_ng/game/audio/userradiotrackmanager.cpp
+@@ -1,4 +1,4 @@
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #pragma warning(disable: 4668)
+ #include <windows.h>
 @@ -10,7 +10,7 @@
  #include "system/FileMgr.h"
  #include "frontend/PauseMenu.h"

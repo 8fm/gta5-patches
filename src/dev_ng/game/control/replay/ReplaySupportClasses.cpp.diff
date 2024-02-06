@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/control/replay/ReplaySupportClasses.cpp b/src/dev_n
  #include "ReplayRecorder.h"
  #include "file/device.h"
  #include "fwsys/timer.h"
+@@ -37,7 +37,7 @@ void ReplayHeader::GenerateDateString(atString& string, u32& uid)
+ 	//auto generate a file name using the current time, if we haven't got one
+ 	char filename[REPLAY_DATETIME_STRING_LENGTH] = {0};
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	_tzset();
+ #endif
+ 

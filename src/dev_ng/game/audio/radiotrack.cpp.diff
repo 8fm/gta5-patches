@@ -1,0 +1,158 @@
+diff --git a/src/dev_ng/game/audio/radiotrack.cpp b/src/dev_ng/game/audio/radiotrack.cpp
+--- a/src/dev_ng/game/audio/radiotrack.cpp
++++ b/src/dev_ng/game/audio/radiotrack.cpp
+@@ -64,7 +64,9 @@ float audRadioTrack::sm_VolumeMaxPrinted = 19.f;
+ 
+ audRadioTrack::audRadioTrack()
+ {
+-	WIN32PC_ONLY(m_MediaReader = NULL);
++#if RSG_PC && !RSG_LINUX
++	m_MediaReader = NULL;
++#endif
+ 
+ 	Reset();
+ 	ShutdownUserMusic();
+@@ -88,7 +90,7 @@ void audRadioTrack::Init(const s32 category, const s32 trackIndex, const u32 sou
+ 	m_StationNameHash = stationNameHash;
+ 	m_IsFlyloPart1 = false;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	m_IsUserTrack = IsUserTrackSound(soundRef);
+ 	m_StreamerStartOffset = 0;
+ #endif
+@@ -142,7 +144,7 @@ void audRadioTrack::Init(const s32 category, const s32 trackIndex, const u32 sou
+ 	{
+ 		m_PlayTime = 0;
+ 		m_PlayTimeCalculationMixerFrame = audDriver::GetMixer()->GetMixerTimeFrames();
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		m_Duration = audRadioStation::GetUserRadioTrackManager()->GetTrackDuration(trackIndex);
+ #else
+ 		m_Duration = 0;
+@@ -388,7 +390,7 @@ void audRadioTrack::Reset(void)
+ 	m_FoundBeatMarkers = false;
+ 	m_StereoVolumeOffset = 0.f;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	m_MakeUpGain = 0.f;
+ 	m_PostRoll = 0;	
+ #endif
+@@ -396,7 +398,7 @@ void audRadioTrack::Reset(void)
+ 
+ void audRadioTrack::ShutdownUserMusic()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	if(m_IsUserTrack)
+ 	{
+ 		if(m_MediaReader)
+@@ -456,7 +458,7 @@ void audRadioTrack::Update(u32 timeInMs, bool isFrozen)
+ 					{
+ 						if(m_IsUserTrack)
+ 						{
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 							Assert(m_StreamingSound->GetSoundTypeID() == ExternalStreamSound::TYPE_ID);
+ 							audExternalStreamSound *str = reinterpret_cast<audExternalStreamSound*>(m_StreamingSound);	
+ 							u32 usamplerate = m_MediaReader->GetSampleRate();
+@@ -488,7 +490,7 @@ void audRadioTrack::Update(u32 timeInMs, bool isFrozen)
+ 	
+ 				if(m_IsUserTrack) 
+ 				{
+-#if __WIN32PC					
++#if __WIN32PC && !RSG_LINUX
+ 					m_PlayTime = m_StreamerStartOffset + ((audExternalStreamSound*)m_StreamingSound)->GetCurrentPlayTimeOfWave();
+ 					m_PlayTimeCalculationMixerFrame = audDriver::GetMixer()->GetMixerTimeFrames();
+ 					
+@@ -539,7 +541,7 @@ void audRadioTrack::Update(u32 timeInMs, bool isFrozen)
+ 			if(m_StreamingSound)
+ 			{
+ 				// grab the latest play time
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 				if(m_IsUserTrack && m_StreamingSound)
+ 				{
+ 					m_PlayTime = m_StreamerStartOffset + ((audExternalStreamSound*)m_StreamingSound)->GetCurrentPlayTimeOfWave();
+@@ -647,7 +649,7 @@ u32 audRadioTrack::GetTextId(const u32 playTimeMs) const
+ 
+ audPrepareState audRadioTrack::Prepare(u32 startOffset)
+ {
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	if(m_IsUserTrack)
+ 		return PrepareUserTrack(startOffset);
+ #endif
+@@ -723,7 +725,7 @@ audPrepareState audRadioTrack::Prepare(u32 startOffset)
+ 	return state;
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ audPrepareState audRadioTrack::PrepareUserTrack(u32 startOffset)
+ {
+ 	if(m_StreamingSound == NULL)
+@@ -867,7 +869,7 @@ void audRadioTrack::Play(void)
+ 			//Physically play our track sound.
+ 			if(m_IsUserTrack)
+ 			{
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 				Assert(m_StreamingSound->GetSoundTypeID() == ExternalStreamSound::TYPE_ID);
+ 				audExternalStreamSound *str = reinterpret_cast<audExternalStreamSound*>(m_StreamingSound);	
+ 				u32 usamplerate = m_MediaReader->GetSampleRate();
+@@ -927,7 +929,7 @@ void audRadioTrack::UpdateStereoEmitter(f32 volumeDb, f32 cutoff)
+ 	if(CReplayMgr::IsEditModeActive())
+ 	{
+ 		volumeDb = g_SilenceVolume;
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 		m_MakeUpGain = 0.f;
+ #endif
+ 	}
+@@ -935,7 +937,7 @@ void audRadioTrack::UpdateStereoEmitter(f32 volumeDb, f32 cutoff)
+ 
+ 	if(m_StreamingSound)
+ 	{
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 		m_StreamingSound->SetRequestedVolume(volumeDb + m_MakeUpGain);
+ #else
+ 		m_StreamingSound->SetRequestedVolume(volumeDb);
+@@ -956,7 +958,7 @@ void audRadioTrack::UpdatePositionedEmitter(const u32 emitterIndex, f32 emittedV
+ 	if(CReplayMgr::IsEditModeActive())
+ 	{
+ 		volumeDb = g_SilenceVolume;
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 		m_MakeUpGain = 0.f;
+ #endif
+ 	}
+@@ -1061,7 +1063,7 @@ void audRadioTrack::UpdatePositionedEmitter(const u32 emitterIndex, f32 emittedV
+ 		//Use RequestedPostSubmixVolumeAttenuation rather than RequestedVolume here, so we have the flexibility to specify a volume above 0dB
+ 		//in order to cancel-out a proportion of the attenuation specified via categories.
+ 		requestedSettings->SetVolume(0.0f);
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 		requestedSettings->SetPostSubmixVolumeAttenuation(volumeDb + m_MakeUpGain);
+ #else
+ 		requestedSettings->SetPostSubmixVolumeAttenuation(volumeDb);
+@@ -1119,7 +1121,7 @@ bool audRadioTrack::IsPlayingPhysicallyOrVirtually() const
+ 
+ const char *audRadioTrack::GetBankName() const
+ {
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	if(m_IsUserTrack && m_MediaReader)
+ 	{
+ 		static char trackInfo[255];
+@@ -1543,7 +1545,7 @@ void audRadioTrack::DrawDebug(audDebugDrawManager &drawMgr) const
+ 		drawMgr.DrawLinef("%u beat markers.  Beat: %.2f (%u/4 %.1f BPM)", m_BeatMarkers.GetCount(), beatTimeS, beatNumber, bpm);
+ 	}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	if(m_IsUserTrack && audRadioStation::GetUserRadioTrackManager()->GetRadioMode() == USERRADIO_PLAY_MODE_RADIO)
+ 	{
+ 		char startString[32];

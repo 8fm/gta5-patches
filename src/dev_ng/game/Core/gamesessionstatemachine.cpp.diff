@@ -60,3 +60,66 @@ diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/
  #endif // RSG_PC
  
  #if __WIN32PC
+@@ -107,7 +107,7 @@ CGameSessionStateMachine::~CGameSessionStateMachine()
+ {
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ static bool is_SCui_showing()
+ {
+ 	return g_rlPc.IsUiShowing();
+@@ -123,7 +123,7 @@ void CGameSessionStateMachine::Init()
+ #if RAGE_SEC_ENABLE_YUBIKEY
+ 	SetState(TWO_FACTOR_AUTH_CHECK);
+ #else
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	SetState(CHECK_FOR_RGSC);
+ 	GRCDEVICE.CursorVisibilityOverride = is_SCui_showing;
+ #else
+@@ -163,7 +163,7 @@ void CGameSessionStateMachine::ReInit(int level)
+ #endif
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void CGameSessionStateMachine::ProcessReInitState()
+ {
+ 	// Grab the level from the reinit call
+@@ -570,7 +570,7 @@ void CGameSessionStateMachine::Update()
+     {
+         oldState = m_State;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		CApp::CheckExit();
+ #endif
+ 
+@@ -583,7 +583,7 @@ void CGameSessionStateMachine::Update()
+ 		case INIT:
+ 			ProcessInitState();
+ 			break;
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		case REINIT:
+ 			ProcessReInitState();
+ 			break;
+@@ -1280,7 +1280,7 @@ void CGameSessionStateMachine::ProcessHandleLoadedSaveGameState()
+ 		{
+ 			Displayf("CGameSessionStateMachine::ProcessHandleLoadedSaveGameState - CSavegameLoad::DeSerialize failed");
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			PF_POP_TIMEBAR(); // Update
+ 
+ 			CSavegameDialogScreens::SetSaveGameError(SAVE_GAME_DIALOG_CANT_LOAD_A_DAMAGED_PC_SAVE);
+@@ -1641,7 +1641,7 @@ void CGameSessionStateMachine::ShutdownInitialDialogueScreensOnly()
+ 	CLoadingScreens::Resume();
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ //	Copied from the while loop inside CGameSessionStateMachine::ProcessReInitState()
+ void CGameSessionStateMachine::UpdateLoadFailedDialogueScreens()
+ {

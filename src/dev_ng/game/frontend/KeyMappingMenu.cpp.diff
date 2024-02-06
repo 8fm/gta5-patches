@@ -24,3 +24,21 @@ diff --git a/src/dev_ng/game/frontend/KeyMappingMenu.cpp b/src/dev_ng/game/front
  
  #define INVALID_RETURN_INDEX -1
  #define RESTORE_DEFAULTS_ID -3000 // just a random number to get it to behave
+@@ -345,7 +345,7 @@ bool CKeyMappingMenu::Populate(MenuScreenId newScreenId)
+ 	// necessary to spoof "gain focus"
+ 	CPauseMenu::GetMovieWrapper(PAUSE_MENU_MOVIE_CONTENT).CallMethod( "MENU_INTERACTION", PAD_NO_BUTTON_PRESSED );
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Block Social Club Hotkey
+ 	g_rlPc.GetUiInterface()->EnableHotkey(false);
+ #endif
+@@ -527,7 +527,7 @@ void CKeyMappingMenu::LoseFocus()
+ 	SetInSubmenu(false);
+ 	m_bTouchedAControl = false;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Re-Enable Social Club Hotkey
+ 	g_rlPc.GetUiInterface()->EnableHotkey(true);
+ #endif

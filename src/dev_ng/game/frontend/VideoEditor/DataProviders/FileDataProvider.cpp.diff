@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.cpp b/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/DataProviders/FileDataProvider.cpp
+@@ -644,7 +644,7 @@ bool CFileDataProvider::DeleteFunctionImpl( const char* filepath )
+ 
+ 	if( filepath )
+ 	{
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ 		USES_CONVERSION;
+ 		wchar_t const * const wideName = UTF8_TO_UTF16( filepath );
+ 		hasDeleted = DeleteFileW( wideName ) == TRUE;

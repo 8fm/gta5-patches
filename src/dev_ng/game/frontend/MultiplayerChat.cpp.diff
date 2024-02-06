@@ -10,3 +10,38 @@ diff --git a/src/dev_ng/game/frontend/MultiplayerChat.cpp b/src/dev_ng/game/fron
  #include "network/Voice/NetworkVoice.h"
  
  #define KEY_HELD_THRESHOLD 100
+@@ -95,7 +95,9 @@ bool CMultiplayerChat::LoadMovie()
+ 	CScaleformMgr::ChangeMovieParams(m_Movie.GetMovieID(), Vector2(0.0f, 0.0f), Vector2(1.0f,1.0f), GFxMovieView::SM_ExactFit);
+ 
+ 	mpchatDebugf1("Loading movie: %s", CHATWIDGET_MOVIE_NAME);
++#if !RSG_LINUX // TODO: add Linux support and fix class NetworkExitFlow
+ 	NetworkInterface::GetTextChat().AddDelegate(&m_TextChatDelegate);
++#endif
+ 
+ 	UpdateDisplayConfig();
+ 
+@@ -109,7 +111,9 @@ bool CMultiplayerChat::UnloadMovie()
+ 
+ 	mpchatDebugf1("Removing movie: %s", CHATWIDGET_MOVIE_NAME);
+ 	
++#if !RSG_LINUX // TODO: add Linux support and fix class NetworkExitFlow
+ 	NetworkInterface::GetTextChat().RemoveDelegate(&m_TextChatDelegate);
++#endif
+ 
+ 	m_Movie.RemoveMovie();
+ 	return m_Movie.IsActive();
+@@ -367,10 +371,14 @@ void CMultiplayerChat::UpdateInputWhenTyping()
+ 					mpchatDebugf1("Message before filter is applied to be sent: %s.", utfMsg);
+ 					mpchatAssertf( m_szMessage[0] != '\0', "We do handle this case but lets be sure.  If this shows we're sending a message that's empty.  This is bad.");
+ 
++#if RSG_LINUX // TODO: add Linux support and fix class NetworkExitFlow
++					bool bTextSubmitted = false;
++#else
+ 					bool bTextSubmitted = NetworkInterface::GetTextChat().SubmitText(
+ 						NetworkInterface::GetLocalPlayer()->GetGamerInfo(), 
+ 						fwProfanityFilter::GetInstance().AsteriskProfanity(utfMsg),
+ 						m_eTypeMode==eTypeMode_Team);
++#endif
+ 
+ 					if (bTextSubmitted)
+ 					{

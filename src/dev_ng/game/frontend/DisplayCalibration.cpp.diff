@@ -42,3 +42,12 @@ diff --git a/src/dev_ng/game/frontend/DisplayCalibration.cpp b/src/dev_ng/game/f
  #include "rline/rlpresence.h"
  #include "system/service.h"
  
+@@ -237,7 +237,7 @@ void CDisplayCalibration::Update()
+ 	{
+ 		PF_FRAMEINIT_TIMEBARS(0);
+ 
+-#if RSG_PC
++#if !RSG_LINUX
+ 		CApp::CheckExit();
+ #endif
+ 

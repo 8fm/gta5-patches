@@ -201,3 +201,199 @@ diff --git a/src/dev_ng/game/frontend/PauseMenu.cpp b/src/dev_ng/game/frontend/P
  #endif
  
  #if RSG_ORBIS
+@@ -3188,7 +3188,7 @@ void CPauseMenu::Open(eFRONTEND_MENU_VERSION iMenuVersion, bool bPauseGame/*=tru
+ 			stationIndex = g_OffRadioStation;
+ 		}
+ 
+-#if RSG_PC		
++#if RSG_PC && !RSG_LINUX
+ 		if(station && station->IsUserStation() && stationIndex != (s32)g_OffRadioStation && !audRadioStation::HasUserTracks())
+ 		{
+ 			SetMenuPreference(PREF_RADIO_STATION, -1); // make sure that if Self Radio is selected but we have no tracks we shut the radio off
+@@ -3245,7 +3245,7 @@ void CPauseMenu::Open(eFRONTEND_MENU_VERSION iMenuVersion, bool bPauseGame/*=tru
+ 	else
+ 		SUIContexts::Deactivate("IsSpectating");
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(audRadioStation::GetUserRadioTrackManager()->IsScanning())
+ 	{
+ 		if(audRadioStation::GetUserRadioTrackManager()->GetIsCompleteScanRunning())
+@@ -4034,7 +4034,7 @@ void CPauseMenu::Update()
+ 		return;
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (sm_bActive && sm_bWaitOnPCGamepadCalibrationScreen)
+ 	{
+ 		CPCGamepadCalibration::Update();
+@@ -4380,7 +4380,7 @@ void CPauseMenu::Update()
+ 		sm_pDynamicPause->UpdateMenuPed();
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Disable sending of outgoing voice data while in the voice chat settings menu B*2168376
+ 	// WARNING: As of December 19, 2014, players in the voice chat settings menu will still
+ 	//			be able to hear other players but other players can't hear them. There is no indication
+@@ -4407,7 +4407,7 @@ void CPauseMenu::Update()
+ 
+ 		gRenderThreadInterface.Flush();
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		CNetwork::GetVoice().SetVoiceTestMode(false);
+ #endif // RSG_PC
+ 
+@@ -6906,6 +6906,7 @@ void CPauseMenu::HandleVoiceInput(int iDirection, bool bForceUpdate)
+ 
+ 		if( uiVerifyf(iDirection >= -1 && iDirection <= 1, "Received invalid direction %i, expected only -1,0,1!", iDirection) )
+ 		{
++#if !RSG_LINUX
+ 			RVDeviceInfo devices[VoiceChat::MAX_DEVICES];
+ 			int deviceCount = RVoice::ListDevices(devices, VoiceChat::MAX_DEVICES, RV_CAPTURE);
+ 
+@@ -6922,6 +6923,7 @@ void CPauseMenu::HandleVoiceInput(int iDirection, bool bForceUpdate)
+ 				iNewVCInput = deviceCount - 1;
+ 			else if(iNewVCInput >= deviceCount)
+ 				iNewVCInput = 0;
++#endif
+ 
+ 			// don't play the tick sound on initial creation if we had an invalid station
+ 			if( iDirection != 0 && iNewVCInput != GetMenuPreference(PREF_VOICE_INPUT_DEVICE) )
+@@ -6984,6 +6986,7 @@ void CPauseMenu::HandleVoiceOutput(int iDirection, bool bForceUpdate)
+ 
+ 		if( uiVerifyf(iDirection >= -1 && iDirection <= 1, "Received invalid direction %i, expected only -1,0,1!", iDirection) )
+ 		{
++#if !RSG_LINUX
+ 			RVDeviceInfo devices[VoiceChat::MAX_DEVICES];
+ 			int num = RVoice::ListDevices(devices, VoiceChat::MAX_DEVICES, RV_PLAYBACK);
+ 
+@@ -6997,6 +7000,7 @@ void CPauseMenu::HandleVoiceOutput(int iDirection, bool bForceUpdate)
+ 				iNewVCOutput = num - 1;
+ 			else if(iNewVCOutput >= num)
+ 				iNewVCOutput = 0;
++#endif
+ 
+ 			// don't play the tick sound on initial creation if we had an invalid station
+ 			if( iDirection != 0 && iNewVCOutput != GetMenuPreference(PREF_VOICE_OUTPUT_DEVICE) )
+@@ -7071,6 +7075,7 @@ void CPauseMenu::HandleVoiceChatMode(int iDirection, bool bForceUpdate /* = fals
+ 					SetItemPref(PREF_VOICE_CHAT_MODE, iChatPreference,  UPDATE_PREFS_FROM_MENU);
+ 				}
+ 
++#if !RSG_LINUX
+ 				const char* pText = iChatPreference == VoiceChat::CAPTURE_MODE_PUSH_TO_TALK ? TheText.Get("MO_VCHAT_MODE_PTT") : TheText.Get( curItem.cTextId.GetHash(), "");
+ 
+ 				if( CScaleformMenuHelper::SET_DATA_SLOT(static_cast<PM_COLUMNS>(voiceData.depth-1), onScreenIndex, curItem.MenuUniqueId + PREF_OPTIONS_THRESHOLD, 
+@@ -7079,6 +7084,7 @@ void CPauseMenu::HandleVoiceChatMode(int iDirection, bool bForceUpdate /* = fals
+ 					// we could send all the options, but since we gotta override the text anyway, let's just send the relevant one
+ 					CScaleformMgr::AddParamLocString(curValue.MenuDisplayOptions[iChatPreference].cTextId.GetHash());
+ 				}
++#endif
+ 			
+ 				CScaleformMgr::EndMethod();
+ 
+@@ -9965,7 +9971,7 @@ void CPauseMenu::UpdateInput(const bool bLockInputThisFrame)
+ 	}
+ #endif // __ALLOW_IMPORT_OF_SP_SAVEGAMES
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (sm_bWaitOnExitToWindowsConfirmationScreen)
+ 	{
+ 		if (sm_iExitTimer == 0)
+@@ -10107,7 +10113,7 @@ void CPauseMenu::UpdateInput(const bool bLockInputThisFrame)
+ 					pressed = PAD_RIGHTSHOULDER1;
+ 			}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			if (!sm_bMaxPayneMode && CPauseMenu::CheckInput(FRONTEND_INPUT_SELECT, false, iInputFlag))
+ 			{
+ 				g_rlPc.ShowUi();
+@@ -11584,7 +11590,7 @@ void CPauseMenu::SetDefaultValues( bool WIN32PC_ONLY( bDefaultGraphics ) )
+ 	SetMenuPreference(PREF_BIG_RADAR_NAMES, FALSE);
+ 	SetMenuPreference(PREF_SHOW_TEXT_CHAT, TRUE);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if ( bDefaultGraphics )
+ 	{
+ 		SetMenuPreference(PREF_GFX_VID_OVERRIDE, FALSE);
+@@ -12040,6 +12046,7 @@ int CPauseMenu::GetResolutionIndex()
+ {
+ 	atArray<grcDisplayWindow> &resolutionList = CSettingsManager::GetInstance().GetResolutionList(CPauseMenu::GetMenuPreference(PREF_VID_MONITOR));
+ 
++#if !RSG_LINUX
+ 	RECT rcWindowRect;
+ 	GetWindowRect( g_hwndMain, &rcWindowRect );
+ 	u32 iWindowWidth = rcWindowRect.right - rcWindowRect.left;
+@@ -12056,6 +12063,7 @@ int CPauseMenu::GetResolutionIndex()
+ 			(resolutionList[iResolutionPrefValue].uHeight == iWindowHeight || resolutionList[iResolutionPrefValue].uHeight == iClientHeight))
+ 			return iResolutionPrefValue;
+ 	}
++#endif
+ 
+ 	return 0;
+ }
+@@ -12602,6 +12610,7 @@ void CPauseMenu::ConvertToActualResolution(u32& width, u32& height, int screenRe
+ 		atArray<grcDisplayWindow> &resolutionsList = CSettingsManager::GetInstance().GetNativeResolutionList(CPauseMenu::GetMenuPreference(PREF_VID_MONITOR));
+ 		if (screenResolutionIndex < resolutionsList.size())
+ 		{
++#if !RSG_LINUX
+ 			u32 windowStyle = GetWindowLong( g_hwndMain, GWL_STYLE );
+ 
+ 			windowStyle &= ~WS_POPUP;
+@@ -12624,6 +12633,7 @@ void CPauseMenu::ConvertToActualResolution(u32& width, u32& height, int screenRe
+ 
+ 			width = min(largestWidth - widthDiff, width);
+ 			height = min(largestHeight - heightDiff, height);
++#endif
+ 		}
+ 	}
+ }
+@@ -12651,7 +12661,7 @@ Settings CPauseMenu::GetMenuGraphicsSettings(bool bForSaving)
+ 		{
+ 			SetMenuPreference(PREF_GFX_TESSELLATION, 0);
+ 			SetMenuPreference(PREF_GFX_GRASS_QUALITY, 0);
+-			SetMenuPreference(PREF_GFX_SHADOW_SOFTNESS, min(GetMenuPreference(PREF_GFX_SHADOW_SOFTNESS), 3));
++			SetMenuPreference(PREF_GFX_SHADOW_SOFTNESS, Min(GetMenuPreference(PREF_GFX_SHADOW_SOFTNESS), 3));
+ 			SetMenuPreference(PREF_GFX_DOF, 0);
+ 		}
+ 
+@@ -12862,6 +12872,7 @@ void CPauseMenu::UpdateVoiceBar(bool bUpdateSlot)
+ 
+ void CPauseMenu::UpdateVoiceSettings()
+ {
++#if !RSG_LINUX
+ 	FrontendVoiceSettings voiceSettings;
+ 	u32 uInputDeviceId = 0;
+ 	u32 uOutputDeviceId = 0;
+@@ -12894,14 +12905,17 @@ void CPauseMenu::UpdateVoiceSettings()
+ 	voiceSettings.m_eMode = (VoiceChat::CaptureMode)GetMenuPreference(PREF_VOICE_CHAT_MODE);
+ 
+ 	NetworkInterface::GetVoice().AdjustSettings(voiceSettings);
++#endif
+ }
+ 
+ void CPauseMenu::UpdateVoiceMuteOnLostFocus()
+ {
++#if !RSG_LINUX
+ 	// We set this independently of the other voicechat settings every frame in order to:
+ 	//	1) Remove the dependency between on graphics from the voicechat code.
+ 	//  2) Account for network re-initialization.
+ 	NetworkInterface::GetVoice().SetMuteChatBecauseLostFocus((GetMenuPreference(PREF_AUDIO_MUTE_ON_FOCUS_LOSS) == 1) && GRCDEVICE.GetLostFocusForAudio());
++#endif
+ }
+ 
+ bool CPauseMenu::GetCanApplySettings()
+@@ -13888,7 +13902,7 @@ void CPauseMenu::SetValueBasedOnPreference(s32 iPrefChanged, CPauseMenu::UpdateP
+ 
+ #endif // LIGHT_EFFECTS_SUPPORT
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		case PREF_VID_SCREEN_TYPE:
+ 		case PREF_VID_RESOLUTION:
+ 		case PREF_VID_REFRESH:

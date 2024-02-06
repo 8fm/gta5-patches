@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.h b/src/dev_ng/game/Core/gamesessionstatemachine.h
+--- a/src/dev_ng/game/Core/gamesessionstatemachine.h
++++ b/src/dev_ng/game/Core/gamesessionstatemachine.h
+@@ -134,7 +134,7 @@ private:
+ 	// Processes the state machines Init state
+ 	static void ProcessInitState();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	//PURPOSE
+ 	// Processes the state machines CheckForRGSC state
+ 	static void ProcessCheckForRGSC();
+@@ -249,7 +249,7 @@ private:
+     // Shuts down the frontend systems that are updated while transitioning betweeen sessions synchronously
+ 	static void ShutdownInitialDialogueScreensOnly();
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	static void UpdateLoadFailedDialogueScreens();
+ #endif	//	RSG_PC
+ 

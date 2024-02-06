@@ -44,3 +44,12 @@ diff --git a/src/dev_ng/game/frontend/CSettingsMenu.cpp b/src/dev_ng/game/fronte
  #endif // RSG_PC
  
  #if COMMERCE_CONTAINER
+@@ -427,7 +427,7 @@ bool CSettingsMenu::TriggerEvent(MenuScreenId MenuId, s32 iUniqueId)
+ 		return true;
+ 	}
+ #endif
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	else if (u32(MenuId.GetValue()) == ATSTRINGHASH("PREF_PCGAMEPAD",0xf9aa1b46))
+ 	{
+ 		CPCGamepadCalibration::LoadCalibrationMovie();
