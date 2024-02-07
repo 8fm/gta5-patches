@@ -2,13 +2,11 @@ diff --git a/src/dev_ng/rage/base/src/vcproj/RageGraphics/CMakeLists.txt b/src/d
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/rage/base/src/vcproj/RageGraphics/CMakeLists.txt
-@@ -0,0 +1,77 @@
+@@ -0,0 +1,75 @@
 +project(RageGraphics)
 +
 +set(TARGET_TYPE "StaticLib")
 +include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
-+
-+add_definitions(-DNOMINMAX)
 +
 +set(SRC_FILES
 +    "_Unity/_unity_RageGraphics_output.cpp"

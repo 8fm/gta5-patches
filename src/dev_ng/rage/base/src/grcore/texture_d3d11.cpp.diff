@@ -16,7 +16,7 @@ diff --git a/src/dev_ng/rage/base/src/grcore/texture_d3d11.cpp b/src/dev_ng/rage
  					u32 noOfRows = GetRowCount(uMip);
  
 -					u32 amountToCopyPerRow = min(pSrc->SysMemPitch, destMemPitch);
-+					u32 amountToCopyPerRow = std::min(pSrc->SysMemPitch, destMemPitch);
++					u32 amountToCopyPerRow = Min(pSrc->SysMemPitch, destMemPitch);
  
  					// Copy each slice.
  					for(u32 uSlice=0; uSlice<noOfSlices; uSlice++)

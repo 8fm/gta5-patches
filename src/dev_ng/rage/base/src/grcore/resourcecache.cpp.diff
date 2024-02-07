@@ -29,7 +29,7 @@ diff --git a/src/dev_ng/rage/base/src/grcore/resourcecache.cpp b/src/dev_ng/rage
  			iTotalFreeMemory = sysMemTotalFreeMemory();
  
 -			uNextUpdate = min(max(iTotalFreeAppMemory, auMemoryLimits[0]), auMemoryLimits[1]);
-+			uNextUpdate = std::min(std::max(iTotalFreeAppMemory, auMemoryLimits[0]), auMemoryLimits[1]);
++			uNextUpdate = Min(Max(iTotalFreeAppMemory, auMemoryLimits[0]), auMemoryLimits[1]);
  			uNextUpdate = (u64)(((uNextUpdate - auMemoryLimits[0]) / (float)(auMemoryLimits[1] - auMemoryLimits[0])) * (auUpdateRate[1] - auUpdateRate[0]) + auUpdateRate[0]);
  		}
  
@@ -38,19 +38,19 @@ diff --git a/src/dev_ng/rage/base/src/grcore/resourcecache.cpp b/src/dev_ng/rage
  		{	
  			uFree += info.RegionSize;
 -			uLargestFree = max(info.RegionSize, uLargestFree);
-+			uLargestFree = std::max(info.RegionSize, uLargestFree);
++			uLargestFree = Max(info.RegionSize, uLargestFree);
  		}
  		else if (info.State == MEM_COMMIT)
  		{
  			uCommited += info.RegionSize;
 -			uLargestCommitted = max(info.RegionSize, uLargestCommitted);
-+			uLargestCommitted = std::max(info.RegionSize, uLargestCommitted);
++			uLargestCommitted = Max(info.RegionSize, uLargestCommitted);
  		}
  		else if (info.State == MEM_RESERVE)
  		{
  			uReserved += info.RegionSize;
 -			uLargestReserved = max(info.RegionSize, uLargestReserved);
-+			uLargestReserved = std::max(info.RegionSize, uLargestReserved);
++			uLargestReserved = Max(info.RegionSize, uLargestReserved);
  		}
  	}
  
