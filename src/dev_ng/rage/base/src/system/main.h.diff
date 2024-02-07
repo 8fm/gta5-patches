@@ -1,0 +1,57 @@
+diff --git a/src/dev_ng/rage/base/src/system/main.h b/src/dev_ng/rage/base/src/system/main.h
+--- a/src/dev_ng/rage/base/src/system/main.h
++++ b/src/dev_ng/rage/base/src/system/main.h
+@@ -126,6 +126,7 @@
+ #include "diag/tracker.h"
+ #include "data/resourceheader.h"
+ #include "paging/base.h"
++#include "system/platformdefs.h"
+ 
+ #if RSG_ORBIS
+ #include <kernel.h>
+@@ -820,7 +821,7 @@ static void InitGameHeap()
+ 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 	// [DEBUG]
+ 	//
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	size_t debugMemorySize = (DEBUG_HEAP_SIZE) << 10;
+ 
+ 	const char* debugMemOverrideCmd = "@debugMemory";
+@@ -1762,7 +1763,7 @@ if (!snIsTunerRunning())
+ 
+ 	sysMemAllocator *theGameAllocator;
+ 
+-#if (!RSG_FINAL && !__FINAL) && RSG_PC
++#if (!RSG_FINAL && !__FINAL) && RSG_PC && !RSG_LINUX
+ 	bool sparseGameHeap = sysParam::FindCommandLineArg("@sparsegameheap");
+ 	if (sparseGameHeap) 
+ 	{
+@@ -1843,7 +1844,7 @@ if (!snIsTunerRunning())
+ 	// Physical size is in kilobytes; page size is 8k.
+ 	size_t resVirtHeapSize = static_cast<size_t>(SIMPLE_PHYSICAL_SIZE) << 10;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	sysMemAllocator *thePhysicalAllocator;
+ 	if (ENABLE_BUDDY_ALLOCATOR && USE_SPARSE_MEMORY NOTFINAL_ONLY( && sparseGameHeap))
+ 	{
+@@ -1875,7 +1876,9 @@ if (!snIsTunerRunning())
+ 	void* const resVirtWork = gameVirtualAllocator.Allocate(resVirtWorkSize, 16);
+ 	void* const resVirtHeap = sysMemPhysicalAllocate(resVirtHeapSize);
+ 	// Register it as a graphics memory area.
++#if !RSG_LINUX // TODO: add Linux support
+ 	rage::SetPhysicalMemoryArea(resVirtHeap, resVirtHeapSize);
++#endif // !RSG_LINUX
+ 
+ 	static sysMemBuddyAllocator physicalAllocator(resVirtHeap, g_rscPhysicalLeafSize, (resVirtHeapSize / g_rscPhysicalLeafSize), resVirtWork);
+ #endif
+@@ -1887,7 +1890,7 @@ if (!snIsTunerRunning())
+ 	static sysMemMultiAllocator theAllocator;
+ 	theAllocator.AddAllocator(gameVirtualAllocator);
+ 
+-#if RSG_PC && defined(SIMPLE_VIRTUAL_SIZE) && (SIMPLE_VIRTUAL_SIZE > 0)
++#if RSG_PC && defined(SIMPLE_VIRTUAL_SIZE) && (SIMPLE_VIRTUAL_SIZE > 0) && !RSG_LINUX
+ 	if (ENABLE_BUDDY_ALLOCATOR && USE_SPARSE_MEMORY NOTFINAL_ONLY( && sparseGameHeap))
+ 	{
+ 		// Really virtual but physical names used virtual above - Lets add to the confusion

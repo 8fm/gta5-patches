@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/game/VS_Project/CMakeLists.txt b/src/dev_ng/game/VS_Proj
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/game/VS_Project/CMakeLists.txt
-@@ -0,0 +1,58 @@
+@@ -0,0 +1,64 @@
 +string(TOLOWER game_win64_${GAME_CONFIG} BIN_NAME)
 +project(${BIN_NAME})
 +set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
@@ -10,9 +10,17 @@ new file mode 100644
 +set(TARGET_TYPE "Exec")
 +include(${CMAKE_SOURCE_DIR}/BuildOptions.cmake)
 +
-+add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
-+add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
-+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
++if (MSVC)
++    add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
++    add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
++    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
++    add_link_options(/MANIFEST:NO /NXCOMPAT /DYNAMICBASE /DEBUG /MACHINE:X64 /OPT:REF /INCREMENTAL:NO /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /OPT:ICF /ERRORREPORT:PROMPT /NOLOGO /TLBID:1)
++else()
++    add_compile_options(-include${CMAKE_SOURCE_DIR}/game/basetypes.h)
++    add_compile_options(-include${CMAKE_SOURCE_DIR}/game/game_config.h)
++    add_definitions(-Dlinux)
++    remove_definitions(-DWIN64)
++endif()
 +
 +set(SRC_FILES
 +    "../Core/main.cpp"
@@ -34,8 +42,6 @@ new file mode 100644
 +    ${CMAKE_SOURCE_DIR}/rage/suite/src
 +)
 +
-+add_link_options(/MANIFEST:NO /NXCOMPAT /DYNAMICBASE /DEBUG /MACHINE:X64 /OPT:REF /INCREMENTAL:NO /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /OPT:ICF /ERRORREPORT:PROMPT /NOLOGO /TLBID:1)
-+
 +target_link_directories(${PROJECT_NAME} PRIVATE
 +    "$ENV{DXSDK_DIR}Lib/x64"
 +    "${CMAKE_SOURCE_DIR}/rage/lib"
@@ -46,8 +52,8 @@ new file mode 100644
 +    game2_lib
 +    game3_lib
 +    game4_lib
-+    NaturalMotion
 +    network
++    NaturalMotion
 +    RageAudio
 +    RageCore
 +    RageCreature
