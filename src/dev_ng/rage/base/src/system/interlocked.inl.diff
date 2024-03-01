@@ -1,0 +1,94 @@
+diff --git a/src/dev_ng/rage/base/src/system/interlocked.inl b/src/dev_ng/rage/base/src/system/interlocked.inl
+--- a/src/dev_ng/rage/base/src/system/interlocked.inl
++++ b/src/dev_ng/rage/base/src/system/interlocked.inl
+@@ -156,6 +156,90 @@ inline void* sysInterlockedReadPointer(void* const volatile* target)
+ 	return *target;
+ }
+ 
++#elif __LINUX
++
++inline u32 sysInterlockedExchange(volatile u32* destination, u32 exchange)
++{
++	return 0;
++}
++
++inline u64 sysInterlockedExchange(volatile u64* destination, u64 exchange)
++{
++	return 0;
++}
++
++inline u32 sysInterlockedCompareExchange(volatile u32* destination, u32 exchange, u32 comparand)
++{
++	return 0;
++}
++
++inline u64 sysInterlockedCompareExchange(volatile u64 *destination, u64 exchange, u64 comparand)
++{
++	return 0;
++}
++
++inline void* sysInterlockedExchangePointer(void* volatile* destination, void* exchange)
++{
++}
++
++inline void* sysInterlockedCompareExchangePointer(void* volatile* destination, void* exchange, void* comparand)
++{
++}
++
++inline u32 sysInterlockedIncrement(volatile u32* destination)
++{
++	return 0;
++}
++
++inline u32 sysInterlockedDecrement(volatile u32* destination)
++{
++	return 0;
++}
++
++inline u32 sysInterlockedAdd(volatile u32* destination, s32 value)
++{
++	return 0;
++}
++
++inline u64 sysInterlockedAdd(volatile u64* destination, s64 value)
++{
++	return 0;
++}
++
++inline void* sysInterlockedAddPointer(volatile void** destination, ptrdiff_t value)
++{
++}
++
++inline u32 sysInterlockedOr(volatile u32* destination, u32 value)
++{
++	return 0;
++}
++
++inline u64 sysInterlockedOr(volatile u64* destination, u64 value)
++{
++	return 0;
++}
++
++inline u32 sysInterlockedAnd(volatile u32* destination, u32 value)
++{
++	return 0;
++}
++
++inline u32 sysInterlockedRead(const volatile u32* destination)
++{
++	return *destination;
++}
++
++inline u64 sysInterlockedRead(const volatile u64* destination)
++{
++	return *destination;
++}
++
++inline void* sysInterlockedReadPointer(void* const volatile* target)
++{
++	return *target;
++}
++
+ #elif __PPU
+ 
+ CompileTimeAssert(sizeof(unsigned) == sizeof(uint32_t));
