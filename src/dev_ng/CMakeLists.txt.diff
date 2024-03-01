@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
-@@ -0,0 +1,72 @@
+@@ -0,0 +1,70 @@
 +cmake_minimum_required(VERSION 3.18)
 +project(Fuzzy)
 +
@@ -72,6 +72,4 @@ new file mode 100644
 +add_subdirectory(rage/suite/src/vcproj/RageSuiteCreature)
 +add_subdirectory(rage/scaleform/Src/vcproj/scaleformgfx)
 +
-+if (MSVC)
 +add_subdirectory(game/VS_Project)
-+endif()

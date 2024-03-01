@@ -1,7 +1,22 @@
 diff --git a/src/dev_ng/game/Core/main.cpp b/src/dev_ng/game/Core/main.cpp
 --- a/src/dev_ng/game/Core/main.cpp
 +++ b/src/dev_ng/game/Core/main.cpp
-@@ -301,7 +301,7 @@ char *XEX_TITLE_ID = "CUSA00411";	// default to european, gets overridden later
+@@ -230,11 +230,13 @@ static void EarlyInit();
+ #if __WIN32PC
+ #include "grcore/device.h"
+ #include "system/xtl.h"
+-#include "dwmapi.h"
+ #include "diag/diagerrorcodes.h"
+ #include "fwutil/Gen9Settings.h"
+ #include "system/SystemInfo.h"
++#if !__LINUX
++#include "dwmapi.h"
+ #pragma comment (lib,"Dwmapi.lib")
++#endif // !__LINUX
+ 
+ #endif
+ 
+@@ -301,7 +303,7 @@ char *XEX_TITLE_ID = "CUSA00411";	// default to european, gets overridden later
  #pragma GCC diagnostic pop
  }
  #endif	//__XENON
@@ -10,7 +25,34 @@ diff --git a/src/dev_ng/game/Core/main.cpp b/src/dev_ng/game/Core/main.cpp
  
  #if __PPU && !__FINAL
  #include "system/stack.h"
-@@ -670,7 +670,7 @@ public:
+@@ -328,7 +330,7 @@ PARAM(noaero, "[startup] Disable Windows' Aero theme");
+ PARAM(nokeyboardhook, "[startup] Don't disable the Windows key with a low-level keyboard hook.");
+ PARAM(forcekeyboardhook, "[startup] Force disabling the Windows key with a low-level keyboard hook, even with debugger attached.");
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ static HHOOK g_keyboardHook;
+ static LRESULT CALLBACK LowLevelKeyboardProc(int code, WPARAM wParam, LPARAM lParam)
+ {
+@@ -490,7 +492,7 @@ bool Main_Prologue()
+ 	}
+ #endif
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (!PARAM_output.Get() ||
+ 		PARAM_nooutput.Get())
+ 	{
+@@ -554,7 +556,7 @@ bool Main_Prologue()
+ 	delete [] heap_test;
+ #endif
+ 
+-#if __WIN32PC && !__TOOL && !__RESOURCECOMPILER
++#if __WIN32PC && !__TOOL && !__RESOURCECOMPILER && !__LINUX
+ 	diagErrorCodes::LoadLanguageFile();
+ 	CSystemInfo::Initialize();
+ #endif
+@@ -670,7 +672,7 @@ public:
  	virtual bool UploadDump(const wchar_t* dumpFilename, const wchar_t* logFilename, const atMap<atString, atString>* annotations, const char* url);
  };
  
