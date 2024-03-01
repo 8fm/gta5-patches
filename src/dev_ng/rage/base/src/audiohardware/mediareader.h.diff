@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/mediareader.h b/src/dev_ng/rage/base/src/audiohardware/mediareader.h
+--- a/src/dev_ng/rage/base/src/audiohardware/mediareader.h
++++ b/src/dev_ng/rage/base/src/audiohardware/mediareader.h
+@@ -6,7 +6,7 @@
+ #ifndef INC_MUSICREADER_H_
+ #define INC_MUSICREADER_H_
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "system/criticalsection.h"
+ #include "atl/array.h"

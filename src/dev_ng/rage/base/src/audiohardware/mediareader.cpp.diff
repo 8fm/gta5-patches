@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/mediareader.cpp b/src/dev_ng/rage/base/src/audiohardware/mediareader.cpp
+--- a/src/dev_ng/rage/base/src/audiohardware/mediareader.cpp
++++ b/src/dev_ng/rage/base/src/audiohardware/mediareader.cpp
+@@ -2,7 +2,7 @@
+ // name:		MediaStreamReader.cpp
+ // description:	Media stream reader for video and audio streams.
+ //=====================================================================================================
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include <stdio.h> 
+ #include <string.h>

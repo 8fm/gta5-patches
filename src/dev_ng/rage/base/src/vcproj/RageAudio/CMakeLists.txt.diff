@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/rage/base/src/vcproj/RageAudio/CMakeLists.txt b/src/dev_
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/rage/base/src/vcproj/RageAudio/CMakeLists.txt
-@@ -0,0 +1,37 @@
+@@ -0,0 +1,36 @@
 +project(RageAudio)
 +
 +set(TARGET_TYPE "StaticLib")
@@ -26,11 +26,10 @@ new file mode 100644
 +add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 +
 +target_include_directories(${PROJECT_NAME} PRIVATE
-+    "$ENV{DXSDK_DIR}Include"
++    ${DIRECTX_INCLUDE_DIRS}
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
 +    ${CMAKE_SOURCE_DIR}/rage/3rdParty/freetype-2.3.7/include
 +    ${CMAKE_SOURCE_DIR}/rage/3rdParty/ps3mp3dec
-+    ${CMAKE_SOURCE_DIR}/rage/3rdparty/qtsdk7.3/CIncludes
 +    ${CMAKE_SOURCE_DIR}/rage/base/src
 +    ${CMAKE_SOURCE_DIR}/rage/framework/src
 +    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include

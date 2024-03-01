@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/driver.cpp b/src/dev_ng/rage/base/src/audiohardware/driver.cpp
+--- a/src/dev_ng/rage/base/src/audiohardware/driver.cpp
++++ b/src/dev_ng/rage/base/src/audiohardware/driver.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2006 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#if RSG_PC && defined(__UNITYBUILD)
++#if RSG_PC && defined(__UNITYBUILD) && !RSG_LINUX
+ #include "system/xtl.h"
+ #pragma warning(disable:4668)
+ #pragma warning(disable:4200)
+@@ -279,7 +279,7 @@ namespace rage
+ 			return true;
+ 		}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		if(PARAM_asio.Get())
+ 		{
+ 			audDisplayf("Using ASIO mixer output");
+@@ -299,6 +299,8 @@ namespace rage
+ 		sm_Mixer = rage_new audMixerDevicePs3();
+ #elif RSG_ORBIS
+ 		sm_Mixer = rage_new audMixerDeviceOrbis;
++#elif __LINUX
++		// TODO: add Linux support
+ #else
+ 		sm_Mixer = rage_new audMixerDeviceXAudio2();
+ #endif

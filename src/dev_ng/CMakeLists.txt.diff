@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
-@@ -0,0 +1,76 @@
+@@ -0,0 +1,74 @@
 +cmake_minimum_required(VERSION 3.18)
 +project(Fuzzy)
 +
@@ -61,9 +61,7 @@ new file mode 100644
 +add_subdirectory(rage/suite/src/suite_lib_psc)
 +
 +add_subdirectory(rage/naturalmotion/vcproj/NaturalMotion)
-+if (MSVC)
 +add_subdirectory(rage/base/src/vcproj/RageAudio)
-+endif()
 +add_subdirectory(rage/base/src/vcproj/RageCore)
 +add_subdirectory(rage/base/src/vcproj/RageCreature)
 +add_subdirectory(rage/framework/src/vcproj/RageFramework)

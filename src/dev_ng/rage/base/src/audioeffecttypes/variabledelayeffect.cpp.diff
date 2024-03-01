@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audioeffecttypes/variabledelayeffect.cpp b/src/dev_ng/rage/base/src/audioeffecttypes/variabledelayeffect.cpp
+--- a/src/dev_ng/rage/base/src/audioeffecttypes/variabledelayeffect.cpp
++++ b/src/dev_ng/rage/base/src/audioeffecttypes/variabledelayeffect.cpp
+@@ -179,7 +179,7 @@ AUD_DEFINE_DSP_PROCESS_FUNCTION(audVariableDelayEffect)
+ 
+ 			sysMemCpy(sampleGathererBuffer, ptr1, size1);
+ 
+-			if(ptr2 > 0)
++			if(size2 > 0) // ptr2 > 0
+ 			{
+ 				sysMemCpy(((char*)sampleGathererBuffer + size1), ptr2, size2);
+ 			}

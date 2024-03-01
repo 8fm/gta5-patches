@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audioasiolib/asio.h b/src/dev_ng/rage/base/src/audioasiolib/asio.h
+--- a/src/dev_ng/rage/base/src/audioasiolib/asio.h
++++ b/src/dev_ng/rage/base/src/audioasiolib/asio.h
+@@ -71,7 +71,7 @@ ASIOError ASIOOutputReady(void);
+ //---------------------------------------------------------------------------------------------------
+ //---------------------------------------------------------------------------------------------------
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #ifndef __ASIO_H
+ #define __ASIO_H

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audioasiolib/asio.cpp b/src/dev_ng/rage/base/src/audioasiolib/asio.cpp
+--- a/src/dev_ng/rage/base/src/audioasiolib/asio.cpp
++++ b/src/dev_ng/rage/base/src/audioasiolib/asio.cpp
+@@ -8,7 +8,7 @@
+ 	asio interface to the asiodrvr class methods
+ */ 
+ 	
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #pragma warning(disable: 4668)
+ 
+ #include "system/xtl.h"

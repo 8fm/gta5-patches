@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/device_xaudio_pc.h b/src/dev_ng/rage/base/src/audiohardware/device_xaudio_pc.h
+--- a/src/dev_ng/rage/base/src/audiohardware/device_xaudio_pc.h
++++ b/src/dev_ng/rage/base/src/audiohardware/device_xaudio_pc.h
+@@ -7,7 +7,7 @@
+ #ifndef AUD_DEVICE_XAUDIO_PC_H
+ #define AUD_DEVICE_XAUDIO_PC_H
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ #include "device.h"
+ 
