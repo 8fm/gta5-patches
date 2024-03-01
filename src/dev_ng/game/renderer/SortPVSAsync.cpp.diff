@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/SortPVSAsync.cpp b/src/dev_ng/game/renderer/SortPVSAsync.cpp
+--- a/src/dev_ng/game/renderer/SortPVSAsync.cpp
++++ b/src/dev_ng/game/renderer/SortPVSAsync.cpp
+@@ -1,7 +1,7 @@
+ // SortPVSAsync
+ // jlandry: 02/10/2012
+ 
+-#if __WIN32 || __SPU || RSG_ORBIS
++#if __WIN32 || __LINUX || __SPU || RSG_ORBIS
+ 
+ #define g_auxDmaTag		(0)
+ 

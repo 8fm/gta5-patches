@@ -40,16 +40,23 @@ diff --git a/src/dev_ng/game/frontend/ProfileSettings.cpp b/src/dev_ng/game/fron
  #elif RSG_PC
  	m_valid = true;
  	m_settings.clear();
-@@ -522,7 +524,7 @@ bool CProfileSettings::FinishRead(bool
- }
+@@ -532,6 +534,7 @@ static volatile bool s_bSavePcProfileThreadFailed = false;
+ //	DECLARE_THREAD_FUNC
+ void s_SavePcProfileThreadFunc(void*)
+ {
++#if !RSG_LINUX
+ 	PF_PUSH_MARKER("SavePcProfile");
+ 	s_bSavePcProfileThreadFailed = false;
  
+@@ -560,6 +563,7 @@ void s_SavePcProfileThreadFunc(void*)
+ 	{
+ 		s_bSavePcProfileThreadFailed = true;
+ 	}
++#endif // !RSG_LINUX
  
--#if RSG_PC
-+#if RSG_PC && !RSG_LINUX
- static sysIpcThreadId s_SavePcProfileThreadId = sysIpcThreadIdInvalid;
- 
- static bool s_bSavePcProfileThreadHasBeenStarted = false;
-@@ -809,7 +811,7 @@ void CProfileSettings::UpdateProfileSettings(bool bWait, bool ORBIS_ONLY(ignoreS
+ #if !__FINAL
+ 	unsigned current, maxi;
+@@ -809,7 +813,7 @@ void CProfileSettings::UpdateProfileSettings(bool bWait, bool ORBIS_ONLY(ignoreS
  {
  	PF_AUTO_PUSH_TIMEBAR("CProfileSettings UpdateProfileSettings");
  

@@ -38,3 +38,12 @@ diff --git a/src/dev_ng/game/network/Live/NetworkMetrics.cpp b/src/dev_ng/game/n
  #include "Stats/StatsInterface.h"
  #include "Stats/MoneyInterface.h"
  #include "system/FileMgr.h"
+@@ -1512,7 +1512,7 @@ bool MetricVIDEO_EDITOR_UPLOAD::Write(RsonWriter* rw) const
+ 	return result;
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ /// MetricBENCHMARK_FPS ---------------------------------------------------
+ 

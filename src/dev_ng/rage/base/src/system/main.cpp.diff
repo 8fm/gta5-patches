@@ -63,6 +63,15 @@ diff --git a/src/dev_ng/rage/base/src/system/main.cpp b/src/dev_ng/rage/base/src
  			t->InitHeap("Resource", master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL)->GetHeapBase(), master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL)->GetHeapSize());
  #else
  			const sysMemAllocator* pResVirtAllocator = master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL);
+@@ -1031,7 +1031,7 @@ bool CommonMain_Prologue(int argc,char **argv)
+ 	s_allowOutputDebugString = sysBootManager::IsDebuggerPresent();
+ #endif
+ 
+-#if EXCEPTION_HANDLING
++#if EXCEPTION_HANDLING && !RSG_LINUX
+ 	sysException::Init();
+ #endif  //EXCEPTION_HANDLING
+ 
 @@ -1266,7 +1266,7 @@ int CommonMain(int argc, char **argv)
  	sceSystemServiceHideSplashScreen();
  #endif	// RSG_ORBIS

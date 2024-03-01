@@ -78,16 +78,39 @@ diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/
  	SetState(CHECK_FOR_RGSC);
  	GRCDEVICE.CursorVisibilityOverride = is_SCui_showing;
  #else
-@@ -163,7 +163,7 @@ void CGameSessionStateMachine::ReInit(int level)
- #endif
+@@ -241,6 +241,7 @@ void CGameSessionStateMachine::ProcessReInitState()
+ 
+ void CGameSessionStateMachine::ProcessCheckForRGSC()
+ {
++#if !RSG_LINUX
+ 	// Check for noSocialClub
+ #if !__FINAL || defined(MASTER_NO_SCUI)
+ 	if (PARAM_noSocialClub.Get())
+@@ -259,6 +260,7 @@ void CGameSessionStateMachine::ProcessCheckForRGSC()
+ 		SetState(HANDLE_RGSC_FAILED);
+ 	}
+ 	else
++#endif // !RSG_LINUX
+ 	{
+ 		// RGSC Successful, continue with autoload
+ #if __STEAM_BUILD
+@@ -271,6 +273,7 @@ void CGameSessionStateMachine::ProcessCheckForRGSC()
+ 
+ void CGameSessionStateMachine::ProcessRGSCFailed()
+ {
++#if !RSG_LINUX
+ 	// Stop here
+ 	while(true)
+ 	{
+@@ -381,6 +384,7 @@ void CGameSessionStateMachine::ProcessRGSCFailed()
+ 		UpdateInitialDialogueScreensOnly();
+ 		gRenderThreadInterface.FlushAndDeviceCheck();
+ 	}
++#endif // !RSG_LINUX
  }
  
--#if RSG_PC
-+#if RSG_PC && !RSG_LINUX
- void CGameSessionStateMachine::ProcessReInitState()
- {
- 	// Grab the level from the reinit call
-@@ -724,9 +724,9 @@ void CGameSessionStateMachine::ProcessCheckSignInState()
+ #if __STEAM_BUILD
+@@ -724,9 +728,9 @@ void CGameSessionStateMachine::ProcessCheckSignInState()
  #if defined(MASTER_NO_SCUI) || !__FINAL
  #if defined(MASTER_NO_SCUI)
  	if (PARAM_noSocialClub.Get())

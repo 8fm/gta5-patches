@@ -38,16 +38,23 @@ diff --git a/src/dev_ng/game/system/ControlMgr.cpp b/src/dev_ng/game/system/Cont
  #include "system/system.h"
  #include "control/replay/replay.h"
  #include "control/videorecording/videorecording.h"
-@@ -525,7 +525,7 @@ void CControlMgr::SetMainPlayerIndex(s32 index)
- 		sm_initProfileFn();
- }
- 
--#if RSG_PC
-+#if RSG_PC && !RSG_LINUX
+@@ -529,6 +529,7 @@ void CControlMgr::SetMainPlayerIndex(s32 index)
  
  void CControlMgr::UpdateScuiInput()
  {
-@@ -586,7 +586,7 @@ void CControlMgr::Update()
++#if !RSG_LINUX
+ 	// SCUI input cannot be updated until the rlPC GamePad Manager is initialized
+ 	if (g_rlPc.GetGamepadManager() == NULL)
+ 		return;
+@@ -557,6 +558,7 @@ void CControlMgr::UpdateScuiInput()
+ 			scuiPad->SetHasInput();
+ 		}
+ 	}
++#endif // !RSG_LINUX
+ }
+ #endif // RSG_PC
+ //
+@@ -586,7 +588,7 @@ void CControlMgr::Update()
  	
  	bool bIgnoreInput = RSG_PC ? (CLiveManager::IsInitialized() && CLiveManager::IsSystemUiShowing()) : false;
  
@@ -56,7 +63,7 @@ diff --git a/src/dev_ng/game/system/ControlMgr.cpp b/src/dev_ng/game/system/Cont
  	// On PC, we need to update padInput because the SCUI uses it even when on screen.
  	// Otherwise, ignore mouse and keyboard when the SCUI is up.
  	::rage::INPUT.Update(false, bIgnoreInput, bIgnoreInput, !__WIN32PC);
-@@ -1446,7 +1446,7 @@ void CControlMgr::InitWidgets()
+@@ -1446,7 +1448,7 @@ void CControlMgr::InitWidgets()
  	bank.PopGroup();
  
  // for now we are only adding mapping widgets to pc version.

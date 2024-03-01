@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/system/spinlock.h b/src/dev_ng/rage/base/src/system/spinlock.h
+--- a/src/dev_ng/rage/base/src/system/spinlock.h
++++ b/src/dev_ng/rage/base/src/system/spinlock.h
+@@ -23,6 +23,9 @@ extern "C" {
+ #include <ppu_intrinsics.h>
+ #define sys_lwsync			__lwsync
+ #define sys_sync			__sync
++#elif RSG_LINUX
++#define sys_lwsync			__sync_synchronize
++#define sys_sync			__sync_synchronize
+ #elif RSG_PC || RSG_DURANGO 
+ extern "C" void _ReadWriteBarrier();
+ #pragma intrinsic(_ReadWriteBarrier)

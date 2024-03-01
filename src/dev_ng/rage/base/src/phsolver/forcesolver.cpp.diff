@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/phsolver/forcesolver.cpp b/src/dev_ng/rage/base/src/phsolver/forcesolver.cpp
+--- a/src/dev_ng/rage/base/src/phsolver/forcesolver.cpp
++++ b/src/dev_ng/rage/base/src/phsolver/forcesolver.cpp
+@@ -123,7 +123,7 @@ void phForceSolver::IterateOneConstraint(phManifold& manifold, ConstraintTable f
+ 	}
+ }
+ 
+-#if __WIN32 || RSG_ORBIS // Can't do this on PPU because the constraint table is full of SPU pointers. Instead, the PPU uses SolveSingleThreaded
++#if __WIN32 || __LINUX || RSG_ORBIS // Can't do this on PPU because the constraint table is full of SPU pointers. Instead, the PPU uses SolveSingleThreaded
+ void phForceSolver::IterateConstraints(u32 phase, bool preResponse)
+ {
+ 	ConstraintTable* functionTable = preResponse ? &g_PreResponseConstraintTable : (m_ComputePushesAndTurns ? &g_ApplyImpulseAndPushConstraintTable : &g_ApplyImpulseConstraintTable);
+@@ -976,7 +976,7 @@ void phForceSolver::SolveSingleThreaded()
+ 	}
+ }
+ 
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || __LINUX || RSG_ORBIS
+ void SolveConstraintTask(sysTaskParameters& params)
+ {
+ #if !__STATS

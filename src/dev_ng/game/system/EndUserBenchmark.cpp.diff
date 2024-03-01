@@ -35,3 +35,13 @@ diff --git a/src/dev_ng/game/system/EndUserBenchmark.cpp b/src/dev_ng/game/syste
  		fprintf(outHandle, "%s",tempString);
  		delete [] tempString;
  
+@@ -301,7 +303,9 @@ void EndUserBenchmarks::OutputBenchmarkResults()
+ 		}
+ 	}
+ 
++#if !RSG_LINUX
+ 	CNetworkTelemetry::AppendBenchmarkMetrics(m_fpsResults);
++#endif // !RSG_LINUX
+ }
+ 
+ 

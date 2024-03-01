@@ -88,6 +88,15 @@ diff --git a/src/dev_ng/game/network/Live/NetworkTelemetry.cpp b/src/dev_ng/game
  	// Queue up a posting of hardware stats
  	sm_bPostHardwareStats = true;
  
+@@ -2940,7 +2940,7 @@ void CNetworkTelemetry::Update()
+ 	if (!NetworkInterface::IsLocalPlayerOnline())
+ 		return;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Wait for profile settings to be valid
+ 	if (sm_bPostHardwareStats && CProfileSettings::GetInstance().AreSettingsValid())
+ 	{
 @@ -5227,7 +5227,7 @@ void CNetworkTelemetry::SetAllowPCHardwareTelemetry(const bool allowPCHardwareTe
  	}
  }

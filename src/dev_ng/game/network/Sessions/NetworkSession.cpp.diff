@@ -107,6 +107,15 @@ diff --git a/src/dev_ng/game/network/Sessions/NetworkSession.cpp b/src/dev_ng/ga
  #include <windows.h>
  #include <psapi.h>
  #endif
+@@ -1152,7 +1152,7 @@ bool CNetworkSession::Init()
+     m_PendingHostPhysical = false;
+     m_TimeReturnedToSinglePlayer = 0;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Set the true DInputCount
+ 	CheckDinputCount();
+ 
 @@ -17371,7 +17371,7 @@ void CNetworkSession::ProcessRemovedGamerEvent(snEventRemovedGamer* pEvent)
      const rlGamerInfo& tGamerInfo = pEvent->m_GamerInfo;
      NetworkInterface::GetVoice().PlayerHasLeft(tGamerInfo);

@@ -32,6 +32,15 @@ diff --git a/src/dev_ng/game/control/replay/File/ReplayFileManager.cpp b/src/dev
  			sm_Device = rage_new FileStorePC();
  #elif RSG_ORBIS
  			sm_Device = rage_new FileStoreOrbis();
+@@ -2501,7 +2501,7 @@ void ReplayFileManager::StartFileThread()
+ 		replayAssertf(sm_FileThreadID != sysIpcThreadIdInvalid, "Could not create the ReplayFileManager thread, out of memory?");
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if( sm_FileNotificationThreadID == sysIpcThreadIdInvalid )
+ 	{
+ 		sm_WatchDirectory = true;
 @@ -2566,7 +2566,7 @@ void ReplayFileManager::StopFileThread()
  	}
  }

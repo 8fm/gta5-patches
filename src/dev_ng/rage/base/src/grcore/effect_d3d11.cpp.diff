@@ -12,7 +12,19 @@ diff --git a/src/dev_ng/rage/base/src/grcore/effect_d3d11.cpp b/src/dev_ng/rage/
  #endif
  
  namespace rage
-@@ -86,7 +86,7 @@ void grcVertexProgram::Bind(const grcVertexDeclaration *decl) const
+@@ -65,7 +65,10 @@ void grcVertexProgram::Bind(const grcVertexDeclaration *decl) const
+ 			decl->AddRef();
+ 
+ 			ID3D11ShaderReflection* pShader = NULL;
+-			if (FAILED(D3DReflect( GetProgramData(), GetProgramSize(), IID_ID3D11ShaderReflection, (void**) &pShader) )) {
++#if !RSG_LINUX
++			if (FAILED(D3DReflect( GetProgramData(), GetProgramSize(), IID_ID3D11ShaderReflection, (void**) &pShader) ))
++#endif // !RSG_LINUX
++			{
+ 				Quitf(ERR_GFX_D3D_SHADER_1,"D3DReflect call failed");
+ 			}
+ 
+@@ -86,7 +89,7 @@ void grcVertexProgram::Bind(const grcVertexDeclaration *decl) const
  			for (UINT i=0; i<desc.InputParameters; i++)
  			{
  				// Skip built-in attributes

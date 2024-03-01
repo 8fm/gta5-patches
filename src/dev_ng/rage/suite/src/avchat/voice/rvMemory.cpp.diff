@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/voice/rvMemory.cpp b/src/dev_ng/rage/suite/src/avchat/voice/rvMemory.cpp
+--- a/src/dev_ng/rage/suite/src/avchat/voice/rvMemory.cpp
++++ b/src/dev_ng/rage/suite/src/avchat/voice/rvMemory.cpp
+@@ -15,7 +15,9 @@
+ 
+ namespace rage
+ {
++#if !RSG_LINUX
+ 	RAGE_DEFINE_SUBCHANNEL(rvoice, memory)
++#endif // !RSG_LINUX
+ 	#undef __rage_channel
+ 	#define __rage_channel rvoice_memory
+ 

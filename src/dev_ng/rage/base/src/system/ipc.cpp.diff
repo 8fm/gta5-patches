@@ -114,3 +114,12 @@ diff --git a/src/dev_ng/rage/base/src/system/ipc.cpp b/src/dev_ng/rage/base/src/
  #else
  	return __PPU+1;
  #endif
+@@ -1523,7 +1538,7 @@ void sysIpcTriggerAllCallstackDisplay()
+ #if ENABLE_ALL_CALLSTACK_TRACE
+ #if __XENON
+     sysStack::PrintStackTraceAllThreads();
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+     sysStack::PrintStackTraceAllThreads();
+ #elif __PPU
+ #if SYSTMCMD_ENABLE

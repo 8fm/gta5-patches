@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/string/string.cpp b/src/dev_ng/rage/base/src/string/string.cpp
+--- a/src/dev_ng/rage/base/src/string/string.cpp
++++ b/src/dev_ng/rage/base/src/string/string.cpp
+@@ -49,7 +49,7 @@ extern "C" const char _rodata_end[] = "";
+ #pragma str_seg("")
+ #endif
+ 
+-#if RSG_PPU || RSG_ORBIS
++#if RSG_PPU || RSG_ORBIS || RSG_LINUX
+ extern "C" char *strupr (char *a)
+ {
+ 	char *ret = a;

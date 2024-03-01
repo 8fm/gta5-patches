@@ -1,12 +1,19 @@
 diff --git a/src/dev_ng/rage/base/src/system/service_pc.cpp b/src/dev_ng/rage/base/src/system/service_pc.cpp
 --- a/src/dev_ng/rage/base/src/system/service_pc.cpp
 +++ b/src/dev_ng/rage/base/src/system/service_pc.cpp
-@@ -11,7 +11,7 @@
- #include "system/epic.h"
- #include "system/threadtype.h"
+@@ -212,6 +212,7 @@ namespace rage
  
--#if RSG_PC && !__TOOL
-+#if RSG_PC && !__TOOL && !RSG_LINUX
- #include "grcore/device.h"
- #include "system/param.h"
- #include "system/timer.h"
+ 		sysLanguage language = LANGUAGE_UNDEFINED;
+ 
++#if !RSG_LINUX
+ 		int langID = GetUserDefaultUILanguage();
+ 		int primID = PRIMARYLANGID(langID);
+ 		int subID = SUBLANGID(langID);
+@@ -351,6 +352,7 @@ namespace rage
+ 			language = LANGUAGE_ENGLISH;
+ 			break;
+ 		}
++#endif // !RSG_LINUX
+ 
+ 		return language;
+ 	}

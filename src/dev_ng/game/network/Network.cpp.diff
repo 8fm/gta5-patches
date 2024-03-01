@@ -183,21 +183,12 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
  		}
  	}
  }
-@@ -728,7 +732,7 @@ CNetworkScratchpads&                CNetwork::sm_ScriptScratchpads(s_ScriptScrat
- CRoamingBubbleMgr&                  CNetwork::sm_RoamingBubbleMgr(s_RoamingBubbleMgr);
- CNetworkVoice&						CNetwork::sm_NetworkVoice(s_NetworkVoice);
- 
--#if __WIN32PC
-+#if __WIN32PC && !__LINUX
- CNetworkTextChat&					CNetwork::sm_NetworkTextChat(s_NetworkTextChat);
- NetworkExitFlow						CNetwork::sm_ExitToDesktopFlow;
- #endif
 @@ -1828,7 +1832,7 @@ CNetwork::Init(unsigned initMode)
  
          ASSERT_ONLY(CQueriableInterface::ValidateTaskInfos());
  
 -        #if __WIN32PC
-+		#if __WIN32PC && !__LINUX
++		#if __WIN32PC
  		sm_ExitToDesktopFlow.ResetExitFlowState();
  		#endif
  	}
@@ -206,21 +197,12 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
          netLog::StopLoggingThread();
  
 -		WIN32PC_ONLY(sm_ExitToDesktopFlow.ResetExitFlowState());
-+		#if __WIN32PC && !__LINUX
++		#if __WIN32PC
 +		sm_ExitToDesktopFlow.ResetExitFlowState();
 +		#endif
      }
  	else if(shutdownMode == SHUTDOWN_CORE)
  	{
-@@ -2426,7 +2432,7 @@ CNetwork::Update(bool fromLoadingCode)
-                 }
- 			}
- 
--#if __WIN32PC
-+#if __WIN32PC && !__LINUX
- 			sm_ExitToDesktopFlow.Update();
- #endif // __WIN32PC
- 
 @@ -3010,7 +3016,7 @@ void CNetwork::UpdateEventTriggerCounters()
  
  void CNetwork::UpdateScuiHotkeys()

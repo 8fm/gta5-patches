@@ -51,16 +51,15 @@ diff --git a/src/dev_ng/game/frontend/Store/StoreScreenMgr.cpp b/src/dev_ng/game
  
  PARAM(leavempforstore, "The store will cause the player to leave mp sessions.");
  PARAM(storeInitialProductId, "Initial Item to Highlight in the Store");
-@@ -1185,7 +1185,7 @@ bool cStoreScreenMgr::IsMPGameReadyToOpenStore()
- 	return readyToOpenStore;
- }
- 
--#if RSG_PC
-+#if RSG_PC && !RSG_LINUX
+@@ -1188,13 +1188,15 @@ bool cStoreScreenMgr::IsMPGameReadyToOpenStore()
+ #if RSG_PC
  void cStoreScreenMgr::OpenPC()
  {
++#if !RSG_LINUX
  	g_rlPc.GetCommerceManager()->ShowCommerceStore(NULL,NULL);
-@@ -1194,7 +1194,7 @@ void cStoreScreenMgr::OpenPC()
++#endif // !RSG_LINUX
+ }
+ #endif
  
  bool cStoreScreenMgr::IsStoreMenuOpen()
  {
