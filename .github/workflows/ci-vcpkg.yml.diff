@@ -2,7 +2,7 @@ diff --git a/.github/workflows/ci-vcpkg.yml b/.github/workflows/ci-vcpkg.yml
 new file mode 100644
 --- /dev/null
 +++ b/.github/workflows/ci-vcpkg.yml
-@@ -0,0 +1,61 @@
+@@ -0,0 +1,86 @@
 +name: VCPKG CI
 +
 +on:
@@ -64,3 +64,28 @@ new file mode 100644
 +      with:
 +        name: gta5.win.cmake.${{ matrix.Configuration }}.${{ matrix.Platform }}
 +        path: src/dev_ng/bin/${{ matrix.Configuration }}-${{ matrix.Platform }}
++
++  linux-cmake:
++    name: linux cmake ${{ matrix.Configuration }} ${{ matrix.Platform }}
++    runs-on: ubuntu-22.04
++    strategy:
++      fail-fast: false
++      matrix:
++        Configuration: [BankRelease]
++        Platform: [x64]
++    steps:
++    - uses: actions/checkout@main
++      with:
++        submodules: recursive
++
++    - name: Install libs
++      run: |
++        sudo apt-get update && sudo apt-get install ninja-build
++    - name: Build
++      working-directory: src/dev_ng
++      run: |
++        export CC=gcc && export CXX=g++
++        ${CXX} --version
++        mkdir build && cd build
++        cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo -G Ninja
++        ninja
