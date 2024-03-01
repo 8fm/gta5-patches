@@ -1,7 +1,24 @@
 diff --git a/src/dev_ng/rage/base/src/system/timer.cpp b/src/dev_ng/rage/base/src/system/timer.cpp
 --- a/src/dev_ng/rage/base/src/system/timer.cpp
 +++ b/src/dev_ng/rage/base/src/system/timer.cpp
-@@ -228,7 +228,7 @@ utimer_t sysTimer::GetTicks()
+@@ -93,6 +93,16 @@ sysTimer::sysTimer() {
+ 	}
+ 	Reset();
+ }
++#elif __LINUX
++utimer_t sysTimer::GetTicks() {
++	return 0;
++}
++
++sysTimer::sysTimer() {
++}
++
++void sysTimer::UpdateCpuSpeed() {
++}
+ 
+ ////////////////// windows //////////////////
+ #elif __WIN32
+@@ -228,7 +238,7 @@ utimer_t sysTimer::GetTicks()
  
  
  void sysTimer::BeginBenchmark() {
@@ -10,7 +27,7 @@ diff --git a/src/dev_ng/rage/base/src/system/timer.cpp b/src/dev_ng/rage/base/sr
  	oldClass=GetPriorityClass(GetCurrentProcess());
  	oldPrio=GetThreadPriority(GetCurrentThread());
  
-@@ -240,7 +240,7 @@ void sysTimer::BeginBenchmark() {
+@@ -240,7 +250,7 @@ void sysTimer::BeginBenchmark() {
  }
  
  void sysTimer::EndBenchmark() {

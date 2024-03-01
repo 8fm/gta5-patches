@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/system/param.cpp b/src/dev_ng/rage/base/src/system/param.cpp
+--- a/src/dev_ng/rage/base/src/system/param.cpp
++++ b/src/dev_ng/rage/base/src/system/param.cpp
+@@ -76,6 +76,11 @@ bool sysParam::FindCommandLineArg(const char* s, char** ppValue /*= NULL*/)
+ 	// No match
+ 	return false;
+ }
++#elif RSG_LINUX
++bool sysParam::FindCommandLineArg(const char* s, char** ppValue)
++{
++	return false;
++}
+ #elif RSG_WIN32
+ #include "system/xtl.h"
+ // FindCommandLineArg() checks to see if a command-line argument
