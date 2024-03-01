@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxshader.h b/src/dev_ng/rage/suite/src/rmptfx/ptxshader.h
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxshader.h
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxshader.h
+@@ -11,7 +11,7 @@
+ // includes (us)
+ #include "rmptfx/ptxchannel.h"
+ #include "rmptfx/ptxdraw.h"
+-#include "rmptfx/ptxshadervar.h"
++#include "rmptfx/ptxShadervar.h"
+ #include "rmptfx/ptxrenderstate.h"
+ 
+ // includes

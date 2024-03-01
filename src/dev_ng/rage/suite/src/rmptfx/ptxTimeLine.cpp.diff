@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.cpp
+@@ -5,14 +5,14 @@
+ // 
+ 
+ // includes (us)
+-#include "rmptfx/ptxtimeline.h"
++#include "rmptfx/ptxTimeLine.h"
+ #include "rmptfx/ptxtimeline_parser.h"
+ 
+ // includes (rmptfx)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxeffectrule.h"
+-#include "rmptfx/ptxevent.h"
++#include "rmptfx/ptxEvent.h"
+ 
+ // includes (rage)
+ #include "atl/array_struct.h"

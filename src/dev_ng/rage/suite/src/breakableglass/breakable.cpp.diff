@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/breakableglass/breakable.cpp b/src/dev_ng/rage/suite/src/breakableglass/breakable.cpp
+--- a/src/dev_ng/rage/suite/src/breakableglass/breakable.cpp
++++ b/src/dev_ng/rage/suite/src/breakableglass/breakable.cpp
+@@ -40,7 +40,7 @@
+ #include "bank/bank.h"
+ #include "diag/output.h"
+ #include "grcore/indexbuffer.h"
+-#include "grcore/VertexBufferEditor.h"
++#include "grcore/vertexbuffereditor.h"
+ #include "grmodel/geometry.h"
+ #include "math/simplemath.h"
+ #include "physics/simulator.h"

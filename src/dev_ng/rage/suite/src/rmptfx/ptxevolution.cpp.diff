@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxevolution.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxevolution.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxevolution.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxevolution.cpp
+@@ -9,7 +9,7 @@
+ #include "rmptfx/ptxevolution_parser.h"
+ 
+ // includes (rmptfx)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxkeyframeprop.h"
+ #include "rmptfx/ptxmanager.h"

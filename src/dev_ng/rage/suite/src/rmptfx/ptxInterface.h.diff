@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.h b/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.h
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.h
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.h
+@@ -12,7 +12,7 @@
+ // includes (rmptfx)
+ #include "rmptfx/ptxconfig.h"
+ #include "rmptfx/ptxkeyframe.h"
+-#include "rmptfx/ptxtcpcomm.h"
++#include "rmptfx/ptxTcpComm.h"
+ 
+ // includes (rage)
+ #include "paging/ref.h"

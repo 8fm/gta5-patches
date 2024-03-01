@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxmanager.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxmanager.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxmanager.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxmanager.cpp
+@@ -12,7 +12,7 @@
+ #include "rmptfx/ptxbehaviours.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxdrawlist.h"
+-#include "rmptfx/ptxinterface.h"
++#include "rmptfx/ptxInterface.h"
+ #include "rmptfx/ptxkeyframewidget.h"
+ #include "rmptfx/ptxupdatetask.h"
+ 

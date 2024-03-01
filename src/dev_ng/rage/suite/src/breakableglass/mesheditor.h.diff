@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/breakableglass/mesheditor.h b/src/dev_ng/rage/suite/src/breakableglass/mesheditor.h
+--- a/src/dev_ng/rage/suite/src/breakableglass/mesheditor.h
++++ b/src/dev_ng/rage/suite/src/breakableglass/mesheditor.h
+@@ -7,7 +7,7 @@
+ #ifndef BREAKABLEGLASS_MESHEDITOR_H 
+ #define BREAKABLEGLASS_MESHEDITOR_H 
+ 
+-#include "grcore/VertexBufferEditor.h"
++#include "grcore/vertexbuffereditor.h"
+ 
+ namespace rage {
+ 	struct mshMaterial;

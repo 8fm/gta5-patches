@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxeffectspawning.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxeffectspawning.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxeffectspawning.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxeffectspawning.cpp
+@@ -10,7 +10,7 @@
+ #include "rmptfx/ptxeffectspawning_parser.h"
+ 
+ // includes (rmptfx)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxmanager.h"
+ 

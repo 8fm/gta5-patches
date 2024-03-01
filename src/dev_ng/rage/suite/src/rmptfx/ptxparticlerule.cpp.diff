@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxparticlerule.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxparticlerule.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxparticlerule.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxparticlerule.cpp
+@@ -14,7 +14,7 @@
+ #include "rmptfx/ptxd_drawsprite.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxeffectinst.h"
+-#include "rmptfx/ptxinterface.h"
++#include "rmptfx/ptxInterface.h"
+ #include "rmptfx/ptxmanager.h"
+ #include "rmptfx/ptxu_animatetexture.h"
+ #include "rmptfx/ptxu_colour.h"

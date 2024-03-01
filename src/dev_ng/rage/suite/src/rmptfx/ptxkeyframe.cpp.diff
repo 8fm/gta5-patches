@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframe.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframe.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframe.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframe.cpp
+@@ -11,7 +11,7 @@
+ // includes (rmptfx)
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxkeyframewidget.h"
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ 
+ // includes (rage)
+ #include "atl/array_struct.h"

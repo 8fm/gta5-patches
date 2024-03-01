@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxByteBuff.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxByteBuff.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxByteBuff.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxByteBuff.cpp
+@@ -5,7 +5,7 @@
+ // 
+ 
+ // includes (us)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ 
+ // includes (rmptfx)
+ #include "rmptfx/ptxconfig.h"

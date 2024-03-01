@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxclipregion.h b/src/dev_ng/rage/suite/src/rmptfx/ptxclipregion.h
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxclipregion.h
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxclipregion.h
+@@ -8,7 +8,7 @@
+ #define RMPTFX_PTXREGION_H
+ 
+ // includes (rmptfx)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxconfig.h"
+ 
+ // includes (rage)

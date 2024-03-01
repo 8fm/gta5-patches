@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxdomain.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxdomain.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxdomain.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxdomain.cpp
+@@ -11,7 +11,7 @@
+ // includes (rmptfx)
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxemitterrule.h"
+-#include "rmptfx/ptxinterface.h"
++#include "rmptfx/ptxInterface.h"
+ #include "rmptfx/ptxmanager.h"
+ 
+ // includes (rage)

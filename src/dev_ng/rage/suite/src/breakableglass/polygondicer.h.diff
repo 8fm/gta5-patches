@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/breakableglass/polygondicer.h b/src/dev_ng/rage/suite/src/breakableglass/polygondicer.h
+--- a/src/dev_ng/rage/suite/src/breakableglass/polygondicer.h
++++ b/src/dev_ng/rage/suite/src/breakableglass/polygondicer.h
+@@ -29,7 +29,7 @@
+ 
+ #include "atl/array.h"
+ #include "math/random.h"
+-#include "vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ namespace rage {
+ 

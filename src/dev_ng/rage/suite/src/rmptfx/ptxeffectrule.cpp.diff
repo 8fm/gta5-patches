@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxeffectrule.cpp
+@@ -10,12 +10,12 @@
+ #include "rmptfx/ptxeffectrule_parser.h"
+ 
+ // includes (rmptfx)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxeffectinst.h"
+ #include "rmptfx/ptxemitterrule.h"
+-#include "rmptfx/ptxevent.h"
+-#include "rmptfx/ptxinterface.h"
++#include "rmptfx/ptxEvent.h"
++#include "rmptfx/ptxInterface.h"
+ #include "rmptfx/ptxmanager.h"
+ #include "rmptfx/ptxparticlerule.h"
+ #include "rmptfx/ptxd_drawmodel.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.h b/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.h
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.h
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxTimeLine.h
+@@ -11,7 +11,7 @@
+ 
+ // includes (rmptfx)
+ #include "rmptfx/ptxconfig.h"
+-#include "rmptfx/ptxevent.h"
++#include "rmptfx/ptxEvent.h"
+ 
+ // includes (rage)
+ #include "atl/array.h"

@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxEvent.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxEvent.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxEvent.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxEvent.cpp
+@@ -5,17 +5,17 @@
+ // 
+ 
+ // includes (us)
+-#include "rmptfx/ptxevent.h"
++#include "rmptfx/ptxEvent.h"
+ #include "rmptfx/ptxevent_parser.h"
+ 
+ // includes (rmptfx)
+-#include "rmptfx/ptxbytebuff.h"
++#include "rmptfx/ptxByteBuff.h"
+ #include "rmptfx/ptxdebug.h"
+ #include "rmptfx/ptxeffectinst.h"
+ #include "rmptfx/ptxemitterinst.h"
+ #include "rmptfx/ptxmanager.h"
+ #include "rmptfx/ptxparticlerule.h"
+-#include "rmptfx/ptxtimeline.h"
++#include "rmptfx/ptxTimeLine.h"
+ 
+ // includes (rage)
+ #include "data/safestruct.h"

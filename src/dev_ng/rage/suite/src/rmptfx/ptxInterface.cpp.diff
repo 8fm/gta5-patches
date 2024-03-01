@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxInterface.cpp
+@@ -6,7 +6,7 @@
+ 
+ 
+ // includes (us)
+-#include "rmptfx/ptxinterface.h"
++#include "rmptfx/ptxInterface.h"
+ 
+ // includes (rmptfx
+ #include "rmptfx/ptxclipregion.h"

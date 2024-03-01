@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/softrasterizer/tsklib.cpp b/src/dev_ng/rage/suite/src/softrasterizer/tsklib.cpp
+--- a/src/dev_ng/rage/suite/src/softrasterizer/tsklib.cpp
++++ b/src/dev_ng/rage/suite/src/softrasterizer/tsklib.cpp
+@@ -6,7 +6,7 @@
+ #include "file/stream.h"
+ #include "system/memory.h"
+ #include <string>
+-#include "system/Exec.h"
++#include "system/exec.h"
+ #endif
+ 
+ namespace rage
