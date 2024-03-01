@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/base/src/net/nethardware.cpp b/src/dev_ng/rage/base/src/net/nethardware.cpp
 --- a/src/dev_ng/rage/base/src/net/nethardware.cpp
 +++ b/src/dev_ng/rage/base/src/net/nethardware.cpp
+@@ -6,7 +6,7 @@
+ 
+ #include "nethardware.h"
+ 
+-#include "atl/uuid.h"
++#include "atl/Uuid.h"
+ #include "atl/guid.h"
+ #include "diag/channel.h"
+ #include "file/tcpip.h"
 @@ -306,7 +306,7 @@ netHardware::Update()
  			isOnline = g_rlNp.IsOnline(i);
  #elif __RGSC_DLL
