@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/rage/base/src/file/savegame_dummy.cpp b/src/dev_ng/rage/base/src/file/savegame_dummy.cpp
+--- a/src/dev_ng/rage/base/src/file/savegame_dummy.cpp
++++ b/src/dev_ng/rage/base/src/file/savegame_dummy.cpp
+@@ -17,7 +17,7 @@
+ #include <sdk_version.h>
+ #endif
+ 
+-#if !__XENON && (!__PPU || CELL_SDK_VERSION < 0x150004) && ! __WIN32PC && !RSG_ORBIS && ! RSG_DURANGO
++#if !__XENON && (!__PPU || CELL_SDK_VERSION < 0x150004) && (!__WIN32PC || __LINUX) && !RSG_ORBIS && ! RSG_DURANGO
+ 
+ namespace rage {
+ 
+@@ -151,6 +151,25 @@ void fiSaveGame::EndSave(int signInId)
+ 	s_Saves[signInId] = NULL;
+ }
+ 
++#if CREATE_BACKUP_SAVES
++
++bool fiSaveGame::BeginBackupSave(int signInId,u32 /*contentType*/,const char16 * displayName,const char * filename,const void *saveData,u32 saveSize,bool OUTPUT_ONLY(overwrite))
++{
++	return true;
++}
++
++bool fiSaveGame::CheckBackupSave(int signInId,bool &outIsValid,bool& fileExists)
++{
++	return true;
++}
++
++void fiSaveGame::EndBackupSave(int signInId)
++{
++}
++
++#endif	//CREATE_BACKUP_SAVES
++
++
+ bool fiSaveGame::BeginFreeSpaceCheck(int /*signInId*/,const char* /*filename*/,u32 /*saveSize*/)
+ {
+ 	return true;
