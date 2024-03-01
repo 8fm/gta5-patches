@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp b/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
+--- a/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
++++ b/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
+@@ -890,7 +890,7 @@ void audShoreLineRiver::UpdateRiverSounds(const u8 closestRiverIdx)
+ 			GetSoundsRefs((RiverType)sm_ClosestShores[closestRiverIdx].riverSounds.currentShore[Right]->GetRiverSettings()->RiverType,soundRef,Right);
+ 			UpdateRiverSound(soundRef,Right,sm_ClosestShores[closestRiverIdx].riverSounds.ending[Right],rightPoint,closestRiverIdx);
+ 		}
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 		if(sm_DrawWaterBehaviour)
+ 		{
+ 			char txt[256];

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/environment/environment.cpp b/src/dev_ng/game/audio/environment/environment.cpp
+--- a/src/dev_ng/game/audio/environment/environment.cpp
++++ b/src/dev_ng/game/audio/environment/environment.cpp
+@@ -1846,7 +1846,7 @@ void naEnvironment::UpdateInterestingTrees()
+ 		}
+ 		UpdateBgTreeSound(m_CurrentSoundIdx[i], i,numTrees,(u8)type,avgDistance,soundDir);
+ 	}
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 	if(sm_DrawBgTreesInfo)
+ 	{
+ 		for (u32 i = 0; i < m_NumLocalTrees; i ++)

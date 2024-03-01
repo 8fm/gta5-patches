@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
+--- a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
++++ b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
+@@ -7766,6 +7766,7 @@ void audAmbientAudioEntity::SerialiseString(char* xmlMessage, char* tempbuffer,
+ 
+ void audAmbientAudioEntity::SerialiseSoundName(char* xmlMessage, char* tempbuffer, const char* elementName, u32 hash, bool defaultToNull)
+ {
++#if __USEDEBUGAUDIO
+ 	const Sound* soundPtr = g_AudioEngine.GetSoundManager().GetFactory().GetMetadataPtr(hash);
+ 
+ 	if(soundPtr)
+@@ -7773,7 +7774,9 @@ void audAmbientAudioEntity::SerialiseSoundName(char* xmlMessage, char* tempbuffe
+ 		const audMetadataManager &metadataManager = SOUNDFACTORY.GetMetadataManager();
+ 		SerialiseString(xmlMessage, tempbuffer, elementName, metadataManager.GetObjectNameFromNameTableOffset(soundPtr->NameTableOffset));
+ 	}
+-	else if(defaultToNull)
++	else
++#endif
++	if (defaultToNull)
+ 	{
+ 		SerialiseString(xmlMessage, tempbuffer, elementName, "NULL_SOUND");
+ 	}
+@@ -8050,6 +8053,7 @@ void audAmbientAudioEntity::MoveRuleToCurrentCoords(bool interiorRelative)
+ 		SerialiseInt(xmlMsg, tmpBuf, "MinRepeatTime", ruleData->MinRepeatTime);
+ 		SerialiseInt(xmlMsg, tmpBuf, "MinRepeatTimeVariance", ruleData->MinRepeatTimeVariance);
+ 
++#if __USEDEBUGAUDIO
+ 		const Sound* soundPtr = g_AudioEngine.GetSoundManager().GetFactory().GetMetadataPtr(ruleData->Sound);
+ 
+ 		if(soundPtr)
+@@ -8058,6 +8062,7 @@ void audAmbientAudioEntity::MoveRuleToCurrentCoords(bool interiorRelative)
+ 			SerialiseString(xmlMsg, tmpBuf, "Sound", metadataManager.GetObjectNameFromNameTableOffset(soundPtr->NameTableOffset));
+ 		}
+ 		else
++#endif
+ 		{
+ 			SerialiseString(xmlMsg, tmpBuf, "Sound", "NULL_SOUND");
+ 		}

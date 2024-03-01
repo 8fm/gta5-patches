@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/shaders/ShaderLib.cpp b/src/dev_ng/game/shaders/ShaderLib.cpp
+--- a/src/dev_ng/game/shaders/ShaderLib.cpp
++++ b/src/dev_ng/game/shaders/ShaderLib.cpp
+@@ -244,7 +244,11 @@ namespace rage
+ void CShaderLib::LoadInitialShaders()
+ {
+ 	grcEffect *effect = NULL;
+-	ASSET.PushFolder("update2:/common/shaders");	
++#if __FINAL
++	ASSET.PushFolder("update2:/common/shaders");
++#else
++	ASSET.PushFolder("common:/shaders");
++#endif
+ 
+ 	effect = grcEffect::Create("im");	
+ 	Assert(effect);

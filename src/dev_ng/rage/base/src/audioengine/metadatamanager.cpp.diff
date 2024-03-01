@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/metadatamanager.cpp b/src/dev_ng/rage/base/src/audioengine/metadatamanager.cpp
+--- a/src/dev_ng/rage/base/src/audioengine/metadatamanager.cpp
++++ b/src/dev_ng/rage/base/src/audioengine/metadatamanager.cpp
+@@ -209,7 +209,7 @@ bool audMetadataManager::LoadMetadataChunk_Internal(const char *chunkName, const
+ 		}
+ 	}
+ 
+-	const char *ext = __BANK ? "" : ".rel";
++	const char *ext = !__PACKEDDEBUG ? "" : ".rel";
+ 
+ 	if(m_SchemaVersion != ~0U)
+ 	{

@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_toolrelease.h b/src/dev_ng/rage/base/src/forceinclude/win64_toolrelease.h
+--- a/src/dev_ng/rage/base/src/forceinclude/win64_toolrelease.h
++++ b/src/dev_ng/rage/base/src/forceinclude/win64_toolrelease.h
+@@ -202,6 +202,11 @@ END_NS_RAGE
+ #define __TOOL		1
+ #define __EXPORTER	0
+ #define	__PROFILE	0
++#define	__PACKEDDEBUG	1
++#define	__SKIPDEBUGAUTH	1
++#define	__USEDEBUGAUDIO	0
++#define DEBUGAUDIO_ONLY(...)
++#define DEBUGUNPACKED_ONLY(...)
+ #define RSG_DEV		__DEV
+ #define RSG_BANK	__BANK
+ #define RSG_ASSERT	__ASSERT

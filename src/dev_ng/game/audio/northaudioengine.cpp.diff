@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/audio/northaudioengine.cpp b/src/dev_ng/game/audio/northaudioengine.cpp
+--- a/src/dev_ng/game/audio/northaudioengine.cpp
++++ b/src/dev_ng/game/audio/northaudioengine.cpp
+@@ -753,7 +753,7 @@ void audNorthAudioEngine::GenerateMemoryReport(const char *destFileName)
+ 
+ RAGE_DEFINE_SUBCHANNEL(Audio,NorthAudio)
+ 
+-#if __ASSERT
++#if __USEDEBUGAUDIO
+ class audNorthAudioEngineThreadVerifier : public audControllerThreadVerifier
+ {
+ public:
+@@ -902,7 +902,7 @@ bool audNorthAudioEngine::InitClass()
+ 	}
+ #endif
+ 
+-	ASSERT_ONLY(sm_AudioController.SetThreadVerifier(&g_NorthAudioThreadVerifier));
++	DEBUGAUDIO_ONLY(sm_AudioController.SetThreadVerifier(&g_NorthAudioThreadVerifier));
+ 
+ #if __DEV
+ 	g_AssertOnSoundPoolFull = false;
+@@ -5552,6 +5552,7 @@ void audNorthAudioEngine::DebugDrawSlowMo()
+ 
+ 	drawMgr.PopSection();
+ 
++#if __USEDEBUGAUDIO
+ 	formatf(sectionHeader, "Current SlowMo Mode");
+ 	drawMgr.PushSection(sectionHeader);
+ 	formatf(sectionHeader, "%s: %s : %s", SlowMoType_ToString(sm_SlowMoMode), sm_SlowMoScene ? DYNAMICMIXMGR.GetMetadataManager().GetObjectNameFromNameTableOffset(sm_SlowMoScene->GetSceneSettings()->NameTableOffset): NULL, sm_SlowMoSound ? g_AudioEngine.GetSoundManager().GetFactory().GetMetadataManager().GetObjectNameFromNameTableOffset(sm_SlowMoSound->GetNameTableOffset()): NULL);
+@@ -5559,6 +5560,7 @@ void audNorthAudioEngine::DebugDrawSlowMo()
+ 	drawMgr.DrawLine(sectionHeader);
+ 
+ 	drawMgr.PopSection();
++#endif
+ 	
+ 	grcFont::GetCurrent().SetInternalColor( prevColor );
+ 	grcLighting(bOldLighting);

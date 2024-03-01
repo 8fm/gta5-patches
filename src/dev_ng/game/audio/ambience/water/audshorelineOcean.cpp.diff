@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp b/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
+--- a/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
++++ b/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
+@@ -928,7 +928,7 @@ void audShoreLineOcean::UpdateOceanBeachSound(const Vector3 &centrePoint,const V
+  		GetSoundsRefs(soundRef,Right);
+  		UpdateOceanSound(soundRef,Right,rightPoint);
+  	}
+-#if __BANK
++#if __USEDEBUGAUDIO
+ 	
+ 	if(sm_DrawWaterBehaviour)
+ 	{

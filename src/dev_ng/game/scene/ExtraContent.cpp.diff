@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/ExtraContent.cpp b/src/dev_ng/game/scene/ExtraContent.cpp
+--- a/src/dev_ng/game/scene/ExtraContent.cpp
++++ b/src/dev_ng/game/scene/ExtraContent.cpp
+@@ -98,7 +98,7 @@ RAGE_DEFINE_CHANNEL(dlc, DIAG_SEVERITY_DISPLAY, DIAG_SEVERITY_DISPLAY, DIAG_SEVE
+ #define TITLE_UPDATE_RPF_PATH "update:/update.rpf"
+ #define TITLE_UPDATE2_RPF_PATH "update:/update2.rpf"
+ #else // NG
+-#if __FINAL
++#if __PACKEDDEBUG
+ #define TITLE_UPDATE_RPF_PATH "update/update.rpf"
+ #define TITLE_UPDATE2_RPF_PATH "update/update2.rpf"
+ #else

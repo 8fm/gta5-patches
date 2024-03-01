@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/soundpool.cpp b/src/dev_ng/rage/base/src/audioengine/soundpool.cpp
+--- a/src/dev_ng/rage/base/src/audioengine/soundpool.cpp
++++ b/src/dev_ng/rage/base/src/audioengine/soundpool.cpp
+@@ -929,6 +929,7 @@ void audSoundPool::PointerRangeTrapCheck(void* TRAP_ONLY(p), u32 TRAP_ONLY(size)
+ 
+ void audSoundPool::DebugDrawBuckets(f32 yScroll, u32 numSoundsPerBucket) const
+ {	
++#if __USEDEBUGAUDIO
+ 	f32 yCoord = 0.05f - yScroll;
+ 	f32 stepRate = 0.02f;
+ 
+@@ -1041,6 +1042,7 @@ void audSoundPool::DebugDrawBuckets(f32 yScroll, u32 numSoundsPerBucket) const
+ 		audSound::GetStaticPool().UnlockBucket(bucketIndex);
+ 		yCoord += stepRate;
+ 	}
++#endif
+ }
+ 
+ void audSoundPool::ComputeSoundSlotAllocationState(const u32 bucketId, atFixedBitSet<g_audMaxSoundSlotsPerBucket> &allocationState) const

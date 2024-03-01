@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/enginedefs.h b/src/dev_ng/rage/base/src/audioengine/enginedefs.h
+--- a/src/dev_ng/rage/base/src/audioengine/enginedefs.h
++++ b/src/dev_ng/rage/base/src/audioengine/enginedefs.h
+@@ -7,7 +7,7 @@
+ #ifndef AUD_ENGINE_DEFS_H
+ #define AUD_ENGINE_DEFS_H
+ 
+-#define AUD_SUPPORT_RAVE_EDITING (__BANK)
++#define AUD_SUPPORT_RAVE_EDITING (__USEDEBUGAUDIO)
+ 
+ #if AUD_SUPPORT_RAVE_EDITING
+ #define SUPPORT_RAVE_EDITING_ONLY(x) x

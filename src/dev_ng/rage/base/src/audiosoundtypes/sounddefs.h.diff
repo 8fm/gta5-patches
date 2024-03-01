@@ -1,0 +1,120 @@
+diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h b/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h
+--- a/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h
++++ b/src/dev_ng/rage/base/src/audiosoundtypes/sounddefs.h
+@@ -306,7 +306,7 @@ namespace rage
+ 			
+ 			Sound() :
+ 				ClassId(0xFF),
+-				BANK_ONLY(NameTableOffset(0XFFFFFF),)
++				DEBUGAUDIO_ONLY(NameTableOffset(0XFFFFFF),)
+ 				Compression(0xFFFFFFFF),
+ 				Flags(0xAAAAAAAA),
+ 				Volume(0),
+@@ -341,12 +341,12 @@ namespace rage
+ 			// PURPOSE - Returns a pointer to the field whose name is specified by the hash
+ 			void* GetFieldPtr(const rage::u32 fieldNameHash);
+ 			
+-			#if __BANK
++			#if __USEDEBUGAUDIO
+ 			rage::u32 ClassId : 8;
+ 			rage::u32 NameTableOffset : 24;
+ 			#else
+ 			rage::u8 ClassId;
+-			#endif // __BANK
++			#endif // __USEDEBUGAUDIO
+ 			rage::u32 Compression;
+ 			rage::u32 Flags;
+ 			
+@@ -1955,19 +1955,19 @@ namespace rage
+ 			
+ 			SoundSet() :
+ 				ClassId(0xFF),
+-				BANK_ONLY(NameTableOffset(0XFFFFFF),)
++				DEBUGAUDIO_ONLY(NameTableOffset(0XFFFFFF),)
+ 				Flags(0xAAAAAAAA)
+ 			{}
+ 			
+ 			// PURPOSE - Returns a pointer to the field whose name is specified by the hash
+ 			void* GetFieldPtr(const rage::u32 fieldNameHash);
+ 			
+-			#if __BANK
++			#if __USEDEBUGAUDIO
+ 			rage::u32 ClassId : 8;
+ 			rage::u32 NameTableOffset : 24;
+ 			#else
+ 			rage::u8 ClassId;
+-			#endif // __BANK
++			#endif // __USEDEBUGAUDIO
+ 			rage::u32 Flags;
+ 			
+ 			
+@@ -1996,19 +1996,19 @@ namespace rage
+ 			
+ 			NoteMap() :
+ 				ClassId(0xFF),
+-				BANK_ONLY(NameTableOffset(0XFFFFFF),)
++				DEBUGAUDIO_ONLY(NameTableOffset(0XFFFFFF),)
+ 				Flags(0xAAAAAAAA)
+ 			{}
+ 			
+ 			// PURPOSE - Returns a pointer to the field whose name is specified by the hash
+ 			void* GetFieldPtr(const rage::u32 fieldNameHash);
+ 			
+-			#if __BANK
++			#if __USEDEBUGAUDIO
+ 			rage::u32 ClassId : 8;
+ 			rage::u32 NameTableOffset : 24;
+ 			#else
+ 			rage::u8 ClassId;
+-			#endif // __BANK
++			#endif // __USEDEBUGAUDIO
+ 			rage::u32 Flags;
+ 			
+ 			
+@@ -2039,19 +2039,19 @@ namespace rage
+ 			
+ 			SoundSetList() :
+ 				ClassId(0xFF),
+-				BANK_ONLY(NameTableOffset(0XFFFFFF),)
++				DEBUGAUDIO_ONLY(NameTableOffset(0XFFFFFF),)
+ 				Flags(0xAAAAAAAA)
+ 			{}
+ 			
+ 			// PURPOSE - Returns a pointer to the field whose name is specified by the hash
+ 			void* GetFieldPtr(const rage::u32 fieldNameHash);
+ 			
+-			#if __BANK
++			#if __USEDEBUGAUDIO
+ 			rage::u32 ClassId : 8;
+ 			rage::u32 NameTableOffset : 24;
+ 			#else
+ 			rage::u8 ClassId;
+-			#endif // __BANK
++			#endif // __USEDEBUGAUDIO
+ 			rage::u32 Flags;
+ 			
+ 			
+@@ -2079,7 +2079,7 @@ namespace rage
+ 			
+ 			SoundHashList() :
+ 				ClassId(0xFF),
+-				BANK_ONLY(NameTableOffset(0XFFFFFF),)
++				DEBUGAUDIO_ONLY(NameTableOffset(0XFFFFFF),)
+ 				Flags(0xAAAAAAAA),
+ 				CurrentSoundIdx(0)
+ 			{}
+@@ -2087,12 +2087,12 @@ namespace rage
+ 			// PURPOSE - Returns a pointer to the field whose name is specified by the hash
+ 			void* GetFieldPtr(const rage::u32 fieldNameHash);
+ 			
+-			#if __BANK
++			#if __USEDEBUGAUDIO
+ 			rage::u32 ClassId : 8;
+ 			rage::u32 NameTableOffset : 24;
+ 			#else
+ 			rage::u8 ClassId;
+-			#endif // __BANK
++			#endif // __USEDEBUGAUDIO
+ 			rage::u32 Flags;
+ 			
+ 			rage::u16 CurrentSoundIdx;
