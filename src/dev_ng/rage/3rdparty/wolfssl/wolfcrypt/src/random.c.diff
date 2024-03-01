@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/random.c b/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/random.c
+--- a/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/random.c
++++ b/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/random.c
+@@ -118,7 +118,7 @@ int wc_RNG_GenerateByte(WC_RNG* rng, byte* b)
+ 	#include <sce_random.h>
+ 	#include <libsysmodule.h>
+ 	#pragma comment(lib, "libSceRandom_stub_weak.a")
+-#elif (RSG_PC && RSG_CPU_X64) || RSG_DURANGO
++#elif (RSG_PC && !RSG_LINUX && RSG_CPU_X64) || RSG_DURANGO
+ 	#include <bcrypt.h>
+ 	#pragma comment(lib, "bcrypt.lib") 
+ #elif (RSG_PC && RSG_CPU_X86)
+@@ -1700,7 +1700,7 @@ Using BCrypt on PC (x64) and Xbox One, the older CNG APIs for the
+ 32-bit Social Club DLL which needs to work on XP and up,
+ and sceLibSecureRandom() on PS4.
+ */
+-#elif RSG_PC || RSG_DURANGO || RSG_SCE
++#elif (RSG_PC && !RSG_LINUX) || RSG_DURANGO || RSG_SCE
+ int wc_GenerateSeed(OS_Seed* os, byte* output, word32 sz)
+ {
+ #if RSG_ORBIS

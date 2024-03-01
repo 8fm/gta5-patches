@@ -2,8 +2,8 @@ diff --git a/src/dev_ng/rage/base/src/vcproj/RageNet/CMakeLists.txt b/src/dev_ng
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/rage/base/src/vcproj/RageNet/CMakeLists.txt
-@@ -0,0 +1,64 @@
-+project(RageNet)
+@@ -0,0 +1,164 @@
++project(RageNet CXX C ASM)
 +
 +set(TARGET_TYPE "StaticLib")
 +include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
@@ -44,6 +44,105 @@ new file mode 100644
 +    "../../../../3rdparty/libpcp/libpcp/src/pcp_server_discovery.c"
 +)
 +
++if (NOT WIN32)
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -msse4.1 -maes -mpclmul")
++set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -msse4.1 -maes -mpclmul")
++add_compile_options($<$<COMPILE_LANGUAGE:ASM>:-include${CMAKE_SOURCE_DIR}/rage/3rdparty/wolfssl/user_settings.h>)
++list(APPEND SRC_FILES
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/aes.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/aes_asm.S"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/arc4.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/asm.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/asn.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/async.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/blake2b.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/blake2s.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/camellia.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/chacha.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/chacha20_poly1305.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/cmac.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/coding.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/compress.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/cpuid.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/cryptocb.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/curve25519.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/curve448.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/des3.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/dh.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/dsa.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ecc.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ecc_fp.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/eccsi.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ed25519.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ed448.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/error.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/falcon.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/fe_448.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/fe_low_mem.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/fe_operations.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/fips.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/fips_test.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ge_448.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ge_low_mem.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ge_operations.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/hash.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/hmac.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/integer.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/kdf.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/logging.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/md2.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/md4.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/md5.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/memory.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/pkcs12.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/pkcs7.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/poly1305.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/pwdbased.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/random.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/rc2.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/ripemd.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/rsa.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sakke.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/selftest.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sha.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sha256.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sha3.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sha512.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/signature.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/siphash.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_arm32.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_arm64.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_armthumb.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_c32.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_c64.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_cortexm.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_dsp32.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_int.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_x86_64.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/sp_x86_64_asm.S"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/srp.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/tfm.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wc_dsp.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wc_encrypt.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wc_pkcs11.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wc_port.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wolfcrypt_first.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wolfcrypt_last.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wolfevent.c"
++    "../../../../3rdparty/wolfssl/wolfcrypt/src/wolfmath.c"
++    "../../../../3rdparty/wolfssl/src/check_sizes.c"
++    "../../../../3rdparty/wolfssl/src/crl.c"
++    "../../../../3rdparty/wolfssl/src/internal.c"
++    "../../../../3rdparty/wolfssl/src/keys.c"
++    "../../../../3rdparty/wolfssl/src/ocsp.c"
++    "../../../../3rdparty/wolfssl/src/sniffer.c"
++    "../../../../3rdparty/wolfssl/src/ssl.c"
++    "../../../../3rdparty/wolfssl/src/tls.c"
++    "../../../../3rdparty/wolfssl/src/tls13.c"
++    "../../../../3rdparty/wolfssl/src/wolfio.c"
++)
++endif()
++
 +add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 +
 +target_include_directories(${PROJECT_NAME} PRIVATE
@@ -57,6 +156,7 @@ new file mode 100644
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/miniupnpc-2.0
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/portcullis/client/pc
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/twitch/include
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/wolfssl/wolfssl
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/wolfssl
 +    ${CMAKE_SOURCE_DIR}/rage/base/src
 +    ${CMAKE_SOURCE_DIR}/rage/framework/src

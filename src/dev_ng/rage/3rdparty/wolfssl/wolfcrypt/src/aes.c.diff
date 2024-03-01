@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/aes.c b/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/aes.c
+--- a/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/aes.c
++++ b/src/dev_ng/rage/3rdparty/wolfssl/wolfcrypt/src/aes.c
+@@ -4720,7 +4720,7 @@ int wc_AesGcmSetKey(Aes* aes, const byte* key, word32 len)
+     #define HAVE_INTEL_AVX2
+ #endif /* USE_INTEL_SPEEDUP */
+ 
+-#ifndef _MSC_VER
++#if !defined(_MSC_VER) && !RSG_LINUX
+ 
+ void AES_GCM_encrypt(const unsigned char *in, unsigned char *out,
+                      const unsigned char* addt, const unsigned char* ivec,
