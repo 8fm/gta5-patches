@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/output/logitechlightdevice.h b/src/dev_ng/rage/base/src/output/logitechlightdevice.h
+--- a/src/dev_ng/rage/base/src/output/logitechlightdevice.h
++++ b/src/dev_ng/rage/base/src/output/logitechlightdevice.h
+@@ -7,7 +7,7 @@
+ #ifndef OUTPUT_LOGITECHLIGHTDEVICE_H_
+ #define OUTPUT_LOGITECHLIGHTDEVICE_H_
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ #include "lightdevice.h"
+ 

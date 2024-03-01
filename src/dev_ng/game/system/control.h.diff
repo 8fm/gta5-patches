@@ -10,6 +10,15 @@ diff --git a/src/dev_ng/game/system/control.h b/src/dev_ng/game/system/control.h
  //replay
  #include "control/replay/ReplaySettings.h"
  
+@@ -51,7 +51,7 @@
+ #define KEYBOARD_MOUSE_ONLY(...)
+ #endif // KEYBOARD_MOUSE_SUPPORT
+ 
+-#define LIGHT_EFFECTS_SUPPORT (RSG_ORBIS || RSG_PC)
++#define LIGHT_EFFECTS_SUPPORT (RSG_ORBIS || (RSG_PC && !RSG_LINUX))
+ #if LIGHT_EFFECTS_SUPPORT
+ #define LIGHT_EFFECTS_ONLY(x)	x
+ #else
 @@ -59,7 +59,7 @@
  #endif // LIGHT_EFFECTS_SUPPORT
  
