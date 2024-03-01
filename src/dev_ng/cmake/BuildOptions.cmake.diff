@@ -25,7 +25,7 @@ new file mode 100644
 +    endif()
 +else()
 +    if (${GAME_CONFIG} STREQUAL "BankRelease")
-+        add_compile_options(-include ${CMAKE_SOURCE_DIR}/rage/base/src/forceinclude/win64_bankrelease.h)
++        add_compile_options(-include${CMAKE_SOURCE_DIR}/rage/base/src/forceinclude/win64_bankrelease.h)
 +    endif()
 +
 +    add_compile_options(-std=c++14 -fpermissive -Wno-narrowing)

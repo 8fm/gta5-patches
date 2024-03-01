@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/game/VS_Project/CMakeLists.txt b/src/dev_ng/game/VS_Proj
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/game/VS_Project/CMakeLists.txt
-@@ -0,0 +1,60 @@
+@@ -0,0 +1,59 @@
 +string(TOLOWER game_win64_${GAME_CONFIG} BIN_NAME)
 +project(${BIN_NAME})
 +set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
@@ -60,6 +60,5 @@ new file mode 100644
 +    RageSec
 +    RageSuiteCreature
 +    ScaleformGfx
-+    psapi.lib
 +)
 +add_dependencies(${PROJECT_NAME} game_lib_psc)

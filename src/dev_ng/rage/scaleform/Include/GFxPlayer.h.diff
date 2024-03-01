@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/scaleform/Include/GFxPlayer.h b/src/dev_ng/rage/scaleform/Include/GFxPlayer.h
+--- a/src/dev_ng/rage/scaleform/Include/GFxPlayer.h
++++ b/src/dev_ng/rage/scaleform/Include/GFxPlayer.h
+@@ -30,7 +30,7 @@ THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR ANY PURPOSE.
+ 
+ #include "GFxPlayerStats.h"
+ 
+-#include "vector\color32.h"
++#include "vector/color32.h"
+ 
+ #include <ctype.h>  // for wchar_t
+ #include <stdarg.h> // for va_list args

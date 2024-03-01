@@ -2,13 +2,18 @@ diff --git a/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/CMakeLists.txt b/
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/CMakeLists.txt
-@@ -0,0 +1,38 @@
+@@ -0,0 +1,43 @@
 +project(ScaleformGfx)
 +
 +set(TARGET_TYPE "StaticLib")
 +include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
 +
-+add_compile_options(/FI${CMAKE_SOURCE_DIR}/rage/scaleform/rage_forceinclude.h)
++if (MSVC)
++    add_compile_options(/FI${CMAKE_SOURCE_DIR}/rage/scaleform/rage_forceinclude.h)
++else()
++    add_compile_options(-include${CMAKE_SOURCE_DIR}/rage/scaleform/rage_forceinclude.h)
++    remove_definitions(-DWIN64) # Scaleform don't need WIN64 define in Linux
++endif()
 +
 +set(SRC_FILES
 +    "_Unity/_unity_ScaleformGfx_headers_gkernel_grenderer.cpp"
