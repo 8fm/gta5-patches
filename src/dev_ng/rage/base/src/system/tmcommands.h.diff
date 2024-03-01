@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/tmcommands.h b/src/dev_ng/rage/base/src/system/tmcommands.h
+--- a/src/dev_ng/rage/base/src/system/tmcommands.h
++++ b/src/dev_ng/rage/base/src/system/tmcommands.h
+@@ -14,7 +14,7 @@
+ // because of the evil hackery in tmcommands_ms.cpp.
+ //
+ #if RSG_DURANGO || RSG_PC
+-#    define SYSTMCMD_ENABLE     (!__FINAL)
++#    define SYSTMCMD_ENABLE     (!__FINAL && !RSG_LINUX)
+ #else
+ #    define SYSTMCMD_ENABLE     (!__FINAL || !__NO_OUTPUT)
+ #endif
