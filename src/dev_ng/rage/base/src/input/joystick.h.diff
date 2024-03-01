@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/base/src/input/joystick.h b/src/dev_ng/rage/base/src/input/joystick.h
+--- a/src/dev_ng/rage/base/src/input/joystick.h
++++ b/src/dev_ng/rage/base/src/input/joystick.h
+@@ -511,13 +511,13 @@ inline s32 ioJoystick::ClampIt(s32 test, s32 min, s32 max)
+ 	 return ((test<min) ? min : (test>max) ? max : test);
+ }
+ 
++#endif // __WIN32
++
+ inline bool ioJoystick::IsWheel() const
+ {
+ 	return m_IsWheel;
+ }
+ 
+-#endif // __WIN32
+-
+ }	// namespace rage
+ 
+ #endif

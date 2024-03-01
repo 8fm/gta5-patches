@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/input/joystick.cpp b/src/dev_ng/rage/base/src/input/joystick.cpp
+--- a/src/dev_ng/rage/base/src/input/joystick.cpp
++++ b/src/dev_ng/rage/base/src/input/joystick.cpp
+@@ -1130,6 +1130,11 @@ void ioJoystick::FlushValues()
+ 
+ // Stubbed-out versions for DI 3
+ 
++float ioJoystick::GetNormAxis(int axis) const
++{
++	return 0.0f;
++}
++
+ // PURPOSE:	Update all devices
+ void ioJoystick::UpdateAll() { }
+ 

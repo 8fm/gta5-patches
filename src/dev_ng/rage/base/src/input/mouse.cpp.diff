@@ -12,12 +12,48 @@ diff --git a/src/dev_ng/rage/base/src/input/mouse.cpp b/src/dev_ng/rage/base/src
  
  using namespace rage;
  
-@@ -298,7 +302,7 @@ void ioMouse::Update(bool UNUSED_PARAM(ignoreInput)) {
+@@ -298,6 +302,44 @@ void ioMouse::Update(bool UNUSED_PARAM(ignoreInput)) {
  #endif // REMOTE_INPUT_SUPPORT
  }
  
--#elif RSG_PC
-+#elif RSG_PC && !RSG_LINUX
++#elif RSG_LINUX
++
++void ioMouse::Begin(bool inWin, bool isExclusive)
++{
++}
++
++bool ioMouse::IsLeftRightButtonSwapped()
++{
++	return false;
++}
++
++void ioMouse::End()
++{
++}
++
++void ioMouse::Update(bool ignoreInput)
++{
++}
++
++void ioMouse::SetCursorVisible(bool visible)
++{
++}
++
++bool ioMouse::SetCursorPosition(float x, float y)
++{
++	return false;
++}
++
++#if !__FINAL
++void rage::ioMouse::SetAbsoluteOnly( bool absoluteOnly )
++{
++}
++#endif // !__FINAL
++
++void rage::ioMouse::RecaptureLostDevices()
++{
++}
++
+ #elif RSG_PC
  
  #include "winpriv.h"
- 

@@ -1,12 +1,37 @@
 diff --git a/src/dev_ng/rage/base/src/input/keyboard.cpp b/src/dev_ng/rage/base/src/input/keyboard.cpp
 --- a/src/dev_ng/rage/base/src/input/keyboard.cpp
 +++ b/src/dev_ng/rage/base/src/input/keyboard.cpp
-@@ -667,7 +667,7 @@ void ioKeyboard::SetUseKeypadMode(bool keypadMode, bool forceUpdate)
+@@ -667,6 +667,33 @@ void ioKeyboard::SetUseKeypadMode(bool keypadMode, bool forceUpdate)
  #endif // __PPU
  
  
--#elif RSG_PC // IS_CONSOLE && !RSG_DURANGO
-+#elif RSG_PC && !RSG_LINUX // IS_CONSOLE && !RSG_DURANGO
++#elif RSG_LINUX
++bool ioKeyboard::sm_AllowLocalKeyboardLayout = false;
++
++void ioKeyboard::Begin(bool) {
++}
++
++void ioKeyboard::End() {
++}
++
++void ioKeyboard::Update(bool ignoreInput) {
++}
++
++int ioKeyboard::GetBufferedInput(char *dest,int maxLen) {
++	return 0;
++}
++
++void ioKeyboard::UpdateKeyboardLayoutSettings() {
++}
++
++void ioKeyboard::RecaptureLostDevices() {
++}
++
++#if IME_TEXT_INPUT
++void ioKeyboard::ImeUpdateCompositionText() {
++}
++#endif // IME_TEXT_INPUT
++
+ #elif RSG_PC // IS_CONSOLE && !RSG_DURANGO
  static LPDIRECTINPUTW s_keybDI;
  bool ioKeyboard::sm_UsingRawInput = false;
- bool ioKeyboard::sm_CapsLockToggled = false;
