@@ -1,0 +1,46 @@
+diff --git a/src/dev_ng/rage/base/src/math/intrinsics.h b/src/dev_ng/rage/base/src/math/intrinsics.h
+--- a/src/dev_ng/rage/base/src/math/intrinsics.h
++++ b/src/dev_ng/rage/base/src/math/intrinsics.h
+@@ -93,6 +93,29 @@ __forceinline unsigned char _BitScanReverse64(unsigned long *Index, unsigned lon
+ }
+ #endif
+ 
++#if __LINUX
++__forceinline unsigned char _BitScanForward(unsigned long* Index, unsigned long Mask)
++{
++	*Index = __builtin_ctz(Mask);
++	return Mask != 0;
++}
++__forceinline unsigned char _BitScanReverse(unsigned long* Index, unsigned long Mask)
++{
++	*Index = (31 - __builtin_clz(Mask));
++	return Mask != 0;
++}
++__forceinline unsigned char _BitScanForward64(unsigned long* Index, rage::u64 Mask)
++{
++	*Index = __builtin_ctzll(Mask);
++	return Mask != 0;
++}
++__forceinline unsigned char _BitScanReverse64(unsigned long* Index, rage::u64 Mask)
++{
++	*Index = (63 - __builtin_clzll(Mask));
++	return Mask != 0;
++}
++#endif
++
+ #if __XENON
+ 
+ #include <ppcintrinsics.h>
+@@ -188,8 +211,11 @@ __forceinline float _vscalar(__vector4 v)
+ 
+ #include <xmmintrin.h>
+ #include <emmintrin.h>		// SSE2
++#if __LINUX
++#include <immintrin.h>
++#endif
+ 
+-#if RSG_ORBIS
++#if RSG_ORBIS || __LINUX
+ union __m128_union {
+ 	float               m128_f32[4];
+ 	unsigned long long  m128_u64[2];

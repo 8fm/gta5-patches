@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/xtl.h b/src/dev_ng/rage/base/src/system/xtl.h
+--- a/src/dev_ng/rage/base/src/system/xtl.h
++++ b/src/dev_ng/rage/base/src/system/xtl.h
+@@ -44,7 +44,7 @@
+ #  error "Rage requires XeDK 1838 or higher."
+ # endif
+ # pragma warning(pop)
+-#elif __WIN32PC || RSG_DURANGO
++#elif (__WIN32PC || RSG_DURANGO) && !__LINUX
+ #ifndef STRICT
+ # define STRICT
+ #endif

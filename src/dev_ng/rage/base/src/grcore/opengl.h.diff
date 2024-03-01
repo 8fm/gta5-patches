@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/opengl.h b/src/dev_ng/rage/base/src/grcore/opengl.h
+--- a/src/dev_ng/rage/base/src/grcore/opengl.h
++++ b/src/dev_ng/rage/base/src/grcore/opengl.h
+@@ -27,7 +27,7 @@
+ #define glDepthRange glDepthRangef
+ #define glClearDepth glClearDepthf
+ #else
+-#include <gl/GL.h>
++#include <GL/gl.h>
+ #endif
+ 
+ #ifndef GL_COMPRESSED_RGB_S3TC_DXT1_EXT

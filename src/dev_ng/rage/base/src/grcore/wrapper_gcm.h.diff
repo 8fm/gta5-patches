@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h b/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h
+--- a/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h
++++ b/src/dev_ng/rage/base/src/grcore/wrapper_gcm.h
+@@ -33,7 +33,7 @@ struct CellGcmContextData;
+ int32_t gcmCallback(CellGcmContextData *data,uint32_t /*amt*/);
+ #endif
+ 
+-#if __PPU || __WIN32 || RSG_ORBIS		// TODO: Do we really want to keep the CellGcmTexture in the base class?
++#if __PPU || __WIN32 || RSG_ORBIS || __LINUX	// TODO: Do we really want to keep the CellGcmTexture in the base class?
+ 
+ #include "data/struct.h"
+ #include "system/memory.h"

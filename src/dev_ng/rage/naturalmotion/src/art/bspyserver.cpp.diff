@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/art/bspyserver.cpp b/src/dev_ng/rage/naturalmotion/src/art/bspyserver.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/art/bspyserver.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/art/bspyserver.cpp
+@@ -21,7 +21,7 @@
+ #include "system/xtl.h"
+ #endif // __WIN32
+ 
+-#include "ART\bSpyServer.h"
++#include "ART/bSpyServer.h"
+ 
+ //So that the gameLibs can be compiled with ART_ENABLE_BSPY 1 
+ // and still link with NM code if ART_ENABLE_BSPY 0 (e.g. for profiling)

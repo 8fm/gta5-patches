@@ -13,3 +13,12 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device.h b/src/dev_ng/rage/base/src
  
  #define USE_NV_TXAA RSG_PC && !__GAMETOOL
  #if USE_NV_TXAA
+@@ -614,7 +618,7 @@ namespace rage {
+ 		static int InitSingleton() { return 1; }
+ #endif
+ 
+-#if __WIN32 || RSG_DURANGO
++#if __WIN32 || RSG_DURANGO || __LINUX
+ 		grcEntry bool IsCreated() { return (GetCurrent() != NULL); }
+ #endif
+ 

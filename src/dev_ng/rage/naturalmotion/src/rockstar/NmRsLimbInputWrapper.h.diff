@@ -1,0 +1,162 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputWrapper.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputWrapper.h
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputWrapper.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbInputWrapper.h
+@@ -23,7 +23,7 @@
+ 
+ #if ART_ENABLE_BSPY_LIMBS
+ #include "NmRsSpy.h"
+-#include "bSpy\bSpyCommonPackets.h"
++#include "bSpy/bSpyCommonPackets.h"
+ #endif // ART_ENABLE_BSPY_LIMBS
+ 
+ #include "NmRsCBU_Shared.h"
+@@ -73,7 +73,7 @@ namespace ART
+ 
+       // Auto-generate code for input wrapper parameter initialisation via inline file
+       #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) INITIALIZE_PARAMETER(_name, _default)
+-      #include "common\NmRsIK.inl"
++      #include "common/NmRsIK.inl"
+       #undef NM_RS_PARAMETER
+     }
+ 
+@@ -85,7 +85,7 @@ namespace ART
+ 
+     // Auto-generate members and accessors for input wrapper via inline file
+     #define NM_RS_PARAMETER(_prefix, _type, _name, _min, _max, _default) DECLARE_ACCESSORS(_prefix, _type, _name)
+-    #include "common\NmRsIK.inl"
++    #include "common/NmRsIK.inl"
+     #undef NM_RS_PARAMETER
+ 
+     NmRsIKInputData m_data;
+@@ -135,7 +135,7 @@ struct NmRsArmInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate effector data initialization...
+     #define NM_RS_PARAMETER(_prefix, _name) INIT_EFFECTOR_DATA(_name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -144,7 +144,7 @@ struct NmRsArmInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate setting effector params code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SET_EFFECTOR_PARAMS(_prefix, _name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -152,7 +152,7 @@ struct NmRsArmInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate oppose gravity code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SET_OPPOSE_GRAVITY(_prefix, _name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -161,14 +161,14 @@ struct NmRsArmInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate send components code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SEND_COMPONENTS(_prefix, _name)
+-    #include "common\NmRsHumanArm.inl"
++    #include "common/NmRsHumanArm.inl"
+     #undef NM_RS_PARAMETER
+   }
+ #endif
+ 
+   // Auto-generate members and accessors via inline file.
+   #define NM_RS_PARAMETER(_prefix, _name) DECLARE_EFFECTOR_DATA(_prefix, _name)
+-  #include "common\NmRsHumanArm.inl"
++  #include "common/NmRsHumanArm.inl"
+   #undef NM_RS_PARAMETER
+ 
+   NmRsArmInputData m_data;
+@@ -193,7 +193,7 @@ struct NmRsLegInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate effector data initialization...
+     #define NM_RS_PARAMETER(_prefix, _name) INIT_EFFECTOR_DATA(_name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -201,7 +201,7 @@ struct NmRsLegInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate setting effector params code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SET_EFFECTOR_PARAMS(_prefix, _name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -209,7 +209,7 @@ struct NmRsLegInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate oppose gravity code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SET_OPPOSE_GRAVITY(_prefix, _name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -218,14 +218,14 @@ struct NmRsLegInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate send components code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SEND_COMPONENTS(_prefix, _name)
+-    #include "common\NmRsHumanLeg.inl"
++    #include "common/NmRsHumanLeg.inl"
+     #undef NM_RS_PARAMETER
+   }
+ #endif
+ 
+   // Auto-generate members and accessors via inline file.
+   #define NM_RS_PARAMETER(_prefix, _name) DECLARE_EFFECTOR_DATA(_prefix, _name)
+-  #include "common\NmRsHumanLeg.inl"
++  #include "common/NmRsHumanLeg.inl"
+   #undef NM_RS_PARAMETER
+ 
+   NmRsLegInputData m_data;
+@@ -253,7 +253,7 @@ struct NmRsSpineInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate effector data initialization...
+     #define NM_RS_PARAMETER(_prefix, _name) INIT_EFFECTOR_DATA(_name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -261,7 +261,7 @@ struct NmRsSpineInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate setting effector params code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SET_EFFECTOR_PARAMS(_prefix, _name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -269,7 +269,7 @@ struct NmRsSpineInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate oppose gravity code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SET_OPPOSE_GRAVITY(_prefix, _name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+ 
+@@ -325,14 +325,14 @@ struct NmRsSpineInputWrapper : public NmRsInputWrapperBase
+   {
+     // Auto-generate send components code via inline file
+     #define NM_RS_PARAMETER(_prefix, _name) SEND_COMPONENTS(_prefix, _name)
+-    #include "common\NmRsHumanSpine.inl"
++    #include "common/NmRsHumanSpine.inl"
+     #undef NM_RS_PARAMETER
+   }
+ #endif
+ 
+   // Auto-generate members and accessors via inline file.
+   #define NM_RS_PARAMETER(_prefix, _name) DECLARE_EFFECTOR_DATA(_prefix, _name)
+-  #include "common\NmRsHumanSpine.inl"
++  #include "common/NmRsHumanSpine.inl"
+   #undef NM_RS_PARAMETER
+ 
+   NmRsSpineInputData m_data;

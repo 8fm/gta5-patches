@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/base/src/system/wndproc.h b/src/dev_ng/rage/base/src/system/wndproc.h
+--- a/src/dev_ng/rage/base/src/system/wndproc.h
++++ b/src/dev_ng/rage/base/src/system/wndproc.h
+@@ -14,10 +14,10 @@ namespace rage {
+ #if __WIN32PC
+ typedef unsigned rageUINT;
+ # if __64BIT
+-typedef unsigned __int64 rageWPARAM;
+-typedef signed __int64 rageLPARAM;
+-typedef signed __int64 rageLRESULT;
+-typedef signed __int64 rageINT_PTR;
++typedef uint64_t rageWPARAM;
++typedef int64_t rageLPARAM;
++typedef int64_t rageLRESULT;
++typedef int64_t rageINT_PTR;
+ # else
+ typedef unsigned int rageWPARAM;
+ typedef long rageLPARAM;

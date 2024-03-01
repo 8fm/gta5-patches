@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/tls.h b/src/dev_ng/rage/base/src/system/tls.h
+--- a/src/dev_ng/rage/base/src/system/tls.h
++++ b/src/dev_ng/rage/base/src/system/tls.h
+@@ -17,7 +17,7 @@
+ #include "file/file_config.h"
+ #endif
+ 
+-#if __PPU || defined(__SNC__) || (defined(__ORBIS__) && __clang_minor__ < 2)
++#if __PPU || defined(__SNC__) || (defined(__ORBIS__) && __clang_minor__ < 2) || __LINUX
+ #define __THREAD	__thread
+ #elif defined(__ORBIS__)
+ #define __THREAD __thread __attribute__((__tls_model__("initial-exec")))

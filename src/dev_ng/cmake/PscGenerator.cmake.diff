@@ -2,10 +2,12 @@ diff --git a/src/dev_ng/cmake/PscGenerator.cmake b/src/dev_ng/cmake/PscGenerator
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/cmake/PscGenerator.cmake
-@@ -0,0 +1,19 @@
+@@ -0,0 +1,21 @@
 +
 +if (MSVC)
 +    set(CODE_GEN ${CMAKE_SOURCE_DIR}/../../tools_ng/bin/coding/python/parCodeGen.exe)
++else()
++    set(CODE_GEN RS_TOOLSROOT=${CMAKE_SOURCE_DIR}/../../tools_ng python3 ${CMAKE_SOURCE_DIR}/rage/base/tools/cli/parCodeGen/parCodeGen.py)
 +endif()
 +
 +set (RESULT_FILES "")

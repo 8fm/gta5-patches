@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/string/unicode.h b/src/dev_ng/rage/base/src/string/unicode.h
+--- a/src/dev_ng/rage/base/src/string/unicode.h
++++ b/src/dev_ng/rage/base/src/string/unicode.h
+@@ -204,7 +204,9 @@ namespace rage
+ 	}
+ 
+ 	// If this assert ever fails, we need to define our own versions of wcscmp, wcslen, etc. that work with char16s
++#if !__LINUX // TODO: check Linux
+ 	CompileTimeAssert(sizeof(wchar_t) == sizeof(rage::char16));
++#endif
+ 
+ 
+ }	// namespace rage

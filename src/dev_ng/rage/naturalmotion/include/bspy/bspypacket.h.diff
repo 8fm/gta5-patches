@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/bspy/bspypacket.h b/src/dev_ng/rage/naturalmotion/include/bspy/bspypacket.h
+--- a/src/dev_ng/rage/naturalmotion/include/bspy/bspypacket.h
++++ b/src/dev_ng/rage/naturalmotion/include/bspy/bspypacket.h
+@@ -15,7 +15,7 @@
+ #ifndef NM_BSPY_PACKET_H
+ #define NM_BSPY_PACKET_H
+ 
+-#include "nmutils\nmtypes.h"
++#include "nmutils/nmtypes.h"
+ 
+ namespace bSpy
+ {

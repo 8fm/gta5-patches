@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl b/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl
+--- a/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl
++++ b/src/dev_ng/rage/base/src/vectormath/v4vector4v.inl
+@@ -331,6 +331,8 @@ namespace Vec
+ #elif RSG_CPU_INTEL
+  #if RSG_ORBIS
+ 		uLoc = _mm_extract_epi16(splattedVec, 0);
++ #elif __LINUX
++		uLoc = M128_UNION_CAST(splattedVec).m128_u16[0];
+  #else
+ 		// No SSE/SSE2 intrinsic for this.
+ 		uLoc = splattedVec.m128_u16[0];
+@@ -349,6 +351,8 @@ namespace Vec
+ #elif RSG_CPU_INTEL
+  #if RSG_ORBIS
+ 		sLoc = _mm_extract_epi16(splattedVec, 0);
++ #elif __LINUX
++		sLoc = M128_UNION_CAST(splattedVec).m128_i16[0];
+  #else
+ 		// No SSE/SSE2 intrinsic for this.
+ 		sLoc = splattedVec.m128_i16[0];
+@@ -411,6 +415,8 @@ namespace Vec
+ #elif RSG_CPU_INTEL
+  #if RSG_ORBIS
+ 		uLoc = _mm_extract_epi8(splattedVec, 0);
++ #elif __LINUX
++		uLoc = M128_UNION_CAST(splattedVec).m128_u8[0];
+  #else
+ 		// No SSE/SSE2 intrinsic for this.
+ 		uLoc = splattedVec.m128_u8[0];
+@@ -429,6 +435,8 @@ namespace Vec
+ #elif RSG_CPU_INTEL
+  #if RSG_ORBIS
+ 		sLoc = _mm_extract_epi8(splattedVec, 0);
++ #elif __LINUX
++		sLoc = M128_UNION_CAST(splattedVec).m128_i8[0];
+  #else
+ 		// No SSE/SSE2 intrinsic for this.
+ 		sLoc = splattedVec.m128_i8[0];
