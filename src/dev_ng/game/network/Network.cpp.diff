@@ -156,16 +156,34 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
  
  #include "frontend/UIWorldIcon.h"
  #include "frontend/GameStreamMgr.h"
-@@ -373,7 +373,7 @@ public:
- 	}
- };
+@@ -424,11 +424,13 @@ void NetworkExitFlow::StartShutdownTasks()
+ 		{
+ 			SetShutdownState(ETD_SHUTDOWN_START);
  
--#if RSG_PC
-+#if RSG_PC && !RSG_LINUX
- NetworkExitFlow::NetworkExitFlow() 
- 	: m_ExitToDesktopState(ETD_NONE)
- 	, m_fromMP(false)
-@@ -728,7 +728,7 @@ CNetworkScratchpads&                CNetwork::sm_ScriptScratchpads(s_ScriptScrat
++#if !RSG_LINUX
+ 			if(g_rlPc.GetUiInterface())
+ 			{
+ 				const int SHUTDOWN_TIMEOUT_MS = (3 * 1000);
+ 				g_rlPc.GetUiInterface()->BeginShutdown(SHUTDOWN_TIMEOUT_MS);
+ 			}
++#endif // !RSG_LINUX
+ 		}
+ 		
+ 		m_fromMP = NetworkInterface::IsGameInProgress();
+@@ -608,10 +610,12 @@ void NetworkExitFlow::Update()
+ 		}
+ 		else if (m_ExitToDesktopState == ETD_WAITING_FOR_SCUI_SHUTDOWN)
+ 		{
++#if !RSG_LINUX
+ 			if (g_rlPc.GetRgscInterface() == NULL || g_rlPc.GetRgscInterface()->IsReadyToShutdown())
+ 			{
+ 				SetShutdownState(ETD_READY_TO_SHUTDOWN);
+ 			}
++#endif // !RSG_LINUX
+ 		}
+ 	}
+ }
+@@ -728,7 +732,7 @@ CNetworkScratchpads&                CNetwork::sm_ScriptScratchpads(s_ScriptScrat
  CRoamingBubbleMgr&                  CNetwork::sm_RoamingBubbleMgr(s_RoamingBubbleMgr);
  CNetworkVoice&						CNetwork::sm_NetworkVoice(s_NetworkVoice);
  
@@ -174,7 +192,7 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
  CNetworkTextChat&					CNetwork::sm_NetworkTextChat(s_NetworkTextChat);
  NetworkExitFlow						CNetwork::sm_ExitToDesktopFlow;
  #endif
-@@ -1828,7 +1828,7 @@ CNetwork::Init(unsigned initMode)
+@@ -1828,7 +1832,7 @@ CNetwork::Init(unsigned initMode)
  
          ASSERT_ONLY(CQueriableInterface::ValidateTaskInfos());
  
@@ -183,7 +201,7 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
  		sm_ExitToDesktopFlow.ResetExitFlowState();
  		#endif
  	}
-@@ -1900,7 +1900,9 @@ CNetwork::Shutdown(unsigned shutdownMode)
+@@ -1900,7 +1904,9 @@ CNetwork::Shutdown(unsigned shutdownMode)
  
          netLog::StopLoggingThread();
  
@@ -194,7 +212,7 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
      }
  	else if(shutdownMode == SHUTDOWN_CORE)
  	{
-@@ -2426,7 +2428,7 @@ CNetwork::Update(bool fromLoadingCode)
+@@ -2426,7 +2432,7 @@ CNetwork::Update(bool fromLoadingCode)
                  }
  			}
  
@@ -203,7 +221,7 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
  			sm_ExitToDesktopFlow.Update();
  #endif // __WIN32PC
  
-@@ -3010,7 +3012,7 @@ void CNetwork::UpdateEventTriggerCounters()
+@@ -3010,7 +3016,7 @@ void CNetwork::UpdateEventTriggerCounters()
  
  void CNetwork::UpdateScuiHotkeys()
  {
@@ -212,7 +230,7 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
  	CControl& control = CControlMgr::GetPlayerMappingControl();
  
  	// If the SCUI is disalbed for shutdown, do not attempt to show the UI.
-@@ -3544,7 +3546,7 @@ bool CNetwork::IsReadyToCheckNetworkAccess(const eNetworkAccessArea OUTPUT_ONLY(
+@@ -3544,7 +3550,7 @@ bool CNetwork::IsReadyToCheckNetworkAccess(const eNetworkAccessArea OUTPUT_ONLY(
  	}
  #endif
  
