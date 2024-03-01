@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h b/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.h
+@@ -5,11 +5,11 @@
+ #include "atl/array.h"
+ #include "parser/macros.h"
+ 
+-#include "Event/Event.h"
+-#include "Event/EventEditable.h"
+-#include "Event/System/EventData.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
++#include "event/Event.h"
++#include "event/EventEditable.h"
++#include "event/system/EventData.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
+ 
+ 
+ ////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/SubmarineSyncNodes.h
+@@ -7,7 +7,7 @@
+ #ifndef SUBMARINE_SYNC_NODES_H
+ #define SUBMARINE_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/VehicleSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
+ 
+ class CSubmarineControlDataNode;
+ class CSubmarineGameStateDataNode;

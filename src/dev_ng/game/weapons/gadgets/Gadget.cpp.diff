@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/weapons/gadgets/Gadget.cpp b/src/dev_ng/game/weapons/gadgets/Gadget.cpp
+--- a/src/dev_ng/game/weapons/gadgets/Gadget.cpp
++++ b/src/dev_ng/game/weapons/gadgets/Gadget.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Weapons/Gadgets/Gadget.h"
++#include "weapons/Gadgets/Gadget.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

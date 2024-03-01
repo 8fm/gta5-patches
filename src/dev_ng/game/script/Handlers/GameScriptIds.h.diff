@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptIds.h b/src/dev_ng/game/script/Handlers/GameScriptIds.h
+--- a/src/dev_ng/game/script/Handlers/GameScriptIds.h
++++ b/src/dev_ng/game/script/Handlers/GameScriptIds.h
+@@ -9,7 +9,7 @@
+ 
+ #include "fwscript/scriptid.h"
+ #include "fwscript/scriptobjinfo.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ class GtaThread;
+ 

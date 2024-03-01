@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/frontend/WarningScreen.cpp b/src/dev_ng/game/frontend/WarningScreen.cpp
+--- a/src/dev_ng/game/frontend/WarningScreen.cpp
++++ b/src/dev_ng/game/frontend/WarningScreen.cpp
+@@ -9,17 +9,17 @@
+ 
+ #include "frontend/WarningScreen.h"
+ #include "frontend/loadingscreens.h"
+-#include "frontend/scaleform/ScaleFormMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "renderer/RenderThread.h"
+ #include "frontend/ui_channel.h"
+-#include "Frontend/HudTools.h"
+-#include "Frontend/NewHud.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/HudTools.h"
++#include "frontend/NewHud.h"
++#include "frontend/PauseMenu.h"
+ #include "network/Live/livemanager.h"
+ #include "saveload/savegame_messages.h"
+ #include "script/thread.h"
+-#include "System/control.h"
+-#include "System/controlMgr.h"
++#include "system/control.h"
++#include "system/controlMgr.h"
+ #include "system/service.h"
+ #include "system/stack.h"
+ #include "text/GxtString.h"

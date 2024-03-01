@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/misc/WaterCannon.h b/src/dev_ng/game/vfx/misc/WaterCannon.h
+--- a/src/dev_ng/game/vfx/misc/WaterCannon.h
++++ b/src/dev_ng/game/vfx/misc/WaterCannon.h
+@@ -24,8 +24,8 @@
+ #include "fwutil/idgen.h"
+ 
+ // Game headers
+-#include "Renderer/HierarchyIds.h"
+-#include "Scene/RegdRefTypes.h"
++#include "renderer/HierarchyIds.h"
++#include "scene/RegdRefTypes.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.cpp b/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.cpp
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.cpp
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.cpp
+@@ -3,7 +3,7 @@
+ // (c) 2010 RockstarNorth
+ // ==========================================================
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if __BANK
+ 
+@@ -37,14 +37,14 @@
+ #include "vfx/ptfx/ptfxasset.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ 
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "debug/AssetAnalysis/AssetAnalysisUtil.h"
+ #include "debug/AssetAnalysis/AssetAnalysis.h"
+ #include "debug/DebugArchetypeProxy.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "modelinfo/modelinfo.h"
+-#include "modelinfo/pedmodelinfo.h"
+-#include "modelinfo/vehiclemodelinfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "renderer/GtaDrawable.h" // for gtaDrawable
+ #include "physics/gtaArchetype.h" // for gtaFragType
+ #include "scene/loader/MapData.h"
+@@ -53,9 +53,9 @@
+ 
+ #include "vfx/vehicleglass/VehicleGlassManager.h" // for dumping water geometry // [WATERDRAW]
+ 
+-#include "debug/textureviewer/textureviewerutil.h" // for GetFriendlyTextureName, StringMatch
+-#include "debug/textureviewer/textureviewerstreamingiterator.h"
+-#include "debug/textureviewer/textureviewerstreamingiteratortest.h"
++#include "debug/TextureViewer/TextureViewerutil.h" // for GetFriendlyTextureName, StringMatch
++#include "debug/TextureViewer/TextureViewerstreamingiterator.h"
++#include "debug/TextureViewer/TextureViewerstreamingiteratortest.h"
+ 
+ DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()
+ 

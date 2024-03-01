@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/network/Shop/Catalog.cpp b/src/dev_ng/game/network/Shop/Catalog.cpp
+--- a/src/dev_ng/game/network/Shop/Catalog.cpp
++++ b/src/dev_ng/game/network/Shop/Catalog.cpp
+@@ -6,7 +6,7 @@
+ // Stores the contents of the transaction server catalog
+ //
+ 
+-#include "Network/NetworkTypes.h"
++#include "network/NetworkTypes.h"
+ 
+ #if __NET_SHOP_ACTIVE
+ 
+@@ -30,16 +30,16 @@
+ #include "fwnet/netcloudfiledownloadhelper.h"
+ 
+ // game headers
+-#include "network/shop/inventory.h"
+-#include "network/shop/NetworkShopping.h"
+-#include "network/shop/VehicleCatalog.h"
+-#include "network/shop/GameTransactionsSessionMgr.h"
+-#include "network/cloud/Tunables.h"
+-#include "network/live/livemanager.h"
++#include "network/Shop/Inventory.h"
++#include "network/Shop/NetworkShopping.h"
++#include "network/Shop/VehicleCatalog.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Live/livemanager.h"
+ #include "script/script.h"
+-#include "stats/StatsInterface.h"
+-#include "stats/StatsMgr.h"
+-#include "stats/StatsDataMgr.h"
++#include "Stats/StatsInterface.h"
++#include "Stats/StatsMgr.h"
++#include "Stats/StatsDataMgr.h"
+ 
+ #define __USE_ZLIB_STREAM 1
+ 

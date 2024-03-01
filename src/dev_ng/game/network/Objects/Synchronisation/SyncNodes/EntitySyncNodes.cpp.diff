@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/EntitySyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/EntitySyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/EntitySyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/EntitySyncNodes.cpp
+@@ -4,10 +4,10 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/network.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
+-#include "network/objects/synchronisation/syncnodes/EntitySyncNodes.h"
+-#include "peds/ped.h"
++#include "network/Network.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Synchronisation/SyncNodes/EntitySyncNodes.h"
++#include "Peds/ped.h"
+ #include "script/script.h"
+ 
+ NETWORK_OPTIMISATIONS()

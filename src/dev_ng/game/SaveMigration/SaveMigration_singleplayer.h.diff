@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.h b/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.h
+--- a/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.h
++++ b/src/dev_ng/game/SaveMigration/SaveMigration_singleplayer.h
+@@ -7,11 +7,11 @@
+ #include "rline/savemigration/rlsavemigrationcommon.h"
+ 
+ // Framework headers
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ #include "fwutil/Gen9Settings.h"
+ 
+ // Game headers
+-#include "SaveMigration/savemigration_common.h"
++#include "SaveMigration/SaveMigration_common.h"
+ 
+ 
+ // Forward declarations

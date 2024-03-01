@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/Peds/pedshockingevents.h b/src/dev_ng/game/Peds/ped
  
  // game includes
 -#include "Event\ShockingEventEnums.h"
-+#include "Event/ShockingEventEnums.h"
++#include "event/ShockingEventEnums.h"
  
  class CPedShockingEvent
  {

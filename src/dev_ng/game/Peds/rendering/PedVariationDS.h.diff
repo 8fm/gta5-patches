@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedVariationDS.h b/src/dev_ng/game/Peds/rendering/PedVariationDS.h
+--- a/src/dev_ng/game/Peds/rendering/PedVariationDS.h
++++ b/src/dev_ng/game/Peds/rendering/PedVariationDS.h
+@@ -18,7 +18,7 @@
+ 
+ #include "fwnet/netserialisers.h"
+ #include "parser/macros.h"
+-#include "peds/rendering/PedProps.h"
++#include "Peds/rendering/PedProps.h"
+ #include "renderer/MeshBlendManager.h"
+ 
+ class CPedStreamRequestGfx;

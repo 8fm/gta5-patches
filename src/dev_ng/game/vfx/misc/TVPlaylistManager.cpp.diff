@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/vfx/misc/TVPlaylistManager.cpp b/src/dev_ng/game/vfx/misc/TVPlaylistManager.cpp
+--- a/src/dev_ng/game/vfx/misc/TVPlaylistManager.cpp
++++ b/src/dev_ng/game/vfx/misc/TVPlaylistManager.cpp
+@@ -6,15 +6,15 @@
+ #include "TVPlaylistManager.h"
+ #include "TVPlaylistManager_parser.h"
+ 
+-#include "Vfx/Misc/MovieManager.h"
++#include "vfx/misc/MovieManager.h"
+ 
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ #if GTA_REPLAY
+ #include "control/replay/replay.h"
+ #endif
+ #include "renderer/RenderTargetMgr.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ 
+ #define		NEXT_MOVIE_PRE_CACHE_TIME	(2.0f)
+ 

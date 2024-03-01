@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Vehicles/VehicleLightAsyncMgr.cpp b/src/dev_ng/game/Vehicles/VehicleLightAsyncMgr.cpp
+--- a/src/dev_ng/game/Vehicles/VehicleLightAsyncMgr.cpp
++++ b/src/dev_ng/game/Vehicles/VehicleLightAsyncMgr.cpp
+@@ -11,8 +11,8 @@
+ #include "Peds/ped.h"
+ #include "renderer/Lights/lights.h"
+ #include "timecycle/TimeCycle.h"
+-#include "vehicles/DoVehicleLightsAsync.h"
+-#include "vehicles/Vehicle.h"
++#include "Vehicles/DoVehicleLightsAsync.h"
++#include "Vehicles/vehicle.h"
+ #include "vfx/misc/Coronas.h"
+ 
+ #define		NUM_VEHICLE_LIGHT_DEPENDENCY_JOBS	60

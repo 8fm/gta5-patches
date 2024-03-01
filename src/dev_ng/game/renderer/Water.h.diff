@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/renderer/Water.h b/src/dev_ng/game/renderer/Water.h
+--- a/src/dev_ng/game/renderer/Water.h
++++ b/src/dev_ng/game/renderer/Water.h
+@@ -12,8 +12,8 @@
+ #if !__SPU
+ 	#include "vector/vector3.h"
+ 
+-	#include "Renderer/RenderThread.h"
+-	#include "Renderer/DrawLists/drawList.h"
++	#include "renderer/RenderThread.h"
++	#include "renderer/DrawLists/drawList.h"
+ #if __PPU
+ 	#include "grcore/device.h"
+ #endif // __PPU	
+@@ -21,7 +21,7 @@
+ 
+ #include "parser/macros.h"
+ #include "data/base.h"
+-#include "Renderer/RenderPhases/RenderPhase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ 
+ #include "../shader_source/Water/water_common.fxh"
+ #include "../../rage/framework/src/timecycle/tccycle.h"

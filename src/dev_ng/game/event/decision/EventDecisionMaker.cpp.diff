@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/event/decision/EventDecisionMaker.cpp b/src/dev_ng/game/event/decision/EventDecisionMaker.cpp
+--- a/src/dev_ng/game/event/decision/EventDecisionMaker.cpp
++++ b/src/dev_ng/game/event/decision/EventDecisionMaker.cpp
+@@ -1,14 +1,14 @@
+ // File header
+-#include "Event/Decision/EventDecisionMaker.h"
++#include "event/decision/EventDecisionMaker.h"
+ 
+ // Framework headers
+ #include "ai/aichannel.h"
+ 
+ // Game headers
+-#include "Event/Decision/EventDecisionMakerManager.h"
+-#include "Event/EventEditable.h"
+-#include "Event/System/EventData.h"
+-#include "Peds/Ped.h"
++#include "event/decision/EventDecisionMakerManager.h"
++#include "event/EventEditable.h"
++#include "event/system/EventData.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ 
+ // Macro to disable optimisations if set

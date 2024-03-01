@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Movement/JetpackObject.cpp b/src/dev_ng/game/task/Movement/JetpackObject.cpp
+--- a/src/dev_ng/game/task/Movement/JetpackObject.cpp
++++ b/src/dev_ng/game/task/Movement/JetpackObject.cpp
+@@ -1,15 +1,15 @@
+-#include "Task/Movement/JetpackObject.h"
++#include "task/Movement/JetpackObject.h"
+ #include "entity/archetypemanager.h"
+-#include "ModelInfo/PedModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
+ #include "ai/task/taskchannel.h"
+-#include "objects/objectpopulation.h"
+-#include "scene/physical.h"
++#include "Objects/objectpopulation.h"
++#include "scene/Physical.h"
+ #include "Objects/object.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Movement/TaskJetpack.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Movement/TaskJetpack.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "pickups/PickupManager.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "task/Default/TaskPlayer.h"
+ 
+ AI_OPTIMISATIONS()
+ 

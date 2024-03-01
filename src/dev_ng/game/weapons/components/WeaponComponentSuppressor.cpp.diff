@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.cpp b/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.cpp
+@@ -5,12 +5,12 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentSuppressor.h"
++#include "weapons/components/WeaponComponentSuppressor.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "vehicles/vehicle.h"
+-#include "modelInfo/vehiclemodelinfo.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ WEAPON_OPTIMISATIONS()

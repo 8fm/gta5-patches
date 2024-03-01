@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/PCGamepadCalibration.h b/src/dev_ng/game/frontend/PCGamepadCalibration.h
+--- a/src/dev_ng/game/frontend/PCGamepadCalibration.h
++++ b/src/dev_ng/game/frontend/PCGamepadCalibration.h
+@@ -3,7 +3,7 @@
+ 
+ #if RSG_PC
+ 
+-#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
++#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+ 
+ class CScaleformMovieWrapper;
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Lights/LightGroup.h b/src/dev_ng/game/renderer/Lights/LightGroup.h
+--- a/src/dev_ng/game/renderer/Lights/LightGroup.h
++++ b/src/dev_ng/game/renderer/Lights/LightGroup.h
+@@ -12,7 +12,7 @@
+ // game headers
+ #include "renderer/RenderThread.h"
+ #include "shaders/ShaderLib.h"
+-#include "renderer/SpuPm/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
+ #include "renderer/Lights/LightSource.h"
+ 
+ // framework headers

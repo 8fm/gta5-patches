@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/physics/gtaMaterialDebug.cpp b/src/dev_ng/game/physics/gtaMaterialDebug.cpp
+--- a/src/dev_ng/game/physics/gtaMaterialDebug.cpp
++++ b/src/dev_ng/game/physics/gtaMaterialDebug.cpp
+@@ -38,10 +38,10 @@
+ #include "Timecycle/Timecycle.h"
+ #include "Objects/ProceduralInfo.h"
+ #include "Peds/PedDebugVisualiser.h"
+-#include "Physics/GtaInst.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Physics/Physics.h"
+-#include "Vfx/Systems/VfxMaterial.h"
++#include "physics/gtaInst.h"
++#include "physics/gtaMaterialManager.h"
++#include "physics/physics.h"
++#include "vfx/systems/VfxMaterial.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

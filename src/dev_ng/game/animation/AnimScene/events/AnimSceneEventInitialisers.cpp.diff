@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimSceneEventInitialisers.cpp b/src/dev_ng/game/animation/AnimScene/events/AnimSceneEventInitialisers.cpp
+--- a/src/dev_ng/game/animation/AnimScene/events/AnimSceneEventInitialisers.cpp
++++ b/src/dev_ng/game/animation/AnimScene/events/AnimSceneEventInitialisers.cpp
+@@ -4,7 +4,7 @@
+ #include "AnimSceneEventInitialisers_Parser.h"
+ 
+ #include "animation/AnimScene/AnimSceneEditor.h"
+-#include "animation/animscene/AnimSceneEvent.h"
++#include "animation/AnimScene/AnimSceneEvent.h"
+ #include "animation/debug/AnimDebug.h"
+ 
+ 

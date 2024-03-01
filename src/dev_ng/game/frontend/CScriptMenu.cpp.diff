@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/CScriptMenu.cpp b/src/dev_ng/game/frontend/CScriptMenu.cpp
+--- a/src/dev_ng/game/frontend/CScriptMenu.cpp
++++ b/src/dev_ng/game/frontend/CScriptMenu.cpp
+@@ -4,7 +4,7 @@
+ #include "script/script_channel.h"
+ #include "script/script.h"
+ #include "script/script_hud.h"
+-#include "Script/gta_thread.h"
++#include "script/gta_thread.h"
+ #include "script/streamedscripts.h"
+ #include "streaming/streamingvisualize.h"
+ 

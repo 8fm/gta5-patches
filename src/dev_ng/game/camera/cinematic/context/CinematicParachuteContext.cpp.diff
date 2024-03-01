@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicParachuteContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicParachuteContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicParachuteContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicParachuteContext.cpp
+@@ -8,8 +8,8 @@
+ #include "camera/cinematic/CinematicDirector.h"
+ #include "camera/system/CameraMetadata.h"
+ 
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "task/Movement/TaskParachute.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicParachuteContext,0x68E71EEC)

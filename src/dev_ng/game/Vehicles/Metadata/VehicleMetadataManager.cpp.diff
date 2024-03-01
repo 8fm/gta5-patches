@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleMetadataManager.cpp b/src/dev_ng/game/Vehicles/Metadata/VehicleMetadataManager.cpp
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleMetadataManager.cpp
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleMetadataManager.cpp
+@@ -14,7 +14,7 @@
+ #include "animation/debug/AnimViewer.h"
+ #include "file/device.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Vehicles/vehicle_channel.h"
+ #include "Vehicles/Metadata/VehicleDebug.h"

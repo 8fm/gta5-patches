@@ -9,7 +9,7 @@ diff --git a/src/dev_ng/game/pathserver/ExportCollision.h b/src/dev_ng/game/path
 -#include "fwscene\stores\boxstreamersearch.h"
 -#include "fwutil\PtrList.h"
 -#include "spatialdata\aabb.h"
-+#include "PathServer/NavGenParam.h"
++#include "pathserver/NavGenParam.h"
 +#include "fwscene/stores/boxstreamersearch.h"
 +#include "fwutil/PtrList.h"
 +#include "spatialdata/aabb.h"

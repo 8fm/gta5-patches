@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleShotTire.h b/src/dev_ng/game/vehicleAi/task/TaskVehicleShotTire.h
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleShotTire.h
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleShotTire.h
+@@ -3,7 +3,7 @@
+ 
+ // Game headers
+ #include "renderer/HierarchyIds.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+ 
+ //=========================================================================

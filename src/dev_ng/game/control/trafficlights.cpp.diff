@@ -1,16 +1,55 @@
 diff --git a/src/dev_ng/game/control/trafficlights.cpp b/src/dev_ng/game/control/trafficlights.cpp
 --- a/src/dev_ng/game/control/trafficlights.cpp
 +++ b/src/dev_ng/game/control/trafficlights.cpp
-@@ -37,9 +37,9 @@
+@@ -12,7 +12,7 @@
+ // Framework Headers
+ #include "grcore/debugdraw.h"
+ #include "fwmaths/angle.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ #include "fwdebug/picker.h"
+ 
+ // Game headers
+@@ -20,29 +20,29 @@
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+ #include "control/gameLogic.h"
+-#include "vehicleAi/pathFind.h"
++#include "vehicleAi/pathfind.h"
+ #include "control/replay/replay.h"
+ #include "control/trafficLights.h"
+ #include "vehicleAi/driverpersonality.h"
+ #include "game/cheat.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "game/modelIndices.h"
+ #include "game/weather.h"
+ #include "game/zones.h"
+ #include "modelinfo/BaseModelInfoExtensions.h"
+-#include "objects/Door.h"
+-#include "Renderer/lights/AsyncLightOcclusionMgr.h"
+-#include "scene/2deffect.h"
+-#include "scene/building.h"
++#include "Objects/Door.h"
++#include "renderer/Lights/AsyncLightOcclusionMgr.h"
++#include "scene/2dEffect.h"
++#include "scene/Building.h"
  #include "scene/RefMacros.h"
- #include "scene/world/gameWorld.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
  #include "system/timer.h"
 -#include "TimeCycle\TimeCycleConfig.h"
 -#include "Vfx\Misc\BrightLights.h"
 -#include "Vfx\VfxHelper.h"
-+#include "TimeCycle/TimeCycleConfig.h"
-+#include "Vfx/Misc/BrightLights.h"
-+#include "Vfx/VfxHelper.h"
- #include "physics/WorldProbe/worldprobe.h"
- #include "renderer/lights/lights.h"
- #include "vehicleAi/vehicleintelligence.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "renderer/lights/lights.h"
+-#include "vehicleAi/vehicleintelligence.h"
++#include "timecycle/TimeCycleConfig.h"
++#include "vfx/misc/BrightLights.h"
++#include "vfx/VfxHelper.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "renderer/Lights/lights.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/junctions.h"
+ 
+ AI_OPTIMISATIONS()

@@ -1,0 +1,48 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/drawListCommands_Entities.cpp b/src/dev_ng/game/renderer/DrawLists/drawListCommands_Entities.cpp
+--- a/src/dev_ng/game/renderer/DrawLists/drawListCommands_Entities.cpp
++++ b/src/dev_ng/game/renderer/DrawLists/drawListCommands_Entities.cpp
+@@ -28,13 +28,13 @@
+ // game header
+ #include "camera/CamInterface.h"
+ #include "camera/replay/ReplayDirector.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "modelinfo/VehicleModelInfoVariation.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/PedVariationStream.h"
+-#include "physics/breakable.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationStream.h"
++#include "physics/Breakable.h"
+ #include "renderer/Debug/EntitySelect.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/DrawLists/DrawListProfileStats.h"
+@@ -43,12 +43,12 @@
+ #include "scene/lod/LodScale.h"
+ #include "shaders/CustomShaderEffectTint.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+-#include "shaders/shaderLib.h"
++#include "shaders/ShaderLib.h"
+ #include "shaders/ShaderEdit.h"
+ #include "shaders/CustomShaderEffectPed.h"
+ #include "system/taskscheduler.h"
+ #include "system/dependencyscheduler.h"
+-#include "vehicles/VehicleFactory.h"
++#include "Vehicles/VehicleFactory.h"
+ 
+ #include "renderer/DrawLists/drawList_CopyOffEntityVirtual.h"
+ 
+@@ -85,8 +85,8 @@ RENDER_OPTIMISATIONS()
+ //#################################################################################
+ // --- entity drawing object commands --- 
+ #include "fwsys/timer.h"
+-#include "System/ipc.h"
+-#include "System/Xtl.h"
++#include "system/ipc.h"
++#include "system/Xtl.h"
+ 
+ bool CopyOffMatrixSetSPU_Dependency(const sysDependency& dependency);
+ 

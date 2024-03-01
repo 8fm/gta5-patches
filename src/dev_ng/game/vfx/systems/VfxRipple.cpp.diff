@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxRipple.cpp b/src/dev_ng/game/vfx/systems/VfxRipple.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxRipple.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxRipple.cpp
+@@ -26,15 +26,15 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // Game headers
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "Core/Game.h"
+-#include "renderer/lights/lights.h"
+-#include "Renderer/PostProcessFX.h"
+-#include "Renderer/Water.h"
+-#include "Vfx/vfx_channel.h"
+-#include "Vfx/Systems/VfxWater.h"
+-#include "Vfx/VisualEffects.h"
+-#include "Renderer/Util/ShaderUtil.h"
++#include "renderer/Lights/lights.h"
++#include "renderer/PostProcessFX.h"
++#include "renderer/Water.h"
++#include "vfx/vfx_channel.h"
++#include "vfx/systems/VfxWater.h"
++#include "vfx/VisualEffects.h"
++#include "renderer/Util/ShaderUtil.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  OPTIMISATIONS - TURN ON IN OPTIMISATIONS.H

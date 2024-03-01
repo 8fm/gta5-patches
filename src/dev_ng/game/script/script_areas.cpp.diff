@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/script/script_areas.cpp b/src/dev_ng/game/script/script_areas.cpp
+--- a/src/dev_ng/game/script/script_areas.cpp
++++ b/src/dev_ng/game/script/script_areas.cpp
+@@ -6,8 +6,8 @@
+ #include "fwmaths/Vector.h"
+ 
+ // Game headers
+-#include "frontend/minimap.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "frontend/MiniMap.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ #include "script/script_channel.h"

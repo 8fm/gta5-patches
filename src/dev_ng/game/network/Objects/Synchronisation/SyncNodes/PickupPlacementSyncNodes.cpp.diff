@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.cpp
+@@ -4,17 +4,17 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/PickupPlacementSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PickupPlacementSyncNodes.h"
+ 
+ #include "fwnet/netlog.h"
+ 
+-#include "network/network.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
++#include "network/Network.h"
++#include "network/Objects/NetworkObjectMgr.h"
+ #include "pickups/Pickup.h"
+ #include "pickups/PickupManager.h"
+ #include "pickups/PickupPlacement.h"
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptMgr.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptMgr.h"
+ #include "script/script.h"
+ 
+ NETWORK_OPTIMISATIONS()

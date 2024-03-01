@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/pathserver/PathServerThread.h b/src/dev_ng/game/pathserver/PathServerThread.h
+--- a/src/dev_ng/game/pathserver/PathServerThread.h
++++ b/src/dev_ng/game/pathserver/PathServerThread.h
+@@ -7,7 +7,7 @@
+ // Framework headers
+ #include "ai/navmesh/datatypes.h"
+ #include "ai/navmesh/pathserverthread.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+ //**************************************************************************************************
+ // Define as 1 to use the visited-polys list even when using the A* timestamp method of clearing visited flags

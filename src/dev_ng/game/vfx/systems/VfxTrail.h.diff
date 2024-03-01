@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxTrail.h b/src/dev_ng/game/vfx/systems/VfxTrail.h
+--- a/src/dev_ng/game/vfx/systems/VfxTrail.h
++++ b/src/dev_ng/game/vfx/systems/VfxTrail.h
+@@ -24,8 +24,8 @@
+ #include "fwutil/idgen.h"
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Vfx/Systems/VFxPed.h"
++#include "scene/RegdRefTypes.h"
++#include "vfx/systems/VfxPed.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

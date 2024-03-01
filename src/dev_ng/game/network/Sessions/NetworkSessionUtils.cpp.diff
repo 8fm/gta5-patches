@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Sessions/NetworkSessionUtils.cpp b/src/dev_ng/game/network/Sessions/NetworkSessionUtils.cpp
+--- a/src/dev_ng/game/network/Sessions/NetworkSessionUtils.cpp
++++ b/src/dev_ng/game/network/Sessions/NetworkSessionUtils.cpp
+@@ -9,11 +9,11 @@
+ 
+ #include "fwnet/netchannel.h"
+ 
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Sessions/NetworkSessionMessages.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Sessions/NetworkSessionMessages.h"
+ 
+ // these prevent spam in the net channel
+ RAGE_DEFINE_CHANNEL(net_invitedplayers, DIAG_SEVERITY_DEBUG3, DIAG_SEVERITY_WARNING, DIAG_SEVERITY_ASSERT)

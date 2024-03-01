@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/frontend/MultiplayerGamerTagHud.cpp b/src/dev_ng/game/frontend/MultiplayerGamerTagHud.cpp
+--- a/src/dev_ng/game/frontend/MultiplayerGamerTagHud.cpp
++++ b/src/dev_ng/game/frontend/MultiplayerGamerTagHud.cpp
+@@ -12,25 +12,25 @@
+ #include "fwsys/gameskeleton.h"
+ 
+ // game:
+-#include "Frontend/MultiplayerGamerTagHud.h"
++#include "frontend/MultiplayerGamerTagHud.h"
+ 
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/viewports/Viewport.h"
+-#include "Frontend/hud_colour.h"
++#include "frontend/hud_colour.h"
+ #include "Peds/ped.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkClan.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkClan.h"
+ #include "network/NetworkInterface.h"
+ #include "network/Players/NetGamePlayer.h"
+-#include "Frontend/HudTools.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/HudTools.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/PauseMenu.h"
+ #include "frontend/ui_channel.h"
+ #include "renderer/PostProcessFXHelper.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script_hud.h"
+-#include "Vfx/VfxHelper.h"
++#include "vfx/VfxHelper.h"
+ 
+ //FRONTEND_OPTIMISATIONS();
+ //OPTIMISATIONS_OFF();

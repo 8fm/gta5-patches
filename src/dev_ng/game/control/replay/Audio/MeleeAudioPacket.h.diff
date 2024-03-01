@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/replay/Audio/MeleeAudioPacket.h b/src/dev_ng/game/control/replay/Audio/MeleeAudioPacket.h
 --- a/src/dev_ng/game/control/replay/Audio/MeleeAudioPacket.h
 +++ b/src/dev_ng/game/control/replay/Audio/MeleeAudioPacket.h
-@@ -6,7 +6,7 @@
+@@ -6,12 +6,12 @@
  #ifndef INC_MELEEPACKET_H_
  #define INC_MELEEPACKET_H_
  
@@ -10,3 +10,9 @@ diff --git a/src/dev_ng/game/control/replay/Audio/MeleeAudioPacket.h b/src/dev_n
  
  // Replay only setup for win32
  #if GTA_REPLAY
+ 
+-#include "control/replay/effects/ParticlePacket.h"
++#include "control/replay/Effects/ParticlePacket.h"
+ #include "Peds/ped.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

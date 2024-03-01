@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/System/TaskTreeClone.h b/src/dev_ng/game/task/System/TaskTreeClone.h
+--- a/src/dev_ng/game/task/System/TaskTreeClone.h
++++ b/src/dev_ng/game/task/System/TaskTreeClone.h
+@@ -6,8 +6,8 @@
+ #define TASK_TREE_CLONE_H
+ 
+ // Game headers
+-#include "Task/System/TaskTree.h"
+-#include "Peds/PedDefines.h"
++#include "task/System/TaskTree.h"
++#include "Peds/pedDefines.h"
+ 
+ namespace rage
+ {

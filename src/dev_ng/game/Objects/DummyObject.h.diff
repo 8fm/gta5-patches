@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Objects/DummyObject.h b/src/dev_ng/game/Objects/DummyObject.h
+--- a/src/dev_ng/game/Objects/DummyObject.h
++++ b/src/dev_ng/game/Objects/DummyObject.h
+@@ -7,11 +7,11 @@
+ 
+ // Rage include:
+ #include "diag/tracker.h"		// RAGE_TRACK()
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // game include:
+ #include "control/replay/ReplaySettings.h"
+-#include "Scene/Entity.h"
++#include "scene/Entity.h"
+ 
+ class CObject;
+ 

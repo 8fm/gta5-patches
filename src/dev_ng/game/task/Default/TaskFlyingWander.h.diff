@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Default/TaskFlyingWander.h b/src/dev_ng/game/task/Default/TaskFlyingWander.h
+--- a/src/dev_ng/game/task/Default/TaskFlyingWander.h
++++ b/src/dev_ng/game/task/Default/TaskFlyingWander.h
+@@ -7,8 +7,8 @@
+ #ifndef TASK_FLYING_WANDER_H
+ #define TASK_FLYING_WANDER_H
+ 
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ //***************************************
+ //Class:  CTaskFlyingWander

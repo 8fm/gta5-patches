@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/CrimeInformation.cpp b/src/dev_ng/game/game/CrimeInformation.cpp
+--- a/src/dev_ng/game/game/CrimeInformation.cpp
++++ b/src/dev_ng/game/game/CrimeInformation.cpp
+@@ -8,7 +8,7 @@
+ 
+ // Game headers
+ #include "Dispatch/DispatchData.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+ // Parser files
+ #include "CrimeInformation_parser.h"

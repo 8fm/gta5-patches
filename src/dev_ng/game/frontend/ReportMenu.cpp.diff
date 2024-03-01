@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/frontend/ReportMenu.cpp b/src/dev_ng/game/frontend/ReportMenu.cpp
+--- a/src/dev_ng/game/frontend/ReportMenu.cpp
++++ b/src/dev_ng/game/frontend/ReportMenu.cpp
+@@ -3,21 +3,21 @@
+ //#include "ReportMenuData_parser.h"
+ #include "rline/rlgamerinfo.h"
+ #include "rline/rltitleid.h"
+-#include "Network/Live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "parser/manager.h"
+ #include "parser/macros.h"
+ #include "parsercore/settings.h"
+ #include "net/status.h"
+ #include "text/text.h"
+ 
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ContextMenu.h"
++#include "frontend/ui_channel.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/ContextMenu.h"
+ #include "system/controlMgr.h"
+ #include "script/script.h"
+-#include "stats/StatsInterface.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "Stats/StatsInterface.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ #define REPORTMENU_DATA_XML_FILENAME	"common:/data/ui/reportplayer.xml"
+ #define REPORTMENU_MOVIE_NAME			"MP_RESULTS_PANEL"

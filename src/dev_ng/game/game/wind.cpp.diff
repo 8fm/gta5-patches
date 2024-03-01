@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/game/wind.cpp b/src/dev_ng/game/game/wind.cpp
+--- a/src/dev_ng/game/game/wind.cpp
++++ b/src/dev_ng/game/game/wind.cpp
+@@ -19,15 +19,15 @@
+ #include "pheffects/wind.h"
+ 
+ // game 
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "control/replay/replay.h"
+ #include "Core/Game.h"
+-#include "Peds/Ped.h"
+-#include "Renderer/River.h"
+-#include "Scene/Portals/Portal.h"
+-#include "Scene/World/GameWorld.h"
++#include "Peds/ped.h"
++#include "renderer/River.h"
++#include "scene/portals/Portal.h"
++#include "scene/world/GameWorld.h"
+ #include "fwsys/timer.h"
+-#include "Vfx/VfxHelper.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

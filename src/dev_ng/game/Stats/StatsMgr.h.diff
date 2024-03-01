@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Stats/StatsMgr.h b/src/dev_ng/game/Stats/StatsMgr.h
+--- a/src/dev_ng/game/Stats/StatsMgr.h
++++ b/src/dev_ng/game/Stats/StatsMgr.h
+@@ -21,11 +21,11 @@
+ 
+ // Game headers
+ #include "Stats/StatsTypes.h"
+-#include "peds/pedtype.h"
++#include "Peds/PedType.h"
+ #include "text/TextFile.h"
+ #include "weapons/WeaponEnums.h"
+ #include "task/System/Tuning.h"
+-#include "network/cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ // --- Forward Definitions ------------------------------------------------------
+ class CVehicle;

@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskVehicleBase.cpp b/src/dev_ng/game/task/Vehicle/TaskVehicleBase.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskVehicleBase.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskVehicleBase.cpp
+@@ -13,26 +13,26 @@
+ #include "debug/DebugScene.h"
+ #include "fwanimation/animdirector.h"
+ #include "grcore/debugdraw.h"
+-#include "network/objects/entities/NetObjVehicle.h"
+-#include "Peds/Ped.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/Pedplacement.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "PedGroup/PedGroup.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Streaming/PrioritizedClipSetStreamer.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "Vehicles/Vehicle.h"
++#include "scene/world/GameWorld.h"
++#include "streaming/PrioritizedClipSetStreamer.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/Planes.h"
+ #include "Vehicles/Metadata/VehicleDebug.h"
+ #include "Vehicles/Metadata/VehicleEntryPointInfo.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+-#include "Vfx/VehicleGlass/VehicleGlassManager.h"
+-#include "Task/Vehicle/TaskInVehicle.h"
+-#include "Task/Vehicle/TaskCar.h"
++#include "vfx/VehicleGlass/VehicleGlassManager.h"
++#include "task/Vehicle/TaskInVehicle.h"
++#include "task/Vehicle/TaskCar.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

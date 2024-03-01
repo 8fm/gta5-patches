@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.cpp
+@@ -8,7 +8,7 @@
+ #include "camera/cinematic/cinematicdirector.h"
+ #include "camera/CamInterface.h"
+ #include "camera/helpers/Collision.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "physics/gtaArchetype.h"
+ #include "scene/Entity.h"
+ 

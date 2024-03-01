@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.h b/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.h
+--- a/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.h
++++ b/src/dev_ng/game/network/Stats/NetworkLeaderboardSessionMgr.h
+@@ -16,7 +16,7 @@
+ #include "fwnet/netleaderboardmgr.h"
+ #include "fwnet/netleaderboardwrite.h"
+ #include "fwnet/netleaderboardcommon.h"
+-#include "Script/script.h"
++#include "script/script.h"
+ 
+ namespace rage
+ {

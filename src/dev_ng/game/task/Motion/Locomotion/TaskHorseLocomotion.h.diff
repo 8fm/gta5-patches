@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskHorseLocomotion.h b/src/dev_ng/game/task/Motion/Locomotion/TaskHorseLocomotion.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskHorseLocomotion.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskHorseLocomotion.h
+@@ -6,7 +6,7 @@
+ #if ENABLE_HORSE
+ 
+ #include "Peds/ped.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ struct tGameplayCameraSettings;
+ 

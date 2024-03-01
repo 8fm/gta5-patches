@@ -1,0 +1,63 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewer.cpp b/src/dev_ng/game/debug/TextureViewer/TextureViewer.cpp
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewer.cpp
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewer.cpp
+@@ -3,7 +3,7 @@
+ // (c) 2010 RockstarNorth
+ // =====================================
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if __BANK
+ 
+@@ -29,8 +29,8 @@
+ #include "file/default_paths.h"
+ #include "fwdebug/picker.h"
+ #include "fwmaths/geomutil.h"
+-#include "fwmaths/rect.h"
+-#include "fwnet/HttpQuery.h"
++#include "fwmaths/Rect.h"
++#include "fwnet/httpquery.h"
+ #include "fwscene/stores/txdstore.h"
+ #include "fwscene/stores/dwdstore.h"
+ #include "fwscene/stores/drawablestore.h"
+@@ -45,7 +45,7 @@
+ #include "streaming/streamingengine.h"
+ #include "streaming/packfilemanager.h"
+ 
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "debug/AssetAnalysis/AssetAnalysis.h"
+ #include "debug/AssetAnalysis/AssetAnalysisUtil.h"
+@@ -56,14 +56,14 @@
+ #include "input/keys.h"
+ #include "Objects/DummyObject.h"
+ #include "system/memory.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "objects/object.h"
+-#include "peds/ped.h"
+-#include "scene/animatedbuilding.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
++#include "scene/AnimatedBuilding.h"
+ #include "scene/loader/MapData.h"
+ #include "scene/portals/InteriorInst.h"
+-#include "scene/world/gameworld.h"
++#include "scene/world/GameWorld.h"
+ #include "renderer/color.h"
+ #include "renderer/Debug/EntitySelect.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+@@ -337,8 +337,8 @@ public:
+ 
+ CDebugTextureViewer gDebugTextureViewer;
+ 
+-#include "debug/textureviewer/textureviewerentry.inl"
+-#include "debug/textureviewer/textureviewerpopulate.inl"
++#include "debug/TextureViewer/TextureViewerentry.inl"
++#include "debug/TextureViewer/TextureViewerpopulate.inl"
+ 
+ CDebugTextureViewer::CDebugTextureViewer()
+ {

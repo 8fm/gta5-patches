@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentReloadData.cpp b/src/dev_ng/game/weapons/components/WeaponComponentReloadData.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentReloadData.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentReloadData.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentReloadData.h"
++#include "weapons/components/WeaponComponentReloadData.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ INSTANTIATE_RTTI_CLASS(CWeaponComponentReloadData,0x18C29BB);

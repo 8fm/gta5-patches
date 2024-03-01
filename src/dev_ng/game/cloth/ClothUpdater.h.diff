@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/cloth/ClothUpdater.h b/src/dev_ng/game/cloth/ClothUpdater.h
+--- a/src/dev_ng/game/cloth/ClothUpdater.h
++++ b/src/dev_ng/game/cloth/ClothUpdater.h
+@@ -9,7 +9,7 @@ class CCloth;
+ #include "ClothMgr.h"
+ #include "ClothSprings.h"
+ 
+-#include "phBound/boundCuller.h"
++#include "phbound/boundculler.h"
+ 
+ #if NORTH_CLOTHS
+ 

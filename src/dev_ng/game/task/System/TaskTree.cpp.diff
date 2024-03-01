@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/System/TaskTree.cpp b/src/dev_ng/game/task/System/TaskTree.cpp
+--- a/src/dev_ng/game/task/System/TaskTree.cpp
++++ b/src/dev_ng/game/task/System/TaskTree.cpp
+@@ -1,10 +1,10 @@
+ // File header
+-#include "Task/System/TaskTree.h"
++#include "task/System/TaskTree.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "network/general/NetworkUtil.h"
++#include "Peds/ped.h"
++#include "task/System/TaskFSMClone.h"
++#include "network/General/NetworkUtil.h"
+ #include "streaming/streamingvisualize.h"
+ 
+ AI_OPTIMISATIONS()

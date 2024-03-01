@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/VehicleDefines.h b/src/dev_ng/game/Vehicles/VehicleDefines.h
+--- a/src/dev_ng/game/Vehicles/VehicleDefines.h
++++ b/src/dev_ng/game/Vehicles/VehicleDefines.h
+@@ -4,7 +4,7 @@
+ #include "system/bit.h"
+ 
+ #include "renderer/HierarchyIds.h"
+-#include "shader_source/vehicles/vehicle_common_values.h"
++#include "shader_source/Vehicles/vehicle_common_values.h"
+ #include "system/nelem.h"
+ 
+ 

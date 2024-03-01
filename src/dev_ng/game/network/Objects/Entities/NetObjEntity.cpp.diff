@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjEntity.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjEntity.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjEntity.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjEntity.cpp
+@@ -5,7 +5,7 @@
+ // written by:	John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjEntity.h"
++#include "network/Objects/Entities/NetObjEntity.h"
+ 
+ // framework headers
+ #include "fwnet/netobjectmgrbase.h"
+@@ -16,15 +16,15 @@
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "debug/DebugEntityState.h"
+ #include "network/Debug/NetworkDebug.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "network/players/NetworkPlayerMgr.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Players/NetworkPlayerMgr.h"
+ #include "Peds/ped.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ #include "scene/Entity.h"
+ #include "scene/Physical.h"
+ #include "scene/world/GameWorld.h"
+-#include "script/handlers/GameScriptEntity.h"
++#include "script/Handlers/GameScriptEntity.h"
+ #include "script/script.h"
+ #include "text/text.h"
+ #include "text/TextConversion.h"

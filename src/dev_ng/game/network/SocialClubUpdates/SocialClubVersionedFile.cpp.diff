@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.cpp b/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.cpp
+--- a/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.cpp
++++ b/src/dev_ng/game/network/SocialClubUpdates/SocialClubVersionedFile.cpp
+@@ -13,10 +13,10 @@
+ #include "rline/socialclub/rlsocialclub.h"
+ 
+ // game
+-#include "Network/SocialClubUpdates/SocialClubVersionedFile.h"
+-#include "Network/Live/SocialClubMgr.h"
+-#include "Network/Live/livemanager.h"
+-#include "Frontend/SocialClubMenu.h"
++#include "network/SocialClubUpdates/SocialClubVersionedFile.h"
++#include "network/Live/SocialClubMgr.h"
++#include "network/Live/livemanager.h"
++#include "frontend/SocialClubMenu.h"
+ #include "Stats/StatsDataMgr.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/StatsMgr.h"

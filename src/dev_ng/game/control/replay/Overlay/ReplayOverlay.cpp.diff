@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp b/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp
+--- a/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp
++++ b/src/dev_ng/game/control/replay/Overlay/ReplayOverlay.cpp
+@@ -8,14 +8,14 @@
+ #include "../ReplayInterfaceManager.h"
+ #include "../ReplayEventManager.h"
+ #include "../ReplayExtensions.h"
+-#include "control/Replay/ReplayBufferMarker.h"
++#include "control/replay/ReplayBufferMarker.h"
+ #include "control/replay/ReplayLightingManager.h"
+ 
+ #include "camera/CamInterface.h"
+ #include "renderer/PostProcessFXHelper.h"
+ #include "SaveLoad/GenericGameStorage.h"
+ 
+-#include "debug/bar.h"
++#include "debug/Bar.h"
+ 
+ int CReplayOverlay::overlayMode = CReplayOverlay::StatusOnly;
+ const char* CReplayOverlay::sm_PacketNames[PACKETID_MAX];

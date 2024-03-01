@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/vfx/misc/Puddles.cpp b/src/dev_ng/game/vfx/misc/Puddles.cpp
 --- a/src/dev_ng/game/vfx/misc/Puddles.cpp
 +++ b/src/dev_ng/game/vfx/misc/Puddles.cpp
-@@ -13,16 +13,16 @@
+@@ -9,20 +9,20 @@
+ 
+ // framework
+ #include "fwsys/timer.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
  
  // game
  #include "game/weather.h"
@@ -9,18 +14,21 @@ diff --git a/src/dev_ng/game/vfx/misc/Puddles.cpp b/src/dev_ng/game/vfx/misc/Pud
 -#include "Peds\PedFootstepHelper.h"
 -#include "phEffects\wind.h"
 -#include "renderer\Deferred\DeferredLighting.h"
-+#include "Peds/Ped.h"
+-#include "Renderer/rendertargets.h"
+-#include "renderer/water.h"
+-#include "renderer\RenderPhases\RenderPhaseReflection.h"
+-#include "renderer\SSAO.h"
+-#include "Shaders/ShaderLib.h"
+-#include "scene\world\GameWorld.h"
++#include "Peds/ped.h"
 +#include "Peds/PedFootstepHelper.h"
 +#include "phEffects/wind.h"
 +#include "renderer/Deferred/DeferredLighting.h"
- #include "Renderer/rendertargets.h"
- #include "renderer/water.h"
--#include "renderer\RenderPhases\RenderPhaseReflection.h"
--#include "renderer\SSAO.h"
++#include "renderer/rendertargets.h"
++#include "renderer/Water.h"
 +#include "renderer/RenderPhases/RenderPhaseReflection.h"
 +#include "renderer/SSAO.h"
- #include "Shaders/ShaderLib.h"
--#include "scene\world\GameWorld.h"
++#include "shaders/ShaderLib.h"
 +#include "scene/world/GameWorld.h"
  #include "timecycle/TimeCycleConfig.h"
  

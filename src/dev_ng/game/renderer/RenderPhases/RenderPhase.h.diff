@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhase.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhase.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhase.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhase.h
+@@ -22,16 +22,16 @@
+ // Rage hdrs
+ #include "grcore/viewport.h"
+ 
+-#include "fwrenderer/renderPhaseBase.h"
++#include "fwrenderer/RenderPhaseBase.h"
+ 
+ // Game hdrs
+ #include "scene/world/VisibilityMasks.h"
+-#include "Renderer/clip_stat.h"
+-#include "Renderer/RenderSettings.h"
+-#include "Renderer/Shadows/ShadowTypes.h"
++#include "renderer/clip_stat.h"
++#include "renderer/RenderSettings.h"
++#include "renderer/Shadows/ShadowTypes.h"
+ 
+ #if !__SPU
+-#include "Renderer/DrawLists/drawList.h"
++#include "renderer/DrawLists/drawList.h"
+ #endif
+ 
+ // GTA hdrs

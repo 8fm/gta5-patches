@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_PathSearch.cpp b/src/dev_ng/game/pathserver/PathServer_PathSearch.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_PathSearch.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_PathSearch.cpp
+@@ -1,4 +1,4 @@
+-#include "PathServer/PathServer.h"
++#include "pathserver/PathServer.h"
+ 
+ // Rage headers 
+ #include "atl/inmap.h"

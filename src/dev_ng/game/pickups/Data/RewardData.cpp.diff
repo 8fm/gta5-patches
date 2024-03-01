@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/pickups/Data/RewardData.cpp b/src/dev_ng/game/pickups/Data/RewardData.cpp
+--- a/src/dev_ng/game/pickups/Data/RewardData.cpp
++++ b/src/dev_ng/game/pickups/Data/RewardData.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Pickups/Data/RewardData.h"
++#include "pickups/Data/RewardData.h"
+ 
+ // game headers
+ 

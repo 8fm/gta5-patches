@@ -20,7 +20,7 @@ diff --git a/src/dev_ng/game/script/commands_water.cpp b/src/dev_ng/game/script/
 -#include "renderer\water.h"
 +#include "script/script_channel.h"
 +#include "script/script.h"
-+#include "renderer/water.h"
++#include "renderer/Water.h"
  
  namespace water_commands
  {

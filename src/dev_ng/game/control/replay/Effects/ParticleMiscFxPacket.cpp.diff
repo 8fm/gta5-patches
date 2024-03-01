@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleMiscFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleMiscFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleMiscFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleMiscFxPacket.cpp
+@@ -21,9 +21,9 @@
+ #include "script/Handlers/GameScriptResources.h"
+ 
+ #include "vfx/ptfx/ptfxscript.h"
+-#include "vfx/systems/vfxscript.h"
++#include "vfx/systems/VfxScript.h"
+ #include "vfx/ptfx/ptfxreg.h"
+-#include "Vfx/Systems/VfxPed.h"
++#include "vfx/systems/VfxPed.h"
+ #include "vfx/ptfx/ptfxwrapper.h"
+ 
+ atArray<u32>	CPacketRequestNamedPtfxAsset::m_requestedNamedHashes;

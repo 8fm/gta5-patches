@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/pickups/PickupRewards.cpp b/src/dev_ng/game/pickups/PickupRewards.cpp
+--- a/src/dev_ng/game/pickups/PickupRewards.cpp
++++ b/src/dev_ng/game/pickups/PickupRewards.cpp
+@@ -1,17 +1,17 @@
+ // File header
+-#include "Pickups/PickupRewards.h"
++#include "pickups/PickupRewards.h"
+ 
+ // game headers
+ #include "script/script_channel.h"
+ #include "script/script_hud.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Peds/Ped.h"
+-#include "Pickups/Data/PickupDataManager.h"
+-#include "Pickups/Pickup.h"
+-#include "Pickups/PickupManager.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "Peds/ped.h"
++#include "pickups/Data/PickupDataManager.h"
++#include "pickups/Pickup.h"
++#include "pickups/PickupManager.h"
+ #include "Stats/StatsInterface.h"
+-#include "System/controlMgr.h"
++#include "system/controlMgr.h"
+ #include "weapons/info/weaponinfo.h"
+ 
+ WEAPON_OPTIMISATIONS()

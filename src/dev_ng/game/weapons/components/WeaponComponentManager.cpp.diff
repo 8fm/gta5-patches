@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentManager.cpp b/src/dev_ng/game/weapons/components/WeaponComponentManager.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentManager.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentManager.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentManager.h"
++#include "weapons/components/WeaponComponentManager.h"
+ 
+ // Rage headers
+ #include "bank/bank.h"
+@@ -13,9 +13,9 @@
+ #include "parser/restparserservices.h"
+ 
+ // Game headers
+-#include "Scene/DataFileMgr.h"
+-#include "Weapons/Components/WeaponComponentData.h"
+-#include "Weapons/WeaponDebug.h"
++#include "scene/DataFileMgr.h"
++#include "weapons/components/WeaponComponentData.h"
++#include "weapons/WeaponDebug.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

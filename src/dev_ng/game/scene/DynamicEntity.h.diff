@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/scene/DynamicEntity.h b/src/dev_ng/game/scene/DynamicEntity.h
+--- a/src/dev_ng/game/scene/DynamicEntity.h
++++ b/src/dev_ng/game/scene/DynamicEntity.h
+@@ -14,8 +14,8 @@
+ #include "grblendshapes/blendshapes_config.h"
+ #include "network/Objects/Entities/NetObjGame.h"
+ #include "network/NetworkInterface.h"
+-#include "scene/portals/portalTracker.h"
+-#include "Cloth/ClothMgr.h"
++#include "scene/portals/PortalTracker.h"
++#include "cloth/ClothMgr.h"
+ #include "control/replay/ReplayMgrProxy.h"
+ 
+ class CGenericClipHelper;

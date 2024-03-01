@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/html/HtmlTextFormat.h b/src/dev_ng/game/frontend/html/HtmlTextFormat.h
+--- a/src/dev_ng/game/frontend/html/HtmlTextFormat.h
++++ b/src/dev_ng/game/frontend/html/HtmlTextFormat.h
+@@ -12,7 +12,7 @@
+ // Rage headers
+ // Game headers
+ //#include "htmlviewport.h"
+-#include "Text/TextFormat.h"
++#include "text/TextFormat.h"
+ #include "HtmlDocument.h"
+ 
+ // --- Defines ------------------------------------------------------------------

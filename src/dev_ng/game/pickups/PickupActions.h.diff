@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/pickups/PickupActions.h b/src/dev_ng/game/pickups/PickupActions.h
+--- a/src/dev_ng/game/pickups/PickupActions.h
++++ b/src/dev_ng/game/pickups/PickupActions.h
+@@ -5,7 +5,7 @@
+ #include "atl/hashstring.h"
+ 
+ // Game headers
+-#include "Pickups/Data/ActionData.h"
++#include "pickups/Data/ActionData.h"
+ 
+ class CPed;
+ 

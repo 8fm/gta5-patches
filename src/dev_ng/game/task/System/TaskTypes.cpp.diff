@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/System/TaskTypes.cpp b/src/dev_ng/game/task/System/TaskTypes.cpp
+--- a/src/dev_ng/game/task/System/TaskTypes.cpp
++++ b/src/dev_ng/game/task/System/TaskTypes.cpp
+@@ -1,8 +1,8 @@
+ // File header
+-#include "Task/System/TaskTypes.h"
++#include "task/System/TaskTypes.h"
+ 
+ // Game headers
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ 
+ AI_OPTIMISATIONS()
+ 

@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/scene/playerswitch/PlayerSwitchMgrLong.cpp b/src/dev_ng/game/scene/playerswitch/PlayerSwitchMgrLong.cpp
+--- a/src/dev_ng/game/scene/playerswitch/PlayerSwitchMgrLong.cpp
++++ b/src/dev_ng/game/scene/playerswitch/PlayerSwitchMgrLong.cpp
+@@ -21,11 +21,11 @@
+ #include "fwscene/stores/maptypesstore.h"
+ #include "fwscene/stores/staticboundsstore.h"
+ #include "fwsys/timer.h"
+-#include "peds/PedFactory.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/ped.h"
+-#include "peds/pedpopulation.h"
+-#include "renderer/lights/lights.h"
++#include "Peds/PedFactory.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/ped.h"
++#include "Peds/pedpopulation.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/PlantsMgr.h"
+ #include "renderer/PostProcessFXHelper.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+@@ -41,8 +41,8 @@
+ #include "streaming/streamingvisualize.h"
+ #include "timecycle/TimeCycle.h"
+ #include "task/Scenario/Types/TaskUseScenario.h"
+-#include "vehicles/cargen.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/cargen.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "vfx/misc/LODLightManager.h"
+ #include "vfx/misc/DistantLights.h"
+ 

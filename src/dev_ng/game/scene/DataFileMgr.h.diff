@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/DataFileMgr.h b/src/dev_ng/game/scene/DataFileMgr.h
+--- a/src/dev_ng/game/scene/DataFileMgr.h
++++ b/src/dev_ng/game/scene/DataFileMgr.h
+@@ -20,7 +20,7 @@
+ #include "frontend/loadingscreencontext.h"
+ 
+ // Game headers
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

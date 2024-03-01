@@ -8,9 +8,44 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Debug.cpp b/src/dev_ng/game/p
 -#include "PathServer\PathServer.h"
 -#include "PathServer\NavMeshGta.h"
 -#include "PathServer\NavGenParam.h"
-+#include "PathServer/PathServer.h"
-+#include "PathServer/NavMeshGta.h"
-+#include "PathServer/NavGenParam.h"
++#include "pathserver/PathServer.h"
++#include "pathserver/NavMeshGta.h"
++#include "pathserver/NavGenParam.h"
  
  
  #if defined(GTA_ENGINE) && defined(DEBUG_DRAW) && DEBUG_DRAW
+@@ -41,23 +41,23 @@
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+ #include "camera/viewports/Viewport.h"
+-#include "Debug/DebugScene.h"
+-#include "Objects/Object.h"
++#include "debug/DebugScene.h"
++#include "Objects/object.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/PedPopulation.h"
+-#include "peds/Ped.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Scene/Physical.h"
++#include "Peds/pedpopulation.h"
++#include "Peds/ped.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/Physical.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "vehicles/vehicle.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "Vehicles/vehicle.h"
+ #include "camera/viewports/ViewportManager.h"
+ 
+-#include "Text/Text.h"
+-#include "Text/TextConversion.h"
++#include "text/text.h"
++#include "text/TextConversion.h"
+ 
+ #else	// GTA_ENGINE
+ 

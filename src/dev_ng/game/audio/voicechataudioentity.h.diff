@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/voicechataudioentity.h b/src/dev_ng/game/audio/voicechataudioentity.h
+--- a/src/dev_ng/game/audio/voicechataudioentity.h
++++ b/src/dev_ng/game/audio/voicechataudioentity.h
+@@ -8,7 +8,7 @@
+ #include "atl/map.h"
+ #include "avchat/voicechat.h"
+ #include "rline/rlgamerinfo.h"
+-#include "scene/regdreftypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CPed;
+ namespace rage

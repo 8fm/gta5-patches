@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/Stats/StatsDataMgr.h b/src/dev_ng/game/Stats/StatsDataMgr.h
+--- a/src/dev_ng/game/Stats/StatsDataMgr.h
++++ b/src/dev_ng/game/Stats/StatsDataMgr.h
+@@ -29,9 +29,9 @@
+ #include "fwnet/nettypes.h"
+ 
+ // Game headers
+-#include "Network/Live/NetworkProfileStats.h"
+-#include "Network/NetworkTypes.h"
+-#include "network/stats/NetworkStockMarketStats.h"
++#include "network/Live/NetworkProfileStats.h"
++#include "network/NetworkTypes.h"
++#include "network/Stats/NetworkStockMarketStats.h"
+ #include "Stats/StatsTypes.h"
+ #include "Stats/StatsSavesMgr.h"
+ 
+@@ -1117,7 +1117,7 @@ protected:
+ 
+ #if RLGAMERHANDLE_NP
+ 	//The Online ID is used to identify accounts, and is chosen by the user upon signup. 
+-	//  It is a 3- to 16-character (A–Z, a-z, 0-9) string composed of alphanumeric characters, 
++	//  It is a 3- to 16-character (A-Z, a-z, 0-9) string composed of alphanumeric characters, 
+ 	//  hyphens, and/or underscores. The Online ID is guaranteed to be unique.
+ 	sUserIdStatData*  m_NextUserId;
+ #endif

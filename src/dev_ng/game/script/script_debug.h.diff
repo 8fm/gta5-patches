@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/script_debug.h b/src/dev_ng/game/script/script_debug.h
+--- a/src/dev_ng/game/script/script_debug.h
++++ b/src/dev_ng/game/script/script_debug.h
+@@ -9,7 +9,7 @@
+ #include "vector/colors.h"
+ 
+ // Game headers
+-#include "Animation/debug/AnimDebug.h"
++#include "animation/debug/AnimDebug.h"
+ 
+ #if __BANK
+ class CDebugAttachmentTool

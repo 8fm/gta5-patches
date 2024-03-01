@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendDoNothing.cpp b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendDoNothing.cpp
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendDoNothing.cpp
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendDoNothing.cpp
+@@ -1,5 +1,5 @@
+ #include "PedMoveBlendDoNothing.h"
+-#include "Peds/Ped.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "Peds/ped.h"
++#include "task/Default/TaskPlayer.h"
+ #include "debug/DebugScene.h"
+ 

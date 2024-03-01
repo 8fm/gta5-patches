@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveWander.cpp b/src/dev_ng/game/task/Movement/TaskMoveWander.cpp
+--- a/src/dev_ng/game/task/Movement/TaskMoveWander.cpp
++++ b/src/dev_ng/game/task/Movement/TaskMoveWander.cpp
+@@ -1,24 +1,24 @@
+ #include "TaskMoveWander.h"
+ 
+ #include "fwscene/search/Search.h"
+-#include "Control/TrafficLights.h"
+-#include "Event/EventShocking.h"
+-#include "Event/ShockingEvents.h"
+-#include "Game/Weather.h"
+-#include "PathServer/PathServer.h"
+-#include "Peds/Ped.h"
+-#include "Task/General/TaskBasic.h"
++#include "control/TrafficLights.h"
++#include "event/EventShocking.h"
++#include "event/ShockingEvents.h"
++#include "game/Weather.h"
++#include "pathserver/PathServer.h"
++#include "Peds/ped.h"
++#include "task/General/TaskBasic.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Crimes/RandomEventManager.h"
+-#include "VehicleAI/Junctions.h"
++#include "scene/world/GameWorld.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Crimes/RandomEventManager.h"
++#include "vehicleAi/Junctions.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_NAVIGATION_OPTIMISATIONS()

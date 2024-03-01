@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfacePickup.cpp b/src/dev_ng/game/control/replay/ReplayInterfacePickup.cpp
+--- a/src/dev_ng/game/control/replay/ReplayInterfacePickup.cpp
++++ b/src/dev_ng/game/control/replay/ReplayInterfacePickup.cpp
+@@ -5,15 +5,15 @@
+ #include "replay.h"
+ #include "pickups/Data/PickupDataManager.h"
+ #include "ReplayInterfaceImpl.h"
+-#include "Streaming/streaming.h"
++#include "streaming/streaming.h"
+ #include "scene/world/GameWorld.h"
+ 
+ #include "fwscene/stores/maptypesstore.h"
+-#include "objects/ProcObjects.h"
++#include "Objects/ProcObjects.h"
+ #include "pickups/PickupManager.h"
+ #include "weapons/WeaponFactory.h"
+-#include "Weapons/components/WeaponComponentFactory.h"
+-#include "Weapons/components/WeaponComponentManager.h"
++#include "weapons/components/WeaponComponentFactory.h"
++#include "weapons/components/WeaponComponentManager.h"
+ 
+ const char*	CReplayInterfaceTraits<CPickup>::strShort = "PIC";
+ const char*	CReplayInterfaceTraits<CPickup>::strLong = "PICKUP";

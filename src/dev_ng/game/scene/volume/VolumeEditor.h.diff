@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeEditor.h b/src/dev_ng/game/scene/volume/VolumeEditor.h
+--- a/src/dev_ng/game/scene/volume/VolumeEditor.h
++++ b/src/dev_ng/game/scene/volume/VolumeEditor.h
+@@ -22,7 +22,7 @@
+ #include "fwscript/scripthandler.h"
+ 
+ // game includes
+-#include "Scene/Volume/Volume.h"
++#include "scene/volume/Volume.h"
+ #include "tools/EditorWidget.h"
+ 
+ /////////////////////////////////////////////////////////////////////////////////

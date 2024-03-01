@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/SoundPacket.cpp b/src/dev_ng/game/control/replay/Audio/SoundPacket.cpp
+--- a/src/dev_ng/game/control/replay/Audio/SoundPacket.cpp
++++ b/src/dev_ng/game/control/replay/Audio/SoundPacket.cpp
+@@ -5,7 +5,7 @@
+ 
+ #include "SoundPacket.h"
+ 
+-#include "Control/Replay/Replaysettings.h"
++#include "control/replay/Replaysettings.h"
+ 
+ #if GTA_REPLAY
+ #include "audio/environment/environmentgroup.h"
+@@ -20,10 +20,10 @@
+ #include "control/garages.h"
+ #include "control/replay/ReplayInternal.h"
+ #include "debug/Debug.h"
+-#include "peds/Ped.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/Heli.h"
+-#include "vehicles/train.h"
++#include "Peds/ped.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/train.h"
+ #include "vfx/misc/Fire.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+ 

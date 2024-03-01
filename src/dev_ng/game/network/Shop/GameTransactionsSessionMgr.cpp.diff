@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.cpp b/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.cpp
+--- a/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.cpp
++++ b/src/dev_ng/game/network/Shop/GameTransactionsSessionMgr.cpp
+@@ -1,5 +1,5 @@
+ 
+-#include "Network/NetworkTypes.h"
++#include "network/NetworkTypes.h"
+ 
+ #if __NET_SHOP_ACTIVE
+ 
+@@ -18,16 +18,16 @@
+ #include "fwnet/netchannel.h"
+ 
+ //Game includes
+-#include "Network/Shop/Inventory.h"
+-#include "Network/Shop/Catalog.h"
+-#include "Network/Shop/NetworkShopping.h"
+-#include "Network/Live/Livemanager.h"
+-#include "Network/Live/NetworkProfileStats.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/NetworkTypes.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Event/EventGroup.h"
+-#include "Event/EventNetwork.h"
++#include "network/Shop/Inventory.h"
++#include "network/Shop/Catalog.h"
++#include "network/Shop/NetworkShopping.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkProfileStats.h"
++#include "network/NetworkInterface.h"
++#include "network/NetworkTypes.h"
++#include "network/Sessions/NetworkSession.h"
++#include "event/EventGroup.h"
++#include "event/EventNetwork.h"
+ #include "Stats/StatsMgr.h"
+ #include "Stats/StatsDataMgr.h"
+ #include "Stats/StatsInterface.h"

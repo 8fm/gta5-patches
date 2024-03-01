@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/control/replay/Ped/PlayerPacket.h b/src/dev_ng/game
 -#include "control\replay\Ped\PedPacket.h"
 -#include "Peds\Ped.h"
 +#include "control/replay/Ped/PedPacket.h"
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
  
  //=====================================================================================================
  class CPacketPlayerUpdate : public CPacketPedUpdate

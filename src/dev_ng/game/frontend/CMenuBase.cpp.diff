@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/frontend/CMenuBase.cpp b/src/dev_ng/game/frontend/CMenuBase.cpp
+--- a/src/dev_ng/game/frontend/CMenuBase.cpp
++++ b/src/dev_ng/game/frontend/CMenuBase.cpp
+@@ -6,10 +6,10 @@
+ // game
+ #include "CMenuBase.h"
+ #include "CMenuBase_parser.h"
+-#include "Frontend/HudTools.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/PauseMenuData.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/HudTools.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/PauseMenuData.h"
++#include "frontend/ui_channel.h"
+ #include "text/GxtString.h"
+ #include "text/TextFormat.h"
+ 

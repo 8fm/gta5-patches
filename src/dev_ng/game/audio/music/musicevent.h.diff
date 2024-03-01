@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/music/musicevent.h b/src/dev_ng/game/audio/music/musicevent.h
+--- a/src/dev_ng/game/audio/music/musicevent.h
++++ b/src/dev_ng/game/audio/music/musicevent.h
+@@ -9,7 +9,7 @@
+ 
+ #include "audio/gameobjects.h"
+ #include "atl/array.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #include "musicaction.h"
+ 

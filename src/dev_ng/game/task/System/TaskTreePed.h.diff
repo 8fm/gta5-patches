@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/System/TaskTreePed.h b/src/dev_ng/game/task/System/TaskTreePed.h
+--- a/src/dev_ng/game/task/System/TaskTreePed.h
++++ b/src/dev_ng/game/task/System/TaskTreePed.h
+@@ -5,11 +5,11 @@
+ #ifndef TASK_TREE_PED_H
+ #define TASK_TREE_PED_H
+ 
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/TaskManager.h"
+-#include "Task/System/TaskTree.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskManager.h"
++#include "task/System/TaskTree.h"
+ 
+ 
+ class CPed;

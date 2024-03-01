@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/vehicleconductordynamicmixing.cpp b/src/dev_ng/game/audio/vehicleconductordynamicmixing.cpp
+--- a/src/dev_ng/game/audio/vehicleconductordynamicmixing.cpp
++++ b/src/dev_ng/game/audio/vehicleconductordynamicmixing.cpp
+@@ -7,7 +7,7 @@
+ #include "vehicleconductordynamicmixing.h"
+ #include "northaudioengine.h"
+ #include "Peds/ped.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ AUDIO_DYNAMICMIXING_OPTIMISATIONS()
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/DebugScene.h b/src/dev_ng/game/debug/DebugScene.h
+--- a/src/dev_ng/game/debug/DebugScene.h
++++ b/src/dev_ng/game/debug/DebugScene.h
+@@ -8,7 +8,7 @@
+ #include "bank/bank.h"
+ #include "bank/bkmgr.h"
+ #include "input/mouse.h"
+-#include "scene/regdreftypes.h"
++#include "scene/RegdRefTypes.h"
+ #include "string/stringhash.h"
+ #include "vector/vector3.h"
+ #include "physics/inst.h"

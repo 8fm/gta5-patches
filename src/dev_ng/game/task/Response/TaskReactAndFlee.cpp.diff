@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/task/Response/TaskReactAndFlee.cpp b/src/dev_ng/game/task/Response/TaskReactAndFlee.cpp
+--- a/src/dev_ng/game/task/Response/TaskReactAndFlee.cpp
++++ b/src/dev_ng/game/task/Response/TaskReactAndFlee.cpp
+@@ -2,23 +2,23 @@
+ // CREATED : 11-8-2011
+ 
+ // File header
+-#include "Task/Response/TaskReactAndFlee.h"
++#include "task/Response/TaskReactAndFlee.h"
+ 
+ // Rage headers
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "AI/Ambient/ConditionalAnimManager.h"
+-#include "Animation/MovePed.h"
++#include "ai/ambient/ConditionalAnimManager.h"
++#include "animation/MovePed.h"
+ #include "event/EventWeapon.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Response/TaskShockingEvents.h"
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Scenario/Types/TaskCowerScenario.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Response/TaskShockingEvents.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Scenario/Types/TaskCowerScenario.h"
+ 
+ AI_OPTIMISATIONS()
+ 

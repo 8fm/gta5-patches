@@ -1,6 +1,32 @@
 diff --git a/src/dev_ng/game/shaders/ShaderLib.cpp b/src/dev_ng/game/shaders/ShaderLib.cpp
 --- a/src/dev_ng/game/shaders/ShaderLib.cpp
 +++ b/src/dev_ng/game/shaders/ShaderLib.cpp
+@@ -22,20 +22,20 @@
+ #include "fwdrawlist/drawlistmgr.h"
+ 
+ // Game headers
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "debug/Rendering/DebugDeferred.h"
+ #include "game/weather.h"
+-#include "peds/ped.h"
+-#include "Renderer/Renderer.h"
++#include "Peds/ped.h"
++#include "renderer/Renderer.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h" // for IsEnabled
+ #include "renderer/RenderPhases/RenderPhaseEntitySelect.h" // for ENTITYSELECT_ENABLED_BUILD
+-#include "shader_source/vehicles/vehicle_common_values.h" // For GPU_DAMAGE_WRITE_ENABLED
++#include "shader_source/Vehicles/vehicle_common_values.h" // For GPU_DAMAGE_WRITE_ENABLED
+ #include "renderer/Deferred/GBuffer.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/SpuPm/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
+ #include "scene/world/GameWorld.h"
+ #include "timecycle/TimeCycle.h"
+ #include "vfx/misc/LinearPiecewiseFog.h"
 @@ -244,7 +244,11 @@ namespace rage
  void CShaderLib::LoadInitialShaders()
  {

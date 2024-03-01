@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/Vehicles/vehicleDamage.h b/src/dev_ng/game/Vehicles/vehicleDamage.h
+--- a/src/dev_ng/game/Vehicles/vehicleDamage.h
++++ b/src/dev_ng/game/Vehicles/vehicleDamage.h
+@@ -11,11 +11,11 @@
+ // C headers
+ 
+ // Rage headers
+-#include "grmodel/shaderGroupVar.h"
+-#include "phcore/materialMgr.h"
++#include "grmodel/shadergroupvar.h"
++#include "phcore/materialmgr.h"
+ #include "phbound/surfacegrid.h"
+ #include "vector/vector3.h"
+-#include "vector/Vector4.h"
++#include "vector/vector4.h"
+ #include "vectormath/vectormath.h"
+ #include "math/simplemath.h"
+ #include "fwsys/glue.h"
+@@ -25,7 +25,7 @@
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"
+-#include "vehicles/door.h"
++#include "Vehicles/door.h"
+ #include "control/replay/ReplaySettings.h"
+ #include "weapons/WeaponEnums.h"
+ #include "math/intrinsics.h"
+@@ -40,7 +40,7 @@ namespace rage
+ }
+ 
+ // --- Defines ------------------------------------------------------------------
+-#include "shader_source/vehicles/vehicle_common_values.h"
++#include "shader_source/Vehicles/vehicle_common_values.h"
+ 
+ #define VEHICLE_DEFORMATION_NOISE_SMOOTHING_OCTAVES (2)
+ #define VEHICLE_DEFORMATION_COLOR_VAR_MULT_MIN	(ScalarVConstant<FLOAT_TO_INT(0.70f)>())

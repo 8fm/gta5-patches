@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/Horse/horseSpeed.cpp b/src/dev_ng/game/Peds/Horse/horseSpeed.cpp
+--- a/src/dev_ng/game/Peds/Horse/horseSpeed.cpp
++++ b/src/dev_ng/game/Peds/Horse/horseSpeed.cpp
+@@ -5,7 +5,7 @@
+ #include "horseSpeed_parser.h"
+ 
+ #include "Peds/Horse/horseBrake.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "math/amath.h"
+ #include "physics/gtaMaterialManager.h"
+ 

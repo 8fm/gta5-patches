@@ -21,9 +21,9 @@ diff --git a/src/dev_ng/game/Vehicles/vehicleLightSwitch.cpp b/src/dev_ng/game/V
 -#include "vehicles\vehicle.h"
 -#include "vehicles\vehicleLightSwitch.h"
 -#include "shaders\CustomShaderEffectVehicle.h"
-+#include "modelInfo/vehicleModelInfo.h"
-+#include "vehicles/vehicle.h"
-+#include "vehicles/vehicleLightSwitch.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehicleLightSwitch.h"
 +#include "shaders/CustomShaderEffectVehicle.h"
  
  

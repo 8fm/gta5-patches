@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.h b/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskLocomotion.h
+@@ -2,7 +2,7 @@
+ #define TASK_LOCOMOTION_H
+ 
+ #include "Peds/ped.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ #define USE_LINEAR_INTERPOLATION 1
+ 

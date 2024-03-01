@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/General/NetworkGhostCollisions.cpp b/src/dev_ng/game/network/General/NetworkGhostCollisions.cpp
+--- a/src/dev_ng/game/network/General/NetworkGhostCollisions.cpp
++++ b/src/dev_ng/game/network/General/NetworkGhostCollisions.cpp
+@@ -11,11 +11,11 @@
+ #include <functional>
+ 
+ // game includes
+-#include "Network/Objects/Entities/NetObjPhysical.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "peds/ped.h"
+-#include "vehicles/trailer.h"
+-#include "vehicles/vehicle.h"
++#include "network/Objects/Entities/NetObjPhysical.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "Peds/ped.h"
++#include "Vehicles/Trailer.h"
++#include "Vehicles/vehicle.h"
+ 
+ // framework includes
+ #include "fwsys/timer.h"

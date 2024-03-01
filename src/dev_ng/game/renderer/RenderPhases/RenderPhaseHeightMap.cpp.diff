@@ -1,11 +1,45 @@
 diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp
 --- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp
 +++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.cpp
-@@ -43,7 +43,7 @@
- #include "Vfx/VisualEffects.h"
- #include "Vfx/VfxHelper.h"
- #include "Vfx/Systems/VfxWeather.h"
+@@ -12,7 +12,7 @@
+ // Framework headers
+ #include "fwdrawlist/drawlistmgr.h"
+ #include "fwrenderer/renderlistgroup.h"
+-#include "fwScene/scan/Scan.h"
++#include "fwscene/scan/Scan.h"
+ #include "fwscene/scan/RenderPhaseCullShape.h"
+ #include "fwsys/timer.h"
+ 
+@@ -26,24 +26,24 @@
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/Viewport.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "renderer/occlusion.h"
+ #include "renderer/renderListGroup.h"
+ #include "renderer/RenderListBuilder.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/water.h"
+-#include "shaders/shaderlib.h"
+-#include "peds/ped.h"
++#include "renderer/Water.h"
++#include "shaders/ShaderLib.h"
++#include "Peds/ped.h"
+ #include "scene/debug/PostScanDebug.h"
+ #include "scene/portals/FrustumDebug.h"
+ #include "scene/scene.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "TimeCycle/TimeCycleConfig.h"
+-#include "Vfx/VisualEffects.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Vfx/Systems/VfxWeather.h"
 -#include "scene\world\GameWorldHeightMap.h"
++#include "timecycle/TimeCycleConfig.h"
++#include "vfx/VisualEffects.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/systems/VfxWeather.h"
 +#include "scene/world/GameWorldHeightMap.h"
  
  // --- Defines ------------------------------------------------------------------

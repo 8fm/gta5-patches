@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGotoPointAiming.cpp b/src/dev_ng/game/task/Movement/TaskGotoPointAiming.cpp
+--- a/src/dev_ng/game/task/Movement/TaskGotoPointAiming.cpp
++++ b/src/dev_ng/game/task/Movement/TaskGotoPointAiming.cpp
+@@ -1,15 +1,15 @@
+ // File header
+-#include "Task/Movement/TaskGoToPointAiming.h"
++#include "task/Movement/TaskGoToPointAiming.h"
+ 
+ // Game headers
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskSeekEntity.h"
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/WeaponController.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskSeekEntity.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/WeaponController.h"
+ 
+ AI_OPTIMISATIONS()
+ 

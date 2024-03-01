@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskStealth.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskStealth.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskStealth.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskStealth.cpp
+@@ -2,14 +2,14 @@
+ // PURPOSE : Subtask of combat used for AI stealth
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskStealth.h"
++#include "task/Combat/Subtasks/TaskStealth.h"
+ 
+ // Game includes
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/Action/ActionManager.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskNavMesh.h"
+ 
+ AI_OPTIMISATIONS()
+ 

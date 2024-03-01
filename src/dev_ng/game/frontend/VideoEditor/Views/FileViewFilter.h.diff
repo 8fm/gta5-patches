@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/Views/FileViewFilter.h b/src/dev_ng/game/frontend/VideoEditor/Views/FileViewFilter.h
+--- a/src/dev_ng/game/frontend/VideoEditor/Views/FileViewFilter.h
++++ b/src/dev_ng/game/frontend/VideoEditor/Views/FileViewFilter.h
+@@ -17,7 +17,7 @@
+ #include "atl/array.h"
+ 
+ // game
+-#include "control/replay/file/FileData.h"
++#include "control/replay/File/FileData.h"
+ #include "frontend/VideoEditor/DataProviders/FileDataProvider.h"
+ 
+ namespace rage

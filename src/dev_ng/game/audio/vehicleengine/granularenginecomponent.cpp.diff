@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/vehicleengine/granularenginecomponent.cpp b/src/dev_ng/game/audio/vehicleengine/granularenginecomponent.cpp
+--- a/src/dev_ng/game/audio/vehicleengine/granularenginecomponent.cpp
++++ b/src/dev_ng/game/audio/vehicleengine/granularenginecomponent.cpp
+@@ -6,7 +6,7 @@
+ #include "audiosoundtypes/modularsynthsound.h"
+ #include "audiosynth/synthcore.h"
+ #include "audiohardware/pcmsource.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "audio/caraudioentity.h"
+ 
+ AUDIO_VEHICLES_OPTIMISATIONS()

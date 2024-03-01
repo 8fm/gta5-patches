@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleFlying.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleFlying.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleFlying.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleFlying.cpp
+@@ -7,7 +7,7 @@
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/vehicle.h"
+ #include "Vehicles/Planes.h"
+-#include "Vehicles/heli.h"
++#include "Vehicles/Heli.h"
+ 
+ // Framework headers:
+ #include "fwscene/stores/staticboundsstore.h"

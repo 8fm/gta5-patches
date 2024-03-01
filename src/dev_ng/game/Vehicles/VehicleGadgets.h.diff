@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/Vehicles/VehicleGadgets.h b/src/dev_ng/game/Vehicles/VehicleGadgets.h
+--- a/src/dev_ng/game/Vehicles/VehicleGadgets.h
++++ b/src/dev_ng/game/Vehicles/VehicleGadgets.h
+@@ -17,16 +17,16 @@ purpose:	Code for handling special vehicle extras which might want to adjust
+ 
+ #include "camera/helpers/HandShaker.h"
+ #include "network/General/NetworkUtil.h"
+-#include "Streaming/streamingrequest.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Scene/Physical.h"
++#include "streaming/streamingrequest.h"
++#include "scene/RegdRefTypes.h"
++#include "scene/Physical.h"
+ #include "Vehicles/VehicleDefines.h"
+ #include "Vehicles/handlingMgr.h"
+ #include "renderer/HierarchyIds.h"
+-#include "physics/rope.h"
++#include "physics/Rope.h"
+ #include "physics/constrainthandle.h"
+-#include "physics/constraintRotation.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/constraintrotation.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "timecycle/TimeCycleConfig.h"
+ #include "network/General/NetworkUtil.h"
+ #include "control/replay/replay.h"

@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/security/ragesecgameinterface.cpp b/src/dev_ng/game/security/ragesecgameinterface.cpp
+--- a/src/dev_ng/game/security/ragesecgameinterface.cpp
++++ b/src/dev_ng/game/security/ragesecgameinterface.cpp
+@@ -1,6 +1,6 @@
+ #include "security/ragesecgameinterface.h"
+ 
+-#include "Network/Sessions/NetworkSession.h"
++#include "network/Sessions/NetworkSession.h"
+ #include "security/ragesecengine.h"
+ #include "security/ragesecwinapi.h"
+ #include "security/vftassert/vftassert.h"

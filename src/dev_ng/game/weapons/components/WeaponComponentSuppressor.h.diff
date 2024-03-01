@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.h b/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponentSuppressor.h
+@@ -8,7 +8,7 @@
+ #define WEAPON_COMPONENT_SUPPRESSOR_H
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponent.h"
++#include "weapons/components/WeaponComponent.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

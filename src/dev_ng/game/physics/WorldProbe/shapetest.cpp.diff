@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/physics/WorldProbe/shapetest.cpp b/src/dev_ng/game/physics/WorldProbe/shapetest.cpp
+--- a/src/dev_ng/game/physics/WorldProbe/shapetest.cpp
++++ b/src/dev_ng/game/physics/WorldProbe/shapetest.cpp
+@@ -7,7 +7,7 @@
+ 
+ // Game headers:
+ #include "physics/physics.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ PHYSICS_OPTIMISATIONS()
+ 

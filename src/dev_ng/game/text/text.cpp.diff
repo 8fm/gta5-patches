@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/text/text.cpp b/src/dev_ng/game/text/text.cpp
+--- a/src/dev_ng/game/text/text.cpp
++++ b/src/dev_ng/game/text/text.cpp
+@@ -7,23 +7,23 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Text/Text.h"
++#include "text/text.h"
+ 
+ // Framework headers
+ #include "fwmaths/Rect.h"
+ 
+ // Game headers
+-#include "core/game.h"
+-#include "Camera/viewports/ViewportManager.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
++#include "Core/game.h"
++#include "camera/viewports/ViewportManager.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "renderer/rendertargets.h"
+ #include "system/param.h"
+ #include "system/system.h"
+-#include "Text/TextFile.h"
+-#include "Text/TextFormat.h"
++#include "text/TextFile.h"
++#include "text/TextFormat.h"
+ 
+ #if __DEV
+-#include "Text/TextConversion.h"
++#include "text/TextConversion.h"
+ #endif
+ 
+ TEXT_OPTIMISATIONS();

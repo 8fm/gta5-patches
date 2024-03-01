@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventEditable.h b/src/dev_ng/game/event/EventEditable.h
+--- a/src/dev_ng/game/event/EventEditable.h
++++ b/src/dev_ng/game/event/EventEditable.h
+@@ -2,7 +2,7 @@
+ #define INC_EVENT_EDITABLE_H
+ 
+ // Game headers
+-#include "Event/Event.h"
++#include "event/Event.h"
+ 
+ // Forward declarations
+ class CPed;

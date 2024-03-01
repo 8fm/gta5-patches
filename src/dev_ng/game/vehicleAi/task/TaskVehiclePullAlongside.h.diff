@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.h b/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.h
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.h
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePullAlongside.h
+@@ -5,10 +5,10 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
+-#include "VehicleAi/task/TaskVehicleMissionBase.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
+ 
+ //=========================================================================
+ // CTaskVehiclePullAlongside

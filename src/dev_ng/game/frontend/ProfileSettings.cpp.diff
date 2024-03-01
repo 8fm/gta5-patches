@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/frontend/ProfileSettings.cpp b/src/dev_ng/game/frontend/ProfileSettings.cpp
+--- a/src/dev_ng/game/frontend/ProfileSettings.cpp
++++ b/src/dev_ng/game/frontend/ProfileSettings.cpp
+@@ -40,15 +40,15 @@
+ // Game headers
+ #include "debug/Debug.h"
+ #include "frontend/DisplayCalibration.h"
+-#include "Frontend/ui_channel.h"
+-#include "network/live/livemanager.h"
+-#include "Network/Network.h"
++#include "frontend/ui_channel.h"
++#include "network/Live/livemanager.h"
++#include "network/Network.h"
+ #include "SaveLoad/GenericGameStorage.h"
+ #include "SaveLoad/savegame_queue.h"
+ #include "fwsys/timer.h"
+-#include "peds/PedWeapons/PedTargetEvaluator.h"
++#include "Peds/PedWeapons/PedTargetEvaluator.h"
+ #include "SaveLoad/savegame_new_game_checks.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ #include "script/script.h"
+ 
+ // --- Defines ------------------------------------------------------------------

@@ -21,11 +21,11 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Hierarchical.cpp b/src/dev_ng
 -#include "fwmaths\random.h"
 -#include "fwmaths\vector.h"
 +#include "fwmaths/random.h"
-+#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
  
  // Game headers
 -#include "PathServer\PathServer.h"
-+#include "PathServer/PathServer.h"
++#include "pathserver/PathServer.h"
  
  #ifdef GTA_ENGINE
  NAVMESH_OPTIMISATIONS()

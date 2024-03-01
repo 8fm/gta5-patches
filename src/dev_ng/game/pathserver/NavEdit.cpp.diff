@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/pathserver/NavEdit.cpp b/src/dev_ng/game/pathserver/NavEdit.cpp
+--- a/src/dev_ng/game/pathserver/NavEdit.cpp
++++ b/src/dev_ng/game/pathserver/NavEdit.cpp
+@@ -13,9 +13,9 @@
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+ #include "camera/viewports/Viewport.h"
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "pathserver/PathServer.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+ #include "task/Combat/Cover/cover.h"
+ 

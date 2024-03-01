@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/renderer/Lights/LightEntity.h b/src/dev_ng/game/renderer/Lights/LightEntity.h
+--- a/src/dev_ng/game/renderer/Lights/LightEntity.h
++++ b/src/dev_ng/game/renderer/Lights/LightEntity.h
+@@ -14,9 +14,9 @@
+ 
+ // game headers
+ #include "scene/RegdRefTypes.h"
+-#include "Scene/Entity.h"
+-#include "scene/2deffect.h"
+-#include "renderer/lights/lights.h"
++#include "scene/Entity.h"
++#include "scene/2dEffect.h"
++#include "renderer/Lights/lights.h"
+ 
+ #include "vfx/misc/LODLightManager.h"
+ 

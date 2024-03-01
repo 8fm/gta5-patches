@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/landing_page/pages/StorePage.cpp b/src/dev_ng/game/frontend/landing_page/pages/StorePage.cpp
+--- a/src/dev_ng/game/frontend/landing_page/pages/StorePage.cpp
++++ b/src/dev_ng/game/frontend/landing_page/pages/StorePage.cpp
+@@ -17,7 +17,7 @@
+ #include "frontend/page_deck/IPageMessageHandler.h"
+ #include "frontend/page_deck/messages/uiPageDeckMessages.h"
+ #include "frontend/Store/StoreScreenMgr.h"
+-#include "Frontend/Store/StoreMainScreen.h"
++#include "frontend/Store/StoreMainScreen.h"
+ #include "frontend/ui_channel.h"
+ 
+ FWUI_DEFINE_TYPE(CStorePage, 0x28D5738A);

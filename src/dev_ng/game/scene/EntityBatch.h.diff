@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/EntityBatch.h b/src/dev_ng/game/scene/EntityBatch.h
+--- a/src/dev_ng/game/scene/EntityBatch.h
++++ b/src/dev_ng/game/scene/EntityBatch.h
+@@ -8,7 +8,7 @@
+ #define SCENE_ENTITY_BATCH_H_
+ 
+ #include "EntityBatch_Def.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "Entity.h"
+ #include "grcore/effect.h"
+ 

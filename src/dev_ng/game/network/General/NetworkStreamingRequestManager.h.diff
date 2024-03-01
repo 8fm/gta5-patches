@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/General/NetworkStreamingRequestManager.h b/src/dev_ng/game/network/General/NetworkStreamingRequestManager.h
+--- a/src/dev_ng/game/network/General/NetworkStreamingRequestManager.h
++++ b/src/dev_ng/game/network/General/NetworkStreamingRequestManager.h
+@@ -11,7 +11,7 @@
+ 
+ #include "entity/archetypemanager.h"
+ #include "network/General/NetworkUtil.h"
+-#include "task/system/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ 
+ #define DEBUG_RENDER_NETWORK_STREAMING_ANIMS	0
+ #define DEBUG_ENABLE_NETWORK_STREAMING_ANIMS	1

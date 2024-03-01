@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/Peds/CombatBehaviour.cpp b/src/dev_ng/game/Peds/CombatBehaviour.cpp
+--- a/src/dev_ng/game/Peds/CombatBehaviour.cpp
++++ b/src/dev_ng/game/Peds/CombatBehaviour.cpp
+@@ -16,9 +16,9 @@
+ #include "CombatInfo_parser.h"
+ 
+ // Game Headers
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "scene/DataFileMgr.h"

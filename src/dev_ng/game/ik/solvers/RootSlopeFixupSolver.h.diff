@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.h b/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.h
+--- a/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.h
++++ b/src/dev_ng/game/ik/solvers/RootSlopeFixupSolver.h
+@@ -16,7 +16,7 @@
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+ #include "crbody/iksolverbase.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vector/vector3.h"
+ 
+ #include "physics/WorldProbe/shapetestresults.h"

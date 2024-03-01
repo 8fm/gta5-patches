@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/SmashablePacket.h b/src/dev_ng/game/control/replay/Entity/SmashablePacket.h
+--- a/src/dev_ng/game/control/replay/Entity/SmashablePacket.h
++++ b/src/dev_ng/game/control/replay/Entity/SmashablePacket.h
+@@ -6,12 +6,12 @@
+ #ifndef INC_SMASHABLEPACKET_H_
+ #define INC_SMASHABLEPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "control/replay/misc/ReplayPacket.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/Misc/ReplayPacket.h"
++#include "control/replay/PacketBasics.h"
+ 
+ 
+ #if !RSG_ORBIS

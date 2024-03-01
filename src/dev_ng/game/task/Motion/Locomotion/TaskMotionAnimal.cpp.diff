@@ -1,11 +1,27 @@
 diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp
 --- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp
 +++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAnimal.cpp
-@@ -11,7 +11,7 @@
- #include "Task/Motion/Locomotion/TaskInWater.h"
- #include "Task/Motion/Locomotion/TaskQuadLocomotion.h"
- #include "Task/System/MotionTaskData.h"
+@@ -1,4 +1,4 @@
+-#include "Task/Motion/Locomotion/TaskMotionAnimal.h"
++#include "task/Motion/Locomotion/TaskMotionAnimal.h"
+ 
+ #if ENABLE_HORSE
+ 
+@@ -6,12 +6,12 @@
+ 
+ // game includes
+ #include "animation/MovePed.h"
+-#include "Task/Motion/Locomotion/TaskFishLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskHorseLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskInWater.h"
+-#include "Task/Motion/Locomotion/TaskQuadLocomotion.h"
+-#include "Task/System/MotionTaskData.h"
 -#include "Peds\Horse\horseComponent.h"
++#include "task/Motion/Locomotion/TaskFishLocomotion.h"
++#include "task/Motion/Locomotion/TaskHorseLocomotion.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
++#include "task/Motion/Locomotion/TaskQuadLocomotion.h"
++#include "task/System/MotionTaskData.h"
 +#include "Peds/Horse/horseComponent.h"
  
  AI_OPTIMISATIONS() 

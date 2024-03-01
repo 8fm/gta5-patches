@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/scene/ExtraMetadataMgr.cpp b/src/dev_ng/game/scene/ExtraMetadataMgr.cpp
+--- a/src/dev_ng/game/scene/ExtraMetadataMgr.cpp
++++ b/src/dev_ng/game/scene/ExtraMetadataMgr.cpp
+@@ -15,8 +15,8 @@
+ // game headers
+ #include "scene/DataFileMgr.h"
+ #include "scene/dlc_channel.h"
+-#include "modelinfo/modelinfo.h"
+-#include "modelinfo/pedmodelinfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
+ #include "scene/ExtraContent.h"
+ #include "script/script.h"
+ #include "scene/WarpManager.h"
+@@ -27,14 +27,14 @@ static const int TATTOO_ITEM_LOOKUP_INITIAL_SIZE = 4;
+ static const int TATTOO_ITEM_LOOKUP_GROW = 4;
+ 
+ #if __BANK && !__SPU
+-#include "peds/rendering/PedVariationDS.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/PedOverlay.h"
++#include "Peds/rendering/PedVariationDS.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedOverlay.h"
+ #include "scene/world/GameWorld.h"
+ #include "Vehicles/VehicleFactory.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "modelInfo/vehicleModelInfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "modelinfo/VehicleModelInfoColors.h"
+ #include "weapons/components/WeaponComponent.h"
+ #include "weapons/components/WeaponComponentManager.h"

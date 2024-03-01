@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.h b/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.h
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.h
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleApproach.h
+@@ -7,10 +7,10 @@
+ #include "system/bit.h"
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
+-#include "VehicleAi/task/TaskVehicleMissionBase.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
+ 
+ //=========================================================================
+ // CTaskVehicleApproach

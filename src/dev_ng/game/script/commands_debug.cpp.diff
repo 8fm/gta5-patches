@@ -1,0 +1,43 @@
+diff --git a/src/dev_ng/game/script/commands_debug.cpp b/src/dev_ng/game/script/commands_debug.cpp
+--- a/src/dev_ng/game/script/commands_debug.cpp
++++ b/src/dev_ng/game/script/commands_debug.cpp
+@@ -17,10 +17,10 @@
+ 
+ // Game headers
+ #include "debug/AutomatedTest.h"
+-#include "Debug/debugnodes.h"
++#include "debug/debugnodes.h"
+ #include "debug/DebugScene.h"
+ #include "event/system/EventData.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedEventScanner.h"
+ #include "Peds/PedIntelligence.h"
+@@ -31,10 +31,10 @@
+ #include "script/script_debug.h"
+ #include "script/script_helper.h"
+ #include "system/system.h"
+-#include "vehicles/vehiclepopulation.h"
+-#include "debug/vectormap.h"
+-#include "vehicles/vehicle.h"
+-#include "Task/Scenario/ScenarioDebug.h"
++#include "Vehicles/vehiclepopulation.h"
++#include "debug/VectorMap.h"
++#include "Vehicles/vehicle.h"
++#include "task/Scenario/ScenarioDebug.h"
+ #include "tools/SmokeTest.h"
+ #include "system/AutoGPUCapture.h"
+ #include "debug/DebugLocation.h"
+@@ -45,9 +45,9 @@
+ 
+ // network includes
+ #include "network/NetworkInterface.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #if !__FINAL
+-#include "Network/Live/NetworkDebugTelemetry.h"
++#include "network/Live/NetworkDebugTelemetry.h"
+ #endif // !__FINAL
+ 
+ #include "system/AutoGPUCapture.h"

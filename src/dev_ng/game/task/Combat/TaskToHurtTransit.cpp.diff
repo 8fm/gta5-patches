@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskToHurtTransit.cpp b/src/dev_ng/game/task/Combat/TaskToHurtTransit.cpp
+--- a/src/dev_ng/game/task/Combat/TaskToHurtTransit.cpp
++++ b/src/dev_ng/game/task/Combat/TaskToHurtTransit.cpp
+@@ -1,14 +1,14 @@
+ #include "task/Combat/TaskToHurtTransit.h"
+ 
+-#include "Animation/MovePed.h"
+-#include "Event/EventDamage.h"
++#include "animation/MovePed.h"
++#include "event/EventDamage.h"
+ #include "Grcore/debugdraw.h"
+ #include "Math/angmath.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Weapons/WeaponDamage.h"
+-#include "Network/NetworkInterface.h"
++#include "weapons/WeaponDamage.h"
++#include "network/NetworkInterface.h"
+ 
+ const fwMvClipId CTaskToHurtTransit::ms_HurtClipId("normal_to_injured",0x4A00D1AC);
+ 

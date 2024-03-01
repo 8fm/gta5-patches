@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/script_ai_blips.h b/src/dev_ng/game/script/script_ai_blips.h
+--- a/src/dev_ng/game/script/script_ai_blips.h
++++ b/src/dev_ng/game/script/script_ai_blips.h
+@@ -1,7 +1,7 @@
+ #ifndef __SCRIPT_AI_BLIPS_H__
+ #define __SCRIPT_AI_BLIPS_H__
+ 
+-#include "Frontend/MiniMapCommon.h"
++#include "frontend/MiniMapCommon.h"
+ #include "Peds/ped.h"
+ 
+ #define AI_BLIP_NOTICABLE_RADIUS	(100.0f)

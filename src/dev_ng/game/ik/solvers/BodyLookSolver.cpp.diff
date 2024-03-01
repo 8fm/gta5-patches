@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/ik/solvers/BodyLookSolver.cpp b/src/dev_ng/game/ik/solvers/BodyLookSolver.cpp
+--- a/src/dev_ng/game/ik/solvers/BodyLookSolver.cpp
++++ b/src/dev_ng/game/ik/solvers/BodyLookSolver.cpp
+@@ -13,8 +13,8 @@
+ #include "animation/MovePed.h"
+ #include "camera/CamInterface.h"
+ #include "ik/solvers/BodyLookSolverProxy.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/world/GameWorld.h"
+ #include "task/Motion/TaskMotionBase.h"
+ 

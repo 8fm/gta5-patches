@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/scene/lod/LodScale.cpp b/src/dev_ng/game/scene/lod/LodScale.cpp
+--- a/src/dev_ng/game/scene/lod/LodScale.cpp
++++ b/src/dev_ng/game/scene/lod/LodScale.cpp
+@@ -15,7 +15,7 @@
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "cutscene/CutSceneCameraEntity.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "fwrenderer/RenderPhaseBase.h"
+ #include "fwsys/timer.h"
+ #include "network/NetworkInterface.h"
+@@ -28,7 +28,7 @@
+ #include "streaming/streamingrequestlist.h"
+ #include "system/param.h"
+ #include "timecycle/TimeCycle.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ #if RSG_PC
+ #include "system/SettingsDefaults.h"

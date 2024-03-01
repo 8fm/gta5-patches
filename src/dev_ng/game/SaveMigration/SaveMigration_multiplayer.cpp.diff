@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.cpp b/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.cpp
+--- a/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.cpp
++++ b/src/dev_ng/game/SaveMigration/SaveMigration_multiplayer.cpp
+@@ -4,7 +4,7 @@
+ #include "rline/savemigration/rlsavemigration.h"
+ 
+ // network headers
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "scene/DynamicEntity.h"
+ 
+ #if __BANK

@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_data.h b/src/dev_ng/game/SaveLoad/savegame_data.h
+--- a/src/dev_ng/game/SaveLoad/savegame_data.h
++++ b/src/dev_ng/game/SaveLoad/savegame_data.h
+@@ -25,11 +25,11 @@
+ #include "SaveLoad/savegame_defines.h"
+ #include "scene/ExtraContent.h"
+ //	#include "scene/ExtraMetadataMgr.h"		//	for __EXTRA_METADATA_CONTAINS_SCRIPT_SAVE_DATA_FLAGS
+-#include "stats/StatsDataMgr.h"
++#include "Stats/StatsDataMgr.h"
+ #include "Vehicles/vehiclestorage.h"
+ #include "game/Wanted.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+-#include "stats/StatsMgr.h"
++#include "Stats/StatsMgr.h"
+ 
+ 
+ 

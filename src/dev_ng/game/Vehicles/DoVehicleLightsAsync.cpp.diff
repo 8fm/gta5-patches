@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/DoVehicleLightsAsync.cpp b/src/dev_ng/game/Vehicles/DoVehicleLightsAsync.cpp
+--- a/src/dev_ng/game/Vehicles/DoVehicleLightsAsync.cpp
++++ b/src/dev_ng/game/Vehicles/DoVehicleLightsAsync.cpp
+@@ -4,7 +4,7 @@
+ #include "system/memops.h"
+ 
+ #include "renderer/Lights/LightSource.h"
+-#include "vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "vfx/misc/Coronas.h"
+ 
+ void CoronaAndLightList::Init(Corona_t* pCoronas, CLightSource *pLightSources, u32 maxCoronas,

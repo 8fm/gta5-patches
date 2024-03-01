@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInHeli.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInHeli.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInHeli.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInHeli.cpp
+@@ -2,14 +2,14 @@
+ // PURPOSE : Subtask of search used while in a heli
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskSearchInHeli.h"
++#include "task/Combat/Subtasks/TaskSearchInHeli.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
+-#include "Vehicles/heli.h"
++#include "Vehicles/Heli.h"
+ #include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()

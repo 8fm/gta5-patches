@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.cpp b/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.cpp
+@@ -5,25 +5,25 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentFlashLight.h"
++#include "weapons/components/WeaponComponentFlashLight.h"
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/aim/FirstPersonPedAimCamera.h"
+ #include "control/replay/Effects/ParticleWeaponFxPacket.h"
+ #include "game/Clock.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Peds/Ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "Renderer/Lights/Lights.h"
+-#include "System/ControlMgr.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "renderer/Lights/Lights.h"
++#include "system/controlMgr.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/Gun/TaskGun.h"
+ #include "timecycle/TimeCycle.h"
+-#include "Vfx/Misc/Coronas.h"
+-#include "Weapons/Components/WeaponComponent.h"
+-#include "Weapons/Components/WeaponComponentScope.h"
+-#include "Weapons/Helpers/WeaponHelpers.h"
++#include "vfx/misc/Coronas.h"
++#include "weapons/components/WeaponComponent.h"
++#include "weapons/components/WeaponComponentScope.h"
++#include "weapons/helpers/WeaponHelpers.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

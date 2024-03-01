@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/MoviePacket.h b/src/dev_ng/game/control/replay/Misc/MoviePacket.h
+--- a/src/dev_ng/game/control/replay/Misc/MoviePacket.h
++++ b/src/dev_ng/game/control/replay/Misc/MoviePacket.h
+@@ -6,7 +6,7 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/PacketBasics.h"
+ 
+ #include "vfx/misc/MovieManager.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/marketing/MarketingFreeCamera.cpp b/src/dev_ng/game/camera/marketing/MarketingFreeCamera.cpp
+--- a/src/dev_ng/game/camera/marketing/MarketingFreeCamera.cpp
++++ b/src/dev_ng/game/camera/marketing/MarketingFreeCamera.cpp
+@@ -18,7 +18,7 @@
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "debug/DebugScene.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/PostProcessFX.h"
+ #include "scene/EntityIterator.h"
+ #include "scene/streamer/SceneStreamerMgr.h"

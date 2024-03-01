@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/weapons/FiringPattern.h b/src/dev_ng/game/weapons/FiringPattern.h
+--- a/src/dev_ng/game/weapons/FiringPattern.h
++++ b/src/dev_ng/game/weapons/FiringPattern.h
+@@ -14,12 +14,12 @@
+ 
+ // Framework headers
+ #include "fwmaths/random.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwtl/regdrefs.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "Weapons/WeaponChannel.h"
++#include "Peds/ped.h"
++#include "weapons/WeaponChannel.h"
+ 
+ class CPed;
+ class CPedDebugVisualiser;

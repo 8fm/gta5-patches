@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/scene/portals/InteriorInst.h b/src/dev_ng/game/scene/portals/InteriorInst.h
+--- a/src/dev_ng/game/scene/portals/InteriorInst.h
++++ b/src/dev_ng/game/scene/portals/InteriorInst.h
+@@ -7,7 +7,7 @@
+ 
+ // Framework headers
+ #include "fwscene/Ipl.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/PtrList.h"
+ #include "fwscene/mapdata/mapdata.h"
+ #include "fwscene/world/EntityContainer.h"
+@@ -16,9 +16,9 @@
+ 
+ // Game headers
+ #include "renderer/RenderPhases/RenderPhase.h"
+-#include "scene/building.h"
++#include "scene/Building.h"
+ #include "scene/FileLoader.h"
+-#include "scene/portals/interiorProxy.h"
++#include "scene/portals/InteriorProxy.h"
+ #include "script/script_memory_tracking.h"
+ #include "streaming/streamingrequest.h"
+ 

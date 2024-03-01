@@ -1,0 +1,46 @@
+diff --git a/src/dev_ng/game/frontend/CSettingsMenu.cpp b/src/dev_ng/game/frontend/CSettingsMenu.cpp
+--- a/src/dev_ng/game/frontend/CSettingsMenu.cpp
++++ b/src/dev_ng/game/frontend/CSettingsMenu.cpp
+@@ -1,4 +1,4 @@
+-#include "Frontend/CSettingsMenu.h"
++#include "frontend/CSettingsMenu.h"
+ 
+ // rage headers:
+ #if __BANK
+@@ -6,19 +6,19 @@
+ #endif // __BANK
+ #include "net/nethardware.h"
+ #include "parsercore/element.h"
+-#include "Network/Facebook/Facebook.h"
++#include "network/Facebook/Facebook.h"
+ 
+ // game stuff
+ #include "audio/northaudioengine.h"
+ #include "audio/radiostation.h"
+-#include "Network/Live/liveManager.h"
+-#include "Frontend/DisplayCalibration.h"
+-#include "Frontend/ControllerLabelMgr.h"
++#include "network/Live/livemanager.h"
++#include "frontend/DisplayCalibration.h"
++#include "frontend/ControllerLabelMgr.h"
+ #include "frontend/landing_page/LegacyLandingScreen.h"
+-#include "Frontend/ProfileSettings.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/ButtonEnum.h"
+-#include "Frontend/WarningScreen.h"
++#include "frontend/ProfileSettings.h"
++#include "frontend/ui_channel.h"
++#include "frontend/ButtonEnum.h"
++#include "frontend/WarningScreen.h"
+ #include "script/script_hud.h"
+ #include "streaming/streaming.h"
+ #include "Peds/PlayerInfo.h"
+@@ -28,7 +28,7 @@
+ #include "script/script.h"
+ #include "script/streamedscripts.h"
+ #include "script/thread.h"
+-#include "Frontend/PCGamepadCalibration.h"
++#include "frontend/PCGamepadCalibration.h"
+ #endif // RSG_PC
+ 
+ #if COMMERCE_CONTAINER

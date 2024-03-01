@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/debug/DebugRecorder.cpp b/src/dev_ng/game/debug/DebugRecorder.cpp
+--- a/src/dev_ng/game/debug/DebugRecorder.cpp
++++ b/src/dev_ng/game/debug/DebugRecorder.cpp
+@@ -20,18 +20,18 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "debug/DebugWanted.h"
+ #include "debug/DebugAnimation.h"
+-#include "network/debug/NetworkDebug.h"
+-#include "peds/ped.h"
+-#include "peds/pedfactory.h"
+-#include "peds/pedIntelligence.h"
+-#include "peds/horse/horseComponent.h"
++#include "network/Debug/NetworkDebug.h"
++#include "Peds/ped.h"
++#include "Peds/PedFactory.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/horse/horseComponent.h"
+ #include "physics/gtaInst.h"
+ #include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"
+-#include "task/motion/taskMotionBase.h"
++#include "task/Motion/taskMotionBase.h"
+ #include "ai/task/taskspew.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclefactory.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/VehicleFactory.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.cpp b/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.cpp
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.cpp
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderHeli.cpp
+@@ -2,7 +2,7 @@
+ // name:		NetBlenderHeli.cpp
+ // written by:	Daniel Yelland
+ // description:	Network blender used by helicopters (and planes)
+-#include "network/objects/prediction/NetBlenderHeli.h"
++#include "network/Objects/Prediction/NetBlenderHeli.h"
+ 
+ CompileTimeAssert(sizeof(CNetBlenderHeli) <= LARGEST_NET_PHYSICAL_BLENDER_CLASS);
+ 

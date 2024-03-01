@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskAnimatedFallback.h b/src/dev_ng/game/task/Movement/TaskAnimatedFallback.h
+--- a/src/dev_ng/game/task/Movement/TaskAnimatedFallback.h
++++ b/src/dev_ng/game/task/Movement/TaskAnimatedFallback.h
+@@ -9,8 +9,8 @@
+ 
+ // C headers
+ // Game headers
+-#include "Task/System/Task.h"
+-//#include "Task/System/TaskTypes.h"
++#include "task/System/Task.h"
++//#include "task/System/TaskTypes.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

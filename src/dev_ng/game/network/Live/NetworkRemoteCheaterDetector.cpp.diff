@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkRemoteCheaterDetector.cpp b/src/dev_ng/game/network/Live/NetworkRemoteCheaterDetector.cpp
+--- a/src/dev_ng/game/network/Live/NetworkRemoteCheaterDetector.cpp
++++ b/src/dev_ng/game/network/Live/NetworkRemoteCheaterDetector.cpp
+@@ -12,9 +12,9 @@
+ #include "NetworkRemoteCheaterDetector.h"
+ 
+  // Game includes
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/General/NetworkHasherUtil.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/General/NetworkHasherUtil.h"
+ #include "Peds/PlayerInfo.h"
+ 
+ NETWORK_OPTIMISATIONS()

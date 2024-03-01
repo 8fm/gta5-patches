@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/ik/solvers/QuadLegSolver.h b/src/dev_ng/game/ik/solvers/QuadLegSolver.h
+--- a/src/dev_ng/game/ik/solvers/QuadLegSolver.h
++++ b/src/dev_ng/game/ik/solvers/QuadLegSolver.h
+@@ -13,7 +13,7 @@
+ 
+ #include "crbody/iksolver.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "phcore/constants.h"
+ #include "system/timer.h"
+ #include "vectormath/mat34v.h"
+@@ -21,8 +21,8 @@
+ #include "vectormath/vec3v.h"
+ 
+ #include "ik/IkConfig.h"
+-#include "Animation/debug/AnimDebug.h"
+-#include "Task/System/Tuning.h"
++#include "animation/debug/AnimDebug.h"
++#include "task/System/Tuning.h"
+ 
+ #define QUAD_LEG_SOLVER_POOL_MAX	8
+ 

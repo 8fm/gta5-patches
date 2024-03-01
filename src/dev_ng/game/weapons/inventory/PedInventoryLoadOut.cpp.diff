@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedInventoryLoadOut.cpp b/src/dev_ng/game/weapons/inventory/PedInventoryLoadOut.cpp
+--- a/src/dev_ng/game/weapons/inventory/PedInventoryLoadOut.cpp
++++ b/src/dev_ng/game/weapons/inventory/PedInventoryLoadOut.cpp
+@@ -5,18 +5,18 @@
+ //
+ 
+ // File header
+-#include "Weapons/Inventory/PedInventoryLoadOut.h"
++#include "weapons/inventory/PedInventoryLoadOut.h"
+ 
+ // Rage headers
+ #include "parser/manager.h"
+ 
+ // Game headers
+-#include "Control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/ReplaySettings.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedType.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Weapons/WeaponDebug.h"
++#include "scene/DataFileMgr.h"
++#include "weapons/WeaponDebug.h"
+ 
+ // Parser headers
+ #include "PedInventoryLoadOut_parser.h"

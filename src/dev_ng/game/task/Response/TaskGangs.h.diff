@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Response/TaskGangs.h b/src/dev_ng/game/task/Response/TaskGangs.h
+--- a/src/dev_ng/game/task/Response/TaskGangs.h
++++ b/src/dev_ng/game/task/Response/TaskGangs.h
+@@ -2,8 +2,8 @@
+ #define	TASK_GANGS_H
+ 
+ //Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
+ 
+ class CTaskGangPatrol : public CTask
+ {

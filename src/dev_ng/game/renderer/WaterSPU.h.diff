@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/WaterSPU.h b/src/dev_ng/game/renderer/WaterSPU.h
+--- a/src/dev_ng/game/renderer/WaterSPU.h
++++ b/src/dev_ng/game/renderer/WaterSPU.h
+@@ -10,7 +10,7 @@
+ 
+ // Tasks should only depend on taskheader.h, not task.h (which is the dispatching system)
+ #include "system/taskheader.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ DECLARE_TASK_INTERFACE(WaterSPU);
+ void spuWaterProcess( ::rage::sysTaskParameters & );
+ 

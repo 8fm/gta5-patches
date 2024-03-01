@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioPointManager.cpp b/src/dev_ng/game/task/Scenario/ScenarioPointManager.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioPointManager.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioPointManager.cpp
+@@ -35,12 +35,12 @@
+ #include "scene/loader/MapData_Extensions.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "scene/portals/InteriorInst.h"
+-#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ #include "task/Scenario/ScenarioClustering.h"
+ #include "task/Scenario/ScenarioDebug.h"
+ #include "task/Scenario/ScenarioManager.h"
+ #include "task/Scenario/ScenarioPointRegion.h"
+-#include "peds/pedpopulation.h"
++#include "Peds/pedpopulation.h"
+ 
+ // Parser
+ #include "ScenarioPointManager_parser.h"

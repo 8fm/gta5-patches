@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.cpp b/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.cpp
+--- a/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.cpp
++++ b/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.cpp
+@@ -1,19 +1,19 @@
+ // File header
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
+ 
+ #include "fwanimation/pointcloud.h"
+ #include "fwanimation/directorcomponentragdoll.h"
+ 
+ // Game headers
+-#include "Event/EventDamage.h"
+-#include "Ik/solvers/RootSlopeFixupSolver.h"
++#include "event/EventDamage.h"
++#include "ik/solvers/RootSlopeFixupSolver.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskFall.h"
+-#include "Task/Movement/TaskGetUp.h"
+-#include "Weapons/Weapon.h"
++#include "Peds/ped.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskFall.h"
++#include "task/Movement/TaskGetUp.h"
++#include "weapons/Weapon.h"
+ 
+ // Disables optimisations if active
+ AI_OPTIMISATIONS()

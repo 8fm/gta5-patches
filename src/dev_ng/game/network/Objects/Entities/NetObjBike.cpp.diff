@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjBike.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjBike.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjBike.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjBike.cpp
+@@ -5,13 +5,13 @@
+ // written by:  John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjBike.h"
++#include "network/Objects/Entities/NetObjBike.h"
+ 
+ // game headers
+-#include "network/objects/entities/NetObjPlayer.h"
+-#include "network/objects/prediction/NetBlenderPhysical.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Objects/Prediction/NetBlenderPhysical.h"
+ #include "Peds/ped.h"
+-#include "vehicles/Bike.h"
++#include "Vehicles/Bike.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ NETWORK_OBJECT_OPTIMISATIONS()

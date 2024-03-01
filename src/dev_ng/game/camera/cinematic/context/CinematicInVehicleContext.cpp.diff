@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicInVehicleContext.cpp
+@@ -12,16 +12,16 @@
+ #include "camera/gameplay/aim/ThirdPersonAimCamera.h"
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+ #include "camera/helpers/ControlHelper.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "network/NetworkInterface.h"
+-#include "peds/ped.h"
+-#include "peds/pedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "system/control.h"
+ #include "task/Default/TaskPlayer.h"
+ #include "task/Scenario/Types/TaskUseScenario.h"
+ #include "vehicleAi/task/TaskVehicleAnimation.h"
+-#include "vehicles/train.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "Vehicles/train.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ #include "task/Vehicle/TaskExitVehicle.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicInVehicleContext,0xB2D9D264)

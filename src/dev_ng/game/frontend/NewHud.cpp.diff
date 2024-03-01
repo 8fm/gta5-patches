@@ -1,0 +1,90 @@
+diff --git a/src/dev_ng/game/frontend/NewHud.cpp b/src/dev_ng/game/frontend/NewHud.cpp
+--- a/src/dev_ng/game/frontend/NewHud.cpp
++++ b/src/dev_ng/game/frontend/NewHud.cpp
+@@ -27,7 +27,7 @@
+ #include "frontend/MiniMap.h"
+ #include "frontend/MultiplayerChat.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/SocialClubMenu.h"
++#include "frontend/SocialClubMenu.h"
+ #include "frontend/WarningScreen.h"
+ #include "frontend/Store/StoreScreenMgr.h"
+ #include "frontend/VideoEditor/VideoEditorInterface.h"
+@@ -40,27 +40,27 @@
+ #include "camera/scripted/ScriptDirector.h"
+ #include "camera/scripted/ScriptedCamera.h"
+ #include "camera/helpers/ControlHelper.h"
+-#include "Control/gamelogic.h"
+-#include "Control/gps.h"
++#include "control/gamelogic.h"
++#include "control/gps.h"
+ #include "control/replay/replay.h"
+ #include "Core/Game.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/MarketingTools.h"
+-#include "Game/Clock.h"
+-#include "Game/user.h"
+-#include "Game/Dispatch/DispatchData.h"
++#include "game/Clock.h"
++#include "game/user.h"
++#include "game/Dispatch/DispatchData.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "peds/ped_channel.h"
+-#include "peds/PedEventScanner.h"
++#include "Peds/ped_channel.h"
++#include "Peds/PedEventScanner.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/sprite2d.h"
+ #include "SaveLoad/savegame_channel.h"
+-#include "Script/script.h"
+-#include "Script/script_hud.h"
+-#include "scene/world/gameworld.h"
++#include "script/script.h"
++#include "script/script_hud.h"
++#include "scene/world/GameWorld.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/MoneyInterface.h"
+ #include "system/Control.h"
+@@ -68,16 +68,16 @@
+ #include "system/param.h"
+ #include "system/system.h"
+ #include "system/tamperactions.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/TaskProjectile.h"
+-#include "Text/Messages.h"
+-#include "Text/Text.h"
+-#include "Text/TextConversion.h"
+-#include "Text/TextFormat.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/TaskProjectile.h"
++#include "text/messages.h"
++#include "text/text.h"
++#include "text/TextConversion.h"
++#include "text/TextFormat.h"
+ #include "Vehicles/VehicleGadgets.h"
+-#include "Weapons/Components/WeaponComponent.h"
+-#include "Weapons/WeaponTypes.h"
++#include "weapons/components/WeaponComponent.h"
++#include "weapons/WeaponTypes.h"
+ 
+ #if RSG_PC
+ #include "rline/rlpc.h"
+@@ -85,10 +85,10 @@
+ #endif // RSG_PC
+ 
+ #if __WIN32PC
+-#include "core/watermark.h"
++#include "Core/watermark.h"
+ #endif
+ 
+-#include "Text/GxtString.h"
++#include "text/GxtString.h"
+ 
+ //OPTIMISATIONS_OFF()
+ FRONTEND_OPTIMISATIONS()

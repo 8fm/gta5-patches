@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.h b/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.h
+--- a/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.h
++++ b/src/dev_ng/game/control/replay/Camera/ReplayInterfaceCam.h
+@@ -1,12 +1,12 @@
+ #ifndef REPLAYINTERFACECAM_H
+ #define REPLAYINTERFACECAM_H
+ 
+-#include "Control/Replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/Misc/CameraPacket.h"
+-#include "Control/Replay/ReplayInterface.h"
++#include "control/replay/Misc/CameraPacket.h"
++#include "control/replay/ReplayInterface.h"
+ 
+ #include "camera/base/BaseCamera.h"
+ 

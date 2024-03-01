@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/audio/weaponaudioentity.cpp b/src/dev_ng/game/audio/weaponaudioentity.cpp
+--- a/src/dev_ng/game/audio/weaponaudioentity.cpp
++++ b/src/dev_ng/game/audio/weaponaudioentity.cpp
+@@ -27,22 +27,22 @@
+ #include "audio/frontendaudioentity.h"
+ #include "audio/northaudioengine.h" 
+ #include "audio/environment/microphones.h"
+-#include "Control/Replay/Replay.h"
+-#include "Control/Replay/Audio/WeaponAudioPacket.h"
+-#include "Control/Replay/Audio/BulletByAudioPacket.h"
++#include "control/replay/Replay.h"
++#include "control/replay/Audio/WeaponAudioPacket.h"
++#include "control/replay/Audio/BulletByAudioPacket.h"
++#include "camera/CamInterface.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Boat.h"
+ #include "camera/CamInterface.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Boat.h"
+-#include "camera/caminterface.h"
+ #include "debugaudio.h"
+-#include "objects/object.h"
+-#include "peds/ped.h"
+-#include "peds/ped.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
++#include "Peds/ped.h"
+ #include "camera/replay/ReplayDirector.h"
+ #include "scene/RefMacros.h"
+ 
+ #include "weapons/info/weaponinfo.h"
+-#include "weapons/weapon.h"
++#include "weapons/Weapon.h"
+ 
+ AUDIO_WEAPONS_OPTIMISATIONS() 
+ 

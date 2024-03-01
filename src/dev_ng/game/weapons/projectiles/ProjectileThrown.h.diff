@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileThrown.h b/src/dev_ng/game/weapons/projectiles/ProjectileThrown.h
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileThrown.h
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileThrown.h
+@@ -2,8 +2,8 @@
+ #define PROJECTILE_THROWN_H
+ 
+ // Game headers
+-#include "Weapons/Info/AmmoInfo.h"
+-#include "Weapons/Projectiles/Projectile.h"
++#include "weapons/info/AmmoInfo.h"
++#include "weapons/projectiles/Projectile.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CProjectileThrown

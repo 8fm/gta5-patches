@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileFactory.cpp b/src/dev_ng/game/weapons/projectiles/ProjectileFactory.cpp
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileFactory.cpp
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileFactory.cpp
+@@ -1,10 +1,10 @@
+ // File header
+-#include "Weapons/Projectiles/ProjectileFactory.h"
++#include "weapons/projectiles/ProjectileFactory.h"
+ 
+ // Game headers
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Projectiles/ProjectileRocket.h"
+-#include "Weapons/Projectiles/ProjectileThrown.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/projectiles/ProjectileRocket.h"
++#include "weapons/projectiles/ProjectileThrown.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

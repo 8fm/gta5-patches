@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.h b/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.h
+--- a/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.h
++++ b/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.h
+@@ -8,22 +8,22 @@
+ #ifndef VEHICLEPACKET_H
+ #define VEHICLEPACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "Control/replay/replay_channel.h"
+-#include "Control/replay/Misc/InterpPacket.h"
+-#include "Control/replay/PacketBasics.h"
++#include "control/replay/replay_channel.h"
++#include "control/replay/Misc/InterpPacket.h"
++#include "control/replay/PacketBasics.h"
+ #include "control/replay/Vehicle/ReplayWheelValues.h"
+ #include "control/replay/Entity/FragmentPacket.h"
+ 
+ #include "Vehicles/VehicleFlags.h"
+-#include "vehicles/VehicleGadgets.h"
+-#include "vehicles/VehicleDefines.h"
+-#include "vehicles/vehiclestorage.h"
+-#include "vehicles/Automobile.h"
++#include "Vehicles/VehicleGadgets.h"
++#include "Vehicles/VehicleDefines.h"
++#include "Vehicles/vehiclestorage.h"
++#include "Vehicles/Automobile.h"
+ #include "audio/vehiclegadgetaudio.h"
+ 
+ #if INCLUDE_FROM_GAME

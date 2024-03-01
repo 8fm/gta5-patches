@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_cloud_list.cpp b/src/dev_ng/game/SaveLoad/savegame_photo_cloud_list.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_cloud_list.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_cloud_list.cpp
+@@ -5,8 +5,8 @@
+ #include "rline/rl.h"
+ 
+ // Game headers
+-#include "Network/Cloud/UserContentManager.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Cloud/UserContentManager.h"
++#include "network/NetworkInterface.h"
+ #include "SaveLoad/savegame_channel.h"
+ #include "SaveLoad/savegame_photo_cloud_deleter.h"
+ #include "SaveLoad/savegame_photo_local_list.h"

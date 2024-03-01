@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/debug/SceneStreamerDebug.cpp b/src/dev_ng/game/scene/debug/SceneStreamerDebug.cpp
+--- a/src/dev_ng/game/scene/debug/SceneStreamerDebug.cpp
++++ b/src/dev_ng/game/scene/debug/SceneStreamerDebug.cpp
+@@ -14,7 +14,7 @@ SCENE_OPTIMISATIONS();
+ #if __BANK
+ #include "camera/CamInterface.h"
+ #include "grcore/debugdraw.h"
+-#include "objects/DummyObject.h"
++#include "Objects/DummyObject.h"
+ #include "scene/playerswitch/PlayerSwitchDebug.h"
+ #include "scene/debug/SceneCostTracker.h"
+ #include "scene/streamer/StreamVolume.h"

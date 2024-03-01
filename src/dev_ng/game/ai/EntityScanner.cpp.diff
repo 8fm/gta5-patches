@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/ai/EntityScanner.cpp b/src/dev_ng/game/ai/EntityScanner.cpp
+--- a/src/dev_ng/game/ai/EntityScanner.cpp
++++ b/src/dev_ng/game/ai/EntityScanner.cpp
+@@ -6,9 +6,9 @@
+ 
+ // Game headers
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Physics/Physics.h"
+-#include "Scene/World/GameWorld.h"
++#include "Peds/ped.h"
++#include "physics/physics.h"
++#include "scene/world/GameWorld.h"
+ 
+ AI_OPTIMISATIONS()
+ 

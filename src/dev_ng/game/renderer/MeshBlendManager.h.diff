@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/MeshBlendManager.h b/src/dev_ng/game/renderer/MeshBlendManager.h
+--- a/src/dev_ng/game/renderer/MeshBlendManager.h
++++ b/src/dev_ng/game/renderer/MeshBlendManager.h
+@@ -13,7 +13,7 @@
+ 
+ #include "stb/stb_dxt.h"
+ #include "streaming/streamingrequest.h"
+-#include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ #if __BANK
+ namespace rage 

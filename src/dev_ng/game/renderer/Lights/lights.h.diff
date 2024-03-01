@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/renderer/Lights/lights.h b/src/dev_ng/game/renderer/Lights/lights.h
+--- a/src/dev_ng/game/renderer/Lights/lights.h
++++ b/src/dev_ng/game/renderer/Lights/lights.h
+@@ -20,16 +20,16 @@
+ #include "grcore/effect_typedefs.h"
+ 
+ // Game headers
+-#include "Renderer/drawlists/drawlist.h"
+-#include "Renderer/RenderThread.h"
+-#include "Renderer/RenderSettings.h"
+-#include "Renderer/RenderPhases/RenderPhase.h"
++#include "renderer/DrawLists/drawList.h"
++#include "renderer/RenderThread.h"
++#include "renderer/RenderSettings.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ #include "renderer/Lights/LightCommon.h"
+-#include "Renderer/Lights/LightGroup.h"
++#include "renderer/Lights/LightGroup.h"
+ #include "renderer/Lights/LightsVisibilitySort.h"
+ #include "debug/Rendering/DebugDeferred.h"
+ #include "renderer/Deferred/DeferredConfig.h"
+-#include "shaders/shaderlib.h"
++#include "shaders/ShaderLib.h"
+ #include "system/system.h"
+ 
+ namespace rage 

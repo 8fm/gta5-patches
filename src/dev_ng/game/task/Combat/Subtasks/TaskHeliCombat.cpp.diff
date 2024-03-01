@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskHeliCombat.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskHeliCombat.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskHeliCombat.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskHeliCombat.cpp
+@@ -2,15 +2,15 @@
+ // PURPOSE : Subtask of combat used for heli combat
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskHeliCombat.h"
++#include "task/Combat/Subtasks/TaskHeliCombat.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "task/Combat/TaskCombat.h"
+ #include "task/Combat/Subtasks/TaskHeliChase.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
+-#include "Vehicles/heli.h"
++#include "Vehicles/Heli.h"
+ #include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()

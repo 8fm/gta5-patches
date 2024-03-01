@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/rendertargets.h b/src/dev_ng/game/renderer/rendertargets.h
+--- a/src/dev_ng/game/renderer/rendertargets.h
++++ b/src/dev_ng/game/renderer/rendertargets.h
+@@ -148,7 +148,7 @@ enum MSDepthResolve {
+ #endif // __BANK
+ 
+ #include "renderer/Deferred/DeferredConfig.h"
+-#include "debug/rendering/DebugDeferred.h"
++#include "debug/Rendering/DebugDeferred.h"
+ #include "renderer/Lights/LightCommon.h"
+ #include "renderer/TreeImposters.h"
+ 

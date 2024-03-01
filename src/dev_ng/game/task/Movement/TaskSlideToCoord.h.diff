@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskSlideToCoord.h b/src/dev_ng/game/task/Movement/TaskSlideToCoord.h
+--- a/src/dev_ng/game/task/Movement/TaskSlideToCoord.h
++++ b/src/dev_ng/game/task/Movement/TaskSlideToCoord.h
+@@ -2,8 +2,8 @@
+ #define TASK_SLIDE_TO_COORD_H
+ 
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
+ 
+ class CEntity;
+ class CPed;

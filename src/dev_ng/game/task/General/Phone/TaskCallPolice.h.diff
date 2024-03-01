@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/General/Phone/TaskCallPolice.h b/src/dev_ng/game/task/General/Phone/TaskCallPolice.h
+--- a/src/dev_ng/game/task/General/Phone/TaskCallPolice.h
++++ b/src/dev_ng/game/task/General/Phone/TaskCallPolice.h
+@@ -8,9 +8,9 @@
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Game forward declarations
+ struct CAmbientAudio;

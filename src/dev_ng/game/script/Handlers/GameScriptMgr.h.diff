@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptMgr.h b/src/dev_ng/game/script/Handlers/GameScriptMgr.h
+--- a/src/dev_ng/game/script/Handlers/GameScriptMgr.h
++++ b/src/dev_ng/game/script/Handlers/GameScriptMgr.h
+@@ -8,7 +8,7 @@
+ #ifndef GAME_SCRIPT_MGR_H
+ #define GAME_SCRIPT_MGR_H
+ 
+-#include "fwscript/scriptHandlerMgr.h"
++#include "fwscript/scripthandlermgr.h"
+ 
+ // rage headers
+ #include "atl/array.h"
+@@ -17,8 +17,8 @@
+ 
+ // game headers
+ #include "renderer/RenderTargetMgr.h"
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptIds.h"
+ 
+ class GtaThread;
+ class CNetworkBandwidthManager;

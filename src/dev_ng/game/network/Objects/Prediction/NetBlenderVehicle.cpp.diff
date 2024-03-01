@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderVehicle.cpp b/src/dev_ng/game/network/Objects/Prediction/NetBlenderVehicle.cpp
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderVehicle.cpp
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderVehicle.cpp
+@@ -3,18 +3,18 @@
+ // written by:	Daniel Yelland
+ // description:	Network blender used by vehicles
+ 
+-#include "network/objects/prediction/NetBlenderVehicle.h"
++#include "network/Objects/Prediction/NetBlenderVehicle.h"
+ 
+ #include "network/Network.h"
+-#include "network/objects/entities/NetObjTrailer.h"
+-#include "network/objects/entities/NetObjVehicle.h"
+-#include "peds/Ped.h"
+-#include "peds/Pedintelligence.h"
+-#include "physics/worldprobe/WorldProbe.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/Trailer.h"
+-#include "vehicles/Vehicle.h"
+-#include "vehicleAi/Vehicleintelligence.h"
++#include "network/Objects/Entities/NetObjTrailer.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Trailer.h"
++#include "Vehicles/vehicle.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ 
+ CompileTimeAssert(sizeof(CNetBlenderVehicle) <= LARGEST_NET_PHYSICAL_BLENDER_CLASS);
+ 

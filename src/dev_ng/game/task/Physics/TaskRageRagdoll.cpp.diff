@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskRageRagdoll.cpp b/src/dev_ng/game/task/Physics/TaskRageRagdoll.cpp
+--- a/src/dev_ng/game/task/Physics/TaskRageRagdoll.cpp
++++ b/src/dev_ng/game/task/Physics/TaskRageRagdoll.cpp
+@@ -9,11 +9,11 @@
+ #include "fwsys/timer.h"
+ 
+ // Game headers
+-#include "Task/Movement/TaskAnimatedFallback.h"
+-#include "Task/Physics/TaskNMPrototype.h"
+-#include "Task/Physics/TaskRageRagdoll.h"
+-#include "Task/Physics/TaskBlendFromNM.h"
+-#include "Task/Combat/TaskDamageDeath.h"
++#include "task/Movement/TaskAnimatedFallback.h"
++#include "task/Physics/TaskNMPrototype.h"
++#include "task/Physics/TaskRageRagdoll.h"
++#include "task/Physics/TaskBlendFromNM.h"
++#include "task/Combat/TaskDamageDeath.h"
+ #include "Peds/PedIntelligence.h"
+ #include "performance/clearinghouse.h"
+ 

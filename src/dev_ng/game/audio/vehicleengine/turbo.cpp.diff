@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/vehicleengine/turbo.cpp b/src/dev_ng/game/audio/vehicleengine/turbo.cpp
+--- a/src/dev_ng/game/audio/vehicleengine/turbo.cpp
++++ b/src/dev_ng/game/audio/vehicleengine/turbo.cpp
+@@ -3,7 +3,7 @@
+ #include "audioengine/engine.h"
+ #include "audioengine/widgets.h"
+ #include "audiosoundtypes/sound.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Peds/ped.h"
+ 
+ AUDIO_VEHICLES_OPTIMISATIONS()

@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/ai/ambient/ConditionalAnims.cpp b/src/dev_ng/game/ai/ambient/ConditionalAnims.cpp
+--- a/src/dev_ng/game/ai/ambient/ConditionalAnims.cpp
++++ b/src/dev_ng/game/ai/ambient/ConditionalAnims.cpp
+@@ -1,19 +1,19 @@
+ // File header
+-#include "AI/Ambient/ConditionalAnims.h"
+-#include "AI/Ambient/ConditionalAnims_Parser.h"
++#include "ai/ambient/ConditionalAnims.h"
++#include "ai/ambient/ConditionalAnims_Parser.h"
+ 
+ // Rage headers
+ #include "ai/aichannel.h"
+ #include "fwanimation/clipsets.h"
+-#include "scene/dynamicentity.h"
++#include "scene/DynamicEntity.h"
+ #include "task/Scenario/info/scenarioinfoconditions.h"
+ 
+ // Framework headers
+ #include "fwmaths/random.h"
+ 
+ // Game headers
+-#include "peds/Ped.h"
+-#include "Streaming/streaming.h"
++#include "Peds/ped.h"
++#include "streaming/streaming.h"
+ 
+ AI_OPTIMISATIONS()
+ 

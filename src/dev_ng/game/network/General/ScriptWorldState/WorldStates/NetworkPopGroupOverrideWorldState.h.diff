@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.h b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.h
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.h
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.h
+@@ -7,9 +7,9 @@
+ #ifndef NETWORK_POP_GROUP_OVERRIDE_WORLD_STATE_H
+ #define NETWORK_POP_GROUP_OVERRIDE_WORLD_STATE_H
+ 
+-#include "fwtl/pool.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateManager.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateTypes.h"
++#include "fwtl/Pool.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateManager.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateTypes.h"
+ 
+ //PURPOSE
+ // Describes a pop schedule that has been had it's population group percentages overridden

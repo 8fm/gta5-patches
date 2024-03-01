@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedCamera.cpp
+@@ -26,19 +26,19 @@
+ #include "camera/cinematic/camera/tracking/CinematicCamManCamera.h"
+ #include "frontend/MobilePhone.h"
+ #include "frontend/ProfileSettings.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "profile/group.h"
+ #include "profile/page.h"
+ #include "task/Movement/Climbing/TaskRappel.h"
+-#include "Task/Service/Police/TaskPolicePatrol.h"
+-#include "task/vehicle/TaskEnterVehicle.h"
+-#include "task/vehicle/TaskInVehicle.h"
++#include "task/Service/Police/TaskPolicePatrol.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskInVehicle.h"
+ #include "task/Vehicle/TaskMountAnimalWeapon.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
+ #include "task/Weapons/Gun/TaskVehicleDriveBy.h"
+-#include "vehicles/metadata/VehicleLayoutInfo.h"
+-#include "vehicles/VehicleGadgets.h"
++#include "Vehicles/Metadata/VehicleLayoutInfo.h"
++#include "Vehicles/VehicleGadgets.h"
+ 
+ #if __BANK
+ 	#include "Vehicles/Metadata/VehicleMetadataManager.h"

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/event/EventShocking.cpp b/src/dev_ng/game/event/EventShocking.cpp
+--- a/src/dev_ng/game/event/EventShocking.cpp
++++ b/src/dev_ng/game/event/EventShocking.cpp
+@@ -20,13 +20,13 @@
+ #include "Vehicles/Planes.h"
+ #include "scene/Physical.h"
+ #include "scene/world/GameWorld.h"
+-#include "system/ControlMgr.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/Movement/TaskCollisionResponse.h"
+-#include "Task/Scenario/Info/ScenarioInfo.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "system/controlMgr.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/Movement/TaskCollisionResponse.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ #include "task/Response/TaskAgitated.h"
+-#include "Task/Response/TaskShockingEvents.h"
++#include "task/Response/TaskShockingEvents.h"
+ #include "weapons/projectiles/Projectile.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ 

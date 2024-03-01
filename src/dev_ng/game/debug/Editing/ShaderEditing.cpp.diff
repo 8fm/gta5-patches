@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/debug/Editing/ShaderEditing.cpp b/src/dev_ng/game/debug/Editing/ShaderEditing.cpp
+--- a/src/dev_ng/game/debug/Editing/ShaderEditing.cpp
++++ b/src/dev_ng/game/debug/Editing/ShaderEditing.cpp
+@@ -1,14 +1,14 @@
+ // =============================================================================================== //
+ // INCLUDES
+ // =============================================================================================== //
+-#include "Camera/CamInterface.h"
+-#include "Debug/Editing/ShaderEditing.h"
++#include "camera/CamInterface.h"
++#include "debug/Editing/ShaderEditing.h"
+ #include "debug/GtaPicker.h"
+-#include "ModelInfo/BaseModelInfo.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "Scene/Entity.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Shaders/ShaderEdit.h"
++#include "modelinfo/BaseModelInfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "scene/Entity.h"
++#include "scene/world/GameWorld.h"
++#include "shaders/ShaderEdit.h"
+ 
+ #include "grcore/debugdraw.h"
+ 

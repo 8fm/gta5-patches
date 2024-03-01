@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskPlaneChase.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskPlaneChase.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskPlaneChase.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskPlaneChase.cpp
+@@ -4,16 +4,16 @@
+ //
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskPlaneChase.h"
++#include "task/Combat/Subtasks/TaskPlaneChase.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleGoToPlane.h"
+ #include "vehicleAi/task/TaskVehiclePlaneChase.h"
+-#include "Vehicles/planes.h"
++#include "Vehicles/Planes.h"
+ #include "Vehicles/vehicle.h"
+ 
+ AI_NAVIGATION_OPTIMISATIONS()

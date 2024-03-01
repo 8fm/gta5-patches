@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/MovieManager.h b/src/dev_ng/game/vfx/misc/MovieManager.h
+--- a/src/dev_ng/game/vfx/misc/MovieManager.h
++++ b/src/dev_ng/game/vfx/misc/MovieManager.h
+@@ -22,7 +22,7 @@
+ #include "system/messagequeue.h"
+ 
+ // game
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ #include "script/script_memory_tracking.h"
+ #include "text/TextFile.h"
+ 

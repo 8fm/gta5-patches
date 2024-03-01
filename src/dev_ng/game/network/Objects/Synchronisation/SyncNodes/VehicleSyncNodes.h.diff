@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h
+@@ -7,11 +7,11 @@
+ #ifndef VEHICLE_SYNC_NODES_H
+ #define VEHICLE_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/PhysicalSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h"
+ 
+ #include "network/General/NetworkUtil.h"
+-#include "Script/Handlers/GameScriptIds.h"
+-#include "vehicles/vehicle.h"
++#include "script/Handlers/GameScriptIds.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/VehicleGadgets.h"
+ #include "vfx/decals/DecalCallbacks.h"
+ 

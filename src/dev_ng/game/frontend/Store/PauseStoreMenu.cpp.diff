@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/frontend/Store/PauseStoreMenu.cpp b/src/dev_ng/game/frontend/Store/PauseStoreMenu.cpp
+--- a/src/dev_ng/game/frontend/Store/PauseStoreMenu.cpp
++++ b/src/dev_ng/game/frontend/Store/PauseStoreMenu.cpp
+@@ -1,13 +1,13 @@
+-#include "Frontend/Store/PauseStoreMenu.h"
+-#include "Frontend/Store/StoreUIChannel.h"
++#include "frontend/Store/PauseStoreMenu.h"
++#include "frontend/Store/StoreUIChannel.h"
+ 
+ 
+-#include "Frontend/ButtonEnum.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/ButtonEnum.h"
++#include "frontend/PauseMenu.h"
+ #include "frontend/Store/StoreScreenMgr.h"
+ #include "network/Live/livemanager.h"
+ #include "network/NetworkInterface.h"
+-#include "Network/Sessions/NetworkSession.h"
++#include "network/Sessions/NetworkSession.h"
+ #include "rline/rlgamerinfo.h"
+ #include "Stats/MoneyInterface.h"
+ #include "net/nethardware.h"

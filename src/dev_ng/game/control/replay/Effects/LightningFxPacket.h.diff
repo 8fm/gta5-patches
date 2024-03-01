@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/LightningFxPacket.h b/src/dev_ng/game/control/replay/Effects/LightningFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/LightningFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/LightningFxPacket.h
+@@ -6,7 +6,7 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/PacketBasics.h"
+ #include "control/replay/Effects/ParticlePacket.h"
+ #if INCLUDE_FROM_GAME
+ #include "vfx/systems/VfxLightning.h"

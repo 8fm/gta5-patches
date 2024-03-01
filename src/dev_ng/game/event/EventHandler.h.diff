@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/event/EventHandler.h b/src/dev_ng/game/event/EventHandler.h
+--- a/src/dev_ng/game/event/EventHandler.h
++++ b/src/dev_ng/game/event/EventHandler.h
+@@ -2,11 +2,11 @@
+ #define INC_EVENT_HANDLER_H
+ 
+ // Framework headers
+-#include "fwevent/eventregdref.h"
++#include "fwevent/EventRegdRef.h"
+ 
+ // Game headers
+-#include "Event/Event.h"
+-#include "Event/EventResponse.h"
++#include "event/Event.h"
++#include "event/EventResponse.h"
+ 
+ // Forward declarations
+ class CEvent;

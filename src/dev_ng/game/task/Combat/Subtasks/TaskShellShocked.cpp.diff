@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.cpp
+@@ -3,7 +3,7 @@
+ // CREATED : 3/12/2012
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskShellShocked.h"
++#include "task/Combat/Subtasks/TaskShellShocked.h"
+ 
+ // Game headers
+ #include "animation/EventTags.h"

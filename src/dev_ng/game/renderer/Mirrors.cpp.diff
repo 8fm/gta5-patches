@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Mirrors.cpp b/src/dev_ng/game/renderer/Mirrors.cpp
+--- a/src/dev_ng/game/renderer/Mirrors.cpp
++++ b/src/dev_ng/game/renderer/Mirrors.cpp
+@@ -31,7 +31,7 @@
+ // Framework headers
+ #include "fwdebug/debugdraw.h"
+ #include "fwdrawlist/drawlistmgr.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ #include "fwscene/scan/Scan.h"
+ #include "fwscene/scan/ScanDebug.h" // [MIRROR FLIP]
+ #include "fwscene/world/InteriorSceneGraphNode.h"

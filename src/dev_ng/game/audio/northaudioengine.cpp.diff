@@ -1,6 +1,60 @@
 diff --git a/src/dev_ng/game/audio/northaudioengine.cpp b/src/dev_ng/game/audio/northaudioengine.cpp
 --- a/src/dev_ng/game/audio/northaudioengine.cpp
 +++ b/src/dev_ng/game/audio/northaudioengine.cpp
+@@ -57,13 +57,13 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/gamelogic.h"
+ #include "control/stuntjump.h"
+-#include "core/game.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "debug/debug.h"
+-#include "debug/debugscene.h"
++#include "Core/game.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "debug/Debug.h"
++#include "debug/DebugScene.h"
+ #include "grcore/debugdraw.h"
+-#include "game/clock.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "game/Clock.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ #include "input/mouse.h"
+ #include "scene/DataFileMgr.h"
+ #include "scene/FileLoader.h"
+@@ -99,15 +99,15 @@
+ #include "parser/manager.h"
+ #include "profile/profiler.h"
+ #include "renderer/PostProcessFX.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "scene/scene.h"
+-#include "system/ControlMgr.h"
++#include "system/controlMgr.h"
+ #include "system/memory.h"
+ #include "system/param.h"
+ #include "system/performancetimer.h"
+ #include "system/simpleallocator.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "vfx/VisualEffects.h"
+ #include "net/nethardware.h"
+ #include "frontend/MobilePhone.h"
+@@ -120,10 +120,10 @@
+ 
+ #include "grprofile/pix.h"
+ 
+-#include "Network/Commerce/CommerceManager.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Network.h"
+-#include "Network/Voice/NetworkVoice.h"
++#include "network/Commerce/CommerceManager.h"
++#include "network/Live/livemanager.h"
++#include "network/Network.h"
++#include "network/Voice/NetworkVoice.h"
+ 
+ #if RSG_ORBIS
+ #include "audiohardware/device_orbis.h"
 @@ -753,7 +753,7 @@ void audNorthAudioEngine::GenerateMemoryReport(const char *destFileName)
  
  RAGE_DEFINE_SUBCHANNEL(Audio,NorthAudio)

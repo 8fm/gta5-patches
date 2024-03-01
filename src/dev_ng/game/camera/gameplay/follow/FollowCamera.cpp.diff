@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/gameplay/follow/FollowCamera.cpp b/src/dev_ng/game/camera/gameplay/follow/FollowCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/follow/FollowCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/follow/FollowCamera.cpp
+@@ -21,7 +21,7 @@
+ #include "camera/helpers/Envelope.h"
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/Physical.h"
+ #include "scene/world/GameWorldHeightMap.h"
+ #include "system/EndUserBenchmark.h"

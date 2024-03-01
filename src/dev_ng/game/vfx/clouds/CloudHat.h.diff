@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/clouds/CloudHat.h b/src/dev_ng/game/vfx/clouds/CloudHat.h
+--- a/src/dev_ng/game/vfx/clouds/CloudHat.h
++++ b/src/dev_ng/game/vfx/clouds/CloudHat.h
+@@ -21,7 +21,7 @@
+ #endif
+ 
+ #include "renderer/Lights/LightSource.h"
+-#include "vfx/clouds/clouds.h"
++#include "vfx/clouds/Clouds.h"
+ 
+ #define MAX_NUM_CLOUD_LIGHTS 4
+ 

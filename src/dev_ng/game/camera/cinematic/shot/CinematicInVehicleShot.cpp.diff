@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleShot.cpp b/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/CinematicInVehicleShot.cpp
+@@ -20,13 +20,13 @@
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+ #include "camera/helpers/ControlHelper.h"
+ #include "frontend/MobilePhone.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "system/control.h"
+ #include "vehicleAi/task/TaskVehicleAnimation.h"
+-#include "vehicles/metadata/VehicleLayoutInfo.h"
+-#include "vehicles/metadata/VehicleSeatInfo.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/Metadata/VehicleLayoutInfo.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
++#include "Vehicles/vehicle.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camHeliTrackingShot,0x439598B1)
+ INSTANTIATE_RTTI_CLASS(camVehicleOrbitShot,0x38FA712C)

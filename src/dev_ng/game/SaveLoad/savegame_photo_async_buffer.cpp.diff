@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_async_buffer.cpp b/src/dev_ng/game/SaveLoad/savegame_photo_async_buffer.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_async_buffer.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_async_buffer.cpp
+@@ -16,7 +16,7 @@
+ // game
+ #include "renderer/rendertargets.h"
+ #include "SaveLoad/savegame_channel.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ 
+ CSavegamePhotoAsyncBuffer::CSavegamePhotoAsyncBuffer()
+ 	: m_buffer( NULL )

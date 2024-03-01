@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/renderer/PostProcessFXHelper.cpp b/src/dev_ng/game/renderer/PostProcessFXHelper.cpp
+--- a/src/dev_ng/game/renderer/PostProcessFXHelper.cpp
++++ b/src/dev_ng/game/renderer/PostProcessFXHelper.cpp
+@@ -4,15 +4,15 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "game/Clock.h"
+ #include "math/math.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "file/default_paths.h"
+ #include "frontend/HudTools.h"
+ #include "frontend/NewHud.h"
+ #include "fwsys/timer.h"
+ #include "parser/manager.h"
+ #include "PostProcessFXHelper_parser.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerArcadeInformation.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerArcadeInformation.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/ScreenshotManager.h"
+@@ -28,8 +28,8 @@
+ #include "system/param.h"
+ 
+ #include "frontend/VideoEditor/ui/TextTemplate.h"
+-#include "Text/TextConversion.h"
+-#include "Text/TextFormat.h"
++#include "text/TextConversion.h"
++#include "text/TextFormat.h"
+ 
+ PARAM(animpostfx_debug, "animpostfx_debug");
+ PARAM(animpostfx_save_path, "animpostfx_save_path");

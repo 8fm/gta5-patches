@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerEntry.cpp b/src/dev_ng/game/debug/TextureViewer/TextureViewerEntry.cpp
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerEntry.cpp
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerEntry.cpp
+@@ -3,7 +3,7 @@
+ // (c) 2010 RockstarNorth
+ // ==========================================
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if __BANK
+ 
+@@ -24,15 +24,15 @@
+ #include "fwscene/stores/mapdatastore.h"
+ 
+ // Game headers
+-#include "core/game.h"
+-#include "modelinfo/modelinfo.h"
+-#include "modelinfo/pedmodelinfo.h"
+-#include "modelinfo/vehiclemodelinfo.h"
++#include "Core/game.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "shaders/ShaderEdit.h"
+ 
+-#include "debug/textureviewer/textureviewerutil.h"
+-#include "debug/textureviewer/textureviewerentry.h"
+-#include "debug/textureviewer/textureviewerwindow.h"
++#include "debug/TextureViewer/TextureViewerutil.h"
++#include "debug/TextureViewer/TextureViewerentry.h"
++#include "debug/TextureViewer/TextureViewerwindow.h"
+ #include "scene/texLod.h"
+ 
+ DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.cpp
+@@ -13,9 +13,9 @@
+ 
+ #include "grcore/quads.h"
+ #include "input/headtracking.h"
+-#include "Renderer/DrawLists/DrawListMgr.h"
+-#include "Renderer/RenderTargets.h"
+-#include "System/ControlMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
++#include "renderer/RenderTargets.h"
++#include "system/controlMgr.h"
+ 
+ grcRenderTarget* CRenderPhaseLensDistortion::sm_Target = NULL;
+ grcRenderTarget* CRenderPhaseLensDistortion::sm_SrcLeft = NULL;

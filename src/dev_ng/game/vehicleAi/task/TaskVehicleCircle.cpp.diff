@@ -1,20 +1,24 @@
 diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleCircle.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleCircle.cpp
 --- a/src/dev_ng/game/vehicleAi/task/TaskVehicleCircle.cpp
 +++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleCircle.cpp
-@@ -6,11 +6,11 @@
+@@ -5,13 +5,13 @@
+ // Game headers
  #include "Vehicles/vehicle.h"
  #include "Vehicles/Planes.h"
- #include "Vehicles/heli.h"
+-#include "Vehicles/heli.h"
 -#include "VehicleAi\VehicleIntelligence.h"
 -#include "VehicleAi\task\TaskVehicleMissionBase.h"
 -#include "VehicleAi\task\TaskVehicleGoTo.h"
 -#include "VehicleAi\task\TaskVehicleGoToHelicopter.h"
 -#include "VehicleAi\task\TaskVehiclePark.h"
-+#include "VehicleAi/VehicleIntelligence.h"
-+#include "VehicleAi/task/TaskVehicleMissionBase.h"
-+#include "VehicleAi/task/TaskVehicleGoTo.h"
-+#include "VehicleAi/task/TaskVehicleGoToHelicopter.h"
-+#include "VehicleAi/task/TaskVehiclePark.h"
- #include "game/modelindices.h"
+-#include "game/modelindices.h"
++#include "Vehicles/Heli.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
++#include "vehicleAi/task/TaskVehicleGoTo.h"
++#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
++#include "game/ModelIndices.h"
  
  AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

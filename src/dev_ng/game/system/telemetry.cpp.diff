@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/telemetry.cpp b/src/dev_ng/game/system/telemetry.cpp
+--- a/src/dev_ng/game/system/telemetry.cpp
++++ b/src/dev_ng/game/system/telemetry.cpp
+@@ -7,7 +7,7 @@
+ #include "grprofile/timebars.h"
+ #include "network/Live/NetworkTelemetry.h"
+ #include "profile/profiler.h"
+-#include "system/ControlMgr.h"
++#include "system/controlMgr.h"
+ #include "system/new.h"
+ #include "system/memory.h"
+ #include "system/param.h"

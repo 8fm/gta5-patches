@@ -1,14 +1,18 @@
 diff --git a/src/dev_ng/game/physics/RagdollConstraints.cpp b/src/dev_ng/game/physics/RagdollConstraints.cpp
 --- a/src/dev_ng/game/physics/RagdollConstraints.cpp
 +++ b/src/dev_ng/game/physics/RagdollConstraints.cpp
-@@ -13,8 +13,8 @@
+@@ -13,10 +13,10 @@
  
  // Game headers
  #include "physics/gtaInst.h"
 -#include "physics\RagdollConstraints.h"
 -#include "peds\Ped.h"
+-#include "Peds/PedDefines.h"
+-#include "peds/peddebugvisualiser.h"
 +#include "physics/RagdollConstraints.h"
-+#include "peds/Ped.h"
- #include "Peds/PedDefines.h"
- #include "peds/peddebugvisualiser.h"
++#include "Peds/ped.h"
++#include "Peds/pedDefines.h"
++#include "Peds/peddebugvisualiser.h"
  
+ CRagdollConstraintComponent::CRagdollConstraintComponent() :
+ 	m_ShouldCuffHandsWhenRagdolling(false),

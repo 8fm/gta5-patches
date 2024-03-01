@@ -1,0 +1,67 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionPed.cpp
+@@ -1,7 +1,7 @@
+ 
+-#include "task/motion/Locomotion/TaskMotionPed.h"
+-#include "task/motion/Locomotion/TaskMotionStrafing.h"
+-#include "task/motion/Locomotion/TaskMotionAiming.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Motion/Locomotion/TaskMotionStrafing.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
+ 
+ // rage includes
+ 
+@@ -13,34 +13,34 @@
+ #include "camera/cinematic/CinematicDirector.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+-#include "peds/ped.h"
+-#include "peds/PedDebugVisualiser.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedDebugVisualiser.h"
++#include "Peds/PedIntelligence.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Streaming/PrioritizedClipSetStreamer.h"
+-#include "Task/Motion/Locomotion/TaskMotionAimingTransition.h"
+-#include "task/motion/Locomotion/TaskMotionDrunk.h"
+-#include "task/motion/locomotion/TaskHumanLocomotion.h"
+-#include "task/motion/locomotion/TaskInWater.h"
+-#include "task/motion/locomotion/TaskLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskMotionParachuting.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "streaming/PrioritizedClipSetStreamer.h"
++#include "task/Motion/Locomotion/TaskMotionAimingTransition.h"
++#include "task/Motion/Locomotion/TaskMotionDrunk.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Motion/Locomotion/TaskMotionParachuting.h"
+ #include "task/Movement/TaskParachute.h"
+-#include "Task/Motion/Locomotion/TaskMotionJetpack.h"
+-#include "Task/Motion/Vehicle/TaskMotionInTurret.h"
+-#include "Task/Physics/TaskNM.h"
++#include "task/Motion/Locomotion/TaskMotionJetpack.h"
++#include "task/Motion/Vehicle/TaskMotionInTurret.h"
++#include "task/Physics/TaskNM.h"
+ #include "task/Vehicle/TaskEnterVehicle.h"
+ #include "task/Vehicle/TaskInVehicle.h"
+ #include "task/Combat/TaskCombatMelee.h"
+ #include "task/default/TaskPlayer.h"
+ #include "task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+-#include "Task/Weapons/TaskProjectile.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "task/Weapons/TaskProjectile.h"
+ #include "renderer/Water.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+-#include "Weapons/Info/WeaponAnimationsManager.h"
++#include "weapons/info/WeaponAnimationsManager.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOTION_OPTIMISATIONS()

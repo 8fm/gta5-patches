@@ -10,3 +10,17 @@ diff --git a/src/dev_ng/game/system/keyboard.cpp b/src/dev_ng/game/system/keyboa
  #include "input/mapper.h"
  #include "parsercore/streamxml.h"
  #include "string/unicode.h"
+@@ -25,11 +25,11 @@
+ // framework headers
+ 
+ // Game headers
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ 
+ #include "text/messages.h"
+ #include "text/text.h"
+-#include "Text/TextConversion.h"
++#include "text/TextConversion.h"
+ #include "system/control.h"
+ 
+ 

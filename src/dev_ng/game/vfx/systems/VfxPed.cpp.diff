@@ -1,0 +1,53 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxPed.cpp b/src/dev_ng/game/vfx/systems/VfxPed.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxPed.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxPed.cpp
+@@ -34,29 +34,29 @@
+ 
+ // game
+ #include "Audio/gameobjects.h"
+-#include "Audio/PedAudioEntity.h"
+-#include "Control/Replay/Replay.h"
+-#include "Control/Replay/Effects/ProjectedTexturePacket.h"
+-#include "Control/Replay/Effects/ParticlePedFxPacket.h"
+-#include "Control/Replay/Effects/ParticleMiscFxPacket.h"
++#include "audio/pedaudioentity.h"
++#include "control/replay/Replay.h"
++#include "control/replay/Effects/ProjectedTexturePacket.h"
++#include "control/replay/Effects/ParticlePedFxPacket.h"
++#include "control/replay/Effects/ParticleMiscFxPacket.h"
+ #include "Core/Game.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+-#include "Debug/MarketingTools.h"
+-#include "Game/Localisation.h"
+-#include "Game/Weather.h"
+-#include "Objects/Object.h"
+-#include "Peds/Ped.h"
++#include "debug/MarketingTools.h"
++#include "game/Localisation.h"
++#include "game/Weather.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+-#include "Physics/GtaInst.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Scene/DataFileMgr.h"
+-#include "TimeCycle/TimeCycle.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Particles/PtFxDefines.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxTrail.h"
+-#include "Vfx/Systems/VfxVehicle.h"
+-#include "Vfx/VfxHelper.h"
++#include "physics/gtaInst.h"
++#include "physics/gtaMaterialManager.h"
++#include "scene/DataFileMgr.h"
++#include "timecycle/TimeCycle.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/Particles/PtFxDefines.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxTrail.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

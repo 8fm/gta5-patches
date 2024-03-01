@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/TextTemplate.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/TextTemplate.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/TextTemplate.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/TextTemplate.cpp
+@@ -26,7 +26,7 @@
+ #include "replaycoordinator/ReplayCoordinator.h"
+ 
+ // game
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ 
+ #if defined( GTA_REPLAY ) && GTA_REPLAY
+ 

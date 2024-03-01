@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/device_xcontent.h b/src/dev_ng/game/system/device_xcontent.h
+--- a/src/dev_ng/game/system/device_xcontent.h
++++ b/src/dev_ng/game/system/device_xcontent.h
+@@ -17,7 +17,7 @@
+ #include "file/device.h"
+ // Game headers
+ #include "templates/LinkList.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/videorecording/videorecording.h b/src/dev_ng/game/control/videorecording/videorecording.h
+--- a/src/dev_ng/game/control/videorecording/videorecording.h
++++ b/src/dev_ng/game/control/videorecording/videorecording.h
+@@ -7,7 +7,7 @@
+ #include "system/service.h"
+ 
+ #include "video/recordinginterface.h"
+-#include "videorecordingframebuffer.h"
++#include "VideoRecordingFrameBuffer.h"
+ #if (RSG_PC || RSG_DURANGO)
+ #pragma warning( push )
+ #pragma warning(disable: 4200)

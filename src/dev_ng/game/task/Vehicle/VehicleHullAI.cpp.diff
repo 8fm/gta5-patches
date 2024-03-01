@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/task/Vehicle/VehicleHullAI.cpp b/src/dev_ng/game/task/Vehicle/VehicleHullAI.cpp
+--- a/src/dev_ng/game/task/Vehicle/VehicleHullAI.cpp
++++ b/src/dev_ng/game/task/Vehicle/VehicleHullAI.cpp
+@@ -6,25 +6,25 @@
+ #include "vector/geometry.h"
+ 
+ // Framework headers
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+ // Game headers
+-#include "Control/Route.h"
+-#include "Game/ModelIndices.h"
+-#include "Modelinfo/VehicleModelInfo.h"
+-#include "Modelinfo/VehicleModelInfoVariation.h"
+-#include "Modelinfo/VehicleModelInfoMods.h"
++#include "control/Route.h"
++#include "game/ModelIndices.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "modelinfo/VehicleModelInfoVariation.h"
++#include "modelinfo/VehicleModelInfoMods.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #if __BANK
+ #include "Peds/PlayerInfo.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Vehicle/TaskGoToVehicleDoor.h"
++#include "task/Vehicle/TaskGoToVehicleDoor.h"
+ #endif
+ #include "Vehicles/Heli.h"
+ #include "Vehicles/Planes.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/VehicleGadgets.h"
+ 
+ int CConvexHullCalculator2D::ms_iNumVertices = 0;

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/debug/BlockView.cpp b/src/dev_ng/game/debug/BlockView.cpp
+--- a/src/dev_ng/game/debug/BlockView.cpp
++++ b/src/dev_ng/game/debug/BlockView.cpp
+@@ -12,8 +12,8 @@
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+-#include "peds/PlayerInfo.h"
+-#include "scene/world/gameWorld.h"
++#include "Peds/PlayerInfo.h"
++#include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ #include "fwscene/mapdata/mapdatadebug.h"
+ #include "fwdebug/picker.h"

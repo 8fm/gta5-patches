@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp
+@@ -14,8 +14,8 @@
+ 
+ //Game Headers
+ #include "cutscene/CutSceneLightEntity.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "Cutscene/cutscene_channel.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "cutscene/cutscene_channel.h"
+ #include "camera/CamInterface.h"
+ 
+ 

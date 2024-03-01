@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp b/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp
+--- a/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp
++++ b/src/dev_ng/game/control/replay/ReplayInterfaceManager.cpp
+@@ -5,7 +5,7 @@
+ #include "scene/Entity.h"
+ 
+ #include "Replay.h"
+-#include "Control/Replay/ReplayController.h"
++#include "control/replay/ReplayController.h"
+ #include "control/replay/ReplayInterface.h"
+ 
+ s16 iReplayInterface::m_instanceID = 0;

@@ -59,7 +59,7 @@ diff --git a/src/dev_ng/game/ai/debug/system/AIDebugLogManager.cpp b/src/dev_ng/
 +#include "ai/debug/types/WantedDebugInfo.h"
 +#include "ai/debug/types/TargetingDebugInfo.h"
 +#include "camera/system/debug/CameraDebugInfo.h"
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
 +#include "scene/DynamicEntity.h"
 +#include "scene/world/GameWorld.h"
  

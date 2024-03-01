@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/MiniMapRenderThread.h b/src/dev_ng/game/frontend/MiniMapRenderThread.h
+--- a/src/dev_ng/game/frontend/MiniMapRenderThread.h
++++ b/src/dev_ng/game/frontend/MiniMapRenderThread.h
+@@ -10,8 +10,8 @@
+ #include "vector/vector3.h"
+ 
+ // game:
+-#include "Frontend/MiniMap.h"
+-#include "Frontend/MiniMapCommon.h"
++#include "frontend/MiniMap.h"
++#include "frontend/MiniMapCommon.h"
+ #include "system/TamperActions.h"	//	for GPS_NUM_SLOTS
+ #include "vehicleAi/pathfind.h"	//	for GPS_NUM_SLOTS
+ 

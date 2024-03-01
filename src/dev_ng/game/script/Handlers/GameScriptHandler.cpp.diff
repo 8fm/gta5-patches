@@ -1,0 +1,76 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp b/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp
+--- a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp
++++ b/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ 
+-#include "script/handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptHandler.h"
+ 
+ // game includes
+ #include "ai/blockingbounds.h"
+@@ -31,10 +31,10 @@
+ #include "game/weather.h"
+ #include "network/Debug/NetworkDebug.h"
+ #include "pathserver/PathServer.h"
+-#include "peds/AssistedMovementStore.h"
+-#include "peds/Ped.h"
+-#include "peds/pedpopulation.h"		// CPedPopulation.
+-#include "peds/PopCycle.h"
++#include "Peds/AssistedMovementStore.h"
++#include "Peds/ped.h"
++#include "Peds/pedpopulation.h"		// CPedPopulation.
++#include "Peds/PopCycle.h"
+ #include "physics/gtaInst.h"
+ #include "pickups/PickupManager.h"
+ #include "renderer/PostProcessFX.h"
+@@ -42,12 +42,12 @@
+ #include "scene/InstancePriority.h"
+ #include "scene/LoadScene.h"
+ #include "scene/MapChange.h"
+-#include "Scene/Physical.h"
++#include "scene/Physical.h"
+ #include "scene/streamer/StreamVolume.h"
+-#include "Scene/world/GameWorld.h"
+-#include "Script/handlers/GameScriptEntity.h"
+-#include "Script/handlers/GameScriptResources.h"
+-#include "Script/gta_thread.h"
++#include "scene/world/GameWorld.h"
++#include "script/handlers/GameScriptEntity.h"
++#include "script/handlers/GameScriptResources.h"
++#include "script/gta_thread.h"
+ #include "script/script.h"
+ #include "script/script_cars_and_peds.h"
+ #include "script/script_channel.h"
+@@ -66,18 +66,18 @@
+ #include "Vehicles/cargen.h"
+ #include "Vehicles/train.h"
+ #include "Vehicles/vehiclepopulation.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Metadata/VfxRegionInfo.h"
+-#include "Vfx/Misc/Fire.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxBlood.h"
+-#include "Vfx/Systems/VfxEntity.h"
+-#include "Vfx/Systems/VfxMaterial.h"
+-#include "Vfx/Systems/VfxPed.h"
+-#include "Vfx/Systems/VfxVehicle.h"
+-#include "Vfx/Systems/VfxWater.h"
+-#include "Vfx/Systems/VfxWeapon.h"
+-#include "Vfx/Systems/VfxWheel.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/metadata/VfxRegionInfo.h"
++#include "vfx/misc/Fire.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxBlood.h"
++#include "vfx/systems/VfxEntity.h"
++#include "vfx/systems/VfxMaterial.h"
++#include "vfx/systems/VfxPed.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "vfx/systems/VfxWater.h"
++#include "vfx/systems/VfxWeapon.h"
++#include "vfx/systems/VfxWheel.h"
+ #include "vfx/misc/DistantLights.h"
+ 
+ // framework includes

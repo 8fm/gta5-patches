@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/Core/VideoEditorUtil.cpp b/src/dev_ng/game/frontend/VideoEditor/Core/VideoEditorUtil.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/Core/VideoEditorUtil.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/Core/VideoEditorUtil.cpp
+@@ -25,12 +25,12 @@
+ #include "replaycoordinator/storage/Clip.h"
+ #include "replaycoordinator/storage/Montage.h"
+ 
+-#include "control/replay/file/ReplayFileManager.h"
++#include "control/replay/File/ReplayFileManager.h"
+ #if RSG_PC
+-#include "control/replay/file/FileStorePC.h"
++#include "control/replay/File/FileStorePC.h"
+ #endif
+ #if RSG_ORBIS
+-#include "control/replay/file/FileStoreOrbis.h"
++#include "control/replay/File/FileStoreOrbis.h"
+ #endif
+ #if RSG_DURANGO
+ #include "control/replay/File/FileStoreDurango.h"

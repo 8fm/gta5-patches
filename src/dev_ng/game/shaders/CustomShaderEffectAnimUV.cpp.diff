@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.cpp b/src/dev_ng/g
  
  //Rage includes
  #include "cranimation/frame.h"
+@@ -21,7 +21,7 @@
+ #include "scene/Entity.h"
+ #include "shaders/ShaderLib.h"
+ #include "streaming/defragmentation.h"
+-#include "Control/Replay/Replay.h"
++#include "control/replay/Replay.h"
+ 
+ ANIM_OPTIMISATIONS()
+ 

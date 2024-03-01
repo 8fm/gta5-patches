@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/audio/collisionaudioentity.h b/src/dev_ng/game/audio/collisionaudioentity.h
+--- a/src/dev_ng/game/audio/collisionaudioentity.h
++++ b/src/dev_ng/game/audio/collisionaudioentity.h
+@@ -21,15 +21,15 @@
+ // game headers
+ #include "audioentity.h"
+ 
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/Audio/SoundPacket.h"
+ #include "gameobjects.h"
+ #include "physics/contactiterator.h"
+ #include "physics/gtaMaterialManager.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "scene/entity.h" 
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/Entity.h"
+ #include "weapons/info/AmmoInfo.h"
+-#include "Vfx/Systems/VfxMaterial.h"
++#include "vfx/systems/VfxMaterial.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ class audOcclusionGroup;

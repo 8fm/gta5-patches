@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveWander.h b/src/dev_ng/game/task/Movement/TaskMoveWander.h
+--- a/src/dev_ng/game/task/Movement/TaskMoveWander.h
++++ b/src/dev_ng/game/task/Movement/TaskMoveWander.h
+@@ -1,12 +1,12 @@
+ #ifndef TASK_MOVE_WANDER_H
+ #define TASK_MOVE_WANDER_H
+ 
+-#include "Control/Route.h"
+-#include "Task/Default/TaskWander.h"
+-#include "Task/Helpers/PavementFloodFillHelper.h"
+-#include "Task/Movement/TaskNavBase.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
++#include "control/Route.h"
++#include "task/Default/TaskWander.h"
++#include "task/Helpers/PavementFloodFillHelper.h"
++#include "task/Movement/TaskNavBase.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
+ 
+ class CEntity;
+ class CPed;

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.h b/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.h
+@@ -6,12 +6,12 @@
+ #ifndef INC_SPEECHAUDIOPACKET_H_
+ #define INC_SPEECHAUDIOPACKET_H_
+ 
+-#include "Control/replay/ReplayController.h"
++#include "control/replay/ReplayController.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/Audio/SoundPacket.h"
++#include "control/replay/Audio/SoundPacket.h"
+ #include "audio/gameobjects.h"
+ #include "audio/speechaudioentity.h"
+ #include "audio/scriptaudioentity.h"

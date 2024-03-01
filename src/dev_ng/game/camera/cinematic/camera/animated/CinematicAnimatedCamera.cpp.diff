@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/animated/CinematicAnimatedCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/animated/CinematicAnimatedCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/animated/CinematicAnimatedCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/animated/CinematicAnimatedCamera.cpp
+@@ -8,8 +8,8 @@
+ #include "camera/cinematic/camera/animated/CinematicAnimatedCamera.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskCombatMelee.h"
+ 
+ CAMERA_OPTIMISATIONS()

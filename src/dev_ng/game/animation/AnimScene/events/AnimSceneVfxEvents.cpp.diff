@@ -13,7 +13,7 @@ diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimSceneVfxEvents.cpp b
  #include "animation/EventTags.h"
 -#include "Peds\Ped.h"
 -#include "Peds\PedIntelligence.h"
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
  #include "streaming/streaming.h"
  #include "task/Animation/TaskScriptedAnimation.h"

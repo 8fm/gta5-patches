@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/switch/ShortRotationSwitchHelper.cpp b/src/dev_ng/game/camera/helpers/switch/ShortRotationSwitchHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/switch/ShortRotationSwitchHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/switch/ShortRotationSwitchHelper.cpp
+@@ -13,7 +13,7 @@
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

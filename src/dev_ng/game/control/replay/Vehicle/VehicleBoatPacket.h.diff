@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.h b/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.h
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.h
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.h
+@@ -1,7 +1,7 @@
+ #ifndef VEHBOATPACKET_H
+ #define VEHBOATPACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #	if GTA_REPLAY
+ 

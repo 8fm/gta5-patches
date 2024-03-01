@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/event/EventEditable.cpp b/src/dev_ng/game/event/EventEditable.cpp
+--- a/src/dev_ng/game/event/EventEditable.cpp
++++ b/src/dev_ng/game/event/EventEditable.cpp
+@@ -1,17 +1,17 @@
+ // File header
+-#include "Event/EventEditable.h"
++#include "event/EventEditable.h"
+ 
+ // Framework headers
+ #include "ai/aichannel.h"
+ 
+ // Game headers
+-#include "Event/Decision/EventDecisionMaker.h"
+-#include "Event/EventSource.h"
++#include "event/decision/EventDecisionMaker.h"
++#include "event/EventSource.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Peds/Ped.h"
+-#include "Event/System/EventDataManager.h"
++#include "Peds/ped.h"
++#include "event/system/EventDataManager.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()
+ 

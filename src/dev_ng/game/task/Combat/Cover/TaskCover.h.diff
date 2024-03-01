@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/task/Combat/Cover/TaskCover.h b/src/dev_ng/game/task/Combat/Cover/TaskCover.h
+--- a/src/dev_ng/game/task/Combat/Cover/TaskCover.h
++++ b/src/dev_ng/game/task/Combat/Cover/TaskCover.h
+@@ -11,15 +11,15 @@
+ 
+ // Game Headers
+ #include "Peds/QueriableInterface.h"
+-#include "Task/Combat/Cover/TaskSeekCover.h"
++#include "task/Combat/Cover/TaskSeekCover.h"
+ #include "task/Movement/TaskNavBase.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFsmClone.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/WeaponController.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/WeaponController.h"
+ 
+ // Rage forward declarations
+ namespace rage { struct CollisionMaterialSettings; }

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/UI3DDrawManager.cpp b/src/dev_ng/game/renderer/UI3DDrawManager.cpp
+--- a/src/dev_ng/game/renderer/UI3DDrawManager.cpp
++++ b/src/dev_ng/game/renderer/UI3DDrawManager.cpp
+@@ -25,7 +25,7 @@
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "script/script.h"
+-#include "scene/world/gameworld.h"
++#include "scene/world/GameWorld.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/Lights/LightSource.h"
+ #include "renderer/Util/ShaderUtil.h"

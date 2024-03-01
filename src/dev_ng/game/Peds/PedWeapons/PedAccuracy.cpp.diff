@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.cpp b/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.cpp
+--- a/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.cpp
++++ b/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.cpp
+@@ -3,21 +3,21 @@
+ #include "Peds/PedWeapons/PedAccuracy_parser.h"
+ 
+ // Game headers
+-#include "Camera/CamInterface.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
+-#include "Camera/Gameplay/Aim/ThirdPersonAimCamera.h"
+-#include "Debug/DebugScene.h"
+-#include "Network/Network.h"
++#include "camera/CamInterface.h"
++#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/Gameplay/Aim/ThirdPersonAimCamera.h"
++#include "debug/DebugScene.h"
++#include "network/Network.h"
+ #include "Peds/Ped_Channel.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Stats/StatsInterface.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Weapons/Weapon.h"
+-#include "Weapons/WeaponDebug.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Default/TaskPlayer.h"
++#include "weapons/Weapon.h"
++#include "weapons/WeaponDebug.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
+ 
+ // Rage headers
+ #include "parser/manager.h"

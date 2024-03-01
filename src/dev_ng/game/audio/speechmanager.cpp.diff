@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/audio/speechmanager.cpp b/src/dev_ng/game/audio/speechmanager.cpp
+--- a/src/dev_ng/game/audio/speechmanager.cpp
++++ b/src/dev_ng/game/audio/speechmanager.cpp
+@@ -16,9 +16,9 @@
+ #include "speechaudioentity.h"
+ #include "virtcxtresolves.h"
+ 
+-#include "debug/debug.h"
+-#include "vehicles/vehicle.h"
+-#include "peds/ped.h"
++#include "debug/Debug.h"
++#include "Vehicles/vehicle.h"
++#include "Peds/ped.h"
+ #include "streaming/streamingengine.h"
+ 
+ #include "gameobjects.h"

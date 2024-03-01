@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/PrioritizedClipSetStreamer.h b/src/dev_ng/game/streaming/PrioritizedClipSetStreamer.h
+--- a/src/dev_ng/game/streaming/PrioritizedClipSetStreamer.h
++++ b/src/dev_ng/game/streaming/PrioritizedClipSetStreamer.h
+@@ -17,7 +17,7 @@
+ 
+ // Game headers
+ #include "animation/debug/AnimDebug.h"
+-#include "task/system/tuning.h"
++#include "task/System/Tuning.h"
+ 
+ #define PRIORITIZED_CLIP_SET_STREAMER_WIDGETS 0
+ 

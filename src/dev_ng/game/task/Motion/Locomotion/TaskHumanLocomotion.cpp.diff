@@ -1,12 +1,63 @@
 diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp
 --- a/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp
 +++ b/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp
-@@ -6,7 +6,7 @@
+@@ -1,36 +1,36 @@
+ // File header
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
+ 
+ // Rage headers
+ #include "fwdebug/picker.h"
  #include "math/angmath.h"
  
  // Game headers
 -#include "ai\debug\system\AIDebugLogManager.h"
+-#include "Animation/AnimManager.h"
+-#include "Animation/Move.h"
+-#include "Animation/MovePed.h"
+-#include "Camera/CamInterface.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
+-#include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
+-#include "Debug/DebugScene.h"
+-#include "Event/EventShocking.h"
+-#include "Event/ShockingEvents.h"
+-#include "Game/Weather.h"
 +#include "ai/debug/system/AIDebugLogManager.h"
- #include "Animation/AnimManager.h"
- #include "Animation/Move.h"
- #include "Animation/MovePed.h"
++#include "animation/AnimManager.h"
++#include "animation/Move.h"
++#include "animation/MovePed.h"
++#include "camera/CamInterface.h"
++#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/Gameplay/Aim/FirstPersonShooterCamera.h"
++#include "debug/DebugScene.h"
++#include "event/EventShocking.h"
++#include "event/ShockingEvents.h"
++#include "game/Weather.h"
+ #include "ik/solvers/LegSolver.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/Physics.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Motion/Locomotion/TaskMotionAimingTransition.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Motion/Locomotion/TaskRepositionMove.h"
+-#include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/Info/ScenarioInfo.h"
+-#include "Task/Scenario/Info/ScenarioTypes.h"
++#include "physics/physics.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskMotionAimingTransition.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Motion/Locomotion/TaskRepositionMove.h"
++#include "task/Movement/TaskGotoPoint.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioTypes.h"
+ #include "task/Movement/Climbing/TaskLadderClimb.h"
+-#include "Task/Movement/Climbing/TaskGoToAndClimbLadder.h"
++#include "task/Movement/Climbing/TaskGoToAndClimbLadder.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOTION_OPTIMISATIONS()

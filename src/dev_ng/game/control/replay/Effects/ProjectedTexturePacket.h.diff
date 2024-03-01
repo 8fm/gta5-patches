@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.h b/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.h
+@@ -14,9 +14,9 @@
+ #include "control/replay/Effects/ParticlePacket.h"
+ #include "control/replay/ReplayEventManager.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/PacketBasics.h"
+ #include "phcore/constants.h"
+-#include "phcore/MaterialMgr.h"
++#include "phcore/materialmgr.h"
+ #include "vfx/decals/DecalCallbacks.h"
+ #include "vfx/systems/VfxTrail.h"
+ 

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/renderer/Lights/AmbientLights.cpp b/src/dev_ng/game/renderer/Lights/AmbientLights.cpp
+--- a/src/dev_ng/game/renderer/Lights/AmbientLights.cpp
++++ b/src/dev_ng/game/renderer/Lights/AmbientLights.cpp
+@@ -1,14 +1,14 @@
+-#include "Renderer/Lights/AmbientLights.h"
++#include "renderer/Lights/AmbientLights.h"
+ #include "grcore/allocscope.h"
+-#include "camera/caminterface.h"
+-#include "debug/debugdraw.h"
++#include "camera/CamInterface.h"
++#include "debug/Debugdraw.h"
+ #include "fwsys/gameskeleton.h"
+ #include "fwtl/customvertexpushbuffer.h"
+ #include "renderer/deferred/deferredlighting.h"
+ #include "renderer/postprocessfx.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/util/shaderutil.h"
+-#include "shaders/shaderlib.h"
++#include "renderer/Util/ShaderUtil.h"
++#include "shaders/ShaderLib.h"
+ 
+ RENDER_OPTIMISATIONS()
+ 

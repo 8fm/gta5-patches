@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/scene/2dEffect.h b/src/dev_ng/game/scene/2dEffect.h
+--- a/src/dev_ng/game/scene/2dEffect.h
++++ b/src/dev_ng/game/scene/2dEffect.h
+@@ -10,12 +10,12 @@
+ 
+ #if !__SPU
+ 	// Rage headers
+-	#include "fwtl/pool.h"
++	#include "fwtl/Pool.h"
+ 	#include "fwtl/poolcriticalsection.h"
+ 	#include "streaming/streamingmodule.h"
+ 
+ 	// Game headers
+-	#include "debug/debug.h"
++	#include "debug/Debug.h"
+ 	#include "vector/vector3.h"
+ #endif
+ 

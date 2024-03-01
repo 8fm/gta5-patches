@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/audio/frontendaudioentity.cpp b/src/dev_ng/game/audio/frontendaudioentity.cpp
+--- a/src/dev_ng/game/audio/frontendaudioentity.cpp
++++ b/src/dev_ng/game/audio/frontendaudioentity.cpp
+@@ -27,14 +27,14 @@
+ #include "audioengine/categorymanager.h"
+ #include "control/gamelogic.h"
+ #include "control/replay/IReplayMarkerStorage.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/ReplayMarkerContext.h"
+ #include "frontend/landing_page/LandingPageArbiter.h"
+ #include "frontend/VideoEditor/VideoEditorInterface.h"
+ #include "frontend/VideoEditor/Core/VideoProjectPlaybackController.h"
+ #include "replaycoordinator/ReplayCoordinator.h"
+-#include "network/network.h"
+-#include "network/networkinterface.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
+ #include "radioaudioentity.h"
+ #include "pickups/Data/PickupIds.h"
+ #include "frontend/loadingscreens.h"

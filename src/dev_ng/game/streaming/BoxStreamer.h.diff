@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/BoxStreamer.h b/src/dev_ng/game/streaming/BoxStreamer.h
+--- a/src/dev_ng/game/streaming/BoxStreamer.h
++++ b/src/dev_ng/game/streaming/BoxStreamer.h
+@@ -21,7 +21,7 @@
+ 
+ // Framework headers
+ #include "fwscene/stores/boxstreamer.h"
+-#include "fwutil/quadtree.h"
++#include "fwutil/QuadTree.h"
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"

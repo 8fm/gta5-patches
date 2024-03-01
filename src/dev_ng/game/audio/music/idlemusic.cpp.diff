@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/audio/music/idlemusic.cpp b/src/dev_ng/game/audio/music/idlemusic.cpp
+--- a/src/dev_ng/game/audio/music/idlemusic.cpp
++++ b/src/dev_ng/game/audio/music/idlemusic.cpp
+@@ -9,9 +9,9 @@
+ 
+ #include "audio/environment/environment.h"
+ #include "audio/northaudioengine.h"
+-#include "game/wanted.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerInfo.h"
++#include "game/Wanted.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerInfo.h"
+ #include "script/script.h"
+ 
+ #include "system/param.h"

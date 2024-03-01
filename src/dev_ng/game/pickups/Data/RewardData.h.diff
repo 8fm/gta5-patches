@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/pickups/Data/RewardData.h b/src/dev_ng/game/pickups/Data/RewardData.h
+--- a/src/dev_ng/game/pickups/Data/RewardData.h
++++ b/src/dev_ng/game/pickups/Data/RewardData.h
+@@ -4,7 +4,7 @@
+ // Rage headers
+ #include "atl/hashstring.h"
+ #include "data/base.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "parser/macros.h"
+ 
+ // Game includes

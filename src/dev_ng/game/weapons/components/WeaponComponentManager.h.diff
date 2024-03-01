@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentManager.h b/src/dev_ng/game/weapons/components/WeaponComponentManager.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponentManager.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponentManager.h
+@@ -8,7 +8,7 @@
+ #define WEAPON_COMPONENT_MANAGER_H
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponent.h"
++#include "weapons/components/WeaponComponent.h"
+ 
+ // Forward declarations
+ class CWeaponComponentData;

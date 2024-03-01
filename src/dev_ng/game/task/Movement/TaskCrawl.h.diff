@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskCrawl.h b/src/dev_ng/game/task/Movement/TaskCrawl.h
+--- a/src/dev_ng/game/task/Movement/TaskCrawl.h
++++ b/src/dev_ng/game/task/Movement/TaskCrawl.h
+@@ -9,10 +9,10 @@
+ 
+ // C headers
+ // Game headers
+-#include "peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/TaskHelpers.h"
++#include "Peds/QueriableInterface.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskHelpers.h"
+ #include "network/General/NetworkUtil.h"
+ 
+ // ------------------------------------------------------------------------------

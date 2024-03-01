@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.cpp
+@@ -6,13 +6,13 @@
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/pedpopulation.h"
+ 
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Scenario/info/ScenarioInfo.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/General/TaskBasic.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskNavMesh.h"
+ 
+ AI_OPTIMISATIONS()
+ 

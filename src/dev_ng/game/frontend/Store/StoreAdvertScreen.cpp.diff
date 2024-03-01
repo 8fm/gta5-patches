@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp b/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp
+--- a/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp
++++ b/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp
+@@ -1,13 +1,13 @@
+ 
+-#include "Frontend/Store/StoreAdvertScreen.h"
+-
+-#include "Frontend/BusySpinner.h"
+-#include "Frontend/Store/StoreMainScreen.h"
+-#include "Frontend/Store/StoreScreenMgr.h"
+-#include "Frontend/Store/StoreUIChannel.h"
+-#include "Frontend/Store/StoreTextureManager.h"
+-#include "Frontend/WarningScreen.h"
+-#include "Network/Live/livemanager.h"
++#include "frontend/Store/StoreAdvertScreen.h"
++
++#include "frontend/BusySpinner.h"
++#include "frontend/Store/StoreMainScreen.h"
++#include "frontend/Store/StoreScreenMgr.h"
++#include "frontend/Store/StoreUIChannel.h"
++#include "frontend/Store/StoreTextureManager.h"
++#include "frontend/WarningScreen.h"
++#include "network/Live/livemanager.h"
+ #include "network/commerce/CommerceManager.h"
+ #include "system/controlMgr.h"
+ #include "system/pad.h"

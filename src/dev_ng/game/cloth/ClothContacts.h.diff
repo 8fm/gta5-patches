@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/cloth/ClothContacts.h b/src/dev_ng/game/cloth/ClothContacts.h
+--- a/src/dev_ng/game/cloth/ClothContacts.h
++++ b/src/dev_ng/game/cloth/ClothContacts.h
+@@ -3,7 +3,7 @@
+ 
+ #define MAX_NUM_CLOTH_CONTACTS 64
+ 
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "vector/vector3.h"
+ 
+ class CClothContacts

@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Combat/CombatSituation.cpp b/src/dev_ng/game/task/Combat/CombatSituation.cpp
+--- a/src/dev_ng/game/task/Combat/CombatSituation.cpp
++++ b/src/dev_ng/game/task/Combat/CombatSituation.cpp
+@@ -1,13 +1,13 @@
+ // File header
+-#include "Task/Combat/CombatSituation.h"
++#include "task/Combat/CombatSituation.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/CombatDirector.h"
+-#include "Task/Combat/CombatOrders.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Movement/TaskMoveWithinAttackWindow.h"
++#include "task/Combat/CombatDirector.h"
++#include "task/Combat/CombatOrders.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Movement/TaskMoveWithinAttackWindow.h"
+ 
+ AI_OPTIMISATIONS()
+ 

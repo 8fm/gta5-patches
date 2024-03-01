@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedInventoryDebug.cpp b/src/dev_ng/game/weapons/inventory/PedInventoryDebug.cpp
+--- a/src/dev_ng/game/weapons/inventory/PedInventoryDebug.cpp
++++ b/src/dev_ng/game/weapons/inventory/PedInventoryDebug.cpp
+@@ -5,12 +5,12 @@
+ //
+ 
+ // File header
+-#include "Weapons/Inventory/PedInventory.h"
++#include "weapons/inventory/PedInventory.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
+-#include "Weapons/WeaponDebug.h"
++#include "Peds/ped.h"
++#include "weapons/components/WeaponComponentManager.h"
++#include "weapons/WeaponDebug.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

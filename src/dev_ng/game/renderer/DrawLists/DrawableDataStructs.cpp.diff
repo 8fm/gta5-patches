@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.cpp b/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.cpp
+--- a/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.cpp
++++ b/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.cpp
+@@ -18,7 +18,7 @@
+ #endif // __BANK
+ #include "fwscene/stores/drawablestore.h"
+ #include "fwscene/stores/fragmentstore.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vector/quaternion.h"
+ #include "fwrenderer/instancing.h"
+ #include "entity/camerarelativeextension.h"
+@@ -30,14 +30,14 @@
+ #include "camera/CamInterface.h"
+ #include "debug/Rendering/DebugDeferred.h"
+ #include "grmodel/matrixset.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "peds/Ped.h"
+-#include "peds/PedTuning.h"
+-#include "peds/rendering/PedVariationStream.h"
+-#include "peds/rendering/PedVariationPack.h"
+-#include "physics/breakable.h"
++#include "Peds/ped.h"
++#include "Peds/PedTuning.h"
++#include "Peds/rendering/PedVariationStream.h"
++#include "Peds/rendering/PedVariationPack.h"
++#include "physics/Breakable.h"
+ #include "renderer/Debug/EntitySelect.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/DrawLists/DrawableDataStructs.h"

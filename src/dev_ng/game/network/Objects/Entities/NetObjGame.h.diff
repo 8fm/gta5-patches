@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjGame.h b/src/dev_ng/game/network/Objects/Entities/NetObjGame.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjGame.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjGame.h
+@@ -8,7 +8,7 @@
+ #define NETOBJGAMEOBJECT_H
+ 
+ #include "fwnet/netobject.h"
+-#include "network/objects/NetworkObjectTypes.h"
++#include "network/Objects/NetworkObjectTypes.h"
+ 
+ //------------------------------------------------------------------------------------
+ //Dead strip out the ValidateGameObject calls in non-assert builds (optimization pass)

@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/Vehicles/Bike.h b/src/dev_ng/game/Vehicles/Bike.h
+--- a/src/dev_ng/game/Vehicles/Bike.h
++++ b/src/dev_ng/game/Vehicles/Bike.h
+@@ -9,19 +9,19 @@
+ #define _BIKE_H_
+ 
+ // Rage headers
+-#include "phCore/segment.h"
++#include "phcore/segment.h"
+ #include "physics/constrainthandle.h"
+ #include "physics/intersection.h"
+ 
+ // Game headers
+-#include "renderer/hierarchyIds.h"
+-#include "vehicles/door.h"
+-#include "vehicles/handlingMgr.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/wheel.h"
+-
+-#include "network/objects/entities/netObjBike.h"
+-#include "System/PadGestures.h"					// for define
++#include "renderer/HierarchyIds.h"
++#include "Vehicles/door.h"
++#include "Vehicles/handlingMgr.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/wheel.h"
++
++#include "network/Objects/Entities/NetObjBike.h"
++#include "system/PadGestures.h"					// for define
+ 
+ namespace rage { class CNodeAddress; }
+ 

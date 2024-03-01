@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/event/system/EventData.cpp b/src/dev_ng/game/event/system/EventData.cpp
+--- a/src/dev_ng/game/event/system/EventData.cpp
++++ b/src/dev_ng/game/event/system/EventData.cpp
+@@ -1,10 +1,10 @@
+ // File header
+-#include "Event/System/EventData.h"
++#include "event/system/EventData.h"
+ 
+ // Game headers
+-#include "Event/Decision/EventDecisionMakerManager.h"
+-#include "Event/System/EventDataManager.h"
+-#include "Event/System/EventDataMeta_parser.h"
++#include "event/decision/EventDecisionMakerManager.h"
++#include "event/system/EventDataManager.h"
++#include "event/system/EventDataMeta_parser.h"
+ 
+ #include "ai/aichannel.h"
+ 

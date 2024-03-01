@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/BackgroundScripts/BackgroundScripts.h b/src/dev_ng/game/game/BackgroundScripts/BackgroundScripts.h
+--- a/src/dev_ng/game/game/BackgroundScripts/BackgroundScripts.h
++++ b/src/dev_ng/game/game/BackgroundScripts/BackgroundScripts.h
+@@ -13,7 +13,7 @@
+ #if __BANK
+ #include "BackgroundScriptsDebug.h"
+ #endif
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ #define RECENT_BG_UPDATED_QUEUE_SIZE 10
+ #define MAX_BG_SCRIPTS 1000

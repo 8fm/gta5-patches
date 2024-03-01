@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Scenario/TaskScenario.h b/src/dev_ng/game/task/Scenario/TaskScenario.h
+--- a/src/dev_ng/game/task/Scenario/TaskScenario.h
++++ b/src/dev_ng/game/task/Scenario/TaskScenario.h
+@@ -12,13 +12,13 @@
+ 
+ // game includes
+ #include "pathserver/PathServer_DataTypes.h"
+-#include "peds/PedType.h"
+-#include "peds/QueriableInterface.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/ScenarioPoint.h"
+-#include "Task/Scenario/Info/ScenarioTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "Peds/PedType.h"
++#include "Peds/QueriableInterface.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/ScenarioPoint.h"
++#include "task/Scenario/info/ScenarioTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ 
+ // Forward declarations

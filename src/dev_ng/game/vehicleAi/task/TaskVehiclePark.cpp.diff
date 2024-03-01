@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePark.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehiclePark.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePark.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePark.cpp
+@@ -9,20 +9,20 @@
+ // Game headers
+ #include "Vehicles/Planes.h"
+ #include "Vehicles/Submarine.h"
+-#include "Vehicles/heli.h"
++#include "Vehicles/Heli.h"
+ #include "vehicleAi/driverpersonality.h"
+-#include "VehicleAi/task/TaskVehicleGoTo.h"
++#include "vehicleAi/task/TaskVehicleGoTo.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi/task/TaskVehicleCruise.h"
+-#include "VehicleAi/task/TaskVehicleTempAction.h"
+-#include "VehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleCruise.h"
++#include "vehicleAi/task/TaskVehicleTempAction.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/Trailer.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Scenario/ScenarioChainingTests.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/Types/TaskVehicleScenario.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "scene/world/gameWorld.h"
++#include "task/Scenario/ScenarioChainingTests.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/Types/TaskVehicleScenario.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "scene/world/GameWorld.h"
+ 
+ 
+ AI_OPTIMISATIONS()

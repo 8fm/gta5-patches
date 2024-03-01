@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/superconductor.cpp b/src/dev_ng/game/audio/superconductor.cpp
+--- a/src/dev_ng/game/audio/superconductor.cpp
++++ b/src/dev_ng/game/audio/superconductor.cpp
+@@ -5,7 +5,7 @@
+ #include "dynamicmixer.h"
+ #include "game/Wanted.h"
+ #include "northaudioengine.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/ped.h"
+ #include "profile/profiler.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"

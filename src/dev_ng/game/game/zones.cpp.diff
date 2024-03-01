@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/game/zones.cpp b/src/dev_ng/game/game/zones.cpp
+--- a/src/dev_ng/game/game/zones.cpp
++++ b/src/dev_ng/game/game/zones.cpp
+@@ -13,12 +13,12 @@
+ #include "spatialdata/aabb.h"
+ 
+ // Game headers
+-#include "core/game.h"
+-#include "game/clock.h"
+-#include "peds/popcycle.h"
+-#include "scene/world/gameWorld.h"
++#include "Core/game.h"
++#include "game/Clock.h"
++#include "Peds/PopCycle.h"
++#include "scene/world/GameWorld.h"
+ #include "script/script.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ 
+ 
+ #define CITY_NAME_HASH (4005646697)	//	(atStringHash("city"))

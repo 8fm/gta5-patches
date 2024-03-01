@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxWeapon.h b/src/dev_ng/game/vfx/systems/VfxWeapon.h
+--- a/src/dev_ng/game/vfx/systems/VfxWeapon.h
++++ b/src/dev_ng/game/vfx/systems/VfxWeapon.h
+@@ -25,9 +25,9 @@
+ 
+ // game
+ #include "control/replay/ReplaySettings.h"
+-#include "Debug/Debug.h"
+-#include "Physics/GtaMaterial.h"
+-#include "Weapons/WeaponEnums.h"
++#include "debug/Debug.h"
++#include "physics/gtaMaterial.h"
++#include "weapons/WeaponEnums.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

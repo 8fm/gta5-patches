@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/Vehicles/AnchorHelper.cpp b/src/dev_ng/game/Vehicles/AnchorHelper.cpp
+--- a/src/dev_ng/game/Vehicles/AnchorHelper.cpp
++++ b/src/dev_ng/game/Vehicles/AnchorHelper.cpp
+@@ -4,13 +4,13 @@
+ // Framework headers:
+ 
+ // Game headers:
+-#include "vehicles/AnchorHelper.h"
++#include "Vehicles/AnchorHelper.h"
+ 
+-#include "vehicles/Submarine.h"
+-#include "vehicles/boat.h"
+-#include "vehicles/Heli.h"
+-#include "vehicles/planes.h"
+-#include "vehicles/AmphibiousAutomobile.h"
++#include "Vehicles/Submarine.h"
++#include "Vehicles/Boat.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/AmphibiousAutomobile.h"
+ #include "Peds/ped.h"
+ 
+ AI_VEHICLE_OPTIMISATIONS()

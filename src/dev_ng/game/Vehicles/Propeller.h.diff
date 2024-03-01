@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Propeller.h b/src/dev_ng/game/Vehicles/Propeller.h
+--- a/src/dev_ng/game/Vehicles/Propeller.h
++++ b/src/dev_ng/game/Vehicles/Propeller.h
+@@ -24,7 +24,7 @@ of vehicle propellers
+ // Game headers
+ #include "renderer/HierarchyIds.h"
+ #include "scene/RegdRefTypes.h"
+-#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
+ 
+ 
+ class CVehicle;

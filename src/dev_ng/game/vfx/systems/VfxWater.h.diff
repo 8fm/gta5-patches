@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxWater.h b/src/dev_ng/game/vfx/systems/VfxWater.h
+--- a/src/dev_ng/game/vfx/systems/VfxWater.h
++++ b/src/dev_ng/game/vfx/systems/VfxWater.h
+@@ -21,9 +21,9 @@
+ #include "vectormath/classes.h"
+ 
+ // game
+-#include "Animation/AnimBones.h"
+-#include "Physics/Floater.h"
+-#include "Vfx/Systems/VfxPed.h"
++#include "animation/AnimBones.h"
++#include "physics/Floater.h"
++#include "vfx/systems/VfxPed.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

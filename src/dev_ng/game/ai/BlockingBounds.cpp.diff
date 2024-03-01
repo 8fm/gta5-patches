@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/ai/BlockingBounds.cpp b/src/dev_ng/game/ai/BlockingBounds.cpp
+--- a/src/dev_ng/game/ai/BlockingBounds.cpp
++++ b/src/dev_ng/game/ai/BlockingBounds.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "AI/BlockingBounds.h"
++#include "ai/BlockingBounds.h"
+ 
+ // Rage headers
+ #include "ai/aichannel.h"
+@@ -7,8 +7,8 @@
+ #include "system/nelem.h"
+ 
+ #if __BANK
+-#include "peds/ped.h"
+-#include "scene/world/gameworld.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
+ #endif
+ 
+ AI_OPTIMISATIONS()

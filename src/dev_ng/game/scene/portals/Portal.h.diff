@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/portals/Portal.h b/src/dev_ng/game/scene/portals/Portal.h
+--- a/src/dev_ng/game/scene/portals/Portal.h
++++ b/src/dev_ng/game/scene/portals/Portal.h
+@@ -15,7 +15,7 @@
+ #include "fwscene/interiors/PortalTypes.h"
+ 
+ // Game headers
+-#include "scene/portals/interiorInst.h"
++#include "scene/portals/InteriorInst.h"
+ 
+ 
+ #if __BANK

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp
+@@ -10,7 +10,7 @@
+ 
+ //Rage Headers
+ #include "audio/cutsceneaudioentity.h"
+-#include "camera/caminterface.h"
++#include "camera/CamInterface.h"
+ #include "cutscene/CutSceneSoundEntity.h"
+ #include "cutfile/cutfobject.h"
+ #include "cutscene/cutsevent.h"
+@@ -18,7 +18,7 @@
+ #include "cutfile/cutfeventargs.h"
+ #include "cutscene/cutseventargs.h"
+ #include "cutscene/cutscene_channel.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "fwsys/timer.h"
+ 
+ /////////////////////////////////////////////////////////////////////////////////

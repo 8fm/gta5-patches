@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleAnimation.cpp
+@@ -4,14 +4,14 @@
+ #include "animation/MoveVehicle.h"
+ #include "modelinfo/VehicleModelInfoExtensions.h"
+ #include "Vehicles/vehicle.h"
+-#include "VehicleAi/task/TaskVehicleMissionBase.h"
+-#include "VehicleAi/task/TaskVehicleGoto.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
++#include "vehicleAi/task/TaskVehicleGoTo.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi/task/TaskVehiclePark.h"
+-#include "VehicleAi/task/TaskVehicleTempAction.h"
+-#include "VehicleAi/VehicleIntelligence.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerPed.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
++#include "vehicleAi/task/TaskVehicleTempAction.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerPed.h"
+ #include "physics/gtaInst.h"
+ #include "pharticulated/articulatedcollider.h"
+ #include "streaming/streaming.h"		// For CStreaming::LoadAllRequestedObjects().
+@@ -20,7 +20,7 @@
+ #include "text/messages.h"
+ #include "audio/caraudioentity.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+-#include "vehicles/Submarine.h"
++#include "Vehicles/Submarine.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

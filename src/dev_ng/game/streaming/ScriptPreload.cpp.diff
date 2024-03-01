@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/ScriptPreload.cpp b/src/dev_ng/game/streaming/ScriptPreload.cpp
+--- a/src/dev_ng/game/streaming/ScriptPreload.cpp
++++ b/src/dev_ng/game/streaming/ScriptPreload.cpp
+@@ -2,7 +2,7 @@
+ #include "fwscene/stores/drawablestore.h"
+ #include "fwscene/stores/fragmentstore.h"
+ 
+-#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptResources.h"
+ #include "script/script.h"
+ 
+ CScriptPreloadData::CScriptPreloadData(u32 numDwds, u32 numTxds, u32 numClds, u32 numFrags, u32 numDrawables, bool scriptMem) : m_scriptMem(scriptMem)

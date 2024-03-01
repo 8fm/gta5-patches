@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskGun.h b/src/dev_ng/game/task/Weapons/Gun/TaskGun.h
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskGun.h
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskGun.h
+@@ -2,15 +2,15 @@
+ #define TASK_GUN_H
+ 
+ // Game headers
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Weapons/Gun/GunFlags.h"
+-#include "Task/Weapons/Gun/GunIkInfo.h"
+-#include "Task/Weapons/WeaponTarget.h"
+-#include "Task/Weapons/WeaponController.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
++#include "task/Weapons/Gun/GunFlags.h"
++#include "task/Weapons/Gun/GunIkInfo.h"
++#include "task/Weapons/WeaponTarget.h"
++#include "task/Weapons/WeaponController.h"
+ 
+ // Forward declarations
+ class CEventGunShotWhizzedBy;

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/tools/StreamingMemJunctionStats.h b/src/dev_ng/game/tools/StreamingMemJunctionStats.h
+--- a/src/dev_ng/game/tools/StreamingMemJunctionStats.h
++++ b/src/dev_ng/game/tools/StreamingMemJunctionStats.h
+@@ -14,8 +14,8 @@
+ // --- Include Files ----------------------------------------------------------------------
+ 
+ // Game headers
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingdebug.h"
+ #include "tools/SectorTools.h"

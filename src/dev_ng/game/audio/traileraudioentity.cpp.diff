@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/traileraudioentity.cpp b/src/dev_ng/game/audio/traileraudioentity.cpp
+--- a/src/dev_ng/game/audio/traileraudioentity.cpp
++++ b/src/dev_ng/game/audio/traileraudioentity.cpp
+@@ -7,7 +7,7 @@
+ #include "audio/northaudioengine.h"
+ #include "audiosoundtypes/simplesound.h"
+ #include "traileraudioentity.h"
+-#include "vehicles/trailer.h"
++#include "Vehicles/Trailer.h"
+ 
+ AUDIO_VEHICLES_OPTIMISATIONS()
+ 

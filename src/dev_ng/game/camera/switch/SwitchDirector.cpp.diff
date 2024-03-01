@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/switch/SwitchDirector.cpp b/src/dev_ng/game/camera/switch/SwitchDirector.cpp
+--- a/src/dev_ng/game/camera/switch/SwitchDirector.cpp
++++ b/src/dev_ng/game/camera/switch/SwitchDirector.cpp
+@@ -14,7 +14,7 @@
+ #include "camera/switch/SwitchCamera.h"
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

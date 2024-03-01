@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/audiozones.h b/src/dev_ng/game/audio/audiozones.h
+--- a/src/dev_ng/game/audio/audiozones.h
++++ b/src/dev_ng/game/audio/audiozones.h
+@@ -15,7 +15,7 @@
+ #include "vector/vector3.h"
+ 
+ // Game headers
+-#include "camera/caminterface.h"
++#include "camera/CamInterface.h"
+ 
+ #define AZMAXNAMELENGTH	(8)
+ 

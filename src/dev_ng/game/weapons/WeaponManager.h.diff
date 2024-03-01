@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/WeaponManager.h b/src/dev_ng/game/weapons/WeaponManager.h
+--- a/src/dev_ng/game/weapons/WeaponManager.h
++++ b/src/dev_ng/game/weapons/WeaponManager.h
+@@ -1,7 +1,7 @@
+ #ifndef WEAPON_MANAGER_H
+ #define WEAPON_MANAGER_H
+ 
+-#include "Weapons/WeaponTypes.h"
++#include "weapons/WeaponTypes.h"
+ 
+ #include "atl/array.h"
+ 

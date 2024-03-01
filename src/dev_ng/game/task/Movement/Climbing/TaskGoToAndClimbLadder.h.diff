@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.h b/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.h
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.h
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskGoToAndClimbLadder.h
+@@ -2,8 +2,8 @@
+ #define INC_TASK_CLIMB_LADDER_H
+ 
+ // Game Headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
+ 
+ ////////////////////////////////////////
+ //		CLIMB LADDER DEBUG			  //

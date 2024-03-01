@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/vehicleAi/VehicleAILod.cpp b/src/dev_ng/game/vehicleAi/VehicleAILod.cpp
+--- a/src/dev_ng/game/vehicleAi/VehicleAILod.cpp
++++ b/src/dev_ng/game/vehicleAi/VehicleAILod.cpp
+@@ -1,15 +1,15 @@
+ #include "VehicleAILod.h"
+ 
+ // class header
+-#include "VehicleAI/VehicleAiLod.h"
++#include "vehicleAi/VehicleAiLod.h"
+ 
+ // Rage headers
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/vehicle_channel.h"
+-#include "VehicleAI/VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ 
+ AI_OPTIMISATIONS()
+ VEHICLE_OPTIMISATIONS()

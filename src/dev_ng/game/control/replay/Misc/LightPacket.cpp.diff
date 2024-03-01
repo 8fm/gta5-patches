@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/LightPacket.cpp b/src/dev_ng/game/control/replay/Misc/LightPacket.cpp
+--- a/src/dev_ng/game/control/replay/Misc/LightPacket.cpp
++++ b/src/dev_ng/game/control/replay/Misc/LightPacket.cpp
+@@ -3,8 +3,8 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/ReplayLightingManager.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "peds/ped.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "Peds/ped.h"
+ #include "timecycle/TimeCycle.h"
+ #include "control/replay/ReplaySupportClasses.h"
+ 

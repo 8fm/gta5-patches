@@ -1,0 +1,48 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjObject.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjObject.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjObject.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjObject.cpp
+@@ -6,31 +6,31 @@
+ //
+  
+ // game headers
+-#include "network/Objects/entities/NetObjObject.h"
++#include "network/Objects/Entities/NetObjObject.h"
+ 
+ #include "Objects/ObjectIntelligence.h"
+-#include "Task/Movement/TaskParachuteObject.h"
++#include "task/Movement/TaskParachuteObject.h"
+ #include "network/Debug/NetworkDebug.h"
+ #include "network/Network.h"
+ #include "network/NetworkInterface.h"
+ #include "network/Objects/Entities/NetObjVehicle.h"
+ #include "network/Objects/NetworkObjectMgr.h"
+ #include "network/Objects/NetworkObjectPopulationMgr.h"
+-#include "network/Objects/prediction/NetBlenderPhysical.h"
+-#include "network/events/NetworkEventTypes.h"
+-#include "network/general/NetworkDamageTracker.h"
+-#include "network/players/NetworkPlayerMgr.h"
+-#include "objects/Door.h"
+-#include "objects/DummyObject.h"
+-#include "objects/Object.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/ped.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "network/Objects/Prediction/NetBlenderPhysical.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/General/NetworkDamageTracker.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "Objects/Door.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/ped.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+ #include "streaming/streaming.h"
+ #include "vfx/misc/LODLightManager.h"
+-#include "Shaders/CustomShaderEffectWeapon.h"
++#include "shaders/CustomShaderEffectWeapon.h"
+ #include "control/replay/replay.h"
+ #include "physics/inst.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/info/VehicleWeaponInfo.cpp b/src/dev_ng/game/weapons/info/VehicleWeaponInfo.cpp
+--- a/src/dev_ng/game/weapons/info/VehicleWeaponInfo.cpp
++++ b/src/dev_ng/game/weapons/info/VehicleWeaponInfo.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Info/VehicleWeaponInfo.h"
++#include "weapons/info/VehicleWeaponInfo.h"
+ 
+ // Parser headers
+ #include "VehicleWeaponInfo_parser.h"

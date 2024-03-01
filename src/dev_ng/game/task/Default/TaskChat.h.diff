@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Default/TaskChat.h b/src/dev_ng/game/task/Default/TaskChat.h
+--- a/src/dev_ng/game/task/Default/TaskChat.h
++++ b/src/dev_ng/game/task/Default/TaskChat.h
+@@ -11,10 +11,10 @@
+ #include "streaming/streamingmodule.h"
+ 
+ // Game headers
+-#include "AI/AITarget.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "ai/AITarget.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ class CClipRequestHelper;
+ 

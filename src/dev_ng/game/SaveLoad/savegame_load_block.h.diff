@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_load_block.h b/src/dev_ng/game/SaveLoad/savegame_load_block.h
+--- a/src/dev_ng/game/SaveLoad/savegame_load_block.h
++++ b/src/dev_ng/game/SaveLoad/savegame_load_block.h
+@@ -13,9 +13,9 @@
+ #include "rline/ugc/rlugccommon.h"
+ 
+ // Game headers
+-#include "Renderer/ScreenshotManager.h"
++#include "renderer/ScreenshotManager.h"
+ #include "SaveLoad/savegame_defines.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "network/Network.h"
+ 
+ 

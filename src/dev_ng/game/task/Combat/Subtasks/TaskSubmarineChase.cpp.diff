@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineChase.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineChase.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineChase.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSubmarineChase.cpp
+@@ -2,12 +2,12 @@
+ // PURPOSE : Subtask of sub combat used to chase a target
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskSubmarineChase.h"
++#include "task/Combat/Subtasks/TaskSubmarineChase.h"
+ 
+ // Game headers
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"

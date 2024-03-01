@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/ik/solvers/LegSolver.h b/src/dev_ng/game/ik/solvers/LegSolver.h
+--- a/src/dev_ng/game/ik/solvers/LegSolver.h
++++ b/src/dev_ng/game/ik/solvers/LegSolver.h
+@@ -28,14 +28,14 @@
+ 
+ #include "crbody/iksolver.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "phcore/constants.h"
+ #include "system/timer.h"
+ #include "vector/vector3.h"
+ 
+-#include "Animation/debug/AnimDebug.h"
+-#include "Peds/Ped.h"
+-#include "Task/System/Tuning.h"
++#include "animation/debug/AnimDebug.h"
++#include "Peds/ped.h"
++#include "task/System/Tuning.h"
+ 
+ namespace rage
+ {

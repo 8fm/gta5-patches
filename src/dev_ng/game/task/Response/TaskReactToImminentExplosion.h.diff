@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.h b/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.h
+--- a/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.h
++++ b/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.h
+@@ -5,9 +5,9 @@
+ 
+ // Game headers
+ #include "ai/AITarget.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CTaskReactToImminentExplosion

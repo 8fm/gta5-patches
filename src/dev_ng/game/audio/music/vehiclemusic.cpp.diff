@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/audio/music/vehiclemusic.cpp b/src/dev_ng/game/audio/music/vehiclemusic.cpp
+--- a/src/dev_ng/game/audio/music/vehiclemusic.cpp
++++ b/src/dev_ng/game/audio/music/vehiclemusic.cpp
+@@ -7,11 +7,11 @@
+ #include "vehiclemusic.h"
+ #include "musicplayer.h"
+ #include "audio/scriptaudioentity.h"
+-#include "game/wanted.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerInfo.h"
++#include "game/Wanted.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerInfo.h"
+ #include "script/script.h"
+-#include "vehicles/Submarine.h"
++#include "Vehicles/Submarine.h"
+ #include "system/param.h"
+ #include "audioengine/engineutil.h"
+ 

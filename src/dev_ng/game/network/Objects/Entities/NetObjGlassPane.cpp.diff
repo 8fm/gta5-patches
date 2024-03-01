@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.cpp
+@@ -4,19 +4,19 @@
+ //				calls. See NetworkObject.h for a full description of all the methods.
+ // written by:  John Gurney
+ 
+-#include "network/Objects/entities/NetObjGlassPane.h"
++#include "network/Objects/Entities/NetObjGlassPane.h"
+ 
+ // game headers
+-#include "network/network.h"
++#include "network/Network.h"
+ #include "network/Debug/NetworkDebug.h"
+ #include "network/Events/NetworkEventTypes.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "Network/Players/NetGamePlayer.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Players/NetGamePlayer.h"
+ #include "scene/world/GameWorld.h"
+-#include "peds/ped.h"
+-#include "objects/DummyObject.h"
+-#include "objects/object.h"
++#include "Peds/ped.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
+ #include "fwscene/search/SearchVolumes.h"
+ #include "renderer/DrawLists/DrawListNY.h"
+ 

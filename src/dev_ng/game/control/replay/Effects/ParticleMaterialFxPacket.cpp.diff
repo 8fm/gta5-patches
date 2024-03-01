@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleMaterialFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleMaterialFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleMaterialFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleMaterialFxPacket.cpp
+@@ -8,7 +8,7 @@
+ 
+ #include "control/replay/replay_channel.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "vfx/ptfx/ptfxattach.h"
+ #include "vfx/ptfx/ptfxwrapper.h"

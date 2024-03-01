@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/script/commands_socialclub.cpp b/src/dev_ng/game/script/commands_socialclub.cpp
+--- a/src/dev_ng/game/script/commands_socialclub.cpp
++++ b/src/dev_ng/game/script/commands_socialclub.cpp
+@@ -12,15 +12,15 @@
+ #include "fwnet/netlicenseplatecheck.h"
+ 
+ #include "event/EventNetwork.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Live/NetworkSCPresenceUtil.h"
+-#include "Network/SocialClubServices/GamePresenceEventDispatcher.h"
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
+-#include "Network/SocialClubServices/SocialClubCommunityEventMgr.h"
+-#include "Network/SocialClubServices/SocialClubEmailMgr.h"
+-#include "Network/SocialClubServices/SocialClubInboxManager.h"
+-#include "Network/SocialClubServices/SocialClubNewsStoryMgr.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/NetworkSCPresenceUtil.h"
++#include "network/SocialClubServices/GamePresenceEventDispatcher.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
++#include "network/SocialClubServices/SocialClubCommunityEventMgr.h"
++#include "network/SocialClubServices/SocialClubEmailMgr.h"
++#include "network/SocialClubServices/SocialClubInboxManager.h"
++#include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ SCRIPT_OPTIMISATIONS()

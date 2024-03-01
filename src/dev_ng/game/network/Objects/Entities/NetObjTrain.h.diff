@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjTrain.h b/src/dev_ng/game/network/Objects/Entities/NetObjTrain.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjTrain.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjTrain.h
+@@ -8,9 +8,9 @@
+ #ifndef NETOBJTRAIN_H
+ #define NETOBJTRAIN_H
+ 
+-#include "network/objects/entities/NetObjVehicle.h"
+-#include "network/objects/synchronisation/SyncNodes/VehicleSyncNodes.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+ 
+ class CNetObjTrain : public CNetObjVehicle, public ITrainNodeDataAccessor
+ {

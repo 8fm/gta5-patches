@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/script/script_hud.cpp b/src/dev_ng/game/script/script_hud.cpp
+--- a/src/dev_ng/game/script/script_hud.cpp
++++ b/src/dev_ng/game/script/script_hud.cpp
+@@ -16,12 +16,12 @@
+ #include "frontend/NewHud.h"
+ #include "frontend/PauseMenu.h"
+ #include "frontend/CMapMenu.h"
+-#include "frontend/minimap.h"
++#include "frontend/MiniMap.h"
+ #include "frontend/HudTools.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "game/Clock.h"
+ #include "network/NetworkInterface.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/RenderTargetMgr.h"
+ #include "SaveLoad/GenericGameStorage.h"

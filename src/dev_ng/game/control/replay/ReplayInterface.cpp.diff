@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterface.cpp b/src/dev_ng/game/control/replay/ReplayInterface.cpp
+--- a/src/dev_ng/game/control/replay/ReplayInterface.cpp
++++ b/src/dev_ng/game/control/replay/ReplayInterface.cpp
+@@ -3,9 +3,9 @@
+ #if GTA_REPLAY
+ 
+ #include "ReplayInterface.h"
+-#include "Control/Replay/ReplayInternal.h"
++#include "control/replay/ReplayInternal.h"
+ #include "control/replay/ReplayController.h"
+-#include "Control/Replay/Misc/ReplayPacket.h"
++#include "control/replay/Misc/ReplayPacket.h"
+ 
+ int iReplayInterface::sm_totalEntitiesCreatedThisFrame = 0;
+ 

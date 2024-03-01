@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/pickups/PickupRewards.h b/src/dev_ng/game/pickups/PickupRewards.h
+--- a/src/dev_ng/game/pickups/PickupRewards.h
++++ b/src/dev_ng/game/pickups/PickupRewards.h
+@@ -2,7 +2,7 @@
+ #define PICKUP_REWARDS_H
+ 
+ // Game headers
+-#include "Pickups/Data/RewardData.h"
++#include "pickups/Data/RewardData.h"
+ 
+ class CPickup;
+ class CPed;

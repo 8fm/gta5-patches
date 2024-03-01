@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/Debug/UiGadgetFileSelector.cpp b/src/dev_ng/game/frontend/VideoEditor/Debug/UiGadgetFileSelector.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/Debug/UiGadgetFileSelector.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/Debug/UiGadgetFileSelector.cpp
+@@ -14,7 +14,7 @@
+ #include "file/limits.h"
+ 
+ // framework
+-#include "fwScene/stores/imposedTextureDictionary.h"
++#include "fwscene/stores/imposedTextureDictionary.h"
+ 
+ // game
+ #include "frontend/VideoEditor/Core/ImposedImageHandler.h"

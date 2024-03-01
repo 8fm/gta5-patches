@@ -1,0 +1,51 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedWeaponManager.cpp b/src/dev_ng/game/weapons/inventory/PedWeaponManager.cpp
+--- a/src/dev_ng/game/weapons/inventory/PedWeaponManager.cpp
++++ b/src/dev_ng/game/weapons/inventory/PedWeaponManager.cpp
+@@ -1,31 +1,31 @@
+ // File header
+-#include "Weapons/Inventory/PedWeaponManager.h"
++#include "weapons/inventory/PedWeaponManager.h"
+ #include "fragmentnm/messageparams.h"
+ 
+ // Game headers
+ #include "control/replay/replay.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/GtaInst.h"
+-#include "Pickups/PickupManager.h"
+-#include "Task/motion/Locomotion/TaskMotionPed.h"
++#include "physics/gtaInst.h"
++#include "pickups/PickupManager.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
+ #include "Vehicles/VehicleGadgets.h"
+-#include "Weapons/Gadgets/Gadget.h"
+-#include "Weapons/projectiles/ProjectileManager.h"
+-#include "Weapons/projectiles/Projectile.h"
+-#include "Weapons/Weapon.h"
+-#include "Weapons/WeaponChannel.h"
+-#include "Weapons/WeaponFactory.h"
+-#include "Weapons/WeaponManager.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Physics/TaskNM.h"
++#include "weapons/Gadgets/Gadget.h"
++#include "weapons/projectiles/ProjectileManager.h"
++#include "weapons/projectiles/Projectile.h"
++#include "weapons/Weapon.h"
++#include "weapons/WeaponChannel.h"
++#include "weapons/WeaponFactory.h"
++#include "weapons/WeaponManager.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Physics/TaskNM.h"
+ #include "physics/constraintfixed.h"
+ #include "physics/physics.h"
+ #include "phbound/boundcomposite.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ #include "Stats/stats_channel.h"
+ #include "frontend/NewHud.h"
+-#include "Task/General/Phone/TaskMobilePhone.h"
+-#include "Task/Weapons/Gun/TaskReloadGun.h"
++#include "task/General/Phone/TaskMobilePhone.h"
++#include "task/Weapons/Gun/TaskReloadGun.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

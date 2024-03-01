@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/System/TaskHelperFSM.h b/src/dev_ng/game/task/System/TaskHelperFSM.h
+--- a/src/dev_ng/game/task/System/TaskHelperFSM.h
++++ b/src/dev_ng/game/task/System/TaskHelperFSM.h
+@@ -6,8 +6,8 @@
+ #include "vector/color32.h"
+ 
+ // Framework headers
+-#include "fwutil/flags.h"
+-#include "fwtl/pool.h"
++#include "fwutil/Flags.h"
++#include "fwtl/Pool.h"
+ 
+ // Defines
+ #define SIZE_LARGEST_TASK_HELPER_CLASS	(192)	// sizeof(CPathNodeRouteSearchHelper)

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/frontend/html/HtmlRenderer.cpp b/src/dev_ng/game/frontend/html/HtmlRenderer.cpp
+--- a/src/dev_ng/game/frontend/html/HtmlRenderer.cpp
++++ b/src/dev_ng/game/frontend/html/HtmlRenderer.cpp
+@@ -22,12 +22,12 @@
+ #include "HtmlRenderState.h"
+ #include "HtmlTextFormat.h"
+ #include "htmlviewport.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
+-#include "Text/Text.h"
+-#include "Text/TextDraw.h"
+-#include "Text/TextFormat.h"
++#include "renderer/DrawLists/drawListMgr.h"
++#include "text/text.h"
++#include "text/TextDraw.h"
++#include "text/TextFormat.h"
+ #include "renderer/sprite2d.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleBikePacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehicleBikePacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleBikePacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleBikePacket.cpp
+@@ -10,9 +10,9 @@
+ 
+ #include "control/replay/ReplayExtensions.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "vehicles/Bike.h"
+-#include "vehicles/BMX.h"
+-#include "vehicles/Automobile.h"
++#include "Vehicles/Bike.h"
++#include "Vehicles/BMX.h"
++#include "Vehicles/Automobile.h"
+ 
+ 
+ tPacketVersion CPacketBikeUpdate_V1 = 1;

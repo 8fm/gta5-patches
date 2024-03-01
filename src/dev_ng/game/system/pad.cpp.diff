@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/system/pad.cpp b/src/dev_ng/game/system/pad.cpp
 --- a/src/dev_ng/game/system/pad.cpp
 +++ b/src/dev_ng/game/system/pad.cpp
-@@ -5,7 +5,7 @@
+@@ -5,18 +5,18 @@
  #include "system/pad.h"
  
  // Rage headers
@@ -9,4 +9,21 @@ diff --git a/src/dev_ng/game/system/pad.cpp b/src/dev_ng/game/system/pad.cpp
 +#include "input/input.h"
  #include "grcore/debugdraw.h"
  #include "fwsys/timer.h"
+ 
+ // Game headers
+-#include "Frontend/Credits.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/Credits.h"
++#include "frontend/PauseMenu.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+-#include "modelinfo/vehiclemodelinfo.h"
+-#include "vehicles/vehicle.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "Vehicles/vehicle.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerInfo.h"
+ #include "scene/world/GameWorld.h"
+ #include "camera/CamInterface.h"
  

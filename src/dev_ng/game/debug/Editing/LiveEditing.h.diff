@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Editing/LiveEditing.h b/src/dev_ng/game/debug/Editing/LiveEditing.h
+--- a/src/dev_ng/game/debug/Editing/LiveEditing.h
++++ b/src/dev_ng/game/debug/Editing/LiveEditing.h
+@@ -14,7 +14,7 @@
+ #include "atl/string.h"
+ #include "bank/bank.h"
+ #include "bank/bkmgr.h"
+-#include "objects/object.h"
++#include "Objects/object.h"
+ #include "scene/Entity.h"
+ 
+ //NOTES:

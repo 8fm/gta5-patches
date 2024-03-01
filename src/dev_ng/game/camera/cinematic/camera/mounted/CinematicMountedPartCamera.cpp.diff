@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedPartCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedPartCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedPartCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/mounted/CinematicMountedPartCamera.cpp
+@@ -18,8 +18,8 @@
+ #include "system/control.h"
+ 
+ #include "frontend/MobilePhone.h"
+-#include "peds/ped.h"
+-#include "vehicles/vehicle.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h"
+ 
+ #include "fwmaths/random.h"
+ //#include "camera/cinematic/CinematicDirector.h"

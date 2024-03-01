@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioFinder.h b/src/dev_ng/game/task/Scenario/ScenarioFinder.h
+--- a/src/dev_ng/game/task/Scenario/ScenarioFinder.h
++++ b/src/dev_ng/game/task/Scenario/ScenarioFinder.h
+@@ -7,7 +7,7 @@
+ #ifndef TASK_SCENARIO_SCENARIO_FINDER_H
+ #define TASK_SCENARIO_SCENARIO_FINDER_H
+ 
+-#include "task/Scenario/Info/ScenarioInfoFlags.h"	// CScenarioInfoFlags
++#include "task/Scenario/info/ScenarioInfoFlags.h"	// CScenarioInfoFlags
+ #include "task/Scenario/ScenarioPoint.h"
+ #include "task/System/TaskHelperFSM.h"
+ 

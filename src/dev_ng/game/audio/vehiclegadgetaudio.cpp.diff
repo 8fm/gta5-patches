@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/audio/vehiclegadgetaudio.cpp b/src/dev_ng/game/audi
  #include "northaudioengine.h"
  #include "vehicleaudioentity.h"
 -#include "VehicleAi\Task\TaskVehicleAnimation.h"
-+#include "VehicleAi/Task/TaskVehicleAnimation.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
  #include "camera/CamInterface.h"
  #include "camera/cinematic/CinematicDirector.h"
 -#include "audiosoundtypes\sound.h"

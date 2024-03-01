@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/game/Dispatch/OrderManager.cpp b/src/dev_ng/game/game/Dispatch/OrderManager.cpp
+--- a/src/dev_ng/game/game/Dispatch/OrderManager.cpp
++++ b/src/dev_ng/game/game/Dispatch/OrderManager.cpp
+@@ -2,14 +2,14 @@
+ // Purpose	:	Manages all currently assigned orders
+ // Started	:	13/05/2010
+ 
+-#include "Game/Dispatch/OrderManager.h"
++#include "game/Dispatch/OrderManager.h"
+ 
+ // Game includes
+ #include "game/Dispatch/Orders.h"
+-#include "Network/Arrays/NetworkArrayHandlerTypes.h"
+-#include "Network/Arrays/NetworkArrayMgr.h"
+-#include "Network/NetworkInterface.h"
+-#include "Peds/Ped.h"
++#include "network/Arrays/NetworkArrayHandlerTypes.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ 
+ // Framework includes

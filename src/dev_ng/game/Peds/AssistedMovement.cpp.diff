@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/Peds/AssistedMovement.cpp b/src/dev_ng/game/Peds/AssistedMovement.cpp
+--- a/src/dev_ng/game/Peds/AssistedMovement.cpp
++++ b/src/dev_ng/game/Peds/AssistedMovement.cpp
+@@ -13,19 +13,19 @@
+ #include "fwmaths/vectorutil.h"
+ 
+ // Game includes
+-#include "Camera/CamInterface.h"
+-#include "Camera/Debug/DebugDirector.h"
+-#include "Camera/Helpers/Frame.h"
++#include "camera/CamInterface.h"
++#include "camera/Debug/DebugDirector.h"
++#include "camera/helpers/Frame.h"
+ #include "pathserver/ExportCollision.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendInWater.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendOnSkis.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+-#include "Task/Motion/Locomotion/TaskInWater.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskGotoPoint.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskGotoPoint.h"
+ 
+ AI_OPTIMISATIONS()
+ 

@@ -1,0 +1,48 @@
+diff --git a/src/dev_ng/game/camera/viewports/Viewport.cpp b/src/dev_ng/game/camera/viewports/Viewport.cpp
+--- a/src/dev_ng/game/camera/viewports/Viewport.cpp
++++ b/src/dev_ng/game/camera/viewports/Viewport.cpp
+@@ -20,7 +20,7 @@
+ #include "input/headtracking.h"
+ #include "profile/timebars.h"
+ #include "system/param.h"
+-#include "System/system.h"
++#include "system/system.h"
+ #include "vector/color32.h"
+ 
+ // Framework headers
+@@ -28,26 +28,26 @@
+ #include "fwsys/timer.h"
+ 
+ // Game headers
+-#include "Cutscene/CutsceneManagerNew.h"
+-#include "Debug/Debug.h"
+-#include "Debug/TiledScreenCapture.h"
+-#include "Network/NetworkInterface.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "debug/Debug.h"
++#include "debug/TiledScreenCapture.h"
++#include "network/NetworkInterface.h"
+ #include "camera/CamInterface.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/scripted/ScriptDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/gamelogic.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/Mirrors.h"
+ #include "renderer/Occlusion.h"
+ #include "renderer/RenderTargetMgr.h"
+-#include "renderer/renderThread.h"
++#include "renderer/RenderThread.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/shadows/shadows.h"
++#include "renderer/Shadows/Shadows.h"
+ #include "renderer/RenderPhases/RenderPhaseLensDistortion.h"
+-#include "scene/portals/portal.h"
+-#include "scene/portals/portalTracker.h"
++#include "scene/portals/Portal.h"
++#include "scene/portals/PortalTracker.h"
+ #include "scene/scene.h"
+ #include "script/script.h"
+ #include "script/script_hud.h"

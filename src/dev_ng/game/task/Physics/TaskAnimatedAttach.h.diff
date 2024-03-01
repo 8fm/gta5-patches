@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskAnimatedAttach.h b/src/dev_ng/game/task/Physics/TaskAnimatedAttach.h
+--- a/src/dev_ng/game/task/Physics/TaskAnimatedAttach.h
++++ b/src/dev_ng/game/task/Physics/TaskAnimatedAttach.h
+@@ -8,10 +8,10 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

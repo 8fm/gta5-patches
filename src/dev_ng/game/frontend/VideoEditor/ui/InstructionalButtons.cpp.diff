@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp
+@@ -19,7 +19,7 @@
+ #include "frontend/videoeditor/ui/Timeline.h"
+ #include "frontend/videoeditor/ui/Playback.h"
+ 
+-#include "Text/TextFormat.h"
++#include "text/TextFormat.h"
+ #include "system/controlMgr.h"
+ 
+ #if RSG_ORBIS

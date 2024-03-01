@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/weapons/inventory/AmmoItemRepository.cpp b/src/dev_ng/game/weapons/inventory/AmmoItemRepository.cpp
+--- a/src/dev_ng/game/weapons/inventory/AmmoItemRepository.cpp
++++ b/src/dev_ng/game/weapons/inventory/AmmoItemRepository.cpp
+@@ -5,12 +5,12 @@
+ //
+ 
+ // File header
+-#include "Weapons/Inventory/AmmoItemRepository.h"
++#include "weapons/inventory/AmmoItemRepository.h"
+ 
+ // Game headers
+-#include "Weapons/Weapon.h"
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "weapons/Weapon.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

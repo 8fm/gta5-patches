@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/ModelSeatInfo.cpp b/src/dev_ng/game/modelinfo/ModelSeatInfo.cpp
+--- a/src/dev_ng/game/modelinfo/ModelSeatInfo.cpp
++++ b/src/dev_ng/game/modelinfo/ModelSeatInfo.cpp
+@@ -11,7 +11,7 @@
+ #include "ai/aichannel.h"
+ #include "ai/debug/system/AIDebugLogManager.h"
+ #include "game/ModelIndices.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "Peds/PedCapsule.h"

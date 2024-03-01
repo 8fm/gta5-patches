@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.h b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggedToSafety.h
+@@ -6,7 +6,7 @@
+ #define TASK_DRAGGED_TO_SAFETY_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
++#include "task/System/Task.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CTaskDraggedToSafety

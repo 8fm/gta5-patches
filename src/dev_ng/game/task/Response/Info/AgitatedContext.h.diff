@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedContext.h b/src/dev_ng/game/task/Response/Info/AgitatedContext.h
+--- a/src/dev_ng/game/task/Response/Info/AgitatedContext.h
++++ b/src/dev_ng/game/task/Response/Info/AgitatedContext.h
+@@ -7,7 +7,7 @@
+ #include "parser/macros.h"
+ 
+ // Game headers
+-#include "Task/Response/Info/AgitatedSituation.h"
++#include "task/Response/Info/AgitatedSituation.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CAgitatedContext

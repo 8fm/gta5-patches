@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/General/TaskVehicleSecondary.h b/src/dev_ng/game/task/General/TaskVehicleSecondary.h
+--- a/src/dev_ng/game/task/General/TaskVehicleSecondary.h
++++ b/src/dev_ng/game/task/General/TaskVehicleSecondary.h
+@@ -8,8 +8,8 @@
+ #define TASK_VEHICLE_SECONDARY_H
+ 
+ // Game headers
+-#include "Event/Event.h"
+-#include "Task/System/Task.h"
++#include "event/Event.h"
++#include "task/System/Task.h"
+ 
+ //***************************************
+ //Class:  CTaskAggressiveRubberneck

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/pickups/PickupPlacement.cpp b/src/dev_ng/game/pickups/PickupPlacement.cpp
+--- a/src/dev_ng/game/pickups/PickupPlacement.cpp
++++ b/src/dev_ng/game/pickups/PickupPlacement.cpp
+@@ -2,13 +2,13 @@
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+ #include "frontend/MiniMap.h"
+-#include "Network/Objects/Entities/NetObjPickupPlacement.h"
+-#include "fwnet/NetGameObjectBase.h"
++#include "network/Objects/Entities/NetObjPickupPlacement.h"
++#include "fwnet/netgameobjectbase.h"
+ #include "network/Events/NetworkEventTypes.h"
+-#include "Network/Objects/Entities/NetObjGame.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/Ped.h"
++#include "network/Objects/Entities/NetObjGame.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/ped.h"
+ #include "pickups/Data/PickupDataManager.h"
+ #include "pickups/Pickup.h"
+ #include "pickups/PickupManager.h"

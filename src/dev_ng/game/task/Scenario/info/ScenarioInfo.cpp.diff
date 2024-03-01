@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioInfo.cpp b/src/dev_ng/game/task/Scenario/info/ScenarioInfo.cpp
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioInfo.cpp
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioInfo.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Scenario/Info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioInfo.h"
+ 
+ // Rage headers
+ #include "ai/aichannel.h"

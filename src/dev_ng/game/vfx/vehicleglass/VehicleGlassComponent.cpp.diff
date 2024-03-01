@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp
+--- a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp
++++ b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassComponent.cpp
+@@ -34,16 +34,16 @@
+ 
+ // game
+ #include "camera/CamInterface.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Objects/Entities/NetObjVehicle.h"
++#include "network/General/NetworkUtil.h"
++#include "network/NetworkInterface.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
+ #include "Objects/object.h"
+ #include "physics/gtaArchetype.h"
+ #include "physics/gtaMaterialManager.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "renderer/Entities/VehicleGlassDrawHandler.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "scene/Entity.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+ #include "Vehicles/vehicle.h"

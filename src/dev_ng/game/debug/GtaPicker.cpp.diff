@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/debug/GtaPicker.cpp b/src/dev_ng/game/debug/GtaPicker.cpp
+--- a/src/dev_ng/game/debug/GtaPicker.cpp
++++ b/src/dev_ng/game/debug/GtaPicker.cpp
+@@ -40,9 +40,9 @@
+ #include "debug/UiGadget/UiGadgetInspector.h"
+ #include "debug/UiGadget/UiGadgetList.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "objects/DummyObject.h"
+-#include "objects/object.h"
+-#include "Peds/Ped.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
+ #include "Peds/rendering/PedVariationDebug.h"
+ #include "physics/gtaArchetype.h"
+ #include "pickups/Pickup.h"
+@@ -62,7 +62,7 @@
+ #include "scene/lod/LodMgr.h"
+ #include "scene/EntityTypes.h"
+ #include "scene/portals/PortalInst.h"
+-#include "scene/World/GameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "streaming/packfilemanager.h"
+ #include "streaming/populationstreaming.h"
+ #include "streaming/streaming.h"
+@@ -71,7 +71,7 @@
+ #include "streaming/streamingengine.h"
+ #include "system/controlMgr.h"
+ #include "system/system.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "fwscene/world/StreamedSceneGraphNode.h"
+ 
+ #define NAME_OF_DEFAULT_PICKER "Default Picker"

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/scene/world/GameWorldHeightMap.cpp b/src/dev_ng/game/scene/world/GameWorldHeightMap.cpp
+--- a/src/dev_ng/game/scene/world/GameWorldHeightMap.cpp
++++ b/src/dev_ng/game/scene/world/GameWorldHeightMap.cpp
+@@ -27,13 +27,13 @@
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "debug/DebugArchetypeProxy.h"
+-#include "objects/DummyObject.h"
+-#include "objects/object.h"
+-#include "peds/ped.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
+ #include "physics/gtaMaterialDebug.h"
+ #include "renderer/Water.h"
+ #include "scene/world/GameWorldHeightMap.h"
+-#include "Scene/DataFileMgr.h"
++#include "scene/DataFileMgr.h"
+ #include "scene/Building.h"
+ #include "scene/AnimatedBuilding.h"
+ #include "shaders/CustomShaderEffectCable.h" // for CheckCables

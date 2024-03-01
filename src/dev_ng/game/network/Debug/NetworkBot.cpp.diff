@@ -1,0 +1,45 @@
+diff --git a/src/dev_ng/game/network/Debug/NetworkBot.cpp b/src/dev_ng/game/network/Debug/NetworkBot.cpp
+--- a/src/dev_ng/game/network/Debug/NetworkBot.cpp
++++ b/src/dev_ng/game/network/Debug/NetworkBot.cpp
+@@ -14,27 +14,27 @@ NETWORK_OPTIMISATIONS()
+ #include "net/nethardware.h"
+ #include "string/stringhash.h"
+ #include "fwnet/netchannel.h"
+-#include "Network/network.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Network/Roaming/RoamingBubbleMgr.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Sessions/NetworkSessionMessages.h"
++#include "network/Network.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Roaming/RoamingBubbleMgr.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Sessions/NetworkSessionMessages.h"
+ #include "Peds/PedFactory.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/Relationships.h"
+-#include "Scene/World/GameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"			// For CStreaming::HasObjectLoaded(), etc.
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Default/TaskWander.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskSeekEntity.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Default/TaskWander.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskSeekEntity.h"
+ #include "script/script.h"
+ #include "script/gta_thread.h"
+ #include "script/streamedscripts.h"
+-#include "Weapons/inventory/PedInventoryLoadOut.h"
++#include "weapons/inventory/PedInventoryLoadOut.h"
+ 
+ RAGE_DEFINE_SUBCHANNEL(net, bots, DIAG_SEVERITY_DEBUG3)
+ #undef __net_channel

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/control/replay/Ped/PedPacket.h b/src/dev_ng/game/control/replay/Ped/PedPacket.h
+--- a/src/dev_ng/game/control/replay/Ped/PedPacket.h
++++ b/src/dev_ng/game/control/replay/Ped/PedPacket.h
+@@ -6,7 +6,7 @@
+ #ifndef INC_PEDPACKET_H_
+ #define INC_PEDPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+@@ -25,7 +25,7 @@ class CPed;
+ #define BONE_SLOTS_HP	16
+ 
+ #if INCLUDE_FROM_GAME
+-#include "peds/rendering/PedVariationDS.h"
++#include "Peds/rendering/PedVariationDS.h"
+ #include "audio/pedfootstepaudio.h"
+ #include "audio/speechmanager.h"
+ #endif

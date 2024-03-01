@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.cpp
+@@ -33,14 +33,14 @@
+ #include "frontend/VideoEditor/VideoEditorInterface.h"
+ #include "frontend/VideoEditor/ui/TextTemplate.h"
+ #include "frontend/VideoEditor/ui/ThumbnailManager.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+ #include "renderer/PostProcessFXHelper.h"
+-#include "replaycoordinator/Storage/MontageMusicClip.h"
+-#include "replaycoordinator/Storage/MontageText.h"
+-#include "System/controlMgr.h"
+-#include "System/keyboard.h"
++#include "replaycoordinator/storage/MontageMusicClip.h"
++#include "replaycoordinator/storage/MontageText.h"
++#include "system/controlMgr.h"
++#include "system/keyboard.h"
+ #include "system/system.h"
+ #include "text/TextFormat.h"
+ #include "text/TextConversion.h"

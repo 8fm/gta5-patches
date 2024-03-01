@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_frontend.cpp b/src/dev_ng/game/SaveLoad/savegame_frontend.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_frontend.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_frontend.cpp
+@@ -13,8 +13,8 @@
+ #include "SaveLoad/savegame_messages.h"
+ #include "SaveLoad/savegame_save.h"
+ #include "SaveLoad/savegame_users_and_devices.h"
+-#include "Text/Messages.h"
+-#include "Text/TextConversion.h"
++#include "text/messages.h"
++#include "text/TextConversion.h"
+ 
+ 
+ SAVEGAME_OPTIMISATIONS()

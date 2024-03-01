@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.cpp
+@@ -3,13 +3,13 @@
+ // CREATED : 3/1/2012
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskShootOutTire.h"
++#include "task/Combat/Subtasks/TaskShootOutTire.h"
+ 
+ // Game headers
+ #include "audio/scannermanager.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedGeometryAnalyser.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/Gun/TaskGun.h"
+ #include "vehicleAi/task/TaskVehicleShotTire.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/vehicle.h"

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/audio/bicycleaudioentity.cpp b/src/dev_ng/game/audio/bicycleaudioentity.cpp
+--- a/src/dev_ng/game/audio/bicycleaudioentity.cpp
++++ b/src/dev_ng/game/audio/bicycleaudioentity.cpp
+@@ -10,8 +10,8 @@
+ #include "task/Vehicle/TaskInVehicle.h"
+ #include "Peds/PedIntelligence.h"
+ #include "game/weather.h"
+-#include "vehicles/wheel.h"
+-#include "vehicles/bike.h"
++#include "Vehicles/wheel.h"
++#include "Vehicles/Bike.h"
+ #include "renderer/HierarchyIds.h"
+ 
+ #if GTA_REPLAY

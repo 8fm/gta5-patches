@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/camera/replay/ReplayDirector.cpp b/src/dev_ng/game/camera/replay/ReplayDirector.cpp
+--- a/src/dev_ng/game/camera/replay/ReplayDirector.cpp
++++ b/src/dev_ng/game/camera/replay/ReplayDirector.cpp
+@@ -17,14 +17,14 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/replay/IReplayMarkerStorage.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/ReplayMarkerInfo.h"
+ #include "control/replay/ReplayMarkerContext.h"
+ #include "frontend/VideoEditor/VideoEditorInterface.h"
+ #include "scene/EntityIterator.h"
+ #include "scene/portals/PortalTracker.h"
+ #include "system/controlMgr.h"
+-#include "peds/PedCapsule.h"
++#include "Peds/PedCapsule.h"
+ 
+ #include "input/mouse.h"
+ 

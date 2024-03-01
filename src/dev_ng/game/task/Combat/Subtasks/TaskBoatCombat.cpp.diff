@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskBoatCombat.cpp
+@@ -2,14 +2,14 @@
+ // PURPOSE : Subtask of combat used for boat combat
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskBoatCombat.h"
++#include "task/Combat/Subtasks/TaskBoatCombat.h"
+ 
+ // Rage headers
+ #include "ai/navmesh/pathserverbase.h"
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "task/Combat/Subtasks/TaskBoatChase.h"
+ #include "task/Combat/Subtasks/TaskBoatStrafe.h"
+ #include "task/Combat/Subtasks/TaskVehicleCombat.h"
+@@ -18,7 +18,7 @@
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+ #include "vehicleAi/task/TaskVehicleTempAction.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+-#include "Vehicles/boat.h"
++#include "Vehicles/Boat.h"
+ #include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileManager.h b/src/dev_ng/game/weapons/projectiles/ProjectileManager.h
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileManager.h
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileManager.h
+@@ -4,13 +4,13 @@
+ // Rage headers
+ #include "atl/array.h"
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Weapons/WeaponEnums.h"
++#include "scene/RegdRefTypes.h"
++#include "weapons/WeaponEnums.h"
+ #include "network/General/NetworkFXId.h"
+ #include "network/General/NetworkUtil.h"
+ #include "vector/vector3.h"
+-#include "Weapons/Info/AmmoInfo.h"
+-#include "Weapons/Inventory/WeaponItem.h"
++#include "weapons/info/AmmoInfo.h"
++#include "weapons/inventory/WeaponItem.h"
+ 
+ // Forward declarations
+ namespace rage { 

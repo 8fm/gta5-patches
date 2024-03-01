@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Stats/NetworkStockMarketStats.cpp b/src/dev_ng/game/network/Stats/NetworkStockMarketStats.cpp
+--- a/src/dev_ng/game/network/Stats/NetworkStockMarketStats.cpp
++++ b/src/dev_ng/game/network/Stats/NetworkStockMarketStats.cpp
+@@ -12,12 +12,12 @@
+ 
+ //Game Headers
+ #include "NetworkStockMarketStats.h"
+-#include "stats/StatsMgr.h"
+-#include "stats/StatsDataMgr.h"
++#include "Stats/StatsMgr.h"
++#include "Stats/StatsDataMgr.h"
+ #include "scene/DataFileMgr.h"
+-#include "system/fileMgr.h"
++#include "system/FileMgr.h"
+ #include "network/Stats/CommunityStatsData_parser.h"
+-#include "stats/stats_channel.h"
++#include "Stats/stats_channel.h"
+ 
+ void
+ CNetworkCommunityStats::Init()

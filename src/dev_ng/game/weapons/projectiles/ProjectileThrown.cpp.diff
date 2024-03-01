@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileThrown.cpp b/src/dev_ng/game/weapons/projectiles/ProjectileThrown.cpp
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileThrown.cpp
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileThrown.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Weapons/Projectiles/ProjectileThrown.h"
++#include "weapons/projectiles/ProjectileThrown.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

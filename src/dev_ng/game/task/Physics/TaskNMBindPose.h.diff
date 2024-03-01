@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMBindPose.h b/src/dev_ng/game/task/Physics/TaskNMBindPose.h
+--- a/src/dev_ng/game/task/Physics/TaskNMBindPose.h
++++ b/src/dev_ng/game/task/Physics/TaskNMBindPose.h
+@@ -9,8 +9,8 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Physics/TaskNM.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

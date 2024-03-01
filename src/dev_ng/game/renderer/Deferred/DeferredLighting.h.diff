@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Deferred/DeferredLighting.h b/src/dev_ng/game/renderer/Deferred/DeferredLighting.h
+--- a/src/dev_ng/game/renderer/Deferred/DeferredLighting.h
++++ b/src/dev_ng/game/renderer/Deferred/DeferredLighting.h
+@@ -17,7 +17,7 @@
+ #include "renderer/Lights/LightCommon.h"
+ #include "renderer/Deferred/DeferredConfig.h"
+ #include "scene/loader/MapData_Extensions.h"
+-#include "renderer/util/shmooFile.h"
++#include "renderer/Util/shmooFile.h"
+ #include "vfx/vfx_shared.h"
+ 
+ // =============================================================================================== //

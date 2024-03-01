@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/game/weather.h b/src/dev_ng/game/game/weather.h
+--- a/src/dev_ng/game/game/weather.h
++++ b/src/dev_ng/game/game/weather.h
+@@ -20,11 +20,11 @@
+ #include "atl/array.h"
+ 
+ // game
+-#include "Debug/Debug.h"
+-#include "Renderer/Water.h"
+-#include "Game/Wind.h"
+-#include "Vfx/GPUParticles/PtFxGPUManager.h"
+-#include "Vfx/systems/VfxLightning.h"
++#include "debug/Debug.h"
++#include "renderer/Water.h"
++#include "game/wind.h"
++#include "vfx/gpuparticles/PtFxGPUManager.h"
++#include "vfx/systems/VfxLightning.h"
+ #include "control/replay/ReplaySettings.h"
+ 
+ 

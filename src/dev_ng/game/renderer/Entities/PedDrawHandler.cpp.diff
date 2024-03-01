@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp b/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp
+--- a/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp
++++ b/src/dev_ng/game/renderer/Entities/PedDrawHandler.cpp
+@@ -23,11 +23,11 @@
+ #include "Peds/PlayerPed.h"
+ #include "Peds/rendering/PedVariationDS.h"
+ #include "Peds/rendering/PedVariationStream.h"
+-#include "peds/rendering/PedVariationPack.h"
++#include "Peds/rendering/PedVariationPack.h"
+ #include "renderer/DrawLists/DrawListProfileStats.h"
+ #include "renderer/Entities/EntityDrawHandler.h"
+ #include "renderer/OcclusionQueries.h"
+-#include "renderer/renderer.h"
++#include "renderer/Renderer.h"
+ #include "shaders/CustomShaderEffectPed.h"
+ #include "streaming/populationstreaming.h"
+ 

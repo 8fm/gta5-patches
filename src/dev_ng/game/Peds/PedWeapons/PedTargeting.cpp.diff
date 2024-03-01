@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/game/Peds/PedWeapons/PedTargeting.cpp b/src/dev_ng/game/Peds/PedWeapons/PedTargeting.cpp
+--- a/src/dev_ng/game/Peds/PedWeapons/PedTargeting.cpp
++++ b/src/dev_ng/game/Peds/PedWeapons/PedTargeting.cpp
+@@ -4,30 +4,30 @@
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "Event/Events.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
++#include "debug/DebugScene.h"
++#include "event/Events.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedEventScanner.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "Peds/HealthConfig.h"
+-#include "Physics/GtaInst.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Scene/Entity.h"
++#include "physics/gtaInst.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/Entity.h"
+ #include "scene/world/GameWorld.h"
+-#include "task/Combat/Cover/Cover.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "vehicles/vehicle.h"
++#include "task/Combat/Cover/cover.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "Vehicles/vehicle.h"
+ #include "weapons/Weapon.h"
+ 
+ AI_OPTIMISATIONS()

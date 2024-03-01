@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxWheel.cpp b/src/dev_ng/game/vfx/systems/VfxWheel.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxWheel.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxWheel.cpp
+@@ -26,19 +26,19 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "Core/Game.h"
+-#include "Control/Replay/Replay.h"
+-#include "Control/Replay/Effects/ParticleVehicleFxPacket.h"
+-#include "Peds/Ped.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Vehicles/Vehicle.h"
++#include "control/replay/Replay.h"
++#include "control/replay/Effects/ParticleVehicleFxPacket.h"
++#include "Peds/ped.h"
++#include "scene/DataFileMgr.h"
++#include "scene/world/GameWorld.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/Wheel.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxVehicle.h"
+-#include "Vfx/VfxHelper.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

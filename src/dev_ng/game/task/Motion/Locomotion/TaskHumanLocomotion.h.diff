@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.h b/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.h
+@@ -2,9 +2,9 @@
+ #define TASK_HUMAN_LOCOMOTION_H
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/System/Tuning.h"
++#include "Peds/ped.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CTaskMoveGoToPointAndStandStill;

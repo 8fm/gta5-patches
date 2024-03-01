@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxLens.cpp b/src/dev_ng/game/vfx/systems/VfxLens.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxLens.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxLens.cpp
+@@ -27,23 +27,23 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "Camera/Cinematic/Camera/Mounted/CinematicMountedCamera.h"
+-#include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
+-#include "Camera/Viewports/ViewportManager.h"
++#include "camera/CamInterface.h"
++#include "camera/Cinematic/Camera/Mounted/CinematicMountedCamera.h"
++#include "camera/Gameplay/Aim/FirstPersonShooterCamera.h"
++#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/Viewports/ViewportManager.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "Core/Game.h"
+-#include "Peds/Ped.h"
+-#include "Peds/Rendering/PedVariationStream.h"
+-#include "Renderer/Water.h"
+-#include "Scene/World/GameWorld.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationStream.h"
++#include "renderer/Water.h"
++#include "scene/world/GameWorld.h"
+ #include "network/Sessions/NetworkSession.h"
+ #include "security/ragesecgameinterface.h"
+-#include "Vehicles/Vehicle.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxWeapon.h"
+-#include "Vfx/VfxHelper.h"
++#include "Vehicles/vehicle.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxWeapon.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,12 +1,24 @@
 diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h b/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h
 --- a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h
 +++ b/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h
-@@ -11,7 +11,7 @@
+@@ -4,15 +4,15 @@
+ #if __BANK
+ 
+ // Rage headers
+-#include "Bank/Bank.h"
++#include "bank/bank.h"
+ #include "system/param.h"
+-#include "Vector/vector3.h"
++#include "vector/vector3.h"
+ #include "vectormath/vec3v.h"
  
  // Game headers
- #include "AI/AITarget.h"
+-#include "AI/AITarget.h"
 -#include "ai\debug\types\VehicleDebugInfo.h"
+-#include "Scene/RegdRefTypes.h"
++#include "ai/AITarget.h"
 +#include "ai/debug/types/VehicleDebugInfo.h"
- #include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
  #include "Vehicles/Metadata/VehicleEnterExitFlags.h"
  
+ // Forward declarations

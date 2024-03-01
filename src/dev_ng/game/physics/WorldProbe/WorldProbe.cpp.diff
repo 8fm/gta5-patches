@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp b/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp
 --- a/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp
 +++ b/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp
-@@ -14,7 +14,7 @@
+@@ -14,27 +14,27 @@
  #include "system/task.h"
  #include "spatialdata/sphere.h"
  #include "fwsys/gameskeleton.h"
@@ -10,6 +10,35 @@ diff --git a/src/dev_ng/game/physics/WorldProbe/WorldProbe.cpp b/src/dev_ng/game
  
  // Framework headers
  
+ // Game headers
+-#include "debug/debugscene.h"
+-#include "peds/ped.h"
++#include "debug/DebugScene.h"
++#include "Peds/ped.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "physics/gtaArchetype.h"
+ #include "physics/gtaInst.h"
+ #include "physics/gtaMaterialManager.h"
+ #include "physics/iterator.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "physics/levelnew.h"
+-#include "scene/entity.h"
+-#include "scene/physical.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/Boat.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/wheel.h"
++#include "scene/Entity.h"
++#include "scene/Physical.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Boat.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/wheel.h"
+ #include "scene/world/GameWorld.h"
+ 
+ PHYSICS_OPTIMISATIONS()
 @@ -56,7 +56,7 @@ PF_TIMER(Unspecified_Probes, Probes);
  
  

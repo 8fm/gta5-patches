@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/AssetAnalysis/StreamingIteratorManager.cpp b/src/dev_ng/game/debug/AssetAnalysis/StreamingIteratorManager.cpp
+--- a/src/dev_ng/game/debug/AssetAnalysis/StreamingIteratorManager.cpp
++++ b/src/dev_ng/game/debug/AssetAnalysis/StreamingIteratorManager.cpp
+@@ -44,7 +44,7 @@
+ #include "modelinfo/BaseModelInfo.h"
+ #include "modelinfo/MloModelInfo.h"
+ #include "Objects/DummyObject.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerInfo.h"
+ #include "physics/gtaArchetype.h"
+ #include "scene/Entity.h"

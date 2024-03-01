@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/ambience/audambientzone.h b/src/dev_ng/game/audio/ambience/audambientzone.h
+--- a/src/dev_ng/game/audio/ambience/audambientzone.h
++++ b/src/dev_ng/game/audio/ambience/audambientzone.h
+@@ -6,7 +6,7 @@
+ #include "fwutil/QuadTree.h"
+ 
+ // Framework Headers
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ 
+ // Game Headers
+ #include "ambientaudioentity.h"

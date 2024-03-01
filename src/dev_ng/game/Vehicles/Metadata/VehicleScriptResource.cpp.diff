@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp b/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp
+@@ -4,11 +4,11 @@
+ #include "fwAnimation/clipsets.h"
+ 
+ // File header
+-#include "ModelInfo/BaseModelInfo.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/VehicleModelInfo.h"
++#include "modelinfo/BaseModelInfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "script/script_channel.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
+ #include "Vehicles/Metadata/VehicleEntryPointInfo.h"
+ #include "Vehicles/Metadata/VehicleLayoutInfo.h"
+ #include "Vehicles/Metadata/VehicleScriptResource.h"

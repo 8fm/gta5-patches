@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/control.h b/src/dev_ng/game/system/control.h
+--- a/src/dev_ng/game/system/control.h
++++ b/src/dev_ng/game/system/control.h
+@@ -32,7 +32,7 @@
+ 
+ // gameplay
+ 
+-#include "peds/pedDefines.h"
++#include "Peds/pedDefines.h"
+ //replay
+ #include "control/replay/ReplaySettings.h"
+ 

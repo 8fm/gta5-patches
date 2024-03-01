@@ -8,6 +8,6 @@ diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendInWater.h b/src/dev_n
 -#include "Peds\PedMoveBlend\PedMoveBlendBase.h"
 -#include "Physics\Floater.h"
 +#include "Peds/PedMoveBlend/PedMoveBlendBase.h"
-+#include "Physics/Floater.h"
++#include "physics/Floater.h"
  
  #endif // PED_MOVE_BLEND_IN_WATER_H

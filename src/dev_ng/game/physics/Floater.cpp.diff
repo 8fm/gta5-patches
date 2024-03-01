@@ -1,0 +1,68 @@
+diff --git a/src/dev_ng/game/physics/Floater.cpp b/src/dev_ng/game/physics/Floater.cpp
+--- a/src/dev_ng/game/physics/Floater.cpp
++++ b/src/dev_ng/game/physics/Floater.cpp
+@@ -3,15 +3,15 @@
+ #include "fragmentnm/manager.h"
+ 
+ // Game headers
+-#include "animation/animbones.h" 
++#include "animation/AnimBones.h" 
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/replay/replay.h"
+-#include "Game/ModelIndices.h"
++#include "game/ModelIndices.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "peds/ped.h"
+-#include "peds/Ped.h"
+-#include "peds/PedFactory.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/ped.h"
++#include "Peds/PedFactory.h"
++#include "Peds/PedIntelligence.h"
+ #include "phbound/boundcomposite.h"
+ #include "pharticulated/articulatedbody.h"
+ #include "physics/floater.h"
+@@ -19,23 +19,23 @@
+ #include "physics/physics.h"
+ #include "physics/physics_channel.h"
+ #include "physics/Tunable.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "renderer/River.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "script/script_cars_and_peds.h"
+-#include "scene/physical.h"
++#include "scene/Physical.h"
+ #include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"
+ #include "task/Motion/TaskMotionBase.h"
+ #include "task/Physics/TaskNMRiverRapids.h"
+-#include "vehicleAi/Task/TaskVehicleGoToSubmarine.h"
++#include "vehicleAi/task/TaskVehicleGoToSubmarine.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+-#include "vehicles/boat.h"
+-#include "vehicles/heli.h"
+-#include "vehicles/VehicleFactory.h"
+-#include "vfx/Systems/VfxPed.h"
+-#include "vfx/Systems/VfxVehicle.h"
+-#include "vfx/Systems/VfxWater.h"
++#include "Vehicles/Boat.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/VehicleFactory.h"
++#include "vfx/systems/VfxPed.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "vfx/systems/VfxWater.h"
+ #include "vfx/VfxHelper.h"
+ #include "phbound/bound.h"
+ #include "Peds/pedDefines.h"
+@@ -43,7 +43,7 @@
+ 
+ PHYSICS_OPTIMISATIONS()
+ 
+-//#include "System/FindSize.h"
++//#include "system/FindSize.h"
+ //FindSize(CBuoyancy); 368
+ 
+ // PURPOSE: Define the fractional error allowed on the matrix axes for orthonormality when processing low LOD buoyancy.

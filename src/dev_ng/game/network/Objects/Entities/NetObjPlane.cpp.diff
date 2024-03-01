@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjPlane.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjPlane.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjPlane.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjPlane.cpp
+@@ -5,7 +5,7 @@
+ // written by:  John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjPlane.h"
++#include "network/Objects/Entities/NetObjPlane.h"
+ 
+ // framework headers
+ #include "fwscene/stores/staticboundsstore.h"
+@@ -13,11 +13,11 @@
+ // game headers
+ #include "event/EventShocking.h"
+ #include "event/ShockingEvents.h"
+-#include "network/network.h"
++#include "network/Network.h"
+ #include "network/Objects/Prediction/NetBlenderHeli.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PopCycle.h"
+-#include "vehicles/Planes.h"
++#include "Vehicles/Planes.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "audio/planeaudioentity.h"
+ 

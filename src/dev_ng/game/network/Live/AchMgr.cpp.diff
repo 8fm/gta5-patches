@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Live/AchMgr.cpp b/src/dev_ng/game/network/Live/AchMgr.cpp
+--- a/src/dev_ng/game/network/Live/AchMgr.cpp
++++ b/src/dev_ng/game/network/Live/AchMgr.cpp
+@@ -9,11 +9,11 @@
+ 
+ //game
+ #include "frontend/ProfileSettings.h"
+-#include "Network/Live/AchMgr.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/xlast/Fuzzy.schema.h"
+-#include "Network/Live/Events_durango.h"
++#include "network/Live/AchMgr.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/xlast/Fuzzy.schema.h"
++#include "network/Live/Events_durango.h"
+ 
+ #if __WIN32PC
+ #include "rline/scachievements/rlscachievements.h"

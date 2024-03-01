@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/audio/vehicleconductor.cpp b/src/dev_ng/game/audio/vehicleconductor.cpp
+--- a/src/dev_ng/game/audio/vehicleconductor.cpp
++++ b/src/dev_ng/game/audio/vehicleconductor.cpp
+@@ -10,7 +10,7 @@
+ #include "network/NetworkInterface.h"
+ #include "frontendaudioentity.h"
+ #include "Peds/PedIntelligence.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "profile/profiler.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script_hud.h"
+@@ -18,7 +18,7 @@
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "vehicleconductor.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ 
+ AUDIO_OPTIMISATIONS()

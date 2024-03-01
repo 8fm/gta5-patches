@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxWheel.h b/src/dev_ng/game/vfx/systems/VfxWheel.h
+--- a/src/dev_ng/game/vfx/systems/VfxWheel.h
++++ b/src/dev_ng/game/vfx/systems/VfxWheel.h
+@@ -19,8 +19,8 @@
+ // rage
+ 
+ // game
+-#include "Physics/GtaMaterial.h"
+-#include "Vfx/Systems/VfxMaterial.h"
++#include "physics/gtaMaterial.h"
++#include "vfx/systems/VfxMaterial.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

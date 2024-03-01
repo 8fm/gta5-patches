@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskParachuteObject.h b/src/dev_ng/game/task/Movement/TaskParachuteObject.h
+--- a/src/dev_ng/game/task/Movement/TaskParachuteObject.h
++++ b/src/dev_ng/game/task/Movement/TaskParachuteObject.h
+@@ -5,11 +5,11 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ #include "network/Debug/NetworkDebug.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/TaskFSMClone.h"
+ #include "Peds/QueriableInterface.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

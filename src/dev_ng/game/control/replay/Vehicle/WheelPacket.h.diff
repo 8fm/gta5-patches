@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/WheelPacket.h b/src/dev_ng/game/control/replay/Vehicle/WheelPacket.h
+--- a/src/dev_ng/game/control/replay/Vehicle/WheelPacket.h
++++ b/src/dev_ng/game/control/replay/Vehicle/WheelPacket.h
+@@ -1,13 +1,13 @@
+ #ifndef __WHEEL_PACKET_H
+ #define __WHEEL_PACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+-#include "Control/replay/PacketBasics.h"
++#include "control/replay/PacketBasics.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "Control/Replay/ReplayController.h"
++#include "control/replay/ReplayController.h"
+ 
+ class CVehicle;
+ class WheelValueExtensionData;

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.cpp b/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.cpp
+--- a/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.cpp
++++ b/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.cpp
+@@ -4,13 +4,13 @@
+ // CREATED : 29-01-2009
+ 
+ // Game headers
+-#include "Task/Movement/TaskMoveFollowEntityOffset.h"
++#include "task/Movement/TaskMoveFollowEntityOffset.h"
+ 
+-#include "Debug/DebugScene.h"
+-#include "Task/Movement/TaskSeekEntity.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Scenario/Types/TaskCoupleScenario.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "task/Movement/TaskSeekEntity.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Scenario/Types/TaskCoupleScenario.h"
++#include "Peds/ped.h"
+ 
+ AI_OPTIMISATIONS()
+ 

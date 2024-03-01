@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskDeadBodyScenario.cpp
+@@ -3,11 +3,11 @@
+ 
+ // Game Headers
+ #include "audio/speechaudioentity.h"
+-#include "Event/EventDamage.h"
++#include "event/EventDamage.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskDamageDeath.h"
+-#include "Task/Scenario/info/ScenarioInfo.h"
++#include "task/Combat/TaskDamageDeath.h"
++#include "task/Scenario/info/ScenarioInfo.h"
+ 
+ AI_OPTIMISATIONS()
+ 

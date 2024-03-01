@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/scripted/ScriptedFlyCamera.cpp b/src/dev_ng/game/camera/scripted/ScriptedFlyCamera.cpp
+--- a/src/dev_ng/game/camera/scripted/ScriptedFlyCamera.cpp
++++ b/src/dev_ng/game/camera/scripted/ScriptedFlyCamera.cpp
+@@ -14,7 +14,7 @@
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/helpers/Collision.h"
+ #include "camera/helpers/ControlHelper.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "renderer/Water.h"
+ #include "scene/world/GameWorldHeightMap.h"
+ #include "system/control.h"

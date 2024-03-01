@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/Scrollbars.h b/src/dev_ng/game/vfx/misc/Scrollbars.h
+--- a/src/dev_ng/game/vfx/misc/Scrollbars.h
++++ b/src/dev_ng/game/vfx/misc/Scrollbars.h
+@@ -19,7 +19,7 @@
+ // rage
+ 
+ // game
+-#include "Scene/2dEffect.h"
++#include "scene/2dEffect.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vfx/particles/PtFxEntity.h b/src/dev_ng/game/vfx/particles/PtFxEntity.h
+--- a/src/dev_ng/game/vfx/particles/PtFxEntity.h
++++ b/src/dev_ng/game/vfx/particles/PtFxEntity.h
+@@ -20,11 +20,11 @@
+ #include "system/criticalsection.h"
+ 
+ // framework
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // game
+-#include "Scene/Entity.h"
+-#include "Vfx/Particles/PtFxDefines.h"
++#include "scene/Entity.h"
++#include "vfx/Particles/PtFxDefines.h"
+ 
+ 
+ #if PTFX_ALLOW_INSTANCE_SORTING

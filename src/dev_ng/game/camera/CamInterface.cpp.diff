@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/camera/CamInterface.cpp b/src/dev_ng/game/camera/CamInterface.cpp
+--- a/src/dev_ng/game/camera/CamInterface.cpp
++++ b/src/dev_ng/game/camera/CamInterface.cpp
+@@ -34,13 +34,13 @@
+ #include "camera/system/CameraManager.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Control/replay/replay.h"
++#include "control/replay/replay.h"
+ #include "debug/DebugScene.h"
+-#include "frontend/LoadingScreens.h"
++#include "frontend/loadingscreens.h"
+ #include "game/ModelIndices.h"
+ #include "network/Network.h"
+ #include "network/NetworkInterface.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "physics/gtaInst.h"
+ #include "physics/physics.h"
+ #include "scene/EntityIterator.h"
+@@ -50,9 +50,9 @@
+ #include "system/controlMgr.h"
+ #include "text/messages.h"
+ #include "tools/SectorTools.h"
+-#include "vehicles/Metadata/VehicleEntryPointInfo.h"
+-#include "peds/ped.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/Metadata/VehicleEntryPointInfo.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h"
+ 
+ 
+ CAMERA_OPTIMISATIONS()

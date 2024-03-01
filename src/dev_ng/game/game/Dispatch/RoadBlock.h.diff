@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/Dispatch/RoadBlock.h b/src/dev_ng/game/game/Dispatch/RoadBlock.h
+--- a/src/dev_ng/game/game/Dispatch/RoadBlock.h
++++ b/src/dev_ng/game/game/Dispatch/RoadBlock.h
+@@ -8,7 +8,7 @@
+ // Rage headers
+ #include "atl/array.h"
+ #include "entity/archetypemanager.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/Flags.h"
+ #include "fwvehicleai/pathfindtypes.h"
+ 

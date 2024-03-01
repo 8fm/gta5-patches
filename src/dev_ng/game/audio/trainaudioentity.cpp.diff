@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/audio/trainaudioentity.cpp b/src/dev_ng/game/audio/trainaudioentity.cpp
+--- a/src/dev_ng/game/audio/trainaudioentity.cpp
++++ b/src/dev_ng/game/audio/trainaudioentity.cpp
+@@ -10,7 +10,7 @@
+ #include "radioaudioentity.h"
+ #include "trainaudioentity.h"
+ 
+-#include "animation/animbones.h"
++#include "animation/AnimBones.h"
+ #include "audioengine/engine.h"
+ #include "audioengine/engineutil.h"
+ #include "audiohardware/driverdefs.h"
+@@ -19,16 +19,16 @@
+ #include "audiosoundtypes/soundcontrol.h"
+ #include "game/zones.h"
+ #include "crskeleton/skeleton.h"
+-#include "debug/debugglobals.h"
++#include "debug/Debugglobals.h"
+ #include "grcore/debugdraw.h"
+-#include "modelinfo/vehiclemodelinfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "phbound/boundcomposite.h"
+ #include "physics/gtaMaterialManager.h"
+ #include "fwsys/timer.h"
+-#include "vehicles/automobile.h"
+-#include "vehicles/heli.h"
+-#include "vehicles/train.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/train.h"
++#include "Vehicles/vehicle.h"
+ #include "math/simplemath.h"
+ #include "debugaudio.h"
+ 

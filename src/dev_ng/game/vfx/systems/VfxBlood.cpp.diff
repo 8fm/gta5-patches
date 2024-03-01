@@ -1,0 +1,63 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxBlood.cpp b/src/dev_ng/game/vfx/systems/VfxBlood.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxBlood.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxBlood.cpp
+@@ -27,36 +27,36 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/base/BaseCamera.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
++#include "camera/Gameplay/GameplayDirector.h"
+ #include "control/replay/replay.h"
+-#include "control/replay/effects/Particlebloodfxpacket.h"
++#include "control/replay/Effects/Particlebloodfxpacket.h"
+ #include "Core/Game.h"
+-#include "Debug/MarketingTools.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
++#include "debug/MarketingTools.h"
++#include "network/NetworkInterface.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedHelmetComponent.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PlayerSpecialAbility.h"
+ #include "Peds/rendering/PedDamage.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Vehicles/Vehicle.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Metadata/VfxPedInfo.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxLens.h"
+-#include "Vfx/Systems/VfxPed.h"
+-#include "Vfx/VehicleGlass/VehicleGlass.h" // for IsEntitySmashable
+-#include "Vfx/VfxHelper.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "physics/gtaMaterialManager.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/DataFileMgr.h"
++#include "scene/world/GameWorld.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/System/TaskHelpers.h"
++#include "Vehicles/vehicle.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/metadata/VfxPedInfo.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxLens.h"
++#include "vfx/systems/VfxPed.h"
++#include "vfx/VehicleGlass/VehicleGlass.h" // for IsEntitySmashable
++#include "vfx/VfxHelper.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

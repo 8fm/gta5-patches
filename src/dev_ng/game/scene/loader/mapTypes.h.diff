@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/loader/mapTypes.h b/src/dev_ng/game/scene/loader/mapTypes.h
+--- a/src/dev_ng/game/scene/loader/mapTypes.h
++++ b/src/dev_ng/game/scene/loader/mapTypes.h
+@@ -13,7 +13,7 @@
+ #include "atl/array.h"
+ #include "string/stringhash.h"
+ 
+-#include "scene/loader/mapdata.h"
++#include "scene/loader/MapData.h"
+ #include "fwscene/mapdata/maptypes.h"
+ #include "fwscene/mapdata/maptypescontents.h"
+ #include "fwscene/mapdata/mapdata.h"

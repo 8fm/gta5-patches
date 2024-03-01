@@ -1,0 +1,74 @@
+diff --git a/src/dev_ng/game/Core/app.cpp b/src/dev_ng/game/Core/app.cpp
+--- a/src/dev_ng/game/Core/app.cpp
++++ b/src/dev_ng/game/Core/app.cpp
+@@ -16,7 +16,7 @@
+ #include "rline/rlnptrophy.h"
+ #include "rline/scmatchmaking/rlscmatchmanager.h"
+ #include "system/controlMgr.h"
+-#include "system/fileMgr.h"
++#include "system/FileMgr.h"
+ #include "system/StreamingInstall.winrt.h"
+ #include "system/param.h"
+ #include "system/system.h"
+@@ -39,10 +39,10 @@
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/gamelogic.h"
+-#include "Control/replay/Replay.h"
+-#include "core/dongle.h"
++#include "control/replay/replay.h"
++#include "Core/dongle.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "frontend/GameStreamMgr.h"
+ #include "frontend/landing_page/LandingPageArbiter.h"
+ #include "frontend/loadingscreens.h"
+@@ -52,18 +52,18 @@
+ #include "game/Clock.h"
+ #include "ik/IkManager.h"
+ #include "modelinfo/mlomodelinfo.h"
+-#include "network/live/livemanager.h"
+-#include "network/events/NetworkEventTypes.h"
++#include "network/Live/livemanager.h"
++#include "network/Events/NetworkEventTypes.h"
+ #include "network/Objects/NetworkObjectPopulationMgr.h"
+ #include "network/Sessions/NetworkSession.h"
+ #include "tools/SectorTools.h"
+ #include "tools/TracingStats.h"
+-#include "objects/DummyObject.h"
+-#include "pathserver/navgenparam.h"
++#include "Objects/DummyObject.h"
++#include "pathserver/NavGenParam.h"
+ #include "profile/cputrace.h"
+-#include "renderer/renderThread.h"
++#include "renderer/RenderThread.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ #include "replaycoordinator/ReplayCoordinator.h"
+ #include "saveload/savegame_autoload.h"
+ #include "saveload/GenericGameStorage.h"
+@@ -77,9 +77,9 @@
+ #include "system/param.h"
+ #include "system/taskscheduler.h"
+ #include "system/telemetry.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "security/ragesecengine.h"
+-#include "Weapons/Projectiles/Projectile.h"
++#include "weapons/projectiles/Projectile.h"
+ #if  __PPU
+ #include "sn/libsn.h"
+ #include <stdlib.h> // for malloc_stats
+@@ -115,8 +115,8 @@
+ #include <Psapi.h>
+ #endif // RSG_LAUNCHER_CHECK
+ 
+-#include "Control/replay/ReplaySettings.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
++#include "control/replay/ReplaySettings.h"
++#include "network/Objects/NetworkObjectMgr.h"
+ 
+ #if !__FINAL
+ PARAM(trackerreport, "[GAME] Filename for the initial memory track");

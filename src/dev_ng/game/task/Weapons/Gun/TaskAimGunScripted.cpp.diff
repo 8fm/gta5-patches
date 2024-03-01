@@ -1,0 +1,58 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunScripted.cpp b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunScripted.cpp
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunScripted.cpp
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunScripted.cpp
+@@ -5,34 +5,34 @@
+ //
+ 
+ // File header
+-#include "Task/Weapons/Gun/TaskAimGunScripted.h"
++#include "task/Weapons/Gun/TaskAimGunScripted.h"
+ 
+ // Rage Headers
+ #include "fwanimation/clipsets.h"
+ 
+ // Game Headers
+ #include "animation/MovePed.h"
+-#include "Camera/CamInterface.h"
+-#include "Camera/Base/BaseCamera.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
+-#include "Debug/DebugScene.h"
++#include "camera/CamInterface.h"
++#include "camera/Base/BaseCamera.h"
++#include "camera/Gameplay/GameplayDirector.h"
++#include "debug/DebugScene.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedWeapons/PlayerPedTargeting.h"
+-#include "ModelInfo/WeaponModelInfo.h"
+-#include "Scene/Playerswitch/PlayerSwitchInterface.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/Gun/TaskReloadGun.h"
+-#include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"
+-#include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.h"
+-#include "Task/Weapons/TaskWeaponBlocked.h"
+-#include "Task/Weapons/TaskSwapWeapon.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
+-#include "Weapons/Weapon.h"
++#include "modelinfo/WeaponModelInfo.h"
++#include "scene/Playerswitch/PlayerSwitchInterface.h"
++#include "scene/world/GameWorld.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/Gun/TaskReloadGun.h"
++#include "task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"
++#include "task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.h"
++#include "task/Weapons/TaskWeaponBlocked.h"
++#include "task/Weapons/TaskSwapWeapon.h"
++#include "task/Weapons/WeaponController.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
++#include "weapons/Weapon.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ // Macro to disable optimisations if set

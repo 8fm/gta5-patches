@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxBlood.h b/src/dev_ng/game/vfx/systems/VfxBlood.h
+--- a/src/dev_ng/game/vfx/systems/VfxBlood.h
++++ b/src/dev_ng/game/vfx/systems/VfxBlood.h
+@@ -20,10 +20,10 @@
+ #include "script/thread.h"
+ 
+ // game
+-#include "Control/Replay/ReplaySettings.h"
+-#include "Debug/Debug.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Weapons/WeaponEnums.h"
++#include "control/replay/ReplaySettings.h"
++#include "debug/Debug.h"
++#include "physics/gtaMaterialManager.h"
++#include "weapons/WeaponEnums.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

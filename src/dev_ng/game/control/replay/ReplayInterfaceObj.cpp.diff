@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceObj.cpp b/src/dev_ng/game/control/replay/ReplayInterfaceObj.cpp
+--- a/src/dev_ng/game/control/replay/ReplayInterfaceObj.cpp
++++ b/src/dev_ng/game/control/replay/ReplayInterfaceObj.cpp
+@@ -4,25 +4,25 @@
+ 
+ #include "replay.h"
+ #include "ReplayInterfaceImpl.h"
+-#include "Streaming/streaming.h"
++#include "streaming/streaming.h"
+ #include "scene/world/GameWorld.h"
+ 
+ #include "animation/MoveObject.h"
+ #include "control/trafficlights.h"
+-#include "Control/Replay/Entity/FragmentPacket.h"
+-#include "control/replay/effects/ParticleMiscFxPacket.h"
++#include "control/replay/Entity/FragmentPacket.h"
++#include "control/replay/Effects/ParticleMiscFxPacket.h"
+ #include "fwscene/stores/maptypesstore.h"
+-#include "objects/Door.h"
+-#include "objects/DummyObject.h"
+-#include "objects/Object.h"
+-#include "objects/ObjectIntelligence.h"
+-#include "objects/ProcObjects.h"
+-#include "peds/ped.h"
+-#include "scene/animatedbuilding.h"
+-#include "Task/system/TaskTypes.h"
++#include "Objects/Door.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
++#include "Objects/ObjectIntelligence.h"
++#include "Objects/ProcObjects.h"
++#include "Peds/ped.h"
++#include "scene/AnimatedBuilding.h"
++#include "task/System/TaskTypes.h"
+ #include "weapons/WeaponFactory.h"
+-#include "Weapons/components/WeaponComponentFactory.h"
+-#include "Weapons/components/WeaponComponentManager.h"
++#include "weapons/components/WeaponComponentFactory.h"
++#include "weapons/components/WeaponComponentManager.h"
+ #include "vfx/misc/LODLightManager.h"
+ 
+ const char*	CReplayInterfaceTraits<CObject>::strShort = "OBJ";

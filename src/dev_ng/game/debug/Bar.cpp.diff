@@ -1,11 +1,53 @@
 diff --git a/src/dev_ng/game/debug/Bar.cpp b/src/dev_ng/game/debug/Bar.cpp
 --- a/src/dev_ng/game/debug/Bar.cpp
 +++ b/src/dev_ng/game/debug/Bar.cpp
-@@ -45,7 +45,7 @@
- #include "Network/Network.h"
- #include "Network/Bandwidth/NetworkBandwidthManager.h"
- #include "Network/Objects/NetworkObjectPopulationMgr.h"
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2014 Rockstar North.  All Rights Reserved. 
+ //
+ 
+-#include "debug/bar.h"
++#include "debug/Bar.h"
+ 
+ #if FINAL_DISPLAY_BAR
+ 
+@@ -23,29 +23,29 @@
+ //framework
+ #include "fwnet/netremotelog.h"
+ // game
+-#include "debug/blockview.h"
++#include "debug/BlockView.h"
+ #include "debug/LightProbe.h"
+ #include "debug/SceneGeometryCapture.h"
+ #include "control/gamelogic.h"
+-#include "cutscene/cutscenemanagernew.h"
+-#include "game/clock.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "game/Clock.h"
+ #include "game/weather.h"
+ #include "game/zones.h"
+-#include "frontend/hudtools.h"
++#include "frontend/HudTools.h"
+ #include "frontend/loadingscreens.h"
+ #include "script/script.h"
+ #include "streaming/streaming.h"
+ #include "streaming/streamingengine.h"
+ #include "streaming/streamingrequestlist.h"
+-#include "system/controlmgr.h"
+-#include "system/settingsmanager.h"
++#include "system/controlMgr.h"
++#include "system/SettingsManager.h"
+ #include "system/ThreadPriorities.h"
+-#include "text/textconversion.h"
+-#include "vehicles/vehiclepopulation.h"
+-#include "Network/Network.h"
+-#include "Network/Bandwidth/NetworkBandwidthManager.h"
+-#include "Network/Objects/NetworkObjectPopulationMgr.h"
 -#include "modelinfo\PedModelInfo.h"
++#include "text/TextConversion.h"
++#include "Vehicles/vehiclepopulation.h"
++#include "network/Network.h"
++#include "network/Bandwidth/NetworkBandwidthManager.h"
++#include "network/Objects/NetworkObjectPopulationMgr.h"
 +#include "modelinfo/PedModelInfo.h"
  #include "streaming/populationstreaming.h"
  

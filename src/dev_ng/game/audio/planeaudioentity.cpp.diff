@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/audio/planeaudioentity.cpp b/src/dev_ng/game/audio/planeaudioentity.cpp
+--- a/src/dev_ng/game/audio/planeaudioentity.cpp
++++ b/src/dev_ng/game/audio/planeaudioentity.cpp
+@@ -10,10 +10,10 @@
+ #include "audiohardware/submix.h"
+ #include "audioeffecttypes/waveshapereffect.h"
+ 
+-#include "Camera/CamInterface.h"
+-#include "Camera/Cinematic/CinematicDirector.h"
++#include "camera/CamInterface.h"
++#include "camera/Cinematic/CinematicDirector.h"
+ 
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ 
+ #include "planeaudioentity.h"
+ #include "scriptaudioentity.h"

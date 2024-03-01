@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/CombatManager.h b/src/dev_ng/game/task/Combat/CombatManager.h
+--- a/src/dev_ng/game/task/Combat/CombatManager.h
++++ b/src/dev_ng/game/task/Combat/CombatManager.h
+@@ -8,9 +8,9 @@
+ #include "atl/array.h"
+ 
+ // game includes
+-#include "Peds/Ped.h"
+-#include "Scene/Entity.h"
+-#include "Scene/RegdRefTypes.h"
++#include "Peds/ped.h"
++#include "scene/Entity.h"
++#include "scene/RegdRefTypes.h"
+ #include "vectormath/vec3v.h"
+ #include "vectormath/scalarv.h"
+ 

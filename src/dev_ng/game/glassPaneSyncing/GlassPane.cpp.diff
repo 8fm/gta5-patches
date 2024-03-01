@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/glassPaneSyncing/GlassPane.cpp b/src/dev_ng/game/glassPaneSyncing/GlassPane.cpp
+--- a/src/dev_ng/game/glassPaneSyncing/GlassPane.cpp
++++ b/src/dev_ng/game/glassPaneSyncing/GlassPane.cpp
+@@ -1,4 +1,4 @@
+-#include "objects/object.h"
++#include "Objects/object.h"
+ #include "glassPaneSyncing/GlassPaneInfo.h"
+ #include "glassPaneSyncing/GlassPane.h"
+ #include "glassPaneSyncing/GlassPaneManager.h"

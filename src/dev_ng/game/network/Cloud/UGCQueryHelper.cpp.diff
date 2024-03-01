@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Cloud/UGCQueryHelper.cpp b/src/dev_ng/game/network/Cloud/UGCQueryHelper.cpp
+--- a/src/dev_ng/game/network/Cloud/UGCQueryHelper.cpp
++++ b/src/dev_ng/game/network/Cloud/UGCQueryHelper.cpp
+@@ -3,7 +3,7 @@
+ //===========================================================================
+ 
+ // game includes
+-#include "Network/Cloud/UGCQueryHelper.h"
++#include "network/Cloud/UGCQueryHelper.h"
+ 
+ NETWORK_OPTIMISATIONS();
+ 

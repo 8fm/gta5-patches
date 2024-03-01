@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.h b/src/dev_ng/game/task/Vehicle/TaskCarAccessories.h
+--- a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.h
++++ b/src/dev_ng/game/task/Vehicle/TaskCarAccessories.h
+@@ -2,14 +2,14 @@
+ #define TASK_CAR_ANIMS_H
+ 
+ //Game headers.
+-#include "Control/Route.h"
+-#include "Game/ModelIndices.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/Vehicle/TaskGoToVehicleDoor.h"
++#include "control/Route.h"
++#include "game/ModelIndices.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/Vehicle/TaskGoToVehicleDoor.h"
+ 
+ class CPed;
+ class CVehicle;

@@ -3,11 +3,11 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Cover.cpp b/src/dev_ng/game/p
 +++ b/src/dev_ng/game/pathserver/PathServer_Cover.cpp
 @@ -1,7 +1,7 @@
 -#include "PathServer\PathServer.h"
-+#include "PathServer/PathServer.h"
++#include "pathserver/PathServer.h"
  
  #ifdef GTA_ENGINE
 -#include "task\Combat\Cover\Cover.h"
-+#include "task/Combat/Cover/Cover.h"
++#include "task/Combat/Cover/cover.h"
  #include "scene/world/GameWorld.h"
  #include "fwsys/timer.h"
  

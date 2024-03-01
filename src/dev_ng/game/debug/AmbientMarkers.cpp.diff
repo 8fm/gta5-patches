@@ -9,8 +9,8 @@ diff --git a/src/dev_ng/game/debug/AmbientMarkers.cpp b/src/dev_ng/game/debug/Am
 -#include "debug\debug.h"
 -#include "system\filemgr.h"
 +#include "debug/AmbientMarkers.h"
-+#include "debug/debug.h"
-+#include "system/filemgr.h"
++#include "debug/Debug.h"
++#include "system/FileMgr.h"
  
  static atArray<const char*> s_MarkerNames;
  static s32 s_MarkerSelected;

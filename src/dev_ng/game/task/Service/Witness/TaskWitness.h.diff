@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Service/Witness/TaskWitness.h b/src/dev_ng/game/task/Service/Witness/TaskWitness.h
+--- a/src/dev_ng/game/task/Service/Witness/TaskWitness.h
++++ b/src/dev_ng/game/task/Service/Witness/TaskWitness.h
+@@ -1,8 +1,8 @@
+ #ifndef TASK_SERVICE_WITNESS_TASKWITNESS_H
+ #define TASK_SERVICE_WITNESS_TASKWITNESS_H
+ 
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ class CTaskWitness : public CTask
+ {

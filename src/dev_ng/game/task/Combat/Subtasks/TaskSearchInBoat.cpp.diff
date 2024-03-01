@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInBoat.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInBoat.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInBoat.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskSearchInBoat.cpp
+@@ -2,10 +2,10 @@
+ // PURPOSE : Subtask of search used while in a boat
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskSearchInBoat.h"
++#include "task/Combat/Subtasks/TaskSearchInBoat.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "task/Combat/Subtasks/TaskSearchInAutomobile.h"
+ 
+ AI_OPTIMISATIONS()

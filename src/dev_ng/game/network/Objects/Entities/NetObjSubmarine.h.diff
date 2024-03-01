@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjSubmarine.h b/src/dev_ng/game/network/Objects/Entities/NetObjSubmarine.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjSubmarine.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjSubmarine.h
+@@ -8,8 +8,8 @@
+ #ifndef NETOBJSUBMARINE_H
+ #define NETOBJSUBMARINE_H
+ 
+-#include "network/objects/entities/NetObjVehicle.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+ 
+ class CNetObjSubmarine : public CNetObjVehicle, public ISubmarineNodeDataAccessor
+ {

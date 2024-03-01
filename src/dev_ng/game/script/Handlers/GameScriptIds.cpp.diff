@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptIds.cpp b/src/dev_ng/game/script/Handlers/GameScriptIds.cpp
+--- a/src/dev_ng/game/script/Handlers/GameScriptIds.cpp
++++ b/src/dev_ng/game/script/Handlers/GameScriptIds.cpp
+@@ -3,12 +3,12 @@
+ // description:	Project specific script ids
+ // written by:	John Gurney
+ //
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptIds.h"
+ 
+ #include "fwnet/netlog.h"
+ 
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "Objects/object.h"
+ #include "fwscene/world/WorldLimits.h"
+ #include "script/script.h"

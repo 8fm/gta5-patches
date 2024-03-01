@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponAnimationsManager.cpp b/src/dev_ng/game/weapons/info/WeaponAnimationsManager.cpp
+--- a/src/dev_ng/game/weapons/info/WeaponAnimationsManager.cpp
++++ b/src/dev_ng/game/weapons/info/WeaponAnimationsManager.cpp
+@@ -1,20 +1,20 @@
+ // File header
+-#include "Weapons/Info/WeaponAnimationsManager.h"
++#include "weapons/info/WeaponAnimationsManager.h"
+ 
+ // Rage headers
+ #include "fwanimation/clipsets.h"
+ #include "parser/manager.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "ModelInfo/PedModelInfo.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Weapons/Components/WeaponComponentManager.h"
++#include "modelinfo/PedModelInfo.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "weapons/components/WeaponComponentManager.h"
+ 
+ // Parser files
+-#include "Weapons/Info/WeaponAnimationsManager_parser.h"
+-#include "Weapons/WeaponDebug.h"
++#include "weapons/info/WeaponAnimationsManager_parser.h"
++#include "weapons/WeaponDebug.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

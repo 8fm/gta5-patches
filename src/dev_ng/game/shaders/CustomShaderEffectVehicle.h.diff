@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectVehicle.h b/src/dev_ng/game/shaders/CustomShaderEffectVehicle.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectVehicle.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectVehicle.h
+@@ -14,8 +14,8 @@
+ #include "grcore/effect.h"
+ 
+ #include "CustomShaderEffectBase.h"
+-#include "vehicles/VehicleDefines.h"
+-#include "vehicles/vehicleLightSwitch.h"
++#include "Vehicles/VehicleDefines.h"
++#include "Vehicles/vehicleLightSwitch.h"
+ #include "vfx/vehicleglass/VehicleGlass.h"
+ #include "vfx/vfx_shared.h"
+ #if __ASSERT

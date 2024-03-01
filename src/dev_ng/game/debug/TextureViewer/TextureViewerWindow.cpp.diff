@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerWindow.cpp b/src/dev_ng/game/debug/TextureViewer/TextureViewerWindow.cpp
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerWindow.cpp
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerWindow.cpp
+@@ -15,10 +15,10 @@
+ 
+ #include "fwutil/xmacro.h"
+ 
+-#include "system/controlmgr.h" // oops .. game dependency
++#include "system/controlMgr.h" // oops .. game dependency
+ #include "renderer/color.h"
+ 
+-#include "debug/textureviewer/textureviewerwindow.h"
++#include "debug/TextureViewer/TextureViewerwindow.h"
+ 
+ //DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()
+ RENDER_OPTIMISATIONS()

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfoLights.cpp b/src/dev_ng/game/modelinfo/VehicleModelInfoLights.cpp
+--- a/src/dev_ng/game/modelinfo/VehicleModelInfoLights.cpp
++++ b/src/dev_ng/game/modelinfo/VehicleModelInfoLights.cpp
+@@ -10,7 +10,7 @@
+ #include "bank/bank.h"
+ #include "fwmaths/angle.h"
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "TimeCycle/TimeCycle.h"
++#include "timecycle/TimeCycle.h"
+ 
+ #include "data/aes_init.h"
+ AES_INIT_7;

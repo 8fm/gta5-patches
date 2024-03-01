@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/html/HtmlDocument.cpp b/src/dev_ng/game/frontend/html/HtmlDocument.cpp
+--- a/src/dev_ng/game/frontend/html/HtmlDocument.cpp
++++ b/src/dev_ng/game/frontend/html/HtmlDocument.cpp
+@@ -29,8 +29,8 @@
+ #include "HtmlTextFormat.h"
+ #include "HtmlViewport.h"
+ #include "camera/viewports/Viewport.h"
+-#include "debug/debug.h"
+-#include "Text/TextFormat.h"
++#include "debug/Debug.h"
++#include "text/TextFormat.h"
+ #include "renderer/RenderThread.h"
+ #include "scene/stores/txdstore.h"
+ #endif

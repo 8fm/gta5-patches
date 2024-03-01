@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxTrail.cpp b/src/dev_ng/game/vfx/systems/VfxTrail.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxTrail.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxTrail.cpp
+@@ -26,19 +26,19 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "Camera/Gameplay/Aim/FirstPersonShooterCamera.h"
++#include "camera/CamInterface.h"
++#include "camera/Gameplay/Aim/FirstPersonShooterCamera.h"
+ #include "Core/Game.h"
+-#include "Scene/DynamicEntity.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Metadata/VfxVehicleInfo.h"
+-#include "Vfx/Particles/PtFxDefines.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/Systems/VfxMaterial.h"
+-#include "Vfx/Systems/VfxPed.h"
+-#include "Vfx/Systems/VfxVehicle.h"
+-#include "Vfx/VfxHelper.h"
++#include "scene/DynamicEntity.h"
++#include "scene/world/GameWorld.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/metadata/VfxVehicleInfo.h"
++#include "vfx/Particles/PtFxDefines.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/systems/VfxMaterial.h"
++#include "vfx/systems/VfxPed.h"
++#include "vfx/systems/VfxVehicle.h"
++#include "vfx/VfxHelper.h"
+ 
+ // includes (debug)
+ #if 0

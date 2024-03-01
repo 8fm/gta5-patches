@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/Gen9ExclusiveAssets.cpp b/src/dev_ng/game/control/Gen9ExclusiveAssets.cpp
+--- a/src/dev_ng/game/control/Gen9ExclusiveAssets.cpp
++++ b/src/dev_ng/game/control/Gen9ExclusiveAssets.cpp
+@@ -9,7 +9,7 @@
+ 
+ // Game headers
+ #include "modelinfo/VehicleModelInfoMods.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/rendering/PedVariationPack.h"
+ 
+ 

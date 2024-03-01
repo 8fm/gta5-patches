@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/onsctime.cpp b/src/dev_ng/game/control/onsctime.cpp
+--- a/src/dev_ng/game/control/onsctime.cpp
++++ b/src/dev_ng/game/control/onsctime.cpp
+@@ -13,8 +13,8 @@
+ 
+ #include "control/onsctime.h"
+ #include "control/replay/replay.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "debug/debug.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "debug/Debug.h"
+ #include "frontend/hud_colour.h"
+ #include "script/script.h"
+ #include "system/timer.h"

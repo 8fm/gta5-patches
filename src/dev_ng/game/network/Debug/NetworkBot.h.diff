@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/Debug/NetworkBot.h b/src/dev_ng/game/network/Debug/NetworkBot.h
+--- a/src/dev_ng/game/network/Debug/NetworkBot.h
++++ b/src/dev_ng/game/network/Debug/NetworkBot.h
+@@ -9,13 +9,13 @@
+ #define NETWORK_BOT_H
+ 
+ #include "fwnet/netbot.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "net/status.h"
+ #include "rline/rl.h"
+ #include "rline/rlgamerinfo.h"
+ #include "scene/RegdRefTypes.h"
+ 
+-#include "Network/Players/NetGamePlayer.h"
++#include "network/Players/NetGamePlayer.h"
+ 
+ #if ENABLE_NETWORK_BOTS
+ 

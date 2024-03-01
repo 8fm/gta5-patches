@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.cpp
+@@ -6,14 +6,14 @@
+ 
+ #include "ai/ambient/AmbientModelSetManager.h"
+ #include "ai/BlockingBounds.h"
+-#include "Task/Default/AmbientAnimationManager.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskMoveWander.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Scenario/info/ScenarioInfo.h"
+-#include "Task/Scenario/info/ScenarioInfoManager.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "task/Default/AmbientAnimationManager.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskMoveWander.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ 
+ AI_OPTIMISATIONS()
+ 

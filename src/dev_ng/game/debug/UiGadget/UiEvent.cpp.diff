@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/UiGadget/UiEvent.cpp b/src/dev_ng/game/debug/UiGadget/UiEvent.cpp
+--- a/src/dev_ng/game/debug/UiGadget/UiEvent.cpp
++++ b/src/dev_ng/game/debug/UiGadget/UiEvent.cpp
+@@ -12,7 +12,7 @@
+ #if __BANK
+ #include "input/mouse.h"
+ #include "debug/UiGadget/UiGadgetBase.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ 
+ CUiEventMgr g_UiEventMgr;
+ 

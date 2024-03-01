@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedProps.h b/src/dev_ng/game/Peds/rendering/PedProps.h
+--- a/src/dev_ng/game/Peds/rendering/PedProps.h
++++ b/src/dev_ng/game/Peds/rendering/PedProps.h
+@@ -9,9 +9,9 @@
+ #include "atl/array.h"
+ 
+ #include "parser/macros.h"
+-#include "renderer/renderer.h"
++#include "renderer/Renderer.h"
+ #include "streaming/streamingrequest.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "vector/quaternion.h"
+ 
+ #include "fwdrawlist/drawlistmgr.h"

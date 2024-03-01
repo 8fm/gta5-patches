@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/System/TaskClassInfo.h b/src/dev_ng/game/task/System/TaskClassInfo.h
+--- a/src/dev_ng/game/task/System/TaskClassInfo.h
++++ b/src/dev_ng/game/task/System/TaskClassInfo.h
+@@ -5,7 +5,7 @@
+ #include "atl/singleton.h"
+ 
+ // Game headers
+-#include "Task/System/TaskTypes.h"
++#include "task/System/TaskTypes.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

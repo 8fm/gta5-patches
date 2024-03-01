@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/entities/compEntity.h b/src/dev_ng/game/scene/entities/compEntity.h
+--- a/src/dev_ng/game/scene/entities/compEntity.h
++++ b/src/dev_ng/game/scene/entities/compEntity.h
+@@ -7,7 +7,7 @@
+ 
+ #include "crclip/clip.h"
+ #include "fwanimation/animdirector.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "scene/Entity.h"
+ #include "scene/RegdRefTypes.h"
+ #include "streaming/streamingrequest.h"

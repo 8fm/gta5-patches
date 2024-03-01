@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayTrackingControllerImpl.h b/src/dev_ng/game/control/replay/ReplayTrackingControllerImpl.h
+--- a/src/dev_ng/game/control/replay/ReplayTrackingControllerImpl.h
++++ b/src/dev_ng/game/control/replay/ReplayTrackingControllerImpl.h
+@@ -4,7 +4,7 @@
+ #include "ReplayTrackingController.h"
+ 
+ #include "rmptfx/ptxeffectinst.h"
+-#include "audio/DynamicMixerPacket.h"
++#include "Audio/DynamicMixerPacket.h"
+ #include "audio/dynamicmixer.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

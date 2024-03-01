@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/physics/gtaMaterialManager.h b/src/dev_ng/game/physics/gtaMaterialManager.h
+--- a/src/dev_ng/game/physics/gtaMaterialManager.h
++++ b/src/dev_ng/game/physics/gtaMaterialManager.h
+@@ -17,17 +17,17 @@
+ 
+ // rage
+ #include "parser/macros.h"
+-#include "phCore/materialmgr.h"
++#include "phcore/materialmgr.h"
+ 
+ // game
+-#include "GtaMaterial.h"
++#include "gtaMaterial.h"
+ 
+ #if !__SPU
+ 
+ 	// rage
+ 
+ 	// game
+-#	include "GtaMaterialDebug.h"
++#	include "gtaMaterialDebug.h"
+ 
+ #endif
+ 

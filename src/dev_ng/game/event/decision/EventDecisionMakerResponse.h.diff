@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/event/decision/EventDecisionMakerResponse.h b/src/dev_ng/game/event/decision/EventDecisionMakerResponse.h
+--- a/src/dev_ng/game/event/decision/EventDecisionMakerResponse.h
++++ b/src/dev_ng/game/event/decision/EventDecisionMakerResponse.h
+@@ -3,13 +3,13 @@
+ 
+ // Rage headers
+ #include "atl/array.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vector/vector3.h"
+ 
+ // Game headers
+-#include "Event/Event.h"
+-#include "Event/System/EventData.h"
+-#include "Event/decision/EventResponseDecisionFlags.h"
++#include "event/Event.h"
++#include "event/system/EventData.h"
++#include "event/decision/EventResponseDecisionFlags.h"
+ 
+ // Forward declarations
+ class CEventEditableResponse;

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/remote.h b/src/dev_ng/game/control/remote.h
+--- a/src/dev_ng/game/control/remote.h
++++ b/src/dev_ng/game/control/remote.h
+@@ -12,8 +12,8 @@
+ 	#define _REMOTE_H_
+ 
+ #include "game/modelIndices.h"
+-#include "vehicles/automobile.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/vehicle.h"
+ 
+ 
+ /////////////////////////////////////////////////////////////////////////////////

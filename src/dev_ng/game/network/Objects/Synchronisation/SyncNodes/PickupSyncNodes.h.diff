@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PickupSyncNodes.h
+@@ -7,8 +7,8 @@
+ #ifndef PICKUP_SYNC_NODES_H
+ #define PICKUP_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/PedSyncNodes.h"
+-#include "network/objects/synchronisation/SyncNodes/PhysicalSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PedSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h"
+ 
+ #include "pickups/Data/PickupIds.h"
+ 

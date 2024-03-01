@@ -1,0 +1,53 @@
+diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/Core/gamesessionstatemachine.cpp
+--- a/src/dev_ng/game/Core/gamesessionstatemachine.cpp
++++ b/src/dev_ng/game/Core/gamesessionstatemachine.cpp
+@@ -3,7 +3,7 @@
+ // description:	Class controlling all the game code
+ //
+ 
+-#include "core/gamesessionstatemachine.h"
++#include "Core/gamesessionstatemachine.h"
+ 
+ // rage headers
+ #include "bank/msgbox.h"
+@@ -21,8 +21,8 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/gamelogic.h"
+ #include "control/ScriptRouterLink.h"
+-#include "core/game.h"
+-#include "core/core_channel.h"
++#include "Core/game.h"
++#include "Core/core_channel.h"
+ #include "frontend/CSettingsMenu.h"
+ #include "frontend/DisplayCalibration.h"
+ #include "frontend/GameStreamMgr.h"
+@@ -32,9 +32,9 @@
+ #include "frontend/WarningScreen.h"
+ #include "frontend/ProfileSettings.h"
+ #include "frontend/Scaleform/ScaleFormStore.h"
+-#include "game/modelindices.h"
++#include "game/ModelIndices.h"
+ #include "network/Live/livemanager.h"
+-#include "network/network.h"
++#include "network/Network.h"
+ #include "network/NetworkInterface.h"
+ #include "rline/rlsystemui.h"
+ #include "saveload/genericgamestorage.h"
+@@ -44,7 +44,7 @@
+ #include "saveload/savegame_load.h"
+ #include "security/yubikey/yubikeymanager.h"
+ #include "streaming/streamingvisualize.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ #include "system/EndUserBenchmark.h"
+ #include "system/EntitlementManager.h"
+ #include "system/param.h"
+@@ -79,7 +79,7 @@ PARAM(skipLandingPage, "Skip over the Landing Page");
+ #endif
+ 
+ #if RSG_PC
+-#include "core/app.h"
++#include "Core/app.h"
+ #endif // RSG_PC
+ 
+ #if __WIN32PC

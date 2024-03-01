@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/scene/texLod.cpp b/src/dev_ng/game/scene/texLod.cpp
+--- a/src/dev_ng/game/scene/texLod.cpp
++++ b/src/dev_ng/game/scene/texLod.cpp
+@@ -53,11 +53,11 @@
+ // Game headers:
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "peds/Ped.h"
+-#include "peds/PlayerPed.h"
+-#include "peds/rendering/pedvariationdebug.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerPed.h"
++#include "Peds/rendering/pedvariationdebug.h"
+ #include "renderer/Renderer.h"
+ #include "scene/Entity.h"
+ #include "scene/lod/LodScale.h"
+@@ -75,9 +75,9 @@
+ #include "debug/TextureViewer/TextureViewer.h"
+ #include "debug/TextureViewer/TextureViewerSearch.h" // for CTxdRef, GetAssociatedTxds_ModelInfo
+ #include "debug/GtaPicker.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/trailer.h"
+-#include "Network/NetworkInterface.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Trailer.h"
++#include "network/NetworkInterface.h"
+ #include "scene/FocusEntity.h"
+ 
+ #if __BANK

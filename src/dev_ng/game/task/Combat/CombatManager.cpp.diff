@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/task/Combat/CombatManager.cpp b/src/dev_ng/game/task/Combat/CombatManager.cpp
+--- a/src/dev_ng/game/task/Combat/CombatManager.cpp
++++ b/src/dev_ng/game/task/Combat/CombatManager.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Combat/CombatManager.h"
++#include "task/Combat/CombatManager.h"
+ 
+ // Rage headers
+ #include "bank/bank.h"
+@@ -7,16 +7,16 @@
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "Debug/DebugScene.h"
+-#include "Game/Dispatch/Incidents.h"
+-#include "Game/Dispatch/Orders.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "game/Dispatch/Incidents.h"
++#include "game/Dispatch/Orders.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/Combat/TaskCombatMounted.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Combat/TaskThreatResponse.h"
++#include "scene/world/GameWorld.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Combat/TaskCombatMounted.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Combat/TaskThreatResponse.h"
+ 
+ AI_OPTIMISATIONS()
+ 

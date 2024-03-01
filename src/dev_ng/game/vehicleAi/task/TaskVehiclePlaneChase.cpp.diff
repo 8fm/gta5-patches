@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePlaneChase.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehiclePlaneChase.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePlaneChase.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePlaneChase.cpp
+@@ -9,12 +9,12 @@
+ // Game headers
+ #include "grcore/debugdraw.h"
+ #include "math/angmath.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleGoToPlane.h"
+-#include "Vehicles/planes.h"
++#include "Vehicles/Planes.h"
+ #include "Vehicles/vehicle.h"
+ 
+ 

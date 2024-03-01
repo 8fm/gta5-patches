@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/DebugDrawStore.cpp b/src/dev_ng/game/debug/DebugDrawStore.cpp
+--- a/src/dev_ng/game/debug/DebugDrawStore.cpp
++++ b/src/dev_ng/game/debug/DebugDrawStore.cpp
+@@ -1,6 +1,6 @@
+ // File header
+-#include "Debug/DebugDrawStore.h"
+-#include "Debug/VectorMap.h"
++#include "debug/DebugDrawStore.h"
++#include "debug/VectorMap.h"
+ 
+ #include "ai/aichannel.h"
+ #include "vector/colors.h"

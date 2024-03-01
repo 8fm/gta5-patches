@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/scene/lod/AttributeDebug.cpp b/src/dev_ng/game/scene/lod/AttributeDebug.cpp
+--- a/src/dev_ng/game/scene/lod/AttributeDebug.cpp
++++ b/src/dev_ng/game/scene/lod/AttributeDebug.cpp
+@@ -7,9 +7,9 @@
+ #include "atl/string.h"
+ #include "bank/bank.h"
+ #include "bank/bkmgr.h"
+-#include "objects/object.h"
+-#include "objects/DummyObject.h"
+-#include "scene/building.h"
++#include "Objects/object.h"
++#include "Objects/DummyObject.h"
++#include "scene/Building.h"
+ #include "scene/AnimatedBuilding.h"
+ #include "scene/lod/LodDebug.h"
+ #include "debug/Editing/MapEditRESTInterface.h"

@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Response/TaskSidestep.cpp b/src/dev_ng/game/task/Response/TaskSidestep.cpp
+--- a/src/dev_ng/game/task/Response/TaskSidestep.cpp
++++ b/src/dev_ng/game/task/Response/TaskSidestep.cpp
+@@ -8,10 +8,10 @@
+ #include "math/angmath.h"
+ 
+ // game headers
+-#include "Animation/AnimDefines.h"
+-#include "Event/Events.h"
++#include "animation/AnimDefines.h"
++#include "event/Events.h"
+ #include "Peds/ped.h"
+-#include "Task/Response/TaskSidestep.h"
++#include "task/Response/TaskSidestep.h"
+ 
+ 
+ AI_OPTIMISATIONS()

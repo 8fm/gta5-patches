@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/dynamicmixer.cpp b/src/dev_ng/game/audio/dynamicmixer.cpp
+--- a/src/dev_ng/game/audio/dynamicmixer.cpp
++++ b/src/dev_ng/game/audio/dynamicmixer.cpp
+@@ -24,7 +24,7 @@
+ #include "script/wrapper.h"
+ #include "system/param.h"
+ #include "system/timemgr.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ #include "debugaudio.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/radioaudioentity.h b/src/dev_ng/game/audio/radioaudioentity.h
+--- a/src/dev_ng/game/audio/radioaudioentity.h
++++ b/src/dev_ng/game/audio/radioaudioentity.h
+@@ -27,7 +27,7 @@
+ #include "audioentity.h"
+ 
+ #include "bank/bkmgr.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "system/param.h"
+ 
+ #if GTA_REPLAY

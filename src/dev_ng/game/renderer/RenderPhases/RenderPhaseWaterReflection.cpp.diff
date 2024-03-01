@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWaterReflection.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWaterReflection.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWaterReflection.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWaterReflection.cpp
+@@ -25,7 +25,7 @@
+ #include "fwdebug/picker.h"
+ #include "fwdrawlist/drawlistmgr.h"
+ #include "fwmaths/PortalCorners.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ #include "fwmaths/vectorutil.h"
+ #include "fwrenderer/renderlistgroup.h"
+ #include "fwscene/scan/RenderPhaseCullShape.h"
+@@ -38,11 +38,11 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/TiledScreenCapture.h"
+-#include "game/clock.h"
+-#include "peds/Ped.h"
++#include "game/Clock.h"
++#include "Peds/ped.h"
+ #include "profile/profiler.h"
+ #include "renderer/Debug/Raster.h"
+-#include "renderer/DrawLists/drawlistMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/Entities/EntityDrawHandler.h"
+ #include "renderer/HorizonObjects.h"
+ #include "renderer/Lights/lights.h"
+@@ -67,10 +67,10 @@
+ #include "scene/world/GameWorldWaterHeight.h"
+ #include "system/controlMgr.h"
+ #include "timecycle/TimeCycle.h"
+-#include "Vfx/Sky/Sky.h"
+-#include "Vfx/GPUParticles/PtFxGPUManager.h"
++#include "vfx/Sky/Sky.h"
++#include "vfx/gpuparticles/PtFxGPUManager.h"
+ #include "vfx/VfxHelper.h"
+-#include "Vfx/VisualEffects.h"
++#include "vfx/VisualEffects.h"
+ 
+ /*
+ TODO --

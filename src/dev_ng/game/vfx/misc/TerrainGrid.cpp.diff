@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/TerrainGrid.cpp b/src/dev_ng/game/vfx/misc/TerrainGrid.cpp
+--- a/src/dev_ng/game/vfx/misc/TerrainGrid.cpp
++++ b/src/dev_ng/game/vfx/misc/TerrainGrid.cpp
+@@ -11,7 +11,7 @@
+ #include "renderer/rendertargets.h"
+ #include "renderer/Util/ShaderUtil.h"
+ #include "camera/CamInterface.h"
+-#include "shaders/shaderlib.h"
++#include "shaders/ShaderLib.h"
+ #include "physics/WorldProbe/shapetestmgr.h"
+ #include "physics/WorldProbe/WorldProbe.h"
+ 

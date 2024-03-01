@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/DistantLights2.h b/src/dev_ng/game/vfx/misc/DistantLights2.h
+--- a/src/dev_ng/game/vfx/misc/DistantLights2.h
++++ b/src/dev_ng/game/vfx/misc/DistantLights2.h
+@@ -37,7 +37,7 @@
+ #include "fwmaths/Random.h"
+ 
+ // Game headers
+-#include "VehicleAI/PathFind.h"
++#include "vehicleAi/pathfind.h"
+ #include "vfx/VisualEffects.h"
+ #include "vfx/vfx_shared.h"
+ #include "DistantLightsVisibility.h"

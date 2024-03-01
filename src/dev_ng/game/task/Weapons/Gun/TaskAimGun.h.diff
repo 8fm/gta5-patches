@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskAimGun.h b/src/dev_ng/game/task/Weapons/Gun/TaskAimGun.h
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskAimGun.h
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskAimGun.h
+@@ -2,10 +2,10 @@
+ #define TASK_AIM_GUN_H
+ 
+ // Game headers
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/Weapons/Gun/GunFlags.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Task/Weapons/WeaponTarget.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/Weapons/Gun/GunFlags.h"
++#include "task/Weapons/WeaponController.h"
++#include "task/Weapons/WeaponTarget.h"
+ 
+ // Forward declarations
+ class CFiringPatternData;

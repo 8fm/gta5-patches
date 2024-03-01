@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp b/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp
 --- a/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp
 +++ b/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp
-@@ -7,7 +7,7 @@
+@@ -7,12 +7,12 @@
  
  #include "fwmaths/angle.h"
  
@@ -10,3 +10,9 @@ diff --git a/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp b/s
  #include "camera/gameplay/GameplayDirector.h"
  #include "camera/helpers/ControlHelper.h"
  #include "camera/system/CameraMetadata.h"
+ #include "Peds/ped.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

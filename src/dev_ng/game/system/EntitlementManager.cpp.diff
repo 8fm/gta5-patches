@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/EntitlementManager.cpp b/src/dev_ng/game/system/EntitlementManager.cpp
+--- a/src/dev_ng/game/system/EntitlementManager.cpp
++++ b/src/dev_ng/game/system/EntitlementManager.cpp
+@@ -6,7 +6,7 @@
+ #include <WbemIdl.h>
+ #include "MachineHash.h"
+ 
+-#include "core/app.h"
++#include "Core/app.h"
+ #include "wolfssl/wolfcrypt/sha.h"
+ #include "diag/seh.h"
+ #include "frontend/WarningScreen.h"

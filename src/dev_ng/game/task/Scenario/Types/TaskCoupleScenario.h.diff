@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskCoupleScenario.h
+@@ -1,8 +1,8 @@
+ #ifndef INC_TASK_COUPLE_SCENARIO_H
+ #define INC_TASK_COUPLE_SCENARIO_H
+ 
+-#include "Task/Scenario/TaskScenario.h"
+-#include "Task/System/Tuning.h"
++#include "task/Scenario/TaskScenario.h"
++#include "task/System/Tuning.h"
+ 
+ class CTaskMoveFollowEntityOffset;
+ 

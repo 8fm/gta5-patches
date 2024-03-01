@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/BlockView.h b/src/dev_ng/game/debug/BlockView.h
+--- a/src/dev_ng/game/debug/BlockView.h
++++ b/src/dev_ng/game/debug/BlockView.h
+@@ -5,7 +5,7 @@
+ 
+ #include "vector/vector3.h"
+ #include "atl/string.h"
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ 
+ #define BLOCKFLAGS_FIRST_PASS				(1<<0)
+ #define BLOCKFLAGS_SECOND_PASS_STARTED		(1<<1)

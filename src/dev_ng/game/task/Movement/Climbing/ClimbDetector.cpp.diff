@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.cpp b/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "task/movement/climbing/climbdetector.h"
++#include "task/Movement/Climbing/climbdetector.h"
+ 
+ // Rage headers
+ #include "phbound/boundcomposite.h"
+@@ -14,25 +14,25 @@
+ #include "fwmaths/geomutil.h"
+ 
+ // Game headers
+-#include "camera/caminterface.h"
+-#include "modelinfo/pedmodelinfo.h"
++#include "camera/CamInterface.h"
++#include "modelinfo/PedModelInfo.h"
+ #include "network/NetworkInterface.h"
+-#include "peds/ped.h"
+-#include "peds/PedCapsule.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedCapsule.h"
++#include "Peds/PedIntelligence.h"
+ #include "physics/physics.h"
+ #include "system/control.h"
+ #include "task/Combat/Cover/TaskCover.h"
+-#include "task/movement/climbing/climbhandhold.h"
++#include "task/Movement/Climbing/ClimbHandHold.h"
+ #include "task/Scenario/ScenarioPoint.h"
+ 
+-#include "objects/door.h"
++#include "Objects/Door.h"
+ 
+-#include "Task/Vehicle/TaskCarUtils.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
+-#include "Task/Movement/Climbing/TaskVault.h"
++#include "task/Vehicle/TaskCarUtils.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "task/Movement/Climbing/TaskVault.h"
+ 
+-#include "vehicles/heli.h"
++#include "Vehicles/Heli.h"
+ 
+ #include "physics/WaterTestHelper.h"
+ 

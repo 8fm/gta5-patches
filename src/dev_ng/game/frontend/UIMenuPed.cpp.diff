@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/frontend/UIMenuPed.cpp b/src/dev_ng/game/frontend/UIMenuPed.cpp
+--- a/src/dev_ng/game/frontend/UIMenuPed.cpp
++++ b/src/dev_ng/game/frontend/UIMenuPed.cpp
+@@ -12,20 +12,20 @@
+ //game
+ #include "UIMenuPed.h"
+ 
+-#include "Camera/CamInterface.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/WarningScreen.h"
+-#include "Frontend/ReportMenu.h"
+-#include "Network/Voice/NetworkVoice.h"
++#include "camera/CamInterface.h"
++#include "frontend/ui_channel.h"
++#include "frontend/WarningScreen.h"
++#include "frontend/ReportMenu.h"
++#include "network/Voice/NetworkVoice.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedFactory.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Renderer/Lights/lights.h"
+-#include "Renderer/PostProcessFX.h"
+-#include "Renderer/UI3DDrawManager.h"
+-#include "Scene/world/GameWorld.h"
+-#include "Script/script.h"
+-#include "Task/General/TaskBasic.h"
++#include "renderer/Lights/lights.h"
++#include "renderer/PostProcessFX.h"
++#include "renderer/UI3DDrawManager.h"
++#include "scene/world/GameWorld.h"
++#include "script/script.h"
++#include "task/General/TaskBasic.h"
+ 
+ ANIM_OPTIMISATIONS()
+ 

@@ -1,12 +1,30 @@
 diff --git a/src/dev_ng/game/task/Default/ArrestHelpers.cpp b/src/dev_ng/game/task/Default/ArrestHelpers.cpp
 --- a/src/dev_ng/game/task/Default/ArrestHelpers.cpp
 +++ b/src/dev_ng/game/task/Default/ArrestHelpers.cpp
-@@ -19,7 +19,7 @@
+@@ -5,21 +5,21 @@
+ //
+ 
+ // Class header 
+-#include "Task/Default/ArrestHelpers.h"
++#include "task/Default/ArrestHelpers.h"
+ 
+ // Game headers
+ #include "script/script_helper.h"
+ #include "streaming/streaming.h"
+-#include "peds/Ped.h"
+-#include "Task/Default/TaskCuffed.h"
++#include "Peds/ped.h"
++#include "task/Default/TaskCuffed.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Default/TaskIncapacitated.h"
+ 
+ #if __BANK
  	#include "Peds/PedDebugVisualiser.h"
- 	#include "scene/world/gameWorld.h"
+-	#include "scene/world/gameWorld.h"
++	#include "scene/world/GameWorld.h"
  	#include "Peds/rendering/PedVariationDebug.h"
 -	#include "Peds\pedfactory.h"
-+	#include "Peds/pedfactory.h"
++	#include "Peds/PedFactory.h"
  #endif
  
  // Macro to disable optimisations if set

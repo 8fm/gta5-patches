@@ -3,16 +3,30 @@ diff --git a/src/dev_ng/game/pathserver/PathServer.cpp b/src/dev_ng/game/pathser
 +++ b/src/dev_ng/game/pathserver/PathServer.cpp
 @@ -1,4 +1,4 @@
 -#include "PathServer\PathServer.h"
-+#include "PathServer/PathServer.h"
++#include "pathserver/PathServer.h"
  
  // Rage headers
  #include "bank/bkmgr.h"
-@@ -24,7 +24,7 @@
+@@ -12,8 +12,8 @@
+ #include "fwsys/fileExts.h"
+ #ifdef GTA_ENGINE
+ 
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "renderer/Water.h"		// Water
+@@ -22,9 +22,9 @@
+ #include "streaming/streamingvisualize.h"
+ #include "streaming/streaming.h"
  #include "task/Movement/TaskNavBase.h"
- #include "Vfx/Misc/Fire.h"
+-#include "Vfx/Misc/Fire.h"
++#include "vfx/misc/Fire.h"
  #if !__FINAL
 -#include "PathServer\ExportCollision.h"
-+#include "PathServer/ExportCollision.h"
++#include "pathserver/ExportCollision.h"
  #endif
  
  PARAM(nonav, "turns off navmesh/navnode streaming & streaming-module registration");

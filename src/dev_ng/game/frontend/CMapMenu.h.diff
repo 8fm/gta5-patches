@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/CMapMenu.h b/src/dev_ng/game/frontend/CMapMenu.h
+--- a/src/dev_ng/game/frontend/CMapMenu.h
++++ b/src/dev_ng/game/frontend/CMapMenu.h
+@@ -12,7 +12,7 @@
+ 
+ #include "atl/string.h"
+ #include "parser/macros.h"
+-#include "Text/TextFile.h"
++#include "text/TextFile.h"
+ #include "CScriptMenu.h"
+ #include "system/control.h"
+ #include "frontend/minimapcommon.h"

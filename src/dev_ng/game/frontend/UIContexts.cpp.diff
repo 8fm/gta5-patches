@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/frontend/UIContexts.cpp b/src/dev_ng/game/frontend/UIContexts.cpp
+--- a/src/dev_ng/game/frontend/UIContexts.cpp
++++ b/src/dev_ng/game/frontend/UIContexts.cpp
+@@ -1,7 +1,7 @@
+ // INCLUDES
+-#include "Frontend/UIContexts.h"
+-#include "Frontend/ui_channel.h"
+-#include "System/nelem.h"
++#include "frontend/UIContexts.h"
++#include "frontend/ui_channel.h"
++#include "system/nelem.h"
+ 
+ #if __BANK
+ #include "bank/bank.h"

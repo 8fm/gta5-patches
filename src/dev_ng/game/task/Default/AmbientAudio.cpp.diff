@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Default/AmbientAudio.cpp b/src/dev_ng/game/task/Default/AmbientAudio.cpp
+--- a/src/dev_ng/game/task/Default/AmbientAudio.cpp
++++ b/src/dev_ng/game/task/Default/AmbientAudio.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Default/AmbientAudio.h"
++#include "task/Default/AmbientAudio.h"
+ 
+ // Rage headers
+ #include "parser/macros.h"

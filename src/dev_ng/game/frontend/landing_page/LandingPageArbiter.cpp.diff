@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/frontend/landing_page/LandingPageArbiter.cpp b/src/dev_ng/game/frontend/landing_page/LandingPageArbiter.cpp
+--- a/src/dev_ng/game/frontend/landing_page/LandingPageArbiter.cpp
++++ b/src/dev_ng/game/frontend/landing_page/LandingPageArbiter.cpp
+@@ -14,14 +14,14 @@
+ #include "system/param.h"
+ 
+ // game
+-#include "core/UserEntitlementService.h"
++#include "Core/UserEntitlementService.h"
+ #include "frontend/landing_page/LandingPage.h"
+ #include "frontend/landing_page/LegacyLandingScreen.h"
+ #include "frontend/page_deck/items/uiCloudSupport.h"
+ #include "frontend/PauseMenu.h"
+ #include "network/NetworkInterface.h"
+ #include "network/SocialClubServices/SocialClubFeedTilesMgr.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ 
+ #if UI_LANDING_PAGE_ENABLED
+ 

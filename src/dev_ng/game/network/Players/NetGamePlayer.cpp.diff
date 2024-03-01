@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/Players/NetGamePlayer.cpp b/src/dev_ng/game/network/Players/NetGamePlayer.cpp
+--- a/src/dev_ng/game/network/Players/NetGamePlayer.cpp
++++ b/src/dev_ng/game/network/Players/NetGamePlayer.cpp
+@@ -10,14 +10,14 @@
+ #include "rline/rlgamerinfo.h"
+ 
+ #include "network/NetworkInterface.h"
+-#include "network/arrays/NetworkArrayMgr.h"
++#include "network/Arrays/NetworkArrayMgr.h"
+ #include "network/Network.h"
+ #include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+-#include "network/roaming/RoamingBubbleMgr.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "peds/PlayerInfo.h"
++#include "network/Roaming/RoamingBubbleMgr.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkClan.h"
++#include "Peds/PlayerInfo.h"
+ #include "Peds/ped.h"
+ #include "scene/ExtraContent.h"
+ #include "Stats/StatsInterface.h"

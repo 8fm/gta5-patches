@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/ExtraContentDefs.h b/src/dev_ng/game/scene/ExtraContentDefs.h
+--- a/src/dev_ng/game/scene/ExtraContentDefs.h
++++ b/src/dev_ng/game/scene/ExtraContentDefs.h
+@@ -12,7 +12,7 @@
+ #include "streaming/packfilemanager.h"
+ #include "streaming/streaminginstall_psn.h"
+ #include "fwnet/netcloudfiledownloadhelper.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "script/thread.h"
+ #include "streaming/streamingrequest.h"
+ 

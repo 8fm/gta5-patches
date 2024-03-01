@@ -1,14 +1,16 @@
 diff --git a/src/dev_ng/game/game/user.h b/src/dev_ng/game/game/user.h
 --- a/src/dev_ng/game/game/user.h
 +++ b/src/dev_ng/game/game/user.h
-@@ -6,8 +6,8 @@
+@@ -6,9 +6,9 @@
  #define _USER_H_
  
  // Game headers
 -#include "control\onsctime.h"
 -#include "game\zones.h"
+-#include "peds/popzones.h"
 +#include "control/onsctime.h"
 +#include "game/zones.h"
- #include "peds/popzones.h"
++#include "Peds/PopZones.h"
  
  #define MAX_ZONE_NAME_CHARS	(128)
+ 

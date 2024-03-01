@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.h b/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.h
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.h
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.h
+@@ -9,9 +9,9 @@
+ #include "fwutil/rtti.h"
+ 
+ // Game headers
+-#include "ModelInfo/PedModelInfo.h"
+-#include "peds/PedFlagsMeta.h"
+-#include "Task/Movement/JetpackObject.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/PedFlagsMeta.h"
++#include "task/Movement/JetpackObject.h"
+ 
+ // Forward declarations
+ class CAmbientModelSet;

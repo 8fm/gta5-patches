@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/script_cars_and_peds.cpp b/src/dev_ng/game/script/script_cars_and_peds.cpp
+--- a/src/dev_ng/game/script/script_cars_and_peds.cpp
++++ b/src/dev_ng/game/script/script_cars_and_peds.cpp
+@@ -32,7 +32,7 @@
+ #include "task/Scenario/ScenarioManager.h"
+ #include "Vehicles/vehicle.h"
+ #include "Vehicles/VehicleFactory.h"
+-#include "vehicles/VehiclePopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vfx/particles/PtFxManager.h"
+ 

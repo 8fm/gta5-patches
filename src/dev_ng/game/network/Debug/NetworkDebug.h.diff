@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Debug/NetworkDebug.h b/src/dev_ng/game/network/Debug/NetworkDebug.h
+--- a/src/dev_ng/game/network/Debug/NetworkDebug.h
++++ b/src/dev_ng/game/network/Debug/NetworkDebug.h
+@@ -23,7 +23,7 @@ class CEntity;
+ #include "net/message.h"
+ #include "fwnet/netinterface.h"
+ #include "fwnet/netplayermgrbase.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/System/TaskTypes.h"
+ #include "vectormath/mat34v.h"
+ 
+ #if __BANK

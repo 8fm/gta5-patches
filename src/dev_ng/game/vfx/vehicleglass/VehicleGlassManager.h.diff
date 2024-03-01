@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.h b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.h
+--- a/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.h
++++ b/src/dev_ng/game/vfx/vehicleglass/VehicleGlassManager.h
+@@ -7,7 +7,7 @@
+ #define VEHICLEGLASSMANAGER_H
+ 
+ #include "vfx/vehicleglass/VehicleGlass.h"
+-#include "network/objects/synchronisation/syncnodes/VehicleSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
+ // framework
+ #include "grcore/edgeExtractgeomspu.h"
+ #include "vfx/vehicleglass/vehicleglassconstructor.h"

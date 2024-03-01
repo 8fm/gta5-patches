@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/audio/radiostation.cpp b/src/dev_ng/game/audio/radiostation.cpp
+--- a/src/dev_ng/game/audio/radiostation.cpp
++++ b/src/dev_ng/game/audio/radiostation.cpp
+@@ -22,7 +22,7 @@
+ #include "audiohardware/submix.h"
+ #include "audiosynth/synthcore.h"
+ #include "grcore/debugdraw.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "game/weather.h"
+ #include "parser/manager.h"
+ #include "parsercore/attribute.h"
+@@ -31,10 +31,10 @@
+ #include "streaming/streamingengine.h"
+ #include "system/bootmgr.h"
+ #include "network/NetworkInterface.h"
+-#include "network/events/NetworkEventTypes.h"
+-#include "network/live/NetworkTelemetry.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ 
+ #include "debugaudio.h"
+ 

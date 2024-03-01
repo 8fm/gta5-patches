@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/audiogeometry.cpp b/src/dev_ng/game/audio/audiogeometry.cpp
+--- a/src/dev_ng/game/audio/audiogeometry.cpp
++++ b/src/dev_ng/game/audio/audiogeometry.cpp
+@@ -21,7 +21,7 @@
+ #include "phbound\optimizedbvh.h"
+ #include "physics\iterator.h"
+ #include "peds\PlayerInfo.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "system\param.h"
+ #include "audioengine\engine.h"
+ 

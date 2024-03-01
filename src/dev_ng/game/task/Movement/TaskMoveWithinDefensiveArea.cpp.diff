@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.cpp b/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.cpp
+--- a/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.cpp
++++ b/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.cpp
+@@ -3,17 +3,17 @@
+ // CREATED : 02-04-2012
+ 
+ // File header
+-#include "Task/Movement/TaskMoveWithinDefensiveArea.h"
++#include "task/Movement/TaskMoveWithinDefensiveArea.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/TaskNewCombat.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/TaskNewCombat.h"
++#include "task/Movement/TaskNavMesh.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_COVER_OPTIMISATIONS()

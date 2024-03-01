@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjBoat.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjBoat.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjBoat.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjBoat.cpp
+@@ -4,11 +4,11 @@
+ //              calls. See NetworkObject.h for a full description of all the methods.
+ // written by:  John Gurney
+ //
+-#include "network/objects/entities/NetObjBoat.h"
++#include "network/Objects/Entities/NetObjBoat.h"
+ 
+ // game headers
+-#include "network/objects/prediction/NetBlenderBoat.h"
+-#include "vehicles/Boat.h"
++#include "network/Objects/Prediction/NetBlenderBoat.h"
++#include "Vehicles/Boat.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ NETWORK_OBJECT_OPTIMISATIONS()

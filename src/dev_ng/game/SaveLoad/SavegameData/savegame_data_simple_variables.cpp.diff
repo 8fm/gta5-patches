@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_simple_variables.cpp b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_simple_variables.cpp
+--- a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_simple_variables.cpp
++++ b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_simple_variables.cpp
+@@ -6,7 +6,7 @@
+ // Game headers
+ #include "game/cheat.h"
+ #include "game/weather.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "Peds/PlayerInfo.h"
+ #include "SaveLoad/GenericGameStorage.h"
+ #include "system/TamperActions.h"

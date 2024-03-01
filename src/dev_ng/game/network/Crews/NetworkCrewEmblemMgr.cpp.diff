@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Crews/NetworkCrewEmblemMgr.cpp b/src/dev_ng/game/network/Crews/NetworkCrewEmblemMgr.cpp
+--- a/src/dev_ng/game/network/Crews/NetworkCrewEmblemMgr.cpp
++++ b/src/dev_ng/game/network/Crews/NetworkCrewEmblemMgr.cpp
+@@ -27,9 +27,9 @@
+ #include "fwrenderer/renderthread.h"
+ 
+ //Game headers
+-#include "Network/Live/livemanager.h"
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
+ #include "scene/DownloadableTextureManager.h"
+ 
+ #include "streaming/streamingengine.h" //for streaming allocator

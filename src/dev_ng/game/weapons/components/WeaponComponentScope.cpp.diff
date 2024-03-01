@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentScope.cpp b/src/dev_ng/game/weapons/components/WeaponComponentScope.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponentScope.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponentScope.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Components/WeaponComponentScope.h"
++#include "weapons/components/WeaponComponentScope.h"
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+@@ -13,10 +13,10 @@
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/gameplay/aim/FirstPersonAimCamera.h"
+ #include "camera/gameplay/aim/FirstPersonPedAimCamera.h"
+-#include "Peds/Ped.h"
+-#include "Renderer/Renderphases/RenderPhaseFX.h"
+-#include "Renderer/PostProcessFX.h"
+-#include "System/ControlMgr.h"
++#include "Peds/ped.h"
++#include "renderer/Renderphases/RenderPhaseFX.h"
++#include "renderer/PostProcessFX.h"
++#include "system/controlMgr.h"
+ #include "audio/weaponaudioentity.h"
+ 
+ WEAPON_OPTIMISATIONS()

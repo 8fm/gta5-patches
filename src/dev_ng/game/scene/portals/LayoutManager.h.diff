@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/portals/LayoutManager.h b/src/dev_ng/game/scene/portals/LayoutManager.h
+--- a/src/dev_ng/game/scene/portals/LayoutManager.h
++++ b/src/dev_ng/game/scene/portals/LayoutManager.h
+@@ -13,7 +13,7 @@
+ #include "fwscene/world/InteriorLocation.h"
+ 
+ //game
+-#include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ #include "scene/portals/LayoutManagerParser.h"
+ 
+ class CInteriorInst;

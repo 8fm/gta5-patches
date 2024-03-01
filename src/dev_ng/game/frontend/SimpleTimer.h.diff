@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/SimpleTimer.h b/src/dev_ng/game/frontend/SimpleTimer.h
+--- a/src/dev_ng/game/frontend/SimpleTimer.h
++++ b/src/dev_ng/game/frontend/SimpleTimer.h
+@@ -2,7 +2,7 @@
+ #define __SIMPLE_TIMER_H__
+ 
+ #include "fwsys/timer.h"
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ 
+ 
+ typedef u32 (*TimeFunc)();

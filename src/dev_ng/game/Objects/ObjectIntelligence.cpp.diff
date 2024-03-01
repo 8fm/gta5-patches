@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/Objects/ObjectIntelligence.cpp b/src/dev_ng/game/Objects/ObjectIntelligence.cpp
+--- a/src/dev_ng/game/Objects/ObjectIntelligence.cpp
++++ b/src/dev_ng/game/Objects/ObjectIntelligence.cpp
+@@ -1,5 +1,5 @@
+ 
+-#include "objects/ObjectIntelligence.h"
++#include "Objects/ObjectIntelligence.h"
+ 
+ // Rage includes
+ #include "profile/page.h"
+@@ -7,7 +7,7 @@
+ 
+ // Game includes
+ #include "debug/DebugScene.h"
+-#include "objects/object.h"
++#include "Objects/object.h"
+ #include "task/System/TaskTree.h"
+ 
+ // Task includes

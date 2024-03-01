@@ -1,0 +1,59 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp b/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp
+--- a/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp
++++ b/src/dev_ng/game/Cutscene/CutSceneManagerNew.cpp
+@@ -41,7 +41,7 @@
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/replay/ReplayBufferMarker.h"
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "cutscene/AnimatedModelEntity.h"
+ #include "cutscene/CutsceneCustomEvents.h"
+ #include "cutscene/CutSceneAnimManager.h"
+@@ -64,19 +64,19 @@
+ #include "frontend/MiniMap.h"
+ #include "frontend/MobilePhone.h"
+ #include "frontend/HudTools.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "objects/object.h"
+-#include "objects/objectintelligence.h"
++#include "Objects/object.h"
++#include "Objects/ObjectIntelligence.h"
+ #include "network/Live/NetworkTelemetry.h"
+ #include "pathserver/pathserver.h"
+-#include "peds/Ped.h"
+-#include "peds/rendering/PedVariationPack.h"
+-#include "peds/rendering/PedVariationDS.h"
+-#include "peds/rendering/PedVariationStream.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationPack.h"
++#include "Peds/rendering/PedVariationDS.h"
++#include "Peds/rendering/PedVariationStream.h"
+ #include "renderer/Debug/EntitySelect.h"
+-#include "renderer/lights/lights.h"
+-#include "renderer/lights/LightEntity.h"
++#include "renderer/Lights/lights.h"
++#include "renderer/Lights/LightEntity.h"
+ #include "renderer/PlantsGrassRenderer.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/RenderTargetMgr.h"
+@@ -94,7 +94,7 @@
+ #include "text/TextConversion.h"
+ #include "vfx/misc/Fire.h"
+ 
+-#include "Network/Live/NetworkDebugTelemetry.h"
++#include "network/Live/NetworkDebugTelemetry.h"
+ #include "string/stringutil.h"
+ 
+ #if __BANK
+@@ -106,7 +106,7 @@
+ #endif
+ 
+ //channel
+-#include "Cutscene/cutscene_channel.h"
++#include "cutscene/cutscene_channel.h"
+ 
+ ANIM_OPTIMISATIONS ()
+ RAGE_DEFINE_CHANNEL(cutscene)

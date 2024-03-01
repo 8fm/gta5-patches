@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/SmashablePacket.cpp b/src/dev_ng/game/control/replay/Entity/SmashablePacket.cpp
+--- a/src/dev_ng/game/control/replay/Entity/SmashablePacket.cpp
++++ b/src/dev_ng/game/control/replay/Entity/SmashablePacket.cpp
+@@ -9,7 +9,7 @@
+ 
+ #include "control/replay/ReplayInternal.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ 
+ //////////////////////////////////////////////////////////////////////////

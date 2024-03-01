@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ik/solvers/TorsoVehicleSolverProxy.h b/src/dev_ng/game/ik/solvers/TorsoVehicleSolverProxy.h
+--- a/src/dev_ng/game/ik/solvers/TorsoVehicleSolverProxy.h
++++ b/src/dev_ng/game/ik/solvers/TorsoVehicleSolverProxy.h
+@@ -9,7 +9,7 @@
+ 
+ #include "SolverProxy.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "ik/IkRequest.h"
+ 
+ class CPed;

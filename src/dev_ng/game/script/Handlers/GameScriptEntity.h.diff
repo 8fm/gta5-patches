@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptEntity.h b/src/dev_ng/game/script/Handlers/GameScriptEntity.h
+--- a/src/dev_ng/game/script/Handlers/GameScriptEntity.h
++++ b/src/dev_ng/game/script/Handlers/GameScriptEntity.h
+@@ -10,8 +10,8 @@
+ #define SCRIPT_ENTITY_H
+ 
+ // game includes 
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptIds.h"
+ 
+ // framework includes
+ #include "entity/entity.h"

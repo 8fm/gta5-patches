@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/Frame.cpp b/src/dev_ng/game/camera/helpers/Frame.cpp
+--- a/src/dev_ng/game/camera/helpers/Frame.cpp
++++ b/src/dev_ng/game/camera/helpers/Frame.cpp
+@@ -9,7 +9,7 @@
+ // Framework headers
+ #include "grcore/debugdraw.h"
+ #include "fwmaths/angle.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ #include "fwscene/world/WorldLimits.h"
+ #include "math/vecmath.h"
+ 

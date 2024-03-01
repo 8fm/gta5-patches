@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskBomb.h b/src/dev_ng/game/task/Weapons/TaskBomb.h
+--- a/src/dev_ng/game/task/Weapons/TaskBomb.h
++++ b/src/dev_ng/game/task/Weapons/TaskBomb.h
+@@ -3,9 +3,9 @@
+ 
+ // Game headers
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Task/Weapons/WeaponTarget.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/Weapons/WeaponController.h"
++#include "task/Weapons/WeaponTarget.h"
+ 
+ // Forward declarations
+ class CClonedBombInfo;

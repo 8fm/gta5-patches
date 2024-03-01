@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Response/TaskDiveToGround.cpp b/src/dev_ng/game/task/Response/TaskDiveToGround.cpp
+--- a/src/dev_ng/game/task/Response/TaskDiveToGround.cpp
++++ b/src/dev_ng/game/task/Response/TaskDiveToGround.cpp
+@@ -6,10 +6,10 @@
+ 
+ // game headers
+ #include "Peds/ped.h"
+-#include "Task/Movement/TaskGetUp.h"
+-#include "Task/Response/TaskDiveToGround.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNMJumpRollFromRoadVehicle.h"
++#include "task/Movement/TaskGetUp.h"
++#include "task/Response/TaskDiveToGround.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/TaskNMJumpRollFromRoadVehicle.h"
+ #include "event/Events.h"
+ 
+ AI_OPTIMISATIONS()

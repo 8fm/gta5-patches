@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/Peds/Gangs.cpp b/src/dev_ng/game/Peds/Gangs.cpp
  // Started	:	10/11/00
  
 -#include "Peds\gangs.h"
-+#include "Peds/gangs.h"
++#include "Peds/Gangs.h"
  
  // Rage header
  #include "audioengine/widgets.h"
@@ -22,12 +22,12 @@ diff --git a/src/dev_ng/game/Peds/Gangs.cpp b/src/dev_ng/game/Peds/Gangs.cpp
 -#include "Task\System\Task.h"
 -#include "Weapons\Weapon.h"
 -#include "Weapons\WeaponTypes.h"
-+#include "Game/modelindices.h"
-+#include "Streaming/streaming.h"
-+#include "Streaming/populationstreaming.h"
-+#include "Task/System/Task.h"
-+#include "Weapons/Weapon.h"
-+#include "Weapons/WeaponTypes.h"
++#include "game/modelindices.h"
++#include "streaming/streaming.h"
++#include "streaming/populationstreaming.h"
++#include "task/System/Task.h"
++#include "weapons/Weapon.h"
++#include "weapons/WeaponTypes.h"
  
  AI_OPTIMISATIONS()
  

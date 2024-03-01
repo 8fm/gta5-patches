@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjTrain.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjTrain.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjTrain.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjTrain.cpp
+@@ -5,16 +5,16 @@
+ // written by:  John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjTrain.h"
++#include "network/Objects/Entities/NetObjTrain.h"
+ 
+ // game headers
+-#include "peds/ped.h"
+-#include "network/network.h"
+-#include "network/events/NetworkEventTypes.h"
+-#include "network/general/NetworkUtil.h"
+-#include "network/objects/NetworkObjectTypes.h"
+-#include "network/objects/prediction/NetBlenderTrain.h"
+-#include "vehicles/Train.h"
++#include "Peds/ped.h"
++#include "network/Network.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Objects/NetworkObjectTypes.h"
++#include "network/Objects/Prediction/NetBlenderTrain.h"
++#include "Vehicles/train.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

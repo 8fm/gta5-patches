@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskMoVEScripted.h b/src/dev_ng/game/task/Animation/TaskMoVEScripted.h
+--- a/src/dev_ng/game/task/Animation/TaskMoVEScripted.h
++++ b/src/dev_ng/game/task/Animation/TaskMoVEScripted.h
+@@ -6,10 +6,10 @@
+ 
+ // Game headers
+ #include "animation/AnimDefines.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ #include "Peds/QueriableInterface.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ #if FPS_MODE_SUPPORTED
+ class CFirstPersonIkHelper;

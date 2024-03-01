@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/cloth/ClothRageInterface.h b/src/dev_ng/game/cloth/ClothRageInterface.h
+--- a/src/dev_ng/game/cloth/ClothRageInterface.h
++++ b/src/dev_ng/game/cloth/ClothRageInterface.h
+@@ -5,8 +5,8 @@
+ #include "physics/instbehavior.h"
+ #include "phBound/boundcomposite.h"
+ 
+-#include "Debug/Debug.h"
+-#include "fwtl/pool.h"
++#include "debug/Debug.h"
++#include "fwtl/Pool.h"
+ 
+ class CCloth;
+ class CClothParticles;

@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/task/System/TaskHelperFSM.cpp b/src/dev_ng/game/task/System/TaskHelperFSM.cpp
+--- a/src/dev_ng/game/task/System/TaskHelperFSM.cpp
++++ b/src/dev_ng/game/task/System/TaskHelperFSM.cpp
+@@ -1,4 +1,4 @@
+-#include "Task/System/TaskHelperFSM.h"
++#include "task/System/TaskHelperFSM.h"
+ 
+ // Rage Includes
+ #include "ai/task/task.h"

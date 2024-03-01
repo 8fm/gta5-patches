@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/pickups/PickupManager.h b/src/dev_ng/game/pickups/PickupManager.h
+--- a/src/dev_ng/game/pickups/PickupManager.h
++++ b/src/dev_ng/game/pickups/PickupManager.h
+@@ -9,7 +9,7 @@
+ #include "fwutil/PtrList.h"
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ #include "pickups/Data/PickupData.h"
+ #include "pickups/Data/PickupIds.h"
+ #include "pickups/Pickup.h"

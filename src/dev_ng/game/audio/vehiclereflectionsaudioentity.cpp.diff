@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/audio/vehiclereflectionsaudioentity.cpp b/src/dev_ng/game/audio/vehiclereflectionsaudioentity.cpp
+--- a/src/dev_ng/game/audio/vehiclereflectionsaudioentity.cpp
++++ b/src/dev_ng/game/audio/vehiclereflectionsaudioentity.cpp
+@@ -2,13 +2,13 @@
+ #include "audiosynth/synthcore.h"
+ #include "debug/DebugScene.h"
+ #include "grcore/debugdraw.h"
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ #include "Peds/PedFactory.h"
+ #include "audio/vehicleaudioentity.h"
+ #include "audio/ambience/audambientzone.h"
+ #include "audio/northaudioengine.h"
+ #include "audio/scriptaudioentity.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "Peds/ped.h"
+ #include "audioeffecttypes/biquadfiltereffect.h"
+ #include "audioeffecttypes/variabledelayeffect.h"

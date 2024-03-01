@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/audio/frontendaudioentity.h b/src/dev_ng/game/audio/frontendaudioentity.h
+--- a/src/dev_ng/game/audio/frontendaudioentity.h
++++ b/src/dev_ng/game/audio/frontendaudioentity.h
+@@ -14,8 +14,8 @@
+ #include "audiosoundtypes/streamingsound.h"
+ #include "streamslot.h"
+ #include "atl/array.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerArcadeInformation.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerArcadeInformation.h"
+ #include "weapons/Explosion.h"
+ 
+ #include "audioentity.h"

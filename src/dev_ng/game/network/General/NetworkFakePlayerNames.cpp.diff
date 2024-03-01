@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/General/NetworkFakePlayerNames.cpp b/src/dev_ng/game/network/General/NetworkFakePlayerNames.cpp
+--- a/src/dev_ng/game/network/General/NetworkFakePlayerNames.cpp
++++ b/src/dev_ng/game/network/General/NetworkFakePlayerNames.cpp
+@@ -8,10 +8,10 @@
+ 
+ #include "NetworkFakePlayerNames.h"
+ 
+-#include "debug/debugscene.h"
+-#include "network/general/NetworkUtil.h"
+-#include "peds/ped.h"
+-#include "renderer/DrawLists/drawListNY.h"
++#include "debug/DebugScene.h"
++#include "network/General/NetworkUtil.h"
++#include "Peds/ped.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ 
+ unsigned CFakePlayerNames::ms_NumFakePlayerNames = 0;
+ CFakePlayerNames::FakePlayerName CFakePlayerNames::ms_FakePlayerNames[CFakePlayerNames::MAX_FAKE_PLAYER_NAMES];

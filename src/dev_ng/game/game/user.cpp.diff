@@ -9,27 +9,32 @@ diff --git a/src/dev_ng/game/game/user.cpp b/src/dev_ng/game/game/user.cpp
 +#include "fwvehicleai/pathfindtypes.h"
  
  // Game headers
- #include "cutscene/CutSceneManagerNew.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
  #include "user.h"
 -#include "control\gamelogic.h"
 -#include "debug\debug.h"
 +#include "control/gamelogic.h"
-+#include "debug/debug.h"
++#include "debug/Debug.h"
  #include "frontend/VideoEditor/ui/Playback.h"
 -#include "modelinfo\VehicleModelInfo.h"
-+#include "modelinfo/VehicleModelInfo.h"
- #include "peds/Ped.h"
- #include "peds/popzones.h"
- #include "peds/PlayerInfo.h"
+-#include "peds/Ped.h"
+-#include "peds/popzones.h"
+-#include "peds/PlayerInfo.h"
 -#include "scene\world\gameWorld.h"
 -#include "vehicles\Automobile.h"
 -#include "vehicleAi\pathfind.h"
-+#include "scene/world/gameWorld.h"
-+#include "vehicles/Automobile.h"
-+#include "vehicleAi/pathfind.h"
- 
+-
 -#include "Text\TextConversion.h"
-+#include "Text/TextConversion.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "Peds/ped.h"
++#include "Peds/PopZones.h"
++#include "Peds/PlayerInfo.h"
++#include "scene/world/GameWorld.h"
++#include "Vehicles/Automobile.h"
++#include "vehicleAi/pathfind.h"
++
++#include "text/TextConversion.h"
  
  #define TIME_TO_DISPLAY_PLACE_NAME		(250)
  

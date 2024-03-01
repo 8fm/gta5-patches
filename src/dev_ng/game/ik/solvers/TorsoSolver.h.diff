@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/ik/solvers/TorsoSolver.h b/src/dev_ng/game/ik/solvers/TorsoSolver.h
+--- a/src/dev_ng/game/ik/solvers/TorsoSolver.h
++++ b/src/dev_ng/game/ik/solvers/TorsoSolver.h
+@@ -17,9 +17,9 @@
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+ #include "crbody/iksolverbase.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vector/vector3.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ #include "animation/anim_channel.h"
+ #include "animation/debug/AnimDebug.h"
+ #include "ik/IkConfig.h"

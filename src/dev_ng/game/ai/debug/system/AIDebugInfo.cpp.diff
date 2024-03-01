@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ai/debug/system/AIDebugInfo.cpp b/src/dev_ng/game/ai/debug/system/AIDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/system/AIDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/system/AIDebugInfo.cpp
+@@ -8,7 +8,7 @@
+ #include "grcore/debugdraw.h"
+ 
+ // game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+ 
+ extern const char* parser_ePedConfigFlags_Strings[];

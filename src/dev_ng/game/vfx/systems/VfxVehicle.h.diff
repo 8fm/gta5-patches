@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxVehicle.h b/src/dev_ng/game/vfx/systems/VfxVehicle.h
+--- a/src/dev_ng/game/vfx/systems/VfxVehicle.h
++++ b/src/dev_ng/game/vfx/systems/VfxVehicle.h
+@@ -21,12 +21,12 @@
+ #include "vectormath/classes.h"
+ 
+ // game
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "Physics/Floater.h"
+-#include "Renderer/HierarchyIds.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "physics/Floater.h"
++#include "renderer/HierarchyIds.h"
+ #include "Vehicles/Planes.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

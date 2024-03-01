@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskIdle.cpp b/src/dev_ng/game/task/Movement/TaskIdle.cpp
+--- a/src/dev_ng/game/task/Movement/TaskIdle.cpp
++++ b/src/dev_ng/game/task/Movement/TaskIdle.cpp
+@@ -1,9 +1,9 @@
+ #include "TaskIdle.h"
+ 
+-#include "Peds/Ped.h"
+-#include "System/controlMgr.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Vehicle/TaskRideHorse.h"
++#include "Peds/ped.h"
++#include "system/controlMgr.h"
++#include "task/General/TaskBasic.h"
++#include "task/Vehicle/TaskRideHorse.h"
+ 
+ AI_OPTIMISATIONS()
+ 

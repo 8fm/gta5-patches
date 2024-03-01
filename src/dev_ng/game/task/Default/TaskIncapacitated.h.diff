@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Default/TaskIncapacitated.h b/src/dev_ng/game/task/Default/TaskIncapacitated.h
+--- a/src/dev_ng/game/task/Default/TaskIncapacitated.h
++++ b/src/dev_ng/game/task/Default/TaskIncapacitated.h
+@@ -3,9 +3,9 @@
+ 
+ // Game headers
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskTypes.h"
+ 
+ #if CNC_MODE_ENABLED
+ 

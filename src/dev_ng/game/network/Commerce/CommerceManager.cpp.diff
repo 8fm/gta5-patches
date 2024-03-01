@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/network/Commerce/CommerceManager.cpp b/src/dev_ng/game/network/Commerce/CommerceManager.cpp
+--- a/src/dev_ng/game/network/Commerce/CommerceManager.cpp
++++ b/src/dev_ng/game/network/Commerce/CommerceManager.cpp
+@@ -13,14 +13,14 @@
+ #include "frontend/GameStreamMgr.h"
+ #include "frontend/Store/StoreTextureManager.h"
+ 
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+-#include "Network/Live/NetworkTransactionTelemetry.h"
+-#include "Network/Stats/NetworkLeaderboardSessionMgr.h"
+-#include "Network/General/NetworkUtil.h"
++#include "network/Live/NetworkTransactionTelemetry.h"
++#include "network/Stats/NetworkLeaderboardSessionMgr.h"
++#include "network/General/NetworkUtil.h"
+ #include "scene/ExtraContent.h"
+-#include "stats/StatsInterface.h"
+-#include "stats/MoneyInterface.h"
++#include "Stats/StatsInterface.h"
++#include "Stats/MoneyInterface.h"
+ #include "network/Live/livemanager.h"
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+@@ -31,9 +31,9 @@
+ #include "system/appcontent.h"
+ 
+ #if RSG_PC
+-#include "Network/NetworkTypes.h"
+-#include "Network/Shop/GameTransactionsSessionMgr.h"
+-#include "Network/Shop/NetworkShopping.h"
++#include "network/NetworkTypes.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/Shop/NetworkShopping.h"
+ #include "frontend/WarningScreen.h"
+ #endif
+ 

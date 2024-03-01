@@ -1,0 +1,6 @@
+diff --git a/src/dev_ng/game/frontend/SimpleTimer.cpp b/src/dev_ng/game/frontend/SimpleTimer.cpp
+--- a/src/dev_ng/game/frontend/SimpleTimer.cpp
++++ b/src/dev_ng/game/frontend/SimpleTimer.cpp
+@@ -1 +1 @@
+-#include "Frontend/SimpleTimer.h"
++#include "frontend/SimpleTimer.h"

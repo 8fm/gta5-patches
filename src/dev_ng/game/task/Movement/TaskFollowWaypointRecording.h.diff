@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h b/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h
 --- a/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h
 +++ b/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h
-@@ -2,11 +2,11 @@
+@@ -2,12 +2,12 @@
  #define TASK_FOLLOW_WAYPOINT_RECORDING_H
  
  // Framework headers
@@ -11,8 +11,10 @@ diff --git a/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h b/src/d
  // Game headers
 -#include "task\system\TaskMove.h"
 -#include "control\WaypointRecording.h"
-+#include "task/system/TaskMove.h"
+-#include "AI/AITarget.h"
++#include "task/System/TaskMove.h"
 +#include "control/WaypointRecording.h"
- #include "AI/AITarget.h"
++#include "ai/AITarget.h"
  
  class CPed;
+ class CMoveBlendRatioSpeeds;

@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/audio/environment/environmentgroup.cpp b/src/dev_ng/game/audio/environment/environmentgroup.cpp
+--- a/src/dev_ng/game/audio/environment/environmentgroup.cpp
++++ b/src/dev_ng/game/audio/environment/environmentgroup.cpp
+@@ -19,15 +19,15 @@
+ #include "audio/northaudioengine.h"
+ #include "camera/CamInterface.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+-#include "debug/debugglobals.h"
++#include "debug/Debugglobals.h"
+ #include "modelinfo/MloModelInfo.h"
+ #include "modelinfo/MloModelInfo.h"
+ #include "pathserver/PathServer.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "vehicles/vehicle.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "scene/portals/portal.h"
++#include "Vehicles/vehicle.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/portals/Portal.h"
+ #include "scene/portals/PortalInst.h"
+ 
+ AUDIO_ENVIRONMENT_OPTIMISATIONS()

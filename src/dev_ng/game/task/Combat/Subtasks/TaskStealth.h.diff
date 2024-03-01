@@ -9,8 +9,8 @@ diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskStealth.h b/src/dev_ng/gam
 -#include "Task\System\Task.h"
 -#include "Task\System\TaskHelpers.h"
 +#include "scene/RegdRefTypes.h"
-+#include "Task/System/Task.h"
-+#include "Task/System/TaskHelpers.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
  
  class CPed;
  class CActionDefinition;

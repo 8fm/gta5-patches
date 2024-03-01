@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.cpp b/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.cpp
+--- a/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.cpp
++++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormDef.cpp
+@@ -12,9 +12,9 @@
+ #include "fwscene/stores/txdstore.h"
+ 
+ // Game headers
+-#include "Frontend/Scaleform/ScaleFormDef.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Streaming/streaming.h"
++#include "frontend/Scaleform/ScaleFormDef.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "streaming/streaming.h"
+ 
+ SCALEFORM_OPTIMISATIONS()
+ 

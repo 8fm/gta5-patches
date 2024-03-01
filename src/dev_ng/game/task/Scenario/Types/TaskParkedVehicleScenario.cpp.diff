@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.cpp
+@@ -8,19 +8,19 @@
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedCapsule.h"
+ 
+-#include "Scene/world/GameWorld.h"
++#include "scene/world/GameWorld.h"
+ 
+-#include "Task/Default/AmbientAnimationManager.h"
+-#include "Task/Default/TaskAmbient.h"
++#include "task/Default/AmbientAnimationManager.h"
++#include "task/Default/TaskAmbient.h"
+ 
+-#include "Task/General/TaskBasic.h"
++#include "task/General/TaskBasic.h"
+ 
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Movement/TaskSlideToCoord.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskSlideToCoord.h"
+ 
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/info/ScenarioInfoManager.h"
+-#include "Task/Scenario/info/ScenarioTypes.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioTypes.h"
+ 
+ #include "Vehicles/vehicle.h"
+ 

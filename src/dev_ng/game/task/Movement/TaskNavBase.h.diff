@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskNavBase.h b/src/dev_ng/game/task/
 -#include "Task\System\TaskMove.h"
 +#include "fwmaths/angle.h"
 +#include "vectormath/mathops.h"
-+#include "Task/System/TaskMove.h"
++#include "task/System/TaskMove.h"
  
  //***************************************************************************************
  //	Filename : TaskNavBase

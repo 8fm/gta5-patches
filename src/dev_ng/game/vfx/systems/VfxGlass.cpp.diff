@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxGlass.cpp b/src/dev_ng/game/vfx/systems/VfxGlass.cpp
+--- a/src/dev_ng/game/vfx/systems/VfxGlass.cpp
++++ b/src/dev_ng/game/vfx/systems/VfxGlass.cpp
+@@ -22,12 +22,12 @@
+ #include "vfx/ptfx/ptfxwrapper.h"
+ 
+ // game
+-#include "Scene/Physical.h"
+-#include "Vfx/Particles/PtFxCollision.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/VfxHelper.h"
++#include "scene/Physical.h"
++#include "vfx/Particles/PtFxCollision.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/VfxHelper.h"
+ #include "audio/vehicleaudioentity.h"
+-#include "vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

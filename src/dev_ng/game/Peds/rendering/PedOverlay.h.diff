@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedOverlay.h b/src/dev_ng/game/Peds/rendering/PedOverlay.h
+--- a/src/dev_ng/game/Peds/rendering/PedOverlay.h
++++ b/src/dev_ng/game/Peds/rendering/PedOverlay.h
+@@ -13,7 +13,7 @@
+ 
+ // rage headers
+ #include "parser/macros.h"
+-#include "vector/Vector3.h"
++#include "vector/vector3.h"
+ #include "atl/array.h"
+ #include "string/string.h"
+ #include "paging/ref.h"
+@@ -25,8 +25,8 @@
+ #include "fwtl/LinkList.h"
+ 
+ // game headers
+-#include "peds/pedpopulation.h"
+-#include "peds/rendering/PedDamage.h"
++#include "Peds/pedpopulation.h"
++#include "Peds/rendering/PedDamage.h"
+ 
+ #define INVALID_PED_DECORATION_IDX (255)
+ 

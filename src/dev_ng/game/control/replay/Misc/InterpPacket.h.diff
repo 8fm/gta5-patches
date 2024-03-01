@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/InterpPacket.h b/src/dev_ng/game/control/replay/Misc/InterpPacket.h
+--- a/src/dev_ng/game/control/replay/Misc/InterpPacket.h
++++ b/src/dev_ng/game/control/replay/Misc/InterpPacket.h
+@@ -7,13 +7,13 @@
+ #ifndef INTERP_PACKET_H
+ #define INTERP_PACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
+-#include "Control/replay/ReplayController.h"
++#include "control/replay/ReplaySettings.h"
++#include "control/replay/ReplayController.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control/replay/misc/ReplayPacket.h"
++#include "control/replay/Misc/ReplayPacket.h"
+ 
+ #define DEBUG_INTERP	(0)
+ 

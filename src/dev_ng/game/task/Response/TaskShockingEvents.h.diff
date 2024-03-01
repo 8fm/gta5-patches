@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Response/TaskShockingEvents.h b/src/dev_ng/game/task/Response/TaskShockingEvents.h
+--- a/src/dev_ng/game/task/Response/TaskShockingEvents.h
++++ b/src/dev_ng/game/task/Response/TaskShockingEvents.h
+@@ -2,11 +2,11 @@
+ #define TASK_SHOCKING_EVENTS_H
+ 
+ // Game headers
+-#include "Event/ShockingEvents.h"
+-#include "Event/Event.h"
+-#include "Task/Helpers/PavementFloodFillHelper.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "event/ShockingEvents.h"
++#include "event/Event.h"
++#include "task/Helpers/PavementFloodFillHelper.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ class CTaskMove;
+ 

@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.cpp
+@@ -7,10 +7,10 @@
+ #include "fwanimation/animdirector.h"
+ #include "math/angmath.h"
+ 
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "animation/MovePed.h"
+-#include "Task/Motion/Locomotion/TaskLocomotion.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Default/TaskPlayer.h"
+ 
+ AI_OPTIMISATIONS()
+ 

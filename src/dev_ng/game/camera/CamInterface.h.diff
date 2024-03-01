@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/CamInterface.h b/src/dev_ng/game/camera/CamInterface.h
+--- a/src/dev_ng/game/camera/CamInterface.h
++++ b/src/dev_ng/game/camera/CamInterface.h
+@@ -11,7 +11,7 @@
+ 
+ #include "camera/viewports/ViewportFader.h"
+ #include "control/replay/ReplaySettings.h"
+-#include "peds/pedDefines.h"		// include for FPS_MODE_SUPPORTED define
++#include "Peds/pedDefines.h"		// include for FPS_MODE_SUPPORTED define
+ #include "scene/RegdRefTypes.h"
+ 
+ struct tRenderedCameraObjectSettings;

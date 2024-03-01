@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/ik/solvers/TorsoReactSolver.cpp b/src/dev_ng/game/ik/solvers/TorsoReactSolver.cpp
+--- a/src/dev_ng/game/ik/solvers/TorsoReactSolver.cpp
++++ b/src/dev_ng/game/ik/solvers/TorsoReactSolver.cpp
+@@ -14,13 +14,13 @@
+ #include "camera/CamInterface.h"
+ #include "ik/IkManager.h"
+ #include "math/angmath.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/world/GameWorld.h"
+ #include "vectormath/classfreefuncsv.h"
+ #include "camera/helpers/Frame.h"
+-#include "task/combat/taskcombatmelee.h"
+-#include "Task/Vehicle/TaskInVehicle.h"
++#include "task/Combat/taskcombatmelee.h"
++#include "task/Vehicle/TaskInVehicle.h"
+ 
+ #define TORSOREACT_SOLVER_POOL_MAX 16
+ #define ENABLE_BODYREACT_SOLVER_WIDGETS	0

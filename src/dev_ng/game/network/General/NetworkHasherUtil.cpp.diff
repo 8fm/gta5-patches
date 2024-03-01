@@ -1,19 +1,45 @@
 diff --git a/src/dev_ng/game/network/General/NetworkHasherUtil.cpp b/src/dev_ng/game/network/General/NetworkHasherUtil.cpp
 --- a/src/dev_ng/game/network/General/NetworkHasherUtil.cpp
 +++ b/src/dev_ng/game/network/General/NetworkHasherUtil.cpp
-@@ -18,12 +18,12 @@
- #include "Pickups/Data/PickupDataManager.h"
- #include "Scene/DataFileMgr.h"
+@@ -4,7 +4,7 @@
+ //
+ 
+ // Standard include
+-#include "Network/General/NetworkHasherUtil.h"
++#include "network/General/NetworkHasherUtil.h"
+ 
+ // Rage includes
+ #include "file/packfile.h"
+@@ -15,20 +15,20 @@
+ #include "fwutil/KeyGen.h"
+ 
+ // Game includes
+-#include "Pickups/Data/PickupDataManager.h"
+-#include "Scene/DataFileMgr.h"
++#include "pickups/Data/PickupDataManager.h"
++#include "scene/DataFileMgr.h"
  #if __BANK
 -#include "script\commands_network.h"
 +#include "script/commands_network.h"
  #endif
 -#include "Network\Cloud\Tunables.h"
-+#include "Network/Cloud/Tunables.h"
- #include "Network/events/NetworkEventTypes.h"
- #include "Network/Live/NetworkRemoteCheaterDetector.h"
+-#include "Network/events/NetworkEventTypes.h"
+-#include "Network/Live/NetworkRemoteCheaterDetector.h"
 -#include "script\streamedscripts.h"
+-#include "stats/StatsMgr.h"
+-#include "System/ThreadPriorities.h"
+-#include "Task/System/Tuning.h"
+-#include "Weapons/Explosion.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Live/NetworkRemoteCheaterDetector.h"
 +#include "script/streamedscripts.h"
- #include "stats/StatsMgr.h"
- #include "System/ThreadPriorities.h"
- #include "Task/System/Tuning.h"
++#include "Stats/StatsMgr.h"
++#include "system/ThreadPriorities.h"
++#include "task/System/Tuning.h"
++#include "weapons/Explosion.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ RAGE_DEFINE_CHANNEL(hasher, rage::DIAG_SEVERITY_DEBUG3, rage::DIAG_SEVERITY_WARNING, rage::DIAG_SEVERITY_ASSERT, rage::CHANNEL_POSIX_ON)
+ 

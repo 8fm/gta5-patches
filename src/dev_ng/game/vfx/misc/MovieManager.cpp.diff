@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vfx/misc/MovieManager.cpp b/src/dev_ng/game/vfx/misc/MovieManager.cpp
+--- a/src/dev_ng/game/vfx/misc/MovieManager.cpp
++++ b/src/dev_ng/game/vfx/misc/MovieManager.cpp
+@@ -64,10 +64,10 @@ namespace {
+ 
+ // game
+ #include "Core/Game.h"
+-#include "Renderer/RenderThread.h"
+-#include "System/Device_XContent.h"
+-#include "System/FileMgr.h"
+-#include "Camera/CamInterface.h"
++#include "renderer/RenderThread.h"
++#include "system/Device_XContent.h"
++#include "system/FileMgr.h"
++#include "camera/CamInterface.h"
+ #include "vfx/misc/TVPlaylistManager.h"
+ #include "control/replay/Misc/MoviePacket.h"
+ 

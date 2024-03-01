@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.cpp b/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubNewsStoryMgr.cpp
+@@ -14,9 +14,9 @@
+ 
+ //Game
+ #include "frontend/HudTools.h"
+-#include "Network/general/NetworkUtil.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
++#include "network/General/NetworkUtil.h"
++#include "network/NetworkInterface.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
+ 
+ NETWORK_OPTIMISATIONS();
+ //OPTIMISATIONS_OFF()

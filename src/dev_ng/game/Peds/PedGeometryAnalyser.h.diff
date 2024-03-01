@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/Peds/PedGeometryAnalyser.h b/src/dev_ng/game/Peds/PedGeometryAnalyser.h
+--- a/src/dev_ng/game/Peds/PedGeometryAnalyser.h
++++ b/src/dev_ng/game/Peds/PedGeometryAnalyser.h
+@@ -7,9 +7,9 @@
+ // Framework headers
+ 
+ // Game headers
+-#include "Control/Route.h"
+-#include "ModelInfo/PedModelInfo.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "control/Route.h"
++#include "modelinfo/PedModelInfo.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "renderer/HierarchyIds.h"
+ 
+ class CEntity;
+@@ -41,7 +41,7 @@ namespace rage
+ 	class fwPtrList;
+ };
+ 
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ 
+ extern int gs_iNumWorldProcessLineOfSightUnCached;

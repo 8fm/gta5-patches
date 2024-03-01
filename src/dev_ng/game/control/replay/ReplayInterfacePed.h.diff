@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfacePed.h b/src/dev_ng/game/control/replay/ReplayInterfacePed.h
+--- a/src/dev_ng/game/control/replay/ReplayInterfacePed.h
++++ b/src/dev_ng/game/control/replay/ReplayInterfacePed.h
+@@ -8,9 +8,9 @@
+ #include "ReplayInterface.h"
+ 
+ #include "Peds/ped.h"	
+-#include "peds/PopCycle.h"
+-#include "peds/PedFactory.h"
+-#include "peds/pedpopulation.h"
++#include "Peds/PopCycle.h"
++#include "Peds/PedFactory.h"
++#include "Peds/pedpopulation.h"
+ #include "Ped/PedPacket.h"
+ 
+ #include "atl/map.h"

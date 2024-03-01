@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/audio/gunfightconductorfakescenes.cpp b/src/dev_ng/game/audio/gunfightconductorfakescenes.cpp
+--- a/src/dev_ng/game/audio/gunfightconductorfakescenes.cpp
++++ b/src/dev_ng/game/audio/gunfightconductorfakescenes.cpp
+@@ -18,9 +18,9 @@
+ #include "physics/gtaInst.h"
+ #include "scene/world/GameWorld.h"
+ #include "superconductor.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehicleDamage.h"
+-#include "vfx/Systems/VfxVehicle.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehicleDamage.h"
++#include "vfx/systems/VfxVehicle.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+ #include "system/controlMgr.h"
+ 

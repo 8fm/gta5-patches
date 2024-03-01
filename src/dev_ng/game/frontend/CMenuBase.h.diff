@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/frontend/CMenuBase.h b/src/dev_ng/game/frontend/CMenuBase.h
+--- a/src/dev_ng/game/frontend/CMenuBase.h
++++ b/src/dev_ng/game/frontend/CMenuBase.h
+@@ -6,11 +6,11 @@
+ #include "atl/hashstring.h"
+ #include "atl/array.h"
+ #include "frontend/UIContexts.h"
+-#include "Frontend/ScaleformMenuHelper.h"
+-#include "Frontend/Scaleform/ScaleformMgr.h"
++#include "frontend/ScaleformMenuHelper.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "system/control_mapping.h"
+ #include "PauseMenuData.h"
+-#include "Text/TextFile.h"
++#include "text/TextFile.h"
+ 
+ // Forward declarations
+ namespace rage

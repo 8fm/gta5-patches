@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.h b/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.h
+--- a/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.h
++++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormComplexObjectMgr.h
+@@ -16,7 +16,7 @@
+ #include "atl/array.h"
+ #include "atl/hashstring.h"
+ #include "atl/string.h"
+-#include "Scaleform/scaleform.h"
++#include "scaleform/scaleform.h"
+ #include "system/criticalsection.h"
+ #include "system/system.h"
+ #include "vector/color32.h"

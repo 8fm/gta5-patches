@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkProfileStats.h b/src/dev_ng/game/network/Live/NetworkProfileStats.h
+--- a/src/dev_ng/game/network/Live/NetworkProfileStats.h
++++ b/src/dev_ng/game/network/Live/NetworkProfileStats.h
+@@ -18,10 +18,10 @@
+ #include "net/status.h"
+ 
+ //Framework Headers
+-#include "fwnet/netTypes.h"
++#include "fwnet/nettypes.h"
+ 
+ //Game Headers
+-#include "stats/StatsTypes.h"
++#include "Stats/StatsTypes.h"
+ 
+ #if __BANK
+ namespace rage 

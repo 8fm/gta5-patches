@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Playback.h b/src/dev_ng/game/frontend/VideoEditor/ui/Playback.h
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Playback.h
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Playback.h
+@@ -19,7 +19,7 @@
+ #include "frontend/VideoEditor/Core/VideoEditorProject.h"
+ #include "frontend/VideoEditor/ui/Editor.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+-#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
++#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+ 
+ #if RSG_PC
+ enum  // list of items that are clickable by the mouse in the playback mode

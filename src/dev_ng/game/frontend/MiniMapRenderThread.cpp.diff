@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/frontend/MiniMapRenderThread.cpp b/src/dev_ng/game/frontend/MiniMapRenderThread.cpp
+--- a/src/dev_ng/game/frontend/MiniMapRenderThread.cpp
++++ b/src/dev_ng/game/frontend/MiniMapRenderThread.cpp
+@@ -18,13 +18,13 @@
+ 
+ // game:
+ #include "camera/viewports/Viewport.h"
+-#include "Control/gps.h"
++#include "control/gps.h"
+ #include "debug/DebugScene.h"
+ #include "frontend/CMapMenu.h"
+ #include "frontend/ui_channel.h"
+ #include "frontend/Map/BlipEnums.h"
+-#include "frontend/Scaleform/ScaleformMgr.h"
+-#include "Network/Live/livemanager.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "network/Live/livemanager.h"
+ #include "profile/group.h"
+ #include "renderer/postprocessFX.h"
+ #include "renderer/rendertargets.h"

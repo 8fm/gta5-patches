@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp b/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp
+--- a/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp
++++ b/src/dev_ng/game/tools/StreamingMemJunctionStats.cpp
+@@ -20,8 +20,8 @@
+ #include "fwscene/stores/staticboundsstore.h"
+ 
+ // Game headers
+-#include "debug/debug.h"
+-#include "Camera/CamInterface.h"
++#include "debug/Debug.h"
++#include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "game/Clock.h"
+ #include "game/Weather.h"
+@@ -29,17 +29,17 @@
+ #include "Objects/DummyObject.h"
+ #include "Objects/object.h"
+ #include "pathserver/PathServer.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "renderer/water.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "renderer/Water.h"
+ #include "scene/AnimatedBuilding.h"
+ #include "scene/Building.h"
+ #include "scene/scene.h"
+ #include "scene/debug/SceneCostTracker.h"
+ #include "scene/portals/InteriorInst.h"
+ #include "scene/portals/PortalInst.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "streaming/defragmentation.h"
+ #include "streaming/packfilemanager.h"
+ #include "streaming/streaming.h"

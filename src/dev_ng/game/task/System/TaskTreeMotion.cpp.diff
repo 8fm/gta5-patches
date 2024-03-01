@@ -4,10 +4,10 @@ diff --git a/src/dev_ng/game/task/System/TaskTreeMotion.cpp b/src/dev_ng/game/ta
 @@ -1,7 +1,7 @@
  //Game headers.
 -#include "Task\System\TaskTreeMotion.h"
-+#include "Task/System/TaskTreeMotion.h"
++#include "task/System/TaskTreeMotion.h"
  
 -#include "Peds\Ped.h"
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
  
  AI_OPTIMISATIONS()
  

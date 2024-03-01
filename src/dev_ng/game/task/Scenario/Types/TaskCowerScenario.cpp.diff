@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskCowerScenario.cpp
+@@ -4,7 +4,7 @@
+ // constraints).
+ //----------------------------------------------------------------------------------
+ 
+-#include "Task/Scenario/Types/TaskCowerScenario.h"
++#include "task/Scenario/Types/TaskCowerScenario.h"
+ 
+ //RAGE INCLUDES
+ #include "fwmaths/angle.h"
+@@ -13,16 +13,16 @@
+ //GAME INCLUDES
+ #include "animation/Move.h"
+ #include "animation/MovePed.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "ik/IkManager.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/PedIKSettings.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PedIKSettings.h"
+ #include "task/Movement/TaskCollisionResponse.h"
+ #include "task/Physics/TaskNM.h"
+ #include "task/Response/TaskFlee.h"
+-#include "Task/Response/TaskReactAndFlee.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "task/Response/TaskReactAndFlee.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ #include "weapons/WeaponTypes.h"
+ #include "weapons/inventory/PedWeaponManager.h"
+ 

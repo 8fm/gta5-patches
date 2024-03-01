@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/System/TaskTreeClone.cpp b/src/dev_ng/game/task/System/TaskTreeClone.cpp
 --- a/src/dev_ng/game/task/System/TaskTreeClone.cpp
 +++ b/src/dev_ng/game/task/System/TaskTreeClone.cpp
-@@ -1,12 +1,12 @@
+@@ -1,17 +1,17 @@
  //Game headers.
 -#include "Task\System\TaskTreeClone.h"
 -
@@ -11,14 +11,21 @@ diff --git a/src/dev_ng/game/task/System/TaskTreeClone.cpp b/src/dev_ng/game/tas
 -#include "Task\Combat\TaskDamageDeath.h"
 -#include "Task\General\TaskBasic.h"
 -#include "Task\System\TaskFSMClone.h"
-+#include "Task/System/TaskTreeClone.h"
+-#include "Network/NetworkInterface.h"
++#include "task/System/TaskTreeClone.h"
 +
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
 +#include "Peds/QueriableInterface.h"
-+#include "Task/Combat/TaskDamageDeath.h"
-+#include "Task/General/TaskBasic.h"
-+#include "Task/System/TaskFSMClone.h"
- #include "Network/NetworkInterface.h"
++#include "task/Combat/TaskDamageDeath.h"
++#include "task/General/TaskBasic.h"
++#include "task/System/TaskFSMClone.h"
++#include "network/NetworkInterface.h"
  #include "fwnet/neteventmgr.h"
  
+ #if !__FINAL
+-#include "Network/Objects/Entities/NetObjPlayer.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ #endif
+ 
+ AI_OPTIMISATIONS()

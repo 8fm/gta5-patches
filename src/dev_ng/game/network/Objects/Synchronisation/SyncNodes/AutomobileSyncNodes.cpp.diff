@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.cpp
+@@ -4,7 +4,7 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/AutomobileSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/AutomobileSyncNodes.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

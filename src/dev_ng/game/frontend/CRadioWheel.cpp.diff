@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/frontend/CRadioWheel.cpp b/src/dev_ng/game/frontend/CRadioWheel.cpp
+--- a/src/dev_ng/game/frontend/CRadioWheel.cpp
++++ b/src/dev_ng/game/frontend/CRadioWheel.cpp
+@@ -9,17 +9,17 @@
+ #include "audio/scriptaudioentity.h"
+ #include "frontend/MobilePhone.h"
+ #include "frontend/NewHud.h"
+-#include "scene/world/gameworld.h"
+-#include "Peds/Ped.h"
++#include "scene/world/GameWorld.h"
++#include "Peds/ped.h"
+ #include "system/controlMgr.h"
+ #include "system/control.h"
+ #include "system/control_mapping.h"
+ #include "network/Events/NetworkEventTypes.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Live/livemanager.h"
+-#include "network/network.h"
+-#include "vehicles/Metadata/VehicleLayoutInfo.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Live/livemanager.h"
++#include "network/Network.h"
++#include "Vehicles/Metadata/VehicleLayoutInfo.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ FRONTEND_OPTIMISATIONS()
+ #if RSG_PC && __BANK

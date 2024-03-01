@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/objectaudioentity.cpp b/src/dev_ng/game/audio/objectaudioentity.cpp
+--- a/src/dev_ng/game/audio/objectaudioentity.cpp
++++ b/src/dev_ng/game/audio/objectaudioentity.cpp
+@@ -12,7 +12,7 @@
+ // game
+ #include "control/replay/replay.h"
+ #include "objectaudioentity.h"
+-#include "objects/object.h"
++#include "Objects/object.h"
+ #include "weatheraudioentity.h"
+ #include "physics/gtaInst.h"
+ 

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.h b/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.h
+--- a/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.h
++++ b/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.h
+@@ -1,13 +1,13 @@
+ #ifndef INC_DESTROYED_MAP_OBJECTS_PACKET_H_
+ #define INC_DESTROYED_MAP_OBJECTS_PACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/InterpPacket.h"
+-#include "Control/Replay/PacketBasics.h"
+-#include "Control/replay/ReplayPacketIDs.h"
++#include "control/replay/PacketBasics.h"
++#include "control/replay/ReplayPacketIDs.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ class DestroyedMapObjectsManager

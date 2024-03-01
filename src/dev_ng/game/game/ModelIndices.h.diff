@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/ModelIndices.h b/src/dev_ng/game/game/ModelIndices.h
+--- a/src/dev_ng/game/game/ModelIndices.h
++++ b/src/dev_ng/game/game/ModelIndices.h
+@@ -20,7 +20,7 @@
+ #include "streaming/streamingmodule.h"
+ 
+ // Game headers
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "entity/entity.h"
+ 
+ //

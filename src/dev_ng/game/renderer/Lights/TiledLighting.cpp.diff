@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/renderer/Lights/TiledLighting.cpp b/src/dev_ng/game/renderer/Lights/TiledLighting.cpp
+--- a/src/dev_ng/game/renderer/Lights/TiledLighting.cpp
++++ b/src/dev_ng/game/renderer/Lights/TiledLighting.cpp
+@@ -19,17 +19,17 @@
+ // game headers
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Debug/Rendering/DebugLights.h"
+-#include "Debug/Rendering/DebugDeferred.h"
+-#include "Renderer/rendertargets.h"
+-#include "Renderer/Deferred/DeferredLighting.h"
+-#include "Renderer/Lights/lights.h"
+-#include "Renderer/Lights/LightSource.h"
+-#include "Renderer/Util/Util.h"
+-#include "Renderer/Util/ShaderUtil.h"
+-#include "Renderer/Lights/TiledLighting.h"
+-#include "Renderer/SSAO.h"
+-#include "Renderer/render_channel.h"
++#include "debug/Rendering/DebugLights.h"
++#include "debug/Rendering/DebugDeferred.h"
++#include "renderer/rendertargets.h"
++#include "renderer/Deferred/DeferredLighting.h"
++#include "renderer/Lights/lights.h"
++#include "renderer/Lights/LightSource.h"
++#include "renderer/Util/Util.h"
++#include "renderer/Util/ShaderUtil.h"
++#include "renderer/Lights/TiledLighting.h"
++#include "renderer/SSAO.h"
++#include "renderer/render_channel.h"
+ 
+ // ----------------------------------------------------------------------------------------------- //
+ #if TILED_LIGHTING_ENABLED

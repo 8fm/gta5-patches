@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayEventManager.h b/src/dev_ng/game/control/replay/ReplayEventManager.h
+--- a/src/dev_ng/game/control/replay/ReplayEventManager.h
++++ b/src/dev_ng/game/control/replay/ReplayEventManager.h
+@@ -13,7 +13,7 @@
+ #include "ReplayRecorder.h"
+ #include "ReplayController.h"
+ 
+-#include "audio/DynamicMixerPacket.h"
++#include "Audio/DynamicMixerPacket.h"
+ #include "Audio/SoundPacket.h"
+ #include "rmptfx/ptxeffectinst.h"
+ 

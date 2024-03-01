@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/script/commands_recording.cpp b/src/dev_ng/game/script/commands_recording.cpp
+--- a/src/dev_ng/game/script/commands_recording.cpp
++++ b/src/dev_ng/game/script/commands_recording.cpp
+@@ -13,7 +13,7 @@
+ #include "control/videorecording/videorecording.h"
+ #include "control/replay/ReplayControl.h"
+ #include "control/replay/ReplayRecording.h"
+-#include "control/Replay/ReplayBufferMarker.h"
++#include "control/replay/ReplayBufferMarker.h"
+ #include "control/replay/Audio/SpeechAudioPacket.h"
+ 
+ #include "commands_recording.h"

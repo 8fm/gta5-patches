@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/script/commands_audio.cpp b/src/dev_ng/game/script/commands_audio.cpp
+--- a/src/dev_ng/game/script/commands_audio.cpp
++++ b/src/dev_ng/game/script/commands_audio.cpp
+@@ -32,22 +32,22 @@
+ #include "audio/speechaudioentity.h"
+ #include "audio/speechmanager.h"
+ #include "audio/weatheraudioentity.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "vfx/misc/TVPlaylistManager.h"
+-#include "objects/Door.h"
+-#include "peds/ped.h"
++#include "Objects/Door.h"
++#include "Peds/ped.h"
+ #include "frontend/MiniMap.h"
+ #include "script/script.h"
+ #include "script/script_helper.h"
+ #include "script/thread.h"
+-#include "Network/NetworkInterface.h"
+-#include "network/events/NetworkEventTypes.h"
++#include "network/NetworkInterface.h"
++#include "network/Events/NetworkEventTypes.h"
+ #include "control/gps.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "frontend/ProfileSettings.h"
+ #include "text/TextConversion.h"
+-#include "Control/Replay/Audio/ScriptAudioPacket.h"
++#include "control/replay/Audio/ScriptAudioPacket.h"
+ 
+ bool g_DisableEndCreditsFade = false;
+ int g_RomansMood = AUD_ROMANS_MOOD_NORMAL;

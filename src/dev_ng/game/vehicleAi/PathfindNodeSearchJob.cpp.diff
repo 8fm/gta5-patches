@@ -1,7 +1,16 @@
 diff --git a/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp b/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp
 --- a/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp
 +++ b/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp
-@@ -21,7 +21,7 @@
+@@ -1,7 +1,7 @@
+ // Vehicle population SPU update
+ // flavius.alecu: 25/10/2011
+ 
+-#include "math/simpleMath.h"
++#include "math/simplemath.h"
+ 
+ #include "pathfind.h"
+ 
+@@ -21,13 +21,13 @@
  
  #include "BaseTypes.h"
  
@@ -10,3 +19,11 @@ diff --git a/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp b/src/dev_ng/ga
  
  #include "grcore/viewport.h"
  #include "grcore/viewport_inline.h"
+ #include "pathfind.h"
+-#include "vector/Vector4.h"
+-#include "scene/world/gameWorld.h"
++#include "vector/vector4.h"
++#include "scene/world/GameWorld.h"
+ #include "system/timer.h"
+ #include "fwscene/world/WorldLimits.h"
+ #include "fwmaths/Vector.h"

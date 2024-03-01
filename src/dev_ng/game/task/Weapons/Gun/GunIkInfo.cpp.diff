@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/GunIkInfo.cpp b/src/dev_ng/game/task/Weapons/Gun/GunIkInfo.cpp
+--- a/src/dev_ng/game/task/Weapons/Gun/GunIkInfo.cpp
++++ b/src/dev_ng/game/task/Weapons/Gun/GunIkInfo.cpp
+@@ -1,9 +1,9 @@
+ // Class header
+-#include "Task/Weapons/Gun/GunIkInfo.h"
++#include "task/Weapons/Gun/GunIkInfo.h"
+ 
+ // Game headers
+-#include "Ik/solvers/TorsoSolver.h"
+-#include "Peds/Ped.h"
++#include "ik/solvers/TorsoSolver.h"
++#include "Peds/ped.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

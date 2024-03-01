@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/game/localisation.cpp b/src/dev_ng/game/game/localisation.cpp
+--- a/src/dev_ng/game/game/localisation.cpp
++++ b/src/dev_ng/game/game/localisation.cpp
+@@ -12,9 +12,9 @@
+ #if __BANK
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"
+-#include "Text/Textfile.h"
+-#include "System/language.h"
+-#include "System/param.h"
++#include "text/Textfile.h"
++#include "system/language.h"
++#include "system/param.h"
+ 
+ NOSTRIP_XPARAM(uilanguage);
+ 

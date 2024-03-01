@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskMountAnimal.h b/src/dev_ng/game/task/Vehicle/TaskMountAnimal.h
+--- a/src/dev_ng/game/task/Vehicle/TaskMountAnimal.h
++++ b/src/dev_ng/game/task/Vehicle/TaskMountAnimal.h
+@@ -16,10 +16,10 @@
+ #if ENABLE_HORSE
+ 
+ #include "modelinfo/ModelSeatInfo.h"
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ class CPed;
+ class CComponentReservation;

@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/task/Movement/Jumping/TaskInAir.cpp b/src/dev_ng/game/task/Movement/Jumping/TaskInAir.cpp
+--- a/src/dev_ng/game/task/Movement/Jumping/TaskInAir.cpp
++++ b/src/dev_ng/game/task/Movement/Jumping/TaskInAir.cpp
+@@ -1,20 +1,20 @@
+ // File header
+-#include "Task/Movement/Jumping/TaskInAir.h"
++#include "task/Movement/Jumping/TaskInAir.h"
+ 
+ // Game Headers
+-#include "Animation/MovePed.h"
+-#include "Camera/CamInterface.h"
+-#include "ModelInfo/PedModelInfo.h"
+-#include "Peds/Ped.h"
++#include "animation/MovePed.h"
++#include "camera/CamInterface.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Streaming/Streaming.h"		// For CStreaming::HasObjectLoaded(), etc.
+-#include "System/Control.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
+-#include "Task/Movement/Jumping/TaskJump.h"
+-#include "Task/Movement/TaskSlideToCoord.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Movement/TaskFall.h"
++#include "streaming/Streaming.h"		// For CStreaming::HasObjectLoaded(), etc.
++#include "system/Control.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Movement/Jumping/TaskJump.h"
++#include "task/Movement/TaskSlideToCoord.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Movement/TaskFall.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOVEMENT_OPTIMISATIONS()

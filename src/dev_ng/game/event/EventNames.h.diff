@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/event/EventNames.h b/src/dev_ng/game/event/EventNames.h
+--- a/src/dev_ng/game/event/EventNames.h
++++ b/src/dev_ng/game/event/EventNames.h
+@@ -8,7 +8,7 @@
+ //
+ 
+ // Game headers
+-#include "Event/System/EventData.h"
++#include "event/system/EventData.h"
+ 
+ #if !__NO_OUTPUT
+ 

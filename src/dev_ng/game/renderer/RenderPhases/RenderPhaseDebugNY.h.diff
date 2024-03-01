@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugNY.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugNY.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugNY.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseDebugNY.h
+@@ -7,7 +7,7 @@
+ #define INC_RENDERPHASEDEBUGNY_H_
+ 
+ // --- Include Files ------------------------------------------------------------
+-#include "renderer/RenderPhases/renderphase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ 
+ #if DEBUG_DISPLAY_BAR
+ 

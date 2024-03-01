@@ -1,0 +1,62 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskInvestigate.cpp b/src/dev_ng/game/task/Combat/TaskInvestigate.cpp
+--- a/src/dev_ng/game/task/Combat/TaskInvestigate.cpp
++++ b/src/dev_ng/game/task/Combat/TaskInvestigate.cpp
+@@ -5,36 +5,36 @@
+ // CREATED : 13-10-2008
+ 
+ // File header
+-#include "Task/Combat/TaskInvestigate.h"
++#include "task/Combat/TaskInvestigate.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Event/EventReactions.h"
+-#include "Game/Clock.h"
+-#include "Peds/Ped.h"
++#include "event/EventReactions.h"
++#include "game/Clock.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "scene/world/GameWorld.h" 
+-#include "Task/Combat/TaskSearch.h"
+-#include "Task/Default/Patrol/TaskPatrol.h"
+-#include "Task/Default/Patrol/PatrolRoutes.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskGoToPointAiming.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Default/TaskWander.h"
+-#include "Task/Combat/TaskSearch.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/TaskScenario.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "Task/Default/TaskChat.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Event/EventWeapon.h"
++#include "task/Combat/TaskSearch.h"
++#include "task/Default/Patrol/TaskPatrol.h"
++#include "task/Default/Patrol/PatrolRoutes.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskGoToPointAiming.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Default/TaskWander.h"
++#include "task/Combat/TaskSearch.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/TaskScenario.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "task/Default/TaskChat.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/WeaponController.h"
++#include "event/EventWeapon.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleGoTo.h"
+ #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"

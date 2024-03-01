@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/control/stuntjump.h b/src/dev_ng/game/control/stuntjump.h
+--- a/src/dev_ng/game/control/stuntjump.h
++++ b/src/dev_ng/game/control/stuntjump.h
+@@ -16,9 +16,9 @@
+ #include "vector/color32.h"
+ 
+ // game headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "text/messages.h"
+-#include "Frontend/Scaleform/ScaleformMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "script/script_areas.h"
+ 
+ namespace rage

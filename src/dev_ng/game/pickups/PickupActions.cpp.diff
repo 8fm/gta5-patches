@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/pickups/PickupActions.cpp b/src/dev_ng/game/pickups/PickupActions.cpp
+--- a/src/dev_ng/game/pickups/PickupActions.cpp
++++ b/src/dev_ng/game/pickups/PickupActions.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Pickups/PickupActions.h"
++#include "pickups/PickupActions.h"
+ 
+ // Rage headers
+ #include "audio/frontendaudioentity.h"
+@@ -9,9 +9,9 @@
+ 
+ // Game headers
+ #include "Peds/ped.h"
+-#include "Pickups/Data/PickupDataManager.h"
+-#include "Pickups/Pickup.h"
+-#include "System/controlMgr.h"
++#include "pickups/Data/PickupDataManager.h"
++#include "pickups/Pickup.h"
++#include "system/controlMgr.h"
+ 
+ #include "data/aes_init.h"
+ AES_INIT_9;

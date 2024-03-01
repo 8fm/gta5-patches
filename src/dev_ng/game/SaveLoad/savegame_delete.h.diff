@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_delete.h b/src/dev_ng/game/SaveLoad/savegame_delete.h
+--- a/src/dev_ng/game/SaveLoad/savegame_delete.h
++++ b/src/dev_ng/game/SaveLoad/savegame_delete.h
+@@ -2,7 +2,7 @@
+ #ifndef SAVEGAME_DELETE_H
+ #define SAVEGAME_DELETE_H
+ 
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "SaveLoad/savegame_defines.h"
+ 
+ 

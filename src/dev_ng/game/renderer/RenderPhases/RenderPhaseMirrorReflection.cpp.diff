@@ -1,0 +1,52 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseMirrorReflection.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseMirrorReflection.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseMirrorReflection.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseMirrorReflection.cpp
+@@ -17,7 +17,7 @@
+ #endif
+ 
+ // Framework Headers
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ #include "fwmaths/vectorutil.h"
+ #include "fwmaths/PortalCorners.h"
+ #include "fwrenderer/renderlistgroup.h"
+@@ -33,12 +33,12 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/TiledScreenCapture.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "peds/Ped.h"
+-#include "peds/rendering/PedDamage.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedDamage.h"
+ #include "profile/profiler.h"
+-#include "renderer/DrawLists/drawlistMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/Lights/lights.h"
+ #include "renderer/Lights/LightGroup.h"
+ #include "renderer/Mirrors.h"
+@@ -51,17 +51,17 @@
+ #include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/rendertargets.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "scene/portals/FrustumDebug.h"
+ #include "scene/portals/Portal.h"
+ #include "scene/scene.h"
+ #include "shaders/CustomShaderEffectMirror.h"
+ #include "timecycle/TimeCycle.h"
+-#include "Vfx/Sky/Sky.h"
+-#include "Vfx/GPUParticles/PtFxGPUManager.h"
+-#include "Vfx/particles/PtFxManager.h"
++#include "vfx/Sky/Sky.h"
++#include "vfx/gpuparticles/PtFxGPUManager.h"
++#include "vfx/particles/PtFxManager.h"
+ #include "vfx/VfxHelper.h"
+-#include "Vfx/VisualEffects.h"
++#include "vfx/VisualEffects.h"
+ 
+ EXT_PF_GROUP(BuildRenderList);
+ PF_TIMER(CRenderPhaseMirrorReflectionRL,BuildRenderList);

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Live/AchMgr.h b/src/dev_ng/game/network/Live/AchMgr.h
+--- a/src/dev_ng/game/network/Live/AchMgr.h
++++ b/src/dev_ng/game/network/Live/AchMgr.h
+@@ -12,7 +12,7 @@
+ #include "rline/scachievements/rlscachievements.h"
+ 
+ // game
+-#include "Network/xlast/Fuzzy.schema.h"
++#include "network/xlast/Fuzzy.schema.h"
+ 
+ // steam
+ #if __STEAM_BUILD

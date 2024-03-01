@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.h b/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.h
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.h
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioActionManager.h
+@@ -5,7 +5,7 @@
+ #include "Data/Base.h"
+ 
+ // Game headers
+-#include "Task/Scenario/Info/ScenarioAction.h"
++#include "task/Scenario/info/ScenarioAction.h"
+ 
+ 
+ ////////////////////////////////////////////////////////////////////////////////

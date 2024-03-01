@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/EventTags.cpp b/src/dev_ng/game/animation/EventTags.cpp
+--- a/src/dev_ng/game/animation/EventTags.cpp
++++ b/src/dev_ng/game/animation/EventTags.cpp
+@@ -15,7 +15,7 @@
+ #include "camera/viewports/ViewportManager.h"
+ #include "ik/IkManager.h"
+ #include "ik/IkRequest.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #include "scene/DynamicEntity.h"
+ #include "scene/world/GameWorld.h"
+ 

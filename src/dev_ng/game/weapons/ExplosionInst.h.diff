@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/weapons/ExplosionInst.h b/src/dev_ng/game/weapons/ExplosionInst.h
+--- a/src/dev_ng/game/weapons/ExplosionInst.h
++++ b/src/dev_ng/game/weapons/ExplosionInst.h
+@@ -5,12 +5,12 @@
+ #include "vector/vector3.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Game headers
+ #include "audio/explosionaudioentity.h"
+ #include "network/General/NetworkFXId.h"
+-#include "Physics/WaterTestHelper.h"
++#include "physics/WaterTestHelper.h"
+ #include "scene/Entity.h"
+ #include "scene/RegdRefTypes.h"
+ #include "weapons/WeaponEnums.h"

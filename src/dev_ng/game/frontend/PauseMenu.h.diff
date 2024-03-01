@@ -1,0 +1,46 @@
+diff --git a/src/dev_ng/game/frontend/PauseMenu.h b/src/dev_ng/game/frontend/PauseMenu.h
+--- a/src/dev_ng/game/frontend/PauseMenu.h
++++ b/src/dev_ng/game/frontend/PauseMenu.h
+@@ -18,29 +18,29 @@
+ 
+ // Game headers
+ #include "frontend/input/uiInputEnums.h"
+-#include "Frontend/PauseMenuData.h"
+-#include "Network/Live/NetworkClan.h"
++#include "frontend/PauseMenuData.h"
++#include "network/Live/NetworkClan.h"
+ 
+ #include "audio/dynamicmixer.h"
+ #include "control/replay/ReplaySettings.h"
+ #include "control/replay/File/device_replay.h"
+-#include "Frontend/ContextMenu.h"
+-#include "Frontend/CMenuBase.h"
+-#include "Frontend/MiniMapCommon.h"  // MAX_BLIP_NAME_SIZE
+-#include "Frontend/Scaleform/ScaleFormMgr.h" // ScaleformMovieWrapper
+-#include "Frontend/ScaleformMenuHelper.h"	// PM_COLUMNS
+-#include "Frontend/TimeWarper.h"
+-#include "Frontend/UIMenuPed.h"
+-#include "Network/Live/FriendClanData.h"
++#include "frontend/ContextMenu.h"
++#include "frontend/CMenuBase.h"
++#include "frontend/MiniMapCommon.h"  // MAX_BLIP_NAME_SIZE
++#include "frontend/Scaleform/ScaleFormMgr.h" // ScaleformMovieWrapper
++#include "frontend/ScaleformMenuHelper.h"	// PM_COLUMNS
++#include "frontend/TimeWarper.h"
++#include "frontend/UIMenuPed.h"
++#include "network/Live/FriendClanData.h"
+ #include "renderer/sprite2d.h"
+ #include "SaveLoad/savegame_queued_operations.h"
+-#include "Scaleform/scaleform.h"  // GFxValue
++#include "scaleform/scaleform.h"  // GFxValue
+ #include "text/messages.h"
+ #include "text/TextFile.h"
+-#include "stats/statsdatamgr.h"
++#include "Stats/StatsDataMgr.h"
+ #include "SimpleTimer.h"
+ #include "system/SettingsManager.h"
+-#include "System/control.h"
++#include "system/control.h"
+ 
+ // Forward declarations
+ namespace rage

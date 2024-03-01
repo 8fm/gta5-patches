@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedMotivation.cpp b/src/dev_ng/game/Peds/PedIntelligence/PedMotivation.cpp
+--- a/src/dev_ng/game/Peds/PedIntelligence/PedMotivation.cpp
++++ b/src/dev_ng/game/Peds/PedIntelligence/PedMotivation.cpp
+@@ -11,7 +11,7 @@
+ #include "fwmaths/random.h"
+ 
+ // Game headers
+-#include "Scene/DataFileMgr.h"
++#include "scene/DataFileMgr.h"
+ 
+ // Parser headers
+ #include "PedMotivation_parser.h"

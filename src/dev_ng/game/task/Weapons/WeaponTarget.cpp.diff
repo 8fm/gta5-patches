@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Weapons/WeaponTarget.cpp b/src/dev_ng/game/task/Weapons/WeaponTarget.cpp
+--- a/src/dev_ng/game/task/Weapons/WeaponTarget.cpp
++++ b/src/dev_ng/game/task/Weapons/WeaponTarget.cpp
+@@ -1,16 +1,16 @@
+ // File header
+-#include "Task/Weapons/WeaponTarget.h"
++#include "task/Weapons/WeaponTarget.h"
+ 
+ // Game headers
+-#include "Camera/gameplay/aim/FirstPersonShooterCamera.h"
++#include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+ #include "camera/CamInterface.h"
+ #include "game/Wanted.h"
+-#include "Network/Cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ #include "network/Objects/Entities/NetObjPlayer.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Weapons/Weapon.h"
++#include "Peds/ped.h"
++#include "task/Default/TaskPlayer.h"
++#include "weapons/Weapon.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.cpp b/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.cpp
+@@ -5,20 +5,20 @@
+ //
+ 
+ // File header
+-#include "Task/Movement/Climbing/DropDownDetector.h"
++#include "task/Movement/Climbing/DropDownDetector.h"
+ 
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "peds/PedCapsule.h"
++#include "Peds/ped.h"
++#include "Peds/PedCapsule.h"
+ #include "system/control.h"
+-#include "camera/caminterface.h"
+-#include "Task/Movement/Climbing/TaskDropDown.h"
+-#include "Task/Movement/Jumping/TaskJump.h"
+-#include "Task/Motion/Locomotion/TaskInWater.h"
+-#include "Task/Movement/TaskParachute.h"
+-#include "Task/Movement/TaskFall.h"
++#include "camera/CamInterface.h"
++#include "task/Movement/Climbing/TaskDropDown.h"
++#include "task/Movement/Jumping/TaskJump.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
++#include "task/Movement/TaskParachute.h"
++#include "task/Movement/TaskFall.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOVEMENT_OPTIMISATIONS()

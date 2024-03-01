@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/animation/debug/AnimPlacementTool.cpp b/src/dev_ng/game/animation/debug/AnimPlacementTool.cpp
+--- a/src/dev_ng/game/animation/debug/AnimPlacementTool.cpp
++++ b/src/dev_ng/game/animation/debug/AnimPlacementTool.cpp
+@@ -22,14 +22,14 @@
+ #include "camera/syncedscene/SyncedSceneDirector.h"
+ #include "debug/DebugScene.h"
+ #include "event/Events.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "parser/manager.h"
+-#include "peds/PedFactory.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/rendering/PedVariationDebug.h"
+-#include "peds/rendering/PedVariationStream.h"
++#include "Peds/PedFactory.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/rendering/PedVariationDebug.h"
++#include "Peds/rendering/PedVariationStream.h"
+ #include "physics/physics.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+@@ -38,7 +38,7 @@
+ #include "task/General/TaskBasic.h"
+ #include "task/System/TaskManager.h"
+ #include "debug/DebugScene.h"
+-#include "vehicles/vehiclefactory.h"
++#include "Vehicles/VehicleFactory.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ 
+ ANIM_OPTIMISATIONS()

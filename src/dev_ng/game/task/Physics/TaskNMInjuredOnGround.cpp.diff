@@ -22,3 +22,14 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMInjuredOnGround.cpp b/src/dev_ng
  
  // Framework headers
  #include "grcore/debugdraw.h"
+@@ -17,8 +17,8 @@
+ // Game headers
+ #include "event/Events.h"
+ #include "Peds/ped.h"
+-#include "Task/Physics/TaskNMInjuredOnGround.h"
+-#include "Task/Physics/NmDebug.h"
++#include "task/Physics/TaskNMInjuredOnGround.h"
++#include "task/Physics/NmDebug.h"
+ 
+ //----------------------------------------------------------------------------------------------------------------------------------------------------
+ 

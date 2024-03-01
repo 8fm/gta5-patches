@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.h b/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.h
+--- a/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.h
++++ b/src/dev_ng/game/task/Movement/TaskTakeOffPedVariation.h
+@@ -10,10 +10,10 @@
+ // Game headers
+ #include "Peds/rendering/PedVariationDS.h"
+ #include "streaming/streamingrequest.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ #include "Peds/QueriableInterface.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////

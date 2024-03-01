@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjDoor.h b/src/dev_ng/game/network/Objects/Entities/NetObjDoor.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjDoor.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjDoor.h
+@@ -8,10 +8,10 @@
+ #define NETOBJDOOR_H
+ 
+ #include "fwnet/netobject.h"
+-#include "network/objects/entities/NetObjObject.h"
+-#include "network/objects/entities/NetObjPhysical.h"
+-#include "network/objects/entities/NetObjProximityMigrateable.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Entities/NetObjObject.h"
++#include "network/Objects/Entities/NetObjPhysical.h"
++#include "network/Objects/Entities/NetObjProximityMigrateable.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+ #include "script/Handlers/GameScriptEntity.h"
+ 
+ // framework includes

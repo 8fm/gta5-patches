@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.cpp b/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.cpp
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.cpp
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.cpp
+@@ -8,10 +8,10 @@
+ 
+ #include "fwanimation/animmanager.h"
+ #include "fwanimation/clipsets.h"
+-#include "Peds/Ped.h" 
++#include "Peds/ped.h" 
+ #include "Vehicles/vehicle_channel.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+-#include "Weapons/WeaponTypes.h"
++#include "weapons/WeaponTypes.h"
+ 
+ // Parser files
+ #include "VehicleSeatInfo_parser.h"

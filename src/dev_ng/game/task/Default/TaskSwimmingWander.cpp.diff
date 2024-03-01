@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Default/TaskSwimmingWander.cpp b/src/dev_ng/game/task/Default/TaskSwimmingWander.cpp
+--- a/src/dev_ng/game/task/Default/TaskSwimmingWander.cpp
++++ b/src/dev_ng/game/task/Default/TaskSwimmingWander.cpp
+@@ -4,17 +4,17 @@
+ // Copyright (C) 1999-2011 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "Task/Default/TaskSwimmingWander.h"
++#include "task/Default/TaskSwimmingWander.h"
+ 
+ 
+ #include "Peds/NavCapabilities.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/PedPopulation.h"
+-#include "Scene/World/GameWorldHeightMap.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/System/TaskHelpers.h"
++#include "Peds/pedpopulation.h"
++#include "scene/world/GameWorldHeightMap.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/System/TaskHelpers.h"
+ 
+ CTaskSwimmingWander::Tunables CTaskSwimmingWander::sm_Tunables;
+ IMPLEMENT_DEFAULT_TASK_TUNABLES(CTaskSwimmingWander, 0xc6356fde);

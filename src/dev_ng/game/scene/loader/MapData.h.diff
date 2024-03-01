@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/loader/MapData.h b/src/dev_ng/game/scene/loader/MapData.h
+--- a/src/dev_ng/game/scene/loader/MapData.h
++++ b/src/dev_ng/game/scene/loader/MapData.h
+@@ -15,7 +15,7 @@
+ #include "parser/macros.h"
+ #include "data/base.h"
+ #include "atl/array.h"
+-#include "scene/loader/mapdata_interiors.h"
++#include "scene/loader/MapData_Interiors.h"
+ #include "scene/loader/MapData_Misc.h"
+ #include "fwscene/stores/mapdatastore.h"
+ #include "softrasterizer/occludeModel.h"

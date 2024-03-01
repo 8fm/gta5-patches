@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleAttack.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleAttack.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleAttack.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleAttack.cpp
+@@ -5,25 +5,25 @@
+ 
+ // Game headers
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+-#include "VehicleAi/task/TaskVehicleGoTo.h"
+-#include "VehicleAi/task/TaskVehicleGoToAutomobile.h"
+-#include "VehicleAi/task/TaskVehicleGoToHelicopter.h"
+-#include "VehicleAi/task/TaskVehicleGoToPlane.h"
+-#include "VehicleAi/task/TaskVehicleGoToSubmarine.h"
+-#include "VehicleAi/task/TaskVehiclePlaneChase.h"
+-#include "VehicleAi/task/TaskVehiclePark.h"
+-#include "VehicleAi/task/TaskVehicleCircle.h"
+-#include "VehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleGoTo.h"
++#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
++#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
++#include "vehicleAi/task/TaskVehicleGoToPlane.h"
++#include "vehicleAi/task/TaskVehicleGoToSubmarine.h"
++#include "vehicleAi/task/TaskVehiclePlaneChase.h"
++#include "vehicleAi/task/TaskVehiclePark.h"
++#include "vehicleAi/task/TaskVehicleCircle.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/Heli.h"
+ #include "Vehicles/VehicleGadgets.h"
+-#include "ModelInfo/VehicleModelInfo.h"
+-#include "game/modelindices.h"
+-#include "scene/world/gameWorld.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "game/ModelIndices.h"
++#include "scene/world/GameWorld.h"
+ #include "weapons/info/WeaponInfo.h"
+-#include "Weapons/FiringPattern.h"
+-#include "weapons/Projectiles/Projectile.h"
++#include "weapons/FiringPattern.h"
++#include "weapons/projectiles/Projectile.h"
+ #include "weapons/projectiles/ProjectileManager.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+  
+ AI_OPTIMISATIONS()

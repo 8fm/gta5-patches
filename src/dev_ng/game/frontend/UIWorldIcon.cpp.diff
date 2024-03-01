@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/frontend/UIWorldIcon.cpp b/src/dev_ng/game/frontend/UIWorldIcon.cpp
+--- a/src/dev_ng/game/frontend/UIWorldIcon.cpp
++++ b/src/dev_ng/game/frontend/UIWorldIcon.cpp
+@@ -3,18 +3,18 @@
+ #include "fwsys/timer.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "Camera/Helpers/Frame.h"
+-#include "Camera/viewports/ViewportManager.h"
+-#include "Frontend/ui_channel.h"
++#include "camera/CamInterface.h"
++#include "camera/helpers/Frame.h"
++#include "camera/viewports/ViewportManager.h"
++#include "frontend/ui_channel.h"
+ #include "FrontEnd/UIWorldIcon.h"
+-#include "Frontend/PauseMenu.h"
++#include "frontend/PauseMenu.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedFactory.h"
+-#include "Scene/world/GameWorld.h"
+-#include "Script/Commands_graphics.h"
+-#include "Streaming/streaming.h"
+-#include "Vfx/VfxHelper.h"
++#include "scene/world/GameWorld.h"
++#include "script/Commands_graphics.h"
++#include "streaming/streaming.h"
++#include "vfx/VfxHelper.h"
+ 
+ #define BG_TEXTURE "In_World_Circle"
+ #define ICONS_FOLDER "MPInventory"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/html/HtmlRenderState.cpp b/src/dev_ng/game/frontend/html/HtmlRenderState.cpp
+--- a/src/dev_ng/game/frontend/html/HtmlRenderState.cpp
++++ b/src/dev_ng/game/frontend/html/HtmlRenderState.cpp
+@@ -13,7 +13,7 @@
+ #include "HtmlDocument.h"
+ #ifndef HTML_RESOURCE 
+ #include "Htmlviewport.h"
+-#include "Text/Text.h"
++#include "text/text.h"
+ #include "camera/viewports/Viewport.h"
+ #endif
+ // --- Defines ------------------------------------------------------------------

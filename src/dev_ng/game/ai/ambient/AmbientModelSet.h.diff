@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ai/ambient/AmbientModelSet.h b/src/dev_ng/game/ai/ambient/AmbientModelSet.h
+--- a/src/dev_ng/game/ai/ambient/AmbientModelSet.h
++++ b/src/dev_ng/game/ai/ambient/AmbientModelSet.h
+@@ -10,7 +10,7 @@
+ 
+ // Game headers
+ #include "modelinfo/VehicleModelInfoEnums.h"	// For eVehicleModType
+-#include "peds/rendering/PedVariationDS.h"		// For CPedCompRestriction
++#include "Peds/rendering/PedVariationDS.h"		// For CPedCompRestriction
+ 
+ class CAmbientModelVariations;
+ 

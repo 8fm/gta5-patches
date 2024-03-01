@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp b/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp
+@@ -9,17 +9,17 @@
+ #include "fragmentnm/nm_channel.h "
+ 
+ // Game Headers
+-#include "Event/Events.h"
+-#include "Peds/Ped.h"
++#include "event/Events.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Movement/TaskIdle.h"
+ #include "task/Movement/TaskGetUp.h"
+-#include "Task/Physics/TaskAnimatedAttach.h"
+-#include "Task/Physics/TaskNMBalance.h"
+-#include "Task/Physics/TaskNMJumpRollFromRoadVehicle.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskTryToGrabVehicleDoor.h"
+-#include "Vehicles/Vehicle.h"
++#include "task/Physics/TaskAnimatedAttach.h"
++#include "task/Physics/TaskNMBalance.h"
++#include "task/Physics/TaskNMJumpRollFromRoadVehicle.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskTryToGrabVehicleDoor.h"
++#include "Vehicles/vehicle.h"
+ #include "Vehicles/Metadata/VehicleEntryPointInfo.h"
+ #include "pharticulated/articulatedcollider.h"
+ #include "phbound/boundcomposite.h"

@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehiclePacket.cpp
+@@ -11,16 +11,16 @@
+ 
+ #include "audio/caraudioentity.h"
+ #include "camera/CamInterface.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "renderer/PostScan.h"
+-#include "vehicles/Bike.h"
+-#include "vehicles/Heli.h"
+-#include "vehicles/Automobile.h"
++#include "Vehicles/Bike.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/Automobile.h"
+ #include "physics/gtaInst.h"
+ #include "physics/physics.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/commands_entity.h"
+ 

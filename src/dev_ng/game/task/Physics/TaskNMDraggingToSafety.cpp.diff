@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMDraggingToSafety.cpp b/src/dev_n
  #include "phbound/boundcomposite.h"
  #include "physics/constraintdistance.h"
  #include "physics/constraintfixed.h"
+@@ -13,7 +13,7 @@
+ // Game headers
+ #include "Peds/ped.h"
+ #include "physics/physics.h"
+-#include "Task/Physics/TaskNMDraggingToSafety.h"
++#include "task/Physics/TaskNMDraggingToSafety.h"
+ 
+ AI_OPTIMISATIONS()
+ 

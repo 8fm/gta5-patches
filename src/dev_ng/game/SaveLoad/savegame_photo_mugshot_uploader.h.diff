@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.h b/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.h
+--- a/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.h
++++ b/src/dev_ng/game/SaveLoad/savegame_photo_mugshot_uploader.h
+@@ -3,7 +3,7 @@
+ #define SAVEGAME_PHOTO_MUGSHOT_UPLOADER_H
+ 
+ // Game headers
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ //	Copied from PedHeadshotTextureExporter
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/landing_page/views/LandingPageView.cpp b/src/dev_ng/game/frontend/landing_page/views/LandingPageView.cpp
+--- a/src/dev_ng/game/frontend/landing_page/views/LandingPageView.cpp
++++ b/src/dev_ng/game/frontend/landing_page/views/LandingPageView.cpp
+@@ -37,7 +37,7 @@
+ #include "frontend/page_deck/PageItemBase.h"
+ #include "frontend/page_deck/PageItemCategoryBase.h"
+ #include "frontend/VideoEditor/ui/InstructionalButtons.h"
+-#include "network/live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ #if RSG_BANK
+ #include "grcore/quads.h"

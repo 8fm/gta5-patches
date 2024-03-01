@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/General/NetworkSerialisers.cpp b/src/dev_ng/game/network/General/NetworkSerialisers.cpp
+--- a/src/dev_ng/game/network/General/NetworkSerialisers.cpp
++++ b/src/dev_ng/game/network/General/NetworkSerialisers.cpp
+@@ -4,13 +4,13 @@
+ #include "event/decision/EventDecisionMaker.h"
+ #include "event/decision/EventDecisionMakerManager.h"
+ #include "game/Dispatch/Incidents.h"
+-#include "objects/door.h"
+-#include "peds/PlayerInfo.h"
+-#include "task/motion/Locomotion/TaskMotionPed.h"
+-#include "task/motion/Locomotion/TaskHorseLocomotion.h"
+-#include "task/motion/Locomotion/TaskBirdLocomotion.h"
+-#include "task/vehicle/TaskRideHorse.h"
+-#include "vehicles/MetaData/VehicleEnterExitFlags.h"
++#include "Objects/Door.h"
++#include "Peds/PlayerInfo.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Motion/Locomotion/TaskHorseLocomotion.h"
++#include "task/Motion/Locomotion/TaskBirdLocomotion.h"
++#include "task/Vehicle/TaskRideHorse.h"
++#include "Vehicles/Metadata/VehicleEnterExitFlags.h"
+ 
+ // framework includes
+ #include "fwanimation/clipsets.h"

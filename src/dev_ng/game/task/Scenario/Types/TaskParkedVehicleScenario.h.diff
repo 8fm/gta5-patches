@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskParkedVehicleScenario.h
+@@ -1,7 +1,7 @@
+ #ifndef INC_TASK_PARKED_VEHICLE_SCENARIO_H
+ #define INC_TASK_PARKED_VEHICLE_SCENARIO_H
+ 
+-#include "Task/Scenario/TaskScenario.h"
++#include "task/Scenario/TaskScenario.h"
+ 
+ //-------------------------------------------------------------------------
+ // Parked Car Scenario

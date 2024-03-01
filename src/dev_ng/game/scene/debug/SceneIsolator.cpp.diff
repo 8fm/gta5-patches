@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/scene/debug/SceneIsolator.cpp b/src/dev_ng/game/scene/debug/SceneIsolator.cpp
+--- a/src/dev_ng/game/scene/debug/SceneIsolator.cpp
++++ b/src/dev_ng/game/scene/debug/SceneIsolator.cpp
+@@ -14,11 +14,11 @@ SCENE_OPTIMISATIONS()
+ #if __BANK
+ #include "bank/bank.h" 
+ #include "bank/bkmgr.h"
+-#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
+ #include "debug/GtaPicker.h"
+ #include "grcore/debugdraw.h"
+-#include "fwmaths/rect.h"
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
++#include "fwmaths/Rect.h"
+ #include "rmcore/drawable.h"
+ #include "fragment/type.h"
+ #include "fwscene/stores/drawablestore.h"
+@@ -30,11 +30,11 @@ SCENE_OPTIMISATIONS()
+ #include "grcore/viewport.h"
+ #include "grcore/viewport.h"
+ #include "input/mouse.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "renderer/sprite2d.h"
+-#include "scene/entity.h"
+-#include "system/controlmgr.h"
++#include "scene/Entity.h"
++#include "system/controlMgr.h"
+ #include "text/text.h"
+ #include "text/textconversion.h"
+ #include "vector/color32.h"

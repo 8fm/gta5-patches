@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponSwapData.h b/src/dev_ng/game/weapons/info/WeaponSwapData.h
+--- a/src/dev_ng/game/weapons/info/WeaponSwapData.h
++++ b/src/dev_ng/game/weapons/info/WeaponSwapData.h
+@@ -11,7 +11,7 @@
+ #include "fwanimation/animdefines.h"
+ 
+ // Game headers
+-#include "Weapons/Components/WeaponComponentData.h"
++#include "weapons/components/WeaponComponentData.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

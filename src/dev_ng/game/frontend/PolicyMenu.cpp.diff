@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/PolicyMenu.cpp b/src/dev_ng/game/frontend/PolicyMenu.cpp
+--- a/src/dev_ng/game/frontend/PolicyMenu.cpp
++++ b/src/dev_ng/game/frontend/PolicyMenu.cpp
+@@ -4,7 +4,7 @@
+ // game
+ #include "frontend/PolicyMenu.h"
+ 
+-#include "frontend/scaleform/ScaleFormMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ 
+ #define SC_BUTTON_MOVIE_FILENAME	"PAUSE_MENU_INSTRUCTIONAL_BUTTONS"
+ 

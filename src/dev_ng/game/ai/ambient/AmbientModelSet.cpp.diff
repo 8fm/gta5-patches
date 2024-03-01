@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/ai/ambient/AmbientModelSet.cpp b/src/dev_ng/game/ai/ambient/AmbientModelSet.cpp
+--- a/src/dev_ng/game/ai/ambient/AmbientModelSet.cpp
++++ b/src/dev_ng/game/ai/ambient/AmbientModelSet.cpp
+@@ -1,12 +1,12 @@
+ // File header
+-#include "AI/Ambient/AmbientModelSet.h"
++#include "ai/ambient/AmbientModelSet.h"
+ 
+ // Rage headers
+ #include "ai/aichannel.h"
+ #include "fwmaths/random.h"
+ 
+ // Game headers
+-#include "ModelInfo/ModelInfo.h"
++#include "modelinfo/ModelInfo.h"
+ 
+ // Parser
+ #include "AmbientModelSet_parser.h"

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/Roaming/RoamingBubbleMgr.cpp b/src/dev_ng/game/network/Roaming/RoamingBubbleMgr.cpp
+--- a/src/dev_ng/game/network/Roaming/RoamingBubbleMgr.cpp
++++ b/src/dev_ng/game/network/Roaming/RoamingBubbleMgr.cpp
+@@ -13,12 +13,12 @@ NETWORK_OPTIMISATIONS()
+ 
+ #include "debug/VectorMap.h"
+ #include "network/NetworkInterface.h"
+-#include "network/debug/NetworkBot.h"
+-#include "network/general/NetworkUtil.h"
++#include "network/Debug/NetworkBot.h"
++#include "network/General/NetworkUtil.h"
+ #include "network/Network.h"
+-#include "network/objects/entities/NetObjPlayer.h"
+-#include "network/players/NetGamePlayer.h"
+-#include "network/roaming/RoamingMessages.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Roaming/RoamingMessages.h"
+ 
+ #if __BANK
+ static bool     g_DisplayActiveBubbleInfo   = false;

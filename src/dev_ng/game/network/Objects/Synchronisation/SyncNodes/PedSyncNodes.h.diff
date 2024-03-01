@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PedSyncNodes.h
+@@ -7,20 +7,20 @@
+ #ifndef PED_SYNC_NODES_H
+ #define PED_SYNC_NODES_H
+ 
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+-#include "network/general/NetworkUtil.h"
+-#include "network/objects/synchronisation/SyncNodes/PhysicalSyncNodes.h"
+-#include "network/objects/synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h"
+ #include "Peds/CombatData.h"
+ #include "Peds/PedIntelligence/PedPerception.h"
+-#include "peds/PedMoveBlend/PedMoveBlendBase.h"
+-#include "peds/PedMotionData.h"
+-#include "peds/PedTaskRecord.h"
+-#include "peds/rendering/PedVariationDS.h"
+-#include "peds/QueriableInterface.h"
+-#include "script/handlers/GameScriptMgr.h"
+-#include "script/handlers/GameScriptIds.h"
++#include "Peds/PedMoveBlend/PedMoveBlendBase.h"
++#include "Peds/PedMotionData.h"
++#include "Peds/PedTaskRecord.h"
++#include "Peds/rendering/PedVariationDS.h"
++#include "Peds/QueriableInterface.h"
++#include "script/Handlers/GameScriptMgr.h"
++#include "script/Handlers/GameScriptIds.h"
+ #include "Vehicles/componentReserve.h"
+ #include "weapons/inventory/AmmoItemRepository.h"
+ #include "weapons/inventory/PedInventory.h"

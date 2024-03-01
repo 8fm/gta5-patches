@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.cpp b/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.cpp
+--- a/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.cpp
++++ b/src/dev_ng/game/task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File Header
+-#include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"
++#include "task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"
+ 
+ // Rage Headers
+ #include "ai/aichannel.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Movement/JetpackObject.h b/src/dev_ng/game/task/Movement/JetpackObject.h
+--- a/src/dev_ng/game/task/Movement/JetpackObject.h
++++ b/src/dev_ng/game/task/Movement/JetpackObject.h
+@@ -4,7 +4,7 @@
+ #include "scene/RegdRefTypes.h"
+ #include "streaming/streamingrequest.h"
+ #include "fwanimation/clipsets.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #if !__FINAL && !__XENON
+ #define ENABLE_JETPACK 1 

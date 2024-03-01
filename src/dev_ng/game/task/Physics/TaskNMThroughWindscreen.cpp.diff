@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMThroughWindscreen.cpp b/src/dev_ng/game/task/Physics/TaskNMThroughWindscreen.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMThroughWindscreen.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMThroughWindscreen.cpp
+@@ -11,9 +11,9 @@
+ 
+ // Game headers
+ #include "audio/scriptaudioentity.h"
+-#include "Peds/Ped.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Physics/TaskNMThroughWindscreen.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
++#include "task/Physics/TaskNMThroughWindscreen.h"
+ 
+ AI_OPTIMISATIONS()
+ 

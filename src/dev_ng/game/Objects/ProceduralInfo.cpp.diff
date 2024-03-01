@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/Objects/ProceduralInfo.cpp b/src/dev_ng/game/Objects/ProceduralInfo.cpp
+--- a/src/dev_ng/game/Objects/ProceduralInfo.cpp
++++ b/src/dev_ng/game/Objects/ProceduralInfo.cpp
+@@ -26,13 +26,13 @@
+ #include	"vfx/channel.h"
+ 
+ // Game headers
+-#include "Debug/Debug.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Renderer/PlantsMgr.h"		// CPLANT_SLOT_NUM_TEXTURES...
+-#include "Scene/Entity.h"
+-#include "Scene/DataFileMgr.h"
++#include "debug/Debug.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "physics/gtaMaterialManager.h"
++#include "renderer/PlantsMgr.h"		// CPLANT_SLOT_NUM_TEXTURES...
++#include "scene/Entity.h"
++#include "scene/DataFileMgr.h"
+ #include "Objects/ProcObjects.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////

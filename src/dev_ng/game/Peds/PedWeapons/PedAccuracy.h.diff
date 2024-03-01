@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.h b/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.h
+--- a/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.h
++++ b/src/dev_ng/game/Peds/PedWeapons/PedAccuracy.h
+@@ -2,14 +2,14 @@
+ #define PED_ACCURACY_H
+ 
+ // Rage headers
+-#include "System/Bit.h"
++#include "system/bit.h"
+ 
+ // Framework headers
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Debug/DebugDrawStore.h"
+-#include "Weapons/Info/WeaponInfo.h"
++#include "debug/DebugDrawStore.h"
++#include "weapons/info/WeaponInfo.h"
+ 
+ // Forward declarations
+ class  CPed;

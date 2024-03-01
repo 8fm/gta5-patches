@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.h b/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjDynamicEntity.h
+@@ -8,8 +8,8 @@
+ #ifndef NETOBJDYNAMICENTITY_H
+ #define NETOBJDYNAMICENTITY_H
+ 
+-#include "network/objects/entities/NetObjEntity.h"
+-#include "network/objects/synchronisation/syncnodes/dynamicentitysyncnodes.h"
++#include "network/Objects/Entities/NetObjEntity.h"
++#include "network/Objects/Synchronisation/SyncNodes/DynamicEntitySyncNodes.h"
+ 
+ class CNetObjDynamicEntity : public CNetObjEntity, public IDynamicEntityNodeDataAccessor
+ {

@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/Vehicles/virtualroad.cpp b/src/dev_ng/game/Vehicles/virtualroad.cpp
+--- a/src/dev_ng/game/Vehicles/virtualroad.cpp
++++ b/src/dev_ng/game/Vehicles/virtualroad.cpp
+@@ -11,18 +11,18 @@
+ #include "GrCore/DebugDraw.h"
+ 
+ // Game headers
+-#include "camera/camInterface.h"
+-#include "peds/PedIntelligence.h"
+-#include "Physics/GtaMaterialManager.h"
+-#include "Physics/WorldProbe/WorldProbe.h"
+-#include "VehicleAi/PathFind.h"
+-#include "VehicleAi/VehicleIntelligence.h"
+-#include "VehicleAi/Task/TaskVehicleMissionBase.h"
++#include "camera/CamInterface.h"
++#include "Peds/PedIntelligence.h"
++#include "physics/gtaMaterialManager.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "vehicleAi/pathfind.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/task/TaskVehicleMissionBase.h"
+ #include "Vehicles/VirtualRoad.h"
+-#include "Vehicles/VehiclePopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "scene/LoadScene.h"
+-#include "Scene/world/GameWorld.h"
+-#include "Physics/WorldProbe/shapetestresults.h"
++#include "scene/world/GameWorld.h"
++#include "physics/WorldProbe/shapetestresults.h"
+ 
+ AI_OPTIMISATIONS();
+ AI_VEHICLE_OPTIMISATIONS();

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/AnimatedFrameShaker.h b/src/dev_ng/game/camera/helpers/AnimatedFrameShaker.h
+--- a/src/dev_ng/game/camera/helpers/AnimatedFrameShaker.h
++++ b/src/dev_ng/game/camera/helpers/AnimatedFrameShaker.h
+@@ -7,7 +7,7 @@
+ #ifndef ANIMATED_FRAME_SHAKER_H
+ #define ANIMATED_FRAME_SHAKER_H
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwsys/timer.h"
+ #include "fwanimation/animdirector.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/TaskDuckAndCover.h b/src/dev_ng/game/task/Response/TaskDuckAndCover.h
+--- a/src/dev_ng/game/task/Response/TaskDuckAndCover.h
++++ b/src/dev_ng/game/task/Response/TaskDuckAndCover.h
+@@ -2,7 +2,7 @@
+ #define TASK_DUCK_FOR_COVER_H_
+ 
+ #include "Peds/ped.h"
+-#include "task/system/Task.h"
++#include "task/System/Task.h"
+ 
+ class CTaskDuckAndCover	: public CTask
+ {

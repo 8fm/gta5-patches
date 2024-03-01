@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.h b/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskInWater.h
+@@ -11,8 +11,8 @@
+ #include "math/angmath.h"
+ 
+ #include "Peds/ped.h"
+-#include "Task/System/Task.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/System/Task.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ 
+ class CTaskMotionSwimming : public CTaskMotionBase

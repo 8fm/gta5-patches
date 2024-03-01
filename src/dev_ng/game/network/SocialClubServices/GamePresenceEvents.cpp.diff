@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/GamePresenceEvents.cpp b/src/dev_ng/game/network/SocialClubServices/GamePresenceEvents.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/GamePresenceEvents.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/GamePresenceEvents.cpp
+@@ -15,14 +15,14 @@
+ 
+ //Game
+ #include "audio/frontendaudioentity.h"
+-#include "event/events.h"
++#include "event/Events.h"
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+ #include "frontend/GameStream.h"
+ #include "frontend/GameStreamMgr.h"
+ #include "game/cheat.h"
+ #include "network/Events/NetworkEventTypes.h"
+-#include "network/cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ #include "network/NetworkInterface.h"
+ #include "network/Network.h"
+ #include "network/Sessions/NetworkSession.h"
+@@ -33,13 +33,13 @@
+ #include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+ #include "network/SocialClubServices/SocialClubInboxManager.h"
+ #include "network/Voice/NetworkVoice.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/PedIntelligence.h"
+ #include "script/commands_socialclub.h"
+ #include "task/Combat/TaskDamageDeath.h"
+ #include "task/Physics/TaskNMRelax.h"
+ #include "text/messages.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

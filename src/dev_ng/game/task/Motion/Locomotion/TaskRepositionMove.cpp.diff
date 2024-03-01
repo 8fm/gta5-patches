@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.cpp
+@@ -1,11 +1,11 @@
+ // File header
+-#include "Task/Motion/Locomotion/TaskRepositionMove.h"
++#include "task/Motion/Locomotion/TaskRepositionMove.h"
+ 
+ // Rage headers
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "Animation/Move.h"
++#include "animation/Move.h"
+ 
+ AI_OPTIMISATIONS()
+ 

@@ -1,6 +1,41 @@
 diff --git a/src/dev_ng/game/scene/ExtraContent.cpp b/src/dev_ng/game/scene/ExtraContent.cpp
 --- a/src/dev_ng/game/scene/ExtraContent.cpp
 +++ b/src/dev_ng/game/scene/ExtraContent.cpp
+@@ -28,10 +28,10 @@
+ 
+ // Game headers
+ #include "control/Gen9ExclusiveAssets.h"
+-#include "peds/PlayerSpecialAbility.h"
++#include "Peds/PlayerSpecialAbility.h"
+ #include "rline/cloud/rlcloud.h"
+ #include "streaming/packfilemanager.h"
+-#include "network/network.h"
++#include "network/Network.h"
+ #include "network/Cloud/Tunables.h"
+ #include "frontend/WarningScreen.h"
+ #include "scene/dlc_channel.h"
+@@ -44,9 +44,9 @@
+ #include "streaming/streaming.h"
+ #include "streaming/streamingengine.h"
+ #include "streaming/streaminginstall_psn.h"
+-#include "task/system/Tuning.h"
+-#include "system/controlmgr.h"
+-#include "system/filemgr.h"
++#include "task/System/Tuning.h"
++#include "system/controlMgr.h"
++#include "system/FileMgr.h"
+ #include "system/device_xcontent.h"
+ #include "system/xtl.h"
+ #include "task/physics/BlendFromNMData.h"
+@@ -56,7 +56,7 @@
+ #include "scene/scene.h"
+ #include "file/device_installer.h"
+ #include "frontend/loadingscreens.h"
+-#include "Network/commerce/CommerceManager.h"
++#include "network/commerce/CommerceManager.h"
+ #include "camera/CamInterface.h"
+ #include "network/Live/NetworkTelemetry.h"
+ #include "network/General/NetworkAssetVerifier.h"
 @@ -98,7 +98,7 @@ RAGE_DEFINE_CHANNEL(dlc, DIAG_SEVERITY_DISPLAY, DIAG_SEVERITY_DISPLAY, DIAG_SEVE
  #define TITLE_UPDATE_RPF_PATH "update:/update.rpf"
  #define TITLE_UPDATE2_RPF_PATH "update:/update2.rpf"

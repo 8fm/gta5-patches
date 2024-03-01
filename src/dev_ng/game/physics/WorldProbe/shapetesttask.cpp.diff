@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/physics/WorldProbe/shapetesttask.cpp b/src/dev_ng/game/physics/WorldProbe/shapetesttask.cpp
+--- a/src/dev_ng/game/physics/WorldProbe/shapetesttask.cpp
++++ b/src/dev_ng/game/physics/WorldProbe/shapetesttask.cpp
+@@ -5,13 +5,13 @@
+ #include "phbound/boundcomposite.h"
+ 
+ // Game headers:
+-#include "network/live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "Peds/ped.h"
+ #include "physics/gtaInst.h"
+ #include "physics/gtaMaterialManager.h"
+ #include "scene/Entity.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/Boat.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Boat.h"
+ #include "Vehicles/vehicle.h"
+ 
+ PHYSICS_OPTIMISATIONS()

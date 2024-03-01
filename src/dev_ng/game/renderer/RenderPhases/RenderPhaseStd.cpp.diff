@@ -1,0 +1,114 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp
+@@ -36,25 +36,25 @@
+ #endif
+ 
+ // Game headers
+-#include "Network/NetworkInterface.h"
+-#include "Network/SocialClubServices/SocialClubNewsStoryMgr.h"
++#include "network/NetworkInterface.h"
++#include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+ #include "camera/helpers/Frame.h"
+ #include "camera/CamInterface.h"
+ #include "camera/system/CameraManager.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/gameplay/aim/FirstPersonAimCamera.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Control/stuntjump.h"
++#include "control/stuntjump.h"
+ #include "control/videorecording/videorecording.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "debug/bar.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "debug/Bar.h"
+ #include "debug/Rendering/DebugDeferred.h"
+ #include "debug/Rendering/DebugLighting.h"
+ #include "debug/TiledScreenCapture.h"
+ #include "frontend/BusySpinner.h"
+ #include "frontend/HudMarkerManager.h"
+ #include "frontend/NewHud.h"
+-#include "Frontend/UIReplayScaleformController.h"
++#include "frontend/UIReplayScaleformController.h"
+ #include "frontend/DisplayCalibration.h"
+ #include "frontend/MiniMap.h"
+ #include "frontend/MiniMapRenderThread.h"
+@@ -78,13 +78,13 @@
+ #include "frontend/VideoEditor/ui/TextTemplate.h"
+ #include "frontend/VideoEditor/ui/WatermarkRenderer.h"
+ #endif
+-#include "game/clock.h"
+-#include "Game/Weather.h"
++#include "game/Clock.h"
++#include "game/Weather.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "Objects/ObjectPopulation.h"
+ #include "pathserver/pathserver.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/PedHeadshotManager.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedHeadshotManager.h"
+ #include "profile/trace.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/Deferred/GBuffer.h"
+@@ -108,18 +108,18 @@
+ #include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
+ #include "renderer/River.h"
+ #include "renderer/SSAO.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/occlusion.h"
+ #include "renderer/ScreenshotManager.h"
+-#include "renderer/shadows/shadows.h"
++#include "renderer/Shadows/Shadows.h"
+ #include "renderer/UI3DDrawManager.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "renderer/HorizonObjects.h"
+ #include "renderer/ApplyDamage.h"
+ #include "replaycoordinator/ReplayCoordinator.h"
+ #include "SaveLoad/savegame_messages.h"
+ #include "SaveLoad/savegame_photo_manager.h"
+-#include "scene/portals/portalTracker.h"
++#include "scene/portals/PortalTracker.h"
+ #include "scene/scene.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/script.h"
+@@ -128,7 +128,7 @@
+ #include "shaders/CustomShaderEffectCable.h"
+ #include "shaders/ShaderLib.h"
+ #include "streaming/streamingengine.h"
+-#include "system/ControlMgr.h"
++#include "system/controlMgr.h"
+ #include "system/system.h"
+ #include "text/TextFormat.h"
+ #include "timecycle/TimeCycle.h"
+@@ -137,11 +137,11 @@
+ #include "vfx/particles/PtFxManager.h"
+ #include "vfx/misc/LODLightManager.h"
+ #include "vfx/misc/DistantLightsVertexBuffer.h"
+-#include "vfx/Misc/Markers.h"
+-#include "vfx/Misc/MovieMeshManager.h"
++#include "vfx/misc/Markers.h"
++#include "vfx/misc/MovieMeshManager.h"
+ #include "vfx/misc/Puddles.h"
+ #include "pickups/Pickup.h"
+-#include "Weapons/weapon.h"
++#include "weapons/Weapon.h"
+ 
+ #include "frontend/SocialClubMenu.h"
+ #include "frontend/PolicyMenu.h"
+@@ -151,11 +151,11 @@
+ #endif // RSG_PC
+ 
+ #if __BANK
+-#include "vehicles/vehicleDamage.h"
++#include "Vehicles/vehicleDamage.h"
+ #endif
+ 
+ #if GTA_REPLAY
+-#include "control/replay/replayinternal.h"
++#include "control/replay/ReplayInternal.h"
+ #endif // GTA_REPLAY
+ 
+ #if __DEV

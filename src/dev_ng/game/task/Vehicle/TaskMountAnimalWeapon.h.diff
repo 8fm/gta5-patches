@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.h b/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.h
+--- a/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.h
++++ b/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.h
+@@ -9,9 +9,9 @@ purpose:	Tasks related to combat while mounted
+ *********************************************************************/
+ 
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "task/combat/TaskCombatMelee.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Combat/TaskCombatMelee.h"
+ 
+ class CVehicleDriveByInfo;
+ struct sCollisionInfo;

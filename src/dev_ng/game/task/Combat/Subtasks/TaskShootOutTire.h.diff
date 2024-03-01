@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.h b/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskShootOutTire.h
+@@ -6,12 +6,12 @@
+ #define TASK_SHOOT_OUT_TIRE_H
+ 
+ // Game headers
+-#include "AI/AITarget.h"
++#include "ai/AITarget.h"
+ #include "renderer/HierarchyIds.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CVehicle;

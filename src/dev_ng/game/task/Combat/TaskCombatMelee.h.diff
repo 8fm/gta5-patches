@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskCombatMelee.h b/src/dev_ng/game/task/Combat/TaskCombatMelee.h
+--- a/src/dev_ng/game/task/Combat/TaskCombatMelee.h
++++ b/src/dev_ng/game/task/Combat/TaskCombatMelee.h
+@@ -10,13 +10,13 @@
+ #ifndef INC_TASK_COMBAT_MELEE_H
+ #define INC_TASK_COMBAT_MELEE_H
+ 
+-#include "Pathserver/PathServer.h"
++#include "pathserver/PathServer.h"
+ #include "Peds/Action/ActionManager.h"
+-#include "Task/Combat/CombatManager.h"
+-#include "Task/System/Task.h"
+-#include "Task/Animation/TaskAnims.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/TaskTypes.h"
++#include "task/Combat/CombatManager.h"
++#include "task/System/Task.h"
++#include "task/Animation/TaskAnims.h"
++#include "task/System/TaskMove.h"
++#include "task/System/TaskTypes.h"
+ 
+ // Rage forward declarations
+ namespace rage

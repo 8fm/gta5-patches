@@ -1,12 +1,31 @@
 diff --git a/src/dev_ng/game/event/EventHandler.cpp b/src/dev_ng/game/event/EventHandler.cpp
 --- a/src/dev_ng/game/event/EventHandler.cpp
 +++ b/src/dev_ng/game/event/EventHandler.cpp
-@@ -5,7 +5,7 @@
+@@ -1,19 +1,19 @@
+ // File header
+-#include "Event/EventHandler.h"
++#include "event/EventHandler.h"
+ 
+ // Framework headers
  #include "ai/aichannel.h"
  
  // Game headers
 -#include "ai\debug\system\AIDebugLogManager.h"
+-#include "Event/Event.h"
+-#include "Event/Events.h"
+-#include "Event/EventDamage.h"
+-#include "Peds/Ped.h"
 +#include "ai/debug/system/AIDebugLogManager.h"
- #include "Event/Event.h"
- #include "Event/Events.h"
- #include "Event/EventDamage.h"
++#include "event/Event.h"
++#include "event/Events.h"
++#include "event/EventDamage.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedTaskRecord.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/System/TaskClassInfo.h"
++#include "task/Physics/TaskNM.h"
++#include "task/System/TaskClassInfo.h"
+ 
+ // rage headers
+ #include "Profile/timebars.h"

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/camera/helpers/BaseFrameShaker.h b/src/dev_ng/game/camera/helpers/BaseFrameShaker.h
+--- a/src/dev_ng/game/camera/helpers/BaseFrameShaker.h
++++ b/src/dev_ng/game/camera/helpers/BaseFrameShaker.h
+@@ -7,10 +7,10 @@
+ #ifndef BASE_FRAME_SHAKER_H
+ #define BASE_FRAME_SHAKER_H
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #include "camera/base/BaseObject.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ class camEnvelope;

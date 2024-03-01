@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/world/WorldDebugHelper.h b/src/dev_ng/game/scene/world/WorldDebugHelper.h
+--- a/src/dev_ng/game/scene/world/WorldDebugHelper.h
++++ b/src/dev_ng/game/scene/world/WorldDebugHelper.h
+@@ -12,7 +12,7 @@
+ // Rage headers
+ 
+ // Framework headers
+-#include "fwscene/world/worldmgr.h"
++#include "fwscene/world/WorldMgr.h"
+ 
+ // Game headers
+ #include "scene/RegdRefTypes.h"

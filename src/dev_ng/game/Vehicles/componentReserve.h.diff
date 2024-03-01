@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/Vehicles/componentReserve.h b/src/dev_ng/game/Vehic
 -#include "scene\RegdRefTypes.h"
 -#include "vehicles\VehicleDefines.h"
 +#include "scene/RegdRefTypes.h"
-+#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
  
  class CBaseModelInfo;
  class CComponentReservationManager;

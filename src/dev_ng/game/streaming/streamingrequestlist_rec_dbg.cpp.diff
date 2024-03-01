@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/streaming/streamingrequestlist_rec_dbg.cpp b/src/dev_ng/game/streaming/streamingrequestlist_rec_dbg.cpp
+--- a/src/dev_ng/game/streaming/streamingrequestlist_rec_dbg.cpp
++++ b/src/dev_ng/game/streaming/streamingrequestlist_rec_dbg.cpp
+@@ -15,11 +15,11 @@ STREAMING_OPTIMISATIONS()
+ 
+ 
+ #include "atl/map.h"
+-#include "camera/camInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Cutscene/CutsceneManagerNew.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "parser/manager.h"
+ #include "parser/treenode.h"
+ #include "renderer/PostScan.h"
+@@ -36,7 +36,7 @@ STREAMING_OPTIMISATIONS()
+ #include "fwsys/metadatastore.h"
+ #include "fwsys/timer.h"
+ #include "grcore/debugdraw.h"
+-#include "network/live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "renderer/PostScan.h"
+ #include "scene/FocusEntity.h"
+ #include "scene/ipl/IplCullBox.h"

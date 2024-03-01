@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/task/System/Task.h b/src/dev_ng/game/task/System/Task.h
+--- a/src/dev_ng/game/task/System/Task.h
++++ b/src/dev_ng/game/task/System/Task.h
+@@ -9,16 +9,16 @@
+ 
+ // Framework headers
+ #include "ai/task/task.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Game headers
+-#include "Debug/DebugDrawStore.h"
++#include "debug/DebugDrawStore.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendTypes.h"
+-#include "Task/Physics/BlendFromNmData.h"
+-#include "Task/System/TaskClassInfo.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Event/system/EventData.h"
++#include "task/Physics/BlendFromNmData.h"
++#include "task/System/TaskClassInfo.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskTypes.h"
++#include "event/system/EventData.h"
+ #include "system/poolallocator.h"
+ 
+ // Forward declarations

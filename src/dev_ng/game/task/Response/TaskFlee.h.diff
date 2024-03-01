@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Response/TaskFlee.h b/src/dev_ng/game/task/Response/TaskFlee.h
+--- a/src/dev_ng/game/task/Response/TaskFlee.h
++++ b/src/dev_ng/game/task/Response/TaskFlee.h
+@@ -6,16 +6,16 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "Event/System/EventData.h"
++#include "event/system/EventData.h"
+ #include "Peds/FleeBehaviour.h"
+-#include "AI/AITarget.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/Scenario/ScenarioPoint.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "ai/AITarget.h"
++#include "scene/RegdRefTypes.h"
++#include "task/Scenario/ScenarioPoint.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ #include "ik/IkRequest.h"
+ 
+ // Game forward Declarations

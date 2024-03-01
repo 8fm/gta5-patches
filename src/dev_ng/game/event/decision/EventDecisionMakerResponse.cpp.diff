@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp b/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp
+--- a/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp
++++ b/src/dev_ng/game/event/decision/EventDecisionMakerResponse.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Event/Decision/EventDecisionMakerResponse.h"
++#include "event/decision/EventDecisionMakerResponse.h"
+ 
+ // Rage headers
+ #include "atl/bitset.h"
+@@ -9,18 +9,18 @@
+ #include "fwmaths/Random.h"
+ 
+ // Game headers
+-#include "Event/Decision/EventDecisionMakerResponse_parser.h"
+-#include "Event/EventEditable.h"
+-#include "Event/EventShocking.h"
+-#include "Event/System/EventDataManager.h"
+-#include "Modelinfo/ModelSeatInfo.h"
+-#include "Peds/Ped.h"
++#include "event/decision/EventDecisionMakerResponse_parser.h"
++#include "event/EventEditable.h"
++#include "event/EventShocking.h"
++#include "event/system/EventDataManager.h"
++#include "modelinfo/ModelSeatInfo.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskSharkAttack.h"
+-#include "task/Scenario/Info/ScenarioTypes.h"
+-#include "task/Scenario/Info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioTypes.h"
++#include "task/Scenario/info/ScenarioInfo.h"
+ #include "task/Scenario/Types/TaskUseScenario.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

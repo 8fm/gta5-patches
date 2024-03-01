@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Weapons/WeaponController.h b/src/dev_ng/game/task/Weapons/WeaponController.h
+--- a/src/dev_ng/game/task/Weapons/WeaponController.h
++++ b/src/dev_ng/game/task/Weapons/WeaponController.h
+@@ -2,7 +2,7 @@
+ #define WEAPON_CONTROLLER_H
+ 
+ // Game headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Forward declarations
+ class CPed;

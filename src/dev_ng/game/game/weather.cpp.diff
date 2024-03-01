@@ -1,0 +1,50 @@
+diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
+--- a/src/dev_ng/game/game/weather.cpp
++++ b/src/dev_ng/game/game/weather.cpp
+@@ -27,23 +27,23 @@
+ 
+ // Game Headers
+ #include "Audio/WeatherAudioEntity.h"
+-#include "Control/Replay/Replay.h"
++#include "control/replay/Replay.h"
+ #include "Core/Game.h"
+-#include "Game/Clock.h"
+-#include "Game/Wind.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/NetworkInterface.h"
+-#include "Peds/Ped.h"
+-#include "Renderer/PostProcessFx.h"
+-#include "Renderer/Water.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Scene/Portals/Portal.h"
+-#include "System/ControlMgr.h"
+-#include "System/TamperActions.h"
++#include "game/Clock.h"
++#include "game/wind.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
++#include "renderer/PostProcessFx.h"
++#include "renderer/Water.h"
++#include "scene/DataFileMgr.h"
++#include "scene/portals/Portal.h"
++#include "system/controlMgr.h"
++#include "system/TamperActions.h"
+ #include "Timecycle/Timecycle.h"
+ #include "timecycle/TimeCycleConfig.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Vfx/Systems/VfxWeather.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/systems/VfxWeather.h"
+ #include "vfx/systems/VfxLightning.h"
+ #include "vfx/clouds/Clouds.h"
+ #include "vfx/clouds/CloudHat.h"
+@@ -53,7 +53,7 @@
+ 
+ // RageSec Headers
+ #include "security/ragesecgameinterface.h"
+-#include "Network/Sessions/NetworkSession.h"
++#include "network/Sessions/NetworkSession.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  OPTIMISATIONS - TURN ON IN OPTIMISATIONS.H

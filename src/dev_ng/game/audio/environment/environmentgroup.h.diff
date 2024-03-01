@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/environment/environmentgroup.h b/src/dev_ng/game/audio/environment/environmentgroup.h
+--- a/src/dev_ng/game/audio/environment/environmentgroup.h
++++ b/src/dev_ng/game/audio/environment/environmentgroup.h
+@@ -18,7 +18,7 @@
+ 
+ #include "pathserver/PathServer_DataTypes.h"
+ #include "system/criticalsection.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ 
+ class CInteriorInst;
+ class naAudioEntity;

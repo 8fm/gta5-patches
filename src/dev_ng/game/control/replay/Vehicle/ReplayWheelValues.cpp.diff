@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/ReplayWheelValues.cpp b/src/dev_ng/game/control/replay/Vehicle/ReplayWheelValues.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/ReplayWheelValues.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/ReplayWheelValues.cpp
+@@ -3,7 +3,7 @@
+ 
+ #if GTA_REPLAY
+ 
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "control/replay/ReplayInterfaceVeh.h"
+ 
+ extern f32 InterpolateWrappableValueFromS8(f32 difference, s8 currentValue, s8 nextValue, f32 interpolationStep);

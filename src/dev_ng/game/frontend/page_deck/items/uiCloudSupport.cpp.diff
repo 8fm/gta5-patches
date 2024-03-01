@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/page_deck/items/uiCloudSupport.cpp b/src/dev_ng/game/frontend/page_deck/items/uiCloudSupport.cpp
+--- a/src/dev_ng/game/frontend/page_deck/items/uiCloudSupport.cpp
++++ b/src/dev_ng/game/frontend/page_deck/items/uiCloudSupport.cpp
+@@ -9,10 +9,10 @@
+ #include "frontend/landing_page/messages/uiLandingPageMessages.h"
+ #include "frontend/page_deck/items/CardItem.h"
+ #include "frontend/page_deck/items/CloudCardItem.h"
+-#include "network/live/NetworkLegalRestrictionsManager.h"
++#include "network/Live/NetworkLegalRestrictionsManager.h"
+ #include "network/SocialClubServices/SocialClubFeedTilesMgr.h"
+ #include "network/SocialClubServices/SocialClubNewsStoryMgr.h"
+-#include "network/cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ 
+ #if GEN9_LANDING_PAGE_ENABLED
+ 

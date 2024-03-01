@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.h
+@@ -7,7 +7,7 @@
+ #ifndef PLANE_SYNC_NODES_H
+ #define PLANE_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/VehicleSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
+ 
+ #define NUM_PLANE_DAMAGE_SECTIONS 13
+ #define NUM_PLANE_LANDING_GEAR_DAMAGE_SECTIONS 6

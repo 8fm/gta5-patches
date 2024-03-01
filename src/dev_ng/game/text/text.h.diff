@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/text/text.h b/src/dev_ng/game/text/text.h
+--- a/src/dev_ng/game/text/text.h
++++ b/src/dev_ng/game/text/text.h
+@@ -20,7 +20,7 @@
+ #include "fwmaths/Rect.h"
+ 
+ // Game headers
+-#include "Text/TextFile.h"
++#include "text/TextFile.h"
+ 
+ extern const float HACK_FOR_OLD_SCALE;
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/tools/ObjectPositionChecker.cpp b/src/dev_ng/game/tools/ObjectPositionChecker.cpp
+--- a/src/dev_ng/game/tools/ObjectPositionChecker.cpp
++++ b/src/dev_ng/game/tools/ObjectPositionChecker.cpp
+@@ -32,8 +32,8 @@
+ #include "Objects/object.h"
+ #include "physics/gtaInst.h"
+ #include "physics/physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Peds/Ped.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "Peds/ped.h"
+ #include "streaming/streaming.h"
+ 
+ 

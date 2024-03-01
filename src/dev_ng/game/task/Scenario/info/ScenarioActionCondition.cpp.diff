@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.cpp b/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.cpp
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.cpp
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioActionCondition.cpp
+@@ -1,9 +1,9 @@
+-#include "Task/Scenario/Info/ScenarioActionCondition.h"
++#include "task/Scenario/info/ScenarioActionCondition.h"
+ 
+ //Game Headers
+-#include "Peds/Ped.h"
+-#include "Task/Scenario/Info/ScenarioInfo.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "Peds/ped.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ 
+ AI_SCENARIO_OPTIMISATIONS()
+ 

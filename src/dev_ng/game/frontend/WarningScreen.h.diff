@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/WarningScreen.h b/src/dev_ng/game/frontend/WarningScreen.h
+--- a/src/dev_ng/game/frontend/WarningScreen.h
++++ b/src/dev_ng/game/frontend/WarningScreen.h
+@@ -17,7 +17,7 @@
+ // Game headers
+ #include "text/messages.h"
+ #include "text/GxtString.h"
+-#include "Frontend/CMenuBase.h"
++#include "frontend/CMenuBase.h"
+ #include "frontend/WarningScreenEnums.h"
+ #include "Scaleform/ScaleFormMgr.h"
+ 

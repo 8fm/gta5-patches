@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/pauseMenuLUT.cpp b/src/dev_ng/game/frontend/Scaleform/pauseMenuLUT.cpp
+--- a/src/dev_ng/game/frontend/Scaleform/pauseMenuLUT.cpp
++++ b/src/dev_ng/game/frontend/Scaleform/pauseMenuLUT.cpp
+@@ -5,9 +5,9 @@
+ // 
+ 
+ #include "pauseMenuLUT.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ui_channel.h"
+-#include "Frontend/CMenuBase.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/ui_channel.h"
++#include "frontend/CMenuBase.h"
+ 
+ using namespace rage;
+ 

@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/camera/helpers/Collision.cpp b/src/dev_ng/game/camera/helpers/Collision.cpp
+--- a/src/dev_ng/game/camera/helpers/Collision.cpp
++++ b/src/dev_ng/game/camera/helpers/Collision.cpp
+@@ -20,8 +20,8 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "control/replay/ReplayExtensions.h"
+ #include "debug/DebugScene.h"
+-#include "objects/object.h"
+-#include "peds/ped.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
+ #include "physics/gtaArchetype.h"
+ #include "physics/gtaInst.h"
+ #include "physics/gtaMaterialManager.h"
+@@ -29,7 +29,7 @@
+ #include "renderer/River.h"
+ #include "renderer/Water.h"
+ #include "scene/Physical.h"
+-#include "vehicles/Trailer.h"
++#include "Vehicles/Trailer.h"
+ 
+ #include "control/replay/ReplaySettings.h"
+ #if GTA_REPLAY

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedVariationDebug.h b/src/dev_ng/game/Peds/rendering/PedVariationDebug.h
+--- a/src/dev_ng/game/Peds/rendering/PedVariationDebug.h
++++ b/src/dev_ng/game/Peds/rendering/PedVariationDebug.h
+@@ -13,8 +13,8 @@
+ #include "fwscene/stores/dwdstore.h"
+ 
+ #include "scene/RegdRefTypes.h"
+-#include "peds/rendering/pedVariationDS.h"
+-#include "peds/rendering/PedVariationStream.h"
++#include "Peds/rendering/PedVariationDS.h"
++#include "Peds/rendering/PedVariationStream.h"
+ 
+ class CPed;
+ 

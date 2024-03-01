@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysisUtil.cpp b/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysisUtil.cpp
+--- a/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysisUtil.cpp
++++ b/src/dev_ng/game/debug/AssetAnalysis/AssetAnalysisUtil.cpp
+@@ -36,7 +36,7 @@
+ #include "vfx/ptfx/ptfxasset.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ 
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "debug/AssetAnalysis/AssetAnalysisCommon.h"
+ #include "debug/AssetAnalysis/AssetAnalysisUtil.h"
+ #include "debug/DebugArchetypeProxy.h"

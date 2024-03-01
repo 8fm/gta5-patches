@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Cloud/VideoUploadManager.h b/src/dev_ng/game/network/Cloud/VideoUploadManager.h
+--- a/src/dev_ng/game/network/Cloud/VideoUploadManager.h
++++ b/src/dev_ng/game/network/Cloud/VideoUploadManager.h
+@@ -10,7 +10,7 @@ CompileTimeAssert(RL_UGC_YOUTUBE); // If this fails, you need to have this defin
+ 
+ #include "atl/string.h"
+ #include "atl/singleton.h"
+-#include "Network/Cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ #include "system/service.h"
+ 
+ #define ENABLE_VIDEO_UPLOAD_THROTTLES 0

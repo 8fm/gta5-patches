@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Sessions/NetworkSessionMessages.h b/src/dev_ng/game/network/Sessions/NetworkSessionMessages.h
+--- a/src/dev_ng/game/network/Sessions/NetworkSessionMessages.h
++++ b/src/dev_ng/game/network/Sessions/NetworkSessionMessages.h
+@@ -9,10 +9,10 @@
+ 
+ #include "net/message.h"
+ 
+-#include "Network/NetworkTypes.h"
+-#include "Network/Sessions/NetworkSessionUtils.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Network/Players/NetGamePlayerMessages.h"
++#include "network/NetworkTypes.h"
++#include "network/Sessions/NetworkSessionUtils.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Players/NetGamePlayerMessages.h"
+ #include "audio/radiostation.h"
+ #include "game/weather.h"
+ 

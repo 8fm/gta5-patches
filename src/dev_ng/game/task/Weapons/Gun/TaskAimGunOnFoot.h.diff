@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunOnFoot.h b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunOnFoot.h
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskAimGunOnFoot.h
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskAimGunOnFoot.h
+@@ -10,12 +10,12 @@
+ ////////////////////////////////////////////////////////////////////////////////
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Weapons/Gun/GunIkInfo.h"
+-#include "Task/Weapons/Gun/TaskAimGun.h"
+-#include "Task/Weapons/WeaponController.h"
++#include "task/System/Tuning.h"
++#include "task/Weapons/Gun/GunIkInfo.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/WeaponController.h"
+ 
+ #if RSG_ORBIS || RSG_DURANGO || RSG_PC
+ 	#define ENABLE_GUN_PROJECTILE_THROW 1

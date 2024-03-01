@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponent.h b/src/dev_ng/game/weapons/components/WeaponComponent.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponent.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponent.h
+@@ -14,12 +14,12 @@
+ #include "fwutil/rtti.h"
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Weapons/Helpers/WeaponHelpers.h"
+-#include "Weapons/Modifiers/WeaponAccuracyModifier.h"
+-#include "Weapons/Modifiers/WeaponDamageModifier.h"
+-#include "Weapons/Modifiers/WeaponFallOffModifier.h"
+-#include "Weapons/WeaponChannel.h"
++#include "scene/RegdRefTypes.h"
++#include "weapons/helpers/WeaponHelpers.h"
++#include "weapons/modifiers/WeaponAccuracyModifier.h"
++#include "weapons/modifiers/WeaponDamageModifier.h"
++#include "weapons/modifiers/WeaponFallOffModifier.h"
++#include "weapons/WeaponChannel.h"
+ #include "atl/string.h"
+ 
+ // Forward declarations

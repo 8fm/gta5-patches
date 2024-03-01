@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/system/control.cpp b/src/dev_ng/game/system/control.cpp
+--- a/src/dev_ng/game/system/control.cpp
++++ b/src/dev_ng/game/system/control.cpp
+@@ -26,10 +26,10 @@
+ #endif // __WIN32PC
+ 
+ // game headers
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/ProfileSettings.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/ProfileSettings.h"
+ #include "frontend/VideoEditor/VideoEditorInterface.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ #include "system/keyboard.h"
+ #include "Peds/PlayerSpecialAbility.h"
+ #if __BANK
+@@ -39,7 +39,7 @@
+ #include "camera/gameplay/GameplayDirector.h"
+ 
+ #if KEYBOARD_MOUSE_SUPPORT
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ #endif // KEYBOARD_MOUSE_SUPPORT
+ 
+ //OPTIMISATIONS_OFF()

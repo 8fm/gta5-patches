@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/InteriorPacket.cpp b/src/dev_ng/game/control/replay/Misc/InteriorPacket.cpp
+--- a/src/dev_ng/game/control/replay/Misc/InteriorPacket.cpp
++++ b/src/dev_ng/game/control/replay/Misc/InteriorPacket.cpp
+@@ -7,11 +7,11 @@
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "Objects/Door.h"
+-#include "Scene/portals/InteriorInst.h"
++#include "scene/portals/InteriorInst.h"
+ #include "scene/portals/PortalTracker.h"
+ #include "scene/world/GameWorld.h"
+-#include "Renderer/occlusion.h"
+-#include "Renderer/PostScan.h"
++#include "renderer/occlusion.h"
++#include "renderer/PostScan.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ void CPacketInterior::Store(const atArray<ReplayInteriorData>& info)

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp b/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp
+--- a/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp
++++ b/src/dev_ng/game/Peds/PedIntelligence/PedAILod.cpp
+@@ -10,12 +10,12 @@
+ 
+ // Game headers
+ #include "ai/stats.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/ped_channel.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedGeometryAnalyser.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ #include "task/Vehicle/TaskRideTrain.h"
+ #include "Vehicles/train.h"
+ 

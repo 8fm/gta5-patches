@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskSwapWeapon.h b/src/dev_ng/game/task/Weapons/TaskSwapWeapon.h
+--- a/src/dev_ng/game/task/Weapons/TaskSwapWeapon.h
++++ b/src/dev_ng/game/task/Weapons/TaskSwapWeapon.h
+@@ -2,12 +2,12 @@
+ #define TASK_SWAP_WEAPON_H
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
+-#include "Weapons/Inventory/PedInventory.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
++#include "weapons/inventory/PedInventory.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // eSwapFlags

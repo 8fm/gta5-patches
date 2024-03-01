@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/weapons/WeaponAccuracy.cpp b/src/dev_ng/game/weapons/WeaponAccuracy.cpp
+--- a/src/dev_ng/game/weapons/WeaponAccuracy.cpp
++++ b/src/dev_ng/game/weapons/WeaponAccuracy.cpp
+@@ -5,6 +5,6 @@
+ //
+ 
+ // File header
+-#include "Weapons/WeaponAccuracy.h"
++#include "weapons/WeaponAccuracy.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////

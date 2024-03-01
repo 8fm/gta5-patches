@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjHeli.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjHeli.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjHeli.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjHeli.cpp
+@@ -5,7 +5,7 @@
+ // written by:  John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjHeli.h"
++#include "network/Objects/Entities/NetObjHeli.h"
+ 
+ // framework headers
+ #include "fwscene/stores/staticboundsstore.h"
+@@ -15,14 +15,14 @@
+ #include "event/ShockingEvents.h"
+ #include "network/Debug/NetworkDebug.h"
+ #include "network/NetworkInterface.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "network/objects/prediction/NetBlenderHeli.h"
+-#include "network/players/NetworkPlayerMgr.h"
+-#include "peds/Ped.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "network/Objects/Prediction/NetBlenderHeli.h"
++#include "network/Players/NetworkPlayerMgr.h"
++#include "Peds/ped.h"
+ #include "physics/gtaInst.h"
+ #include "renderer/PostScan.h"
+-#include "vehicles/Heli.h"
+-#include "vehicles/VehicleGadgets.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/VehicleGadgets.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ 
+ NETWORK_OPTIMISATIONS()

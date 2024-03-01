@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/Live/livemanager.h b/src/dev_ng/game/network/Live/livemanager.h
+--- a/src/dev_ng/game/network/Live/livemanager.h
++++ b/src/dev_ng/game/network/Live/livemanager.h
+@@ -21,11 +21,11 @@
+ #include "rline/scmembership/rlscmembership.h"
+ #include "system/service.h"
+ 
+-#include "fwnet/netscgamerdatamgr.h"
++#include "fwnet/netscgamerDataMgr.h"
+ 
+-#include "Core/Game.h"
+-#include "network/commerce/CommerceManager.h"
+-#include "network/crews/NetworkCrewDataMgr.h"
++#include "Core/game.h"
++#include "network/Commerce/CommerceManager.h"
++#include "network/Crews/NetworkCrewDataMgr.h"
+ #include "network/Facebook/Facebook.h"
+ #include "network/Live/AchMgr.h"
+ #include "network/Live/InviteMgr.h"

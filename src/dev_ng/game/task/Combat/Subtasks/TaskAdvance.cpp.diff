@@ -1,7 +1,19 @@
 diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp
 --- a/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp
 +++ b/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp
-@@ -11,7 +11,7 @@
+@@ -1,17 +1,17 @@
+ // FILE :    TaskAdvance.h
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskAdvance.h"
++#include "task/Combat/Subtasks/TaskAdvance.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/CombatManager.h"
+ #include "task/Combat/TacticalAnalysis.h"
  #include "task/Combat/Cover/cover.h"
  #include "task/Movement/TaskMoveToTacticalPoint.h"
  #include "task/Movement/TaskSeekEntity.h"

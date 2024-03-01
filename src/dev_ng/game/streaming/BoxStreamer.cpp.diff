@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/streaming/BoxStreamer.cpp b/src/dev_ng/game/streaming/BoxStreamer.cpp
 --- a/src/dev_ng/game/streaming/BoxStreamer.cpp
 +++ b/src/dev_ng/game/streaming/BoxStreamer.cpp
-@@ -11,7 +11,7 @@ STREAMING_OPTIMISATIONS()
+@@ -11,21 +11,21 @@ STREAMING_OPTIMISATIONS()
  
  // C headers
  // Rage headers
@@ -10,3 +10,20 @@ diff --git a/src/dev_ng/game/streaming/BoxStreamer.cpp b/src/dev_ng/game/streami
  #include "fwsys/timer.h"
  
  // Game headers
+-#include "debug/vectormap.h"
++#include "debug/VectorMap.h"
+ #include "network/NetworkInterface.h"
+ #include "pathserver/ExportCollision.h"
+ #include "pathserver/NavGenParam.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/lod/LodMgr.h"
+ #include "script/script.h"
+ #include "streaming/streamingdebug.h"
+ #include "streaming/streamingmodule.h"
+ #include "streaming/streamingrequestlist.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+ #include "debug/DebugScene.h"

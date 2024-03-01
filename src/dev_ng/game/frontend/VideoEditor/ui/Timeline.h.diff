@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.h b/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.h
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.h
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Timeline.h
+@@ -15,7 +15,7 @@
+ 
+ #include "atl/hashstring.h"
+ 
+-#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
++#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+ #include "frontend/VideoEditor/Core/VideoEditorHelpers.h"
+ #include "frontend/VideoEditor/ui/Menu.h"
+ #include "frontend/VideoEditor/ui/TextTemplate.h"

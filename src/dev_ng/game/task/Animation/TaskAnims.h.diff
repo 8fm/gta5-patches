@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskAnims.h b/src/dev_ng/game/task/Animation/TaskAnims.h
+--- a/src/dev_ng/game/task/Animation/TaskAnims.h
++++ b/src/dev_ng/game/task/Animation/TaskAnims.h
+@@ -11,12 +11,12 @@
+ #include "network/General/NetworkSynchronisedScene.h"
+ #include "Peds/QueriableInterface.h"
+ #include "scene/Physical.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "system/controlMgr.h"
+ #include "task/Animation/AnimTaskFlags.h"
+ #include "task/Animation/TaskScriptedAnimation.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskHelpers.h"
+  
+ class CClipPlayer;
+ 

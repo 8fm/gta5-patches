@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/population.h b/src/dev_ng/game/control/population.h
+--- a/src/dev_ng/game/control/population.h
++++ b/src/dev_ng/game/control/population.h
+@@ -15,7 +15,7 @@
+ #include "vector/color32.h"
+ 
+ // Framework headers
+-#include "fwmaths/keyholetests.h"
++#include "fwmaths/KeyholeTests.h"
+ 
+ // game includes
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Peds/PedDebugVisualiser.h b/src/dev_ng/game/Peds/PedDebugVisualiser.h
+--- a/src/dev_ng/game/Peds/PedDebugVisualiser.h
++++ b/src/dev_ng/game/Peds/PedDebugVisualiser.h
+@@ -22,8 +22,8 @@
+ 
+ // game headers
+ #include "animation/debug/AnimDebug.h"
+-#include "Streaming/streamingrequest.h"
+-#include "Task/Physics/TaskNM.h"
++#include "streaming/streamingrequest.h"
++#include "task/Physics/TaskNM.h"
+ 
+ namespace rage {
+ 	class fwPtrList;

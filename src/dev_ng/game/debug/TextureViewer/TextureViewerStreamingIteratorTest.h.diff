@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.h b/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.h
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.h
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorTest.h
+@@ -8,7 +8,7 @@
+ 
+ #if __BANK
+ 
+-#include "debug/textureviewer/textureviewerstreamingiterator.h"
++#include "debug/TextureViewer/TextureViewerstreamingiterator.h"
+ 
+ // ================================================================================================
+ 

@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/game/Dispatch/Incidents.h b/src/dev_ng/game/game/Dispatch/Incidents.h
+--- a/src/dev_ng/game/game/Dispatch/Incidents.h
++++ b/src/dev_ng/game/game/Dispatch/Incidents.h
+@@ -5,7 +5,7 @@
+ #ifndef INC_INCIDENTS_H_
+ #define INC_INCIDENTS_H_
+ // Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ // Framework headers
+ #include "fwutil/Flags.h"
+ #include "fwnet/nettypes.h"
+@@ -14,7 +14,7 @@
+ #include "game/Dispatch/DispatchEnums.h"
+ #include "game/Dispatch/DispatchManager.h"
+ #include "network/General/NetworkUtil.h"
+-#include "peds/QueriableInterface.h"
++#include "Peds/QueriableInterface.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ class CFire;

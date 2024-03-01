@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/AnimSceneEvent.h b/src/dev_ng/game/animation/AnimScene/AnimSceneEvent.h
+--- a/src/dev_ng/game/animation/AnimScene/AnimSceneEvent.h
++++ b/src/dev_ng/game/animation/AnimScene/AnimSceneEvent.h
+@@ -10,14 +10,14 @@
+ #include "AnimSceneEntity.h"
+ #include "AnimSceneEditor.h"
+ #include "bank/button.h"
+-#include "physics/debugplayback.h"
++#include "physics/debugPlayback.h"
+ #endif //__BANK
+ #include "math/amath.h"
+ #include "parser/macros.h"
+ 
+ // framework includes
+ #include "animation/anim_channel.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ 
+ //
+ // animation/AnimScene/AnimSceneEvent.h

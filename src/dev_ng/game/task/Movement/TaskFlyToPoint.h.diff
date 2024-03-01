@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskFlyToPoint.h b/src/dev_ng/game/task/Movement/TaskFlyToPoint.h
+--- a/src/dev_ng/game/task/Movement/TaskFlyToPoint.h
++++ b/src/dev_ng/game/task/Movement/TaskFlyToPoint.h
+@@ -4,10 +4,10 @@
+ // Game headers
+ #include "TaskGoTo.h"
+ 
+-#include "AI/AITarget.h"
+-#include "Peds/PedDefines.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "ai/AITarget.h"
++#include "Peds/pedDefines.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CTaskFlyToPoint

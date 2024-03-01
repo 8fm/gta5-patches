@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/task/Default/TaskPlayer.h b/src/dev_ng/game/task/Default/TaskPlayer.h
+--- a/src/dev_ng/game/task/Default/TaskPlayer.h
++++ b/src/dev_ng/game/task/Default/TaskPlayer.h
+@@ -4,16 +4,16 @@
+ // Framework headers
+ 
+ // Game headers
+-#include "Control/Route.h"
++#include "control/Route.h"
+ #include "Peds/AssistedMovement.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskComplex.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Movement/Climbing/ClimbDetector.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/System/Task.h"
++#include "task/System/TaskComplex.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskMove.h"
++#include "task/System/TaskTypes.h"
++#include "task/Movement/Climbing/ClimbDetector.h"
+ 
+ 
+ class CPed;
+@@ -31,7 +31,7 @@ class CFirstPersonIkHelper;
+ struct SaveHouseStruct;
+ 
+ //Rage headers.
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ class CTaskPlayerOnFoot : public CTask
+ {

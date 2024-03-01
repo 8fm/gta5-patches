@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleAmphAutoPacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehicleAmphAutoPacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleAmphAutoPacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleAmphAutoPacket.cpp
+@@ -4,8 +4,8 @@
+ 
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "game/modelindices.h"
+-#include "vehicles/AmphibiousAutomobile.h"
++#include "game/ModelIndices.h"
++#include "Vehicles/AmphibiousAutomobile.h"
+ #include "audio/caraudioentity.h"
+ 
+ //========================================================================================================================

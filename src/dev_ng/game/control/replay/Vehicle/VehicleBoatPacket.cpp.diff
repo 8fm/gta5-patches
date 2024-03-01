@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleBoatPacket.cpp
+@@ -5,7 +5,7 @@
+ 
+ #include "audio/boataudioentity.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "vehicles/Boat.h"
++#include "Vehicles/Boat.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ void CPacketBoatUpdate::Store(CBoat *pBoat, bool storeCreateInfo)

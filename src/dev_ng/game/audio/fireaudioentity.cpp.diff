@@ -1,12 +1,18 @@
 diff --git a/src/dev_ng/game/audio/fireaudioentity.cpp b/src/dev_ng/game/audio/fireaudioentity.cpp
 --- a/src/dev_ng/game/audio/fireaudioentity.cpp
 +++ b/src/dev_ng/game/audio/fireaudioentity.cpp
-@@ -16,7 +16,7 @@
+@@ -11,12 +11,12 @@
+ #include "weatheraudioentity.h"
+ #include "grcore/debugdraw.h"
+ #include "game/wind.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "audiohardware/driverutil.h"
  #include "audioengine/curve.h"
  #include "audioengine/engineutil.h"
  #include "Peds/PedFootstepHelper.h"
 -#include "vfx\misc/fire.h"
-+#include "vfx/misc/fire.h"
++#include "vfx/misc/Fire.h"
  #include "weapons/Weapon.h"
  
  #include "debugaudio.h"

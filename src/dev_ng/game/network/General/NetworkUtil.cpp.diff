@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/network/General/NetworkUtil.cpp b/src/dev_ng/game/network/General/NetworkUtil.cpp
+--- a/src/dev_ng/game/network/General/NetworkUtil.cpp
++++ b/src/dev_ng/game/network/General/NetworkUtil.cpp
+@@ -18,24 +18,24 @@
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "frontend/PauseMenu.h"
+ #include "frontend/NewHud.h"
+ #include "network/Network.h"
+ #include "network/Debug/NetworkDebug.h"
+-#include "network/events/NetworkEventTypes.h"
+-#include "network/players/NetGamePlayer.h"
+-#include "network/objects/entities/NetObjPlayer.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Pickups/Pickup.h"
++#include "pickups/Pickup.h"
+ #include "scene/world/GameWorld.h"
+ #include "fwsys/timer.h"
+-#include "vehicles/train.h"
+-#include "vehicles/planes.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/train.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "text/text.h"
+ 
+ NETWORK_OPTIMISATIONS()

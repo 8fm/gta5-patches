@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/ik/solvers/BodyRecoilSolver.h b/src/dev_ng/game/ik/solvers/BodyRecoilSolver.h
+--- a/src/dev_ng/game/ik/solvers/BodyRecoilSolver.h
++++ b/src/dev_ng/game/ik/solvers/BodyRecoilSolver.h
+@@ -17,10 +17,10 @@
+ 
+ #include "crbody/iksolverbase.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vectormath/vec4v.h"
+ 
+-#include "Animation/debug/AnimDebug.h"
++#include "animation/debug/AnimDebug.h"
+ #include "ik/IkConfig.h"
+ 
+ class CIkRequestBodyRecoil;

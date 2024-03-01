@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/weapons/WeaponNetworkModifiers.cpp b/src/dev_ng/game/weapons/WeaponNetworkModifiers.cpp
+--- a/src/dev_ng/game/weapons/WeaponNetworkModifiers.cpp
++++ b/src/dev_ng/game/weapons/WeaponNetworkModifiers.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Weapons/WeaponNetworkModifiers.h"
++#include "weapons/WeaponNetworkModifiers.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

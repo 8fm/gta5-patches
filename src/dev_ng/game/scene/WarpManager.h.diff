@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/scene/WarpManager.h b/src/dev_ng/game/scene/WarpManager.h
+--- a/src/dev_ng/game/scene/WarpManager.h
++++ b/src/dev_ng/game/scene/WarpManager.h
+@@ -1,9 +1,9 @@
+ #ifndef __WARP_MANAGER_H_
+ #define __WARP_MANAGER_H_
+ 
+-#include "scene/world/gameworld.h"
+-#include "peds/ped.h"
+-#include "vehicles/vehicle.h" 
++#include "scene/world/GameWorld.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h" 
+ #include "game/Clock.h"
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"

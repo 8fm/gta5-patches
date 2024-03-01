@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskCutScene.cpp b/src/dev_ng/game/task/Animation/TaskCutScene.cpp
+--- a/src/dev_ng/game/task/Animation/TaskCutScene.cpp
++++ b/src/dev_ng/game/task/Animation/TaskCutScene.cpp
+@@ -1,5 +1,5 @@
+ // Class header
+-#include "Task/Animation/TaskCutScene.h"
++#include "task/Animation/TaskCutScene.h"
+ 
+ // Rage headers
+ #include "audiohardware/device.h"
+@@ -14,18 +14,18 @@
+ #include "animation/MovePed.h"
+ #include "animation/MoveVehicle.h"
+ #include "animation/EventTags.h"
+-#include "Cutscene/cutscene_channel.h"
++#include "cutscene/cutscene_channel.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+-#include "Cutscene/AnimatedModelEntity.h"
++#include "cutscene/AnimatedModelEntity.h"
+ #include "Objects/object.h"
+-#include "peds/ped.h"
+-#include "vehicles/vehicle.h"
+-#include "Task/System/TaskHelpers.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h"
++#include "task/System/TaskHelpers.h"
+ #include "scene/Physical.h"
+ #include "script/script.h"
+ #include "script/script_channel.h"
+-#include "vehicleAI/VehicleAILodManager.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "vehicleAi/VehicleAILodManager.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ AI_OPTIMISATIONS()
+ 

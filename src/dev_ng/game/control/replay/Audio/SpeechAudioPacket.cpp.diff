@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.cpp b/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.cpp
+--- a/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.cpp
++++ b/src/dev_ng/game/control/replay/Audio/SpeechAudioPacket.cpp
+@@ -7,11 +7,11 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/ReplayInterfacePed.h"
++#include "control/replay/ReplayInterfacePed.h"
+ #include "control/replay/ReplayInternal.h"
+ #include "control/replay/audio/SoundPacket.h"
+ #include "audio/pedaudioentity.h"
+-#include "peds/ped.h" 
++#include "Peds/ped.h" 
+ #include "audio/scriptaudioentity.h"
+ 
+ //========================================================================================================================

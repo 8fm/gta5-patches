@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjAutomobile.cpp b/src/dev_ng/game/network/Objects/Entities/NetObjAutomobile.cpp
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjAutomobile.cpp
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjAutomobile.cpp
+@@ -5,12 +5,12 @@
+ // written by:  John Gurney
+ //
+ 
+-#include "network/objects/entities/NetObjAutomobile.h"
++#include "network/Objects/Entities/NetObjAutomobile.h"
+ #include "event/EventShocking.h"
+ #include "event/ShockingEvents.h"
+ 
+-#include "peds/ped.h"
+-#include "vehicles/Automobile.h"
++#include "Peds/ped.h"
++#include "Vehicles/Automobile.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ NETWORK_OBJECT_OPTIMISATIONS()

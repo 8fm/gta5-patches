@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.h b/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskBirdLocomotion.h
+@@ -3,8 +3,8 @@
+ 
+ #include "math/angmath.h"
+ 
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/System/Tuning.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/System/Tuning.h"
+ 
+ //*********************************************************************
+ //	CTaskBirdLocomotion

@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskRideTrain.cpp b/src/dev_ng/game/task/Vehicle/TaskRideTrain.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskRideTrain.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskRideTrain.cpp
+@@ -5,17 +5,17 @@
+ //
+ 
+ // File header
+-#include "Task/Vehicle/TaskRideTrain.h"
++#include "task/Vehicle/TaskRideTrain.h"
+ 
+ // Rage headers
+ 
+ // Game headers
+ #include "Peds/ped.h"
+ #include "event/EventShocking.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Scenario/ScenarioFinder.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Scenario/ScenarioFinder.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ #include "Vehicles/train.h"
+ 
+ AI_OPTIMISATIONS()

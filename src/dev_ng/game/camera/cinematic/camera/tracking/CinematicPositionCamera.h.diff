@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.h b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.h
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.h
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPositionCamera.h
+@@ -7,7 +7,7 @@
+ #ifndef CINEMATIC_POSITION_CAMERA_H
+ #define CINEMATIC_POSITION_CAMERA_H
+ 
+-#include "Camera/Base/BaseCamera.h"
++#include "camera/Base/BaseCamera.h"
+ #include "camera/system/CameraMetadata.h"
+ 
+ class camCinematicPositionCameraMetadata;

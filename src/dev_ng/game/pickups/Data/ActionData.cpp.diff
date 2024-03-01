@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/pickups/Data/ActionData.cpp b/src/dev_ng/game/pickups/Data/ActionData.cpp
+--- a/src/dev_ng/game/pickups/Data/ActionData.cpp
++++ b/src/dev_ng/game/pickups/Data/ActionData.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Pickups/Data/ActionData.h"
++#include "pickups/Data/ActionData.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

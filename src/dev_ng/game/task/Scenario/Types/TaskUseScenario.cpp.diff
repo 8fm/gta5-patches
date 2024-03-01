@@ -1,0 +1,89 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp
+--- a/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp
++++ b/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp
+@@ -13,12 +13,12 @@
+ 
+ // Game headers
+ 
+-#include "Animation/GestureManager.h"
++#include "animation/GestureManager.h"
+ 
+-#include "Event/Event.h"
+-#include "Event/EventShocking.h"
+-#include "Event/System/EventData.h"
+-#include "Event/EventWeapon.h"
++#include "event/Event.h"
++#include "event/EventShocking.h"
++#include "event/system/EventData.h"
++#include "event/EventWeapon.h"
+ 
+ #include "fwanimation/directorcomponentsyncedscene.h"
+ 
+@@ -29,7 +29,7 @@
+ 
+ #include "game/Clock.h"
+ 
+-#include "Network/Objects/Entities/NetObjPlayer.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
+ 
+ #include "Objects/DummyObject.h"
+ 
+@@ -38,7 +38,7 @@
+ #include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedIntelligence.h"
+-#include "peds/pedplacement.h"
++#include "Peds/pedplacement.h"
+ #include "Peds/pedpopulation.h"			// For CPedPopulation.
+ #include "Peds/PopZones.h"
+ 
+@@ -47,28 +47,28 @@
+ 
+ #include "scene/world/GameWorld.h"
+ 
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Default/AmbientAnimationManager.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/Default/TaskUnalerted.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Default/AmbientAnimationManager.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/Default/TaskUnalerted.h"
++#include "task/Motion/TaskMotionBase.h"
+ #include "task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Movement/TaskCollisionResponse.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskGetUp.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNMFlinch.h"
+-#include "Task/Physics/TaskNMRelax.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Response/TaskReactAndFlee.h"
+-#include "Task/Scenario/ScenarioDebug.h"
+-#include "Task/Scenario/ScenarioPointManager.h"
+-#include "Task/Scenario/Info/ScenarioActionManager.h"
+-#include "Task/Scenario/info/ScenarioInfo.h"
+-#include "Task/Scenario/info/ScenarioInfoConditions.h"
+-#include "Task/Scenario/info/ScenarioInfoManager.h"
+-#include "Task/Scenario/Types/TaskCowerScenario.h"
++#include "task/Movement/TaskCollisionResponse.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskGetUp.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/TaskNMFlinch.h"
++#include "task/Physics/TaskNMRelax.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Response/TaskReactAndFlee.h"
++#include "task/Scenario/ScenarioDebug.h"
++#include "task/Scenario/ScenarioPointManager.h"
++#include "task/Scenario/info/ScenarioActionManager.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
++#include "task/Scenario/Types/TaskCowerScenario.h"
+  
+ AI_OPTIMISATIONS()
+ 

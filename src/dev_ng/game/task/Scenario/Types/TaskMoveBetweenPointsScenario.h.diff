@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.h
+@@ -1,7 +1,7 @@
+ #ifndef INC_TASK_MOVE_BETWEEN_POINTS_SCENARIO_H
+ #define INC_TASK_MOVE_BETWEEN_POINTS_SCENARIO_H
+ 
+-#include "Task/Scenario/TaskScenario.h"
++#include "task/Scenario/TaskScenario.h"
+ 
+ class CTaskMoveBetweenPointsScenario : public CTaskScenario
+ {

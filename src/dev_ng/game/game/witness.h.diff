@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/witness.h b/src/dev_ng/game/game/witness.h
+--- a/src/dev_ng/game/game/witness.h
++++ b/src/dev_ng/game/game/witness.h
+@@ -3,7 +3,7 @@
+ 
+ #include "grcore/debugdraw.h"		// Only for DEBUG_DRAW.
+ #include "scene/RegdRefTypes.h"		// RegdPed
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ //-----------------------------------------------------------------------------
+ 

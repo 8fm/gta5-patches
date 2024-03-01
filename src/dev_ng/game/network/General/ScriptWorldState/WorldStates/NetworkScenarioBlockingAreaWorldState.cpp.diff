@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkScenarioBlockingAreaWorldState.cpp b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkScenarioBlockingAreaWorldState.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkScenarioBlockingAreaWorldState.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkScenarioBlockingAreaWorldState.cpp
+@@ -10,13 +10,13 @@
+ #include "bank/bank.h"
+ #include "vector/geometry.h"
+ 
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ 
+-#include "AI/BlockingBounds.h"
+-#include "Network/NetworkInterface.h"
+-#include "peds/Ped.h"
+-#include "Script/Script.h"
+-#include "Script/Handlers/GameScriptResources.h"
++#include "ai/BlockingBounds.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
++#include "script/script.h"
++#include "script/Handlers/GameScriptResources.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

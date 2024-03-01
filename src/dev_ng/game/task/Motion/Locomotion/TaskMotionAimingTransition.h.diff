@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAimingTransition.h
+@@ -7,7 +7,7 @@
+ #ifndef TASK_MOTION_AIMING_TRANSITION_H
+ #define TASK_MOTION_AIMING_TRANSITION_H
+ 
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ class CTaskMotionAimingTransition : public CTaskMotionBase
+ {

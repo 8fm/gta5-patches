@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkSCPresenceUtil.cpp b/src/dev_ng/game/network/Live/NetworkSCPresenceUtil.cpp
+--- a/src/dev_ng/game/network/Live/NetworkSCPresenceUtil.cpp
++++ b/src/dev_ng/game/network/Live/NetworkSCPresenceUtil.cpp
+@@ -12,10 +12,10 @@
+ #include "fwnet/netchannel.h"
+ 
+ //game
+-#include "Network/NetworkInterface.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Live/livemanager.h"
+-#include "network/sessions/NetworkGameConfig.h"
++#include "network/NetworkInterface.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Live/livemanager.h"
++#include "network/Sessions/NetworkGameConfig.h"
+ #include "Peds/ped.h"
+ #include "scene/world/GameWorld.h"
+ #include "Stats/StatsMgr.h"

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Cloud/CloudCache.cpp b/src/dev_ng/game/network/Cloud/CloudCache.cpp
+--- a/src/dev_ng/game/network/Cloud/CloudCache.cpp
++++ b/src/dev_ng/game/network/Cloud/CloudCache.cpp
+@@ -4,8 +4,8 @@
+ // Copyright (C) 1999-2013 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "network/cloud/CloudCache.h"
+-#include "network/cloud/CloudManager.h"
++#include "network/Cloud/CloudCache.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ #include "file/asset.h"
+ #include "file/cachepartition.h"

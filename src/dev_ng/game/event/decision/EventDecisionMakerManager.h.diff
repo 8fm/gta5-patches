@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/event/decision/EventDecisionMakerManager.h b/src/dev_ng/game/event/decision/EventDecisionMakerManager.h
+--- a/src/dev_ng/game/event/decision/EventDecisionMakerManager.h
++++ b/src/dev_ng/game/event/decision/EventDecisionMakerManager.h
+@@ -2,9 +2,9 @@
+ #define INC_EVENT_DECISION_MAKER_MANAGER_H
+ 
+ // Game headers
+-#include "Event/Decision/EventDecisionMaker.h"
+-#include "Event/Decision/EventDecisionMakerResponse.h"
+-#include "Event/System/EventDataManager.h"
++#include "event/decision/EventDecisionMaker.h"
++#include "event/decision/EventDecisionMakerResponse.h"
++#include "event/system/EventDataManager.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CEventDecisionMakerManager

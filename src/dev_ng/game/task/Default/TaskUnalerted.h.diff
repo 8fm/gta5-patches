@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Default/TaskUnalerted.h b/src/dev_ng/game/task/Default/TaskUnalerted.h
+--- a/src/dev_ng/game/task/Default/TaskUnalerted.h
++++ b/src/dev_ng/game/task/Default/TaskUnalerted.h
+@@ -7,14 +7,14 @@
+ #ifndef TASK_DEFAULT_TASK_UNALERTED_H
+ #define TASK_DEFAULT_TASK_UNALERTED_H
+ 
+-#include "Task/Helpers/PropManagementHelper.h"
+-#include "Task/Helpers/PavementFloodFillHelper.h"
++#include "task/Helpers/PropManagementHelper.h"
++#include "task/Helpers/PavementFloodFillHelper.h"
+ #include "task/Scenario/ScenarioChaining.h"
+-#include "Task/Scenario/ScenarioFinder.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/Scenario/ScenarioFinder.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ #define POST_HANGOUT_SCENARIOS_SIZE 2 // How many scenarios peds can move to after the hangout scenario [8/9/2012 mdawe]
+ 

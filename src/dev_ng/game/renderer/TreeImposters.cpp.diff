@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/TreeImposters.cpp b/src/dev_ng/game/renderer/TreeImposters.cpp
+--- a/src/dev_ng/game/renderer/TreeImposters.cpp
++++ b/src/dev_ng/game/renderer/TreeImposters.cpp
+@@ -11,7 +11,7 @@
+ #include "file/asset.h"
+ //#include "fwmaths/Maths.h"
+ #include "fwmaths/random.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ #include "grcore/image.h"
+ #include "grcore/vertexbuffer.h"
+ #include "grcore/vertexdecl.h"

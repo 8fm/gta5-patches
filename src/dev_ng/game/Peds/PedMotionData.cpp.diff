@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedMotionData.cpp b/src/dev_ng/game/Peds/PedMotionData.cpp
+--- a/src/dev_ng/game/Peds/PedMotionData.cpp
++++ b/src/dev_ng/game/Peds/PedMotionData.cpp
+@@ -1,7 +1,7 @@
+ // File header
+ #include "Peds/PedMotionData.h"
+ 
+-#include "Debug/DebugScene.h"
++#include "debug/DebugScene.h"
+ #include "fwmaths/angle.h"
+ #include "Math/angmath.h"
+ 

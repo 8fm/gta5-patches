@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.h b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.h
+--- a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.h
++++ b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_cloud_text.h
+@@ -10,8 +10,8 @@
+ #include "parser/macros.h"
+ 
+ // Game headers
+-#include "Frontend/SimpleTimer.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "frontend/SimpleTimer.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ 
+ class CSaveGameMigrationCloudTextLine

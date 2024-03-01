@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/streamer/SceneStreamerList.cpp b/src/dev_ng/game/scene/streamer/SceneStreamerList.cpp
+--- a/src/dev_ng/game/scene/streamer/SceneStreamerList.cpp
++++ b/src/dev_ng/game/scene/streamer/SceneStreamerList.cpp
+@@ -25,7 +25,7 @@
+ #include "scene/streamer/StreamVolume.h"
+ #include "scene/world/GameScan.h"
+ #include "scene/world/GameWorld.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "camera/viewports/ViewportManager.h"
+ 
+ #if __BANK

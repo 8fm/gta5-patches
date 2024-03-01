@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/WeaponDamage.h b/src/dev_ng/game/weapons/WeaponDamage.h
+--- a/src/dev_ng/game/weapons/WeaponDamage.h
++++ b/src/dev_ng/game/weapons/WeaponDamage.h
+@@ -7,7 +7,7 @@
+ #ifndef WEAPON_IMPACT_H
+ #define WEAPON_IMPACT_H
+ 
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "weapons/WeaponEnums.h"
+ 
+ // Forward declarations

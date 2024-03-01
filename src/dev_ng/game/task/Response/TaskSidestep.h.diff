@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Response/TaskSidestep.h b/src/dev_ng/game/task/Response/TaskSidestep.h
+--- a/src/dev_ng/game/task/Response/TaskSidestep.h
++++ b/src/dev_ng/game/task/Response/TaskSidestep.h
+@@ -8,8 +8,8 @@
+ #define TASK_SIDESTEP_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
+ 
+ //***************************************
+ //Class:  CTaskSidestep

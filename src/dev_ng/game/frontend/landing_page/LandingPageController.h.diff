@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/landing_page/LandingPageController.h b/src/dev_ng/game/frontend/landing_page/LandingPageController.h
+--- a/src/dev_ng/game/frontend/landing_page/LandingPageController.h
++++ b/src/dev_ng/game/frontend/landing_page/LandingPageController.h
+@@ -21,7 +21,7 @@
+ #include "frontend/landing_page/LandingPageConfig.h"
+ #include "frontend/page_deck/PageProvider.h"
+ #include "frontend/page_deck/IPageController.h"
+-#include "frontend/page_deck/uiEntrypointId.h"
++#include "frontend/page_deck/uiEntryPointId.h"
+ 
+ #if GEN9_LANDING_PAGE_ENABLED
+ 

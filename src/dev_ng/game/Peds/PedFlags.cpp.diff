@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/Peds/PedFlags.cpp b/src/dev_ng/game/Peds/PedFlags.cpp
+--- a/src/dev_ng/game/Peds/PedFlags.cpp
++++ b/src/dev_ng/game/Peds/PedFlags.cpp
+@@ -1,11 +1,11 @@
+ 
+ 
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedFlags.h"
+-#include "Physics/gtaInst.h"
+-#include "Task/Movement/TaskGotoPoint.h"
++#include "physics/gtaInst.h"
++#include "task/Movement/TaskGotoPoint.h"
+ 
+ #include "Peds/PedFlagsMeta.h"
+ 

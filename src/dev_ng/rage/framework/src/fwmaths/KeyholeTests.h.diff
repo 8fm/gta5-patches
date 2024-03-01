@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwmaths/KeyholeTests.h b/src/dev_ng/rage/framework/src/fwmaths/KeyholeTests.h
+--- a/src/dev_ng/rage/framework/src/fwmaths/KeyholeTests.h
++++ b/src/dev_ng/rage/framework/src/fwmaths/KeyholeTests.h
+@@ -13,7 +13,7 @@
+ 
+ // game includes
+ #include "fwmaths/angle.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ namespace rage {
+ 

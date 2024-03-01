@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vfx/decals/DecalManager.h b/src/dev_ng/game/vfx/decals/DecalManager.h
+--- a/src/dev_ng/game/vfx/decals/DecalManager.h
++++ b/src/dev_ng/game/vfx/decals/DecalManager.h
+@@ -31,10 +31,10 @@
+ #include "vfx/systems/VfxLiquid.h"
+ 
+ // game
+-#include "Control/Replay/ReplaySettings.h"
+-#include "Network/General/NetworkSerialisers.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Vfx/Decals/DecalDebug.h"
++#include "control/replay/ReplaySettings.h"
++#include "network/General/NetworkSerialisers.h"
++#include "scene/RegdRefTypes.h"
++#include "vfx/decals/DecalDebug.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

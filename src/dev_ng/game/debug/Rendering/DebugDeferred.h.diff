@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugDeferred.h b/src/dev_ng/game/debug/Rendering/DebugDeferred.h
+--- a/src/dev_ng/game/debug/Rendering/DebugDeferred.h
++++ b/src/dev_ng/game/debug/Rendering/DebugDeferred.h
+@@ -10,11 +10,11 @@
+ #include "grcore/effect.h"
+ 
+ // framework
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // game
+-#include "Renderer/Deferred/DeferredConfig.h"
+-#include "Debug/Rendering/DebugRendering.h"
++#include "renderer/Deferred/DeferredConfig.h"
++#include "debug/Rendering/DebugRendering.h"
+ #include "renderer/Lights/TiledLighting.h"
+ 
+ // =============================================================================================== //

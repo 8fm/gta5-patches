@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/game/physics/WorldProbe/shapetestbounddesc.cpp b/src/dev_ng/game/physics/WorldProbe/shapetestbounddesc.cpp
+--- a/src/dev_ng/game/physics/WorldProbe/shapetestbounddesc.cpp
++++ b/src/dev_ng/game/physics/WorldProbe/shapetestbounddesc.cpp
+@@ -1,6 +1,6 @@
+ #include "physics/WorldProbe/shapetestbounddesc.h"
+ 
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ 
+ void WorldProbe::CShapeTestBoundDesc::SetBoundFromEntity(const CEntity* pEntity)
+ {

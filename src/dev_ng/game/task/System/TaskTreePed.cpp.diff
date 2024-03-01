@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/System/TaskTreePed.cpp b/src/dev_ng/game/task/System/TaskTreePed.cpp
 --- a/src/dev_ng/game/task/System/TaskTreePed.cpp
 +++ b/src/dev_ng/game/task/System/TaskTreePed.cpp
-@@ -1,20 +1,20 @@
+@@ -1,22 +1,22 @@
  //Game headers.
 -#include "animation\AnimDefines.h"
 -#include "Event\Events.h"
@@ -19,22 +19,26 @@ diff --git a/src/dev_ng/game/task/System/TaskTreePed.cpp b/src/dev_ng/game/task/
 -#include "Task\General\TaskBasic.h"
 -#include "Task\Movement\TaskGoto.h"
 -#include "Task\Vehicle\TaskCarCollisionResponse.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/Task.h"
 +#include "animation/AnimDefines.h"
-+#include "Event/Events.h"
-+#include "Peds/Ped.h"
++#include "event/Events.h"
++#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
-+#include "peds/PedTaskRecord.h"
++#include "Peds/PedTaskRecord.h"
 +#include "Peds/QueriableInterface.h"
-+#include "Task/System/TaskManager.h"
-+#include "Task/System/TaskTree.h"
-+#include "Task/System/TaskTreePed.h"
-+#include "Task/System/Task.h"
-+#include "Task/System/TaskClassInfo.h"
-+#include "Task/System/TaskFSMClone.h"
-+#include "Task/Default/TaskWander.h"
-+#include "Task/General/TaskBasic.h"
-+#include "Task/Movement/TaskGoto.h"
-+#include "Task/Vehicle/TaskCarCollisionResponse.h"
- #include "Task/System/TaskMove.h"
- #include "Task/System/Task.h"
++#include "task/System/TaskManager.h"
++#include "task/System/TaskTree.h"
++#include "task/System/TaskTreePed.h"
++#include "task/System/Task.h"
++#include "task/System/TaskClassInfo.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/Default/TaskWander.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskGoto.h"
++#include "task/Vehicle/TaskCarCollisionResponse.h"
++#include "task/System/TaskMove.h"
++#include "task/System/Task.h"
  
+ // rage headers
+ #include "Profile/timebars.h"

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionDrunk.cpp
+@@ -2,10 +2,10 @@
+ 
+ #if ENABLE_DRUNK
+ 
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNMDrunk.h"
+-#include "Task/Physics/TaskBlendFromNM.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/TaskNMDrunk.h"
++#include "task/Physics/TaskBlendFromNM.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ 

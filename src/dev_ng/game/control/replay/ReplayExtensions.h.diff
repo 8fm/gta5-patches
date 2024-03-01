@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayExtensions.h b/src/dev_ng/game/control/replay/ReplayExtensions.h
+--- a/src/dev_ng/game/control/replay/ReplayExtensions.h
++++ b/src/dev_ng/game/control/replay/ReplayExtensions.h
+@@ -11,8 +11,8 @@
+ #include "Objects/DummyObject.h"
+ #include "scene/Entity.h"
+ #include "scene/Physical.h"
+-#include "peds/rendering/PedDamage.h"
+-#include "Control/Replay/Vehicle/ReplayWheelValues.h"
++#include "Peds/rendering/PedDamage.h"
++#include "control/replay/Vehicle/ReplayWheelValues.h"
+ 
+ 
+ // used in PedPacket.h too

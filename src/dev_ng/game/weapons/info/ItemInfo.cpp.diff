@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/weapons/info/ItemInfo.cpp b/src/dev_ng/game/weapons/info/ItemInfo.cpp
+--- a/src/dev_ng/game/weapons/info/ItemInfo.cpp
++++ b/src/dev_ng/game/weapons/info/ItemInfo.cpp
+@@ -5,16 +5,16 @@
+ //
+ 
+ // File header
+-#include "Weapons/Info/ItemInfo.h"
++#include "weapons/info/ItemInfo.h"
+ 
+ // Parser files
+ #include "ItemInfo_parser.h"
+ 
+ // Game headers
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "Streaming/Streaming.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "streaming/Streaming.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

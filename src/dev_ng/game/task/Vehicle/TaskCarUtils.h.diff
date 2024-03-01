@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskCarUtils.h b/src/dev_ng/game/task/Vehicle/TaskCarUtils.h
+--- a/src/dev_ng/game/task/Vehicle/TaskCarUtils.h
++++ b/src/dev_ng/game/task/Vehicle/TaskCarUtils.h
+@@ -8,12 +8,12 @@ class CTask;
+ class CCarDoor;
+ 
+ //Game headers.
+-#include "Renderer/HierarchyIds.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Modelinfo/VehicleModelInfo.h"
++#include "renderer/HierarchyIds.h"
++#include "task/System/TaskHelpers.h"
++#include "modelinfo/VehicleModelInfo.h"
+ 
+ //Rage headers.
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ class CCarEnterExit
+ {

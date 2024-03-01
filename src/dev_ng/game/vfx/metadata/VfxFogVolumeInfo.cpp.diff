@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp
+--- a/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp
++++ b/src/dev_ng/game/vfx/metadata/VfxFogVolumeInfo.cpp
+@@ -28,9 +28,9 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Camera/CamInterface.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Renderer/Water.h"
++#include "camera/CamInterface.h"
++#include "scene/DataFileMgr.h"
++#include "renderer/Water.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

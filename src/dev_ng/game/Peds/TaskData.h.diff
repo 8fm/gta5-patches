@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/TaskData.h b/src/dev_ng/game/Peds/TaskData.h
+--- a/src/dev_ng/game/Peds/TaskData.h
++++ b/src/dev_ng/game/Peds/TaskData.h
+@@ -10,7 +10,7 @@
+ #include "atl/array.h"
+ #include "parser/macros.h"
+ #include "system/noncopyable.h"
+-#include "TaskFlags.h"
++#include "taskflags.h"
+ 
+ 
+ // Framework headers

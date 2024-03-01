@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/event/EventMovement.h b/src/dev_ng/game/event/EventMovement.h
+--- a/src/dev_ng/game/event/EventMovement.h
++++ b/src/dev_ng/game/event/EventMovement.h
+@@ -3,9 +3,9 @@
+ 
+ // Game headers
+ #include "ai/AITarget.h"
+-#include "Event/EventEditable.h"
+-#include "Event/EventPriorities.h"
+-#include "Peds/PedDefines.h"
++#include "event/EventEditable.h"
++#include "event/EventPriorities.h"
++#include "Peds/pedDefines.h"
+ #include "pathserver/PathServer_DataTypes.h"
+ #include "scene/RegdRefTypes.h"
+ 

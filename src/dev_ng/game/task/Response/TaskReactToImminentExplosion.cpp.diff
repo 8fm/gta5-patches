@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.cpp b/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.cpp
+--- a/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.cpp
++++ b/src/dev_ng/game/task/Response/TaskReactToImminentExplosion.cpp
+@@ -1,7 +1,7 @@
+ // FILE :    TaskReactToImminentExplosion.h
+ 
+ // File header
+-#include "Task/Response/TaskReactToImminentExplosion.h"
++#include "task/Response/TaskReactToImminentExplosion.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"

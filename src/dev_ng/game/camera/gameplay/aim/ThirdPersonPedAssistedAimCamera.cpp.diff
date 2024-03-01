@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/gameplay/aim/ThirdPersonPedAssistedAimCamera.cpp b/src/dev_ng/game/camera/gameplay/aim/ThirdPersonPedAssistedAimCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/aim/ThirdPersonPedAssistedAimCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/aim/ThirdPersonPedAssistedAimCamera.cpp
+@@ -17,8 +17,8 @@
+ #include "camera/helpers/ControlHelper.h"
+ #include "camera/helpers/Envelope.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "task/Weapons/TaskWeapon.h"
+ #include "task/Weapons/Gun/TaskGun.h"
+ #include "camera/CamInterface.h"

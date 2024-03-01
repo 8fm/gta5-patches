@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.h b/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskCombatSubtask.h
+@@ -11,10 +11,10 @@
+ #define TASK_COMBAT_SUBTASK_H
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskComplex.h"
+-#include "Task/System/TaskHelpers.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskComplex.h"
++#include "task/System/TaskHelpers.h"
+ 
+ class CEntity;
+ class CTaskSet;

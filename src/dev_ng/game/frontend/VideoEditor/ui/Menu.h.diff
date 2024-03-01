@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/Menu.h b/src/dev_ng/game/frontend/VideoEditor/ui/Menu.h
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/Menu.h
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/Menu.h
+@@ -28,9 +28,9 @@
+ #include "frontend/WarningScreen.h"
+ #include "replaycoordinator/ReplayAudioTrackProvider.h"
+ #include "replaycoordinator/ReplayEditorParameters.h"
+-#include "replaycoordinator/Storage/MontageText.h"
++#include "replaycoordinator/storage/MontageText.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+-#include "Text/TextFormat.h"
++#include "text/TextFormat.h"
+ 
+ 
+ class CRawClipFileView;

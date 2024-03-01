@@ -1,6 +1,21 @@
 diff --git a/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp b/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
 --- a/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
 +++ b/src/dev_ng/game/audio/ambience/water/audshorelineOcean.cpp
+@@ -13,11 +13,11 @@
+ #include "audshorelineOcean.h"
+ #include "audio/northaudioengine.h"
+ #include "audio/gameobjects.h"
+-#include "debug/vectormap.h"
+-#include "renderer/water.h"
++#include "debug/VectorMap.h"
++#include "renderer/Water.h"
+ #include "game/weather.h"
+ #include "vfx/VfxHelper.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "audio/weatheraudioentity.h"
+ 
+ AUDIO_AMBIENCE_OPTIMISATIONS()
 @@ -928,7 +928,7 @@ void audShoreLineOcean::UpdateOceanBeachSound(const Vector3 &centrePoint,const V
   		GetSoundsRefs(soundRef,Right);
   		UpdateOceanSound(soundRef,Right,rightPoint);

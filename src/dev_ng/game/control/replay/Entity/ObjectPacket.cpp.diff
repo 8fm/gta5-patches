@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp b/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp
+--- a/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp
++++ b/src/dev_ng/game/control/replay/Entity/ObjectPacket.cpp
+@@ -8,7 +8,7 @@
+ 
+ #include "vectormath/classfreefuncsf.h"
+ 
+-#include "animation/move.h"
++#include "animation/Move.h"
+ #include "animation/MoveObject.h"
+ #include "debug/Debug.h"
+ #include "control/replay/replay.h"
+@@ -18,10 +18,10 @@
+ #include "control/gamelogic.h"
+ #include "control/trafficlights.h"
+ #include "scene/AnimatedBuilding.h"
+-#include "scene/portals/portal.h"
++#include "scene/portals/Portal.h"
+ #include "scene/world/GameWorld.h"
+ #include "shaders/CustomShaderEffectWeapon.h"
+-#include "objects/Door.h"
++#include "Objects/Door.h"
+ #include "fwscene/stores/maptypesstore.h"
+ #include "streaming/streaming.h"
+ #include "renderer/PostScan.h"

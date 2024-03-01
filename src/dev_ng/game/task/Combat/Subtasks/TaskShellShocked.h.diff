@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.h b/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskShellShocked.h
+@@ -6,8 +6,8 @@
+ #define TASK_SHELL_SHOCKED_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
+ 
+ //=========================================================================
+ // CTaskShellShocked

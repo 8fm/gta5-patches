@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_messages.cpp b/src/dev_ng/game/SaveLoad/savegame_messages.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_messages.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_messages.cpp
+@@ -23,8 +23,8 @@
+ #include "SaveLoad/savegame_photo_manager.h"
+ #include "SaveLoad/savegame_users_and_devices.h"
+ #include "scene/world/GameWorld.h"
+-#include "Text/Messages.h"
+-#include "Text/TextConversion.h"
++#include "text/messages.h"
++#include "text/TextConversion.h"
+ #include "network/NetworkInterface.h"
+ #include "network/Live/NetworkProfileStats.h"
+ 

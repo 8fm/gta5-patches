@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.h b/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.h
+--- a/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.h
++++ b/src/dev_ng/game/frontend/VideoEditor/VideoEditorInterface.h
+@@ -17,7 +17,7 @@
+ #define VIDEO_EDITOR_INTERFACE_H_
+ 
+ // framework
+-#include "fwScene/stores/imposedTextureDictionary.h"
++#include "fwscene/stores/imposedTextureDictionary.h"
+ #include "streaming/streamingdefs.h"
+ 
+ // game

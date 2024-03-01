@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.h b/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.h
+--- a/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.h
++++ b/src/dev_ng/game/task/Movement/Jumping/TaskFallGetUp.h
+@@ -2,9 +2,9 @@
+ #define TASK_FALL_GET_UP_H
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Network/General/NetworkUtil.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "network/General/NetworkUtil.h"
+ #include "Peds/QueriableInterface.h"
+ 
+ //-------------------------------------------------------------------------

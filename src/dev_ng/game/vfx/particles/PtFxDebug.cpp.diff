@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/vfx/particles/PtFxDebug.cpp b/src/dev_ng/game/vfx/particles/PtFxDebug.cpp
+--- a/src/dev_ng/game/vfx/particles/PtFxDebug.cpp
++++ b/src/dev_ng/game/vfx/particles/PtFxDebug.cpp
+@@ -14,7 +14,7 @@
+ //  INCLUDES
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Vfx/Particles/PtFxDebug.h"
++#include "vfx/Particles/PtFxDebug.h"
+ 
+ // rage
+ #include "rmptfx/ptxmanager.h"
+@@ -25,13 +25,13 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game
+-#include "Peds/Ped.h"
+-#include "Scene/Portals/Portal.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/particles/PtfxEntity.h"
+-#include "Vfx/VfxSettings.h"
+-#include "Renderer/RenderPhases/RenderPhaseCascadeShadows.h"
++#include "Peds/ped.h"
++#include "scene/portals/Portal.h"
++#include "scene/world/GameWorld.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtfxEntity.h"
++#include "vfx/VfxSettings.h"
++#include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  OPTIMISATIONS - TURN ON IN OPTIMISATIONS.H

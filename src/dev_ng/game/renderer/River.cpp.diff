@@ -1,8 +1,12 @@
 diff --git a/src/dev_ng/game/renderer/River.cpp b/src/dev_ng/game/renderer/River.cpp
 --- a/src/dev_ng/game/renderer/River.cpp
 +++ b/src/dev_ng/game/renderer/River.cpp
-@@ -21,8 +21,8 @@
- #include "physics/WorldProbe/worldprobe.h"
+@@ -18,11 +18,11 @@
+ #include "scene/RegdRefTypes.h"
+ #include "spatialdata/aabb.h"
+ #include "timecycle/TimeCycle.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
  #include "vfx/sky/Sky.h"
  
 -#include "grcore\texture_gnm.h"

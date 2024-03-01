@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/TiledScreenCapture.cpp b/src/dev_ng/game/debug/TiledScreenCapture.cpp
+--- a/src/dev_ng/game/debug/TiledScreenCapture.cpp
++++ b/src/dev_ng/game/debug/TiledScreenCapture.cpp
+@@ -81,7 +81,7 @@ If you wanted to add something to request the IMAPs you need, you could either u
+ #include "debug/Rendering/DebugDeferred.h"
+ #include "debug/TiledScreenCapture.h"
+ #include "game/Clock.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/pedpopulation.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"

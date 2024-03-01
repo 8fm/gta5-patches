@@ -1,0 +1,53 @@
+diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.cpp b/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.cpp
+--- a/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.cpp
++++ b/src/dev_ng/game/task/Weapons/Gun/TaskReloadGun.cpp
+@@ -5,30 +5,30 @@
+ //
+ 
+ // Class header 
+-#include "Task/Weapons/Gun/TaskReloadGun.h"
++#include "task/Weapons/Gun/TaskReloadGun.h"
+ 
+ // Game headers
+-#include "Animation/FacialData.h"
+-#include "Animation/Move.h"
+-#include "Animation/MovePed.h"
+-#include "Camera/CamInterface.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
++#include "animation/FacialData.h"
++#include "animation/Move.h"
++#include "animation/MovePed.h"
++#include "camera/CamInterface.h"
++#include "camera/Gameplay/GameplayDirector.h"
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+-#include "Debug/DebugScene.h"
+-#include "Network/NetworkInterface.h"
+-#include "Peds/Ped.h"
++#include "debug/DebugScene.h"
++#include "network/NetworkInterface.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/gtaInst.h"
+-#include "Scene/World/GameWorld.h"
++#include "physics/gtaInst.h"
++#include "scene/world/GameWorld.h"
+ #include "Stats/StatsInterface.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/System/Tuning.h"
+-#include "Weapons/Components/WeaponComponentReloadData.h"
+-#include "Weapons/Weapon.h"
+-#include "Task/Weapons/TaskWeaponBlocked.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/System/Tuning.h"
++#include "weapons/components/WeaponComponentReloadData.h"
++#include "weapons/Weapon.h"
++#include "task/Weapons/TaskWeaponBlocked.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

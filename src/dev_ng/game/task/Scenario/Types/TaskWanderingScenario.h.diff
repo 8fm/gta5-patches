@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.h b/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.h
+--- a/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.h
++++ b/src/dev_ng/game/task/Scenario/Types/TaskWanderingScenario.h
+@@ -1,9 +1,9 @@
+ #ifndef INC_TASK_WANDERING_SCENARIO_H
+ #define INC_TASK_WANDERING_SCENARIO_H
+ 
+-#include "Task/Helpers/PropManagementHelper.h"
+-#include "Task/Scenario/TaskScenario.h"
+-#include "Task/System/Tuning.h"
++#include "task/Helpers/PropManagementHelper.h"
++#include "task/Scenario/TaskScenario.h"
++#include "task/System/Tuning.h"
+ 
+ //-------------------------------------------------------------------------
+ // Default wandering scenario

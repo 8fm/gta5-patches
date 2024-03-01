@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/Peds/PlayerInfo.h b/src/dev_ng/game/Peds/PlayerInfo.h
+--- a/src/dev_ng/game/Peds/PlayerInfo.h
++++ b/src/dev_ng/game/Peds/PlayerInfo.h
+@@ -21,21 +21,21 @@
+ #include "entity/extensiblebase.h"
+ #include "fwlight/wantedlighteffect.h"
+ #include "fwsys/timer.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "spatialdata/aabb.h"
+ 
+ // Game headers
+-#include "game/wanted.h"
+-#include "peds/PedWeapons/PlayerPedTargeting.h"
++#include "game/Wanted.h"
++#include "Peds/PedWeapons/PlayerPedTargeting.h"
+ #include "scene/RegdRefTypes.h"
+ #include "system/control.h"
+-#include "task/Combat/Cover/Cover.h"
++#include "task/Combat/Cover/cover.h"
+ #include "task/Combat/Cover/TaskCover.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ #include "task/System/TaskHelpers.h"
+ #include "debug/Debug.h"
+-#include "Task/Vehicle/PlayerHorseSpeedMatch.h"
+-#include "Task/Movement/JetpackObject.h"
++#include "task/Vehicle/PlayerHorseSpeedMatch.h"
++#include "task/Movement/JetpackObject.h"
+ #include "Peds/Horse/horseDefines.h"
+ 
+ #include "Peds/ArcadeAbilityEffects.h"

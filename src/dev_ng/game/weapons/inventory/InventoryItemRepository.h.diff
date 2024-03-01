@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/weapons/inventory/InventoryItemRepository.h b/src/dev_ng/game/weapons/inventory/InventoryItemRepository.h
+--- a/src/dev_ng/game/weapons/inventory/InventoryItemRepository.h
++++ b/src/dev_ng/game/weapons/inventory/InventoryItemRepository.h
+@@ -8,9 +8,9 @@
+ #include "vector/vector3.h"
+ 
+ // Game headers
+-#include "Debug/Debug.h"
+-#include "Weapons/Inventory/InventoryListener.h"
+-#include "Weapons/WeaponChannel.h"
++#include "debug/Debug.h"
++#include "weapons/inventory/InventoryListener.h"
++#include "weapons/WeaponChannel.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CInventoryItemRepository

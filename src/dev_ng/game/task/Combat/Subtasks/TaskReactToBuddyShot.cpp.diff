@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskReactToBuddyShot.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskReactToBuddyShot.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskReactToBuddyShot.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskReactToBuddyShot.cpp
+@@ -1,7 +1,7 @@
+ // FILE :    TaskReactToBuddyShot.h
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskReactToBuddyShot.h"
++#include "task/Combat/Subtasks/TaskReactToBuddyShot.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"

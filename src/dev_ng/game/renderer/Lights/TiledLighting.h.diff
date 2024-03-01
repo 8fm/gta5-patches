@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/Lights/TiledLighting.h b/src/dev_ng/game/renderer/Lights/TiledLighting.h
+--- a/src/dev_ng/game/renderer/Lights/TiledLighting.h
++++ b/src/dev_ng/game/renderer/Lights/TiledLighting.h
+@@ -12,8 +12,8 @@
+ #include "grcore/vertexdecl.h"
+ 
+ // game headers
+-#include "Renderer/Lights/TiledLightingSettings.h"
+-#include "Renderer/Util/ShmooFile.h"
++#include "renderer/Lights/TiledLightingSettings.h"
++#include "renderer/Util/ShmooFile.h"
+ 
+ // framework headers
+ #include "fwtl/customvertexpushbuffer.h"

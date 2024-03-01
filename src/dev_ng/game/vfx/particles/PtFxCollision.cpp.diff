@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/vfx/particles/PtFxCollision.cpp b/src/dev_ng/game/vfx/particles/PtFxCollision.cpp
+--- a/src/dev_ng/game/vfx/particles/PtFxCollision.cpp
++++ b/src/dev_ng/game/vfx/particles/PtFxCollision.cpp
+@@ -25,16 +25,16 @@
+ #include "vfx/ptfx/ptfxattach.h"
+ 
+ // game
+-#include "Peds/Ped.h"
+-#include "Physics/GtaArchetype.h"
+-#include "Physics/GtaInst.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "Scene/Entity.h"
+-#include "Scene/World/GameWorld.h"
++#include "Peds/ped.h"
++#include "physics/gtaArchetype.h"
++#include "physics/gtaInst.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/Entity.h"
++#include "scene/world/GameWorld.h"
+ #include "Vehicles/Planes.h"
+-#include "Vfx/Particles/PtFxManager.h"
+-#include "Vfx/VfxHelper.h"
++#include "vfx/Particles/PtFxManager.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/InconsistentBehaviourZoomHelper.cpp b/src/dev_ng/game/camera/helpers/InconsistentBehaviourZoomHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/InconsistentBehaviourZoomHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/InconsistentBehaviourZoomHelper.cpp
+@@ -15,7 +15,7 @@
+ #include "camera/helpers/Frame.h"
+ #include "profile/group.h"
+ #include "profile/page.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

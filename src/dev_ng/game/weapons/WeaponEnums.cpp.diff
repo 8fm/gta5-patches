@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/weapons/WeaponEnums.cpp b/src/dev_ng/game/weapons/WeaponEnums.cpp
+--- a/src/dev_ng/game/weapons/WeaponEnums.cpp
++++ b/src/dev_ng/game/weapons/WeaponEnums.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Weapons/WeaponEnums.h"
++#include "weapons/WeaponEnums.h"
+ 
+ // Rage headers
+ #include "atl/hashstring.h"

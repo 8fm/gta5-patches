@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/debug/bugstar/MissionLookup.h b/src/dev_ng/game/deb
  #define INC_MISSION_LOOKUP_H_
  
 -#include "debug\debug.h"
-+#include "debug/debug.h"
++#include "debug/Debug.h"
  #if BUGSTAR_INTEGRATION_ACTIVE
  
 -#include "atl\map.h"

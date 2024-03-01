@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp b/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp
+--- a/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp
++++ b/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp
+@@ -11,19 +11,19 @@
+ #include "camera/helpers/ControlHelper.h"
+ #include "camera/CamInterface.h"
+ #include "control/replay/replay.h"
+-#include "event/event.h"
++#include "event/Event.h"
+ #include "event/EventDamage.h"
+ #include "ik/solvers/ArmIkSolver.h"
+-#include "network/objects/entities/NetObjGame.h"
+-#include "peds/PedFlagsMeta.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/Ped.h"
++#include "network/Objects/Entities/NetObjGame.h"
++#include "Peds/PedFlagsMeta.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/ped.h"
+ #include "renderer/HierarchyIds.h"
+ #include "task/Default/TaskPlayer.h"
+-#include "task/motion/locomotion/taskmotionped.h"
++#include "task/Motion/Locomotion/taskmotionped.h"
+ #include "task/Physics/TaskNMJumpRollFromRoadVehicle.h"
+ #include "vehicleAi/VehicleAILodManager.h"
+-#include "vehicles/door.h"
++#include "Vehicles/door.h"
+ #include "weapons/info/weaponinfo.h"
+ #include "system/appcontent.h"
+ 

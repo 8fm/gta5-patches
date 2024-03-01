@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskReact.h b/src/dev_ng/game/task/Combat/TaskReact.h
+--- a/src/dev_ng/game/task/Combat/TaskReact.h
++++ b/src/dev_ng/game/task/Combat/TaskReact.h
+@@ -5,14 +5,14 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "AI/AITarget.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/Weapons/WeaponTarget.h"
++#include "ai/AITarget.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/Weapons/WeaponTarget.h"
+ #include "Peds/QueriableInterface.h"
+-#include "network/general/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CTaskReactAimWeapon

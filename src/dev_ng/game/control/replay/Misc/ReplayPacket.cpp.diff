@@ -1,12 +1,49 @@
 diff --git a/src/dev_ng/game/control/replay/Misc/ReplayPacket.cpp b/src/dev_ng/game/control/replay/Misc/ReplayPacket.cpp
 --- a/src/dev_ng/game/control/replay/Misc/ReplayPacket.cpp
 +++ b/src/dev_ng/game/control/replay/Misc/ReplayPacket.cpp
-@@ -32,7 +32,7 @@
+@@ -7,34 +7,34 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "camera/caminterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/replay/ReplayDirector.h"
+ 
+ #include "control/replay/ReplayInternal.h"
+ #include "frontend/NewHud.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "game/weather.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ #if !RSG_ORBIS
+ #include "renderer/WaterUpdateDynamicCommon.h"
+ #endif // !RSG_ORBIS
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "renderer/PostProcessFXHelper.h"
+-#include "Renderer/occlusion.h"
+-#include "Renderer/PostScan.h"
++#include "renderer/occlusion.h"
++#include "renderer/PostScan.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/RenderPhases/RenderPhaseFX.h"
+ 
+-#include "TimeCycle/TimeCycle.h"
++#include "timecycle/TimeCycle.h"
+ #include "scene/MapChange.h"
+ 
  #include "scene/InstancePriority.h"
  
- #include "Vfx/Misc/DistantLights.h"
+-#include "Vfx/Misc/DistantLights.h"
 -#include "Vfx\VfxHelper.h"
-+#include "Vfx/VfxHelper.h"
- #include "Vfx/Systems/VfxWheel.h"
- #include "Vfx/Systems/VfxPed.h"
+-#include "Vfx/Systems/VfxWheel.h"
+-#include "Vfx/Systems/VfxPed.h"
++#include "vfx/misc/DistantLights.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/systems/VfxWheel.h"
++#include "vfx/systems/VfxPed.h"
+ 
+ //CompileTimeAssert(DynamicWaterGridSize == DYNAMICGRIDELEMENTS);
  

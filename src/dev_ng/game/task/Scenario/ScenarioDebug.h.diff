@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioDebug.h b/src/dev_ng/game/task/Scenario/ScenarioDebug.h
+--- a/src/dev_ng/game/task/Scenario/ScenarioDebug.h
++++ b/src/dev_ng/game/task/Scenario/ScenarioDebug.h
+@@ -13,7 +13,7 @@
+ 
+ // Game headers
+ #include "task/Scenario/ScenarioEditor.h"
+-#include "Task/Scenario/ScenarioPoint.h"
++#include "task/Scenario/ScenarioPoint.h"
+ 
+ namespace rage
+ {

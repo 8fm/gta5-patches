@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandler.h b/src/dev_ng/game/script/Handlers/GameScriptHandler.h
+--- a/src/dev_ng/game/script/Handlers/GameScriptHandler.h
++++ b/src/dev_ng/game/script/Handlers/GameScriptHandler.h
+@@ -10,11 +10,11 @@
+ #include <set>
+ 
+ // framework includes
+-#include "fwscript/scriptHandler.h"
++#include "fwscript/scripthandler.h"
+ #include "streaming/streamingmodule.h"
+ 
+ // game includes
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptIds.h"
+ #include "script/script_memory_tracking.h"
+ 
+ class CObject;

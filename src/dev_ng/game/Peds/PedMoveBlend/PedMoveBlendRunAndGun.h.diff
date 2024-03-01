@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendRunAndGun.h b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendRunAndGun.h
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendRunAndGun.h
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendRunAndGun.h
+@@ -3,7 +3,7 @@
+ 
+ // Game headers
+ #include "PedMoveBlendOnFoot.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ 
+ 
+ #endif	// PED_MOVE_BLEND_RUN_AND_GUN_H

@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/frontend/CCrewMenu.h b/src/dev_ng/game/frontend/CCrewMenu.h
+--- a/src/dev_ng/game/frontend/CCrewMenu.h
++++ b/src/dev_ng/game/frontend/CCrewMenu.h
+@@ -8,13 +8,13 @@
+ 
+ 
+ // game
+-#include "Network/Live/ClanNetStatusArray.h"
+-#include "Network/Live/NetworkClan.h"
+-#include "Text/TextFile.h"
+-#include "Frontend/UIPaginator.h"
+-#include "Frontend/CMenuBase.h"
+-#include "Frontend/WarningScreen.h"
+-#include "Frontend/SimpleTimer.h"
++#include "network/Live/ClanNetStatusArray.h"
++#include "network/Live/NetworkClan.h"
++#include "text/TextFile.h"
++#include "frontend/UIPaginator.h"
++#include "frontend/CMenuBase.h"
++#include "frontend/WarningScreen.h"
++#include "frontend/SimpleTimer.h"
+ 
+ //rage
+ #include "rline/rlfriendsmanager.h"

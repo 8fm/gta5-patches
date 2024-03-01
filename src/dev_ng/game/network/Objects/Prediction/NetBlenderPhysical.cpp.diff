@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.cpp b/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.cpp
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.cpp
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.cpp
+@@ -3,7 +3,7 @@
+ // written by:  Daniel Yelland
+ // description: Network blender used by physics objects
+ 
+-#include "network/objects/prediction/NetBlenderPhysical.h"
++#include "network/Objects/Prediction/NetBlenderPhysical.h"
+ 
+ // rage includes
+ #include "phbound/boundcomposite.h"
+@@ -13,13 +13,13 @@
+ #include "debug//DebugScene.h"
+ #include "game/ModelIndices.h"
+ #include "network/Debug/NetworkDebug.h"
+-#include "objects/door.h"
+-#include "objects/object.h"
+-#include "peds/ped.h"
+-#include "scene/physical.h"
+-#include "vehicles/trailer.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/wheel.h"
++#include "Objects/Door.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
++#include "scene/Physical.h"
++#include "Vehicles/Trailer.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/wheel.h"
+ 
+ CompileTimeAssert(sizeof(CNetBlenderPhysical) <= LARGEST_NET_PHYSICAL_BLENDER_CLASS);
+ 

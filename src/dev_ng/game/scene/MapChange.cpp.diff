@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/MapChange.cpp b/src/dev_ng/game/scene/MapChange.cpp
+--- a/src/dev_ng/game/scene/MapChange.cpp
++++ b/src/dev_ng/game/scene/MapChange.cpp
+@@ -9,7 +9,7 @@
+ #include "fwscene/mapdata/mapdatadef.h"
+ #include "fwscene/stores/mapdatastore.h"
+ #include "control/replay/replay.h"
+-#include "Objects/door.h"
++#include "Objects/Door.h"
+ #include "Objects/DummyObject.h"
+ #include "Objects/object.h"
+ #include "scene/world/GameWorld.h"

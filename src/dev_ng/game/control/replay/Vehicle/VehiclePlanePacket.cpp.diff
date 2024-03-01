@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehiclePlanePacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehiclePlanePacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehiclePlanePacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehiclePlanePacket.cpp
+@@ -9,8 +9,8 @@
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+ #include "control/replay/ReplayInternal.h"
+-#include "vehicles/LandingGear.h"
+-#include "vehicles/Planes.h"
++#include "Vehicles/LandingGear.h"
++#include "Vehicles/Planes.h"
+ #include "scene/world/GameWorld.h"
+ #include "control/replay/Compression/Quantization.h"
+ 

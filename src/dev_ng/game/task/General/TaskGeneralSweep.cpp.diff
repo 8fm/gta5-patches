@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/General/TaskGeneralSweep.cpp b/src/dev_ng/game/task/General/TaskGeneralSweep.cpp
+--- a/src/dev_ng/game/task/General/TaskGeneralSweep.cpp
++++ b/src/dev_ng/game/task/General/TaskGeneralSweep.cpp
+@@ -1,9 +1,9 @@
+ #include "TaskGeneralSweep.h"
+-#include "Weapons/WeaponDamage.h"
++#include "weapons/WeaponDamage.h"
+ #include "animation/Move.h"
+ #include "animation/MovePed.h"
+ #include "math/angmath.h"
+-#include "Debug/debugscene.h"
++#include "debug/debugscene.h"
+ 
+ #if !__FINAL
+ #define SET_DEFAULTS_ON_ERROR		// Set this to define defaults upon error rather than quitting

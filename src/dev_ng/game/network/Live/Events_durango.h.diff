@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Live/Events_durango.h b/src/dev_ng/game/network/Live/Events_durango.h
+--- a/src/dev_ng/game/network/Live/Events_durango.h
++++ b/src/dev_ng/game/network/Live/Events_durango.h
+@@ -13,7 +13,7 @@
+ #include "rline/rlworker.h"
+ //#include "snet/session.h"
+ 
+-#include "Network/Live/NetworkRichPresence.h"
++#include "network/Live/NetworkRichPresence.h"
+ #include "Stats/StatsMgr.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/StatsDataMgr.h"

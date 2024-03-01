@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskNavMesh.h b/src/dev_ng/game/task/Movement/TaskNavMesh.h
+--- a/src/dev_ng/game/task/Movement/TaskNavMesh.h
++++ b/src/dev_ng/game/task/Movement/TaskNavMesh.h
+@@ -1,10 +1,10 @@
+ #ifndef TASK_NAVMESH_H
+ #define TASK_NAVMESH_H
+ 
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskGoToPoint.h"
+-#include "Task/Movement/TaskNavBase.h"
+-#include "Task/Movement/TaskIdle.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskNavBase.h"
++#include "task/Movement/TaskIdle.h"
+ 
+ #define __PROPER_CORNERING 1
+ 

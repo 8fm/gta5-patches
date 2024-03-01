@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/Peds/PedType.cpp b/src/dev_ng/game/Peds/PedType.cpp
  
  // Rage headers
 -#include "System\Timer.h"
-+#include "System/Timer.h"
++#include "system/Timer.h"
  #include "system/memory.h"
  
  // Framework headers
@@ -17,9 +17,9 @@ diff --git a/src/dev_ng/game/Peds/PedType.cpp b/src/dev_ng/game/Peds/PedType.cpp
 -#include "Debug\Debug.h"
 -#include "Peds\PedType.h"
 -#include "System\FileMgr.h"
-+#include "Debug/Debug.h"
++#include "debug/Debug.h"
 +#include "Peds/PedType.h"
-+#include "System/FileMgr.h"
++#include "system/FileMgr.h"
  
  CPedType* CPedType::ms_apPedTypes;
  dev_float CPedType::ms_fMaxHeadingChange = ( DtoR * 360.0f*2.5f);

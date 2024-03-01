@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/Entities/PedDrawHandler.h b/src/dev_ng/game/renderer/Entities/PedDrawHandler.h
+--- a/src/dev_ng/game/renderer/Entities/PedDrawHandler.h
++++ b/src/dev_ng/game/renderer/Entities/PedDrawHandler.h
+@@ -1,8 +1,8 @@
+ #ifndef _PEDDRAWHANDLER_H_INCLUDED_
+ #define _PEDDRAWHANDLER_H_INCLUDED_
+ 
+-#include "peds/rendering/PedProps.h"
+-#include "peds/rendering/PedVariationDS.h"
++#include "Peds/rendering/PedProps.h"
++#include "Peds/rendering/PedVariationDS.h"
+ #include "renderer/Entities/EntityDrawHandler.h"
+ 
+ class CPedStreamRenderGfx;

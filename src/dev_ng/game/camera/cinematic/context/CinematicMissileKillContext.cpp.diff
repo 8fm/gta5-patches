@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicMissileKillContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicMissileKillContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicMissileKillContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicMissileKillContext.cpp
+@@ -7,7 +7,7 @@
+ #include "camera/cinematic/context/CinematicMissileKillContext.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "Vehicles/vehicle.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/Physical.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicMissileKillContext,0x5AE4C378)

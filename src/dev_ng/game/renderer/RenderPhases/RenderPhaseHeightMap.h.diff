@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseHeightMap.h
+@@ -13,8 +13,8 @@
+ #include "grcore/effect.h"
+ #include "gpuptfx/ptxgpubase.h"
+ // Game headers
+-#include "renderer/DrawLists/DrawListMgr.h"
+-#include "Renderer/RenderPhases/RenderPhase.h"
++#include "renderer/DrawLists/drawListMgr.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ #define HGHT_TARGET_SIZE			128

@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/network/Sessions/NetworkSession.h b/src/dev_ng/game/network/Sessions/NetworkSession.h
+--- a/src/dev_ng/game/network/Sessions/NetworkSession.h
++++ b/src/dev_ng/game/network/Sessions/NetworkSession.h
+@@ -14,12 +14,12 @@
+ #include "fwnet/netchannel.h"
+ 
+ //Game includes
+-#include "Network/NetworkTypes.h"
+-#include "Network/Live/NetworkMetrics.h"
+-#include "Network/Sessions/NetworkSessionUtils.h"
+-#include "Network/Sessions/NetworkSessionMessages.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/Stats/NetworkLeaderboardSessionMgr.h"
++#include "network/NetworkTypes.h"
++#include "network/Live/NetworkMetrics.h"
++#include "network/Sessions/NetworkSessionUtils.h"
++#include "network/Sessions/NetworkSessionMessages.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/Stats/NetworkLeaderboardSessionMgr.h"
+ 
+ #define RSG_PRESENCE_SESSION	(RSG_ORBIS)
+ 

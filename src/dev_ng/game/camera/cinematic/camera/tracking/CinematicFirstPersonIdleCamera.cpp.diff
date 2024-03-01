@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicFirstPersonIdleCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicFirstPersonIdleCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicFirstPersonIdleCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicFirstPersonIdleCamera.cpp
+@@ -15,11 +15,11 @@
+ #include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PedCapsule.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "task/System/TaskTypes.h"
+ #include "task/Motion/Locomotion/TaskBirdLocomotion.h"
+-#include "Weapons/WeaponManager.h"
+-#include "Weapons/Weapon.h"
++#include "weapons/WeaponManager.h"
++#include "weapons/Weapon.h"
+ 
+ #include "string/stringhash.h"
+ #include "fwanimation/animdefines.h"

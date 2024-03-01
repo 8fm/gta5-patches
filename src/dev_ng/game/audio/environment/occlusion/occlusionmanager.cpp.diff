@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.cpp b/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.cpp
+--- a/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.cpp
++++ b/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.cpp
+@@ -17,18 +17,18 @@
+ #include "camera/CamInterface.h"
+ #include "camera/system/CameraManager.h"
+ #include "camera/base/BaseCamera.h"
+-#include "Control/gamelogic.h"
+-#include "Control/leveldata.h"
+-#include "debug/debugdraw.h"
+-#include "debug/debugglobals.h"
++#include "control/gamelogic.h"
++#include "control/leveldata.h"
++#include "debug/Debugdraw.h"
++#include "debug/Debugglobals.h"
+ #include "fwsys/metadatastore.h"
+ #include "modelinfo/MloModelInfo.h"
+ #include "Objects/Door.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "profile/profiler.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "scene/portals/InteriorProxy.h"
+-#include "scene/portals/portal.h"
++#include "scene/portals/Portal.h"
+ #include "scene/portals/PortalInst.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+ 

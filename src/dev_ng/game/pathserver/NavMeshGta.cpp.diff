@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/pathserver/NavMeshGta.cpp b/src/dev_ng/game/pathserver/NavMeshGta.cpp
+--- a/src/dev_ng/game/pathserver/NavMeshGta.cpp
++++ b/src/dev_ng/game/pathserver/NavMeshGta.cpp
+@@ -1,12 +1,12 @@
+ ﻿// Rage headers
+-#include "math/simpleMath.h"
++#include "math/simplemath.h"
+ #include "spatialdata/sphere.h"
+ 
+ // Framework headers
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ // Game headers
+-#include "PathServer/NavMeshGta.h"
++#include "pathserver/NavMeshGta.h"
+ #include "data/safestruct.h"
+ #include "data/struct.h"
+ #include "file/asset.h"
+@@ -18,7 +18,7 @@
+ #include "vector/color32.h"
+ 
+ #ifdef GTA_ENGINE
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #ifndef RAGEBUILDER
+ #include "grcore/debugdraw.h"
+ #endif // RAGEBUILDER

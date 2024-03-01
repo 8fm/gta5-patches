@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h b/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h
+--- a/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h
++++ b/src/dev_ng/game/Cutscene/CutSceneCameraEntity.h
+@@ -16,7 +16,7 @@
+ #include "cutscene/CutSceneDefine.h"
+ #include "cutfile/cutfeventargs.h"
+ #include "cutfile/cutfobject.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ 
+ //Game Headers
+ #include "camera/helpers/ControlHelper.h"

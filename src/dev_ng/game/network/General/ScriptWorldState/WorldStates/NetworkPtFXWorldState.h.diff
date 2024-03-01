@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.h b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.h
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.h
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPtFXWorldState.h
+@@ -7,9 +7,9 @@
+ #ifndef NETWORK_PTFX_WORLD_STATE_H
+ #define NETWORK_PTFX_WORLD_STATE_H
+ 
+-#include "fwtl/pool.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateManager.h"
+-#include "network/general/scriptworldstate/NetworkScriptWorldStateTypes.h"
++#include "fwtl/Pool.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateManager.h"
++#include "network/General/ScriptWorldState/NetworkScriptWorldStateTypes.h"
+ #include "scene/Entity.h"
+ 
+ //PURPOSE

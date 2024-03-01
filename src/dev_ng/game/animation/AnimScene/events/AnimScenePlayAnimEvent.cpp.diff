@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp b/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp
+--- a/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp
++++ b/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp
+@@ -8,7 +8,7 @@
+ #include "Peds/PedIntelligence.h"
+ #include "streaming/streaming.h"
+ #include "task/Animation/TaskAnims.h"
+-#include "vehicles/train.h"
++#include "Vehicles/train.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ 
+ ANIM_OPTIMISATIONS()

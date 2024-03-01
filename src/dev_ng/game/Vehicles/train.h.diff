@@ -13,14 +13,14 @@ diff --git a/src/dev_ng/game/Vehicles/train.h b/src/dev_ng/game/Vehicles/train.h
 -#include "vehicles\door.h"
 -#include "vehicles\vehicle.h"
 -#include "vehicles\automobile.h"
-+#include "Network/Cloud/CloudManager.h"
-+#include "network/objects/entities/netObjTrain.h"
-+#include "renderer/hierarchyIds.h"
++#include "network/Cloud/CloudManager.h"
++#include "network/Objects/Entities/NetObjTrain.h"
++#include "renderer/HierarchyIds.h"
 +#include "scene/RegdRefTypes.h"
 +#include "timecycle/TimeCycleConfig.h"
-+#include "vehicles/door.h"
-+#include "vehicles/vehicle.h"
-+#include "vehicles/automobile.h"
++#include "Vehicles/door.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
  
  class CCarDoor;
  

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Service/Army/TaskArmy.h b/src/dev_ng/game/task/Service/Army/TaskArmy.h
+--- a/src/dev_ng/game/task/Service/Army/TaskArmy.h
++++ b/src/dev_ng/game/task/Service/Army/TaskArmy.h
+@@ -4,9 +4,9 @@
+ #define INC_TASK_ARMY_H
+ 
+ // Game headers
+-#include "Task/Default/TaskUnalerted.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/Tuning.h"
++#include "task/Default/TaskUnalerted.h"
++#include "task/System/Task.h"
++#include "task/System/Tuning.h"
+ 
+ // Game forward declarations
+ 

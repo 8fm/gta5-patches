@@ -1,6 +1,43 @@
 diff --git a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
 --- a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
 +++ b/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp
+@@ -30,15 +30,15 @@
+ #include "system/memops.h"
+ #include "frontend/MiniMap.h" 
+ #include "grcore/debugdraw.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "control/gamelogic.h"
+ #include "control/replay/replay.h"
+ #include "camera/scripted/ScriptedFlyCamera.h"
+ #include "scene/scene.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "modelinfo/mlomodelinfo.h"
+ #include "Peds/ped.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "game/weather.h"
+ #include "spatialdata/sphere.h"
+ #include "audiosoundtypes/simplesound.h"
+@@ -50,7 +50,7 @@
+ #include "audiosoundtypes/envelopesound.h"
+ //#include "scene/portals/InteriorInst.h"
+ #include "scene/portals/InteriorProxy.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "streaming/populationstreaming.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "Peds/PopCycle.h"
+@@ -68,7 +68,7 @@
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+ #include "camera/debug/FreeCamera.h"
+-#include "peds/PedFactory.h"
++#include "Peds/PedFactory.h"
+ 
+ #include "system/controlMgr.h"
+ #include "system/control.h"
 @@ -7766,6 +7766,7 @@ void audAmbientAudioEntity::SerialiseString(char* xmlMessage, char* tempbuffer,
  
  void audAmbientAudioEntity::SerialiseSoundName(char* xmlMessage, char* tempbuffer, const char* elementName, u32 hash, bool defaultToNull)

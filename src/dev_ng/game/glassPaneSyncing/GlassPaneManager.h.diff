@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.h b/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.h
+--- a/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.h
++++ b/src/dev_ng/game/glassPaneSyncing/GlassPaneManager.h
+@@ -3,7 +3,7 @@
+ 
+ // Rage headers
+ #include "atl/array.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "physics/WorldProbe/shapetestresults.h"
+ #include "glassPaneSyncing/GlassPaneInfo.h"
+ #include "glassPaneSyncing/GlassPane.h"

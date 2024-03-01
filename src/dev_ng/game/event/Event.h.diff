@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/event/Event.h b/src/dev_ng/game/event/Event.h
+--- a/src/dev_ng/game/event/Event.h
++++ b/src/dev_ng/game/event/Event.h
+@@ -11,10 +11,10 @@
+ #include "ai/event/event.h"
+ 
+ // Game headers
+-#include "Event/EventDefines.h"
+-#include "Event/EventNames.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/Tuning.h"			// For CTuning, used by CEvent subclasses for metadata.
++#include "event/EventDefines.h"
++#include "event/EventNames.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/Tuning.h"			// For CTuning, used by CEvent subclasses for metadata.
+ #include "atl/string.h"
+ 
+ // Forward declarations

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.h b/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.h
+--- a/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.h
++++ b/src/dev_ng/game/task/Movement/TaskMoveFollowEntityOffset.h
+@@ -7,9 +7,9 @@
+ #define INC_TASK_FOLLOW_ENTITY_OFFSET_H
+ 
+ // Game headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskMove.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskMove.h"
+ 
+ //---------------------------------------------------------------------------
+ // This can be used to keep a squad member near a leader ped out of combat.

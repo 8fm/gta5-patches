@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/network/General/NetworkWorldGridOwnership.cpp b/src/dev_ng/game/network/General/NetworkWorldGridOwnership.cpp
+--- a/src/dev_ng/game/network/General/NetworkWorldGridOwnership.cpp
++++ b/src/dev_ng/game/network/General/NetworkWorldGridOwnership.cpp
+@@ -11,12 +11,12 @@
+ #include "fwnet/netchannel.h"
+ #include "fwscene/world/WorldLimits.h"
+ 
+-#include "Debug/VectorMap.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Arrays/NetworkArrayMgr.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Peds/Ped.h"
++#include "debug/VectorMap.h"
++#include "network/NetworkInterface.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Players/NetGamePlayer.h"
++#include "Peds/ped.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

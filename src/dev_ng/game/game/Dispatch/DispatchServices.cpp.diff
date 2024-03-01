@@ -1,0 +1,63 @@
+diff --git a/src/dev_ng/game/game/Dispatch/DispatchServices.cpp b/src/dev_ng/game/game/Dispatch/DispatchServices.cpp
+--- a/src/dev_ng/game/game/Dispatch/DispatchServices.cpp
++++ b/src/dev_ng/game/game/Dispatch/DispatchServices.cpp
+@@ -3,7 +3,7 @@
+ // Started	:	13/05/2010
+ 
+ // File header
+-#include "Game/Dispatch/DispatchServices.h"
++#include "game/Dispatch/DispatchServices.h"
+ 
+ // Rage headers
+ #include "ai/aichannel.h"
+@@ -16,22 +16,22 @@
+ #include "debug/DebugGlobals.h"
+ #include "debug/DebugScene.h"
+ #include "debug/VectorMap.h"
+-#include "Game/Dispatch/DispatchData.h"
+-#include "Game/Dispatch/DispatchManager.h"
+-#include "Game/Dispatch/IncidentManager.h"
+-#include "Game/Dispatch/Incidents.h"
+-#include "Game/Dispatch/OrderManager.h"
+-#include "Game/Dispatch/RoadBlock.h"
+-#include "Game/ModelIndices.h"
+-#include "Network/Objects/NetworkObjectPopulationMgr.h"
++#include "game/Dispatch/DispatchData.h"
++#include "game/Dispatch/DispatchManager.h"
++#include "game/Dispatch/IncidentManager.h"
++#include "game/Dispatch/Incidents.h"
++#include "game/Dispatch/OrderManager.h"
++#include "game/Dispatch/RoadBlock.h"
++#include "game/ModelIndices.h"
++#include "network/Objects/NetworkObjectPopulationMgr.h"
+ #include "PedGroup/PedGroup.h"
+ #include "Peds/ped.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedFactory.h"			// For CPedFactory::CreatePed(), etc.
+-#include "Peds/pedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "Peds/pedpopulation.h"
+-#include "peds/popzones.h"
+-#include "Scene/World/GameWorld.h"
++#include "Peds/PopZones.h"
++#include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"		// For HasObjectLoaded(), etc.
+ #include "task/Combat/TaskNewCombat.h"
+ #include "task/Movement/Climbing/TaskRappel.h"
+@@ -40,13 +40,13 @@
+ #include "Vehicles/Automobile.h"
+ #include "Vehicles/Boat.h"
+ #include "Vehicles/VehicleFactory.h"
+-#include "Vehicles/Vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "Vehicles/Heli.h"
+ #include "Vehicles/Metadata/VehicleEntryPointInfo.h"
+ #include "weapons/inventory/PedInventoryLoadOut.h"
+ 
+ // Parser headers
+-#include "Game/Dispatch/DispatchServices_parser.h"
++#include "game/Dispatch/DispatchServices_parser.h"
+ 
+ AI_OPTIMISATIONS()
+ 

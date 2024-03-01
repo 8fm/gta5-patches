@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/weapons/inventory/InventoryItem.h b/src/dev_ng/game/weapons/inventory/InventoryItem.h
+--- a/src/dev_ng/game/weapons/inventory/InventoryItem.h
++++ b/src/dev_ng/game/weapons/inventory/InventoryItem.h
+@@ -2,11 +2,11 @@
+ #define INVENTORY_ITEM_H
+ 
+ // Game headers
+-#include "Streaming/StreamingRequest.h"
+-#include "fwtl/pool.h"
+-#include "Weapons/Info/ItemInfo.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Inventory/InventoryItemRepository.h"
++#include "streaming/streamingrequest.h"
++#include "fwtl/Pool.h"
++#include "weapons/info/ItemInfo.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/inventory/InventoryItemRepository.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CInventoryItem

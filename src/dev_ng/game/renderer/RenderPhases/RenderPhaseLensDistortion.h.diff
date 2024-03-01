@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseLensDistortion.h
+@@ -11,7 +11,7 @@
+ #include "vector/vector2.h"
+ #include "vector/vector3.h"
+ #include "vector/vector4.h"
+-#include "renderer/RenderPhases/renderphase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ 
+ // C headers
+ // Rage headers

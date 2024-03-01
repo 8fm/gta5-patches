@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h
+@@ -17,7 +17,7 @@ NETWORK_OPTIMISATIONS()
+ #include "fwnet/netsynctree.h"
+ 
+ #include "network/NetworkInterface.h"
+-#include "network/general/NetworkSerialisers.h"
++#include "network/General/NetworkSerialisers.h"
+ 
+ #define USE_DEFAULT_STATE 0
+ 

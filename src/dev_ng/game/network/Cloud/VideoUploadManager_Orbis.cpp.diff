@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/network/Cloud/VideoUploadManager_Orbis.cpp b/src/dev_ng/game/network/Cloud/VideoUploadManager_Orbis.cpp
+--- a/src/dev_ng/game/network/Cloud/VideoUploadManager_Orbis.cpp
++++ b/src/dev_ng/game/network/Cloud/VideoUploadManager_Orbis.cpp
+@@ -1,4 +1,4 @@
+-#include "Network/Cloud/VideoUploadManager.h"
++#include "network/Cloud/VideoUploadManager.h"
+ 
+ #if defined(GTA_REPLAY) && GTA_REPLAY 
+ #if USE_ORBIS_UPLOAD

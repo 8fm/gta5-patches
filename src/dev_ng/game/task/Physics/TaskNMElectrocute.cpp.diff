@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp b/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp
-@@ -4,7 +4,7 @@
+@@ -4,18 +4,18 @@
  
  // C headers
  // Rage headers
@@ -9,4 +9,21 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp b/src/dev_ng/gam
 +#include "fragmentnm/messageparams.h"
  
  // Framework headers
+ 
+ // Game headers
+-#include "Event/EventDamage.h"
+-#include "Peds/Ped.h"
++#include "event/EventDamage.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Physics/TaskNMElectrocute.h"
+-#include "Task/System/Task.h"
+-#include "Task/Movement/TaskAnimatedFallback.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Physics/TaskNMElectrocute.h"
++#include "task/System/Task.h"
++#include "task/Movement/TaskAnimatedFallback.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
+ 
+ AI_OPTIMISATIONS()
  

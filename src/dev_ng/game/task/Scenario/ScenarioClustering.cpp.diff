@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioClustering.cpp b/src/dev_ng/game/task/Scenario/ScenarioClustering.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioClustering.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioClustering.cpp
+@@ -11,7 +11,7 @@
+ 
+ // Game headers
+ #include "ai/BlockingBounds.h"
+-#include "Network/Objects/NetworkObjectPopulationMgr.h"
++#include "network/Objects/NetworkObjectPopulationMgr.h"
+ #include "pathserver/PathServer.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedFactory.h"

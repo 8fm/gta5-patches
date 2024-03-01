@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/misc/MovieMeshInfo.h b/src/dev_ng/game/vfx/misc/MovieMeshInfo.h
+--- a/src/dev_ng/game/vfx/misc/MovieMeshInfo.h
++++ b/src/dev_ng/game/vfx/misc/MovieMeshInfo.h
+@@ -4,8 +4,8 @@
+ 
+ // rage headers
+ #include "parser/macros.h"
+-#include "vector/Vector3.h"
+-#include "vector/Vector4.h"
++#include "vector/vector3.h"
++#include "vector/vector4.h"
+ #include "atl/array.h"
+ #include "string/string.h"
+ 

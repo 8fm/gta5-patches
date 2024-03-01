@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/FootStepPacket.h b/src/dev_ng/game/control/replay/Audio/FootStepPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/FootStepPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/FootStepPacket.h
+@@ -6,13 +6,13 @@
+ #ifndef INC_FOOTSTEPPACKET_H_
+ #define INC_FOOTSTEPPACKET_H_
+ 
+-#include "Control/Replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "Control/Replay/Effects/ParticlePacket.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/Effects/ParticlePacket.h"
++#include "control/replay/PacketBasics.h"
+ 
+ class CPed;
+ 

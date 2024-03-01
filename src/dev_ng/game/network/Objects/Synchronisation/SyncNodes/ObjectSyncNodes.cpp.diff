@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.cpp
+@@ -4,11 +4,11 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/ObjectSyncNodes.h"
+-#include "network/network.h"
+-#include "network/general/NetworkStreamingRequestManager.h"
+-#include "objects/dummyobject.h"
+-#include "objects/object.h"
++#include "network/Objects/Synchronisation/SyncNodes/ObjectSyncNodes.h"
++#include "network/Network.h"
++#include "network/General/NetworkStreamingRequestManager.h"
++#include "Objects/DummyObject.h"
++#include "Objects/object.h"
+ #include "physics/physics.h"
+ #include "streaming/streaming.h"
+ #include "fwnet/netserialisers.h"

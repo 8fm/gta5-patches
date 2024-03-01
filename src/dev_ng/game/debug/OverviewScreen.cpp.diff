@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/debug/OverviewScreen.cpp b/src/dev_ng/game/debug/OverviewScreen.cpp
+--- a/src/dev_ng/game/debug/OverviewScreen.cpp
++++ b/src/dev_ng/game/debug/OverviewScreen.cpp
+@@ -12,20 +12,20 @@
+ 
+ #include "modelinfo/VehicleModelInfoVariation.h"
+ 
+-//#include "peds/Population.h"
+-#include "peds/PopCycle.h"
+-#include "Peds/Ped.h"
++//#include "Peds/Population.h"
++#include "Peds/PopCycle.h"
++#include "Peds/ped.h"
+ #include "Peds/pedpopulation.h"
+ #include "Peds/rendering/PedVariationStream.h"
+ 
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+ #include "scene/world/GameWorld.h"
+ #include "string/stringutil.h"
+ #include "system/controlMgr.h"
+ #include "system/simpleallocator.h"
+ #include "system/memmanager.h"
+-#include "network/network.h"
++#include "network/Network.h"
+ 
+ #include "performance/clearinghouse.h"
+ 

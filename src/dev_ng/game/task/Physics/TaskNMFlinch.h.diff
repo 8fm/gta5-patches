@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMFlinch.h b/src/dev_ng/game/task/Physics/TaskNMFlinch.h
+--- a/src/dev_ng/game/task/Physics/TaskNMFlinch.h
++++ b/src/dev_ng/game/task/Physics/TaskNMFlinch.h
+@@ -7,9 +7,9 @@
+ // --- Include Files ------------------------------------------------------------
+ 
+ // Game headers
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Physics/TaskNM.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
+ 
+ // ------------------------------------------------------------------------------
+ 

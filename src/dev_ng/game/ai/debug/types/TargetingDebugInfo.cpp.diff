@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/ai/debug/types/TargetingDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/TargetingDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/TargetingDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/TargetingDebugInfo.cpp
+@@ -1,5 +1,5 @@
+ #include "ai/debug/types/TargetingDebugInfo.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+@@ -8,11 +8,11 @@
+ #include "Peds/PedWeapons/PedTargetEvaluator.h"
+ #include "Peds/PedWeapons/PedTargeting.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Weapons/Info/WeaponInfo.h"
++#include "weapons/info/WeaponInfo.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Vehicles/VehicleGadgets.h"
+ 
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "script/script_hud.h"
+ 
+ CTargetingDebugInfo::CTargetingDebugInfo(const CPed* pPed, DebugInfoPrintParams printParams)

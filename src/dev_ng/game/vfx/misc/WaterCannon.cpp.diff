@@ -1,0 +1,50 @@
+diff --git a/src/dev_ng/game/vfx/misc/WaterCannon.cpp b/src/dev_ng/game/vfx/misc/WaterCannon.cpp
+--- a/src/dev_ng/game/vfx/misc/WaterCannon.cpp
++++ b/src/dev_ng/game/vfx/misc/WaterCannon.cpp
+@@ -27,28 +27,28 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // game Headers
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/base/BaseCamera.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
++#include "camera/Gameplay/GameplayDirector.h"
+ #include "Core/Game.h"
+-#include "Event/EventDamage.h"
+-#include "Event/Events.h"
+-#include "Event/EventShocking.h"
+-#include "Event/ShockingEvents.h"
+-#include "Game/ModelIndices.h"
+-#include "Network/NetworkInterface.h"
++#include "event/EventDamage.h"
++#include "event/Events.h"
++#include "event/EventShocking.h"
++#include "event/ShockingEvents.h"
++#include "game/ModelIndices.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "System/ControlMgr.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNMFlinch.h"
++#include "Peds/ped.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "system/controlMgr.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/TaskNMFlinch.h"
+ #include "Vehicles/Automobile.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Misc/Fire.h"
+-#include "Vfx/Systems/VfxLens.h"
+-#include "Vfx/Systems/VfxWater.h"
+-#include "Vfx/VfxHelper.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/misc/Fire.h"
++#include "vfx/systems/VfxLens.h"
++#include "vfx/systems/VfxWater.h"
++#include "vfx/VfxHelper.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

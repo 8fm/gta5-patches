@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.h b/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.h
+--- a/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.h
++++ b/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.h
+@@ -10,10 +10,10 @@
+ ////////////////////////////////////////////////////////////////////////////////
+ 
+ // Game Headers
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/Tuning.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/Tuning.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

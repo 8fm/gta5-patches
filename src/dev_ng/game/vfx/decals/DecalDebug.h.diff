@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/decals/DecalDebug.h b/src/dev_ng/game/vfx/decals/DecalDebug.h
+--- a/src/dev_ng/game/vfx/decals/DecalDebug.h
++++ b/src/dev_ng/game/vfx/decals/DecalDebug.h
+@@ -22,7 +22,7 @@
+ #include "vfx/decal/decalsettings.h"
+ 
+ // game
+-#include "Vfx/Decals/DecalCallbacks.h"
++#include "vfx/decals/DecalCallbacks.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

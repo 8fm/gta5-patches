@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/ControllerLabelMgr.h b/src/dev_ng/game/frontend/ControllerLabelMgr.h
+--- a/src/dev_ng/game/frontend/ControllerLabelMgr.h
++++ b/src/dev_ng/game/frontend/ControllerLabelMgr.h
+@@ -1,7 +1,7 @@
+ #ifndef CONTROMERLABELMGR_H
+ #define CONTROMERLABELMGR_H
+ 
+-#include "Text/TextFile.h"
++#include "text/TextFile.h"
+ #include "atl/array.h"
+ 
+ namespace rage

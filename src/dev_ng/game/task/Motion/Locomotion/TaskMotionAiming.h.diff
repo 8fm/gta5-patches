@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAiming.h b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAiming.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAiming.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionAiming.h
+@@ -11,12 +11,12 @@
+ 
+ // Game headers
+ #include "Peds/ped.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskMotionAimingTransition.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+-#include "Task/Motion/Locomotion/TaskInWater.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskMotionAimingTransition.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/System/Tuning.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
+ 
+ // Forward declarations
+ class CPreviousDirections;

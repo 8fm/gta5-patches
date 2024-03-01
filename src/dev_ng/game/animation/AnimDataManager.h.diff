@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimDataManager.h b/src/dev_ng/game/animation/AnimDataManager.h
+--- a/src/dev_ng/game/animation/AnimDataManager.h
++++ b/src/dev_ng/game/animation/AnimDataManager.h
+@@ -5,7 +5,7 @@
+ #include "system/GameDataMgr.h"
+ 
+ // Game headers
+-#include "Animation/AnimData.h"
++#include "animation/AnimData.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CAnimObjectManager

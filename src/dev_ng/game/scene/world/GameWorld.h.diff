@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/scene/world/GameWorld.h b/src/dev_ng/game/scene/world/GameWorld.h
+--- a/src/dev_ng/game/scene/world/GameWorld.h
++++ b/src/dev_ng/game/scene/world/GameWorld.h
+@@ -19,13 +19,13 @@
+ // framework headers
+ #include "entity/sceneupdate.h"
+ #include "fwnet/nettypes.h"
+-#include "fwscene/world/worldMgr.h"
++#include "fwscene/world/WorldMgr.h"
+ #include "fwscene/search/Search.h"
+ #include "fwscene/world/InteriorLocation.h"
+ 
+ // Game headers
+ #include "Peds/pedDefines.h"
+-#include "peds/pedfactory.h"
++#include "Peds/PedFactory.h"
+ #include "scene/EntityTypes.h"
+ #include "scene/RegdRefTypes.h"
+ 

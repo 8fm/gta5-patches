@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/physics/gtaMaterial.cpp b/src/dev_ng/game/physics/gtaMaterial.cpp
+--- a/src/dev_ng/game/physics/gtaMaterial.cpp
++++ b/src/dev_ng/game/physics/gtaMaterial.cpp
+@@ -24,10 +24,10 @@
+ #include "vfx/channel.h"
+ 
+ // game
+-#include "Physics/GtaMaterial.h"
++#include "physics/gtaMaterial.h"
+ #include "physics/gtaMaterialManager.h"
+ #ifndef NAVGEN_TOOL
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #endif
+ 
+ 

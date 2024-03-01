@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Weapons/WeaponTarget.h b/src/dev_ng/game/task/Weapons/WeaponTarget.h
+--- a/src/dev_ng/game/task/Weapons/WeaponTarget.h
++++ b/src/dev_ng/game/task/Weapons/WeaponTarget.h
+@@ -2,7 +2,7 @@
+ #define WEAPON_TARGET_H
+ 
+ // Base class
+-#include "AI/AITarget.h"
++#include "ai/AITarget.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CWeaponTarget

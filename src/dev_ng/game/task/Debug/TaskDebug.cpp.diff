@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Debug/TaskDebug.cpp b/src/dev_ng/game/task/Debug/TaskDebug.cpp
+--- a/src/dev_ng/game/task/Debug/TaskDebug.cpp
++++ b/src/dev_ng/game/task/Debug/TaskDebug.cpp
+@@ -2,11 +2,11 @@
+ #if !__FINAL
+ 
+ // File header
+-#include "Task/Debug/TaskDebug.h"
++#include "task/Debug/TaskDebug.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "Peds/ped.h"
++#include "task/Default/TaskPlayer.h"
+ 
+ // Disables optimisations if active
+ AI_OPTIMISATIONS()

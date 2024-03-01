@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_autoload.cpp b/src/dev_ng/game/SaveLoad/savegame_autoload.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_autoload.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_autoload.cpp
+@@ -5,7 +5,7 @@
+ #include "control/gamelogic.h"
+ #include "frontend/PauseMenu.h"	//	for CPauseMenu::SetMenuPreference
+ #include "frontend/ProfileSettings.h"
+-#include "Frontend/loadingscreens.h"
++#include "frontend/loadingscreens.h"
+ #include "frontend/WarningScreen.h"
+ #include "SaveLoad/GenericGameStorage.h"
+ #include "SaveLoad/savegame_autoload.h"
+@@ -14,7 +14,7 @@
+ #include "SaveLoad/savegame_filenames.h"
+ #include "SaveLoad/savegame_load.h"
+ #include "SaveLoad/savegame_users_and_devices.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "system/controlMgr.h"
+ #include "text/messages.h"
+ #include "text/TextConversion.h"

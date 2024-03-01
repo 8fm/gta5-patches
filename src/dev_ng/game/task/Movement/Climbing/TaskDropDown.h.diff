@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.h b/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.h
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.h
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskDropDown.h
+@@ -7,11 +7,11 @@
+ #ifndef TASK_DROPDOWN_H
+ #define TASK_DROPDOWN_H
+ 
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
+ #include "Peds/QueriableInterface.h"
+ #include "network/General/NetworkUtil.h"
+-#include "Task/Movement/Climbing/DropDownDetector.h"
++#include "task/Movement/Climbing/DropDownDetector.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

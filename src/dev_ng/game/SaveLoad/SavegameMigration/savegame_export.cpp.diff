@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_export.cpp b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_export.cpp
+--- a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_export.cpp
++++ b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_export.cpp
+@@ -13,7 +13,7 @@
+ 
+ // Game headers
+ #include "frontend/WarningScreen.h"
+-#include "Network/Live/livemanager.h"
++#include "network/Live/livemanager.h"
+ #include "SaveLoad/GenericGameStorage.h"
+ #include "SaveLoad/savegame_channel.h"
+ #include "SaveLoad/savegame_frontend.h"

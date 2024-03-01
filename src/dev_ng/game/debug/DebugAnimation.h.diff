@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/debug/DebugAnimation.h b/src/dev_ng/game/debug/DebugAnimation.h
+--- a/src/dev_ng/game/debug/DebugAnimation.h
++++ b/src/dev_ng/game/debug/DebugAnimation.h
+@@ -1,8 +1,8 @@
+ #ifndef DEBUGANIMATIONS_H
+ #define DEBUGANIMATIONS_H
+ 
+-#include "physics/debugplayback.h"
+-#include "physics/debugevents.h"
++#include "physics/debugPlayback.h"
++#include "physics/debugEvents.h"
+ 
+ #if DR_ENABLED
+ #define DR_ANIMATIONS_ENABLED 1

@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/ik/solvers/LegSolver.cpp b/src/dev_ng/game/ik/solvers/LegSolver.cpp
+--- a/src/dev_ng/game/ik/solvers/LegSolver.cpp
++++ b/src/dev_ng/game/ik/solvers/LegSolver.cpp
+@@ -13,18 +13,18 @@
+ #include "animation/AnimBones.h"
+ #include "animation/debug/AnimViewer.h"
+ #include "animation/MovePed.h"
+-#include "game/modelindices.h"
++#include "game/ModelIndices.h"
+ #include "ik/IkManager.h"
+ #include "ik/solvers/LegSolverProxy.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/Physics.h"
++#include "physics/physics.h"
+ #include "debug/DebugScene.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Vehicle/TaskInVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Vehicle/TaskInVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
+ 
+ #define LEG_SOLVER_POOL_MAX			10
+ #define ENABLE_LEGIK_SOLVER_WIDGETS	0

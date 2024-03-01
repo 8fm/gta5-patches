@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Helpers/PropManagementHelper.cpp b/src/dev_ng/game/task/Helpers/PropManagementHelper.cpp
+--- a/src/dev_ng/game/task/Helpers/PropManagementHelper.cpp
++++ b/src/dev_ng/game/task/Helpers/PropManagementHelper.cpp
+@@ -6,12 +6,12 @@
+ #include "ai/task/taskchannel.h"
+ #include "modelinfo/BaseModelInfo.h"
+ #include "Peds/ped.h"
+-#include "Task/Default/AmbientAnimationManager.h"
+-#include "Task/Scenario/Info/ScenarioInfo.h"
+-#include "Task/Scenario/info/ScenarioInfoManager.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Weapons/components/WeaponComponentFactory.h"
+-#include "Weapons/components/WeaponComponentManager.h"
++#include "task/Default/AmbientAnimationManager.h"
++#include "task/Scenario/info/ScenarioInfo.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "weapons/components/WeaponComponentFactory.h"
++#include "weapons/components/WeaponComponentManager.h"
+ #include "weapons/inventory/PedWeaponManager.h"
+ 
+ AI_OPTIMISATIONS()

@@ -1,13 +1,26 @@
 diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp
 --- a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp
 +++ b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp
-@@ -17,8 +17,8 @@
- #include "Task/Movement/TaskGotoPoint.h"
- #include "Task/Movement/TaskNavMesh.h"
+@@ -10,15 +10,15 @@
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/ped.h"
+ #include "physics/gtaInst.h"
+-#include "Task/Animation/TaskAnims.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/Combat/Subtasks/TaskDraggedToSafety.h"
+-#include "Task/Combat/Subtasks/TaskDraggingToSafety.h"
+-#include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "task/Animation/TaskAnims.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/Combat/Subtasks/TaskDraggedToSafety.h"
++#include "task/Combat/Subtasks/TaskDraggingToSafety.h"
++#include "task/Movement/TaskGotoPoint.h"
++#include "task/Movement/TaskNavMesh.h"
  #include "task/Movement/TaskSlideToCoord.h"
 -#include "task\Scenario\Info\ScenarioInfoManager.h"
 -#include "task\Scenario\Types\TaskUseScenario.h"
-+#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
 +#include "task/Scenario/Types/TaskUseScenario.h"
  #include "task/Weapons/TaskSwapWeapon.h"
  #include "vfx/misc/Fire.h"

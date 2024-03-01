@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicCamManCamera.cpp
+@@ -19,8 +19,8 @@
+ #include "game/ModelIndices.h"
+ #include "pathserver/pathserver.h"
+ #include "renderer/Water.h"
+-#include "vehicles/vehicle.h"
+-#include "peds/ped.h"
++#include "Vehicles/vehicle.h"
++#include "Peds/ped.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

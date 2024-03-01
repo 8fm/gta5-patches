@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/camera/viewports/ViewportFader.h b/src/dev_ng/game/
  #define INC_VIEWPORTFADER_H_
  
 -#include "Debug\debug.h"
-+#include "Debug/debug.h"
++#include "debug/Debug.h"
  
  #define VIEWPORTFADER_PRINTSTACKTRACE  (!__NO_OUTPUT)
  

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/text/FontDef.cpp b/src/dev_ng/game/text/FontDef.cpp
+--- a/src/dev_ng/game/text/FontDef.cpp
++++ b/src/dev_ng/game/text/FontDef.cpp
+@@ -11,14 +11,14 @@
+ 
+ #define __USE_RESOURCED_DATA	(0)  // flag to switch between reading resourced data or the old files
+ 
+-#include "Text/FontDef.h"
++#include "text/FontDef.h"
+ 
+ #include "parser/manager.h"
+ #include "parser/tree.h"
+ #include "streaming/streaming.h"
+ 
+ #if !__USE_RESOURCED_DATA
+-#include "Scene/stores/TxdStore.h"
++#include "scene/stores/TxdStore.h"
+ #endif
+ 
+ #define WHITESPACE_CHAR (32)  // space is ascii 32

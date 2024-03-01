@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/AnimatedModelEntity.h b/src/dev_ng/game/Cutscene/AnimatedModelEntity.h
+--- a/src/dev_ng/game/Cutscene/AnimatedModelEntity.h
++++ b/src/dev_ng/game/Cutscene/AnimatedModelEntity.h
+@@ -19,7 +19,7 @@
+ #include "paging/ref.h"
+ 
+ //Game Headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Cutscene/CutSceneDefine.h"
+ #include "Cutscene/cutscene_channel.h"
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/animation/AnimDataManager.cpp b/src/dev_ng/game/animation/AnimDataManager.cpp
+--- a/src/dev_ng/game/animation/AnimDataManager.cpp
++++ b/src/dev_ng/game/animation/AnimDataManager.cpp
+@@ -1,8 +1,8 @@
+ // Class header
+-#include "Animation/AnimDataManager.h"
++#include "animation/AnimDataManager.h"
+ 
+ // Game headers
+-#include "Animation/AnimData.h"
++#include "animation/AnimData.h"
+ #include "system/memory.h"
+ 
+ //////////////////////////////////////////////////////////////////////////

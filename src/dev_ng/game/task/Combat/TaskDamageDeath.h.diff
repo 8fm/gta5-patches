@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskDamageDeath.h b/src/dev_ng/game/task/Combat/TaskDamageDeath.h
+--- a/src/dev_ng/game/task/Combat/TaskDamageDeath.h
++++ b/src/dev_ng/game/task/Combat/TaskDamageDeath.h
+@@ -1,17 +1,17 @@
+ #ifndef TASK_DAMAGE_DEATH_H
+ #define TASK_DAMAGE_DEATH_H
+  
+-#include "Event/Events.h"
++#include "event/Events.h"
+ #include "network/General/NetworkUtil.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/Movement/Jumping/TaskFallGetUp.h"
+-#include "Task/Physics/NmDefines.h"
+-#include "Task/System/TaskComplex.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/Task.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/Movement/Jumping/TaskFallGetUp.h"
++#include "task/Physics/NmDefines.h"
++#include "task/System/TaskComplex.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ class CEntity;
+ class CPed;

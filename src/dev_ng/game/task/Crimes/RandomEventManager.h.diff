@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Crimes/RandomEventManager.h b/src/dev_ng/game/task/Crimes/RandomEventManager.h
+--- a/src/dev_ng/game/task/Crimes/RandomEventManager.h
++++ b/src/dev_ng/game/task/Crimes/RandomEventManager.h
+@@ -7,7 +7,7 @@
+ #include "atl/singleton.h"
+ #include "atl/string.h"
+ #include "fwanimation/animdefines.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/rtti.h"
+ #include "parser/macros.h"
+ #include "streaming/streamingrequest.h"
+@@ -15,8 +15,8 @@
+ #include "vector/vector3.h"
+ 
+ // Required headers
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ class CPed;

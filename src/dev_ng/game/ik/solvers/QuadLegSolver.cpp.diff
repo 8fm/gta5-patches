@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ik/solvers/QuadLegSolver.cpp b/src/dev_ng/game/ik/solvers/QuadLegSolver.cpp
+--- a/src/dev_ng/game/ik/solvers/QuadLegSolver.cpp
++++ b/src/dev_ng/game/ik/solvers/QuadLegSolver.cpp
+@@ -15,7 +15,7 @@
+ #include "animation/AnimBones.h"
+ #include "animation/debug/AnimViewer.h"
+ #include "ik/solvers/QuadLegSolverProxy.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ 
+ #define ENABLE_QUADLEGIK_SOLVER_WIDGETS	0
+ 

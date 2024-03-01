@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskFlightlessBirdLocomotion.cpp
+@@ -9,8 +9,8 @@
+ 
+ 
+ #include "animation/MovePed.h"
+-#include "Debug/DebugScene.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "debug/DebugScene.h"
++#include "task/Default/TaskPlayer.h"
+ #include "task/Motion/Locomotion/TaskBirdLocomotion.h"
+ 
+ 

@@ -1,12 +1,43 @@
 diff --git a/src/dev_ng/game/task/Movement/TaskJetpack.cpp b/src/dev_ng/game/task/Movement/TaskJetpack.cpp
 --- a/src/dev_ng/game/task/Movement/TaskJetpack.cpp
 +++ b/src/dev_ng/game/task/Movement/TaskJetpack.cpp
-@@ -19,7 +19,7 @@
- #include "Task/Vehicle/TaskCar.h"
- #include "AI/Ambient/ConditionalAnimManager.h"
- #include "Vfx/Systems/VfxGadget.h"
+@@ -1,26 +1,26 @@
+-#include "Task/Movement/TaskJetpack.h"
++#include "task/Movement/TaskJetpack.h"
+ 
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "grcore/debugdraw.h"
+-#include "Task/Vehicle/TaskMountAnimalWeapon.h"
++#include "task/Vehicle/TaskMountAnimalWeapon.h"
+ #include "camera/CamInterface.h"
+ #include "camera/base/BaseCamera.h"
+ #include "camera/gameplay/follow/FollowPedCamera.h"
+ #include "task/Motion/TaskMotionBase.h"
+-#include "Task/System/MotionTaskData.h"
+-#include "Task/Movement/TaskFall.h"
++#include "task/System/MotionTaskData.h"
++#include "task/Movement/TaskFall.h"
+ #include "system/control.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Movement/JetpackObject.h"
+-#include "Task/Movement/Jumping/TaskJump.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "AI/Ambient/ConditionalAnimManager.h"
+-#include "Vfx/Systems/VfxGadget.h"
 -#include "scene\world\GameWorldHeightMap.h"
+-#include "Pickups/Pickup.h"
++#include "task/Movement/JetpackObject.h"
++#include "task/Movement/Jumping/TaskJump.h"
++#include "task/Vehicle/TaskCar.h"
++#include "ai/ambient/ConditionalAnimManager.h"
++#include "vfx/systems/VfxGadget.h"
 +#include "scene/world/GameWorldHeightMap.h"
- #include "Pickups/Pickup.h"
++#include "pickups/Pickup.h"
  #include "vehicleAi/VehicleNavigationHelper.h"
  
+ AI_OPTIMISATIONS()

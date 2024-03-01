@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseEntitySelect.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseEntitySelect.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseEntitySelect.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseEntitySelect.cpp
+@@ -17,7 +17,7 @@
+ #include "debug/TextureViewer/TextureViewer.h"
+ #include "renderer/Debug/EntitySelect.h"
+ #include "renderer/Deferred/GBuffer.h"
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/renderListGroup.h"
+ #include "renderer/RenderListBuilder.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"

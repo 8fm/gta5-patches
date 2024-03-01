@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/TimeModelInfo.cpp b/src/dev_ng/game/modelinfo/TimeModelInfo.cpp
+--- a/src/dev_ng/game/modelinfo/TimeModelInfo.cpp
++++ b/src/dev_ng/game/modelinfo/TimeModelInfo.cpp
+@@ -12,7 +12,7 @@
+ // Game headers
+ #include "modelinfo/Timemodelinfo.h"
+ 
+-#include "scene/loader/mapdata_buildings.h"
++#include "scene/loader/MapData_buildings.h"
+ 
+ void CTimeModelInfo::InitArchetypeFromDefinition(strLocalIndex mapTypeDefIndex, fwArchetypeDef* definition, bool bHasAssetReferences)
+ {

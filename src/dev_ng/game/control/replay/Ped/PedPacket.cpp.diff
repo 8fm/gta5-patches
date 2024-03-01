@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/replay/Ped/PedPacket.cpp b/src/dev_ng/game/control/replay/Ped/PedPacket.cpp
 --- a/src/dev_ng/game/control/replay/Ped/PedPacket.cpp
 +++ b/src/dev_ng/game/control/replay/Ped/PedPacket.cpp
-@@ -11,7 +11,7 @@
+@@ -11,24 +11,24 @@
  #include "control/replay/ReplayInterfacePed.h"
  #include "control/replay/ReplayInterfaceVeh.h"
  #include "control/replay/ReplayInternal.h"
@@ -10,3 +10,26 @@ diff --git a/src/dev_ng/game/control/replay/Ped/PedPacket.cpp b/src/dev_ng/game/
  
  #include "debug/Debug.h"
  #include "fwscene/stores/drawablestore.h"
+ #include "Peds/PlayerPed.h"
+-#include "scene/portals/portal.h"
++#include "scene/portals/Portal.h"
+ #include "scene/world/GameWorld.h"
+ #include "camera/CamInterface.h"
+ #include "camera/replay/ReplayDirector.h"
+ #include "control/gamelogic.h"
+ #include "ik/IkManager.h"
+ #include "ik/solvers/RootSlopeFixupSolver.h"
+-#include "peds/rendering/PedVariationStream.h"
+-#include "peds/rendering/PedVariationPack.h"
+-#include "peds/pedhelmetcomponent.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/rendering/PedVariationStream.h"
++#include "Peds/rendering/PedVariationPack.h"
++#include "Peds/PedHelmetComponent.h"
++#include "Peds/PedIntelligence.h"
+ #include "physics/Floater.h"
+-#include "task/motion/taskmotionbase.h"
++#include "task/Motion/taskmotionbase.h"
+ #include "task/Movement/TaskParachute.h"
+ #include "Peds/rendering/PedOverlay.h"
+ #include "renderer/PostScan.h"

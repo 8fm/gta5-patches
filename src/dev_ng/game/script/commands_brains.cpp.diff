@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/script/commands_brains.cpp b/src/dev_ng/game/script/commands_brains.cpp
+--- a/src/dev_ng/game/script/commands_brains.cpp
++++ b/src/dev_ng/game/script/commands_brains.cpp
+@@ -1,12 +1,12 @@
+ // Rage headers
+ #include "script/wrapper.h"
+ // Game headers
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "objects/Object.h"
+-#include "peds/ped.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
+ #include "network/NetworkInterface.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/worldpoints.h"
+ #include "script/script.h"
+ #include "script/script_helper.h"

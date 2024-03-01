@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/frontend/Credits.cpp b/src/dev_ng/game/frontend/Credits.cpp
 --- a/src/dev_ng/game/frontend/Credits.cpp
 +++ b/src/dev_ng/game/frontend/Credits.cpp
-@@ -22,21 +22,21 @@
+@@ -21,22 +21,22 @@
+ // game:
  #include "camera/viewports/Viewport.h"
  #include "camera/viewports/ViewportManager.h"
- #include "core/game.h"
+-#include "core/game.h"
 -#include "frontend\Credits.h"
 -#include "frontend\Credits_parser.h"
++#include "Core/game.h"
 +#include "frontend/Credits.h"
 +#include "frontend/Credits_parser.h"
  #include "frontend/VideoEditor/ui/InstructionalButtons.h"
@@ -18,8 +20,8 @@ diff --git a/src/dev_ng/game/frontend/Credits.cpp b/src/dev_ng/game/frontend/Cre
  #include "streaming/streaming.h"
 -#include "system\ControlMgr.h"
 -#include "Text\Text.h"
-+#include "system/ControlMgr.h"
-+#include "Text/Text.h"
++#include "system/controlMgr.h"
++#include "text/text.h"
  
  #include "fwsys/timer.h"
  

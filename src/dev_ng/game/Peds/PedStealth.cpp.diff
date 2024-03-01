@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/Peds/PedStealth.cpp b/src/dev_ng/game/Peds/PedStealth.cpp
+--- a/src/dev_ng/game/Peds/PedStealth.cpp
++++ b/src/dev_ng/game/Peds/PedStealth.cpp
+@@ -3,9 +3,9 @@
+ // CREATED : 19-11-2008
+ 
+ // associated header
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedStealth.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "debug/VectorMap.h"
+ 
+ // rage headers

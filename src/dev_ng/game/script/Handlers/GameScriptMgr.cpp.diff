@@ -1,0 +1,47 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptMgr.cpp b/src/dev_ng/game/script/Handlers/GameScriptMgr.cpp
+--- a/src/dev_ng/game/script/Handlers/GameScriptMgr.cpp
++++ b/src/dev_ng/game/script/Handlers/GameScriptMgr.cpp
+@@ -3,7 +3,7 @@
+ // Copyright (C) 1999-2009 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "script/handlers/GameScriptMgr.h"
++#include "script/Handlers/GameScriptMgr.h"
+ 
+ // rage includes
+ #include "bank/bank.h"
+@@ -22,14 +22,14 @@
+ #include "network/Objects/NetworkObjectMgr.h"
+ #include "network/Players/NetGamePlayer.h"
+ #include "network/Sessions/NetworkSession.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerInfo.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerInfo.h"
+ #include "scene/streamer/StreamVolume.h"
+ #include "scene/world/GameWorld.h"
+-#include "script/handlers/GameScriptEntity.h"
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptHandlerNetwork.h"
+-#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptEntity.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptHandlerNetwork.h"
++#include "script/Handlers/GameScriptResources.h"
+ #include "script/gta_thread.h"
+ #include "script/script.h"
+ #include "script/script_channel.h"
+@@ -39,11 +39,11 @@
+ #include "streaming/streamingengine.h"
+ #include "streaming/streaminginfo.h"
+ #include "vfx/misc/MovieManager.h"
+-#include "Event/EventGroup.h"
++#include "event/EventGroup.h"
+ 
+ #if __DEV
+ #include "network/NetworkInterface.h"
+-#include "network/objects/NetworkObjectMgr.h"
++#include "network/Objects/NetworkObjectMgr.h"
+ #include "network/Players/NetworkPlayerMgr.h"
+ #include "rline/rlgamerinfo.h"
+ #endif

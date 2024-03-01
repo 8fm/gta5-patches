@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/ScriptRouterContext.h b/src/dev_ng/game/control/ScriptRouterContext.h
+--- a/src/dev_ng/game/control/ScriptRouterContext.h
++++ b/src/dev_ng/game/control/ScriptRouterContext.h
+@@ -11,7 +11,7 @@
+ #include "game/ScriptRouterContextEnums.h"
+ #include "network/NetworkTypes.h"
+ #include "script/wrapper.h"
+-#include "core/game.h"
++#include "Core/game.h"
+ 
+ #if GEN9_STANDALONE_ENABLED
+ 

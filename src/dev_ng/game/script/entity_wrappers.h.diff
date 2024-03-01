@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/script/entity_wrappers.h b/src/dev_ng/game/script/entity_wrappers.h
+--- a/src/dev_ng/game/script/entity_wrappers.h
++++ b/src/dev_ng/game/script/entity_wrappers.h
+@@ -11,9 +11,9 @@
+ // framework header
+ #include "fwscript/scriptguid.h"
+ //game headers
+-#include "peds/ped.h"
+-#include "objects/object.h"
+-#include "vehicles/vehicle.h"
++#include "Peds/ped.h"
++#include "Objects/object.h"
++#include "Vehicles/vehicle.h"
+ 
+ namespace rage {
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/modifiers/WeaponFallOffModifier.cpp b/src/dev_ng/game/weapons/modifiers/WeaponFallOffModifier.cpp
+--- a/src/dev_ng/game/weapons/modifiers/WeaponFallOffModifier.cpp
++++ b/src/dev_ng/game/weapons/modifiers/WeaponFallOffModifier.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/Modifiers/WeaponFallOffModifier.h"
++#include "weapons/modifiers/WeaponFallOffModifier.h"
+ 
+ // Parser
+ #include "WeaponFallOffModifier_parser.h"

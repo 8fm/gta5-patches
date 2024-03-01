@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/info/ItemInfo.h b/src/dev_ng/game/weapons/info/ItemInfo.h
+--- a/src/dev_ng/game/weapons/info/ItemInfo.h
++++ b/src/dev_ng/game/weapons/info/ItemInfo.h
+@@ -11,7 +11,7 @@
+ #include "parser/macros.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwtl/regdrefs.h"
+ #include "fwutil/rtti.h"
+ 

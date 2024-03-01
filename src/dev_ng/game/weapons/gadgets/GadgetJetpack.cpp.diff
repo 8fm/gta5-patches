@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/game/weapons/gadgets/GadgetJetpack.cpp b/src/dev_ng/game/weapons/gadgets/GadgetJetpack.cpp
+--- a/src/dev_ng/game/weapons/gadgets/GadgetJetpack.cpp
++++ b/src/dev_ng/game/weapons/gadgets/GadgetJetpack.cpp
+@@ -1,6 +1,6 @@
+-#include "Weapons/Gadgets/GadgetJetpack.h"
+-#include "Peds/Ped.h"
+-#include "Pickups/Pickup.h"
++#include "weapons/Gadgets/GadgetJetpack.h"
++#include "Peds/ped.h"
++#include "pickups/Pickup.h"
+ 
+ // Game includes
+ 

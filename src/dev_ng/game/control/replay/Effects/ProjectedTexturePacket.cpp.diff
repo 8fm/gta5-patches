@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp b/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ProjectedTexturePacket.cpp
+@@ -12,14 +12,14 @@
+ #include "vfx/systems/vfxBlood.h"
+ #include "vfx/systems/vfxWeapon.h"
+ #include "vfx/decals/DecalManager.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/PedDamage.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedDamage.h"
+ #include "physics/physics.h"
+ #include "physics/WorldProbe/WorldProbe.h"
+ #include "task/Combat/TaskDamageDeath.h"
+ #include "weapons/WeaponEnums.h"
+ #include "vector/vector3.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "vfx/vehicleglass/VehicleGlassManager.h"
+ #include "control/replay/ReplayExtensions.h"
+ 

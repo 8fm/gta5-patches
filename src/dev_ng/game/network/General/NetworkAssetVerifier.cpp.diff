@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/network/General/NetworkAssetVerifier.cpp b/src/dev_ng/game/network/General/NetworkAssetVerifier.cpp
+--- a/src/dev_ng/game/network/General/NetworkAssetVerifier.cpp
++++ b/src/dev_ng/game/network/General/NetworkAssetVerifier.cpp
+@@ -16,15 +16,15 @@
+ 
+ // Game headers
+ #include "game/BackgroundScripts/BackgroundScripts.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "network/Network.h"
+ #include "scene/ExtraContent.h"
+ #include "script/streamedscripts.h"
+ #include "system/FileMgr.h"
+ #include "system/system.h"
+-#include "System/ThreadPriorities.h"
+-#include "System/InfoState.h"
++#include "system/ThreadPriorities.h"
++#include "system/InfoState.h"
+ #include "system/appcontent.h"
+ 
+ #if __FINAL_LOGGING

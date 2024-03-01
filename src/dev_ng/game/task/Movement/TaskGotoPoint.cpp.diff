@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp b/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp
+--- a/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp
++++ b/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp
+@@ -1,15 +1,15 @@
+-#include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Movement/TaskGotoPointAvoidance.h"
+-#include "Task/Movement/TaskGoto.h"
+-
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Motion/Locomotion/TaskLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskMotionAiming.h"
+-#include "Task/Motion/Locomotion/TaskQuadLocomotion.h"
+-#include "Task/Movement/TaskNavBase.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskGotoPoint.h"
++#include "task/Movement/TaskGotoPointAvoidance.h"
++#include "task/Movement/TaskGoto.h"
++
++#include "task/General/TaskBasic.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskMotionAiming.h"
++#include "task/Motion/Locomotion/TaskQuadLocomotion.h"
++#include "task/Movement/TaskNavBase.h"
++#include "task/Movement/TaskNavMesh.h"
+ #include "Peds/MovingGround.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_data_script.cpp b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_data_script.cpp
+--- a/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_data_script.cpp
++++ b/src/dev_ng/game/SaveLoad/SavegameMigration/savegame_migration_data_script.cpp
+@@ -4,7 +4,7 @@
+ #if __ALLOW_EXPORT_OF_SP_SAVEGAMES || __ALLOW_IMPORT_OF_SP_SAVEGAMES
+ 
+ // Game headers
+-#include "Network/Network.h"
++#include "network/Network.h"
+ #include "SaveLoad/savegame_channel.h"
+ #include "SaveLoad/SavegameScriptData/script_save_data.h"
+ 

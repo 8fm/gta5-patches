@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkProfileStats.cpp b/src/dev_ng/game/network/Live/NetworkProfileStats.cpp
+--- a/src/dev_ng/game/network/Live/NetworkProfileStats.cpp
++++ b/src/dev_ng/game/network/Live/NetworkProfileStats.cpp
+@@ -21,25 +21,25 @@
+ 
+ //Framework Headers
+ #include "fwnet/netchannel.h"
+-#include "fwnet/netutils.h "
++#include "fwnet/netutils.h"
+ #include "fwsys/timer.h"
+ #include "fwsys/gameskeleton.h"
+ 
+ //Game Headers
+ #include "control/stuntjump.h"
+ #include "NetworkProfileStats.h"
+-#include "Network/Network.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Network.h"
++#include "network/NetworkInterface.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Live/livemanager.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "Stats/stats_channel.h"
+-#include "STats/MoneyInterface.h"
++#include "Stats/MoneyInterface.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/StatsMgr.h"
+ #include "Stats/StatsDataMgr.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+-#include "Frontend/ProfileSettings.h"
++#include "frontend/ProfileSettings.h"
+ #include "frontend/PauseMenuData.h"
+ #include "SaveMigration/SaveMigration.h"
+ 

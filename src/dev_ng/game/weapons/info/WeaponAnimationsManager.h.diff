@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponAnimationsManager.h b/src/dev_ng/game/weapons/info/WeaponAnimationsManager.h
+--- a/src/dev_ng/game/weapons/info/WeaponAnimationsManager.h
++++ b/src/dev_ng/game/weapons/info/WeaponAnimationsManager.h
+@@ -7,7 +7,7 @@
+ #include "parser/macros.h"
+ 
+ // Game headers
+-#include "Weapons/Info/WeaponInfo.h"
++#include "weapons/info/WeaponInfo.h"
+ 
+ // Game forward declarations
+ class CPed;

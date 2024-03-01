@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedManager.h b/src/dev_ng/game/task/Response/Info/AgitatedManager.h
+--- a/src/dev_ng/game/task/Response/Info/AgitatedManager.h
++++ b/src/dev_ng/game/task/Response/Info/AgitatedManager.h
+@@ -5,9 +5,9 @@
+ #include "data/base.h"
+ 
+ // Game headers
+-#include "Task/Response/Info/AgitatedPersonality.h"
+-#include "Task/Response/Info/AgitatedResponse.h"
+-#include "Task/Response/Info/AgitatedTrigger.h"
++#include "task/Response/Info/AgitatedPersonality.h"
++#include "task/Response/Info/AgitatedResponse.h"
++#include "task/Response/Info/AgitatedTrigger.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CAgitatedManager

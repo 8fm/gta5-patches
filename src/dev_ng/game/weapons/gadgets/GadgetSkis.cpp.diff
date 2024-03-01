@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/game/weapons/gadgets/GadgetSkis.cpp b/src/dev_ng/game/weapons/gadgets/GadgetSkis.cpp
+--- a/src/dev_ng/game/weapons/gadgets/GadgetSkis.cpp
++++ b/src/dev_ng/game/weapons/gadgets/GadgetSkis.cpp
+@@ -1,7 +1,7 @@
+ // File header
+-#include "Weapons/Gadgets/GadgetSkis.h"
++#include "weapons/Gadgets/GadgetSkis.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "task/Default/TaskPlayer.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CGadgetSkis

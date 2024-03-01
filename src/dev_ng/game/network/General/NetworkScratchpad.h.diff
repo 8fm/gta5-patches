@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/General/NetworkScratchpad.h b/src/dev_ng/game/network/General/NetworkScratchpad.h
+--- a/src/dev_ng/game/network/General/NetworkScratchpad.h
++++ b/src/dev_ng/game/network/General/NetworkScratchpad.h
+@@ -9,7 +9,7 @@
+ 
+ // framework includes
+ #include "fwnet/nettypes.h"
+-#include "fwscript/scriptId.h"
++#include "fwscript/scriptid.h"
+ 
+ class GtaThread;
+ 

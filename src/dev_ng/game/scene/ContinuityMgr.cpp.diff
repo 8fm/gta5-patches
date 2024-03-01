@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/scene/ContinuityMgr.cpp b/src/dev_ng/game/scene/ContinuityMgr.cpp
+--- a/src/dev_ng/game/scene/ContinuityMgr.cpp
++++ b/src/dev_ng/game/scene/ContinuityMgr.cpp
+@@ -6,18 +6,18 @@
+ 
+ #include "scene/ContinuityMgr.h"
+ 
+-#include "camera/camInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/base/basecamera.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
+-#include "objects/object.h"
+-#include "peds/Ped.h"
+-#include "peds/PedFlagsMeta.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/QueriableInterface.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
++#include "Peds/PedFlagsMeta.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/QueriableInterface.h"
+ #include "scene/lod/LodScale.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "scene/streamer/SceneStreamerBase.h"
+@@ -30,8 +30,8 @@
+ #include "task/System/Task.h"
+ #include "task/System/TaskTypes.h"
+ #include "task/Movement/TaskParachute.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/AmphibiousAutomobile.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/AmphibiousAutomobile.h"
+ #include "world/GameWorld.h"
+ 
+ CContinuityMgr g_ContinuityMgr;

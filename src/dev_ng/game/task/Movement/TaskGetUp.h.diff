@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskGetUp.h b/src/dev_ng/game/task/Movement/TaskGetUp.h
+--- a/src/dev_ng/game/task/Movement/TaskGetUp.h
++++ b/src/dev_ng/game/task/Movement/TaskGetUp.h
+@@ -10,13 +10,13 @@
+ // C headers
+ // Game headers
+ #include "fwanimation/posematcher.h"
+-#include "peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/BlendFromNmData.h"
+-#include "Task/System/TaskHelpers.h"
++#include "Peds/QueriableInterface.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/BlendFromNmData.h"
++#include "task/System/TaskHelpers.h"
+ #include "network/General/NetworkUtil.h"
+ 
+ // ------------------------------------------------------------------------------

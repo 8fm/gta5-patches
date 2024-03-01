@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/script/script_itemsets.h b/src/dev_ng/game/script/script_itemsets.h
+--- a/src/dev_ng/game/script/script_itemsets.h
++++ b/src/dev_ng/game/script/script_itemsets.h
+@@ -9,8 +9,8 @@
+ 
+ #include "entity/extensiblebase.h"
+ #include "scene/RegdRefTypes.h"
+-#include "script/handlers/GameScriptHandler.h"
+-#include "script/handlers/GameScriptIds.h"
++#include "script/Handlers/GameScriptHandler.h"
++#include "script/Handlers/GameScriptIds.h"
+ 
+ //-----------------------------------------------------------------------------
+ 

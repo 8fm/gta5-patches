@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vfx/sky/ShaderVariable.cpp b/src/dev_ng/game/vfx/sky/ShaderVariable.cpp
+--- a/src/dev_ng/game/vfx/sky/ShaderVariable.cpp
++++ b/src/dev_ng/game/vfx/sky/ShaderVariable.cpp
+@@ -5,10 +5,10 @@
+ //
+ 
+ // INCLUDES
+-#include "Vfx/Sky/ShaderVariable.h"
++#include "vfx/Sky/ShaderVariable.h"
+ 
+ // rage
+-#include "Shaders/ShaderLib.h"
++#include "shaders/ShaderLib.h"
+ 
+ // ------------------------------------------------------------------------------------------------------------------//
+ //												CShaderVariable														 //

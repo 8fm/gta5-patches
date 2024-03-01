@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.cpp b/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/GamePresenceEventDispatcher.cpp
+@@ -14,8 +14,8 @@
+ //framework
+ #include "fwnet/netchannel.h"
+ 
+-#include "network/Live/LiveManager.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
+ 
+ //game
+ #include "event/EventNetwork.h"

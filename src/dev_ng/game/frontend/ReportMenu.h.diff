@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/frontend/ReportMenu.h b/src/dev_ng/game/frontend/ReportMenu.h
+--- a/src/dev_ng/game/frontend/ReportMenu.h
++++ b/src/dev_ng/game/frontend/ReportMenu.h
+@@ -10,9 +10,9 @@
+ 
+ // Game headers
+ #include "ReportMenuData.h"
+-#include "Frontend/Scaleform/ScaleformMgr.h"
+-#include "Frontend/WarningScreen.h"
+-#include "Network/Cloud/UserContentManager.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "frontend/WarningScreen.h"
++#include "network/Cloud/UserContentManager.h"
+ #include "rline/socialclub/rlsocialclub.h"
+ 
+ class CRecentMissionDetails

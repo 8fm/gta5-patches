@@ -1,12 +1,19 @@
 diff --git a/src/dev_ng/game/Vehicles/Submarine.h b/src/dev_ng/game/Vehicles/Submarine.h
 --- a/src/dev_ng/game/Vehicles/Submarine.h
 +++ b/src/dev_ng/game/Vehicles/Submarine.h
-@@ -6,7 +6,7 @@
- #include "vehicles/Automobile.h"
- #include "vehicles/Propeller.h"
+@@ -2,11 +2,11 @@
+ #define __SUBMARINE_H__
+ 
+ #include "Vehicles/Boat.h"
+-//#include "vehicles/vehicle.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/Propeller.h"
++//#include "Vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Propeller.h"
  
 -#include "network\objects\entities\netObjSubmarine.h"
-+#include "network/objects/entities/netObjSubmarine.h"
++#include "network/Objects/Entities/NetObjSubmarine.h"
  
  #include "control/replay/ReplaySettings.h"
  

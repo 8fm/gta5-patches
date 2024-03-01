@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/vehicleengine/transmission.cpp b/src/dev_ng/game/audio/vehicleengine/transmission.cpp
+--- a/src/dev_ng/game/audio/vehicleengine/transmission.cpp
++++ b/src/dev_ng/game/audio/vehicleengine/transmission.cpp
+@@ -5,7 +5,7 @@
+ #include "audioengine/soundset.h"
+ #include "audioengine/widgets.h"
+ #include "audiosoundtypes/sound.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ AUDIO_VEHICLES_OPTIMISATIONS()
+ 

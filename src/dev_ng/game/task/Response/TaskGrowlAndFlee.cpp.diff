@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Response/TaskGrowlAndFlee.cpp b/src/dev_ng/game/task/Response/TaskGrowlAndFlee.cpp
+--- a/src/dev_ng/game/task/Response/TaskGrowlAndFlee.cpp
++++ b/src/dev_ng/game/task/Response/TaskGrowlAndFlee.cpp
+@@ -1,13 +1,13 @@
+ // Class Header
+-#include "Task/Response/TaskGrowlAndFlee.h"
++#include "task/Response/TaskGrowlAndFlee.h"
+ 
+ // Game Headers
+ #include "ai/AITarget.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedMotionData.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskIdle.h"
+-#include "Task/Response/TaskFlee.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Movement/TaskIdle.h"
++#include "task/Response/TaskFlee.h"
+ 
+ AI_OPTIMISATIONS()
+ 

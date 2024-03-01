@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/cloth/Cloth.h b/src/dev_ng/game/cloth/Cloth.h
+--- a/src/dev_ng/game/cloth/Cloth.h
++++ b/src/dev_ng/game/cloth/Cloth.h
+@@ -7,14 +7,14 @@
+ #include "vector/vector3.h"
+ 
+ //game
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "ClothMgr.h"
+ #include "ClothParticles.h"
+ #include "ClothConstraints.h"
+ #include "ClothSprings.h"
+ #include "ClothPendants.h"
+ #include "ClothCapsuleBounds.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #if NORTH_CLOTHS
+ 

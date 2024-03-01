@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/scene/streamer/SceneLoader.cpp b/src/dev_ng/game/scene/streamer/SceneLoader.cpp
+--- a/src/dev_ng/game/scene/streamer/SceneLoader.cpp
++++ b/src/dev_ng/game/scene/streamer/SceneLoader.cpp
+@@ -14,12 +14,12 @@ STREAMING_OPTIMISATIONS()
+ 
+ #include "fwscene/stores/maptypesstore.h"
+ #include "fwsys/gameskeleton.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "modelinfo/BaseModelInfo.h"
+ #include "modelinfo/TimeModelInfo.h"
+-#include "objects/objectpopulation.h"
++#include "Objects/objectpopulation.h"
+ #include "pathserver/pathserver.h"
+-#include "peds/PlayerInfo.h"
++#include "Peds/PlayerInfo.h"
+ #include "renderer/PlantsMgr.h"
+ #include "renderer/Lights/LightEntity.h"
+ #include "fwscene/lod/LodTypes.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/page_deck/pages/WarningScreenPage.h b/src/dev_ng/game/frontend/page_deck/pages/WarningScreenPage.h
+--- a/src/dev_ng/game/frontend/page_deck/pages/WarningScreenPage.h
++++ b/src/dev_ng/game/frontend/page_deck/pages/WarningScreenPage.h
+@@ -23,7 +23,7 @@
+ #include "atl/map.h"
+ 
+ // framework
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ 
+ // game
+ #include "frontend/WarningScreenEnums.h"

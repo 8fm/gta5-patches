@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskTargetUnreachable.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskTargetUnreachable.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskTargetUnreachable.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskTargetUnreachable.cpp
+@@ -2,11 +2,11 @@
+ // PURPOSE : Subtask of combat used for when the target is unreachable
+ 
+ // File header
+-#include "Task/Combat/Subtasks/TaskTargetUnreachable.h"
++#include "task/Combat/Subtasks/TaskTargetUnreachable.h"
+ 
+ // Game headers
+ #include "pathserver/PathServer.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskCombat.h"
+ #include "task/Combat/TaskNewCombat.h"
+@@ -14,7 +14,7 @@
+ #include "task/Movement/TaskIdle.h"
+ #include "task/Movement/TaskMoveWithinAttackWindow.h"
+ #include "task/Movement/TaskNavMesh.h"
+-#include "Task/Weapons/TaskWeaponBlocked.h"
++#include "task/Weapons/TaskWeaponBlocked.h"
+ 
+ AI_OPTIMISATIONS()
+ 

@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/drawListMgr.cpp b/src/dev_ng/game/renderer/DrawLists/drawListMgr.cpp
+--- a/src/dev_ng/game/renderer/DrawLists/drawListMgr.cpp
++++ b/src/dev_ng/game/renderer/DrawLists/drawListMgr.cpp
+@@ -5,7 +5,7 @@
+ // CREATED : 30/8/06
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "renderer/DrawLists/DrawListMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
+ 
+ // Rage headers
+ #include "bank/bkmgr.h"
+@@ -25,11 +25,11 @@
+ 
+ // game headers
+ #include "camera/viewports/ViewportManager.h"
+-#include "renderer/Drawlists/drawList.h"
+-#include "renderer/renderThread.h"
++#include "renderer/DrawLists/drawList.h"
++#include "renderer/RenderThread.h"
+ #include "Peds/rendering/PedProps.h"
+ #include "Peds/rendering/PedVariationStream.h"
+-#include "physics/gtainst.h"
++#include "physics/gtaInst.h"
+ #include "physics/physics.h"
+ #include "scene/Building.h"
+ #include "scene/debug/PostScanDebug.h"

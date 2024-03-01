@@ -1,6 +1,34 @@
 diff --git a/src/dev_ng/game/audio/scriptaudioentity.cpp b/src/dev_ng/game/audio/scriptaudioentity.cpp
 --- a/src/dev_ng/game/audio/scriptaudioentity.cpp
 +++ b/src/dev_ng/game/audio/scriptaudioentity.cpp
+@@ -21,20 +21,20 @@
+ #include "audiohardware/waveslot.h"
+ #include "audiohardware/driver.h"
+ #include "audio/caraudioentity.h"
+-#include "debug/debug.h"
+-#include "debug/debugglobals.h"
++#include "debug/Debug.h"
++#include "debug/Debugglobals.h"
+ #include "dynamicmixer.h"
+ #include "text/messages.h"
+-#include "peds/ped.h"
+-#include "peds/PedPhoneComponent.h"
+-#include "peds/popzones.h"
++#include "Peds/ped.h"
++#include "Peds/PedPhoneComponent.h"
++#include "Peds/PopZones.h"
+ #include "control/replay/Audio/ScriptAudioPacket.h"
+ #include "scene/RefMacros.h"
+ #include "script/script.h"
+ #include "system/FileMgr.h"
+ #include "game/zones.h"
+-#include "vehicles/automobile.h"
+-#include "Vfx/Misc/Fire.h"
++#include "Vehicles/Automobile.h"
++#include "vfx/misc/Fire.h"
+ #include "network/NetworkInterface.h"
+ #include "network/Events/NetworkEventTypes.h"
+ #include "game/user.h"
 @@ -7968,7 +7968,7 @@ void audScriptAudioEntity::PlayStreamFromEntityInternal(CEntity *entity)
  				REPLAY_ONLY(CReplayMgr::ReplayRecordPlayStreamFromEntity(entity, m_StreamSound, sm_CurrentStreamName, sm_CurrentStartOffset, sm_CurrentSetName);)
  			}

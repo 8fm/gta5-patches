@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedFootstepHelper.h b/src/dev_ng/game/Peds/PedFootstepHelper.h
+--- a/src/dev_ng/game/Peds/PedFootstepHelper.h
++++ b/src/dev_ng/game/Peds/PedFootstepHelper.h
+@@ -15,7 +15,7 @@
+ 
+ #include "audio/asyncprobes.h"
+ #include "audio/gameobjects.h"
+-#include "PedDefines.h"
++#include "pedDefines.h"
+ 
+ #define BIPED_NUM_FEET 2
+ #define MAX_NUM_FEET 4

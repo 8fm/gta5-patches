@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.h b/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.h
+--- a/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.h
++++ b/src/dev_ng/game/task/Movement/Climbing/DropDownDetector.h
+@@ -7,8 +7,8 @@
+ #ifndef DROPDOWN_DETECTOR_H
+ #define DROPDOWN_DETECTOR_H
+ 
+-#include "debug/debugdrawstore.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "debug/DebugDrawStore.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

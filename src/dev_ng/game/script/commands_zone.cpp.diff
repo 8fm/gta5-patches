@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/script/commands_zone.cpp b/src/dev_ng/game/script/commands_zone.cpp
 --- a/src/dev_ng/game/script/commands_zone.cpp
 +++ b/src/dev_ng/game/script/commands_zone.cpp
-@@ -1,13 +1,13 @@
+@@ -1,16 +1,16 @@
  
  // Rage headers
 -#include "script\wrapper.h"
@@ -17,7 +17,12 @@ diff --git a/src/dev_ng/game/script/commands_zone.cpp b/src/dev_ng/game/script/c
 +#include "script/script.h"
  #include "script/script_helper.h"
 -#include "peds\popcycle.h"
-+#include "peds/popcycle.h"
- #include "peds/popzones.h"
+-#include "peds/popzones.h"
++#include "Peds/PopCycle.h"
++#include "Peds/PopZones.h"
  #include "streaming/populationstreaming.h"
- #include "network/networkinterface.h"
+-#include "network/networkinterface.h"
++#include "network/NetworkInterface.h"
+ #include "script/Handlers/GameScriptResources.h"
+ 
+ namespace zone_commands

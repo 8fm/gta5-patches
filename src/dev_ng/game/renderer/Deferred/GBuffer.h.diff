@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/Deferred/GBuffer.h b/src/dev_ng/game/renderer/Deferred/GBuffer.h
+--- a/src/dev_ng/game/renderer/Deferred/GBuffer.h
++++ b/src/dev_ng/game/renderer/Deferred/GBuffer.h
+@@ -8,8 +8,8 @@
+ // game
+ #include "renderer/Deferred/DeferredConfig.h"
+ #include "vector/vector4.h"
+-#include "Renderer/DrawLists/drawListMgr.h"
+-#include "Renderer/SpuPM/SpuPmMgr.h"
++#include "renderer/DrawLists/drawListMgr.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
+ 
+ // framework
+ #include "fwdrawlist/drawlistmgr.h"

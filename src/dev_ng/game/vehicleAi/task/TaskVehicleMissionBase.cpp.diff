@@ -1,12 +1,30 @@
 diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp
 --- a/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp
 +++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp
-@@ -16,7 +16,7 @@
- #include "Task/Scenario/Types/TaskVehicleScenario.h"
+@@ -5,18 +5,18 @@
+ 
+ // Game headers
+ #include "Vehicles/vehicle.h"
+-#include "VehicleAi/vehicleintelligence.h"
+-#include "VehicleAi/driverpersonality.h"
++#include "vehicleAi/VehicleIntelligence.h"
++#include "vehicleAi/driverpersonality.h"
+ #include "debug/DebugScene.h"
+ #include "control/trafficLights.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "control/record.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "Task/Scenario/Types/TaskVehicleScenario.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "task/Scenario/Types/TaskVehicleScenario.h"
  #include "vehicleAi/task/TaskVehicleCruise.h"
- #include "vehicles/vehiclepopulation.h"
+-#include "vehicles/vehiclepopulation.h"
 -#include "vehicles\virtualroad.h"
-+#include "vehicles/virtualroad.h"
++#include "Vehicles/vehiclepopulation.h"
++#include "Vehicles/virtualroad.h"
  
  
  AI_OPTIMISATIONS()

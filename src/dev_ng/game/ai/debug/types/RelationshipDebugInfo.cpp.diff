@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.cpp
 --- a/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.cpp
 +++ b/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.cpp
-@@ -1,10 +1,10 @@
+@@ -1,11 +1,11 @@
 -#include "ai\debug\types\RelationshipDebugInfo.h"
 +#include "ai/debug/types/RelationshipDebugInfo.h"
  
@@ -10,8 +10,10 @@ diff --git a/src/dev_ng/game/ai/debug/types/RelationshipDebugInfo.cpp b/src/dev_
  // game headers
 -#include "Peds\Ped.h"
 -#include "Peds\PedIntelligence.h"
-+#include "Peds/Ped.h"
+-#include "network/objects/entities/NetObjPlayer.h"
++#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
- #include "network/objects/entities/NetObjPlayer.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
  
  CRelationshipDebugInfo::CRelationshipDebugInfo(const CPed* pPed, DebugInfoPrintParams printParams)
+ 	: CAIDebugInfo(printParams)

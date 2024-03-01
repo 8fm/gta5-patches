@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/network/General/NetworkDamageTracker.h b/src/dev_ng/game/network/General/NetworkDamageTracker.h
+--- a/src/dev_ng/game/network/General/NetworkDamageTracker.h
++++ b/src/dev_ng/game/network/General/NetworkDamageTracker.h
+@@ -8,11 +8,11 @@
+ #define NETWORK_DAMAGE_TRACKER_H
+ 
+ #include "network/NetworkInterface.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Game headers
+-#include "peds/pedtype.h"
+-#include "peds/pedDefines.h"
++#include "Peds/PedType.h"
++#include "Peds/pedDefines.h"
+ #include "network/Objects/Entities/NetObjPhysical.h"
+ 
+ 

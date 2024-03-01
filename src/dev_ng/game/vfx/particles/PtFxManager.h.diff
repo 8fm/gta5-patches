@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vfx/particles/PtFxManager.h b/src/dev_ng/game/vfx/particles/PtFxManager.h
+--- a/src/dev_ng/game/vfx/particles/PtFxManager.h
++++ b/src/dev_ng/game/vfx/particles/PtFxManager.h
+@@ -31,10 +31,10 @@
+ #include "vfx/ptfx/ptfxManager.h"
+ 
+ // game
+-#include "Streaming/StreamingRequest.h"
+-#include "Vfx/Particles/PtFxCollision.h"
+-#include "Vfx/Particles/PtFxDebug.h"
+-#include "Vfx/Particles/PtFxEntity.h"
++#include "streaming/streamingrequest.h"
++#include "vfx/Particles/PtFxCollision.h"
++#include "vfx/Particles/PtFxDebug.h"
++#include "vfx/Particles/PtFxEntity.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

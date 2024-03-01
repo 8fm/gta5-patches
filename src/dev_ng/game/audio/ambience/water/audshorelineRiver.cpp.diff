@@ -1,6 +1,21 @@
 diff --git a/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp b/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
 --- a/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
 +++ b/src/dev_ng/game/audio/ambience/water/audshorelineRiver.cpp
+@@ -13,11 +13,11 @@
+ #include "audshorelineRiver.h"
+ #include "audio/northaudioengine.h"
+ #include "audio/gameobjects.h"
+-#include "debug/vectormap.h"
+-#include "renderer/water.h"
++#include "debug/VectorMap.h"
++#include "renderer/Water.h"
+ #include "game/weather.h"
+ #include "vfx/VfxHelper.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "audio/weatheraudioentity.h"
+ #include "scene/world/GameWorldWaterHeight.h"
+ 
 @@ -890,7 +890,7 @@ void audShoreLineRiver::UpdateRiverSounds(const u8 closestRiverIdx)
  			GetSoundsRefs((RiverType)sm_ClosestShores[closestRiverIdx].riverSounds.currentShore[Right]->GetRiverSettings()->RiverType,soundRef,Right);
  			UpdateRiverSound(soundRef,Right,sm_ClosestShores[closestRiverIdx].riverSounds.ending[Right],rightPoint,closestRiverIdx);

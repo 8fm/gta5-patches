@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/marketing/MarketingStickyCamera.cpp b/src/dev_ng/game/camera/marketing/MarketingStickyCamera.cpp
+--- a/src/dev_ng/game/camera/marketing/MarketingStickyCamera.cpp
++++ b/src/dev_ng/game/camera/marketing/MarketingStickyCamera.cpp
+@@ -12,7 +12,7 @@
+ 
+ #include "camera/CamInterface.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "system/pad.h"
+ 
+ CAMERA_OPTIMISATIONS()

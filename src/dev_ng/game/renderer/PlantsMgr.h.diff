@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/PlantsMgr.h b/src/dev_ng/game/renderer/PlantsMgr.h
+--- a/src/dev_ng/game/renderer/PlantsMgr.h
++++ b/src/dev_ng/game/renderer/PlantsMgr.h
+@@ -48,7 +48,7 @@
+ // game includes:
+ #if !__SPU
+ #include "fwscene/stores/staticboundsstore.h"	// g_StaticBoundsStore
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ #endif
+ #include "scene/RegdRefTypes.h"
+ #include "tools/SectorToolsParam.h"

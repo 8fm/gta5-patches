@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskDraftHorse.h b/src/dev_ng/game/task/Vehicle/TaskDraftHorse.h
+--- a/src/dev_ng/game/task/Vehicle/TaskDraftHorse.h
++++ b/src/dev_ng/game/task/Vehicle/TaskDraftHorse.h
+@@ -6,10 +6,10 @@
+ #if ENABLE_HORSE
+ 
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/motion/TaskMotionBase.h"
+-#include "Task/motion/Locomotion/TaskMotionPed.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ 

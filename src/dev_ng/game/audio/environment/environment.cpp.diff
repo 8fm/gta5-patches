@@ -1,6 +1,46 @@
 diff --git a/src/dev_ng/game/audio/environment/environment.cpp b/src/dev_ng/game/audio/environment/environment.cpp
 --- a/src/dev_ng/game/audio/environment/environment.cpp
 +++ b/src/dev_ng/game/audio/environment/environment.cpp
+@@ -29,21 +29,21 @@
+ #include "camera/CamInterface.h"
+ #include "camera/scripted/ScriptDirector.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "debug/debugglobals.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "debug/Debugglobals.h"
+ #include "debug/DebugScene.h"
+ #include "grcore/debugdraw.h"
+ #include "game/weather.h"
+ #include "game/zones.h"
+ #include "math/amath.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "objects/door.h"
+-#include "peds/PedIntelligence.h"
+-#include "peds/ped.h"
+-#include "peds/PopCycle.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "scene/portals/portal.h"
+-#include "scene/portals/portalInst.h"
++#include "Objects/Door.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PopCycle.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/portals/Portal.h"
++#include "scene/portals/PortalInst.h"
+ #include "scene/WarpManager.h"
+ #include "scene/world/GameWorldWaterHeight.h"
+ #include "fwscene/search/Search.h"
+@@ -53,7 +53,7 @@
+ #include "task/Vehicle/TaskEnterVehicle.h"
+ #include "task/Vehicle/TaskExitVehicle.h"
+ #include "vector/geometry.h"
+-#include "vfx/Systems/VfxWeather.h"
++#include "vfx/systems/VfxWeather.h"
+ #include "fwscene/world/WorldLimits.h"
+ #include "scene/world/GameWorldHeightMap.h"
+ #include "vectormath/vectormath.h"
 @@ -1846,7 +1846,7 @@ void naEnvironment::UpdateInterestingTrees()
  		}
  		UpdateBgTreeSound(m_CurrentSoundIdx[i], i,numTrees,(u8)type,avgDistance,soundDir);

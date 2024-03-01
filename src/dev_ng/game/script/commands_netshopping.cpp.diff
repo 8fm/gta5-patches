@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/script/commands_netshopping.cpp b/src/dev_ng/game/script/commands_netshopping.cpp
+--- a/src/dev_ng/game/script/commands_netshopping.cpp
++++ b/src/dev_ng/game/script/commands_netshopping.cpp
+@@ -17,22 +17,22 @@
+ 
+ // Game headers
+ #include "commands_netshopping.h"
+-#include "Script/script.h"
+-#include "Script/script_channel.h"
+-#include "Script/script_helper.h"
++#include "script/script.h"
++#include "script/script_channel.h"
++#include "script/script_helper.h"
+ #include "Stats/stats_channel.h"
+ #include "Stats/StatsInterface.h"
+ #include "Stats/StatsTypes.h"
+-#include "Event/EventNetwork.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Shop/NetworkShopping.h"
+-#include "Network/Shop/Catalog.h"
+-#include "Network/Shop/Inventory.h"
+-#include "Network/Shop/NetworkGameTransactions.h"
+-#include "Network/Shop/GameTransactionsSessionMgr.h"
+-#include "Network/NetworkTypes.h"
+-#include "Network/Live/NetworkProfileStats.h"
+-#include "Network/Live/NetworkLegalRestrictionsManager.h"
++#include "event/EventNetwork.h"
++#include "network/NetworkInterface.h"
++#include "network/Shop/NetworkShopping.h"
++#include "network/Shop/Catalog.h"
++#include "network/Shop/Inventory.h"
++#include "network/Shop/NetworkGameTransactions.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/NetworkTypes.h"
++#include "network/Live/NetworkProfileStats.h"
++#include "network/Live/NetworkLegalRestrictionsManager.h"
+ #include "security/plugins/scripthook.h"
+ 
+ NETWORK_OPTIMISATIONS()

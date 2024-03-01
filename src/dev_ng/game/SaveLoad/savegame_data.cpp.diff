@@ -1,0 +1,51 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_data.cpp b/src/dev_ng/game/SaveLoad/savegame_data.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_data.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_data.cpp
+@@ -1,6 +1,6 @@
+ 
+ // Rage headers
+-#include "Diag/output.h"
++#include "diag/output.h"
+ #include "parser/manager.h"
+ #include "parser/psofile.h"
+ //	#include "parser/psoparserbuilder.h"
+@@ -10,7 +10,7 @@
+ #include "camera/helpers/ControlHelper.h"
+ #include "control/stuntjump.h"
+ #include "data/aes.h"
+-#include "frontend/minimap.h"
++#include "frontend/MiniMap.h"
+ #if __D3D11
+ #include "frontend/MiniMapRenderThread.h"
+ #endif //__D3D11
+@@ -22,7 +22,7 @@
+ #include "Peds/ped.h"
+ #include "Peds/PedHelmetComponent.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/rendering/PedVariationStream.h"
+ #include "Peds/rendering/PedVariationPack.h"
+ #include "SaveLoad/SavegameScriptData/script_save_data.h"
+@@ -37,9 +37,9 @@
+ #include "script/script.h"
+ #include "script/script_hud.h"
+ #include "network/Network.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "stats/stats_channel.h"
+-#include "stats/StatsInterface.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "Stats/stats_channel.h"
++#include "Stats/StatsInterface.h"
+ #include "streaming/streaming.h"
+ #include "task/Motion/TaskMotionBase.h"
+ #include "weapons/Weapon.h"
+@@ -57,7 +57,7 @@
+ #endif // __ASSERT
+ 
+ #if RSG_DURANGO
+-#include "Network/Live/Events_durango.h"
++#include "network/Live/Events_durango.h"
+ #endif
+ 
+ SAVEGAME_OPTIMISATIONS()

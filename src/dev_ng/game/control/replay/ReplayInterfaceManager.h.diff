@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceManager.h b/src/dev_ng/game/control/replay/ReplayInterfaceManager.h
+--- a/src/dev_ng/game/control/replay/ReplayInterfaceManager.h
++++ b/src/dev_ng/game/control/replay/ReplayInterfaceManager.h
+@@ -15,7 +15,7 @@
+ #include "atl/array.h"
+ #include "atl/map.h"
+ #include "atl/hashstring.h"
+-#include "system/filemgr.h"
++#include "system/FileMgr.h"
+ 
+ class iReplayInterface;
+ template<typename T>

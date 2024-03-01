@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionStrafing.cpp
+@@ -7,19 +7,19 @@
+ #include "fwanimation/animdirector.h"
+ #include "math/angmath.h"
+ 
+-#include "Debug/DebugScene.h"
+-#include "Animation/MovePed.h"
+-#include "Camera/Gameplay/GameplayDirector.h"
+-#include "Camera/CamInterface.h"
+-#include "Camera/scripted/ScriptDirector.h"
++#include "debug/DebugScene.h"
++#include "animation/MovePed.h"
++#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/CamInterface.h"
++#include "camera/scripted/ScriptDirector.h"
+ #include "Peds/Action/BrawlingStyle.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendOnFoot.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskCombatMelee.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Motion/Locomotion/TaskLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Combat/TaskCombatMelee.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Motion/Locomotion/TaskLocomotion.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
+ 
+ AI_OPTIMISATIONS()
+ 

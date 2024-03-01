@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/Peds/PedWeapons/PedTargeting.h b/src/dev_ng/game/Peds/PedWeapons/PedTargeting.h
+--- a/src/dev_ng/game/Peds/PedWeapons/PedTargeting.h
++++ b/src/dev_ng/game/Peds/PedWeapons/PedTargeting.h
+@@ -6,15 +6,15 @@
+ #define TARGETTING_H
+ 
+ // Rage headers
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // Game headers
+ #include "ai/ExpensiveProcess.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ class CPedTargetting; // Forward definition to allow CPedTargetting to be declared as a friend class to CSingleTargetInfo
+ class CEntity;

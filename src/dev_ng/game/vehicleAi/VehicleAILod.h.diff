@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/VehicleAILod.h b/src/dev_ng/game/vehicleAi/VehicleAILod.h
+--- a/src/dev_ng/game/vehicleAi/VehicleAILod.h
++++ b/src/dev_ng/game/vehicleAi/VehicleAILod.h
+@@ -13,7 +13,7 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game headers
+-#include "VehicleAI/VehicleAILodManager.h"
++#include "vehicleAi/VehicleAILodManager.h"
+ 
+ // Forward Definitions
+ namespace rage { class bkBank; }

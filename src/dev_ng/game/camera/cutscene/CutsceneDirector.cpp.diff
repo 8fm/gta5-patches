@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/camera/cutscene/CutsceneDirector.cpp b/src/dev_ng/game/camera/cutscene/CutsceneDirector.cpp
+--- a/src/dev_ng/game/camera/cutscene/CutsceneDirector.cpp
++++ b/src/dev_ng/game/camera/cutscene/CutsceneDirector.cpp
+@@ -23,9 +23,9 @@
+ #include "camera/cutscene/AnimatedCamera.h"
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "camera/CamInterface.h"
+-#include "Cutscene/cutscene_channel.h"
++#include "cutscene/cutscene_channel.h"
+ #include "Peds/ped.h"
+ 
+ #include "frontend/HudTools.h"

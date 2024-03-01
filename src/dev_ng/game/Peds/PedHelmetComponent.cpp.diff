@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/Peds/PedHelmetComponent.cpp b/src/dev_ng/game/Peds/PedHelmetComponent.cpp
+--- a/src/dev_ng/game/Peds/PedHelmetComponent.cpp
++++ b/src/dev_ng/game/Peds/PedHelmetComponent.cpp
+@@ -11,12 +11,12 @@
+ 
+ 
+ // game includes
+-#include "Camera/CamInterface.h"
+-#include "Camera/Cinematic/CinematicDirector.h"
+-#include "Peds/Ped.h"
+-#include "peds/ped_channel.h"
++#include "camera/CamInterface.h"
++#include "camera/Cinematic/CinematicDirector.h"
++#include "Peds/ped.h"
++#include "Peds/ped_channel.h"
+ #include "scene/ExtraMetadataMgr.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ #include "bank/bank.h"
+ 
+ using namespace rage;

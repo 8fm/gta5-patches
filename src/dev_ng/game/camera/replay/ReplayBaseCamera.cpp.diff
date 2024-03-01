@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/replay/ReplayBaseCamera.cpp b/src/dev_ng/game/camera/replay/ReplayBaseCamera.cpp
+--- a/src/dev_ng/game/camera/replay/ReplayBaseCamera.cpp
++++ b/src/dev_ng/game/camera/replay/ReplayBaseCamera.cpp
+@@ -17,7 +17,7 @@
+ #include "control/replay/ReplayMarkerInfo.h"
+ #include "control/replay/ReplayMarkerContext.h"
+ #include "control/replay/PacketBasics.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ 
+ 
+ CAMERA_OPTIMISATIONS();

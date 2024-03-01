@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/audio/vehicleengine/vehicleengine.cpp b/src/dev_ng/game/audio/vehicleengine/vehicleengine.cpp
+--- a/src/dev_ng/game/audio/vehicleengine/vehicleengine.cpp
++++ b/src/dev_ng/game/audio/vehicleengine/vehicleengine.cpp
+@@ -8,15 +8,15 @@
+ #include "audio/boataudioentity.h"
+ #include "audio/vehicleaudioentity.h"
+ #include "audiohardware/granularmix.h"
+-#include "Task/Vehicle/TaskInVehicle.h"
++#include "task/Vehicle/TaskInVehicle.h"
+ #include "camera/CamInterface.h"
+-#include "peds/PlayerInfo.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PlayerInfo.h"
++#include "Peds/PedIntelligence.h"
+ 
+ #include "game/weather.h"
+ #include "timecycle/TimeCycle.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Submarine.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Submarine.h"
+ 
+ AUDIO_VEHICLES_OPTIMISATIONS()
+ 

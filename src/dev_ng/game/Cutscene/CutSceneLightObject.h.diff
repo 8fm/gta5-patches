@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneLightObject.h b/src/dev_ng/game/Cutscene/CutSceneLightObject.h
+--- a/src/dev_ng/game/Cutscene/CutSceneLightObject.h
++++ b/src/dev_ng/game/Cutscene/CutSceneLightObject.h
+@@ -15,10 +15,10 @@
+ 
+ //Game includes
+ #include "CutScene/CutSceneAnimation.h"
+-#include "CutScene/CutSceneDefine.h"
++#include "cutscene/CutSceneDefine.h"
+ #include "CutScene/cutsmanager.h"
+ #include "cutfile/cutfobject.h"
+-#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+ class CEntity; 

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedWeaponManager.h b/src/dev_ng/game/weapons/inventory/PedWeaponManager.h
+--- a/src/dev_ng/game/weapons/inventory/PedWeaponManager.h
++++ b/src/dev_ng/game/weapons/inventory/PedWeaponManager.h
+@@ -3,10 +3,10 @@
+ 
+ // Game headers
+ #include "Peds/PedWeapons/PedAccuracy.h"
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/Inventory/InventoryListener.h"
+-#include "Weapons/Inventory/PedEquippedWeapon.h"
+-#include "Weapons/Inventory/PedWeaponSelector.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/inventory/InventoryListener.h"
++#include "weapons/inventory/PedEquippedWeapon.h"
++#include "weapons/inventory/PedWeaponSelector.h"
+ 
+ // Forward declarations
+ class CGadget;

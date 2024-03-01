@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/gameplay/GameplayDirector.h b/src/dev_ng/game/camera/gameplay/GameplayDirector.h
+--- a/src/dev_ng/game/camera/gameplay/GameplayDirector.h
++++ b/src/dev_ng/game/camera/gameplay/GameplayDirector.h
+@@ -14,7 +14,7 @@
+ #include "camera/base/BaseDirector.h"
+ #include "camera/helpers/DampedSpring.h"
+ #include "camera/helpers/Frame.h"
+-#include "peds/pedDefines.h"								// include for FPS_MODE_SUPPORTED define
++#include "Peds/pedDefines.h"								// include for FPS_MODE_SUPPORTED define
+ 
+ #include "task/Motion/Vehicle/TaskMotionInTurret.h"
+ 

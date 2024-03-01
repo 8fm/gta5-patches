@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_slow_ps3_scan.cpp b/src/dev_ng/game/SaveLoad/savegame_slow_ps3_scan.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_slow_ps3_scan.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_slow_ps3_scan.cpp
+@@ -12,7 +12,7 @@
+ #include "SaveLoad/savegame_users_and_devices.h"
+ #include "system/criticalsection.h"
+ #include "system/system.h"
+-#include "System/ThreadPriorities.h"
++#include "system/ThreadPriorities.h"
+ 
+ SAVEGAME_OPTIMISATIONS()
+ 

@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkRichPresence.cpp b/src/dev_ng/game/network/Live/NetworkRichPresence.cpp
+--- a/src/dev_ng/game/network/Live/NetworkRichPresence.cpp
++++ b/src/dev_ng/game/network/Live/NetworkRichPresence.cpp
+@@ -21,10 +21,10 @@
+ #include "fwsys/timer.h"
+ 
+ //Network Headers
+-#include "Network/Network.h"
++#include "network/Network.h"
+ #include "NetworkRichPresence.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/xlast/presenceutil.h"
++#include "network/NetworkInterface.h"
++#include "network/xlast/presenceutil.h"
+ 
+ namespace rage
+ {

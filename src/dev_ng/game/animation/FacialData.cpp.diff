@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/animation/FacialData.cpp b/src/dev_ng/game/animation/FacialData.cpp
+--- a/src/dev_ng/game/animation/FacialData.cpp
++++ b/src/dev_ng/game/animation/FacialData.cpp
+@@ -8,10 +8,10 @@
+ 
+ #include "fwanimation/facialclipsetgroups.h"
+ #include "animation/MovePed.h"
+-#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
+ #include "Peds/ped.h"
+-#include "cutscene/CutSceneManagerNew.h"
+-#include "ModelInfo/PedModelInfo.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "modelinfo/PedModelInfo.h"
+ 
+ AI_OPTIMISATIONS()
+ ANIM_OPTIMISATIONS()

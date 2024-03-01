@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/DownloadableTextureManager.h b/src/dev_ng/game/scene/DownloadableTextureManager.h
+--- a/src/dev_ng/game/scene/DownloadableTextureManager.h
++++ b/src/dev_ng/game/scene/DownloadableTextureManager.h
+@@ -17,7 +17,7 @@
+ #include "fwtl/LinkList.h"
+ 
+ // Game
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ #include "network/NetworkInterface.h"
+ #include "renderer/rendertargets.h"
+ #include "SurrogateCloudFileProvider.h"

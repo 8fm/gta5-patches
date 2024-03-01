@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Util/Util.cpp b/src/dev_ng/game/renderer/Util/Util.cpp
+--- a/src/dev_ng/game/renderer/Util/Util.cpp
++++ b/src/dev_ng/game/renderer/Util/Util.cpp
+@@ -9,7 +9,7 @@
+ 
+ #include "fwutil/xmacro.h"
+ 
+-#include "renderer/util/util.h"
++#include "renderer/Util/util.h"
+ 
+ #if !__NO_OUTPUT
+ 

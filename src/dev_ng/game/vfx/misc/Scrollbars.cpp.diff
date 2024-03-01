@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/vfx/misc/Scrollbars.cpp b/src/dev_ng/game/vfx/misc/Scrollbars.cpp
+--- a/src/dev_ng/game/vfx/misc/Scrollbars.cpp
++++ b/src/dev_ng/game/vfx/misc/Scrollbars.cpp
+@@ -24,17 +24,17 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // Game headers
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "Core/Game.h"
+-#include "Game/Clock.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Scene/Entity.h"
+-#include "Shaders/ShaderLib.h"
+-#include "System/FileMgr.h"
+-#include "Vfx/Misc/DistantLights.h"
+-#include "Vfx/VfxHelper.h"
+-#include "Vfx/VisualEffects.h"
+-#include "Vfx/misc/DistantLightsVertexBuffer.h"
++#include "game/Clock.h"
++#include "scene/DataFileMgr.h"
++#include "scene/Entity.h"
++#include "shaders/ShaderLib.h"
++#include "system/FileMgr.h"
++#include "vfx/misc/DistantLights.h"
++#include "vfx/VfxHelper.h"
++#include "vfx/VisualEffects.h"
++#include "vfx/misc/DistantLightsVertexBuffer.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  OPTIMISATIONS - TURN ON IN OPTIMISATIONS.H

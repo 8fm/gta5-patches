@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/task/Response/TaskDuckAndCover.cpp b/src/dev_ng/gam
  #include "animation/MovePed.h"
  
 -#include "System\Control.h"
-+#include "System/Control.h"
++#include "system/Control.h"
  
  AI_OPTIMISATIONS()
  

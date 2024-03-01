@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/ai/AITarget.cpp b/src/dev_ng/game/ai/AITarget.cpp
+--- a/src/dev_ng/game/ai/AITarget.cpp
++++ b/src/dev_ng/game/ai/AITarget.cpp
+@@ -1,14 +1,14 @@
+ // File header
+-#include "AI/AITarget.h"
++#include "ai/AITarget.h"
+ 
+ // Framework headers
+ #include "ai/aichannel.h" 
+ #include "fwscene/world/WorldLimits.h"
+ 
+ // Game headers
+-#include "Scene/Entity.h"
+-#include "Peds/Ped.h"
+-#include "Vehicles/Vehicle.h"
++#include "scene/Entity.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h"
+ 
+ #include "data/aes_init.h"
+ AES_INIT_1;

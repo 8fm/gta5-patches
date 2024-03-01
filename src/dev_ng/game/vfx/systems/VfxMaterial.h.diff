@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxMaterial.h b/src/dev_ng/game/vfx/systems/VfxMaterial.h
+--- a/src/dev_ng/game/vfx/systems/VfxMaterial.h
++++ b/src/dev_ng/game/vfx/systems/VfxMaterial.h
+@@ -22,7 +22,7 @@
+ #include "script/thread.h"
+ 
+ // game
+-#include "Physics/GtaMaterial.h"
++#include "physics/gtaMaterial.h"
+ #include "control/replay/ReplaySettings.h"
+ 
+ 

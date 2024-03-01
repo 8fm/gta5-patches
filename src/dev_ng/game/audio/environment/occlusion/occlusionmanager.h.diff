@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.h b/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.h
+--- a/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.h
++++ b/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.h
+@@ -14,7 +14,7 @@
+ #include "audio/environment/occlusion/occlusioninteriorinfo.h"
+ #include "audio/environment/occlusion/occlusionpathnode.h"
+ #include "audio/environment/environment.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ 
+ // Rage
+ #include "audioengine/widgets.h"

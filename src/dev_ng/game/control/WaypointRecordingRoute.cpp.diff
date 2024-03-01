@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/WaypointRecordingRoute.cpp b/src/dev_ng/game/control/WaypointRecordingRoute.cpp
 --- a/src/dev_ng/game/control/WaypointRecordingRoute.cpp
 +++ b/src/dev_ng/game/control/WaypointRecordingRoute.cpp
-@@ -1,10 +1,10 @@
+@@ -1,17 +1,17 @@
  #include "control/WaypointRecordingRoute.h"
  
  // Rage headers
@@ -10,7 +10,15 @@ diff --git a/src/dev_ng/game/control/WaypointRecordingRoute.cpp b/src/dev_ng/gam
  
  // Framework headers
 -#include "fwmaths\Angle.h"
-+#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
  
  // Game headers
  #if __BANK && !defined(RAGEBUILDER)	// Ragebuilder doesn't know about bank_float, et al
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/helpers/Frame.h"
+-#include "peds/Ped.h"
++#include "Peds/ped.h"
+ #endif
+ 
+ AI_OPTIMISATIONS()

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/MovePed.h b/src/dev_ng/game/animation/MovePed.h
+--- a/src/dev_ng/game/animation/MovePed.h
++++ b/src/dev_ng/game/animation/MovePed.h
+@@ -1,7 +1,7 @@
+ #ifndef MOVE_PED_H
+ #define MOVE_PED_H
+ 
+-#include "animation/move.h"
++#include "animation/Move.h"
+ #include "task/System/TaskHelpers.h"
+ 
+ class CMovePed : public CMove 

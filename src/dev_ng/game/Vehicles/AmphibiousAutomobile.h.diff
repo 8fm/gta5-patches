@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/Vehicles/AmphibiousAutomobile.h b/src/dev_ng/game/Vehicles/AmphibiousAutomobile.h
+--- a/src/dev_ng/game/Vehicles/AmphibiousAutomobile.h
++++ b/src/dev_ng/game/Vehicles/AmphibiousAutomobile.h
+@@ -1,10 +1,10 @@
+ #ifndef __AMPHIBIOUS_AUTOMOBILE_H__
+ #define __AMPHIBIOUS_AUTOMOBILE_H__
+ 
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/Boat.h"
+-//#include "vehicles/Propeller.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Boat.h"
++//#include "Vehicles/Propeller.h"
+ 
+ #include "control/replay/ReplaySettings.h"
+ 

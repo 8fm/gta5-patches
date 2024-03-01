@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMDrunk.cpp b/src/dev_ng/game/task/Physics/TaskNMDrunk.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMDrunk.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMDrunk.cpp
-@@ -7,20 +7,20 @@
+@@ -1,28 +1,28 @@
+ // Filename   :	TaskNMDrunk.h
+ // Description:	Code version of original script drunk routine.
+ 
+-#include "Task/Physics/TaskNMDrunk.h"
++#include "task/Physics/TaskNMDrunk.h"
+ 
+ #if ENABLE_DRUNK
  
  //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
  // Rage headers
@@ -22,11 +29,14 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMDrunk.cpp b/src/dev_ng/game/task
  
  // Framework headers
 -//#include "fwmaths\Angle.h"
-+//#include "fwmaths/Angle.h"
++//#include "fwmaths/angle.h"
  
  // Game headers
 -#include "debug\DebugScene.h"
 +#include "debug/DebugScene.h"
  #include "Peds/ped.h"
- #include "Task/motion/TaskMotionBase.h"
+-#include "Task/motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
  //----------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ AI_OPTIMISATIONS()

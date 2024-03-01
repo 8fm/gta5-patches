@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/atl/string.h b/src/dev_ng/rage/base/src/atl/string.h
+--- a/src/dev_ng/rage/base/src/atl/string.h
++++ b/src/dev_ng/rage/base/src/atl/string.h
+@@ -10,7 +10,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ 
+-#include "array.h"
++#include "atl/array.h"
+ #include "data/struct.h"
+ 
+ namespace rage {

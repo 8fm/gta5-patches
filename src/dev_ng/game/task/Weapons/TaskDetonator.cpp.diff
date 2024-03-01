@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskDetonator.cpp b/src/dev_ng/game/task/Weapons/TaskDetonator.cpp
+--- a/src/dev_ng/game/task/Weapons/TaskDetonator.cpp
++++ b/src/dev_ng/game/task/Weapons/TaskDetonator.cpp
+@@ -1,15 +1,15 @@
+ // File header
+-#include "Task/Weapons/TaskDetonator.h"
++#include "task/Weapons/TaskDetonator.h"
+ 
+ // Game headers
+-#include "Animation/MovePed.h"
+-#include "Debug/DebugScene.h"
+-#include "Peds/Ped.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Response/TaskDuckAndCover.h"
+-#include "Task/Weapons/TaskSwapWeapon.h"
+-#include "Weapons/Projectiles/ProjectileManager.h"
+-#include "Weapons/Weapon.h"
++#include "animation/MovePed.h"
++#include "debug/DebugScene.h"
++#include "Peds/ped.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Response/TaskDuckAndCover.h"
++#include "task/Weapons/TaskSwapWeapon.h"
++#include "weapons/projectiles/ProjectileManager.h"
++#include "weapons/Weapon.h"
+ 
+ AI_OPTIMISATIONS()
+ 

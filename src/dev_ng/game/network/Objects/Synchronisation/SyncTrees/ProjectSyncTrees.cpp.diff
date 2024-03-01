@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ #include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
++#include "network/Objects/NetworkObjectMgr.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

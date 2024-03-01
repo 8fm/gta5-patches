@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkTelemetry.h b/src/dev_ng/game/network/Live/NetworkTelemetry.h
+--- a/src/dev_ng/game/network/Live/NetworkTelemetry.h
++++ b/src/dev_ng/game/network/Live/NetworkTelemetry.h
+@@ -9,8 +9,8 @@
+ 
+ #include "vector/vector3.h"
+ #include "rline/rltelemetry.h"
+-#include "network/networkinterface.h"
+-#include "network/live/NetworkMetrics.h"
++#include "network/NetworkInterface.h"
++#include "network/Live/NetworkMetrics.h"
+ 
+ #include "system/EndUserBenchmark.h"
+ 

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicOnFootMeleeContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicOnFootMeleeContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicOnFootMeleeContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicOnFootMeleeContext.cpp
+@@ -7,9 +7,9 @@
+ #include "camera/cinematic/context/CinematicOnFootMeleeContext.h"
+ #include "camera/system/CameraMetadata.h"
+ 
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
+-#include "task/combat/TaskCombatMelee.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
++#include "task/Combat/TaskCombatMelee.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicOnFootMeleeContext,0x97F7F58E)
+ 

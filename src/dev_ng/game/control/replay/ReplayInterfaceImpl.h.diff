@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInterfaceImpl.h b/src/dev_ng/game/control/replay/ReplayInterfaceImpl.h
+--- a/src/dev_ng/game/control/replay/ReplayInterfaceImpl.h
++++ b/src/dev_ng/game/control/replay/ReplayInterfaceImpl.h
+@@ -9,11 +9,11 @@
+ #include "script/script.h"
+ #include "fwscene/stores/maptypesstore.h"
+ 
+-#include "Control/Replay/ReplayController.h"
++#include "control/replay/ReplayController.h"
+ #include "control/replay/ReplayExtensions.h"
+ #include "control/replay/ReplayInterface.h"
+ #include "control/replay/ReplaySupportClasses.h"
+-#include "Control/replay/ReplayAttachmentManager.h"
++#include "control/replay/ReplayAttachmentManager.h"
+ 
+ #if __BANK
+ extern void EntityDetails_GetOwner(CEntity* pEntity, atString &ReturnString);

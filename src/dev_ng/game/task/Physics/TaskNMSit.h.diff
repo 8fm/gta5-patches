@@ -1,12 +1,18 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMSit.h b/src/dev_ng/game/task/Physics/TaskNMSit.h
 --- a/src/dev_ng/game/task/Physics/TaskNMSit.h
 +++ b/src/dev_ng/game/task/Physics/TaskNMSit.h
-@@ -8,7 +8,7 @@
+@@ -7,10 +7,10 @@
+ // --- Include Files ------------------------------------------------------------
  
  // Game headers
- #include "Task/System/Task.h"
+-#include "Task/System/Task.h"
 -#include "Task\System\TaskTypes.h"
-+#include "Task/System/TaskTypes.h"
- #include "Task/Physics/TaskNM.h"
- #include "Network/General/NetworkUtil.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Network/General/NetworkUtil.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
++#include "network/General/NetworkUtil.h"
  // ------------------------------------------------------------------------------
+ 
+ //

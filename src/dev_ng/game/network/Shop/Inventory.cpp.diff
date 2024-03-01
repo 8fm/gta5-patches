@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/network/Shop/Inventory.cpp b/src/dev_ng/game/network/Shop/Inventory.cpp
+--- a/src/dev_ng/game/network/Shop/Inventory.cpp
++++ b/src/dev_ng/game/network/Shop/Inventory.cpp
+@@ -6,7 +6,7 @@
+ // Stores the contents of the inventory
+ //
+ 
+-#include "Network/NetworkTypes.h"
++#include "network/NetworkTypes.h"
+ 
+ #if __NET_SHOP_ACTIVE
+ 
+@@ -25,7 +25,7 @@
+ #include "network/Shop/NetworkGameTransactions.h"
+ #include "network/Shop/GameTransactionsSessionMgr.h"
+ #include "network/NetworkInterface.h"
+-#include "stats/MoneyInterface.h"
++#include "Stats/MoneyInterface.h"
+ 
+ NETWORK_OPTIMISATIONS();
+ NETWORK_SHOP_OPTIMISATIONS();

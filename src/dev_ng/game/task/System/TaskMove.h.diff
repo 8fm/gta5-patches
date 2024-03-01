@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/System/TaskMove.h b/src/dev_ng/game/task/System/TaskMove.h
+--- a/src/dev_ng/game/task/System/TaskMove.h
++++ b/src/dev_ng/game/task/System/TaskMove.h
+@@ -2,8 +2,8 @@
+ #define TASK_MOVE_H
+ 
+ // Game headers
+-#include "Peds/PedDefines.h"
+-#include "Task/System/Task.h"
++#include "Peds/pedDefines.h"
++#include "task/System/Task.h"
+ 
+ //-------------------------------------------------------------------------
+ // Movement interface, standard interface for all movement tasks (complex and simple)

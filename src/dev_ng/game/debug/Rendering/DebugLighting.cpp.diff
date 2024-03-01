@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugLighting.cpp b/src/dev_ng/game/debug/Rendering/DebugLighting.cpp
+--- a/src/dev_ng/game/debug/Rendering/DebugLighting.cpp
++++ b/src/dev_ng/game/debug/Rendering/DebugLighting.cpp
+@@ -17,9 +17,9 @@
+ #include "fwrenderer/renderthread.h"
+ 
+ // game
+-#include "Camera/viewports/Viewport.h"
+-#include "Camera/viewports/ViewportManager.h"
+-#include "Camera/CamInterface.h"
++#include "camera/viewports/Viewport.h"
++#include "camera/viewports/ViewportManager.h"
++#include "camera/CamInterface.h"
+ #include "debug/BudgetDisplay.h"
+ #include "debug/GtaPicker.h"
+ #include "debug/Rendering/DebugDeferred.h"
+@@ -38,7 +38,7 @@
+ #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
+ #include "scene/portals/InteriorProxy.h"
+ #include "Timecycle/TimeCycle.h"
+-#include "Vfx/Misc/Coronas.h"
++#include "vfx/misc/Coronas.h"
+ 
+ #if __BANK
+ 

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.h b/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.h
+--- a/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.h
++++ b/src/dev_ng/game/task/Movement/TaskMoveWithinAttackWindow.h
+@@ -9,8 +9,8 @@
+ #include "parser/manager.h"
+ #include "Peds/CombatBehaviour.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ 
+ ////////////////////////////////////////
+ //   TASK_MOVE_WITHIN_ATTACK_WINDOW   //

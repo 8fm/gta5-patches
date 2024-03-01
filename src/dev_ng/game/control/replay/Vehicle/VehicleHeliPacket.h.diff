@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.h b/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.h
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.h
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleHeliPacket.h
+@@ -8,7 +8,7 @@
+ #ifndef VEHHELIPACKET_H
+ #define VEHHELIPACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY

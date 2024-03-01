@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/script/commands_volume.cpp b/src/dev_ng/game/script
 +#include "scene/volume/VolumeAggregate.h"
 +#include "script/script.h"
 +#include "script/script_channel.h"
-+#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptResources.h"
  
  namespace volume_commands
  {

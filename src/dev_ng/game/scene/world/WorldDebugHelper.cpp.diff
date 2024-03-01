@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/scene/world/WorldDebugHelper.cpp b/src/dev_ng/game/scene/world/WorldDebugHelper.cpp
+--- a/src/dev_ng/game/scene/world/WorldDebugHelper.cpp
++++ b/src/dev_ng/game/scene/world/WorldDebugHelper.cpp
+@@ -24,15 +24,15 @@
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+-#include "debug/debugscene.h"
+-#include "Text/Text.h"
+-#include "Text/TextConversion.h"
++#include "debug/DebugScene.h"
++#include "text/text.h"
++#include "text/TextConversion.h"
+ #include "scene/lod/LodMgr.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/world/GameWorldHeightMap.h"
+ #include "scene/world/GameWorldWaterHeight.h"
+-#include "peds/Ped.h"
+-#include "Renderer/Lights/LightEntity.h"
++#include "Peds/ped.h"
++#include "renderer/Lights/LightEntity.h"
+ #include "renderer/sprite2d.h"
+ 
+ #define MAX_NUM_LIST_ENTRIES		30

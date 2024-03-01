@@ -10,3 +10,15 @@ diff --git a/src/dev_ng/game/camera/scripted/ScriptDirector.cpp b/src/dev_ng/gam
  #include "camera/helpers/FrameInterpolator.h"
  #include "camera/scripted/ScriptedCamera.h"
  #include "camera/system/CameraFactory.h"
+@@ -20,9 +20,9 @@
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "fwanimation/directorcomponentsyncedscene.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "script/script.h"
+-#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptResources.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

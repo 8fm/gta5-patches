@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.cpp b/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/netLocalizedCloudStrings.cpp
+@@ -8,7 +8,7 @@
+ //framework
+ #include "fwnet/netchannel.h"
+ 
+-#include "Network/General/NetworkUtil.h"
++#include "network/General/NetworkUtil.h"
+ 
+ using namespace rage;
+ 

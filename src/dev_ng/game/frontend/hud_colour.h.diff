@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/hud_colour.h b/src/dev_ng/game/frontend/hud_colour.h
+--- a/src/dev_ng/game/frontend/hud_colour.h
++++ b/src/dev_ng/game/frontend/hud_colour.h
+@@ -11,7 +11,7 @@
+ #define INC_HUD_COLOUR_H_
+ 
+ #include "renderer/color.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "atl/hashstring.h"
+ 
+ //

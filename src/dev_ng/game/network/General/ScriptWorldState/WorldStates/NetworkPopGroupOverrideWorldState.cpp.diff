@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.cpp b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.cpp
+--- a/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.cpp
++++ b/src/dev_ng/game/network/General/ScriptWorldState/WorldStates/NetworkPopGroupOverrideWorldState.cpp
+@@ -11,9 +11,9 @@
+ #include "grcore/debugdraw.h"
+ #include "vector/geometry.h"
+ 
+-#include "fwnet/NetLogUtils.h"
++#include "fwnet/netlogutils.h"
+ 
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Peds/PopCycle.h"
+ 
+ NETWORK_OPTIMISATIONS()

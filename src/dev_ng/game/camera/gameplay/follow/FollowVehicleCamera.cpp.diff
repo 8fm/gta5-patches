@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/camera/gameplay/follow/FollowVehicleCamera.cpp b/src/dev_ng/game/camera/gameplay/follow/FollowVehicleCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/follow/FollowVehicleCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/follow/FollowVehicleCamera.cpp
+@@ -18,18 +18,18 @@
+ #include "control/record.h"
+ #include "frontend/PauseMenu.h"
+ #include "network/NetworkInterface.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "peds/ped.h"
++#include "network/Cloud/Tunables.h"
++#include "Peds/ped.h"
+ #include "profile/group.h"
+ #include "profile/page.h"
+ #include "system/control.h"
+ #include "system/param.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/Heli.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/Submarine.h"
+-#include "vehicles/VehicleGadgets.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Submarine.h"
++#include "Vehicles/VehicleGadgets.h"
+ 
+ 
+ CAMERA_OPTIMISATIONS()

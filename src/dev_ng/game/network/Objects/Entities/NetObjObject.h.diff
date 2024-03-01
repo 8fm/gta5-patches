@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjObject.h b/src/dev_ng/game/network/Objects/Entities/NetObjObject.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjObject.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjObject.h
+@@ -8,9 +8,9 @@
+ #ifndef NETOBJOBJECT_H
+ #define NETOBJOBJECT_H
+ 
+-#include "network/objects/entities/NetObjPhysical.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
+-#include "objects/objectpopulation.h"
++#include "network/Objects/Entities/NetObjPhysical.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "Objects/objectpopulation.h"
+ #include "shaders/CustomShaderEffectTint.h"
+ 
+ class CNetObjObject : public CNetObjPhysical, public IObjectNodeDataAccessor

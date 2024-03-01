@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseParaboloidShadows.h
+@@ -7,7 +7,7 @@
+ #define INC_RENDERPHASEPARABOLOIDSHADOW_H_
+ 
+ // Game headers
+-#include "renderer/renderphases/renderphase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ class CShadowInfo;
+ 
+ class CRenderPhaseParaboloidShadow : public CRenderPhaseScanned

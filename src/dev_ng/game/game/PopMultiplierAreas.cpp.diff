@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/game/PopMultiplierAreas.cpp b/src/dev_ng/game/game/PopMultiplierAreas.cpp
 --- a/src/dev_ng/game/game/PopMultiplierAreas.cpp
 +++ b/src/dev_ng/game/game/PopMultiplierAreas.cpp
-@@ -11,13 +11,13 @@
+@@ -11,18 +11,18 @@
  
  // Framework headers
  #include "grcore/debugdraw.h"
@@ -10,10 +10,18 @@ diff --git a/src/dev_ng/game/game/PopMultiplierAreas.cpp b/src/dev_ng/game/game/
  #include "fwsys/timer.h"
  
  // Game headers
- #include "game/popmultiplierareas.h"
+-#include "game/popmultiplierareas.h"
++#include "game/PopMultiplierAreas.h"
  #include "camera/CamInterface.h"
 -#include "debug\vectormap.h"
-+#include "debug/vectormap.h"
++#include "debug/VectorMap.h"
  
  // network includes 
  #include "network/NetworkInterface.h"
+-#include "network/objects/entities/NetObjPlayer.h"
+-#include "network/players/NetworkPlayerMgr.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Players/NetworkPlayerMgr.h"
+ 
+ AI_OPTIMISATIONS()
+ NETWORK_OPTIMISATIONS()

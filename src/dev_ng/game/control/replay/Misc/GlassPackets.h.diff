@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Misc/GlassPackets.h b/src/dev_ng/game/control/replay/Misc/GlassPackets.h
+--- a/src/dev_ng/game/control/replay/Misc/GlassPackets.h
++++ b/src/dev_ng/game/control/replay/Misc/GlassPackets.h
+@@ -1,7 +1,7 @@
+ #ifndef GLASS_PACKET_H
+ #define GLASS_PACKET_H
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 

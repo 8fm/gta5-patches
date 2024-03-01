@@ -1,0 +1,53 @@
+diff --git a/src/dev_ng/game/task/Response/TaskAgitated.cpp b/src/dev_ng/game/task/Response/TaskAgitated.cpp
+--- a/src/dev_ng/game/task/Response/TaskAgitated.cpp
++++ b/src/dev_ng/game/task/Response/TaskAgitated.cpp
+@@ -2,14 +2,14 @@
+ // CREATED : 10-5-2011
+ 
+ // File header
+-#include "Task/Response/TaskAgitated.h"
++#include "task/Response/TaskAgitated.h"
+ 
+ // Game headers
+ #include "ai/ambient/ConditionalAnims.h"
+ #include "animation/FacialData.h"
+-#include "Event/EventShocking.h"
+-#include "Event/EventWeapon.h"
+-#include "Event/ShockingEvents.h"
++#include "event/EventShocking.h"
++#include "event/EventWeapon.h"
++#include "event/ShockingEvents.h"
+ #include "game/Crime.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "Peds/ped.h"
+@@ -17,19 +17,19 @@
+ #include "Peds/PedIntelligence/PedAILodManager.h"
+ #include "Peds/PopZones.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Default/AmbientAudio.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Default/AmbientAudio.h"
+ #include "task/General/Phone/TaskCallPolice.h"
+ #include "task/Motion/TaskMotionBase.h"
+-#include "Task/Movement/TaskMoveFollowEntityOffset.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Response/Info/AgitatedActions.h"
+-#include "Task/Response/Info/AgitatedConditions.h"
+-#include "Task/Response/Info/AgitatedManager.h"
+-#include "Task/Response/Info/AgitatedResponse.h"
+-#include "Task/Response/Info/AgitatedSay.h"
+-#include "Task/Response/Info/AgitatedState.h"
++#include "task/Movement/TaskMoveFollowEntityOffset.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Response/Info/AgitatedActions.h"
++#include "task/Response/Info/AgitatedConditions.h"
++#include "task/Response/Info/AgitatedManager.h"
++#include "task/Response/Info/AgitatedResponse.h"
++#include "task/Response/Info/AgitatedSay.h"
++#include "task/Response/Info/AgitatedState.h"
+ #include "task/Scenario/Types/TaskUseScenario.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "task/Weapons/Gun/TaskVehicleDriveBy.h"

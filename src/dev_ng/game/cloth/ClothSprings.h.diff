@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/cloth/ClothSprings.h b/src/dev_ng/game/cloth/ClothSprings.h
+--- a/src/dev_ng/game/cloth/ClothSprings.h
++++ b/src/dev_ng/game/cloth/ClothSprings.h
+@@ -2,7 +2,7 @@
+ #define CLOTH_SPRINGS_H
+ 
+ class CClothArchetype;
+-#include "Debug/Debug.h"
++#include "debug/Debug.h"
+ #include "vector/matrix34.h"
+ 
+ #define MAX_NUM_CLOTH_SPRINGS		(256)

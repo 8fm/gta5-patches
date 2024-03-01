@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/sprite2d.h b/src/dev_ng/game/renderer/sprite2d.h
+--- a/src/dev_ng/game/renderer/sprite2d.h
++++ b/src/dev_ng/game/renderer/sprite2d.h
+@@ -10,7 +10,7 @@
+ 
+ #include "paging/ref.h"
+ #include "grcore/texture.h"
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ #include "camera/viewports/Viewport.h"
+ #if __D3D11
+ #include "renderer/Deferred/DeferredConfig.h"

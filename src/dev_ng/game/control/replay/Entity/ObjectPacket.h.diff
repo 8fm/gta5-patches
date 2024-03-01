@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/control/replay/Entity/ObjectPacket.h b/src/dev_ng/game/control/replay/Entity/ObjectPacket.h
+--- a/src/dev_ng/game/control/replay/Entity/ObjectPacket.h
++++ b/src/dev_ng/game/control/replay/Entity/ObjectPacket.h
+@@ -6,16 +6,16 @@
+ #ifndef INC_OBJECTPACKET_H_
+ #define INC_OBJECTPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ #if GTA_REPLAY
+ 
+ #include "control/replay/ReplaySupportClasses.h"
+ #include "control/replay/Misc/InterpPacket.h"
+-#include "Control/Replay/PacketBasics.h"
++#include "control/replay/PacketBasics.h"
+ #include "control/replay/ReplayExtensions.h"
+-#include "Control/replay/Entity/FragmentPacket.h"
+-#include "objects/Door.h"
++#include "control/replay/Entity/FragmentPacket.h"
++#include "Objects/Door.h"
+ #include "streaming/streamingdefs.h"
+ 
+ 

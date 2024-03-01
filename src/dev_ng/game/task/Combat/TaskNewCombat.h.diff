@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskNewCombat.h b/src/dev_ng/game/task/Combat/TaskNewCombat.h
+--- a/src/dev_ng/game/task/Combat/TaskNewCombat.h
++++ b/src/dev_ng/game/task/Combat/TaskNewCombat.h
+@@ -17,12 +17,12 @@
+ #include "Peds/CombatBehaviour.h"
+ #include "Peds/DefensiveArea.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/Combat/CombatOrders.h"
++#include "task/Combat/CombatOrders.h"
+ #include "task/Combat/TacticalAnalysis.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward Declarations
+ class CCoverPoint;

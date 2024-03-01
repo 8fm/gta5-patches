@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedOverlay.cpp b/src/dev_ng/game/Peds/rendering/PedOverlay.cpp
+--- a/src/dev_ng/game/Peds/rendering/PedOverlay.cpp
++++ b/src/dev_ng/game/Peds/rendering/PedOverlay.cpp
+@@ -19,13 +19,13 @@
+ 
+ // game headers
+ #include "PedOverlay_parser.h"
+-#include "peds/rendering/PedVariationDebug.h"
++#include "Peds/rendering/PedVariationDebug.h"
+ #include "scene/DataFileMgr.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "PedDamage.h"
+-#include "peds/ped.h"
+-#include "network/live/NetworkClan.h"
+-#include "network/live/LiveManager.h"
++#include "Peds/ped.h"
++#include "network/Live/NetworkClan.h"
++#include "network/Live/livemanager.h"
+ #include "network/crews/NetworkCrewEmblemMgr.h"
+ #include "control/replay/ReplayExtensions.h"
+ 

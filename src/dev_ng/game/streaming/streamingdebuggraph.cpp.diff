@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/streaming/streamingdebuggraph.cpp b/src/dev_ng/game/streaming/streamingdebuggraph.cpp
+--- a/src/dev_ng/game/streaming/streamingdebuggraph.cpp
++++ b/src/dev_ng/game/streaming/streamingdebuggraph.cpp
+@@ -18,7 +18,7 @@ SCENE_OPTIMISATIONS();
+ 
+ #include "bank/bank.h"
+ #include "bank/bkmgr.h"
+-#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
+ #include "debug/TextureViewer/TextureViewer.h"
+ #include "debug/TextureViewer/TextureViewerSearch.h"
+ #include "fwdebug/debugdraw.h"
+@@ -34,14 +34,14 @@ SCENE_OPTIMISATIONS();
+ #include "vector/color32.h"
+ 
+ #include "streaming/packfilemanager.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ #include "system/AutoGPUCapture.h"
+ #include "fwsys/timer.h"
+ 
+ #include "streaming/streamingdebug.h"
+ 
+ #include "entity/archetype.h"
+-#include "objects/DummyObject.h"
++#include "Objects/DummyObject.h"
+ #include "scene/Building.h"
+ 
+ #include "script/script.h"

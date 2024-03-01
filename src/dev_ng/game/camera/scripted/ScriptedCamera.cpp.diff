@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/scripted/ScriptedCamera.cpp b/src/dev_ng/game/camera/scripted/ScriptedCamera.cpp
+--- a/src/dev_ng/game/camera/scripted/ScriptedCamera.cpp
++++ b/src/dev_ng/game/camera/scripted/ScriptedCamera.cpp
+@@ -7,7 +7,7 @@
+ #include "camera/scripted/ScriptedCamera.h"
+ 
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ #if __BANK
+ #include "grcore/debugdraw.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.h b/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.h
+--- a/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.h
++++ b/src/dev_ng/game/Vehicles/Metadata/AIHandlingInfo.h
+@@ -7,7 +7,7 @@
+ #include "math/amath.h"
+ 
+ // Rage includes
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+         
+ /////////////////////////////////////////////////////////////////////////////////////////

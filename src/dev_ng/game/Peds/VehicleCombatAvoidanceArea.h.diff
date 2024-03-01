@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/VehicleCombatAvoidanceArea.h b/src/dev_ng/game/Peds/VehicleCombatAvoidanceArea.h
+--- a/src/dev_ng/game/Peds/VehicleCombatAvoidanceArea.h
++++ b/src/dev_ng/game/Peds/VehicleCombatAvoidanceArea.h
+@@ -2,7 +2,7 @@
+ #define VEHICLE_COMBAT_AVOIDANCE_AREA_H
+ 
+ // Rage headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/Flags.h"
+ 
+ // Game headers

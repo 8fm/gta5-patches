@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskCar.h b/src/dev_ng/game/task/Vehicle/TaskCar.h
+--- a/src/dev_ng/game/task/Vehicle/TaskCar.h
++++ b/src/dev_ng/game/task/Vehicle/TaskCar.h
+@@ -7,14 +7,14 @@
+ // Gta headers.
+ #include "network/General/NetworkUtil.h"
+ #include "network/Objects/Synchronisation/SyncNodes/VehicleSyncNodes.h"
+-#include "peds/QueriableInterface.h"
+-#include "Renderer/HierarchyIds.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskComplex.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskTypes.h"
++#include "Peds/QueriableInterface.h"
++#include "renderer/HierarchyIds.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "task/System/Task.h"
++#include "task/System/TaskComplex.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskTypes.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+ #include "vehicleAi/VehMission.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+@@ -28,7 +28,7 @@ class CPointRoute;
+ class CVehMission;
+ 
+ //Rage headers.
+-#include "Vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

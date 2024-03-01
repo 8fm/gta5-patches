@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Default/TaskIncapacitated.cpp b/src/dev_ng/game/task/Default/TaskIncapacitated.cpp
+--- a/src/dev_ng/game/task/Default/TaskIncapacitated.cpp
++++ b/src/dev_ng/game/task/Default/TaskIncapacitated.cpp
+@@ -3,15 +3,15 @@
+ 
+ // Game
+ #include "Peds/ped.h"
+-#include "Task/Physics/TaskNMRelax.h"
++#include "task/Physics/TaskNMRelax.h"
+ 
+-#include "Event/EventResponse.h"
++#include "event/EventResponse.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Physics/TaskBlendFromNM.h"
+-#include "Task/movement/TaskGetUp.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "task/Physics/TaskBlendFromNM.h"
++#include "task/Movement/TaskGetUp.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ 
+ #if CNC_MODE_ENABLED
+ 

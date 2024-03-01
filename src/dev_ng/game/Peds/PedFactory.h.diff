@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedFactory.h b/src/dev_ng/game/Peds/PedFactory.h
+--- a/src/dev_ng/game/Peds/PedFactory.h
++++ b/src/dev_ng/game/Peds/PedFactory.h
+@@ -9,7 +9,7 @@
+ #define INC_PEDFACTORY_H_
+ 
+ // rage includes
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "vector/matrix34.h"
+ 
+ // fw includes

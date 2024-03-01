@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectVehicle.cpp b/src/dev_ng/game/shaders/CustomShaderEffectVehicle.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectVehicle.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectVehicle.cpp
+@@ -32,7 +32,7 @@
+ #include "camera/CamInterface.h"
+ #include "control/replay/replay.h"
+ #include "control/replay/ReplayExtensions.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "debug/DebugGlobals.h"		// gbDontDisplayDirtOnVehicles...
+ #include "game/weather.h"			// g_weather
+ #include "scene/Entity.h"
+@@ -40,12 +40,12 @@
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "modelinfo/VehicleModelInfoColors.h"
+ #include "physics/physics.h" // for CPhysics::GetGlassTxdSlot
+-#include "renderer/DrawLists/drawlist.h"
++#include "renderer/DrawLists/drawList.h"
+ #include "renderer/Lights/lights.h"
+-#include "shaders/shaderlib.h"
++#include "shaders/ShaderLib.h"
+ #include "vfx/misc/Coronas.h"
+-#include "vehicles/Vehicle.h"
+-#include "vehicles/wheel.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/wheel.h"
+ #if !__FINAL
+ 	PARAM(novehicledirt, "Don't display vehicle dirt");
+ #endif

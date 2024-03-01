@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/debug/DebugVehicleInteraction.h b/src/dev_ng/game/debug/DebugVehicleInteraction.h
+--- a/src/dev_ng/game/debug/DebugVehicleInteraction.h
++++ b/src/dev_ng/game/debug/DebugVehicleInteraction.h
+@@ -3,8 +3,8 @@
+ 
+ #include "physics/debugPlayback.h"
+ #if DR_ENABLED
+-#include "peds/ped.h"
+-#include "vehicles/vehicle.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h"
+ 
+ class CComponentReservation;
+ 

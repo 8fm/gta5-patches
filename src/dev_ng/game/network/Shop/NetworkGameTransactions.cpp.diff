@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/network/Shop/NetworkGameTransactions.cpp b/src/dev_ng/game/network/Shop/NetworkGameTransactions.cpp
+--- a/src/dev_ng/game/network/Shop/NetworkGameTransactions.cpp
++++ b/src/dev_ng/game/network/Shop/NetworkGameTransactions.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2014 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "Network/NetworkTypes.h"
++#include "network/NetworkTypes.h"
+ 
+ #if __NET_SHOP_ACTIVE
+ 
+@@ -22,11 +22,11 @@
+ 
+ #include "fwnet/netchannel.h"
+ 
+-#include "Network/Shop/GameTransactionsSessionMgr.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Shop/GameTransactionsSessionMgr.h"
++#include "network/NetworkInterface.h"
+ #include "network/Shop/Inventory.h"
+ #include "network/Shop/Catalog.h"
+-#include "Network/Shop/NetworkShopping.h"	
++#include "network/Shop/NetworkShopping.h"	
+ #include "Stats/MoneyInterface.h"
+ #include "Stats/StatsTypes.h"
+ 

@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/audio/weatheraudioentity.cpp b/src/dev_ng/game/audio/weatheraudioentity.cpp
+--- a/src/dev_ng/game/audio/weatheraudioentity.cpp
++++ b/src/dev_ng/game/audio/weatheraudioentity.cpp
+@@ -34,21 +34,21 @@
+ #include "audiosoundtypes/envelopesound.h"
+ #include "entity/archetype.h"
+ #include "grcore/debugdraw.h"
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "game/weather.h"
+ #include "game/wind.h"
+ #include "modelinfo/MloModelInfo.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "vector/geometry.h"
+ #include "radioaudioentity.h"
+ #include "renderer/zonecull.h"
+-#include "renderer/water.h"
++#include "renderer/Water.h"
+ #include "scriptaudioentity.h"
+ #include "debugaudio.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/world/GameWorldHeightMap.h"
+ #include "scene/portals/Portal.h"
+-#include "task/motion/Locomotion/taskmotionped.h" 
++#include "task/Motion/Locomotion/taskmotionped.h" 
+ #include "renderer/Water.h"
+ 
+ AUDIO_AMBIENCE_OPTIMISATIONS()

@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/audio/vehicleaudioentity.cpp b/src/dev_ng/game/audio/vehicleaudioentity.cpp
+--- a/src/dev_ng/game/audio/vehicleaudioentity.cpp
++++ b/src/dev_ng/game/audio/vehicleaudioentity.cpp
+@@ -26,7 +26,7 @@
+ #include "vfx/systems/VfxWater.h"
+ 
+ #include "vehicleengine/vehicleengine.h"
+-#include "vehicles/Trailer.h"
++#include "Vehicles/Trailer.h"
+ #include "audioengine/engine.h"
+ #include "control/record.h"
+ #include "control/replay/replay.h"
+@@ -54,15 +54,15 @@
+ #include "Peds/PedHelmetComponent.h"
+ #include "renderer/Water.h"
+ #include "radiostation.h"
+-#include "vehicles/train.h"
+-#include "Vehicles/planes.h"
++#include "Vehicles/train.h"
++#include "Vehicles/Planes.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+ #include "task/Vehicle/TaskEnterVehicle.h"
+ #include "task/Vehicle/TaskExitVehicle.h"
+-#include "vehicleai/task/taskvehicleanimation.h"
++#include "vehicleAi/task/taskvehicleanimation.h"
+ #include "Vehicles/VehicleDefines.h"
+ #include "Vehicles/AmphibiousAutomobile.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
+ #include "audiosynth/synthcore.h" 
+ #include "renderer/River.h"
+ #include "system/nelem.h"

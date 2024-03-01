@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/control/remote.cpp b/src/dev_ng/game/control/remote.cpp
+--- a/src/dev_ng/game/control/remote.cpp
++++ b/src/dev_ng/game/control/remote.cpp
+@@ -10,14 +10,14 @@
+ //Game headers
+ #include "control/remote.h"
+ #include "game/modelIndices.h"
+-#include "modelInfo/vehiclemodelinfo.h"
+-#include "peds/ped.h"
+-#include "physics/WorldProbe/worldprobe.h"
+-#include "scene/world/gameWorld.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "Peds/ped.h"
++#include "physics/WorldProbe/WorldProbe.h"
++#include "scene/world/GameWorld.h"
+ #include "script/script.h"
+-#include "vehicles/heli.h"
+-#include "vehicles/planes.h"
+-#include "vehicles/vehicleFactory.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/VehicleFactory.h"
+ #include "debug/DebugScene.h"
+ 
+ /////////////////////////////////////////////////////////////////////////////////

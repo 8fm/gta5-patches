@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/modelinfo/PedModelInfo.h b/src/dev_ng/game/modelinfo/PedModelInfo.h
+--- a/src/dev_ng/game/modelinfo/PedModelInfo.h
++++ b/src/dev_ng/game/modelinfo/PedModelInfo.h
+@@ -18,19 +18,19 @@
+ #include "fwmaths/random.h"
+ #include "fwutil/Flags.h"
+ #include "parser/macros.h"
+-#include "vector/Vector3.h"
++#include "vector/vector3.h"
+ 
+ // Gta headers
+-#include "Animation/animdefines.h"
++#include "animation/AnimDefines.h"
+ #include "audio/gameobjects.h"
+ #include "modelinfo/BaseModelInfo.h"
+-#include "peds/PedType.h"
+-#include "peds/PlayerSpecialAbility.h"
++#include "Peds/PedType.h"
++#include "Peds/PlayerSpecialAbility.h"
+ #include "animation/AnimBones.h"
+ #include "debug/DebugScene.h"
+ #include "scene/loader/MapData_Misc.h"
+-#include "stats/StatsTypes.h"
+-#include "vfx/metadata/vfxpedinfo.h"
++#include "Stats/StatsTypes.h"
++#include "vfx/metadata/VfxPedInfo.h"
+ 
+ //pargen headers
+ #include "scene/loader/Map_TxdParents.h"

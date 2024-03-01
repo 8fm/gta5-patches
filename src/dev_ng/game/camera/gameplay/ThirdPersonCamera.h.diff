@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.h b/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.h
+--- a/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.h
++++ b/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.h
+@@ -11,7 +11,7 @@
+ 
+ #include "camera/base/BaseCamera.h"
+ #include "camera/helpers/DampedSpring.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ class camCatchUpHelper;
+ class camControlHelper;

@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.h b/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.h
+--- a/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.h
++++ b/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.h
+@@ -6,9 +6,9 @@
+ #ifndef PATROL_ROUTES_H
+ #define PATROL_ROUTES_H
+ 
+-#include "Vector/vector3.h"
++#include "vector/vector3.h"
+ #include "scene/RegdRefTypes.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwscene/Ipl.h"
+ #include "fwdebug/debugdraw.h"
+ 

@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/weapons/FiringPattern.cpp b/src/dev_ng/game/weapons/FiringPattern.cpp
+--- a/src/dev_ng/game/weapons/FiringPattern.cpp
++++ b/src/dev_ng/game/weapons/FiringPattern.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Weapons/FiringPattern.h"
++#include "weapons/FiringPattern.h"
+ 
+ // Rage headers
+ #include "bank/bank.h"
+@@ -16,9 +16,9 @@
+ #include "FiringPattern_parser.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Weapons/WeaponDebug.h"
++#include "Peds/ped.h"
++#include "scene/DataFileMgr.h"
++#include "weapons/WeaponDebug.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

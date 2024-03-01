@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/apps/appdata.h b/src/dev_ng/game/apps/appdata.h
+--- a/src/dev_ng/game/apps/appdata.h
++++ b/src/dev_ng/game/apps/appdata.h
+@@ -45,7 +45,7 @@
+ #include "data/growbuffer.h"
+ #include "net/status.h"
+ #include "rline/rlpresence.h"
+-#include "Network/Cloud/CloudManager.h"
++#include "network/Cloud/CloudManager.h"
+ 
+ class CAppDataBlock;
+ class CAppData;

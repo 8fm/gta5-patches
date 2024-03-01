@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/event/EventReactions.cpp b/src/dev_ng/game/event/EventReactions.cpp
+--- a/src/dev_ng/game/event/EventReactions.cpp
++++ b/src/dev_ng/game/event/EventReactions.cpp
+@@ -5,13 +5,13 @@
+ #include "ai/aichannel.h"
+ 
+ // Game Headers
+-#include "Event/EventResponse.h"
+-#include "Peds/Ped.h"
++#include "event/EventResponse.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/TaskThreatResponse.h"
+-#include "Task/Combat/TaskInvestigate.h"
+-#include "Task/Combat/TaskReact.h"
+-#include "Task/Response/TaskReactToDeadPed.h"
++#include "task/Combat/TaskThreatResponse.h"
++#include "task/Combat/TaskInvestigate.h"
++#include "task/Combat/TaskReact.h"
++#include "task/Response/TaskReactToDeadPed.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+ 

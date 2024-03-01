@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.h b/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.h
+--- a/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.h
++++ b/src/dev_ng/game/task/Movement/Climbing/ClimbDetector.h
+@@ -12,10 +12,10 @@ namespace rage { class Color32; }
+ namespace rage { class Vector3; }
+ 
+ // Game headers
+-#include "debug/debugdrawstore.h"
+-#include "peds/ped.h"
+-#include "task/movement/climbing/climbdebug.h"
+-#include "task/movement/climbing/climbhandhold.h"
++#include "debug/DebugDrawStore.h"
++#include "Peds/ped.h"
++#include "task/Movement/Climbing/ClimbDebug.h"
++#include "task/Movement/Climbing/ClimbHandHold.h"
+ 
+ const u32			CLIMB_DETECTOR_MAX_INTERSECTIONS		= 4;
+ const u32			CLIMB_DETECTOR_MAX_HORIZ_TESTS			= 6;

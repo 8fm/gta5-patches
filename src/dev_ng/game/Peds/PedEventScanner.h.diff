@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/Peds/PedEventScanner.h b/src/dev_ng/game/Peds/PedEventScanner.h
+--- a/src/dev_ng/game/Peds/PedEventScanner.h
++++ b/src/dev_ng/game/Peds/PedEventScanner.h
+@@ -3,12 +3,12 @@
+ 
+ #include "ai/EntityScanner.h"
+ #include "ai/ExpensiveProcess.h"
+-#include "Event/Events.h"
++#include "event/Events.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "peds/PedGeometryAnalyser.h"
+-#include "Scene/2dEffect.h"
++#include "Peds/PedGeometryAnalyser.h"
++#include "scene/2dEffect.h"
+ #include "task/Response/Info/AgitatedEnums.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ 
+ namespace rage {
+ 	class fwPtrList;

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedResponse.h b/src/dev_ng/game/task/Response/Info/AgitatedResponse.h
+--- a/src/dev_ng/game/task/Response/Info/AgitatedResponse.h
++++ b/src/dev_ng/game/task/Response/Info/AgitatedResponse.h
+@@ -9,9 +9,9 @@
+ 
+ // Game headers
+ #include "task/Default/AmbientAudio.h"
+-#include "Task/Response/Info/AgitatedConditions.h"
+-#include "Task/Response/Info/AgitatedReaction.h"
+-#include "Task/Response/Info/AgitatedState.h"
++#include "task/Response/Info/AgitatedConditions.h"
++#include "task/Response/Info/AgitatedReaction.h"
++#include "task/Response/Info/AgitatedState.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ // CAgitatedResponse

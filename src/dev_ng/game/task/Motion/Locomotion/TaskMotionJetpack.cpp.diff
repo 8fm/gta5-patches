@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionJetpack.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionJetpack.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionJetpack.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskMotionJetpack.cpp
+@@ -1,13 +1,13 @@
+ 
+ //File header
+-#include "Task/Motion/Locomotion/TaskMotionJetpack.h"
++#include "task/Motion/Locomotion/TaskMotionJetpack.h"
+ 
+ //Game headers
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskFall.h"
+-#include "Task/Movement/TaskJetpack.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskFall.h"
++#include "task/Movement/TaskJetpack.h"
+ 
+ #if ENABLE_JETPACK
+ 

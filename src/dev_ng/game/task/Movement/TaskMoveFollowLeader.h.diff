@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.h b/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.h
+--- a/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.h
++++ b/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.h
+@@ -1,9 +1,9 @@
+ #ifndef TASK_MOVE_FOLLOW_LEADER_H
+ #define TASK_MOVE_FOLLOW_LEADER_H
+ 
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
+ 
+ class CEntity;
+ class CPed;

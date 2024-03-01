@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h
+@@ -7,7 +7,7 @@
+ #ifndef PROXIMITY_MIGRATEABLE_SYNC_NODES_H
+ #define PROXIMITY_MIGRATEABLE_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/BaseSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/BaseSyncNodes.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////
+ // IProximityMigrateableNodeDataAccessor

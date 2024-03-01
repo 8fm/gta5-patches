@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/task/Physics/NmDebug.cpp b/src/dev_ng/game/task/Physics/NmDebug.cpp
+--- a/src/dev_ng/game/task/Physics/NmDebug.cpp
++++ b/src/dev_ng/game/task/Physics/NmDebug.cpp
+@@ -1,22 +1,22 @@
+ #if __BANK
+ 
+ // Game includes:
+-#include "peds/ped.h"
+-#include "Task/Physics/NmDebug.h"
+-#include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNMShot.h"
++#include "Peds/ped.h"
++#include "task/Physics/NmDebug.h"
++#include "task/Physics/TaskNM.h"
++#include "task/Physics/TaskNMShot.h"
+ #include "debug/DebugScene.h"
+ 
+ // Framework includes: 
+ #include "ai/aichannel.h"
+ #include "grcore/debugdraw.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+ // RAGE includes:
+ #include "art/ARTRockstar.h"
+ #include "fragmentnm/manager.h"
+ #include "phbound/boundcapsule.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ 
+ AI_OPTIMISATIONS()

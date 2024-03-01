@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskRideHorse.h b/src/dev_ng/game/task/Vehicle/TaskRideHorse.h
+--- a/src/dev_ng/game/task/Vehicle/TaskRideHorse.h
++++ b/src/dev_ng/game/task/Vehicle/TaskRideHorse.h
+@@ -7,10 +7,10 @@
+ 
+ #include "Peds/AssistedMovement.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskMove.h"
+-#include "Task/motion/TaskMotionBase.h"
+-#include "Task/motion/Locomotion/TaskMotionPed.h"
++#include "task/System/Task.h"
++#include "task/System/TaskMove.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
+ 
+ //-------------------------------------------------------------------------
+ // Task to control the characters clips whilst on a horse

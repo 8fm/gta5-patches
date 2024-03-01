@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/GameGlows.cpp b/src/dev_ng/game/vfx/misc/GameGlows.cpp
+--- a/src/dev_ng/game/vfx/misc/GameGlows.cpp
++++ b/src/dev_ng/game/vfx/misc/GameGlows.cpp
+@@ -16,7 +16,7 @@
+ #include "vfx/channel.h"
+ 
+ // Game header 
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "renderer/DrawLists/drawList.h"
+ #include "renderer/Util/ShaderUtil.h"
+ #include "renderer/rendertargets.h"

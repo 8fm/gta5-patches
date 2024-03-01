@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/gadgets/Gadget.h b/src/dev_ng/game/weapons/gadgets/Gadget.h
+--- a/src/dev_ng/game/weapons/gadgets/Gadget.h
++++ b/src/dev_ng/game/weapons/gadgets/Gadget.h
+@@ -2,7 +2,7 @@
+ #define GADGET_H
+ 
+ // Game headers
+-#include "Weapons/Weapon.h"
++#include "weapons/Weapon.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CGadget

@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/vehicleAi/FlyingVehicleAvoidance.cpp b/src/dev_ng/game/vehicleAi/FlyingVehicleAvoidance.cpp
+--- a/src/dev_ng/game/vehicleAi/FlyingVehicleAvoidance.cpp
++++ b/src/dev_ng/game/vehicleAi/FlyingVehicleAvoidance.cpp
+@@ -1,4 +1,4 @@
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "vehicleAi/FlyingVehicleAvoidance.h"
+ #include "Vehicles/vehicle.h"
+ #include "Vehicles/Planes.h"

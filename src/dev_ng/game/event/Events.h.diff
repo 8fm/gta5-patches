@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/event/Events.h b/src/dev_ng/game/event/Events.h
+--- a/src/dev_ng/game/event/Events.h
++++ b/src/dev_ng/game/event/Events.h
+@@ -5,15 +5,15 @@
+ #include "ai/AITarget.h"
+ 
+ // game includes
+-#include "event/event.h"
++#include "event/Event.h"
+ #include "event/EventEditable.h"
+ #include "event/EventPriorities.h"
+-#include "fwevent/eventregdref.h"
++#include "fwevent/EventRegdRef.h"
+ #include "Peds/pedDefines.h"
+ #include "scene/RegdRefTypes.h"
+ #include "task/Response/Info/AgitatedEnums.h"
+ #include "task/System/TaskHelpers.h"
+-#include "task/scenario/info/ScenarioInfoConditions.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
+ 
+ namespace rage { class aiTask; }
+ class CEntity;

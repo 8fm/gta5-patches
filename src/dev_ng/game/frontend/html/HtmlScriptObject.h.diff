@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/html/HtmlScriptObject.h b/src/dev_ng/game/frontend/html/HtmlScriptObject.h
+--- a/src/dev_ng/game/frontend/html/HtmlScriptObject.h
++++ b/src/dev_ng/game/frontend/html/HtmlScriptObject.h
+@@ -11,7 +11,7 @@
+ // C headers
+ // Rage headers
+ // Game headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

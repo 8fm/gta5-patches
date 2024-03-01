@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Service/Medic/TaskAmbulancePatrol.h b/src/dev_ng/game/task/Service/Medic/TaskAmbulancePatrol.h
+--- a/src/dev_ng/game/task/Service/Medic/TaskAmbulancePatrol.h
++++ b/src/dev_ng/game/task/Service/Medic/TaskAmbulancePatrol.h
+@@ -6,14 +6,14 @@
+ #define INC_TASK_AMBULANCE_PATROL_H
+ 
+ //Game headers
+-#include "peds/QueriableInterface.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/Default/TaskUnalerted.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskFSMClone.h"
+-#include "Task/System/TaskHelperFSM.h"
+-#include "Task/Scenario/ScenarioChaining.h"
+-#include "Task/Scenario/ScenarioPoint.h"
++#include "Peds/QueriableInterface.h"
++#include "scene/RegdRefTypes.h"
++#include "task/Default/TaskUnalerted.h"
++#include "task/System/Task.h"
++#include "task/System/TaskFSMClone.h"
++#include "task/System/TaskHelperFSM.h"
++#include "task/Scenario/ScenarioChaining.h"
++#include "task/Scenario/ScenarioPoint.h"
+ 
+ class CAmbulanceOrder;
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.h b/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskDogLocomotion.h
+@@ -1,7 +1,7 @@
+ #ifndef TASK_DOG_LOCOMOTION_H
+ #define TASK_DOG_LOCOMOTION_H
+ 
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ //*********************************************************************
+ //	CTaskDogLocomotion

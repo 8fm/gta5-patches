@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.h b/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.h
+--- a/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.h
++++ b/src/dev_ng/game/task/Movement/TaskMoveWithinDefensiveArea.h
+@@ -9,7 +9,7 @@
+ #include "parser/manager.h"
+ #include "Peds/CombatBehaviour.h"
+ #include "Peds/QueriableInterface.h"
+-#include "Task/System/TaskFSMClone.h"
++#include "task/System/TaskFSMClone.h"
+ 
+ ////////////////////////////////////////
+ //   TASK_MOVE_WITHIN_DEFENSIVE_AREA   //

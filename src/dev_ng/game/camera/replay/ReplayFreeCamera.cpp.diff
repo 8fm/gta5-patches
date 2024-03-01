@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/camera/replay/ReplayFreeCamera.cpp b/src/dev_ng/game/camera/replay/ReplayFreeCamera.cpp
+--- a/src/dev_ng/game/camera/replay/ReplayFreeCamera.cpp
++++ b/src/dev_ng/game/camera/replay/ReplayFreeCamera.cpp
+@@ -22,14 +22,14 @@
+ #include "control/replay/ReplayMarkerContext.h"
+ #include "control/replay/IReplayMarkerStorage.h"
+ #include "frontend/VideoEditor/VideoEditorInterface.h"
+-#include "modelInfo/MLOmodelInfo.h"
+-#include "objects/Door.h"
++#include "modelinfo/MLOmodelInfo.h"
++#include "Objects/Door.h"
+ #include "output/constantlighteffect.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "scene/loader/MapData_Interiors.h"
+ #include "system/controlMgr.h"
+ #include "system/param.h"
+-#include "vfx/Misc/GameGlows.h"
++#include "vfx/misc/GameGlows.h"
+ 
+ #include "entity/entity.h"
+ 

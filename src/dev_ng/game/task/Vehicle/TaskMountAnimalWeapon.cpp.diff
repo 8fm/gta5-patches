@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.cpp b/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskMountAnimalWeapon.cpp
+@@ -1,4 +1,4 @@
+-#include "Task/Vehicle/TaskMountAnimalWeapon.h"
++#include "task/Vehicle/TaskMountAnimalWeapon.h"
+ 
+ // Rage Headers
+ #include "phbound/boundcomposite.h"
+@@ -12,15 +12,15 @@
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "event/EventDamage.h"
+ #include "network/General/NetworkPendingProjectiles.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "objects/Door.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++#include "Objects/Door.h"
+ #include "Peds/HealthConfig.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "scene/world/GameWorld.h"
+-#include "System/control.h"
++#include "system/control.h"
+ #include "Stats/StatsInterface.h"
+ #include "task/Motion/Locomotion/TaskMotionPed.h"
+ #include "task/Movement/TaskParachute.h"

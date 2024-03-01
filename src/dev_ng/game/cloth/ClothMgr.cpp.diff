@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/cloth/ClothMgr.cpp b/src/dev_ng/game/cloth/ClothMgr.cpp
+--- a/src/dev_ng/game/cloth/ClothMgr.cpp
++++ b/src/dev_ng/game/cloth/ClothMgr.cpp
+@@ -3,9 +3,9 @@
+ #include "ClothArchetype.h"
+ #include "ClothRageInterface.h"
+ #include "bank/bkmgr.h"
+-#include "Physics/gtaArchetype.h"
+-#include "Scene/Entity.h"
+-#include "Scene/DynamicEntity.h"
++#include "physics/gtaArchetype.h"
++#include "scene/Entity.h"
++#include "scene/DynamicEntity.h"
+ 
+ #include "grcore/debugdraw.h"
+ #include "phbound/bound.h"

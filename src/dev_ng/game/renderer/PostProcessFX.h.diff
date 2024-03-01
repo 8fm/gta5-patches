@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/PostProcessFX.h b/src/dev_ng/game/renderer/PostProcessFX.h
+--- a/src/dev_ng/game/renderer/PostProcessFX.h
++++ b/src/dev_ng/game/renderer/PostProcessFX.h
+@@ -19,7 +19,7 @@
+ #include "renderer/PostFX_shared.h"
+ #include "renderer/MLAA.h"
+ 
+-#include "core/watermark.h"
++#include "Core/watermark.h"
+ #include "control/replay/ReplaySupportClasses.h"
+ 
+ #define USE_SCREEN_WATERMARK WATERMARKED_BUILD

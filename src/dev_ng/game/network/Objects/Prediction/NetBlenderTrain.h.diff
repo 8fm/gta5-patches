@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.h b/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.h
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.h
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderTrain.h
+@@ -7,7 +7,7 @@
+ #define NETBLENDERTRAIN_H
+ 
+ // game includes
+-#include "network/objects/prediction/NetBlenderVehicle.h"
++#include "network/Objects/Prediction/NetBlenderVehicle.h"
+ 
+ // ===========================================================================================================================
+ // CNetBlenderSubmarine

@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/text/TextFile.h b/src/dev_ng/game/text/TextFile.h
  // Game headers
 -#include "..\system\filemgr.h"
 -#include "..\scene\ExtraContentDefs.h"
-+#include "../system/filemgr.h"
++#include "../system/FileMgr.h"
 +#include "../scene/ExtraContentDefs.h"
  
  namespace rage { class fiPackfile; }

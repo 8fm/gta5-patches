@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwevent/EventQueue.h b/src/dev_ng/rage/framework/src/fwevent/EventQueue.h
+--- a/src/dev_ng/rage/framework/src/fwevent/EventQueue.h
++++ b/src/dev_ng/rage/framework/src/fwevent/EventQueue.h
+@@ -8,8 +8,8 @@
+ #define FWEVENTQUEUE_H
+ 
+ #include "atl/queue.h"
+-#include "fwevent/event.h"
+-#include "fwevent/eventregdref.h"
++#include "fwevent/Event.h"
++#include "fwevent/EventRegdRef.h"
+ #include "ai/task/taskchannel.h"
+ 
+ namespace rage {

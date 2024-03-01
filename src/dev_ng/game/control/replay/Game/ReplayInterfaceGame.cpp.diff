@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp b/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp
+--- a/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp
++++ b/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp
+@@ -2,7 +2,7 @@
+ 
+ #if GTA_REPLAY
+ 
+-#include "game/clock.h"
++#include "game/Clock.h"
+ #include "game/weather.h"
+ 
+ #include "../ReplayController.h"

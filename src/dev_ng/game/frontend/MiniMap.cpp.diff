@@ -1,0 +1,79 @@
+diff --git a/src/dev_ng/game/frontend/MiniMap.cpp b/src/dev_ng/game/frontend/MiniMap.cpp
+--- a/src/dev_ng/game/frontend/MiniMap.cpp
++++ b/src/dev_ng/game/frontend/MiniMap.cpp
+@@ -23,8 +23,8 @@
+ #include "camera/CamInterface.h"
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
+ #include "camera/debug/DebugDirector.h"
+-#include "Control/gamelogic.h"
+-#include "Control/gps.h"
++#include "control/gamelogic.h"
++#include "control/gps.h"
+ #include "Core/Game.h"
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/LightProbe.h"
+@@ -39,24 +39,24 @@
+ #include "frontend/WarningScreen.h"
+ #include "frontend/SocialClubMenu.h"
+ #include "frontend/Map/BlipEnums.h"
+-#include "frontend/Scaleform/ScaleformMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/Store/StoreScreenMgr.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Submarine.h"
+-#include "vehicles/Heli.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Submarine.h"
++#include "Vehicles/Heli.h"
+ #include "renderer/rendertargets.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/world/GameWorldHeightMap.h"
+ #include "physics/WaterTestHelper.h"
+ #include "text/TextConversion.h"
+ 
+-#include "Game/user.h"
++#include "game/user.h"
+ #include "game/weather.h"
+-#include "peds/Ped.h"
+-#include "peds/PedDebugVisualiser.h"
++#include "Peds/ped.h"
++#include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "pickups/Data/PickupDataManager.h"
+ #include "pickups/PickupManager.h"
+ #include "scene/EntityIterator.h"
+@@ -68,11 +68,11 @@
+ #include "system/controlMgr.h"
+ #include "system/param.h"
+ #include "task/Combat/TaskInvestigate.h"
+-#include "task/movement/TaskParachute.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/Bike.h"
+-#include "vehicles/AmphibiousAutomobile.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "task/Movement/TaskParachute.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Bike.h"
++#include "Vehicles/AmphibiousAutomobile.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "vfx/misc/markers.h"
+ 
+ #include "frontend/Metadata_parser.h"
+@@ -85,12 +85,12 @@
+ #endif // RSG_PC
+ 
+ #if __BANK
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
+ #include "debug/VectorMap.h"
+ #endif  // __BANK
+ 
+ #if DEBUG_PAD_INPUT
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #endif  // #if DEBUG_PAD_INPUT
+ 
+ FRONTEND_OPTIMISATIONS()

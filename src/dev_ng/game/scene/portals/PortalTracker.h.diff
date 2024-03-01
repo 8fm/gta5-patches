@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/portals/PortalTracker.h b/src/dev_ng/game/scene/portals/PortalTracker.h
+--- a/src/dev_ng/game/scene/portals/PortalTracker.h
++++ b/src/dev_ng/game/scene/portals/PortalTracker.h
+@@ -12,7 +12,7 @@
+ #include "security/obfuscatedtypes.h"
+ 
+ // Game headers
+-#include "scene/portals/interiorInst.h"
++#include "scene/portals/InteriorInst.h"
+ 
+ class CEntity;
+ class CInteriorInst;

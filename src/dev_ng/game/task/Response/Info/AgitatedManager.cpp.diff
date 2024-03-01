@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedManager.cpp b/src/dev_ng/game/task/Response/Info/AgitatedManager.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedManager.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedManager.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Response/Info/AgitatedManager.h"
++#include "task/Response/Info/AgitatedManager.h"
+ 
+ // Rage headers
+ #include "parser/macros.h"

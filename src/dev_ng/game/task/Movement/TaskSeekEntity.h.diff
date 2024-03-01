@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskSeekEntity.h b/src/dev_ng/game/task/Movement/TaskSeekEntity.h
+--- a/src/dev_ng/game/task/Movement/TaskSeekEntity.h
++++ b/src/dev_ng/game/task/Movement/TaskSeekEntity.h
+@@ -2,21 +2,21 @@
+ #define TASK_SEEK_ENTITY_H
+ 
+ // Framework headers
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ 
+ // Game headers
+-#include "Control/Route.h"
+-#include "ModelInfo/VehicleModelInfo.h"
+-#include "PathServer/PathServer.h"
+-#include "PedGroup/Pedgroup.h"
++#include "control/Route.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "pathserver/PathServer.h"
++#include "PedGroup/PedGroup.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedPlacement.h"
+-#include "scene/world/gameworld.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Movement/TaskGotoPoint.h"
+-#include "Task/Movement/TaskNavMesh.h"
++#include "scene/world/GameWorld.h"
++#include "task/General/TaskBasic.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Movement/TaskGotoPoint.h"
++#include "task/Movement/TaskNavMesh.h"
+ 
+ ///////////////////////////////////
+ // CTaskMoveSeekEntity calculators

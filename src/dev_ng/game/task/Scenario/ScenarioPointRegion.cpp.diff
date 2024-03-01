@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioPointRegion.cpp b/src/dev_ng/game/task/Scenario/ScenarioPointRegion.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioPointRegion.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioPointRegion.cpp
+@@ -16,8 +16,8 @@
+ //Game Headers
+ #include "ai/stats.h"
+ #include "Objects/object.h"
+-#include "Pathserver/ExportCollision.h"
+-#include "Peds/Ped.h"
++#include "pathserver/ExportCollision.h"
++#include "Peds/ped.h"
+ #include "scene/Building.h"
+ #include "scene/Entity.h"
+ #include "task/Scenario/ScenarioManager.h"
+@@ -28,7 +28,7 @@
+ #include "scene/FocusEntity.h"
+ #include "scene/world/GameWorld.h"
+ #include "task/Scenario/ScenarioDebug.h"
+-#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ #endif
+ 
+ AI_OPTIMISATIONS()

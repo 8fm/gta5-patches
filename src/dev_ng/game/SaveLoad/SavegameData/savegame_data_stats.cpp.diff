@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.cpp b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.cpp
+--- a/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.cpp
++++ b/src/dev_ng/game/SaveLoad/SavegameData/savegame_data_stats.cpp
+@@ -9,9 +9,9 @@
+ #include "SaveLoad/GenericGameStorage.h"
+ #include "SaveLoad/savegame_channel.h"
+ #include "SaveLoad/savegame_data.h"
+-#include "stats/stats_channel.h"
++#include "Stats/stats_channel.h"
+ #include "Stats/StatsDataMgr.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ 
+ 
+ 

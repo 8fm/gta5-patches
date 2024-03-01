@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.h b/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.h
+--- a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.h
++++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.h
+@@ -11,8 +11,8 @@
+ #define _SCALEFORMMGR_H_
+ 
+ // Rage headers
+-#include "Scaleform/scaleform.h"
+-#include "Streaming/streamingmodule.h"
++#include "scaleform/scaleform.h"
++#include "streaming/streamingmodule.h"
+ #include "streaming/streamingrequest.h"
+ #include "system/criticalsection.h"
+ #include "text/TextFile.h"
+@@ -21,7 +21,7 @@
+ #include "atl/vector.h"
+ #include "grcore/effect.h"
+ #include "grcore/stateblock.h"
+-#include "templates/dblBuf.h"
++#include "templates/DblBuf.h"
+ #include "fwtl/LinkList.h"
+ #include "atl/inlist.h"
+ 

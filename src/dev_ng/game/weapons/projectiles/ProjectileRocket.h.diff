@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/projectiles/ProjectileRocket.h b/src/dev_ng/game/weapons/projectiles/ProjectileRocket.h
+--- a/src/dev_ng/game/weapons/projectiles/ProjectileRocket.h
++++ b/src/dev_ng/game/weapons/projectiles/ProjectileRocket.h
+@@ -2,7 +2,7 @@
+ #define PROJECTILE_ROCKET_H
+ 
+ // Game headers
+-#include "Weapons/Projectiles/Projectile.h"
++#include "weapons/projectiles/Projectile.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CProjectileRocket

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Scenario/ScenarioFinder.cpp b/src/dev_ng/game/task/Scenario/ScenarioFinder.cpp
+--- a/src/dev_ng/game/task/Scenario/ScenarioFinder.cpp
++++ b/src/dev_ng/game/task/Scenario/ScenarioFinder.cpp
+@@ -12,7 +12,7 @@
+ #include "task/Scenario/ScenarioPoint.h"
+ #include "task/Scenario/ScenarioPointManager.h"
+ #include "task/Scenario/info/ScenarioInfo.h"
+-#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/info/ScenarioInfoManager.h"
+ #include "ai/BlockingBounds.h"
+ #include "ai/ambient/AmbientModelSetManager.h"
+ #include "ai/task/task.h"					// For FSM_Begin, etc.

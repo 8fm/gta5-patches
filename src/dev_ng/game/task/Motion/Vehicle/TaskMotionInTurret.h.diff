@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.h b/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.h
+--- a/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.h
++++ b/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.h
+@@ -15,8 +15,8 @@
+ #if ENABLE_MOTION_IN_TURRET_TASK
+ 
+ // Game headers
+-#include "Task/Motion/Vehicle/TaskMotionInTurretMoveNetworkMetadata.h"
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/Vehicle/TaskMotionInTurretMoveNetworkMetadata.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ //

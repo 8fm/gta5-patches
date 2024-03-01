@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/system/TouchPadGestures.cpp b/src/dev_ng/game/system/TouchPadGestures.cpp
+--- a/src/dev_ng/game/system/TouchPadGestures.cpp
++++ b/src/dev_ng/game/system/TouchPadGestures.cpp
+@@ -16,15 +16,15 @@
+ //#include "fwmaths/Maths.h"
+ 
+ // Game headers
+-#include "System/TouchPadGestures.h"
+-#include "System/pad.h"
++#include "system/TouchPadGestures.h"
++#include "system/pad.h"
+ #include "frontend/PauseMenu.h"
+-#include "system/controlmgr.h"
+-#include "peds/Ped.h"
+-#include "scene/world/gameWorld.h"
+-#include "system/controlmgr.h"
++#include "system/controlMgr.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
++#include "system/controlMgr.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+-#include "frontend/LoadingScreens.h"
++#include "frontend/loadingscreens.h"
+ 
+ bank_s32 s_MinSwipeDistance = 200;
+ bank_s32 s_MinChangeSwipeDistance = 120;

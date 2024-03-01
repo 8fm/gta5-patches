@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/physics/Breakable.cpp b/src/dev_ng/game/physics/Breakable.cpp
+--- a/src/dev_ng/game/physics/Breakable.cpp
++++ b/src/dev_ng/game/physics/Breakable.cpp
+@@ -31,9 +31,9 @@
+ 
+ // game 
+ #include "camera/CamInterface.h"
+-#include "debug/vectormap.h"
+-#include "objects/object.h"
+-#include "peds/Ped.h"	// temp for cheat init()
++#include "debug/VectorMap.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"	// temp for cheat init()
+ #include "physics/gtaArchetype.h"
+ #include "physics/gtaInst.h"
+ #include "physics/physics.h"
+@@ -41,10 +41,10 @@
+ #include "renderer/DrawLists/DrawableDataStructs.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "shaders/ShaderLib.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "scene/lod/LodDrawable.h"
+ #include "scene/lod/LodScale.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ #include "Breakable.h"
+ 

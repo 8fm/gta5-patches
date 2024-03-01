@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/General/TaskVehicleSecondary.cpp b/src/dev_ng/game/task/General/TaskVehicleSecondary.cpp
+--- a/src/dev_ng/game/task/General/TaskVehicleSecondary.cpp
++++ b/src/dev_ng/game/task/General/TaskVehicleSecondary.cpp
+@@ -8,12 +8,12 @@
+ 
+ // game headers
+ #include "event/EventShocking.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/General/TaskVehicleSecondary.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/General/TaskVehicleSecondary.h"
+ #include "task/General/Phone/TaskCallPolice.h"
+-#include "Vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ 
+ AI_OPTIMISATIONS()

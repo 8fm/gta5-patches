@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/VehPopUpdateDensities_shared.cpp b/src/dev_ng/game/Vehicles/VehPopUpdateDensities_shared.cpp
+--- a/src/dev_ng/game/Vehicles/VehPopUpdateDensities_shared.cpp
++++ b/src/dev_ng/game/Vehicles/VehPopUpdateDensities_shared.cpp
+@@ -1,6 +1,6 @@
+-#include "vehicles/vehiclepopulation.h"
++#include "Vehicles/vehiclepopulation.h"
+ 
+-#include "vehicles/vehpopulation_channel.h"
++#include "Vehicles/vehpopulation_channel.h"
+ 
+ #include "fwmaths/random.h"
+ 

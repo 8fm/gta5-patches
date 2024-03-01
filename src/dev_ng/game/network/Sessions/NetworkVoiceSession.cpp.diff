@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Sessions/NetworkVoiceSession.cpp b/src/dev_ng/game/network/Sessions/NetworkVoiceSession.cpp
+--- a/src/dev_ng/game/network/Sessions/NetworkVoiceSession.cpp
++++ b/src/dev_ng/game/network/Sessions/NetworkVoiceSession.cpp
+@@ -19,8 +19,8 @@
+ 
+ // game includes
+ #include "network/SocialClubServices/GamePresenceEvents.h"
+-#include "Event/EventGroup.h"
+-#include "Event/EventNetwork.h"
++#include "event/EventGroup.h"
++#include "event/EventNetwork.h"
+ #include "frontend/PauseMenu.h"
+ #include "network/Network.h"
+ #include "network/NetworkInterface.h"

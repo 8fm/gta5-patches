@@ -1,0 +1,40 @@
+diff --git a/src/dev_ng/game/system/ControlMgr.cpp b/src/dev_ng/game/system/ControlMgr.cpp
+--- a/src/dev_ng/game/system/ControlMgr.cpp
++++ b/src/dev_ng/game/system/ControlMgr.cpp
+@@ -16,25 +16,25 @@
+ #include "system/userlist.h"
+ 
+ // game headers
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "SaveLoad/savegame_autoload.h"
+ #include "script/script_debug.h"	//	for CScriptDebug::GetDisableDebugCamAndPlayerWarping()
+-#include "system/controlmgr.h"
+-#include "debug/debug.h"
+-#include "Frontend/NewHud.h"
+-#include "Frontend/PauseMenu.h"
+-#include "Frontend/WarningScreen.h" 
+-#include "Peds/Ped.h"
++#include "system/controlMgr.h"
++#include "debug/Debug.h"
++#include "frontend/NewHud.h"
++#include "frontend/PauseMenu.h"
++#include "frontend/WarningScreen.h" 
++#include "Peds/ped.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "script/script_debug.h"
+ #include "text/messages.h"
+-#include "Network/live/livemanager.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/Viewport.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "system/system.h"
+ #include "control/replay/replay.h"
+ #include "control/videorecording/videorecording.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/FrameDump.cpp b/src/dev_ng/game/debug/FrameDump.cpp
+--- a/src/dev_ng/game/debug/FrameDump.cpp
++++ b/src/dev_ng/game/debug/FrameDump.cpp
+@@ -9,7 +9,7 @@
+ #if __BANK
+ 
+ #include "FrameDump.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #include "debug/Bar.h"
+ #include "fwsys/timer.h"
+ #include "grcore/setup.h"

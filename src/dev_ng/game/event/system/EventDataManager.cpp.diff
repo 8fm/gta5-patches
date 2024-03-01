@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/event/system/EventDataManager.cpp b/src/dev_ng/game/event/system/EventDataManager.cpp
+--- a/src/dev_ng/game/event/system/EventDataManager.cpp
++++ b/src/dev_ng/game/event/system/EventDataManager.cpp
+@@ -1,13 +1,13 @@
+ // File header
+-#include "Event/System/EventDataManager.h"
++#include "event/system/EventDataManager.h"
+ 
+ // Rage headers
+ #include "Parser/manager.h"
+ 
+ // Game headers
+-#include "core/game.h"
+-#include "Event/Decision/EventDecisionMakerManager.h"
+-#include "Event/System/EventData.h"
++#include "Core/game.h"
++#include "event/decision/EventDecisionMakerManager.h"
++#include "event/system/EventData.h"
+ #include "scene/DataFileMgr.h"
+ #include "scene/dlc_channel.h"
+ 

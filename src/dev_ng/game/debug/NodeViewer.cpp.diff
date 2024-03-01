@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/debug/NodeViewer.cpp b/src/dev_ng/game/debug/NodeViewer.cpp
+--- a/src/dev_ng/game/debug/NodeViewer.cpp
++++ b/src/dev_ng/game/debug/NodeViewer.cpp
+@@ -21,8 +21,8 @@
+ #include "camera/debug/FreeCamera.h"		
+ #include "camera/helpers/Frame.h"
+ #include "frontend/NewHud.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "modelinfo/PedModelInfo.h"
+ #include "parser/manager.h"						// XML
+ #include "parser/tree.h"
+@@ -33,10 +33,10 @@
+ #include "Peds/PedFactory.h"					// for Scalejaxx ped creation
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/ped.h"
+-#include "physics/WorldProbe/worldprobe.h"					// findground pos
+-#include "scene/world/gameWorld.h"
++#include "physics/WorldProbe/WorldProbe.h"					// findground pos
++#include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"
+-#include "system/controlmgr.h"					// controlmgr
++#include "system/controlMgr.h"					// controlmgr
+ #include "system/FileMgr.h"
+ #include "system/pad.h"							// pad
+ #include "task/General/TaskBasic.h"

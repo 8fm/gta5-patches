@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.h b/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.h
+--- a/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.h
++++ b/src/dev_ng/game/network/Crews/NetworkCrewDataMgr.h
+@@ -7,9 +7,9 @@
+ #include "fwtl/regdrefs.h"
+ #include "rline/clan/rlclancommon.h"
+ 
+-#include "Network/Live/ClanNetStatusArray.h"
+-#include "Network/Crews/NetworkCrewMetadata.h"
+-#include "Frontend/SimpleTimer.h"
++#include "network/Live/ClanNetStatusArray.h"
++#include "network/Crews/NetworkCrewMetadata.h"
++#include "frontend/SimpleTimer.h"
+ 
+ using namespace rage;
+ namespace rage

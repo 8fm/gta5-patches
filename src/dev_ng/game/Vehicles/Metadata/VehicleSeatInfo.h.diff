@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.h b/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.h
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.h
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleSeatInfo.h
+@@ -13,12 +13,12 @@
+ #include "atl/hashstring.h"
+ #include "atl/string.h"
+ #include "fwanimation/animdefines.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwutil/Flags.h"
+ #include "parser/macros.h"
+ 
+ // Game headers
+-#include "Task/Physics/TaskAnimatedAttach.h"
++#include "task/Physics/TaskAnimatedAttach.h"
+ #include "Vehicles/Metadata/VehicleLayoutInfo.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////

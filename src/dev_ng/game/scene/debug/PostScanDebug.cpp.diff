@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/scene/debug/PostScanDebug.cpp b/src/dev_ng/game/scene/debug/PostScanDebug.cpp
+--- a/src/dev_ng/game/scene/debug/PostScanDebug.cpp
++++ b/src/dev_ng/game/scene/debug/PostScanDebug.cpp
+@@ -30,14 +30,14 @@ SCENE_OPTIMISATIONS();
+ #include "fwsys/timer.h"
+ #include "game/Clock.h"
+ #include "input/keys.h"
+-#include "objects/object.h"
+-#include "objects/DummyObject.h"
+-#include "objects/objectpopulation.h"
++#include "Objects/object.h"
++#include "Objects/DummyObject.h"
++#include "Objects/objectpopulation.h"
+ #include "scene/debug/MapOptimizeHelper.h"
+ #include "scene/debug/SceneCostTracker.h"
+ #include "scene/debug/SceneIsolator.h"
+ #include "scene/debug/EntityReport.h"
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ #include "scene/FocusEntity.h"
+ #include "scene/lod/LodMgr.h"
+ #include "scene/lod/LodDebug.h"
+@@ -69,7 +69,7 @@ SCENE_OPTIMISATIONS();
+ #include "modelinfo/MloModelInfo.h"
+ #include "streaming/streamingdebuggraph.h"
+ 
+-#include "TimeCycle/TimeCycle.h"
++#include "timecycle/TimeCycle.h"
+ #include "fwscene/scan/ScanNodesdebug.h"
+ #include "renderer/RenderListBuilder.h"
+ #include "system/timemgr.h"

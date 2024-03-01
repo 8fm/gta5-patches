@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/SaveLoad/savegame_save.cpp b/src/dev_ng/game/SaveLoad/savegame_save.cpp
+--- a/src/dev_ng/game/SaveLoad/savegame_save.cpp
++++ b/src/dev_ng/game/SaveLoad/savegame_save.cpp
+@@ -7,7 +7,7 @@
+ #include "rline/rl.h"
+ 
+ // Game headers
+-#include "control/replay/file/ReplayFileManager.h"
++#include "control/replay/File/ReplayFileManager.h"
+ #include "frontend/PauseMenu.h"
+ #include "frontend/ProfileSettings.h"
+ #include "Peds/PlayerInfo.h"
+@@ -19,7 +19,7 @@
+ #include "SaveLoad/savegame_save.h"
+ #include "SaveLoad/savegame_users_and_devices.h"
+ #include "script/script.h"
+-#include "stats/StatsMgr.h"
++#include "Stats/StatsMgr.h"
+ #include "system/controlMgr.h"
+ #include "text/TextFile.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Vehicle/VehicleTrainPacket.cpp b/src/dev_ng/game/control/replay/Vehicle/VehicleTrainPacket.cpp
+--- a/src/dev_ng/game/control/replay/Vehicle/VehicleTrainPacket.cpp
++++ b/src/dev_ng/game/control/replay/Vehicle/VehicleTrainPacket.cpp
+@@ -9,7 +9,7 @@
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+ #include "control/replay/ReplayInternal.h"
+-#include "vehicles/train.h"
++#include "Vehicles/train.h"
+ 
+ 
+ //========================================================================================================================

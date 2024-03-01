@@ -1,0 +1,65 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp b/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "Task/Movement/Climbing/TaskVault.h"
++#include "task/Movement/Climbing/TaskVault.h"
+ 
+ // Rage headers
+ #include "fwanimation/animdirector.h"
+@@ -13,30 +13,30 @@
+ #include "fragmentnm/nm_channel.h "
+ 
+ // Game headers
+-#include "Animation/MovePed.h"
+-#include "Animation/AnimManager.h"
+-#include "Debug/DebugScene.h"
+-#include "Event/Event.h"
+-#include "Event/EventDamage.h"
+-#include "Peds/Ped.h"
++#include "animation/MovePed.h"
++#include "animation/AnimManager.h"
++#include "debug/DebugScene.h"
++#include "event/Event.h"
++#include "event/EventDamage.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Physics/Physics.h"
+-#include "Physics/WorldProbe/shapetestresults.h"
+-#include "System/ControlMgr.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Physics/TaskNMBalance.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskFall.h"
+-#include "Task/Movement/Jumping/TaskJump.h"
+-#include "Camera/CamInterface.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskInWater.h"
+-#include "Task/Movement/TaskParachute.h"
+-#include "Task/Vehicle/TaskCarUtils.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/shapetestresults.h"
++#include "system/controlMgr.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Physics/TaskNMBalance.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskFall.h"
++#include "task/Movement/Jumping/TaskJump.h"
++#include "camera/CamInterface.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskInWater.h"
++#include "task/Movement/TaskParachute.h"
++#include "task/Vehicle/TaskCarUtils.h"
+ #include "Vehicles/vehicle.h"
+-#include "Ik/IkManager.h"
+-#include "Ik/solvers/LegSolverProxy.h"
+-#include "Ik/solvers/LegSolver.h"
++#include "ik/IkManager.h"
++#include "ik/solvers/LegSolverProxy.h"
++#include "ik/solvers/LegSolver.h"
+ #include "Peds/PedIkSettings.h"
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+ #include "camera/gameplay/GameplayDirector.h"

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vfx/misc/ScriptIM.cpp b/src/dev_ng/game/vfx/misc/ScriptIM.cpp
+--- a/src/dev_ng/game/vfx/misc/ScriptIM.cpp
++++ b/src/dev_ng/game/vfx/misc/ScriptIM.cpp
+@@ -9,10 +9,10 @@
+ 
+ #include "fwsys/gameskeleton.h"
+ #include "vfx/vfxwidget.h"
+-#include "Frontend/MobilePhone.h"
++#include "frontend/MobilePhone.h"
+ 
+ #include "debug/DebugDraw.h"
+-#include "renderer/Drawlists/drawList.h"
++#include "renderer/DrawLists/drawList.h"
+ #include "shaders/ShaderLib.h"
+ 
+ VFX_MISC_OPTIMISATIONS()

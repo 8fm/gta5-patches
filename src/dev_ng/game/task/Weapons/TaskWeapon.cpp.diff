@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskWeapon.cpp b/src/dev_ng/game/task/Weapons/TaskWeapon.cpp
+--- a/src/dev_ng/game/task/Weapons/TaskWeapon.cpp
++++ b/src/dev_ng/game/task/Weapons/TaskWeapon.cpp
+@@ -1,21 +1,21 @@
+ // File header
+-#include "Task/Weapons/TaskWeapon.h"
++#include "task/Weapons/TaskWeapon.h"
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "frontend/NewHud.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+-#include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+-#include "Task/Weapons/Gun/TaskGun.h"
+-#include "Task/Weapons/Gun/TaskReloadGun.h"
+-#include "Task/Weapons/TaskBomb.h"
++#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
++#include "task/Weapons/Gun/TaskGun.h"
++#include "task/Weapons/Gun/TaskReloadGun.h"
++#include "task/Weapons/TaskBomb.h"
+ #include "task/Weapons/TaskDetonator.h"
+-#include "Task/Weapons/TaskProjectile.h"
+-#include "Task/Weapons/WeaponController.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "task/Weapons/TaskProjectile.h"
++#include "task/Weapons/WeaponController.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ // Macro to disable optimisations if set
+ AI_OPTIMISATIONS()

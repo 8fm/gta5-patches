@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.h b/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.h
+--- a/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.h
++++ b/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.h
+@@ -12,7 +12,7 @@
+ #define INC_DRAWBLDATASTRCTS_H_
+ 
+ // rage headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vector/quaternion.h"
+ #include "breakableglass/breakable.h"
+ #include "fwrenderer/instancing.h"
+@@ -20,7 +20,7 @@
+ 
+ //game headers
+ #include "Vehicles/VehicleDefines.h"
+-#include "peds/rendering/pedvariationds.h"
++#include "Peds/rendering/PedVariationDS.h"
+ #include "fragment/cache.h"
+ #include "modelinfo/VehicleModelInfoVariation.h"
+ #include "breakableglass/breakable.h"

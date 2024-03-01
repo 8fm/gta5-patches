@@ -16,3 +16,12 @@ diff --git a/src/dev_ng/game/system/EndUserBenchmark.cpp b/src/dev_ng/game/syste
  #include "camera/CamInterface.h"
  #include "network/NetworkInterface.h"
  
+@@ -18,7 +18,7 @@
+ #include "bank/bkmgr.h"
+ #endif
+ 
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ 
+ eFRONTEND_MENU_VERSION					EndUserBenchmarks::m_bMenuTrigger = 0;
+ bool									EndUserBenchmarks::m_bActive = false;

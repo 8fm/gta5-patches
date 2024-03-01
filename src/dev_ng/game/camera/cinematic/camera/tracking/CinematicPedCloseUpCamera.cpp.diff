@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp
+@@ -11,8 +11,8 @@
+ #include "camera/helpers/Collision.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "Peds/ped.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

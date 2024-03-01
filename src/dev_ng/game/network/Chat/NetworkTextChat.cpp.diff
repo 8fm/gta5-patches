@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/network/Chat/NetworkTextChat.cpp b/src/dev_ng/game/network/Chat/NetworkTextChat.cpp
+--- a/src/dev_ng/game/network/Chat/NetworkTextChat.cpp
++++ b/src/dev_ng/game/network/Chat/NetworkTextChat.cpp
+@@ -6,14 +6,14 @@
+ // game headers
+ 
+ #include "fwnet/netchannel.h"
+-#include "Network/Chat/NetworkTextChat.h"
++#include "network/Chat/NetworkTextChat.h"
+ 
+ #include "frontend/ProfileSettings.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Voice/NetworkVoice.h"
+-#include "Network/Objects/Entities/NetObjPlayer.h"
+-//#include "Network/Objects/Entities/NetObjPlayer.h"
+-#include "Network/Players/NetworkPlayerMgr.h"
++#include "network/NetworkInterface.h"
++#include "network/Voice/NetworkVoice.h"
++#include "network/Objects/Entities/NetObjPlayer.h"
++//#include "network/Objects/Entities/NetObjPlayer.h"
++#include "network/Players/NetworkPlayerMgr.h"
+ #include "Peds/PlayerPed.h"
+ 
+ NETWORK_OPTIMISATIONS()

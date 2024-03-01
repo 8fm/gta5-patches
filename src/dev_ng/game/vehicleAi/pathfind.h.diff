@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/vehicleAi/pathfind.h b/src/dev_ng/game/vehicleAi/pathfind.h
+--- a/src/dev_ng/game/vehicleAi/pathfind.h
++++ b/src/dev_ng/game/vehicleAi/pathfind.h
+@@ -11,8 +11,8 @@
+ #define _PATHFIND_H_
+ 
+ // Game headers
+-#include "debug/debug.h"
+-#include "pathserver/navgenparam.h"
++#include "debug/Debug.h"
++#include "pathserver/NavGenParam.h"
+ #include "fwvehicleai/pathfindtypes.h"
+ 
+ // Rage headers
+@@ -20,7 +20,7 @@
+ #include "file/asset.h"
+ #include "file/stream.h"
+ #include "fwutil/Flags.h"
+-#include "vector/Vector3.h"
++#include "vector/vector3.h"
+ #include "streaming/streamingmodule.h"
+ #include "streaming/streamingmodulemgr.h"
+ #include "system/param.h"

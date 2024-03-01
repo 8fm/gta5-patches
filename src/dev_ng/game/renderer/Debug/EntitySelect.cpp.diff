@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/Debug/EntitySelect.cpp b/src/dev_ng/game/renderer/Debug/EntitySelect.cpp
+--- a/src/dev_ng/game/renderer/Debug/EntitySelect.cpp
++++ b/src/dev_ng/game/renderer/Debug/EntitySelect.cpp
+@@ -49,8 +49,8 @@
+ #include "pickups/Pickup.h"
+ #include "Vehicles/vehicle.h"
+ //Debug Rendering Support
+-#include "Renderer/Util/ShaderUtil.h"
+-#include "Renderer/sprite2d.h"
++#include "renderer/Util/ShaderUtil.h"
++#include "renderer/sprite2d.h"
+ 
+ #if __XENON
+ #include "grcore/texturexenon.h"

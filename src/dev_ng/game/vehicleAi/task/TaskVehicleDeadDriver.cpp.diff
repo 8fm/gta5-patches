@@ -1,15 +1,17 @@
 diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleDeadDriver.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleDeadDriver.cpp
 --- a/src/dev_ng/game/vehicleAi/task/TaskVehicleDeadDriver.cpp
 +++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleDeadDriver.cpp
-@@ -5,9 +5,9 @@
+@@ -4,10 +4,10 @@
+ #include "scene/world/GameWorld.h"
  #include "Vehicles/vehicle.h"
  #include "Vehicles/Planes.h"
- #include "Vehicles/heli.h"
+-#include "Vehicles/heli.h"
 -#include "VehicleAi\task\TaskVehicleFlying.h"
 -#include "VehicleAi\VehicleIntelligence.h"
 -#include "Peds\ped.h"
-+#include "VehicleAi/task/TaskVehicleFlying.h"
-+#include "VehicleAi/VehicleIntelligence.h"
++#include "Vehicles/Heli.h"
++#include "vehicleAi/task/TaskVehicleFlying.h"
++#include "vehicleAi/VehicleIntelligence.h"
 +#include "Peds/ped.h"
  
  AI_OPTIMISATIONS()

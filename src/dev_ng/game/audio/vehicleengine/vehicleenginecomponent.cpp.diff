@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/vehicleengine/vehicleenginecomponent.cpp b/src/dev_ng/game/audio/vehicleengine/vehicleenginecomponent.cpp
+--- a/src/dev_ng/game/audio/vehicleengine/vehicleenginecomponent.cpp
++++ b/src/dev_ng/game/audio/vehicleengine/vehicleenginecomponent.cpp
+@@ -2,7 +2,7 @@
+ #include "audioengine/engine.h"
+ #include "audioengine/category.h"
+ #include "audiosoundtypes/sound.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "audio/caraudioentity.h"
+ #include "profile/group.h"
+ 

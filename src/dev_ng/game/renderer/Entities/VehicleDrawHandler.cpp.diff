@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/renderer/Entities/VehicleDrawHandler.cpp b/src/dev_ng/game/renderer/Entities/VehicleDrawHandler.cpp
+--- a/src/dev_ng/game/renderer/Entities/VehicleDrawHandler.cpp
++++ b/src/dev_ng/game/renderer/Entities/VehicleDrawHandler.cpp
+@@ -16,13 +16,13 @@
+ #include "debug/DebugScene.h"
+ #include "shaders/CustomShaderEffectVehicle.h"
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ #include "Vehicles/vehicle.h"
+ #include "renderer/DrawLists/DrawListProfileStats.h"
+ #include "renderer/render_channel.h"
+-#include "renderer/renderer.h"
++#include "renderer/Renderer.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+-#include "renderer/shadows/shadows.h"
++#include "renderer/Shadows/Shadows.h"
+ #include "renderer/OcclusionQueries.h"
+ 
+ RENDER_OPTIMISATIONS()

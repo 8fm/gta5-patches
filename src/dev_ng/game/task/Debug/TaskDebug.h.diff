@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Debug/TaskDebug.h b/src/dev_ng/game/task/Debug/TaskDebug.h
+--- a/src/dev_ng/game/task/Debug/TaskDebug.h
++++ b/src/dev_ng/game/task/Debug/TaskDebug.h
+@@ -4,7 +4,7 @@
+ #if !__FINAL
+ 
+ // Game headers
+-#include "Task/Weapons/Gun/TaskAimGun.h"
++#include "task/Weapons/Gun/TaskAimGun.h"
+ //////////////////////////////////////////////////////////////////////////
+ // CTaskTestClipDistance
+ //////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/scripted/BaseSplineCamera.cpp b/src/dev_ng/game/camera/scripted/BaseSplineCamera.cpp
+--- a/src/dev_ng/game/camera/scripted/BaseSplineCamera.cpp
++++ b/src/dev_ng/game/camera/scripted/BaseSplineCamera.cpp
+@@ -15,7 +15,7 @@
+ #include "camera/CamInterface.h"
+ #include "camera/scripted/ScriptDirector.h"
+ 
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ 
+ #include "fwsys/timer.h"
+ 

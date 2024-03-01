@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/zonedassetmanager.cpp b/src/dev_ng/game/streaming/zonedassetmanager.cpp
+--- a/src/dev_ng/game/streaming/zonedassetmanager.cpp
++++ b/src/dev_ng/game/streaming/zonedassetmanager.cpp
+@@ -13,7 +13,7 @@
+ #include "entity/archetypemanager.h"
+ #include "file/asset.h"
+ #include "fwsys/gameskeleton.h"
+-#include "modelinfo/modelinfo.h"
++#include "modelinfo/ModelInfo.h"
+ #include "streaming/streaming_channel.h"
+ #include "streaming/streamingengine.h"
+ 

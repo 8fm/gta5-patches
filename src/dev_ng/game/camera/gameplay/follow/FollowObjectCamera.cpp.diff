@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/gameplay/follow/FollowObjectCamera.cpp b/src/dev_ng/game/camera/gameplay/follow/FollowObjectCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/follow/FollowObjectCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/follow/FollowObjectCamera.cpp
+@@ -8,7 +8,7 @@
+ 
+ #include "camera/CamInterface.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

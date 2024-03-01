@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/network/General/NetworkDamageTracker.cpp b/src/dev_ng/game/network/General/NetworkDamageTracker.cpp
+--- a/src/dev_ng/game/network/General/NetworkDamageTracker.cpp
++++ b/src/dev_ng/game/network/General/NetworkDamageTracker.cpp
+@@ -15,16 +15,16 @@
+ 
+ #include "debug/DebugScene.h"
+ #include "modelinfo/PedModelInfo.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "network/objects/entities/NetObjObject.h"
+-#include "network/objects/entities/NetObjPed.h"
+-#include "network/objects/entities/NetObjVehicle.h"
+-#include "peds/pedintelligence.h"
+-#include "peds/ped.h"
+-#include "vehicles/vehicle.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "network/Objects/Entities/NetObjObject.h"
++#include "network/Objects/Entities/NetObjPed.h"
++#include "network/Objects/Entities/NetObjVehicle.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Vehicles/vehicle.h"
+ #include "weapons/info/WeaponInfoManager.h"
+-#include "peds/pedDefines.h"
++#include "Peds/pedDefines.h"
+ 
+ 
+ NETWORK_OPTIMISATIONS()

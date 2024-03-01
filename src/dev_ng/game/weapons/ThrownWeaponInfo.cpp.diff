@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/weapons/ThrownWeaponInfo.cpp b/src/dev_ng/game/weapons/ThrownWeaponInfo.cpp
+--- a/src/dev_ng/game/weapons/ThrownWeaponInfo.cpp
++++ b/src/dev_ng/game/weapons/ThrownWeaponInfo.cpp
+@@ -1,5 +1,5 @@
+ // Class header
+-#include "Weapons/ThrownWeaponInfo.h"
++#include "weapons/ThrownWeaponInfo.h"
+ 
+ // Rage headers
+ #include "parser/manager.h"
+@@ -7,11 +7,11 @@
+ // Game headers
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+-#include "Objects/Object.h"
+-#include "Peds/Ped.h"
+-#include "Scene/DataFileMgr.h"
++#include "Objects/object.h"
++#include "Peds/ped.h"
++#include "scene/DataFileMgr.h"
+ #include "scene/world/GameWorld.h"
+-#include "Weapons/WeaponDebug.h"
++#include "weapons/WeaponDebug.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

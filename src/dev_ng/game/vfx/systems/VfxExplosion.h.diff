@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxExplosion.h b/src/dev_ng/game/vfx/systems/VfxExplosion.h
+--- a/src/dev_ng/game/vfx/systems/VfxExplosion.h
++++ b/src/dev_ng/game/vfx/systems/VfxExplosion.h
+@@ -22,10 +22,10 @@
+ #include "vectormath/classes.h"
+ 
+ // game
+-#include "Physics/WaterTestHelper.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Weapons/WeaponEnums.h"
+-#include "Weapons/ExplosionInst.h"
++#include "physics/WaterTestHelper.h"
++#include "scene/RegdRefTypes.h"
++#include "weapons/WeaponEnums.h"
++#include "weapons/ExplosionInst.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.cpp b/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.cpp
+--- a/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.cpp
++++ b/src/dev_ng/game/network/Arrays/NetworkArrayHandlerTypes.cpp
+@@ -8,7 +8,7 @@
+ #include "data/bitbuffer.h"
+ 
+ // framework includes
+-#include "fwscript/scriptHandler.h"
++#include "fwscript/scripthandler.h"
+ #include "fwscript/scriptinterface.h"
+ #include "fwutil/KeyGen.h"
+ 
+@@ -16,14 +16,14 @@
+ #include "event/EventGroup.h"
+ #include "event/EventNetwork.h"
+ #include "frontend/PauseMenu.h"
+-#include "network/arrays/NetworkArrayHandlerTypes.h"
++#include "network/Arrays/NetworkArrayHandlerTypes.h"
+ #include "network/General/NetworkPendingProjectiles.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Arrays/NetworkArrayMgr.h"
+-#include "network/events/NetworkEventTypes.h"
+-#include "Network/Objects/NetworkObjectMgr.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "network/NetworkInterface.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/Objects/NetworkObjectMgr.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "scene/world/GameWorld.h"
+ #include "script/Handlers/GameScriptHandlerNetwork.h"
+ #include "script/Handlers/GameScriptResources.h"

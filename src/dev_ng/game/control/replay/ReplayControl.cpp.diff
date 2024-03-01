@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayControl.cpp b/src/dev_ng/game/control/replay/ReplayControl.cpp
+--- a/src/dev_ng/game/control/replay/ReplayControl.cpp
++++ b/src/dev_ng/game/control/replay/ReplayControl.cpp
+@@ -3,15 +3,15 @@
+ #if GTA_REPLAY
+ 
+ #include "control/gamelogic.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/ReplayBufferMarker.h"
+ #include "control/replay/ReplayInternal.h"
+ #include "control/replay/ReplayRecording.h"
+ #include "frontend/GameStreamMgr.h"
+ #include "frontend/ProfileSettings.h"
+ #include "Peds/PlayerInfo.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/playerswitch/PlayerSwitchInterface.h"
+ #include "system/controlMgr.h"

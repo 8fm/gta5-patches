@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.h b/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.h
 --- a/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.h
 +++ b/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.h
-@@ -6,7 +6,7 @@
+@@ -6,10 +6,10 @@
  #include "streaming/streamingrequest.h"
  
  // game includes
@@ -9,4 +9,8 @@ diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimSceneEvents.h b/src/
 +#include "animation/AnimScene/AnimScene.h"
  #include "animation/AnimScene/AnimSceneEvent.h"
  #include "animation/AnimScene/AnimSceneHelpers.h"
- #include "peds/PedMotionState.h"
+-#include "peds/PedMotionState.h"
++#include "Peds/PedMotionState.h"
+ //////////////////////////////////////////////////////////////////////////
+ // Ped control
+ //////////////////////////////////////////////////////////////////////////

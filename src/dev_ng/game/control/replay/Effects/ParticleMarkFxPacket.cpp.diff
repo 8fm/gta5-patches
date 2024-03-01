@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleMarkFxPacket.cpp
+@@ -8,7 +8,7 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "scene/Physical.h"
+ #include "control/replay/ReplayInternal.h"

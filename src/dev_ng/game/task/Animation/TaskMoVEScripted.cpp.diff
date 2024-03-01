@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/task/Animation/TaskMoVEScripted.cpp b/src/dev_ng/game/task/Animation/TaskMoVEScripted.cpp
+--- a/src/dev_ng/game/task/Animation/TaskMoVEScripted.cpp
++++ b/src/dev_ng/game/task/Animation/TaskMoVEScripted.cpp
+@@ -1,4 +1,4 @@
+-#include "Task/Animation/TaskMoVEScripted.h"
++#include "task/Animation/TaskMoVEScripted.h"
+ 
+ // Rage headers
+ #include "crclip/clip.h"
+@@ -10,10 +10,10 @@
+ // Game headers
+ #include "animation/AnimManager.h"
+ #include "animation/MovePed.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Animation/TaskAnims.h"
+-#include "Task/System/Task.h"
++#include "task/Animation/TaskAnims.h"
++#include "task/System/Task.h"
+ 
+ AI_OPTIMISATIONS()
+ 

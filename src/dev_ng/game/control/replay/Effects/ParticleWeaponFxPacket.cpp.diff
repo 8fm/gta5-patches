@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleWeaponFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleWeaponFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleWeaponFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleWeaponFxPacket.cpp
+@@ -8,16 +8,16 @@
+ 
+ #include "control/replay/ReplayInternal.h"
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "objects/object.h"
++#include "Objects/object.h"
+ #include "modelinfo/WeaponModelInfo.h"
+ #include "renderer/RenderPhases/RenderPhaseFX.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "vfx/ptfx/ptfxattach.h"
+ #include "vfx/ptfx/ptfxhistory.h"
+ #include "vfx/ptfx/ptfxwrapper.h"
+-#include "Weapons/Components/WeaponComponentFlashLight.h"
+-#include "Weapons/Weapon.h"
++#include "weapons/components/WeaponComponentFlashLight.h"
++#include "weapons/Weapon.h"
+ 
+ 
+ 

@@ -1,0 +1,53 @@
+diff --git a/src/dev_ng/game/frontend/Store/StoreScreenMgr.cpp b/src/dev_ng/game/frontend/Store/StoreScreenMgr.cpp
+--- a/src/dev_ng/game/frontend/Store/StoreScreenMgr.cpp
++++ b/src/dev_ng/game/frontend/Store/StoreScreenMgr.cpp
+@@ -1,23 +1,23 @@
+-#include "Frontend/Store/StoreScreenMgr.h"
+-
+-#include "Frontend/BusySpinner.h"
+-#include "Frontend/MiniMap.h"
+-#include "Frontend/NewHud.h"
+-#include "Frontend/Store/StoreAdvertScreen.h"
+-#include "Frontend/Store/StoreMainScreen.h"
+-#include "Frontend/Store/StoreTextureManager.h"
+-#include "Frontend/Store/StoreUIChannel.h"
++#include "frontend/Store/StoreScreenMgr.h"
++
++#include "frontend/BusySpinner.h"
++#include "frontend/MiniMap.h"
++#include "frontend/NewHud.h"
++#include "frontend/Store/StoreAdvertScreen.h"
++#include "frontend/Store/StoreMainScreen.h"
++#include "frontend/Store/StoreTextureManager.h"
++#include "frontend/Store/StoreUIChannel.h"
+ #include "frontend/landing_page/LandingPage.h"
+-#include "Game/User.h"
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/Live/livemanager.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "System/controlMgr.h"
+-#include "Text/TextConversion.h"
+-#include "Vfx/Misc/MovieManager.h"
++#include "game/user.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/Live/livemanager.h"
++#include "network/Sessions/NetworkSession.h"
++#include "system/controlMgr.h"
++#include "text/TextConversion.h"
++#include "vfx/misc/MovieManager.h"
+ #include "fwcommerce/CommerceUtil.h"
+ #include "optimisations.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/world/GameWorld.h"
+ #include "Stats/MoneyInterface.h"
+ #include "Stats/StatsInterface.h"
+@@ -25,7 +25,7 @@
+ #include "streaming/streaming.h"
+ #include "system/FileMgr.h"
+ #include "text/messages.h"
+-#include "Network/NetworkInterface.h"
++#include "network/NetworkInterface.h"
+ 
+ PARAM(leavempforstore, "The store will cause the player to leave mp sessions.");
+ PARAM(storeInitialProductId, "Initial Item to Highlight in the Store");

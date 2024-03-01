@@ -22,7 +22,7 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Immediate.cpp b/src/dev_ng/ga
 -#include "fwmaths\random.h"
 -#include "fwmaths\vector.h"
 +#include "fwmaths/random.h"
-+#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
  
  #ifdef GTA_ENGINE
  AI_NAVIGATION_OPTIMISATIONS()

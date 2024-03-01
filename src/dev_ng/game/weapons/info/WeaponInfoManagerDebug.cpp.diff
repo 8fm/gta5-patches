@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/weapons/info/WeaponInfoManagerDebug.cpp b/src/dev_ng/game/weapons/info/WeaponInfoManagerDebug.cpp
+--- a/src/dev_ng/game/weapons/info/WeaponInfoManagerDebug.cpp
++++ b/src/dev_ng/game/weapons/info/WeaponInfoManagerDebug.cpp
+@@ -7,21 +7,21 @@
+ #if __BANK // Only in __BANK builds
+ 
+ // Class header
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "weapons/info/WeaponInfoManager.h"
+ 
+ // Rage headers
+ #include "bank/bank.h"
+ #include "parser/manager.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedDebugVisualiser.h"
+-#include "Weapons/Info/AmmoInfo.h"
+-#include "Weapons/Info/WeaponInfo.h"
+-#include "Weapons/Inventory/PedInventoryLoadOut.h"
+-#include "Weapons/WeaponDebug.h"
+-#include "Scene/EntityIterator.h"
+-#include "Scene/World/GameWorld.h"
++#include "weapons/info/AmmoInfo.h"
++#include "weapons/info/WeaponInfo.h"
++#include "weapons/inventory/PedInventoryLoadOut.h"
++#include "weapons/WeaponDebug.h"
++#include "scene/EntityIterator.h"
++#include "scene/world/GameWorld.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

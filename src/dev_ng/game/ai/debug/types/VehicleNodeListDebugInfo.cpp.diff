@@ -1,14 +1,16 @@
 diff --git a/src/dev_ng/game/ai/debug/types/VehicleNodeListDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/VehicleNodeListDebugInfo.cpp
 --- a/src/dev_ng/game/ai/debug/types/VehicleNodeListDebugInfo.cpp
 +++ b/src/dev_ng/game/ai/debug/types/VehicleNodeListDebugInfo.cpp
-@@ -1,8 +1,8 @@
+@@ -1,9 +1,9 @@
 -#include "ai\debug\types\VehicleNodeListDebugInfo.h"
 +#include "ai/debug/types/VehicleNodeListDebugInfo.h"
  
  #if AI_DEBUG_OUTPUT_ENABLED
  
 -#include "vehicleAi\VehicleIntelligence.h"
+-#include "Task/System/TaskHelpers.h"
 +#include "vehicleAi/VehicleIntelligence.h"
- #include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
  
  CVehicleNodeListDebugInfo::CVehicleNodeListDebugInfo(const CVehicle* pVeh, DebugInfoPrintParams printParams, s32 iNumberOfLines)
+ : CVehicleDebugInfo(pVeh, printParams, iNumberOfLines)

@@ -1,0 +1,10 @@
+diff --git a/src/dev_ng/game/weapons/inventory/InventoryItemRepository.cpp b/src/dev_ng/game/weapons/inventory/InventoryItemRepository.cpp
+--- a/src/dev_ng/game/weapons/inventory/InventoryItemRepository.cpp
++++ b/src/dev_ng/game/weapons/inventory/InventoryItemRepository.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Weapons/Inventory/InventoryItemRepository.h"
++#include "weapons/inventory/InventoryItemRepository.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

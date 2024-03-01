@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/System/TaskComplex.cpp b/src/dev_ng/game/task/System/TaskComplex.cpp
 --- a/src/dev_ng/game/task/System/TaskComplex.cpp
 +++ b/src/dev_ng/game/task/System/TaskComplex.cpp
-@@ -7,7 +7,7 @@
+@@ -7,15 +7,15 @@
  //				But the final task should always be a simple task.
  
  // Framework headers
@@ -10,3 +10,15 @@ diff --git a/src/dev_ng/game/task/System/TaskComplex.cpp b/src/dev_ng/game/task/
  
  
  // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/DynamicEntity.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/TaskGoTo.h"
++#include "scene/DynamicEntity.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/TaskGoTo.h"
+ 
+ AI_OPTIMISATIONS()
+ 

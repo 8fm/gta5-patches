@@ -1,0 +1,50 @@
+diff --git a/src/dev_ng/game/Vehicles/door.cpp b/src/dev_ng/game/Vehicles/door.cpp
+--- a/src/dev_ng/game/Vehicles/door.cpp
++++ b/src/dev_ng/game/Vehicles/door.cpp
+@@ -12,7 +12,7 @@
+ 
+ // Framework headers
+ #include "fwmaths/angle.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ // Game headers
+ #include "animation/AnimBones.h"
+@@ -21,26 +21,26 @@
+ #include "camera/Gameplay/GameplayDirector.h"
+ #include "camera/cinematic/CinematicDirector.h"
+ #include "game/ModelIndices.h"
+-#include "modelInfo/vehicleModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "modelinfo/VehicleModelInfoExtensions.h"
+ #include "pathserver/PathServer.h"
+ #include "physics/gtaInst.h"
+ #include "physics/gtaMaterialManager.h"
+ #include "physics/physics.h"
+-#include "vehicles/Heli.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/automobile.h"
+-#include "vehicles/door.h"
+-#include "vehicles/vehicle_channel.h"
+-#include "Vfx/VehicleGlass/VehicleGlassManager.h"
+-#include "task/vehicle/TaskVehicleBase.h"
+-#include "task/vehicle/TaskEnterVehicle.h"
++#include "Vehicles/Heli.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/door.h"
++#include "Vehicles/vehicle_channel.h"
++#include "vfx/VehicleGlass/VehicleGlassManager.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
+ #include "script/script.h"
+ #include "control/replay/ReplaySettings.h"
+ 
+ // network headers
+-#include "network/events/NetworkEventTypes.h"
++#include "network/Events/NetworkEventTypes.h"
+ 
+ ENTITY_OPTIMISATIONS()
+ VEHICLE_OPTIMISATIONS()

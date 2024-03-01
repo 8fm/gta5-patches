@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/gameplay/aim/ThirdPersonAimCamera.cpp b/src/dev_ng/game/camera/gameplay/aim/ThirdPersonAimCamera.cpp
+--- a/src/dev_ng/game/camera/gameplay/aim/ThirdPersonAimCamera.cpp
++++ b/src/dev_ng/game/camera/gameplay/aim/ThirdPersonAimCamera.cpp
+@@ -20,8 +20,8 @@
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraManager.h"
+ #include "camera/system/CameraMetadata.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerInfo.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerInfo.h"
+ #include "weapons/info/WeaponInfo.h"
+ 
+ CAMERA_OPTIMISATIONS()

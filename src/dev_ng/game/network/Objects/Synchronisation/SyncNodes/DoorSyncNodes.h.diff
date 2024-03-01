@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.h b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.h
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.h
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/DoorSyncNodes.h
+@@ -6,7 +6,7 @@
+ #ifndef DOOR_SYNC_NODES_H
+ #define DOOR_SYNC_NODES_H
+ 
+-#include "network/objects/synchronisation/SyncNodes/PhysicalSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PhysicalSyncNodes.h"
+ 
+ class CDoorCreationDataNode;
+ class CDoorScriptInfoDataNode;

@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.h b/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.h
+--- a/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.h
++++ b/src/dev_ng/game/task/Combat/Cover/TaskSeekCover.h
+@@ -6,11 +6,11 @@
+ #ifndef TASK_SEEK_COVER_H
+ #define TASK_SEEK_COVER_H
+ 
+-#include "fwtl/pool.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Scene/RefMacros.h"
+-#include "Scene/Entity.h"
++#include "fwtl/Pool.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "scene/RefMacros.h"
++#include "scene/Entity.h"
+ 
+ // Class forward declarations
+ class CCoverPoint;

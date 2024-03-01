@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/dynamicmixmodules.cpp b/src/dev_ng/game/audio/dynamicmixmodules.cpp
+--- a/src/dev_ng/game/audio/dynamicmixmodules.cpp
++++ b/src/dev_ng/game/audio/dynamicmixmodules.cpp
+@@ -3,7 +3,7 @@
+ #include "scriptaudioentity.h"
+ #include "vehiclecollisionaudio.h"
+ 
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ #include "scene/world/GameWorld.h"
+ 
+ #include "debugaudio.h"

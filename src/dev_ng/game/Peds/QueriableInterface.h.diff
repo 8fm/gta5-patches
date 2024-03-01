@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/Peds/QueriableInterface.h b/src/dev_ng/game/Peds/QueriableInterface.h
+--- a/src/dev_ng/game/Peds/QueriableInterface.h
++++ b/src/dev_ng/game/Peds/QueriableInterface.h
+@@ -12,19 +12,19 @@
+ #include "fwnet/netserialisers.h"
+ 
+ // Game headers
+-//#include "animation\AnimIds.h"
++//#include "animation/AnimIds.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ #include "network/NetworkInterface.h"
+ #include "network/General/NetworkSerialisers.h"
+ #include "scene/RegdRefTypes.h"
+-#include "fwtl/pool.h"
+-#include "Script/ScriptTaskTypes.h"
+-#include "Task/System/TaskManager.h"
+-#include "task/system/TaskTypes.h"
+-#include "Task/System/TaskClassInfo.h"
+-#include "fwtl/pool.h"
+-#include "peds/pedDefines.h"
+-#include "network/general/NetworkUtil.h"
++#include "fwtl/Pool.h"
++#include "script/ScriptTaskTypes.h"
++#include "task/System/TaskManager.h"
++#include "task/System/TaskTypes.h"
++#include "task/System/TaskClassInfo.h"
++#include "fwtl/Pool.h"
++#include "Peds/pedDefines.h"
++#include "network/General/NetworkUtil.h"
+ #include "system/poolallocator.h"
+ 
+ #define MAX_TASK_INFOS_PER_PED (8)

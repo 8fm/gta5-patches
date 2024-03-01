@@ -14,12 +14,12 @@ diff --git a/src/dev_ng/game/debug/Editing/CutsceneEditing.cpp b/src/dev_ng/game
 -#include "cutscene\CutSceneManagerNew.h"
 -#include "cutscene\cutsmanager.h"
 +#include "Bank/Console.h"
-+#include "Cutscene/CutSceneLightEntity.h"
-+#include "Debug/Editing/CommonEditing.h"
-+#include "Debug/Editing/CutsceneEditing.h"
++#include "cutscene/CutSceneLightEntity.h"
++#include "debug/Editing/CommonEditing.h"
++#include "debug/Editing/CutsceneEditing.h"
 +
 +#include "cutfile/Cutfdefines.h"
-+#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
 +#include "cutscene/cutsmanager.h"
  
  RENDER_OPTIMISATIONS()

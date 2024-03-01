@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Response/Info/AgitatedState.cpp b/src/dev_ng/game/task/Response/Info/AgitatedState.cpp
+--- a/src/dev_ng/game/task/Response/Info/AgitatedState.cpp
++++ b/src/dev_ng/game/task/Response/Info/AgitatedState.cpp
+@@ -1,8 +1,8 @@
+ // File header
+-#include "Task/Response/Info/AgitatedState.h"
++#include "task/Response/Info/AgitatedState.h"
+ 
+ // Game headers
+-#include "Task/Response/Info/AgitatedActions.h"
++#include "task/Response/Info/AgitatedActions.h"
+ 
+ AI_OPTIMISATIONS()
+ 

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/Peds/WildlifeManager.h b/src/dev_ng/game/Peds/WildlifeManager.h
+--- a/src/dev_ng/game/Peds/WildlifeManager.h
++++ b/src/dev_ng/game/Peds/WildlifeManager.h
+@@ -9,9 +9,9 @@
+ 
+ #include "modelinfo/PedModelInfo.h"
+ #include "physics/WorldProbe/shapetestresults.h"
+-#include "Task/System/AsyncProbeHelper.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/AsyncProbeHelper.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/Tuning.h"
+  
+ namespace rage
+ {

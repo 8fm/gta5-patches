@@ -1,0 +1,61 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.cpp b/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/TaskLadderClimb.cpp
+@@ -9,40 +9,40 @@
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+-#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
+ #include "fwmaths/Vector.h"
+ 
+ // Game headers
+ #include "ai/EntityScanner.h"
+-#include "Animation/MovePed.h"
++#include "animation/MovePed.h"
+ #include "camera/CamInterface.h"
+ #include "camera/helpers/frame.h"
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "Task/Movement/Climbing/TaskLadderClimb.h"
++#include "task/Movement/Climbing/TaskLadderClimb.h"
+ #include "Peds/PedCapsule.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Movement/Climbing/Ladders/LadderMetadataManager.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Movement/climbing/TaskGoToAndClimbLadder.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Movement/TaskGoTo.h"
+-#include "Task/Movement/TaskNavBase.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Movement/TaskSlideToCoord.h"
+-#include "Task/Animation/TaskAnims.h"
++#include "task/Movement/Climbing/Ladders/LadderMetadataManager.h"
++#include "task/General/TaskBasic.h"
++#include "task/Movement/Climbing/TaskGoToAndClimbLadder.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Movement/TaskGoTo.h"
++#include "task/Movement/TaskNavBase.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Movement/TaskSlideToCoord.h"
++#include "task/Animation/TaskAnims.h"
+ #include "Peds/PedDebugVisualiser.h"
+ #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendManager.h"
+-#include "Peds/Ped.h"
+-#include "Physics/gtaInst.h"
+-#include "Physics/Physics.h"
+-#include "physics/WorldProbe/worldprobe.h"
++#include "Peds/ped.h"
++#include "physics/gtaInst.h"
++#include "physics/physics.h"
++#include "physics/WorldProbe/WorldProbe.h"
+ #include "scene/world/GameWorld.h"
+ #include "Stats/StatsInterface.h"
+ #include "fwscene/search/SearchVolumes.h"
+ #include "debug/DebugScene.h"
+-#include "Task/Default/TaskPlayer.h"
++#include "task/Default/TaskPlayer.h"
+ 
+ ANIM_OPTIMISATIONS()
+ AI_OPTIMISATIONS()

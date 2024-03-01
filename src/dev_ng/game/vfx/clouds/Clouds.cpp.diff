@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/game/vfx/clouds/Clouds.cpp b/src/dev_ng/game/vfx/clouds/Clouds.cpp
+--- a/src/dev_ng/game/vfx/clouds/Clouds.cpp
++++ b/src/dev_ng/game/vfx/clouds/Clouds.cpp
+@@ -12,12 +12,12 @@
+ // game
+ #include "Core/Game.h"
+ #include "timecycle/TimeCycle.h"
+-#include "Vfx/clouds/CloudHat.h"
+-#include "Vfx/clouds/CloudHatSettings.h"
+-#include "Vfx/clouds/CloudSettingsMap.h"
+-#include "Vfx/sky/Sky.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "vfx/clouds/CloudHat.h"
++#include "vfx/clouds/CloudHatSettings.h"
++#include "vfx/clouds/CloudSettingsMap.h"
++#include "vfx/sky/Sky.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "renderer/rendertargets.h"
+ 
+ #include "game/weather.h"

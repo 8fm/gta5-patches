@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/weapons/inventory/InventoryItemPool.cpp b/src/dev_ng/game/weapons/inventory/InventoryItemPool.cpp
+--- a/src/dev_ng/game/weapons/inventory/InventoryItemPool.cpp
++++ b/src/dev_ng/game/weapons/inventory/InventoryItemPool.cpp
+@@ -1,11 +1,11 @@
+ // File header
+-#include "Weapons/Inventory/InventoryItem.h"
++#include "weapons/inventory/InventoryItem.h"
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedFactory.h"
+-#include "Weapons/Inventory/AmmoItem.h"
+-#include "Weapons/Inventory/WeaponItem.h"
++#include "weapons/inventory/AmmoItem.h"
++#include "weapons/inventory/WeaponItem.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

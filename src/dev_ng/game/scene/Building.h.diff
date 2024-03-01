@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/Building.h b/src/dev_ng/game/scene/Building.h
+--- a/src/dev_ng/game/scene/Building.h
++++ b/src/dev_ng/game/scene/Building.h
+@@ -5,7 +5,7 @@
+ #ifndef _BUILDING_H_
+ #define _BUILDING_H_
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "scene/Entity.h"
+ 
+ #define NUM_MULTI_MODELINDICES	200

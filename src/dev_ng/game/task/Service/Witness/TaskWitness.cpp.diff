@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Service/Witness/TaskWitness.cpp b/src/dev_ng/game/task/Service/Witness/TaskWitness.cpp
+--- a/src/dev_ng/game/task/Service/Witness/TaskWitness.cpp
++++ b/src/dev_ng/game/task/Service/Witness/TaskWitness.cpp
+@@ -6,7 +6,7 @@
+ #include "task/Combat/TaskSearch.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedGeometryAnalyser.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "system/nelem.h"
+ 
+ AI_OPTIMISATIONS()

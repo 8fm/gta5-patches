@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkDebugTelemetry.cpp b/src/dev_ng/game/network/Live/NetworkDebugTelemetry.cpp
+--- a/src/dev_ng/game/network/Live/NetworkDebugTelemetry.cpp
++++ b/src/dev_ng/game/network/Live/NetworkDebugTelemetry.cpp
+@@ -22,10 +22,10 @@
+ #include "fwdrawlist/drawlistmgr.h"
+ #include "entity/archetypemanager.h"
+ #include "NetworkDebugTelemetry.h"
+-#include "Network/Live/NetworkTelemetry.h"
++#include "network/Live/NetworkTelemetry.h"
+ #include "optimisations.h"
+ 
+-#include "scene/animatedbuilding.h"
++#include "scene/AnimatedBuilding.h"
+ #include "scene/scene.h"
+ #include "scene/LoadScene.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+@@ -34,11 +34,10 @@
+ #include "Cutscene/CutSceneManagerNew.h"
+ #include "Peds/ped.h"
+ #include "game/Clock.h"
+-#include "cutscene/CutSceneManagerNew.h"
+ 
+ #include "renderer/PostScan.h"
+ 
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+ #include "script/script.h"
+ 
+ #if _METRICS_ENABLE_CLIPS

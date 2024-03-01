@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.h b/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.h
+--- a/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.h
++++ b/src/dev_ng/game/ik/solvers/TorsoVehicleSolver.h
+@@ -17,12 +17,12 @@
+ 
+ #include "crbody/iksolverbase.h"
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "vectormath/quatv.h"
+ #include "vectormath/vec3v.h"
+ #include "vectormath/vec4v.h"
+ 
+-#include "Animation/debug/AnimDebug.h"
++#include "animation/debug/AnimDebug.h"
+ #include "ik/IkConfig.h"
+ 
+ class CIkRequestTorsoVehicle;

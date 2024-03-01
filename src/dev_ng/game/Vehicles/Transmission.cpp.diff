@@ -1,0 +1,46 @@
+diff --git a/src/dev_ng/game/Vehicles/Transmission.cpp b/src/dev_ng/game/Vehicles/Transmission.cpp
+--- a/src/dev_ng/game/Vehicles/Transmission.cpp
++++ b/src/dev_ng/game/Vehicles/Transmission.cpp
+@@ -11,18 +11,18 @@
+ #include "control/record.h"
+ #include "event/EventShocking.h"
+ #include "event/ShockingEvents.h"
+-#include "peds/ped.h"
+-#include "renderer/water.h"
+-#include "vehicles/AmphibiousAutomobile.h"
+-#include "vehicles/Planes.h"
+-#include "vehicles/transmission.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehiclepopulation.h"
++#include "Peds/ped.h"
++#include "renderer/Water.h"
++#include "Vehicles/AmphibiousAutomobile.h"
++#include "Vehicles/Planes.h"
++#include "Vehicles/Transmission.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehiclepopulation.h"
+ #include "crskeleton/skeleton.h"
+-#include "vehicles/handlingMgr.h"
++#include "Vehicles/handlingMgr.h"
+ #include "Audio/caraudioentity.h"
+ #include "system/controlMgr.h"
+-#include "Frontend/NewHud.h"
++#include "frontend/NewHud.h"
+ 
+ #include "network/NetworkInterface.h"
+ #include "network/General/NetworkUtil.h"
+@@ -32,12 +32,12 @@
+ #include "renderer/PostProcessFXHelper.h"
+ 
+ #if __BANK
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "grprofile/timebars.h"
+ #include "timecycle/TimeCycle.h"
+ #endif
+ //#if __BANK
+-//	#include "text\text.h"
++//	#include "text/text.h"
+ //#endif
+ 
+ VEHICLE_OPTIMISATIONS()

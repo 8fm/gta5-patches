@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Lights/LODLights.h b/src/dev_ng/game/renderer/Lights/LODLights.h
+--- a/src/dev_ng/game/renderer/Lights/LODLights.h
++++ b/src/dev_ng/game/renderer/Lights/LODLights.h
+@@ -11,7 +11,7 @@
+ // framework
+ 
+ // game 
+-#include "Renderer/Renderer.h"
++#include "renderer/Renderer.h"
+ #include "renderer/Lights/LightSource.h"
+ #include "renderer/ProcessLodLightVisibility.h"
+ #include "vfx/misc/LODLightManager.h"

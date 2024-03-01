@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Helpers/TaskConversationHelper.cpp b/src/dev_ng/game/task/Helpers/TaskConversationHelper.cpp
+--- a/src/dev_ng/game/task/Helpers/TaskConversationHelper.cpp
++++ b/src/dev_ng/game/task/Helpers/TaskConversationHelper.cpp
+@@ -1,8 +1,8 @@
+ #include "TaskConversationHelper.h"
+ 
+-#include "Event/EventShocking.h"
++#include "event/EventShocking.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ 
+ AI_OPTIMISATIONS()
+ //OPTIMISATIONS_OFF()

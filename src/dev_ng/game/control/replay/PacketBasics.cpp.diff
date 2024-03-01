@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/control/replay/PacketBasics.cpp b/src/dev_ng/game/control/replay/PacketBasics.cpp
+--- a/src/dev_ng/game/control/replay/PacketBasics.cpp
++++ b/src/dev_ng/game/control/replay/PacketBasics.cpp
+@@ -6,13 +6,13 @@
+ #include "camera/replay/ReplayDirector.h"
+ #include "camera/viewports/Viewport.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/replayinteriormanager.h"
+ #include "control/replay/ReplayInternal.h"
+ #include "scene/world/GameWorld.h"
+ #include "scene/Physical.h"
+ #include "string/stringhash.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "fwdebug/picker.h"
+ 
+ 

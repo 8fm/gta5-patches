@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/CinematicOnFootAssistedAimingShot.cpp b/src/dev_ng/game/camera/cinematic/shot/CinematicOnFootAssistedAimingShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/CinematicOnFootAssistedAimingShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/CinematicOnFootAssistedAimingShot.cpp
+@@ -9,8 +9,8 @@
+ #include "camera/cinematic/camera/tracking/CinematicTwoShotCamera.h"
+ #include "camera/gameplay/aim/ThirdPersonAimCamera.h"
+ #include "camera/gameplay/aim/ThirdPersonPedAssistedAimCamera.h"
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicOnFootAssistedAimingKillShot,0x476D8FD2)
+ INSTANTIATE_RTTI_CLASS(camCinematicOnFootAssistedAimingReactionShot,0x95AB8297)

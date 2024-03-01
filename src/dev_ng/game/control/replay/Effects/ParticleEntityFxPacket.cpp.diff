@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleEntityFxPacket.cpp b/src/dev_ng/game/control/replay/Effects/ParticleEntityFxPacket.cpp
+--- a/src/dev_ng/game/control/replay/Effects/ParticleEntityFxPacket.cpp
++++ b/src/dev_ng/game/control/replay/Effects/ParticleEntityFxPacket.cpp
+@@ -14,7 +14,7 @@
+ #include "vfx/ptfx/ptfxhistory.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ #include "vfx/VfxHelper.h"
+-#include "scene/physical.h"
++#include "scene/Physical.h"
+ #include "control/replay/Compression/Quantization.h"
+ 
+ CPacketEntityAmbientFx::CPacketEntityAmbientFx(const CParticleAttr* pPtFxAttr, s32 effectId, bool isTrigger)

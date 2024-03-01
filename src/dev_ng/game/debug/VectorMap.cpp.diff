@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/debug/VectorMap.cpp b/src/dev_ng/game/debug/VectorMap.cpp
+--- a/src/dev_ng/game/debug/VectorMap.cpp
++++ b/src/dev_ng/game/debug/VectorMap.cpp
+@@ -4,7 +4,7 @@
+ // AUTHOR(s) :  Obbe, Adam Croston
+ // CREATED : 31/08/06
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "debug/vectormap.h"
++#include "debug/VectorMap.h"
+ 
+ // Rage headers
+ #include "math/vecMath.h"
+@@ -15,16 +15,16 @@
+ 
+ // Game headers
+ #include "scene/scene.h"
+-#include "scene/world/gameWorld.h"
+-#include "debug/debugscene.h"
+-#include "peds/ped.h"
++#include "scene/world/GameWorld.h"
++#include "debug/DebugScene.h"
++#include "Peds/ped.h"
+ #include "camera/CamInterface.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/Viewports/Viewport.h"  
+-#include "vehicles/train.h" 
+-#include "vehicles/cargen.h" 
+-#include "Vfx/Misc/DistantLights.h" 
++#include "Vehicles/train.h" 
++#include "Vehicles/cargen.h" 
++#include "vfx/misc/DistantLights.h" 
+ 
+ AI_OPTIMISATIONS()
+ 

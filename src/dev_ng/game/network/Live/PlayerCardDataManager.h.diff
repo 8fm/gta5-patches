@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Live/PlayerCardDataManager.h b/src/dev_ng/game/network/Live/PlayerCardDataManager.h
+--- a/src/dev_ng/game/network/Live/PlayerCardDataManager.h
++++ b/src/dev_ng/game/network/Live/PlayerCardDataManager.h
+@@ -21,8 +21,8 @@
+ #include "vector/color32.h"
+ 
+ // game
+-#include "Frontend/hud_colour.h"
+-#include "Frontend/SimpleTimer.h"
++#include "frontend/hud_colour.h"
++#include "frontend/SimpleTimer.h"
+ 
+ #define PLAYER_CARD_DEFAULT_COLOR HUD_COLOUR_PURE_WHITE
+ #define PLAYER_CARD_DEFAULT_COLOR_STR "HUD_COLOUR_PURE_WHITE"

@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedWeaponSelector.cpp b/src/dev_ng/game/weapons/inventory/PedWeaponSelector.cpp
+--- a/src/dev_ng/game/weapons/inventory/PedWeaponSelector.cpp
++++ b/src/dev_ng/game/weapons/inventory/PedWeaponSelector.cpp
+@@ -1,23 +1,23 @@
+ // File header
+-#include "Weapons/Inventory/PedWeaponSelector.h"
++#include "weapons/inventory/PedWeaponSelector.h"
+ 
+ // Game headers
+-#include "Control/Garages.h"
+-#include "Frontend/NewHud.h"
++#include "control/Garages.h"
++#include "frontend/NewHud.h"
+ #include "modelinfo/VehicleModelInfoFlags.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "Peds/PlayerInfo.h"
+-#include "Task/Motion/TaskMotionBase.h"
+-#include "Task/Vehicle/TaskVehicleWeapon.h"
+-#include "Task/Weapons/TaskSwapWeapon.h"
+-#include "vehicleai/task/taskvehicleanimation.h"
+-#include "System/ControlMgr.h"
++#include "task/Motion/TaskMotionBase.h"
++#include "task/Vehicle/TaskVehicleWeapon.h"
++#include "task/Weapons/TaskSwapWeapon.h"
++#include "vehicleAi/task/taskvehicleanimation.h"
++#include "system/controlMgr.h"
+ #include "Vehicles/VehicleGadgets.h"
+ #include "Vehicles/Metadata/VehicleLayoutInfo.h"
+ #include "Vehicles/Metadata/VehicleMetadataManager.h"
+ #include "Vehicles/Metadata/VehicleSeatInfo.h"
+-#include "vehicles/Submarine.h"
++#include "Vehicles/Submarine.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

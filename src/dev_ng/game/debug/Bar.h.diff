@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Bar.h b/src/dev_ng/game/debug/Bar.h
+--- a/src/dev_ng/game/debug/Bar.h
++++ b/src/dev_ng/game/debug/Bar.h
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2013 Rockstar North.  All Rights Reserved. 
+ //
+ 
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ 
+ #ifndef __DEBUG_DEBUG_H__
+ #define __DEBUG_DEBUG_H__

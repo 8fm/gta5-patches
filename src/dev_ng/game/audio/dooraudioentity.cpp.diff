@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/dooraudioentity.cpp b/src/dev_ng/game/audio/dooraudioentity.cpp
+--- a/src/dev_ng/game/audio/dooraudioentity.cpp
++++ b/src/dev_ng/game/audio/dooraudioentity.cpp
+@@ -2,7 +2,7 @@
+ #include "dynamicmixer.h"
+ #include "gameobjects.h"
+ #include "northaudioengine.h"
+-#include "objects/Door.h"
++#include "Objects/Door.h"
+ #include "Objects/DoorTuning.h"
+ #include "Peds/ped.h"
+ 

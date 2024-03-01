@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.h b/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjGlassPane.h
+@@ -11,8 +11,8 @@
+ //----------------------
+ 
+ #include "glassPaneSyncing/GlassPaneInfo.h"
+-#include "network/objects/entities/NetObjProximityMigrateable.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Entities/NetObjProximityMigrateable.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+ #include "Objects/objectpopulation.h"
+ 
+ //----------------------

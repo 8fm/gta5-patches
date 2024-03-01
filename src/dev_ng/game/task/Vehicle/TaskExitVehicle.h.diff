@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskExitVehicle.h b/src/dev_ng/game/task/Vehicle/TaskExitVehicle.h
+--- a/src/dev_ng/game/task/Vehicle/TaskExitVehicle.h
++++ b/src/dev_ng/game/task/Vehicle/TaskExitVehicle.h
+@@ -11,10 +11,10 @@
+ 
+ // Game Headers
+ #include "modelinfo/VehicleModelInfo.h"
+-#include "peds/ped.h"
+-#include "peds/QueriableInterface.h"
+-#include "Task/Vehicle/TaskVehicleBase.h"
+-#include "VehicleAi/VehMission.h"
++#include "Peds/ped.h"
++#include "Peds/QueriableInterface.h"
++#include "task/Vehicle/TaskVehicleBase.h"
++#include "vehicleAi/VehMission.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

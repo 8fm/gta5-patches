@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/control/recklessdriving.cpp b/src/dev_ng/game/control/recklessdriving.cpp
+--- a/src/dev_ng/game/control/recklessdriving.cpp
++++ b/src/dev_ng/game/control/recklessdriving.cpp
+@@ -18,15 +18,15 @@
+ 
+ // game includes
+ #include "ai/stats.h"
+-#include "peds/ped.h"
+-#include "peds/PlayerSpecialAbility.h"
++#include "Peds/ped.h"
++#include "Peds/PlayerSpecialAbility.h"
+ #include "control/trafficlights.h"
+-#include "vehicleai/pathfind.h"
+-#include "vehicles/bike.h"
++#include "vehicleAi/pathfind.h"
++#include "Vehicles/Bike.h"
+ #include "physics/gtamaterial.h"
+ #include "physics/gtamaterialmanager.h"
+-#include "modelinfo/vehiclemodelinfo.h"
+-#include "stats/StatsMgr.h"
++#include "modelinfo/VehicleModelInfo.h"
++#include "Stats/StatsMgr.h"
+ 
+ using namespace AIStats;
+ 

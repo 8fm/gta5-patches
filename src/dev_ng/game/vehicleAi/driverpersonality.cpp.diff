@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vehicleAi/driverpersonality.cpp b/src/dev_ng/game/vehicleAi/driverpersonality.cpp
+--- a/src/dev_ng/game/vehicleAi/driverpersonality.cpp
++++ b/src/dev_ng/game/vehicleAi/driverpersonality.cpp
+@@ -17,9 +17,9 @@
+ 
+ 
+ // ped includes
+-#include "peds/ped.h"
+-#include "ModelInfo/PedModelInfo.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/PedIntelligence.h"
+ #include "vehicleAi/VehicleIntelligence.h"
+ 
+ AI_OPTIMISATIONS()

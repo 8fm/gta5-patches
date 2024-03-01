@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.h b/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjPickupPlacement.h
+@@ -8,8 +8,8 @@
+ #ifndef NETOBJPICKUPPLACEMENT_H
+ #define NETOBJPICKUPPLACEMENT_H
+ 
+-#include "network/objects/entities/NetObjProximityMigrateable.h"
+-#include "network/objects/synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Entities/NetObjProximityMigrateable.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
+ 
+ class CPickupPlacement;
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Streaming/ReplayStreaming.h b/src/dev_ng/game/control/replay/Streaming/ReplayStreaming.h
+--- a/src/dev_ng/game/control/replay/Streaming/ReplayStreaming.h
++++ b/src/dev_ng/game/control/replay/Streaming/ReplayStreaming.h
+@@ -1,7 +1,7 @@
+ // #ifndef REPLAY_STREAMING_H
+ // #define REPLAY_STREAMING_H
+ // 
+-// #include "control/replay/replaysettings.h"
++// #include "control/replay/ReplaySettings.h"
+ // 
+ // #if GTA_REPLAY
+ // 

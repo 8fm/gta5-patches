@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/network/Players/NetworkPlayerMgr.cpp b/src/dev_ng/game/network/Players/NetworkPlayerMgr.cpp
+--- a/src/dev_ng/game/network/Players/NetworkPlayerMgr.cpp
++++ b/src/dev_ng/game/network/Players/NetworkPlayerMgr.cpp
+@@ -4,21 +4,21 @@
+ //
+ NETWORK_OPTIMISATIONS()
+ 
+-#include "Network/Players/NetworkPlayerMgr.h"
++#include "network/Players/NetworkPlayerMgr.h"
+ 
+ #include "system/param.h"
+ 
+ #include "fwnet/netutils.h"
+ 
+-#include "Network/Network.h"
+-#include "Network/Sessions/NetworkGameConfig.h"
+-#include "Network/Sessions/NetworkSession.h"
+-#include "Network/Debug/NetworkBot.h"
+-#include "Network/General/NetworkUtil.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/Players/NetGamePlayerMessages.h"
+-#include "Peds/Ped.h"
+-#include "Scene/ExtraContent.h"
++#include "network/Network.h"
++#include "network/Sessions/NetworkGameConfig.h"
++#include "network/Sessions/NetworkSession.h"
++#include "network/Debug/NetworkBot.h"
++#include "network/General/NetworkUtil.h"
++#include "network/Live/livemanager.h"
++#include "network/Players/NetGamePlayerMessages.h"
++#include "Peds/ped.h"
++#include "scene/ExtraContent.h"
+ #include "scene/world/GameWorld.h"
+ 
+ RAGE_DEFINE_SUBCHANNEL(net, playermgr, DIAG_SEVERITY_DEBUG3)

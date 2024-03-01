@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.cpp
+@@ -4,9 +4,9 @@
+ // written by:    John Gurney
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/ProximityMigrateableSyncNodes.h"
+-#include "network/objects/synchronisation/synctrees/ProjectSyncTrees.h"
+-#include "network/objects/Entities/NetObjPhysical.h"
++#include "network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncTrees/ProjectSyncTrees.h"
++#include "network/Objects/Entities/NetObjPhysical.h"
+ 
+ DATA_ACCESSOR_ID_IMPL(IProximityMigrateableNodeDataAccessor);
+ 

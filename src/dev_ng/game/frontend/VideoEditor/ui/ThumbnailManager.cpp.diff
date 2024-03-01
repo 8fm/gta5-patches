@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/ThumbnailManager.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/ThumbnailManager.cpp
+--- a/src/dev_ng/game/frontend/VideoEditor/ui/ThumbnailManager.cpp
++++ b/src/dev_ng/game/frontend/VideoEditor/ui/ThumbnailManager.cpp
+@@ -10,7 +10,7 @@
+ #include "frontend/VideoEditor/ui/ThumbnailManager.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ 
+-#include "Frontend/ui_channel.h"
++#include "frontend/ui_channel.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"
+ #include "frontend/VideoEditor/ui/Editor.h"

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/audio/pedaudioentity.h b/src/dev_ng/game/audio/pedaudioentity.h
+--- a/src/dev_ng/game/audio/pedaudioentity.h
++++ b/src/dev_ng/game/audio/pedaudioentity.h
+@@ -10,11 +10,11 @@
+ #include "hashactiontable.h"
+ #include "gameobjects.h"
+ #include "pedfootstepaudio.h"
+-#include "Peds/PedDefines.h"
++#include "Peds/pedDefines.h"
+ #include "Peds/PedMotionData.h"
+ #include "Peds/PedMoveBlend/PedMoveBlendTypes.h"
+-#include "peds/pedtype.h"
+-#include "animation/animbones.h"
++#include "Peds/PedType.h"
++#include "animation/AnimBones.h"
+ #include "atl/bitset.h"
+ #include "scene/RegdRefTypes.h"
+ #include "parser/macros.h"		// PAR_SIMPLE_PARSABLE

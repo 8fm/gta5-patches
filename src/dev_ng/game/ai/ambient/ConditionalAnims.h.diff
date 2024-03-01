@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/ai/ambient/ConditionalAnims.h b/src/dev_ng/game/ai/ambient/ConditionalAnims.h
+--- a/src/dev_ng/game/ai/ambient/ConditionalAnims.h
++++ b/src/dev_ng/game/ai/ambient/ConditionalAnims.h
+@@ -11,8 +11,8 @@
+ #include "fwutil/Flags.h"
+ 
+ // Game
+-#include "Animation/AnimDefines.h"
+-#include "Task/Scenario/Info/ScenarioInfoConditions.h"
++#include "animation/AnimDefines.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
+ 
+ // Forward declarations
+ class CDynamicEntity;

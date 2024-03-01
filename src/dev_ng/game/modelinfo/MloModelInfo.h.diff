@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/modelinfo/MloModelInfo.h b/src/dev_ng/game/modelinfo/MloModelInfo.h
+--- a/src/dev_ng/game/modelinfo/MloModelInfo.h
++++ b/src/dev_ng/game/modelinfo/MloModelInfo.h
+@@ -17,9 +17,9 @@
+ #include "fwscene/world/InteriorLocation.h"
+ 
+ // Game headers
+-#include "modelinfo/basemodelinfo.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/BaseModelInfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "scene/loader/MapData_Interiors.h"
+ 
+ // --- Defines ------------------------------------------------------------------

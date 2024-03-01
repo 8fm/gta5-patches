@@ -1,0 +1,44 @@
+diff --git a/src/dev_ng/game/animation/debug/AnimDebug.cpp b/src/dev_ng/game/animation/debug/AnimDebug.cpp
+--- a/src/dev_ng/game/animation/debug/AnimDebug.cpp
++++ b/src/dev_ng/game/animation/debug/AnimDebug.cpp
+@@ -36,28 +36,28 @@
+ #include "string/stringutil.h"
+ #include "system/criticalsection.h"
+ // gta includes
+-#include "Animation/anim_channel.h"
++#include "animation/anim_channel.h"
+ #include "animation/AnimScene/AnimScene.h"
+ #include "animation/AnimScene/AnimSceneManager.h"
+ #include "fwanimation/animdirector.h"
+ #include "fwanimation/animmanager.h"
+ #include "debug/DebugScene.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "ModelInfo/PedModelInfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "modelinfo/PedModelInfo.h"
+ #include "modelinfo/WeaponModelInfo.h"
+ #include "Peds/ped.h"
+-#include "peds/PedFactory.h"
+-#include "peds/Ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/PedFactory.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "Peds/rendering/pedVariationPack.h"
+-#include "Renderer/renderer.h"
++#include "renderer/renderer.h"
+ #include "scene/world/GameWorld.h"
+ #include "streaming/streaming.h"
+-#include "system/ControlMgr.h"
+-#include "system/filemgr.h"
+-#include "Task/General/TaskBasic.h"
+-#include "vehicles/VehicleFactory.h"
++#include "system/controlMgr.h"
++#include "system/FileMgr.h"
++#include "task/General/TaskBasic.h"
++#include "Vehicles/VehicleFactory.h"
+ 
+ // Defines
+ 

@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/pickups/Data/PickupIds.cpp b/src/dev_ng/game/pickups/Data/PickupIds.cpp
+--- a/src/dev_ng/game/pickups/Data/PickupIds.cpp
++++ b/src/dev_ng/game/pickups/Data/PickupIds.cpp
+@@ -1,4 +1,4 @@
+-#include "Pickups/Data/PickupIds.h"
++#include "pickups/Data/PickupIds.h"
+ 
+ // health types
+ const atHashWithStringNotFinal PICKUP_HEALTH_STANDARD("PICKUP_HEALTH_STANDARD",0x8F707C18);

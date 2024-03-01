@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/info/VehicleWeaponInfo.h b/src/dev_ng/game/weapons/info/VehicleWeaponInfo.h
+--- a/src/dev_ng/game/weapons/info/VehicleWeaponInfo.h
++++ b/src/dev_ng/game/weapons/info/VehicleWeaponInfo.h
+@@ -12,7 +12,7 @@
+ #include "parser/macros.h"
+ 
+ // Framework headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CVehicleWeaponInfo

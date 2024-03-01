@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/security/plugins/ecplugin.cpp b/src/dev_ng/game/security/plugins/ecplugin.cpp
+--- a/src/dev_ng/game/security/plugins/ecplugin.cpp
++++ b/src/dev_ng/game/security/plugins/ecplugin.cpp
+@@ -15,15 +15,15 @@
+ #include "system/threadtype.h"
+  
+ //Game headers
+-#include "Network/Live/NetworkTelemetry.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Events/NetworkEventTypes.h"
+-#include "Network/General/NetworkAssetVerifier.h"
++#include "network/Live/NetworkTelemetry.h"
++#include "network/NetworkInterface.h"
++#include "network/Events/NetworkEventTypes.h"
++#include "network/General/NetworkAssetVerifier.h"
+ #include "script/script.h"
+ #include "system/InfoState.h"
+ #include "system/memorycheck.h"
+ #include "streaming/defragmentation.h"
+-#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
+  
+ // Security headers
+ #include "net/status.h"

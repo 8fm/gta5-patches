@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/modelinfo/CompEntityModelInfo.cpp b/src/dev_ng/game
  // Rage headers
  // Game headers
 -#include "modelInfo\CompEntityModelInfo.h"
-+#include "modelInfo/CompEntityModelInfo.h"
++#include "modelinfo/CompEntityModelInfo.h"
  
  // --- Defines ------------------------------------------------------------------
  

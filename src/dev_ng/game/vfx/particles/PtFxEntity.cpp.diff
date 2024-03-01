@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/vfx/particles/PtFxEntity.cpp b/src/dev_ng/game/vfx/particles/PtFxEntity.cpp
+--- a/src/dev_ng/game/vfx/particles/PtFxEntity.cpp
++++ b/src/dev_ng/game/vfx/particles/PtFxEntity.cpp
+@@ -24,16 +24,16 @@
+ #include "vfx/ptfx/ptfxattach.h"
+ #include "vfx/ptfx/ptfxconfig.h"
+ #include "vfx/ptfx/ptfxflags.h"
+-#include "Vfx/Particles/PtFxManager.h"
++#include "vfx/Particles/PtFxManager.h"
+ 
+ // framework
+ #include "fwdebug/picker.h"
+ 
+ // game
+ #include "audio/ambience/ambientaudioentity.h"
+-#include "Camera/CamInterface.h"
+-#include "Renderer/Renderer.h"
+-#include "Renderer/RenderListGroup.h"
++#include "camera/CamInterface.h"
++#include "renderer/Renderer.h"
++#include "renderer/renderListGroup.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/Entities/PtFxDrawHandler.h"
+ #include "renderer/RenderPhases/RenderPhase.h"

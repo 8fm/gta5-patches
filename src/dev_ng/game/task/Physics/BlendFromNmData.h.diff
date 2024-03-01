@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Physics/BlendFromNmData.h b/src/dev_ng/game/task/Physics/BlendFromNmData.h
 --- a/src/dev_ng/game/task/Physics/BlendFromNmData.h
 +++ b/src/dev_ng/game/task/Physics/BlendFromNmData.h
-@@ -13,7 +13,7 @@
+@@ -13,16 +13,16 @@
  #include "atl/hashstring.h"
  #include "data/base.h"
  
@@ -9,4 +9,16 @@ diff --git a/src/dev_ng/game/task/Physics/BlendFromNmData.h b/src/dev_ng/game/ta
 +#include "ai/task/taskregdref.h"
  #include "fwanimation/posematcher.h"
  #include "fwmaths/random.h"
- #include "fwutil/flags.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ #include "parser/macros.h"
+ 
+ #include "ai/AITarget.h"
+ 
+-#include "peds/pedDefines.h"
+-#include "peds/PedMotionState.h"
++#include "Peds/pedDefines.h"
++#include "Peds/PedMotionState.h"
+ #include "Peds/PlayerArcadeInformation.h"
+ 
+ #if __WIN32

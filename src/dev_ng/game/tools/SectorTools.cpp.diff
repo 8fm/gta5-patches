@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/tools/SectorTools.cpp b/src/dev_ng/game/tools/SectorTools.cpp
+--- a/src/dev_ng/game/tools/SectorTools.cpp
++++ b/src/dev_ng/game/tools/SectorTools.cpp
+@@ -17,10 +17,10 @@
+ #include "atl/array.h"
+ 
+ // Game headers
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "SectorTools.h"
+-#include "Peds/Ped.h"
+-#include "scene/world/gameWorld.h"
++#include "Peds/ped.h"
++#include "scene/world/GameWorld.h"
+ #include "tools/ObjectPositionChecker.h"
+ #include "tools/StreamingMemJunctionStats.h"
+ #include "tools/StreamingMemUsage.h"

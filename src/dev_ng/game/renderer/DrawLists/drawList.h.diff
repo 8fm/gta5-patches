@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/drawList.h b/src/dev_ng/game/renderer/DrawLists/drawList.h
+--- a/src/dev_ng/game/renderer/DrawLists/drawList.h
++++ b/src/dev_ng/game/renderer/DrawLists/drawList.h
+@@ -17,25 +17,25 @@
+ #include "grcore/effect_config.h"
+ #include "system/memory.h"
+ #include "vector/quaternion.h"
+-#include "grcore/Effect.h"
++#include "grcore/effect.h"
+ #include "grcore/im.h"
+ #include "grmodel/model.h"
+ #include "vectormath/threadvector.h"
+ 
+ // Framework headers
+-#include "fwmaths/rect.h"
++#include "fwmaths/Rect.h"
+ #include "fwdrawlist/drawlist.h"
+ 
+ // Game Headers
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "frontend/MiniMap.h"
+ #include "renderer/color.h"
+ #include "renderer/DrawLists/DrawableDataStructs.h"
+-#include "renderer/renderer.h"
+-#include "renderer/deferred/DeferredConfig.h"
++#include "renderer/Renderer.h"
++#include "renderer/Deferred/DeferredConfig.h"
+ 
+ #include "text/text.h"
+-#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
+ 
+ extern bank_bool g_cache_entities;
+ 

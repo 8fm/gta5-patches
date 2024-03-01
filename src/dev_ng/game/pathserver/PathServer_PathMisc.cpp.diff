@@ -3,7 +3,7 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_PathMisc.cpp b/src/dev_ng/gam
 +++ b/src/dev_ng/game/pathserver/PathServer_PathMisc.cpp
 @@ -1,12 +1,12 @@
 -#include "PathServer\PathServer.h"
-+#include "PathServer/PathServer.h"
++#include "pathserver/PathServer.h"
  
  // Rage headers
 -#include "atl\inmap.h"

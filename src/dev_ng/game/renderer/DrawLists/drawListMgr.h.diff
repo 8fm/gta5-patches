@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/drawListMgr.h b/src/dev_ng/game/renderer/DrawLists/drawListMgr.h
+--- a/src/dev_ng/game/renderer/DrawLists/drawListMgr.h
++++ b/src/dev_ng/game/renderer/DrawLists/drawListMgr.h
+@@ -15,8 +15,8 @@
+ #include "fwdrawlist/drawlistmgr.h"
+ #include "fwrenderer/renderphaseswitches.h"
+ 
+-#include "renderer/DrawLists/DrawList.h"
+-#include "renderer/renderSettings.h"
++#include "renderer/DrawLists/drawList.h"
++#include "renderer/RenderSettings.h"
+ #include "profile/timebars.h"
+ #include "drawListMgr_config.h"
+ 

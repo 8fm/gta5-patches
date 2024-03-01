@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp b/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp
+--- a/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp
++++ b/src/dev_ng/game/vfx/metadata/VfxPedInfo.cpp
+@@ -25,11 +25,11 @@
+ #include "vfx/channel.h"
+ 
+ // game
+-#include "ModelInfo/PedModelInfo.h"
+-#include "Scene/DataFileMgr.h"
+-#include "Peds/Ped.h"
+-#include "Vfx/Decals/DecalManager.h"
+-#include "Vfx/Systems/VfxPed.h"
++#include "modelinfo/PedModelInfo.h"
++#include "scene/DataFileMgr.h"
++#include "Peds/ped.h"
++#include "vfx/decals/DecalManager.h"
++#include "vfx/systems/VfxPed.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

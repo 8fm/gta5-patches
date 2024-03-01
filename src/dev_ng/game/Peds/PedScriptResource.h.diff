@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedScriptResource.h b/src/dev_ng/game/Peds/PedScriptResource.h
+--- a/src/dev_ng/game/Peds/PedScriptResource.h
++++ b/src/dev_ng/game/Peds/PedScriptResource.h
+@@ -8,7 +8,7 @@
+ #include "streaming/streamingrequest.h"
+ 
+ // Game headers
+-#include "ModelInfo/PedModelInfo.h"
++#include "modelinfo/PedModelInfo.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

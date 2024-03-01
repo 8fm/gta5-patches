@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/GameStream.h b/src/dev_ng/game/frontend/GameStream.h
+--- a/src/dev_ng/game/frontend/GameStream.h
++++ b/src/dev_ng/game/frontend/GameStream.h
+@@ -24,7 +24,7 @@
+ #include "fwscene/stores/fragmentstore.h"
+ #include "fwscene/stores/mapdatastore.h"
+ #include "data/growbuffer.h"
+-#include "Network/Live/NetworkClan.h"
++#include "network/Live/NetworkClan.h"
+ 
+ #include "scene/DownloadableTextureManager.h"
+ 

@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/game/Performance.cpp b/src/dev_ng/game/game/Performance.cpp
+--- a/src/dev_ng/game/game/Performance.cpp
++++ b/src/dev_ng/game/game/Performance.cpp
+@@ -7,10 +7,10 @@
+ //
+ 
+ #include "game/Performance.h"
+-#include "game/wanted.h"
+-#include "scene/world/gameWorld.h"
++#include "game/Wanted.h"
++#include "scene/world/GameWorld.h"
+ #include "fwsys/timer.h"
+-#include "vehicles/Vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ CPerformance* CPerformance::ms_pInstance = NULL;
+ 

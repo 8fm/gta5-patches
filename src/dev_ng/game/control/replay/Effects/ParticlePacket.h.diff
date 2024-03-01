@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticlePacket.h b/src/dev_ng/game/control/replay/Effects/ParticlePacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticlePacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticlePacket.h
+@@ -6,13 +6,13 @@
+ #ifndef INC_PFXPACKET_H_
+ #define INC_PFXPACKET_H_
+ 
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplaySettings.h"
+ 
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control/replay/misc/replaypacket.h"
+-#include "Control/Replay/Replay_Channel.h"
++#include "control/replay/Misc/ReplayPacket.h"
++#include "control/replay/replay_channel.h"
+ #include "control/replay/PacketBasics.h"
+ 
+ #define DEBUG_REPLAY_PFX		(0)

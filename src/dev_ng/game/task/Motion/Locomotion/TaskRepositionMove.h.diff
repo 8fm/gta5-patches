@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.h b/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.h
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.h
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskRepositionMove.h
+@@ -2,7 +2,7 @@
+ #define TASK_REPOSITION_MOVE_H
+ 
+ // Game headers
+-#include "Task/Motion/TaskMotionBase.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ class CTaskRepositionMove : public CTaskMotionBase
+ {

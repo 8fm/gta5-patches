@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/task/Default/TaskChat.cpp b/src/dev_ng/game/task/Default/TaskChat.cpp
+--- a/src/dev_ng/game/task/Default/TaskChat.cpp
++++ b/src/dev_ng/game/task/Default/TaskChat.cpp
+@@ -4,19 +4,19 @@
+ // AUTHOR :  Chi-Wai Chiu
+ // CREATED : 17-02-2009
+ 
+-#include "Task/Default/TaskChat.h"
++#include "task/Default/TaskChat.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"				// For channel asserts and verifies
+ 
+ // Game headers
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"				// For accessing pedintelligence
+-#include "Task/Movement/TaskNavMesh.h"			// For using CTaskMoveFollowNavMesh etc
+-#include "Task/Default/Patrol/TaskPatrol.h"
+-#include "Task/Scenario/ScenarioManager.h"		// For accessing CScenariomanager
+-#include "Task/Scenario/Types/TaskChatScenario.h"			// For using CTaskChatScenario
+-#include "Task/Animation/TaskAnims.h"
++#include "task/Movement/TaskNavMesh.h"			// For using CTaskMoveFollowNavMesh etc
++#include "task/Default/Patrol/TaskPatrol.h"
++#include "task/Scenario/ScenarioManager.h"		// For accessing CScenariomanager
++#include "task/Scenario/Types/TaskChatScenario.h"			// For using CTaskChatScenario
++#include "task/Animation/TaskAnims.h"
+ 
+ AI_OPTIMISATIONS()
+ 

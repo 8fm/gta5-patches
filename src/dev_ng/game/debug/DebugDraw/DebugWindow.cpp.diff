@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/DebugDraw/DebugWindow.cpp b/src/dev_ng/game/debug/DebugDraw/DebugWindow.cpp
+--- a/src/dev_ng/game/debug/DebugDraw/DebugWindow.cpp
++++ b/src/dev_ng/game/debug/DebugDraw/DebugWindow.cpp
+@@ -19,7 +19,7 @@
+ 
+ #include "fwutil/xmacro.h"
+ 
+-#include "system/controlmgr.h" // oops .. game dependency
++#include "system/controlMgr.h" // oops .. game dependency
+ 
+ #include "debug/DebugDraw/DebugWindow.h"
+ 

@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/physics/gtaArchetype.h b/src/dev_ng/game/physics/gtaArchetype.h
+--- a/src/dev_ng/game/physics/gtaArchetype.h
++++ b/src/dev_ng/game/physics/gtaArchetype.h
+@@ -7,9 +7,9 @@
+ 
+ #include "physics/archetype.h"
+ #include "fragment/type.h"
+-#include "scene/2deffect.h"
++#include "scene/2dEffect.h"
+ 
+-#include "entity/archetypeManager.h"
++#include "entity/archetypemanager.h"
+ 
+ namespace rage
+ {

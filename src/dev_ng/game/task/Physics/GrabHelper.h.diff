@@ -1,12 +1,19 @@
 diff --git a/src/dev_ng/game/task/Physics/GrabHelper.h b/src/dev_ng/game/task/Physics/GrabHelper.h
 --- a/src/dev_ng/game/task/Physics/GrabHelper.h
 +++ b/src/dev_ng/game/task/Physics/GrabHelper.h
-@@ -11,7 +11,7 @@
+@@ -10,11 +10,11 @@
+ // Rage headers
  #include "atl/string.h"
  // Game headers
- #include "Task/System/Task.h"
+-#include "Task/System/Task.h"
 -#include "Task\System\TaskTypes.h"
-+#include "Task/System/TaskTypes.h"
- #include "Task/Physics/TaskNM.h"
+-#include "Task/Physics/TaskNM.h"
++#include "task/System/Task.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/TaskNM.h"
  #include "system/FileMgr.h"
- #include "Animation/AnimBones.h"
+-#include "Animation/AnimBones.h"
++#include "animation/AnimBones.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ // This class is NOT a task, it is NOT derived from CTaskNMBehaviour

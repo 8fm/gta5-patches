@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/base/BaseCamera.h b/src/dev_ng/game/camera/base/BaseCamera.h
+--- a/src/dev_ng/game/camera/base/BaseCamera.h
++++ b/src/dev_ng/game/camera/base/BaseCamera.h
+@@ -7,7 +7,7 @@
+ #ifndef BASE_CAMERA_H
+ #define BASE_CAMERA_H
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #include "camera/base/BaseObject.h"
+ #include "camera/helpers/Frame.h"

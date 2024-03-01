@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/Vehicles/door.h b/src/dev_ng/game/Vehicles/door.h
+--- a/src/dev_ng/game/Vehicles/door.h
++++ b/src/dev_ng/game/Vehicles/door.h
+@@ -15,11 +15,11 @@
+ #include "fwsys/timer.h"
+ 
+ // game headers
+-#include "control/replay/replaysettings.h"
+-#include "debug/debug.h"
+-#include "Pathserver/PathServer_DataTypes.h"
++#include "control/replay/ReplaySettings.h"
++#include "debug/Debug.h"
++#include "pathserver/PathServer_DataTypes.h"
+ #include "renderer/HierarchyIds.h"
+-#include "vehicles/VehicleDefines.h"
++#include "Vehicles/VehicleDefines.h"
+ 
+ class CVehicle;
+ 

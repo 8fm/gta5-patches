@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Physics/AnimPoseHelper.h b/src/dev_ng/game/task/Physics/AnimPoseHelper.h
+--- a/src/dev_ng/game/task/Physics/AnimPoseHelper.h
++++ b/src/dev_ng/game/task/Physics/AnimPoseHelper.h
+@@ -8,9 +8,9 @@
+ // --- Include Files ------------------------------------------------------------
+ 
+ #include "optimisations.h"
+-#include "Task/System/TaskHelpers.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Physics/NmDefines.h"
++#include "task/System/TaskHelpers.h"
++#include "task/System/TaskTypes.h"
++#include "task/Physics/NmDefines.h"
+ // ------------------------------------------------------------------------------
+ 
+ class CClipPoseHelper

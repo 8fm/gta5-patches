@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_Store.cpp b/src/dev_ng/game/pathserver/PathServer_Store.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_Store.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_Store.cpp
+@@ -3,8 +3,8 @@
+ #include "pathserver/PathServer.h"
+ #include "pathserver/PathServerThread.h"
+ #include "fwscene/world/WorldLimits.h"	// TODO: find out the new way to get min/max possible world extents
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
+ #include "modelinfo/VehicleModelInfo.h"
+ 
+ NAVMESH_OPTIMISATIONS()

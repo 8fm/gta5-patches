@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/decals/DecalCallbacks.h b/src/dev_ng/game/vfx/decals/DecalCallbacks.h
+--- a/src/dev_ng/game/vfx/decals/DecalCallbacks.h
++++ b/src/dev_ng/game/vfx/decals/DecalCallbacks.h
+@@ -19,7 +19,7 @@
+ #include "vfx/decal/decalcallbacks.h"
+ 
+ // game
+-#include "ModelInfo/VehicleModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
+ #include "renderer/Deferred/GBuffer.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////

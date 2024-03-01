@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/ai/debug/types/TaskDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/TaskDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/TaskDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/TaskDebugInfo.cpp
+@@ -5,14 +5,14 @@
+ // game headers
+ #include "event/decision/EventDecisionMaker.h"
+ #include "Peds/PedDebugVisualiser.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ #include "task/Movement/TaskNavMesh.h"
+ #include "task/Motion/TaskMotionBase.h"
+ #include "task/Vehicle/TaskEnterVehicle.h"
+ #include "task/Vehicle/TaskExitVehicle.h"
+-#include "vehicles/Metadata/VehicleSeatInfo.h"
+-#include "vehicles/Metadata/VehicleMetadataManager.h"
++#include "Vehicles/Metadata/VehicleSeatInfo.h"
++#include "Vehicles/Metadata/VehicleMetadataManager.h"
+ 
+ const char* GetShortActiveTaskTreeName(const CPed& rPed, const CTask* pActiveTask)
+ {

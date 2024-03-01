@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/explosionaudioentity.h b/src/dev_ng/game/audio/explosionaudioentity.h
+--- a/src/dev_ng/game/audio/explosionaudioentity.h
++++ b/src/dev_ng/game/audio/explosionaudioentity.h
+@@ -10,7 +10,7 @@
+ 
+ #include "audioentity.h"
+ #include "gameobjects.h"
+-#include "Weapons/WeaponEnums.h"
++#include "weapons/WeaponEnums.h"
+ #include "scene/RegdRefTypes.h"
+ 
+ class CEntity;

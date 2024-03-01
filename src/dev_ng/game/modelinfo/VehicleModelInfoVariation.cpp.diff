@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfoVariation.cpp b/src/dev_ng/game/modelinfo/VehicleModelInfoVariation.cpp
+--- a/src/dev_ng/game/modelinfo/VehicleModelInfoVariation.cpp
++++ b/src/dev_ng/game/modelinfo/VehicleModelInfoVariation.cpp
+@@ -24,11 +24,11 @@
+ #include "streaming/populationstreaming.h"
+ #include "streaming/ScriptPreload.h"
+ #include "streaming/streaming.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/vehicleDamage.h"
+-#include "vehicles/Automobile.h"
+-#include "vehicles/Bike.h"
+-#include "vehicles/Planes.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/vehicleDamage.h"
++#include "Vehicles/Automobile.h"
++#include "Vehicles/Bike.h"
++#include "Vehicles/Planes.h"
+ #include "Vehicles/VehicleFactory.h"
+ #include "Vehicles/VehicleGadgets.h"
+ 

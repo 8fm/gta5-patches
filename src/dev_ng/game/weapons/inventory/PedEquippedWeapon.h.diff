@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.h b/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.h
+--- a/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.h
++++ b/src/dev_ng/game/weapons/inventory/PedEquippedWeapon.h
+@@ -2,9 +2,9 @@
+ #define PED_EQUIPPED_WEAPON_H
+ 
+ // Game headers
+-#include "Objects/Object.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
+-#include "Weapons/Weapon.h"
++#include "Objects/object.h"
++#include "weapons/info/WeaponInfoManager.h"
++#include "weapons/Weapon.h"
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // CPedEquippedWeapon

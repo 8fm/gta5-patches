@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.h b/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.h
+--- a/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.h
++++ b/src/dev_ng/game/network/Objects/Prediction/NetBlenderPhysical.h
+@@ -14,7 +14,7 @@
+ #include "fwnet/netblenderlininterp.h"
+ 
+ // game includes
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ // this must be a multiple of 16 otherwise we will get alignment problems on Xbox 360
+ #define LARGEST_NET_PHYSICAL_BLENDER_CLASS (__64BIT ? 848 : 800)

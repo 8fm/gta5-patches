@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/General/NetworkSynchronisedScene.h b/src/dev_ng/game/network/General/NetworkSynchronisedScene.h
+--- a/src/dev_ng/game/network/General/NetworkSynchronisedScene.h
++++ b/src/dev_ng/game/network/General/NetworkSynchronisedScene.h
+@@ -15,7 +15,7 @@
+ #include "vector/quaternion.h"
+ #include "vector/vector3.h"
+ #include "task/Animation/AnimTaskFlags.h"
+-#include "Task/System/TaskHelpers.h"
++#include "task/System/TaskHelpers.h"
+ 
+ namespace rage
+ {

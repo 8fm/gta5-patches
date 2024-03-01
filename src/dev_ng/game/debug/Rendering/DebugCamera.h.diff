@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Rendering/DebugCamera.h b/src/dev_ng/game/debug/Rendering/DebugCamera.h
+--- a/src/dev_ng/game/debug/Rendering/DebugCamera.h
++++ b/src/dev_ng/game/debug/Rendering/DebugCamera.h
+@@ -6,7 +6,7 @@
+ // =============================================================================================== //
+ 
+ // game
+-#include "Debug/Rendering/DebugRendering.h"
++#include "debug/Rendering/DebugRendering.h"
+ 
+ // rage
+ #include "vector/matrix34.h"

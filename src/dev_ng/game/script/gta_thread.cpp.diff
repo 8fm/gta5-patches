@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/game/script/gta_thread.cpp b/src/dev_ng/game/script/gta_thread.cpp
+--- a/src/dev_ng/game/script/gta_thread.cpp
++++ b/src/dev_ng/game/script/gta_thread.cpp
+@@ -8,21 +8,21 @@
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+-#include "fwscript/scriptInterface.h"
++#include "fwscript/scriptinterface.h"
+ #include "fwutil/idgen.h"
+ 
+ // Game headers
+ #include "camera/viewports/ViewportManager.h"
+ #include "control/gamelogic.h"
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "debug/Debug.h"
+-#include "ModelInfo/ModelInfo.h"
+-#include "ModelInfo/ModelInfo_Factories.h"
+-#include "network/arrays/NetworkArrayMgr.h"
+-#include "network/debug/NetworkDebug.h"
+-#include "network/network.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "network/Arrays/NetworkArrayMgr.h"
++#include "network/Debug/NetworkDebug.h"
++#include "network/Network.h"
+ #include "network/Objects/NetworkObjectPopulationMgr.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "renderer/RenderTargetMgr.h"
+ #include "SaveLoad/SavegameScriptData/script_save_data.h"
+ #include "SaveLoad/savegame_channel.h"
+@@ -38,7 +38,7 @@
+ #include "script/script_helper.h"
+ #include "script/script_text_construction.h"
+ #include "system/FileMgr.h"
+-#include "Task/General/TaskBasic.h"
++#include "task/General/TaskBasic.h"
+ 
+ #define SCRIPT_HEAP_SIZE (6700<<10)	// ~6.5MiB for the script heap
+ #define SCRIPT_DEBUG_HEAP_SIZE (2500<<10)	// ~2.4MiB extra for in non final

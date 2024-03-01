@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/Vehicles/LandingGear.h b/src/dev_ng/game/Vehicles/LandingGear.h
+--- a/src/dev_ng/game/Vehicles/LandingGear.h
++++ b/src/dev_ng/game/Vehicles/LandingGear.h
+@@ -2,15 +2,15 @@
+ #define INC_LANDING_GEAR_H
+ 
+ // Rage headers
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "physics/contactiterator.h"
+ 
+ // Framework headers
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ // Game headers
+-#include "control/replay/replaysettings.h"
+-#include "renderer/hierarchyids.h"
++#include "control/replay/ReplaySettings.h"
++#include "renderer/HierarchyIds.h"
+ 
+ 
+ #if __BANK

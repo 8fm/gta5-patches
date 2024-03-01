@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/lod/AttributeDebug.h b/src/dev_ng/game/scene/lod/AttributeDebug.h
+--- a/src/dev_ng/game/scene/lod/AttributeDebug.h
++++ b/src/dev_ng/game/scene/lod/AttributeDebug.h
+@@ -2,7 +2,7 @@
+ #define	__ATTRIBUTE_DEBUG_H
+ 
+ #if __BANK
+-#include "scene/entity.h"
++#include "scene/Entity.h"
+ 
+ 
+ typedef	struct _TweakerAttributeContainer

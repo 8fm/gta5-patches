@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h
 --- a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h
 +++ b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h
-@@ -12,7 +12,7 @@
+@@ -6,13 +6,13 @@
+ #ifndef INC_FIREFXPACKET_H_
+ #define INC_FIREFXPACKET_H_
+ 
+-#include "Control/replay/ReplayEventManager.h"
+-#include "Control/replay/ReplaySettings.h"
++#include "control/replay/ReplayEventManager.h"
++#include "control/replay/ReplaySettings.h"
+ 
  // Replay only setup for win32
  #if GTA_REPLAY
  

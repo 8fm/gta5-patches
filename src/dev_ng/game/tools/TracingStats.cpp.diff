@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/tools/TracingStats.cpp b/src/dev_ng/game/tools/TracingStats.cpp
+--- a/src/dev_ng/game/tools/TracingStats.cpp
++++ b/src/dev_ng/game/tools/TracingStats.cpp
+@@ -30,10 +30,10 @@
+ 
+ // Game includes
+ #include "control/gamelogic.h"
+-#include "peds/ped.h"
++#include "Peds/ped.h"
+ #include "scene/scene.h"
+ #include "tools/smoketest.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ // Rage includes
+ #include "bank/bank.h"

@@ -1,0 +1,57 @@
+diff --git a/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.cpp b/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.cpp
+--- a/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.cpp
++++ b/src/dev_ng/game/task/Scenario/info/ScenarioInfoConditions.cpp
+@@ -1,5 +1,5 @@
+ // File header
+-#include "Task/Scenario/Info/ScenarioInfoConditions.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
+ 
+ // Rage headers
+ #include "fwanimation/animmanager.h"
+@@ -8,28 +8,28 @@
+ 
+ // Game headers
+ #include "ai/ambient/AmbientModelSetManager.h"
+-#include "Animation/Move.h"
+-#include "Animation/MoveVehicle.h"
++#include "animation/Move.h"
++#include "animation/MoveVehicle.h"
+ #include "Audio/GameObjects.h"
+ #include "Audio/speechmanager.h"
+ #include "Audio/VehicleAudioEntity.h"
+-#include "Game/Clock.h"
+-#include "Game/Weather.h"
+-#include "Peds/Ped.h"
++#include "game/Clock.h"
++#include "game/Weather.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Scene/World/GameWorld.h"
+-#include "Task/Default//AmbientAnimationManager.h"
+-#include "Task/Default/TaskAmbient.h"
+-#include "Task/Default/TaskPlayer.h"
+-#include "Task/Helpers/TaskConversationHelper.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Motion/Locomotion/TaskHumanLocomotion.h"
+-#include "Task/Motion/Locomotion/TaskMotionPed.h"
+-#include "Task/Scenario/Types/TaskUseScenario.h"
+-#include "Task/Scenario/Types/TaskVehicleScenario.h"
+-#include "Task/System/TaskTypes.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "VehicleAi/Task/TaskVehicleAnimation.h"
++#include "scene/world/GameWorld.h"
++#include "task/Default//AmbientAnimationManager.h"
++#include "task/Default/TaskAmbient.h"
++#include "task/Default/TaskPlayer.h"
++#include "task/Helpers/TaskConversationHelper.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
++#include "task/Scenario/Types/TaskVehicleScenario.h"
++#include "task/System/TaskTypes.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
+ 
+ AI_OPTIMISATIONS()
+ 

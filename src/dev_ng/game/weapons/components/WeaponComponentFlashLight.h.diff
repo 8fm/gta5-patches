@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.h b/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.h
+--- a/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.h
++++ b/src/dev_ng/game/weapons/components/WeaponComponentFlashLight.h
+@@ -11,7 +11,7 @@
+ 
+ // Game headers
+ #include "control/replay/ReplaySettings.h"
+-#include "Weapons/Components/WeaponComponent.h"
++#include "weapons/components/WeaponComponent.h"
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

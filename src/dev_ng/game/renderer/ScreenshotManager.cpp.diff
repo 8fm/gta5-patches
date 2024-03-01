@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/ScreenshotManager.cpp b/src/dev_ng/game/renderer/ScreenshotManager.cpp
+--- a/src/dev_ng/game/renderer/ScreenshotManager.cpp
++++ b/src/dev_ng/game/renderer/ScreenshotManager.cpp
+@@ -22,7 +22,7 @@
+ #include "renderer/RenderPhases/RenderPhaseDefLight.h"
+ #if __BANK
+ #include "debug/Rendering/DebugDeferred.h"
+-#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneManagerNew.h"
+ #endif
+ #include "grcore/allocscope.h"
+ #include "grcore/image.h"

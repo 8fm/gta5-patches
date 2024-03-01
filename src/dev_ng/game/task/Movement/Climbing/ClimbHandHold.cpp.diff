@@ -1,0 +1,32 @@
+diff --git a/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.cpp b/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.cpp
+--- a/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.cpp
++++ b/src/dev_ng/game/task/Movement/Climbing/ClimbHandHold.cpp
+@@ -1,21 +1,21 @@
+ // Class header
+-#include "Task/Movement/Climbing/ClimbHandHold.h"
++#include "task/Movement/Climbing/ClimbHandHold.h"
+ 
+ #include "ai/task/taskchannel.h"
+ #include "grcore/debugdraw.h"
+ 
+ // Game headers
+-#include "Camera/CamInterface.h"
+-#include "Camera/Helpers/Frame.h"
++#include "camera/CamInterface.h"
++#include "camera/helpers/Frame.h"
+ 
+-#include "Scene/Physical.h"
++#include "scene/Physical.h"
+ 
+-#include "Vfx/VehicleGlass/VehicleGlassManager.h"
++#include "vfx/VehicleGlass/VehicleGlassManager.h"
+ 
+-#include "vehicles/wheel.h"
++#include "Vehicles/wheel.h"
+ #include "fragment/instance.h"
+ #include "renderer/HierarchyIds.h"
+-#include "vehicles/vehicle.h" 
++#include "Vehicles/vehicle.h" 
+ 
+ AI_OPTIMISATIONS()
+ AI_MOVEMENT_OPTIMISATIONS()

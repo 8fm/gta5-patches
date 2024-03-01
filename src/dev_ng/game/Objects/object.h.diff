@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/Objects/object.h b/src/dev_ng/game/Objects/object.h
+--- a/src/dev_ng/game/Objects/object.h
++++ b/src/dev_ng/game/Objects/object.h
+@@ -13,19 +13,19 @@
+ #define _OBJECT_H_
+ 
+ #if !__SPU
+-	#include "fwtl/pool.h"
++	#include "fwtl/Pool.h"
+ 
+ 	#include "audio/objectaudioentity.h"
+-	#include "Pathserver/PathServer_DataTypes.h"
++	#include "pathserver/PathServer_DataTypes.h"
+ 	#include "physics/Deformable.h"
+-	#include "Scene/Physical.h"
++	#include "scene/Physical.h"
+ 	#include "scene/RegdRefTypes.h"
+ 	#include "system/noncopyable.h"
+-	#include "task/Combat/Cover/Cover.h"
++	#include "task/Combat/Cover/cover.h"
+ 
+ 	// network headers
+-	#include "network/Objects/entities/NetObjObject.h"
+-	#include "objects/objectintelligence.h"
++	#include "network/Objects/Entities/NetObjObject.h"
++	#include "Objects/ObjectIntelligence.h"
+ #endif //!__SPU...
+ 
+ class CMoveObject;

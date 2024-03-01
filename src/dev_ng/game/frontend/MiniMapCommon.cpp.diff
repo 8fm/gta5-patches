@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/frontend/MiniMapCommon.cpp b/src/dev_ng/game/frontend/MiniMapCommon.cpp
+--- a/src/dev_ng/game/frontend/MiniMapCommon.cpp
++++ b/src/dev_ng/game/frontend/MiniMapCommon.cpp
+@@ -15,7 +15,7 @@
+ // game:
+ #include "frontend/MiniMap.h"
+ #include "frontend/MiniMapRenderThread.h"
+-#include "FrontEnd/Scaleform/ScaleformMgr.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
+ #include "frontend/ui_channel.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/PostProcessFX.h"

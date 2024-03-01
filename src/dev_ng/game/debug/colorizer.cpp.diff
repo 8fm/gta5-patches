@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/debug/colorizer.cpp b/src/dev_ng/game/debug/colorizer.cpp
+--- a/src/dev_ng/game/debug/colorizer.cpp
++++ b/src/dev_ng/game/debug/colorizer.cpp
+@@ -11,10 +11,10 @@
+ #include "grmodel/geometry.h"
+ #include "rmcore/drawable.h"
+ 
+-#include "modelInfo/PedModelInfo.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/PedVariationDebug.h"
+-#include "scene/entity.h"
++#include "modelinfo/PedModelInfo.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/PedVariationDebug.h"
++#include "scene/Entity.h"
+ 
+ // ================================================================================================
+ 

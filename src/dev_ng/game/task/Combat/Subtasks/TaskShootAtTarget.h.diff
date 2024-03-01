@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.h b/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.h
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.h
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskShootAtTarget.h
+@@ -6,10 +6,10 @@
+ #define TASK_SHOOT_AT_TARGET_H
+ 
+ // Game headers
+-#include "AI/AITarget.h"
+-#include "Scene/RegdRefTypes.h"
+-#include "Task/System/Task.h"
+-#include "Task/System/TaskHelpers.h"
++#include "ai/AITarget.h"
++#include "scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "task/System/TaskHelpers.h"
+ 
+ class CTaskShootAtTarget : public CTask
+ {

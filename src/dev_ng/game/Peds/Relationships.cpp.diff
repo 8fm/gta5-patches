@@ -1,12 +1,26 @@
 diff --git a/src/dev_ng/game/Peds/Relationships.cpp b/src/dev_ng/game/Peds/Relationships.cpp
 --- a/src/dev_ng/game/Peds/Relationships.cpp
 +++ b/src/dev_ng/game/Peds/Relationships.cpp
-@@ -14,7 +14,7 @@
- #include "peds/ped_channel.h"
- #include "peds/pedIntelligence.h"
- #include "peds/relationships.h"
--#include "System\FileMgr.h"
-+#include "System/FileMgr.h"
+@@ -9,14 +9,14 @@
+ #include <stdio.h>
  
- #include "peds/Relationships_parser.h"
+ //Game headers
+-#include "debug/debug.h"
+-#include "peds/ped.h"
+-#include "peds/ped_channel.h"
+-#include "peds/pedIntelligence.h"
+-#include "peds/relationships.h"
+-#include "System\FileMgr.h"
+-
+-#include "peds/Relationships_parser.h"
++#include "debug/Debug.h"
++#include "Peds/ped.h"
++#include "Peds/ped_channel.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/relationships.h"
++#include "system/FileMgr.h"
++
++#include "Peds/Relationships_parser.h"
+ 
+ AI_OPTIMISATIONS();
  

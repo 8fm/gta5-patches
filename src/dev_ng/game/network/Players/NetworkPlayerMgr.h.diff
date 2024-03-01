@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Players/NetworkPlayerMgr.h b/src/dev_ng/game/network/Players/NetworkPlayerMgr.h
+--- a/src/dev_ng/game/network/Players/NetworkPlayerMgr.h
++++ b/src/dev_ng/game/network/Players/NetworkPlayerMgr.h
+@@ -11,8 +11,8 @@
+ #include "fwnet/netplayermgrbase.h"
+ 
+ 
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Network/Chat/NetworkTextChat.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/Chat/NetworkTextChat.h"
+ 
+ class CNetGamePlayer;
+ class CNetGamePlayerDataMsg;

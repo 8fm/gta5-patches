@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/environment/environment.h b/src/dev_ng/game/audio/environment/environment.h
+--- a/src/dev_ng/game/audio/environment/environment.h
++++ b/src/dev_ng/game/audio/environment/environment.h
+@@ -22,7 +22,7 @@
+ #include "math/float16.h"
+ #include "system/param.h"
+ #include "pathserver/PathServer.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ 
+ class naEnvironmentGroup;
+ 

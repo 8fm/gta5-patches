@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.h b/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.h
+--- a/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.h
++++ b/src/dev_ng/game/task/Vehicle/TaskMountFollowNearestRoad.h
+@@ -10,9 +10,9 @@
+ // Framework headers
+ 
+ // Game headers
+-#include "Task/System/TaskMove.h"
+-#include "Task/System/Tuning.h"
+-#include "Task/Vehicle/FollowNearestPathHelper.h"
++#include "task/System/TaskMove.h"
++#include "task/System/Tuning.h"
++#include "task/Vehicle/FollowNearestPathHelper.h"
+ 
+ // Forward declarations
+ 

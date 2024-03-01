@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePursue.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehiclePursue.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePursue.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePursue.cpp
+@@ -6,7 +6,7 @@
+ #include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+ #include "vehicleAi/task/TaskVehicleEscort.h"
+-#include "vehicles/vehicle.h"
++#include "Vehicles/vehicle.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

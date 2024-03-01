@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/Players/NetGamePlayer.h b/src/dev_ng/game/network/Players/NetGamePlayer.h
+--- a/src/dev_ng/game/network/Players/NetGamePlayer.h
++++ b/src/dev_ng/game/network/Players/NetGamePlayer.h
+@@ -9,12 +9,12 @@
+ 
+ #include "rline/clan/rlclancommon.h"
+ 
+-#include "network/general/networkColours.h"
++#include "network/General/NetworkColours.h"
+ #include "network/Roaming/RoamingTypes.h"
+-#include "Network/Live/NetworkRemoteCheaterDetector.h"
++#include "network/Live/NetworkRemoteCheaterDetector.h"
+ #include "network/NetworkTypes.h"
+ #include "fwnet/netplayer.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwnet/netserialisers.h"
+ #include "rline/rlsessioninfo.h"
+ #include "vector/vector3.h"

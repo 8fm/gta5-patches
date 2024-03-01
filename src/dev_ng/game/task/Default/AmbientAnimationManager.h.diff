@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/task/Default/AmbientAnimationManager.h b/src/dev_ng/game/task/Default/AmbientAnimationManager.h
+--- a/src/dev_ng/game/task/Default/AmbientAnimationManager.h
++++ b/src/dev_ng/game/task/Default/AmbientAnimationManager.h
+@@ -9,9 +9,9 @@
+ #include "streaming/streamingmodule.h"
+ 
+ // GTA defines
+-#include "modelInfo/modelInfo.h"
++#include "modelinfo/ModelInfo.h"
+ #include "Vehicles/VehicleDefines.h"
+-#include "AI/Ambient/ConditionalAnims.h"
++#include "ai/ambient/ConditionalAnims.h"
+ 
+ // Forward Declarations
+ class CCachedState;

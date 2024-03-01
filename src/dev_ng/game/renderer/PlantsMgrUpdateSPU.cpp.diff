@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/PlantsMgrUpdateSPU.cpp b/src/dev_ng/game/renderer/PlantsMgrUpdateSPU.cpp
+--- a/src/dev_ng/game/renderer/PlantsMgrUpdateSPU.cpp
++++ b/src/dev_ng/game/renderer/PlantsMgrUpdateSPU.cpp
+@@ -24,7 +24,7 @@
+ // Game headers
+ #include "renderer/Renderer.h"			// JW- had to move this up here to get a successful compile...
+ 
+-#include "Physics/GtaMaterialManager.h"
++#include "physics/gtaMaterialManager.h"
+ #include "Objects/ProceduralInfo.h"
+ #include "Objects/ProcObjects.h"
+ #include "scene/Entity.h"

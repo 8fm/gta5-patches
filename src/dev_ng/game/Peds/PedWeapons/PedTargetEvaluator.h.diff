@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.h b/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.h
+--- a/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.h
++++ b/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.h
+@@ -7,7 +7,7 @@
+ 
+ // Game headers
+ #include "Peds/PedWeapons/PlayerPedTargeting.h"
+-#include "Task/System/Tuning.h"
++#include "task/System/Tuning.h"
+ 
+ // Forward declarations
+ namespace rage { class Vector3; }

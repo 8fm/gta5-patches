@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/System/TaskFSMClone.h b/src/dev_ng/game/task/System/TaskFSMClone.h
+--- a/src/dev_ng/game/task/System/TaskFSMClone.h
++++ b/src/dev_ng/game/task/System/TaskFSMClone.h
+@@ -7,8 +7,8 @@
+ #ifndef TASK_CLONED_FSM_H
+ #define TASK_CLONED_FSM_H
+ 
+-#include "Task/System/Task.h"
+-#include "Scene/RegdRefTypes.h"
++#include "task/System/Task.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CPed;
+ class CTaskInfo;

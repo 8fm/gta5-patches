@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/Jumping/GapHelper.cpp b/src/dev_ng/game/task/Movement/Jumping/GapHelper.cpp
+--- a/src/dev_ng/game/task/Movement/Jumping/GapHelper.cpp
++++ b/src/dev_ng/game/task/Movement/Jumping/GapHelper.cpp
+@@ -1,4 +1,4 @@
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "debug/DebugScene.h"
+ #include "modelinfo/PedModelInfo.h"
+ 
+@@ -6,7 +6,7 @@
+ #include "math/angmath.h"
+ 
+ #include "system/control.h"
+-#include "Camera/CamInterface.h"
++#include "camera/CamInterface.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_MOVEMENT_OPTIMISATIONS()

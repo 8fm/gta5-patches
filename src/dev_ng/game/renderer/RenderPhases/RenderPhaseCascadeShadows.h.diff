@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.h b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.h
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.h
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.h
+@@ -6,7 +6,7 @@
+ #ifndef _RENDERER_RENDERPHASES_RENDERPHASECASCADESHADOWS_H_
+ #define _RENDERER_RENDERPHASES_RENDERPHASECASCADESHADOWS_H_
+ 
+-#include "renderer/renderphases/renderphase.h"
++#include "renderer/RenderPhases/RenderPhase.h"
+ #include "../../shader_source/Lighting/Shadows/cascadeshadows_common.fxh" // for CASCADE_SHADOWS_DO_SOFT_FILTERING
+ #include "rmptfx/ptxconfig.h"
+ 

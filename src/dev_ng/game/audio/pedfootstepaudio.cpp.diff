@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/audio/pedfootstepaudio.cpp b/src/dev_ng/game/audio/pedfootstepaudio.cpp
+--- a/src/dev_ng/game/audio/pedfootstepaudio.cpp
++++ b/src/dev_ng/game/audio/pedfootstepaudio.cpp
+@@ -6,10 +6,10 @@
+ 
+ #include "caraudioentity.h"
+ #include "collisionaudioentity.h"
+-#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
+ #include "control/replay/audio/footsteppacket.h"
+ #include "event/EventSound.h"
+-#include "objects/ProceduralInfo.h"
++#include "Objects/ProceduralInfo.h"
+ #include "gameobjects.h"
+ #include "game/weather.h"
+ #include "northaudioengine.h"
+@@ -19,9 +19,9 @@
+ #include "pedfootstepaudio.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedFootstepHelper.h"
+-#include "peds/pedintelligence.h"
++#include "Peds/PedIntelligence.h"
+ #include "Peds/rendering/pedVariationPack.h"
+-#include "peds/rendering/pedvariationds.h"
++#include "Peds/rendering/PedVariationDS.h"
+ #include "scriptaudioentity.h"
+ #include "task/Movement/Climbing/TaskVault.h"
+ #include "task/Movement/Jumping/TaskJump.h"
+@@ -30,7 +30,7 @@
+ #include "superconductor.h"
+ #include "Vehicles/AmphibiousAutomobile.h"
+ #include "weapons/Weapon.h"
+-#include "Weapons/Info/WeaponInfoManager.h"
++#include "weapons/info/WeaponInfoManager.h"
+ #include "weatheraudioentity.h"
+ #include "task/Motion//Locomotion/TaskInWater.h"
+ 

@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/scene/portals/PortalInst.cpp b/src/dev_ng/game/scene/portals/PortalInst.cpp
+--- a/src/dev_ng/game/scene/portals/PortalInst.cpp
++++ b/src/dev_ng/game/scene/portals/PortalInst.cpp
+@@ -10,10 +10,10 @@
+ 
+ //game
+ #include "scene/portals/InteriorInst.h"
+-#include "scene/portals/portal.h"
+-#include "scene/portals/portalInst.h"
++#include "scene/portals/Portal.h"
++#include "scene/portals/PortalInst.h"
+ #include "scene/portals/PortalTracker.h"
+-#include "scene/world/gameWorld.h"
++#include "scene/world/GameWorld.h"
+ 
+ #if __DEV
+ //OPTIMISATIONS_OFF()

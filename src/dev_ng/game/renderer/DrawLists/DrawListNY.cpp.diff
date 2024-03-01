@@ -1,0 +1,45 @@
+diff --git a/src/dev_ng/game/renderer/DrawLists/DrawListNY.cpp b/src/dev_ng/game/renderer/DrawLists/DrawListNY.cpp
+--- a/src/dev_ng/game/renderer/DrawLists/DrawListNY.cpp
++++ b/src/dev_ng/game/renderer/DrawLists/DrawListNY.cpp
+@@ -7,7 +7,7 @@
+ // CREATED : 30/8/06
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+-#include "renderer/DrawLists/drawListNY.h"
++#include "renderer/DrawLists/DrawListNY.h"
+ 
+ #include "fragment/tune.h"
+ #include "grcore/allocscope.h"
+@@ -25,23 +25,23 @@
+ #include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "frontend/HudTools.h"
+-#include "scene/entity.h"
+-#include "peds/ped.h"
+-#include "peds/ped.h"
+-#include "peds/rendering/pedVariationPack.h"
+-#include "physics/breakable.h"
+-#include "vehicles/vehicle.h"
++#include "scene/Entity.h"
++#include "Peds/ped.h"
++#include "Peds/ped.h"
++#include "Peds/rendering/pedVariationPack.h"
++#include "physics/Breakable.h"
++#include "Vehicles/vehicle.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+ #include "renderer/PostProcessFX.h"
+-#include "renderer/renderThread.h"
++#include "renderer/RenderThread.h"
+ #include "script/script.h"
+ #include "shaders/customshadereffectbase.h"
+ #include "shaders/CustomShaderEffectTint.h"
+-#include "shaders/shaderLib.h"
++#include "shaders/ShaderLib.h"
+ #include "system/system.h"
+ #include "scene/world/GameWorld.h"
+ #include "text/textconversion.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "renderer/RenderPhases/RenderPhaseStdNY.h"

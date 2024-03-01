@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.cpp b/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.cpp
+--- a/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.cpp
++++ b/src/dev_ng/game/network/SocialClubServices/SocialClubInboxManager.cpp
+@@ -7,13 +7,13 @@
+ //framework
+ #include "fwnet/netchannel.h"
+ 
+-#include "network/Live/LiveManager.h"
+-#include "Network/NetworkInterface.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
+ 
+ //game
+ #include "event/EventNetwork.h"
+ #include "event/EventGroup.h"
+-#include "Network/Cloud/Tunables.h"
++#include "network/Cloud/Tunables.h"
+ #include "network/SocialClubServices/GamePresenceEventDispatcher.h"
+ #include "network/SocialClubServices/GamePresenceEvents.h"
+ #include "network/SocialClubServices/SocialClubNewsStoryMgr.h"

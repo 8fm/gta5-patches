@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.h b/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.h
+--- a/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.h
++++ b/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.h
+@@ -7,8 +7,8 @@
+ #ifndef CINEMATIC_VEHICLEORBIT_CAMERA_H
+ #define CINEMATIC_VEHICLEORBIT_CAMERA_H
+ 
+-#include "Camera/Base/BaseCamera.h"
+-#include "Camera/helpers/DampedSpring.h"
++#include "camera/Base/BaseCamera.h"
++#include "camera/helpers/DampedSpring.h"
+ 
+ class camCinematicVehicleOrbitCameraMetadata;
+ class camCinematicVehicleLowOrbitCameraMetadata;

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/control/replay/Ped/PlayerPacket.cpp b/src/dev_ng/game/control/replay/Ped/PlayerPacket.cpp
+--- a/src/dev_ng/game/control/replay/Ped/PlayerPacket.cpp
++++ b/src/dev_ng/game/control/replay/Ped/PlayerPacket.cpp
+@@ -5,12 +5,12 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control/replay/ped/PlayerPacket.h"
++#include "control/replay/Ped/PlayerPacket.h"
+ ////#include "control/replay/ReplayMgr.h"
+ ////#include "debug/Debug.h"
+ ////#include "maths/vector.h"
+ #include "Peds/PlayerPed.h"
+-////#include "scene/portals/portal.h"
++////#include "scene/portals/Portal.h"
+ 
+ #if __BANK
+ #include "control/replay/ReplayInternal.h"

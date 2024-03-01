@@ -1,21 +1,24 @@
 diff --git a/src/dev_ng/game/Vehicles/Boat.h b/src/dev_ng/game/Vehicles/Boat.h
 --- a/src/dev_ng/game/Vehicles/Boat.h
 +++ b/src/dev_ng/game/Vehicles/Boat.h
-@@ -11,12 +11,12 @@
+@@ -11,13 +11,13 @@
  //
  #ifndef _BOAT_H_
  #define _BOAT_H_
 -#include "renderer\hierarchyIds.h"
-+#include "renderer/hierarchyIds.h"
- //#include "vehicles/AnchorHelper.h"
+-//#include "vehicles/AnchorHelper.h"
 -#include "vehicles\door.h"
 -#include "vehicles\handlingMgr.h"
 -#include "vehicles\vehicle.h"
 -#include "network\objects\entities\netObjBoat.h"
-+#include "vehicles/door.h"
-+#include "vehicles/handlingMgr.h"
-+#include "vehicles/vehicle.h"
-+#include "network/objects/entities/netObjBoat.h"
- #include "System/PadGestures.h"					// for define
+-#include "System/PadGestures.h"					// for define
++#include "renderer/HierarchyIds.h"
++//#include "Vehicles/AnchorHelper.h"
++#include "Vehicles/door.h"
++#include "Vehicles/handlingMgr.h"
++#include "Vehicles/vehicle.h"
++#include "network/Objects/Entities/NetObjBoat.h"
++#include "system/PadGestures.h"					// for define
  #include "control/replay/ReplaySettings.h"
  
+ //

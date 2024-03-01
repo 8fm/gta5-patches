@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/renderer/Deferred/GBuffer.cpp b/src/dev_ng/game/renderer/Deferred/GBuffer.cpp
+--- a/src/dev_ng/game/renderer/Deferred/GBuffer.cpp
++++ b/src/dev_ng/game/renderer/Deferred/GBuffer.cpp
+@@ -17,9 +17,9 @@
+ #include "renderer/deferred/gbuffer.h"
+ #include "renderer/rendertargets.h"
+ #include "renderer/deferred/deferredlighting.h"
+-#include "renderer/renderphases/renderphaseentityselect.h"
++#include "renderer/RenderPhases/renderphaseentityselect.h"
+ #include "renderer/sprite2d.h"
+-#include "shaders/shaderlib.h"
++#include "shaders/ShaderLib.h"
+ #include "system/xtl.h"
+ 
+ #if __XENON

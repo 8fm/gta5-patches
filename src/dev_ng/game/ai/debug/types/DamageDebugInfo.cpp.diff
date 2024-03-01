@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/ai/debug/types/DamageDebugInfo.cpp b/src/dev_ng/gam
 -#include "Peds\PedDebugVisualiser.h"
 -#include "Peds\PlayerInfo.h"
 +#include "camera/CamInterface.h"
-+#include "Peds/Ped.h"
++#include "Peds/ped.h"
 +#include "Peds/PedDebugVisualiser.h"
 +#include "Peds/PlayerInfo.h"
  

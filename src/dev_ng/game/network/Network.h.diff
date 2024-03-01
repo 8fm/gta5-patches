@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/network/Network.h b/src/dev_ng/game/network/Network.h
+--- a/src/dev_ng/game/network/Network.h
++++ b/src/dev_ng/game/network/Network.h
+@@ -17,9 +17,9 @@
+ #include "fwsys/timer.h"
+ 
+ // game includes
+-#include "Network/NetworkTypes.h"
+-#include "Network/Cloud/Tunables.h"
+-#include "Network/Debug/NetworkDebug.h"
++#include "network/NetworkTypes.h"
++#include "network/Cloud/Tunables.h"
++#include "network/Debug/NetworkDebug.h"
+ 
+ namespace rage
+ {

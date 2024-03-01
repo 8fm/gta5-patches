@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/misc/TVPlaylistManager.h b/src/dev_ng/game/vfx/misc/TVPlaylistManager.h
+--- a/src/dev_ng/game/vfx/misc/TVPlaylistManager.h
++++ b/src/dev_ng/game/vfx/misc/TVPlaylistManager.h
+@@ -14,7 +14,7 @@
+ #include "bank/button.h"
+ #include "bank/bkmgr.h"
+ 
+-#include "Vfx/Misc/MovieManager.h"
++#include "vfx/misc/MovieManager.h"
+ #include "game/Clock.h"
+ 
+ #include "control/replay/ReplaySettings.h"

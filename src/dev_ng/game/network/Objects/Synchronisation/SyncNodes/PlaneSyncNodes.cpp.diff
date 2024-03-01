@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.cpp b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.cpp
+--- a/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.cpp
++++ b/src/dev_ng/game/network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.cpp
+@@ -4,10 +4,10 @@
+ // written by:    
+ //
+ 
+-#include "network/objects/synchronisation/syncnodes/PlaneSyncNodes.h"
++#include "network/Objects/Synchronisation/SyncNodes/PlaneSyncNodes.h"
+ 
+-#include "vehicles/LandingGear.h"
+-#include "vehicles/Planes.h"
++#include "Vehicles/LandingGear.h"
++#include "Vehicles/Planes.h"
+ 
+ NETWORK_OPTIMISATIONS()
+ 

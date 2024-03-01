@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.h b/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.h
+--- a/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.h
++++ b/src/dev_ng/game/network/Objects/Entities/NetObjProximityMigrateable.h
+@@ -8,8 +8,8 @@
+ #ifndef NETOBJPROXIMITYMIGRATEABLE_H
+ #define NETOBJPROXIMITYMIGRATEABLE_H
+ 
+-#include "network/objects/entities/NetObjGame.h"
+-#include "network/objects/synchronisation/syncnodes/proximitymigrateablesyncnodes.h"
++#include "network/Objects/Entities/NetObjGame.h"
++#include "network/Objects/Synchronisation/SyncNodes/ProximityMigrateableSyncNodes.h"
+ 
+ namespace rage
+ {

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/script/commands_extrametadata.cpp b/src/dev_ng/game/script/commands_extrametadata.cpp
+--- a/src/dev_ng/game/script/commands_extrametadata.cpp
++++ b/src/dev_ng/game/script/commands_extrametadata.cpp
+@@ -13,8 +13,8 @@
+ #include "scene/ExtraMetadataMgr.h"
+ #include "script/script.h"
+ #include "script/script_channel.h"
+-#include "peds/rendering/PedVariationPack.h"
+-#include "peds/ped.h"
++#include "Peds/rendering/PedVariationPack.h"
++#include "Peds/ped.h"
+ #include "weapons/components/WeaponComponentManager.h"
+ 
+ // --- Defines ------------------------------------------------------------------

@@ -7,16 +7,17 @@ diff --git a/src/dev_ng/game/script/commands_inventory.cpp b/src/dev_ng/game/scr
 -#include "script\wrapper.h"
 +#include "script/wrapper.h"
  // Game headers
- #include "peds/Ped.h"
+-#include "peds/Ped.h"
 -#include "peds\pedintelligence.h"
-+#include "peds/pedintelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
  #include "scene/world/GameWorld.h"
 -#include "script\script.h"
 -#include "vehicles\automobile.h"
 -#include "Task\Default\TaskPlayer.h"
 +#include "script/script.h"
-+#include "vehicles/automobile.h"
-+#include "Task/Default/TaskPlayer.h"
++#include "Vehicles/Automobile.h"
++#include "task/Default/TaskPlayer.h"
  
  namespace inventory_commands
  {

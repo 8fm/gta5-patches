@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/network/Shop/Inventory.h b/src/dev_ng/game/network/Shop/Inventory.h
+--- a/src/dev_ng/game/network/Shop/Inventory.h
++++ b/src/dev_ng/game/network/Shop/Inventory.h
+@@ -19,7 +19,7 @@
+ #include "string/stringhash.h"
+ 
+ // Game headers
+-#include "stats/StatsTypes.h"
++#include "Stats/StatsTypes.h"
+ 
+ namespace rage { class RsonReader; };
+ 

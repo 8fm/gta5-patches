@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.h b/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.h
+--- a/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.h
++++ b/src/dev_ng/game/vfx/gpuparticles/PtFxGPUSystems.h
+@@ -21,7 +21,7 @@
+ #include "gpuptfx/ptxgpudrop.h"
+ 
+ // game
+-#include "Renderer/SpuPM/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
+ 
+ 
+ ///////////////////////////////////////////////////////////////////////////////

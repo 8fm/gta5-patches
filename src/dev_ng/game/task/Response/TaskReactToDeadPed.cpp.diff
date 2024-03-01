@@ -1,0 +1,36 @@
+diff --git a/src/dev_ng/game/task/Response/TaskReactToDeadPed.cpp b/src/dev_ng/game/task/Response/TaskReactToDeadPed.cpp
+--- a/src/dev_ng/game/task/Response/TaskReactToDeadPed.cpp
++++ b/src/dev_ng/game/task/Response/TaskReactToDeadPed.cpp
+@@ -8,22 +8,22 @@
+ //			 Check to see if there are other dead peds I can see, if so, mark them as reported
+ 
+ // File header
+-#include "Task/Response/TaskReactToDeadPed.h"
++#include "task/Response/TaskReactToDeadPed.h"
+ 
+ // Framework headers
+ #include "ai/task/taskchannel.h"
+ 
+ // Game headers
+-#include "Event/Events.h"
+-#include "Event/EventReactions.h"
+-#include "Peds/Ped.h"
++#include "event/Events.h"
++#include "event/EventReactions.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Movement/TaskNavMesh.h"
+-#include "Task/Combat/TaskInvestigate.h"
+-#include "Task/Combat/TaskReact.h"
+-#include "Task/Response/TaskFlee.h"
+-#include "Task/Scenario/ScenarioManager.h"
+-#include "Task/Scenario/TaskScenario.h"
++#include "task/Movement/TaskNavMesh.h"
++#include "task/Combat/TaskInvestigate.h"
++#include "task/Combat/TaskReact.h"
++#include "task/Response/TaskFlee.h"
++#include "task/Scenario/ScenarioManager.h"
++#include "task/Scenario/TaskScenario.h"
+ 
+ AI_OPTIMISATIONS()
+ 

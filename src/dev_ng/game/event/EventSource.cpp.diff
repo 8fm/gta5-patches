@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/event/EventSource.cpp b/src/dev_ng/game/event/EventSource.cpp
+--- a/src/dev_ng/game/event/EventSource.cpp
++++ b/src/dev_ng/game/event/EventSource.cpp
+@@ -1,7 +1,7 @@
+ // Game headers
+-#include "Event/Events.h"
+-#include "Event/EventSource.h"
+-#include "Peds/Ped.h"
++#include "event/Events.h"
++#include "event/EventSource.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+ 
+ AI_OPTIMISATIONS()

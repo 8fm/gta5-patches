@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/NmDefines.cpp b/src/dev_ng/game/task/Physics/NmDefines.cpp
+--- a/src/dev_ng/game/task/Physics/NmDefines.cpp
++++ b/src/dev_ng/game/task/Physics/NmDefines.cpp
+@@ -3,7 +3,7 @@
+ // behaviours and parameters. The class CNmDefines is a member of CTaskNM
+ 
+ // --- Include Files ------------------------------------------------------------
+-#include "Task/Physics/NmDefines.h"
++#include "task/Physics/NmDefines.h"
+ #include "optimisations.h"
+ // ------------------------------------------------------------------------------
+ 

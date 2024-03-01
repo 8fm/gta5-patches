@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/game/network/Live/NetworkClan.cpp b/src/dev_ng/game/network/Live/NetworkClan.cpp
+--- a/src/dev_ng/game/network/Live/NetworkClan.cpp
++++ b/src/dev_ng/game/network/Live/NetworkClan.cpp
+@@ -18,18 +18,18 @@
+ 
+ // Network headers
+ #include "NetworkClan.h"
+-#include "Network/Live/LiveManager.h"
+-#include "Network/NetworkInterface.h"
+-#include "Network/Players/NetGamePlayer.h"
+-#include "Network/SocialClubServices/GamePresenceEvents.h"
+-#include "Event/EventGroup.h"
+-#include "Event/EventNetwork.h"
++#include "network/Live/livemanager.h"
++#include "network/NetworkInterface.h"
++#include "network/Players/NetGamePlayer.h"
++#include "network/SocialClubServices/GamePresenceEvents.h"
++#include "event/EventGroup.h"
++#include "event/EventNetwork.h"
+ #include "frontend/GameStreamMgr.h"
+ #include "Stats/StatsInterface.h"
+ #include "text/TextFile.h"
+ 
+ #if __BANK
+-#include "Network/Live/LiveManager.h"
++#include "network/Live/livemanager.h"
+ #include "fwsys/timer.h"
+ #include "bank/bank.h"
+ #include "bank/text.h"

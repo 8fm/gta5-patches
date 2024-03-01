@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/cinematic/context/CinematicBustedContext.cpp b/src/dev_ng/game/camera/cinematic/context/CinematicBustedContext.cpp
+--- a/src/dev_ng/game/camera/cinematic/context/CinematicBustedContext.cpp
++++ b/src/dev_ng/game/camera/cinematic/context/CinematicBustedContext.cpp
+@@ -6,8 +6,8 @@
+ 
+ #include "camera/cinematic/context/CinematicBustedContext.h"
+ 
+-#include "peds/ped.h"
+-#include "peds/PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "task/Service/Police/TaskPolicePatrol.h"
+ 
+ INSTANTIATE_RTTI_CLASS(camCinematicBustedContext,0x480DEE3C)

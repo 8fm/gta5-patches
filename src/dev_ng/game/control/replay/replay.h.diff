@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/replay.h b/src/dev_ng/game/control/replay/replay.h
+--- a/src/dev_ng/game/control/replay/replay.h
++++ b/src/dev_ng/game/control/replay/replay.h
+@@ -1,7 +1,7 @@
+ #ifndef _REPLAY_H_
+ #define _REPLAY_H_
+ 
+-#include "control/replay/replayinternal.h"
++#include "control/replay/ReplayInternal.h"
+ 
+ #if GTA_REPLAY
+ 

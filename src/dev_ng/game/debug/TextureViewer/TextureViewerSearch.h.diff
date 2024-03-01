@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.h b/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.h
+--- a/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.h
++++ b/src/dev_ng/game/debug/TextureViewer/TextureViewerSearch.h
+@@ -6,7 +6,7 @@
+ #ifndef _DEBUG_TEXTUREVIEWER_TEXTUREVIEWERSEARCH_H_
+ #define _DEBUG_TEXTUREVIEWER_TEXTUREVIEWERSEARCH_H_
+ 
+-#include "debug/textureviewer/textureviewerprivate.h"
++#include "debug/TextureViewer/TextureViewerPrivate.h"
+ 
+ #if __BANK
+ 

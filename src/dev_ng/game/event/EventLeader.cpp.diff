@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/event/EventLeader.cpp b/src/dev_ng/game/event/EventLeader.cpp
+--- a/src/dev_ng/game/event/EventLeader.cpp
++++ b/src/dev_ng/game/event/EventLeader.cpp
+@@ -1,18 +1,18 @@
+ // Game headers
+-#include "Event/EventLeader.h"
+-#include "Network/NetworkInterface.h"
++#include "event/EventLeader.h"
++#include "network/NetworkInterface.h"
+ #include "PedGroup/PedGroup.h"
+-#include "Peds/Ped.h"
++#include "Peds/ped.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Task/Combat/Cover/TaskCover.h"
+-#include "Task/Combat/Cover/TaskSeekCover.h"
+-#include "Task/Combat/TaskCombat.h"
+-#include "Task/General/TaskBasic.h"
+-#include "Task/Weapons/TaskSwapWeapon.h"
+-#include "Task/Vehicle/TaskCar.h"
+-#include "Task/Vehicle/TaskEnterVehicle.h"
+-#include "Task/Vehicle/TaskExitVehicle.h"
+-#include "vehicles/vehicle.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Combat/Cover/TaskSeekCover.h"
++#include "task/Combat/TaskCombat.h"
++#include "task/General/TaskBasic.h"
++#include "task/Weapons/TaskSwapWeapon.h"
++#include "task/Vehicle/TaskCar.h"
++#include "task/Vehicle/TaskEnterVehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
++#include "Vehicles/vehicle.h"
+  
+ #include "event/EventLeader_parser.h"
+ 

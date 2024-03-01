@@ -1,0 +1,71 @@
+diff --git a/src/dev_ng/game/renderer/PlantsMgr.cpp b/src/dev_ng/game/renderer/PlantsMgr.cpp
+--- a/src/dev_ng/game/renderer/PlantsMgr.cpp
++++ b/src/dev_ng/game/renderer/PlantsMgr.cpp
+@@ -36,7 +36,7 @@
+ 
+ // Rage headers:
+ #include "grcore/debugdraw.h"
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ #include "physics/levelnew.h"
+ #include "physics/inst.h"
+ #include "phbound/bound.h"
+@@ -60,37 +60,37 @@
+ #include "vector/geometry.h"
+ 
+ // gta headers:
+-#include "camera/caminterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "camera/base/BaseCamera.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/gameplay/aim/FirstPersonAimCamera.h"
+ #include "camera/cinematic/CinematicDirector.h"
+-#include "core/game.h"
+-#include "scene/world/gameworld.h"
++#include "Core/game.h"
++#include "scene/world/GameWorld.h"
+ #include "physics/gtamaterialmanager.h"
+-#include "peds/PopCycle.h"		// GetCurrentZonePlantsMgrTxdIdx()
++#include "Peds/PopCycle.h"		// GetCurrentZonePlantsMgrTxdIdx()
+ #include "physics/iterator.h"
+ #include "physics/physics.h"
+-#include "debug/debug.h"
++#include "debug/Debug.h"
+ #include "debug/TiledScreenCapture.h"
+-#include "peds/ped.h"		// findplayerped()...
+-#include "objects/procobjects.h"	
++#include "Peds/ped.h"		// findplayerped()...
++#include "Objects/procobjects.h"	
+ #include "game/weather.h"		// g_weather.wind()...
+ #include "game/ModelIndices.h"
+ #include "scene/ContinuityMgr.h"
+ #include "scene/InstancePriority.h"
+ #include "scene/refmacros.h"
+-#include "shaders/shaderlib.h"
++#include "shaders/ShaderLib.h"
+ #include "system/taskscheduler.h"
+ #include "renderer/deferred/deferredlighting.h"
+ #include "renderer/deferred/gbuffer.h"
+ #include "renderer/plantsgrassrenderer.h"
+ #include "renderer/Water.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Submarine.h"
+-#include "game/clock.h"
+-#include "renderer/lights/lights.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Submarine.h"
++#include "game/Clock.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/sprite2d.h"
+ #include "renderer/gtadrawable.h"
+ #include "streaming/streamingrequest.h"
+@@ -151,7 +151,7 @@ PARAM(DisablePlantMgr, "Disable Plant Manager");
+ 
+ #if __BANK
+ 	#include "file/asset.h"
+-	#include "bank/Bank.h"
++	#include "bank/bank.h"
+ 	#include "bank/BkMgr.h"
+ 	bool			gbDisplayCPlantMgrInfo		= FALSE;
+ 	static bool		gbShowCPlantMgrPolys 		= FALSE;
