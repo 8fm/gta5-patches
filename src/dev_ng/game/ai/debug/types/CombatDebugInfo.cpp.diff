@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/ai/debug/types/CombatDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/CombatDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/CombatDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/CombatDebugInfo.cpp
+@@ -1,13 +1,13 @@
+-#include "ai\debug\types\CombatDebugInfo.h"
++#include "ai/debug/types/CombatDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ // game headers
+-#include "Peds\CombatBehaviour.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "task\Combat\Cover\TaskCover.h"
+-#include "task\Combat\TaskInvestigate.h"
++#include "Peds/CombatBehaviour.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
++#include "task/Combat/Cover/TaskCover.h"
++#include "task/Combat/TaskInvestigate.h"
+ 
+ EXTERN_PARSER_ENUM(BehaviourFlags);
+ extern const char* parser_CCombatData__BehaviourFlags_Strings[];

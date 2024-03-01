@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.h b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.h
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.h
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendLowGravity.h
+@@ -2,7 +2,7 @@
+ #define	PED_MOVE_BLEND_LOW_GRAVITY_H
+ 
+ 
+-#include "Peds\PedMoveBlend\PedMoveBlendBase.h"
+-#include "Peds\PedMoveBlend\MoveBlendTable.h"
++#include "Peds/PedMoveBlend/PedMoveBlendBase.h"
++#include "Peds/PedMoveBlend/MoveBlendTable.h"
+ 
+ #endif
+\ No newline at end of file

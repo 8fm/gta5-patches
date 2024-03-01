@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/components/WeaponComponent.cpp b/src/dev_ng/game/weapons/components/WeaponComponent.cpp
+--- a/src/dev_ng/game/weapons/components/WeaponComponent.cpp
++++ b/src/dev_ng/game/weapons/components/WeaponComponent.cpp
+@@ -12,7 +12,7 @@
+ #include "Peds/PedIntelligence.h"
+ #include "Weapons/Helpers/WeaponHelpers.h"
+ #include "fwscene/stores/txdstore.h"
+-#include "modelinfo\BaseModelInfo.h"
++#include "modelinfo/BaseModelInfo.h"
+ #include "Network/NetworkInterface.h"
+ #include "Objects/object.h"
+ #include "entity/drawdata.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Default/ArrestHelpers.cpp b/src/dev_ng/game/task/Default/ArrestHelpers.cpp
+--- a/src/dev_ng/game/task/Default/ArrestHelpers.cpp
++++ b/src/dev_ng/game/task/Default/ArrestHelpers.cpp
+@@ -19,7 +19,7 @@
+ 	#include "Peds/PedDebugVisualiser.h"
+ 	#include "scene/world/gameWorld.h"
+ 	#include "Peds/rendering/PedVariationDebug.h"
+-	#include "Peds\pedfactory.h"
++	#include "Peds/pedfactory.h"
+ #endif
+ 
+ // Macro to disable optimisations if set

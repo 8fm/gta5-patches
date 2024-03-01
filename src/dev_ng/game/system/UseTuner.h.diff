@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/UseTuner.h b/src/dev_ng/game/system/UseTuner.h
+--- a/src/dev_ng/game/system/UseTuner.h
++++ b/src/dev_ng/game/system/UseTuner.h
+@@ -2,7 +2,7 @@
+ #define USE_TUNER_H_GUARD	
+  
+ #if	__PPU && (__DEV || __PROFILE)
+-#include "sn\libsntuner.h"
++#include "sn/libsntuner.h"
+ #define  SN_START_MARKER(a,b)	snStartMarker((a),(b))
+ #define  SN_STOP_MARKER(a)	snStopMarker((a))
+ #else

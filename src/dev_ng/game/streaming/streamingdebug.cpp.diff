@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/streamingdebug.cpp b/src/dev_ng/game/streaming/streamingdebug.cpp
+--- a/src/dev_ng/game/streaming/streamingdebug.cpp
++++ b/src/dev_ng/game/streaming/streamingdebug.cpp
+@@ -922,7 +922,7 @@ void ResetStreamingStats()
+ 
+ //////////////////////////////////////////////////////////////////////////
+ // Streaming log
+-#include "game\clock.h"
++#include "game/clock.h"
+ 
+ bool		s_bLogStreaming = false;
+ bool		s_bLogAppend = false;

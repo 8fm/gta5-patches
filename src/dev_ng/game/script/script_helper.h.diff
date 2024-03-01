@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/script/script_helper.h b/src/dev_ng/game/script/script_helper.h
+--- a/src/dev_ng/game/script/script_helper.h
++++ b/src/dev_ng/game/script/script_helper.h
+@@ -8,9 +8,9 @@
+ #ifndef INC_SCRIPT_HELPER_H 
+ #define INC_SCRIPT_HELPER_H 
+ 
+-#include "script\handlers\GameScriptHandlerNetwork.h"
+-#include "script\script_channel.h"
+-#include "script\script.h"
++#include "script/handlers/GameScriptHandlerNetwork.h"
++#include "script/script_channel.h"
++#include "script/script.h"
+ 
+ //Adding script verifies
+ 

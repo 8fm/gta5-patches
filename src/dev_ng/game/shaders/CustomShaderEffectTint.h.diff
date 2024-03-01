@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectTint.h b/src/dev_ng/game/shaders/CustomShaderEffectTint.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectTint.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectTint.h
+@@ -10,12 +10,12 @@
+ #define __CUSTOMSHADEREFFECT_TINT__
+ 
+ // rage includes:
+-#include "paging\ref.h"
++#include "paging/ref.h"
+ 
+ // game includes:
+-#include "renderer\GtaDrawable.h"			// gtaDrawable
+-#include "physics\gtaArchetype.h"			// gtaFragType
+-#include "shaders\CustomShaderEffectBase.h"
++#include "renderer/GtaDrawable.h"			// gtaDrawable
++#include "physics/gtaArchetype.h"			// gtaFragType
++#include "shaders/CustomShaderEffectBase.h"
+ 
+ #define	CSE_TINT_EDITABLEVALUES		(__BANK)
+ 

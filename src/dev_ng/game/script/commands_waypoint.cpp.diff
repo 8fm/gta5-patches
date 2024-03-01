@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/script/commands_waypoint.cpp b/src/dev_ng/game/script/commands_waypoint.cpp
+--- a/src/dev_ng/game/script/commands_waypoint.cpp
++++ b/src/dev_ng/game/script/commands_waypoint.cpp
+@@ -5,17 +5,17 @@
+ 
+ // C headers
+ // Rage headers
+-#include "fwcontrol\WaypointRecordingRoute.h"
+-#include "script\wrapper.h"
++#include "fwcontrol/WaypointRecordingRoute.h"
++#include "script/wrapper.h"
+ // Game headers
+-#include "peds\AssistedMovement.h"
+-#include "peds\ped.h"
+-#include "peds\pedintelligence.h"
++#include "peds/AssistedMovement.h"
++#include "peds/ped.h"
++#include "peds/pedintelligence.h"
+ #include "peds/Ped.h"
+ #include "script/script_cars_and_peds.h"
+-#include "script\script_helper.h"
++#include "script/script_helper.h"
+ #include "vehicleAi/task/TaskVehicleFollowRecording.h"
+-#include "task\Movement\TaskFollowWaypointRecording.h"
++#include "task/Movement/TaskFollowWaypointRecording.h"
+ #include "task/Vehicle/TaskCar.h"
+ #include "task/Default/TaskPlayer.h"
+ 

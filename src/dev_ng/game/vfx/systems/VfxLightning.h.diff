@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/systems/VfxLightning.h b/src/dev_ng/game/vfx/systems/VfxLightning.h
+--- a/src/dev_ng/game/vfx/systems/VfxLightning.h
++++ b/src/dev_ng/game/vfx/systems/VfxLightning.h
+@@ -24,8 +24,8 @@
+ // Game headers
+ #include "control/replay/ReplaySettings.h"
+ #include "VfxLightningSettings.h"
+-#include "Vfx\clouds\CloudHat.h"
+-#include "timecycle\TimeCycle.h"
++#include "Vfx/clouds/CloudHat.h"
++#include "timecycle/TimeCycle.h"
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ //  FORWARD DECLARATIONS

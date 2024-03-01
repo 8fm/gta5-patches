@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/timecycle/TimeCycleConfig.cpp b/src/dev_ng/game/timecycle/TimeCycleConfig.cpp
+--- a/src/dev_ng/game/timecycle/TimeCycleConfig.cpp
++++ b/src/dev_ng/game/timecycle/TimeCycleConfig.cpp
+@@ -35,7 +35,7 @@
+ #include "TimeCycle/TimeCycle.h"
+ #include "Vehicles/Vehicle.h"
+ #include "vehicles/VehicleGadgets.h"
+-#include "vfx/Misc\BrightLights.h"
++#include "vfx/Misc/BrightLights.h"
+ #include "Vfx/Misc/Coronas.h"
+ #include "Vfx/Misc/DistantLights.h"
+ #include "Vfx/GPUParticles/PtFxGPUManager.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/VehicleIntelligenceFactory.h b/src/dev_ng/game/vehicleAi/VehicleIntelligenceFactory.h
+--- a/src/dev_ng/game/vehicleAi/VehicleIntelligenceFactory.h
++++ b/src/dev_ng/game/vehicleAi/VehicleIntelligenceFactory.h
+@@ -1,7 +1,7 @@
+ #ifndef VEHICLE_INTELLIGENCE_FACTORY_H
+ #define VEHICLE_INTELLIGENCE_FACTORY_H
+ 
+-#include "Debug\Debug.h"
++#include "Debug/Debug.h"
+ 
+ class CVehicle;
+ class CVehicleIntelligence;

@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/game/network/Live/FriendClanData.h b/src/dev_ng/game/network/Live/FriendClanData.h
+--- a/src/dev_ng/game/network/Live/FriendClanData.h
++++ b/src/dev_ng/game/network/Live/FriendClanData.h
+@@ -8,9 +8,9 @@
+ #define FRIEND_CLAN_DATA
+ 
+ // rage
+-#include "rline\clan\rlclancommon.h"
++#include "rline/clan/rlclancommon.h"
+ #include "rline/rlfriendsmanager.h"
+-#include "data\base.h"
++#include "data/base.h"
+ 
+ // game
+ #include "Frontend/CCrewMenu.h" // for VISIBLE_CREW_ITEMS

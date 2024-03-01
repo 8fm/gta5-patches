@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/bugstar/MinimalBug.h b/src/dev_ng/game/debug/bugstar/MinimalBug.h
+--- a/src/dev_ng/game/debug/bugstar/MinimalBug.h
++++ b/src/dev_ng/game/debug/bugstar/MinimalBug.h
+@@ -1,7 +1,7 @@
+ #ifndef _MINIMALBUG_H_
+ #define _MINIMALBUG_H_
+ 
+-#include "debug\bugstar\BugstarIntegrationSwitch.h"
++#include "debug/bugstar/BugstarIntegrationSwitch.h"
+ #if(BUGSTAR_INTEGRATION_ACTIVE)
+ 
+ #include <ctime>

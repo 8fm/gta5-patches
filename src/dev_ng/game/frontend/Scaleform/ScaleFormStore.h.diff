@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.h b/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.h
+--- a/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.h
++++ b/src/dev_ng/game/frontend/Scaleform/ScaleFormStore.h
+@@ -11,11 +11,11 @@
+ #define _SCALEFORMSTORE_H_
+ 
+ // Rage headers
+-#include "fwtl\assetstore.h"
++#include "fwtl/assetstore.h"
+ 
+ // Game headers
+-#include "Frontend\Scaleform\ScaleformDef.h"
+-#include "Frontend\Scaleform\ScaleFormMgr.h"
++#include "Frontend/Scaleform/ScaleformDef.h"
++#include "Frontend/Scaleform/ScaleFormMgr.h"
+ 
+ 
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Submarine.h b/src/dev_ng/game/Vehicles/Submarine.h
+--- a/src/dev_ng/game/Vehicles/Submarine.h
++++ b/src/dev_ng/game/Vehicles/Submarine.h
+@@ -6,7 +6,7 @@
+ #include "vehicles/Automobile.h"
+ #include "vehicles/Propeller.h"
+ 
+-#include "network\objects\entities\netObjSubmarine.h"
++#include "network/objects/entities/netObjSubmarine.h"
+ 
+ #include "control/replay/ReplaySettings.h"
+ 

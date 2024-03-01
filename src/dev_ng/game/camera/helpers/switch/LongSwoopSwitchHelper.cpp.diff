@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp b/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp
+--- a/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp
++++ b/src/dev_ng/game/camera/helpers/switch/LongSwoopSwitchHelper.cpp
+@@ -7,7 +7,7 @@
+ 
+ #include "fwmaths/angle.h"
+ 
+-#include "camera\CamInterface.h"
++#include "camera/CamInterface.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/helpers/ControlHelper.h"
+ #include "camera/system/CameraMetadata.h"

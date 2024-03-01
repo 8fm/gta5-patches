@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/PMDictionaryStore.h b/src/dev_ng/game/animation/PMDictionaryStore.h
+--- a/src/dev_ng/game/animation/PMDictionaryStore.h
++++ b/src/dev_ng/game/animation/PMDictionaryStore.h
+@@ -18,7 +18,7 @@
+ // Rage headers
+ #include "crparameterizedmotion/parameterizedmotiondictionary.h"
+ // Game headers
+-#include "fwtl\assetstore.h"
++#include "fwtl/assetstore.h"
+ 
+ // --- Defines ------------------------------------------------------------------
+ 

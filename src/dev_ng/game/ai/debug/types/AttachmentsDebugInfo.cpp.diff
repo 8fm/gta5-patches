@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/ai/debug/types/AttachmentsDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/AttachmentsDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/AttachmentsDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/AttachmentsDebugInfo.cpp
+@@ -1,9 +1,9 @@
+-#include "ai\debug\types\AttachmentsDebugInfo.h"
++#include "ai/debug/types/AttachmentsDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+-#include "entity\attachmententityextension.h"
+-#include "scene\Physical.h"
++#include "entity/attachmententityextension.h"
++#include "scene/Physical.h"
+ 
+ const char* CAttachmentsDebugInfo::GetAttachStateString(s32 i)
+ {

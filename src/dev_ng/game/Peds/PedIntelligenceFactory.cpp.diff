@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/Peds/PedIntelligenceFactory.cpp b/src/dev_ng/game/Peds/PedIntelligenceFactory.cpp
+--- a/src/dev_ng/game/Peds/PedIntelligenceFactory.cpp
++++ b/src/dev_ng/game/Peds/PedIntelligenceFactory.cpp
+@@ -1,4 +1,4 @@
+-#include "Peds\PedIntelligenceFactory.h"
++#include "Peds/PedIntelligenceFactory.h"
+ #include "PedIntelligence.h"
+ 
+ CPedIntelligenceFactory* CPedIntelligenceFactory::sm_pInstance=0;

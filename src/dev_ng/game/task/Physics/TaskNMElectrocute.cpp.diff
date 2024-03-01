@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp b/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMElectrocute.cpp
+@@ -4,7 +4,7 @@
+ 
+ // C headers
+ // Rage headers
+-#include "fragmentnm\messageparams.h"
++#include "fragmentnm/messageparams.h"
+ 
+ // Framework headers
+ 

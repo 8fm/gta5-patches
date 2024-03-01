@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/PedDebugInfo.cpp
+@@ -1,10 +1,10 @@
+-#include "ai\debug\types\PedDebugInfo.h"
++#include "ai/debug/types/PedDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "task\Combat\Cover\TaskCover.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
++#include "task/Combat/Cover/TaskCover.h"
+ #include "Task/Movement/TaskParachute.h"
+ 
+ EXTERN_PARSER_ENUM(ePedConfigFlags);

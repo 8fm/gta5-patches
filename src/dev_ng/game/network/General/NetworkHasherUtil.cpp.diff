@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/network/General/NetworkHasherUtil.cpp b/src/dev_ng/game/network/General/NetworkHasherUtil.cpp
+--- a/src/dev_ng/game/network/General/NetworkHasherUtil.cpp
++++ b/src/dev_ng/game/network/General/NetworkHasherUtil.cpp
+@@ -18,12 +18,12 @@
+ #include "Pickups/Data/PickupDataManager.h"
+ #include "Scene/DataFileMgr.h"
+ #if __BANK
+-#include "script\commands_network.h"
++#include "script/commands_network.h"
+ #endif
+-#include "Network\Cloud\Tunables.h"
++#include "Network/Cloud/Tunables.h"
+ #include "Network/events/NetworkEventTypes.h"
+ #include "Network/Live/NetworkRemoteCheaterDetector.h"
+-#include "script\streamedscripts.h"
++#include "script/streamedscripts.h"
+ #include "stats/StatsMgr.h"
+ #include "System/ThreadPriorities.h"
+ #include "Task/System/Tuning.h"

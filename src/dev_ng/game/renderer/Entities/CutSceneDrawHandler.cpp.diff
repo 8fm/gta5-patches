@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp b/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp
+--- a/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp
++++ b/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp
+@@ -19,7 +19,7 @@
+ #include "scene/world/GameWorld.h"
+ #include "renderer/DrawLists/DrawListProfileStats.h"
+ #include "renderer/Entities/PedDrawHandler.h"
+-#include "shaders\CustomShaderEffectPed.h"
++#include "shaders/CustomShaderEffectPed.h"
+ 
+ RENDER_OPTIMISATIONS()
+ 

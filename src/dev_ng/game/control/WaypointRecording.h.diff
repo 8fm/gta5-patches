@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/control/WaypointRecording.h b/src/dev_ng/game/control/WaypointRecording.h
+--- a/src/dev_ng/game/control/WaypointRecording.h
++++ b/src/dev_ng/game/control/WaypointRecording.h
+@@ -1,13 +1,13 @@
+ #ifndef WAYPOINT_RECORDING_H
+ #define WAYPOINT_RECORDING_H
+ 
+-#include "control\WaypointRecordingRoute.h"
++#include "control/WaypointRecordingRoute.h"
+ 
+ //*****************************************************************************
+ 
+-#include "fwmaths\Vector.h"
++#include "fwmaths/Vector.h"
+ #include "script/thread.h"
+-#include "streaming\streamingmodule.h"
++#include "streaming/streamingmodule.h"
+ 
+ #include "paging/base.h"
+ 

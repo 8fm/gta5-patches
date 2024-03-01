@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/scripted/ScriptDirector.cpp b/src/dev_ng/game/camera/scripted/ScriptDirector.cpp
+--- a/src/dev_ng/game/camera/scripted/ScriptDirector.cpp
++++ b/src/dev_ng/game/camera/scripted/ScriptDirector.cpp
+@@ -12,7 +12,7 @@
+ #include "camera/cutscene/CutsceneDirector.h"
+ #include "camera/debug/DebugDirector.h"
+ #include "camera/gameplay/GameplayDirector.h"
+-#include "camera\helpers\ControlHelper.h"
++#include "camera/helpers/ControlHelper.h"
+ #include "camera/helpers/FrameInterpolator.h"
+ #include "camera/scripted/ScriptedCamera.h"
+ #include "camera/system/CameraFactory.h"

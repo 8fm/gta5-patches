@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/debug/AmbientMarkers.cpp b/src/dev_ng/game/debug/AmbientMarkers.cpp
+--- a/src/dev_ng/game/debug/AmbientMarkers.cpp
++++ b/src/dev_ng/game/debug/AmbientMarkers.cpp
+@@ -18,9 +18,9 @@
+ #include "bank/combo.h"
+ 
+ // Game headers
+-#include "debug\AmbientMarkers.h"
+-#include "debug\debug.h"
+-#include "system\filemgr.h"
++#include "debug/AmbientMarkers.h"
++#include "debug/debug.h"
++#include "system/filemgr.h"
+ 
+ static atArray<const char*> s_MarkerNames;
+ static s32 s_MarkerSelected;

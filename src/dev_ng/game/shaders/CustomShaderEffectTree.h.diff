@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectTree.h b/src/dev_ng/game/shaders/CustomShaderEffectTree.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectTree.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectTree.h
+@@ -11,11 +11,11 @@
+ #ifndef __CCUSTOMSHADEREFFECTTREE_H__
+ #define __CCUSTOMSHADEREFFECTTREE_H__
+ 
+-#include "rmcore\drawable.h"
+-#include "shaders\CustomShaderEffectBase.h"
+-#include "shaders\CustomShaderEffectTint.h"
+-#include "shader_source\Vegetation\Trees\trees_shared.h"
+-#include "math\random.h"
++#include "rmcore/drawable.h"
++#include "shaders/CustomShaderEffectBase.h"
++#include "shaders/CustomShaderEffectTint.h"
++#include "shader_source/Vegetation/Trees/trees_shared.h"
++#include "math/random.h"
+ 
+ #define	CSE_TREE_EDITABLEVALUES				(__BANK)
+ 

@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_PathMisc.cpp b/src/dev_ng/game/pathserver/PathServer_PathMisc.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_PathMisc.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_PathMisc.cpp
+@@ -1,12 +1,12 @@
+-#include "PathServer\PathServer.h"
++#include "PathServer/PathServer.h"
+ 
+ // Rage headers
+-#include "atl\inmap.h"
++#include "atl/inmap.h"
+ #include "system/xtl.h"
+ 
+ // Framework headers
+ #include "ai/navmesh/priqueue.h"
+-#include "fwmaths\Vector.h"
++#include "fwmaths/Vector.h"
+ #include "fwmaths/random.h"
+ 
+ 

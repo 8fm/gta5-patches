@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
+--- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
++++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseCascadeShadows.cpp
+@@ -84,9 +84,9 @@
+ #include "camera/switch/SwitchCamera.h"
+ #include "camera/switch/SwitchDirector.h"
+ #include "camera/cinematic/CinematicDirector.h"
+-#include "camera\cinematic\camera\tracking\CinematicFirstPersonIdleCamera.h"
+-#include "camera\cinematic\camera\tracking\CinematicHeliChaseCamera.h"
+-#include "camera\gameplay\aim\FirstPersonPedAimCamera.h"
++#include "camera/cinematic/camera/tracking/CinematicFirstPersonIdleCamera.h"
++#include "camera/cinematic/camera/tracking/CinematicHeliChaseCamera.h"
++#include "camera/gameplay/aim/FirstPersonPedAimCamera.h"
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
+ #include "control/gamelogic.h"
+ #include "cutscene/CutSceneManagerNew.h"
+@@ -99,7 +99,7 @@
+ #include "debug/Rendering/DebugDeferred.h"
+ #include "debug/TextureViewer/TextureViewer.h" // filthy hack for CDebugTextureViewerInterface::GetWorldPosUnderMouse
+ #include "debug/TiledScreenCapture.h"
+-#include "frontend\NewHud.h"
++#include "frontend/NewHud.h"
+ #include "game/Clock.h"
+ #include "modelinfo/MloModelInfo.h"
+ #include "Peds/ped.h"
+@@ -128,9 +128,9 @@
+ #include "vfx/VfxHelper.h"
+ #include "timecycle/TimeCycleConfig.h"
+ #include "timecycle/TimeCycle.h"
+-#include "task\Movement\TaskParachute.h"
+-#include "task\Movement\TaskFall.h"
+-#include "Peds\PedIntelligence.h"
++#include "task/Movement/TaskParachute.h"
++#include "task/Movement/TaskFall.h"
++#include "Peds/PedIntelligence.h"
+ #include "vehicles/vehicle.h"
+ #include "../../shader_source/Lighting/Shadows/cascadeshadows_common.fxh"
+ #include "control/replay/replay.h"

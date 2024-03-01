@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/physics/gtaInst.h b/src/dev_ng/game/physics/gtaInst.h
+--- a/src/dev_ng/game/physics/gtaInst.h
++++ b/src/dev_ng/game/physics/gtaInst.h
+@@ -5,14 +5,14 @@
+ #ifndef GTA_PHYSICS_INST_H
+ #define GTA_PHYSICS_INST_H
+ 
+-#include "debug\debug.h"
+-#include "fragment\instance.h"
+-#include "fragment\manager.h"
+-#include "phframework\fraginst.h"
+-#include "phframework\inst.h"
+-#include "phglass\glassinstance.h"
+-#include "physics\inst.h"
+-#include "scene\RegdRefTypes.h"
++#include "debug/debug.h"
++#include "fragment/instance.h"
++#include "fragment/manager.h"
++#include "phframework/fraginst.h"
++#include "phframework/inst.h"
++#include "phglass/glassinstance.h"
++#include "physics/inst.h"
++#include "scene/RegdRefTypes.h"
+ #include "fwtl/pool.h"
+ 
+ #if __WIN32
+@@ -21,8 +21,8 @@
+ 
+ #define ART_MONOLITHIC_STATIC
+ #define NMUTILS_NODLL
+-#include "fragmentnm\instance.h"
+-#include "art\artfeedback.h"
++#include "fragmentnm/instance.h"
++#include "art/artfeedback.h"
+ 
+ #if __WIN32
+ #pragma warning (pop)

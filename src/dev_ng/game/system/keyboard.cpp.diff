@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/keyboard.cpp b/src/dev_ng/game/system/keyboard.cpp
+--- a/src/dev_ng/game/system/keyboard.cpp
++++ b/src/dev_ng/game/system/keyboard.cpp
+@@ -15,7 +15,7 @@
+ #include <string.h>
+ // Rage headers
+ #include "grcore/debugdraw.h"
+-#include "input\input.h"
++#include "input/input.h"
+ #include "input/mapper.h"
+ #include "parsercore/streamxml.h"
+ #include "string/unicode.h"

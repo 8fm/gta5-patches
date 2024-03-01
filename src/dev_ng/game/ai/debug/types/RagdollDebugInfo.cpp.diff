@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/RagdollDebugInfo.cpp
+@@ -1,7 +1,7 @@
+-#include "ai\debug\types\RagdollDebugInfo.h"
++#include "ai/debug/types/RagdollDebugInfo.h"
+ #include "Task/Physics/TaskNMShot.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "task/Combat/TaskDamageDeath.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED

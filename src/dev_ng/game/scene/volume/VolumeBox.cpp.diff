@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/scene/volume/VolumeBox.cpp b/src/dev_ng/game/scene/volume/VolumeBox.cpp
+--- a/src/dev_ng/game/scene/volume/VolumeBox.cpp
++++ b/src/dev_ng/game/scene/volume/VolumeBox.cpp
+@@ -7,20 +7,20 @@
+ 
+ #if VOLUME_SUPPORT
+ //rage includes
+-#include "math\amath.h"
+-#include "vector\geometry.h"
+-#include "vector\color32.h"
+-#include "grcore\im.h"
+-#include "grcore\debugdraw.h"
+-#include "file\stream.h"
+-#include "bank\bkmgr.h"
++#include "math/amath.h"
++#include "vector/geometry.h"
++#include "vector/color32.h"
++#include "grcore/im.h"
++#include "grcore/debugdraw.h"
++#include "file/stream.h"
++#include "bank/bkmgr.h"
+ 
+ //framework includes 
+ 
+ //game includes
+-#include "scene\volume\VolumeBox.h"
+-#include "scene\volume\VolumeManager.h"
+-#include "scene\volume\VolumeTool.h"
++#include "scene/volume/VolumeBox.h"
++#include "scene/volume/VolumeManager.h"
++#include "scene/volume/VolumeTool.h"
+ 
+ FW_INSTANTIATE_CLASS_POOL(CVolumeBox, 256, atHashString("VolumeBox",0xfec2408d));
+ INSTANTIATE_RTTI_CLASS(CVolumeBox,0x9C31C5B5)

@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/ai/debug/types/VehicleControlDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/VehicleControlDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/VehicleControlDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/VehicleControlDebugInfo.cpp
+@@ -1,12 +1,12 @@
+-#include "ai\debug\types\VehicleControlDebugInfo.h"
++#include "ai/debug/types/VehicleControlDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+-#include "vehicleAi\VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "Vehicles/Heli.h"
+ #include "vehicles/Submarine.h"
+ #include "vehicleAi/Task/TaskVehicleGotoAutomobile.h"
+-#include "vehicles\transmission.h"
++#include "vehicles/transmission.h"
+ 
+ CVehicleControlDebugInfo::CVehicleControlDebugInfo(const CVehicle* pVeh, DebugInfoPrintParams rPrintParams, s32 iNumberOfLines)
+ : CVehicleDebugInfo(pVeh, rPrintParams, iNumberOfLines)

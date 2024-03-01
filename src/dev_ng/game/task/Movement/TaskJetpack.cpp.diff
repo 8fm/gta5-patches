@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskJetpack.cpp b/src/dev_ng/game/task/Movement/TaskJetpack.cpp
+--- a/src/dev_ng/game/task/Movement/TaskJetpack.cpp
++++ b/src/dev_ng/game/task/Movement/TaskJetpack.cpp
+@@ -19,7 +19,7 @@
+ #include "Task/Vehicle/TaskCar.h"
+ #include "AI/Ambient/ConditionalAnimManager.h"
+ #include "Vfx/Systems/VfxGadget.h"
+-#include "scene\world\GameWorldHeightMap.h"
++#include "scene/world/GameWorldHeightMap.h"
+ #include "Pickups/Pickup.h"
+ #include "vehicleAi/VehicleNavigationHelper.h"
+ 

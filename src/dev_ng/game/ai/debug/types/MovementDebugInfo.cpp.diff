@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/ai/debug/types/MovementDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/MovementDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/MovementDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/MovementDebugInfo.cpp
+@@ -1,12 +1,12 @@
+-#include "ai\debug\types\MovementDebugInfo.h"
++#include "ai/debug/types/MovementDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ // game headers
+-#include "Peds\PedEventScanner.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\PlayerInfo.h"
+-#include "task\Motion\TaskMotionBase.h"
++#include "Peds/PedEventScanner.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PlayerInfo.h"
++#include "task/Motion/TaskMotionBase.h"
+ 
+ CMovementTextDebugInfo::CMovementTextDebugInfo(const CPed* pPed, DebugInfoPrintParams printParams)
+ 	: CAIDebugInfo(printParams)

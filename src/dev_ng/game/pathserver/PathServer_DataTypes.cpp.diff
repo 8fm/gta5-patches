@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_DataTypes.cpp b/src/dev_ng/game/pathserver/PathServer_DataTypes.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_DataTypes.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_DataTypes.cpp
+@@ -1,4 +1,4 @@
+ // Game headers
+-#include "PathServer\PathServer_DataTypes.h"
++#include "PathServer/PathServer_DataTypes.h"
+ 
+ NAVMESH_OPTIMISATIONS()

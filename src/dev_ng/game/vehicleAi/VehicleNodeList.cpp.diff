@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/VehicleNodeList.cpp b/src/dev_ng/game/vehicleAi/VehicleNodeList.cpp
+--- a/src/dev_ng/game/vehicleAi/VehicleNodeList.cpp
++++ b/src/dev_ng/game/vehicleAi/VehicleNodeList.cpp
+@@ -2,7 +2,7 @@
+ #include "math/vecmath.h"
+ 
+ //game headers
+-#include "vehicleAi\VehicleNodeList.h"
++#include "vehicleAi/VehicleNodeList.h"
+ #include "Vehicles/vehicle.h"
+ 
+ VEHICLE_OPTIMISATIONS()

@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/game/Vehicles/vehicleLightSwitch.cpp b/src/dev_ng/game/Vehicles/vehicleLightSwitch.cpp
+--- a/src/dev_ng/game/Vehicles/vehicleLightSwitch.cpp
++++ b/src/dev_ng/game/Vehicles/vehicleLightSwitch.cpp
+@@ -6,19 +6,19 @@
+ // C headers
+ 
+ // Rage headers
+-#include "grcore\vertexbuffer.h"
+-#include "grcore\vertexbuffereditor.h"
+-#include "grmodel\geometry.h"
++#include "grcore/vertexbuffer.h"
++#include "grcore/vertexbuffereditor.h"
++#include "grmodel/geometry.h"
+ 
+ // Microsoft headers
+ 
+ // Rage headers
+ 
+ // Game headers
+-#include "modelInfo\vehicleModelInfo.h"
+-#include "vehicles\vehicle.h"
+-#include "vehicles\vehicleLightSwitch.h"
+-#include "shaders\CustomShaderEffectVehicle.h"
++#include "modelInfo/vehicleModelInfo.h"
++#include "vehicles/vehicle.h"
++#include "vehicles/vehicleLightSwitch.h"
++#include "shaders/CustomShaderEffectVehicle.h"
+ 
+ 
+ // --- Defines ------------------------------------------------------------------

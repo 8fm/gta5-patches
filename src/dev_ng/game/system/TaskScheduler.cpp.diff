@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/TaskScheduler.cpp b/src/dev_ng/game/system/TaskScheduler.cpp
+--- a/src/dev_ng/game/system/TaskScheduler.cpp
++++ b/src/dev_ng/game/system/TaskScheduler.cpp
+@@ -9,7 +9,7 @@
+ 
+ // C headers
+ // Rage headers
+-#include "system\task.h"
++#include "system/task.h"
+ // Game headers
+ 
+ // --- Defines ------------------------------------------------------------------

@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/weapons/AirDefence.cpp b/src/dev_ng/game/weapons/AirDefence.cpp
+--- a/src/dev_ng/game/weapons/AirDefence.cpp
++++ b/src/dev_ng/game/weapons/AirDefence.cpp
+@@ -3,21 +3,21 @@
+ // AUTHOR:  Blair T
+ // CREATED: 30-10-2015
+ 
+-#include "Weapons\AirDefence.h"
+-
+-#include "bank\bank.h"
+-#include "bank\bkmgr.h"
+-#include "camera\CamInterface.h"
+-#include "grcore\debugdraw.h"
+-#include "Peds\Ped.h" 
+-#include "network\NetworkInterface.h"
++#include "Weapons/AirDefence.h"
++
++#include "bank/bank.h"
++#include "bank/bkmgr.h"
++#include "camera/CamInterface.h"
++#include "grcore/debugdraw.h"
++#include "Peds/Ped.h" 
++#include "network/NetworkInterface.h"
+ #include "Network/Events/NetworkEventTypes.h"
+-#include "vector\colors.h"
+-#include "vector\geometry.h"
+-#include "Weapons\Explosion.h"
+-#include "Weapons\Weapon.h"
+-#include "Vfx\ptfx\ptfxmanager.h"
+-#include "Vfx\VfxHelper.h"
++#include "vector/colors.h"
++#include "vector/geometry.h"
++#include "Weapons/Explosion.h"
++#include "Weapons/Weapon.h"
++#include "Vfx/ptfx/ptfxmanager.h"
++#include "Vfx/VfxHelper.h"
+ 
+ // Macro to disable optimizations if set
+ WEAPON_OPTIMISATIONS()

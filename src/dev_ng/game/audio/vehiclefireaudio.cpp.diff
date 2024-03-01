@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/audio/vehiclefireaudio.cpp b/src/dev_ng/game/audio/vehiclefireaudio.cpp
+--- a/src/dev_ng/game/audio/vehiclefireaudio.cpp
++++ b/src/dev_ng/game/audio/vehiclefireaudio.cpp
+@@ -16,7 +16,7 @@
+ #include "audioengine/curve.h"
+ #include "audioengine/engineutil.h"
+ #include "vehicles/vehicle.h"
+-#include "vfx\misc/fire.h"
++#include "vfx/misc/fire.h"
+ #include "frontendaudioentity.h"
+ 
+ #include "debugaudio.h"

@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/pathserver/ExportCollision.h b/src/dev_ng/game/pathserver/ExportCollision.h
+--- a/src/dev_ng/game/pathserver/ExportCollision.h
++++ b/src/dev_ng/game/pathserver/ExportCollision.h
+@@ -1,10 +1,10 @@
+ #ifndef EXPORT_COLLISION_H
+ #define EXPORT_COLLISION_H
+ 
+-#include "PathServer\NavGenParam.h"
+-#include "fwscene\stores\boxstreamersearch.h"
+-#include "fwutil\PtrList.h"
+-#include "spatialdata\aabb.h"
++#include "PathServer/NavGenParam.h"
++#include "fwscene/stores/boxstreamersearch.h"
++#include "fwutil/PtrList.h"
++#include "spatialdata/aabb.h"
+ 
+ class CEntity;
+ class CPhysical;

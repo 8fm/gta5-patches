@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectWeapon.cpp b/src/dev_ng/game/shaders/CustomShaderEffectWeapon.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectWeapon.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectWeapon.cpp
+@@ -10,17 +10,17 @@
+ //
+ 
+ // Rage headers
+-#include "grmodel\ShaderFx.h"
+-#include "grmodel\Geometry.h"
+-#include "grcore\texturereference.h"
++#include "grmodel/ShaderFx.h"
++#include "grmodel/Geometry.h"
++#include "grcore/texturereference.h"
+ 
+ #include "rmcore/drawable.h"
+ 
+ // Game headers
+-#include "debug\debug.h"
++#include "debug/debug.h"
+ #include "renderer/DrawLists/drawListMgr.h"
+-#include "scene\Entity.h"
+-#include "scene\world\GameWorld.h"
++#include "scene/Entity.h"
++#include "scene/world/GameWorld.h"
+ #include "CustomShaderEffectWeapon.h"
+ 
+ //#include "system/findsize.h"

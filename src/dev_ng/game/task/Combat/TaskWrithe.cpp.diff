@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskWrithe.cpp b/src/dev_ng/game/task/Combat/TaskWrithe.cpp
+--- a/src/dev_ng/game/task/Combat/TaskWrithe.cpp
++++ b/src/dev_ng/game/task/Combat/TaskWrithe.cpp
+@@ -13,7 +13,7 @@
+ #include "Task/Physics/TaskNMHighFall.h"
+ #include "Weapons/WeaponDamage.h"
+ #include "Network/NetworkInterface.h"
+-#include "vfx\misc\Fire.h"
++#include "vfx/misc/Fire.h"
+ 
+ const fwMvClipId CTaskWrithe::ms_ToWritheClipId("ToWritheClip",0xC1AA8B7D);
+ const fwMvClipId CTaskWrithe::ms_LoopClipId("LoopClip",0x164F9B6B);

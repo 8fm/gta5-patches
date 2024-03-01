@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/Vehicles/vehiclestorage.cpp b/src/dev_ng/game/Vehicles/vehiclestorage.cpp
+--- a/src/dev_ng/game/Vehicles/vehiclestorage.cpp
++++ b/src/dev_ng/game/Vehicles/vehiclestorage.cpp
+@@ -8,17 +8,17 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "vehicles\vehiclestorage.h"
+-#include "vehicles\vehicle.h"
+-#include "scene\world\gameWorld.h"
+-#include "modelinfo\vehiclemodelinfo.h"
+-#include "network\live\NetworkTelemetry.h"
+-#include "stats\MoneyInterface.h"
+-#include "streaming\streaming.h"
++#include "vehicles/vehiclestorage.h"
++#include "vehicles/vehicle.h"
++#include "scene/world/gameWorld.h"
++#include "modelinfo/vehiclemodelinfo.h"
++#include "network/live/NetworkTelemetry.h"
++#include "stats/MoneyInterface.h"
++#include "streaming/streaming.h"
+ #include "vehicles/Automobile.h"
+-#include "vehicles\vehiclefactory.h"
+-#include "VehicleAi\task\TaskVehiclePlayer.h"
+-#include "fwscene\world\WorldLimits.h"
++#include "vehicles/vehiclefactory.h"
++#include "VehicleAi/task/TaskVehiclePlayer.h"
++#include "fwscene/world/WorldLimits.h"
+ 
+ #define FRONTCOMPR (100.0f)
+ 

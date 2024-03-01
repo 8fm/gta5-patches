@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticleBloodFxPacket.h
+@@ -11,9 +11,9 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control\replay\Effects\ParticlePacket.h"
+-#include "control\replay\packetbasics.h"
+-#include "vfx\decal\decalsettings.h"
++#include "control/replay/Effects/ParticlePacket.h"
++#include "control/replay/packetbasics.h"
++#include "vfx/decal/decalsettings.h"
+ 
+ class CPed;
+ class CObject;

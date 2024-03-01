@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskAdvance.cpp
+@@ -11,7 +11,7 @@
+ #include "task/Combat/Cover/cover.h"
+ #include "task/Movement/TaskMoveToTacticalPoint.h"
+ #include "task/Movement/TaskSeekEntity.h"
+-#include "network\events\NetworkEventTypes.h"
++#include "network/events/NetworkEventTypes.h"
+ 
+ AI_OPTIMISATIONS()
+ 

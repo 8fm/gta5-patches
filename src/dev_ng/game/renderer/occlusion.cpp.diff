@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/renderer/occlusion.cpp b/src/dev_ng/game/renderer/occlusion.cpp
+--- a/src/dev_ng/game/renderer/occlusion.cpp
++++ b/src/dev_ng/game/renderer/occlusion.cpp
+@@ -16,9 +16,9 @@
+ #include "grcore/viewport_inline.h"
+ #include "bank/bkmgr.h"
+ #include "profile/timebars.h"
+-#include "phsolver\contactmgr.h" // for physics scratchpad memory
+-#include "physics\contact.h"
+-#include "phcore\pool.h"
++#include "phsolver/contactmgr.h" // for physics scratchpad memory
++#include "physics/contact.h"
++#include "phcore/pool.h"
+ #include "system/cache.h"
+ #include "vector/colors.h"
+ #include "softrasterizer/softrasterizer.h"

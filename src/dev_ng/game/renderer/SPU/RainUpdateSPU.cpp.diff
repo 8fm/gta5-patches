@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/SPU/RainUpdateSPU.cpp b/src/dev_ng/game/renderer/SPU/RainUpdateSPU.cpp
+--- a/src/dev_ng/game/renderer/SPU/RainUpdateSPU.cpp
++++ b/src/dev_ng/game/renderer/SPU/RainUpdateSPU.cpp
+@@ -32,8 +32,8 @@
+ #include <spu_printf.h>
+ #include <cell/gcm_spu.h>
+ 
+-#include "renderer\SpuPM\SpuPmMgr.h"
+-#include "renderer\SpuPM\SpuPmMgrSPU.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgrSPU.h"
+ 
+ #include "math/intrinsics.h"
+ #include "math/vecmath.h"

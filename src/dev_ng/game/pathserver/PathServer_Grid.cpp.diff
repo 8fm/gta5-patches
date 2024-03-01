@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_Grid.cpp b/src/dev_ng/game/pathserver/PathServer_Grid.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_Grid.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_Grid.cpp
+@@ -1,4 +1,4 @@
+-#include "PathServer\PathServer.h"
++#include "PathServer/PathServer.h"
+ 
+ #ifdef GTA_ENGINE
+ #include "fwsys/timer.h"

@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/Peds/PedTaskRecord.cpp b/src/dev_ng/game/Peds/PedTaskRecord.cpp
+--- a/src/dev_ng/game/Peds/PedTaskRecord.cpp
++++ b/src/dev_ng/game/Peds/PedTaskRecord.cpp
+@@ -1,12 +1,12 @@
+-#include "Peds\PedTaskRecord.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\Ped.h"
+-#include "PedGroup\PedGroup.h"
+-#include "Event\Events.h"
+-#include "Script\gta_thread.h"
+-#include "Script\ScriptTaskTypes.h"
+-#include "Task\System\Task.h"
+-#include "Task\General\TaskBasic.h"
++#include "Peds/PedTaskRecord.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/Ped.h"
++#include "PedGroup/PedGroup.h"
++#include "Event/Events.h"
++#include "Script/gta_thread.h"
++#include "Script/ScriptTaskTypes.h"
++#include "Task/System/Task.h"
++#include "Task/General/TaskBasic.h"
+ 
+ AI_OPTIMISATIONS()
+ 

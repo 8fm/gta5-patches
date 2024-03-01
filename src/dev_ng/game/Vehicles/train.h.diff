@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/Vehicles/train.h b/src/dev_ng/game/Vehicles/train.h
+--- a/src/dev_ng/game/Vehicles/train.h
++++ b/src/dev_ng/game/Vehicles/train.h
+@@ -8,14 +8,14 @@
+ #define _TRAIN_H_
+ 
+ #include "grcore/debugdraw.h"
+-#include "Network\Cloud\CloudManager.h"
+-#include "network\objects\entities\netObjTrain.h"
+-#include "renderer\hierarchyIds.h"
+-#include "scene\RegdRefTypes.h"
+-#include "timecycle\TimeCycleConfig.h"
+-#include "vehicles\door.h"
+-#include "vehicles\vehicle.h"
+-#include "vehicles\automobile.h"
++#include "Network/Cloud/CloudManager.h"
++#include "network/objects/entities/netObjTrain.h"
++#include "renderer/hierarchyIds.h"
++#include "scene/RegdRefTypes.h"
++#include "timecycle/TimeCycleConfig.h"
++#include "vehicles/door.h"
++#include "vehicles/vehicle.h"
++#include "vehicles/automobile.h"
+ 
+ class CCarDoor;
+ 

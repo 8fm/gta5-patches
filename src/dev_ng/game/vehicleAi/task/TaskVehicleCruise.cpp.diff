@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleCruise.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleCruise.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleCruise.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleCruise.cpp
+@@ -14,7 +14,7 @@
+ #include "VehicleAi/task/TaskVehicleTempAction.h"
+ #include "VehicleAi/VehicleIntelligence.h"
+ #include "vehicles/vehiclepopulation.h"
+-#include "ai\debug\system\AIDebugLogManager.h"
++#include "ai/debug/system/AIDebugLogManager.h"
+ #include "network/objects/entities/NetObjVehicle.h"
+ #include "Event/System/EventData.h"
+ #include "Event/Events.h"

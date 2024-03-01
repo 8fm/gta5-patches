@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/SPU/SSAOSPU.cpp b/src/dev_ng/game/renderer/SPU/SSAOSPU.cpp
+--- a/src/dev_ng/game/renderer/SPU/SSAOSPU.cpp
++++ b/src/dev_ng/game/renderer/SPU/SSAOSPU.cpp
+@@ -23,8 +23,8 @@
+ #include <cell/atomic.h>
+ #include <spu_printf.h>
+ 
+-#include "renderer\SpuPM\SpuPmMgr.h"
+-#include "renderer\SpuPM\SpuPmMgrSPU.h"
++#include "renderer/SpuPM/SpuPmMgr.h"
++#include "renderer/SpuPM/SpuPmMgrSPU.h"
+ 
+ #include "math/intrinsics.h"
+ #include "math/vecmath.h"

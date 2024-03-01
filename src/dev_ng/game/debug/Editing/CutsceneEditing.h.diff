@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Editing/CutsceneEditing.h b/src/dev_ng/game/debug/Editing/CutsceneEditing.h
+--- a/src/dev_ng/game/debug/Editing/CutsceneEditing.h
++++ b/src/dev_ng/game/debug/Editing/CutsceneEditing.h
+@@ -6,7 +6,7 @@
+ // =============================================================================================== //
+ // INCLUDES
+ // =============================================================================================== //
+-#include "bank\console.h"
++#include "bank/console.h"
+ 
+ namespace DebugEditing
+ {

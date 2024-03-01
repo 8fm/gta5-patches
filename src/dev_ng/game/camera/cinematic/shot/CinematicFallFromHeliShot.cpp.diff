@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/shot/CinematicFallFromHeliShot.cpp b/src/dev_ng/game/camera/cinematic/shot/CinematicFallFromHeliShot.cpp
+--- a/src/dev_ng/game/camera/cinematic/shot/CinematicFallFromHeliShot.cpp
++++ b/src/dev_ng/game/camera/cinematic/shot/CinematicFallFromHeliShot.cpp
+@@ -9,7 +9,7 @@
+ #include "camera/cinematic/camera/mounted/CinematicMountedCamera.h"
+ #include "camera/cinematic/camera/mounted/CinematicMountedPartCamera.h"
+ #include "camera/cinematic/context/CinematicFallFromHeliContext.h"
+-#include "camera\cinematic\camera\tracking\CinematicVehicleTrackingCamera.h"
++#include "camera/cinematic/camera/tracking/CinematicVehicleTrackingCamera.h"
+ #include "peds/ped.h"
+ #include "peds/PedIntelligence.h"
+ #include "vehicles/Metadata/VehicleEntryPointInfo.h"

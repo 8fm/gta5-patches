@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/system/controlMgr.h b/src/dev_ng/game/system/controlMgr.h
+--- a/src/dev_ng/game/system/controlMgr.h
++++ b/src/dev_ng/game/system/controlMgr.h
+@@ -5,11 +5,11 @@
+ #define CONTROL_MGR_H_
+ 
+ // Rage headers
+-#include "atl\functor.h"
+-#include "grcore\debugdraw.h"
+-#include "input\input.h"
+-#include "input\mapper.h"
+-#include "input\keys.h"
++#include "atl/functor.h"
++#include "grcore/debugdraw.h"
++#include "input/input.h"
++#include "input/mapper.h"
++#include "input/keys.h"
+ #include "input/virtualkeyboard.h"
+ #include "system/ipc.h"
+ #include "system/criticalsection.h"

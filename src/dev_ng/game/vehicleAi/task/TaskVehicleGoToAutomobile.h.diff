@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.h b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.h
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.h
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.h
+@@ -8,12 +8,12 @@
+ #include "Task/System/Task.h"
+ #include "Task/System/TaskComplex.h"
+ #include "Task/System/TaskHelpers.h"
+-#include "Task\System\TaskTypes.h"
++#include "Task/System/TaskTypes.h"
+ #include "Task/System/Tuning.h"
+-#include "VehicleAi\racingline.h"
++#include "VehicleAi/racingline.h"
+ #include "vehicleAi/task/DeferredTasks.h"
+-#include "VehicleAi\task\TaskVehicleMissionBase.h"
+-#include "VehicleAi\task\TaskVehicleGoTo.h"
++#include "VehicleAi/task/TaskVehicleMissionBase.h"
++#include "VehicleAi/task/TaskVehicleGoTo.h"
+ 
+ class CVehicle;
+ class CVehControls;

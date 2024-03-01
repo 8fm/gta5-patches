@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp
+--- a/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp
++++ b/src/dev_ng/game/task/Combat/Subtasks/TaskDraggingToSafety.cpp
+@@ -17,8 +17,8 @@
+ #include "Task/Movement/TaskGotoPoint.h"
+ #include "Task/Movement/TaskNavMesh.h"
+ #include "task/Movement/TaskSlideToCoord.h"
+-#include "task\Scenario\Info\ScenarioInfoManager.h"
+-#include "task\Scenario\Types\TaskUseScenario.h"
++#include "task/Scenario/Info/ScenarioInfoManager.h"
++#include "task/Scenario/Types/TaskUseScenario.h"
+ #include "task/Weapons/TaskSwapWeapon.h"
+ #include "vfx/misc/Fire.h"
+ 

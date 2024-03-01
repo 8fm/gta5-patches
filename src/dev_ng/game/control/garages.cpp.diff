@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/control/garages.cpp b/src/dev_ng/game/control/garages.cpp
+--- a/src/dev_ng/game/control/garages.cpp
++++ b/src/dev_ng/game/control/garages.cpp
+@@ -50,10 +50,10 @@
+ #include "vehicles/vehicleFactory.h"
+ #include "vehicles/heli.h"
+ #include "vfx/Systems/VfxVehicle.h"
+-#include "audioengine\controller.h"
++#include "audioengine/controller.h"
+ 
+-#include "frontend\MobilePhone.h"
+-#include "Stats\StatsInterface.h"
++#include "frontend/MobilePhone.h"
++#include "Stats/StatsInterface.h"
+ 
+ #define DOORSPEEDOPEN  (0.011f)
+ #define DOORSPEEDCLOSE (0.013f)

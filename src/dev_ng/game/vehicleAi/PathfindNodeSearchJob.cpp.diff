@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp b/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp
+--- a/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp
++++ b/src/dev_ng/game/vehicleAi/PathfindNodeSearchJob.cpp
+@@ -21,7 +21,7 @@
+ 
+ #include "BaseTypes.h"
+ 
+-#include "renderer\Renderer.h"
++#include "renderer/Renderer.h"
+ 
+ #include "grcore/viewport.h"
+ #include "grcore/viewport_inline.h"

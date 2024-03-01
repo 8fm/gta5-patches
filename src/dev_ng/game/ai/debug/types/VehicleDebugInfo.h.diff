@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.h b/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.h
+@@ -1,10 +1,10 @@
+ #pragma once
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
+-#include "Vehicles\Metadata\VehicleEnterExitFlags.h"
++#include "ai/debug/system/AIDebugInfo.h"
++#include "Vehicles/Metadata/VehicleEnterExitFlags.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+-#include "scene\RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CPed;
+ class CVehicle;

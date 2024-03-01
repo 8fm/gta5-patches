@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/game/frontend/Credits.cpp b/src/dev_ng/game/frontend/Credits.cpp
+--- a/src/dev_ng/game/frontend/Credits.cpp
++++ b/src/dev_ng/game/frontend/Credits.cpp
+@@ -22,21 +22,21 @@
+ #include "camera/viewports/Viewport.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "core/game.h"
+-#include "frontend\Credits.h"
+-#include "frontend\Credits_parser.h"
++#include "frontend/Credits.h"
++#include "frontend/Credits_parser.h"
+ #include "frontend/VideoEditor/ui/InstructionalButtons.h"
+-#include "frontend\NewHud.h"
+-#include "frontend\Hud_Colour.h"
++#include "frontend/NewHud.h"
++#include "frontend/Hud_Colour.h"
+ #include "renderer/sprite2d.h"
+ #include "streaming/streaming.h"
+-#include "system\ControlMgr.h"
+-#include "Text\Text.h"
++#include "system/ControlMgr.h"
++#include "Text/Text.h"
+ 
+ #include "fwsys/timer.h"
+ 
+ // bank:
+-#include "bank\bank.h"
+-#include "bank\bkmgr.h"
++#include "bank/bank.h"
++#include "bank/bkmgr.h"
+ 
+ #define CREDITS_FASTER 1
+ #define CREDITS_SLOWER -1

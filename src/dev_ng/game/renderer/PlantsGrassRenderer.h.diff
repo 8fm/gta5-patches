@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/PlantsGrassRenderer.h b/src/dev_ng/game/renderer/PlantsGrassRenderer.h
+--- a/src/dev_ng/game/renderer/PlantsGrassRenderer.h
++++ b/src/dev_ng/game/renderer/PlantsGrassRenderer.h
+@@ -12,8 +12,8 @@
+ 
+ struct CellGcmContextData;
+ 
+-#include "renderer\PlantsMgr.h"
+-#include "renderer\PlantsGrassRendererSwitches.h"
++#include "renderer/PlantsMgr.h"
++#include "renderer/PlantsGrassRendererSwitches.h"
+ 
+ //
+ //

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/pad.cpp b/src/dev_ng/game/system/pad.cpp
+--- a/src/dev_ng/game/system/pad.cpp
++++ b/src/dev_ng/game/system/pad.cpp
+@@ -5,7 +5,7 @@
+ #include "system/pad.h"
+ 
+ // Rage headers
+-#include "input\input.h"
++#include "input/input.h"
+ #include "grcore/debugdraw.h"
+ #include "fwsys/timer.h"
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/FileLoader.cpp b/src/dev_ng/game/scene/FileLoader.cpp
+--- a/src/dev_ng/game/scene/FileLoader.cpp
++++ b/src/dev_ng/game/scene/FileLoader.cpp
+@@ -174,7 +174,7 @@ PARAM(usefatcuts, "[FileLoader] Use the fat cutscenes");
+ PARAM(fileMountWidgets, "Add Data File Mount widgets to the bank");
+ #endif
+ 
+-#include "Network\NetworkInterface.h"
++#include "Network/NetworkInterface.h"
+ 
+ #define FILELOADER_COMMENT_CHAR '#'
+ 

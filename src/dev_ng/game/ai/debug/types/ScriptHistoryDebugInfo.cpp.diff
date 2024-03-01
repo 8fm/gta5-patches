@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/ai/debug/types/ScriptHistoryDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/ScriptHistoryDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/ScriptHistoryDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/ScriptHistoryDebugInfo.cpp
+@@ -1,11 +1,11 @@
+-#include "ai\debug\types\ScriptHistoryDebugInfo.h"
++#include "ai/debug/types/ScriptHistoryDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ // game headers
+-#include "Peds\PedDebugVisualiser.h"
+-#include "Peds\PedIntelligence.h"
+-#include "script\script.h"
++#include "Peds/PedDebugVisualiser.h"
++#include "Peds/PedIntelligence.h"
++#include "script/script.h"
+ 
+ CScriptHistoryDebugInfo::CScriptHistoryDebugInfo(const CPed* pPed, DebugInfoPrintParams printParams)
+ 	: CAIDebugInfo(printParams)

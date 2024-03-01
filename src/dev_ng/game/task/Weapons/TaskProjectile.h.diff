@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/task/Weapons/TaskProjectile.h b/src/dev_ng/game/task/Weapons/TaskProjectile.h
+--- a/src/dev_ng/game/task/Weapons/TaskProjectile.h
++++ b/src/dev_ng/game/task/Weapons/TaskProjectile.h
+@@ -6,8 +6,8 @@
+ #include "Scene/Entity.h"
+ #include "scene/RegdRefTypes.h"
+ #include "Task/System/Task.h"
+-#include "Task\System\TaskFsmClone.h"
+-#include "Task\System\TaskTypes.h"
++#include "Task/System/TaskFsmClone.h"
++#include "Task/System/TaskTypes.h"
+ #include "Task/Weapons/Gun/GunIkInfo.h"
+ #include "Task/Weapons/Gun/TaskAimGunOnFoot.h"
+ #include "Task/Weapons/WeaponTarget.h"

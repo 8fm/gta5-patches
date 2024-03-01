@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/ai/debug/types/VehicleTaskDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/VehicleTaskDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/VehicleTaskDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/VehicleTaskDebugInfo.cpp
+@@ -1,12 +1,12 @@
+-#include "ai\debug\types\VehicleTaskDebugInfo.h"
++#include "ai/debug/types/VehicleTaskDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+-#include "ai\debug\types\TaskDebugInfo.h"
+-#include "vehicles\vehicle.h"
++#include "ai/debug/types/TaskDebugInfo.h"
++#include "vehicles/vehicle.h"
+ #include "Task/System/TaskManager.h"
+ #include "Task/System/Task.h"
+-#include "vehicleAi\VehicleIntelligence.h"
++#include "vehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/task/TaskVehicleMissionBase.h"
+ #include "vehicleAi/VehMission.h"
+ #include "camera/CamInterface.h"

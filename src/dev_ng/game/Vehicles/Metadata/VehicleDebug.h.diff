@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h b/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h
+--- a/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h
++++ b/src/dev_ng/game/Vehicles/Metadata/VehicleDebug.h
+@@ -11,7 +11,7 @@
+ 
+ // Game headers
+ #include "AI/AITarget.h"
+-#include "ai\debug\types\VehicleDebugInfo.h"
++#include "ai/debug/types/VehicleDebugInfo.h"
+ #include "Scene/RegdRefTypes.h"
+ #include "Vehicles/Metadata/VehicleEnterExitFlags.h"
+ 

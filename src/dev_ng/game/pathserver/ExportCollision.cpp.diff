@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/pathserver/ExportCollision.cpp b/src/dev_ng/game/pathserver/ExportCollision.cpp
+--- a/src/dev_ng/game/pathserver/ExportCollision.cpp
++++ b/src/dev_ng/game/pathserver/ExportCollision.cpp
+@@ -1,8 +1,8 @@
+-#include "PathServer\ExportCollision.h"
++#include "PathServer/ExportCollision.h"
+ 
+ #if NAVMESH_EXPORT
+ 
+-#include "scene\Entity.h"
++#include "scene/Entity.h"
+ 
+ CNavMeshDataExporterInterface* CNavMeshDataExporter::sm_ActiveExporter = NULL;
+ 

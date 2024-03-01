@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/BoxStreamer.cpp b/src/dev_ng/game/streaming/BoxStreamer.cpp
+--- a/src/dev_ng/game/streaming/BoxStreamer.cpp
++++ b/src/dev_ng/game/streaming/BoxStreamer.cpp
+@@ -11,7 +11,7 @@ STREAMING_OPTIMISATIONS()
+ 
+ // C headers
+ // Rage headers
+-#include "input\mouse.h"
++#include "input/mouse.h"
+ #include "fwsys/timer.h"
+ 
+ // Game headers

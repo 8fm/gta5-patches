@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/debug/Editing/ShaderEditing.h b/src/dev_ng/game/debug/Editing/ShaderEditing.h
+--- a/src/dev_ng/game/debug/Editing/ShaderEditing.h
++++ b/src/dev_ng/game/debug/Editing/ShaderEditing.h
+@@ -6,8 +6,8 @@
+ // =============================================================================================== //
+ // INCLUDES
+ // =============================================================================================== //
+-#include "bank\console.h"
+-#include "vector\vector3.h"
++#include "bank/console.h"
++#include "vector/vector3.h"
+ 
+ class CEntity;
+ 

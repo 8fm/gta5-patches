@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/vfx/misc/Puddles.cpp b/src/dev_ng/game/vfx/misc/Puddles.cpp
+--- a/src/dev_ng/game/vfx/misc/Puddles.cpp
++++ b/src/dev_ng/game/vfx/misc/Puddles.cpp
+@@ -13,16 +13,16 @@
+ 
+ // game
+ #include "game/weather.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedFootstepHelper.h"
+-#include "phEffects\wind.h"
+-#include "renderer\Deferred\DeferredLighting.h"
++#include "Peds/Ped.h"
++#include "Peds/PedFootstepHelper.h"
++#include "phEffects/wind.h"
++#include "renderer/Deferred/DeferredLighting.h"
+ #include "Renderer/rendertargets.h"
+ #include "renderer/water.h"
+-#include "renderer\RenderPhases\RenderPhaseReflection.h"
+-#include "renderer\SSAO.h"
++#include "renderer/RenderPhases/RenderPhaseReflection.h"
++#include "renderer/SSAO.h"
+ #include "Shaders/ShaderLib.h"
+-#include "scene\world\GameWorld.h"
++#include "scene/world/GameWorld.h"
+ #include "timecycle/TimeCycleConfig.h"
+ 
+ 

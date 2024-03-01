@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/File/device_replay.cpp b/src/dev_ng/game/control/replay/File/device_replay.cpp
+--- a/src/dev_ng/game/control/replay/File/device_replay.cpp
++++ b/src/dev_ng/game/control/replay/File/device_replay.cpp
+@@ -11,7 +11,7 @@
+ #include "text/TextFile.h"
+ 
+ #if !__FINAL
+-#include "file\asset.h"
++#include "file/asset.h"
+ #endif
+ 
+ #if RSG_ORBIS

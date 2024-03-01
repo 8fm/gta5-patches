@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vehicleAi/junctions.cpp b/src/dev_ng/game/vehicleAi/junctions.cpp
+--- a/src/dev_ng/game/vehicleAi/junctions.cpp
++++ b/src/dev_ng/game/vehicleAi/junctions.cpp
+@@ -11,8 +11,8 @@
+ #include "ai/stats.h"
+ #include "core/game.h"
+ #include "camera/CamInterface.h"
+-#include "camera\debug\DebugDirector.h"
+-#include "camera\helpers\Frame.h"
++#include "camera/debug/DebugDirector.h"
++#include "camera/helpers/Frame.h"
+ #include "control/trafficlights.h"
+ #include "game/ModelIndices.h"
+ #include "grcore/debugdraw.h"

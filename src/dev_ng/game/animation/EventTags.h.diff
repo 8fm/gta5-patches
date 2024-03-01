@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/EventTags.h b/src/dev_ng/game/animation/EventTags.h
+--- a/src/dev_ng/game/animation/EventTags.h
++++ b/src/dev_ng/game/animation/EventTags.h
+@@ -16,7 +16,7 @@
+ #include "crmetadata/tagiterators.h"
+ #include "crclip/clip.h"
+ #include "fwanimation/move.h"
+-#include "scene\RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CDynamicEntity;
+ 

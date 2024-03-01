@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/templates/DblBuf.h b/src/dev_ng/game/templates/DblBuf.h
+--- a/src/dev_ng/game/templates/DblBuf.h
++++ b/src/dev_ng/game/templates/DblBuf.h
+@@ -9,7 +9,7 @@
+ #ifndef INC_DBLBUF_H_
+ #define INC_DBLBUF_H_
+ 
+-#include "renderer\renderthread.h"
++#include "renderer/renderthread.h"
+ 
+ template<class T>
+ class CDblBuf

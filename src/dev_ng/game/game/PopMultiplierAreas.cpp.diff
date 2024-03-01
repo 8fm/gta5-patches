@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/game/game/PopMultiplierAreas.cpp b/src/dev_ng/game/game/PopMultiplierAreas.cpp
+--- a/src/dev_ng/game/game/PopMultiplierAreas.cpp
++++ b/src/dev_ng/game/game/PopMultiplierAreas.cpp
+@@ -11,13 +11,13 @@
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+-#include "fwmaths\random.h"
++#include "fwmaths/random.h"
+ #include "fwsys/timer.h"
+ 
+ // Game headers
+ #include "game/popmultiplierareas.h"
+ #include "camera/CamInterface.h"
+-#include "debug\vectormap.h"
++#include "debug/vectormap.h"
+ 
+ // network includes 
+ #include "network/NetworkInterface.h"

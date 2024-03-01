@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/DynamicEntity.cpp b/src/dev_ng/game/scene/DynamicEntity.cpp
+--- a/src/dev_ng/game/scene/DynamicEntity.cpp
++++ b/src/dev_ng/game/scene/DynamicEntity.cpp
+@@ -28,7 +28,7 @@
+ // Framework headers
+ #include "fwanimation/animdirector.h"
+ #include "fwanimation/directorcomponentcreature.h"
+-#include "fwanimation\expressionsets.h"
++#include "fwanimation/expressionsets.h"
+ #include "fwutil/PtrList.h"
+ #include "fwscene/stores/blendshapestore.h"
+ #include "fwsys/metadatastore.h"

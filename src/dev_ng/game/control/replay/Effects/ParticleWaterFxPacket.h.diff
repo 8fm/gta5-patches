@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticleWaterFxPacket.h
+@@ -11,8 +11,8 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control\replay\PacketBasics.h"
+-#include "control\replay\Effects\ParticlePacket.h"
++#include "control/replay/PacketBasics.h"
++#include "control/replay/Effects/ParticlePacket.h"
+ 
+ namespace rage
+ { class ptxEffectInst; }

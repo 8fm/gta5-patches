@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/GarageEditor.cpp b/src/dev_ng/game/control/GarageEditor.cpp
+--- a/src/dev_ng/game/control/GarageEditor.cpp
++++ b/src/dev_ng/game/control/GarageEditor.cpp
+@@ -11,8 +11,8 @@
+ #include "Garages.h"
+ #include "garages_parser.h"
+ #include "objects/Door.h"
+-#include "grcore\debugdraw.h"
+-#include "grcore\setup.h"
++#include "grcore/debugdraw.h"
++#include "grcore/setup.h"
+ 
+ AI_OPTIMISATIONS()
+ 

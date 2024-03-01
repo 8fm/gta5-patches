@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedIntelligenceFactory.h b/src/dev_ng/game/Peds/PedIntelligenceFactory.h
+--- a/src/dev_ng/game/Peds/PedIntelligenceFactory.h
++++ b/src/dev_ng/game/Peds/PedIntelligenceFactory.h
+@@ -1,7 +1,7 @@
+ #ifndef PED_INTELLIGENCE_FACTORY_H
+ #define PED_INTELLIGENCE_FACTORY_H
+ 
+-#include "Debug\Debug.h"
++#include "Debug/Debug.h"
+ 
+ class CPed;
+ class CPedIntelligence;

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/PedGroup/formation.h b/src/dev_ng/game/PedGroup/formation.h
+--- a/src/dev_ng/game/PedGroup/formation.h
++++ b/src/dev_ng/game/PedGroup/formation.h
+@@ -13,7 +13,7 @@
+ #include "fwnet/netserialisers.h"
+ #include "script/thread.h"
+ #include "vector/vector3.h"
+-#include "grcore\debugdraw.h"
++#include "grcore/debugdraw.h"
+ 
+ class CPhysical;
+ class CPedTaskPair;

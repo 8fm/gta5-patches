@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectInterior.cpp b/src/dev_ng/game/shaders/CustomShaderEffectInterior.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectInterior.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectInterior.cpp
+@@ -10,18 +10,18 @@
+ //
+ 
+ // Rage headers
+-#include "grmodel\ShaderFx.h"
+-#include "grmodel\Geometry.h"
+-#include "grcore\texturereference.h"
++#include "grmodel/ShaderFx.h"
++#include "grmodel/Geometry.h"
++#include "grcore/texturereference.h"
+ 
+ #include "creature/creature.h"
+ #include "creature/componentshadervars.h"
+ #include "rmcore/drawable.h"
+ 
+ // Game headers
+-#include "debug\debug.h"
+-#include "peds\Ped.h"
+-#include "scene\Entity.h"
++#include "debug/debug.h"
++#include "peds/Ped.h"
++#include "scene/Entity.h"
+ #include "CustomShaderEffectInterior.h"
+ 
+ 

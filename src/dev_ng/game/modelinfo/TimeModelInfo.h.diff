@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/TimeModelInfo.h b/src/dev_ng/game/modelinfo/TimeModelInfo.h
+--- a/src/dev_ng/game/modelinfo/TimeModelInfo.h
++++ b/src/dev_ng/game/modelinfo/TimeModelInfo.h
+@@ -12,7 +12,7 @@
+ #define INC_TIME_MODELINFO_H_
+ 
+ // Game headers
+-#include "modelinfo\BaseModelInfo.h"
++#include "modelinfo/BaseModelInfo.h"
+ 
+ //
+ // name:		CTimeInfo

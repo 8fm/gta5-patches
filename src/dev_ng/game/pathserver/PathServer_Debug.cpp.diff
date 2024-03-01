@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_Debug.cpp b/src/dev_ng/game/pathserver/PathServer_Debug.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_Debug.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_Debug.cpp
+@@ -6,9 +6,9 @@
+ //	Description : Somewhere to place the navmesh & pathserver debugging code, outside of the main file.
+ //******************************************************************************************************
+ 
+-#include "PathServer\PathServer.h"
+-#include "PathServer\NavMeshGta.h"
+-#include "PathServer\NavGenParam.h"
++#include "PathServer/PathServer.h"
++#include "PathServer/NavMeshGta.h"
++#include "PathServer/NavGenParam.h"
+ 
+ 
+ #if defined(GTA_ENGINE) && defined(DEBUG_DRAW) && DEBUG_DRAW

@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/task/Motion/TaskMotionBase.cpp b/src/dev_ng/game/task/Motion/TaskMotionBase.cpp
+--- a/src/dev_ng/game/task/Motion/TaskMotionBase.cpp
++++ b/src/dev_ng/game/task/Motion/TaskMotionBase.cpp
+@@ -7,7 +7,7 @@
+ #include "math/angmath.h"
+ #include "physics/debugEvents.h"
+ #include "system/stack.h"
+-#include "vector\matrix34.h"
++#include "vector/matrix34.h"
+ 
+ // framework includes
+ #include "fwanimation/animdirector.h"
+@@ -20,10 +20,10 @@
+ #include "ModelInfo/VehicleModelInfo.h"
+ #include "Network/Objects/Entities/NetObjPlayer.h"
+ #include "Objects/Door.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "Peds/PedIKSettings.h"
+-#include "Physics\Physics.h"
++#include "Physics/Physics.h"
+ #include "scene/entity.h"
+ #include "scene/Physical.h"
+ #include "scene/world/GameWorld.h"

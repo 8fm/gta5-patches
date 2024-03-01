@@ -1,0 +1,26 @@
+diff --git a/src/dev_ng/game/script/commands_water.cpp b/src/dev_ng/game/script/commands_water.cpp
+--- a/src/dev_ng/game/script/commands_water.cpp
++++ b/src/dev_ng/game/script/commands_water.cpp
+@@ -1,14 +1,14 @@
+ 
+ // Rage headers
+-#include "script\wrapper.h"
+-#include "script\commands_shapetest.h"
+-#include "script\commands_water.h"
+-#include "physics\physics.h"
+-#include "physics\gtaArchetype.h"
++#include "script/wrapper.h"
++#include "script/commands_shapetest.h"
++#include "script/commands_water.h"
++#include "physics/physics.h"
++#include "physics/gtaArchetype.h"
+ // Game headers
+-#include "script\script_channel.h"
+-#include "script\script.h"
+-#include "renderer\water.h"
++#include "script/script_channel.h"
++#include "script/script.h"
++#include "renderer/water.h"
+ 
+ namespace water_commands
+ {

@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptResources.cpp b/src/dev_ng/game/script/Handlers/GameScriptResources.cpp
+--- a/src/dev_ng/game/script/Handlers/GameScriptResources.cpp
++++ b/src/dev_ng/game/script/Handlers/GameScriptResources.cpp
+@@ -1,4 +1,4 @@
+-#include "script\handlers\GameScriptResources.h"
++#include "script/handlers/GameScriptResources.h"
+ 
+ //game includes
+ #include "ai/BlockingBounds.h"

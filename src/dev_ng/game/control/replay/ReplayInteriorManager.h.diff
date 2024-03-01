@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayInteriorManager.h b/src/dev_ng/game/control/replay/ReplayInteriorManager.h
+--- a/src/dev_ng/game/control/replay/ReplayInteriorManager.h
++++ b/src/dev_ng/game/control/replay/ReplayInteriorManager.h
+@@ -8,7 +8,7 @@
+ 
+ #include "ReplayController.h"
+ #include "ReplayRecorder.h"
+-#include "Misc\InteriorPacket.h"
++#include "Misc/InteriorPacket.h"
+ 
+ class CPacketInteriorEntitySet;
+ 

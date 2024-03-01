@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/script/commands_xml.cpp b/src/dev_ng/game/script/commands_xml.cpp
+--- a/src/dev_ng/game/script/commands_xml.cpp
++++ b/src/dev_ng/game/script/commands_xml.cpp
+@@ -1,11 +1,11 @@
+ 
+ // Rage headers
+-#include "script\wrapper.h"
+-#include "parser\manager.h"
++#include "script/wrapper.h"
++#include "parser/manager.h"
+ // Game headers
+-#include "debug\BugstarIntegration.h"
+-#include "script\script.h"
+-#include "script\script_helper.h"
++#include "debug/BugstarIntegration.h"
++#include "script/script.h"
++#include "script/script_helper.h"
+ 
+ SCRIPT_OPTIMISATIONS()
+ namespace xml_commands

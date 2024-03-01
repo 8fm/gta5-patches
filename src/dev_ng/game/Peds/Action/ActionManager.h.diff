@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/Peds/Action/ActionManager.h b/src/dev_ng/game/Peds/Action/ActionManager.h
+--- a/src/dev_ng/game/Peds/Action/ActionManager.h
++++ b/src/dev_ng/game/Peds/Action/ActionManager.h
+@@ -26,8 +26,8 @@
+ #include "system/control.h"
+ #include "animation/AnimBones.h"
+ #include "crskeleton/skeleton.h"
+-#include "renderer\HierarchyIds.h"
+-#include "vehicles\vehicle.h"
++#include "renderer/HierarchyIds.h"
++#include "vehicles/vehicle.h"
+ #include "atl/hashstring.h"
+ #include "atl/array.h"
+ #include "parser/macros.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Trailer.cpp b/src/dev_ng/game/Vehicles/Trailer.cpp
+--- a/src/dev_ng/game/Vehicles/Trailer.cpp
++++ b/src/dev_ng/game/Vehicles/Trailer.cpp
+@@ -2,7 +2,7 @@
+  
+ // rage
+ #include "Fragment/Instance.h"
+-#include "phArticulated\ArticulatedCollider.h"
++#include "phArticulated/ArticulatedCollider.h"
+ #include "phBound/boundcomposite.h"
+ #include "physics/constraintmgr.h"
+ #include "physics/constraintdistance.h"

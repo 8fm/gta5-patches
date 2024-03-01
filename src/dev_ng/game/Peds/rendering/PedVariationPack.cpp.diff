@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp b/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp
+--- a/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp
++++ b/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp
+@@ -78,11 +78,11 @@
+ #include "scene/world/GameWorld.h"
+ #include "system/filemgr.h"
+ #include "System/timer.h"
+-#include "Task\General\TaskBasic.h"
++#include "Task/General/TaskBasic.h"
+ #include "Task/Scenario/Info/ScenarioInfo.h"
+ #include "Task/Scenario/ScenarioManager.h"
+ #include "Task/Scenario/TaskScenario.h"
+-#include "Task\Vehicle\TaskCarAccessories.h"
++#include "Task/Vehicle/TaskCarAccessories.h"
+ #include "Tools/smokeTest.h"
+ #include "Vehicles/VehicleFactory.h"
+ #include "shaders/ShaderHairSort.h"

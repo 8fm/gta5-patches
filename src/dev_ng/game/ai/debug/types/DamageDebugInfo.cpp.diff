@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/ai/debug/types/DamageDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/DamageDebugInfo.cpp
+--- a/src/dev_ng/game/ai/debug/types/DamageDebugInfo.cpp
++++ b/src/dev_ng/game/ai/debug/types/DamageDebugInfo.cpp
+@@ -1,11 +1,11 @@
+-#include "ai\debug\types\DamageDebugInfo.h"
++#include "ai/debug/types/DamageDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+-#include "camera\CamInterface.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedDebugVisualiser.h"
+-#include "Peds\PlayerInfo.h"
++#include "camera/CamInterface.h"
++#include "Peds/Ped.h"
++#include "Peds/PedDebugVisualiser.h"
++#include "Peds/PlayerInfo.h"
+ 
+ CDamageDebugInfo::CDamageDebugInfo(const CPed* pPed, bool bOnlyDamageRecords, DebugInfoPrintParams printParams)
+ 	: CAIDebugInfo(printParams)

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/ai/debug/types/EventsDebugInfo.h b/src/dev_ng/game/ai/debug/types/EventsDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/EventsDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/EventsDebugInfo.h
+@@ -1,8 +1,8 @@
+ #pragma once
+ 
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
+-#include "Peds\PedIntelligence.h"
++#include "ai/debug/system/AIDebugInfo.h"
++#include "Peds/PedIntelligence.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 

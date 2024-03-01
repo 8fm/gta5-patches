@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/scene/volume/Volume.h b/src/dev_ng/game/scene/volume/Volume.h
+--- a/src/dev_ng/game/scene/volume/Volume.h
++++ b/src/dev_ng/game/scene/volume/Volume.h
+@@ -11,9 +11,9 @@
+ #if VOLUME_SUPPORT
+ #define VOLUME_SUPPORT_ONLY(x)	x
+ 
+-#include "entity\extensiblebase.h"
+-#include "math\random.h"
+-#include "vector\color32.h"
++#include "entity/extensiblebase.h"
++#include "math/random.h"
++#include "vector/color32.h"
+ 
+ class CVolumeAggregate;
+ 

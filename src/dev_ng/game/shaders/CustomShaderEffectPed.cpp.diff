@@ -1,0 +1,59 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectPed.cpp b/src/dev_ng/game/shaders/CustomShaderEffectPed.cpp
+--- a/src/dev_ng/game/shaders/CustomShaderEffectPed.cpp
++++ b/src/dev_ng/game/shaders/CustomShaderEffectPed.cpp
+@@ -13,9 +13,9 @@
+ //
+ 
+ // Rage headers
+-#include "grmodel\ShaderFx.h"
+-#include "grmodel\Geometry.h"
+-#include "grcore\effect_config.h" // edge
++#include "grmodel/ShaderFx.h"
++#include "grmodel/Geometry.h"
++#include "grcore/effect_config.h" // edge
+ #include "grcore/texturereference.h"
+ 
+ #include "creature/creature.h"
+@@ -28,27 +28,27 @@
+ #include "fwdrawlist/drawlistmgr.h"
+ 
+ // Game headers
+-#include "camera\viewports\viewportmanager.h"
+-#include "debug\debug.h"
+-#include "scene\Entity.h"
+-#include "modelinfo\PedModelInfo.h"
+-#include "peds\Ped.h"
++#include "camera/viewports/viewportmanager.h"
++#include "debug/debug.h"
++#include "scene/Entity.h"
++#include "modelinfo/PedModelInfo.h"
++#include "peds/Ped.h"
+ #include "peds/PopCycle.h"
+-#include "peds\rendering\PedDamage.h"
+-#include "peds\rendering\PedOverlay.h"
+-#include "peds\rendering\pedVariationPack.h"
+-#include "vehicleAi\task\TaskVehicleAnimation.h"
++#include "peds/rendering/PedDamage.h"
++#include "peds/rendering/PedOverlay.h"
++#include "peds/rendering/pedVariationPack.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
+ #include "renderer/Water.h"
+ #include "renderer/Mirrors.h"
+-#include "renderer\RenderPhases/RenderPhaseFX.h"
+-#include "renderer\Deferred\DeferredLighting.h"
+-#include "vfx\Systems\VfxFire.h"
++#include "renderer/RenderPhases/RenderPhaseFX.h"
++#include "renderer/Deferred/DeferredLighting.h"
++#include "vfx/Systems/VfxFire.h"
+ #include "CustomShaderEffectPed.h"
+ #include "camera/cutscene/CutsceneDirector.h"
+ #include "Cutscene/CutSceneCameraEntity.h"
+-#include "camera\CamInterface.h"
+-#include "timecycle\TimeCycle.h"
+-#include "Vfx\Misc\Fire.h"	
++#include "camera/CamInterface.h"
++#include "timecycle/TimeCycle.h"
++#include "Vfx/Misc/Fire.h"	
+ #include "vehicles/vehicle.h"
+ #include "ShaderHairSort.h"
+ #include "shader_source/Peds/ped_common_values.h"

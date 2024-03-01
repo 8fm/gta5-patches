@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToPlane.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToPlane.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToPlane.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToPlane.cpp
+@@ -2,8 +2,8 @@
+ 
+ // Game headers
+ #include "Vehicles/Planes.h"
+-#include "VehicleAi\task\TaskVehicleFlying.h"
+-#include "VehicleAi\VehicleIntelligence.h"
++#include "VehicleAi/task/TaskVehicleFlying.h"
++#include "VehicleAi/VehicleIntelligence.h"
+ #include "vehicleAi/FlyingVehicleAvoidance.h"
+ #include "pheffects/wind.h"
+ #include "scene/world/GameWorldHeightMap.h"

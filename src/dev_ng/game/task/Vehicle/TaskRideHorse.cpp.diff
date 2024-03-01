@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskRideHorse.cpp b/src/dev_ng/game/task/Vehicle/TaskRideHorse.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskRideHorse.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskRideHorse.cpp
+@@ -13,7 +13,7 @@
+ #include "Task/Vehicle/TaskPlayerOnHorse.h"
+ #include "Task/default/TaskPlayer.h"
+ #include "Task/Motion/Locomotion/TaskHorseLocomotion.h"
+-#include "task\Motion\Locomotion\TaskHumanLocomotion.h"
++#include "task/Motion/Locomotion/TaskHumanLocomotion.h"
+ #include "Task/Motion/Locomotion/TaskInWater.h"
+ #include "task/Movement/Jumping/TaskJump.h"
+ #include "Task/Weapons/Gun/TaskVehicleDriveBy.h"

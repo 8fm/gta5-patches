@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/pathserver/NavMeshGta.h b/src/dev_ng/game/pathserver/NavMeshGta.h
+--- a/src/dev_ng/game/pathserver/NavMeshGta.h
++++ b/src/dev_ng/game/pathserver/NavMeshGta.h
+@@ -5,7 +5,7 @@
+ #ifndef NAVMESH_GTA_H
+ #define NAVMESH_GTA_H
+ 
+-#include "ai\navmesh\NavMesh.h"
++#include "ai/navmesh/NavMesh.h"
+ 
+ //*********************************************************************************
+ //

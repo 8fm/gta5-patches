@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/Relationships.cpp b/src/dev_ng/game/Peds/Relationships.cpp
+--- a/src/dev_ng/game/Peds/Relationships.cpp
++++ b/src/dev_ng/game/Peds/Relationships.cpp
+@@ -14,7 +14,7 @@
+ #include "peds/ped_channel.h"
+ #include "peds/pedIntelligence.h"
+ #include "peds/relationships.h"
+-#include "System\FileMgr.h"
++#include "System/FileMgr.h"
+ 
+ #include "peds/Relationships_parser.h"
+ 

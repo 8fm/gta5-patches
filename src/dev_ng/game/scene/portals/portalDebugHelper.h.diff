@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/portals/portalDebugHelper.h b/src/dev_ng/game/scene/portals/portalDebugHelper.h
+--- a/src/dev_ng/game/scene/portals/portalDebugHelper.h
++++ b/src/dev_ng/game/scene/portals/portalDebugHelper.h
+@@ -12,7 +12,7 @@
+ // Rage headers
+ 
+ // Game headers
+-#include "scene\portals\interiorInst.h"
++#include "scene/portals/interiorInst.h"
+ #include "fwscene/interiors/PortalTypes.h"
+ 
+ 

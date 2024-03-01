@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/record.h b/src/dev_ng/game/control/record.h
+--- a/src/dev_ng/game/control/record.h
++++ b/src/dev_ng/game/control/record.h
+@@ -20,8 +20,8 @@
+ #include "bank/bank.h"
+ #include "file/device.h"
+ #include "paging/base.h"
+-#include "atl\binmap.h"
+-#include "atl\string.h"
++#include "atl/binmap.h"
++#include "atl/string.h"
+ #include "vector/quaternion.h"
+ #include "streaming/streamingdefs.h"
+ 

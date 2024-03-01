@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/rendering/PedVariationPack.h b/src/dev_ng/game/Peds/rendering/PedVariationPack.h
+--- a/src/dev_ng/game/Peds/rendering/PedVariationPack.h
++++ b/src/dev_ng/game/Peds/rendering/PedVariationPack.h
+@@ -13,7 +13,7 @@
+ 
+ #include "modelinfo/PedModelInfo.h"
+ #include "scene/RegdRefTypes.h"
+-#include "peds\rendering\pedVariationDS.h"
++#include "peds/rendering/pedVariationDS.h"
+ 
+ #define DIFF_TEX_NAME_LEN (20)
+ 

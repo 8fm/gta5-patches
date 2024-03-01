@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.h b/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.h
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.h
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.h
+@@ -6,10 +6,10 @@
+ #include "Task/System/Task.h"
+ #include "Task/System/TaskComplex.h"
+ #include "Task/System/TaskHelpers.h"
+-#include "Task\System\TaskTypes.h"
+-#include "VehicleAi\racingline.h"
+-#include "VehicleAi\VehMission.h"
+-#include "Vehicles\Vehicle.h"
++#include "Task/System/TaskTypes.h"
++#include "VehicleAi/racingline.h"
++#include "VehicleAi/VehMission.h"
++#include "Vehicles/Vehicle.h"
+ 
+ // framework headers
+ #include "fwnet/netserialisers.h"

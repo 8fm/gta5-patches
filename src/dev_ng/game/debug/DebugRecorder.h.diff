@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/DebugRecorder.h b/src/dev_ng/game/debug/DebugRecorder.h
+--- a/src/dev_ng/game/debug/DebugRecorder.h
++++ b/src/dev_ng/game/debug/DebugRecorder.h
+@@ -4,7 +4,7 @@
+ //Game
+ #include "DebugAnimation.h"
+ #include "scene/RegdRefTypes.h"
+-#include "Network\Debug\NetworkDebugMsgs.h"
++#include "Network/Debug/NetworkDebugMsgs.h"
+ 
+ //RAGE
+ #include "parser/macros.h"

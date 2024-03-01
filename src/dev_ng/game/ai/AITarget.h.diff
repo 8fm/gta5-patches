@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/ai/AITarget.h b/src/dev_ng/game/ai/AITarget.h
+--- a/src/dev_ng/game/ai/AITarget.h
++++ b/src/dev_ng/game/ai/AITarget.h
+@@ -5,7 +5,7 @@
+ #include "Vector/Vector3.h"
+ 
+ // Game headers
+-#include "Network\General\NetworkUtil.h"
++#include "Network/General/NetworkUtil.h"
+ #include "Scene/RegdRefTypes.h"
+ 
+ // Forward declarations

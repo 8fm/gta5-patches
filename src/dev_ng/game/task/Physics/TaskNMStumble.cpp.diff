@@ -1,0 +1,31 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMStumble.cpp b/src/dev_ng/game/task/Physics/TaskNMStumble.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMStumble.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMStumble.cpp
+@@ -5,12 +5,12 @@
+ 
+ //---- Include Files ---------------------------------------------------------------------------------------------------------------------------------
+ // Rage headers
+-#include "crskeleton\Skeleton.h"
+-#include "fragment\Cache.h"
+-#include "fragment\Instance.h"
+-#include "fragment\Type.h"
+-#include "fragment\TypeChild.h"
+-#include "fragmentnm\messageparams.h"
++#include "crskeleton/Skeleton.h"
++#include "fragment/Cache.h"
++#include "fragment/Instance.h"
++#include "fragment/Type.h"
++#include "fragment/TypeChild.h"
++#include "fragmentnm/messageparams.h"
+ #include "pharticulated/articulatedcollider.h"
+ #include "phbound/boundcomposite.h"
+ #include "physics/shapetest.h"
+@@ -18,7 +18,7 @@
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
+-//#include "fwmaths\Angle.h"
++//#include "fwmaths/Angle.h"
+ 
+ // Game headers
+ #include "Peds/ped.h"

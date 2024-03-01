@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h b/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h
+--- a/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h
++++ b/src/dev_ng/game/task/Movement/TaskFollowWaypointRecording.h
+@@ -2,11 +2,11 @@
+ #define TASK_FOLLOW_WAYPOINT_RECORDING_H
+ 
+ // Framework headers
+-#include "fwmaths\Vector.h"
++#include "fwmaths/Vector.h"
+ 
+ // Game headers
+-#include "task\system\TaskMove.h"
+-#include "control\WaypointRecording.h"
++#include "task/system/TaskMove.h"
++#include "control/WaypointRecording.h"
+ #include "AI/AITarget.h"
+ 
+ class CPed;

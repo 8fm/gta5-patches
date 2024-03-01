@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/game/pathserver/PathServer_Objects.cpp b/src/dev_ng/game/pathserver/PathServer_Objects.cpp
+--- a/src/dev_ng/game/pathserver/PathServer_Objects.cpp
++++ b/src/dev_ng/game/pathserver/PathServer_Objects.cpp
+@@ -11,18 +11,18 @@
+ #ifdef GTA_ENGINE
+ // These includes for using within the GTA engine
+ #include "game/ModelIndices.h"
+-#include "Objects\Door.h"
+-#include "Objects\DoorTuning.h"
+-#include "Objects\Object.h"
+-#include "Vehicles\Vehicle.h"
+-#include "ModelInfo\PedModelInfo.h"
+-#include "Game\ModelIndices.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedGeometryAnalyser.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Task\Movement\TaskNavMesh.h"
+-#include "Task\Vehicle\TaskCarUtils.h"
+-#include "Vfx\Misc\Fire.h"
++#include "Objects/Door.h"
++#include "Objects/DoorTuning.h"
++#include "Objects/Object.h"
++#include "Vehicles/Vehicle.h"
++#include "ModelInfo/PedModelInfo.h"
++#include "Game/ModelIndices.h"
++#include "Peds/Ped.h"
++#include "Peds/PedGeometryAnalyser.h"
++#include "Peds/PedIntelligence.h"
++#include "Task/Movement/TaskNavMesh.h"
++#include "Task/Vehicle/TaskCarUtils.h"
++#include "Vfx/Misc/Fire.h"
+ #else	// GTA_ENGINE
+ 
+ // This include for when developing the system outside of GTA

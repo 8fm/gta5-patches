@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/shaders/CustomShaderEffectGrass.h b/src/dev_ng/game/shaders/CustomShaderEffectGrass.h
+--- a/src/dev_ng/game/shaders/CustomShaderEffectGrass.h
++++ b/src/dev_ng/game/shaders/CustomShaderEffectGrass.h
+@@ -7,11 +7,11 @@
+ #ifndef __CCUSTOMSHADEREFFECTGRASS_H__
+ #define __CCUSTOMSHADEREFFECTGRASS_H__
+ 
+-#include "rmcore\drawable.h"
+-#include "shaders\CustomShaderEffectBase.h"
+-#include "shaders\CustomShaderEffectTint.h"
+-#include "renderer\PlantsGrassRendererSwitches.h"
+-#include "scene\EntityBatch_Def.h"
++#include "rmcore/drawable.h"
++#include "shaders/CustomShaderEffectBase.h"
++#include "shaders/CustomShaderEffectTint.h"
++#include "renderer/PlantsGrassRendererSwitches.h"
++#include "scene/EntityBatch_Def.h"
+ 
+ 
+ #if !HACK_RDR3

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/scripted/ScriptDirector.h b/src/dev_ng/game/camera/scripted/ScriptDirector.h
+--- a/src/dev_ng/game/camera/scripted/ScriptDirector.h
++++ b/src/dev_ng/game/camera/scripted/ScriptDirector.h
+@@ -10,7 +10,7 @@
+ #include "script/thread.h"
+ 
+ #include "camera/base/BaseDirector.h"
+-#include "Peds\pedDefines.h" // for FPS_MODE_SUPPORTED
++#include "Peds/pedDefines.h" // for FPS_MODE_SUPPORTED
+ #include "streaming/streamingmodule.h"
+ 
+ #if __BANK

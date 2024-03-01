@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h b/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h
+--- a/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h
++++ b/src/dev_ng/game/renderer/SpuPM/SpuPmMgr.h
+@@ -316,7 +316,7 @@ struct CWBAllocBlockHeader
+ };
+ 
+ #if __PPU
+-#include "grcore\texturegcm.h"
++#include "grcore/texturegcm.h"
+ 
+ //
+ //
+@@ -353,8 +353,8 @@ private:
+ 
+ #if __PPU
+ 
+-#include "templates\LinkList.h"
+-#include "system\simpleallocator.h"
++#include "templates/LinkList.h"
++#include "system/simpleallocator.h"
+ 
+ typedef CLink<CSPUPostProcessDriverInfo>	CSPUPostProcessDriverInfoLink;
+ typedef CLink<CWBAllocBlockHeader>			CWBAllocBlockHeaderLink;

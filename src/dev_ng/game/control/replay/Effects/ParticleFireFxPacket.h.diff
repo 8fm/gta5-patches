@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticleFireFxPacket.h
+@@ -12,7 +12,7 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control\replay\Effects\ParticlePacket.h"
++#include "control/replay/Effects/ParticlePacket.h"
+ #include "phcore/constants.h"
+ 
+ namespace rage

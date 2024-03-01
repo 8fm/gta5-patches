@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp b/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp
+--- a/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp
++++ b/src/dev_ng/game/script/Handlers/GameScriptEntity.cpp
+@@ -1,4 +1,4 @@
+-#include "script\handlers\GameScriptEntity.h"
++#include "script/handlers/GameScriptEntity.h"
+ 
+ #include "network/Debug/NetworkDebug.h"
+ #include "network/Objects/Entities/NetObjPhysical.h"

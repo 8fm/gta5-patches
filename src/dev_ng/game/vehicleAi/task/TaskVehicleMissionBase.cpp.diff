@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleMissionBase.cpp
+@@ -16,7 +16,7 @@
+ #include "Task/Scenario/Types/TaskVehicleScenario.h"
+ #include "vehicleAi/task/TaskVehicleCruise.h"
+ #include "vehicles/vehiclepopulation.h"
+-#include "vehicles\virtualroad.h"
++#include "vehicles/virtualroad.h"
+ 
+ 
+ AI_OPTIMISATIONS()

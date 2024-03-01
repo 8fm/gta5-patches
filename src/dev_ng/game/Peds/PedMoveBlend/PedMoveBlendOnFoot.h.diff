@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFoot.h b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFoot.h
+--- a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFoot.h
++++ b/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnFoot.h
+@@ -1,7 +1,7 @@
+ #ifndef PED_MOVE_BLEND_ON_FOOT_H
+ #define	PED_MOVE_BLEND_ON_FOOT_H
+ 
+-#include "Peds\PedMoveBlend\PedMoveBlendBase.h"
++#include "Peds/PedMoveBlend/PedMoveBlendBase.h"
+ 
+ #define MAX_SNOW_DEPTH	1.0f
+ 

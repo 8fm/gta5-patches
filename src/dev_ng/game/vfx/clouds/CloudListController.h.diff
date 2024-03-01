@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/vfx/clouds/CloudListController.h b/src/dev_ng/game/vfx/clouds/CloudListController.h
+--- a/src/dev_ng/game/vfx/clouds/CloudListController.h
++++ b/src/dev_ng/game/vfx/clouds/CloudListController.h
+@@ -7,12 +7,12 @@
+ #ifndef SHADERCONTROLLERS_CLOUDLISTCONTROLLER_H
+ #define SHADERCONTROLLERS_CLOUDLISTCONTROLLER_H 
+ 
+-#include "data\base.h"
+-#include "parser\manager.h"
++#include "data/base.h"
++#include "parser/manager.h"
+ 
+-#include "atl\bitset.h"
+-#include "atl\atfunctor.h"
+-#include "bank\list.h"
++#include "atl/bitset.h"
++#include "atl/atfunctor.h"
++#include "bank/list.h"
+ 
+ namespace rage
+ {

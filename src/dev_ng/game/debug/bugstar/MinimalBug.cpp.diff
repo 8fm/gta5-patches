@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/debug/bugstar/MinimalBug.cpp b/src/dev_ng/game/debug/bugstar/MinimalBug.cpp
+--- a/src/dev_ng/game/debug/bugstar/MinimalBug.cpp
++++ b/src/dev_ng/game/debug/bugstar/MinimalBug.cpp
+@@ -2,10 +2,10 @@
+ 
+ #include <stdio.h>
+ 
+-#include "string\string.h"
++#include "string/string.h"
+ 
+-#include "system\new.h"
+-#include "debug\bugstar\BugstarIntegrationSwitch.h"
++#include "system/new.h"
++#include "debug/bugstar/BugstarIntegrationSwitch.h"
+ 
+ #include <time.h>
+ 

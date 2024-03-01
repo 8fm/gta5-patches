@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/audio/virtcxtresolves.h b/src/dev_ng/game/audio/virtcxtresolves.h
+--- a/src/dev_ng/game/audio/virtcxtresolves.h
++++ b/src/dev_ng/game/audio/virtcxtresolves.h
+@@ -8,8 +8,8 @@
+ #define AUD_VIRTCXTRESOLVES_H
+ 
+ #include "audio/speechaudioentity.h"
+-#include "game\Clock.h"
+-#include "Peds\ped.h"
++#include "game/Clock.h"
++#include "Peds/ped.h"
+ 
+ namespace audVirtCxtResolves{
+ 

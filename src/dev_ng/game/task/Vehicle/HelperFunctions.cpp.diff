@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Vehicle/HelperFunctions.cpp b/src/dev_ng/game/task/Vehicle/HelperFunctions.cpp
+--- a/src/dev_ng/game/task/Vehicle/HelperFunctions.cpp
++++ b/src/dev_ng/game/task/Vehicle/HelperFunctions.cpp
+@@ -9,7 +9,7 @@
+ #include "script/script.h"
+ #include "Task/Vehicle/PlayerHorseFollowTargets.h"
+ #include "Task/Vehicle/PlayerHorseSpeedMatch.h"
+-#include "Peds\Horse\horseComponent.h"
++#include "Peds/Horse/horseComponent.h"
+ 
+ AI_OPTIMISATIONS()
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp b/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp
+--- a/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp
++++ b/src/dev_ng/game/task/Vehicle/TaskCarAccessories.cpp
+@@ -6,7 +6,7 @@
+ #include "fwmaths/Vector.h"
+ 
+ // Game headers
+-#include "ai\debug\system\AIDebugLogManager.h"
++#include "ai/debug/system/AIDebugLogManager.h"
+ #include "animation/AnimDefines.h"
+ #include "fwanimation/animmanager.h"
+ 

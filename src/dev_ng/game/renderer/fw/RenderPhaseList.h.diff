@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/fw/RenderPhaseList.h b/src/dev_ng/game/renderer/fw/RenderPhaseList.h
+--- a/src/dev_ng/game/renderer/fw/RenderPhaseList.h
++++ b/src/dev_ng/game/renderer/fw/RenderPhaseList.h
+@@ -19,7 +19,7 @@
+ #include "Renderer/RenderSettings.h" 
+ 
+ // GTA hdrs
+-#include "debug\debug.h"
++#include "debug/debug.h"
+ 
+ // Frefs
+ class CRenderPhase;

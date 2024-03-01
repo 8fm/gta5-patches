@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/physics/RagdollConstraints.cpp b/src/dev_ng/game/physics/RagdollConstraints.cpp
+--- a/src/dev_ng/game/physics/RagdollConstraints.cpp
++++ b/src/dev_ng/game/physics/RagdollConstraints.cpp
+@@ -13,8 +13,8 @@
+ 
+ // Game headers
+ #include "physics/gtaInst.h"
+-#include "physics\RagdollConstraints.h"
+-#include "peds\Ped.h"
++#include "physics/RagdollConstraints.h"
++#include "peds/Ped.h"
+ #include "Peds/PedDefines.h"
+ #include "peds/peddebugvisualiser.h"
+ 

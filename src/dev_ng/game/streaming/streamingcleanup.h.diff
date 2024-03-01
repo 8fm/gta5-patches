@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/streamingcleanup.h b/src/dev_ng/game/streaming/streamingcleanup.h
+--- a/src/dev_ng/game/streaming/streamingcleanup.h
++++ b/src/dev_ng/game/streaming/streamingcleanup.h
+@@ -10,7 +10,7 @@
+ #include "data/base.h"
+ 
+ // game headers
+-#include "fwtl\linklist.h"
++#include "fwtl/linklist.h"
+ #include "scene/streamer/SceneScoring.h"
+ #include "streaming/streamingdefs.h"
+ 

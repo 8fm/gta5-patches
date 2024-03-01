@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/game/ai/debug/types/TaskDebugInfo.h b/src/dev_ng/game/ai/debug/types/TaskDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/TaskDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/TaskDebugInfo.h
+@@ -1,11 +1,11 @@
+ #pragma once
+ 
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
+-#include "modelinfo\ModelSeatInfo.h"
++#include "ai/debug/system/AIDebugInfo.h"
++#include "modelinfo/ModelSeatInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+-#include "scene\RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CTask;
+ class CTaskEnterVehicle;

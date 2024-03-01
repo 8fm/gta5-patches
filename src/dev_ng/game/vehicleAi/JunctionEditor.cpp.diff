@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/game/vehicleAi/JunctionEditor.cpp b/src/dev_ng/game/vehicleAi/JunctionEditor.cpp
+--- a/src/dev_ng/game/vehicleAi/JunctionEditor.cpp
++++ b/src/dev_ng/game/vehicleAi/JunctionEditor.cpp
+@@ -2,21 +2,21 @@
+ 
+ #if __JUNCTION_EDITOR
+ 
+-#include "bank\bkmgr.h"
+-#include "bank\slider.h"
+-#include "camera\CamInterface.h"
+-#include "camera\debug\DebugDirector.h"
+-#include "camera\helpers\Frame.h"
+-#include "debug\DebugScene.h"
+-#include "fwdebug\debugdraw.h"
+-#include "peds\PlayerInfo.h"
++#include "bank/bkmgr.h"
++#include "bank/slider.h"
++#include "camera/CamInterface.h"
++#include "camera/debug/DebugDirector.h"
++#include "camera/helpers/Frame.h"
++#include "debug/DebugScene.h"
++#include "fwdebug/debugdraw.h"
++#include "peds/PlayerInfo.h"
+ #include "peds/Ped.h"
+-#include "text\text.h"
+-#include "text\textformat.h"
+-#include "text\textconversion.h"
+-#include "vehicleAi\pathfind.h"
+-#include "fwvehicleai\pathfindtypes.h"
+-#include "fwmaths\angle.h"
++#include "text/text.h"
++#include "text/textformat.h"
++#include "text/textconversion.h"
++#include "vehicleAi/pathfind.h"
++#include "fwvehicleai/pathfindtypes.h"
++#include "fwmaths/angle.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

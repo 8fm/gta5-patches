@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Physics/BlendFromNmData.h b/src/dev_ng/game/task/Physics/BlendFromNmData.h
+--- a/src/dev_ng/game/task/Physics/BlendFromNmData.h
++++ b/src/dev_ng/game/task/Physics/BlendFromNmData.h
+@@ -13,7 +13,7 @@
+ #include "atl/hashstring.h"
+ #include "data/base.h"
+ 
+-#include "ai\task\taskregdref.h"
++#include "ai/task/taskregdref.h"
+ #include "fwanimation/posematcher.h"
+ #include "fwmaths/random.h"
+ #include "fwutil/flags.h"

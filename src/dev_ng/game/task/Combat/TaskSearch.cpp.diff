@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Combat/TaskSearch.cpp b/src/dev_ng/game/task/Combat/TaskSearch.cpp
+--- a/src/dev_ng/game/task/Combat/TaskSearch.cpp
++++ b/src/dev_ng/game/task/Combat/TaskSearch.cpp
+@@ -4,7 +4,7 @@
+ // AUTHOR :  Phil H
+ 
+ // File header
+-#include "Task\Combat\TaskSearch.h"
++#include "Task/Combat/TaskSearch.h"
+ 
+ // Game headers
+ #include "Game/Clock.h"

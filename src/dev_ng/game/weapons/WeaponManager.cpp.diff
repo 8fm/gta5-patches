@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/WeaponManager.cpp b/src/dev_ng/game/weapons/WeaponManager.cpp
+--- a/src/dev_ng/game/weapons/WeaponManager.cpp
++++ b/src/dev_ng/game/weapons/WeaponManager.cpp
+@@ -4,7 +4,7 @@
+ // Game headers
+ #include "Peds/PedDefines.h"	// For MAXNOOFPEDS
+ #include "Task/Weapons/WeaponController.h"
+-#include "Weapons\AirDefence.h"
++#include "Weapons/AirDefence.h"
+ #include "Weapons/Bullet.h"
+ #include "Weapons/Components/WeaponComponentManager.h"
+ #include "Weapons/FiringPattern.h"

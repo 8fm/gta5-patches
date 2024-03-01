@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/script/commands_gang.cpp b/src/dev_ng/game/script/commands_gang.cpp
+--- a/src/dev_ng/game/script/commands_gang.cpp
++++ b/src/dev_ng/game/script/commands_gang.cpp
+@@ -1,8 +1,8 @@
+ 
+ // Rage headers
+-#include "script\wrapper.h"
++#include "script/wrapper.h"
+ // Game headers
+-#include "peds\gangs.h"
++#include "peds/gangs.h"
+ 
+ namespace gang_commands
+ {

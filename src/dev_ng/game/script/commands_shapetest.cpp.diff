@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/game/script/commands_shapetest.cpp b/src/dev_ng/game/script/commands_shapetest.cpp
+--- a/src/dev_ng/game/script/commands_shapetest.cpp
++++ b/src/dev_ng/game/script/commands_shapetest.cpp
+@@ -3,11 +3,11 @@
+ #include "script/handlers/GameScriptEntity.h"
+ #include "script/Handlers/GameScriptResources.h"
+ #include "script/wrapper.h"
+-#include "phbound\boundbox.h"
++#include "phbound/boundbox.h"
+ #include "camera/viewports/ViewportManager.h"
+ 
+ // Game headers
+-#include "script\script_shapetests.h"
++#include "script/script_shapetests.h"
+ #include "commands_shapetest.h"
+ 
+ 

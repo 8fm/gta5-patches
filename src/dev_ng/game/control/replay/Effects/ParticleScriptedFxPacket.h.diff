@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Effects/ParticleScriptedFxPacket.h b/src/dev_ng/game/control/replay/Effects/ParticleScriptedFxPacket.h
+--- a/src/dev_ng/game/control/replay/Effects/ParticleScriptedFxPacket.h
++++ b/src/dev_ng/game/control/replay/Effects/ParticleScriptedFxPacket.h
+@@ -11,8 +11,8 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control\replay\Effects\ParticlePacket.h"
+-#include "vector\matrix34.h"
++#include "control/replay/Effects/ParticlePacket.h"
++#include "vector/matrix34.h"
+ 
+ #if !RSG_ORBIS
+ #pragma warning(push)

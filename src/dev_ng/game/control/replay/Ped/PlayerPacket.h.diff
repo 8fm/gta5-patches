@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/control/replay/Ped/PlayerPacket.h b/src/dev_ng/game/control/replay/Ped/PlayerPacket.h
+--- a/src/dev_ng/game/control/replay/Ped/PlayerPacket.h
++++ b/src/dev_ng/game/control/replay/Ped/PlayerPacket.h
+@@ -9,8 +9,8 @@
+ // Replay only setup for win32
+ #if GTA_REPLAY
+ 
+-#include "control\replay\Ped\PedPacket.h"
+-#include "Peds\Ped.h"
++#include "control/replay/Ped/PedPacket.h"
++#include "Peds/Ped.h"
+ 
+ //=====================================================================================================
+ class CPacketPlayerUpdate : public CPacketPedUpdate

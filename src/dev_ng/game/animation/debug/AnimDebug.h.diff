@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/debug/AnimDebug.h b/src/dev_ng/game/animation/debug/AnimDebug.h
+--- a/src/dev_ng/game/animation/debug/AnimDebug.h
++++ b/src/dev_ng/game/animation/debug/AnimDebug.h
+@@ -23,7 +23,7 @@
+ 
+ // Gta includes
+ #include "Scene/DynamicEntity.h"
+-#include "animation\AnimScene\AnimSceneEntity.h"
++#include "animation/AnimScene/AnimSceneEntity.h"
+ 
+ // Rage forward declarations
+ namespace rage

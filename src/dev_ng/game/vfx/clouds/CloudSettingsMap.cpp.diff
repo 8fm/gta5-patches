@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/game/vfx/clouds/CloudSettingsMap.cpp b/src/dev_ng/game/vfx/clouds/CloudSettingsMap.cpp
+--- a/src/dev_ng/game/vfx/clouds/CloudSettingsMap.cpp
++++ b/src/dev_ng/game/vfx/clouds/CloudSettingsMap.cpp
+@@ -7,14 +7,14 @@
+ #include "CloudSettingsMap.h"
+ #include "CloudSettingsMap_parser.h"
+ 
+-#include "bank\bank.h"
+-#include "bank\bkmgr.h"
+-#include "bank\title.h"
+-#include "bank\combo.h"
++#include "bank/bank.h"
++#include "bank/bkmgr.h"
++#include "bank/title.h"
++#include "bank/combo.h"
+ 
+ #if __BANK
+-#include "game\weather.h"
+-#include "vfx\clouds\CloudHat.h"
++#include "game/weather.h"
++#include "vfx/clouds/CloudHat.h"
+ #endif
+ 
+ ///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/tools/PerformanceStats.cpp b/src/dev_ng/game/tools/PerformanceStats.cpp
+--- a/src/dev_ng/game/tools/PerformanceStats.cpp
++++ b/src/dev_ng/game/tools/PerformanceStats.cpp
+@@ -39,7 +39,7 @@
+ #include "Peds/ped.h"
+ #include "Peds/Ped.h"
+ #include "Peds/pedpopulation.h"
+-#include "physics\physics.h"
++#include "physics/physics.h"
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "renderer/PlantsMgr.h"
+ #include "renderer/water.h"

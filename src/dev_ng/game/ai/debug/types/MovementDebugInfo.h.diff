@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/ai/debug/types/MovementDebugInfo.h b/src/dev_ng/game/ai/debug/types/MovementDebugInfo.h
+--- a/src/dev_ng/game/ai/debug/types/MovementDebugInfo.h
++++ b/src/dev_ng/game/ai/debug/types/MovementDebugInfo.h
+@@ -1,10 +1,10 @@
+ #pragma once
+ 
+ // game headers
+-#include "ai\debug\system\AIDebugInfo.h"
++#include "ai/debug/system/AIDebugInfo.h"
+ 
+ #if AI_DEBUG_OUTPUT_ENABLED
+-#include "scene\RegdRefTypes.h"
++#include "scene/RegdRefTypes.h"
+ 
+ class CMovementTextDebugInfo : public CAIDebugInfo
+ {

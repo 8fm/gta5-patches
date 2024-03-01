@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp b/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp
+--- a/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp
++++ b/src/dev_ng/game/task/Motion/Locomotion/TaskHumanLocomotion.cpp
+@@ -6,7 +6,7 @@
+ #include "math/angmath.h"
+ 
+ // Game headers
+-#include "ai\debug\system\AIDebugLogManager.h"
++#include "ai/debug/system/AIDebugLogManager.h"
+ #include "Animation/AnimManager.h"
+ #include "Animation/Move.h"
+ #include "Animation/MovePed.h"

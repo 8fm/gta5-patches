@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/debug/bugstar/MissionLookup.h b/src/dev_ng/game/debug/bugstar/MissionLookup.h
+--- a/src/dev_ng/game/debug/bugstar/MissionLookup.h
++++ b/src/dev_ng/game/debug/bugstar/MissionLookup.h
+@@ -3,10 +3,10 @@
+ #ifndef INC_MISSION_LOOKUP_H_
+ #define INC_MISSION_LOOKUP_H_
+ 
+-#include "debug\debug.h"
++#include "debug/debug.h"
+ #if BUGSTAR_INTEGRATION_ACTIVE
+ 
+-#include "atl\map.h"
++#include "atl/map.h"
+ 
+ class CMissionLookup
+ {

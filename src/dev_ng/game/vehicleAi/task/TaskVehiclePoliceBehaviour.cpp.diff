@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehiclePoliceBehaviour.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehiclePoliceBehaviour.cpp
+--- a/src/dev_ng/game/vehicleAi/task/TaskVehiclePoliceBehaviour.cpp
++++ b/src/dev_ng/game/vehicleAi/task/TaskVehiclePoliceBehaviour.cpp
+@@ -3,21 +3,21 @@
+ // Game headers
+ #include "audio/northaudioengine.h"
+ #include "audio/superconductor.h"
+-#include "VehicleAi\VehicleIntelligence.h"
+-#include "VehicleAi\task\TaskVehicleCruise.h"
+-#include "VehicleAi\task\TaskVehicleCircle.h"
+-#include "VehicleAi\task\TaskVehicleBlock.h"
+-#include "VehicleAi\task\TaskVehicleGoTo.h"
+-#include "VehicleAi\task\TaskVehicleGoToHelicopter.h"
+-#include "VehicleAi\task\TaskVehiclePark.h"
+-#include "VehicleAi\task\TaskVehicleRam.h"
++#include "VehicleAi/VehicleIntelligence.h"
++#include "VehicleAi/task/TaskVehicleCruise.h"
++#include "VehicleAi/task/TaskVehicleCircle.h"
++#include "VehicleAi/task/TaskVehicleBlock.h"
++#include "VehicleAi/task/TaskVehicleGoTo.h"
++#include "VehicleAi/task/TaskVehicleGoToHelicopter.h"
++#include "VehicleAi/task/TaskVehiclePark.h"
++#include "VehicleAi/task/TaskVehicleRam.h"
+ #include "Vehicles/vehicle.h"
+ #include "Vehicles/Planes.h"
+ #include "Vehicles/heli.h"
+ #include "game/wanted.h"
+ #include "game/modelindices.h"
+-#include "Peds\ped.h"
+-#include "Peds\PedIntelligence.h"
++#include "Peds/ped.h"
++#include "Peds/PedIntelligence.h"
+ #include "renderer/zonecull.h"
+ 
+ AI_OPTIMISATIONS()

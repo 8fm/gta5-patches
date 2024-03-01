@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/Gangs.h b/src/dev_ng/game/Peds/Gangs.h
+--- a/src/dev_ng/game/Peds/Gangs.h
++++ b/src/dev_ng/game/Peds/Gangs.h
+@@ -7,7 +7,7 @@
+ 
+ #include "basetypes.h"
+ #include "peds/PlayerInfo.h"
+-#include "Peds\PedType.h"
++#include "Peds/PedType.h"
+ //#include "zones.h"
+ 
+ 

@@ -1,0 +1,60 @@
+diff --git a/src/dev_ng/game/task/Physics/TaskNMFallDown.cpp b/src/dev_ng/game/task/Physics/TaskNMFallDown.cpp
+--- a/src/dev_ng/game/task/Physics/TaskNMFallDown.cpp
++++ b/src/dev_ng/game/task/Physics/TaskNMFallDown.cpp
+@@ -5,12 +5,12 @@
+ 
+ // C headers
+ // Rage headers
+-#include "crskeleton\Skeleton.h"
+-#include "fragment\Cache.h"
+-#include "fragment\Instance.h"
+-#include "fragment\Type.h"
+-#include "fragment\TypeChild.h"
+-#include "fragmentnm\messageparams.h"
++#include "crskeleton/Skeleton.h"
++#include "fragment/Cache.h"
++#include "fragment/Instance.h"
++#include "fragment/Type.h"
++#include "fragment/TypeChild.h"
++#include "fragmentnm/messageparams.h"
+ #include "pharticulated/articulatedcollider.h"
+ #include "physics/shapetest.h"
+ 
+@@ -18,25 +18,25 @@
+ #include "fwanimation/animmanager.h"
+ #include "fwanimation/pointcloud.h"
+ #include "grcore/debugdraw.h"
+-#include "fwmaths\Angle.h"
++#include "fwmaths/Angle.h"
+ 
+ // Game headers
+ #include "camera/CamInterface.h"
+-#include "Event\EventDamage.h"
+-#include "Network\NetworkInterface.h"
+-#include "Peds\Ped.h"
+-#include "Peds\PedIntelligence.h"
+-#include "Peds\PedPlacement.h"
+-#include "PedGroup\PedGroup.h"
+-#include "Physics\GtaInst.h"
+-#include "Physics\Physics.h"
++#include "Event/EventDamage.h"
++#include "Network/NetworkInterface.h"
++#include "Peds/Ped.h"
++#include "Peds/PedIntelligence.h"
++#include "Peds/PedPlacement.h"
++#include "PedGroup/PedGroup.h"
++#include "Physics/GtaInst.h"
++#include "Physics/Physics.h"
+ #include "physics/WorldProbe/worldprobe.h"
+ #include "scene/world/GameWorld.h"
+-#include "Task\General\TaskBasic.h"
+-#include "Task\Movement\Jumping\TaskInAir.h"
++#include "Task/General/TaskBasic.h"
++#include "Task/Movement/Jumping/TaskInAir.h"
+ #include "Task/Physics/TaskNMFallDown.h"
+ #include "vehicles/vehicle.h"
+-#include "Vfx\Misc\Fire.h"
++#include "Vfx/Misc/Fire.h"
+ 
+ AI_OPTIMISATIONS()
+ 

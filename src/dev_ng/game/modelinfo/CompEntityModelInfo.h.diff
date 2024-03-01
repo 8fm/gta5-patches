@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/modelinfo/CompEntityModelInfo.h b/src/dev_ng/game/modelinfo/CompEntityModelInfo.h
+--- a/src/dev_ng/game/modelinfo/CompEntityModelInfo.h
++++ b/src/dev_ng/game/modelinfo/CompEntityModelInfo.h
+@@ -12,7 +12,7 @@
+ #define INC_COMP_ENTITY_MODELINFO_H_
+ 
+ // Game headers
+-#include "modelinfo\BaseModelInfo.h"
++#include "modelinfo/BaseModelInfo.h"
+ 
+ #include "scene/loader/mapTypes.h"
+ 
