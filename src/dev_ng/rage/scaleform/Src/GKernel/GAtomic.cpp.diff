@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/scaleform/Src/GKernel/GAtomic.cpp b/src/dev_ng/rage/scaleform/Src/GKernel/GAtomic.cpp
+--- a/src/dev_ng/rage/scaleform/Src/GKernel/GAtomic.cpp
++++ b/src/dev_ng/rage/scaleform/Src/GKernel/GAtomic.cpp
+@@ -213,6 +213,11 @@ void    GLock::AllocateKernelSemaphore()
+ ScePthreadMutexattr GLock::RecursiveAttr;
+ bool                GLock::RecursiveAttrInit;
+ 
++#elif defined(GFC_OS_LINUX)
++
++pthread_mutexattr_t GLock::RecursiveAttr;
++bool                GLock::RecursiveAttrInit;
++
+ #endif	// OS
+ 
+ #endif // GFC_NO_THREADSUPPORT

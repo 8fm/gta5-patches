@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/_Unity/_unity_ScaleformGfx_headers_gkernel_grenderer.cpp b/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/_Unity/_unity_ScaleformGfx_headers_gkernel_grenderer.cpp
+--- a/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/_Unity/_unity_ScaleformGfx_headers_gkernel_grenderer.cpp
++++ b/src/dev_ng/rage/scaleform/Src/vcproj/scaleformgfx/_Unity/_unity_ScaleformGfx_headers_gkernel_grenderer.cpp
+@@ -81,6 +81,9 @@
+ #include "../../../GKernel/GThreads_win32.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
++#include "../../../GKernel/GThreads_linux.cpp"
++#include "forceinclude/_unity_epilogue.h"
++#include "forceinclude/_unity_prologue.h"
+ #include "../../../GKernel/GThreads_ps3.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"

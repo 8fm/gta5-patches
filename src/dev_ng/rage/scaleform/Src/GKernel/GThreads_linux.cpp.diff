@@ -1,0 +1,640 @@
+diff --git a/src/dev_ng/rage/scaleform/Src/GKernel/GThreads_linux.cpp b/src/dev_ng/rage/scaleform/Src/GKernel/GThreads_linux.cpp
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/scaleform/Src/GKernel/GThreads_linux.cpp
+@@ -0,0 +1,635 @@
++
++// Mix of:
++// src/dev_ng/rage/scaleform/Src/GKernel/GThreads_ps3.cpp
++// src/dev_ng/rage/3rdparty/OculusSDK/LibOVR/Src/Kernel/OVR_ThreadsPthread.cpp
++
++#if RSG_LINUX
++
++#include "GThreads.h"
++#include "GHash.h"
++
++#ifndef GFC_NO_THREADSUPPORT
++
++#include <pthread.h>
++#include <sys/time.h>
++#include <unistd.h>
++#define CELL_OK 0
++
++// *** Classes Implemented
++
++class GMutex;
++class GWaitCondition;
++class GThread;
++
++
++// *** Mutex implementation
++
++// Interface used internally in a mutex
++class GMutex_AreadyLockedAcquireInterface: public GAcquireInterface
++{
++public:
++    // Mutex we belong to
++    GMutex *pMutex;
++
++    GMutex_AreadyLockedAcquireInterface() { pMutex = 0; }
++
++    // Acquire interface implementation
++    virtual bool CanAcquire();
++    virtual bool TryAcquire();
++    virtual bool TryAcquireCommit();
++    virtual bool TryAcquireCancel();
++
++    // GInterface - no implementation
++    virtual void AddRef()                            {}
++    virtual void Release(UInt flags=0)               { GUNUSED(flags); }
++};
++
++
++// Acquire interface implementation
++bool GMutex_AreadyLockedAcquireInterface::CanAcquire()       { return true; }
++bool GMutex_AreadyLockedAcquireInterface::TryAcquire()       { return pMutex->TryAcquire(); }
++bool GMutex_AreadyLockedAcquireInterface::TryAcquireCommit() { return pMutex->TryAcquireCommit(); }
++bool GMutex_AreadyLockedAcquireInterface::TryAcquireCancel() { return pMutex->TryAcquireCancel(); }
++
++
++// *** Internal mutex implementation structure
++
++class GMutexImpl: public GNewOverrideBase<GStat_Default_Mem>
++{
++    pthread_mutex_t MutexId;
++    bool            Recursive;
++    pthread_t       LockedBy;
++    UInt            LockCount;
++
++    GMutex_AreadyLockedAcquireInterface AreadyLockedAcquire;
++
++    friend class GWaitConditionImpl;
++
++public:
++    GMutexImpl(GMutex* pmutex, bool recursive = true);
++    ~GMutexImpl();
++
++    // Locking functions
++    void Lock();
++    bool TryLock();
++    void Unlock(GMutex* pmutex);
++
++    bool IsLockedByAnotherThread() const;
++    bool IsSignaled() const;
++
++    GAcquireInterface* GetAcquireInterface(GMutex* pmutex);
++};
++
++
++// Constructor and destructor
++GMutexImpl::GMutexImpl(GMutex* pmutex, bool recursive)
++{
++    AreadyLockedAcquire.pMutex = pmutex;
++    Recursive = recursive;
++    LockCount = 0;
++
++    pthread_mutexattr_t mutexAttr;
++    pthread_mutexattr_init(&mutexAttr);
++    if(Recursive)
++        pthread_mutexattr_settype(&mutexAttr, PTHREAD_MUTEX_RECURSIVE);
++
++    int err = pthread_mutex_init(&MutexId, &mutexAttr);
++    GASSERT(err == CELL_OK);
++    GUNUSED(err);
++}
++
++GMutexImpl::~GMutexImpl()
++{
++    int err = pthread_mutex_destroy(&MutexId);
++    GASSERT(err == CELL_OK);
++    GUNUSED(err);
++}
++
++
++// Lock and try lock
++void GMutexImpl::Lock()
++{
++    while(pthread_mutex_lock(&MutexId) != CELL_OK);
++    LockCount++;
++    LockedBy = pthread_self();
++}
++
++bool GMutexImpl::TryLock()
++{
++    if(pthread_mutex_trylock(&MutexId) == CELL_OK)
++    {
++        LockCount++;
++        LockedBy = pthread_self();
++        return true;
++    }
++    return false;
++}
++
++// Unlock
++void GMutexImpl::Unlock(GMutex* pmutex)
++{
++    const pthread_t thrId = pthread_self();
++    GASSERT(thrId == LockedBy && LockCount > 0);
++    GUNUSED(thrId);
++
++    UInt lockCount;
++    LockCount--;
++    lockCount = LockCount;
++
++    GMutex::CallableHandlers handlers;
++    pmutex->GetCallableHandlers(&handlers);
++
++    pthread_mutex_unlock(&MutexId);
++
++    if(lockCount == 0)
++        handlers.CallWaitHandlers();
++}
++
++bool GMutexImpl::IsLockedByAnotherThread() const
++{
++    if(LockCount == 0)
++        return false;
++
++    const pthread_t thrId = pthread_self();
++    if(thrId != LockedBy)
++        return true;
++
++    return false;
++}
++
++bool GMutexImpl::IsSignaled() const
++{
++    return LockCount == 0;
++}
++
++// Obtain the acquisition interface
++GAcquireInterface* GMutexImpl::GetAcquireInterface(GMutex* pmutex)
++{
++    if(LockCount && !IsLockedByAnotherThread())
++        return &AreadyLockedAcquire;
++    return pmutex;
++}
++
++
++// *** Actual implementation of GMutex
++
++GMutex::GMutex(bool recursive, bool multiWait):
++    GWaitable(multiWait) { pImpl = new GMutexImpl(this, recursive); }
++GMutex::~GMutex()        { delete pImpl; }
++
++// Lock, try lock and unlock
++void GMutex::Lock()    { pImpl->Lock(); }
++bool GMutex::TryLock() { return pImpl->TryLock(); }
++void GMutex::Unlock()  { pImpl->Unlock(this); }
++
++bool GMutex::IsLockedByAnotherThread() { return pImpl->IsLockedByAnotherThread(); }
++bool GMutex::IsSignaled() const        { return pImpl->IsSignaled(); }
++
++// Obtain the acquisition interface
++GAcquireInterface* GMutex::GetAcquireInterface() { return pImpl->GetAcquireInterface(this); }
++
++// Acquire interface implementation
++bool GMutex::CanAcquire()       { return !IsLockedByAnotherThread(); }
++bool GMutex::TryAcquire()       { return TryLock(); }
++bool GMutex::TryAcquireCommit() { return true; }
++bool GMutex::TryAcquireCancel() { Unlock(); return true; }
++
++
++// ***** Wait Condition implementation
++
++// Internal implementation class
++class GWaitConditionImpl: public GNewOverrideBase<GStat_Default_Mem>
++{
++    pthread_mutex_t MutexId;
++    pthread_cond_t  CondvId;
++
++public:
++    GWaitConditionImpl();
++    ~GWaitConditionImpl();
++
++    // Release mutex and wait for condition. The mutex is re-aqured after the wait
++    bool Wait(GMutex *pmutex, UInt delay = GFC_WAIT_INFINITE);
++
++    // Notify a condition, releasing at one object waiting
++    // and releasing all objects waiting
++    void Notify();
++    void NotifyAll();
++};
++
++
++// Constructor and destructor
++GWaitConditionImpl::GWaitConditionImpl()
++{
++    pthread_mutexattr_t mutexAttr;
++    pthread_mutexattr_init(&mutexAttr);
++    int err = pthread_mutex_init(&MutexId, &mutexAttr);
++    GASSERT(err == CELL_OK);
++    GUNUSED(err);
++
++    pthread_condattr_t condvAttr;
++    pthread_condattr_init(&condvAttr);
++    err = pthread_cond_init(&CondvId, &condvAttr);
++    GASSERT(err == CELL_OK);
++}
++
++GWaitConditionImpl::~GWaitConditionImpl()
++{
++    int err = pthread_cond_destroy(&CondvId);
++    GASSERT(err == CELL_OK);
++    GUNUSED(err);
++
++    err = pthread_mutex_destroy(&MutexId);
++    GASSERT(err == CELL_OK);
++}
++
++
++// Release mutex and wait for condition. The mutex is re-aqured after the wait
++bool GWaitConditionImpl::Wait(GMutex *pmutex, UInt delay)
++{
++    bool ret = true;
++    UInt lockCount = pmutex->pImpl->LockCount;
++
++    // Mutex must have been locked
++    if(lockCount == 0)
++        return false;
++
++    pthread_mutex_lock(&MutexId);
++
++    if(pmutex->pImpl->Recursive)
++    {
++        // Release the recursive mutex N times
++        pmutex->pImpl->LockCount = 0;
++        for(UInt i = 0; i < lockCount; i++)
++            pthread_mutex_unlock(&pmutex->pImpl->MutexId);
++        pmutex->CallWaitHandlers();
++    }
++    else
++    {
++        pmutex->pImpl->LockCount = 0;
++        pthread_mutex_unlock(&pmutex->pImpl->MutexId);
++        pmutex->CallWaitHandlers();
++    }
++
++    if(delay == GFC_WAIT_INFINITE)
++        pthread_cond_wait(&CondvId, &MutexId);
++    else
++    {
++        timespec ts;
++        struct timeval tv;
++        gettimeofday(&tv, 0);
++        ts.tv_sec = tv.tv_sec + (delay / 1000);
++        ts.tv_nsec = (tv.tv_usec + (delay % 1000) * 1000) * 1000;
++        if (ts.tv_nsec > 999999999)
++        {
++            ts.tv_sec++;
++            ts.tv_nsec -= 1000000000;
++        }
++
++        int err = pthread_cond_timedwait(&CondvId, &MutexId, &ts);
++        GASSERT(err == CELL_OK || err == ETIMEDOUT);
++        if(err)
++            ret = false;
++    }
++
++    pthread_mutex_unlock(&MutexId);
++
++    // Re-aquire the mutex
++    for(UInt i = 0; i < lockCount; i++)
++        pmutex->Lock();
++
++    return ret;
++}
++
++// Notify a condition, releasing the least object in a queue
++void GWaitConditionImpl::Notify()
++{
++    pthread_mutex_lock(&MutexId);
++    pthread_cond_signal(&CondvId);
++    pthread_mutex_unlock(&MutexId);
++}
++
++// Notify a condition, releasing all objects waiting
++void GWaitConditionImpl::NotifyAll()
++{
++    pthread_mutex_lock(&MutexId);
++    pthread_cond_broadcast(&CondvId);
++    pthread_mutex_unlock(&MutexId);
++}
++
++
++// *** Actual implementation of GWaitCondition
++
++GWaitCondition::GWaitCondition()  { pImpl = new GWaitConditionImpl; }
++GWaitCondition::~GWaitCondition() { delete pImpl; }
++
++// Wait for condition
++bool GWaitCondition::Wait(GMutex *pmutex, UInt delay) { return pImpl->Wait(pmutex, delay); }
++// Notification
++void GWaitCondition::Notify()    { pImpl->Notify(); }
++void GWaitCondition::NotifyAll() { pImpl->NotifyAll(); }
++
++
++// *** GThread constructors and destructor
++
++// RAGE - this is so I can init some TLS variables
++void* GThread::EngineInitCallbackData = NULL;
++void (*GThread::EngineInitCallbackFn)(void*) = NULL;
++
++GThread::GThread(UPInt stackSize, int processor): GWaitable(1)
++{
++    CreateParams params;
++    params.stackSize = stackSize;
++    params.processor = processor;
++    Init(params);
++}
++
++GThread::GThread(GThread::ThreadFn threadFunction, void*  userHandle, UPInt stackSize,
++                 int processor, GThread::ThreadState initialState): GWaitable(1)
++{
++    CreateParams params(threadFunction, userHandle, stackSize, processor, initialState);
++    Init(params);
++}
++
++GThread::GThread(const CreateParams& params): GWaitable(1)
++{
++    Init(params);
++}
++
++void GThread::Init(const CreateParams& params)
++{
++    ThreadFlags     = 0;
++    ThreadHandle    = 0;
++    ExitCode        = 0;
++    SuspendCount    = 0;
++    StackSize       = params.stackSize;
++    Processor       = params.processor;
++    Priority        = params.priority;
++
++    ThreadFunction  = params.threadFunction;
++    UserHandle      = params.userHandle;
++
++    if(params.initialState != NotRunning)
++        Start(params.initialState);
++}
++
++GThread::~GThread()
++{
++    ThreadHandle = 0;
++}
++
++
++// *** Overridable user functions
++
++// Default Run implementation
++SInt GThread::Run()
++{
++    return (ThreadFunction) ? ThreadFunction(this, UserHandle) : 0;
++}
++void GThread::OnExit()
++{
++}
++
++
++// Finishes the thread and releases internal reference to it
++void  GThread::FinishAndRelease()
++{
++    CallableHandlers handlers;
++    GetCallableHandlers(&handlers);
++
++    ThreadFlags &= (UInt32)~(GFC_THREAD_STARTED);
++    ThreadFlags |= GFC_THREAD_FINISHED;
++
++    Release();
++    handlers.CallWaitHandlers();
++}
++
++
++// *** ThreadList - used to tack all created threads
++
++class GThreadList: public GNewOverrideBase<GStat_Default_Mem>
++{
++    struct ThreadHashOp
++    {
++        size_t operator()(const GThread* ptr)
++            { return (((size_t)ptr) >> 6) ^ (size_t)ptr; }
++    };
++
++    GHashSet<GThread*, ThreadHashOp> ThreadSet;
++    GMutex             ThreadMutex;
++    GWaitCondition     ThreadsEmpty;
++    pthread_t          RootThreadId;
++
++    static GThreadList* volatile pRunningThreads;
++
++    void addThread(GThread *pthr)
++    {
++        GMutex::Locker lock(&ThreadMutex);
++        ThreadSet.Add(pthr);
++    }
++
++    void removeThread(GThread *pthr)
++    {
++        GMutex::Locker lock(&ThreadMutex);
++        ThreadSet.Remove(pthr);
++        if(ThreadSet.GetSize() == 0)
++            ThreadsEmpty.Notify();
++    }
++
++    void finishAllThreads()
++    {
++        // Only original root thread can call this
++        const pthread_t thrId = pthread_self();
++        GASSERT(thrId == RootThreadId);
++        GUNUSED(thrId);
++
++        GMutex::Locker lock(&ThreadMutex);
++        while(ThreadSet.GetSize() != 0)
++            ThreadsEmpty.Wait(&ThreadMutex);
++    }
++
++public:
++    GThreadList()  { RootThreadId = pthread_self(); }
++    ~GThreadList() {}
++
++    static void AddRunningThread(GThread *pthr)
++    {
++        if(!pRunningThreads)
++        {
++            pRunningThreads = new GThreadList;
++            GASSERT(pRunningThreads);
++        }
++        pRunningThreads->addThread(pthr);
++    }
++
++    static void RemoveRunningThread(GThread *pthr)
++    {
++        GASSERT(pRunningThreads);
++        pRunningThreads->removeThread(pthr);
++    }
++
++    static void FinishAllThreads()
++    {
++        if(pRunningThreads)
++        {
++            pRunningThreads->finishAllThreads();
++            delete pRunningThreads;
++            pRunningThreads = 0;
++        }
++    }
++};
++
++// By default, we have no thread list
++GThreadList* volatile GThreadList::pRunningThreads = 0;
++
++void GThread::FinishAllThreads()
++{
++    GThreadList::FinishAllThreads();
++}
++
++SInt GThread::PRun()
++{
++    if(ThreadFlags & GFC_THREAD_START_SUSPENDED)
++    {
++        Suspend();
++        ThreadFlags &= (UInt32)~GFC_THREAD_START_SUSPENDED;
++    }
++
++    ExitCode = Run();
++    return ExitCode;
++}
++
++bool GThread::GetExitFlag() const
++{
++    return (ThreadFlags & GFC_THREAD_EXIT) != 0;
++}
++
++void GThread::SetExitFlag(bool exitFlag)
++{
++    if(exitFlag)
++        ThreadFlags |= GFC_THREAD_EXIT;
++    else
++        ThreadFlags &= (UInt32) ~GFC_THREAD_EXIT;
++}
++
++// State functions
++bool GThread::IsFinished()  const { return (ThreadFlags & GFC_THREAD_FINISHED) != 0; }
++bool GThread::IsSuspended() const { return SuspendCount > 0; }
++
++GThread::ThreadState GThread::GetThreadState() const
++{
++    if(IsSuspended())                    return Suspended;
++    if(ThreadFlags & GFC_THREAD_STARTED) return Running;
++    return NotRunning;
++}
++
++
++// ***** Thread management
++
++// The actual first function called on thread start
++void* GThread_PthreadStartFn(void* phandle)
++{
++    GThread* pthr = (GThread*)phandle;
++
++    // RAGE - added this so we can init TLS data
++    if (GThread::EngineInitCallbackFn)
++    {
++        GThread::EngineInitCallbackFn(GThread::EngineInitCallbackData);
++    }
++
++    SInt ret = pthr->PRun();
++    pthr->Exit(ret);
++}
++
++/* static */
++int GThread::GetOSPriority(ThreadPriority p)
++//static inline int MapToSystemPrority(GThread::ThreadPriority p)
++{
++    switch(p)
++    {
++        case GThread::CriticalPriority:    return 0;
++        case GThread::HighestPriority:     return 300;
++        case GThread::AboveNormalPriority: return 600;
++        case GThread::NormalPriority:      return 1000;
++        case GThread::BelowNormalPriority: return 1500;
++        case GThread::LowestPriority:      return 2500;
++        case GThread::IdlePriority:        return 3071;
++    }
++    return 1000;
++}
++
++bool GThread::Start(ThreadState initialState)
++{
++    if(initialState == NotRunning)
++        return false;
++
++    // If the thread is already running then wait until its
++    // finished to begin running this thread
++    if((GetThreadState() != NotRunning) && !Wait())
++        return false;
++
++    // AddRef to us until the thread is finished
++    AddRef();
++    GThreadList::AddRunningThread(this);
++
++    ExitCode     = 0;
++    SuspendCount = 0;
++    ThreadFlags  = (initialState == Running) ? 0 : GFC_THREAD_START_SUSPENDED;
++
++    pthread_attr_t Attrib;
++    pthread_attr_init(&Attrib);
++    pthread_attr_setdetachstate(&Attrib, PTHREAD_CREATE_DETACHED);
++    pthread_attr_setstacksize(&Attrib, StackSize);
++
++    char tname[32];
++    sprintf(tname,"GThread %p",this);
++    int err = pthread_create(&ThreadHandle, &Attrib, GThread_PthreadStartFn, this);
++    GASSERT(err == CELL_OK);
++    if(err)
++    {
++        ThreadFlags = 0;
++        Release();
++        GThreadList::RemoveRunningThread(this);
++        return false;
++    }
++    return true;
++}
++
++// Suspend doesn't supported
++bool GThread::Suspend() { return false; }
++// Resume doesn't supported
++bool GThread::Resume()  { return false; }
++
++// Quits with an exit code
++void GThread::Exit(SInt exitCode)
++{
++    OnExit();
++
++    FinishAndRelease();
++    GThreadList::RemoveRunningThread(this);
++
++    pthread_exit((void*)(size_t)exitCode);
++}
++
++
++// *** Sleep functions
++
++bool GThread::Sleep(UInt secs)
++{
++    sleep(secs);
++    return true;
++}
++
++bool GThread::MSleep(UInt msecs)
++{
++    usleep(msecs * 1000);
++    return true;
++}
++
++int GThread::GetCPUCount()
++{
++    return 1;
++}
++
++#endif  // GFC_NO_THREADSUPPORT
++
++#endif
