@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/world/WorldMgr.cpp b/src/dev_ng/rage/framework/src/fwscene/world/WorldMgr.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/world/WorldMgr.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/world/WorldMgr.cpp
+@@ -9,7 +9,7 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "fwscene/world/worldMgr.h"
++#include "fwscene/world/WorldMgr.h"
+ 
+ // Rage includes
+ #include "profile/timebars.h"

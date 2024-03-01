@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwrenderer/instancing.h b/src/dev_ng/rage/framework/src/fwrenderer/instancing.h
+--- a/src/dev_ng/rage/framework/src/fwrenderer/instancing.h
++++ b/src/dev_ng/rage/framework/src/fwrenderer/instancing.h
+@@ -9,7 +9,7 @@
+ 
+ #include "grcore/instancebuffer.h"
+ #include "fwdrawlist/drawlist.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #if !(__D3D11 || RSG_ORBIS)
+ 	#define IB_ALLOW_DL_ALLOCATION 1

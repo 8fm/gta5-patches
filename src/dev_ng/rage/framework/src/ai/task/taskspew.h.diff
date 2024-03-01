@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/task/taskspew.h b/src/dev_ng/rage/framework/src/ai/task/taskspew.h
+--- a/src/dev_ng/rage/framework/src/ai/task/taskspew.h
++++ b/src/dev_ng/rage/framework/src/ai/task/taskspew.h
+@@ -7,7 +7,7 @@
+ #ifndef AI_TASKSPEW_H
+ #define AI_TASKSPEW_H
+ 
+-#include "physics/debugevents.h"
++#include "physics/debugEvents.h"
+ #include "atl/hashstring.h"
+ #include "parser/macros.h"
+ 

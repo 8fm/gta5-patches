@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwanimation/move.h b/src/dev_ng/rage/framework/src/fwanimation/move.h
+--- a/src/dev_ng/rage/framework/src/fwanimation/move.h
++++ b/src/dev_ng/rage/framework/src/fwanimation/move.h
+@@ -3,7 +3,7 @@
+ 
+ // rage includes
+ #include "atl/functor.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "atl/array.h"
+ #include "atl/hashstring.h"
+ #include "crmetadata/property.h"

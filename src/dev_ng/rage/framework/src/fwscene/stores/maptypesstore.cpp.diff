@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/maptypesstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/maptypesstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/maptypesstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/maptypesstore.cpp
+@@ -7,14 +7,14 @@
+ #include "maptypesstore.h"
+ 
+ #include "fwdrawlist/drawlistmgr.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "entity/archetype.h"
+ #include "fwrenderer/renderthread.h"
+ #include "fwscene/mapdata/mapdata.h"
+ #include "fwscene/stores/mapdatastore.h"
+-#include "fwscene/world/worldmgr.h"
+-#include "fwscene/world/scenegraphnode.h"
+-#include "fwscene/world/streamedscenegraphnode.h"
++#include "fwscene/world/WorldMgr.h"
++#include "fwscene/world/SceneGraphNode.h"
++#include "fwscene/world/StreamedSceneGraphNode.h"
+ #include "fwsys/gameskeleton.h"
+ #include "parser/manager.h"
+ #include "parser/psoconsts.h"

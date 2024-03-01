@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwrenderer/RenderPhaseBase.h b/src/dev_ng/rage/framework/src/fwrenderer/RenderPhaseBase.h
+--- a/src/dev_ng/rage/framework/src/fwrenderer/RenderPhaseBase.h
++++ b/src/dev_ng/rage/framework/src/fwrenderer/RenderPhaseBase.h
+@@ -21,7 +21,7 @@
+ // framework headers
+ #include "fwrenderer/RenderSettingsBase.h"
+ #include "fwrenderer/renderphaseswitches.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ 
+ namespace rage
+ {

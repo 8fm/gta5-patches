@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/entity.h b/src/dev_ng/rage/framework/src/entity/entity.h
+--- a/src/dev_ng/rage/framework/src/entity/entity.h
++++ b/src/dev_ng/rage/framework/src/entity/entity.h
+@@ -22,7 +22,7 @@
+ #include "fwscene/lod/LodTypes.h"
+ #include "fwscene/world/EntityContainer.h"
+ #include "fwscene/world/WorldLimits.h"
+-#include "fwutil/flags.h"
++#include "fwutil/Flags.h"
+ #include "data/autoid.h"
+ #include "system/bit.h"
+ 

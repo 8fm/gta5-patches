@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/event/event.h b/src/dev_ng/rage/framework/src/ai/event/event.h
+--- a/src/dev_ng/rage/framework/src/ai/event/event.h
++++ b/src/dev_ng/rage/framework/src/ai/event/event.h
+@@ -7,7 +7,7 @@
+ #ifndef AI_EVENT_H
+ #define AI_EVENT_H
+ 
+-#include "fwEvent/Event.h"
++#include "fwevent/Event.h"
+ 
+ namespace rage
+ {

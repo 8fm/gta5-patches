@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwutil/PtrList.h b/src/dev_ng/rage/framework/src/fwutil/PtrList.h
+--- a/src/dev_ng/rage/framework/src/fwutil/PtrList.h
++++ b/src/dev_ng/rage/framework/src/fwutil/PtrList.h
+@@ -7,7 +7,7 @@
+ #ifndef _PTRLIST_H_
+ #define _PTRLIST_H_
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "diag/tracker.h"		// RAGE_TRACK()
+ //#include "debug\debug.h"
+ 

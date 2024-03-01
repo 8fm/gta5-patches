@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwvehicleai/pathfindtypes.cpp b/src/dev_ng/rage/framework/src/fwvehicleai/pathfindtypes.cpp
+--- a/src/dev_ng/rage/framework/src/fwvehicleai/pathfindtypes.cpp
++++ b/src/dev_ng/rage/framework/src/fwvehicleai/pathfindtypes.cpp
+@@ -22,7 +22,7 @@
+ #include "atl/binmap_struct.h"
+ 
+ // Framework headers
+-#include "fwmaths/vector.h"
++#include "fwmaths/Vector.h"
+ 
+ using namespace rage;
+ 

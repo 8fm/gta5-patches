@@ -38,7 +38,7 @@ new file mode 100644
 +    "../vfx/ptfx/behaviours/ptxu_river.psc"
 +    "../vfx/ptfx/behaviours/ptxu_zcull.psc"
 +    "../fwui/Input/fwuiInputEnums.psc"
-+    "../fwutil/profanityFilter.psc"
++    "../fwutil/ProfanityFilter.psc"
 +)
 +
 +include(${CMAKE_SOURCE_DIR}/cmake/PscGenerator.cmake)

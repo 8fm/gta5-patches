@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.h b/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.h
+--- a/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.h
++++ b/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.h
+@@ -8,16 +8,16 @@
+ #define SCRIPT_MGR_BASE_H
+ 
+ // framework headers
+-#include "fwnet/netBandwidthMgr.h"
+-#include "fwnet/netBandwidthStats.h"
+-#include "fwnet/netLog.h"
+-#include "fwnet/netInterface.h"
+-#include "fwnet/netLogUtils.h"
+-#include "fwnet/netPlayer.h"
+-#include "fwnet/netPlayerMgrBase.h"
+-#include "fwscript/scriptHandler.h"
+-#include "fwscript/scriptHandlerMessages.h"
+-#include "fwscript/scriptId.h"
++#include "fwnet/netbandwidthmgr.h"
++#include "fwnet/netbandwidthstats.h"
++#include "fwnet/netlog.h"
++#include "fwnet/netinterface.h"
++#include "fwnet/netlogutils.h"
++#include "fwnet/netplayer.h"
++#include "fwnet/netplayermgrbase.h"
++#include "fwscript/scripthandler.h"
++#include "fwscript/scripthandlermessages.h"
++#include "fwscript/scriptid.h"
+ #include "fwnet/netchannel.h"
+ // rage headers
+ #include "atl/map.h"

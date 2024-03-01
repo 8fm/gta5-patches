@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwscript_fwsys_fwtl_phframework.cpp b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwscript_fwsys_fwtl_phframework.cpp
+--- a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwscript_fwsys_fwtl_phframework.cpp
++++ b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwscript_fwsys_fwtl_phframework.cpp
+@@ -51,19 +51,19 @@
+ #include "../../../fwtl/assetstore.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwtl/debugownerhistory.cpp"
++#include "../../../fwtl/DebugOwnerHistory.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwtl/defragpool.cpp"
++#include "../../../fwtl/DefragPool.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwtl/extrefawarebase.cpp"
++#include "../../../fwtl/ExtRefAwareBase.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../fwtl/nameregistrar.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwtl/pool.cpp"
++#include "../../../fwtl/Pool.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../fwtl/regdrefs.cpp"

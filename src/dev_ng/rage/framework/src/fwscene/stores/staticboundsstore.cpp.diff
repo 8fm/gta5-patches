@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
 --- a/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
 +++ b/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
+@@ -5,7 +5,7 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "StaticBoundsStore.h"
++#include "staticboundsstore.h"
+ 
+ // Rage headers
+ #include "diag/art_channel.h"
 @@ -17,6 +17,7 @@
  #include "streaming/packfilemanager.h"
  #include "streaming/streaming_channel.h"

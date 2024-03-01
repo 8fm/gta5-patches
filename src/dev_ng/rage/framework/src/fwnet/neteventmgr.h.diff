@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/neteventmgr.h b/src/dev_ng/rage/framework/src/fwnet/neteventmgr.h
+--- a/src/dev_ng/rage/framework/src/fwnet/neteventmgr.h
++++ b/src/dev_ng/rage/framework/src/fwnet/neteventmgr.h
+@@ -18,7 +18,7 @@
+ #include "fwnet/nettypes.h"
+ #include "fwnet/netlog.h"
+ #include "fwnet/netlogsplitter.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ // rage includes
+ #include "net/connectionmanager.h"

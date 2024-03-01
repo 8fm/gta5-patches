@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/streaming/streaminglive.h b/src/dev_ng/rage/framework/src/streaming/streaminglive.h
+--- a/src/dev_ng/rage/framework/src/streaming/streaminglive.h
++++ b/src/dev_ng/rage/framework/src/streaming/streaminglive.h
+@@ -20,7 +20,7 @@
+ #include "vector/color32.h"
+ 
+ #include "fwtl/nameregistrar.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "streaming/streamingdefs.h"
+ 
+ namespace rage

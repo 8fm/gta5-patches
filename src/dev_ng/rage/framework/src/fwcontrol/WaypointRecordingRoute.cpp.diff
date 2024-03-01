@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/rage/framework/src/fwcontrol/WaypointRecordingRoute.cpp 
  // Framework headers
 -#include "fwmaths\Angle.h"
 -#include "vector\geometry.h"
-+#include "fwmaths/Angle.h"
++#include "fwmaths/angle.h"
 +#include "vector/geometry.h"
  
  using namespace rage;

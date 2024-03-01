@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwlocalisation/languagePack.cpp b/src/dev_ng/rage/framework/src/fwlocalisation/languagePack.cpp
+--- a/src/dev_ng/rage/framework/src/fwlocalisation/languagePack.cpp
++++ b/src/dev_ng/rage/framework/src/fwlocalisation/languagePack.cpp
+@@ -16,7 +16,7 @@
+ #include "system/param.h"
+ 
+ // framework includes:
+-#include "LanguagePack.h"
++#include "languagePack.h"
+ #include "localisation_channel.h"
+ #include "unit_conversion.h"
+ 

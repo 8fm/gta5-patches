@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netscgamerDataMgr.cpp b/src/dev_ng/rage/framework/src/fwnet/netscgamerDataMgr.cpp
+--- a/src/dev_ng/rage/framework/src/fwnet/netscgamerDataMgr.cpp
++++ b/src/dev_ng/rage/framework/src/fwnet/netscgamerDataMgr.cpp
+@@ -1,7 +1,7 @@
+ //===========================================================================
+ // Copyright (C) 1999-2011 Rockstar Games.  All Rights Reserved.             
+ //===========================================================================
+-#include "netscgamerdatamgr.h"
++#include "netscgamerDataMgr.h"
+ #include "fwnet/optimisations.h"
+ #include "fwsys/timer.h"
+ 

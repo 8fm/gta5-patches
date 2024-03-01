@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netbot.cpp b/src/dev_ng/rage/framework/src/fwnet/netbot.cpp
+--- a/src/dev_ng/rage/framework/src/fwnet/netbot.cpp
++++ b/src/dev_ng/rage/framework/src/fwnet/netbot.cpp
+@@ -6,7 +6,7 @@
+ #include "netbot.h"
+  
+ #include "rline/rlpresence.h"
+-#include "net/netHardware.h"
++#include "net/nethardware.h"
+ #include "string/string.h"
+ #include "string/stringhash.h"
+ #include "system/timer.h"

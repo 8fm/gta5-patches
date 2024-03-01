@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netobjectreassignmgr.h b/src/dev_ng/rage/framework/src/fwnet/netobjectreassignmgr.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netobjectreassignmgr.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netobjectreassignmgr.h
+@@ -15,7 +15,7 @@
+ #include "fwnet/netchannel.h"
+ #include "fwnet/netinterface.h"
+ #include "fwnet/nettypes.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ namespace rage
+ {

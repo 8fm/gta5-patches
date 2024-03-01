@@ -1,6 +1,22 @@
 diff --git a/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp b/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp
 --- a/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp
 +++ b/src/dev_ng/rage/framework/src/streaming/CacheLoader.cpp
+@@ -4,12 +4,12 @@
+ // Copyright (C) 1999-2009 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "streaming/cacheloader.h"
++#include "streaming/CacheLoader.h"
+ 
+ #include "file/asset.h"
+ #include "file/default_paths.h"
+-#include "net/netHardware.h"  // For netHardware::GetLocalIpAddress
+-#include "net/netAddress.h"
++#include "net/nethardware.h"  // For netHardware::GetLocalIpAddress
++#include "net/netaddress.h"
+ #include "system/param.h"
+ #include "system/platform.h"
+ 
 @@ -28,7 +28,7 @@
  #include "system/exec.h"
  #endif

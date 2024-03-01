@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/streaming/streaminginfo.h b/src/dev_ng/rage/framework/src/streaming/streaminginfo.h
+--- a/src/dev_ng/rage/framework/src/streaming/streaminginfo.h
++++ b/src/dev_ng/rage/framework/src/streaming/streaminginfo.h
+@@ -14,7 +14,7 @@
+ #include "atl/dlistsimple.h"
+ #include "atl/string.h"
+ #include "data/resourceheader.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "paging/streamer.h"
+ 
+ #include "streaming/streaming_channel.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netarraymgr.h b/src/dev_ng/rage/framework/src/fwnet/netarraymgr.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netarraymgr.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netarraymgr.h
+@@ -11,7 +11,7 @@
+ #include "atl/array.h"
+ #include "atl/dlist.h"
+ #include "data/bitbuffer.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "net/message.h"
+ 
+ //// framework headers

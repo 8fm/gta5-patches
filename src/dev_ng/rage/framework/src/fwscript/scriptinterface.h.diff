@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scriptinterface.h b/src/dev_ng/rage/framework/src/fwscript/scriptinterface.h
+--- a/src/dev_ng/rage/framework/src/fwscript/scriptinterface.h
++++ b/src/dev_ng/rage/framework/src/fwscript/scriptinterface.h
+@@ -9,7 +9,7 @@
+ #define SCRIPT_INTERFACE_H
+ 
+ #include "fwscript/scripthandlernetcomponent.h"
+-#include "fwscript/scriptObjInfo.h"
++#include "fwscript/scriptobjinfo.h"
+ 
+ namespace rage
+ {

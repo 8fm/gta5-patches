@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwanimation/animmanager.h b/src/dev_ng/rage/framework/src/fwanimation/animmanager.h
+--- a/src/dev_ng/rage/framework/src/fwanimation/animmanager.h
++++ b/src/dev_ng/rage/framework/src/fwanimation/animmanager.h
+@@ -8,7 +8,7 @@
+ 
+ 
+ #include "fwscene/stores/clipdictionarystore.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #include "crclip/clipdictionary.h"
+ #include "crclip/clip.h"

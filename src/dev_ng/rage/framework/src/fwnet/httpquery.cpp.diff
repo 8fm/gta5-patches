@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/httpquery.cpp b/src/dev_ng/rage/framework/src/fwnet/httpquery.cpp
+--- a/src/dev_ng/rage/framework/src/fwnet/httpquery.cpp
++++ b/src/dev_ng/rage/framework/src/fwnet/httpquery.cpp
+@@ -1,6 +1,6 @@
+ #if !__FINAL && !__PROFILE
+ 
+-#include "HttpQuery.h"
++#include "httpquery.h"
+ #include "parser/manager.h"						// XML
+ #include "parser/tree.h"
+ #include "system/param.h"

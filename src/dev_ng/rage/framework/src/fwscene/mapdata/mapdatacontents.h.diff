@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.h b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.h
+--- a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.h
++++ b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdatacontents.h
+@@ -12,7 +12,7 @@
+ 
+ #include "atl/hashstring.h"
+ #include "spatialdata/aabb.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #include "fwscene/stores/psostore.h"
+ 

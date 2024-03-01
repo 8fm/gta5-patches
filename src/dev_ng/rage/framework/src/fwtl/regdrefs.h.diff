@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwtl/regdrefs.h b/src/dev_ng/rage/framework/src/fwtl/regdrefs.h
+--- a/src/dev_ng/rage/framework/src/fwtl/regdrefs.h
++++ b/src/dev_ng/rage/framework/src/fwtl/regdrefs.h
+@@ -88,7 +88,7 @@
+ 
+ //	Rage headers
+ #include "data/base.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "fwtl/poolcriticalsection.h"
+ #include "system/criticalsection.h"
+ #include "system/ipc.h"

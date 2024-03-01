@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netobject.h b/src/dev_ng/rage/framework/src/fwnet/netobject.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netobject.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netobject.h
+@@ -21,7 +21,7 @@
+ #include "fwnet/netplayer.h"
+ #include "fwnet/netsyncdataul.h"
+ #include "fwnet/netsynctree.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ class CEntity;
+ 

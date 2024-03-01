@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/expressionsdictionarystore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/expressionsdictionarystore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/expressionsdictionarystore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/expressionsdictionarystore.cpp
+@@ -2,7 +2,7 @@
+ 
+ #include "expressionsdictionarystore.h"
+ 
+-#include "crExtra/expressions.h"
++#include "crextra/expressions.h"
+ #include "fwsys/fileExts.h"
+ 
+ 

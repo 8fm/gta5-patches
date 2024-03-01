@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/fragmentstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/fragmentstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/fragmentstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/fragmentstore.cpp
+@@ -15,7 +15,7 @@ STREAMING_OPTIMISATIONS()
+ #include "fwscene/texLod.h"
+ #include "fragment/drawable.h"
+ #include "fwscene/stores/txdstore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/gameskeleton.h"
+ #include "paging/rscbuilder.h"
+ 

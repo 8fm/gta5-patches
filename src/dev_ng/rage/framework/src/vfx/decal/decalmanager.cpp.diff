@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/vfx/decal/decalmanager.cpp b/src/dev_ng/rage/framework/src/vfx/decal/decalmanager.cpp
+--- a/src/dev_ng/rage/framework/src/vfx/decal/decalmanager.cpp
++++ b/src/dev_ng/rage/framework/src/vfx/decal/decalmanager.cpp
+@@ -88,7 +88,7 @@
+ #	endif
+ #elif RSG_PC && __D3D11
+ #	include "grcore/wrapper_d3d.h"
+-#	include <D3D11.h>
++#	include <d3d11.h>
+ #endif
+ 
+ #define  VFX_DECAL_IS_COMPILING_SHADER 0

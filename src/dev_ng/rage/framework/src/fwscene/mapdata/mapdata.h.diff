@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.h b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.h
+--- a/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.h
++++ b/src/dev_ng/rage/framework/src/fwscene/mapdata/mapdata.h
+@@ -17,7 +17,7 @@
+ #include "vector/vector3.h"
+ #include "vector/vector4.h"
+ #include "softrasterizer/boxoccluder.h"
+-#include "softrasterizer/occludemodel.h"
++#include "softrasterizer/occludeModel.h"
+ #include "spatialdata/aabb.h"
+ #include "system/bit.h"
+ #include "entity/extensionlist.h"

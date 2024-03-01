@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwanimation/animdirector.cpp b/src/dev_ng/rage/framework/src/fwanimation/animdirector.cpp
+--- a/src/dev_ng/rage/framework/src/fwanimation/animdirector.cpp
++++ b/src/dev_ng/rage/framework/src/fwanimation/animdirector.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2010 Rockstar Games.  All Rights Reserved. 
+ // 
+ 
+-#include "AnimDirector.h"
++#include "animdirector.h"
+ 
+ // rage headers
+ #include "creature/componentextradofs.h"

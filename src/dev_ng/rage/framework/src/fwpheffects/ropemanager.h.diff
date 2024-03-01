@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwpheffects/ropemanager.h b/src/dev_ng/rage/framework/src/fwpheffects/ropemanager.h
+--- a/src/dev_ng/rage/framework/src/fwpheffects/ropemanager.h
++++ b/src/dev_ng/rage/framework/src/fwpheffects/ropemanager.h
+@@ -1,7 +1,7 @@
+ #ifndef FW_ROPEMGR_H
+ #define FW_ROPEMGR_H
+ 
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "atl/dlist.h"
+ #include "data/base.h"
+ #include "cloth/environmentcloth.h" 

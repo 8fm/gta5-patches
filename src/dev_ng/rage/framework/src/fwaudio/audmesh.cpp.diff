@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/rage/framework/src/fwaudio/audmesh.cpp b/src/dev_ng/rage
 -#include "string\stringhash.h"
 -#include "grcore\debugdraw.h"
 +#include "file/stream.h"
-+#include "ai/navmesh/NavMesh.h"
++#include "ai/navmesh/navmesh.h"
 +#include "fwsys/fileExts.h"
 +#include "paging/rscbuilder.h"
 +#include "string/stringhash.h"

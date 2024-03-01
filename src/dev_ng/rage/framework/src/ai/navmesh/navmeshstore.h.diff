@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/navmesh/navmeshstore.h b/src/dev_ng/rage/framework/src/ai/navmesh/navmeshstore.h
+--- a/src/dev_ng/rage/framework/src/ai/navmesh/navmeshstore.h
++++ b/src/dev_ng/rage/framework/src/ai/navmesh/navmeshstore.h
+@@ -10,7 +10,7 @@
+ #include "ai/navmesh/datatypes.h"	// For aiNavDomain
+ #include "ai/navmesh/navmesh.h"
+ #include "ai/navmesh/navmeshextents.h"
+-#include "entity/archetypeManager.h"
++#include "entity/archetypemanager.h"
+ #include "grcore/debugdraw.h"
+ #include "fwtl/assetstore.h"
+ 

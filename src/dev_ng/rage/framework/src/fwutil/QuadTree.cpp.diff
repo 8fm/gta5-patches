@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwutil/QuadTree.cpp b/src/dev_ng/rage/framework/src/fwutil/QuadTree.cpp
+--- a/src/dev_ng/rage/framework/src/fwutil/QuadTree.cpp
++++ b/src/dev_ng/rage/framework/src/fwutil/QuadTree.cpp
+@@ -2,7 +2,7 @@
+ // Author	:	Greg Smith
+ // Started	:	18/11/03
+ 
+-#include "quadtree.h"
++#include "QuadTree.h"
+ 
+ #if __ASSERT
+ #include "system/threadtype.h"

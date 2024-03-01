@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netblender.h b/src/dev_ng/rage/framework/src/fwnet/netblender.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netblender.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netblender.h
+@@ -8,7 +8,7 @@
+ #define NETWORKBLENDER_H
+ 
+ //framework includes
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ namespace rage
+ {

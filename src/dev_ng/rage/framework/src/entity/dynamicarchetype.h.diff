@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/entity/dynamicarchetype.h b/src/dev_ng/rage/framework/src/entity/dynamicarchetype.h
+--- a/src/dev_ng/rage/framework/src/entity/dynamicarchetype.h
++++ b/src/dev_ng/rage/framework/src/entity/dynamicarchetype.h
+@@ -3,7 +3,7 @@
+ #define ENTITY_DYNAMICARCHETYPE_H
+ 
+ #include "atl/hashstring.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ #include "grblendshapes/blendshapes_config.h"
+ #include "spatialdata/aabb.h"
+ 

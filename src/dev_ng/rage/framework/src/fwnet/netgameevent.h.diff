@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netgameevent.h b/src/dev_ng/rage/framework/src/fwnet/netgameevent.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netgameevent.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netgameevent.h
+@@ -8,7 +8,7 @@
+ #define NETWORK_EVENT_H
+ 
+ #include "fwnet/nettypes.h"
+-#include "fwtl/pool.h"
++#include "fwtl/Pool.h"
+ 
+ #include "net/netsequence.h"
+ 

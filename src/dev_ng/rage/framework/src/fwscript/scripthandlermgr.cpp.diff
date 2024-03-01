@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.cpp b/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.cpp
+--- a/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.cpp
++++ b/src/dev_ng/rage/framework/src/fwscript/scripthandlermgr.cpp
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2009 Rockstar Games.  All Rights Reserved.
+ //
+ 
+-#include "fwscript/scriptHandlerMgr.h"
++#include "fwscript/scripthandlermgr.h"
+ 
+ // framework includes
+ #include "fwnet/netarraymgr.h"

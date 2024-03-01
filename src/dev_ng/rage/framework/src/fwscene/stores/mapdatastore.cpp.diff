@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/mapdatastore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/mapdatastore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/mapdatastore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/mapdatastore.cpp
+@@ -17,16 +17,16 @@
+ //fw includes
+ #include "entity/archetype.h"
+ #include "fwdrawlist/drawlistmgr.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/gameskeleton.h"
+ #include "fwscene/lod/ContainerLod.h"
+ #include "fwscene/mapdata/mapdata.h"
+ #include "fwscene/stores/maptypesstore.h"
+ #include "fwscene/stores/staticboundsstore.h"
+-#include "fwscene/world/worldmgr.h"
++#include "fwscene/world/WorldMgr.h"
+ #include "fwscene/world/WorldLimits.h"
+-#include "fwscene/world/scenegraphnode.h"
+-#include "fwscene/world/streamedscenegraphnode.h"
++#include "fwscene/world/SceneGraphNode.h"
++#include "fwscene/world/StreamedSceneGraphNode.h"
+ #include "parser/manager.h"
+ #include "parser/psoconsts.h"
+ #include "parser/psofile.h"
+@@ -34,7 +34,7 @@
+ #include "profile/timebars.h"
+ #include "system/timer.h"
+ 
+-#include "streaming/cacheloader.h"
++#include "streaming/CacheLoader.h"
+ #include "streaming/packfilemanager.h"
+ #include "streaming/streaming_channel.h"
+ #include "streaming/streamingvisualize.h"

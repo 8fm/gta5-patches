@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/clothstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/clothstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/clothstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/clothstore.cpp
+@@ -5,7 +5,7 @@
+ // 
+ 
+ #include "fwscene/stores/clothstore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/gameskeleton.h"
+ 
+ 

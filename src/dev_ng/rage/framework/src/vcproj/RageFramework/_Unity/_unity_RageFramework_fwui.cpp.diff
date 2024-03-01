@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwui.cpp b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwui.cpp
+--- a/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwui.cpp
++++ b/src/dev_ng/rage/framework/src/vcproj/RageFramework/_Unity/_unity_RageFramework_fwui.cpp
+@@ -39,8 +39,8 @@
+ #include "../../../fwui/Input/fwuiNavigationResult.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwui/Input/Messages/fwuiInputMessages.cpp"
++#include "../../../fwui/Input/messages/fwuiInputMessages.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../fwui/Input/Messages/fwuiInputNavigationMessages.cpp"
++#include "../../../fwui/Input/messages/fwuiInputNavigationMessages.cpp"
+ #include "forceinclude/_unity_epilogue.h"
