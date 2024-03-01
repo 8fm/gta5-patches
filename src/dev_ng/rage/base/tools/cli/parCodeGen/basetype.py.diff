@@ -1,0 +1,67 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/basetype.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/basetype.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/basetype.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/basetype.py
+@@ -129,7 +129,7 @@ def MangleCppName(name):
+ # the subType is the name on a type= attribute, e.g. type="angle"
+ # (subtype can be '' if the type attribute isn't used this way)
+ def AddType(className, coreType, subType):
+-    if not SpecTypeMap.has_key(coreType):
++    if coreType not in SpecTypeMap:
+         SpecTypeMap[coreType] = {}
+     SpecTypeMap[coreType][subType] = className
+ 
+@@ -208,7 +208,7 @@ def AddKnownConstant(name, val):
+     ConstTable[name] = val
+ 
+ def HasKnownConstant(str):
+-    return ConstTable.has_key(str)
++    return str in ConstTable
+     
+ def ResetConstTable():
+     ConstTable = {}
+@@ -266,31 +266,31 @@ class GenericSpec(object):
+             
+         if not hasattr(self, attr):
+             CodeGenError("XML Attribute %s hasn't been declared for type %s." % (attr, self.__class__.__name__), wikiPage=self.WikiPage)
+-        elif not self.ExtraAttrs.has_key(attr):
++        elif attr not in self.ExtraAttrs:
+             CodeGenError("Node '%s' missing required attribute '%s'." % (self.DomNode.nodeName, attr), wikiPage=self.WikiPage)
+         elif options and not self.ExtraAttrs[attr] in options:
+             CodeGenError("Node '%s', attribute '%s' should have one of the following values: '%s'." % (self.DomNode.nodeName, attr, "', '".join(options)), wikiPage=self.WikiPage)
+             attrVal = safeVal
+             
+         setattr(self, attr, attrVal)
+-        if self.ExtraAttrs.has_key(attr):
++        if attr in self.ExtraAttrs:
+             del(self.ExtraAttrs[attr])
+ 
+     def OptionalAttribute(self, attr, defval=None, options=None):
+         if not hasattr(self, attr):
+             CodeGenError("XML Attribute %s hasn't been declared for type %s." % (attr, self.__class__.__name__), wikiPage=self.WikiPage)
+         # if the attribute is not present, or if its present but has previously been overridden, assign a new value
+-        if options and self.ExtraAttrs.has_key(attr) and self.ExtraAttrs[attr] not in options:
++        if options and attr in self.ExtraAttrs and self.ExtraAttrs[attr] not in options:
+             CodeGenError("Node '%s', optional attribute '%s' should have one of the following values: '%s'." % (self.DomNode.nodeName, attr, "', '".join(options)), wikiPage=self.WikiPage)
+             
+         attrVal = self.ExtraAttrs.get(attr, defval)
+             
+         setattr(self, attr, attrVal)
+-        if self.ExtraAttrs.has_key(attr):
++        if attr in self.ExtraAttrs:
+             del(self.ExtraAttrs[attr])
+ 
+     def CheckForUnusedAttrs(self):
+-        keysCpy = self.ExtraAttrs.keys()[:]
++        keysCpy = list(self.ExtraAttrs.keys())
+         for i in keysCpy:
+             if i[0] != 'x' and i[0:2] != "ui": # attributes that start with 'x' or "ui" are extra
+                 CodeGenWarning("Attribute '%s' isn't being used in node '%s'" % (i, self.DomNode.nodeName), wikiPage=self.WikiPage)
+@@ -389,7 +389,7 @@ class MemberSpec(GenericSpec):
+         self.MemberID = GetCurrMemberID()
+         self.MemberID += 1
+         name = ""
+-        if domNode and domNode.attributes.has_key("name"):
++        if domNode and "name" in domNode.attributes:
+             name = domNode.getAttribute("name")
+         SetMemberNameAndID(name, self.MemberID)
+         if name == "" and not isinstance(parentObj, MemberSpec): # only way members can be unnamed is if they are part of another member

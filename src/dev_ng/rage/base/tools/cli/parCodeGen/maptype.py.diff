@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/maptype.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/maptype.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/maptype.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/maptype.py
+@@ -24,7 +24,7 @@ class MapSpec(MemberSpec):
+                 
+         self.Children = BuildSpecObjects(domNode, self)
+         if len(self.Children) != 1:
+-            print "Error: Map \"%s\" must have exactly one child. Has %d" % (self.CppName, len(self.Children))
++            print("Error: Map \"%s\" must have exactly one child. Has %d" % (self.CppName, len(self.Children)))
+             sys.exit(1)
+         self.ChildSpec = self.Children[0];
+         if not isinstance(self.ChildSpec, MemberSpec) and not isinstance(self.ChildSpec, AssertSpec) and not isinstance(self.ChildSpec, PadSpec):
+@@ -56,7 +56,7 @@ class MapSpec(MemberSpec):
+         
+         keys = BuildSpecObjects(parentElt, self)
+         if len(keys) != 1:
+-            print "Processing error, somehow got wrong number of kids for map key node"
++            print("Processing error, somehow got wrong number of kids for map key node")
+             sys.exit(1)
+         self.KeySpec = keys[0]
+         

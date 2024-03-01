@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/datatypes.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/datatypes.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/datatypes.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/datatypes.py
+@@ -67,7 +67,7 @@ class DocumentSpec(GenericSpec):
+     def ComputeGUID(self):
+         xml = self.DomNode.toxml()
+         hasher = hashlib.md5()
+-        hasher.update(xml)
++        hasher.update(xml.encode('utf-8'))
+         self.GUID = hasher.hexdigest()
+         
+ 

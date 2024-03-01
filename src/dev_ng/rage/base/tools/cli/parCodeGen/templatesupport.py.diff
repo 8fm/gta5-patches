@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/templatesupport.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/templatesupport.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/templatesupport.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/templatesupport.py
+@@ -41,7 +41,7 @@ def AddMethodToClasses(*classNames):
+     
+     
+ def CreateSimpleGetterFunctions(methodName, table):
+-    for (cls, retval) in table.iteritems():
++    for (cls, retval) in table.items():
+         def DummyFn(v): # this function is only necessary to introduce a new environment for closure - otherwise if we just used 'retval' all the generated functions point to the same value (which ends up as the last list element)
+             def Getter(self, **kw):
+                 return v

@@ -1,0 +1,57 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/extractComments.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/extractComments.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/extractComments.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/extractComments.py
+@@ -19,7 +19,7 @@
+ import sys
+ import re
+ import os
+-import StringIO
++from io import StringIO
+ 
+ import atHash
+ 
+@@ -42,7 +42,7 @@ def extractComments(chars, filename, onlyFromMarkedBlocks=False):
+     global StringKeyRE
+     numChars = len(chars)
+ 
+-    out = StringIO.StringIO()
++    out = StringIO()
+ 
+     inBlockComment = False
+     i = 1
+@@ -82,7 +82,7 @@ def extractComments(chars, filename, onlyFromMarkedBlocks=False):
+                     if match:
+                         string = match.group(1)
+                         value = int(match.group(3), 0) # base = 0, allow hex or decimal
+-                        trueValue = atStringHash(string)
++                        trueValue = atHash.atStringHash(string)
+                         # just validate this one, don't write anything
+                         if trueValue != value:
+                             PrintError(filename, linenum, "Validation failed for ATSTRINGHASH(\"%s\", 0x%x). Value should be 0x%x" % (string, value, trueValue))
+@@ -98,7 +98,7 @@ def extractComments(chars, filename, onlyFromMarkedBlocks=False):
+ 
+ # remove everything but data within certain xml blocks
+ def extractXMLMetadata(chars):
+-    out = StringIO.StringIO()
++    out = StringIO()
+ 
+     # Format: start tag name, end tag name, can be leaf
+     parserXmlBlocks = [
+@@ -148,14 +148,12 @@ def extractAll(chars, filename, onlyFromMarkedBlocks=False):
+ 
+ def main(args):
+     for i in args:
+-        f = file(i, "r")
+-
+-        chars = f.read()
+-        f.close()        
++        with open(i, 'r') as f:
++            chars = f.read()
+ 
+         outChars = extractAll(chars, i)
+ 
+-        print outChars
++        print(outChars)
+ 
+ if __name__ == '__main__':
+     main(sys.argv[1:])

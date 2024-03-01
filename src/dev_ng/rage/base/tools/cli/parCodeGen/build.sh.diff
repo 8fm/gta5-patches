@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/build.sh b/src/dev_ng/rage/base/tools/cli/parCodeGen/build.sh
+new file mode 100755
+--- /dev/null
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/build.sh
+@@ -0,0 +1,22 @@
++#!/bin/bash
++cd "$(dirname "$0")"
++
++# Check out the output files from perforce
++# p4 edit $RS_TOOLSROOT/bin/coding/python/*
++
++# Get rid of all the old files in the build folder
++rm -rf build dist
++
++# Create the exe
++# TODO $RS_TOOLSPYTHON
++
++python3 -m PyInstaller parCodeGen.spec --noconfirm
++
++if [ $? -ne 0 ]; then
++    exit 1
++fi
++
++# Get unchanged stuff out of the changelist
++# p4 revert -a $RS_TOOLSROOT/bin/coding/python/*
++
++exit 0

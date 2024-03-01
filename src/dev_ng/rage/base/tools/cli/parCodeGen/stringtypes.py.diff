@@ -1,0 +1,46 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/stringtypes.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/stringtypes.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/stringtypes.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/stringtypes.py
+@@ -24,20 +24,21 @@ class StringSpec(MemberSpec):
+         # except when running the uncompiled parCodeGen.py)
+         fname = os.path.join(os.path.dirname(sys.argv[0]), "namespaces.txt")
+         if not os.path.exists(fname):
+-            fname = os.path.join(os.path.expandvars("${RS_TOOLSROOT}\\bin\\coding\\python"), "namespaces.txt")
++            fname = os.path.join(os.path.expandvars(f"{os.environ['RS_TOOLSROOT']}{os.sep}bin{os.sep}coding{os.sep}python"), "namespaces.txt")
+         try:
+-            f = file(fname)
+-        except:
++            with open(fname, 'r') as f:
++                for line in f:
++                    ls = line.strip()
++                    if ls == "" or ls.startswith("#"):
++                        continue
++                    nsIndex, hashStringName, hashValueName = ls.split()
++                    StringSpec.Namespaces[int(nsIndex)] = {'HashStringName': hashStringName, 'HashValueName': hashValueName}
++                    AllStringTypes.append(hashStringName)
++                    AllStringTypes.append(hashValueName)
++        except Exception as e:
++            print(fname)
++            print(e)
+             CodeGenWarning("Couldn't find or open file '%s'" % (fname))
+-        else:
+-            for line in f:
+-                ls = line.strip()
+-                if ls == "" or ls.startswith("#"):
+-                    continue
+-                (nsIndex, hashStringName, hashValueName) = ls.split()
+-                StringSpec.Namespaces[int(nsIndex)] = {'HashStringName': hashStringName, 'HashValueName': hashValueName}
+-                AllStringTypes.append(hashStringName)
+-                AllStringTypes.append(hashValueName)
+     
+     def CheckAttributes(self):
+         self.WikiPage = "String_PSC_tag"
+@@ -57,7 +58,7 @@ class StringSpec(MemberSpec):
+         
+         self.NamespaceIndex = None
+         self.NamespaceType = None
+-        for (nsIndex, ns) in StringSpec.Namespaces.iteritems():
++        for (nsIndex, ns) in StringSpec.Namespaces.items():
+             if self.type == ns['HashStringName']:
+                 self.NamespaceIndex = nsIndex
+                 self.NamespaceType = "string"

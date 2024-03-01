@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/enumtype.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/enumtype.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/enumtype.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/enumtype.py
+@@ -105,7 +105,7 @@ class EnumDefSpec(GenericSpec):
+         self.autoregister = None
+     
+         enumdefName = ""
+-        if domNode.attributes.has_key("type"):
++        if "type" in domNode.attributes:
+             enumdefName = domNode.getAttribute("type")
+             
+         SetEnumdefNameAndID(enumdefName, 1)

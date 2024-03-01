@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/arraytype.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/arraytype.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/arraytype.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/arraytype.py
+@@ -26,7 +26,7 @@ class ArraySpec(MemberSpec):
+         self.Children = BuildSpecObjects(domNode, self)
+ 
+         if len(self.Children) != 1:
+-            print "Error: Array \"%s\" must have exactly one child." % (self.CppName)
++            print("Error: Array \"%s\" must have exactly one child." % (self.CppName))
+             sys.exit(1)
+         self.ChildSpec = self.Children[0];
+         if not isinstance(self.ChildSpec, MemberSpec) and not isinstance(self.ChildSpec, AssertSpec) and not isinstance(self.ChildSpec, PadSpec):

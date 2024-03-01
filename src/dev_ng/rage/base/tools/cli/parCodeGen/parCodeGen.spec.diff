@@ -1,0 +1,66 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/parCodeGen.spec b/src/dev_ng/rage/base/tools/cli/parCodeGen/parCodeGen.spec
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/parCodeGen.spec
+@@ -0,0 +1,60 @@
++# -*- mode: python ; coding: utf-8 -*-
++from PyInstaller.utils.hooks import collect_submodules
++import os
++
++import PyInstaller.config
++PyInstaller.config.CONF['distpath'] = os.getenv("RS_TOOLSROOT") + '/bin/coding/python'
++
++hiddenimports = []
++hiddenimports += collect_submodules('.')
++
++block_cipher = None
++
++a = Analysis(
++    ['parCodeGen.py'],
++    pathex=[os.getenv("RS_TOOLSROOT") + '/bin/coding/python'],
++    binaries=[],
++    datas=[],
++    hiddenimports=hiddenimports,
++    hookspath=[],
++    hooksconfig={},
++    runtime_hooks=[],
++    excludes=[],
++    cipher=block_cipher,
++    noarchive=False,
++)
++
++pyz = PYZ(a.pure, a.zipped_data,
++             cipher=block_cipher)
++
++
++exe = EXE(
++    pyz,
++    a.scripts,
++    a.binaries,
++    a.datas,
++    [],
++    name='parCodeGen',
++    debug=False,
++    bootloader_ignore_signals=False,
++    strip=False,
++    upx=True,
++    upx_exclude=[],
++    runtime_tmpdir=None,
++    console=True,
++    disable_windowed_traceback=False,
++    argv_emulation=True,
++    target_arch=None,
++    codesign_identity=None,
++    entitlements_file=None,
++)
++
++coll = COLLECT(
++    exe,
++    a.zipfiles,
++    a.datas,
++    strip=False,
++    upx=True,
++    upx_exclude=[],
++    name='parCodeGenSrc',
++)
+\ No newline at end of file

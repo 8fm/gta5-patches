@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/setup.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/setup.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/setup.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/setup.py
+@@ -3,7 +3,7 @@ import py2exe
+ import os
+ 
+ import sys
+-print sys.path
++print(sys.path)
+ 
+ setup(
+ 	console=['parCodeGen.py'],

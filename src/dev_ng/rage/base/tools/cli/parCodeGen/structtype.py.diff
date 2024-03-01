@@ -1,0 +1,17 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/structtype.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/structtype.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/structtype.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/structtype.py
+@@ -130,11 +130,11 @@ class StructDefSpec(GenericSpec):
+         self.StructdefID += 1
+ 
+         structdefName = ""
+-        if domNode.attributes.has_key("type"):
++        if "type" in domNode.attributes:
+             structdefName = domNode.getAttribute("type")
+         
+         # fix my typo
+-        if domNode.attributes.has_key("constructable"):
++        if "constructable" in domNode.attributes:
+             domNode.setAttribute("constructible", domNode.getAttribute("constructable"))
+             domNode.removeAttribute("constructable")
+             

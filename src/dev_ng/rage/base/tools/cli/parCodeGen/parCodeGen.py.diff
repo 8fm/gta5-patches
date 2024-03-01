@@ -1,0 +1,219 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/parCodeGen.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/parCodeGen.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/parCodeGen.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/parCodeGen.py
+@@ -8,11 +8,13 @@ import os.path
+ import optparse
+ import subprocess
+ from stat import *
+-import StringIO
++from io import StringIO
++import io
+ import sys
+ import tempfile
+ import time
+-import win32file, win32api, win32con
++import shutil
++# import win32file, win32api, win32con
+ import xml.parsers.expat
+ 
+ from datatypes import *
+@@ -44,7 +46,7 @@ def PerforceCheckout(filename):
+     cwd = os.getcwd()
+     os.chdir(os.path.dirname(filename))
+     command = "p4 edit " + filename
+-    print command
++    print(command)
+     result = subprocess.call(command) == 0
+     os.chdir(cwd)
+     return result
+@@ -53,7 +55,7 @@ def PerforceAdd(filename):
+     cwd = os.getcwd()
+     os.chdir(os.path.dirname(filename))
+     command = "p4 add " + filename
+-    print command
++    print(command)
+     result = subprocess.call(command) == 0
+     os.chdir(cwd)
+     return result
+@@ -65,17 +67,18 @@ def CreateTempfile(basename):
+ 
+ def PrintRenameError(oldName, newName):
+     print_err( "error: While renaming %s to %s\n" % (oldName, newName) )
+-    err = win32api.GetLastError()
+-    print_err( "error: Windows Error: %d %s\n" % (err, win32api.FormatMessage(err)))
++    # err = win32api.GetLastError()
++    # print_err( "error: Windows Error: %d %s\n" % (err, win32api.FormatMessage(err)))
+     print_err( "error: Is %s checked out in perforce?" % newName)
+     
+ def AtomicRenameCore(oldName, newName):
+     try:
+-        MOVEFILE_WRITE_THROUGH = 0x8
+-        win32api.MoveFileEx(oldName, newName, win32con.MOVEFILE_REPLACE_EXISTING | MOVEFILE_WRITE_THROUGH)
++        shutil.move(oldName, newName)
++        # MOVEFILE_WRITE_THROUGH = 0x8
++        # win32api.MoveFileEx(oldName, oldName, win32con.MOVEFILE_REPLACE_EXISTING | MOVEFILE_WRITE_THROUGH)
+ #        REPLACEFILE_IGNORE_ACL_ERRORS = 0x4
+ #        win32file.ReplaceFile(newName, oldName, None, win32file.REPLACEFILE_WRITE_THROUGH | win32file.REPLACEFILE_IGNORE_MERGE_ERRORS | REPLACEFILE_IGNORE_ACL_ERRORS)
+-    except Exception, e:
++    except Exception as e:
+         print_err(e)
+         PrintRenameError(oldName, newName)
+         return False
+@@ -83,7 +86,7 @@ def AtomicRenameCore(oldName, newName):
+         
+ def AtomicRename(oldName, newName):
+     if not os.path.exists(newName) or not AreFilesIdentical(oldName, newName):
+-        for i in xrange(1, 10):
++        for i in range(1, 10):
+             if AtomicRenameCore(oldName, newName):
+                 return
+             print_err("Attempt %d failed... waiting 2s and trying again" % (i))
+@@ -98,7 +101,7 @@ def StartOutputFile(basename, usePerforce=False):
+     if g_UseAtomicRenaming:# or usePerforce:
+         return CreateTempfile(basename)
+     else:
+-        return (file(basename, "w"), basename)
++        return (io.open(basename, "w", encoding="utf-8"), basename)
+         
+ def EndOutputFile(fileobj, outname, basename, usePerforce=False):
+     fileobj.close()
+@@ -187,20 +190,20 @@ def FindXmlBlocks(filename, verbose=False, validate=False, metadataFileName=None
+             # I tried to find something clever that would strip out the whitespace from the XML doc before writing it, and failed
+             # (the general suggestions were to use another XML processor - too much work)
+             (outFile, outfilename) = StartOutputFile(metadataFileName)
+-            tempFile = file(tempfilename, "r")
+-            counter = 0
+-            for line in tempFile:
+-                if line.strip():
+-                    # line isn't blank
+-                    counter = 0
+-                    outFile.write(line)
+-                else:
+-                    counter += 1
+-                    if counter < 2: # allow /some/ consecutive blank lines, not too many
++            with open(tempfilename, "r") as tempFile, open(outfilename, "w") as tempFile:
++                counter = 0
++                for line in tempFile:
++                    if line.strip():
++                        # line isn't blank
++                        counter = 0
+                         outFile.write(line)
+-            tempFile.close()
+-            os.unlink(tempfilename)
++                    else:
++                        counter += 1
++                        if counter < 2: # allow /some/ consecutive blank lines, not too many
++                            outFile.write(line)
+ 
++
++            os.unlink(tempfilename)
+             EndOutputFile(outFile, outfilename, metadataFileName)
+             
+         
+@@ -218,20 +221,20 @@ def FindXmlBlocks(filename, verbose=False, validate=False, metadataFileName=None
+             doc.writexml(outFile)
+             EndOutputFile(outFile, outfilename, validationName)
+ 
+-            print "validating " + filename
++            print("validating " + filename)
+             exitCode = os.system('T:\\rage\\tools\\Modules\\base\\rage\\exes\\rageCheckXml.exe ' +
+                       '--validate T:\\rage\\tools\\schemas\\parsermetadata.xsd ' +
+                       validationName)
+-            print "done"
++            print("done")
+             if exitCode == 0:
+-                print filename + " is valid"
++                print(filename + " is valid")
+             else:
+                 print_err( filename, "(0): error: validation failed")
+     
+         if verbose and len(kids) == 0 and not isPsc:
+-            print filename, "(0): info: No XML metadata (<structdef>, <enumdef>, etc tags) found"
++            print(filename, "(0): info: No XML metadata (<structdef>, <enumdef>, etc tags) found")
+         return doc
+-    except xml.parsers.expat.ExpatError, exc:
++    except xml.parsers.expat.ExpatError as exc:
+         print_err( filename, "(%d)" % exc.lineno, ": error", exc.args[0] )
+         raise exc
+ 
+@@ -277,9 +280,9 @@ def main(args):
+             if os.path.exists(path):
+                 f = open(path)
+                 tokens = f.read().split()
+-                f.close();
++                f.close()
+                 # read the options, but ignore all the positional params
+-                print "Reading config file", path
++                print("Reading config file"), path
+                 # passing in values=options should use the prev. command line args as default values
+                 (options, ignoredOutArgs) = opt.parse_args(tokens, values=options)
+                 break
+@@ -374,7 +377,7 @@ def main(args):
+                     processFile = True
+ 
+             if not processFile:
+-                continue;
++                continue
+ 
+             allFilesUpToDate = False
+             
+@@ -386,7 +389,7 @@ def main(args):
+                 generatedDoc = FindXmlBlocks(ccodeName, onlyExtractFromMarkedBlocks=True)
+ 
+             # capture any output we're supposed to put into the generated _parser.h file later
+-            stringstream = StringIO.StringIO()
++            stringstream = StringIO()
+             GenericSpec.OutFile = stringstream
+                 
+             # turn the xml tree into a set of datatype objects
+@@ -394,7 +397,7 @@ def main(args):
+             basetype.CurrLineNumber = 0
+             nodes = DocumentSpec(domDoc.documentElement, generatedDoc)
+             
+-            print "parCodeGen:", inputFileName
++            print("parCodeGen:", inputFileName)
+ 
+             if options.outputCode:
+                 outputfilename = None
+@@ -427,12 +430,12 @@ def main(args):
+                 
+             if nodes.NeedsSchDefinitions():
+                 schName = os.path.join(os.environ['RS_CODEBRANCH'], 'game/script_headers', nodes.scriptFile)
+-                print "Exporting", schName
++                print("Exporting", schName)
+                 (GenericSpec.OutFile, outputfilename) = StartOutputFile(schName, True)
+                 nodes.WriteSch(schName, inputFileName)
+                 EndOutputFile(GenericSpec.OutFile, outputfilename, schName, True)
+                 
+-        except ImportError,e:
++        except ImportError as e:
+             print_err(inputFileName, "error:", e)
+         except xml.parsers.expat.ExpatError:
+             pass
+@@ -448,7 +451,7 @@ def main(args):
+         except IOError:
+             global StructDictTemplate
+             structureDict = xml.dom.minidom.parseString(StructDictTemplate)
+-        except xml.parsers.expat.ExpatError, e:
++        except xml.parsers.expat.ExpatError as e:
+             structureDict = None
+             print_err("%s (%d) error: couldn't parse XML in structure dictionary" % (options.structDict, e.lineno))
+             print_err("%s (%d) error: %s" % (options.structDict, e.lineno, xml.parsers.expat.ErrorString(e.code)))
+@@ -462,7 +465,7 @@ def main(args):
+             for document in inputDocuments:
+                 for newNode in document.documentElement.childNodes:
+                     if isinstance(newNode, xml.dom.minidom.Element) and newNode.tagName == "structdef":
+-                        if childMap.has_key(newNode.getAttribute("type")):
++                        if newNode.getAttribute("type") in childMap:
+                             structureDict.documentElement.replaceChild(newNode, childMap[newNode.getAttribute("type")])
+                         else:
+                             structureDict.documentElement.appendChild(newNode.cloneNode(True))
+@@ -472,7 +475,7 @@ def main(args):
+             AtomicRename(outFile, outfilename, options.structDict)
+ 
+     if filesExist and allFilesUpToDate:
+-        print "parCodeGen: All files up to date"
++        print("parCodeGen: All files up to date")
+             
+     if basetype.FoundErrors > 0:
+         return 1

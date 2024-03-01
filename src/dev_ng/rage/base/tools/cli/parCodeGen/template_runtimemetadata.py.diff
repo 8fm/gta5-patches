@@ -1,0 +1,62 @@
+diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/template_runtimemetadata.py b/src/dev_ng/rage/base/tools/cli/parCodeGen/template_runtimemetadata.py
+--- a/src/dev_ng/rage/base/tools/cli/parCodeGen/template_runtimemetadata.py
++++ b/src/dev_ng/rage/base/tools/cli/parCodeGen/template_runtimemetadata.py
+@@ -179,11 +179,11 @@ def WriteCCode(self):
+             # if major version number changed, then reset build number to 0
+             if (self.DomNode.getAttribute("version") != self.GenStruct.getAttribute("version")):
+                 self.BuildNumber = 0
+-                print "Resetting the build number of", self.type, "to 0"
++                print("Resetting the build number of", self.type, "to 0")
+             else:
+                 # bump the build number
+                 self.BuildNumber = self.GenBuildNum + 1
+-                print "Bumping the build number on", self.type, "to", self.BuildNumber
++                print("Bumping the build number on", self.type, "to", self.BuildNumber)
+ 
+         self.WriteString('''
+ /*XML
+@@ -410,7 +410,7 @@ void %(CppType)s::parser_Register() {
+         self.WriteString('''
+     newStructure = ::rage::parCguStructure::CreateExtraAttributes(newStructure);
+ ''')
+-        for (key, value) in self.ExtraAttrs.iteritems():
++        for (key, value) in self.ExtraAttrs.items():
+             self.WriteString('''
+     newStructure = ::rage::parCguStructure::AddExtraAttribute(newStructure, "%(:key)s", "%(:value)s");''', key=key, value=value)
+         self.WriteString('''
+@@ -481,7 +481,7 @@ def WriteStringkeys(self):
+             strkeys[node.string] = node
+     # now check that no two strings hash to the same value
+     keyset = {}
+-    for (key, node) in strkeys.iteritems():
++    for (key, node) in strkeys.items():
+         if node.Key in keyset:
+             CodeGenWarning("Two PAR_STRINGKEYs have the same key value: \"%s\" and \"%s\"" % (keyset[node.Key].string, node.string))
+         keyset[node.Key] = node
+@@ -494,7 +494,7 @@ def WriteStringkeys(self):
+ // String Keys
+ ///////////////////////////////////////////''')
+ 
+-    for (key, node) in strkeys.iteritems():
++    for (key, node) in strkeys.items():
+         self.WriteString('''
+ const int %(:name)s = 0x%(:key)x;''',
+                          key=node.Key,
+@@ -1106,7 +1106,7 @@ def WriteStandardMemberData(self, flags=[], type=None, subtype="0", noVisitFlags
+     if self.hideFrom:
+         hideRequests = [x.strip() for x in self.hideFrom.split(',')]
+         for i in hideRequests:
+-            if hideMap.has_key(i):
++            if i in hideMap:
+                 localNoVisitFlags.append(hideMap[i])
+             else:
+                 CodeGenWarning("'%s' isn't allowed in a hideFrom= attribute. Allowed values are: %s" % (i, ", ".join(hideMap.keys())), wikiPage=self.WikiPage)
+@@ -1265,7 +1265,7 @@ def ResolvePointers(self):
+ @AddMethod(MemberSpec)
+ def WriteExtraAttributes(self):
+     if len(self.ExtraAttrs):
+-        for (key, value) in self.ExtraAttrs.iteritems():
++        for (key, value) in self.ExtraAttrs.items():
+             self.WriteString('''
+     ::rage::parCguStructure::AddOneExtraAttribute(&(%(:parMemName)s.m_ExtraAttributes), "%(:key)s", "%(:value)s");''',
+                              parMemName=self.FindParMemberName(),
