@@ -1,0 +1,69 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageNet/CMakeLists.txt b/src/dev_ng/rage/base/src/vcproj/RageNet/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/vcproj/RageNet/CMakeLists.txt
+@@ -0,0 +1,64 @@
++project(RageNet)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
++
++add_definitions(-DCURL_STATICLIB -DWOLFSSL_USER_SETTINGS)
++
++set(SRC_FILES
++    "_Unity/_unity_RageNet_net.cpp"
++    "_Unity/_unity_RageNet_rline.cpp"
++    "../../../../3rdParty/miniupnpc-2.0/upnprockstarcustom.cpp"
++    "../../../../3rdParty/libpcp/libpcp/src/pcp_rockstar_custom.cpp"
++    "../../../../3rdParty/portcullis/Client/pc/CLogger.cpp"
++    "../../../../3rdParty/portcullis/Client/pc/heartbeat/heartbeat.cpp"
++    "../../../../3rdParty/portcullis/portcullis.cpp"
++    "../../../../3rdParty/miniupnpc-2.0/connecthostport.c"
++    "../../../../3rdParty/miniupnpc-2.0/igd_desc_parse.c"
++    "../../../../3rdParty/miniupnpc-2.0/minisoap.c"
++    "../../../../3rdParty/miniupnpc-2.0/minissdpc.c"
++    "../../../../3rdParty/miniupnpc-2.0/miniupnpc.c"
++    "../../../../3rdParty/miniupnpc-2.0/miniwget.c"
++    "../../../../3rdParty/miniupnpc-2.0/minixml.c"
++    "../../../../3rdParty/miniupnpc-2.0/portlistingparse.c"
++    "../../../../3rdParty/miniupnpc-2.0/receivedata.c"
++    "../../../../3rdParty/miniupnpc-2.0/upnpcommands.c"
++    "../../../../3rdParty/miniupnpc-2.0/upnpdev.c"
++    "../../../../3rdParty/miniupnpc-2.0/upnperrors.c"
++    "../../../../3rdParty/miniupnpc-2.0/upnpreplyparse.c"
++    "../../../../3rdParty/libpcp/libpcp/src/net/findsaddr-udp.c"
++    "../../../../3rdParty/libpcp/libpcp/src/net/gateway.c"
++    "../../../../3rdParty/libpcp/libpcp/src/net/pcp_socket.c"
++    "../../../../3rdParty/libpcp/libpcp/src/net/sock_ntop.c"
++    "../../../../3rdParty/libpcp/libpcp/src/windows/pcp_gettimeofday.c"
++    "../../../../3rdParty/libpcp/libpcp/src/pcp_api.c"
++    "../../../../3rdParty/libpcp/libpcp/src/pcp_client_db.c"
++    "../../../../3rdParty/libpcp/libpcp/src/pcp_event_handler.c"
++    "../../../../3rdParty/libpcp/libpcp/src/pcp_logger.c"
++    "../../../../3rdParty/libpcp/libpcp/src/pcp_msg.c"
++    "../../../../3rdParty/libpcp/libpcp/src/pcp_server_discovery.c"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/Arxan/TransformIT/x64/include
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/curl-7.28.0/include
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/libpcp/libpcp/include
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/libpcp/libpcp/src
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/libpcp/libpcp/src/net
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/libpcp/libpcp/src/windows
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/miniupnpc-2.0
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/portcullis/client/pc
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/twitch/include
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/wolfssl
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

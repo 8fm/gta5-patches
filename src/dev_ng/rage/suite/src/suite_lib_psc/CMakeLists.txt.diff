@@ -1,0 +1,63 @@
+diff --git a/src/dev_ng/rage/suite/src/suite_lib_psc/CMakeLists.txt b/src/dev_ng/rage/suite/src/suite_lib_psc/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/suite/src/suite_lib_psc/CMakeLists.txt
+@@ -0,0 +1,58 @@
++project(suite_lib_psc)
++
++set(PSC_FILES
++    "../breakableglass/crackstemplate.psc"
++    "../cloth/clothbridgesimgfx.psc"
++    "../cloth/environmentcloth.psc"
++    "../cloth/charactercloth.psc"
++    "../cloth/characterclothcontroller.psc"
++    "../cutfile/cutfevent.psc"
++    "../cutfile/cutfeventargs.psc"
++    "../cutfile/cutfeventdef.psc"
++    "../cutfile/cutfile.psc"
++    "../cutfile/cutfile2.psc"
++    "../cutfile/cutfobject.psc"
++    "../event/evtinstance.psc"
++    "../event/timeline.psc"
++    "../event/set.psc"
++    "../fragment/tune.psc"
++    "../fragment/eventtypes.psc"
++    "../gpuptfx/ptxgpudrop.psc"
++    "../rmptfx/ptxbehaviour.psc"
++    "../rmptfx/ptxbiaslink.psc"
++    "../rmptfx/ptxdomain.psc"
++    "../rmptfx/ptxdrawable.psc"
++    "../rmptfx/ptxeffectrule.psc"
++    "../rmptfx/ptxeffectspawning.psc"
++    "../rmptfx/ptxemitterrule.psc"
++    "../rmptfx/ptxevent.psc"
++    "../rmptfx/ptxevolution.psc"
++    "../rmptfx/ptxkeyframe.psc"
++    "../rmptfx/ptxkeyframeprop.psc"
++    "../rmptfx/ptxparticlerule.psc"
++    "../rmptfx/ptxrenderstate.psc"
++    "../rmptfx/ptxshader.psc"
++    "../rmptfx/ptxshadervar.psc"
++    "../rmptfx/ptxtimeline.psc"
++    "../rmptfx/ptxd_drawmodel.psc"
++    "../rmptfx/ptxd_drawsprite.psc"
++    "../rmptfx/ptxd_drawtrail.psc"
++    "../rmptfx/ptxu_acceleration.psc"
++    "../rmptfx/ptxu_attractor.psc"
++    "../rmptfx/ptxu_age.psc"
++    "../rmptfx/ptxu_animatetexture.psc"
++    "../rmptfx/ptxu_colour.psc"
++    "../rmptfx/ptxu_collision.psc"
++    "../rmptfx/ptxu_dampening.psc"
++    "../rmptfx/ptxu_matrixweight.psc"
++    "../rmptfx/ptxu_noise.psc"
++    "../rmptfx/ptxu_pause.psc"
++    "../rmptfx/ptxu_rotation.psc"
++    "../rmptfx/ptxu_size.psc"
++    "../rmptfx/ptxu_velocity.psc"
++    "../rmptfx/ptxu_wind.psc"
++    "../softrasterizer/occluders.psc"
++)
++
++include(${CMAKE_SOURCE_DIR}/cmake/PscGenerator.cmake)
++add_custom_target(${PROJECT_NAME} DEPENDS ${RESULT_FILES})

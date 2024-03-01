@@ -1,0 +1,47 @@
+diff --git a/src/dev_ng/game/vs_project2_lib/CMakeLists.txt b/src/dev_ng/game/vs_project2_lib/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/game/vs_project2_lib/CMakeLists.txt
+@@ -0,0 +1,42 @@
++project(game2_lib)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
++
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
++
++set(SRC_FILES
++    "_Unity/_unity_game2_lib_game_glasspanesyncing_ik_modelinfo.cpp"
++    "_Unity/_unity_game2_lib_objects_pathserver.cpp"
++    "_Unity/_unity_game2_lib_pedgroup.cpp"
++    "_Unity/_unity_game2_lib_peds_a_b.cpp"
++    "_Unity/_unity_game2_lib_peds_c.cpp"
++    "_Unity/_unity_game2_lib_peds_d_g.cpp"
++    "_Unity/_unity_game2_lib_peds_h_o.cpp"
++    "_Unity/_unity_game2_lib_peds_p.cpp"
++    "_Unity/_unity_game2_lib_peds_q_z.cpp"
++    "_Unity/_unity_game2_lib_pickups_physics.cpp"
++    "_Unity/_unity_game2_lib_renderer.cpp"
++    "_Unity/_unity_game2_lib_SaveLoad.cpp"
++    "_Unity/_unity_game2_lib_SaveMigration.cpp"
++    "../Peds/Ped.cpp"
++    "../performance/clearinghouse.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}/game
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})
++add_dependencies(${PROJECT_NAME} game_lib_psc)

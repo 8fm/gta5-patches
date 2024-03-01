@@ -1,0 +1,42 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageAudio/CMakeLists.txt b/src/dev_ng/rage/base/src/vcproj/RageAudio/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/vcproj/RageAudio/CMakeLists.txt
+@@ -0,0 +1,37 @@
++project(RageAudio)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
++
++add_definitions(-DAUD_IMPL)
++if (MSVC)
++    add_definitions(-DWINAPI_PARTITION_TV_APP=0 -DWINAPI_PARTITION_TV_TITLE=0 -D_WIN32_WINNT_THRESHOLD=0x0A000000 -D_WIN32_WINNT_FE=0x0A000000)
++endif()
++
++set(SRC_FILES
++    "_Unity/_unity_RageAudio_audioasiolib_audiodata_audioengine.cpp"
++    "_Unity/_unity_RageAudio_effecttypes_scriptsoundtypes_soundtypes.cpp"
++    "_Unity/_unity_RageAudio_audiohardware.cpp"
++    "_Unity/_unity_RageAudio_audiosynth.cpp"
++    "../../audioengine/entity.cpp"
++    "../../audiosynth/modulefactory.cpp"
++    "../../audiosynth/kiss_fftr.c"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/3rdParty/freetype-2.3.7/include
++    ${CMAKE_SOURCE_DIR}/rage/3rdParty/ps3mp3dec
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/qtsdk7.3/CIncludes
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})

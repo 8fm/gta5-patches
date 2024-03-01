@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/CMakePresets.json b/src/dev_ng/CMakePresets.json
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/CMakePresets.json
+@@ -0,0 +1,28 @@
++{
++  "version": 3,
++  "cmakeMinimumRequired": {
++    "major": 3,
++    "minor": 20,
++    "patch": 0
++  },
++  "configurePresets": [
++    {
++      "name": "ninja-BankRelease-x64",
++      "generator": "Ninja Multi-Config",
++      "architecture": {
++        "value": "x64",
++        "strategy": "external"
++      },
++      "binaryDir": "${sourceDir}/build/${presetName}"
++    }
++
++  ],
++  "buildPresets": [
++    {
++      "name": "BankRelease-x64",
++      "displayName": "BankRelease x64",
++      "configurePreset": "ninja-BankRelease-x64",
++      "configuration": "Release"
++    }
++  ]
++}

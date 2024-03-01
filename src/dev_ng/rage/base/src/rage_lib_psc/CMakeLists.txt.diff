@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/rage_lib_psc/CMakeLists.txt b/src/dev_ng/rage/base/src/rage_lib_psc/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/rage_lib_psc/CMakeLists.txt
+@@ -0,0 +1,25 @@
++project(rage_lib_psc)
++
++set(PSC_FILES
++    "../crskeleton/jointdata.psc"
++    "../file/device_installer.psc"
++    "../input/input_calibration.psc"
++    "../input/mapper_defs.psc"
++    "../parser/extstructure.psc"
++    "../parsercore/attribute.psc"
++    "../phbound/bound.psc"
++    "../phbound/boundcapsule.psc"
++    "../phbound/boundcomposite.psc"
++    "../phbound/boundplane.psc"
++    "../pheffects/tune.psc"
++    "../pheffects/cloth_verlet.psc"
++    "../pheffects/clothdata.psc"
++    "../physics/debugplayback.psc"
++    "../physics/debugevents.psc"
++    "../physics/debugcontacts.psc"
++    "../spatialdata/metadata.psc"
++    "../spatialdata/grid2d.psc"
++)
++
++include(${CMAKE_SOURCE_DIR}/cmake/PscGenerator.cmake)
++add_custom_target(${PROJECT_NAME} DEPENDS ${RESULT_FILES})

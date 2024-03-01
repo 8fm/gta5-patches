@@ -1,0 +1,49 @@
+diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/CMakeLists.txt
+@@ -0,0 +1,44 @@
++cmake_minimum_required(VERSION 3.18)
++project(Fuzzy)
++
++set(GAME_CONFIG "BankRelease")
++
++if (CMAKE_SIZEOF_VOID_P EQUAL 8)
++    set(ARCH_TYPE "x64")
++else (CMAKE_SIZEOF_VOID_P EQUAL 4)
++    set(ARCH_TYPE "x86")
++endif()
++message("CMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}")
++message("GAME_CONFIG=${GAME_CONFIG}")
++message("ARCH_TYPE=${ARCH_TYPE}")
++
++set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
++set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_SOURCE_DIR}/bin/${GAME_CONFIG}-${ARCH_TYPE})
++set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR}/bin/${GAME_CONFIG}-${ARCH_TYPE})
++
++add_subdirectory(game/vs_project1_lib)
++add_subdirectory(game/vs_project2_lib)
++add_subdirectory(game/vs_project3_lib)
++add_subdirectory(game/vs_project4_lib)
++add_subdirectory(game/VS_Project_network)
++
++add_subdirectory(rage/framework/src/framework_lib_psc)
++add_subdirectory(game/vs_project_lib_psc)
++add_subdirectory(rage/base/src/rage_lib_psc)
++add_subdirectory(rage/suite/src/suite_lib_psc)
++
++add_subdirectory(rage/naturalmotion/vcproj/NaturalMotion)
++add_subdirectory(rage/base/src/vcproj/RageAudio)
++add_subdirectory(rage/base/src/vcproj/RageCore)
++add_subdirectory(rage/base/src/vcproj/RageCreature)
++add_subdirectory(rage/framework/src/vcproj/RageFramework)
++add_subdirectory(rage/base/src/vcproj/RageGraphics)
++add_subdirectory(game/VS_Project/RageMisc)
++add_subdirectory(rage/base/src/vcproj/RageNet)
++add_subdirectory(rage/base/src/vcproj/RagePhysics)
++add_subdirectory(rage/script/src/vcproj/RageScript)
++add_subdirectory(rage/base/src/vcproj/RageSec)
++add_subdirectory(rage/suite/src/vcproj/RageSuiteCreature)
++add_subdirectory(rage/scaleform/Src/vcproj/scaleformgfx)
++
++add_subdirectory(game/VS_Project)

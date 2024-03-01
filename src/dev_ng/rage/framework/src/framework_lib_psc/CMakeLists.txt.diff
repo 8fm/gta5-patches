@@ -1,0 +1,47 @@
+diff --git a/src/dev_ng/rage/framework/src/framework_lib_psc/CMakeLists.txt b/src/dev_ng/rage/framework/src/framework_lib_psc/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/framework/src/framework_lib_psc/CMakeLists.txt
+@@ -0,0 +1,42 @@
++project(framework_lib_psc)
++
++set(PSC_FILES
++    "../fwanimation/boneids.psc"
++    "../fwanimation/clipsets.psc"
++    "../fwanimation/filter.psc"
++    "../fwanimation/movedump.psc"
++    "../fwanimation/networkdefs.psc"
++    "../fwanimation/syncedscene.psc"
++    "../fwanimation/expressionsets.psc"
++    "../fwanimation/facialclipsetgroups.psc"
++    "../fwlocalisation/extraTextFile.psc"
++    "../fwlocalisation/textDatabaseSource.psc"
++    "../fwpheffects/clothmanager.psc"
++    "../fwpheffects/ropemanager.psc"
++    "../fwpheffects/ropedatamanager.psc"
++    "../fwscene/mapdata/mapdata.psc"
++    "../fwscene/mapdata/mapinstancedata.psc"
++    "../fwscene/mapdata/maptypes.psc"
++    "../fwsys/config.psc"
++    "../fwtextureconversion/textureconversion.psc"
++    "../ai/task/taskspew.psc"
++    "../fwvehicleai/pathregion.psc"
++    "../streaming/requestrecorder.psc"
++    "../timecycle/tcinstbox.psc"
++    "../vfx/ptfx/behaviours/ptxu_decal.psc"
++    "../vfx/ptfx/behaviours/ptxu_decalpool.psc"
++    "../vfx/ptfx/behaviours/ptxu_decaltrail.psc"
++    "../vfx/ptfx/behaviours/ptxu_fire.psc"
++    "../vfx/ptfx/behaviours/ptxu_fogvolume.psc"
++    "../vfx/ptfx/behaviours/ptxu_light.psc"
++    "../vfx/ptfx/behaviours/ptxu_liquid.psc"
++    "../vfx/ptfx/behaviours/ptxu_river.psc"
++    "../vfx/ptfx/behaviours/ptxu_zcull.psc"
++    "../fwui/Input/fwuiInputEnums.psc"
++    "../fwutil/profanityFilter.psc"
++)
++
++include(${CMAKE_SOURCE_DIR}/cmake/PscGenerator.cmake)
++add_custom_target(${PROJECT_NAME} DEPENDS ${RESULT_FILES})
++add_dependencies(${PROJECT_NAME} rage_lib_psc)
++add_dependencies(${PROJECT_NAME} suite_lib_psc)

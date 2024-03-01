@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/cmake/PscGenerator.cmake b/src/dev_ng/cmake/PscGenerator.cmake
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/cmake/PscGenerator.cmake
+@@ -0,0 +1,19 @@
++
++if (MSVC)
++    set(CODE_GEN ${CMAKE_SOURCE_DIR}/../../tools_ng/bin/coding/python/parCodeGen.exe)
++endif()
++
++set (RESULT_FILES "")
++foreach(PSC_FILE ${PSC_FILES})
++    get_filename_component(PSC_NAME ${PSC_FILE} NAME_WE)
++    get_filename_component(PSC_RELATIVE_PATH ${PSC_FILE} DIRECTORY)
++    set(PSC_PATH ${CMAKE_CURRENT_SOURCE_DIR}/${PSC_RELATIVE_PATH})
++    if(NOT EXISTS "${PSC_PATH}/${PSC_NAME}_parser.h")
++        add_custom_command(
++            OUTPUT ${PSC_PATH}/${PSC_NAME}_parser.h
++                   ${PSC_PATH}/${PSC_NAME}_parser.xsd
++            COMMAND ${CODE_GEN} ${CMAKE_CURRENT_SOURCE_DIR}/${PSC_FILE}
++        )
++        list(APPEND RESULT_FILES "${PSC_PATH}/${PSC_NAME}_parser.h")
++    endif()
++endforeach()

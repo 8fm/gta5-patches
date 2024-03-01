@@ -1,0 +1,52 @@
+diff --git a/src/dev_ng/game/vs_project1_lib/CMakeLists.txt b/src/dev_ng/game/vs_project1_lib/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/game/vs_project1_lib/CMakeLists.txt
+@@ -0,0 +1,47 @@
++project(game1_lib)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
++
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
++if (MSVC)
++    add_definitions(-DWINAPI_PARTITION_TV_APP=0 -DWINAPI_PARTITION_TV_TITLE=0)
++endif()
++
++set(SRC_FILES
++    "_Unity/_unity_game1_lib_ai_animation.cpp"
++    "_Unity/_unity_game1_lib_audio_a_l.cpp"
++    "_Unity/_unity_game1_lib_audio_m_z.cpp"
++    "_Unity/_unity_game1_lib_camera.cpp"
++    "_Unity/_unity_game1_lib_cloth_ctrl.cpp"
++    "_Unity/_unity_game1_lib_ctrl_replay_p_z.cpp"
++    "_Unity/_unity_game1_lib_ctrl_replay_a_l.cpp"
++    "_Unity/_unity_game1_lib_ctrl_replay_m_o.cpp"
++    "_Unity/_unity_game1_lib_core_cutscene_debug.cpp"
++    "_Unity/_unity_game1_lib_event.cpp"
++    "_Unity/_unity_game1_lib_frontend_h_o.cpp"
++    "_Unity/_unity_game1_lib_frontend_a_b.cpp"
++    "_Unity/_unity_game1_lib_frontend_c.cpp"
++    "_Unity/_unity_game1_lib_frontend_p_z.cpp"
++    "_Unity/_unity_game1_lib_frontend_d_g.cpp"
++    "../apps/appdata.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}/game
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})
++add_dependencies(${PROJECT_NAME} game_lib_psc)

@@ -1,0 +1,58 @@
+diff --git a/src/dev_ng/game/vs_project3_lib/CMakeLists.txt b/src/dev_ng/game/vs_project3_lib/CMakeLists.txt
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/game/vs_project3_lib/CMakeLists.txt
+@@ -0,0 +1,53 @@
++project(game3_lib)
++
++set(TARGET_TYPE "StaticLib")
++include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
++
++add_definitions(-DWOLFSSL_USER_SETTINGS)
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/basetypes.h)
++add_compile_options(/FI${CMAKE_SOURCE_DIR}/game/game_config.h)
++
++set(SRC_FILES
++    "_Unity/_unity_game3_lib_scene.cpp"
++    "_Unity/_unity_game3_lib_script_commands_a_g.cpp"
++    "_Unity/_unity_game3_lib_script_commands_h_m.cpp"
++    "_Unity/_unity_game3_lib_script_commands_n_r.cpp"
++    "_Unity/_unity_game3_lib_script_commands_s_z.cpp"
++    "_Unity/_unity_game3_lib_script_other.cpp"
++    "_Unity/_unity_game3_lib_security.cpp"
++    "_Unity/_unity_game3_lib_shaders.cpp"
++    "_Unity/_unity_game3_lib_streaming_system.cpp"
++    "_Unity/_unity_game3_lib_winrt_files.winrt.cpp"
++    "_Unity/_unity_game3_lib_task_a_c.cpp"
++    "_Unity/_unity_game3_lib_task_d_h.cpp"
++    "_Unity/_unity_game3_lib_task_m.cpp"
++    "_Unity/_unity_game3_lib_task_p_r.cpp"
++    "_Unity/_unity_game3_lib_task_s.cpp"
++    "_Unity/_unity_game3_lib_task_s_v.cpp"
++    "_Unity/_unity_game3_lib_task_w.cpp"
++    "../Stats/StatsMgr.cpp"
++    "../Stats/StatsDataMgr.cpp"
++    "../Stats/StatsTypes.cpp"
++    "../Stats/StatsInterface.cpp"
++    "../Stats/StatsUtils.cpp"
++    "../Stats/StatsSavesMgr.cpp"
++    "../Stats/MoneyInterface.cpp"
++)
++
++add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
++
++target_include_directories(${PROJECT_NAME} PRIVATE
++    "$ENV{DXSDK_DIR}Include"
++    ${CMAKE_SOURCE_DIR}/game
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
++    ${CMAKE_SOURCE_DIR}/rage/3rdparty/wolfssl
++    ${CMAKE_SOURCE_DIR}/rage/base/src
++    ${CMAKE_SOURCE_DIR}/rage/framework/src
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/include
++    ${CMAKE_SOURCE_DIR}/rage/naturalmotion/src
++    ${CMAKE_SOURCE_DIR}/rage/script/src
++    ${CMAKE_SOURCE_DIR}/rage/suite/src
++)
++
++target_link_libraries(${PROJECT_NAME})
++add_dependencies(${PROJECT_NAME} game_lib_psc)
