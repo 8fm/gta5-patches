@@ -40,6 +40,15 @@ diff --git a/src/dev_ng/game/network/Cloud/VideoUploadManager_Custom.cpp b/src/d
  
  #include "control/videorecording/videorecording.h"
  
+@@ -2957,7 +2957,7 @@ bool CVideoUploadManager_Custom::PublishUGC()
+ 	}
+ 
+ 	bool hasModdedContent = false;
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// on PC, we need to set a UGC flag to know there may be modded content on video.
+ 	u32 width, height, durationMs = 0;
+ 	MediaDecoder::PeekVideoDetails( m_sourcePathAndFileName.c_str(), width, height, durationMs, &hasModdedContent );
 @@ -3505,7 +3505,7 @@ void CVideoUploadManager_Custom::DeleteFileWorker::Perform()
  		ReplayFileManager::FixName(platformPath, m_pathAndFilename.c_str());
  		fullPathAndFilename = platformPath;

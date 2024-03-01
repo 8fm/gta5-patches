@@ -36,3 +36,12 @@ diff --git a/src/dev_ng/rage/framework/src/video/media_common.h b/src/dev_ng/rag
  
  		static bool PrepareGameCompatibleOutputVideoMediaType( IMFMediaType*& mediaType, rage::u32 const width, rage::u32 const height, float const fps );
  		static bool PrepareGameCompatibleOutputAudioMediaType( IMFMediaType*& mediaType );
+@@ -240,7 +241,7 @@ namespace rage
+ 		static size_t GetExtraBytesRequiredForEncode();
+ #endif // RSG_PC || RSG_DURANGO
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ 		// Extracted from VersionHelpers.h until we move to the W8.1 SDK or greater
+ 		static bool IsWindowsVersionOrGreater( u16 const wMajorVersion, u16 const wMinorVersion, u16 const wServicePackMajor );

@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/framework/src/video/VideoPlayback.cpp b/src/dev_ng/rage/framework/src/video/VideoPlayback.cpp
+--- a/src/dev_ng/rage/framework/src/video/VideoPlayback.cpp
++++ b/src/dev_ng/rage/framework/src/video/VideoPlayback.cpp
+@@ -225,7 +225,11 @@ namespace rage
+ 		bool supported = false;
+ 
+ 		u32 width, height, durationMs;
++#if !RSG_LINUX
+ 		if( MediaDecoder::PeekVideoDetails( path, width, height, durationMs ) )
++#else
++		if( false )
++#endif // !RSG_LINUX
+ 		{
+ 			bool const c_widthValid = width <= maxWidth;
+ 			bool const c_heightValid = height <= maxHeight;

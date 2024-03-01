@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediaencoder.cpp b/src/dev_ng/rage/framework/src/video/mediaencoder.cpp
+--- a/src/dev_ng/rage/framework/src/video/mediaencoder.cpp
++++ b/src/dev_ng/rage/framework/src/video/mediaencoder.cpp
+@@ -107,11 +107,13 @@ namespace rage
+ #endif
+ 				m_threadData.m_encodeParams = captureParameters;
+ 
++#if !RSG_LINUX
+ 				m_audioWrapper.m_threadId = sysIpcCreateThread( &EncoderThreadFunc, &m_audioWrapper, sysIpcMinThreadStackSize, 
+ 					PRIO_BELOW_NORMAL, "MediaEncoderThreadAudio", 0, "MediaEncoderThreadAudio" );
+ 
+ 				m_videoWrapper.m_threadId = sysIpcCreateThread( &EncoderThreadFunc, &m_videoWrapper, sysIpcMinThreadStackSize, 
+ 					PRIO_BELOW_NORMAL, "MediaEncoderThreadVideo", 0, "MediaEncoderThreadVideo" );
++#endif // !RSG_LINUX
+ 
+ 				success = IsCapturing();
+ #if defined(AUDIO_CAPTURE_ENABLED) && AUDIO_CAPTURE_ENABLED
+@@ -175,7 +177,9 @@ namespace rage
+ 			success = true;
+ 			if( cancelled )
+ 			{
++#if !RSG_LINUX
+ 				OnRecordingCancelled();
++#endif // !RSG_LINUX
+ 			}
+ 
+ 			m_threadData.Reset();

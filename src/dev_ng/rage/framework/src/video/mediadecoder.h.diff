@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediadecoder.h b/src/dev_ng/rage/framework/src/video/mediadecoder.h
+--- a/src/dev_ng/rage/framework/src/video/mediadecoder.h
++++ b/src/dev_ng/rage/framework/src/video/mediadecoder.h
+@@ -115,7 +115,9 @@ namespace rage
+ 
+ 		void Update() 
+ 		{  
++#if !RSG_LINUX
+ 			UpdatePlatformSpecific();
++#endif // !RSG_LINUX
+ 		}
+ 
+ 		bool Seek( u64 const timeNs );

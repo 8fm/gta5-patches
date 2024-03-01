@@ -1,0 +1,24 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediadecoder.cpp b/src/dev_ng/rage/framework/src/video/mediadecoder.cpp
+--- a/src/dev_ng/rage/framework/src/video/mediadecoder.cpp
++++ b/src/dev_ng/rage/framework/src/video/mediadecoder.cpp
+@@ -34,7 +34,9 @@ namespace rage
+ 		{
+ 			ResetError();
+ 
++#if !RSG_LINUX
+ 			success = InitializePlatformSpecific( path, captureThumbnailThenWait );
++#endif // !RSG_LINUX
+ 			SetAudioDisabled( noAudio );
+ 		}
+ 
+@@ -57,8 +59,10 @@ namespace rage
+ 	{
+ 		SYS_CS_SYNC( GetVideoBufferCSToken() );
+ 
++#if !RSG_LINUX
+ 		ShutdownPlatformSpecific();
+ 		CleanupPlatformSpecific();
++#endif // !RSG_LINUX
+ 
+ 		Assertf( GetDecoderState() == DECODER_INVALID, "MediaDecoder::Shutdown - Decoder shut down but still has state" );
+ 	}
