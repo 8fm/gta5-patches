@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder_frag.frag b/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder_frag.frag
+--- a/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder_frag.frag
++++ b/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder_frag.frag
+@@ -7,7 +7,7 @@
+ 
+ #include "system/dependency.h"
+ #include "tsklib.h"
+-#if !__WIN32 && !RSG_ORBIS
++#if !__WIN32 && !__LINUX && !RSG_ORBIS
+ #include "boxoccluder.h"
+ #include "boxoccluder.cpp"
+ #include "tiler.cpp"

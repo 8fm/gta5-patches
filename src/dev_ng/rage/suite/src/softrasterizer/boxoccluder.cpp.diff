@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/rage/suite/src/softrasterizer/boxoccluder.cpp b/src/dev_
  #include "math/amath.h"
  #include "profile/profiler.h"
  #include "softrasterizer/softrasterizer.h"
+@@ -243,7 +243,7 @@ using namespace rage;
+ 
+ 
+ 
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || __LINUX || RSG_ORBIS
+ #include "boxoccluder_frag.frag"
+ #include "boxselector_frag.frag"
+ #include "modelselector_frag.frag"

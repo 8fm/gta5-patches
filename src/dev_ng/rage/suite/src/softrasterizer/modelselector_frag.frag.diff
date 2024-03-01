@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/softrasterizer/modelselector_frag.frag b/src/dev_ng/rage/suite/src/softrasterizer/modelselector_frag.frag
+--- a/src/dev_ng/rage/suite/src/softrasterizer/modelselector_frag.frag
++++ b/src/dev_ng/rage/suite/src/softrasterizer/modelselector_frag.frag
+@@ -2,7 +2,7 @@
+ #define _MODELSELECTOR_FRAG_H
+ 
+ #define FRAG_TSKLIB_ONLY
+-#if !__WIN32 && !RSG_ORBIS
++#if !__WIN32 && !__LINUX && !RSG_ORBIS
+ #include "boxoccluder.h"
+ #include "boxoccluder.cpp"
+ #include "occludeModel.cpp"

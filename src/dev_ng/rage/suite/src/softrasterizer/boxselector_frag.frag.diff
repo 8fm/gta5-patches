@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/softrasterizer/boxselector_frag.frag b/src/dev_ng/rage/suite/src/softrasterizer/boxselector_frag.frag
+--- a/src/dev_ng/rage/suite/src/softrasterizer/boxselector_frag.frag
++++ b/src/dev_ng/rage/suite/src/softrasterizer/boxselector_frag.frag
+@@ -8,7 +8,7 @@
+ #include "system/codefrag_spu.h"
+ #include "system/dependency.h"
+ #include "vectormath/classes.h"
+-#if !__WIN32 && !RSG_ORBIS
++#if !__WIN32 && !__LINUX && !RSG_ORBIS
+ #include "boxoccluder.cpp"
+ #endif
+ #include "softrasterizer/tiler.h"
