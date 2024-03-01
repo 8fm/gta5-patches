@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/task/Combat/Cover/cover.cpp b/src/dev_ng/game/task/
 -#include "cutscene/CutSceneManagerNew.h"
 -#include "debug/debugscene.h"
 -#include "ModelInfo/Vehiclemodelinfo.h"
-+#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
 +#include "Cutscene/CutSceneManagerNew.h"
 +#include "debug/DebugScene.h"
 +#include "modelinfo/VehicleModelInfo.h"

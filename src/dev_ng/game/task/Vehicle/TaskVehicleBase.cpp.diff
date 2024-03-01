@@ -33,7 +33,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskVehicleBase.cpp b/src/dev_ng/game/
 -#include "Vfx/VehicleGlass/VehicleGlassManager.h"
 -#include "Task/Vehicle/TaskInVehicle.h"
 -#include "Task/Vehicle/TaskCar.h"
-+#include "vfx/VehicleGlass/VehicleGlassManager.h"
++#include "vfx/vehicleglass/VehicleGlassManager.h"
 +#include "task/Vehicle/TaskInVehicle.h"
 +#include "task/Vehicle/TaskCar.h"
  

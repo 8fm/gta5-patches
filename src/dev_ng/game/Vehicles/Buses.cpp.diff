@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Vehicles/Buses.cpp b/src/dev_ng/game/Vehicles/Buses.cpp
+--- a/src/dev_ng/game/Vehicles/Buses.cpp
++++ b/src/dev_ng/game/Vehicles/Buses.cpp
+@@ -10,7 +10,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ 
+-#include "buses.h"
++#include "Buses.h"
+ //
+ // InitLevel
+ // 

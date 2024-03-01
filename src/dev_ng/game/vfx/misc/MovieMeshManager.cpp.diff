@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp b/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp
 --- a/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp
 +++ b/src/dev_ng/game/vfx/misc/MovieMeshManager.cpp
-@@ -18,7 +18,7 @@ VFX_MISC_OPTIMISATIONS()
+@@ -17,8 +17,8 @@ VFX_MISC_OPTIMISATIONS()
+ #include "system/nelem.h"
  
  // game
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "System/FileMgr.h"
++#include "Core/game.h"
 +#include "system/FileMgr.h"
  #include "renderer/RenderTargetMgr.h"
  #include "vfx/misc/MovieManager.h"

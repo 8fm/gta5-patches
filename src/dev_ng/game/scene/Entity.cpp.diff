@@ -60,7 +60,8 @@ diff --git a/src/dev_ng/game/scene/Entity.cpp b/src/dev_ng/game/scene/Entity.cpp
  #include "renderer/Lights/LightEntity.h"
  #include "renderer/PostScan.h"
  #include "renderer/RenderPhases/RenderPhaseWaterReflection.h" // for WATER_REFLECTION_PRE_REFLECTED define ..
- #include "renderer/renderthread.h"
+-#include "renderer/renderthread.h"
++#include "renderer/RenderThread.h"
  #include "renderer/River.h"
 -#include "scene/animatedbuilding.h"
 +#include "scene/AnimatedBuilding.h"
@@ -103,7 +104,7 @@ diff --git a/src/dev_ng/game/scene/Entity.cpp b/src/dev_ng/game/scene/Entity.cpp
 +#include "Vehicles/vehicle.h"
 +#include "vfx/misc/Coronas.h"
 +#include "vfx/misc/Scrollbars.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxEntity.h"
 +#include "vfx/systems/VfxMaterial.h"
 +#include "vfx/VfxHelper.h"

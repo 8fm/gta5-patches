@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Core/memorytest.cpp b/src/dev_ng/game/Core/memorytest.cpp
+--- a/src/dev_ng/game/Core/memorytest.cpp
++++ b/src/dev_ng/game/Core/memorytest.cpp
+@@ -13,7 +13,7 @@
+ #include <xbdm.h>
+ #include "text/text.h"
+ #include "text/TextConversion.h"
+-#include "renderer/renderthread.h"
++#include "renderer/RenderThread.h"
+ 
+ bool CMemoryTest::m_bActive = false;
+ bool CMemoryTest::m_bTextArrayInUse = false;

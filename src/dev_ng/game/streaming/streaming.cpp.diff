@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/streaming/streaming.cpp b/src/dev_ng/game/streaming/streaming.cpp
 --- a/src/dev_ng/game/streaming/streaming.cpp
 +++ b/src/dev_ng/game/streaming/streaming.cpp
-@@ -41,23 +41,23 @@ STREAMING_OPTIMISATIONS()
+@@ -41,33 +41,33 @@ STREAMING_OPTIMISATIONS()
  #include "streaming/zonedassetmanager.h"
  
  // Game headers
@@ -32,7 +32,10 @@ diff --git a/src/dev_ng/game/streaming/streaming.cpp b/src/dev_ng/game/streaming
  #include "scene/Entity.h"
  #include "scene/focusentity.h"
  #include "scene/InstancePriority.h"
-@@ -67,7 +67,7 @@ STREAMING_OPTIMISATIONS()
+ #include "scene/ipl/iplcullbox.h"
+ #include "scene/loader/ManagedImapGroup.h"
+-#include "scene/loader/maptypes.h"
++#include "scene/loader/mapTypes.h"
  #include "scene/loader/mapFileMgr.h"
  #include "scene/scene.h"
  #include "scene/streamer/scenestreamermgr.h"

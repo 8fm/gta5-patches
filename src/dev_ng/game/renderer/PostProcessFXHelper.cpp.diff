@@ -20,7 +20,14 @@ diff --git a/src/dev_ng/game/renderer/PostProcessFXHelper.cpp b/src/dev_ng/game/
  #include "renderer/PostProcessFX.h"
  #include "renderer/rendertargets.h"
  #include "renderer/ScreenshotManager.h"
-@@ -28,8 +28,8 @@
+@@ -22,14 +22,14 @@
+ 
+ #include "timecycle/timecycle.h"
+ 
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "grcore/debugdraw.h"
+ #include "grcore/quads.h"
  #include "system/param.h"
  
  #include "frontend/VideoEditor/ui/TextTemplate.h"

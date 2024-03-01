@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp b/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp
 --- a/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp
 +++ b/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp
-@@ -4,7 +4,7 @@
+@@ -4,27 +4,27 @@
  // CREATED : 15-10-2008
  
  // File header
@@ -10,7 +10,10 @@ diff --git a/src/dev_ng/game/task/Default/Patrol/TaskPatrol.cpp b/src/dev_ng/gam
  
  // Framework headers
  #include "ai/task/taskchannel.h"
-@@ -14,17 +14,17 @@
+ 
+ // Game headers
+-#include "Core/Game.h"
++#include "Core/game.h"
  #include "Peds/PedDebugVisualiser.h"
  #include "Peds/PedGeometryAnalyser.h"
  #include "Peds/PedIntelligence.h"

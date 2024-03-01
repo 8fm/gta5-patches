@@ -9,8 +9,9 @@ diff --git a/src/dev_ng/game/Peds/PlayerPed.cpp b/src/dev_ng/game/Peds/PlayerPed
 +#include "Peds/ped.h"
  
  // Rage headers
- #include "crSkeleton/SkeletonData.h"
+-#include "crSkeleton/SkeletonData.h"
 -#include "System/TimeMgr.h"
++#include "crskeleton/SkeletonData.h"
 +#include "system/TimeMgr.h"
  #include "system/param.h"
 -#include "System/timer.h"
@@ -53,7 +54,7 @@ diff --git a/src/dev_ng/game/Peds/PlayerPed.cpp b/src/dev_ng/game/Peds/PlayerPed
 -#include "Game/modelindices.h"
 +#include "vehicleAi/task/TaskVehicleTempAction.h"
 +#include "vehicleAi/VehicleIntelligence.h"
-+#include "control/Garages.h"
++#include "control/garages.h"
 +#include "debug/DebugScene.h"
 +#include "event/EventDamage.h"
 +#include "event/EventWeapon.h"

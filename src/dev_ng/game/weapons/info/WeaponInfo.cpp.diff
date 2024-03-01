@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/weapons/info/WeaponInfo.cpp b/src/dev_ng/game/weapons/info/WeaponInfo.cpp
 --- a/src/dev_ng/game/weapons/info/WeaponInfo.cpp
 +++ b/src/dev_ng/game/weapons/info/WeaponInfo.cpp
-@@ -5,30 +5,30 @@
+@@ -5,33 +5,33 @@
  //
  
  // File header
@@ -21,8 +21,9 @@ diff --git a/src/dev_ng/game/weapons/info/WeaponInfo.cpp b/src/dev_ng/game/weapo
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
 -#include "Pickups/PickupManager.h"
+-#include "Stats/Stats_Channel.h"
 +#include "pickups/PickupManager.h"
- #include "Stats/Stats_Channel.h"
++#include "Stats/stats_channel.h"
  #include "Stats/StatsInterface.h"
 -#include "Task/Combat/Cover/TaskCover.h"
 -#include "Task/General/Phone/TaskMobilePhone.h"
@@ -47,4 +48,8 @@ diff --git a/src/dev_ng/game/weapons/info/WeaponInfo.cpp b/src/dev_ng/game/weapo
 +#include "weapons/info/WeaponSwapData.h"
  
  // Parser files
- #include "WeaponInfo_parser.h"
+-#include "WeaponInfo_parser.h"
++#include "weaponinfo_parser.h"
+ 
+ // Macro to disable optimisations if set
+ WEAPON_OPTIMISATIONS()

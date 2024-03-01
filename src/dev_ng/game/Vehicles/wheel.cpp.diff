@@ -1,6 +1,18 @@
 diff --git a/src/dev_ng/game/Vehicles/wheel.cpp b/src/dev_ng/game/Vehicles/wheel.cpp
 --- a/src/dev_ng/game/Vehicles/wheel.cpp
 +++ b/src/dev_ng/game/Vehicles/wheel.cpp
+@@ -13,9 +13,9 @@
+ #include "math/amath.h"
+ #include "math/vecmath.h"
+ #include "math/intrinsics.h"
+-#include "Math/Polynomial.h"
++#include "math/polynomial.h"
+ #include "rmptfx/ptxmanager.h"
+-#include "phBound/boundbvh.h"
++#include "phbound/boundbvh.h"
+ #include "phbound/bounddisc.h"
+ #include "phbound/boundcurvedgeom.h"
+ #include "physics/gtaInst.h"
 @@ -28,7 +28,7 @@
  #include "vfx/ptfx/ptfxreg.h"
  #include "grcore/debugdraw.h"
@@ -10,14 +22,16 @@ diff --git a/src/dev_ng/game/Vehicles/wheel.cpp b/src/dev_ng/game/Vehicles/wheel
  #include "fwsys/timer.h"
  #include "fwvehicleai/pathfindtypes.h"
  
-@@ -40,41 +40,41 @@
+@@ -39,42 +39,42 @@
+ #include "control/record.h"
  #include "debug/MarketingTools.h"
  #include "event/ShockingEvents.h"
- #include "game/modelIndices.h"
+-#include "game/modelIndices.h"
 -#include "Game/Weather.h"
 -#include "modelInfo/vehicleModelInfo.h"
 -#include "peds/Ped.h"
-+#include "game/Weather.h"
++#include "game/ModelIndices.h"
++#include "game/weather.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"

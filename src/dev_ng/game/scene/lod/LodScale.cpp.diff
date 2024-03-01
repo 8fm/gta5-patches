@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/scene/lod/LodScale.cpp b/src/dev_ng/game/scene/lod/LodScale.cpp
 --- a/src/dev_ng/game/scene/lod/LodScale.cpp
 +++ b/src/dev_ng/game/scene/lod/LodScale.cpp
-@@ -15,7 +15,7 @@
+@@ -15,11 +15,11 @@
  #include "camera/gameplay/GameplayDirector.h"
  #include "camera/viewports/ViewportManager.h"
  #include "cutscene/CutSceneCameraEntity.h"
@@ -10,6 +10,11 @@ diff --git a/src/dev_ng/game/scene/lod/LodScale.cpp b/src/dev_ng/game/scene/lod/
  #include "fwrenderer/RenderPhaseBase.h"
  #include "fwsys/timer.h"
  #include "network/NetworkInterface.h"
+-#include "renderer/Lights/Lights.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/Renderer.h"
+ #include "renderer/RenderPhases/RenderPhaseDefLight.h"
+ #include "scene/lod/LodDebug.h"
 @@ -28,7 +28,7 @@
  #include "streaming/streamingrequestlist.h"
  #include "system/param.h"

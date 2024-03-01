@@ -9,7 +9,8 @@ diff --git a/src/dev_ng/game/weapons/info/ItemInfo.cpp b/src/dev_ng/game/weapons
 +#include "weapons/info/ItemInfo.h"
  
  // Parser files
- #include "ItemInfo_parser.h"
+-#include "ItemInfo_parser.h"
++#include "iteminfo_parser.h"
  
  // Game headers
 -#include "ModelInfo/ModelInfo.h"
@@ -18,7 +19,7 @@ diff --git a/src/dev_ng/game/weapons/info/ItemInfo.cpp b/src/dev_ng/game/weapons
 -#include "Weapons/Info/WeaponInfoManager.h"
 +#include "modelinfo/ModelInfo.h"
 +#include "modelinfo/ModelInfo_Factories.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
 +#include "weapons/info/WeaponInfoManager.h"
  
  // Macro to disable optimisations if set

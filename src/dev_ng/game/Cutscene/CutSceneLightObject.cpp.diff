@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/Cutscene/CutSceneLightObject.cpp b/src/dev_ng/game/
 -#include "fwMaths/random.h"
 -#include "renderer/lights/lights.h"
 +#include "cutscene/cutscene_channel.h"
-+#include "game/clock.h"
++#include "game/Clock.h"
 +#include "fwmaths/random.h"
 +#include "renderer/Lights/lights.h"
  #include "renderer/color.h"

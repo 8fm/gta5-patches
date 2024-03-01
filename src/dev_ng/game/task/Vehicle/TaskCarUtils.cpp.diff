@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp b/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp
 --- a/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp
 +++ b/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp
-@@ -1,43 +1,43 @@
+@@ -1,46 +1,46 @@
  // Framework headers
  #include "fwanimation/animmanager.h"
 -#include "fwmaths/Angle.h"
@@ -45,7 +45,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp b/src/dev_ng/game/tas
 -#include "Task/Vehicle/TaskCarUtils.h"
 -#include "Task/Vehicle/TaskEnterVehicle.h"
 -#include "Task/System/TaskHelpers.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
 +#include "task/Vehicle/TaskCar.h"
 +#include "task/Vehicle/TaskCarAccessories.h"
 +#include "task/Vehicle/TaskCarUtils.h"
@@ -64,4 +64,8 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCarUtils.cpp b/src/dev_ng/game/tas
 +#include "network/NetworkInterface.h"
  
  //rage headers
- #include "crSkeleton/Skeleton.h"
+-#include "crSkeleton/Skeleton.h"
++#include "crskeleton/skeleton.h"
+ 
+ AI_OPTIMISATIONS()
+ 

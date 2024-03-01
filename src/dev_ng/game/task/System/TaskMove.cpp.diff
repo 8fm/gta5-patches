@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/task/System/TaskMove.cpp b/src/dev_ng/game/task/Sys
 +#include "task/Motion/TaskMotionBase.h"
 +#include "task/System/TaskMove.h"
 +#include "task/Vehicle/TaskRideHorse.h"
-+#include "system/Control.h"
++#include "system/control.h"
  
  AI_OPTIMISATIONS()
  

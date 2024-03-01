@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/frontend/MobilePhone.cpp b/src/dev_ng/game/frontend
 -#include "peds/ped.h"
 -#include "Streaming/Streaming.h"
 +#include "Peds/ped.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
  #include "audio/radioaudioentity.h"
  #include "camera/CamInterface.h"
  #include "camera/gameplay/GameplayDirector.h"

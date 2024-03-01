@@ -10,6 +10,15 @@ diff --git a/src/dev_ng/game/renderer/PlantsMgr.cpp b/src/dev_ng/game/renderer/P
  #include "physics/levelnew.h"
  #include "physics/inst.h"
  #include "phbound/bound.h"
+@@ -52,7 +52,7 @@
+ #include "profile/timebars.h"
+ #include "grprofile/pix.h"
+ #include "system/xtl.h"
+-#include "fwscene/scan/scan.h"
++#include "fwscene/scan/Scan.h"
+ #include "fwscene/stores/txdstore.h"
+ #include "system/findsize.h"
+ #include "system/dependencyscheduler.h"
 @@ -60,37 +60,37 @@
  #include "vector/geometry.h"
  

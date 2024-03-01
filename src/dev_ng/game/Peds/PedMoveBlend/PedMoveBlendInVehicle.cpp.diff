@@ -9,7 +9,7 @@ diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendInVehicle.cpp b/src/d
 -#include "Task/default/TaskPlayer.h"
 -#include "Task/Vehicle/TaskCar.h"
 -#include "Task/Vehicle/TaskInVehicle.h"
-+#include "task/default/TaskPlayer.h"
++#include "task/Default/TaskPlayer.h"
 +#include "task/Vehicle/TaskCar.h"
 +#include "task/Vehicle/TaskInVehicle.h"
  #include "Vehicles/Metadata/VehicleSeatInfo.h"

@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/cloth/ClothRageInterface.h b/src/dev_ng/game/cloth/ClothRageInterface.h
 --- a/src/dev_ng/game/cloth/ClothRageInterface.h
 +++ b/src/dev_ng/game/cloth/ClothRageInterface.h
-@@ -5,8 +5,8 @@
+@@ -3,10 +3,10 @@
+ 
+ #include "physics/inst.h"
  #include "physics/instbehavior.h"
- #include "phBound/boundcomposite.h"
+-#include "phBound/boundcomposite.h"
++#include "phbound/boundcomposite.h"
  
 -#include "Debug/Debug.h"
 -#include "fwtl/pool.h"

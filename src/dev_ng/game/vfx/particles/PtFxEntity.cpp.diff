@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/vfx/particles/PtFxEntity.cpp b/src/dev_ng/game/vfx/
  #include "vfx/ptfx/ptfxconfig.h"
  #include "vfx/ptfx/ptfxflags.h"
 -#include "Vfx/Particles/PtFxManager.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
  
  // framework
  #include "fwdebug/picker.h"

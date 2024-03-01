@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/timecycle/TimeCycleConfig.cpp b/src/dev_ng/game/timecycle/TimeCycleConfig.cpp
 --- a/src/dev_ng/game/timecycle/TimeCycleConfig.cpp
 +++ b/src/dev_ng/game/timecycle/TimeCycleConfig.cpp
-@@ -21,25 +21,25 @@
+@@ -21,26 +21,26 @@
  #include "string/stringhash.h"
  
  // game
@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/timecycle/TimeCycleConfig.cpp b/src/dev_ng/game/tim
  #include "frontend/MiniMapRenderThread.h"
 -#include "Game/Weather.h"
 -#include "objects/ProcObjects.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "Objects/ProcObjects.h"
  #include "renderer/Deferred/DeferredLighting.h"
 -#include "Renderer/Lights/lights.h"
@@ -28,6 +28,7 @@ diff --git a/src/dev_ng/game/timecycle/TimeCycleConfig.cpp b/src/dev_ng/game/tim
 -#include "Vfx/Misc/DistantLights.h"
 -#include "Vfx/GPUParticles/PtFxGPUManager.h"
 -#include "Vfx/sky/Sky.h"
+-#include "vfx/particles/ptfxmanager.h"
 +#include "timecycle/TimeCycle.h"
 +#include "Vehicles/vehicle.h"
 +#include "Vehicles/VehicleGadgets.h"
@@ -36,6 +37,7 @@ diff --git a/src/dev_ng/game/timecycle/TimeCycleConfig.cpp b/src/dev_ng/game/tim
 +#include "vfx/misc/DistantLights.h"
 +#include "vfx/gpuparticles/PtFxGPUManager.h"
 +#include "vfx/sky/Sky.h"
- #include "vfx/particles/ptfxmanager.h"
++#include "vfx/particles/PtFxManager.h"
  #include "vfx/VisualEffects.h"
  #include "vfx/misc/Puddles.h"
+ 

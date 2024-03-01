@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/task/Default/TaskWander.cpp b/src/dev_ng/game/task/
 +#include "event/EventShocking.h"
 +#include "event/ShockingEvents.h"
 +#include "game/ModelIndices.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
  #include "Peds/PedDebugVisualiser.h"
  #include "Peds/PedIntelligence.h"
 -#include "Peds/Ped.h"

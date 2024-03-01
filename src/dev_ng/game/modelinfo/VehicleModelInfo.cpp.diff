@@ -1,6 +1,21 @@
 diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp b/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp
+@@ -21,11 +21,11 @@
+ #include "parser/manager.h"
+ #include "parser/psofile.h"
+ #include "parser/restparserservices.h"
+-#include "phbound/BoundBox.h"
++#include "phbound/boundbox.h"
+ #include "phbound/BoundCapsule.h"
+-#include "phbound/BoundComposite.h"
++#include "phbound/boundcomposite.h"
+ #include "phbound/boundbvh.h"
+-#include "phBound/support.h"
++#include "phbound/support.h"
+ #include "system/memory.h"
+ #include "system/nelem.h"
+ 
 @@ -47,15 +47,15 @@
  
  // Game headers

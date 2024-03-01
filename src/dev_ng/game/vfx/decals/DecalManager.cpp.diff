@@ -1,17 +1,19 @@
 diff --git a/src/dev_ng/game/vfx/decals/DecalManager.cpp b/src/dev_ng/game/vfx/decals/DecalManager.cpp
 --- a/src/dev_ng/game/vfx/decals/DecalManager.cpp
 +++ b/src/dev_ng/game/vfx/decals/DecalManager.cpp
-@@ -33,41 +33,41 @@
+@@ -32,42 +32,42 @@
+ #include "camera/viewports/ViewportManager.h"
  #include "control/replay/Effects/ProjectedTexturePacket.h"
  #include "control/replay/Effects/ParticleVehicleFxPacket.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Game/Weather.h"
 -#include "ModelInfo/PedModelInfo.h"
 -#include "ModelInfo/VehicleModelInfo.h"
 -#include "Network/Live/livemanager.h"
 -#include "Network/Live/NetworkClan.h"
 -#include "Network/Objects/Entities/NetObjVehicle.h"
-+#include "game/Weather.h"
++#include "Core/game.h"
++#include "game/weather.h"
 +#include "modelinfo/PedModelInfo.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "network/Live/livemanager.h"
@@ -35,7 +37,7 @@ diff --git a/src/dev_ng/game/vfx/decals/DecalManager.cpp b/src/dev_ng/game/vfx/d
 -#include "renderer/lights/lights.h"
 -#include "Renderer/RenderTargets.h"
 +#include "renderer/Lights/lights.h"
-+#include "renderer/RenderTargets.h"
++#include "renderer/rendertargets.h"
  #include "renderer/PostProcessFX.h"
 -#include "Scene/DataFileMgr.h"
 -#include "Scene/World/GameWorld.h"
@@ -62,14 +64,14 @@ diff --git a/src/dev_ng/game/vfx/decals/DecalManager.cpp b/src/dev_ng/game/vfx/d
 -#include "control/replay/effects/Particlebloodfxpacket.h"
 +#include "vfx/VfxHelper.h"
 +#include "vfx/misc/Fire.h"
-+#include "vfx/Particles/PtfxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxBlood.h"
 +#include "vfx/systems/VfxLiquid.h"
 +#include "vfx/systems/VfxMaterial.h"
 +#include "vfx/systems/VfxPed.h"
 +#include "vfx/systems/VfxWeapon.h"
 +#include "vfx/systems/VfxWheel.h"
-+#include "control/replay/Effects/Particlebloodfxpacket.h"
++#include "control/replay/Effects/ParticleBloodFxPacket.h"
  
  ///////////////////////////////////////////////////////////////////////////////
  //  OPTIMISATIONS - TURN ON IN OPTIMISATIONS.H

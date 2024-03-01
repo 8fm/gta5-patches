@@ -14,7 +14,7 @@ diff --git a/src/dev_ng/game/task/Combat/TaskSharkAttack.cpp b/src/dev_ng/game/t
  #include "audio/speechaudioentity.h"
 -#include "Camera/Base/BaseCamera.h"
 -#include "Camera/CamInterface.h"
-+#include "camera/Base/BaseCamera.h"
++#include "camera/base/BaseCamera.h"
 +#include "camera/CamInterface.h"
  #include "camera/syncedscene/SyncedSceneDirector.h"
 -#include "Camera/Scripted/ScriptDirector.h"

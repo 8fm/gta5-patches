@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/game/Clock.cpp b/src/dev_ng/game/game/Clock.cpp
  #include "fwsys/timer.h"
  
  // game
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Debug\DebugGlobals.h"
 -#include "Debug\MarketingTools.h"
 -#include "Network\Events\NetworkEventTypes.h"
@@ -19,6 +19,7 @@ diff --git a/src/dev_ng/game/game/Clock.cpp b/src/dev_ng/game/game/Clock.cpp
 -#include "System\ControlMgr.h"
 -#include "Shaders\ShaderLib.h"
 -#include "TimeCycle\TimeCycle.h"
++#include "Core/game.h"
 +#include "debug/DebugGlobals.h"
 +#include "debug/MarketingTools.h"
 +#include "network/Events/NetworkEventTypes.h"

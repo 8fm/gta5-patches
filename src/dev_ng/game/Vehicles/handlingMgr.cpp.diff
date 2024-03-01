@@ -1,12 +1,29 @@
 diff --git a/src/dev_ng/game/Vehicles/handlingMgr.cpp b/src/dev_ng/game/Vehicles/handlingMgr.cpp
 --- a/src/dev_ng/game/Vehicles/handlingMgr.cpp
 +++ b/src/dev_ng/game/Vehicles/handlingMgr.cpp
-@@ -9,7 +9,7 @@
+@@ -8,16 +8,16 @@
+ 
  // rage headers
  // game headers
- #include "core/game.h"
+-#include "core/game.h"
 -#include "debug/debug.h"
+-#include "modelInfo/vehicleModelInfo.h"
++#include "Core/game.h"
 +#include "debug/Debug.h"
- #include "modelInfo/vehicleModelInfo.h"
++#include "modelinfo/VehicleModelInfo.h"
  #include "scene/DataFileMgr.h"
- #include "system/fileMgr.h"
+-#include "system/fileMgr.h"
+-#include "vehicles/handlingMgr.h"
+-#include "vehicles/transmission.h"
+-#include "vehicles/vehicle.h"
+-#include "vehicles/Metadata/AIHandlingInfo.h"
+-#include "vehicles/MetaData/HandlingInfo_parser.h"
++#include "system/FileMgr.h"
++#include "Vehicles/handlingMgr.h"
++#include "Vehicles/Transmission.h"
++#include "Vehicles/vehicle.h"
++#include "Vehicles/Metadata/AIHandlingInfo.h"
++#include "Vehicles/Metadata/HandlingInfo_parser.h"
+ 
+ VEHICLE_OPTIMISATIONS()
+ AI_OPTIMISATIONS()

@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/Peds/PopCycle.cpp b/src/dev_ng/game/Peds/PopCycle.c
 -#include "Game/Performance.h"
 +#include "debug/debug.h"
 +#include "game/cheat.h"
-+#include "game/clock.h"
++#include "game/Clock.h"
 +#include "game/Dispatch/DispatchData.h"
 +#include "game/modelindices.h"
 +#include "game/Performance.h"

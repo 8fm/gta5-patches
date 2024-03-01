@@ -117,7 +117,7 @@ diff --git a/src/dev_ng/game/Peds/QueriableInterface.cpp b/src/dev_ng/game/Peds/
 +#include "task/Movement/TaskCollisionResponse.h"
 +#include "task/Movement/TaskCrawl.h"
 +#include "task/Movement/TaskGetUp.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskGotoPointAiming.h"
 +#include "task/Movement/TaskParachute.h"
 +#include "task/Movement/TaskParachuteObject.h"

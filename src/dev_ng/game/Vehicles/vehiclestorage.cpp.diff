@@ -21,7 +21,7 @@ diff --git a/src/dev_ng/game/Vehicles/vehiclestorage.cpp b/src/dev_ng/game/Vehic
 +#include "scene/world/GameWorld.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "network/Live/NetworkTelemetry.h"
-+#include "stats/MoneyInterface.h"
++#include "Stats/MoneyInterface.h"
 +#include "streaming/streaming.h"
 +#include "Vehicles/Automobile.h"
 +#include "Vehicles/VehicleFactory.h"

@@ -1,18 +1,21 @@
 diff --git a/src/dev_ng/game/Vehicles/Trailer.cpp b/src/dev_ng/game/Vehicles/Trailer.cpp
 --- a/src/dev_ng/game/Vehicles/Trailer.cpp
 +++ b/src/dev_ng/game/Vehicles/Trailer.cpp
-@@ -1,8 +1,8 @@
+@@ -1,9 +1,9 @@
 -#include "vehicles/trailer.h"
 +#include "Vehicles/Trailer.h"
   
  // rage
- #include "Fragment/Instance.h"
+-#include "Fragment/Instance.h"
 -#include "phArticulated\ArticulatedCollider.h"
+-#include "phBound/boundcomposite.h"
++#include "fragment/instance.h"
 +#include "pharticulated/articulatedcollider.h"
- #include "phBound/boundcomposite.h"
++#include "phbound/boundcomposite.h"
  #include "physics/constraintmgr.h"
  #include "physics/constraintdistance.h"
-@@ -14,13 +14,13 @@
+ #include "physics/constraintspherical.h"
+@@ -14,16 +14,16 @@
  
  // game
  #include "animation/AnimBones.h"
@@ -31,4 +34,8 @@ diff --git a/src/dev_ng/game/Vehicles/Trailer.cpp b/src/dev_ng/game/Vehicles/Tra
 +#include "Vehicles/wheel.h"
  #include "vehicleAi/VehicleIntelligence.h"
  #include "control/record.h"
- #include "game/modelIndices.h"
+-#include "game/modelIndices.h"
++#include "game/ModelIndices.h"
+ 
+ VEHICLE_OPTIMISATIONS();
+ 

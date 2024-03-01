@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskNavMesh.h b/src/dev_ng/game/task/
 -#include "Task/Movement/TaskNavBase.h"
 -#include "Task/Movement/TaskIdle.h"
 +#include "task/General/TaskBasic.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskNavBase.h"
 +#include "task/Movement/TaskIdle.h"
  

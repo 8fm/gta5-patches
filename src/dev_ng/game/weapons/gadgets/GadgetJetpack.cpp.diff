@@ -5,7 +5,7 @@ diff --git a/src/dev_ng/game/weapons/gadgets/GadgetJetpack.cpp b/src/dev_ng/game
 -#include "Weapons/Gadgets/GadgetJetpack.h"
 -#include "Peds/Ped.h"
 -#include "Pickups/Pickup.h"
-+#include "weapons/Gadgets/GadgetJetpack.h"
++#include "weapons/gadgets/GadgetJetpack.h"
 +#include "Peds/ped.h"
 +#include "pickups/Pickup.h"
  

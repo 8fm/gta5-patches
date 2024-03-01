@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/Vehicles/train.cpp b/src/dev_ng/game/Vehicles/train.cpp
 --- a/src/dev_ng/game/Vehicles/train.cpp
 +++ b/src/dev_ng/game/Vehicles/train.cpp
+@@ -6,7 +6,7 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+ // Rage headers
+-#include "crSkeleton/Skeleton.h"
++#include "crskeleton/skeleton.h"
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"
+ #include "math/angmath.h"
 @@ -17,7 +17,7 @@
  #include "entity/sceneupdate.h"
  #include "grcore/debugdraw.h"
@@ -57,13 +66,13 @@ diff --git a/src/dev_ng/game/Vehicles/train.cpp b/src/dev_ng/game/Vehicles/train
 +#include "Core/game.h"
 +#include "debug/DebugScene.h"
 +#include "debug/VectorMap.h"
-+#include "event/eventGroup.h"
++#include "event/EventGroup.h"
 +#include "game/Clock.h"
-+#include "game/modelIndices.h"
++#include "game/ModelIndices.h"
 +#include "Stats/StatsMgr.h"
 +#include "network/Cloud/Tunables.h"
 +#include "network/NetworkInterface.h"
-+#include "network/events/NetworkEventTypes.h"
++#include "network/Events/NetworkEventTypes.h"
 +#include "network/Objects/NetworkObjectPopulationMgr.h"
 +#include "network/Objects/Prediction/NetBlenderTrain.h"
 +#include "modelinfo/ModelInfo.h"
@@ -80,7 +89,7 @@ diff --git a/src/dev_ng/game/Vehicles/train.cpp b/src/dev_ng/game/Vehicles/train
 +#include "physics/physics.h"
 +#include "physics/WorldProbe/WorldProbe.h"
 +#include "renderer/Lights/lights.h"
-+#include "renderer/zoneCull.h"
++#include "renderer/zonecull.h"
 +#include "scene/portals/Portal.h"
  #include "scene/EntityIterator.h"
 -#include "scene\world\gameWorld.h"
@@ -129,14 +138,14 @@ diff --git a/src/dev_ng/game/Vehicles/train.cpp b/src/dev_ng/game/Vehicles/train
 +#include "Vehicles/vehiclepopulation.h"
 +#include "Vehicles/vehicle_channel.h"
 +#include "vfx/systems/VfxVehicle.h"
-+#include "vfx/vfxhelper.h"
++#include "vfx/VfxHelper.h"
 +#include "vfx/decals/DecalManager.h"
 +#include "vfx/misc/Fire.h"
 +#include "vehicleAi/junctions.h"
 +#include "vehicleAi/VehicleIntelligence.h"
 +#include "phbound/boundcomposite.h"
 +#include "vehicleAi/task/TaskVehicleMissionBase.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  
  
  

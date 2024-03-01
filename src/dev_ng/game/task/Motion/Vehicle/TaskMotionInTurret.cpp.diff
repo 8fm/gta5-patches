@@ -31,7 +31,7 @@ diff --git a/src/dev_ng/game/task/Motion/Vehicle/TaskMotionInTurret.cpp b/src/de
 +#include "camera/helpers/ControlHelper.h"
 +#include "Peds/PedIntelligence.h"
 +#include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
-+#include "system/Control.h"
++#include "system/control.h"
 +#include "task/Vehicle/TaskInVehicle.h"
 +#include "task/Vehicle/TaskVehicleWeapon.h"
 +#include "Vehicles/Metadata/VehicleSeatInfo.h"

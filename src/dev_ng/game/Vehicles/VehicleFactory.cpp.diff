@@ -48,7 +48,7 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleFactory.cpp b/src/dev_ng/game/Vehic
  #include "scene/RegdRefTypes.h"
  #include "script/Handlers/GameScriptEntity.h"
  #include "script/script.h"
-@@ -75,34 +75,34 @@
+@@ -75,37 +75,37 @@
  #include "streaming/populationstreaming.h"
  #include "streaming/streaming.h"		// For CStreaming::HasObjectLoaded(), etc.
  #include "system/memmanager.h"
@@ -85,7 +85,7 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleFactory.cpp b/src/dev_ng/game/Vehic
 +#include "Vehicles/AmphibiousAutomobile.h"
 +#include "Vehicles/Bike.h"
 +#include "Vehicles/DraftVehicle.h"
-+#include "Vehicles/bmx.h"
++#include "Vehicles/Bmx.h"
 +#include "Vehicles/Boat.h"
 +#include "Vehicles/Heli.h"
 +#include "Vehicles/Planes.h"
@@ -107,7 +107,11 @@ diff --git a/src/dev_ng/game/Vehicles/VehicleFactory.cpp b/src/dev_ng/game/Vehic
 +#include "Vehicles/Metadata/VehicleSeatInfo.h"
  #include "shaders/CustomShaderEffectVehicle.h"
  #include "script/commands_vehicle.h"
- #include "Tools/smokeTest.h"
+-#include "Tools/smokeTest.h"
++#include "tools/SmokeTest.h"
+ #include "vfx/misc/Fire.h"
+ #include "vfx/particles/PtFxManager.h"
+ #include "vfx/vehicleglass/VehicleGlassSmashTest.h"
 @@ -115,7 +115,7 @@
  #include "renderer/ApplyDamage.h"
  

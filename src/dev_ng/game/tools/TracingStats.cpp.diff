@@ -8,8 +8,9 @@ diff --git a/src/dev_ng/game/tools/TracingStats.cpp b/src/dev_ng/game/tools/Trac
 -#include "peds/ped.h"
 +#include "Peds/ped.h"
  #include "scene/scene.h"
- #include "tools/smoketest.h"
+-#include "tools/smoketest.h"
 -#include "vehicles/vehicle.h"
++#include "tools/SmokeTest.h"
 +#include "Vehicles/vehicle.h"
  
  // Rage includes

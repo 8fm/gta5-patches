@@ -21,7 +21,7 @@ diff --git a/src/dev_ng/game/renderer/Renderer.cpp b/src/dev_ng/game/renderer/Re
 -#include "debug/vectormap.h" 
 +#include "Core/game.h"
 +#include "debug/BlockView.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
 +#include "debug/DebugScene.h"
 +#include "debug/VectorMap.h" 
  #include "debug/Rendering/DebugRendering.h"

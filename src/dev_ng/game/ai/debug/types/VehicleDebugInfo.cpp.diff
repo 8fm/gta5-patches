@@ -28,7 +28,7 @@ diff --git a/src/dev_ng/game/ai/debug/types/VehicleDebugInfo.cpp b/src/dev_ng/ga
 +#include "Vehicles/vehicle.h"
 +#include "Vehicles/Planes.h"
 +#include "Vehicles/Heli.h"
-+#include "vehicleAi/VehicleAiLod.h"
++#include "vehicleAi/VehicleAILod.h"
 +#include "vehicleAi/VehicleIntelligence.h"
  #include "text/messages.h"
  

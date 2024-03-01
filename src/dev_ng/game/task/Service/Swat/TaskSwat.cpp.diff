@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Service/Swat/TaskSwat.cpp b/src/dev_ng/game/task/Service/Swat/TaskSwat.cpp
 --- a/src/dev_ng/game/task/Service/Swat/TaskSwat.cpp
 +++ b/src/dev_ng/game/task/Service/Swat/TaskSwat.cpp
-@@ -3,43 +3,43 @@
+@@ -3,44 +3,44 @@
  // CREATED : 30-06-2009
  
  // File header
@@ -66,8 +66,10 @@ diff --git a/src/dev_ng/game/task/Service/Swat/TaskSwat.cpp b/src/dev_ng/game/ta
  #include "vehicleAi/task/TaskVehicleApproach.h"
 -#include "VehicleAI/task/TaskVehicleCruise.h"
 -#include "VehicleAI/task/TaskVehicleGoToAutomobile.h"
+-#include "vehicleAi/task/TaskVehicleGotoHelicopter.h"
 +#include "vehicleAi/task/TaskVehicleCruise.h"
 +#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
- #include "vehicleAi/task/TaskVehicleGotoHelicopter.h"
++#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
  #include "Vehicles/Heli.h"
  
+ AI_OPTIMISATIONS()

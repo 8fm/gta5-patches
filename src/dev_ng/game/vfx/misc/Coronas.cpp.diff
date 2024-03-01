@@ -1,8 +1,12 @@
 diff --git a/src/dev_ng/game/vfx/misc/Coronas.cpp b/src/dev_ng/game/vfx/misc/Coronas.cpp
 --- a/src/dev_ng/game/vfx/misc/Coronas.cpp
 +++ b/src/dev_ng/game/vfx/misc/Coronas.cpp
-@@ -34,15 +34,15 @@
- #include "Core/Game.h"
+@@ -31,18 +31,18 @@
+ #include "vfx/vfxwidget.h"
+ 
+ // Game header 
+-#include "Core/Game.h"
++#include "Core/game.h"
  #include "camera/CamInterface.h"
  #include "debug/Rendering/DebugLights.h"
 -#include "Renderer/Renderer.h"
@@ -12,8 +16,8 @@ diff --git a/src/dev_ng/game/vfx/misc/Coronas.cpp b/src/dev_ng/game/vfx/misc/Cor
 -#include "Scene/World/GameWorld.h"
 -#include "Shaders/ShaderLib.h"
 +#include "renderer/Renderer.h"
-+#include "renderer/RenderTargets.h"
-+#include "renderer/Sprite2d.h"
++#include "renderer/rendertargets.h"
++#include "renderer/sprite2d.h"
 +#include "renderer/Util/ShaderUtil.h"
 +#include "scene/world/GameWorld.h"
 +#include "shaders/ShaderLib.h"

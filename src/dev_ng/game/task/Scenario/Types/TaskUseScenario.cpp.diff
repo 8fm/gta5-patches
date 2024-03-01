@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp b/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp
 --- a/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp
 +++ b/src/dev_ng/game/task/Scenario/Types/TaskUseScenario.cpp
-@@ -13,12 +13,12 @@
+@@ -8,17 +8,17 @@
+ 
+ // Rage headers 
+ #include "fwscene/stores/mapdatastore.h"
+-#include "phBound/boundcomposite.h"
++#include "phbound/boundcomposite.h"
+ #include "math/angmath.h"
  
  // Game headers
  

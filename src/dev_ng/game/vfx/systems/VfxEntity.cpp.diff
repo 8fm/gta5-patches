@@ -1,10 +1,12 @@
 diff --git a/src/dev_ng/game/vfx/systems/VfxEntity.cpp b/src/dev_ng/game/vfx/systems/VfxEntity.cpp
 --- a/src/dev_ng/game/vfx/systems/VfxEntity.cpp
 +++ b/src/dev_ng/game/vfx/systems/VfxEntity.cpp
-@@ -33,23 +33,23 @@
+@@ -31,25 +31,25 @@
+ #include "vfx/vfxwidget.h"
+ 
  // game
- #include "Audio/Ambience/AmbientAudioEntity.h"
- #include "Core/Game.h"
+-#include "Audio/Ambience/AmbientAudioEntity.h"
+-#include "Core/Game.h"
 -#include "Game/Clock.h"
 -#include "Game/Weather.h"
 -#include "Game/Wind.h"
@@ -22,21 +24,23 @@ diff --git a/src/dev_ng/game/vfx/systems/VfxEntity.cpp b/src/dev_ng/game/vfx/sys
 -#include "Vfx/Particles/PtFxManager.h"
 -#include "Vfx/VfxHelper.h"
 -#include "Weapons/Explosion.h"
++#include "audio/ambience/ambientaudioentity.h"
++#include "Core/game.h"
 +#include "game/Clock.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "game/wind.h"
-+#include "renderer/Lights/Lights.h"
++#include "renderer/Lights/lights.h"
 +#include "scene/2dEffect.h"
 +#include "scene/DataFileMgr.h"
-+#include "scene/Entities/CompEntity.h"
++#include "scene/entities/compEntity.h"
 +#include "scene/Physical.h"
 +#include "scene/portals/Portal.h"
-+#include "scene/Loader/MapTypes.h"
++#include "scene/loader/mapTypes.h"
 +#include "timecycle/TimeCycle.h"
 +#include "vfx/decals/DecalManager.h"
-+#include "vfx/Particles/PtFxDefines.h"
-+#include "vfx/Particles/PtFxCollision.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxDefines.h"
++#include "vfx/particles/PtFxCollision.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/VfxHelper.h"
 +#include "weapons/Explosion.h"
  #include "control/replay/Effects/ParticleEntityFxPacket.h"

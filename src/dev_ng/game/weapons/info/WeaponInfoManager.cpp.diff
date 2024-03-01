@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp b/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp
 --- a/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp
 +++ b/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp
-@@ -5,7 +5,7 @@
+@@ -5,10 +5,10 @@
  //
  
  // Class header
@@ -9,7 +9,11 @@ diff --git a/src/dev_ng/game/weapons/info/WeaponInfoManager.cpp b/src/dev_ng/gam
 +#include "weapons/info/WeaponInfoManager.h"
  
  // Parser files
- #include "WeaponInfoManager_parser.h"
+-#include "WeaponInfoManager_parser.h"
++#include "weaponinfomanager_parser.h"
+ 
+ // Rage headers
+ #include "parser/manager.h"
 @@ -16,12 +16,12 @@
  
  // Game headers

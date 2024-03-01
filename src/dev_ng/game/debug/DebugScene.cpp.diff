@@ -10,6 +10,18 @@ diff --git a/src/dev_ng/game/debug/DebugScene.cpp b/src/dev_ng/game/debug/DebugS
  
  #if !__FINAL
  
+@@ -13,9 +13,9 @@
+ #include "grcore/stateblock.h"
+ #include "grprofile/timebars.h"
+ #include "rmcore/drawable.h"
+-#include "phbound/BoundBox.h"
++#include "phbound/boundbox.h"
+ #include "phbound/BoundBVH.h"
+-#include "phbound/BoundComposite.h"
++#include "phbound/boundcomposite.h"
+ #include "phbound/BoundGeom.h"
+ #include "phbound/BoundSphere.h"
+ #include "pheffects/mouseinput.h"
 @@ -36,7 +36,7 @@
  #include "ai/BlockingBounds.h"
  #include "animation/AnimScene/AnimSceneManager.h"
@@ -26,7 +38,7 @@ diff --git a/src/dev_ng/game/debug/DebugScene.cpp b/src/dev_ng/game/debug/DebugS
 -#include "core/game.h"
 -#include "debug/debugglobals.h"
 +#include "Core/game.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "debug/DebugScene.h"
  #include "debug/DebugDraw/DebugWindow.h"
  #include "debug/gtapicker.h"

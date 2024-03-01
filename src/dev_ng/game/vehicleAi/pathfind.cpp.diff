@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/vehicleAi/pathfind.cpp b/src/dev_ng/game/vehicleAi/pathfind.cpp
 --- a/src/dev_ng/game/vehicleAi/pathfind.cpp
 +++ b/src/dev_ng/game/vehicleAi/pathfind.cpp
-@@ -5,7 +5,7 @@
+@@ -5,57 +5,57 @@
  // AUTHOR :  Obbe
  // CREATED : 14-10-99
  /////////////////////////////////////////////////////////////////////////////////
@@ -10,13 +10,15 @@ diff --git a/src/dev_ng/game/vehicleAi/pathfind.cpp b/src/dev_ng/game/vehicleAi/
  
  #include "ai/stats.h"
  #include "camera/CamInterface.h"
-@@ -13,49 +13,49 @@
+ #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"
  #include "camera/viewports/Viewport.h"
- #include "control/gameLogic.h"
+-#include "control/gameLogic.h"
 -#include "control/route.h"
+-#include "control/trafficLights.h"
++#include "control/gamelogic.h"
 +#include "control/Route.h"
- #include "control/trafficLights.h"
++#include "control/trafficlights.h"
  #include "control/record.h"
  #include "control/gps.h"
  #include "control/slownesszones.h"

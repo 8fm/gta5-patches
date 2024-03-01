@@ -10,6 +10,15 @@ diff --git a/src/dev_ng/game/modelinfo/ModelInfo.cpp b/src/dev_ng/game/modelinfo
  #include "entity/entity.h"
  #include "fwanimation/animmanager.h"
  #include "fwanimation/expressionsets.h"
+@@ -41,7 +41,7 @@
+ #include "fwscene/stores/fragmentstore.h"
+ #include "fwscene/stores/mapdatastore.h"
+ #include "fwscene/stores/txdstore.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/metadatastore.h"
+ #include "fwsys/timer.h"
+ #include "streaming/streaming_channel.h"
 @@ -50,30 +50,30 @@
  
  // Game headers

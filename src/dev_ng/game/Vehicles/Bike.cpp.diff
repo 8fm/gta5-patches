@@ -1,7 +1,21 @@
 diff --git a/src/dev_ng/game/Vehicles/Bike.cpp b/src/dev_ng/game/Vehicles/Bike.cpp
 --- a/src/dev_ng/game/Vehicles/Bike.cpp
 +++ b/src/dev_ng/game/Vehicles/Bike.cpp
-@@ -30,14 +30,14 @@
+@@ -7,11 +7,11 @@
+ // Rage headers 
+ #include "crskeleton/skeleton.h"
+ #include "grcore/texture.h"
+-#include "math/vecMath.h"
++#include "math/vecmath.h"
+ #include "physics/sleep.h"
+ #include "physics/constraintrotation.h"
+ #include "profile/timebars.h"
+-#include "phBound/support.h"
++#include "phbound/support.h"
+ #include "phbound/boundcomposite.h"
+ 
+ #if __BANK
+@@ -30,56 +30,56 @@
  #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"
@@ -15,12 +29,13 @@ diff --git a/src/dev_ng/game/Vehicles/Bike.cpp b/src/dev_ng/game/Vehicles/Bike.c
  #include "control/remote.h"
 -#include "debug/debugglobals.h"
 -#include "debug/debugscene.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
 +#include "debug/DebugScene.h"
  #include "event/EventDamage.h"
  #include "event/EventShocking.h"
  #include "event/ShockingEvents.h"
-@@ -45,41 +45,41 @@
+-#include "game/modelIndices.h"
++#include "game/ModelIndices.h"
  #include "Stats/StatsMgr.h"
  #include "Stats/StatsInterface.h"
  #include "game/zones.h"
@@ -47,13 +62,14 @@ diff --git a/src/dev_ng/game/Vehicles/Bike.cpp b/src/dev_ng/game/Vehicles/Bike.c
 +#include "physics/WorldProbe/WorldProbe.h"
  #include "profile/cputrace.h"
 -#include "renderer/renderer.h"
+-#include "renderer/zoneCull.h"
 +#include "renderer/Renderer.h"
- #include "renderer/zoneCull.h"
++#include "renderer/zonecull.h"
  #include "script/script.h"
  #include "system/controlMgr.h"
  #include "system/pad.h"	
 -#include "task/vehicle/taskexitvehicle.h"
-+#include "task/Vehicle/taskexitvehicle.h"
++#include "task/Vehicle/TaskExitVehicle.h"
  #include "task/Vehicle/TaskInVehicle.h"
  #include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
 -#include "vehicles/automobile.h"

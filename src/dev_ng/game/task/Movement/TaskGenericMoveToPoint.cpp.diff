@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskGenericMoveToPoint.cpp b/src/dev_
 -#include "Task/Movement/TaskNavMesh.h"
 -#include "Task/Movement/TaskFlyToPoint.h"
 +#include "task/Motion/TaskMotionBase.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskNavMesh.h"
 +#include "task/Movement/TaskFlyToPoint.h"
  #include "Peds/NavCapabilities.h"

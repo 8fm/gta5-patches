@@ -1,13 +1,17 @@
 diff --git a/src/dev_ng/game/vfx/misc/LODLightManager.cpp b/src/dev_ng/game/vfx/misc/LODLightManager.cpp
 --- a/src/dev_ng/game/vfx/misc/LODLightManager.cpp
 +++ b/src/dev_ng/game/vfx/misc/LODLightManager.cpp
-@@ -20,12 +20,12 @@
+@@ -18,14 +18,14 @@
+ #include "debug/Rendering/DebugLighting.h"
+ #include "entity/entity.h"
  #include "renderer/Lights/LightEntity.h"
- #include "renderer/Lights/Lights.h"
+-#include "renderer/Lights/Lights.h"
++#include "renderer/Lights/lights.h"
  #include "renderer/Lights/LODLights.h"
 -#include "Renderer/RenderPhases/RenderPhaseWaterReflection.h"
+-#include "system/System.h"
 +#include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
- #include "system/System.h"
++#include "system/system.h"
  #include "timecycle/TimeCycle.h"
  #include "timecycle/TimeCycleConfig.h"
 -#include "objects/DummyObject.h"

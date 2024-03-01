@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/vehicleAi/pathzones.h b/src/dev_ng/game/vehicleAi/pathzones.h
 --- a/src/dev_ng/game/vehicleAi/pathzones.h
 +++ b/src/dev_ng/game/vehicleAi/pathzones.h
-@@ -5,7 +5,7 @@
+@@ -4,8 +4,8 @@
+ // rage includes
  #include "atl/array.h"
  #include "parser/macros.h"
- #include "Vector/Vector2.h"
+-#include "Vector/Vector2.h"
 -#include "Vector/vector3.h"
++#include "vector/vector2.h"
 +#include "vector/vector3.h"
  
  #define MAX_NUM_PATHZONES 4

@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/vfx/particles/PtFxCollision.h b/src/dev_ng/game/vfx/particles/PtFxCollision.h
+--- a/src/dev_ng/game/vfx/particles/PtFxCollision.h
++++ b/src/dev_ng/game/vfx/particles/PtFxCollision.h
+@@ -17,8 +17,8 @@
+ ///////////////////////////////////////////////////////////////////////////////													
+ 
+ // rage
+-#include "crSkeleton/Skeleton.h"
+-#include "phBound/BoundComposite.h"
++#include "crskeleton/skeleton.h"
++#include "phbound/boundcomposite.h"
+ #include "physics/inst.h"
+ #include "rmptfx/ptxeffectinst.h"
+ 

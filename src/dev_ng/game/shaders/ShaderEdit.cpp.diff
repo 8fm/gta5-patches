@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/shaders/ShaderEdit.cpp b/src/dev_ng/game/shaders/ShaderEdit.cpp
 --- a/src/dev_ng/game/shaders/ShaderEdit.cpp
 +++ b/src/dev_ng/game/shaders/ShaderEdit.cpp
-@@ -14,22 +14,22 @@
+@@ -10,26 +10,26 @@
+ 
+ // framework
+ #include "fwscene/search/Search.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
  #include "streaming/packfilemanager.h"
  
  // game

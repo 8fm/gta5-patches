@@ -7,7 +7,8 @@ diff --git a/src/dev_ng/game/weapons/WeaponDebug.cpp b/src/dev_ng/game/weapons/W
 +#include "weapons/WeaponDebug.h"
  
  // Rage includes
- #include "Bank/BkMgr.h"
+-#include "Bank/BkMgr.h"
++#include "bank/bkmgr.h"
  
  // Game headers
 -#include "Debug/DebugScene.h"

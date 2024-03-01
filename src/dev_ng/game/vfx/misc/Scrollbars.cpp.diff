@@ -6,8 +6,7 @@ diff --git a/src/dev_ng/game/vfx/misc/Scrollbars.cpp b/src/dev_ng/game/vfx/misc/
  
  // Game headers
 -#include "Camera/CamInterface.h"
-+#include "camera/CamInterface.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Game/Clock.h"
 -#include "Scene/DataFileMgr.h"
 -#include "Scene/Entity.h"
@@ -17,6 +16,8 @@ diff --git a/src/dev_ng/game/vfx/misc/Scrollbars.cpp b/src/dev_ng/game/vfx/misc/
 -#include "Vfx/VfxHelper.h"
 -#include "Vfx/VisualEffects.h"
 -#include "Vfx/misc/DistantLightsVertexBuffer.h"
++#include "camera/CamInterface.h"
++#include "Core/game.h"
 +#include "game/Clock.h"
 +#include "scene/DataFileMgr.h"
 +#include "scene/Entity.h"

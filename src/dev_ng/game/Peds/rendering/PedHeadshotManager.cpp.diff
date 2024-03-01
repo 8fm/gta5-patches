@@ -1,6 +1,19 @@
 diff --git a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp b/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp
 --- a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp
 +++ b/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp
+@@ -26,9 +26,9 @@
+ #include "bank/bkmgr.h"
+ #include "bank/bank.h"
+ #include "bank/combo.h"
+-#include "crSkeleton/Skeleton.h"
+-#include "crSkeleton/SkeletonData.h"
+-#include "crSkeleton/BoneData.h"
++#include "crskeleton/skeleton.h"
++#include "crskeleton/SkeletonData.h"
++#include "crskeleton/BoneData.h"
+ #include "streaming/streamingengine.h"
+ #include "system/memory.h"
+ 
 @@ -41,21 +41,21 @@
  #include "fwdrawlist/drawlist.h"
  
@@ -29,3 +42,12 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedHeadshotManager.cpp b/src/dev_ng/
  #include "Stats/StatsInterface.h"
  #include "streaming/streaming.h"
  #include "system/interlocked.h"
+@@ -69,7 +69,7 @@
+ #include "renderer/Util/ShaderUtil.h"
+ #include "renderer/Util/Util.h"	 
+ #include "renderer/Lights/lights.h"
+-#include "renderer/Sprite2d.h"
++#include "renderer/sprite2d.h"
+ #include "renderer/PostProcessFX.h"
+ 
+ #if __XENON

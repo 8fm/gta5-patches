@@ -6,9 +6,10 @@ diff --git a/src/dev_ng/game/task/Combat/TaskToHurtTransit.cpp b/src/dev_ng/game
  
 -#include "Animation/MovePed.h"
 -#include "Event/EventDamage.h"
+-#include "Grcore/debugdraw.h"
 +#include "animation/MovePed.h"
 +#include "event/EventDamage.h"
- #include "Grcore/debugdraw.h"
++#include "grcore/debugdraw.h"
  #include "Math/angmath.h"
 -#include "Peds/Ped.h"
 +#include "Peds/ped.h"

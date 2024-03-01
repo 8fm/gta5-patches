@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/Editing/LightEditing.h b/src/dev_ng/game/debug/Editing/LightEditing.h
+--- a/src/dev_ng/game/debug/Editing/LightEditing.h
++++ b/src/dev_ng/game/debug/Editing/LightEditing.h
+@@ -7,7 +7,7 @@
+ // rage
+ #include "atl/array.h"
+ #include "bank/console.h"
+-#include "renderer/Lights/Lights.h"
++#include "renderer/Lights/lights.h"
+ #include "vector/vector3.h"
+ 
+ namespace rage

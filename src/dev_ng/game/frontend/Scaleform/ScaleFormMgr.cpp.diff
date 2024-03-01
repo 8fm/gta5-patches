@@ -10,15 +10,17 @@ diff --git a/src/dev_ng/game/frontend/Scaleform/ScaleFormMgr.cpp b/src/dev_ng/ga
  #include "scr_scaleform/scaleform.h"
  #include "script/thread.h"
  #include "streaming/streamingengine.h"
-@@ -35,19 +35,19 @@
+@@ -34,20 +34,20 @@
+ // Game headers
  #include "audio/frontendaudioentity.h"
  #include "camera/CamInterface.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Debug/TextureViewer/TextureViewer.h"
 -#include "Frontend/MovieCLipText.h"
 -#include "Frontend/Scaleform/ScaleFormMgr.h"
 -#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
 -#include "Frontend/Scaleform/ScaleFormStore.h"
++#include "Core/game.h"
 +#include "debug/TextureViewer/TextureViewer.h"
 +#include "frontend/MovieCLipText.h"
 +#include "frontend/Scaleform/ScaleFormMgr.h"

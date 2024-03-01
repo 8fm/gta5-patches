@@ -1,12 +1,18 @@
 diff --git a/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp b/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp
 --- a/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp
 +++ b/src/dev_ng/game/vehicleAi/Pathfind_Build.cpp
-@@ -8,16 +8,16 @@
+@@ -4,20 +4,20 @@
+ #include "fwscene/stores/mapdatastore.h"
+ #include "fwscene/world/WorldLimits.h"
+ #include "fwmaths/geomutil.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
  
  
- #include "control/trafficLights.h"
+-#include "control/trafficLights.h"
 -#include "objects/dummyobject.h"
 -#include "objects/object.h"
++#include "control/trafficlights.h"
 +#include "Objects/DummyObject.h"
 +#include "Objects/object.h"
  #include "Objects/ProcObjects.h"

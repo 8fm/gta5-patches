@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/renderer/Shadows/ShadowsPrivate.h b/src/dev_ng/game
  
  // Game headers
 -#include "debug/debugglobals.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "camera/viewports/viewportmanager.h"
 -#include "shaders/shaderlib.h"
 -#include "renderer/lights/lights.h"

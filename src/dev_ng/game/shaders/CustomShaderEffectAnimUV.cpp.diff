@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/shaders/CustomShaderEffectAnimUV.cpp b/src/dev_ng/g
  #include "shaders/ShaderLib.h"
  #include "streaming/defragmentation.h"
 -#include "Control/Replay/Replay.h"
-+#include "control/replay/Replay.h"
++#include "control/replay/replay.h"
  
  ANIM_OPTIMISATIONS()
  

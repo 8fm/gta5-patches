@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/task/Movement/TaskMoveWander.cpp b/src/dev_ng/game/
 +#include "control/TrafficLights.h"
 +#include "event/EventShocking.h"
 +#include "event/ShockingEvents.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "pathserver/PathServer.h"
 +#include "Peds/ped.h"
 +#include "task/General/TaskBasic.h"

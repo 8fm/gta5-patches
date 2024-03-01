@@ -1,9 +1,11 @@
 diff --git a/src/dev_ng/game/cloth/ClothArchetype.cpp b/src/dev_ng/game/cloth/ClothArchetype.cpp
 --- a/src/dev_ng/game/cloth/ClothArchetype.cpp
 +++ b/src/dev_ng/game/cloth/ClothArchetype.cpp
-@@ -2,9 +2,9 @@
+@@ -1,10 +1,10 @@
+ #include "ClothArchetype.h"
  #include "ClothMgr.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
++#include "Core/game.h"
  #include "Peds/PlayerInfo.h"
 -#include "Peds/Ped.h"
 -#include "Scene/Entity.h"

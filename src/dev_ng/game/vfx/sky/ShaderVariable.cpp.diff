@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/vfx/sky/ShaderVariable.cpp b/src/dev_ng/game/vfx/sk
  
  // INCLUDES
 -#include "Vfx/Sky/ShaderVariable.h"
-+#include "vfx/Sky/ShaderVariable.h"
++#include "vfx/sky/ShaderVariable.h"
  
  // rage
 -#include "Shaders/ShaderLib.h"

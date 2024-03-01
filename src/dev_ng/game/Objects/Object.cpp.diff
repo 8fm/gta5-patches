@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/Objects/Object.cpp b/src/dev_ng/game/Objects/Object.cpp
 --- a/src/dev_ng/game/Objects/Object.cpp
 +++ b/src/dev_ng/game/Objects/Object.cpp
+@@ -21,7 +21,7 @@
+ #include "bank/bkmgr.h"
+ #include "breakableglass/bgdrawable.h"
+ #include "creature/componentskeleton.h"
+-#include "fragment/cacheManager.h"
++#include "fragment/cachemanager.h"
+ #include "fwanimation/directorcomponentexpressions.h"
+ #include "phbound/boundbvh.h"
+ #include "phbound/boundcomposite.h"
 @@ -36,7 +36,7 @@
  // Framework headers
  #include "fwanimation/animdirector.h"
@@ -91,7 +100,7 @@ diff --git a/src/dev_ng/game/Objects/Object.cpp b/src/dev_ng/game/Objects/Object
  #include "Vehicles/Automobile.h"
 -#include "Vfx/Particles/PtFxManager.h"
 -#include "Vfx/Systems/VfxProjectile.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxProjectile.h"
  #include "vfx/vehicleglass/VehicleGlassManager.h"
 -#include "Weapons/Explosion.h"

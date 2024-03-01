@@ -35,7 +35,7 @@ diff --git a/src/dev_ng/game/Objects/ProcObjects.cpp b/src/dev_ng/game/Objects/P
 +#include "scene/FileLoader.h"
 +#include "scene/InstancePriority.h"
 +#include "scene/world/GameWorld.h"
-+#include "streaming/Streaming.h"
++#include "streaming/streaming.h"
 +#include "shaders/CustomShaderEffectBase.h"
 +#include "shaders/CustomShaderEffectTint.h"
 +#include "timecycle/TimeCycleConfig.h"

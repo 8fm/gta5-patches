@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/modelinfo/BaseModelInfo.cpp b/src/dev_ng/game/modelinfo/BaseModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/BaseModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/BaseModelInfo.cpp
-@@ -50,31 +50,31 @@
+@@ -50,32 +50,32 @@
  #include "control/replay/ReplayMovieControllerNew.h"
  #include "debug/DebugArchetypeProxy.h"
  #include "game/ModelIndices.h"
@@ -38,8 +38,10 @@ diff --git a/src/dev_ng/game/modelinfo/BaseModelInfo.cpp b/src/dev_ng/game/model
  #include "physics/physics.h"
 -#include "scene/building.h"
 -#include "scene/animatedbuilding.h"
+-#include "scene/entities/compentity.h"
 +#include "scene/Building.h"
 +#include "scene/AnimatedBuilding.h"
- #include "scene/entities/compentity.h"
++#include "scene/entities/compEntity.h"
  
  
+ //float CBaseModelInfo::ms_lodDistScale = 1.0f;

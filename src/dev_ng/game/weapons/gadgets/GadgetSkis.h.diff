@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/weapons/gadgets/GadgetSkis.h b/src/dev_ng/game/weap
  
  // Game headers
 -#include "Weapons/Gadgets/Gadget.h"
-+#include "weapons/Gadgets/Gadget.h"
++#include "weapons/gadgets/Gadget.h"
  
  //////////////////////////////////////////////////////////////////////////
  // CGadgetSkis

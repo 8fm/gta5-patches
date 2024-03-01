@@ -1,14 +1,16 @@
 diff --git a/src/dev_ng/game/control/remote.cpp b/src/dev_ng/game/control/remote.cpp
 --- a/src/dev_ng/game/control/remote.cpp
 +++ b/src/dev_ng/game/control/remote.cpp
-@@ -10,14 +10,14 @@
+@@ -9,15 +9,15 @@
+ /////////////////////////////////////////////////////////////////////////////////
  //Game headers
  #include "control/remote.h"
- #include "game/modelIndices.h"
+-#include "game/modelIndices.h"
 -#include "modelInfo/vehiclemodelinfo.h"
 -#include "peds/ped.h"
 -#include "physics/WorldProbe/worldprobe.h"
 -#include "scene/world/gameWorld.h"
++#include "game/ModelIndices.h"
 +#include "modelinfo/VehicleModelInfo.h"
 +#include "Peds/ped.h"
 +#include "physics/WorldProbe/WorldProbe.h"

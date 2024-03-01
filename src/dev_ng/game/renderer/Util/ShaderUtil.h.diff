@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/renderer/Util/ShaderUtil.h b/src/dev_ng/game/render
  #include "camera/viewports/Viewport.h"
  
 -#include "renderer/util/shmoofile.h"
-+#include "renderer/Util/shmoofile.h"
++#include "renderer/Util/ShmooFile.h"
  
  // =============================================================================================== //
  // DEFINES

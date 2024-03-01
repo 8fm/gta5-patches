@@ -22,7 +22,7 @@ diff --git a/src/dev_ng/game/audio/vehicleaudioentity.cpp b/src/dev_ng/game/audi
  #include "task/Vehicle/TaskEnterVehicle.h"
  #include "task/Vehicle/TaskExitVehicle.h"
 -#include "vehicleai/task/taskvehicleanimation.h"
-+#include "vehicleAi/task/taskvehicleanimation.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
  #include "Vehicles/VehicleDefines.h"
  #include "Vehicles/AmphibiousAutomobile.h"
 -#include "vehicles/Metadata/VehicleSeatInfo.h"

@@ -15,7 +15,7 @@ diff --git a/src/dev_ng/game/vehicleAi/junctions.cpp b/src/dev_ng/game/vehicleAi
  #include "control/trafficlights.h"
  #include "game/ModelIndices.h"
  #include "grcore/debugdraw.h"
-@@ -22,17 +22,17 @@
+@@ -22,20 +22,20 @@
  #include "parser/psoparserbuilder.h"
  #include "parser/visitorxml.h"
  #include "scene/DataFileMgr.h"
@@ -42,4 +42,8 @@ diff --git a/src/dev_ng/game/vehicleAi/junctions.cpp b/src/dev_ng/game/vehicleAi
 +#include "Vehicles/virtualroad.h"
  
  // Parser files
- #include "Junctions_parser.h"
+-#include "Junctions_parser.h"
++#include "junctions_parser.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

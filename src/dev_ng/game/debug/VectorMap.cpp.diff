@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/debug/VectorMap.cpp b/src/dev_ng/game/debug/VectorMap.cpp
 --- a/src/dev_ng/game/debug/VectorMap.cpp
 +++ b/src/dev_ng/game/debug/VectorMap.cpp
-@@ -4,7 +4,7 @@
+@@ -4,10 +4,10 @@
  // AUTHOR(s) :  Obbe, Adam Croston
  // CREATED : 31/08/06
  /////////////////////////////////////////////////////////////////////////////////
@@ -9,7 +9,11 @@ diff --git a/src/dev_ng/game/debug/VectorMap.cpp b/src/dev_ng/game/debug/VectorM
 +#include "debug/VectorMap.h"
  
  // Rage headers
- #include "math/vecMath.h"
+-#include "math/vecMath.h"
++#include "math/vecmath.h"
+ 
+ // Framework headers
+ #include "grcore/debugdraw.h"
 @@ -15,16 +15,16 @@
  
  // Game headers
@@ -23,10 +27,11 @@ diff --git a/src/dev_ng/game/debug/VectorMap.cpp b/src/dev_ng/game/debug/VectorM
  #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"
  #include "camera/gameplay/GameplayDirector.h"
- #include "camera/Viewports/Viewport.h"  
+-#include "camera/Viewports/Viewport.h"  
 -#include "vehicles/train.h" 
 -#include "vehicles/cargen.h" 
 -#include "Vfx/Misc/DistantLights.h" 
++#include "camera/viewports/Viewport.h"  
 +#include "Vehicles/train.h" 
 +#include "Vehicles/cargen.h" 
 +#include "vfx/misc/DistantLights.h" 

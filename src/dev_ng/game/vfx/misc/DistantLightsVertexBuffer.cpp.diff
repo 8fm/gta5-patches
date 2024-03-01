@@ -1,19 +1,21 @@
 diff --git a/src/dev_ng/game/vfx/misc/DistantLightsVertexBuffer.cpp b/src/dev_ng/game/vfx/misc/DistantLightsVertexBuffer.cpp
 --- a/src/dev_ng/game/vfx/misc/DistantLightsVertexBuffer.cpp
 +++ b/src/dev_ng/game/vfx/misc/DistantLightsVertexBuffer.cpp
-@@ -19,11 +19,11 @@
+@@ -18,12 +18,12 @@
+ 
  // Game header
  #include "camera/viewports/ViewportManager.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Debug/VectorMap.h"
 -#include "Game/Clock.h"
 -#include "Renderer/Occlusion.h"
 -#include "Renderer/Sprite2d.h"
 -#include "Renderer/Water.h"
++#include "Core/game.h"
 +#include "debug/VectorMap.h"
 +#include "game/Clock.h"
-+#include "renderer/Occlusion.h"
-+#include "renderer/Sprite2d.h"
++#include "renderer/occlusion.h"
++#include "renderer/sprite2d.h"
 +#include "renderer/Water.h"
  #include "shaders/ShaderLib.h"
  #include "streaming/streamingdebug.h"

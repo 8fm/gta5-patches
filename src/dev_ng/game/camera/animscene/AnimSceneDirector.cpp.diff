@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/camera/animscene/AnimSceneDirector.cpp b/src/dev_ng/game/camera/animscene/AnimSceneDirector.cpp
+--- a/src/dev_ng/game/camera/animscene/AnimSceneDirector.cpp
++++ b/src/dev_ng/game/camera/animscene/AnimSceneDirector.cpp
+@@ -11,8 +11,8 @@
+ #include "camera/cutscene/AnimatedCamera.h"
+ #include "camera/system/CameraMetadata.h"
+ #include "camera/system/CameraFactory.h"
+-#include "fwAnimation/animhelpers.h"
+-#include "fwAnimation/animdirector.h"
++#include "fwanimation/animhelpers.h"
++#include "fwanimation/animdirector.h"
+ 
+ CAMERA_OPTIMISATIONS()
+ 

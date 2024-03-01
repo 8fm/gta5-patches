@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/vfx/particles/PtFxDebug.h b/src/dev_ng/game/vfx/par
  
  // game
 -#include "Vfx/Particles/PtFxDefines.h"
-+#include "vfx/Particles/PtFxDefines.h"
++#include "vfx/particles/PtFxDefines.h"
  #include "grcore/config.h"
  #include "vectormath/classes.h"
 -#include "Vfx/vfx_shared.h"

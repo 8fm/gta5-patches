@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/task/Default/TaskArrest.cpp b/src/dev_ng/game/task/
 +#include "animation/Move.h"
 +#include "animation/MovePed.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
 +#include "camera/scripted/ScriptDirector.h"
  #include "camera/syncedscene/SyncedSceneDirector.h"
 -#include "Debug/DebugScene.h"

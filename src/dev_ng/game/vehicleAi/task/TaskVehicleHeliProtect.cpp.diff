@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleHeliProtect.cpp b/src/dev
 -#include "Peds\ped.h"
 -#include "scene\world\GameWorldHeightMap.h"
 +#include "vehicleAi/task/TaskVehicleHeliProtect.h"
-+#include "vehicleAi/task/TaskVehicleGotoHelicopter.h"
++#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"
 +#include "vehicleAi/VehicleIntelligence.h"
 +#include "Peds/PedIntelligence.h"
 +#include "Peds/ped.h"

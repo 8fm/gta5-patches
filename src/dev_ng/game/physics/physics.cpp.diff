@@ -20,9 +20,10 @@ diff --git a/src/dev_ng/game/physics/physics.cpp b/src/dev_ng/game/physics/physi
  #include "Cloth/ClothArchetype.h"
  #include "control/gamelogic.h"
 -#include "core/game.h"
-+#include "Core/game.h"
- #include "camera/debug/debugdirector.h"
+-#include "camera/debug/debugdirector.h"
 -#include "cutscene/CutSceneManagerNew.h"
++#include "Core/game.h"
++#include "camera/debug/DebugDirector.h"
 +#include "Cutscene/CutSceneManagerNew.h"
  #include "debug/DebugScene.h"
  #include "debug/DebugGlobals.h"
@@ -97,7 +98,7 @@ diff --git a/src/dev_ng/game/physics/physics.cpp b/src/dev_ng/game/physics/physi
 +#include "vfx/decals/DecalManager.h"
 +#include "vfx/misc/Puddles.h"
 +#include "vfx/systems/VfxMaterial.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
  
  #if __DEV
 -	#include "peds/PedDebugVisualiser.h"

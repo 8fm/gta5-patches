@@ -22,7 +22,7 @@ diff --git a/src/dev_ng/game/vfx/particles/PtFxCollision.cpp b/src/dev_ng/game/v
  #include "Vehicles/Planes.h"
 -#include "Vfx/Particles/PtFxManager.h"
 -#include "Vfx/VfxHelper.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/VfxHelper.h"
  
  

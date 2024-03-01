@@ -12,3 +12,12 @@ diff --git a/src/dev_ng/game/vfx/misc/LensFlare.cpp b/src/dev_ng/game/vfx/misc/L
  
  #if __BANK
  #include "bank/widget.h"
+@@ -26,7 +26,7 @@
+ #include "fwsys/timer.h"
+ #include "fwmaths/vectorutil.h"
+ #include "vfx/channel.h"
+-#include "vfx/vfxhelper.h"
++#include "vfx/VfxHelper.h"
+ #include "shaders/ShaderLib.h"
+ #include "renderer/sprite2d.h"
+ #include "renderer/PostProcessFX.h"

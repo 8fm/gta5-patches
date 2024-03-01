@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp b/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp
 --- a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp
 +++ b/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp
-@@ -1,31 +1,31 @@
+@@ -1,33 +1,33 @@
  #include "VehicleAILodManager.h"
  
  // Game headers
@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp b/src/dev_ng/game
 -#include "Camera/scripted/ScriptDirector.h"
 -#include "Control/replay/replay.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Viewports/ViewportManager.h"
++#include "camera/viewports/ViewportManager.h"
 +#include "camera/scripted/ScriptDirector.h"
 +#include "control/replay/replay.h"
  #include "debug/VectorMap.h"
@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp b/src/dev_ng/game
 -#include "Renderer/Occlusion.h"
 +#include "game/Dispatch/Incidents.h"
 +#include "Peds/pedpopulation.h"
-+#include "renderer/Occlusion.h"
++#include "renderer/occlusion.h"
  #include "scene/lod/LodScale.h"
 -#include "Scene/World/GameWorld.h"
 -#include "Scene/EntityIterator.h"
@@ -31,7 +31,7 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp b/src/dev_ng/game
 -#include "VehicleAI/Task/TaskVehicleMissionBase.h"
 -#include "Vehicles/Vehicle.h"
 -#include "Vehicles/VehiclePopulation.h"
-+#include "vehicleAi/VehicleAiLod.h"
++#include "vehicleAi/VehicleAILod.h"
 +#include "vehicleAi/VehicleIntelligence.h"
 +#include "vehicleAi/task/TaskVehicleMissionBase.h"
 +#include "Vehicles/vehicle.h"
@@ -45,8 +45,11 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleAILodManager.cpp b/src/dev_ng/game
 -#include "Camera/Debug/DebugDirector.h"
 -#include "Camera/Gameplay/GameplayDirector.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Debug/DebugDirector.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/debug/DebugDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
  #endif
- #include "GrCore/DebugDraw.h"
+-#include "GrCore/DebugDraw.h"
++#include "grcore/debugdraw.h"
  
+ AI_OPTIMISATIONS()
+ AI_VEHICLE_OPTIMISATIONS()

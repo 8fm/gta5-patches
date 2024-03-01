@@ -1,16 +1,26 @@
 diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.cpp b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.cpp
 --- a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.cpp
 +++ b/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.cpp
-@@ -17,37 +17,37 @@
+@@ -2,7 +2,7 @@
+ 
+ #include "math/vecmath.h"
+ #include "math/angmath.h"
+-#include "phbound/BoundComposite.h"
++#include "phbound/boundcomposite.h"
+ 
+ // Framework headers
+ #include "fwdebug/vectormap.h"
+@@ -17,38 +17,38 @@
  #include "debug/DebugScene.h"
  #include "debug/DebugRecorder.h"
  #include "game/ModelIndices.h"
 -#include "Task/Physics/TaskNMBrace.h"
 +#include "task/Physics/TaskNMBrace.h"
  #include "Peds/ped.h"
- #include "event/eventmovement.h"
+-#include "event/eventmovement.h"
 -#include "ModelInfo/ModelInfo.h"
 -#include "ModelInfo/ModelInfo_Factories.h"
++#include "event/EventMovement.h"
 +#include "modelinfo/ModelInfo.h"
 +#include "modelinfo/ModelInfo_Factories.h"
  #include "Objects/Door.h"
@@ -41,8 +51,9 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.cpp b/src/
 +#include "vehicleAi/task/TaskVehicleEscort.h"
  #include "vehicleAi/task/DeferredTasks.h"
 -#include "VehicleAi/VehicleIntelligence.h"
+-#include "control/trafficLights.h"
 +#include "vehicleAi/VehicleIntelligence.h"
- #include "control/trafficLights.h"
++#include "control/trafficlights.h"
  #include "task/Movement/TaskMoveWander.h"
 -#include "Task/Scenario/Info/ScenarioInfo.h"
 -#include "Task/Scenario/ScenarioManager.h"
@@ -51,6 +62,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.cpp b/src/
 -#include "Task/Vehicle/TaskVehicleWeapon.h"
 -#include "peds/Ped.h"
 -#include "peds/PedDebugVisualiser.h"
+-#include "phbound/BoundBox.h"
 +#include "task/Scenario/info/ScenarioInfo.h"
 +#include "task/Scenario/ScenarioManager.h"
 +#include "task/Movement/TaskCollisionResponse.h"
@@ -58,6 +70,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleGoToAutomobile.cpp b/src/
 +#include "task/Vehicle/TaskVehicleWeapon.h"
 +#include "Peds/ped.h"
 +#include "Peds/PedDebugVisualiser.h"
- #include "phbound/BoundBox.h"
++#include "phbound/boundbox.h"
  #include "renderer/HierarchyIds.h"
  
+ AI_OPTIMISATIONS()

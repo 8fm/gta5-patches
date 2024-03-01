@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/vehicleAi/VehicleAILod.cpp b/src/dev_ng/game/vehicl
  
  // class header
 -#include "VehicleAI/VehicleAiLod.h"
-+#include "vehicleAi/VehicleAiLod.h"
++#include "vehicleAi/VehicleAILod.h"
  
  // Rage headers
  #include "grcore/debugdraw.h"

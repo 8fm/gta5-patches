@@ -1,8 +1,13 @@
 diff --git a/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp b/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp
 --- a/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp
 +++ b/src/dev_ng/game/Vehicles/Metadata/VehicleScriptResource.cpp
-@@ -4,11 +4,11 @@
- #include "fwAnimation/clipsets.h"
+@@ -1,14 +1,14 @@
+ // Framework headers
+ #include "entity/archetypemanager.h"
+-#include "fwAnimation/animmanager.h"
+-#include "fwAnimation/clipsets.h"
++#include "fwanimation/animmanager.h"
++#include "fwanimation/clipsets.h"
  
  // File header
 -#include "ModelInfo/BaseModelInfo.h"

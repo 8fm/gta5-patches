@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/SaveLoad/GenericGameStorage.h b/src/dev_ng/game/SaveLoad/GenericGameStorage.h
+--- a/src/dev_ng/game/SaveLoad/GenericGameStorage.h
++++ b/src/dev_ng/game/SaveLoad/GenericGameStorage.h
+@@ -7,15 +7,15 @@
+ #define SAVEGAME_NEW_H
+ 
+ // Rage headers
+-//	#include "file\savegame.h"
++//	#include "file/savegame.h"
+ //	#include "rline/rlgamerinfo.h"
+ 
+ // Game headers
+-//	#include "game\Wanted.h"
+-//	#include "game\Weather.h"
+-//	#include "system\FileMgr.h"
+-//	#include "text\text.h"
+-//	#include "scene\ExtraContent.h"
++//	#include "game/Wanted.h"
++//	#include "game/weather.h"
++//	#include "system/FileMgr.h"
++//	#include "text/text.h"
++//	#include "scene/ExtraContent.h"
+ #include "SaveLoad/SavegameBuffers/savegame_buffer_mp.h"
+ #include "SaveLoad/SavegameBuffers/savegame_buffer_sp.h"
+ #include "SaveLoad/savegame_data.h"

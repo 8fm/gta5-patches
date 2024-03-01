@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/frontend/Credits.h b/src/dev_ng/game/frontend/Credits.h
 --- a/src/dev_ng/game/frontend/Credits.h
 +++ b/src/dev_ng/game/frontend/Credits.h
-@@ -16,8 +16,8 @@
+@@ -15,9 +15,9 @@
+ #include "parser/macros.h"
  
  // Game headers
- #include "renderer/Sprite2d.h"
+-#include "renderer/Sprite2d.h"
 -#include "text\text.h"
 -#include "Network\Cloud\CloudManager.h"
++#include "renderer/sprite2d.h"
 +#include "text/text.h"
 +#include "network/Cloud/CloudManager.h"
  

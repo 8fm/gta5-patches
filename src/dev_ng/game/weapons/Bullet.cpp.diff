@@ -1,7 +1,17 @@
 diff --git a/src/dev_ng/game/weapons/Bullet.cpp b/src/dev_ng/game/weapons/Bullet.cpp
 --- a/src/dev_ng/game/weapons/Bullet.cpp
 +++ b/src/dev_ng/game/weapons/Bullet.cpp
-@@ -9,30 +9,30 @@
+@@ -2,37 +2,37 @@
+ #include "Bullet.h"
+ 
+ // Framework headers
+-#include "fragment/Instance.h"
+-#include "fwpheffects/ropeManager.h"
+-#include "fwpheffects/clothManager.h"
++#include "fragment/instance.h"
++#include "fwpheffects/ropemanager.h"
++#include "fwpheffects/clothmanager.h"
+ #include "fwmaths/geomutil.h"
  #include "phbound/boundcomposite.h"
  
  // Game headers
@@ -17,8 +27,8 @@ diff --git a/src/dev_ng/game/weapons/Bullet.cpp b/src/dev_ng/game/weapons/Bullet
 -#include "Network/Objects/Entities/NetObjPlayer.h"
 -#include "Peds/Ped.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Gameplay/GameplayDirector.h"
-+#include "control/replay/Replay.h"
++#include "camera/gameplay/GameplayDirector.h"
++#include "control/replay/replay.h"
 +#include "control/replay/Effects/ParticleWeaponFxPacket.h"
 +#include "control/replay/Misc/RopePacket.h"
 +#include "debug/DebugScene.h"
@@ -39,10 +49,10 @@ diff --git a/src/dev_ng/game/weapons/Bullet.cpp b/src/dev_ng/game/weapons/Bullet
 +#include "physics/physics.h"
 +#include "physics/WorldProbe/WorldProbe.h"
 +#include "renderer/Water.h"
-+#include "scene/Lod/LodMgr.h"
-+#include "script/Script_Areas.h"
++#include "scene/lod/LodMgr.h"
++#include "script/script_areas.h"
 +#include "vfx/systems/VfxWeapon.h"
-+#include "vfx/VehicleGlass/VehicleGlassManager.h"
++#include "vfx/vehicleglass/VehicleGlassManager.h"
 +#include "vfx/VfxHelper.h"
  #include "Vehicles/Heli.h"
 -#include "Weapons/AirDefence.h"

@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/audio/planeaudioentity.cpp b/src/dev_ng/game/audio/
 -#include "Camera/CamInterface.h"
 -#include "Camera/Cinematic/CinematicDirector.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Cinematic/CinematicDirector.h"
++#include "camera/cinematic/CinematicDirector.h"
  
 -#include "control/replay/Replay.h"
 +#include "control/replay/replay.h"

@@ -15,9 +15,10 @@ diff --git a/src/dev_ng/game/text/TextFormat.cpp b/src/dev_ng/game/text/TextForm
 -#include "renderer/DrawLists/DrawListMgr.h"
 +#include "renderer/DrawLists/drawListMgr.h"
  #include "renderer/PostProcessFXHelper.h"
- #include "renderer/RenderTargets.h"
+-#include "renderer/RenderTargets.h"
 -#include "replaycoordinator/Storage/MontageText.h"
 -#include "system/controlmgr.h"  // mapper stuff
++#include "renderer/rendertargets.h"
 +#include "replaycoordinator/storage/MontageText.h"
 +#include "system/controlMgr.h"  // mapper stuff
  #include "system/param.h"

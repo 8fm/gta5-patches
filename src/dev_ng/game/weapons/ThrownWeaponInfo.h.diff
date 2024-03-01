@@ -1,8 +1,12 @@
 diff --git a/src/dev_ng/game/weapons/ThrownWeaponInfo.h b/src/dev_ng/game/weapons/ThrownWeaponInfo.h
 --- a/src/dev_ng/game/weapons/ThrownWeaponInfo.h
 +++ b/src/dev_ng/game/weapons/ThrownWeaponInfo.h
-@@ -5,7 +5,7 @@
- #include "Vector/Matrix34.h"
+@@ -2,10 +2,10 @@
+ #define INC_THROWNWEAPONINFO_H_
+ 
+ // Rage headers
+-#include "Vector/Matrix34.h"
++#include "vector/matrix34.h"
  
  // Game headers
 -#include "ModelInfo/BaseModelInfo.h"

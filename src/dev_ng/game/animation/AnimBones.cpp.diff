@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimBones.cpp b/src/dev_ng/game/animation/AnimBones.cpp
+--- a/src/dev_ng/game/animation/AnimBones.cpp
++++ b/src/dev_ng/game/animation/AnimBones.cpp
+@@ -7,7 +7,7 @@
+ #include "AnimBones.h"
+ 
+ // Rage headers
+-#include "crSkeleton/SkeletonData.h"
++#include "crskeleton/SkeletonData.h"
+ 
+ // Gta headers
+ #include "animation/anim_channel.h "

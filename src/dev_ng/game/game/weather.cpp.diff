@@ -1,13 +1,13 @@
 diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
 --- a/src/dev_ng/game/game/weather.cpp
 +++ b/src/dev_ng/game/game/weather.cpp
-@@ -27,23 +27,23 @@
+@@ -26,24 +26,24 @@
+ #include "timecycle/channel.h"
  
  // Game Headers
- #include "Audio/WeatherAudioEntity.h"
+-#include "Audio/WeatherAudioEntity.h"
 -#include "Control/Replay/Replay.h"
-+#include "control/replay/Replay.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
 -#include "Game/Clock.h"
 -#include "Game/Wind.h"
 -#include "Network/Events/NetworkEventTypes.h"
@@ -19,6 +19,10 @@ diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
 -#include "Scene/Portals/Portal.h"
 -#include "System/ControlMgr.h"
 -#include "System/TamperActions.h"
+-#include "Timecycle/Timecycle.h"
++#include "audio/weatheraudioentity.h"
++#include "control/replay/replay.h"
++#include "Core/game.h"
 +#include "game/Clock.h"
 +#include "game/wind.h"
 +#include "network/Events/NetworkEventTypes.h"
@@ -30,7 +34,7 @@ diff --git a/src/dev_ng/game/game/weather.cpp b/src/dev_ng/game/game/weather.cpp
 +#include "scene/portals/Portal.h"
 +#include "system/controlMgr.h"
 +#include "system/TamperActions.h"
- #include "Timecycle/Timecycle.h"
++#include "timecycle/Timecycle.h"
  #include "timecycle/TimeCycleConfig.h"
 -#include "Vfx/VfxHelper.h"
 -#include "Vfx/Systems/VfxWeather.h"

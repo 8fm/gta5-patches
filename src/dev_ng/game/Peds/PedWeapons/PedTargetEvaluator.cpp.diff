@@ -1,8 +1,12 @@
 diff --git a/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.cpp b/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.cpp
 --- a/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.cpp
 +++ b/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.cpp
-@@ -5,44 +5,44 @@
- #include "math/vecMath.h"
+@@ -2,47 +2,47 @@
+ #include "Peds/PedWeapons/PedTargetEvaluator.h"
+ 
+ //rage headers
+-#include "math/vecMath.h"
++#include "math/vecmath.h"
  
  // Game headers
 -#include "Camera/CamInterface.h"
@@ -26,7 +30,7 @@ diff --git a/src/dev_ng/game/Peds/PedWeapons/PedTargetEvaluator.cpp b/src/dev_ng
 +#include "debug/DebugScene.h"
 +#include "frontend/PauseMenu.h"
 +#include "frontend/UIReticule.h"
-+#include "game/Localisation.h"
++#include "game/localisation.h"
 +#include "network/Players/NetGamePlayer.h"
 +#include "network/Objects/Entities/NetObjPlayer.h"
 +#include "ik/solvers/TorsoSolver.h"

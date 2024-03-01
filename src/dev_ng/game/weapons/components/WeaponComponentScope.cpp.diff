@@ -19,7 +19,7 @@ diff --git a/src/dev_ng/game/weapons/components/WeaponComponentScope.cpp b/src/d
 -#include "Renderer/PostProcessFX.h"
 -#include "System/ControlMgr.h"
 +#include "Peds/ped.h"
-+#include "renderer/Renderphases/RenderPhaseFX.h"
++#include "renderer/RenderPhases/RenderPhaseFX.h"
 +#include "renderer/PostProcessFX.h"
 +#include "system/controlMgr.h"
  #include "audio/weaponaudioentity.h"

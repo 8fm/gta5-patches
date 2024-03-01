@@ -78,7 +78,7 @@ diff --git a/src/dev_ng/game/script/commands_graphics.cpp b/src/dev_ng/game/scri
 +#include "vfx/misc/MovieMeshManager.h"
 +#include "vfx/misc/TerrainGrid.h"
 +#include "vfx/misc/ScriptIM.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxBlood.h"
 +#include "vfx/systems/VfxEntity.h"
 +#include "vfx/systems/VfxLens.h"

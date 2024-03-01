@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/system/FileMgr.cpp b/src/dev_ng/game/system/FileMgr.cpp
 --- a/src/dev_ng/game/system/FileMgr.cpp
 +++ b/src/dev_ng/game/system/FileMgr.cpp
-@@ -55,13 +55,13 @@
+@@ -54,14 +54,14 @@
+ #include "frontend/WarningScreen.h"
  #include "modelinfo/ModelInfo.h"
  #include "renderer/color.h"
- #include "renderer/renderthread.h"
+-#include "renderer/renderthread.h"
 -#include "scene/datafilemgr.h"
++#include "renderer/RenderThread.h"
 +#include "scene/DataFileMgr.h"
  #include "scene/extracontent.h"
  #include "scene/scene.h"

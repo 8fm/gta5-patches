@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp
 --- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp
 +++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp
+@@ -24,7 +24,7 @@
+ #endif
+ 
+ #include "fwanimation/animmanager.h"
+-#include "fwscene/scan/scan.h"
++#include "fwscene/scan/Scan.h"
+ #include "fwscene/stores/txdstore.h"
+ #include "video/VideoPlaybackThumbnailManager.h"
+ 
 @@ -36,25 +36,25 @@
  #endif
  
@@ -40,7 +49,7 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseStd.cpp b/src/dev_
 -#include "game/clock.h"
 -#include "Game/Weather.h"
 +#include "game/Clock.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
  #include "modelinfo/VehicleModelInfo.h"
  #include "Objects/ObjectPopulation.h"
  #include "pathserver/pathserver.h"

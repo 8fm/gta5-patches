@@ -20,7 +20,7 @@ diff --git a/src/dev_ng/game/task/Weapons/TaskBomb.cpp b/src/dev_ng/game/task/We
 +#include "physics/physics.h"
 +#include "system/control.h"
 +#include "task/General/TaskBasic.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskSlideToCoord.h"
 +#include "task/Weapons/TaskSwapWeapon.h"
 +#include "weapons/Weapon.h"

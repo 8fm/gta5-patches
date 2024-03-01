@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseFX.cpp b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseFX.cpp
 --- a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseFX.cpp
 +++ b/src/dev_ng/game/renderer/RenderPhases/RenderPhaseFX.cpp
-@@ -14,8 +14,8 @@
+@@ -13,9 +13,9 @@
+ #include "grmodel/shaderfx.h"
  
  // Game headers
- #include "camera/Viewports/ViewportManager.h"
+-#include "camera/Viewports/ViewportManager.h"
 -#include "peds/Ped.h"
 -#include "Renderer/occlusion.h"
++#include "camera/viewports/ViewportManager.h"
 +#include "Peds/ped.h"
 +#include "renderer/occlusion.h"
  #include "renderer/RenderListBuilder.h"

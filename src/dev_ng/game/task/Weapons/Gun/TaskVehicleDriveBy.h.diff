@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskVehicleDriveBy.h b/src/dev_ng/
 -#include "Task/Weapons/WeaponController.h"
 -#include "Vehicles/metadata/VehicleSeatInfo.h"
 -#include "Weapons/Info/WeaponInfo.h"
-+#include "system/Control.h"
++#include "system/control.h"
 +#include "task/System/Tuning.h"
 +#include "task/Weapons/Gun/TaskAimGun.h"
 +#include "task/Weapons/WeaponController.h"

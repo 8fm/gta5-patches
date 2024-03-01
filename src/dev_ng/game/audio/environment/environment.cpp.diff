@@ -8,7 +8,7 @@ diff --git a/src/dev_ng/game/audio/environment/environment.cpp b/src/dev_ng/game
 -#include "cutscene/CutSceneManagerNew.h"
 -#include "debug/debugglobals.h"
 +#include "Cutscene/CutSceneManagerNew.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "debug/DebugScene.h"
  #include "grcore/debugdraw.h"
  #include "game/weather.h"

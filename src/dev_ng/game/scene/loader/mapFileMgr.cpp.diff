@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/loader/mapFileMgr.cpp b/src/dev_ng/game/scene/loader/mapFileMgr.cpp
+--- a/src/dev_ng/game/scene/loader/mapFileMgr.cpp
++++ b/src/dev_ng/game/scene/loader/mapFileMgr.cpp
+@@ -9,7 +9,7 @@
+ // rage includes
+ 
+ //fw includes
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwsys/metadatastore.h"
+ #include "fwscene/stores/drawablestore.h"
+ #include "fwscene/stores/dwdstore.h"

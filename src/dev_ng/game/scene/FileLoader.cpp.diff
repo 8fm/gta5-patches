@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/scene/FileLoader.cpp b/src/dev_ng/game/scene/FileLoader.cpp
 --- a/src/dev_ng/game/scene/FileLoader.cpp
 +++ b/src/dev_ng/game/scene/FileLoader.cpp
-@@ -39,23 +39,23 @@
+@@ -32,30 +32,30 @@
+ #include "fwscene/stores/mapdatastore.h"
+ #include "fwscene/stores/staticboundsstore.h"
+ #include "fwscene/world/entitydesc.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "streaming/packfilemanager.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+ 
  // Game headers
  #include "control/garages.h"
  #include "control/slownesszones.h"

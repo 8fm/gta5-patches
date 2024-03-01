@@ -41,9 +41,12 @@ diff --git a/src/dev_ng/game/streaming/streamingdebug.cpp b/src/dev_ng/game/stre
  #include "file/packfile.h"
  #include "fragment/cache.h"
  #include "fragment/cachemanager.h"
-@@ -61,7 +61,7 @@ STREAMING_OPTIMISATIONS()
+@@ -59,9 +59,9 @@ STREAMING_OPTIMISATIONS()
+ #include "fwscene/world/exteriorscenegraphnode.h"
+ #include "fwscene/world/interiorscenegraphnode.h"
  #include "fwscene/world/streamedscenegraphnode.h"
- #include "fwscene/world/worldlimits.h"
+-#include "fwscene/world/worldlimits.h"
++#include "fwscene/world/WorldLimits.h"
  #include "fwsys/metadatastore.h"
 -#include "fwtl/pool.h"
 +#include "fwtl/Pool.h"

@@ -26,7 +26,7 @@ diff --git a/src/dev_ng/game/weapons/inventory/PedWeaponManager.cpp b/src/dev_ng
 -#include "Weapons/WeaponManager.h"
 -#include "Task/Combat/Cover/TaskCover.h"
 -#include "Task/Physics/TaskNM.h"
-+#include "weapons/Gadgets/Gadget.h"
++#include "weapons/gadgets/Gadget.h"
 +#include "weapons/projectiles/ProjectileManager.h"
 +#include "weapons/projectiles/Projectile.h"
 +#include "weapons/Weapon.h"

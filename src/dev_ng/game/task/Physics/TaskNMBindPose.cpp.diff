@@ -1,8 +1,12 @@
 diff --git a/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp b/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp
 --- a/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp
 +++ b/src/dev_ng/game/task/Physics/TaskNMBindPose.cpp
-@@ -10,11 +10,11 @@
- #include "crskeleton/Skeleton.h"
+@@ -7,14 +7,14 @@
+ // --- Include Files ------------------------------------------------------------
+ 
+ // Rage headers:
+-#include "crskeleton/Skeleton.h"
++#include "crskeleton/skeleton.h"
  #include "fragmentnm/messageparams.h"
  // Game headers:
 -#include "Event/Events.h"

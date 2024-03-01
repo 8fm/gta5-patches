@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/weapons/WeaponChannel.cpp b/src/dev_ng/game/weapons/WeaponChannel.cpp
+--- a/src/dev_ng/game/weapons/WeaponChannel.cpp
++++ b/src/dev_ng/game/weapons/WeaponChannel.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ // File header
+-#include "weapons/weaponchannel.h"
++#include "weapons/WeaponChannel.h"
+ 
+ // Rage headers
+ #include "system/param.h"

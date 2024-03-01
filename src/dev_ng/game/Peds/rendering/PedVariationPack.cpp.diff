@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp b/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp
 --- a/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp
 +++ b/src/dev_ng/game/Peds/rendering/PedVariationPack.cpp
+@@ -19,7 +19,7 @@
+ #include "bank/group.h"
+ #include "bank/slider.h"
+ #include "crskeleton/skeleton.h"
+-#include "crskeleton/skeletonData.h"
++#include "crskeleton/skeletondata.h"
+ #include "data/callback.h"
+ #include "diag/art_channel.h"
+ #include "file/device.h"
 @@ -50,39 +50,39 @@
  #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"

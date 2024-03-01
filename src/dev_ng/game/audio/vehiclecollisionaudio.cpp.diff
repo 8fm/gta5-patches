@@ -20,7 +20,7 @@ diff --git a/src/dev_ng/game/audio/vehiclecollisionaudio.cpp b/src/dev_ng/game/a
  #include "control/replay/audio/CollisionAudioPacket.h"
  #include "crskeleton/skeleton.h"
 -#include "debug/debugglobals.h"
-+#include "debug/Debugglobals.h"
++#include "debug/DebugGlobals.h"
  #include "grcore/debugdraw.h"
  #include "game/ModelIndices.h"
  #include "game/weather.h"

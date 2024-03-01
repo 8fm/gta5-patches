@@ -62,7 +62,7 @@ diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp b/src/dev_ng/
 +#include "vfx/decals/DecalManager.h"
 +#include "vfx/metadata/VfxRegionInfo.h"
 +#include "vfx/misc/Fire.h"
-+#include "vfx/Particles/PtFxManager.h"
++#include "vfx/particles/PtFxManager.h"
 +#include "vfx/systems/VfxBlood.h"
 +#include "vfx/systems/VfxEntity.h"
 +#include "vfx/systems/VfxMaterial.h"

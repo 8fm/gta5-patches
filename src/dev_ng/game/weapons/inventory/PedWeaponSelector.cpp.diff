@@ -9,7 +9,7 @@ diff --git a/src/dev_ng/game/weapons/inventory/PedWeaponSelector.cpp b/src/dev_n
  // Game headers
 -#include "Control/Garages.h"
 -#include "Frontend/NewHud.h"
-+#include "control/Garages.h"
++#include "control/garages.h"
 +#include "frontend/NewHud.h"
  #include "modelinfo/VehicleModelInfoFlags.h"
 -#include "Peds/Ped.h"
@@ -24,7 +24,7 @@ diff --git a/src/dev_ng/game/weapons/inventory/PedWeaponSelector.cpp b/src/dev_n
 +#include "task/Motion/TaskMotionBase.h"
 +#include "task/Vehicle/TaskVehicleWeapon.h"
 +#include "task/Weapons/TaskSwapWeapon.h"
-+#include "vehicleAi/task/taskvehicleanimation.h"
++#include "vehicleAi/task/TaskVehicleAnimation.h"
 +#include "system/controlMgr.h"
  #include "Vehicles/VehicleGadgets.h"
  #include "Vehicles/Metadata/VehicleLayoutInfo.h"

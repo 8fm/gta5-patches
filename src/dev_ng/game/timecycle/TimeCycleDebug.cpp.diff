@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/timecycle/TimeCycleDebug.cpp b/src/dev_ng/game/time
 -#include "Renderer/PostProcessFX.h"
 -#include "Scene/DataFileMgr.h"
 +#include "game/Clock.h"
-+#include "game/Weather.h"
++#include "game/weather.h"
 +#include "renderer/PostProcessFX.h"
 +#include "scene/DataFileMgr.h"
  #include "scene/portals/PortalTracker.h"

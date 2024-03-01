@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/frontend/NewHud.cpp b/src/dev_ng/game/frontend/NewH
  #include "frontend/WarningScreen.h"
  #include "frontend/Store/StoreScreenMgr.h"
  #include "frontend/VideoEditor/VideoEditorInterface.h"
-@@ -40,27 +40,27 @@
+@@ -40,44 +40,44 @@
  #include "camera/scripted/ScriptDirector.h"
  #include "camera/scripted/ScriptedCamera.h"
  #include "camera/helpers/ControlHelper.h"
@@ -19,7 +19,8 @@ diff --git a/src/dev_ng/game/frontend/NewHud.cpp b/src/dev_ng/game/frontend/NewH
 +#include "control/gamelogic.h"
 +#include "control/gps.h"
  #include "control/replay/replay.h"
- #include "Core/Game.h"
+-#include "Core/Game.h"
++#include "Core/game.h"
  #include "Cutscene/CutSceneManagerNew.h"
  #include "debug/MarketingTools.h"
 -#include "Game/Clock.h"
@@ -48,8 +49,9 @@ diff --git a/src/dev_ng/game/frontend/NewHud.cpp b/src/dev_ng/game/frontend/NewH
 +#include "scene/world/GameWorld.h"
  #include "Stats/StatsInterface.h"
  #include "Stats/MoneyInterface.h"
- #include "system/Control.h"
-@@ -68,16 +68,16 @@
+-#include "system/Control.h"
++#include "system/control.h"
+ #include "system/controlMgr.h"
  #include "system/param.h"
  #include "system/system.h"
  #include "system/tamperactions.h"

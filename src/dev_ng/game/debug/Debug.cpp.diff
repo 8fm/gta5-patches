@@ -1,8 +1,15 @@
 diff --git a/src/dev_ng/game/debug/Debug.cpp b/src/dev_ng/game/debug/Debug.cpp
 --- a/src/dev_ng/game/debug/Debug.cpp
 +++ b/src/dev_ng/game/debug/Debug.cpp
-@@ -69,21 +69,21 @@
- #include "camera/helpers/frame.h"
+@@ -64,26 +64,26 @@
+ #include "camera/CamInterface.h"
+ #include "camera/base/BaseCamera.h"
+ #include "camera/debug/FreeCamera.h"
+-#include "camera/Viewports/ViewportManager.h"
++#include "camera/viewports/ViewportManager.h"
+ #include "camera/debug/DebugDirector.h"
+-#include "camera/helpers/frame.h"
++#include "camera/helpers/Frame.h"
  #include "control/gamelogic.h"
  #include "control/replay/ReplayControl.h"
 -#include "cutscene/CutSceneManagerNew.h"

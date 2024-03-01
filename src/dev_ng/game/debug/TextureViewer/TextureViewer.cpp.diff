@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewer.cpp b/src/dev_ng/
  
  #if __BANK
  
-@@ -29,8 +29,8 @@
+@@ -29,15 +29,15 @@
  #include "file/default_paths.h"
  #include "fwdebug/picker.h"
  #include "fwmaths/geomutil.h"
@@ -21,6 +21,14 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewer.cpp b/src/dev_ng/
  #include "fwscene/stores/txdstore.h"
  #include "fwscene/stores/dwdstore.h"
  #include "fwscene/stores/drawablestore.h"
+ #include "fwscene/stores/fragmentstore.h"
+ #include "fwscene/stores/mapdatastore.h"
+ #include "fwscene/world/InteriorLocation.h"
+-#include "fwsys/fileexts.h"
++#include "fwsys/fileExts.h"
+ #include "fwtextureconversion/textureconversion.h"
+ #include "fwutil/popups.h"
+ #include "fwutil/xmacro.h"
 @@ -45,7 +45,7 @@
  #include "streaming/streamingengine.h"
  #include "streaming/packfilemanager.h"

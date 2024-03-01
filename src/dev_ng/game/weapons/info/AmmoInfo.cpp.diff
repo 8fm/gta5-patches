@@ -9,7 +9,8 @@ diff --git a/src/dev_ng/game/weapons/info/AmmoInfo.cpp b/src/dev_ng/game/weapons
 +#include "weapons/info/AmmoInfo.h"
  
  // Parser files
- #include "AmmoInfo_parser.h"
+-#include "AmmoInfo_parser.h"
++#include "ammoinfo_parser.h"
  
  // Game headers
 -#include "Vfx/Systems/VfxVehicle.h"

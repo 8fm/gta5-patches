@@ -21,7 +21,7 @@ diff --git a/src/dev_ng/game/camera/gameplay/ThirdPersonCamera.cpp b/src/dev_ng/
 -#include "vehicles/Wheel.h"
 +#include "Vehicles/Planes.h"
 +#include "Vehicles/Trailer.h"
-+#include "Vehicles/Wheel.h"
++#include "Vehicles/wheel.h"
  
  CAMERA_OPTIMISATIONS()
  

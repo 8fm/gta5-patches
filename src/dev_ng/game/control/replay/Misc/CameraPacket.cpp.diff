@@ -7,7 +7,7 @@ diff --git a/src/dev_ng/game/control/replay/Misc/CameraPacket.cpp b/src/dev_ng/g
  #include "camera/cutscene/CutsceneDirector.h"
 -#include "Camera/Gameplay/GameplayDirector.h"
 -#include "control/replay/Replay.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
 +#include "control/replay/replay.h"
  
  //////////////////////////////////////////////////////////////////////////

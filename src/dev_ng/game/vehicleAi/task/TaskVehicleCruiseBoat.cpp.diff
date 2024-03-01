@@ -13,7 +13,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleCruiseBoat.cpp b/src/dev_
 -#include "vehicles/vehiclepopulation.h"
 +#include "vehicleAi/driverpersonality.h"
 +#include "vehicleAi/task/TaskVehicleCruiseBoat.h"
-+#include "vehicleAi/task/TaskVehicleGoToBoat.h"
++#include "vehicleAi/task/TaskVehicleGotoBoat.h"
 +#include "vehicleAi/VehicleIntelligence.h"
 +#include "task/System/TaskHelpers.h"
 +#include "Vehicles/vehiclepopulation.h"

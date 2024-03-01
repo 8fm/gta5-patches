@@ -12,7 +12,7 @@ diff --git a/src/dev_ng/game/task/Motion/Locomotion/TaskMotionTennis.cpp b/src/d
 -#include "Camera/scripted/ScriptDirector.h"
 +#include "debug/DebugScene.h"
 +#include "animation/MovePed.h"
-+#include "camera/Gameplay/GameplayDirector.h"
++#include "camera/gameplay/GameplayDirector.h"
 +#include "camera/CamInterface.h"
 +#include "camera/scripted/ScriptDirector.h"
  #include "Peds/Action/BrawlingStyle.h"

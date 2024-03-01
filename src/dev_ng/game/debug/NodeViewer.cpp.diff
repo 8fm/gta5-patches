@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/debug/NodeViewer.cpp b/src/dev_ng/game/debug/NodeViewer.cpp
 --- a/src/dev_ng/game/debug/NodeViewer.cpp
 +++ b/src/dev_ng/game/debug/NodeViewer.cpp
-@@ -21,8 +21,8 @@
+@@ -17,12 +17,12 @@
+ #include "BlockView.h"							// Used to find current block nodes are created in
+ 
+ #include "camera/CamInterface.h"				// camera
+-#include "camera/debug/debugdirector.h"		
++#include "camera/debug/DebugDirector.h"		
  #include "camera/debug/FreeCamera.h"		
  #include "camera/helpers/Frame.h"
  #include "frontend/NewHud.h"

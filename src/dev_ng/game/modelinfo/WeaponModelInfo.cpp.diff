@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
-@@ -11,13 +11,13 @@
+@@ -10,14 +10,14 @@
+ #include "fwanimation/animmanager.h"
  #include "rmcore/drawable.h"
  #include "phbound/BoundSphere.h"
- #include "phbound/BoundComposite.h"
+-#include "phbound/BoundComposite.h"
 -#include "phcore/MaterialMgr.h"
++#include "phbound/boundcomposite.h"
 +#include "phcore/materialmgr.h"
  #include "phcore/phmath.h"
  #include "physics/archetype.h"
@@ -17,3 +19,12 @@ diff --git a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp b/src/dev_ng/game/mod
  #include "vfx/ptfx/ptfxmanager.h"
  
  // game headers
+@@ -30,7 +30,7 @@
+ #include "shaders/CustomShaderEffectBase.h"
+ #include "shaders/CustomShaderEffectWeapon.h"
+ #include "scene/texLod.h"
+-#include "weapons/weaponchannel.h"
++#include "weapons/WeaponChannel.h"
+ 
+ WEAPON_OPTIMISATIONS()
+ 

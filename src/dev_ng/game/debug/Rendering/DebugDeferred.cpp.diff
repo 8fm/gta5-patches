@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp b/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp
 --- a/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp
 +++ b/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp
-@@ -17,12 +17,12 @@
+@@ -17,13 +17,13 @@
  
  // framework
  #include "fwrenderer/renderlistbuilder.h"
@@ -12,10 +12,21 @@ diff --git a/src/dev_ng/game/debug/Rendering/DebugDeferred.cpp b/src/dev_ng/game
  
  // game
 -#include "Camera/CamInterface.h"
+-#include "camera/helpers/frame.h"
 +#include "camera/CamInterface.h"
- #include "camera/helpers/frame.h"
++#include "camera/helpers/Frame.h"
  #include "camera/viewports/ViewportManager.h"
  #include "debug/GtaPicker.h"
+ #include "debug/Rendering/DebugCamera.h"
+@@ -33,7 +33,7 @@
+ #include "debug/Rendering/DebugRendering.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+ #include "renderer/Deferred/DeferredConfig.h"
+-#include "renderer/Lights/Lights.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/Lights/TiledLighting.h"
+ #include "renderer/PostProcessFX.h"
+ #include "renderer/rendertargets.h"
 @@ -42,13 +42,13 @@
  #include "renderer/RenderPhases/RenderPhaseReflection.h"
  #include "renderer/Util/ShaderUtil.h"

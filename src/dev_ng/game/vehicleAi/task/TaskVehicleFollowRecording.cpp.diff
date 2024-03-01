@@ -14,7 +14,7 @@ diff --git a/src/dev_ng/game/vehicleAi/task/TaskVehicleFollowRecording.cpp b/src
 -#include "VehicleAi/task/TaskVehicleCruise.h"
 -#include "VehicleAi/VehicleIntelligence.h"
 -#include "Vehicles/Vehicle.h"
-+#include "control/Record.h"
++#include "control/record.h"
 +#include "vehicleAi/task/TaskVehicleGoTo.h"
 +#include "vehicleAi/task/TaskVehicleGoToAutomobile.h"
 +#include "vehicleAi/task/TaskVehicleGoToHelicopter.h"

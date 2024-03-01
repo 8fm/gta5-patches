@@ -16,7 +16,7 @@ diff --git a/src/dev_ng/game/renderer/RenderPhases/RenderPhaseWater.cpp b/src/de
 -#include "Vfx/Systems/VfxWeather.h"
 -#include "Vfx/VfxHelper.h"
 +#include "renderer/Water.h"
-+#include "vfx/Sky/Sky.h"
++#include "vfx/sky/Sky.h"
 +#include "vfx/gpuparticles/PtFxGPUManager.h"
 +#include "vfx/systems/VfxWeather.h"
 +#include "vfx/VfxHelper.h"

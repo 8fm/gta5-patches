@@ -13,11 +13,13 @@ diff --git a/src/dev_ng/game/camera/viewports/ViewportManager.cpp b/src/dev_ng/g
  #include "frontend/MobilePhone.h"
  #include "renderer/DrawLists/drawListMgr.h"
  #include "renderer/Mirrors.h"
-@@ -74,14 +74,14 @@
+@@ -73,15 +73,15 @@
+ #include "renderer/RenderPhases/RenderPhaseWater.h"
  #include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
  #include "renderer/RenderTargetMgr.h"
- #include "renderer/RenderTargets.h"
+-#include "renderer/RenderTargets.h"
 -#include "renderer/renderThread.h"
++#include "renderer/rendertargets.h"
 +#include "renderer/RenderThread.h"
  #include "renderer/Renderer.h"
  #include "renderer/PostScan.h"

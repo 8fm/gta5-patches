@@ -35,7 +35,7 @@ diff --git a/src/dev_ng/game/task/System/TaskTreePed.cpp b/src/dev_ng/game/task/
 +#include "task/System/TaskFSMClone.h"
 +#include "task/Default/TaskWander.h"
 +#include "task/General/TaskBasic.h"
-+#include "task/Movement/TaskGoto.h"
++#include "task/Movement/TaskGoTo.h"
 +#include "task/Vehicle/TaskCarCollisionResponse.h"
 +#include "task/System/TaskMove.h"
 +#include "task/System/Task.h"

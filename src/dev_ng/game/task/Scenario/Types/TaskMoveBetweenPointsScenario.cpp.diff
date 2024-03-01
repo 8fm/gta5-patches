@@ -16,7 +16,7 @@ diff --git a/src/dev_ng/game/task/Scenario/Types/TaskMoveBetweenPointsScenario.c
  
 -#include "Task/Movement/TaskGoToPoint.h"
 -#include "Task/Movement/TaskNavMesh.h"
-+#include "task/Movement/TaskGoToPoint.h"
++#include "task/Movement/TaskGotoPoint.h"
 +#include "task/Movement/TaskNavMesh.h"
  
  AI_OPTIMISATIONS()
