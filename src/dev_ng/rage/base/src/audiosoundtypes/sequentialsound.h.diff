@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/sequentialsound.h b/src/dev_ng/rage/base/src/audiosoundtypes/sequentialsound.h
+--- a/src/dev_ng/rage/base/src/audiosoundtypes/sequentialsound.h
++++ b/src/dev_ng/rage/base/src/audiosoundtypes/sequentialsound.h
+@@ -9,7 +9,7 @@
+ 
+ #include "sound.h"
+ 
+-#include "soundDefs.h"
++#include "sounddefs.h"
+ 
+ namespace rage {
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiosoundtypes/collapsingstereosound.h b/src/dev_ng/rage/base/src/audiosoundtypes/collapsingstereosound.h
+--- a/src/dev_ng/rage/base/src/audiosoundtypes/collapsingstereosound.h
++++ b/src/dev_ng/rage/base/src/audiosoundtypes/collapsingstereosound.h
+@@ -9,7 +9,7 @@
+ 
+ #include "sound.h"
+ 
+-#include "soundDefs.h"
++#include "sounddefs.h"
+ 
+ namespace rage {
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageAudio/_Unity/_unity_RageAudio_audiohardware.cpp b/src/dev_ng/rage/base/src/vcproj/RageAudio/_Unity/_unity_RageAudio_audiohardware.cpp
+--- a/src/dev_ng/rage/base/src/vcproj/RageAudio/_Unity/_unity_RageAudio_audiohardware.cpp
++++ b/src/dev_ng/rage/base/src/vcproj/RageAudio/_Unity/_unity_RageAudio_audiohardware.cpp
+@@ -153,7 +153,7 @@
+ #include "../../../audiohardware/virtualisationjob.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../audiohardware/ima_adpcm.cpp"
++#include "../../../audiohardware/IMA_ADPCM.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../audiohardware/mediareader.cpp"

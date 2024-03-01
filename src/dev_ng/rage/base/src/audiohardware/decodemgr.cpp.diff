@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/decodemgr.cpp b/src/dev_ng/rage/base/src/audiohardware/decodemgr.cpp
+--- a/src/dev_ng/rage/base/src/audiohardware/decodemgr.cpp
++++ b/src/dev_ng/rage/base/src/audiohardware/decodemgr.cpp
+@@ -14,7 +14,7 @@
+ #include "decoder_spu.h"
+ #include "decoder_xma.h"
+ //#include "decoder_atrac9.h"
+-#include "decoder_PS4mp3.h"
++#include "decoder_ps4mp3.h"
+ #include "decoder_xbonexma.h"
+ 
+ namespace rage

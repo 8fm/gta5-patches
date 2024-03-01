@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audioengine/categorycontrollermgr.cpp b/src/dev_ng/rage/base/src/audioengine/categorycontrollermgr.cpp
+--- a/src/dev_ng/rage/base/src/audioengine/categorycontrollermgr.cpp
++++ b/src/dev_ng/rage/base/src/audioengine/categorycontrollermgr.cpp
+@@ -13,7 +13,7 @@
+ #include "categorymanager.h"
+ #include "engine.h"
+ #include "environment.h"
+-#include "audiohardware/DriverUtil.h"
++#include "audiohardware/driverutil.h"
+ 
+ #include "math/simplemath.h"
+ #include "profile/profiler.h"
