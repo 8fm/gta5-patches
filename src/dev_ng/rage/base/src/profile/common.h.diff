@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/profile/common.h b/src/dev_ng/rage/base/src/profile/common.h
+--- a/src/dev_ng/rage/base/src/profile/common.h
++++ b/src/dev_ng/rage/base/src/profile/common.h
+@@ -12,7 +12,7 @@
+ #define ROCKY_ALIGN_CACHE ALIGNAS(ROCKY_CACHE_LINE_SIZE)
+ #define ROCKY_INLINE __forceinline
+ 
+-#if RSG_ORBIS
++#if RSG_ORBIS || RSG_LINUX
+ #define ROCKY_NOINLINE __attribute__ ((__noinline__))
+ #else
+ #define ROCKY_NOINLINE __declspec(noinline)

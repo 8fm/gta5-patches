@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/base/src/data/certificateverify.h b/src/dev_ng/rage/base/src/data/certificateverify.h
+--- a/src/dev_ng/rage/base/src/data/certificateverify.h
++++ b/src/dev_ng/rage/base/src/data/certificateverify.h
+@@ -1,4 +1,4 @@
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ // 
+ // data/certificateverify.h
+ // 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/security/papi/papi.h b/src/dev_ng/rage/base/src/security/papi/papi.h
+--- a/src/dev_ng/rage/base/src/security/papi/papi.h
++++ b/src/dev_ng/rage/base/src/security/papi/papi.h
+@@ -1,7 +1,7 @@
+ #ifndef SECURITY_PAPI_PAPI_H_
+ #define SECURITY_PAPI_PAPI_H_
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ RAGE_DECLARE_SUBCHANNEL(ragesecengine, papi);
+ #define papiAssert(cond)							RAGE_ASSERT(ragesecengine_papi,cond)

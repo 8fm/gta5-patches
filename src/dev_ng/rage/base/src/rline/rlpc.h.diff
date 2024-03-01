@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlpc.h b/src/dev_ng/rage/base/src/rline/rlpc.h
+--- a/src/dev_ng/rage/base/src/rline/rlpc.h
++++ b/src/dev_ng/rage/base/src/rline/rlpc.h
+@@ -9,7 +9,7 @@
+ 
+ #include "file/file_config.h"
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ #include "system/new.h"
+ #include "../../../suite/src/rgsc/rgsc/rgsc/public_interface/rgsc_common.h"

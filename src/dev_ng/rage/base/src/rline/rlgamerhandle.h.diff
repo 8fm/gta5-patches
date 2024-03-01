@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlgamerhandle.h b/src/dev_ng/rage/base/src/rline/rlgamerhandle.h
+--- a/src/dev_ng/rage/base/src/rline/rlgamerhandle.h
++++ b/src/dev_ng/rage/base/src/rline/rlgamerhandle.h
+@@ -7,7 +7,7 @@
+ #ifndef RLINE_RLGAMERHANDLE
+ #define RLINE_RLGAMERHANDLE
+ 
+-#include "net\net.h"
++#include "net/net.h"
+ 
+ namespace rage
+ {

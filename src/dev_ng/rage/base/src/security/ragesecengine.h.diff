@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/security/ragesecengine.h b/src/dev_ng/rage/base/src/security/ragesecengine.h
+--- a/src/dev_ng/rage/base/src/security/ragesecengine.h
++++ b/src/dev_ng/rage/base/src/security/ragesecengine.h
+@@ -42,7 +42,7 @@
+ #define RAGE_SEC_IN_SEPARATE_THREAD						0
+ #define RAGE_SEC_ENABLE_REACTIONS						1
+ #define RAGE_SEC_ENABLE_REBALANCING						1
+-#define RAGE_SEC_ENABLE_VFT_ASSERT						1 && RSG_PC
++#define RAGE_SEC_ENABLE_VFT_ASSERT						1 && RSG_PC && !RSG_LINUX
+ #define RAGE_SEC_TASK_EC								1 && RSG_PC
+ #define RAGE_SEC_ENABLE_YUBIKEY							0 && RSG_PC
+ #define RAGE_SEC_TASK_CE_DETECTION						1 && RSG_PC
