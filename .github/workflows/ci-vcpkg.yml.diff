@@ -2,12 +2,16 @@ diff --git a/.github/workflows/ci-vcpkg.yml b/.github/workflows/ci-vcpkg.yml
 new file mode 100644
 --- /dev/null
 +++ b/.github/workflows/ci-vcpkg.yml
-@@ -0,0 +1,86 @@
+@@ -0,0 +1,90 @@
 +name: VCPKG CI
 +
 +on:
 +  push:
++    branches:
++      - ci
 +  pull_request:
++    branches:
++      - ci
 +
 +jobs:
 +  windows-sln:
