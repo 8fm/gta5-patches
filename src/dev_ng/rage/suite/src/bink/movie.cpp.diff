@@ -1,12 +1,205 @@
 diff --git a/src/dev_ng/rage/suite/src/bink/movie.cpp b/src/dev_ng/rage/suite/src/bink/movie.cpp
 --- a/src/dev_ng/rage/suite/src/bink/movie.cpp
 +++ b/src/dev_ng/rage/suite/src/bink/movie.cpp
-@@ -241,7 +241,7 @@ void bwMovie::Init()
- 		sm_UsingRAGEAudio = false;
- 		Displayf("Attempt to play bink audio using bink engine");
+@@ -219,6 +219,7 @@ void bwMovie::Destroy(bwMovie* movie, bool async)
  
--	#if RSG_PC
-+	#if RSG_PC && !RSG_LINUX
- 		// According to Jeff Roberts, if you pass in NULL they'll make the DSOUND object 
- 		BinkSoundUseDirectSound(NULL);
- 		sm_uNumSpeakers = 2;	// TODO: Multichannel on PC?
+ void bwMovie::Init()
+ {
++#if !RSG_LINUX
+ 	const bool useRageAudio = (USE_BINK_RAGE_AUDIO_PROVIDER);
+ 	if(useRageAudio && audDriver::GetMixer())
+ 	{
+@@ -289,6 +290,7 @@ void bwMovie::Init()
+ 		sm_AsyncInit = true;
+ 	}
+ #endif
++#endif // !RSG_LINUX
+ }
+ 
+ void bwMovie::Shutdown()
+@@ -401,10 +403,12 @@ bwMovie::bwMovie()
+ 
+ bwMovie::~bwMovie()
+ {
++#if !RSG_LINUX
+ 	if( m_hBink ) 
+ 	{
+ 		BinkClose(m_hBink);
+ 	}
++#endif // !RSG_LINUX
+ 
+ 	Assertf(sm_TextureMemoryDeallocator, "bwMovie::~bwMovie: cannot deallocate texture memory");
+ 
+@@ -450,16 +454,20 @@ bwMovie::~bwMovie()
+ 	void bwMovie::SetMemoryFuncs( void* (a(u32)),  void (f(void*)))
+ #endif
+ {
++#if !RSG_LINUX
+ 	BinkSetMemory(a, f);
++#endif // !RSG_LINUX
+ }
+ 
+ u32 bwMovie::ImposeFrameRate()
+ {
++#if !RSG_LINUX
+ 	if( m_hBink )
+ 	{
+ 		BinkSetFrameRate( m_hBink->FrameRate, m_hBink->FrameRateDiv );
+ 		return (m_hBink->FrameRate / m_hBink->FrameRateDiv);
+ 	}
++#endif // !RSG_LINUX
+ 	return 0; 
+ }
+ 
+@@ -473,8 +481,10 @@ void bwMovie::SetVolume(const f32 dbVolume)
+ 		const s32 vol = GetBinkVolume(dbVolume);
+ 
+ 		const u32 numTracks = m_hBink->NumTracks;
++#if !RSG_LINUX
+ 		for (u32 i = 0; i < numTracks; ++i)
+ 			BinkSetVolume(m_hBink, i, vol);
++#endif // !RSG_LINUX
+ 
+ 		// This is set in SetMovie() so not sure why it needs set again
+ 		//m_ShouldSkip = true;
+@@ -656,6 +666,7 @@ void bwMovie::UnlockBinkTextures(WIN32PC_ONLY(u32 nTextureBase) DURANGO_ONLY(u32
+ 
+ float bwMovie::GetMovieDurationQuick(bwMovieParams& params)
+ {
++#if !RSG_LINUX
+ 	const char* pFileName		= params.pFileName;
+ 
+ #if __ASSERT
+@@ -682,6 +693,9 @@ float bwMovie::GetMovieDurationQuick(bwMovieParams& params)
+ 	BinkClose(pBink);
+ 
+ 	return duration;
++#else
++	return 0.0f;
++#endif // !RSG_LINUX
+ }
+ 
+ bool bwMovie::SetMovieSync(bwMovieParams& params)
+@@ -693,6 +707,7 @@ bool bwMovie::SetMovieSync(bwMovieParams& params)
+ 	u32			frameRateDiv	= params.frameRateDiv;
+ 	void*		owner			= params.owner;
+ 
++#if !RSG_LINUX
+ 	if( m_hBink )
+ 		BinkClose(m_hBink);
+ 
+@@ -744,6 +759,7 @@ bool bwMovie::SetMovieSync(bwMovieParams& params)
+ 
+ 	// Open the bink handle
+ 	m_hBink = BinkOpen((params.preloadedData) ? (const char *) params.preloadedData : pFileName, BINKNOFRAMEBUFFERS | BINKSNDTRACK | extraFlags);
++#endif // !RSG_LINUX
+ 	
+ 	if( m_hBink )
+ 	{
+@@ -762,7 +778,9 @@ bool bwMovie::SetMovieSync(bwMovieParams& params)
+ 		}
+ 
+ 		// Get the frame buffer info
++#if !RSG_LINUX
+ 		BinkGetFrameBuffersInfo(m_hBink, m_pFrameBuffers);
++#endif // !RSG_LINUX
+ 
+ 		{
+ 
+@@ -1005,13 +1023,17 @@ bool bwMovie::SetMovieSync(bwMovieParams& params)
+ 		}
+ 
+ 		// Register the frame buffer textures
++#if !RSG_LINUX
+ 		BinkRegisterFrameBuffers(m_hBink, m_pFrameBuffers);
++#endif // !RSG_LINUX
+ 
+ 		Assert(sm_uNumSpeakers >= 2);
+ 		if (sm_UsingRAGEAudio)
+ 		{
+             sysCriticalSection lock(m_audioLock);
++#if !RSG_LINUX
+ 			BinkSetVolume(m_hBink, 0, 32767);
++#endif // !RSG_LINUX
+ 		}
+ 		else
+ 		{
+@@ -1115,7 +1137,9 @@ bool bwMovie::SetMovieSync(bwMovieParams& params)
+ 	}
+ 	else
+ 	{
++#if !RSG_LINUX
+ 		Errorf("Unable to open movie: %s", BinkGetError());
++#endif // !RSG_LINUX
+ 		return false;
+ 	}
+ 
+@@ -1193,10 +1217,12 @@ u32 bwMovie::NumberOfFramesToIncrement()
+ 			//Displayf("numFrames %u, m_uPreviousFrameNum %u", numFrames, m_uPreviousFrameNum);
+ 		}
+ 	}
++#if !RSG_LINUX
+ 	else if (!BinkWait( m_hBink ))
+ 	{
+ 		numFrames = 1;
+ 	}
++#endif // !RSG_LINUX
+ 	//Displayf("Frames skipped %u", numFrames);
+ 
+ 	return numFrames;
+@@ -1358,7 +1384,7 @@ static void DebugBinkGoto(HBINK bink, u32 frame_num)
+ // Synchronous playback state-machine
+ bool bwMovie::DoPlayback(u32 UNUSED_PARAM(numFramesToIncrement) )
+ {
+-#if RSG_XENON || RSG_PS3 || RSG_DURANGO || RSG_ORBIS || RSG_PC
++#if RSG_XENON || RSG_PS3 || RSG_DURANGO || RSG_ORBIS || RSG_PC && !RSG_LINUX
+ 
+ 	u32 nFrame = (m_pFrameBuffers->FrameNum + 1 >= (u32)(m_pFrameBuffers->TotalFrames)) ? 0 : m_pFrameBuffers->FrameNum + 1;
+ 	u32 nTextureBase = nFrame * 4;
+@@ -1385,6 +1411,8 @@ bool bwMovie::DoPlayback(u32 UNUSED_PARAM(numFramesToIncrement) )
+ 
+ 	BinkNextFrame( m_hBink );
+ 
++	return true;
++#else
+ 	return true;
+ #endif
+ }
+@@ -1439,7 +1467,7 @@ void bwMovie::Play()
+ 
+ 	sAsyncData newData = {this, AA_PLAY, sysTimer::GetSystemMsTime()};
+ 	sm_asyncQueue.Push(newData);
+-#else
++#elif !RSG_LINUX
+ 	BinkPause(m_hBink, false);
+ 	m_bPlaying = true;
+ #endif
+@@ -1480,7 +1508,7 @@ void bwMovie::Stop()
+ 	m_bStopRequested = true;
+ 	sAsyncData newData = {this, AA_STOP, sysTimer::GetSystemMsTime()};
+ 	sm_asyncQueue.Push(newData);
+-#else
++#elif !RSG_LINUX
+ 	BinkPause(m_hBink, true);
+ 
+ 	m_bPlaying = false;
+@@ -1592,7 +1620,9 @@ float bwMovie::GetNextKeyFrame(float time) const
+ 	s32 numFrames = m_hBink->Frames;
+ 	s32	targetFrame = (s32)(time * (m_hBink->FrameRate / m_hBink->FrameRateDiv));
+ 	targetFrame = rage::Clamp( targetFrame, 1, numFrames);
++#if !RSG_LINUX
+ 	targetFrame = BinkGetKeyFrame(m_hBink, targetFrame, BINKGETKEYNEXT) - 1;
++#endif // !RSG_LINUX
+ 	float frame = static_cast<float>(rage::Clamp(targetFrame, 1, numFrames));
+ 	return frame;
+ }
+@@ -1666,7 +1696,9 @@ float bwMovie::SetMovieTimeReal(float time)
+ 	s32	targetFrame = (s32)(time * ((float)m_hBink->FrameRate / (float)m_hBink->FrameRateDiv));
+ 	targetFrame = rage::Clamp( targetFrame, 1, numFrames);
+ 
++#if !RSG_LINUX
+ 	targetFrame = BinkGetKeyFrame(m_hBink, targetFrame, BINKGETKEYNEXT)-1;
++#endif // !RSG_LINUX
+ 
+ 	// DEBUG
+ //	{

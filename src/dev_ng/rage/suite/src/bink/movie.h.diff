@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/bink/movie.h b/src/dev_ng/rage/suite/src/bink/movie.h
+--- a/src/dev_ng/rage/suite/src/bink/movie.h
++++ b/src/dev_ng/rage/suite/src/bink/movie.h
+@@ -28,7 +28,7 @@
+ #define MAX_ASYNC_ACTIONS	(32)
+ #define DEBUG_BINK_ASYNC	(1 && !__FINAL)
+ 
+-#if RSG_XENON || RSG_DURANGO || RSG_ORBIS || RSG_PS3 || RSG_PC
++#if RSG_XENON || RSG_DURANGO || RSG_ORBIS || RSG_PS3 || RSG_PC && !RSG_LINUX
+ 
+ #define			BINK_ASYNC											(1)
+ 
