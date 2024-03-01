@@ -1,0 +1,19 @@
+diff --git a/src/dev_ng/rage/base/src/system/mediafoundation.cpp b/src/dev_ng/rage/base/src/system/mediafoundation.cpp
+--- a/src/dev_ng/rage/base/src/system/mediafoundation.cpp
++++ b/src/dev_ng/rage/base/src/system/mediafoundation.cpp
+@@ -5,9 +5,15 @@
+ // External libs
+ #if RSG_PC
+ 
++#if _MSC_VER < 1900
+ #pragma comment(lib, "mf_vista")
+ #pragma comment(lib, "mfplat_vista")
+ #pragma comment(lib, "evr_vista")
++#else
++#pragma comment(lib, "mf")
++#pragma comment(lib, "mfplat")
++#pragma comment(lib, "evr")
++#endif
+ #pragma comment(lib, "wmcodecdspuuid")
+ #pragma comment(lib, "Msdmo")
+ 

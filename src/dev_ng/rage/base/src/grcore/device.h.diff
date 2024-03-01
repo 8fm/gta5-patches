@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/device.h b/src/dev_ng/rage/base/src/grcore/device.h
+--- a/src/dev_ng/rage/base/src/grcore/device.h
++++ b/src/dev_ng/rage/base/src/grcore/device.h
+@@ -41,7 +41,11 @@
+ #define DEVICE_GPU_WAIT		(__PPU || RSG_DURANGO || RSG_ORBIS)
+ #define DEVICE_IM_INSTANCED_INDEXED	(__D3D11 || RSG_ORBIS)
+ 
++#if _MSC_VER == 1700
+ #define USE_AMD_SHADOW_LIB	(RSG_PC && 1)
++#else
++#define USE_AMD_SHADOW_LIB	0
++#endif
+ 
+ #define USE_NV_TXAA RSG_PC && !__GAMETOOL
+ #if USE_NV_TXAA

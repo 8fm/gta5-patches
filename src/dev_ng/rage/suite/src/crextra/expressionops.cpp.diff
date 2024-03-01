@@ -1,0 +1,100 @@
+diff --git a/src/dev_ng/rage/suite/src/crextra/expressionops.cpp b/src/dev_ng/rage/suite/src/crextra/expressionops.cpp
+--- a/src/dev_ng/rage/suite/src/crextra/expressionops.cpp
++++ b/src/dev_ng/rage/suite/src/crextra/expressionops.cpp
+@@ -2455,31 +2455,31 @@ void crExpressionOpUnary::Process(ProcessHelper& ph) const
+ 		break;
+ 
+ 	case kUnaryOpTypeSqrt:
+-		val.Set(sqrt(val.GetFloat()));
++		val.Set(sqrtf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeAbsolute:
+-		val.Set(fabs(val.GetFloat()));
++		val.Set(fabsf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeFloor:
+-		val.Set(floor(val.GetFloat()));
++		val.Set(floorf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeCeil:
+-		val.Set(ceil(val.GetFloat()));
++		val.Set(ceilf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeLog:
+-		val.Set(log10(val.GetFloat()));
++		val.Set(log10f(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeLn:
+-		val.Set(log(val.GetFloat()));
++		val.Set(logf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeExp:
+-		val.Set(exp(val.GetFloat()));
++		val.Set(expf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeClamp01:
+@@ -2487,39 +2487,39 @@ void crExpressionOpUnary::Process(ProcessHelper& ph) const
+ 		break;
+ 
+ 	case kUnaryOpTypeCos:
+-		val.Set(cos(val.GetFloat()));
++		val.Set(cosf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeSin:
+-		val.Set(sin(val.GetFloat()));
++		val.Set(sinf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeTan:
+-		val.Set(tan(val.GetFloat()));
++		val.Set(tanf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeArcCos:
+-		val.Set(acos(val.GetFloat()));
++		val.Set(acosf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeArcSin:
+-		val.Set(asin(val.GetFloat()));
++		val.Set(asinf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeArcTan:
+-		val.Set(atan(val.GetFloat()));
++		val.Set(atanf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeCosH:
+-		val.Set(cosh(val.GetFloat()));
++		val.Set(coshf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeSinH:
+-		val.Set(sinh(val.GetFloat()));
++		val.Set(sinhf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeTanH:
+-		val.Set(tanh(val.GetFloat()));
++		val.Set(tanhf(val.GetFloat()));
+ 		break;
+ 
+ 	case kUnaryOpTypeDegreesToRadians:
+@@ -2804,7 +2804,7 @@ void crExpressionOpBinary::Process(ProcessHelper& ph) const
+ 				break;
+ 
+ 			case kBinaryOpTypeExponent:
+-				ret.Set(pow(val0.GetFloat(), val1.GetFloat()));
++				ret.Set(powf(val0.GetFloat(), val1.GetFloat()));
+ 				break;
+ 
+ 			case kBinaryOpTypeMax:

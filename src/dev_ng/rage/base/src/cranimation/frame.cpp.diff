@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/cranimation/frame.cpp b/src/dev_ng/rage/base/src/cranimation/frame.cpp
+--- a/src/dev_ng/rage/base/src/cranimation/frame.cpp
++++ b/src/dev_ng/rage/base/src/cranimation/frame.cpp
+@@ -1149,7 +1149,7 @@ __forceinline void LegalIterator::IterateDofByType<QuatV>(const crFrameData::Dof
+ {
+ 	m_Legal = m_Legal && FPIsFinite(dest.GetUnsafe<QuatV>().GetXf()) && FPIsFinite(dest.GetUnsafe<QuatV>().GetYf()) && FPIsFinite(dest.GetUnsafe<QuatV>().GetZf()) && FPIsFinite(dest.GetUnsafe<QuatV>().GetWf());
+ 	m_Legal = m_Legal && (fabsf(dest.GetUnsafe<QuatV>().GetXf()) < LARGE_FLOAT) && (fabsf(dest.GetUnsafe<QuatV>().GetYf()) < LARGE_FLOAT) && (fabsf(dest.GetUnsafe<QuatV>().GetZf()) < LARGE_FLOAT) && (fabsf(dest.GetUnsafe<QuatV>().GetWf()) < LARGE_FLOAT);
+-	m_Legal = m_Legal && (!m_UnitQuaternions || InRange(sqrt(square(dest.GetUnsafe<QuatV>().GetXf()) + square(dest.GetUnsafe<QuatV>().GetYf()) + square(dest.GetUnsafe<QuatV>().GetZf()) + square(dest.GetUnsafe<QuatV>().GetWf())), 0.999f, 1.001f));
++	m_Legal = m_Legal && (!m_UnitQuaternions || InRange(sqrtf(square(dest.GetUnsafe<QuatV>().GetXf()) + square(dest.GetUnsafe<QuatV>().GetYf()) + square(dest.GetUnsafe<QuatV>().GetZf()) + square(dest.GetUnsafe<QuatV>().GetWf())), 0.999f, 1.001f));
+ }
+ 
+ ////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h b/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h
+--- a/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h
++++ b/src/dev_ng/rage/suite/src/crparameterizedmotion/blenddatabasecalculator.h
+@@ -13,6 +13,7 @@
+ #include "math/random.h"
+ 
+ #include <map>
++#include <string>
+ #include <vector>
+ 
+ namespace rage

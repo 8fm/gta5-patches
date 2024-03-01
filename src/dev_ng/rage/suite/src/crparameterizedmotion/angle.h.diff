@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h b/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h
+--- a/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h
++++ b/src/dev_ng/rage/suite/src/crparameterizedmotion/angle.h
+@@ -152,6 +152,8 @@ protected:
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 
++#pragma warning(push)
++#pragma warning(disable: 4263)
+ // PURPOSE: Represents an angle that implicitly converts to radians
+ class crpmAngleRadians : public crpmAngle
+ {
+@@ -181,6 +183,7 @@ public:
+ 	// RETURNS: angle in degrees (>= -180 and < 180)
+ 	operator float() const;
+ };
++#pragma warning(pop)
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 

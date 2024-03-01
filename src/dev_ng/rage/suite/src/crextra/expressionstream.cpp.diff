@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp b/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp
+--- a/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp
++++ b/src/dev_ng/rage/suite/src/crextra/expressionstream.cpp
+@@ -87,9 +87,9 @@ void crExpressionStream::Process(const ExprStreamHelper& ph) const
+ 		case OpArcCos:				top[0] = V4ArccosFast(top[0]); break;
+ 		case OpArcSin:				top[0] = V4ArcsinFast(top[0]); break;
+ 		case OpArcTan:				top[0] = V4ArctanFast(top[0]); break;
+-		case OpCosH:				top[0] = V4LoadScalar32IntoSplatted(cosh(GetX(top[0]))); break;
+-		case OpSinH:				top[0] = V4LoadScalar32IntoSplatted(sinh(GetX(top[0]))); break;
+-		case OpTanH:				top[0] = V4LoadScalar32IntoSplatted(tanh(GetX(top[0]))); break;
++		case OpCosH:				top[0] = V4LoadScalar32IntoSplatted(coshf(GetX(top[0]))); break;
++		case OpSinH:				top[0] = V4LoadScalar32IntoSplatted(sinhf(GetX(top[0]))); break;
++		case OpTanH:				top[0] = V4LoadScalar32IntoSplatted(tanhf(GetX(top[0]))); break;
+ 		case OpQuatInvert:			top[0] = V4QuatInvertNormInput(top[0]); break;
+ 		case OpSquare:				top[0] = V4Scale(top[0], top[0]); break;
+ 		case OpDegToRad:			top[0] = V4Scale(top[0], V4VConstant(V_TO_RADIANS)); break;

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/string/string.h b/src/dev_ng/rage/base/src/string/string.h
+--- a/src/dev_ng/rage/base/src/string/string.h
++++ b/src/dev_ng/rage/base/src/string/string.h
+@@ -47,7 +47,7 @@ extern "C" char* strlwr(char*);
+ # endif
+ #endif
+ 
+-#ifdef _MSC_VER 
++#if _MSC_VER < 1900
+ #define snprintf _snprintf
+ #endif
+ 

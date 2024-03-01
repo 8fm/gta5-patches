@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/driverutil.h b/src/dev_ng/rage/base/src/audiohardware/driverutil.h
+--- a/src/dev_ng/rage/base/src/audiohardware/driverutil.h
++++ b/src/dev_ng/rage/base/src/audiohardware/driverutil.h
+@@ -244,7 +244,7 @@ public:
+ 			// compute smoothedVol as vol +/- maxStep based on volumeDiff 
+ 			const f32 smoothedVol =  Selectf(volumeDiff, previousVolume + g_MaxHardwareVolumeStep, previousVolume - g_MaxHardwareVolumeStep);
+ 			// if volumeDiff is greater than or equal to max step return smoothed vol, otherwise just return requested volume
+-			return Selectf(fabs(volumeDiff) - g_MaxHardwareVolumeStep, smoothedVol, requestedVolume);
++			return Selectf(fabsf(volumeDiff) - g_MaxHardwareVolumeStep, smoothedVol, requestedVolume);
+ 		}
+ 	}
+ 
