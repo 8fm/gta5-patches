@@ -1,7 +1,110 @@
 diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h
 --- a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h
 +++ b/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h
-@@ -204,6 +204,11 @@ END_NS_RAGE
+@@ -67,13 +67,18 @@
+ #define RSG_XBL		0
+ #define RSG_GAMESPY	1
+ 
++#include <stdint.h>
+ // Basic types
+ BEGIN_NS_RAGE
+ typedef unsigned char u8;
+ typedef unsigned short u16;
+ typedef unsigned int u32;
+-typedef unsigned __int64 u64;
++typedef uint64_t u64;
++#ifdef _WIN32
+ typedef struct __declspec(intrin_type) __declspec(align(16)) __u128 {
++#else
++typedef struct __attribute__((aligned(16))) __u128 {
++#endif
+    float m128_f32[4];
+ } __u128;
+ typedef __u128 u128;
+@@ -81,7 +86,7 @@ typedef __u128 u128;
+ typedef signed char s8;
+ typedef signed short s16;
+ typedef signed int s32;
+-typedef signed __int64 s64;
++typedef int64_t s64;
+ 
+ typedef float f32;
+ #if defined(_M_X64)
+@@ -100,13 +105,18 @@ END_NS_RAGE
+ #define __PS3		0
+ #define __PPU		0
+ #define __SPU		0
+-#define __WIN32		1
+ #define __OSX		0
+ #define __POSIX		0
+ #define __XENON		0
+ #define __PSP2		0
+ #define __CAFE		0
++#ifdef _WIN32
++#define __WIN32		1
+ #define __LINUX		0
++#else
++#define __WIN32		0
++#define __LINUX		1
++#endif // _WIN32
+ #define __WIN32PC	1
+ #define __PAGING	1
+ #define __GAMETOOL	0
+@@ -116,7 +126,7 @@ END_NS_RAGE
+ #define RSG_PS3         0
+ #define RSG_PPU         0
+ #define RSG_SPU         0
+-#define RSG_WIN32       1
++#define RSG_WIN32       (1 && __WIN32)
+ #define RSG_XENON       0
+ #define RSG_PC          1
+ #define RSG_DURANGO     0
+@@ -124,7 +134,7 @@ END_NS_RAGE
+ #define RSG_WINRT		0
+ #define RSG_XDK			0
+ #define RSG_GDK			0
+-#define RSG_LINUX		0
++#define RSG_LINUX		(1 && __LINUX)
+ #define RSG_IOS			0
+ #define RSG_ANDROID		0
+ #define RSG_WINPHONE	0
+@@ -148,11 +158,16 @@ END_NS_RAGE
+ #define PS3_ONLY(...)
+ #define PPU_ONLY(...)
+ #define SPU_ONLY(...)
+-#define WIN32_ONLY(...)     __VA_ARGS__
+ #define XENON_ONLY(...)
+ #define PSP2_ONLY(...)
+ #define CAFE_ONLY(...)
++#if __LINUX
++#define WIN32_ONLY(...)
++#define LINUX_ONLY(...)     __VA_ARGS__
++#else
++#define WIN32_ONLY(...)     __VA_ARGS__
+ #define LINUX_ONLY(...)
++#endif
+ #define WIN32PC_ONLY(...)   __VA_ARGS__
+ #define ORBIS_ONLY(...)		
+ #define PROSPERO_ONLY(...)
+@@ -166,10 +181,17 @@ END_NS_RAGE
+ #define GDK_ONLY(...)
+ #define XBOX_ONLY(...)		
+ 
++#if __LINUX
++#define ALIGNAS(x)			__attribute__ ((aligned(x)))
++#define BEGIN_ALIGNED(x)	__attribute__ ((aligned(x)))
++#define ALIGNED(x)
++#define DEPRECATED			__attribute__ ((deprecated))
++#else
+ #define ALIGNAS(x)			__declspec(align(x))
+ #define BEGIN_ALIGNED(x)	__declspec(align(x))
+ #define ALIGNED(x)
+ #define DEPRECATED			__declspec(deprecated)
++#endif
+ #define RESTRICT
+ #define MAY_ALIAS
+ 
+@@ -204,6 +226,11 @@ END_NS_RAGE
  #define __TOOL		0
  #define __EXPORTER	0
  #define	__PROFILE	0
@@ -13,3 +116,18 @@ diff --git a/src/dev_ng/rage/base/src/forceinclude/win64_bankrelease.h b/src/dev
  #define RSG_DEV		__DEV
  #define RSG_BANK	__BANK
  #define RSG_ASSERT	__ASSERT
+@@ -252,6 +279,14 @@ END_NS_RAGE
+ #	define __forceinline inline
+ #endif
+ 
++#if __LINUX
++#	define __stdcall
++#	define _CPPRTTI 1
++#	define _HAS_EXCEPTIONS 1
++#	define __forceinline __attribute__((always_inline)) inline
++static __forceinline void __debugbreak() { do { __asm__ volatile ("int $3"); } while(0); }
++#endif
++
+ #if __ASSERT
+ 
+ #	define RAGE_MINIMAL_ASSERTS	(__XENON && __OPTIMIZED)
