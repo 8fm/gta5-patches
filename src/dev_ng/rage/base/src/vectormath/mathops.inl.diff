@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/vectormath/mathops.inl b/src/dev_ng/rage/base/src/vectormath/mathops.inl
+--- a/src/dev_ng/rage/base/src/vectormath/mathops.inl
++++ b/src/dev_ng/rage/base/src/vectormath/mathops.inl
+@@ -12,6 +12,8 @@ extern "C" unsigned char _BitScanForward(unsigned long* Index, unsigned long Mas
+ extern "C" unsigned char _BitScanReverse(unsigned long* Index, unsigned long Mask);
+ #pragma intrinsic(_BitScanForward)
+ #pragma intrinsic(_BitScanReverse)
++#elif RSG_LINUX
++#include "math/intrinsics.h"
+ #endif // RSG_CPU_INTEL
+ 
+ namespace rage
