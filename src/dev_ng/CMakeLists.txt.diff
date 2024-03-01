@@ -28,7 +28,7 @@ new file mode 100644
 +    ExternalProject_Add(dxvk
 +        GIT_REPOSITORY    https://github.com/doitsujin/dxvk
 +        GIT_TAG           c5a37d443a580eb26bc77cf68446f7d0aacc92c7
-+        GIT_SHALLOW       ON
++        GIT_SHALLOW       OFF
 +        BUILD_ALWAYS      OFF
 +        CONFIGURE_HANDLED_BY_BUILD ON
 +        CONFIGURE_COMMAND meson setup ../dxvk --buildtype=release -Denable_d3d10=false -Denable_d3d11=true -Denable_dxgi=true
