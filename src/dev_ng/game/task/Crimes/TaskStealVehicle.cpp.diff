@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/task/Crimes/TaskStealVehicle.cpp b/src/dev_ng/game/
  
  // File header
 -#include "Task/crimes/TaskStealVehicle.h"
-+#include "task/crimes/TaskStealVehicle.h"
++#include "task/Crimes/TaskStealVehicle.h"
  
  // Rage Headers
  #include "fwvehicleai/pathfindtypes.h"

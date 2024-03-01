@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/companion.h b/src/dev_ng/game/system/companion.h
+--- a/src/dev_ng/game/system/companion.h
++++ b/src/dev_ng/game/system/companion.h
+@@ -22,7 +22,7 @@
+ 
+ using namespace std;
+ 
+-#include "AutoLock.h"
++#include "Autolock.h"
+ 
+ #include "vector/vector3.h"
+ #include "atl/string.h"

@@ -10,11 +10,13 @@ diff --git a/src/dev_ng/game/animation/AnimScene/entities/AnimSceneEntities.cpp 
  #include "grcore/debugdraw.h"
  
  // framework includes
-@@ -14,7 +14,7 @@
+@@ -13,8 +13,8 @@
+ #include "animation/AnimScene/AnimScene.h"
  #include "animation/AnimScene/AnimSceneEntityIterator.h"
  #include "animation/AnimScene/entities/AnimSceneEntityInitialisers.h"
- #include "cutscene/AnimatedModelEntity.h" // required for weapon helper functions
+-#include "cutscene/AnimatedModelEntity.h" // required for weapon helper functions
 -#include "Peds/Ped.h"
++#include "Cutscene/AnimatedModelEntity.h" // required for weapon helper functions
 +#include "Peds/ped.h"
  #include "Peds/PedFactory.h"
  #include "Peds/PedIntelligence.h"

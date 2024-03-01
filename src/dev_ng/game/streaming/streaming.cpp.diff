@@ -1,13 +1,14 @@
 diff --git a/src/dev_ng/game/streaming/streaming.cpp b/src/dev_ng/game/streaming/streaming.cpp
 --- a/src/dev_ng/game/streaming/streaming.cpp
 +++ b/src/dev_ng/game/streaming/streaming.cpp
-@@ -41,33 +41,33 @@ STREAMING_OPTIMISATIONS()
+@@ -41,51 +41,50 @@ STREAMING_OPTIMISATIONS()
  #include "streaming/zonedassetmanager.h"
  
  // Game headers
 -#include "camera/caminterface.h"
+-#include "camera/viewports/viewportmanager.h"
 +#include "camera/CamInterface.h"
- #include "camera/viewports/viewportmanager.h"
++#include "camera/viewports/ViewportManager.h"
  #include "control/gamelogic.h"
 -#include "core/game.h"
 +#include "Core/game.h"
@@ -23,28 +24,34 @@ diff --git a/src/dev_ng/game/streaming/streaming.cpp b/src/dev_ng/game/streaming
 +#include "Peds/ped.h"
  #include "performance/clearinghouse.h"
  #include "physics/physics.h"
- #include "renderer/gtadrawable.h"
+-#include "renderer/gtadrawable.h"
++#include "renderer/GtaDrawable.h"
  #include "scene/ContinuityMgr.h"
 -#include "scene/datafilemgr.h"
 -#include "scene/datafilemgr.h"
 +#include "scene/DataFileMgr.h"
-+#include "scene/DataFileMgr.h"
  #include "scene/Entity.h"
- #include "scene/focusentity.h"
+-#include "scene/focusentity.h"
++#include "scene/FocusEntity.h"
  #include "scene/InstancePriority.h"
- #include "scene/ipl/iplcullbox.h"
+-#include "scene/ipl/iplcullbox.h"
++#include "scene/ipl/IplCullBox.h"
  #include "scene/loader/ManagedImapGroup.h"
 -#include "scene/loader/maptypes.h"
 +#include "scene/loader/mapTypes.h"
  #include "scene/loader/mapFileMgr.h"
  #include "scene/scene.h"
- #include "scene/streamer/scenestreamermgr.h"
+-#include "scene/streamer/scenestreamermgr.h"
 -#include "scene/world/gameworld.h"
++#include "scene/streamer/SceneStreamerMgr.h"
 +#include "scene/world/GameWorld.h"
  #include "scene/ExtraContent.h"
  #include "script/script.h"
- #include "streaming/cacheloader.h"
-@@ -77,15 +77,15 @@ STREAMING_OPTIMISATIONS()
+-#include "streaming/cacheloader.h"
++#include "streaming/CacheLoader.h"
+ #include "streaming/requestrecorder.h"
+ #include "streaming/streamingdebug.h"
+ #include "streaming/streamingengine.h"
  #include "streaming/streamingloader.h"
  #include "streaming/streamingmodule.h"
  #include "streaming/streamingrequestlist.h"
@@ -64,7 +71,7 @@ diff --git a/src/dev_ng/game/streaming/streaming.cpp b/src/dev_ng/game/streaming
  #include "control/replay/ReplayIPLManager.h"
  #include "control/replay/Misc/InteriorPacket.h"
  
-@@ -1156,19 +1156,19 @@ void CStreaming::InitWidgets()
+@@ -1156,19 +1155,19 @@ void CStreaming::InitWidgets()
  // fwTxd Defragmentation Support
  #include "streaming/defragmentation.h"
  
@@ -76,17 +83,20 @@ diff --git a/src/dev_ng/game/streaming/streaming.cpp b/src/dev_ng/game/streaming
 -#include "ModelInfo/ModelInfo.h"
 -#include "ModelInfo/ModelInfo_Factories.h"
 -#include "modelinfo/pedmodelinfo.h"
+-#include "modelinfo/timemodelinfo.h"
+-#include "renderer/drawlists/drawlist.h"
+-#include "scene/entity.h"
+-#include "shaders/customshadereffectped.h"
+-#include "shaders/customshadereffectvehicle.h"
+-#include "vehicles/vehicle.h"
 +#include "modelinfo/ModelInfo.h"
 +#include "modelinfo/ModelInfo_Factories.h"
 +#include "modelinfo/PedModelInfo.h"
- #include "modelinfo/timemodelinfo.h"
--#include "renderer/drawlists/drawlist.h"
--#include "scene/entity.h"
++#include "modelinfo/TimeModelInfo.h"
 +#include "renderer/DrawLists/drawList.h"
 +#include "scene/Entity.h"
- #include "shaders/customshadereffectped.h"
- #include "shaders/customshadereffectvehicle.h"
--#include "vehicles/vehicle.h"
++#include "shaders/CustomShaderEffectPed.h"
++#include "shaders/CustomShaderEffectVehicle.h"
 +#include "Vehicles/vehicle.h"
  
  namespace rage {

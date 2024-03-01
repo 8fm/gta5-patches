@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.cpp b/src/dev_ng/g
  
  #include "grcore/debugdraw.h"
  
-@@ -11,16 +11,16 @@
+@@ -11,20 +11,20 @@
  #include "camera/CamInterface.h"
  #include "game/ModelIndices.h"
  #include "fwmaths/random.h"
@@ -27,9 +27,15 @@ diff --git a/src/dev_ng/game/task/Default/Patrol/PatrolRoutes.cpp b/src/dev_ng/g
 +#include "scene/FileLoader.h"
 +#include "scene/world/GameWorld.h"
  #include "scene/worldpoints.h"
- #include "task/Default/patrol/TaskPatrol.h"
+-#include "task/Default/patrol/TaskPatrol.h"
 -#include "Task/Scenario/ScenarioManager.h"
++#include "task/Default/Patrol/TaskPatrol.h"
 +#include "task/Scenario/ScenarioManager.h"
  #include "task/System/TaskManager.h"
  
  // Rage headers
+-#include "Vector/colors.h"
++#include "vector/colors.h"
+ 
+ FW_INSTANTIATE_CLASS_POOL_SPILLOVER(CPatrolNode, CPatrolNode::MAX_PATROL_NODES, 0.75f, atHashString("CPatrolNode",0x6e63bff3));
+ FW_INSTANTIATE_CLASS_POOL_SPILLOVER(CPatrolLink, CPatrolLink::MAX_PATROL_LINKS, 0.75f, atHashString("CPatrolLink",0x1996ba86));

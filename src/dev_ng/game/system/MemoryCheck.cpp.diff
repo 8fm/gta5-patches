@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/game/system/MemoryCheck.cpp b/src/dev_ng/game/system/MemoryCheck.cpp
+--- a/src/dev_ng/game/system/MemoryCheck.cpp
++++ b/src/dev_ng/game/system/MemoryCheck.cpp
+@@ -1,4 +1,4 @@
+-#include "memorycheck.h"
++#include "MemoryCheck.h"
+ #include "security/obfuscatedtypes.h"
+ 
+ 

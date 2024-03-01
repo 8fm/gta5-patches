@@ -13,7 +13,7 @@ diff --git a/src/dev_ng/game/control/slownesszones.cpp b/src/dev_ng/game/control
 +#include "Core/game.h"
 +#include "Vehicles/vehicle.h"
 +#include "debug/VectorMap.h"
-+#include "control/GameLogic.h"
++#include "control/gamelogic.h"
 +#include "Peds/ped.h"
  #include "Peds/PlayerInfo.h"
  

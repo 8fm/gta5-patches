@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/task/Crimes/TaskReactToPursuit.cpp b/src/dev_ng/gam
  
  // File header
 -#include "Task/crimes/TaskReactToPursuit.h"
-+#include "task/crimes/TaskReactToPursuit.h"
++#include "task/Crimes/TaskReactToPursuit.h"
  
  // Rage Headers
  #include "math/angmath.h"

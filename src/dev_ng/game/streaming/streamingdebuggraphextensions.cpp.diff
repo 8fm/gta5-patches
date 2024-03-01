@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/streaming/streamingdebuggraphextensions.cpp b/src/dev_ng/game/streaming/streamingdebuggraphextensions.cpp
+--- a/src/dev_ng/game/streaming/streamingdebuggraphextensions.cpp
++++ b/src/dev_ng/game/streaming/streamingdebuggraphextensions.cpp
+@@ -8,7 +8,7 @@
+ #include "streaming/streamingdebug.h"
+ 
+ #include "text/text.h"
+-#include "text/textconversion.h"
++#include "text/TextConversion.h"
+ #include "fwdebug/debugdraw.h"
+ #include "grcore/viewport.h"
+ #include "fwmaths/Rect.h"

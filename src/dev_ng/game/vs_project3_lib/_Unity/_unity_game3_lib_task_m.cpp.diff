@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_m.cpp b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_m.cpp
+--- a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_m.cpp
++++ b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_task_m.cpp
+@@ -102,13 +102,13 @@
+ #include "../../task/Movement/TaskGoTo.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../task/Movement/TaskGoToPoint.cpp"
++#include "../../task/Movement/TaskGotoPoint.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../task/Movement/TaskGoToPointAvoidance.cpp"
++#include "../../task/Movement/TaskGotoPointAvoidance.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../task/Movement/TaskGoToPointAiming.cpp"
++#include "../../task/Movement/TaskGotoPointAiming.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../task/Movement/TaskMoveFollowEntityOffset.cpp"

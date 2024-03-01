@@ -35,7 +35,7 @@ diff --git a/src/dev_ng/game/script/commands_object.cpp b/src/dev_ng/game/script
 +#include "network/General/NetworkUtil.h"
 +#include "Objects/Door.h"
 +#include "Objects/DummyObject.h"
-+#include "Objects/ObjectPopulation.h"
++#include "Objects/objectpopulation.h"
  #include "pathserver/PathServer.h"
 -#include "peds/Ped.h"
 +#include "Peds/ped.h"

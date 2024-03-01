@@ -44,7 +44,7 @@ diff --git a/src/dev_ng/game/task/Combat/TaskInvestigate.cpp b/src/dev_ng/game/t
 +#include "task/Default/Patrol/PatrolRoutes.h"
 +#include "task/Motion/Locomotion/TaskMotionPed.h"
 +#include "task/Movement/TaskGoTo.h"
-+#include "task/Movement/TaskGoToPointAiming.h"
++#include "task/Movement/TaskGotoPointAiming.h"
 +#include "task/Movement/TaskNavMesh.h"
 +#include "task/Default/TaskWander.h"
 +#include "task/Combat/TaskSearch.h"

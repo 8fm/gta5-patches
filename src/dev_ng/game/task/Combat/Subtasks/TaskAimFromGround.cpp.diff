@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/task/Combat/Subtasks/TaskAimFromGround.cpp b/src/de
 -#include "Task/Weapons/Gun/Metadata/ScriptedGunTaskInfoMetadataMgr.h"
 -#include "Weapons/WeaponTypes.h"
 +#include "Peds/ped.h"
-+#include "task/Combat/SubTasks/TaskAimFromGround.h"
++#include "task/Combat/Subtasks/TaskAimFromGround.h"
 +#include "task/Weapons/Gun/TaskGun.h"
 +#include "task/Weapons/Gun/TaskAimGunScripted.h"
 +#include "task/Weapons/Gun/Metadata/ScriptedGunTaskInfo.h"

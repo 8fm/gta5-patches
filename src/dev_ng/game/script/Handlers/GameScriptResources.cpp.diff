@@ -48,10 +48,11 @@ diff --git a/src/dev_ng/game/script/Handlers/GameScriptResources.cpp b/src/dev_n
  #include "vfx/ptfx/ptfxmanager.h"
  #include "vfx/ptfx/ptfxscript.h"
 -#include "vfx/systems/vfxscript.h"
-+#include "vfx/systems/VfxScript.h"
- #include "weapons/weaponscriptresource.h"
+-#include "weapons/weaponscriptresource.h"
 -#include "vehicles/metadata/vehiclescriptresource.h"
-+#include "Vehicles/Metadata/vehiclescriptresource.h"
++#include "vfx/systems/VfxScript.h"
++#include "weapons/WeaponScriptResource.h"
++#include "Vehicles/Metadata/VehicleScriptResource.h"
  
  // Framework headers
  #include "fwanimation/directorcomponentsyncedscene.h"

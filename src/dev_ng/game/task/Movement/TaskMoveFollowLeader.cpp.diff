@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp b/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp
 --- a/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp
 +++ b/src/dev_ng/game/task/Movement/TaskMoveFollowLeader.cpp
-@@ -3,12 +3,12 @@
+@@ -2,13 +2,13 @@
+ 
  #include "TaskMoveFollowLeader.h"
  
- #include "PedGroup/Formation.h"
+-#include "PedGroup/Formation.h"
 -#include "Peds/Ped.h"
++#include "PedGroup/formation.h"
 +#include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"
  #include "Peds/PedMoveBlend/PedMoveBlendInWater.h"

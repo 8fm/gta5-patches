@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
 --- a/src/dev_ng/game/scene/scene.cpp
 +++ b/src/dev_ng/game/scene/scene.cpp
-@@ -32,8 +32,8 @@
+@@ -28,12 +28,12 @@
+ #include "fwscene/world/StreamedSceneGraphNode.h"
+ #include "fwscene/lod/ContainerLod.h"
+ #include "fwsys/metadatastore.h"
+-#include "fwtl/debugownerhistory.h"
++#include "fwtl/DebugOwnerHistory.h"
  #include "fwpheffects/ropedatamanager.h"
  
  // Game headers
@@ -12,8 +17,16 @@ diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
  #include "animation/MovePed.h"
  #include "animation/MoveObject.h"
  #include "animation/MoveVehicle.h"
-@@ -47,13 +47,13 @@
- #include "Cloth/ClothRageInterface.h"
+@@ -42,18 +42,18 @@
+ #include "camera/system/CameraFactory.h"
+ #include "camera/system/CameraManager.h"
+ #include "camera/viewports/ViewportManager.h"
+-#include "Cloth/Cloth.h"
+-#include "Cloth/ClothArchetype.h"
+-#include "Cloth/ClothRageInterface.h"
++#include "cloth/Cloth.h"
++#include "cloth/ClothArchetype.h"
++#include "cloth/ClothRageInterface.h"
  #include "control/gamelogic.h"
  #include "control/garages.h"
 -#include "control/route.h"
@@ -62,7 +75,7 @@ diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
 +#include "Objects/ObjectIntelligence.h"
 +#include "Objects/objectpopulation.h"
  #include "pathserver/ExportCollision.h"		// CNavMeshDataExporter::WillExportCollision()
- #include "pathserver/pathserver.h"
+-#include "pathserver/pathserver.h"
 -#include "pathserver/navedit.h"
 -#include "peds/Ped.h"
 -#include "peds/PedDebugVisualiser.h"
@@ -71,6 +84,7 @@ diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
 -#include "peds/PedMoveBlend/PedMoveBlendOnFoot.h"
 -#include "peds/pedpopulation.h"
 -#include "peds/popcycle.h"
++#include "pathserver/PathServer.h"
 +#include "pathserver/NavEdit.h"
 +#include "Peds/ped.h"
 +#include "Peds/PedDebugVisualiser.h"
@@ -86,9 +100,10 @@ diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
 +#include "pickups/PickupManager.h"
  #include "pickups/Pickup.h"
  #include "renderer/Deferred/DeferredLighting.h"
- #include "renderer/gtadrawable.h"
+-#include "renderer/gtadrawable.h"
 -#include "renderer/lights/AsyncLightOcclusionMgr.h"
 -#include "renderer/lights/lights.h"
++#include "renderer/GtaDrawable.h"
 +#include "renderer/Lights/AsyncLightOcclusionMgr.h"
 +#include "renderer/Lights/lights.h"
  #include "renderer/Lights/LightEntity.h"
@@ -111,7 +126,7 @@ diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
  #include "renderer/RenderTargetMgr.h"
  #include "renderer/Util/ShaderUtil.h"
  #include "SaveLoad/GenericGameStorage.h"
-@@ -139,49 +139,49 @@
+@@ -139,58 +139,58 @@
  #include "scene/portals/InteriorGroupManager.h"
  #include "scene/portals/InteriorInst.h"
  #include "scene/portals/InteriorProxy.h"
@@ -174,6 +189,9 @@ diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
 -#include "Vfx/Particles/PtFxManager.h"
 -#include "Vfx/vehicleglass/VehicleGlassComponent.h"
 -#include "weapons/explosion.h"
+-#include "weapons/explosionInst.h"
+-#include "weapons/firingpattern.h"
+-#include "weapons/thrownweaponinfo.h"
 +#include "vehicleAi/VehicleIntelligence.h"
 +#include "Vehicles/cargen.h"
 +#include "Vehicles/LandingGear.h"
@@ -186,10 +204,11 @@ diff --git a/src/dev_ng/game/scene/scene.cpp b/src/dev_ng/game/scene/scene.cpp
 +#include "vfx/particles/PtFxManager.h"
 +#include "vfx/vehicleglass/VehicleGlassComponent.h"
 +#include "weapons/Explosion.h"
- #include "weapons/explosionInst.h"
- #include "weapons/firingpattern.h"
- #include "weapons/thrownweaponinfo.h"
-@@ -190,7 +190,7 @@
++#include "weapons/ExplosionInst.h"
++#include "weapons/FiringPattern.h"
++#include "weapons/ThrownWeaponInfo.h"
+ #include "Objects/Door.h"
+ #include "modelinfo/WeaponModelInfo.h"
  #include "debug/Editing/MapEditRESTInterface.h"
  
  #if RSG_PC

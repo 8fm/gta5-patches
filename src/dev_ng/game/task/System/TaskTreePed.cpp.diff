@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/System/TaskTreePed.cpp b/src/dev_ng/game/task/System/TaskTreePed.cpp
 --- a/src/dev_ng/game/task/System/TaskTreePed.cpp
 +++ b/src/dev_ng/game/task/System/TaskTreePed.cpp
-@@ -1,22 +1,22 @@
+@@ -1,25 +1,25 @@
  //Game headers.
 -#include "animation\AnimDefines.h"
 -#include "Event\Events.h"
@@ -41,4 +41,8 @@ diff --git a/src/dev_ng/game/task/System/TaskTreePed.cpp b/src/dev_ng/game/task/
 +#include "task/System/Task.h"
  
  // rage headers
- #include "Profile/timebars.h"
+-#include "Profile/timebars.h"
++#include "profile/timebars.h"
+ 
+ AI_OPTIMISATIONS()
+ 

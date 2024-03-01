@@ -13,10 +13,10 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMSimple.cpp b/src/dev_ng/game/tas
 -#include "fragmentnm\messageparams.h"
 -#include "pharticulated\articulatedbody.h"
 +#include "crskeleton/skeleton.h"
-+#include "fragment/Cache.h"
++#include "fragment/cache.h"
 +#include "fragment/instance.h"
-+#include "fragment/Type.h"
-+#include "fragment/TypeChild.h"
++#include "fragment/type.h"
++#include "fragment/typechild.h"
 +#include "fragmentnm/messageparams.h"
 +#include "pharticulated/articulatedbody.h"
  

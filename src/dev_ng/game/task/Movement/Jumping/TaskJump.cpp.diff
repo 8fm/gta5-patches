@@ -54,7 +54,7 @@ diff --git a/src/dev_ng/game/task/Movement/Jumping/TaskJump.cpp b/src/dev_ng/gam
 +#include "task/Motion/Locomotion/TaskInWater.h"
 +#include "task/Motion/Locomotion/TaskMotionPed.h"
 +#include "task/Movement/TaskFall.h"
-+#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
 +#include "camera/CamInterface.h"
  
  #include "GapHelper.h"

@@ -28,7 +28,7 @@ diff --git a/src/dev_ng/game/script/commands_weapon.cpp b/src/dev_ng/game/script
 +#include "pickups/PickupManager.h"
 +#include "script/Handlers/GameScriptResources.h"
 +#include "script/script.h"
-+#include "script/Script_Helper.h"
++#include "script/script_helper.h"
 +#include "task/Weapons/Gun/TaskAimGunOnFoot.h"
 +#include "task/Weapons/Gun/TaskReloadGun.h"
 +#include "task/Weapons/TaskDetonator.h"

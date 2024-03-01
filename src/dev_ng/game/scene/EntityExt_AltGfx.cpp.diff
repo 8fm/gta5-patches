@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/EntityExt_AltGfx.cpp b/src/dev_ng/game/scene/EntityExt_AltGfx.cpp
+--- a/src/dev_ng/game/scene/EntityExt_AltGfx.cpp
++++ b/src/dev_ng/game/scene/EntityExt_AltGfx.cpp
+@@ -8,7 +8,7 @@
+ // rage
+ 
+ // framework
+-#include "fwUtil/KeyGen.h"
++#include "fwutil/KeyGen.h"
+ 
+ //game
+ #include "scene/scene_channel.h"

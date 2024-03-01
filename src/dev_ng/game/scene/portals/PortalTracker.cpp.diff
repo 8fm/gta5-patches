@@ -18,7 +18,7 @@ diff --git a/src/dev_ng/game/scene/portals/PortalTracker.cpp b/src/dev_ng/game/s
 -#include "network/general/NetworkUtil.h"
 -#include "objects/object.h"
 -#include "objects/DummyObject.h"
-+#include "modelinfo/MLOmodelInfo.h"
++#include "modelinfo/MloModelInfo.h"
 +#include "network/General/NetworkUtil.h"
 +#include "Objects/object.h"
 +#include "Objects/DummyObject.h"

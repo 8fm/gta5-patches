@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/script/commands_network.cpp b/src/dev_ng/game/script/commands_network.cpp
 --- a/src/dev_ng/game/script/commands_network.cpp
 +++ b/src/dev_ng/game/script/commands_network.cpp
-@@ -27,25 +27,25 @@
+@@ -20,32 +20,32 @@
+ #include "fwanimation/directorcomponentsyncedscene.h"
+ #include "fwnet/netarrayhandler.h"
+ #include "fwnet/neteventmgr.h"
+-#include "fwnet/netscgamerdatamgr.h"
++#include "fwnet/netscgamerDataMgr.h"
+ #include "fwscript/scriptinterface.h"
+ 
+ // Game headers
  #include "script/commands_network.h"
  #include "control/gamelogic.h"
  #include "control/restart.h"

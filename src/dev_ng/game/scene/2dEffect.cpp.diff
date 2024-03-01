@@ -1,24 +1,25 @@
 diff --git a/src/dev_ng/game/scene/2dEffect.cpp b/src/dev_ng/game/scene/2dEffect.cpp
 --- a/src/dev_ng/game/scene/2dEffect.cpp
 +++ b/src/dev_ng/game/scene/2dEffect.cpp
-@@ -5,24 +5,24 @@
+@@ -5,30 +5,30 @@
  #include "system/nelem.h"
  
  #include "ai/ambient/AmbientModelSetManager.h"
 -#include "modelinfo/modelinfo.h"
-+#include "modelinfo/ModelInfo.h"
- #include "modelinfo/modelinfo_factories.h"
+-#include "modelinfo/modelinfo_factories.h"
 -#include "task/scenario/info/scenarioinfo.h"
 -#include "task/Scenario/Info/ScenarioInfoManager.h"
 -#include "task/scenario/scenariomanager.h"
 -#include "task/scenario/scenariopointmanager.h"
 -#include "task/scenario/scenariopointgroup.h"
 -#include "task/scenario/taskscenario.h"
-+#include "task/Scenario/info/scenarioinfo.h"
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
++#include "task/Scenario/info/ScenarioInfo.h"
 +#include "task/Scenario/info/ScenarioInfoManager.h"
 +#include "task/Scenario/ScenarioManager.h"
-+#include "task/Scenario/scenariopointmanager.h"
-+#include "task/Scenario/scenariopointgroup.h"
++#include "task/Scenario/ScenarioPointManager.h"
++#include "task/Scenario/ScenarioPointGroup.h"
 +#include "task/Scenario/TaskScenario.h"
  #include "entity/archetype.h"
  #include "grcore/debugdraw.h"
@@ -34,7 +35,14 @@ diff --git a/src/dev_ng/game/scene/2dEffect.cpp b/src/dev_ng/game/scene/2dEffect
 -#include "scene/2deffect.h"
 -#include "scene/loader/mapdata_extensions.h"
 +#include "scene/2dEffect.h"
-+#include "scene/loader/MapData_extensions.h"
++#include "scene/loader/MapData_Extensions.h"
  #include "scene/worldpoints.h"
  #include "script/script.h"
  #include "vfx/channel.h"
+ #include "vfx/metadata/PtFxAssetInfo.h"
+ #include "vfx/ptfx/ptfxmanager.h"
+-#include "vfx/systems/vfxentity.h"
++#include "vfx/systems/VfxEntity.h"
+ #include "camera/viewports/ViewportManager.h"
+ #include "audio/northaudioengine.h"
+ 

@@ -52,10 +52,11 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskVehicleWeapon.cpp b/src/dev_ng/gam
  #include "vfx/systems/VfxVehicle.h"
  #include "vfx/vehicleglass/VehicleGlassManager.h"
 -#include "Weapons/Weapon.h"
-+#include "weapons/Weapon.h"
- #include "weapons/info/weaponinfo.h"
+-#include "weapons/info/weaponinfo.h"
 -#include "AI/Ambient/ConditionalAnimManager.h"
 -#include "VehicleAi/task/TaskVehicleAttack.h"
++#include "weapons/Weapon.h"
++#include "weapons/info/WeaponInfo.h"
 +#include "ai/ambient/ConditionalAnimManager.h"
 +#include "vehicleAi/task/TaskVehicleAttack.h"
  

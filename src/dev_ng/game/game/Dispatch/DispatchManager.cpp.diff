@@ -21,7 +21,7 @@ diff --git a/src/dev_ng/game/game/Dispatch/DispatchManager.cpp b/src/dev_ng/game
 -#include "Network/Objects/Entities/NetObjVehicle.h"
 -#include "peds/ped.h"
 -#include "peds/PedFactory.h"
-+#include "control/Gamelogic.h"
++#include "control/gamelogic.h"
 +#include "debug/DebugScene.h"
 +#include "game/Dispatch/DispatchData.h"
 +#include "game/Dispatch/DispatchServices.h"

@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/network/SocialClubServices/SocialClubFeed.cpp b/src/dev_ng/game/network/SocialClubServices/SocialClubFeed.cpp
 --- a/src/dev_ng/game/network/SocialClubServices/SocialClubFeed.cpp
 +++ b/src/dev_ng/game/network/SocialClubServices/SocialClubFeed.cpp
-@@ -14,11 +14,11 @@
+@@ -13,12 +13,12 @@
+ #include "system/serviceargs.h"
  #include "vector/color32.h" // For crew color support
  #include "text/textfile.h"
- #include "text/textformat.h"
+-#include "text/textformat.h"
 -#include "network/networkinterface.h"
++#include "text/TextFormat.h"
 +#include "network/NetworkInterface.h"
  #include "string/stringutil.h"
 -#include "Peds/Ped.h"

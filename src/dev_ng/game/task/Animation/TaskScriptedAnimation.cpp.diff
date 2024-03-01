@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp b/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp
 --- a/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp
 +++ b/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp
-@@ -11,19 +11,19 @@
+@@ -11,20 +11,20 @@
  #include "camera/helpers/ControlHelper.h"
  #include "camera/CamInterface.h"
  #include "control/replay/replay.h"
@@ -20,11 +20,13 @@ diff --git a/src/dev_ng/game/task/Animation/TaskScriptedAnimation.cpp b/src/dev_
  #include "renderer/HierarchyIds.h"
  #include "task/Default/TaskPlayer.h"
 -#include "task/motion/locomotion/taskmotionped.h"
-+#include "task/Motion/Locomotion/taskmotionped.h"
++#include "task/Motion/Locomotion/TaskMotionPed.h"
  #include "task/Physics/TaskNMJumpRollFromRoadVehicle.h"
  #include "vehicleAi/VehicleAILodManager.h"
 -#include "vehicles/door.h"
+-#include "weapons/info/weaponinfo.h"
 +#include "Vehicles/door.h"
- #include "weapons/info/weaponinfo.h"
++#include "weapons/info/WeaponInfo.h"
  #include "system/appcontent.h"
  
+ AI_OPTIMISATIONS()

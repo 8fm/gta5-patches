@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_streaming_system.cpp b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_streaming_system.cpp
+--- a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_streaming_system.cpp
++++ b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_streaming_system.cpp
+@@ -3,10 +3,10 @@
+ # define __UNITYBUILD
+ #endif //
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../streaming/boxstreamer.cpp"
++#include "../../streaming/BoxStreamer.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../streaming/islandhopper.cpp"
++#include "../../streaming/IslandHopper.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../streaming/populationstreaming.cpp"
+@@ -105,7 +105,7 @@
+ #include "../../system/keyboard.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../system/memorycheck.cpp"
++#include "../../system/MemoryCheck.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../system/pad.cpp"

@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_scene.cpp b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_scene.cpp
+--- a/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_scene.cpp
++++ b/src/dev_ng/game/vs_project3_lib/_Unity/_unity_game3_lib_scene.cpp
+@@ -150,10 +150,10 @@
+ #include "../../scene/loader/MapData_Misc.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../scene/loader/MapFileMgr.cpp"
++#include "../../scene/loader/mapFileMgr.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../scene/loader/MapTypes.cpp"
++#include "../../scene/loader/mapTypes.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../scene/loader/Map_TxdParents.cpp"

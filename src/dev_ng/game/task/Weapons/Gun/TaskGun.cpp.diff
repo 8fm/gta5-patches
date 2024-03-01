@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskGun.cpp b/src/dev_ng/game/task/Weapons/Gun/TaskGun.cpp
 --- a/src/dev_ng/game/task/Weapons/Gun/TaskGun.cpp
 +++ b/src/dev_ng/game/task/Weapons/Gun/TaskGun.cpp
-@@ -1,53 +1,53 @@
+@@ -1,54 +1,54 @@
  // File header
 -#include "Task/Weapons/Gun/TaskGun.h"
 +#include "task/Weapons/Gun/TaskGun.h"
@@ -13,13 +13,14 @@ diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskGun.cpp b/src/dev_ng/game/task
  // Game headers
 -#include "Animation/FacialData.h"
 -#include "Animation/MovePed.h"
-+#include "animation/FacialData.h"
-+#include "animation/MovePed.h"
- #include "Audio/ScriptAudioEntity.h"
+-#include "Audio/ScriptAudioEntity.h"
 -#include "Camera/Base/BaseObject.h"
 -#include "Camera/Base/BaseCamera.h"
 -#include "Camera/CamInterface.h"
-+#include "camera/Base/BaseObject.h"
++#include "animation/FacialData.h"
++#include "animation/MovePed.h"
++#include "audio/scriptaudioentity.h"
++#include "camera/base/BaseObject.h"
 +#include "camera/base/BaseCamera.h"
 +#include "camera/CamInterface.h"
  #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
@@ -39,7 +40,7 @@ diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskGun.cpp b/src/dev_ng/game/task
 -#include "Peds/Ped.h"
 -#include "Scene/PlayerSwitch/PlayerSwitchInterface.h"
 +#include "Peds/ped.h"
-+#include "scene/PlayerSwitch/PlayerSwitchInterface.h"
++#include "scene/playerswitch/PlayerSwitchInterface.h"
  #include "task/Combat/CombatDirector.h"
 -#include "Task/Combat/TaskCombatMelee.h"
 -#include "Task/Combat/TaskNewCombat.h"
@@ -87,7 +88,9 @@ diff --git a/src/dev_ng/game/task/Weapons/Gun/TaskGun.cpp b/src/dev_ng/game/task
  #include "Vehicles/Metadata/VehicleMetadataManager.h"
  #include "Vehicles/Metadata/VehicleSeatInfo.h"
 -#include "Weapons/Weapon.h"
+-#include "weapons/info/weaponinfo.h"
 +#include "weapons/Weapon.h"
- #include "weapons/info/weaponinfo.h"
++#include "weapons/info/WeaponInfo.h"
  
  #include "control/replay/ReplaySettings.h"
+ 

@@ -68,7 +68,7 @@ diff --git a/src/dev_ng/game/task/Combat/TaskThreatResponse.cpp b/src/dev_ng/gam
 +#include "task/Default/TaskAmbient.h"
 +#include "task/Default/TaskChat.h"
 +#include "task/Animation/TaskAnims.h"
-+#include "task/Combat/taskcombatmelee.h"
++#include "task/Combat/TaskCombatMelee.h"
 +#include "task/Combat/TaskInvestigate.h"
 +#include "task/Combat/TaskNewCombat.h"
 +#include "task/Combat/TaskReact.h"

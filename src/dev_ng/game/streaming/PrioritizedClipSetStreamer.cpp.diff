@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/streaming/PrioritizedClipSetStreamer.cpp b/src/dev_
  
  // Game headers
 -#include "task/system/taskhelpers.h"
-+#include "task/System/taskhelpers.h"
++#include "task/System/TaskHelpers.h"
  
  STREAMING_OPTIMISATIONS()
  AI_VEHICLE_OPTIMISATIONS()

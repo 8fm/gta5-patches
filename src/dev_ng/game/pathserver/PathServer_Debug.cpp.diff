@@ -14,6 +14,15 @@ diff --git a/src/dev_ng/game/pathserver/PathServer_Debug.cpp b/src/dev_ng/game/p
  
  
  #if defined(GTA_ENGINE) && defined(DEBUG_DRAW) && DEBUG_DRAW
+@@ -31,7 +31,7 @@
+ // Framework headers
+ #include "ai/navmesh/navmeshextents.h"
+ #include "ai/navmesh/tessellation.h"
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
+ #include "fwscene/world/WorldLimits.h"
+ 
+ #ifdef GTA_ENGINE
 @@ -41,23 +41,23 @@
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"

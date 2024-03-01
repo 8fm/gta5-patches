@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp
-@@ -10,7 +10,7 @@
+@@ -10,15 +10,15 @@
  
  //Rage Headers
  #include "audio/cutsceneaudioentity.h"
@@ -10,11 +10,12 @@ diff --git a/src/dev_ng/game/Cutscene/CutSceneSoundEntity.cpp b/src/dev_ng/game/
  #include "cutscene/CutSceneSoundEntity.h"
  #include "cutfile/cutfobject.h"
  #include "cutscene/cutsevent.h"
-@@ -18,7 +18,7 @@
+ #include "cutscene/cutsmanager.h"
  #include "cutfile/cutfeventargs.h"
  #include "cutscene/cutseventargs.h"
- #include "cutscene/cutscene_channel.h"
+-#include "cutscene/cutscene_channel.h"
 -#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/cutscene_channel.h"
 +#include "Cutscene/CutSceneManagerNew.h"
  #include "fwsys/timer.h"
  

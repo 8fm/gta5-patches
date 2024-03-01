@@ -114,17 +114,19 @@ diff --git a/src/dev_ng/game/frontend/PauseMenu.cpp b/src/dev_ng/game/frontend/P
  #if RSG_PC
  #include "network/Voice/NetworkVoice.h"
  #endif // RSG_PC
-@@ -117,8 +117,8 @@
+@@ -117,9 +117,9 @@
  #include "frontend/landing_page/LegacyLandingScreen.h"
  #include "frontend/TextInputBox.h"
  #endif // RSG_PC
 -#include "Peds/Ped.h"
 -#include "Peds/Rendering/PedHeadshotManager.h"
+-#include "Profile/timebars.h"
 +#include "Peds/ped.h"
 +#include "Peds/rendering/PedHeadshotManager.h"
- #include "Profile/timebars.h"
++#include "profile/timebars.h"
  #include "renderer/PostProcessFX.h"
  #include "renderer/PostProcessFXHelper.h"
+ #include "renderer/RenderPhases/RenderPhaseDebugNY.h"
 @@ -140,32 +140,32 @@
  #include "scene/playerswitch/PlayerSwitchInterface.h"
  #include "script/script_hud.h"

@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp b/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp
 --- a/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp
 +++ b/src/dev_ng/game/renderer/Entities/CutSceneDrawHandler.cpp
-@@ -14,12 +14,12 @@
+@@ -12,14 +12,14 @@
+ // Framework Headers
+ 
  // Game Headers
- #include "cutscene/cutscene_channel.h"
+-#include "cutscene/cutscene_channel.h"
++#include "Cutscene/cutscene_channel.h"
  #include "modelinfo/PedModelInfo.h"
 -#include "Peds/Ped.h"
 +#include "Peds/ped.h"

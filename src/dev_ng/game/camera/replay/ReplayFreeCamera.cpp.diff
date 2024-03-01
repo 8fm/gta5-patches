@@ -7,7 +7,7 @@ diff --git a/src/dev_ng/game/camera/replay/ReplayFreeCamera.cpp b/src/dev_ng/gam
  #include "frontend/VideoEditor/VideoEditorInterface.h"
 -#include "modelInfo/MLOmodelInfo.h"
 -#include "objects/Door.h"
-+#include "modelinfo/MLOmodelInfo.h"
++#include "modelinfo/MloModelInfo.h"
 +#include "Objects/Door.h"
  #include "output/constantlighteffect.h"
 -#include "Peds/Ped.h"

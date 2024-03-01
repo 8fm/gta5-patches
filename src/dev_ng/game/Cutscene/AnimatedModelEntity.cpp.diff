@@ -1,12 +1,15 @@
 diff --git a/src/dev_ng/game/Cutscene/AnimatedModelEntity.cpp b/src/dev_ng/game/Cutscene/AnimatedModelEntity.cpp
 --- a/src/dev_ng/game/Cutscene/AnimatedModelEntity.cpp
 +++ b/src/dev_ng/game/Cutscene/AnimatedModelEntity.cpp
-@@ -27,21 +27,21 @@
+@@ -25,23 +25,23 @@
+ #include "camera/CamInterface.h"
+ #include "camera/Cutscene/CutsceneDirector.h"
  #include "camera/cutscene/AnimatedCamera.h"
- #include "cutscene/CutSceneCameraEntity.h"
- #include "cutscene/AnimatedModelEntity.h"
--#include "Cutscene/cutscene_channel.h"
-+#include "cutscene/cutscene_channel.h"
+-#include "cutscene/CutSceneCameraEntity.h"
+-#include "cutscene/AnimatedModelEntity.h"
++#include "Cutscene/CutSceneCameraEntity.h"
++#include "Cutscene/AnimatedModelEntity.h"
+ #include "Cutscene/cutscene_channel.h"
  #include "cutscene/CutSceneAnimManager.h"
 -#include "cutscene/CutSceneManagerNew.h"
 +#include "Cutscene/CutSceneManagerNew.h"

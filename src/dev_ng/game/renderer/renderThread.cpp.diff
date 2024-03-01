@@ -32,7 +32,7 @@ diff --git a/src/dev_ng/game/renderer/renderThread.cpp b/src/dev_ng/game/rendere
  #include "physics/physics.h"
 -#include "peds/rendering/pedVariationPack.h"
 -#include "peds/Ped.h"
-+#include "Peds/rendering/pedVariationPack.h"
++#include "Peds/rendering/PedVariationPack.h"
 +#include "Peds/ped.h"
  #include "performance/clearinghouse.h"
  #include "renderer/DrawLists/drawListMgr.h"

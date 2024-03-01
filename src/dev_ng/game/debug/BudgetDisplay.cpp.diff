@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/debug/BudgetDisplay.cpp b/src/dev_ng/game/debug/BudgetDisplay.cpp
 --- a/src/dev_ng/game/debug/BudgetDisplay.cpp
 +++ b/src/dev_ng/game/debug/BudgetDisplay.cpp
-@@ -25,7 +25,7 @@
+@@ -25,15 +25,15 @@
  #include "cutfile/cutfobject.h"
  #include "cutfile/cutfdefines.h"
  #include "cutscene/CutsceneCameraEntity.h"
@@ -10,9 +10,10 @@ diff --git a/src/dev_ng/game/debug/BudgetDisplay.cpp b/src/dev_ng/game/debug/Bud
  #include "renderer/PostProcessFX.h"
  #include "renderer/rendertargets.h"
  #include "scene/debug/PostScanDebug.h"
-@@ -33,7 +33,7 @@
+ #include "system/param.h"
  #include "timecycle/timecycle.h"
- #include "camera/viewports/viewportmanager.h"
+-#include "camera/viewports/viewportmanager.h"
++#include "camera/viewports/ViewportManager.h"
  #include "scene/world/VisibilityMasks.h"
 -#include "cutscene/CutSceneManagerNew.h"
 +#include "Cutscene/CutSceneManagerNew.h"

@@ -24,12 +24,14 @@ diff --git a/src/dev_ng/game/Core/app.cpp b/src/dev_ng/game/Core/app.cpp
  #include "frontend/GameStreamMgr.h"
  #include "frontend/landing_page/LandingPageArbiter.h"
  #include "frontend/loadingscreens.h"
-@@ -52,18 +52,18 @@
+@@ -51,19 +51,19 @@
+ #include "frontend/WarningScreen.h"
  #include "game/Clock.h"
  #include "ik/IkManager.h"
- #include "modelinfo/mlomodelinfo.h"
+-#include "modelinfo/mlomodelinfo.h"
 -#include "network/live/livemanager.h"
 -#include "network/events/NetworkEventTypes.h"
++#include "modelinfo/MloModelInfo.h"
 +#include "network/Live/livemanager.h"
 +#include "network/Events/NetworkEventTypes.h"
  #include "network/Objects/NetworkObjectPopulationMgr.h"

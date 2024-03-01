@@ -50,7 +50,7 @@ diff --git a/src/dev_ng/game/task/Scenario/ScenarioEditor.cpp b/src/dev_ng/game/
 +#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
 +#include "Peds/pedpopulation.h"
-+#include "Peds/pedPlacement.h"
++#include "Peds/pedplacement.h"
  #include "Peds/PedFactory.h"
  #include "scene/EntityIterator.h"
  #include "Vehicles/cargen.h"

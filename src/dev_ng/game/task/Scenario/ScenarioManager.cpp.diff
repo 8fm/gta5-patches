@@ -8,10 +8,12 @@ diff --git a/src/dev_ng/game/task/Scenario/ScenarioManager.cpp b/src/dev_ng/game
  
  // Framework headers
  #include "ai/aichannel.h"
-@@ -10,65 +10,65 @@
+@@ -8,67 +8,67 @@
+ #include "ai/ambient/AmbientModelSetManager.h"
+ #include "ai/ambient/ConditionalAnimManager.h"
  #include "ai/BlockingBounds.h"
- #include "Audio/speechmanager.h"
- #include "Bank/Group.h"
+-#include "Audio/speechmanager.h"
+-#include "Bank/Group.h"
 -#include "Camera/CamInterface.h"
 -#include "Camera/Debug/DebugDirector.h"
 -#include "Debug/DebugScene.h"
@@ -20,8 +22,10 @@ diff --git a/src/dev_ng/game/task/Scenario/ScenarioManager.cpp b/src/dev_ng/game
 -#include "Game/Weather.h"
 -#include "Network/Network.h"
 -#include "Peds/Ped.h"
++#include "audio/speechmanager.h"
++#include "bank/group.h"
 +#include "camera/CamInterface.h"
-+#include "camera/Debug/DebugDirector.h"
++#include "camera/debug/DebugDirector.h"
 +#include "debug/DebugScene.h"
 +#include "game/Clock.h"
 +#include "game/ModelIndices.h"
@@ -32,8 +36,9 @@ diff --git a/src/dev_ng/game/task/Scenario/ScenarioManager.cpp b/src/dev_ng/game
  #include "Peds/PedDebugVisualiser.h"
  #include "Peds/PedFactory.h"
  #include "Peds/PedIntelligence.h"
- #include "Peds/PedPlacement.h"
+-#include "Peds/PedPlacement.h"
 -#include "Peds/PedPopulation.h"
++#include "Peds/pedplacement.h"
 +#include "Peds/pedpopulation.h"
  #include "Peds/PopCycle.h"
  #include "Peds/population_channel.h"

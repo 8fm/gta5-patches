@@ -9,7 +9,8 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMPrototype.cpp b/src/dev_ng/game/
 +#include "fragmentnm/messageparams.h"
  
  // Framework headers
- #include "fwdebug/Picker.h"
+-#include "fwdebug/Picker.h"
++#include "fwdebug/picker.h"
  #include "grcore/debugdraw.h"
  
  // Game headers

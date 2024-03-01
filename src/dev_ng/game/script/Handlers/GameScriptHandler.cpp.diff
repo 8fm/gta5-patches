@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp b/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp
 --- a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp
 +++ b/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp
-@@ -5,7 +5,7 @@
+@@ -5,10 +5,10 @@
  //
  
  
@@ -9,7 +9,11 @@ diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp b/src/dev_ng/
 +#include "script/Handlers/GameScriptHandler.h"
  
  // game includes
- #include "ai/blockingbounds.h"
+-#include "ai/blockingbounds.h"
++#include "ai/BlockingBounds.h"
+ #include "audio/scriptaudioentity.h"
+ #include "camera/CamInterface.h"
+ #include "camera/cinematic/CinematicDirector.h"
 @@ -31,10 +31,10 @@
  #include "game/weather.h"
  #include "network/Debug/NetworkDebug.h"
@@ -37,13 +41,13 @@ diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp b/src/dev_ng/
 -#include "Script/handlers/GameScriptResources.h"
 -#include "Script/gta_thread.h"
 +#include "scene/world/GameWorld.h"
-+#include "script/handlers/GameScriptEntity.h"
-+#include "script/handlers/GameScriptResources.h"
++#include "script/Handlers/GameScriptEntity.h"
++#include "script/Handlers/GameScriptResources.h"
 +#include "script/gta_thread.h"
  #include "script/script.h"
  #include "script/script_cars_and_peds.h"
  #include "script/script_channel.h"
-@@ -66,18 +66,18 @@
+@@ -66,23 +66,23 @@
  #include "Vehicles/cargen.h"
  #include "Vehicles/train.h"
  #include "Vehicles/vehiclepopulation.h"
@@ -74,3 +78,10 @@ diff --git a/src/dev_ng/game/script/Handlers/GameScriptHandler.cpp b/src/dev_ng/
  #include "vfx/misc/DistantLights.h"
  
  // framework includes
+-#include "fwnet/netObjectMgrBase.h"
+-#include "fwnet/netTypes.h"
++#include "fwnet/netobjectmgrbase.h"
++#include "fwnet/nettypes.h"
+ #include "fwscene/stores/imapgroup.h"
+ #include "fwscript/scripthandlermgr.h"
+ #include "fwscript/scriptinterface.h"

@@ -16,7 +16,7 @@ diff --git a/src/dev_ng/game/script/commands_clock.cpp b/src/dev_ng/game/script/
 +#include "network/NetworkInterface.h"
 +#include "script/script.h"
 +#include "script/script_helper.h"
-+#include "stats/StatsInterface.h"
++#include "Stats/StatsInterface.h"
  
  //For localtime
  #include <time.h>

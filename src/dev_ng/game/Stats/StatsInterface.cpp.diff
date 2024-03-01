@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/Stats/StatsInterface.cpp b/src/dev_ng/game/Stats/StatsInterface.cpp
 --- a/src/dev_ng/game/Stats/StatsInterface.cpp
 +++ b/src/dev_ng/game/Stats/StatsInterface.cpp
+@@ -13,7 +13,7 @@
+ #include "rline/rl.h"
+ #include "diag/output.h"
+ #include "system/param.h"
+-#include "rline/savemigration/rlsavemigration.h "
++#include "rline/savemigration/rlsavemigration.h"
+ 
+ //Framework Header
+ #include "fwscene/world/WorldLimits.h"
 @@ -33,18 +33,18 @@
  #include "network/Cloud/Tunables.h"
  #include "scene/DynamicEntity.h"

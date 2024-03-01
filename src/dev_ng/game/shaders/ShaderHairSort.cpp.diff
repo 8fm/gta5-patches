@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/shaders/ShaderHairSort.cpp b/src/dev_ng/game/shaders/ShaderHairSort.cpp
 --- a/src/dev_ng/game/shaders/ShaderHairSort.cpp
 +++ b/src/dev_ng/game/shaders/ShaderHairSort.cpp
-@@ -32,8 +32,8 @@
+@@ -32,11 +32,11 @@
  #include "fwsys/gameskeleton.h"
  
  // Game headers:
@@ -11,4 +11,8 @@ diff --git a/src/dev_ng/game/shaders/ShaderHairSort.cpp b/src/dev_ng/game/shader
 +#include "renderer/DrawLists/drawListMgr.h"
  #include "shaders/ShaderLib.h"
  #include "renderer/Deferred/GBuffer.h"
- #include "renderer/PostProcessFx.h"		// PostFX::g_UseSubSampledAlpha
+-#include "renderer/PostProcessFx.h"		// PostFX::g_UseSubSampledAlpha
++#include "renderer/PostProcessFX.h"		// PostFX::g_UseSubSampledAlpha
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+ 
+ //

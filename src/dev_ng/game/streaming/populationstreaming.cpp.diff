@@ -40,7 +40,7 @@ diff --git a/src/dev_ng/game/streaming/populationstreaming.cpp b/src/dev_ng/game
 -#include "peds/popcycle.h"
 -#include "peds/popzones.h"
 -#include "peds/rendering/PedVariationStream.h"
-+#include "network/Debug/networkdebug.h"
++#include "network/Debug/NetworkDebug.h"
 +#include "network/NetworkInterface.h"
 +#include "Objects/objectpopulation.h"
 +#include "Peds/ped.h"

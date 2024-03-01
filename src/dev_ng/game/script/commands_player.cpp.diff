@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/script/commands_player.cpp b/src/dev_ng/game/script/commands_player.cpp
 --- a/src/dev_ng/game/script/commands_player.cpp
 +++ b/src/dev_ng/game/script/commands_player.cpp
-@@ -16,29 +16,29 @@
+@@ -9,36 +9,36 @@
+ 
+ // Game headers
+ #include "audio/policescanner.h"
+-#include "control/GameLogic.h"
++#include "control/gamelogic.h"
+ #include "control/remote.h"
+ #include "control/garages.h"
+ #include "control/replay/ReplayRecording.h"
  #include "control/stuntjump.h"
  #include "frontend/NewHud.h"
  #include "game/config.h"
@@ -23,14 +31,14 @@ diff --git a/src/dev_ng/game/script/commands_player.cpp b/src/dev_ng/game/script
 -#include "peds/pedpopulation.h"
 -#include "peds/PlayerInfo.h"
 +#include "modelinfo/ModelInfo.h"
-+#include "Peds/peddebugvisualiser.h"
++#include "Peds/PedDebugVisualiser.h"
 +#include "Peds/PedIntelligence.h"
 +#include "Peds/PedFactory.h"
 +#include "Peds/PedType.h"
 +#include "Peds/ped.h"
 +#include "Peds/PlayerSpecialAbility.h"
 +#include "Peds/rendering/PedVariationStream.h"
-+#include "Peds/pedcapsule.h"
++#include "Peds/PedCapsule.h"
 +#include "Peds/PedHelmetComponent.h"
 +#include "Peds/pedpopulation.h"
 +#include "Peds/PlayerInfo.h"

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp b/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp
 --- a/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp
 +++ b/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp
-@@ -1,15 +1,15 @@
+@@ -1,23 +1,23 @@
 -#include "Task/Movement/TaskGotoPoint.h"
 -#include "Task/Movement/TaskGotoPointAvoidance.h"
 -#include "Task/Movement/TaskGoto.h"
@@ -29,3 +29,13 @@ diff --git a/src/dev_ng/game/task/Movement/TaskGotoPoint.cpp b/src/dev_ng/game/t
  #include "Peds/MovingGround.h"
  #include "Peds/PedDebugVisualiser.h"
  #include "Peds/PedGeometryAnalyser.h"
+ #include "Peds/PedIntelligence.h"
+-#include "Peds/PedPlacement.h"
++#include "Peds/pedplacement.h"
+ 
+ // Rage headers
+-#include "Math/angmath.h"
++#include "math/angmath.h"
+ 
+ AI_OPTIMISATIONS()
+ AI_NAVIGATION_OPTIMISATIONS()

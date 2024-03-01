@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/task/Vehicle/TaskCar.cpp b/src/dev_ng/game/task/Vehicle/TaskCar.cpp
 --- a/src/dev_ng/game/task/Vehicle/TaskCar.cpp
 +++ b/src/dev_ng/game/task/Vehicle/TaskCar.cpp
-@@ -9,7 +9,7 @@
+@@ -5,11 +5,11 @@
+ #include "fwanimation/animmanager.h"
+ #include "grcore/debugdraw.h"
+ #include "fwmaths/angle.h"
+-#include "fwmaths/Random.h"
++#include "fwmaths/random.h"
  #include "fwmaths/Vector.h"
  
  // Game headers
@@ -10,7 +15,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCar.cpp b/src/dev_ng/game/task/Veh
  #include "ai/debug/system/AIDebugLogManager.h"
  #include "audio/caraudioentity.h"
  #include "audio/radioaudioentity.h"
-@@ -23,23 +23,23 @@
+@@ -23,84 +23,84 @@
  #include "camera/cinematic/CinematicDirector.h"
  #include "camera/helpers/ControlHelper.h"
  #include "debug/DebugScene.h"
@@ -26,7 +31,7 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCar.cpp b/src/dev_ng/game/task/Veh
 -#include "Event/ShockingEvents.h"
 +#include "event/EventReactions.h"
 +#include "Vehicles/VehicleGadgets.h"
-+#include "control/GameLogic.h"
++#include "control/gamelogic.h"
 +#include "control/Route.h"
 +#include "control/record.h"
 +#include "event/EventGroup.h"
@@ -46,9 +51,11 @@ diff --git a/src/dev_ng/game/task/Vehicle/TaskCar.cpp b/src/dev_ng/game/task/Veh
  #include "Peds/PedCapsule.h"
  #include "Peds/PedDebugVisualiser.h"
  #include "Peds/PedGeometryAnalyser.h"
-@@ -48,59 +48,59 @@
+ #include "Peds/PedHelmetComponent.h"
+ #include "Peds/PlayerInfo.h"
  #include "Peds/PedIntelligence.h"
- #include "Peds/PedPlacement.h"
+-#include "Peds/PedPlacement.h"
++#include "Peds/pedplacement.h"
  #include "Peds/PedWeapons/PedTargetEvaluator.h"
 -#include "Peds/Ped.h"
 -#include "Physics/GtaArchetype.h"

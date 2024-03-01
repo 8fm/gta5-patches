@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp b/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp
 --- a/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp
 +++ b/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp
-@@ -3,8 +3,8 @@
+@@ -3,12 +3,12 @@
  // 
  #include "Peds/PedDebugVisualiser.h"
  #include "Peds/PedIntelligence.h"
@@ -12,3 +12,8 @@ diff --git a/src/dev_ng/game/task/Movement/TaskGotoPointAvoidance.cpp b/src/dev_
  
  
  // Rage headers
+-#include "Math/angmath.h"
++#include "math/angmath.h"
+ 
+ //#pragma optimize("", off)
+ AI_OPTIMISATIONS()

@@ -12,8 +12,9 @@ diff --git a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp b/src/dev_ng/
  #include "camera/scripted/ScriptedFlyCamera.h"
  #include "scene/scene.h"
 -#include "renderer/water.h"
+-#include "modelinfo/mlomodelinfo.h"
 +#include "renderer/Water.h"
- #include "modelinfo/mlomodelinfo.h"
++#include "modelinfo/MloModelInfo.h"
  #include "Peds/ped.h"
 -#include "physics/WorldProbe/worldprobe.h"
 +#include "physics/WorldProbe/WorldProbe.h"
@@ -29,7 +30,7 @@ diff --git a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp b/src/dev_ng/
  #include "streaming/populationstreaming.h"
  #include "scene/playerswitch/PlayerSwitchInterface.h"
  #include "Peds/PopCycle.h"
-@@ -68,7 +68,7 @@
+@@ -68,11 +68,11 @@
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"
  #include "camera/debug/FreeCamera.h"
@@ -38,6 +39,11 @@ diff --git a/src/dev_ng/game/audio/ambience/ambientaudioentity.cpp b/src/dev_ng/
  
  #include "system/controlMgr.h"
  #include "system/control.h"
+-#include "system/Pad.h"
++#include "system/pad.h"
+ 
+ PF_PAGE(AmbientAudioTimingPage, "audAmbientAudioEntity Timings");
+ PF_GROUP(AmbientAudioTimings);
 @@ -7766,6 +7766,7 @@ void audAmbientAudioEntity::SerialiseString(char* xmlMessage, char* tempbuffer,
  
  void audAmbientAudioEntity::SerialiseSoundName(char* xmlMessage, char* tempbuffer, const char* elementName, u32 hash, bool defaultToNull)

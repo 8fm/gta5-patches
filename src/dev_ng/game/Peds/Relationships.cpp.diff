@@ -17,7 +17,7 @@ diff --git a/src/dev_ng/game/Peds/Relationships.cpp b/src/dev_ng/game/Peds/Relat
 +#include "Peds/ped.h"
 +#include "Peds/ped_channel.h"
 +#include "Peds/PedIntelligence.h"
-+#include "Peds/relationships.h"
++#include "Peds/Relationships.h"
 +#include "system/FileMgr.h"
 +
 +#include "Peds/Relationships_parser.h"

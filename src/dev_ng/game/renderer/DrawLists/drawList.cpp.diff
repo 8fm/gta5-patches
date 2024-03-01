@@ -21,7 +21,7 @@ diff --git a/src/dev_ng/game/renderer/DrawLists/drawList.cpp b/src/dev_ng/game/r
 -#include "peds/rendering/pedVariationPack.h"
 -#include "physics/breakable.h"
 +#include "Peds/ped.h"
-+#include "Peds/rendering/pedVariationPack.h"
++#include "Peds/rendering/PedVariationPack.h"
 +#include "physics/Breakable.h"
  #include "pickups/PickupManager.h"
 -#include "vehicles/vehicle.h"

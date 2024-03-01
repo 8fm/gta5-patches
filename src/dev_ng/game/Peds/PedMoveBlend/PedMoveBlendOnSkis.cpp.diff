@@ -7,7 +7,7 @@ diff --git a/src/dev_ng/game/Peds/PedMoveBlend/PedMoveBlendOnSkis.cpp b/src/dev_
  #include "control/gamelogic.h"
 -#include "Debug/debugscene.h"
 -#include "Event/EventDamage.h"
-+#include "debug/debugscene.h"
++#include "debug/DebugScene.h"
 +#include "event/EventDamage.h"
  #include "fwanimation/clipsets.h"
  #include "grcore/debugdraw.h"

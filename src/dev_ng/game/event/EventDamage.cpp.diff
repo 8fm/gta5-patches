@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/event/EventDamage.cpp b/src/dev_ng/game/event/EventDamage.cpp
 --- a/src/dev_ng/game/event/EventDamage.cpp
 +++ b/src/dev_ng/game/event/EventDamage.cpp
+@@ -2,7 +2,7 @@
+ // filename:	EventDamage.cpp
+ // description:	
+ //
+-#include "event/eventDamage.h"
++#include "event/EventDamage.h"
+ 
+ #include "fragmentnm/nm_channel.h"
+ 
 @@ -21,58 +21,58 @@
  #include "event/EventResponseFactory.h"
  #include "event/EventShocking.h"

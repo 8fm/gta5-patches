@@ -10,7 +10,15 @@ diff --git a/src/dev_ng/game/streaming/streamingdebuggraph.cpp b/src/dev_ng/game
  #include "debug/TextureViewer/TextureViewer.h"
  #include "debug/TextureViewer/TextureViewerSearch.h"
  #include "fwdebug/debugdraw.h"
-@@ -34,14 +34,14 @@ SCENE_OPTIMISATIONS();
+@@ -27,21 +27,21 @@ SCENE_OPTIMISATIONS();
+ #include "input/mouse.h"
+ 
+ #include "text/text.h"
+-#include "text/textconversion.h"
++#include "text/TextConversion.h"
+ 
+ #include "grcore/viewport.h"
+ #include "fwmaths/Rect.h"
  #include "vector/color32.h"
  
  #include "streaming/packfilemanager.h"

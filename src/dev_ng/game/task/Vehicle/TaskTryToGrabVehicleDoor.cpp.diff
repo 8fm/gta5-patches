@@ -1,8 +1,12 @@
 diff --git a/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp b/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp
 --- a/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp
 +++ b/src/dev_ng/game/task/Vehicle/TaskTryToGrabVehicleDoor.cpp
-@@ -9,17 +9,17 @@
- #include "fragmentnm/nm_channel.h "
+@@ -6,20 +6,20 @@
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "fragmentnm/nm_channel.h "
++#include "fragmentnm/nm_channel.h"
  
  // Game Headers
 -#include "Event/Events.h"

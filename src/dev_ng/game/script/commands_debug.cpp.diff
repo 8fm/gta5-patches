@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/script/commands_debug.cpp b/src/dev_ng/game/script/
  // Game headers
  #include "debug/AutomatedTest.h"
 -#include "Debug/debugnodes.h"
-+#include "debug/debugnodes.h"
++#include "debug/DebugNodes.h"
  #include "debug/DebugScene.h"
  #include "event/system/EventData.h"
 -#include "peds/ped.h"

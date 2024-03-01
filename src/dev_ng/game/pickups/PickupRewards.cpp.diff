@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/pickups/PickupRewards.cpp b/src/dev_ng/game/pickups/PickupRewards.cpp
 --- a/src/dev_ng/game/pickups/PickupRewards.cpp
 +++ b/src/dev_ng/game/pickups/PickupRewards.cpp
-@@ -1,17 +1,17 @@
+@@ -1,18 +1,18 @@
  // File header
 -#include "Pickups/PickupRewards.h"
 +#include "pickups/PickupRewards.h"
@@ -22,7 +22,9 @@ diff --git a/src/dev_ng/game/pickups/PickupRewards.cpp b/src/dev_ng/game/pickups
 +#include "pickups/PickupManager.h"
  #include "Stats/StatsInterface.h"
 -#include "System/controlMgr.h"
+-#include "weapons/info/weaponinfo.h"
 +#include "system/controlMgr.h"
- #include "weapons/info/weaponinfo.h"
++#include "weapons/info/WeaponInfo.h"
  
  WEAPON_OPTIMISATIONS()
+ NETWORK_OPTIMISATIONS()

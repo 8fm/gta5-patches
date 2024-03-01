@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/script/streamedscripts.cpp b/src/dev_ng/game/script/streamedscripts.cpp
 --- a/src/dev_ng/game/script/streamedscripts.cpp
 +++ b/src/dev_ng/game/script/streamedscripts.cpp
-@@ -11,7 +11,7 @@
+@@ -11,13 +11,13 @@
  #include "system/timer.h"
  
  // Game headers
@@ -10,3 +10,10 @@ diff --git a/src/dev_ng/game/script/streamedscripts.cpp b/src/dev_ng/game/script
  #include "script/script_helper.h"
  #include "streaming/streaming.h"
  #include "streaming/packfilemanager.h"
+ #include "streaming/streamingengine.h"
+ #include "streaming/streamingmodule.h"
+-#include "tools/smoketest.h"
++#include "tools/SmokeTest.h"
+ #include "fwsys/fileExts.h" 
+ 
+ PARAM(validatescripts, "[streamedscripts] validate all scripts for unrecognised native commands by loading them all");

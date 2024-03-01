@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp b/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp
 --- a/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp
 +++ b/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp
-@@ -5,7 +5,7 @@
+@@ -5,39 +5,39 @@
  //
  
  // File header
@@ -10,8 +10,9 @@ diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp b/src/dev_ng/g
  
  // Rage headers
  #include "fwanimation/animdirector.h"
-@@ -13,30 +13,30 @@
- #include "fragmentnm/nm_channel.h "
+ #include "math/angmath.h"
+-#include "fragmentnm/nm_channel.h "
++#include "fragmentnm/nm_channel.h"
  
  // Game headers
 -#include "Animation/MovePed.h"
@@ -57,9 +58,11 @@ diff --git a/src/dev_ng/game/task/Movement/Climbing/TaskVault.cpp b/src/dev_ng/g
 -#include "Ik/IkManager.h"
 -#include "Ik/solvers/LegSolverProxy.h"
 -#include "Ik/solvers/LegSolver.h"
+-#include "Peds/PedIkSettings.h"
 +#include "ik/IkManager.h"
 +#include "ik/solvers/LegSolverProxy.h"
 +#include "ik/solvers/LegSolver.h"
- #include "Peds/PedIkSettings.h"
++#include "Peds/PedIKSettings.h"
  #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
  #include "camera/gameplay/GameplayDirector.h"
+ 

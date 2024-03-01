@@ -14,7 +14,7 @@ diff --git a/src/dev_ng/game/ik/solvers/TorsoReactSolver.cpp b/src/dev_ng/game/i
  #include "camera/helpers/Frame.h"
 -#include "task/combat/taskcombatmelee.h"
 -#include "Task/Vehicle/TaskInVehicle.h"
-+#include "task/Combat/taskcombatmelee.h"
++#include "task/Combat/TaskCombatMelee.h"
 +#include "task/Vehicle/TaskInVehicle.h"
  
  #define TORSOREACT_SOLVER_POOL_MAX 16

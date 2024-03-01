@@ -11,9 +11,9 @@ diff --git a/src/dev_ng/game/task/Physics/TaskNMRiverRapids.cpp b/src/dev_ng/gam
 -#include "fragment\Type.h"
 -#include "fragmentnm\messageparams.h"
 +#include "crskeleton/skeleton.h"
-+#include "fragment/Cache.h"
++#include "fragment/cache.h"
 +#include "fragment/instance.h"
-+#include "fragment/Type.h"
++#include "fragment/type.h"
 +#include "fragmentnm/messageparams.h"
  
  // Framework headers

@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/modelinfo/MloModelInfo.cpp b/src/dev_ng/game/modelinfo/MloModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/MloModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/MloModelInfo.cpp
-@@ -15,10 +15,10 @@
+@@ -14,11 +14,11 @@
+ 
  // Game headers
  #include "audio/northaudioengine.h"
- #include "modelinfo/mlomodelinfo.h"
+-#include "modelinfo/mlomodelinfo.h"
 -#include "scene/loader/mapdata_entities.h"
 -#include "scene/loader/mapdata_interiors.h"
++#include "modelinfo/MloModelInfo.h"
 +#include "scene/loader/MapData_entities.h"
 +#include "scene/loader/MapData_Interiors.h"
  #include "scene/portals/interiorinst.h"

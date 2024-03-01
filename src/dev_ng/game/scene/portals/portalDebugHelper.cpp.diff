@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/scene/portals/portalDebugHelper.cpp b/src/dev_ng/game/scene/portals/portalDebugHelper.cpp
 --- a/src/dev_ng/game/scene/portals/portalDebugHelper.cpp
 +++ b/src/dev_ng/game/scene/portals/portalDebugHelper.cpp
+@@ -6,7 +6,7 @@
+ ////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+-#include "PortalDebugHelper.h"
++#include "portalDebugHelper.h"
+ 
+ // Rage headers
+ #include "bank/bkmgr.h"
 @@ -23,17 +23,17 @@
  #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"
@@ -9,7 +18,7 @@ diff --git a/src/dev_ng/game/scene/portals/portalDebugHelper.cpp b/src/dev_ng/ga
 -#include "modelInfo/MLOmodelInfo.h"
 -#include "peds/ped.h"
 +#include "Core/game.h"
-+#include "modelinfo/MLOmodelInfo.h"
++#include "modelinfo/MloModelInfo.h"
 +#include "Peds/ped.h"
  #include "renderer/Lights/LightEntity.h"
  #include "renderer/RenderPhases/RenderPhase.h"

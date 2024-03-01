@@ -6,32 +6,38 @@ diff --git a/src/dev_ng/game/task/Combat/TaskCombatMelee.cpp b/src/dev_ng/game/t
  // term in this sentence.
  ///////////////////////////////////////////////////////////////////////////////// 
 -#include "task/combat/taskcombatmelee.h"
-+#include "task/Combat/taskcombatmelee.h"
++#include "task/Combat/TaskCombatMelee.h"
  
  //Rage headers
  #include "math/vecmath.h"
-@@ -25,7 +25,7 @@
+@@ -25,9 +25,9 @@
  
  
  //Game headers.
 -#include "AI/Ambient/ConditionalAnimManager.h"
 +#include "ai/ambient/ConditionalAnimManager.h"
  #include "animation/AnimDefines.h"
- #include "animation/animManager.h"
+-#include "animation/animManager.h"
++#include "animation/AnimManager.h"
  #include "animation/FacialData.h"
+ #include "animation/MovePed.h"
+ #include "audio/dooraudioentity.h"
 @@ -36,68 +36,68 @@
  #include "camera/gameplay/GameplayDirector.h"
  #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
  #include "control/gamelogic.h"
 -#include "debug/debugscene.h"
-+#include "debug/DebugScene.h"
- #include "event/eventdamage.h"
- #include "event/eventweapon.h"
+-#include "event/eventdamage.h"
+-#include "event/eventweapon.h"
 -#include "Event/EventReactions.h"
 -#include "Event/EventShocking.h"
+-#include "event/shockingevents.h"
++#include "debug/DebugScene.h"
++#include "event/EventDamage.h"
++#include "event/EventWeapon.h"
 +#include "event/EventReactions.h"
 +#include "event/EventShocking.h"
- #include "event/shockingevents.h"
++#include "event/ShockingEvents.h"
  #include "event/Events.h"
  #include "frontend/NewHud.h"
 -#include "Ik/solvers/RootSlopeFixupSolver.h"
@@ -56,10 +62,10 @@ diff --git a/src/dev_ng/game/task/Combat/TaskCombatMelee.cpp b/src/dev_ng/game/t
 -#include "peds/pedintelligence.h"
 -#include "peds/PedMoveBlend/pedmoveblend.h"
 -#include "peds/PedWeapons/PedTargetEvaluator.h"
-+#include "Peds/pedgeometryanalyser.h"
++#include "Peds/PedGeometryAnalyser.h"
 +#include "Peds/PedIKSettings.h"
 +#include "Peds/PedIntelligence.h"
-+#include "Peds/PedMoveBlend/pedmoveblend.h"
++#include "Peds/PedMoveBlend/PedMoveBlend.h"
 +#include "Peds/PedWeapons/PedTargetEvaluator.h"
  #include "Peds/PlayerInfo.h"
 -#include "peds/PlayerSpecialAbility.h"
@@ -117,7 +123,7 @@ diff --git a/src/dev_ng/game/task/Combat/TaskCombatMelee.cpp b/src/dev_ng/game/t
 +#include "task/Motion/Locomotion/TaskMotionPed.h"
 +#include "task/Motion/Locomotion/TaskMotionStrafing.h"
 +#include "task/Motion/Locomotion/TaskQuadLocomotion.h"
-+#include "task/Movement/taskseekentity.h"
++#include "task/Movement/TaskSeekEntity.h"
 +#include "task/Movement/TaskSlideToCoord.h"
 +#include "task/Movement/TaskCollisionResponse.h"
 +#include "task/Physics/TaskNM.h"

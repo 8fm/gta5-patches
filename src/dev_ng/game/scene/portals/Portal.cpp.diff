@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/scene/portals/Portal.cpp b/src/dev_ng/game/scene/portals/Portal.cpp
 --- a/src/dev_ng/game/scene/portals/Portal.cpp
 +++ b/src/dev_ng/game/scene/portals/Portal.cpp
-@@ -28,33 +28,33 @@
+@@ -28,16 +28,16 @@
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"
  #include "control/replay/replay.h"
@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/scene/portals/Portal.cpp b/src/dev_ng/game/scene/po
 -#include "modelInfo/MLOmodelInfo.h"
 -#include "objects/door.h"
 -#include "objects/objectpopulation.h"
-+#include "modelinfo/MLOmodelInfo.h"
++#include "modelinfo/MloModelInfo.h"
 +#include "Objects/Door.h"
 +#include "Objects/objectpopulation.h"
  #include "pathserver/ExportCollision.h"
@@ -25,9 +25,8 @@ diff --git a/src/dev_ng/game/scene/portals/Portal.cpp b/src/dev_ng/game/scene/po
  #include "renderer/renderListGroup.h"
  #include "renderer/Mirrors.h"
  #include "scene/lod/LodMgr.h"
- #include "scene/scene_channel.h"
--#include "scene/portals/portalDebugHelper.h"
-+#include "scene/portals/PortalDebugHelper.h"
+@@ -45,16 +45,16 @@
+ #include "scene/portals/portalDebugHelper.h"
  #include "scene/portals/InteriorInst.h"
  #include "scene/loader/MapData_Interiors.h"
 -#include "scene/portals/portalInst.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/scene/AnimatedBuilding.cpp b/src/dev_ng/game/scene/AnimatedBuilding.cpp
+--- a/src/dev_ng/game/scene/AnimatedBuilding.cpp
++++ b/src/dev_ng/game/scene/AnimatedBuilding.cpp
+@@ -19,7 +19,7 @@
+ #include "AnimatedBuilding.h"
+ #include "animation/EventTags.h"
+ #include "animation/Move.h"
+-#include "Cloth/ClothMgr.h"
++#include "cloth/ClothMgr.h"
+ #include "scene/lod/LodMgr.h"
+ 
+ ANIM_OPTIMISATIONS()

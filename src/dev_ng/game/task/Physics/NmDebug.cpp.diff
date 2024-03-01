@@ -22,7 +22,8 @@ diff --git a/src/dev_ng/game/task/Physics/NmDebug.cpp b/src/dev_ng/game/task/Phy
 +#include "fwmaths/angle.h"
  
  // RAGE includes:
- #include "art/ARTRockstar.h"
+-#include "art/ARTRockstar.h"
++#include "art/artrockstar.h"
  #include "fragmentnm/manager.h"
  #include "phbound/boundcapsule.h"
 -#include "physics/WorldProbe/worldprobe.h"

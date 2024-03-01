@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/Audio/ScriptAudioPacket.h b/src/dev_ng/game/control/replay/Audio/ScriptAudioPacket.h
+--- a/src/dev_ng/game/control/replay/Audio/ScriptAudioPacket.h
++++ b/src/dev_ng/game/control/replay/Audio/ScriptAudioPacket.h
+@@ -13,7 +13,7 @@
+ #if GTA_REPLAY
+ 
+ #include "control/replay/Misc/ReplayPacket.h"
+-#include "control/replay/audio/SoundPacket.h"
++#include "control/replay/Audio/SoundPacket.h"
+ #include "audio/scriptaudioentity.h"
+ 
+ class CPacketSndLoadScriptWaveBank  : public CPacketEvent, public CPacketEntityInfo<0>

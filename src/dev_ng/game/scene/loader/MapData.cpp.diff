@@ -1,29 +1,43 @@
 diff --git a/src/dev_ng/game/scene/loader/MapData.cpp b/src/dev_ng/game/scene/loader/MapData.cpp
 --- a/src/dev_ng/game/scene/loader/MapData.cpp
 +++ b/src/dev_ng/game/scene/loader/MapData.cpp
-@@ -30,13 +30,13 @@
+@@ -4,7 +4,7 @@
+ // Copyright (C) 1999-2010 Rockstar Games. All Rights Reserved.
+ //
+ 
+-#include "mapData.h"
++#include "MapData.h"
+ 
+ // rage includes
+ #include "bank/bank.h"
+@@ -30,21 +30,21 @@
  #include "debug/AssetAnalysis/AssetAnalysisUtil.h"
  #include "debug/BlockView.h"
  #include "Objects/object.h"
 -#include "objects/DummyObject.h"
-+#include "Objects/DummyObject.h"
- #include "cloth/clothmgr.h"
+-#include "cloth/clothmgr.h"
 -#include "modelinfo/basemodelinfo.h" 
-+#include "modelinfo/BaseModelInfo.h" 
- #include "modelinfo/compentitymodelinfo.h" 
+-#include "modelinfo/compentitymodelinfo.h" 
 -#include "modelinfo/modelinfo.h"
-+#include "modelinfo/ModelInfo.h"
- #include "modelinfo/modelinfo_factories.h"
+-#include "modelinfo/modelinfo_factories.h"
 -#include "peds/pedpopulation.h"
+-#include "scene/fileloader.h"
++#include "Objects/DummyObject.h"
++#include "cloth/ClothMgr.h"
++#include "modelinfo/BaseModelInfo.h" 
++#include "modelinfo/CompEntityModelInfo.h" 
++#include "modelinfo/ModelInfo.h"
++#include "modelinfo/ModelInfo_Factories.h"
 +#include "Peds/pedpopulation.h"
- #include "scene/fileloader.h"
++#include "scene/FileLoader.h"
  #include "scene/MapChange.h"
  #include "scene/scene_channel.h"
-@@ -44,7 +44,7 @@
+ #include "scene/world/GameWorld.h"
  #include "scene/world/VisibilityMasks.h"
  #include "renderer/occlusion.h"
- #include "timecycle/timecycle.h"
+-#include "timecycle/timecycle.h"
 -#include "vehicles/cargen.h"
++#include "timecycle/TimeCycle.h"
 +#include "Vehicles/cargen.h"
  #include "pathserver/ExportCollision.h"
  #include "pathserver/NavGenParam.h"
