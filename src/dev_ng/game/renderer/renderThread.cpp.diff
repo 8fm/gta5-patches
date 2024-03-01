@@ -1,7 +1,16 @@
 diff --git a/src/dev_ng/game/renderer/renderThread.cpp b/src/dev_ng/game/renderer/renderThread.cpp
 --- a/src/dev_ng/game/renderer/renderThread.cpp
 +++ b/src/dev_ng/game/renderer/renderThread.cpp
-@@ -57,12 +57,12 @@
+@@ -12,7 +12,7 @@
+ // 
+ // Copyright (C) 1999-2014 Rockstar Games.  All Rights Reserved. 
+ // 
+-#include "renderthread.h"
++#include "RenderThread.h"
+ #if __PPU
+ // PS3 headers
+ #include <cell/gcm.h>
+@@ -57,35 +57,35 @@
  #include "audio/frontendaudioentity.h"
  #include "camera/CamInterface.h"
  #include "camera/viewports/ViewportManager.h"
@@ -13,12 +22,15 @@ diff --git a/src/dev_ng/game/renderer/renderThread.cpp b/src/dev_ng/game/rendere
  #include "debug/Editing/LightEditing.h"
  #include "debug/FrameDump.h"
 -#include "debug/textureviewer/textureviewer.h"
+-#include "frontend/credits.h"
 +#include "debug/TextureViewer/TextureViewer.h"
- #include "frontend/credits.h"
++#include "frontend/Credits.h"
  #include "frontend/PauseMenu.h"
  #include "frontend/WarningScreen.h"
-@@ -71,19 +71,19 @@
- #include "frontend/profilesettings.h"
+ #include "frontend/MiniMap.h"
+ #include "frontend/GolfTrail.h"
+-#include "frontend/profilesettings.h"
++#include "frontend/ProfileSettings.h"
  #include "frontend/loadingscreens.h"
  #if RSG_PC
 -#include "Frontend/MousePointer.h"
@@ -41,9 +53,18 @@ diff --git a/src/dev_ng/game/renderer/renderThread.cpp b/src/dev_ng/game/rendere
 -#include "renderer/renderthread.h"
 +#include "renderer/RenderThread.h"
  #include "renderer/Water.h"
- #include "renderer/gtaDrawable.h"
+-#include "renderer/gtaDrawable.h"
++#include "renderer/GtaDrawable.h"
  #include "renderer/OcclusionQueries.h"
-@@ -117,18 +117,18 @@
+ #include "renderer/RenderTargetMgr.h"
+ #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
+@@ -112,23 +112,23 @@
+ #include "system/system.h"
+ #include "system/gcmPerfmon.h"
+ #include "system/TamperActions.h"
+-#include "system/taskscheduler.h"
++#include "system/TaskScheduler.h"
+ #include "system/ThreadPriorities.h"
  #include "profile/cputrace.h"
  #include "script/script.h"
  #include "script/script_hud.h"

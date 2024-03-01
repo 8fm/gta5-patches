@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/Peds/PedType.cpp b/src/dev_ng/game/Peds/PedType.cpp
  
  // Rage headers
 -#include "System\Timer.h"
-+#include "system/Timer.h"
++#include "system/timer.h"
  #include "system/memory.h"
  
  // Framework headers

@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp b/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp
 --- a/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp
 +++ b/src/dev_ng/game/Peds/Horse/horseObstacleavoidance.cpp
-@@ -5,8 +5,8 @@
+@@ -1,12 +1,12 @@
+ // File header
+-#include "horseObstacleAvoidance.h"
++#include "horseObstacleavoidance.h"
+ 
+ #if ENABLE_HORSE
  
  #include "Peds/ped.h"
  #include "Peds/PedIntelligence.h"

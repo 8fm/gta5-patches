@@ -16,3 +16,12 @@ diff --git a/src/dev_ng/game/Peds/PedFootstepHelper.cpp b/src/dev_ng/game/Peds/P
  #include "physics/physics.h"
  #include "task/Weapons/Gun/TaskGun.h"
  #include "scene/playerswitch/PlayerSwitchInterface.h"
+@@ -17,7 +17,7 @@
+ #include "task/Vehicle/TaskEnterVehicle.h"
+ #include "task/Vehicle/TaskExitVehicle.h"
+ 
+-#include "PhBound/boundcomposite.h"
++#include "phbound/boundcomposite.h"
+ PED_OPTIMISATIONS()
+ // Footsteps timers
+ PF_PAGE(Ped_Audio_Timers,	"audPedAudioEntity");

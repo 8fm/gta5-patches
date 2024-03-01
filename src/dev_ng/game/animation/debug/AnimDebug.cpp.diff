@@ -29,7 +29,7 @@ diff --git a/src/dev_ng/game/animation/debug/AnimDebug.cpp b/src/dev_ng/game/ani
 +#include "Peds/ped.h"
 +#include "Peds/PedIntelligence.h"
 +#include "Peds/rendering/PedVariationPack.h"
-+#include "renderer/renderer.h"
++#include "renderer/Renderer.h"
  #include "scene/world/GameWorld.h"
  #include "streaming/streaming.h"
 -#include "system/ControlMgr.h"

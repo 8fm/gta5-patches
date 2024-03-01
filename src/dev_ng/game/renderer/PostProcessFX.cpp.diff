@@ -39,17 +39,19 @@ diff --git a/src/dev_ng/game/renderer/PostProcessFX.cpp b/src/dev_ng/game/render
  #include "renderer/Lights/TiledLighting.h"
  #include "renderer/sprite2d.h"
  #include "renderer/Water.h"
-@@ -121,8 +121,8 @@
+@@ -121,9 +121,9 @@
  #include "SaveLoad/savegame_photo_manager.h"
  #include "scene//playerswitch/PlayerSwitchInterface.h"
  #include "scene/world/GameWorld.h"
 -#include "TimeCycle/TimeCycle.h"
 -#include "TimeCycle/TimeCycleConfig.h"
+-#include "camera/viewports/viewportManager.h"
 +#include "timecycle/TimeCycle.h"
 +#include "timecycle/TimeCycleConfig.h"
- #include "camera/viewports/viewportManager.h"
++#include "camera/viewports/ViewportManager.h"
  #include "vfx/misc/LensFlare.h"
  #include "vfx/particles/PtFxManager.h"
+ #include "vfx/systems/VfxLens.h"
 @@ -152,7 +152,7 @@
  #if USE_SCREEN_WATERMARK
  #include "Peds/ped.h"

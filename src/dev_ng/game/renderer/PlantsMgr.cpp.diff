@@ -32,10 +32,11 @@ diff --git a/src/dev_ng/game/renderer/PlantsMgr.cpp b/src/dev_ng/game/renderer/P
  #include "camera/cinematic/CinematicDirector.h"
 -#include "core/game.h"
 -#include "scene/world/gameworld.h"
+-#include "physics/gtamaterialmanager.h"
+-#include "peds/PopCycle.h"		// GetCurrentZonePlantsMgrTxdIdx()
 +#include "Core/game.h"
 +#include "scene/world/GameWorld.h"
- #include "physics/gtamaterialmanager.h"
--#include "peds/PopCycle.h"		// GetCurrentZonePlantsMgrTxdIdx()
++#include "physics/gtaMaterialManager.h"
 +#include "Peds/PopCycle.h"		// GetCurrentZonePlantsMgrTxdIdx()
  #include "physics/iterator.h"
  #include "physics/physics.h"
@@ -45,18 +46,23 @@ diff --git a/src/dev_ng/game/renderer/PlantsMgr.cpp b/src/dev_ng/game/renderer/P
 -#include "peds/ped.h"		// findplayerped()...
 -#include "objects/procobjects.h"	
 +#include "Peds/ped.h"		// findplayerped()...
-+#include "Objects/procobjects.h"	
++#include "Objects/ProcObjects.h"
  #include "game/weather.h"		// g_weather.wind()...
  #include "game/ModelIndices.h"
  #include "scene/ContinuityMgr.h"
  #include "scene/InstancePriority.h"
- #include "scene/refmacros.h"
+-#include "scene/refmacros.h"
 -#include "shaders/shaderlib.h"
+-#include "system/taskscheduler.h"
+-#include "renderer/deferred/deferredlighting.h"
+-#include "renderer/deferred/gbuffer.h"
+-#include "renderer/plantsgrassrenderer.h"
++#include "scene/RefMacros.h"
 +#include "shaders/ShaderLib.h"
- #include "system/taskscheduler.h"
- #include "renderer/deferred/deferredlighting.h"
- #include "renderer/deferred/gbuffer.h"
- #include "renderer/plantsgrassrenderer.h"
++#include "system/TaskScheduler.h"
++#include "renderer/Deferred/DeferredLighting.h"
++#include "renderer/Deferred/GBuffer.h"
++#include "renderer/PlantsGrassRenderer.h"
  #include "renderer/Water.h"
 -#include "vehicles/vehicle.h"
 -#include "vehicles/Submarine.h"
@@ -72,12 +78,14 @@ diff --git a/src/dev_ng/game/renderer/PlantsMgr.cpp b/src/dev_ng/game/renderer/P
  #include "streaming/streamingrequest.h"
  #include "renderer/PlantsMgr.h"
  #include "system/SettingsManager.h"
-@@ -151,7 +151,7 @@ PARAM(DisablePlantMgr, "Disable Plant Manager");
+@@ -151,8 +151,8 @@ PARAM(DisablePlantMgr, "Disable Plant Manager");
  
  #if __BANK
  	#include "file/asset.h"
 -	#include "bank/Bank.h"
+-	#include "bank/BkMgr.h"
 +	#include "bank/bank.h"
- 	#include "bank/BkMgr.h"
++	#include "bank/bkmgr.h"
  	bool			gbDisplayCPlantMgrInfo		= FALSE;
  	static bool		gbShowCPlantMgrPolys 		= FALSE;
+ 	static bool		gbShowCPlantMgrPolysFar		= FALSE;

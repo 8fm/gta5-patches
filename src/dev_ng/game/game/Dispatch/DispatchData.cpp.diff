@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/game/Dispatch/DispatchData.cpp b/src/dev_ng/game/game/Dispatch/DispatchData.cpp
 --- a/src/dev_ng/game/game/Dispatch/DispatchData.cpp
 +++ b/src/dev_ng/game/game/Dispatch/DispatchData.cpp
-@@ -9,11 +9,11 @@
+@@ -8,12 +8,12 @@
+ 
  // Game headers
  #include "game/Dispatch/DispatchData.h"
- #include "game/Dispatch/DispatchData_parser.h"
+-#include "game/Dispatch/DispatchData_parser.h"
 -#include "Game/Dispatch/DispatchServices.h"
++#include "game/Dispatch/dispatchdata_parser.h"
 +#include "game/Dispatch/DispatchServices.h"
  #include "game/Wanted.h"
  #include "network/NetworkInterface.h"

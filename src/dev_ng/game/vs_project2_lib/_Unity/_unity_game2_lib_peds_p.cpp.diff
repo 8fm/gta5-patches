@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_p.cpp b/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_p.cpp
+--- a/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_p.cpp
++++ b/src/dev_ng/game/vs_project2_lib/_Unity/_unity_game2_lib_peds_p.cpp
+@@ -63,7 +63,7 @@
+ #include "../../Peds/PedScriptResource.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../Peds/PedShockingEvents.cpp"
++#include "../../Peds/pedshockingevents.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../Peds/PlayerArcadeInformation.cpp"

@@ -1,12 +1,21 @@
 diff --git a/src/dev_ng/game/physics/gtaMaterialDebug.cpp b/src/dev_ng/game/physics/gtaMaterialDebug.cpp
 --- a/src/dev_ng/game/physics/gtaMaterialDebug.cpp
 +++ b/src/dev_ng/game/physics/gtaMaterialDebug.cpp
+@@ -13,7 +13,7 @@
+ //  INCLUDES
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+-#include "GtaMaterialDebug.h"
++#include "gtaMaterialDebug.h"
+ 
+ // rage
+ #include "file/packfile.h"
 @@ -35,13 +35,13 @@
  // game
  #include "camera/CamInterface.h"
  #include "camera/viewports/ViewportManager.h"
 -#include "Timecycle/Timecycle.h"
-+#include "timecycle/Timecycle.h"
++#include "timecycle/TimeCycle.h"
  #include "Objects/ProceduralInfo.h"
  #include "Peds/PedDebugVisualiser.h"
 -#include "Physics/GtaInst.h"

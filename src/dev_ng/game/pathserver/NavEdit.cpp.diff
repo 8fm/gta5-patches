@@ -1,6 +1,12 @@
 diff --git a/src/dev_ng/game/pathserver/NavEdit.cpp b/src/dev_ng/game/pathserver/NavEdit.cpp
 --- a/src/dev_ng/game/pathserver/NavEdit.cpp
 +++ b/src/dev_ng/game/pathserver/NavEdit.cpp
+@@ -1,4 +1,4 @@
+-#include "navedit.h"
++#include "NavEdit.h"
+ 
+ #if __NAVEDITORS
+ 
 @@ -13,9 +13,9 @@
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"

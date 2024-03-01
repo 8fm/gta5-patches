@@ -22,7 +22,7 @@ diff --git a/src/dev_ng/game/Peds/Gangs.cpp b/src/dev_ng/game/Peds/Gangs.cpp
 -#include "Task\System\Task.h"
 -#include "Weapons\Weapon.h"
 -#include "Weapons\WeaponTypes.h"
-+#include "game/modelindices.h"
++#include "game/ModelIndices.h"
 +#include "streaming/streaming.h"
 +#include "streaming/populationstreaming.h"
 +#include "task/System/Task.h"

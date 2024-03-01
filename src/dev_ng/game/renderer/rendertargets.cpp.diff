@@ -6,8 +6,9 @@ diff --git a/src/dev_ng/game/renderer/rendertargets.cpp b/src/dev_ng/game/render
  // Game headers
  #include "camera/viewports/ViewportManager.h"
 -#include "debug/debug.h"
+-#include "renderer/deferred/gbuffer.h"
 +#include "debug/Debug.h"
- #include "renderer/deferred/gbuffer.h"
++#include "renderer/Deferred/GBuffer.h"
  #include "renderer/Mirrors.h"
  #include "renderer/RenderPhases/RenderPhaseEntitySelect.h"
  #include "renderer/RenderPhases/RenderPhaseMirrorReflection.h"

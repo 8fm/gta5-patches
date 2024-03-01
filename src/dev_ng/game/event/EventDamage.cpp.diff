@@ -32,7 +32,7 @@ diff --git a/src/dev_ng/game/event/EventDamage.cpp b/src/dev_ng/game/event/Event
 -#include "peds/PedHelmetComponent.h"
 -#include "peds/pedIntelligence.h"
 +#include "Peds/ped.h"
-+#include "Peds/pedGeometryAnalyser.h"
++#include "Peds/PedGeometryAnalyser.h"
 +#include "Peds/PedHelmetComponent.h"
 +#include "Peds/PedIntelligence.h"
  #include "Peds/pedType.h"

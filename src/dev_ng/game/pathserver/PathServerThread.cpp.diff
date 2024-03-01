@@ -1,18 +1,21 @@
 diff --git a/src/dev_ng/game/pathserver/PathServerThread.cpp b/src/dev_ng/game/pathserver/PathServerThread.cpp
 --- a/src/dev_ng/game/pathserver/PathServerThread.cpp
 +++ b/src/dev_ng/game/pathserver/PathServerThread.cpp
-@@ -4,8 +4,8 @@
+@@ -4,33 +4,33 @@
  #include "profile/telemetry.h"
  #include "profile/timebars.h"
  #include "profile/cputrace.h"
 -#include "System/ipc.h"
 -#include "System/Xtl.h"
+-#include "Vector/Colors.h"
+-#include "Vector/Geometry.h"
 +#include "system/ipc.h"
-+#include "system/Xtl.h"
- #include "Vector/Colors.h"
- #include "Vector/Geometry.h"
++#include "system/xtl.h"
++#include "vector/colors.h"
++#include "vector/geometry.h"
  #include "system/memory.h"
-@@ -14,8 +14,8 @@
+ 
+ // Framework headers
  #include "ai/navmesh/priqueue.h"
  #include "fwmaths/Vector.h"
  
@@ -23,8 +26,11 @@ diff --git a/src/dev_ng/game/pathserver/PathServerThread.cpp b/src/dev_ng/game/p
  
  #include "ai/navmesh/pathserverthread.h"
  
-@@ -25,12 +25,12 @@
- #include "system/threadpriorities.h"
+ //Game headers
+ #ifdef GTA_ENGINE
+ #include "game/config.h"				// Used for some thread priority stuff now, will need to be dealt with when moving more code to RAGE.
+-#include "system/threadpriorities.h"
++#include "system/ThreadPriorities.h"
  #include "task/Movement/TaskNavMesh.h"	// Used for tracking cases where an AI task has failed to retrieve a requested path
  #include "task/Movement/TaskMoveWander.h"
 -#include "peds/pedpopulation.h"

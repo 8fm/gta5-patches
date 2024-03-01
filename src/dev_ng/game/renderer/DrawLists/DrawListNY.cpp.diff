@@ -31,7 +31,8 @@ diff --git a/src/dev_ng/game/renderer/DrawLists/DrawListNY.cpp b/src/dev_ng/game
 -#include "renderer/renderThread.h"
 +#include "renderer/RenderThread.h"
  #include "script/script.h"
- #include "shaders/customshadereffectbase.h"
+-#include "shaders/customshadereffectbase.h"
++#include "shaders/CustomShaderEffectBase.h"
  #include "shaders/CustomShaderEffectTint.h"
 -#include "shaders/shaderLib.h"
 +#include "shaders/ShaderLib.h"
@@ -44,3 +45,12 @@ diff --git a/src/dev_ng/game/renderer/DrawLists/DrawListNY.cpp b/src/dev_ng/game
  #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
  #include "renderer/RenderPhases/RenderPhaseReflection.h"
  #include "renderer/RenderPhases/RenderPhaseStdNY.h"
+@@ -49,7 +49,7 @@
+ #include "fwdrawlist/drawlist.h"
+ 
+ // GTA4 includes
+-#include "frontend/mobilePhone.h"
++#include "frontend/MobilePhone.h"
+ 
+ #include "data/aes_init.h"
+ AES_INIT_0;

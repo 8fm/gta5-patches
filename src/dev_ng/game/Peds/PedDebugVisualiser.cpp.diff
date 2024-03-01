@@ -422,3 +422,21 @@ diff --git a/src/dev_ng/game/Peds/PedDebugVisualiser.cpp b/src/dev_ng/game/Peds/
  
  // rage includes
  #include "art/messageparams.h"
+@@ -259,7 +259,7 @@
+ #include "crclip/clip.h"
+ #include "crclip/clipanimation.h"
+ #include "crmotiontree/nodeanimation.h"
+-#include "crmotiontree/nodeblendn.h "
++#include "crmotiontree/nodeblendn.h"
+ #include "crmotiontree/nodeblend.h"
+ #include "crmotiontree/nodeclip.h"
+ #include "crmotiontree/nodefilter.h"
+@@ -683,7 +683,7 @@ void CPedDebugVisualiser::VisualisePedsNearPlayer()
+ 	}
+ }
+ 
+-#include "camera/viewports/viewportManager.h"
++#include "camera/viewports/ViewportManager.h"
+ 
+ void CPedDebugVisualiser::VisualisePed(const CPed& ped) const
+ {

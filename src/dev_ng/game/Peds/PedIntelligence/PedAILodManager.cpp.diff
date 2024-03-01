@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp b/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp
 --- a/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp
 +++ b/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp
-@@ -8,20 +8,20 @@
+@@ -3,25 +3,25 @@
+ // CREATED : 30-09-2009
+ 
+ // class header
+-#include "Peds/PedIntelligence/PedAiLodManager.h"
++#include "Peds/PedIntelligence/PedAILodManager.h"
+ 
  #include "grcore/debugdraw.h"
  
  // network headers
@@ -14,7 +20,8 @@ diff --git a/src/dev_ng/game/Peds/PedIntelligence/PedAILodManager.cpp b/src/dev_
 -#include "Peds/Ped.h"
 +#include "Peds/ped.h"
  #include "Peds/PedDebugVisualiser.h"
- #include "Peds/PedIntelligence/PedAiLod.h"
+-#include "Peds/PedIntelligence/PedAiLod.h"
++#include "Peds/PedIntelligence/PedAILod.h"
  #include "Peds/PedIntelligence.h"
 -#include "Renderer/Occlusion.h"
 +#include "renderer/occlusion.h"

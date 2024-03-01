@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/Peds/rendering/PedOverlay.cpp b/src/dev_ng/game/Peds/rendering/PedOverlay.cpp
 --- a/src/dev_ng/game/Peds/rendering/PedOverlay.cpp
 +++ b/src/dev_ng/game/Peds/rendering/PedOverlay.cpp
-@@ -19,13 +19,13 @@
+@@ -19,14 +19,14 @@
  
  // game headers
  #include "PedOverlay_parser.h"
@@ -14,9 +14,11 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedOverlay.cpp b/src/dev_ng/game/Ped
 -#include "peds/ped.h"
 -#include "network/live/NetworkClan.h"
 -#include "network/live/LiveManager.h"
+-#include "network/crews/NetworkCrewEmblemMgr.h"
 +#include "Peds/ped.h"
 +#include "network/Live/NetworkClan.h"
 +#include "network/Live/livemanager.h"
- #include "network/crews/NetworkCrewEmblemMgr.h"
++#include "network/Crews/NetworkCrewEmblemMgr.h"
  #include "control/replay/ReplayExtensions.h"
  
+ #define PED_OVERLAY_NEW_PRESET_STR	"[New Preset]"

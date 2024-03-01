@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/game/renderer/Entities/EntityDrawHandler.cpp b/src/dev_ng/game/renderer/Entities/EntityDrawHandler.cpp
+--- a/src/dev_ng/game/renderer/Entities/EntityDrawHandler.cpp
++++ b/src/dev_ng/game/renderer/Entities/EntityDrawHandler.cpp
+@@ -32,8 +32,8 @@
+ #include "renderer/RenderPhases/RenderPhaseReflection.h"
+ #include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
+ #include "scene/Entity.h"
+-#include "scene/Lod/LodDrawable.h"
+-#include "scene/Lod/LodMgr.h"
++#include "scene/lod/LodDrawable.h"
++#include "scene/lod/LodMgr.h"
+ #include "scene/streamer/SceneStreamerMgr.h"
+ #include "shaders/CustomShaderEffectBase.h"
+ #include "shaders/CustomShaderEffectGrass.h"

@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/game/Dispatch/Incidents.cpp b/src/dev_ng/game/game/
  
  // Framework headers
  #include "fwnet/netplayer.h"
-@@ -10,12 +10,12 @@
+@@ -10,24 +10,24 @@
  #include "fwscene/stores/staticboundsstore.h"
  
  // Game headers
@@ -28,8 +28,9 @@ diff --git a/src/dev_ng/game/game/Dispatch/Incidents.cpp b/src/dev_ng/game/game/
  #include "modelinfo/PedModelInfo.h"
  #include "network/Arrays/NetworkArrayMgr.h"
  #include "network/Objects/Entities/NetObjPlayer.h"
-@@ -23,11 +23,11 @@
- #include "Peds/pedGeometryAnalyser.h"
+ #include "Peds/ped.h"
+-#include "Peds/pedGeometryAnalyser.h"
++#include "Peds/PedGeometryAnalyser.h"
  #include "Peds/PedIntelligence.h"
  #include "scene/Entity.h"
 -#include "scene/portals/portalTracker.h"

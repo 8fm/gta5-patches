@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/renderer/Lights/TiledLighting.cpp b/src/dev_ng/game/renderer/Lights/TiledLighting.cpp
 --- a/src/dev_ng/game/renderer/Lights/TiledLighting.cpp
 +++ b/src/dev_ng/game/renderer/Lights/TiledLighting.cpp
+@@ -5,7 +5,7 @@
+ // rage headers
+ #include "grcore/allocscope.h"
+ #include "grcore/device.h"
+-#include "math/Float16.h"
++#include "math/float16.h"
+ #include "grprofile/pix.h"
+ #include "grcore/vertexbuffer.h"
+ #include "grcore/texturedefault.h"
 @@ -19,17 +19,17 @@
  // game headers
  #include "camera/CamInterface.h"

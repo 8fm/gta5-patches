@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/game/ModelIndices.cpp b/src/dev_ng/game/game/ModelIndices.cpp
+--- a/src/dev_ng/game/game/ModelIndices.cpp
++++ b/src/dev_ng/game/game/ModelIndices.cpp
+@@ -5,7 +5,7 @@
+ // find objects with a specific name. This way we don't have a problem
+ // if numbers change.
+ 
+-#include "modelindices.h"
++#include "ModelIndices.h"
+ #include "modelinfo/ModelInfo.h"
+ 
+ #if __WIN32

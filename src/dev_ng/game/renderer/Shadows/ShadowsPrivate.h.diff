@@ -15,9 +15,10 @@ diff --git a/src/dev_ng/game/renderer/Shadows/ShadowsPrivate.h b/src/dev_ng/game
 +#include "renderer/Lights/lights.h"
  #include "renderer/rendertargets.h"
  #include "renderer/sprite2d.h"
- #include "renderer/deferred/deferredlighting.h"
+-#include "renderer/deferred/deferredlighting.h"
 -#include "renderer/drawlists/drawlistmgr.h"
 -#include "renderer/shadows/shadows.h"
++#include "renderer/Deferred/DeferredLighting.h"
 +#include "renderer/DrawLists/drawListMgr.h"
 +#include "renderer/Shadows/Shadows.h"
  

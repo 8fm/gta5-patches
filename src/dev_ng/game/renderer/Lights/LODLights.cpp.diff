@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/renderer/Lights/LODLights.cpp b/src/dev_ng/game/renderer/Lights/LODLights.cpp
 --- a/src/dev_ng/game/renderer/Lights/LODLights.cpp
 +++ b/src/dev_ng/game/renderer/Lights/LODLights.cpp
-@@ -12,13 +12,13 @@
+@@ -12,17 +12,17 @@
  #include "system/dependencyscheduler.h"
  
  // game headers
@@ -21,7 +21,13 @@ diff --git a/src/dev_ng/game/renderer/Lights/LODLights.cpp b/src/dev_ng/game/ren
 +#include "renderer/RenderPhases/RenderPhaseWaterReflection.h"
  #include "camera/CamInterface.h"
  #include "camera/cutscene/CutsceneDirector.h"
- #include "debug/rendering/DebugLighting.h"
+-#include "debug/rendering/DebugLighting.h"
+-#include "debug/rendering/DebugLights.h"
++#include "debug/Rendering/DebugLighting.h"
++#include "debug/Rendering/DebugLights.h"
+ #include "vfx/misc/Coronas.h"
+ #include "vfx/misc/DistantLights.h"
+ #include "vfx/misc/DistantLightsVertexBuffer.h"
 @@ -34,8 +34,8 @@
  #include "fwscene/scan/Scan.h"
  #include "fwsys/gameskeleton.h"

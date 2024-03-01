@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/physics/physics.cpp b/src/dev_ng/game/physics/physics.cpp
 --- a/src/dev_ng/game/physics/physics.cpp
 +++ b/src/dev_ng/game/physics/physics.cpp
+@@ -37,7 +37,7 @@
+ #include "pheffects/mouseinput.h"
+ #include "phglass/glassinstance.h"
+ #include "phsolver/contactmgr.h"
+-#include "phbound/Support.h"
++#include "phbound/support.h"
+ #include "phcore/pool.h"
+ #include "phcore/surface.h"
+ #include "physics/broadphase.h"
 @@ -46,11 +46,11 @@
  #include "physics/btAxisSweep3.h"
  #include "physics/levelnew.h"
@@ -11,7 +20,7 @@ diff --git a/src/dev_ng/game/physics/physics.cpp b/src/dev_ng/game/physics/physi
  #include "Vehicles/Automobile.h"
  #include "Vehicles/Bike.h"
 -#include "vehicles/propeller.h"
-+#include "Vehicles/propeller.h"
++#include "Vehicles/Propeller.h"
  #include "scene/playerswitch/PlayerSwitchInterface.h"
  #include "streaming/streaming.h"
  #include "streaming/streamingvisualize.h"
@@ -35,8 +44,9 @@ diff --git a/src/dev_ng/game/physics/physics.cpp b/src/dev_ng/game/physics/physi
  #include "event/Events.h"
  #include "game/ModelIndices.h"
 -#include "modelinfo/modelinfo.h"
+-#include "pathserver/exportcollision.h"
 +#include "modelinfo/ModelInfo.h"
- #include "pathserver/exportcollision.h"
++#include "pathserver/ExportCollision.h"
  #include "pathserver/NavGenParam.h"
 -#include "pathserver/pathserver.h"
 -#include "peds/Horse/horseComponent.h"

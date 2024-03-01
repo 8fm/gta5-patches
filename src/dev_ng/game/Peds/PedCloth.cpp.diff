@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedCloth.cpp b/src/dev_ng/game/Peds/PedCloth.cpp
+--- a/src/dev_ng/game/Peds/PedCloth.cpp
++++ b/src/dev_ng/game/Peds/PedCloth.cpp
+@@ -6,7 +6,7 @@
+ #include "physics/physics.h"
+ 
+ 
+-#include "pedcloth_parser.h"
++#include "PedCloth_parser.h"
+ 
+ AI_OPTIMISATIONS()
+ 

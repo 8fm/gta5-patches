@@ -48,9 +48,12 @@ diff --git a/src/dev_ng/game/game/Dispatch/DispatchManager.cpp b/src/dev_ng/game
  #include "vehicleAi/VehicleIntelligence.h"
  #include "Vehicles/VehicleFactory.h"
  #include "Vehicles/vehiclepopulation.h"
-@@ -616,8 +616,8 @@ void CDispatchManager::InitWidgets()
+@@ -614,10 +614,10 @@ void CDispatchManager::InitWidgets()
+ }
  
- #include "game/Dispatch/incidents.h"
+ 
+-#include "game/Dispatch/incidents.h"
++#include "game/Dispatch/Incidents.h"
  #include "scene/world/GameWorld.h"
 -#include "Game/Dispatch/OrderManager.h"
 -#include "Game/Dispatch/Orders.h"

@@ -32,3 +32,12 @@ diff --git a/src/dev_ng/game/renderer/DrawLists/DrawableDataStructs.cpp b/src/de
  #include "renderer/Debug/EntitySelect.h"
  #include "renderer/Deferred/DeferredLighting.h"
  #include "renderer/DrawLists/DrawableDataStructs.h"
+@@ -58,7 +58,7 @@
+ #include "shaders/CustomShaderEffectVehicle.h"
+ #include "shaders/CustomShaderEffectPed.h"
+ #include "Vehicles/VehicleFactory.h"
+-#include "vfx/decal/DecalManager.h"
++#include "vfx/decal/decalmanager.h"
+ 
+ #if __PPU
+ #include "rmcore/drawablespu.h"

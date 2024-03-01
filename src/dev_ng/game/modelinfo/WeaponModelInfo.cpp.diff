@@ -1,17 +1,20 @@
 diff --git a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
 --- a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
 +++ b/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp
-@@ -10,14 +10,14 @@
+@@ -9,28 +9,28 @@
+ #include "crskeleton/skeletondata.h"
  #include "fwanimation/animmanager.h"
  #include "rmcore/drawable.h"
- #include "phbound/BoundSphere.h"
+-#include "phbound/BoundSphere.h"
 -#include "phbound/BoundComposite.h"
 -#include "phcore/MaterialMgr.h"
++#include "phbound/boundsphere.h"
 +#include "phbound/boundcomposite.h"
 +#include "phcore/materialmgr.h"
  #include "phcore/phmath.h"
  #include "physics/archetype.h"
- #include "physics/tunable.h"
+-#include "physics/tunable.h"
++#include "physics/Tunable.h"
  
  // Framework headers
 -#include "fwanimation\expressionsets.h"
@@ -19,7 +22,15 @@ diff --git a/src/dev_ng/game/modelinfo/WeaponModelInfo.cpp b/src/dev_ng/game/mod
  #include "vfx/ptfx/ptfxmanager.h"
  
  // game headers
-@@ -30,7 +30,7 @@
+ #include "physics/gtaArchetype.h"
+-#include "physics/GtaMaterial.h"
+-#include "physics/floater.h"
+-#include "modelinfo/weaponmodelinfodata_parser.h"
++#include "physics/gtaMaterial.h"
++#include "physics/Floater.h"
++#include "modelinfo/WeaponModelInfoData_parser.h"
+ #include "fwscene/stores/drawablestore.h"
+ #include "rmcore/drawable.h"
  #include "shaders/CustomShaderEffectBase.h"
  #include "shaders/CustomShaderEffectWeapon.h"
  #include "scene/texLod.h"

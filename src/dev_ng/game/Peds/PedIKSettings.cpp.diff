@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Peds/PedIKSettings.cpp b/src/dev_ng/game/Peds/PedIKSettings.cpp
+--- a/src/dev_ng/game/Peds/PedIKSettings.cpp
++++ b/src/dev_ng/game/Peds/PedIKSettings.cpp
+@@ -11,7 +11,7 @@
+ #include "ik/IkConfig.h"
+ 
+ // Parser headers
+-#include "PedIKSettings_parser.h"
++#include "pediksettings_parser.h"
+ 
+ // rage headers
+ #include "bank/bank.h"

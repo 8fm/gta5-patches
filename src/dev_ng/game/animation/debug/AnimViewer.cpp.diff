@@ -41,7 +41,7 @@ diff --git a/src/dev_ng/game/animation/debug/AnimViewer.cpp b/src/dev_ng/game/an
  #include "pharticulated/articulatedbody.h"
  #include "renderer/Entities/PedDrawHandler.h" // for CPedDrawHandler::SetEnableRendering
 -#include "Renderer/renderer.h"
-+#include "renderer/renderer.h"
++#include "renderer/Renderer.h"
  #include "renderer/RenderThread.h"
  #include "renderer/RenderPhases/RenderPhaseDebugOverlay.h"
  #include "scene/AnimatedBuilding.h"

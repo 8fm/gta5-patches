@@ -5,9 +5,10 @@ diff --git a/src/dev_ng/game/Peds/PedIntelligence.cpp b/src/dev_ng/game/Peds/Ped
  // Rage headers
 -#include "Profile/timebars.h"
 -#include "crskeleton/Skeleton.h"
+-#include "crskeleton/SkeletonData.h"
 +#include "profile/timebars.h"
 +#include "crskeleton/skeleton.h"
- #include "crskeleton/SkeletonData.h"
++#include "crskeleton/skeletondata.h"
  
  // Framework headers
  #include "fwanimation/animmanager.h"

@@ -1,0 +1,37 @@
+diff --git a/src/dev_ng/game/renderer/SSAO.cpp b/src/dev_ng/game/renderer/SSAO.cpp
+--- a/src/dev_ng/game/renderer/SSAO.cpp
++++ b/src/dev_ng/game/renderer/SSAO.cpp
+@@ -35,14 +35,14 @@
+ #include "bank/bank.h"
+ 
+ // game
+-#include "core/game.h"
++#include "Core/game.h"
+ #include "debug/TiledScreenCapture.h"
+ #include "debug/Rendering//DebugLighting.h"
+ #include "debug/Rendering/DebugLights.h"
+ #include "debug/Rendering/DebugDeferred.h"
+-#include "renderer/renderTargets.h"
+-#include "renderer/water.h"
+-#include "renderer/lights/lights.h"
++#include "renderer/rendertargets.h"
++#include "renderer/Water.h"
++#include "renderer/Lights/lights.h"
+ #include "renderer/SSAO.h"
+ #include "renderer/SSAO_shared.h"
+ #include "renderer/Deferred/DeferredLighting.h"
+@@ -58,10 +58,10 @@
+ ===================================================================================================
+ Acronyms:
+ QSSSAO - Quarter Screen SSAO
+-CPSSAO – Channel Packed SSAO - Samples 4 AO pixels in one pass. Fast on the 360.
+-PMSSAO – Position Mapped SSAO - Use camera space position buffer and Gbuffer normals. Fast on the PS3 (PC?).
+-MRSSAO – Multi Resolution SSAO
+-HDAO – High Definition Ambient Occlusion, based on AMD sample
++CPSSAO - Channel Packed SSAO - Samples 4 AO pixels in one pass. Fast on the 360.
++PMSSAO - Position Mapped SSAO - Use camera space position buffer and Gbuffer normals. Fast on the PS3 (PC?).
++MRSSAO - Multi Resolution SSAO
++HDAO - High Definition Ambient Occlusion, based on AMD sample
+ HDAO2 - Updated HDAO, using compute shaders
+ ===================================================================================================
+ */

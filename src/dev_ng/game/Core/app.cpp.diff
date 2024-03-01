@@ -51,9 +51,12 @@ diff --git a/src/dev_ng/game/Core/app.cpp b/src/dev_ng/game/Core/app.cpp
  #include "replaycoordinator/ReplayCoordinator.h"
  #include "saveload/savegame_autoload.h"
  #include "saveload/GenericGameStorage.h"
-@@ -77,9 +77,9 @@
+@@ -75,11 +75,11 @@
+ #include "system/PMCPerfControl.h"
+ #include "system/gcmPerfmon.h"
  #include "system/param.h"
- #include "system/taskscheduler.h"
+-#include "system/taskscheduler.h"
++#include "system/TaskScheduler.h"
  #include "system/telemetry.h"
 -#include "vehicles/vehiclepopulation.h"
 +#include "Vehicles/vehiclepopulation.h"

@@ -10,11 +10,13 @@ diff --git a/src/dev_ng/game/Objects/DummyObject.cpp b/src/dev_ng/game/Objects/D
  #include "fwscene/stores/mapdatastore.h"
  
  // Rage headers
-@@ -15,7 +15,7 @@
+@@ -14,8 +14,8 @@
+ // Game headers 
  #include "DummyObject.h"
  #include "Door.h"
- #include "Object.h"
+-#include "Object.h"
 -#include "PathServer/ExportCollision.h"
++#include "object.h"
 +#include "pathserver/ExportCollision.h"
  #include "scene/world/GameWorld.h"
  #include "script/script.h"

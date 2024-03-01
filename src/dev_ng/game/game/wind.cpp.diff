@@ -1,7 +1,15 @@
 diff --git a/src/dev_ng/game/game/wind.cpp b/src/dev_ng/game/game/wind.cpp
 --- a/src/dev_ng/game/game/wind.cpp
 +++ b/src/dev_ng/game/game/wind.cpp
-@@ -19,15 +19,15 @@
+@@ -12,22 +12,22 @@
+ //  INCLUDES
+ ///////////////////////////////////////////////////////////////////////////////
+ 
+-#include "Wind.h"
++#include "wind.h"
+ 
+ // rage
+ #include "profile/timebars.h"
  #include "pheffects/wind.h"
  
  // game 

@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/renderer/Water.cpp b/src/dev_ng/game/renderer/Water.cpp
 --- a/src/dev_ng/game/renderer/Water.cpp
 +++ b/src/dev_ng/game/renderer/Water.cpp
-@@ -37,20 +37,20 @@
+@@ -33,24 +33,24 @@
+ #include "fwsys/timer.h"
+ 
+ // game headers
+-#include "water.h"
++#include "Water.h"
  
  #include "audio/northaudioengine.h"
  #include "camera/CamInterface.h"

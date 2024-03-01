@@ -1,13 +1,18 @@
 diff --git a/src/dev_ng/game/game/cheat.cpp b/src/dev_ng/game/game/cheat.cpp
 --- a/src/dev_ng/game/game/cheat.cpp
 +++ b/src/dev_ng/game/game/cheat.cpp
-@@ -10,56 +10,56 @@
+@@ -8,58 +8,58 @@
+ #include "cheat.h"
+ 
  // Rage Headers
- #include "physics/Archetype.h"
- #include "phcore/phMath.h"
+-#include "physics/Archetype.h"
+-#include "phcore/phMath.h"
 -#include "phbound/BoundComposite.h"
+-#include "rmcore/Drawable.h"
++#include "physics/archetype.h"
++#include "phcore/phmath.h"
 +#include "phbound/boundcomposite.h"
- #include "rmcore/Drawable.h"
++#include "rmcore/drawable.h"
  #include "system/bootmgr.h"
  #include "string/unicode.h"
  #include "diag/channel.h"

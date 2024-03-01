@@ -1,16 +1,17 @@
 diff --git a/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp b/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp
 --- a/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp
 +++ b/src/dev_ng/game/Peds/PlayerSpecialAbility.cpp
-@@ -15,7 +15,7 @@
+@@ -15,28 +15,28 @@
  #include "control/replay/replay.h"
  #include "Cutscene/CutSceneManagerNew.h"
  #include "game/ModelIndices.h"
 -#include "scene/datafilemgr.h"
 +#include "scene/DataFileMgr.h"
  #include "modelinfo/PedModelInfo.h"
- #include "Ped.h"
+-#include "Ped.h"
++#include "ped.h"
  #include "Peds/PedIntelligence.h"
-@@ -23,20 +23,20 @@
+ #include "PlayerInfo.h"
  #include "scene/EntityIterator.h"
  #include "scene/ExtraContent.h"
  #if __BANK

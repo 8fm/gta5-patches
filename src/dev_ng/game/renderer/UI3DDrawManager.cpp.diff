@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/renderer/UI3DDrawManager.cpp b/src/dev_ng/game/renderer/UI3DDrawManager.cpp
 --- a/src/dev_ng/game/renderer/UI3DDrawManager.cpp
 +++ b/src/dev_ng/game/renderer/UI3DDrawManager.cpp
-@@ -25,7 +25,7 @@
+@@ -19,13 +19,13 @@
+ #include "game/Clock.h"
+ #include "Peds/ped.h"
+ #include "Peds/PedFactory.h"
+-#include "Peds/rendering/peddamage.h"
++#include "Peds/rendering/PedDamage.h"
+ #include "renderer/Lights/lights.h"
+ #include "renderer/PostProcessFX.h"
  #include "renderer/RenderPhases/RenderPhaseCascadeShadows.h"
  #include "renderer/RenderPhases/RenderPhaseReflection.h"
  #include "script/script.h"

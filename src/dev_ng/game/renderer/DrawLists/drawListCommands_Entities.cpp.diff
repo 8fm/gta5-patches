@@ -28,7 +28,8 @@ diff --git a/src/dev_ng/game/renderer/DrawLists/drawListCommands_Entities.cpp b/
 +#include "shaders/ShaderLib.h"
  #include "shaders/ShaderEdit.h"
  #include "shaders/CustomShaderEffectPed.h"
- #include "system/taskscheduler.h"
+-#include "system/taskscheduler.h"
++#include "system/TaskScheduler.h"
  #include "system/dependencyscheduler.h"
 -#include "vehicles/VehicleFactory.h"
 +#include "Vehicles/VehicleFactory.h"
@@ -42,7 +43,7 @@ diff --git a/src/dev_ng/game/renderer/DrawLists/drawListCommands_Entities.cpp b/
 -#include "System/ipc.h"
 -#include "System/Xtl.h"
 +#include "system/ipc.h"
-+#include "system/Xtl.h"
++#include "system/xtl.h"
  
  bool CopyOffMatrixSetSPU_Dependency(const sysDependency& dependency);
  
