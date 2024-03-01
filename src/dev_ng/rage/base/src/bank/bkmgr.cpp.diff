@@ -10,6 +10,15 @@ diff --git a/src/dev_ng/rage/base/src/bank/bkmgr.cpp b/src/dev_ng/rage/base/src/
  	if (bkWidget::sm_EnableWindows)
  	{
  		WindowCreate();
+@@ -797,7 +797,7 @@ void bkManager::DestroyBank(bkBank &b)
+ 
+ 	b.Destroy();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (sm_Instance->GetPane())
+ 		sm_Instance->GetPane()->Resize();
+ #endif
 @@ -845,7 +845,7 @@ void bkManager::Invoke(bkInvokeDelegate::DelType del, size_t udata)
  	}
  }

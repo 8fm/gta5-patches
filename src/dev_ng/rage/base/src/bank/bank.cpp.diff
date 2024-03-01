@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/base/src/bank/bank.cpp b/src/dev_ng/rage/base/src/bank/bank.cpp
 --- a/src/dev_ng/rage/base/src/bank/bank.cpp
 +++ b/src/dev_ng/rage/base/src/bank/bank.cpp
+@@ -95,7 +95,7 @@ bkBank::~bkBank() {
+ }
+ 
+ void bkBank::Update() {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if(GetPane() && GetPane()->GetNeedsResize())
+ 		GetPane()->Resize();
+ #endif
 @@ -185,7 +185,7 @@ void bkBank::Truncate(int newCount) {
  
  

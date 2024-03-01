@@ -10,12 +10,14 @@ diff --git a/src/dev_ng/rage/base/src/bank/bkgroup.cpp b/src/dev_ng/rage/base/sr
  
  #if __CLR_DIALOG
  
-@@ -1171,7 +1171,7 @@ bkColor* bkGroup::AddColor(const char * title,Vec3V * color)
+@@ -1171,7 +1171,9 @@ bkColor* bkGroup::AddColor(const char * title,Vec3V * color)
  	return AddColor(title,color,1.0f / 256, NullCB);
  }
  
 -#if __WIN32PC
-+#if __WIN32PC && !__LINUX
++#if __LINUX
++void bkGroup::WindowUpdate() {}
++#elif __WIN32PC
  #include "system/xtl.h"
  
  void bkGroup::WindowCreate() {

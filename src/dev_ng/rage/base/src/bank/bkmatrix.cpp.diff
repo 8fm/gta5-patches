@@ -28,12 +28,14 @@ diff --git a/src/dev_ng/rage/base/src/bank/bkmatrix.cpp b/src/dev_ng/rage/base/s
  	int index = m_colInFocus * 3;
  	if ( m_windowHandles[m_rowInFocus][index + 1] != NULL )
  	{
-@@ -357,7 +357,7 @@ void bkMatrix::RemoteUpdate()
+@@ -357,7 +357,9 @@ void bkMatrix::RemoteUpdate()
  	p.Send();
  }
  
 -#if __WIN32PC
-+#if __WIN32PC && !__LINUX
++#if __LINUX
++void bkMatrix::WindowUpdate() {}
++#elif __WIN32PC
  
  void bkMatrix::WindowCreate()
  {

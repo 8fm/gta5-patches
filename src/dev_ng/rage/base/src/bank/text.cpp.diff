@@ -1,16 +1,18 @@
 diff --git a/src/dev_ng/rage/base/src/bank/text.cpp b/src/dev_ng/rage/base/src/bank/text.cpp
 --- a/src/dev_ng/rage/base/src/bank/text.cpp
 +++ b/src/dev_ng/rage/base/src/bank/text.cpp
-@@ -556,7 +556,7 @@ void bkText::SetStringRepr( const char *buf )
+@@ -556,7 +556,9 @@ void bkText::SetStringRepr( const char *buf )
      }
  }
  
 -#if __WIN32PC
-+#if __WIN32PC && !__LINUX
++#if __LINUX
++void bkText::WindowUpdate() {}
++#elif __WIN32PC
  #include "system/xtl.h"
  
  WNDPROC s_OldTextEditWinProc;
-@@ -832,7 +832,7 @@ void bkText::Update()
+@@ -832,7 +834,7 @@ void bkText::Update()
  	{
  		RemoteUpdate();
  

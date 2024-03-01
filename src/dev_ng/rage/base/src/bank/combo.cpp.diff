@@ -1,16 +1,18 @@
 diff --git a/src/dev_ng/rage/base/src/bank/combo.cpp b/src/dev_ng/rage/base/src/bank/combo.cpp
 --- a/src/dev_ng/rage/base/src/bank/combo.cpp
 +++ b/src/dev_ng/rage/base/src/bank/combo.cpp
-@@ -40,7 +40,7 @@ bkCombo::~bkCombo() {
+@@ -40,7 +40,9 @@ bkCombo::~bkCombo() {
  }
  
  
 -#if __WIN32PC
-+#if __WIN32PC && !__LINUX
++#if __LINUX
++void bkCombo::WindowUpdate() {}
++#elif __WIN32PC
  
  #include "system/xtl.h"
  
-@@ -102,7 +102,7 @@ void bkCombo::SetString(int id,const char *str) {
+@@ -102,7 +104,7 @@ void bkCombo::SetString(int id,const char *str) {
  		return;
  	ConstStringFree(m_Items[id]);
  	m_Items[id] = ConstStringDuplicate(str);
@@ -19,7 +21,7 @@ diff --git a/src/dev_ng/rage/base/src/bank/combo.cpp b/src/dev_ng/rage/base/src/
  	if (m_Hwnd)
  	{
  		bkAssertf(m_Items[id], "NULL strings not allowed for combo names");
-@@ -236,7 +236,7 @@ void bkCombo::UpdateCombo( const char *title, int numitems, const char **list,
+@@ -236,7 +238,7 @@ void bkCombo::UpdateCombo( const char *title, int numitems, const char **list,
  	}
  
      // dispatch events to win/rag
