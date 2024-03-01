@@ -23,7 +23,7 @@ diff --git a/src/dev_ng/game/debug/MarketingTools.cpp b/src/dev_ng/game/debug/Ma
  #include "system/controlMgr.h"
  #include "text/messages.h"
 -#include "vfx\misc\markers.h"
-+#include "vfx/misc/markers.h"
++#include "vfx/misc/Markers.h"
  enum eInvincibilityModes
  {
  	VULNERABLE = 0,

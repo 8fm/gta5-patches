@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp b/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp
 --- a/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp
 +++ b/src/dev_ng/game/ai/debug/types/AnimationDebugInfo.cpp
+@@ -3,7 +3,7 @@
+ #if AI_DEBUG_OUTPUT_ENABLED
+ 
+ // game headers
+-#include "ik/IkManagerSolverTypes.h"
++#include "ik/ikmanagersolvertypes.h"
+ #include "ik/solvers/ArmIkSolver.h"
+ #include "ik/solvers/BodyLookSolver.h"
+ #include "ik/solvers/BodyLookSolverProxy.h"
 @@ -17,7 +17,7 @@
  #include "ik/solvers/TorsoSolver.h"
  #include "ik/solvers/TorsoVehicleSolver.h"

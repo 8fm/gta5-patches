@@ -47,7 +47,7 @@ diff --git a/src/dev_ng/game/frontend/MiniMap.cpp b/src/dev_ng/game/frontend/Min
  #include "pickups/Data/PickupDataManager.h"
  #include "pickups/PickupManager.h"
  #include "scene/EntityIterator.h"
-@@ -64,15 +64,15 @@
+@@ -64,16 +64,16 @@
  #include "script/script.h"
  #include "script/script_hud.h"
  #include "streaming/streamingvisualize.h"
@@ -61,14 +61,16 @@ diff --git a/src/dev_ng/game/frontend/MiniMap.cpp b/src/dev_ng/game/frontend/Min
 -#include "vehicles/Bike.h"
 -#include "vehicles/AmphibiousAutomobile.h"
 -#include "vehicles/vehiclepopulation.h"
+-#include "vfx/misc/markers.h"
 +#include "task/Movement/TaskParachute.h"
 +#include "Vehicles/Planes.h"
 +#include "Vehicles/Bike.h"
 +#include "Vehicles/AmphibiousAutomobile.h"
 +#include "Vehicles/vehiclepopulation.h"
- #include "vfx/misc/markers.h"
++#include "vfx/misc/Markers.h"
  
  #include "frontend/Metadata_parser.h"
+ //	Include and libs for SmartGlass stuff
 @@ -85,12 +85,12 @@
  #endif // RSG_PC
  

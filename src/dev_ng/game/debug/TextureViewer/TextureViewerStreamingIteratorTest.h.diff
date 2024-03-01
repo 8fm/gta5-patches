@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorT
  #if __BANK
  
 -#include "debug/textureviewer/textureviewerstreamingiterator.h"
-+#include "debug/TextureViewer/TextureViewerstreamingiterator.h"
++#include "debug/TextureViewer/TextureViewerStreamingIterator.h"
  
  // ================================================================================================
  

@@ -1,7 +1,10 @@
 diff --git a/src/dev_ng/game/control/replay/ReplayControl.cpp b/src/dev_ng/game/control/replay/ReplayControl.cpp
 --- a/src/dev_ng/game/control/replay/ReplayControl.cpp
 +++ b/src/dev_ng/game/control/replay/ReplayControl.cpp
-@@ -3,15 +3,15 @@
+@@ -1,17 +1,17 @@
+-#include "control/replay/replaycontrol.h"
++#include "control/replay/ReplayControl.h"
+ 
  #if GTA_REPLAY
  
  #include "control/gamelogic.h"

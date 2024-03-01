@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/debug/UiGadget/UIGadgetInspector.cpp b/src/dev_ng/game/debug/UiGadget/UIGadgetInspector.cpp
+--- a/src/dev_ng/game/debug/UiGadget/UIGadgetInspector.cpp
++++ b/src/dev_ng/game/debug/UiGadget/UIGadgetInspector.cpp
+@@ -6,7 +6,7 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ 
+-#include "debug/UiGadget/UiGadgetInspector.h"
++#include "debug/UiGadget/UIGadgetInspector.h"
+ 
+ #include "debug/UiGadget/UiColorScheme.h"
+ 

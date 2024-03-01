@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/frontend/ProfileSettings.cpp b/src/dev_ng/game/frontend/ProfileSettings.cpp
 --- a/src/dev_ng/game/frontend/ProfileSettings.cpp
 +++ b/src/dev_ng/game/frontend/ProfileSettings.cpp
+@@ -5,7 +5,7 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "profilesettings.h"
++#include "ProfileSettings.h"
+ 
+ #if __PS3
+ #include <np.h>
 @@ -40,15 +40,15 @@
  // Game headers
  #include "debug/Debug.h"

@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.cpp b/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.cpp
 --- a/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.cpp
 +++ b/src/dev_ng/game/camera/gameplay/aim/FirstPersonShooterCamera.cpp
-@@ -9,7 +9,7 @@
+@@ -7,9 +7,9 @@
+ #include "camera/gameplay/aim/FirstPersonShooterCamera.h"
+ 
  #if FPS_MODE_SUPPORTED
- #include "fwanimation/AnimDirector.h"
+-#include "fwanimation/AnimDirector.h"
++#include "fwanimation/animdirector.h"
  
 -#include "Animation/EventTags.h"
 +#include "animation/EventTags.h"

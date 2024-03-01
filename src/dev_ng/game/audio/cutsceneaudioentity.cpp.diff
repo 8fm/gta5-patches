@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/audio/cutsceneaudioentity.cpp b/src/dev_ng/game/aud
  #include "scriptaudioentity.h"
  
  #include "audioengine/controller.h"
+@@ -24,7 +24,7 @@
+ #include "audiohardware/driver.h"
+ #include "audiohardware/syncsource.h"
+ #include "audiohardware/waveplayer.h"
+-#include "control/replay/audio/CutSceneAudioPacket.h"
++#include "control/replay/Audio/CutSceneAudioPacket.h"
+ #include "system/bootmgr.h"
+ 
+ #if RSG_DURANGO

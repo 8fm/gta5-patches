@@ -33,9 +33,9 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerDebugging.cpp b/sr
 -#include "debug/textureviewer/textureviewersearch.h"
 -#include "debug/textureviewer/textureviewerutil.h"
 -#include "debug/textureviewer/textureviewerdebugging.h"
-+#include "debug/TextureViewer/TextureViewersearch.h"
-+#include "debug/TextureViewer/TextureViewerutil.h"
-+#include "debug/TextureViewer/TextureViewerdebugging.h"
++#include "debug/TextureViewer/TextureViewerSearch.h"
++#include "debug/TextureViewer/TextureViewerUtil.h"
++#include "debug/TextureViewer/TextureViewerDebugging.h"
  
  DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()
  

@@ -1,15 +1,17 @@
 diff --git a/src/dev_ng/game/control/gamelogic.cpp b/src/dev_ng/game/control/gamelogic.cpp
 --- a/src/dev_ng/game/control/gamelogic.cpp
 +++ b/src/dev_ng/game/control/gamelogic.cpp
-@@ -13,7 +13,7 @@
+@@ -13,8 +13,8 @@
  #include "fwscene/world/WorldLimits.h"
  
  // Game headers
 -#include "animation/animBones.h"
+-#include "audio/audioZones.h"
 +#include "animation/AnimBones.h"
- #include "audio/audioZones.h"
++#include "audio/audiozones.h"
  #include "audio/northaudioengine.h"
  #include "audio/policescanner.h"
+ #include "audio/radioaudioentity.h"
 @@ -22,49 +22,49 @@
  #include "control/garages.h"
  #include "control/restart.h"

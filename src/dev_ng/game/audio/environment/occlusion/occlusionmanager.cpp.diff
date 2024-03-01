@@ -11,7 +11,7 @@ diff --git a/src/dev_ng/game/audio/environment/occlusion/occlusionmanager.cpp b/
 -#include "debug/debugglobals.h"
 +#include "control/gamelogic.h"
 +#include "control/leveldata.h"
-+#include "debug/Debugdraw.h"
++#include "debug/DebugDraw.h"
 +#include "debug/DebugGlobals.h"
  #include "fwsys/metadatastore.h"
  #include "modelinfo/MloModelInfo.h"

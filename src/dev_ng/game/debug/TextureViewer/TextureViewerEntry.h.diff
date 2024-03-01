@@ -13,7 +13,7 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerEntry.h b/src/dev_
  #include "atl/string.h"                              // atString
  #include "paging/ref.h"                              // pgRef
 -#include "debug/textureviewer/textureviewersearch.h" // CAssetRef,CTxdRef,CTextureRef
-+#include "debug/TextureViewer/TextureViewersearch.h" // CAssetRef,CTxdRef,CTextureRef
++#include "debug/TextureViewer/TextureViewerSearch.h" // CAssetRef,CTxdRef,CTextureRef
  #include "scene/RegdRefTypes.h"                      // RegdEnt
  
  namespace rage { template <typename,int,typename> class atArray; }

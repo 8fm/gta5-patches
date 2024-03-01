@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/game/frontend/MovieClipText.h b/src/dev_ng/game/frontend/MovieClipText.h
+--- a/src/dev_ng/game/frontend/MovieClipText.h
++++ b/src/dev_ng/game/frontend/MovieClipText.h
+@@ -11,13 +11,13 @@
+ #define __MOVIE_CLIP_TEXT_H__
+ 
+ //game
+-#include "Frontend/hud_colour.h"
+-#include "Frontend/Scaleform/ScaleFormMgr.h"
+-#include "Text/TextFormat.h"
++#include "frontend/hud_colour.h"
++#include "frontend/Scaleform/ScaleFormMgr.h"
++#include "text/TextFormat.h"
+ 
+ #define DEFAULT_COLOR (HUD_COLOUR_WHITE)
+ #define MAX_ICON_LENGTH 4
+-#define BLANK_NBSP_CHARACTER ("\xC2\xB5") // mu/micro symbol, which on OTHER fonts has been edited to be empty to use for french punctuationµ!
++#define BLANK_NBSP_CHARACTER ("\xC2\xB5") // mu/micro symbol, which on OTHER fonts has been edited to be empty to use for french punctuation!
+ 
+ class CTextLayout;
+ 

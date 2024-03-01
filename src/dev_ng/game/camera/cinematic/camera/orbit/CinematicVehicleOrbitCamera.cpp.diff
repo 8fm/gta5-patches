@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp
 --- a/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp
 +++ b/src/dev_ng/game/camera/cinematic/camera/orbit/CinematicVehicleOrbitCamera.cpp
+@@ -7,7 +7,7 @@
+ #include "CinematicVehicleOrbitCamera.h"
+ 
+ #include "camera/CamInterface.h"
+-#include "camera/cinematic/cinematicdirector.h"
++#include "camera/cinematic/CinematicDirector.h"
+ #include "camera/gameplay/aim/ThirdPersonAimCamera.h"
+ #include "camera/gameplay/GameplayDirector.h"
+ #include "camera/gameplay/follow/FollowVehicleCamera.h"
 @@ -16,10 +16,10 @@
  #include "camera/system/CameraMetadata.h"
  #include "camera/viewports/ViewportManager.h"

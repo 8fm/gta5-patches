@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.h b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.h
+--- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.h
++++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicGroupCamera.h
+@@ -8,7 +8,7 @@
+ #define CINEMATIC_GROUP_CAMERA_H
+ 
+ #include "camera/cinematic/camera/tracking/BaseCinematicTrackingCamera.h"
+-#include "camera/system/cameraMetadata.h"
++#include "camera/system/CameraMetadata.h"
+ #include "scene/RegdRefTypes.h"
+ #include "atl/vector.h"
+ #include "camera/helpers/DampedSpring.h"

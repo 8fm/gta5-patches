@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayCameraAnimEvent.h b/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayCameraAnimEvent.h
+--- a/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayCameraAnimEvent.h
++++ b/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayCameraAnimEvent.h
+@@ -4,7 +4,7 @@
+ // game includes
+ #include "animation/AnimScene/AnimSceneEvent.h"
+ #include "animation/AnimScene/AnimSceneHelpers.h"
+-#include "animation/AnimScene/Events/AnimScenePlayCameraAnimFlags.h"
++#include "animation/AnimScene/events/AnimScenePlayCameraAnimFlags.h"
+ #include "task/System/TaskHelpers.h"
+ 
+ 

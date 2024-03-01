@@ -10,9 +10,10 @@ diff --git a/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.cpp b/src/dev
  
  //Game includes
 -#include "cutscene/cutscenemanagernew.h"
-+#include "Cutscene/CutSceneManagerNew.h"
- #include "cutscene/animatedModelEntity.h"
+-#include "cutscene/animatedModelEntity.h"
 -#include "cutscene/cutscene_channel.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "Cutscene/AnimatedModelEntity.h"
 +#include "Cutscene/cutscene_channel.h"
  #include "renderer/color.h"
  #include "string/stringhash.h"

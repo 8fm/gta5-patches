@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/Cutscene/CutSceneLightEntity.h b/src/dev_ng/game/Cutscene/CutSceneLightEntity.h
+--- a/src/dev_ng/game/Cutscene/CutSceneLightEntity.h
++++ b/src/dev_ng/game/Cutscene/CutSceneLightEntity.h
+@@ -17,7 +17,7 @@
+ #include "cutscene/cutsentity.h"
+ 
+ //Game Headers
+-#include "cutscene/CutsceneLightObject.h"
++#include "Cutscene/CutSceneLightObject.h"
+ 
+ /////////////////////////////////////////////////////////////////////////////////
+ 

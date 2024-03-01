@@ -1,6 +1,12 @@
 diff --git a/src/dev_ng/game/debug/DebugRecorder.cpp b/src/dev_ng/game/debug/DebugRecorder.cpp
 --- a/src/dev_ng/game/debug/DebugRecorder.cpp
 +++ b/src/dev_ng/game/debug/DebugRecorder.cpp
+@@ -1,4 +1,4 @@
+-#include "debugrecorder.h"
++#include "DebugRecorder.h"
+ 
+ #if DR_ENABLED
+ 
 @@ -20,18 +20,18 @@
  #include "camera/viewports/ViewportManager.h"
  #include "debug/DebugWanted.h"

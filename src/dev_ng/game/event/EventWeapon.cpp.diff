@@ -12,7 +12,8 @@ diff --git a/src/dev_ng/game/event/EventWeapon.cpp b/src/dev_ng/game/event/Event
 +#include "fwmaths/geomutil.h"
  
  // Game headers
- #include "Audio/PoliceScanner.h"
+-#include "Audio/PoliceScanner.h"
++#include "audio/policescanner.h"
  #include "camera/CamInterface.h"
  #include "camera/gameplay/GameplayDirector.h"
 -#include "Event/EventResponseFactory.h"

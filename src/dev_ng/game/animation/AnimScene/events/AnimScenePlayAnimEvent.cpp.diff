@@ -1,6 +1,14 @@
 diff --git a/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp b/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp
 --- a/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp
 +++ b/src/dev_ng/game/animation/AnimScene/events/AnimScenePlayAnimEvent.cpp
+@@ -1,6 +1,6 @@
+ #include "AnimScenePlayAnimEvent.h"
+ 
+-#include "AnimScenePlayAnimEvent_Parser.h"
++#include "AnimScenePlayAnimEvent_parser.h"
+ 
+ // game includes
+ #include "animation/AnimScene/entities/AnimSceneEntities.h"
 @@ -8,7 +8,7 @@
  #include "Peds/PedIntelligence.h"
  #include "streaming/streaming.h"

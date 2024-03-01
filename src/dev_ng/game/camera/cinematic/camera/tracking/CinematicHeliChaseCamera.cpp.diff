@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicHeliChaseCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicHeliChaseCamera.cpp
 --- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicHeliChaseCamera.cpp
 +++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicHeliChaseCamera.cpp
+@@ -11,7 +11,7 @@
+ 
+ #include "camera/CamInterface.h"
+ #include "camera/cinematic/camera/tracking/CinematicTrainTrackCamera.h"
+-#include "camera/cinematic/cinematicdirector.h"
++#include "camera/cinematic/CinematicDirector.h"
+ #include "camera/helpers/BaseFrameShaker.h"
+ #include "camera/helpers/Collision.h"
+ #include "camera/helpers/InconsistentBehaviourZoomHelper.h"
 @@ -19,10 +19,10 @@
  #include "camera/helpers/LookAtDampingHelper.h"
  #include "camera/system/CameraMetadata.h"

@@ -5,7 +5,7 @@ diff --git a/src/dev_ng/game/control/replay/Entity/DestroyedMapObjectsPacket.cpp
  
 -#include "Control\replay\ReplayInterfaceObj.h"
 -#include "Control/replay/Entity/DestroyedMapObjectsPacket.h"
-+#include "Control/replay/ReplayInterfaceObj.h"
++#include "control/replay/ReplayInterfaceObj.h"
 +#include "control/replay/Entity/DestroyedMapObjectsPacket.h"
  
  #if GTA_REPLAY

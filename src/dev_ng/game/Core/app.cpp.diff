@@ -24,7 +24,7 @@ diff --git a/src/dev_ng/game/Core/app.cpp b/src/dev_ng/game/Core/app.cpp
  #include "frontend/GameStreamMgr.h"
  #include "frontend/landing_page/LandingPageArbiter.h"
  #include "frontend/loadingscreens.h"
-@@ -51,19 +51,19 @@
+@@ -51,22 +51,22 @@
  #include "frontend/WarningScreen.h"
  #include "game/Clock.h"
  #include "ik/IkManager.h"
@@ -49,8 +49,13 @@ diff --git a/src/dev_ng/game/Core/app.cpp b/src/dev_ng/game/Core/app.cpp
 -#include "renderer/DrawLists/drawListNY.h"
 +#include "renderer/DrawLists/DrawListNY.h"
  #include "replaycoordinator/ReplayCoordinator.h"
- #include "saveload/savegame_autoload.h"
- #include "saveload/GenericGameStorage.h"
+-#include "saveload/savegame_autoload.h"
+-#include "saveload/GenericGameStorage.h"
++#include "SaveLoad/savegame_autoload.h"
++#include "SaveLoad/GenericGameStorage.h"
+ #include "scene/scene.h"
+ #include "script/script.h"
+ #include "streaming/populationstreaming.h"
 @@ -75,11 +75,11 @@
  #include "system/PMCPerfControl.h"
  #include "system/gcmPerfmon.h"

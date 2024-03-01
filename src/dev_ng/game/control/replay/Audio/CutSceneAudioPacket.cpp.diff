@@ -8,11 +8,13 @@ diff --git a/src/dev_ng/game/control/replay/Audio/CutSceneAudioPacket.cpp b/src/
 -#include "Control/Replay/ReplayInterfacePed.h"
 +#include "control/replay/ReplayInterfacePed.h"
  #include "control/replay/ReplayInternal.h"
- #include "control/replay/audio/SoundPacket.h"
+-#include "control/replay/audio/SoundPacket.h"
 -#include "cutscene/CutSceneManagerNew.h"
-+#include "Cutscene/CutSceneManagerNew.h"
- #include "cutscene/CutSceneStore.h"
+-#include "cutscene/CutSceneStore.h"
 -#include "peds/ped.h" 
++#include "control/replay/Audio/SoundPacket.h"
++#include "Cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneStore.h"
 +#include "Peds/ped.h" 
  
  ////////////////////////////////////////////////////////////

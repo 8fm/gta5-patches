@@ -27,3 +27,12 @@ diff --git a/src/dev_ng/game/debug/BugstarIntegration.cpp b/src/dev_ng/game/debu
  #include "parser/manager.h"						// XML
  #include "parser/tree.h"
  #include "system/exec.h"
+@@ -34,7 +34,7 @@
+ #include "grcore/device.h"
+ #include "grcore/light.h"
+ #include "grcore/stateblock.h"
+-#include "qa/bugstarinterface.h"
++#include "qa/BugstarInterface.h"
+ 
+ #define BUGSTAR_IP_ADDRESS	"rest.bugstar.rockstargames.com:8443"
+ 

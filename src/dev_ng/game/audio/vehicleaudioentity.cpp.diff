@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/audio/vehicleaudioentity.cpp b/src/dev_ng/game/audio/vehicleaudioentity.cpp
 --- a/src/dev_ng/game/audio/vehicleaudioentity.cpp
 +++ b/src/dev_ng/game/audio/vehicleaudioentity.cpp
-@@ -26,7 +26,7 @@
+@@ -26,11 +26,11 @@
  #include "vfx/systems/VfxWater.h"
  
  #include "vehicleengine/vehicleengine.h"
@@ -10,6 +10,11 @@ diff --git a/src/dev_ng/game/audio/vehicleaudioentity.cpp b/src/dev_ng/game/audi
  #include "audioengine/engine.h"
  #include "control/record.h"
  #include "control/replay/replay.h"
+-#include "control/replay/audio/SoundPacket.h"
++#include "control/replay/Audio/SoundPacket.h"
+ #include "control/replay/Audio/CollisionAudioPacket.h"
+ #include "modelinfo/ModelSeatInfo.h"
+ #include "debug/DebugScene.h"
 @@ -54,15 +54,15 @@
  #include "Peds/PedHelmetComponent.h"
  #include "renderer/Water.h"

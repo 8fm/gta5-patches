@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneFadeEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneFadeEntity.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneFadeEntity.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneFadeEntity.cpp
-@@ -13,7 +13,7 @@
+@@ -13,8 +13,8 @@
  #include "vector/colors.h"
  
  //Game Headers
 -#include "Cutscene\CutSceneManagerNew.h"
+-#include "cutscene/CutSceneFadeEntity.h"
 +#include "Cutscene/CutSceneManagerNew.h"
- #include "cutscene/CutSceneFadeEntity.h"
++#include "Cutscene/CutSceneFadeEntity.h"
  #include "camera/CamInterface.h"
  #include "text/TextFile.h"
+ #include "text/messages.h"

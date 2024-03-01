@@ -1,7 +1,12 @@
 diff --git a/src/dev_ng/game/debug/Rendering/DebugView.cpp b/src/dev_ng/game/debug/Rendering/DebugView.cpp
 --- a/src/dev_ng/game/debug/Rendering/DebugView.cpp
 +++ b/src/dev_ng/game/debug/Rendering/DebugView.cpp
-@@ -12,12 +12,12 @@
+@@ -8,16 +8,16 @@
+ #include "input/mouse.h"
+ #include "input/keyboard.h"
+ #include "input/keys.h"
+-#include "fwmaths/VectorUtil.h"
++#include "fwmaths/vectorutil.h"
  #include "grcore/debugdraw.h"
  
  // game

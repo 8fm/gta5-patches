@@ -29,7 +29,7 @@ diff --git a/src/dev_ng/game/control/replay/Ped/PedPacket.cpp b/src/dev_ng/game/
 +#include "Peds/PedIntelligence.h"
  #include "physics/Floater.h"
 -#include "task/motion/taskmotionbase.h"
-+#include "task/Motion/taskmotionbase.h"
++#include "task/Motion/TaskMotionBase.h"
  #include "task/Movement/TaskParachute.h"
  #include "Peds/rendering/PedOverlay.h"
  #include "renderer/PostScan.h"

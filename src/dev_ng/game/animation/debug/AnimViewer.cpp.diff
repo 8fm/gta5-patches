@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/animation/debug/AnimViewer.cpp b/src/dev_ng/game/animation/debug/AnimViewer.cpp
 --- a/src/dev_ng/game/animation/debug/AnimViewer.cpp
 +++ b/src/dev_ng/game/animation/debug/AnimViewer.cpp
+@@ -42,7 +42,7 @@
+ #include "crmetadata/tags.h"
+ #include "crmetadata/dumpoutput.h"
+ #include "crmotiontree/nodeanimation.h"
+-#include "crmotiontree/nodeblendn.h "
++#include "crmotiontree/nodeblendn.h"
+ #include "crmotiontree/nodeblend.h"
+ #include "crmotiontree/nodeclip.h"
+ #include "crmotiontree/nodefilter.h"
 @@ -110,28 +110,28 @@
  #include "camera/scripted/BaseSplineCamera.h"
  #include "camera/system/CameraMetadata.h"
@@ -62,6 +71,8 @@ diff --git a/src/dev_ng/game/animation/debug/AnimViewer.cpp b/src/dev_ng/game/an
 -#include "Task/General/TaskBasic.h"
 -#include "Task/Default/TaskPlayer.h"
 -#include "Task/Movement/TaskGetUp.h"
+-#include "task/physics/blendfromnmdata.h"
+-#include "Task/Physics/TaskBlendFromNM.h"
 +#include "task/System/Task.h"
 +#include "task/System/TaskTypes.h"
 +#include "task/Default/AmbientAnimationManager.h"
@@ -69,8 +80,7 @@ diff --git a/src/dev_ng/game/animation/debug/AnimViewer.cpp b/src/dev_ng/game/an
 +#include "task/General/TaskBasic.h"
 +#include "task/Default/TaskPlayer.h"
 +#include "task/Movement/TaskGetUp.h"
- #include "task/physics/blendfromnmdata.h"
--#include "Task/Physics/TaskBlendFromNM.h"
++#include "task/Physics/BlendFromNmData.h"
 +#include "task/Physics/TaskBlendFromNM.h"
  #include "text/TextConversion.h"
 -#include "text/Text.h"

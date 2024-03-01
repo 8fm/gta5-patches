@@ -1,7 +1,14 @@
 diff --git a/src/dev_ng/game/animation/MovePed.cpp b/src/dev_ng/game/animation/MovePed.cpp
 --- a/src/dev_ng/game/animation/MovePed.cpp
 +++ b/src/dev_ng/game/animation/MovePed.cpp
-@@ -20,7 +20,7 @@
+@@ -14,13 +14,13 @@
+ 
+ //game includes
+ #if __DEV
+-#include "animation/debug/animviewer.h"
++#include "animation/debug/AnimViewer.h"
+ #endif //__DEV
+ #include "fwanimation/animdirector.h"
  #include "fwanimation/clipsets.h"
  #include "fwscene/stores/framefilterdictionarystore.h"
  #include "data/resource.h"

@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/trafficlights.cpp b/src/dev_ng/game/control/trafficlights.cpp
 --- a/src/dev_ng/game/control/trafficlights.cpp
 +++ b/src/dev_ng/game/control/trafficlights.cpp
-@@ -12,7 +12,7 @@
+@@ -12,37 +12,37 @@
  // Framework Headers
  #include "grcore/debugdraw.h"
  #include "fwmaths/angle.h"
@@ -10,11 +10,12 @@ diff --git a/src/dev_ng/game/control/trafficlights.cpp b/src/dev_ng/game/control
  #include "fwdebug/picker.h"
  
  // Game headers
-@@ -20,29 +20,29 @@
+ #include "camera/CamInterface.h"
  #include "camera/debug/DebugDirector.h"
  #include "camera/helpers/Frame.h"
- #include "control/gameLogic.h"
+-#include "control/gameLogic.h"
 -#include "vehicleAi/pathFind.h"
++#include "control/gamelogic.h"
 +#include "vehicleAi/pathfind.h"
  #include "control/replay/replay.h"
 -#include "control/trafficLights.h"

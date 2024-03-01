@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/game/animation/debug/AnimDebug.cpp b/src/dev_ng/game/animation/debug/AnimDebug.cpp
 --- a/src/dev_ng/game/animation/debug/AnimDebug.cpp
 +++ b/src/dev_ng/game/animation/debug/AnimDebug.cpp
+@@ -18,7 +18,7 @@
+ #include "crclip/clip.h"
+ #include "crclip/clipanimation.h"
+ #include "crmotiontree/nodeanimation.h"
+-#include "crmotiontree/nodeblendn.h "
++#include "crmotiontree/nodeblendn.h"
+ #include "crmotiontree/nodeblend.h"
+ #include "crmotiontree/nodeclip.h"
+ #include "crmotiontree/nodefilter.h"
 @@ -36,28 +36,28 @@
  #include "string/stringutil.h"
  #include "system/criticalsection.h"

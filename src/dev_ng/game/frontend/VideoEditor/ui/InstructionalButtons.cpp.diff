@@ -1,9 +1,18 @@
 diff --git a/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp b/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp
 --- a/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp
 +++ b/src/dev_ng/game/frontend/VideoEditor/ui/InstructionalButtons.cpp
-@@ -19,7 +19,7 @@
- #include "frontend/videoeditor/ui/Timeline.h"
- #include "frontend/videoeditor/ui/Playback.h"
+@@ -14,12 +14,12 @@
+ #include "frontend/landing_page/LandingPage.h"
+ #include "frontend/PauseMenu.h"
+ #include "frontend/Scaleform/ScaleFormMgr.h"
+-#include "frontend/videoeditor/ui/Editor.h"
+-#include "frontend/videoeditor/ui/Menu.h"
+-#include "frontend/videoeditor/ui/Timeline.h"
+-#include "frontend/videoeditor/ui/Playback.h"
++#include "frontend/VideoEditor/ui/Editor.h"
++#include "frontend/VideoEditor/ui/Menu.h"
++#include "frontend/VideoEditor/ui/Timeline.h"
++#include "frontend/VideoEditor/ui/Playback.h"
  
 -#include "Text/TextFormat.h"
 +#include "text/TextFormat.h"

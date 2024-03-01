@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/videorecording/videorecording.cpp b/src/dev_ng/game/control/videorecording/videorecording.cpp
+--- a/src/dev_ng/game/control/videorecording/videorecording.cpp
++++ b/src/dev_ng/game/control/videorecording/videorecording.cpp
+@@ -51,7 +51,7 @@ sysCriticalSectionToken VideoRecording::m_frameBufferCsToken;
+ #if RSG_PC
+ u32 VideoRecording::ms_estimatedDurationMs = 0;
+ const wchar_t* VideoRecording::ms_gameTitle = L"GTA V";
+-const wchar_t* VideoRecording::ms_copyright = L"© 2008 - 2015 Rockstar Games, Inc.";
++const wchar_t* VideoRecording::ms_copyright = L"(c) 2008 - 2015 Rockstar Games, Inc.";
+ #endif
+ 
+ //--------------------------------------------------------------

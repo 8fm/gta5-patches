@@ -20,7 +20,7 @@ diff --git a/src/dev_ng/game/control/slownesszones.cpp b/src/dev_ng/game/control
  // Parser headers
  #include "slownesszones_parser.h"
 -#include "Scene/Scene.h"
-+#include "scene/Scene.h"
++#include "scene/scene.h"
  
  
  CSlownessZoneManager	CSlownessZoneManager::m_SlownessZonesManagerInstance;

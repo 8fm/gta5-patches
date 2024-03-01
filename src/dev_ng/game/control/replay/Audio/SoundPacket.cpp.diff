@@ -6,7 +6,7 @@ diff --git a/src/dev_ng/game/control/replay/Audio/SoundPacket.cpp b/src/dev_ng/g
  #include "SoundPacket.h"
  
 -#include "Control/Replay/Replaysettings.h"
-+#include "control/replay/Replaysettings.h"
++#include "control/replay/ReplaySettings.h"
  
  #if GTA_REPLAY
  #include "audio/environment/environmentgroup.h"

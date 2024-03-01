@@ -6,9 +6,10 @@ diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicVehicleTr
  #define CINEMATIC_VEHICLE_TRACKING_CAMERA_H
  
 -#include "Camera/Base/BaseCamera.h"
-+#include "camera/base/BaseCamera.h"
- #include "camera/cinematic/cinematicdirector.h"
+-#include "camera/cinematic/cinematicdirector.h"
 -#include "vehicleAi\task\TaskVehicleAnimation.h"
++#include "camera/base/BaseCamera.h"
++#include "camera/cinematic/CinematicDirector.h"
 +#include "vehicleAi/task/TaskVehicleAnimation.h"
  
  class camCinematicVehicleTrackingCameraMetadata;

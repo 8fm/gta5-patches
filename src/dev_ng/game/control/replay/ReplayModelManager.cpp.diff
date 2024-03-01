@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/ReplayModelManager.cpp b/src/dev_ng/game/control/replay/ReplayModelManager.cpp
+--- a/src/dev_ng/game/control/replay/ReplayModelManager.cpp
++++ b/src/dev_ng/game/control/replay/ReplayModelManager.cpp
+@@ -5,7 +5,7 @@
+ #include "modelinfo/ModelInfo.h"
+ #include "system/timer.h"
+ 
+-#include "debug/gtapicker.h"
++#include "debug/GtaPicker.h"
+ #include "streaming/packfilemanager.h"
+ 
+ CReplayModelManager	s_replaySRLManager;

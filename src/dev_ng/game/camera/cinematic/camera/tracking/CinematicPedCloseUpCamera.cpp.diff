@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp
 --- a/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp
 +++ b/src/dev_ng/game/camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.cpp
-@@ -11,8 +11,8 @@
+@@ -6,13 +6,13 @@
+ 
+ #include "camera/cinematic/camera/tracking/CinematicPedCloseUpCamera.h"
+ 
+-#include "camera/cinematic/cinematicdirector.h"
++#include "camera/cinematic/CinematicDirector.h"
+ #include "camera/CamInterface.h"
  #include "camera/helpers/Collision.h"
  #include "camera/gameplay/GameplayDirector.h"
  #include "camera/system/CameraMetadata.h"

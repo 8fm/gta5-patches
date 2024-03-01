@@ -1,7 +1,7 @@
 diff --git a/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp b/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp
 --- a/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp
 +++ b/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp
-@@ -2,7 +2,7 @@
+@@ -2,14 +2,14 @@
  
  #if GTA_REPLAY
  
@@ -10,3 +10,11 @@ diff --git a/src/dev_ng/game/control/replay/Game/ReplayInterfaceGame.cpp b/src/d
  #include "game/weather.h"
  
  #include "../ReplayController.h"
+ #include "../Misc/ReplayPacket.h"
+ #include "../Misc/WaterPacket.h"
+ #include "../ReplayLightingManager.h"
+-#include "../audio/AmbientAudioPacket.h"
++#include "../Audio/AmbientAudioPacket.h"
+ #include "../Misc/ClothPacket.h"
+ 
+ #include "renderer/RenderPhases/RenderPhaseFX.h"

@@ -6,14 +6,15 @@ diff --git a/src/dev_ng/game/ai/ambient/ConditionalAnims.cpp b/src/dev_ng/game/a
 -#include "AI/Ambient/ConditionalAnims.h"
 -#include "AI/Ambient/ConditionalAnims_Parser.h"
 +#include "ai/ambient/ConditionalAnims.h"
-+#include "ai/ambient/ConditionalAnims_Parser.h"
++#include "ai/ambient/ConditionalAnims_parser.h"
  
  // Rage headers
  #include "ai/aichannel.h"
  #include "fwanimation/clipsets.h"
 -#include "scene/dynamicentity.h"
+-#include "task/Scenario/info/scenarioinfoconditions.h"
 +#include "scene/DynamicEntity.h"
- #include "task/Scenario/info/scenarioinfoconditions.h"
++#include "task/Scenario/info/ScenarioInfoConditions.h"
  
  // Framework headers
  #include "fwmaths/random.h"

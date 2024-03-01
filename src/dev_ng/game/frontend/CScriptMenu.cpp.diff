@@ -1,7 +1,11 @@
 diff --git a/src/dev_ng/game/frontend/CScriptMenu.cpp b/src/dev_ng/game/frontend/CScriptMenu.cpp
 --- a/src/dev_ng/game/frontend/CScriptMenu.cpp
 +++ b/src/dev_ng/game/frontend/CScriptMenu.cpp
-@@ -4,7 +4,7 @@
+@@ -1,10 +1,10 @@
+ #include "CScriptMenu.h"
+ #include "parsercore/element.h"
+-#include "Parsercore/attribute.h"
++#include "parsercore/attribute.h"
  #include "script/script_channel.h"
  #include "script/script.h"
  #include "script/script_hud.h"

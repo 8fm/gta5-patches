@@ -7,7 +7,12 @@ diff --git a/src/dev_ng/game/animation/Move.cpp b/src/dev_ng/game/animation/Move
  
  #include "crclip/clipplayer.h"
  #include "crmotiontree/nodeblend.h"
-@@ -12,7 +12,7 @@
+@@ -8,11 +8,11 @@
+ //game includes
+ #include "animation/AnimManager.h"
+ #if __DEV
+-#include "animation/debug/animviewer.h"
++#include "animation/debug/AnimViewer.h"
  #endif //__DEV
  #include "fwanimation/animdirector.h"
  #include "data/resource.h"

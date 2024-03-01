@@ -18,7 +18,7 @@ diff --git a/src/dev_ng/game/frontend/HudTools.cpp b/src/dev_ng/game/frontend/Hu
 +#include "camera/CamInterface.h"
 +#include "camera/viewports/ViewportManager.h"
 +#include "frontend/NewHud.h"
-+#include "renderer/Rendertargets.h"
++#include "renderer/rendertargets.h"
  #include "renderer/RenderPhases/RenderPhaseLensDistortion.h"
  
  #include "input/headtracking.h"

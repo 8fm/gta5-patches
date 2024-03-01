@@ -1,8 +1,12 @@
 diff --git a/src/dev_ng/game/debug/GtaPicker.cpp b/src/dev_ng/game/debug/GtaPicker.cpp
 --- a/src/dev_ng/game/debug/GtaPicker.cpp
 +++ b/src/dev_ng/game/debug/GtaPicker.cpp
-@@ -40,9 +40,9 @@
- #include "debug/UiGadget/UiGadgetInspector.h"
+@@ -37,12 +37,12 @@
+ #include "debug/DebugModelAnalysis.h"
+ #include "debug/DebugVoxelAnalysis.h"
+ #include "debug/TextureViewer/TextureViewerUtil.h"
+-#include "debug/UiGadget/UiGadgetInspector.h"
++#include "debug/UiGadget/UIGadgetInspector.h"
  #include "debug/UiGadget/UiGadgetList.h"
  #include "modelinfo/PedModelInfo.h"
 -#include "objects/DummyObject.h"

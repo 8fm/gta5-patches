@@ -36,9 +36,9 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerStreamingIteratorT
 -#include "debug/textureviewer/textureviewerutil.h" // for GetFriendlyTextureName, StringMatch
 -#include "debug/textureviewer/textureviewerstreamingiterator.h"
 -#include "debug/textureviewer/textureviewerstreamingiteratortest.h"
-+#include "debug/TextureViewer/TextureViewerutil.h" // for GetFriendlyTextureName, StringMatch
-+#include "debug/TextureViewer/TextureViewerstreamingiterator.h"
-+#include "debug/TextureViewer/TextureViewerstreamingiteratortest.h"
++#include "debug/TextureViewer/TextureViewerUtil.h" // for GetFriendlyTextureName, StringMatch
++#include "debug/TextureViewer/TextureViewerStreamingIterator.h"
++#include "debug/TextureViewer/TextureViewerStreamingIteratorTest.h"
  
  DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()
  

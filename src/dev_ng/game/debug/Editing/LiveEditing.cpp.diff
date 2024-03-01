@@ -14,3 +14,12 @@ diff --git a/src/dev_ng/game/debug/Editing/LiveEditing.cpp b/src/dev_ng/game/deb
  #include "parser/restparserservices.h"
  #include "scene/world/GameWorld.h"
  #include "scene/lod/LodDebug.h"
+@@ -607,7 +607,7 @@ void CMapLiveEditRestInterface::ProcessAndFlush()
+ 	}
+ }
+ 
+-#include "debug/editing/LiveEditing_parser.h"
++#include "debug/Editing/LiveEditing_parser.h"
+ 
+ 
+ CMapLiveEdit g_mapLiveEditing;

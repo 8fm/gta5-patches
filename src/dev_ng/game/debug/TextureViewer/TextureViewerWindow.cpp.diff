@@ -10,7 +10,7 @@ diff --git a/src/dev_ng/game/debug/TextureViewer/TextureViewerWindow.cpp b/src/d
  #include "renderer/color.h"
  
 -#include "debug/textureviewer/textureviewerwindow.h"
-+#include "debug/TextureViewer/TextureViewerwindow.h"
++#include "debug/TextureViewer/TextureViewerWindow.h"
  
  //DEBUG_TEXTURE_VIEWER_OPTIMISATIONS()
  RENDER_OPTIMISATIONS()

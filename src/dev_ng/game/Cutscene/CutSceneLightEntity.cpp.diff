@@ -1,11 +1,13 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp b/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp
 --- a/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp
 +++ b/src/dev_ng/game/Cutscene/CutSceneLightEntity.cpp
-@@ -14,7 +14,7 @@
+@@ -13,8 +13,8 @@
+ #include "fwanimation/animmanager.h"
  
  //Game Headers
- #include "cutscene/CutSceneLightEntity.h"
+-#include "cutscene/CutSceneLightEntity.h"
 -#include "cutscene/CutSceneManagerNew.h"
++#include "Cutscene/CutSceneLightEntity.h"
 +#include "Cutscene/CutSceneManagerNew.h"
  #include "Cutscene/cutscene_channel.h"
  #include "camera/CamInterface.h"

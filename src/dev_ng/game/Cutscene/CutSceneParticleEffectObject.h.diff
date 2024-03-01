@@ -1,12 +1,14 @@
 diff --git a/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.h b/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.h
 --- a/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.h
 +++ b/src/dev_ng/game/Cutscene/CutSceneParticleEffectObject.h
-@@ -15,7 +15,7 @@
+@@ -14,8 +14,8 @@
+ //Rage includes
  
  //Game includes
- #include "CutScene/CutSceneAnimation.h"
+-#include "CutScene/CutSceneAnimation.h"
 -#include "CutScene/CutSceneDefine.h"
-+#include "cutscene/CutSceneDefine.h"
++#include "Cutscene/CutSceneAnimation.h"
++#include "Cutscene/CutSceneDefine.h"
  
  class CCutSceneParticleEffect
  {

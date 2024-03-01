@@ -7,3 +7,12 @@ diff --git a/src/dev_ng/game/audio/userradiotrackmanager.cpp b/src/dev_ng/game/a
  
  #pragma warning(disable: 4668)
  #include <windows.h>
+@@ -10,7 +10,7 @@
+ #include "system/FileMgr.h"
+ #include "frontend/PauseMenu.h"
+ #include "text/messages.h"
+-#include "text/textfile.h"
++#include "text/TextFile.h"
+ 
+ #include "atl/map.h"
+ #include "atl/bitset.h"
