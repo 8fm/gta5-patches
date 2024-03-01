@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacter.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacter.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacter.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacter.cpp
+@@ -24,7 +24,7 @@
+ #include "phcore/materialmgr.h"
+ #include "phbound/boundbvh.h"
+ #include "system/timer.h"
+-#include "art/ARTfeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_DynamicBalancer.h" 
+ #include "system/timer.h"
+@@ -34,7 +34,7 @@
+ #include "fragmentnm/nm_channel.h"
+ 
+ #if NM_SCRIPTING
+-#include "nmutils/TypeUtils.h" // only to get hashString for NM_SCRIPTING
++#include "nmutils/typeutils.h" // only to get hashString for NM_SCRIPTING
+ #endif
+  
+ namespace ART
+@@ -4382,7 +4382,7 @@ namespace ART
+   //
+   //  L* = L_P - L_COM_P 
+   //  = Sum_i[Ri x (mi.Vi)] - R* x (M.V*)
+-  //  = Sum_i[Ri x (mi.Vi)] – 1/M * Sum_i[mi.Ri] x Sum_i[mi.Vi]  
++  //  = Sum_i[Ri x (mi.Vi)] - 1/M * Sum_i[mi.Ri] x Sum_i[mi.Vi]  
+   //
+   //Therefore we can calculate the Sum_i terms above as we loop over the parts for the com calculations and get the angmom about the com
+ 

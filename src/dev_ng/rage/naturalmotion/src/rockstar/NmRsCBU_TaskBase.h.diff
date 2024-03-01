@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskBase.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskBase.h
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskBase.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskBase.h
+@@ -15,7 +15,7 @@
+ #ifndef NM_RS_CBU_TASKBASE_H
+ #define NM_RS_CBU_TASKBASE_H
+ 
+-#include "art/ARTMemory.h"
++#include "art/artmemory.h"
+ #include "NmRsCBU_Shared.h"
+ #include "NmRsLimbs.h"
+ 

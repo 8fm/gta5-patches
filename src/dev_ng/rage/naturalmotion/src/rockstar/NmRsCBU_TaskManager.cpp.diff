@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskManager.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskManager.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskManager.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_TaskManager.cpp
+@@ -46,7 +46,7 @@
+ #include "NmRsCBU_InjuredOnGround.h"
+ #include "NmRsCBU_Carried.h"
+ #include "NmRsCBU_Dangle.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_Grab.h"
+ #include "NmRsCBU_HighFall.h"
+ #include "NmRsCBU_Shot.h"
+@@ -66,7 +66,7 @@
+ #include "NmRsCBU_DebugRig.h"
+ #endif //ALLOW_DEBUG_BEHAVIOURS
+ 
+-#include "art/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ 
+ #if ART_ENABLE_BSPY

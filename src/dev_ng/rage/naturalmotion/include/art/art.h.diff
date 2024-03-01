@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/art/art.h b/src/dev_ng/rage/naturalmotion/include/art/art.h
+--- a/src/dev_ng/rage/naturalmotion/include/art/art.h
++++ b/src/dev_ng/rage/naturalmotion/include/art/art.h
+@@ -1,8 +1,8 @@
+ #ifndef NM_ART_H
+ #define NM_ART_H
+ 
+-#include "art/ARTBaseDefs.h"
+-#include "nmutils/NMTypes.h"
++#include "art/artbasedefs.h"
++#include "nmutils/nmtypes.h"
+ 
+ #define NM_ANIM_MATRICES 0
+ #define NM_TESTING_ANIM_MATRICES 0

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/phcore/materialmgr.h b/src/dev_ng/rage/base/src/phcore/materialmgr.h
+--- a/src/dev_ng/rage/base/src/phcore/materialmgr.h
++++ b/src/dev_ng/rage/base/src/phcore/materialmgr.h
+@@ -14,7 +14,7 @@
+ #include "file/asset.h"
+ #include "file/device.h"
+ #include "file/token.h"
+-#include "phCore/constants.h"
++#include "phcore/constants.h"
+ #include "string/string.h"
+ 
+ struct PairListWorkUnitInput;

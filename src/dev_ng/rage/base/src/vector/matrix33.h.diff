@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/vector/matrix33.h b/src/dev_ng/rage/base/src/vector/matrix33.h
+--- a/src/dev_ng/rage/base/src/vector/matrix33.h
++++ b/src/dev_ng/rage/base/src/vector/matrix33.h
+@@ -1135,6 +1135,6 @@ inline datSerialize & operator<< (datSerialize &s, Matrix33 &m) {
+ 
+ // Second, include standard version for any that weren't implemented in 
+ // the platform specific section
+-#include "vector/Matrix33_default.h"
++#include "vector/matrix33_default.h"
+ 
+ #endif // VECTOR_Matrix33_H

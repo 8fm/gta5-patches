@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmHang.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmHang.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmHang.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ArmHang.cpp
+@@ -21,7 +21,7 @@
+ #include "NmRsEffectors.h"
+ #include "NmRsEngine.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_HeadLook.h"

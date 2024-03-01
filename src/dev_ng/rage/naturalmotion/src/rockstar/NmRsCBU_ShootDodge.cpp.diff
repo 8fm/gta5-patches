@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShootDodge.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShootDodge.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShootDodge.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_ShootDodge.cpp
+@@ -17,14 +17,14 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ #include "NmRsEngine.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_SpineTwist.h"
+ #include "NmRsCBU_PointGun.h"
+ #include "NmRsCBU_SDCatchFall.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_HeadLook.h"
+ #include "NmRsCBU_BodyFoetal.h"
+ #include "NmRsCBU_BodyWrithe.h"

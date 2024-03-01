@@ -1,0 +1,38 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Catchfall.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Catchfall.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Catchfall.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Catchfall.cpp
+@@ -22,14 +22,14 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_SpineTwist.h"
+ #include "NmRsCBU_HeadLook.h"
+ #include "NmRsCBU_DynamicBalancer.h"
+ #include "NmRsCBU_RollDownStairs.h" 
+-#include "NmRsCBU_Rollup.h" 
++#include "NmRsCBU_RollUp.h" 
+ #include "NmRsCBU_BalancerCollisionsReaction.h"
+ #include "NmRsCBU_Teeter.h"
+ 
+@@ -787,7 +787,7 @@ namespace ART
+         if (feedback)
+         {
+           feedback->m_agentID = m_character->getID();
+-          feedback->m_argsCount = 1; // there is one argument – the type of “success”
++          feedback->m_argsCount = 1; // there is one argument - the type of "success"
+ 
+           ART::ARTFeedbackInterface::FeedbackUserdata data;
+           data.setInt(2);//Success state:0 = leaned over,  1= l+r arms have collided (and stayed collided for over 0.5secs), 2 = THIS ub or pelvis collided
+@@ -808,7 +808,7 @@ namespace ART
+       if (feedback && lean < 0.3f)
+       {
+         feedback->m_agentID = m_character->getID();
+-        feedback->m_argsCount = 1; // Dana - there is one argument – the type of “success”
++        feedback->m_argsCount = 1; // Dana - there is one argument - the type of "success"
+         ART::ARTFeedbackInterface::FeedbackUserdata data;
+         data.setInt(0);//Success state:0 = THIS leaned over,  1= l+r arms have collided (and stayed collided for over 0.5secs), 2 = ub or pelvis collided
+         feedback->m_args[0] = data;

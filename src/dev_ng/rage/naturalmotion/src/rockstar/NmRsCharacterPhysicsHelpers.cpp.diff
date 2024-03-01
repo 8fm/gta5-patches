@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterPhysicsHelpers.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterPhysicsHelpers.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterPhysicsHelpers.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterPhysicsHelpers.cpp
+@@ -24,7 +24,7 @@
+ 
+ #include "NmRsCBU_BalancerCollisionsReaction.h" 
+ #include "NmRsCBU_BraceForImpact.h" 
+-#include "NmRsCBU_CatchFall.h" 
++#include "NmRsCBU_Catchfall.h" 
+ #include "NmRsCBU_DynamicBalancer.h" 
+ #include "NmRsCBU_HighFall.h" 
+ #include "NmRsCBU_Shot.h" 
+@@ -1394,7 +1394,7 @@ namespace ART
+ 
+       //level the force using the real up otherwise
+       //if leaned gravity vector used gives:
+-      //  a downward component to the force applied to the pelvis/spine – causing the character to lose hip height
++      //  a downward component to the force applied to the pelvis/spine - causing the character to lose hip height
+       //  an upward component to the forces at the feet causing higher steps and delaying the steping leg from footstrike
+       levelVectorReal(force);
+       

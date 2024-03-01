@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DogDeath.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DogDeath.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DogDeath.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_DogDeath.cpp
+@@ -25,7 +25,7 @@
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+ 
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ namespace ART
+ {

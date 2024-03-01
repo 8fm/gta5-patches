@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/art/bspyserver.h b/src/dev_ng/rage/naturalmotion/include/art/bspyserver.h
+--- a/src/dev_ng/rage/naturalmotion/include/art/bspyserver.h
++++ b/src/dev_ng/rage/naturalmotion/include/art/bspyserver.h
+@@ -15,7 +15,7 @@
+ #ifndef NM_ART_BSPY_SERVER
+ #define NM_ART_BSPY_SERVER
+ 
+-#include "NMutils/NMTypes.h"
++#include "nmutils/nmtypes.h"
+ 
+ // So that the gameLibs can be compiled with ART_ENABLE_BSPY 1 
+ // and still link with NM code if ART_ENABLE_BSPY 0 (e.g. for profiling)
+@@ -28,8 +28,8 @@ namespace rage
+   class Matrix34;
+ }
+ 
+-#include "NMutils/TypeUtils.h"
+-#include "art/ARTInternal.h"
++#include "nmutils/typeutils.h"
++#include "art/artinternal.h"
+ 
+ namespace bSpy
+ {

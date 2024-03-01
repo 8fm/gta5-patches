@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/nmutils/nmcustommemory.cpp b/src/dev_ng/rage/naturalmotion/src/nmutils/nmcustommemory.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/nmutils/nmcustommemory.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/nmutils/nmcustommemory.cpp
+@@ -1,4 +1,4 @@
+-#include "nmutils/NMCustomMemory.h"
++#include "nmutils/nmcustommemory.h"
+ 
+ namespace NMutils
+ {

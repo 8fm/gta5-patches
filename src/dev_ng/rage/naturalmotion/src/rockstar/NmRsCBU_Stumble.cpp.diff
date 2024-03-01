@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Stumble.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Stumble.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Stumble.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Stumble.cpp
+@@ -25,12 +25,12 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_BalancerCollisionsReaction.h"
+ #include "NmRsCBU_BodyBalance.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_DynamicBalancer.h"
+ #include "NmRsCBU_Grab.h" 
+ #include "NmRsCBU_HeadLook.h"

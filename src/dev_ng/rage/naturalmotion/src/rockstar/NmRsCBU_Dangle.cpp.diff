@@ -1,0 +1,28 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dangle.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dangle.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dangle.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Dangle.cpp
+@@ -30,7 +30,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ #include "NmRsCBU_Dangle.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+@@ -279,13 +279,13 @@ namespace ART
+ #if ART_ENABLE_BSPY
+     m_character->setSkeletonVizRoot(11);//parent is leftclavicle 15 for rightClavicle
+     m_character->setSkeletonVizMode(NmRsCharacter::kSV_DesiredAngles);
+-    BehaviourMask mask = bvmask_ArmLeft;//”ur” for right arm
++    BehaviourMask mask = bvmask_ArmLeft;//"ur" for right arm
+     m_character->setSkeletonVizMask(mask);
+     m_character->drawSkeleton(m_character->getSkeletonVizMode() == NmRsCharacter::kSV_DesiredAngles);
+ 
+     m_character->setSkeletonVizRoot(15);//parent is leftclavicle 15 for rightClavicle
+     m_character->setSkeletonVizMode(NmRsCharacter::kSV_DesiredAngles);
+-    mask = bvmask_ArmRight;//”ur” for right arm
++    mask = bvmask_ArmRight;//"ur" for right arm
+     m_character->setSkeletonVizMask(mask);
+     m_character->drawSkeleton(m_character->getSkeletonVizMode() == NmRsCharacter::kSV_DesiredAngles);
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_CrushReaction.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_CrushReaction.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_CrushReaction.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_CrushReaction.cpp
+@@ -27,7 +27,7 @@
+ #include "NmRsCBU_DynamicBalancer.h"
+ #include "NmRsCBU_BodyBalance.h"
+ #include "NmRsCBU_HeadLook.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_BraceForImpact.h"
+ #include "NmRsCBU_Flinch.h"
+ #include "NmRsCBU_BodyFoetal.h"

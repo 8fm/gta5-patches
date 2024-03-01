@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_LearnedCrawl.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_LearnedCrawl.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_LearnedCrawl.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_LearnedCrawl.cpp
+@@ -26,7 +26,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ #include "nmutils/TypeUtils.h"
+ #include "NmRsEngine.h"
+ 

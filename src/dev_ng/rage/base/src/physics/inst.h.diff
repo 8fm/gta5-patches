@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/physics/inst.h b/src/dev_ng/rage/base/src/physics/inst.h
+--- a/src/dev_ng/rage/base/src/physics/inst.h
++++ b/src/dev_ng/rage/base/src/physics/inst.h
+@@ -11,7 +11,7 @@
+ 
+ #include "contactiterator.h"
+ 
+-#include "debugevents.h"
++#include "debugEvents.h"
+ 
+ #include "paging/ref.h"
+ 

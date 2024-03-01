@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/art/artrockstar.h b/src/dev_ng/rage/naturalmotion/include/art/artrockstar.h
+--- a/src/dev_ng/rage/naturalmotion/include/art/artrockstar.h
++++ b/src/dev_ng/rage/naturalmotion/include/art/artrockstar.h
+@@ -1,7 +1,7 @@
+ #ifndef NM_ART_ROCKSTAR_H
+ #define NM_ART_ROCKSTAR_H
+ 
+-#include "art/ARTBaseDefs.h"
++#include "art/artbasedefs.h"
+ #include "physics/leveldefs.h"
+ 
+ namespace rage

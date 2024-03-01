@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/include/bspy/bspycommonpackets.h b/src/dev_ng/rage/naturalmotion/include/bspy/bspycommonpackets.h
+--- a/src/dev_ng/rage/naturalmotion/include/bspy/bspycommonpackets.h
++++ b/src/dev_ng/rage/naturalmotion/include/bspy/bspycommonpackets.h
+@@ -15,7 +15,7 @@
+ #ifndef NM_BSPY_COMMON_PACKETS_H
+ #define NM_BSPY_COMMON_PACKETS_H
+ 
+-#include "bSpyPacket.h"
++#include "bspypacket.h"
+ 
+ // hack this in here, as we don't want to include amath.h inside bSpy just for Min
+ // they are undef'd later

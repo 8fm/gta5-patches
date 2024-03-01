@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/physics/collider.h b/src/dev_ng/rage/base/src/physics/collider.h
+--- a/src/dev_ng/rage/base/src/physics/collider.h
++++ b/src/dev_ng/rage/base/src/physics/collider.h
+@@ -16,7 +16,7 @@
+ #include "vectormath/classes.h"
+ #include "vectormath/legacyconvert.h"
+ #include "paging/ref.h"
+-#include "physics/debugevents.h"
++#include "physics/debugEvents.h"
+ 
+ #if __PS3
+ #include "system/dmaplan.h"

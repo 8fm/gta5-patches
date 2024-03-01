@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
 --- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
 +++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_BodyBalance.cpp
+@@ -19,7 +19,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_BalancerCollisionsReaction.h"
 @@ -1214,7 +1214,7 @@ namespace ART
          float legStiffness = catchFallTask->m_parameters.m_legsStiffness;
          if (balColReactTask->m_balancerState == bal_Slump || balColReactTask->m_balancerState == bal_Trip)

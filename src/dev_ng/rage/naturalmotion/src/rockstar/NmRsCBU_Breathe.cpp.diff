@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Breathe.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Breathe.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Breathe.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Breathe.cpp
+@@ -31,7 +31,7 @@
+ #include "NmRsCharacter.h"
+ #include "NmRsEffectors.h"
+ #include "NmRsGenericPart.h"
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ #include "NmRsCBU_TaskManager.h"
+ 

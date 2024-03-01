@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Grab_Helper.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Grab_Helper.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Grab_Helper.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCBU_Grab_Helper.cpp
+@@ -42,7 +42,7 @@
+ 
+ 
+ 
+-#include "ART/ARTFeedback.h"
++#include "art/artfeedback.h"
+ 
+ namespace ART
+ {

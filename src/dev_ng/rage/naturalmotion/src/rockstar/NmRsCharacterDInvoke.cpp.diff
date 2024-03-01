@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterDInvoke.cpp b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterDInvoke.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterDInvoke.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsCharacterDInvoke.cpp
+@@ -51,7 +51,7 @@
+ #include "NmRsCBU_InjuredOnGround.h"
+ #include "NmRsCBU_Carried.h"
+ #include "NmRsCBU_Dangle.h"
+-#include "NmRsCBU_CatchFall.h"
++#include "NmRsCBU_Catchfall.h"
+ #include "NmRsCBU_TaskManager.h"
+ #include "NmRsCBU_Grab.h"
+ #include "NmRsCBU_HighFall.h"
+@@ -71,8 +71,8 @@
+ #include "NmRsCBU_DebugRig.h"
+ #endif //ALLOW_DEBUG_BEHAVIOURS
+ 
+-#include "nmutils/TypeUtils.h"
+-#include "art/MessageParams.h"
++#include "nmutils/typeutils.h"
++#include "art/messageparams.h"
+ 
+ static class mBehaviour* mCurrentBehaviour = NULL;
+ class mBehaviour

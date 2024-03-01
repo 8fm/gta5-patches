@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.h b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.h
+--- a/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.h
++++ b/src/dev_ng/rage/naturalmotion/src/rockstar/NmRsLimbs.h
+@@ -23,7 +23,7 @@
+ #include "NmRsLimbInputBlendable.h"
+ #include "NmRsLimbManager.h"
+ 
+-#include "NmRsIk.h"
++#include "NmRsIK.h"
+ 
+ #if ART_ENABLE_BSPY_LIMBS
+ #include "NmRsSpy.h"

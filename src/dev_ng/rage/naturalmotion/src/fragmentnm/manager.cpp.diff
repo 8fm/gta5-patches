@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/naturalmotion/src/fragmentnm/manager.cpp b/src/dev_ng/rage/naturalmotion/src/fragmentnm/manager.cpp
+--- a/src/dev_ng/rage/naturalmotion/src/fragmentnm/manager.cpp
++++ b/src/dev_ng/rage/naturalmotion/src/fragmentnm/manager.cpp
+@@ -23,9 +23,8 @@
+ 
+ #include <art/artrockstar.h>
+ #include <art/art.h>
+-#include <art/MessageParams.h>
+-#include <nmutils/NMCustomMemory.h>
+-#include <nmutils/NMCustomMemory.h>
++#include <art/messageparams.h>
++#include <nmutils/nmcustommemory.h>
+ #include <rockstar/NmRsCommon.h>
+ #include <rockstar/NmRsInclude.h>
+ #include <rockstar/NmRsEngine.h>
