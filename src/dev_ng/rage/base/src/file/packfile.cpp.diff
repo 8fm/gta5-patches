@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/file/packfile.cpp b/src/dev_ng/rage/base/src/file/packfile.cpp
+--- a/src/dev_ng/rage/base/src/file/packfile.cpp
++++ b/src/dev_ng/rage/base/src/file/packfile.cpp
+@@ -502,7 +502,7 @@ bool fiPackfile::ReInit(const char *filename, bool readNameHeap, void *headerDat
+ #endif
+ 		m_KeyId = hdr.m_Encrypted;
+ 		{
+-			#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__RGSC_DLL
++			#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__RGSC_DLL && !RSG_LINUX
+ 				bool isTfit = AES::isTransformITKeyId(m_KeyId);
+ 				if(isTfit)
+ 				{

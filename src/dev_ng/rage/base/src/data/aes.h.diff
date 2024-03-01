@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/data/aes.h b/src/dev_ng/rage/base/src/data/aes.h
+--- a/src/dev_ng/rage/base/src/data/aes.h
++++ b/src/dev_ng/rage/base/src/data/aes.h
+@@ -89,7 +89,7 @@ namespace rage {
+ 
+ typedef unsigned long ulong32;
+ 
+-#define INTEL_AES_INSTRUCTIONS	(__WIN32PC && !__RGSC_DLL && !__TOOL)
++#define INTEL_AES_INSTRUCTIONS	(__WIN32PC && !__RGSC_DLL && !__TOOL && !RSG_LINUX)
+ 
+ typedef union Symmetric_key {
+ 	struct _rijndael {
+@@ -131,7 +131,7 @@ public:
+ 	static AES* GetCloudAes() { return ms_cloudAes; }
+ 
+ 	//PURPOSE: Explicit TransformIT decryption
+-	#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__RGSC_DLL
++	#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__RGSC_DLL && !RSG_LINUX
+ 		static bool isTransformITKeyId(unsigned int keyId);
+ 		static bool TransformITDecrypt(unsigned int selector, void *data, unsigned int size);
+ 	#else

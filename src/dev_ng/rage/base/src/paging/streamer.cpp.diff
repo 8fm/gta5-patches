@@ -9,3 +9,12 @@ diff --git a/src/dev_ng/rage/base/src/paging/streamer.cpp b/src/dev_ng/rage/base
  
  
  #if __PS3
+@@ -1460,7 +1461,7 @@ void pgStreamerDeviceHandler::ProcessDecompression() {
+ 							pagingDebugf3("Decrypting data");
+ 							sysTimer timer;
+ 
+-							#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__RGSC_DLL
++							#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__RGSC_DLL && !RSG_LINUX
+ 								#if PGSTREAMER_DEBUG
+ 									Assertf(AES::isTransformITKeyId(r.m_Encrypted), "%s - Not encrypted with a TransformIT key!", r.m_DebugName);
+ 								#endif

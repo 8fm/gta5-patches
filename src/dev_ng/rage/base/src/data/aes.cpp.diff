@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/data/aes.cpp b/src/dev_ng/rage/base/src/data/aes.cpp
+--- a/src/dev_ng/rage/base/src/data/aes.cpp
++++ b/src/dev_ng/rage/base/src/data/aes.cpp
+@@ -1975,7 +1975,7 @@ AES::~AES()
+ 
+ }
+ 
+-#if (!__RGSC_DLL && (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC)
++#if (!__RGSC_DLL && (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC && !RSG_LINUX)
+ bool AES::isTransformITKeyId(unsigned int keyId)
+ {
+ 	if((keyId & 0x0FF00000) == 0x0FE00000)
+@@ -2659,7 +2659,7 @@ bool AES::Encrypt(unsigned int keyId, unsigned int selector, void *data, unsigne
+ 		aes.key.rijndael.extra_rounds = AES_MULTIKEY_ID_GTA5_XBOXONE >> 28;
+ 	}
+ 	#endif
+-	#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__FINAL && !__RGSC_DLL
++	#if RSG_PC && (RSG_CPU_X86 || RSG_CPU_X64 || __RESOURCECOMPILER || RSG_TOOL) && !__FINAL && !__RGSC_DLL && !RSG_LINUX
+ 	if(isTransformITKeyId(keyId))
+ 		return TransformITEncrypt(selector, data, size & ~15);
+ 	#endif
