@@ -6,7 +6,172 @@ diff --git a/src/dev_ng/rage/base/src/net/netsocket_pc.cpp b/src/dev_ng/rage/bas
  #include "file/file_config.h"
  
 -#if (RSG_PC || RSG_DURANGO)
-+#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
++#if RSG_PC || RSG_DURANGO
  
  #include "netsocket.h"
  #include "diag/seh.h"
+@@ -15,11 +15,13 @@
+ #include "system/timer.h"
+ 
+ #define STRICT
++#if !RSG_LINUX
+ #pragma warning(push)
+ #pragma warning(disable: 4668)
+ #include <winsock2.h>
+ #include <ws2tcpip.h>
+ #pragma warning(pop)
++#endif // !RSG_LINUX
+ 
+ #define NET_SET_SKTERR(se, e)   while((se)){*(se) = (e);break;}
+ 
+@@ -35,6 +37,7 @@ netSocket::GetLastSocketError()
+ {
+     netSocketError err = NET_SOCKERR_NONE;
+ 
++#if !RSG_LINUX
+     const int lasterror = WSAGetLastError();
+ 
+     switch(lasterror)
+@@ -79,6 +82,7 @@ netSocket::GetLastSocketError()
+             err = NET_SOCKERR_UNKNOWN;
+             break;
+     }
++#endif // !RSG_LINUX
+ 
+     return err;
+ }
+@@ -228,6 +232,7 @@ netSocket::NativeBind()
+ #endif
+ 		m_Socket = socket(addressFamily, SOCK_DGRAM, IPPROTO_UDP);
+ 
++#if !RSG_LINUX
+ 		rcheck(INVALID_SOCKET != m_Socket,
+ 			catchall,
+ 			netError("[%u] socket() failed", m_Id));
+@@ -251,6 +256,7 @@ netSocket::NativeBind()
+ 		{
+ 			netError("[%u] Failed to set SO_RANDOMIZE_PORT socket option", m_Id);
+ 		}
++#endif // !RSG_LINUX
+ 
+ #if IPv4_IPv6_DUAL_STACK
+ 		// disable IPv6-only mode, we support IPv4-mapped IPv6 addresses
+@@ -310,6 +316,7 @@ netSocket::NativeBind()
+         //Enable broadcasting
+         char broadcast = 1;
+ 
++#if !RSG_LINUX
+         rcheck(0 == setsockopt(m_Socket,
+                                  SOL_SOCKET,
+                                  SO_BROADCAST,
+@@ -317,6 +324,7 @@ netSocket::NativeBind()
+                                  sizeof(BOOL)),
+                 catchall,
+                 netError("[%u] Failed to set socket options", m_Id));
++#endif // !RSG_LINUX
+ 
+         m_CanBroadcast = (broadcast == 1);
+ #endif
+@@ -332,10 +340,12 @@ netSocket::NativeBind()
+     }
+     rcatchall
+     {
++#if !RSG_LINUX
+         if(m_Socket >= 0)
+         {
+             closesocket(m_Socket);
+         }
++#endif
+ 
+         m_Socket = -1;
+     }
+@@ -354,7 +364,9 @@ netSocket::NativeUnbind()
+     {
+         const ptrdiff_t skt = m_Socket;
+         m_Socket = -1;
++#if !RSG_LINUX
+         closesocket(skt);
++#endif
+     }
+ }
+ 
+@@ -387,6 +399,7 @@ netSocket::NativeSend(const netSocketAddress& address,
+ 							  (const struct sockaddr*) &sin,
+ 							  sin_len);
+ 
++#if !RSG_LINUX
+     if(SOCKET_ERROR == result)
+     {
+         //Ignore WSAEWOULDBLOCK
+@@ -401,6 +414,7 @@ netSocket::NativeSend(const netSocketAddress& address,
+ 					 WSAGetLastError());
+         }
+     }
++#endif // !RSG_LINUX
+ 
+     NET_SET_SKTERR(sktErr, socketErr);
+ 
+@@ -431,6 +445,7 @@ netSocket::NativeReceive(netSocketAddress* sender,
+ 					 (sockaddr*) &sin,
+ 					 &sin_len);
+ 
++#if !RSG_LINUX
+     if((0 == count)
+         || ((SOCKET_ERROR == count) && (WSAGetLastError() == WSAEWOULDBLOCK)))
+     {
+@@ -438,6 +453,7 @@ netSocket::NativeReceive(netSocketAddress* sender,
+         count = 0;
+     }
+     else if(SOCKET_ERROR == count)
++#endif // !RSG_LINUX
+     {
+         socketErr = netSocket::GetLastSocketError();
+ 
+@@ -486,6 +502,7 @@ netSocket::NativeSetBlocking()
+ 
+     ptrdiff_t skt = this->GetRawSocket();
+ 
++#if !RSG_LINUX
+     if(netVerify(skt >= 0))
+     {
+         u_long nonblock = this->IsBlocking() ? 0 : 1;
+@@ -498,6 +515,7 @@ netSocket::NativeSetBlocking()
+              netError("[%u] Failed to set socket blocking mode", m_Id);
+         }
+     }
++#endif // !RSG_LINUX
+ 
+     return success;
+ }
+@@ -562,6 +580,7 @@ netSocket::NativeGetReceiveBufferQueueLength(unsigned& receiveBufferQueueLength)
+ 
+ 	const ptrdiff_t skt = this->GetRawSocket();
+ 
++#if !RSG_LINUX
+ 	if(skt >= 0)
+ 	{
+ 		u_long rcvQueueLength = 0;
+@@ -571,6 +590,7 @@ netSocket::NativeGetReceiveBufferQueueLength(unsigned& receiveBufferQueueLength)
+ 			return true;
+ 		}
+ 	}
++#endif // !RSG_LINUX
+ 
+ 	return false;
+ }
+@@ -596,6 +616,7 @@ netSocket::IsReceivePending() const
+ {
+     bool isPending = false;
+ 
++#if !RSG_LINUX
+     if(this->CanSendReceive())
+     {
+         ptrdiff_t skt = this->GetRawSocket();
+@@ -610,6 +631,7 @@ netSocket::IsReceivePending() const
+              netError("[%u] Failed to determine pending data", m_Id);
+         }
+     }
++#endif // !RSG_LINUX
+ 
+     return isPending;
+ }
