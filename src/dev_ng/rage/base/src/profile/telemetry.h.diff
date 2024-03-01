@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/profile/telemetry.h b/src/dev_ng/rage/base/src/profile/telemetry.h
+--- a/src/dev_ng/rage/base/src/profile/telemetry.h
++++ b/src/dev_ng/rage/base/src/profile/telemetry.h
+@@ -1,7 +1,7 @@
+ #ifndef PROFILE_TELEMETRY_H
+ #define PROFILE_TELEMETRY_H
+ 
+-#define USE_TELEMETRY	(!RSG_PS3 && !__FINAL && !__RESOURCECOMPILER)
++#define USE_TELEMETRY	(!RSG_PS3 && !__FINAL && !__RESOURCECOMPILER && 0)
+ 
+ #include "system/tls.h"
+ 
