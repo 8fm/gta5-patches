@@ -1,7 +1,17 @@
 diff --git a/src/dev_ng/game/security/plugins/rtmaplugin.cpp b/src/dev_ng/game/security/plugins/rtmaplugin.cpp
 --- a/src/dev_ng/game/security/plugins/rtmaplugin.cpp
 +++ b/src/dev_ng/game/security/plugins/rtmaplugin.cpp
-@@ -14,16 +14,16 @@
+@@ -5,6 +5,9 @@
+ #if RSG_PC
+ #include <wchar.h>
+ #endif
++#if RSG_LINUX // header from DXVK
++#include <windows.h>
++#endif
+ 
+ //Rage headers
+ #include "string/stringhash.h"
+@@ -14,16 +17,16 @@
  #include "system/threadtype.h"
  
  //Game headers
@@ -25,3 +35,44 @@ diff --git a/src/dev_ng/game/security/plugins/rtmaplugin.cpp b/src/dev_ng/game/s
  
  // Security headers
  #include "net/status.h"
+@@ -71,7 +74,9 @@ public:
+ 	}
+ 
+ #if RSG_PC
++	#if !RSG_LINUX
+ 	virtual bool Check(MEMORY_BASIC_INFORMATION& info, bool& failed) = 0;
++	#endif // !RSG_LINUX
+ 	DWORD m_memConstraintFlags;
+ #elif RSG_ORBIS
+ 	virtual bool Check(SceKernelVirtualQueryInfo& info, bool& failed) = 0;
+@@ -106,7 +111,7 @@ public:
+ 		m_hash			= hash;
+ 		m_memConstraintFlags = flags >> ACTION_FLAG_MEM_CONSTRAINT_SHIFT;;
+ 	}
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	virtual bool Check(MEMORY_BASIC_INFORMATION& info, bool& failed)
+ 	{
+ 		m_numProcessed++;
+@@ -257,7 +262,11 @@ public:
+ #if RSG_PC || RSG_ORBIS
+ bool EnumerateMemoryRegions(MemoryRegionCheckFn& fn, bool& failed)
+ {
+-#if RSG_PC
++#if RSG_LINUX // TODO: add Linux support
++	failed = false;
++	bool bFinished = true;
++	unsigned int aggregate = 0;
++#elif RSG_PC
+ 	HANDLE process = Kernel32::GetCurrentProcess();
+ 	MEMORY_BASIC_INFORMATION info;
+ 	bool bFinished = true;
+@@ -371,7 +380,7 @@ bool EnumerateMemoryRegions(MemoryRegionCheckFn& fn, bool& failed)
+ //			For Windows this is NtDll and Kernel32
+ __forceinline bool RtmaPlugin_VerifySupportModules()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(NetworkInterface::IsGameInProgress())
+ 	{
+ 		// Check if NtDll is flagged as compromised

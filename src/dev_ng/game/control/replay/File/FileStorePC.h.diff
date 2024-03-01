@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/control/replay/File/FileStorePC.h b/src/dev_ng/game/control/replay/File/FileStorePC.h
+--- a/src/dev_ng/game/control/replay/File/FileStorePC.h
++++ b/src/dev_ng/game/control/replay/File/FileStorePC.h
+@@ -13,7 +13,7 @@
+ #include "system/SettingsManager.h"
+ #include "device_replay.h"
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ class FileStorePC : public fiDeviceReplay
+ {

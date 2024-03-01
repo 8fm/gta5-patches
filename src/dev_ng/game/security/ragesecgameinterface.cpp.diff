@@ -9,3 +9,39 @@ diff --git a/src/dev_ng/game/security/ragesecgameinterface.cpp b/src/dev_ng/game
  #include "security/ragesecengine.h"
  #include "security/ragesecwinapi.h"
  #include "security/vftassert/vftassert.h"
+@@ -165,7 +165,7 @@ void rageSecGamePluginManager::Init(u32 initializationMode)
+ 	}	
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ HMODULE GetCurrentModule()
+ { // NB: XP+ solution!
+ 	HMODULE hModule = NULL;
+@@ -257,7 +257,7 @@ static void Bank_TestIterating()
+ 
+ static void Bank_TestRageSecWinApi()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// KERNEL32 test
+ 	if ((u64)GetProcAddress(GetModuleHandle("kernel32.dll"), "GetModuleFileNameA") !=
+ 		(u64)Kernel32::GetModuleFileNameA)
+@@ -303,7 +303,7 @@ static void Bank_VftAssertThread()
+ 
+ static void Bank_EcPluginAddCheck()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	bool inserted = EcPlugin_InsertMemoryCheck(sm_BankEcPluginVersionNumber, (u8)sm_BankEcPluginSku, sm_BankEcPluginPageLow, sm_BankEcPluginPageHigh,
+ 		sm_BankEcPluginActionFlags, sm_BankEcPluginHash);
+ 	if (!inserted)
+@@ -315,7 +315,7 @@ static void Bank_EcPluginAddCheck()
+ 
+ static void Bank_EcPluginProcessAllChecks()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	bool result = EcPlugin_Work();
+ 	if (result)
+ 	{

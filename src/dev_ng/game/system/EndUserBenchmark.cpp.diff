@@ -25,3 +25,13 @@ diff --git a/src/dev_ng/game/system/EndUserBenchmark.cpp b/src/dev_ng/game/syste
  
  eFRONTEND_MENU_VERSION					EndUserBenchmarks::m_bMenuTrigger = 0;
  bool									EndUserBenchmarks::m_bActive = false;
+@@ -253,7 +253,9 @@ void EndUserBenchmarks::OutputBenchmarkResults()
+ 
+ 		fprintf(outHandle, "=== SYSTEM ===\n");
+ 
++#if !RSG_LINUX
+ 		DXDiag::DumpDisplayableInfoString(&tempString, true);
++#endif
+ 		fprintf(outHandle, "%s",tempString);
+ 		delete [] tempString;
+ 

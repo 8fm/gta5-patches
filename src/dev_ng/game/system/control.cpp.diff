@@ -24,3 +24,259 @@ diff --git a/src/dev_ng/game/system/control.cpp b/src/dev_ng/game/system/control
  #endif // KEYBOARD_MOUSE_SUPPORT
  
  //OPTIMISATIONS_OFF()
+@@ -291,7 +291,7 @@ void CControl::Init(s32 device)
+ 	m_SteamHandleMap.Reset();
+ #endif // USE_STEAM_CONTROLLER
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// TR TODO: Tie this to the pause menu.
+ #if __BANK
+ 	safecpy(m_RagPCControlScheme, "Default", RagData::TEXT_SIZE);
+@@ -976,7 +976,7 @@ void CControl::LoadScriptedSettings(bool loadStandardControls, bool forceLoad)
+ 
+ 		LoadSettings(*scriptSettings, ioSource::IOMD_DEFAULT);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(m_UseExtraDevices)
+ 		{
+ 			for(s32 joystickIndex = 0; joystickIndex < ioJoystick::GetStickCount(); ++joystickIndex)
+@@ -1143,7 +1143,7 @@ void CControl::SetInitialDefaultMappings(bool forceReload, bool WIN32PC_ONLY(loa
+ 	// This actually loads the scripted controls.
+ 	LoadScriptedSettings(true, true);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(m_UseExtraDevices)
+ 	{
+ 		if(forceReload)
+@@ -2538,7 +2538,7 @@ void CControl::ShakeController( int duration, int frequency, bool IsScriptComman
+ 
+ 	s32 deviceId = (m_LastKnownSource.m_DeviceIndex == ioSource::IOMD_DEFAULT) ? m_padNum : m_LastKnownSource.m_DeviceIndex;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// if a joystick vibrate it.
+ 	if(GetMappingType(m_LastKnownSource.m_Device) == JOYSTICK)
+ 	{
+@@ -2587,7 +2587,7 @@ void CControl::StartPlayerPadShake_Distance( u32 Duration, s32 Frequency, float
+ 
+ 	s32 deviceId = (m_LastKnownSource.m_DeviceIndex == ioSource::IOMD_DEFAULT) ? m_padNum : m_LastKnownSource.m_DeviceIndex;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// if a joystick vibrate it.
+ 	if(GetMappingType(m_LastKnownSource.m_Device) == JOYSTICK)
+ 	{
+@@ -2632,7 +2632,7 @@ void CControl::StartShaking( s32 MotorFrequency0, s32 MotorFrequency1 )
+ 
+ 	s32 deviceId = (m_LastKnownSource.m_DeviceIndex == ioSource::IOMD_DEFAULT) ? m_padNum : m_LastKnownSource.m_DeviceIndex;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// if a joystick vibrate it.
+ 	if(GetMappingType(m_LastKnownSource.m_Device) == JOYSTICK)
+ 	{
+@@ -2675,7 +2675,7 @@ void CControl::StartPlayerPadShake(u32 Duration0, s32 MotorFrequency0, u32 Durat
+ 
+ 	s32 deviceId = (m_LastKnownSource.m_DeviceIndex == ioSource::IOMD_DEFAULT) ? m_padNum : m_LastKnownSource.m_DeviceIndex;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// if a joystick vibrate it.
+ 	if(GetMappingType(m_LastKnownSource.m_Device) == JOYSTICK)
+ 	{
+@@ -2768,7 +2768,7 @@ void CControl::ApplyRecoilEffect( u32 duration, float intensity, float triggerIn
+ 
+ void CControl::StopPlayerPadShaking(bool bForce)
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	ioJoystick::StopAllForces();
+ #endif  // __WIN32PC
+ 
+@@ -4146,7 +4146,9 @@ void CControl::Settings::Init()
+ 		KEYBOARD_MOUSE_ONLY(LoadKeyboardLayout());
+ 		m_AxisDefinitions = settings.m_AxisDefinitions;
+ 
+-		WIN32PC_ONLY(m_GamepadDefinitionList.m_Devices.Reset());
++#if RSG_PC && !RSG_LINUX
++		m_GamepadDefinitionList.m_Devices.Reset();
++#endif
+ 
+ 		// set all mappers to an undefined mapper.
+ 		for(u32 i = 0; i < MAX_INPUTS; ++i)
+@@ -4267,7 +4269,9 @@ void CControl::Settings::Init()
+ #endif // RSG_ASSERT
+ #endif // KEYBOARD_MOUSE_SUPPORT
+ 
+-		WIN32PC_ONLY(RebuildGamepadDefinitionList());
++#if RSG_PC && !RSG_LINUX
++		RebuildGamepadDefinitionList();
++#endif
+ 
+ 		SHUTDOWN_PARSER;
+ 	}
+@@ -4284,6 +4288,7 @@ int CControl::Settings::InputCompare(const InputType* a, const InputType* b)
+ 
+ void CControl::Settings::LoadKeyboardLayout()
+ {
++#if !__LINUX // TODO: add Linux support
+ 	const char* localName = NULL;
+ 	char16 wideLocalName[LOCALE_NAME_MAX_LENGTH];
+ 	GetSystemDefaultLocaleName(reinterpret_cast<wchar_t*>(wideLocalName), LOCALE_NAME_MAX_LENGTH);
+@@ -4339,6 +4344,7 @@ void CControl::Settings::LoadKeyboardLayout()
+ 	}
+ 
+ 	LoadKeyboardLayoutFile(filePath);
++#endif // !__LINUX
+ }
+ 
+ void CControl::Settings::LoadKeyboardLayoutFile(const char* layoutFile)
+@@ -4428,7 +4434,7 @@ void CControl::Settings::EnumKeyboardLayoutFilesCallback(const fiFindData& data,
+ 
+ #endif // KEYBOARD_MOUSE_SUPPORT
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void CControl::Settings::RebuildGamepadDefinitionList()
+ {
+ 	controlDisplayf("Rebuilding gamepad definition scan!");
+@@ -4668,6 +4674,7 @@ void CControl::SetMappingsTest(s32 iIndex)
+ }
+ 
+ #if __WIN32PC
++#if !__LINUX
+ CControl::JoystickDefinitionRagData::JoystickDefinitionRagData()
+ 	: m_LastDeviceIndex(0)
+ 	, m_AutoSave(true)
+@@ -4689,6 +4696,7 @@ CControl::JoystickDefinitionRagData::JoystickDefinitionRagData()
+ 
+ 	safecpy(m_SettingsPath, PC_GAMEPAD_DEFINITION_FILE, RAGE_MAX_PATH);
+ }
++#endif // !__LINUX
+ 
+ void CControl::AddKeyboardMouseUpdateButtonToRag(bkBank& bank, InputType input, const char* sourceName, bool isPrimary)
+ {
+@@ -4754,6 +4762,7 @@ void CControl::UpdateJoystickMapping( CallbackData data )
+ 	m_currentMapping.m_MappingCameFromRag = true; // Rag will automatically overwrite conflicts.
+ }
+ 
++#if !__LINUX
+ void CControl::SwitchJoystickDefinitionDevice()
+ {
+ 	if(controlVerifyf(m_CurrentJoystickDefinition.m_DeviceIndex < ioJoystick::GetStickCount(), "Invalid stick id"))
+@@ -5068,6 +5077,7 @@ void CControl::SaveAllUserControls()
+ 		}
+ 	}
+ }
++#endif // !__LINUX
+ 
+ #endif // __WIN32PC
+ 
+@@ -5098,6 +5108,7 @@ void CControl::AddKeyboardMouseExtraSettings(const ControlInput::ControlSettings
+ 
+ void CControl::GetUserSettingsPath(char (&path)[PATH_BUFFER_SIZE], const char* const file)
+ {
++#if !__LINUX
+ 	CompileTimeAssert(PATH_BUFFER_SIZE == rgsc::RGSC_MAX_PATH);
+ 
+ 	if(IsUserSignedIn())
+@@ -5116,11 +5127,16 @@ void CControl::GetUserSettingsPath(char (&path)[PATH_BUFFER_SIZE], const char* c
+ 
+ 	// Fallback to default path!
+ 	formatf(path, "user:/%s%s", PC_USER_SETTINGS_DIR, file);
++#endif // !__LINUX
+ }
+ 
+ bool CControl::IsUserSignedIn()
+ {
++#if !__LINUX
+ 	return g_rlPc.IsInitialized() && g_rlPc.GetProfileManager() && g_rlPc.GetProfileManager()->IsSignedIn();
++#else
++	return false;
++#endif // !__LINUX
+ }
+ 
+ bool CControl::UpdateMappingFromInputScan()
+@@ -6071,6 +6087,7 @@ void CControl::DisableInputsInArray(const atArray<InputType>& inputs, const ioVa
+ 
+ 
+ #if __WIN32PC
++#if !__LINUX
+ CControl::JoystickDefinitionData::JoystickDefinitionData()
+ 	: m_Data()
+ 	, m_Guid()
+@@ -6398,6 +6415,7 @@ void CControl::LoadGamepadControls(const ControlInput::Gamepad::Definition& defi
+ 	JoystickDefinitionData::ConvertPadMappingsToJoystickMappings(definition, settings, joystickSettings);
+ 	LoadSettings(joystickSettings, padIndex);
+ }
++#endif // !__LINUX
+ 
+ void CControl::ApplyDirectionalForce(float FORCE_FEEDBACK_ONLY(X), float FORCE_FEEDBACK_ONLY(Y), s32 FORCE_FEEDBACK_ONLY(timeMS))
+ {
+@@ -6678,7 +6696,7 @@ bool CControl::SaveUserControls(bool isAutoSave, s32 deviceId)
+ 	}
+ #endif // RSG_ASSERT
+ 
+-#if ALLOW_USER_CONTROLS
++#if ALLOW_USER_CONTROLS && !__LINUX
+ 	// If the device is not the keyboard/mouse and (is a valid non XInput gamepad without a gamepad definition).
+ 	if( deviceId != ioSource::IOMD_KEYBOARD_MOUSE &&
+ 		(!IsValidJoystickDevice(deviceId) ||
+@@ -6799,12 +6817,14 @@ bool CControl::HasAutoSavedUserControls(s32 deviceId) const
+ 	{
+ 		GetUserSettingsPath(path, PC_AUTOSAVE_USER_SETTINGS_FILE);
+ 	}
++#if !__LINUX
+ 	else if(controlVerifyf(IsValidJoystickDevice(deviceId), "Invalid Device ID %d!", deviceId))
+ 	{
+ 		char fileName[50] = {0};
+ 		formatf(fileName, "%s.%s", ioJoystick::GetStick(deviceId).GetProductGuidStr(), AUTOSAVE_EXT);
+ 		GetUserSettingsPath(path, fileName);
+ 	}
++#endif // !__LINUX
+ 	else
+ 	{
+ 		return false;
+@@ -6819,12 +6839,14 @@ bool CControl::DeleteAutoSavedUserControls(s32 deviceId) const
+ 	{
+ 		GetUserSettingsPath(path, PC_AUTOSAVE_USER_SETTINGS_FILE);
+ 	}
++#if !__LINUX
+ 	else if(controlVerifyf(IsValidJoystickDevice(deviceId), "Invalid Device ID %d!", deviceId))
+ 	{
+ 		char fileName[50] = {0};
+ 		formatf(fileName, "%s.%s", ioJoystick::GetStick(deviceId).GetProductGuidStr(), AUTOSAVE_EXT);
+ 		GetUserSettingsPath(path, fileName);
+ 	}
++#endif // !__LINUX
+ 	else
+ 	{
+ 		return false;
+@@ -7074,7 +7096,7 @@ void CControl::GetConflictingInputs(InputList& conflictingInputs, bool assertOnC
+ }
+ void CControl::LoadDeviceControls(bool loadAutosave)
+ {
+-#if RSG_PC
++#if RSG_PC && !__LINUX
+ 	sysCriticalSection lock(m_Cs);
+ 
+ 	INIT_PARSER;
+@@ -7175,6 +7197,7 @@ void CControl::LoadDeviceControls(bool loadAutosave)
+ }
+ 
+ 
++#if !__LINUX
+ void CControl::ScanGamepadDefinitionSource(GamepadDefinitionSource source)
+ {
+ 	if(Verifyf(source >= 0 && source < NUM_PAD_SOURCES, "Invalid GampadDefinitionSource (%d)!", source))
+@@ -7435,6 +7458,7 @@ bool CControl::IsGamepadDefinitionValid( const ControlInput::Gamepad::Source& de
+ 		   definition.m_PadParameter == L2 || definition.m_PadParameter == L2_INDEX || definition.m_PadParameter == R2 || definition.m_PadParameter == R2_INDEX;
+ }
+ 
++#endif // !__LINUX
+ #endif // __WIN32PC
+ 
+ #if !__FINAL

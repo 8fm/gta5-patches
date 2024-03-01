@@ -1,7 +1,13 @@
 diff --git a/src/dev_ng/game/system/companion_x64.cpp b/src/dev_ng/game/system/companion_x64.cpp
 --- a/src/dev_ng/game/system/companion_x64.cpp
 +++ b/src/dev_ng/game/system/companion_x64.cpp
-@@ -7,7 +7,7 @@
+@@ -4,10 +4,13 @@
+ //--------------------------------------------------------------------------------------
+ 
+ #include "companion_x64.h"
++#if RSG_LINUX
++#include <unistd.h>
++#endif
  
  #if COMPANION_APP
  #include "file/tcpip.h"
@@ -10,3 +16,17 @@ diff --git a/src/dev_ng/game/system/companion_x64.cpp b/src/dev_ng/game/system/c
  
  #define LIMIT_DEVICE_PAIRING_TO_ROCKSTARID 1
  PARAM(CompanionNoSCNeeded, "Companion won't do filtering based on SocialClub ID");
+@@ -226,7 +229,13 @@ void CPairingManager::processIncomingMessages(int len, char* buffer, const netSo
+ 				message.m_MessageTag = kMessageBroadcastReplyTag;
+ 
+ 				u32 nameLen = kMessagePayloadSize;
++#if RSG_LINUX
++				gethostname(message.m_data, nameLen);
++				char* end;
++				if ((end = strchr(message.m_data, '.')) != NULL) *end = 0; // trim off domain
++#else
+ 				GetComputerName(message.m_data, (LPDWORD)&nameLen);
++#endif // RSG_LINUX
+ 
+ 				codex->Encrypt(&message.m_MessageTag, kMessagePayloadSize + 4);
+ 

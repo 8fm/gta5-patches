@@ -142,3 +142,12 @@ diff --git a/src/dev_ng/game/task/Combat/TaskCombatMelee.cpp b/src/dev_ng/game/t
  #include "vfx/systems/VfxPed.h"
  #include "weapons/WeaponDamage.h"
  #include "weapons/WeaponManager.h"
+@@ -7243,7 +7243,7 @@ void CTaskMeleeActionResult::ProcessPreHitResults( CPed* pPed, CEntity* pTargetE
+ 	if( m_bPreHitResultsApplied )
+ 		return;
+ 
+-	const CDamageAndReaction* pDamageAndReaction = m_pActionResult ? m_pActionResult->GetDamageAndReaction() : false;
++	const CDamageAndReaction* pDamageAndReaction = m_pActionResult ? m_pActionResult->GetDamageAndReaction() : nullptr;
+ 	if( pDamageAndReaction )
+ 	{
+ 		if( pDamageAndReaction->ShouldStopDistanceHoming() )

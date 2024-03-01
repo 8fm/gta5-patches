@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/system/companion.h b/src/dev_ng/game/system/compani
  
  #include "vector/vector3.h"
  #include "atl/string.h"
+@@ -39,6 +39,8 @@ typedef long HRESULT;
+ //	Success codes
+ #define S_OK                                   ((HRESULT)0L)
+ #define S_FALSE                                ((HRESULT)1L)
++#elif RSG_LINUX // header from DXVK
++#include <windows.h>
+ #endif	//	RSG_ORBIS
+ 
+ //	Different message types

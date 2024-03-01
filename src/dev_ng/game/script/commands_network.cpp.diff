@@ -1,6 +1,12 @@
 diff --git a/src/dev_ng/game/script/commands_network.cpp b/src/dev_ng/game/script/commands_network.cpp
 --- a/src/dev_ng/game/script/commands_network.cpp
 +++ b/src/dev_ng/game/script/commands_network.cpp
+@@ -1,4 +1,4 @@
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <tchar.h>
+ #endif
+ 
 @@ -20,32 +20,32 @@
  #include "fwanimation/directorcomponentsyncedscene.h"
  #include "fwnet/netarrayhandler.h"
@@ -162,3 +168,30 @@ diff --git a/src/dev_ng/game/script/commands_network.cpp b/src/dev_ng/game/scrip
  #include "debug/DebugScene.h"
  #endif // __DEV
  
+@@ -438,7 +438,7 @@ bool CommandNetworkIsGuest()
+ 
+ bool CommandNetworkIsScOfflineMode()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	return g_rlPc.GetUiInterface()->IsReadyToAcceptCommands() && g_rlPc.GetUiInterface()->IsOfflineMode();
+ #else
+ 	return false;
+@@ -6574,7 +6574,7 @@ bool CommandNetworkPlayerIsRockstarDev(int nPlayerIndex)
+ }
+ 
+ #if (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC
+-__declspec(noinline) bool CommandNetworkPlayerIsCheater(int nPlayerIndex)
++ROCKY_NOINLINE bool CommandNetworkPlayerIsCheater(int nPlayerIndex)
+ #else
+ bool CommandNetworkPlayerIsCheater(int nPlayerIndex)
+ #endif
+@@ -14562,7 +14562,7 @@ bool CommandCheckForStoreAge()
+ }
+ 
+ #if (RSG_CPU_X86 || RSG_CPU_X64) && RSG_PC
+-__declspec(noinline) bool CommandNetworkIsCheater()
++ROCKY_NOINLINE bool CommandNetworkIsCheater()
+ #else
+ bool CommandNetworkIsCheater()
+ #endif

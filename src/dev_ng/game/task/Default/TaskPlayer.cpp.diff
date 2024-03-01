@@ -243,3 +243,12 @@ diff --git a/src/dev_ng/game/task/Default/TaskPlayer.cpp b/src/dev_ng/game/task/
  #include "Peds/PedFlagsMeta.h"
  
  #define USE_PLAYER_MOVE_TASK			0
+@@ -7668,7 +7668,7 @@ CTaskPlayerOnFoot::ePlayerOnFootState CTaskPlayerOnFoot::CheckForAutoCover(CPed*
+ 
+ 	// Never when heavy weapon is equipped
+ 	const CPedWeaponManager* pWeaponManager = pPed->GetWeaponManager();
+-	const CWeaponInfo* pWeaponInfo = pWeaponManager ? pWeaponManager->GetEquippedWeaponInfo() : false;
++	const CWeaponInfo* pWeaponInfo = pWeaponManager ? pWeaponManager->GetEquippedWeaponInfo() : nullptr;
+ 	if( pWeaponInfo && pWeaponInfo->GetIsHeavy() )
+ 	{
+ 		return STATE_INVALID;

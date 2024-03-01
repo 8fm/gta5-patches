@@ -19,3 +19,32 @@ diff --git a/src/dev_ng/game/script/commands_pad.cpp b/src/dev_ng/game/script/co
  #include "script/script_hud.h"
  #include "script/thread.h"
  #include "math/amath.h"
+@@ -1450,7 +1450,7 @@ void CommandDisableControlButton(int control, int ButtonNumber)
+ 
+ bool CommandInitPCScriptedControls(const char * WIN32PC_ONLY(schemeName))
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	return CControlMgr::GetPlayerMappingControl().LoadPCScriptControlMappings(atHashString(schemeName));
+ #else
+ 	return true;
+@@ -1459,7 +1459,7 @@ bool CommandInitPCScriptedControls(const char * WIN32PC_ONLY(schemeName))
+ 
+ bool CommandSwitchPCScriptedControls(const char * WIN32PC_ONLY(schemeName))
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	return CControlMgr::GetPlayerMappingControl().SwitchPCScriptControlMappings(atHashString(schemeName));
+ #else
+ 	return true;
+@@ -1468,7 +1468,9 @@ bool CommandSwitchPCScriptedControls(const char * WIN32PC_ONLY(schemeName))
+ 
+ void CommandShutdownPCScriptedControls()
+ {
+-	WIN32PC_ONLY(CControlMgr::GetPlayerMappingControl().ShutdownPCScriptControlMappings());
++#if __WIN32PC && !__LINUX
++	CControlMgr::GetPlayerMappingControl().ShutdownPCScriptControlMappings();
++#endif
+ }
+ 
+ void CommandAllowAlternativeScriptControlsLayout(int control)

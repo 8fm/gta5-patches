@@ -10,39 +10,120 @@ diff --git a/src/dev_ng/game/system/control.h b/src/dev_ng/game/system/control.h
  //replay
  #include "control/replay/ReplaySettings.h"
  
-@@ -820,7 +820,7 @@ public:
- 	void CheckForSteamController();
- #endif // USE_STEAM_CONTROLLER
+@@ -59,7 +59,7 @@
+ #endif // LIGHT_EFFECTS_SUPPORT
  
--#if __WIN32PC
-+#if __WIN32PC && !__LINUX
- 	// PURPOSE: Sets the enable flag for using DirectInput devices.
- 	void SetEnableDirectInputDevices(bool useDirectInputDevices) { m_UseExtraDevices = useDirectInputDevices; }
+ // Currently force feedback is disabled as we do not run the appropriate physics simulations.
+-#define FORCE_FEEDBACK_SUPPORT 1
++#define FORCE_FEEDBACK_SUPPORT (1 && !RSG_LINUX)
+ #if FORCE_FEEDBACK_SUPPORT
+ #define FORCE_FEEDBACK_ONLY(...)	__VA_ARGS__
+ #else
+@@ -864,7 +864,7 @@ public:
+ 	// PURPOSE: Retrieves the key info for a given keycode.
+ 	static const KeyInfo& GetKeyInfo(u32 keyCode);
  
-@@ -1475,7 +1475,7 @@ private:
- 	// The current mapping information.
- 	CurrentMappingData m_currentMapping;
+-#if !RSG_FINAL
++#if !RSG_FINAL && !RSG_LINUX
+ 	// PURPOSE: Emulates XInput gamepads from DirectInput gamepads.
+ 	// NOTES: Hack to get debug camera working with PS4 pads for working from home. This is in this file as it is CControl that has information about the gamepads.
+ 	static void EmulateXInputPads();
+@@ -898,6 +898,7 @@ public:
+ 		NUM_PAD_SOURCES
+ 	};
+ 
++#if !RSG_LINUX
+ 	// PURPOSE:	Starts a new gamepad definition scan.
+ 	void StartGamepadDefinitionScan();
+ 
+@@ -947,8 +948,9 @@ public:
+ 	// PARAMS:	deviceId - the device id to check.
+ 	// NOTES:	This will return false if the device id is an XInput device.
+ 	bool IsValidJoystickDevice(s32 deviceId) const;
++#endif // !RSG_LINUX
+ 
+-#if __BANK
++#if __BANK && !RSG_LINUX
+ 	// Mapping controls are only available on PC version and in RAG.
+ 	void InitMappingWidgets(bkBank& bank);
+ 	void InitJoystickCalibrationWidgets(bkBank& bank);
+@@ -1094,7 +1096,7 @@ private:
+ 	// borrowed from Debug.cpp::DumpThreadState
+ 	static void ChanneledOutputForStackTrace(const char* fmt, ...);
  
 -#if RSG_PC
 +#if RSG_PC && !RSG_LINUX
- 	// The current gamepad definition settings.
- 	struct JoystickDefinitionData
- 	{
-@@ -1848,7 +1848,7 @@ private:
- 	// Rag needs a copy of the mapping data for each input (to display information for each input)
- 	RagData m_ragData[MAX_INPUTS];
- 
--#if __WIN32PC
-+#if __WIN32PC && !__LINUX
- 	// Group Joystick definition data together.
- 	struct JoystickDefinitionRagData
- 	{
-@@ -1993,7 +1993,7 @@ inline bool CControl::ValidSecondaryDynamicMapping(const ControlInput::DynamicMa
- }
+ 	// Hack for using PS4 controller whilst working from home.
+ 	static float GetJoystickValue(const ioJoystick& stick, ioMapperParameter param);
+ 	static void SetPadValue(int padIndex, ioMapperParameter param, float value);
+@@ -1144,7 +1146,7 @@ private:
+ 		static void EnumKeyboardLayoutFilesCallback(const fiFindData& data, void* userArg);
  #endif // KEYBOARD_MOUSE_SUPPORT
  
 -#if RSG_PC
 +#if RSG_PC && !RSG_LINUX
+ 		// PURPOSE: The gamepad definition list for DirectInput devices.
+ 		ControlInput::Gamepad::DefinitionList m_GamepadDefinitionList;
+ 
+@@ -1476,6 +1478,7 @@ private:
+ 	CurrentMappingData m_currentMapping;
+ 
+ #if RSG_PC
++#if !RSG_LINUX
+ 	// The current gamepad definition settings.
+ 	struct JoystickDefinitionData
+ 	{
+@@ -1564,6 +1567,7 @@ private:
+ 
+ 	// PURPOSE: Lookup table of GamepadDefinitionSource id's to ioMapperParameter ids.
+ 	const static ioMapperParameter ms_GAMEPAD_DEFINITON_TO_MAPPER_PARAM[];
++#endif // !RSG_LINUX
+ 
+ 	// Indicates the mouse controls the vehicles.
+ 	// TR TODO: Tie these to the pause menu.
+@@ -1849,6 +1853,7 @@ private:
+ 	RagData m_ragData[MAX_INPUTS];
+ 
+ #if __WIN32PC
++#if !__LINUX
+ 	// Group Joystick definition data together.
+ 	struct JoystickDefinitionRagData
+ 	{
+@@ -1874,6 +1879,7 @@ private:
+ 	};
+ 
+ 	JoystickDefinitionRagData m_JoystickDefinitionRagData;
++#endif // !__LINUX
+ 
+ 	char m_RagPCControlScheme[RagData::TEXT_SIZE];
+ 	char m_RagLoadedPCControlScheme[RagData::TEXT_SIZE];
+@@ -1885,11 +1891,13 @@ private:
+ 	void UpdatePrimaryKeyMapping(CallbackData data);
+ 	void UpdateSecondaryKeyMapping(CallbackData data);
+ 	void UpdateJoystickMapping(CallbackData data);
++#if !__LINUX
+ 	void SwitchJoystickDefinitionDevice();
+ 	void CalibrateJoystickDevice();
+ 	void SaveJoystickDefinitionDevice();
+ 	void ScanJoystickDefinitionDevice(CallbackData data);
+ 	void UpdateJoystickDefinitionRagData();
++#endif // !__LINUX
+ 	void ReloadMappings();
+ 	void RagLoadPCMappings() { LoadPCScriptControlMappings(atHashString(m_RagPCControlScheme)); }
+ #endif // __WIN32PC
+@@ -1994,6 +2002,7 @@ inline bool CControl::ValidSecondaryDynamicMapping(const ControlInput::DynamicMa
+ #endif // KEYBOARD_MOUSE_SUPPORT
+ 
+ #if RSG_PC
++#if !RSG_LINUX
  inline bool CControl::JoystickDefinitionData::IsAutoMapped( ioMapperParameter param )
  {
  	return param == IOM_AXIS_LY_DOWN || param == IOM_AXIS_LX_RIGHT 
+@@ -2002,6 +2011,7 @@ inline bool CControl::JoystickDefinitionData::IsAutoMapped( ioMapperParameter pa
+ 		|| param == IOM_AXIS_RY || param == IOM_AXIS_RX;
+ 
+ }
++#endif // !RSG_LINUX
+ 
+ inline const CControl::KeyInfo& CControl::GetKeyInfo(u32 keyCode)
+ {

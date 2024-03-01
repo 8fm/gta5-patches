@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/security/obfuscatedtypes.h b/src/dev_ng/rage/base/src/security/obfuscatedtypes.h
+--- a/src/dev_ng/rage/base/src/security/obfuscatedtypes.h
++++ b/src/dev_ng/rage/base/src/security/obfuscatedtypes.h
+@@ -282,7 +282,11 @@ private:
+ };
+ 
+ template<class T, void (*TamperCB)(u32, u32)>
++#if RSG_LINUX
++sysLinkedData<T, TamperCB>::~sysLinkedData()
++#else
+ __forceinline sysLinkedData<T, TamperCB>::~sysLinkedData()
++#endif // RSG_LINUX
+ {
+ 	if(IsDummyLink())
+ 	{

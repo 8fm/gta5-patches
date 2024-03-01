@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/system/companion_http.cpp b/src/dev_ng/game/system/
  
  #if COMPANION_APP
  #include "companion_http.h"
+@@ -318,7 +318,7 @@ private:
+ 		utcFT.QuadPart = lastModified;
+ 
+ 		LARGE_INTEGER jan1970FT = {0};
+-		jan1970FT.QuadPart = 116444736000000000I64; // January 1st 1970
++		jan1970FT.QuadPart = 116444736000000000LL; // January 1st 1970
+ 		time_t crtTime = (utcFT.QuadPart - jan1970FT.QuadPart)/10000000;
+ 
+ 		// And finally to a tm structure to print the time in RFC 1123 Date Time Format
