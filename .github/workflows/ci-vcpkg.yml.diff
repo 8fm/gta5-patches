@@ -1,0 +1,44 @@
+diff --git a/.github/workflows/ci-vcpkg.yml b/.github/workflows/ci-vcpkg.yml
+new file mode 100644
+--- /dev/null
++++ b/.github/workflows/ci-vcpkg.yml
+@@ -0,0 +1,39 @@
++name: VCPKG CI
++
++on:
++  push:
++  pull_request:
++
++jobs:
++  windows:
++    name: msvc ${{ matrix.Configuration }} ${{ matrix.Platform }}
++    runs-on: windows-latest
++    strategy:
++      fail-fast: false
++      matrix:
++        Configuration: [BankRelease]
++        Platform: [x64]
++    steps:
++    - uses: actions/checkout@main
++      with:
++        submodules: recursive
++
++    - uses: microsoft/setup-msbuild@main
++
++    - name: Generate cpp/h files from *.psc
++      working-directory: ${{env.GITHUB_WORKSPACE}}
++      run: |
++        msbuild /m /p:Configuration=Release /p:Platform="${{ matrix.Platform }}" src/dev_ng/rage/suite/src/suite_lib_psc/suite_lib_psc_2022_unity.vcxproj
++        msbuild /m /p:Configuration=Release /p:Platform="${{ matrix.Platform }}" src/dev_ng/rage/base/src/rage_lib_psc/rage_lib_psc_2022_unity.vcxproj
++        msbuild /m /p:Configuration=Release /p:Platform="${{ matrix.Platform }}" src/dev_ng/rage/framework/src/framework_lib_psc/framework_lib_psc_2022_unity.vcxproj
++        msbuild /m /p:Configuration=Release /p:Platform="${{ matrix.Platform }}" src/dev_ng/game/vs_project_lib_psc/game_lib_psc_2022_unity.vcxproj
++
++    - name: Build
++      working-directory: src/dev_ng/game/VS_Project
++      run: msbuild /m /p:Configuration="${{ matrix.Configuration }}" /p:Platform="${{ matrix.Platform }}" game_2022_unity.sln
++
++    - name: Upload artifact
++      uses: actions/upload-artifact@v3
++      with:
++        name: gta5.${{ matrix.Configuration }}.${{ matrix.Platform }}
++        path: titleupdate/dev_ng/*.exe
