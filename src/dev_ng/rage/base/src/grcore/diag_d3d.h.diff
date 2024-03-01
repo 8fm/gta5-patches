@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/diag_d3d.h b/src/dev_ng/rage/base/src/grcore/diag_d3d.h
+--- a/src/dev_ng/rage/base/src/grcore/diag_d3d.h
++++ b/src/dev_ng/rage/base/src/grcore/diag_d3d.h
+@@ -6,7 +6,7 @@
+ #ifndef GRCORE_DIAG_D3D_H
+ #define GRCORE_DIAG_D3D_H
+ 
+-#define RSG_DXDIAG_ENABLED 1
++#define RSG_DXDIAG_ENABLED (1 && !RSG_LINUX)
+ 
+ #if __WIN32PC && RSG_DXDIAG_ENABLED
+ 

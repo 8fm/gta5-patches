@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/input/mapper.cpp b/src/dev_ng/rage/base/src/input/mapper.cpp
+--- a/src/dev_ng/rage/base/src/input/mapper.cpp
++++ b/src/dev_ng/rage/base/src/input/mapper.cpp
+@@ -273,7 +273,7 @@ bool ioMapper::Scan(ioSource &source, const ScanOptions &options) {
+ 		}
+ 	}
+ 	
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(options.m_JoystickOptions != ScanOptions::NO_JOYSTICK)
+ 	{
+ 		if(options.m_DeviceID == ioSource::IOMD_DEFAULT)
+@@ -465,7 +465,7 @@ bool ioMapper::ScanPad(ioSource &source, const ScanOptions &options, s32 padInde
+ }
+ 
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ bool ioMapper::ScanJoystick(ioSource &source, const ScanOptions &options, s32 joystickIndex)
+ {

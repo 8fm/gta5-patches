@@ -1,0 +1,50 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/stateblock.h b/src/dev_ng/rage/base/src/grcore/stateblock.h
+--- a/src/dev_ng/rage/base/src/grcore/stateblock.h
++++ b/src/dev_ng/rage/base/src/grcore/stateblock.h
+@@ -17,7 +17,7 @@
+ // You generally should be using grcStateBlock::RS_Invalid/DSS/BS/SS instead of this value.
+ #define INVALID_STATEBLOCK				0
+ 
+-#define LAZY_STATEBLOCKS				(__WIN32 || RSG_ORBIS)
++#define LAZY_STATEBLOCKS				(__WIN32 || RSG_ORBIS || __LINUX)
+ 
+ #define TRACK_DEPTH_BOUNDS_STATE		((RSG_ORBIS && __DEV) || (RSG_DURANGO && _XDK_VER >= 10542))
+ 
+@@ -337,29 +337,29 @@ namespace grcStateBlock
+ 		out a structure and passing it to the appropriate Create function and get back a handle.
+ 
+ 		To make that stateblock current, pass the handle into the matching Set function.  The handles are type-safe 
+-		on __DEV builds.  Some state is still fine-grained – things like the stencil reference value, or the blend 
++		on __DEV builds.  Some state is still fine-grained - things like the stencil reference value, or the blend 
+ 		constant color, or the alpha reference value.  You can pass those into overloaded versions of the Set functions; 
+ 		otherwise you get a default value for it.
+ 
+ 		Making a stateblock current causes all its properties to be made active at once; setting a stateblock replaces 
+-		several individual grcState::Set… calls and will give us much better opportunities for redundant state elimination.  
++		several individual grcState::Set... calls and will give us much better opportunities for redundant state elimination.  
+ 		The biggest hassle with stateblocks is that you have to understand what the default values for states are, 
+-		and live with the fact that states you may not care about will still be affected by your code.  You’ll find 
++		and live with the fact that states you may not care about will still be affected by your code.  You'll find 
+ 		many cases where people have built several permutations of stateblocks they need ahead of time; this is fine, 
+ 		within reason, because duplicate stateblocks are merged and reference-counted.
+ 
+-		In general you shouldn’t be constantly creating and destroying stateblocks.  In the current implementation, 
++		In general you shouldn't be constantly creating and destroying stateblocks.  In the current implementation, 
+ 		destroying a stateblock you just used that frame has undefined results.  (If you destroy a stateblock and 
+ 		immediately create a new one, you are guaranteed to get the same slot you had before since by design there 
+ 		is no multithreaded support; all stateblocks should be created either at init time or in the render thread).
+ 
+-		You can access the currently active state block handle but it’s currently undocumented because using any 
+-		old-style grcState::Set… function will invalidate the associated active stateblock.  Once grcState:: is gone 
++		You can access the currently active state block handle but it's currently undocumented because using any 
++		old-style grcState::Set... function will invalidate the associated active stateblock.  Once grcState:: is gone 
+ 		there will be an official interface so you can save and restore the active stateblock if you want (under the 
+-		hood the grcEffect system uses this to make sure that stateblock state is unchanged after you’ve finished 
++		hood the grcEffect system uses this to make sure that stateblock state is unchanged after you've finished 
+ 		rendering a drawable etc).
+ 
+-		You can also retrieve the properties of any given state block handle, although I don’t expect this to be used very often.
++		You can also retrieve the properties of any given state block handle, although I don't expect this to be used very often.
+ 	*/
+ 
+ 	grcDepthStencilStateHandle CreateDepthStencilState(const grcDepthStencilStateDesc &desc, const char* name=0);

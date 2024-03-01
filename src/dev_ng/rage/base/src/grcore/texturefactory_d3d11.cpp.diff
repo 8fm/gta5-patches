@@ -1,0 +1,33 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/texturefactory_d3d11.cpp b/src/dev_ng/rage/base/src/grcore/texturefactory_d3d11.cpp
+--- a/src/dev_ng/rage/base/src/grcore/texturefactory_d3d11.cpp
++++ b/src/dev_ng/rage/base/src/grcore/texturefactory_d3d11.cpp
+@@ -36,7 +36,9 @@
+ #include	"vector/matrix34.h"
+ #include	"system/param.h"
+ #include	"system/xtl.h"
++#if !__LINUX
+ #include	<wbemidl.h>
++#endif
+ 
+ #include	<d3d9.h>
+ #include	"wrapper_d3d.h"
+@@ -79,8 +81,8 @@ extern GUID TextureBackPointerGuid;
+ 
+ #if __D3D11
+ 
+-s32 grcTextureFactoryDX11::s_RenderTargetStackTop = -1; 
+-grcTextureFactoryDX11::TARGETINFO grcTextureFactoryDX11::s_RenderTargetStack[grcTextureFactoryDX11::RENDER_TARGET_STACK_SIZE];
++__THREAD s32 grcTextureFactoryDX11::s_RenderTargetStackTop = -1; 
++__THREAD grcTextureFactoryDX11::TARGETINFO grcTextureFactoryDX11::s_RenderTargetStack[grcTextureFactoryDX11::RENDER_TARGET_STACK_SIZE];
+ grcDeviceTexture* grcTextureFactoryDX11::sm_BackBufferTexture = NULL;
+ 
+ #if DEBUG_SEALING_OF_DRAWLISTS
+@@ -158,7 +160,7 @@ void grcTextureFactoryDX11::Reset()
+ 	}else
+ #endif // CREATE_DEVICE_MSAA_SURFACES
+ 	{
+-		if (((IDXGISwapChain*)GRCDEVICE.GetSwapChain())->GetBuffer(0, __uuidof( pBackBuffer ), reinterpret_cast<void**>(&pBackBuffer)) == S_OK)
++		if (((IDXGISwapChain*)GRCDEVICE.GetSwapChain())->GetBuffer(0, __uuidof(/*pBackBuffer*/ID3D11Texture2D), reinterpret_cast<void**>(&pBackBuffer)) == S_OK)
+ 		{
+ 			grcDevice::sm_pBackBuffer = CreateRenderTarget("BackBuf0", (grcTextureObject*)pBackBuffer);
+ 

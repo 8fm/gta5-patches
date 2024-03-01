@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rmcore/drawable.cpp b/src/dev_ng/rage/base/src/rmcore/drawable.cpp
+--- a/src/dev_ng/rage/base/src/rmcore/drawable.cpp
++++ b/src/dev_ng/rage/base/src/rmcore/drawable.cpp
+@@ -33,7 +33,7 @@
+ #include "diag/art_channel.h"
+ 
+ #include "grcore/effect_config.h"
+-#include "grcore/vertexBuffer.h"
++#include "grcore/vertexbuffer.h"
+ #include "grcore/vertexbuffereditor.h"
+ #include "grmodel/model.h"
+ #include "grmodel/shaderfx.h"

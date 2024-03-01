@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/input/eventq.cpp b/src/dev_ng/rage/base/src/input/eventq.cpp
+--- a/src/dev_ng/rage/base/src/input/eventq.cpp
++++ b/src/dev_ng/rage/base/src/input/eventq.cpp
+@@ -140,7 +140,7 @@ enum
+ 	QUEUE_MBUTTON       =0x0010		// MK_MBUTTON
+ };
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ // keyboard commands:
+ CompileTimeAssert(QUEUE_CHAR==WM_CHAR);
+ CompileTimeAssert(QUEUE_SYSCHAR==WM_SYSCHAR);
+@@ -289,7 +289,7 @@ void ioEventQueue::UpdateFromPipe()
+ 
+ 				keysUsed[k] = 1;
+ 
+-#if __WIN32PC && __BANK
++#if __WIN32PC && __BANK && !__LINUX
+ 				if(bkManager::GetRenderWindow() != NULL)
+ 				{
+ 					// the Social Club DLL needs to receive keyboard input via the windows message pump
+@@ -320,7 +320,7 @@ void ioEventQueue::UpdateFromPipe()
+ 
+ 				keysUsed[k] = 1;
+ 
+-#if __WIN32PC && __BANK && !__TOOL
++#if __WIN32PC && __BANK && !__TOOL && !__LINUX
+ 				if(bkManager::GetRenderWindow() != NULL)
+ 				{
+ 					// the Social Club DLL needs to receive keyboard input via the windows message pump

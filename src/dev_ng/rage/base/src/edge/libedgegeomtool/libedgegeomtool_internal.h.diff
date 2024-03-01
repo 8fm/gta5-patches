@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_internal.h b/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_internal.h
+--- a/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_internal.h
++++ b/src/dev_ng/rage/base/src/edge/libedgegeomtool/libedgegeomtool_internal.h
+@@ -15,7 +15,7 @@
+ 
+ #define EDGESTRINGIFY_(x) #x
+ #define EDGESTRINGIFY(x) EDGESTRINGIFY_(x)
+-#if defined(_MSC_VER) || defined(__psp2__) || defined(__ORBIS__)
++#if defined(_MSC_VER) || defined(__psp2__) || defined(__ORBIS__) || defined(__GNUG__)
+ #define EDGEERROR_F()	Errorf("An edge error occurred (%s, line %d)", __FILE__, __LINE__ )
+ #define EDGEASSERT(x)	Assert(x)
+ #elif defined(__PPU__)

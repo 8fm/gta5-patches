@@ -1,0 +1,272 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp b/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp
+--- a/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp
++++ b/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp
+@@ -10,7 +10,9 @@
+ 
+ #if (__D3D11)
+ 
++#if !__LINUX
+ #include <process.h>
++#endif
+ #define DX_ONLY_INCLUDE_ONCE
+ 
+ #include "channel.h"
+@@ -42,7 +44,7 @@
+ #include "security/obfuscatedtypes.h"
+ #include "grprofile/pix.h"
+ #include "wrapper_d3d.h"
+-#include "..\..\3rdparty\portcullis\portcullis.h"
++#include "../../3rdparty/portcullis/portcullis.h"
+ 
+ #if __WIN32PC
+ 
+@@ -51,15 +53,17 @@
+ #endif
+ 
+ //#include <d3DX11async.h>
++#if !__LINUX
+ #pragma warning(disable: 4668)
+ #include <winsock2.h>
+ #include <Wtsapi32.h>
+ #pragma comment(lib,"Wtsapi32.lib")
+ #pragma warning(error: 4668)
++#endif
+ 
+-#include <D3D11Shader.h>
+-#include <D3DCompiler.h>
+-#include <DXGI.h>
++#include <d3d11shader.h>
++#include <d3dcompiler.h>
++#include <dxgi.h>
+ #pragma comment(lib,"DXGI.lib")
+ #include "system/wndproc.h"
+ #elif RSG_DURANGO
+@@ -97,14 +101,14 @@
+ #include "shaderlib/memorycs.fxh"
+ 
+ // Undefine this to turn off all NV shadow changes.  There is also a Rag widget boolean to disable them dynamically.
+-#define USE_NV_SHADOW_LIB RSG_PC
++#define USE_NV_SHADOW_LIB (RSG_PC && !RSG_LINUX)
+ 
+ // Similarly for TXAA.
+ //#define USE_NV_TXAA RSG_PC && !__GAMETOOL
+ //#define USE_NV_TXAA 0
+ 
+ #if RSG_PC
+-#include "../../3rdParty/portcullis/portcullis.h"
++#include "../../3rdparty/portcullis/portcullis.h"
+ 
+ #define __GFSDK_OS_WINDOWS__
+ #define __GFSDK_DX11__
+@@ -343,7 +347,9 @@ bool sm_useCBFingerprints=true;
+ static DECLARE_MTR_THREAD grcDrawMode s_grcDrawMode;
+ extern unsigned int g_grcDepthFormat;
+ #if RSG_PC
++#if __D3D9
+ extern WINDOWPLACEMENT s_WindowedPlacement;
++#endif
+ static DXGI_SWAP_CHAIN_DESC g_SwapDesc;
+ #else
+ static DXGI_SWAP_CHAIN_DESC1 g_SwapDesc;
+@@ -551,14 +557,14 @@ static DECLARE_MTR_THREAD int s_BlitOffset;
+ #endif
+ 
+ 
+-grcDevice::grcRenderTargetView grcDevice::sm_aRTView[grcmrtColorCount] =	{ 
++__THREAD grcDevice::grcRenderTargetView grcDevice::sm_aRTView[grcmrtColorCount] =	{ 
+ 																				{ NULL, NULL }, { NULL, NULL }, { NULL, NULL }, { NULL, NULL }, 
+ 																				{ NULL, NULL }, { NULL, NULL }, { NULL, NULL }, { NULL, NULL } 
+ 																			};
+-grcDevice::grcRenderTargetView grcDevice::sm_DepthView = { NULL, NULL };
+-grcDevice::grcRenderTargetView grcDevice::sm_PreviousDepthView = { NULL, NULL };
++__THREAD grcDevice::grcRenderTargetView grcDevice::sm_DepthView = { NULL, NULL };
++__THREAD grcDevice::grcRenderTargetView grcDevice::sm_PreviousDepthView = { NULL, NULL };
+ 
+-u32 grcDevice::sm_numTargets = 0;
++__THREAD u32 grcDevice::sm_numTargets = 0;
+ 
+ //ID3D11Texture2D*	grcDevice::sm_pDepthStencil = 0;
+ //ID3D11DepthStencilView* grcDevice::sm_pDepthStencilView = 0;
+@@ -1084,7 +1090,7 @@ LPSetProcessDpiAwareness fnSetProcessDpiAwareness = nullptr;
+ 
+ void grcDevice::InitClass(bool inWindow, bool topMost/* =false */)
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	static HINSTANCE hShCore = LoadLibrary("Shcore.dll");
+ 	if (hShCore)
+ 	{
+@@ -1280,6 +1286,7 @@ void grcDevice::InitClass(bool inWindow, bool topMost/* =false */)
+ 		s_WeCreatedHwndMain = true;
+ 	}
+ 
++#if !RSG_LINUX
+ 	RegisterSessionNotification();
+ 
+ #if !__FINAL
+@@ -1288,6 +1295,7 @@ void grcDevice::InitClass(bool inWindow, bool topMost/* =false */)
+ 	{
+ 		LockSetForegroundWindow(LSFW_LOCK);
+ 	}
++#endif // !RSG_LINUX
+ 
+ 	UpdatePresentParameters();
+ 
+@@ -2364,7 +2372,7 @@ void grcDevice::ShutdownClass()
+ 	//	g_pd3dDevice = NULL;
+ 	//}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (g_hwndMain && s_WeCreatedHwndMain) {
+ 		if (!::DestroyWindow(g_hwndMain))
+ 			grcErrorf("Could not destroy the window");
+@@ -2512,7 +2520,7 @@ void grcDevice::BeginDXView()
+ 	if (GetSwapChain() != NULL)
+ 	{
+ 		ID3D11Texture2D* pBackBuffer = NULL;
+-		if (SUCCEEDED(((IDXGISwapChain*)GetSwapChain())->GetBuffer(0, __uuidof(pBackBuffer)/*IID_ID3D11Texture2D*/ /*__uuidof(ID3D11Texture2D)*/, reinterpret_cast<void**>(&pBackBuffer))))
++		if (SUCCEEDED(((IDXGISwapChain*)GetSwapChain())->GetBuffer(0, /*__uuidof(pBackBuffer)*//*IID_ID3D11Texture2D*/ __uuidof(ID3D11Texture2D), reinterpret_cast<void**>(&pBackBuffer))))
+ 		{
+ 			pBackBuffer->Release();
+ 			const grcDeviceView *poRenderTargetView = ((grcRenderTargetD3D11*)grcDevice::sm_pBackBuffer)->GetTargetView(0,0);
+@@ -2578,12 +2586,16 @@ void grcDevice::UnlockDeviceResetAvailability()
+ 
+ void grcDevice::RegisterSessionNotification()
+ {
++#if !RSG_LINUX
+ 	WTSRegisterSessionNotification(g_hwndMain, NOTIFY_FOR_THIS_SESSION);
++#endif
+ }
+ 
+ void grcDevice::UnregisterSessionNotification()
+ {
++#if !RSG_LINUX
+ 	WTSUnRegisterSessionNotification(g_hwndMain);
++#endif
+ }
+ #endif
+ 
+@@ -2644,7 +2656,7 @@ void grcDevice::UnlockContextNVStereo()
+ }
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void grcDevice::LockContextIfInitialized()
+ {
+ 	if (s_ContextLock) LockContext();
+@@ -2780,7 +2792,7 @@ bool grcDevice::BeginFrame()
+ 	if (GetSwapChain() != NULL && grcDevice::sm_pBackBuffer != NULL)
+ 	{
+ 		ID3D11Texture2D* pBackBuffer = NULL;
+-		if (SUCCEEDED(((IDXGISwapChain*)GetSwapChain())->GetBuffer(0, __uuidof(pBackBuffer)/*IID_ID3D11Texture2D*/ /*__uuidof(ID3D11Texture2D)*/, reinterpret_cast<void**>(&pBackBuffer))))
++		if (SUCCEEDED(((IDXGISwapChain*)GetSwapChain())->GetBuffer(0, /*__uuidof(pBackBuffer)*//*IID_ID3D11Texture2D*/ __uuidof(ID3D11Texture2D), reinterpret_cast<void**>(&pBackBuffer))))
+ 		{
+ 			pBackBuffer->Release();
+ 			if (!grcDevice::sm_pDepthStencil)
+@@ -2883,7 +2895,7 @@ void grcDevice::EndFrame(const grcResolveFlags * /*flags*/ /* = NULL */)
+ 	if (sm_pBackBuffer->GetMSAA())
+ 	{
+ 		grcDeviceTexture* pRealBackBuffer = NULL;
+-		res = ((IDXGISwapChain*)GetSwapChain())->GetBuffer(0, __uuidof(pRealBackBuffer)/*IID_ID3D11Texture2D*/ /*__uuidof(ID3D11Texture2D)*/, reinterpret_cast<void**>(&pRealBackBuffer));
++		res = ((IDXGISwapChain*)GetSwapChain())->GetBuffer(0,/*__uuidof(pRealBackBuffer)*//*IID_ID3D11Texture2D*/ __uuidof(grcDeviceTexture), reinterpret_cast<void**>(&pRealBackBuffer));
+ 		grcAssertf(res==S_OK,"Unable to get back buffer!");
+ 		CheckDxHresultFatal(res);
+ 
+@@ -5347,6 +5359,7 @@ bool grcDevice::ChangeDevice(grcDisplayWindow oNewSettings)
+ 
+ 		RECT rect = {0,0,oNewSettings.uWidth,oNewSettings.uHeight};
+ 
++#if !RSG_LINUX // TODO: add Linux support
+ 		u32 windowStyle = GetWindowLong( g_hwndMain, GWL_STYLE );
+ 		ComputeWindowDimensions(rect, windowStyle);
+ 
+@@ -5366,6 +5379,7 @@ bool grcDevice::ChangeDevice(grcDisplayWindow oNewSettings)
+ 
+ 		pcdDisplayf("Set Window Position: %dx%d Dimensions %dx%d in ChangeDevice", rect.left, rect.top, width, height);
+ 		SetWindowPos( g_hwndMain, HWND_TOP, rect.left, rect.top, width, height, flags);
++#endif // !RSG_LINUX
+ 	}
+ 	s_SwapChainLock.Unlock();
+ 
+@@ -5421,7 +5435,7 @@ void grcDevice::ForceDeviceReset()
+ 	UnlockDeviceResetAvailability();
+ }
+ 
+-#if RSG_PC && __D3D11
++#if RSG_PC && __D3D11 && !RSG_LINUX
+ 
+ void grcDevice::CheckVideoEncodingOverride()
+ {
+@@ -5783,6 +5797,7 @@ bool grcDevice::CheckDeviceStatus()
+ #endif // RSG_DURANGO
+ 
+ #if __WIN32PC
++#if !RSG_LINUX
+ 
+ bool grcDevice::ProcessResizeBuffersWhileEncoding()
+ {
+@@ -5889,9 +5904,11 @@ bool grcDevice::ProcessResizeBuffersWhileEncoding()
+ 
+ 	return true;
+ }
++#endif // !RSG_LINUX
+ 
+ bool grcDevice::CheckForDeviceChanges()
+ {
++#if !RSG_LINUX
+ #if HANG_DETECT_THREAD
+ 	static bool bInSafeZone = false;
+ 
+@@ -6329,6 +6346,7 @@ bool grcDevice::ResizeBuffers(grcDisplayWindow oNewSettings)
+ 	GetClientRect( g_hwndMain, &rcCurrentClient );
+ 	pcdDisplayf("Window AFTER ResizeBuffers is left: %d, right: %d, top: %d, bottom: %d", rcCurrentClient.left, rcCurrentClient.right, rcCurrentClient.top, rcCurrentClient.bottom);
+ 
++#endif // !RSG_LINUX
+ 	return true;
+ }
+ 
+@@ -6927,7 +6945,7 @@ grcImage *grcDevice::CaptureScreenShot(grcImage* pImage)
+ {
+ 	PIXBegin(0, "CaptureScreenShot");
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	RECT screen, window;
+ 	GetWindowRect(GetDesktopWindow(),&screen);
+ 	GetClientRect(g_hwndMain,&window);
+@@ -6939,7 +6957,7 @@ grcImage *grcDevice::CaptureScreenShot(grcImage* pImage)
+ 	window.bottom += origin.y;
+ 	int width = window.right - window.left;
+ 	int height = window.bottom - window.top;
+-#elif RSG_DURANGO
++#elif RSG_DURANGO || RSG_LINUX
+ 	int width = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uWidth;
+ 	int height = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uHeight;
+ #else
+@@ -7122,13 +7140,13 @@ grcImage *grcDevice::EndTakeScreenShot()
+ 
+ 	grcImage *dest = NULL;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	RECT window;
+ 	GetClientRect(g_hwndMain,&window);
+ 
+ 	int width = window.right - window.left;
+ 	int height = window.bottom - window.top;
+-#elif RSG_DURANGO
++#elif RSG_DURANGO || RSG_LINUX
+ 	int width = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uWidth;
+ 	int height = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uHeight;
+ #endif
+@@ -7256,7 +7274,7 @@ void grcDevice::DeviceRestored() {
+ }
+ #endif
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ int grcDevice::InitSingleton()
+ {
+ #if !NV_SUPPORT || !ATI_SUPPORT

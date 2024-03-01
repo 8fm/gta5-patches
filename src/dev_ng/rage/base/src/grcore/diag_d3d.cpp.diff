@@ -1,0 +1,18 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/diag_d3d.cpp b/src/dev_ng/rage/base/src/grcore/diag_d3d.cpp
+--- a/src/dev_ng/rage/base/src/grcore/diag_d3d.cpp
++++ b/src/dev_ng/rage/base/src/grcore/diag_d3d.cpp
+@@ -817,7 +817,7 @@ void rage::DXDiag::WriteVariantToString(OutputMethod& output, VARIANT* variant)
+ 	}
+ }
+ 
+-#endif // RSG_DXDIAG_ENABLED
++//#endif // RSG_DXDIAG_ENABLED
+ 
+ 
+ struct ATIDeviceName
+@@ -1184,4 +1184,5 @@ void rage::DXDiag::GetOsName(char* pszOS, int bufferCount)
+ 		CoUninitialize();
+ }
+ 
++#endif // RSG_DXDIAG_ENABLED
+ #endif // __WIN32PC

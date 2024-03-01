@@ -1,0 +1,96 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/adapter_d3d11.cpp b/src/dev_ng/rage/base/src/grcore/adapter_d3d11.cpp
+--- a/src/dev_ng/rage/base/src/grcore/adapter_d3d11.cpp
++++ b/src/dev_ng/rage/base/src/grcore/adapter_d3d11.cpp
+@@ -13,12 +13,14 @@
+ #include "grcore/adapter_d3d11.h"
+ #include "input/headtracking.h"
+ 
++#if ATI_SUPPORT
+ #include "../../3rdparty/AMD/AGS_v2.1/AGS Lib/inc/amd_ags.h"
+ # if RSG_CPU_X64
+ #   pragma comment(lib,"amd_ags64.lib")
+ # elif RSG_CPU_X86
+ #   pragma comment(lib,"amd_ags.lib")
+ # endif //CPU
++#endif //ATI_SUPPORT
+ 
+ #if NV_SUPPORT
+ #include "../../3rdParty/NVidia/nvapi.h"
+@@ -86,6 +88,7 @@ grcAdapterD3D11Output::~grcAdapterD3D11Output()
+ 
+ bool grcAdapterD3D11Output::IsOutputPortrait(DXGI_OUTPUT_DESC& oDesc)
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	DEVMODEW CurrentMode = {};
+ 	if (!EnumDisplaySettingsW(oDesc.DeviceName,
+ 		ENUM_CURRENT_SETTINGS,
+@@ -97,6 +100,7 @@ bool grcAdapterD3D11Output::IsOutputPortrait(DXGI_OUTPUT_DESC& oDesc)
+ 		return true;
+ 	}
+ 
++#endif // !RSG_LINUX
+ 	return false;
+ }
+ 
+@@ -128,6 +132,7 @@ void StripVendorAndDeviceID(char *pstrSource, u32 &VendorID, u32 &DeviceID) {
+ 
+ bool grcAdapterD3D11::SetupAdapterOutputWindows()
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	DXGI_ADAPTER_DESC desc;
+ 	GetDeviceAdapter()->GetDesc(&desc);
+ 
+@@ -372,6 +377,7 @@ bool grcAdapterD3D11::SetupAdapterOutputWindows()
+ 	}
+ 	*/
+ 
++#endif // !RSG_LINUX
+ 	return true;
+ }
+ 
+@@ -382,6 +388,7 @@ LPGetDpiForWindow fnGetDpiForWindow = nullptr;
+ 
+ bool grcAdapterD3D11Output::GetDesc(s32 adapterHighPart, u32 adapterLowPart, const grcAdapterD3D11Output* pOutput, DXGI_OUTPUT_DESC& outputDesc, unsigned int& dpiX, unsigned int& dpiY)
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	IDXGIOutput* pDeviceOutput = pOutput->GetDeviceOutput();
+ 	HRESULT hr = pDeviceOutput->GetDesc(&outputDesc);
+ 	if (FAILED(hr))
+@@ -504,6 +511,7 @@ desc.Outputs[outputIndex].eDisplayColorSpace = outDesColorSpace;
+ 		dpiX = UINT(cfDefaultDPI * (width / (float)oWidestMode.Width));
+ 		dpiY = UINT(cfDefaultDPI * (height/ (float)oWidestMode.Height));
+ 	}
++#endif // !RSG_LINUX
+ 	return true;
+ }
+ 
+@@ -1570,6 +1578,7 @@ grcAdapterManagerD3D11::~grcAdapterManagerD3D11()
+ 
+ void grcAdapterManagerD3D11::Enumerate(u32 uFormat)
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	do
+ 	{
+ 		HINSTANCE hDXGI = LoadLibrary("dxgi.dll");
+@@ -1619,11 +1628,13 @@ void grcAdapterManagerD3D11::Enumerate(u32 uFormat)
+ 	}while(0);
+ 
+ 	Quitf(ERR_GFX_D3D_NOD3D1X_4,"Failed to enumerate DX11 adapters");
++#endif // !RSG_LINUX
+ }
+ 
+ 
+ bool grcAdapterManagerD3D11::VerifyAdapters(u32 uFormat)
+ {
++#if !RSG_LINUX // TODO: add Linux support
+ 	do
+ 	{
+ 		HINSTANCE hDXGI = LoadLibrary("dxgi.dll");
+@@ -1684,6 +1695,7 @@ bool grcAdapterManagerD3D11::VerifyAdapters(u32 uFormat)
+ 		//FreeLibrary(hDXGI);
+ 	}while(0);
+ 
++#endif // !RSG_LINUX
+ 	return false;
+ }
+ 

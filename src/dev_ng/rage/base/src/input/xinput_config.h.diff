@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/input/xinput_config.h b/src/dev_ng/rage/base/src/input/xinput_config.h
+--- a/src/dev_ng/rage/base/src/input/xinput_config.h
++++ b/src/dev_ng/rage/base/src/input/xinput_config.h
+@@ -8,6 +8,6 @@
+ #define INPUT_XINPUT_CONFIG_H
+ 
+ // Change 0 to __WIN32PC to enable XInput on PC builds, but then only XInput controllers will work.
+-#define USE_XINPUT	(RSG_XENON || RSG_PC)
++#define USE_XINPUT	(RSG_XENON || (RSG_PC && !RSG_LINUX))
+ 
+ #endif	// INPUT_XINPUT_CONFIG

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/input/winpriv.cpp b/src/dev_ng/rage/base/src/input/winpriv.cpp
+--- a/src/dev_ng/rage/base/src/input/winpriv.cpp
++++ b/src/dev_ng/rage/base/src/input/winpriv.cpp
+@@ -6,7 +6,7 @@
+ 
+ //DOM-IGNORE-BEGIN
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "winpriv.h"
+ #include "keys.h"

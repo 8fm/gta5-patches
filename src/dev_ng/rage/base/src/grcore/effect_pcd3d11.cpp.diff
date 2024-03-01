@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/effect_pcd3d11.cpp b/src/dev_ng/rage/base/src/grcore/effect_pcd3d11.cpp
+--- a/src/dev_ng/rage/base/src/grcore/effect_pcd3d11.cpp
++++ b/src/dev_ng/rage/base/src/grcore/effect_pcd3d11.cpp
+@@ -21,8 +21,8 @@
+ #include <D3D11Shader_x.h>
+ #include <D3DCompiler_x.h>
+ #else	// __D3D11_MONO_DRIVER
+-#include <D3D11Shader.h>
+-#include <D3DCompiler.h>
++#include <d3d11shader.h>
++#include <d3dcompiler.h>
+ #endif	// __D3D11_MONO_DRIVER
+ 
+ #include "file/asset.h"

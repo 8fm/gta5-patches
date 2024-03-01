@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/input/mapper.h b/src/dev_ng/rage/base/src/input/mapper.h
+--- a/src/dev_ng/rage/base/src/input/mapper.h
++++ b/src/dev_ng/rage/base/src/input/mapper.h
+@@ -910,7 +910,7 @@ private:
+ 	static bool ScanKeyboardMouse(ioSource &source, const ScanOptions &options);
+ 	static bool ScanPad(ioSource &source, const ScanOptions &options, s32 padIndex);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Joystick are direct input devices.
+ 	static bool ScanJoystick(ioSource &source, const ScanOptions &options, s32 joystickIndex);
+ #endif // RSG_PC

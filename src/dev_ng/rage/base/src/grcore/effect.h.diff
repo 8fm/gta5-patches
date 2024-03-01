@@ -1,0 +1,25 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/effect.h b/src/dev_ng/rage/base/src/grcore/effect.h
+--- a/src/dev_ng/rage/base/src/grcore/effect.h
++++ b/src/dev_ng/rage/base/src/grcore/effect.h
+@@ -725,7 +725,7 @@ private:
+ #endif
+ 
+ #if EFFECT_CACHE_LOCALCBS
+-	typedef std::map< u32, grcCBuffer*, std::less<u32>, CacheAllocator<std::pair<u32, grcCBuffer*>> > CBufCacheMap;
++	typedef std::map< u32, grcCBuffer*, std::less<u32>, CacheAllocator<std::pair<u32 const, grcCBuffer*>> > CBufCacheMap;
+ 	static CBufCacheMap sm_CBuffer;
+ #endif // EFFECT_CACHE_LOCALCBS
+ };
+@@ -931,10 +931,10 @@ protected:
+ 
+ 	u32 m_HashKey;
+ #if EFFECT_CACHE_PROGRAM
+-	typedef std::map< u32, grcShader*, std::less<u32>, CacheAllocator<std::pair<u32, grcShader*>> > CacheMap;
++	typedef std::map< u32, grcShader*, std::less<u32>, CacheAllocator<std::pair<u32 const, grcShader*>> > CacheMap;
+ 	static CacheMap sm_ShaderCache[ssCount];
+ #if __BANK
+-	typedef std::map< u32, char*, std::less<u32>, CacheAllocator<std::pair<u32, char*>> > CacheNameMap;
++	typedef std::map< u32, char*, std::less<u32>, CacheAllocator<std::pair<u32 const, char*>> > CacheNameMap;
+ 	static CacheNameMap sm_ShaderNameCache[ssCount];
+ 
+ 	static ShaderCacheStat sm_Stats[ssCount+1];

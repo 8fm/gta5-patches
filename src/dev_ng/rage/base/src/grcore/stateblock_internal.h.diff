@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/stateblock_internal.h b/src/dev_ng/rage/base/src/grcore/stateblock_internal.h
+--- a/src/dev_ng/rage/base/src/grcore/stateblock_internal.h
++++ b/src/dev_ng/rage/base/src/grcore/stateblock_internal.h
+@@ -11,7 +11,7 @@
+ #include <system/xtl.h>		// for BLENDSTATE structure
+ #endif
+ 
+-#if __WIN32
++#if __WIN32 || __LINUX
+ #include "grcore/config.h"
+ #endif
+ 
+@@ -34,7 +34,7 @@ struct grcBlendStateDesc;
+ // "Portable" implementations for pre-DX11 platforms.  Note alignment is only necessary on PS3 so we intentionally don't use ALIGNAS here.
+ 
+ struct grcDepthStencilState {
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || RSG_ORBIS || __LINUX
+ 	u8 DepthEnable,
+ 		DepthWriteMask;
+ 	u8 StencilEnable;
+@@ -70,7 +70,7 @@ struct grcDepthStencilState {
+ } ;
+ 
+ struct grcRasterizerState {
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || RSG_ORBIS || __LINUX
+ 	u16 FillMode;
+ 	u16 CullMode;
+ 	union { float f; unsigned u; } DepthBias;
+@@ -147,7 +147,7 @@ struct grcBlendState {
+ } ;
+ 
+ struct grcSamplerState {
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || RSG_ORBIS || __LINUX
+ 	u8 MinFilter, MagFilter, MipFilter;	// Translated from DX11 enumerated types
+ 	u8 AddressU, AddressV, AddressW;	// TADDRESS_CLAMP
+ 	u8 MaxAnisotropy;				// 16

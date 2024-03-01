@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/input/pad_xenon.cpp b/src/dev_ng/rage/base/src/input/pad_xenon.cpp
+--- a/src/dev_ng/rage/base/src/input/pad_xenon.cpp
++++ b/src/dev_ng/rage/base/src/input/pad_xenon.cpp
+@@ -26,7 +26,7 @@
+ 
+ #include "grcore/config.h"
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #include <xinput.h>
+ #if RSG_PC && __D3D11_1
+ #pragma comment(lib,"XInput9_1_0.lib")

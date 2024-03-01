@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/input/pad_d3d.cpp b/src/dev_ng/rage/base/src/input/pad_d3d.cpp
+--- a/src/dev_ng/rage/base/src/input/pad_d3d.cpp
++++ b/src/dev_ng/rage/base/src/input/pad_d3d.cpp
+@@ -18,7 +18,7 @@
+ #include "joystick.h"
+ #include "system/param.h"
+ 
+-#if RSG_PC && !__FINAL && !__TOOL && !RSG_RSC
++#if RSG_PC && !__FINAL && !__TOOL && !RSG_RSC && !RSG_LINUX
+ namespace rage
+ {
+ 	extern HWND g_hwndMain;
+@@ -39,7 +39,7 @@ void ioPad::Update(bool ignoreInput)
+ {
+ 	ClearInputs();
+ 
+-#if RSG_PC && !__FINAL && !RSG_RSC
++#if RSG_PC && !__FINAL && !RSG_RSC && !RSG_LINUX
+ 	// ignore controller input if we have multiple instances 
+ 	// running on the same PC and we're in the background.
+ 	if (sm_IgnoreControllerInput)

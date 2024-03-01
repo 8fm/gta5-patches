@@ -1,0 +1,23 @@
+diff --git a/src/dev_ng/rage/base/src/input/mouse.cpp b/src/dev_ng/rage/base/src/input/mouse.cpp
+--- a/src/dev_ng/rage/base/src/input/mouse.cpp
++++ b/src/dev_ng/rage/base/src/input/mouse.cpp
+@@ -15,6 +15,10 @@
+ #include "system/wndproc.h"
+ #include "system/timer.h"
+ #include "math/amath.h"
++#include "system/platformdefs.h"
++#if __LINUX // header from DXVK
++#include <windows.h>
++#endif
+ 
+ using namespace rage;
+ 
+@@ -298,7 +302,7 @@ void ioMouse::Update(bool UNUSED_PARAM(ignoreInput)) {
+ #endif // REMOTE_INPUT_SUPPORT
+ }
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ #include "winpriv.h"
+ 

@@ -10,10 +10,12 @@ diff --git a/src/dev_ng/rage/base/src/grcore/effect_load.cpp b/src/dev_ng/rage/b
  					#pragma comment(lib,"d3dx11.lib")
  				#endif // !__D3D11_1
  			#endif
-@@ -79,8 +79,10 @@
+@@ -78,9 +78,11 @@
+ 	#include "wrapper_gnm.h"
  #endif	// __WIN32, RSG_ORBIS
  
- #if !__TOOL && !__RESOURCECOMPILER && RSG_PC
+-#if !__TOOL && !__RESOURCECOMPILER && RSG_PC
++#if !__TOOL && !__RESOURCECOMPILER && RSG_PC && !RSG_LINUX
 +#ifdef OLD_DXSDK
  	#include <d3dx11async.h>
  	#define D3DCompileFromMemory D3DX11CompileFromMemory
@@ -21,15 +23,26 @@ diff --git a/src/dev_ng/rage/base/src/grcore/effect_load.cpp b/src/dev_ng/rage/b
  #endif
  
  // Jimmy's terrain shader requires that parameter order is unchanged, sigh.
-@@ -3440,7 +3442,11 @@ void grcEffect::LoadSourceShader(const char* pszShader, void* &ProgramData, u32
+@@ -1219,7 +1221,7 @@ void grcFragmentProgram::Load(fiStream &S, const char* currentLoadingEffect)
+ 	grcAssertf((u32)bytesRead == programSize, "Couldn't read full fragment program from stream. Program size = %d, bytes read = %d", programSize, bytesRead);
+ 	Program = NULL;
+ 
+-#if __WIN32
++#if ( RSG_PC && __D3D11 ) || RSG_DURANGO
+ 	bool createShader = true;
+ #endif // __WIN32
+ 
+@@ -3440,7 +3442,13 @@ void grcEffect::LoadSourceShader(const char* pszShader, void* &ProgramData, u32
  			if (PARAM_useDebugShaders.Get())
  				uCompileFlags |= D3D10_SHADER_PREFER_FLOW_CONTROL | D3D10_SHADER_SKIP_OPTIMIZATION | D3D10_SHADER_DEBUG;
  
-+#ifdef OLD_DXSDK
++#if RSG_LINUX // TODO: check Linux
++			if (false)
++#elif defined(OLD_DXSDK)
  			if (FAILED(D3DCompileFromMemory(pTempData, size, NULL, NULL, NULL, entry, pzShaderModel, uCompileFlags, NULL, NULL, &code, &errors, &result)))
 +#else
 +			if (FAILED(D3DCompile(pTempData, size, NULL, NULL, NULL, entry, pzShaderModel, uCompileFlags, NULL, &code, &errors)))
-+#endif // OLD_DXSDK
++#endif
  			{
  				// We can do something here to spit out the errors that were thrown during the compile.
  				char* errorListing = rage_new char[errors->GetBufferSize()];

@@ -1,9 +1,60 @@
 diff --git a/src/dev_ng/rage/base/src/diag/diagerrorcodes.cpp b/src/dev_ng/rage/base/src/diag/diagerrorcodes.cpp
 --- a/src/dev_ng/rage/base/src/diag/diagerrorcodes.cpp
 +++ b/src/dev_ng/rage/base/src/diag/diagerrorcodes.cpp
-@@ -1,4 +1,4 @@
--#if __WIN32PC
-+#if __WIN32PC && !__LINUX
- #include "diag/diagerrorcodes.h"
- #include "diag/errorcodes.h"
- #include "string/stringhash.h"
+@@ -6,9 +6,11 @@
+ #include "system/param.h"
+ #include "system/service.h"
+ 
++#if !RSG_LINUX
+ #pragma warning(disable: 4668)
+ #include <windows.h>
+ #pragma warning(error: 4668)
++#endif
+ 
+ using namespace rage;
+ 
+@@ -44,6 +46,7 @@ XPARAM(update);
+ 
+ bool diagErrorCodes::LoadLanguageFile()
+ {
++#if !RSG_LINUX
+ 	m_ErrorCodes.Kill();
+ 	m_ErrorMessages.Kill();
+ 	
+@@ -233,6 +236,7 @@ bool diagErrorCodes::LoadLanguageFile()
+ 	fclose(fp);
+ 
+ 	m_bLoading = false;
++#endif // !RSG_LINUX
+ 	m_bLoaded = true;
+ 	return m_bLoaded;
+ }
+@@ -302,6 +306,7 @@ wchar_t* diagErrorCodes::GetDefaultErrorMessageString()
+ 
+ 	switch(m_currentLanguage)
+ 	{
++#if !RSG_LINUX
+ 	case LANGUAGE_FRENCH:
+ 		return L"Erreur irrécupérable - Veuillez relancer le jeu.";
+ 	case LANGUAGE_ITALIAN:
+@@ -310,6 +315,7 @@ wchar_t* diagErrorCodes::GetDefaultErrorMessageString()
+ 		return L"Nicht zu behebender Fehler - Bitte das Spiel neu starten";
+ 	case LANGUAGE_SPANISH:
+ 		return L"Error irrecuperable: reinicia el juego.";
++#endif // !RSG_LINUX
+ 	case LANGUAGE_RUSSIAN:
+ 			return (wchar_t*)&russianError[0];
+  	case LANGUAGE_JAPANESE:
+@@ -321,8 +327,12 @@ wchar_t* diagErrorCodes::GetDefaultErrorMessageString()
+ 
+ char* diagErrorCodes::Win32ErrorToString(int error, char* pBuffer, size_t bufferLen)
+ {
++#if RSG_LINUX
++	uint32_t ret = 0;
++#else
+ 	DWORD ret = FormatMessageA(FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS,
+ 		NULL, error, MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), pBuffer, (DWORD)bufferLen, NULL);
++#endif // RSG_LINUX
+ 	if(ret == 0)
+ 	{
+ 		formatf(pBuffer, bufferLen, "Unknown error");

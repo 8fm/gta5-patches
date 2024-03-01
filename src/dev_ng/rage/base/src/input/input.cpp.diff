@@ -1,0 +1,34 @@
+diff --git a/src/dev_ng/rage/base/src/input/input.cpp b/src/dev_ng/rage/base/src/input/input.cpp
+--- a/src/dev_ng/rage/base/src/input/input.cpp
++++ b/src/dev_ng/rage/base/src/input/input.cpp
+@@ -126,7 +126,7 @@ void ioInput::Begin(bool inWindow, bool exclusiveMouse /*= false*/) {
+ 	}
+ #endif // __BANK
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	g_WindowProc = InputWindowProc;
+ #endif // __WIN32PC
+ 
+@@ -135,7 +135,7 @@ void ioInput::Begin(bool inWindow, bool exclusiveMouse /*= false*/) {
+ 	if (sm_UseKeyboard)
+ 		KEYBOARD.Begin(sm_inWindow);
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if(ioInput::sm_UseJoystick)
+ 		ioJoystick::BeginAndCalibrateAll("platform:/data/control/calibration.meta", "user:/control/calibration.xml");
+ #endif // __WIN32PC
+@@ -296,10 +296,12 @@ void ioInput::RecaptureLostDevices()
+ 		sm_DeviceCaptureState = CAPTURE_JOYSTICK;
+ 		break;
+ 
++#if __WIN32
+ 	case CAPTURE_JOYSTICK:
+ 		ioJoystick::RecaptureLostDevices();
+ 		sm_DeviceCaptureState = CAPTURE_MOUSE;
+ 		break;
++#endif
+ 
+ 	default:
+ 		inputAssertf(false, "Unknown capture state %d", sm_DeviceCaptureState);
