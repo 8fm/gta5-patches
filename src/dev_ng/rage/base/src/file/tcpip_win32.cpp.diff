@@ -1,0 +1,100 @@
+diff --git a/src/dev_ng/rage/base/src/file/tcpip_win32.cpp b/src/dev_ng/rage/base/src/file/tcpip_win32.cpp
+--- a/src/dev_ng/rage/base/src/file/tcpip_win32.cpp
++++ b/src/dev_ng/rage/base/src/file/tcpip_win32.cpp
+@@ -8,7 +8,7 @@
+ #include "file/file_config.h"
+ #include "system/memops.h"
+ 
+-#if __WIN32
++#if __WIN32 || __LINUX
+ 
+ #include "system/xtl.h"
+ 
+@@ -66,7 +66,7 @@ void fiDeviceTcpIp::GetRemoteName(fiHandle handle,char *buffer,int bufferSize)
+ 
+ #if IPV6_SOCKETS
+ 	inet_ntop(AF_INET6, (void*)&isa, buffer, bufferSize);
+-#else
++#elif !__LINUX
+ 	formatf(buffer, bufferSize, "%d.%d.%d.%d", isa.sin_addr.S_un.S_un_b.s_b1,
+ 		isa.sin_addr.S_un.S_un_b.s_b2, isa.sin_addr.S_un.S_un_b.s_b3,
+ 		isa.sin_addr.S_un.S_un_b.s_b4);
+@@ -125,8 +125,10 @@ fiHandle fiDeviceTcpIp::Create(const char * filename) const {
+ 
+ int fiDeviceTcpIp::StaticWrite(fiHandle fd,const void *buffer,int count) {
+ 	int result = send((SOCKET)fd,(const char*)buffer,count,0);
++#if !__LINUX
+ 	if (result == -1 && WSAGetLastError() == WSAEWOULDBLOCK)
+ 		result = 0;
++#endif // !__LINUX
+ #if !__FINAL && 0
+ 	else if (result == -1) {
+ 		char buf[128];
+@@ -142,6 +144,7 @@ int fiDeviceTcpIp::StaticWrite(fiHandle fd,const void *buffer,int count) {
+ 
+ int fiDeviceTcpIp::StaticRead(fiHandle fd,void *buffer,int count) {
+ 	int result = recv((SOCKET)fd,(char*)buffer,count,0);
++#if !__LINUX
+ 	if (result == -1 && WSAGetLastError() == WSAEWOULDBLOCK)
+ 		result = 0;
+ #if !__FINAL
+@@ -153,13 +156,16 @@ int fiDeviceTcpIp::StaticRead(fiHandle fd,void *buffer,int count) {
+ 		SetLastError("Read error %d (%x)", lastError, lastError);
+ 	}
+ #endif
++#endif // !__LINUX
+ 	return result;
+ }
+ 
+ 
+ int fiDeviceTcpIp::GetReadCount(fiHandle fd) {
+ 	unsigned long readCount = 0;
++#if !__LINUX
+ 	ioctlsocket((SOCKET)fd,FIONREAD,&readCount);
++#endif // !__LINUX
+ 	return readCount;
+ }
+ 
+@@ -168,7 +174,7 @@ void fiDeviceTcpIp::SetBlocking(fiHandle handle, bool blocking)
+ 	u_long nonblocking = blocking ? 0 : 1;
+ #if __XENON
+ 	XSocketIOCTLSocket((SOCKET)handle, FIONBIO, &nonblocking);
+-#else
++#elif !__LINUX
+ 	ioctlsocket((SOCKET)handle, FIONBIO, &nonblocking);
+ #endif
+ }
+@@ -224,7 +230,7 @@ static bool GetAddress(const char *name,int port,struct sockaddr_in *sa) {
+ 	if (!name) {
+ #if __XENON || __GFWL
+ 		strcpy(myname,"unknown");
+-#else
++#elif !__LINUX
+ 		gethostname(myname,sizeof(myname));
+ #endif
+ 		name = myname;
+@@ -271,7 +277,7 @@ static bool GetAddress(const char *name,int port,struct sockaddr_in *sa) {
+ 		addrInfo = NULL;
+ 	}
+ 
+-#else
++#elif !__LINUX
+ 	if ((sa->sin_addr.s_addr = inet_addr(name)) != -1)
+ 		sa->sin_family = AF_INET;
+ #if !__XENON && !__GFWL
+@@ -394,6 +400,7 @@ fiHandle fiDeviceTcpIp::Listen(int port,int maxIncoming,const char * WIN32PC_ONL
+ 								sizeof(v6only)) == 0);
+ #endif
+ 
++#if !__LINUX
+ 	if (bind(s,(struct sockaddr*)&sa,sizeof(sa)) == SOCKET_ERROR) {
+ 		closesocket(s);
+ 		return fiHandleInvalid;
+@@ -403,6 +410,7 @@ fiHandle fiDeviceTcpIp::Listen(int port,int maxIncoming,const char * WIN32PC_ONL
+ 		closesocket(s);
+ 		return fiHandleInvalid;
+ 	}
++#endif // !__LINUX
+ 
+ 	return (fiHandle) s;
+ }
