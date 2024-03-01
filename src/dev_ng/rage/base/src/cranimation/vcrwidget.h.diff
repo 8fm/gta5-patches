@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/cranimation/vcrwidget.h b/src/dev_ng/rage/base/src/cranimation/vcrwidget.h
+--- a/src/dev_ng/rage/base/src/cranimation/vcrwidget.h
++++ b/src/dev_ng/rage/base/src/cranimation/vcrwidget.h
+@@ -99,7 +99,7 @@ private:
+ 
+     int m_drawLocalExpanded;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+     void WindowCreate();
+     void WindowUpdate();
+     void WindowDestroy();
+@@ -160,7 +160,7 @@ inline void crVCRWidget::SetFastForwardOrGoToEndCB( ActionFuncType func )
+     m_FastForwardOrGoToEndFunc = func;
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ inline crVCRWidget::Button crVCRWidget::GetButtonInFocus() const
+ {
