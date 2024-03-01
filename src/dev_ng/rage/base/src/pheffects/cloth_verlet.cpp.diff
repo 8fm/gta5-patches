@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/pheffects/cloth_verlet.cpp b/src/dev_ng/rage/base/src/pheffects/cloth_verlet.cpp
+--- a/src/dev_ng/rage/base/src/pheffects/cloth_verlet.cpp
++++ b/src/dev_ng/rage/base/src/pheffects/cloth_verlet.cpp
+@@ -22,7 +22,7 @@
+ #include "phbound/boundgeom.h"
+ #include "phbound/boundsphere.h"
+ #include "phbound/boundtaperedcapsule.h"
+-#include "phbullet/triangleshape.h"
++#include "phbullet/TriangleShape.h"
+ #include "phcore/constants.h"
+ #include "phcore/phmath.h"
+ #include "phcore/segment.h"

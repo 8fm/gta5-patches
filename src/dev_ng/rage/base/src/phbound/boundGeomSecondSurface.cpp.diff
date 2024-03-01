@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.cpp b/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.cpp
+--- a/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.cpp
++++ b/src/dev_ng/rage/base/src/phbound/boundGeomSecondSurface.cpp
+@@ -1,4 +1,4 @@
+-#include "phCore/constants.h"
++#include "phcore/constants.h"
+ 
+ #include "boundgeom.h"
+ #include "boundGeomSecondSurface.h"

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/phbullet/btdispatcher.cpp b/src/dev_ng/rage/base/src/phbullet/btdispatcher.cpp
+--- a/src/dev_ng/rage/base/src/phbullet/btdispatcher.cpp
++++ b/src/dev_ng/rage/base/src/phbullet/btdispatcher.cpp
+@@ -13,7 +13,7 @@ subject to the following restrictions:
+ 3. This notice may not be removed or altered from any source distribution.
+ */
+ 
+-#include "btDispatcher.h"
++#include "btdispatcher.h"
+ 
+ #if ENABLE_UNUSED_PHYSICS_CODE
+ 
