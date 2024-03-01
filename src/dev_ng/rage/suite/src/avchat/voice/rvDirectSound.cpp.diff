@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/voice/rvDirectSound.cpp b/src/dev_ng/rage/suite/src/avchat/voice/rvDirectSound.cpp
+--- a/src/dev_ng/rage/suite/src/avchat/voice/rvDirectSound.cpp
++++ b/src/dev_ng/rage/suite/src/avchat/voice/rvDirectSound.cpp
+@@ -52,7 +52,9 @@
+ #include <math.h>
+ 
+ #pragma warning(disable:4201)
++#ifdef OLD_DXSDK
+ #include <audiodefs.h>
++#endif // OLD_DXSDK
+ #include <mmsystem.h>
+ #include <dsound.h>
+ #if (DIRECTSOUND_VERSION == 0x0800)

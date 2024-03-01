@@ -1,0 +1,35 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/effect_load.cpp b/src/dev_ng/rage/base/src/grcore/effect_load.cpp
+--- a/src/dev_ng/rage/base/src/grcore/effect_load.cpp
++++ b/src/dev_ng/rage/base/src/grcore/effect_load.cpp
+@@ -46,7 +46,7 @@
+ 			#if RSG_DURANGO
+ 				#pragma comment(lib,"dxguid.lib")
+ 			#else
+-				#if !__D3D11_1
++				#if !__D3D11_1 && defined(OLD_DXSDK)
+ 					#pragma comment(lib,"d3dx11.lib")
+ 				#endif // !__D3D11_1
+ 			#endif
+@@ -79,8 +79,10 @@
+ #endif	// __WIN32, RSG_ORBIS
+ 
+ #if !__TOOL && !__RESOURCECOMPILER && RSG_PC
++#ifdef OLD_DXSDK
+ 	#include <d3dx11async.h>
+ 	#define D3DCompileFromMemory D3DX11CompileFromMemory
++#endif // OLD_DXSDK
+ #endif
+ 
+ // Jimmy's terrain shader requires that parameter order is unchanged, sigh.
+@@ -3440,7 +3442,11 @@ void grcEffect::LoadSourceShader(const char* pszShader, void* &ProgramData, u32
+ 			if (PARAM_useDebugShaders.Get())
+ 				uCompileFlags |= D3D10_SHADER_PREFER_FLOW_CONTROL | D3D10_SHADER_SKIP_OPTIMIZATION | D3D10_SHADER_DEBUG;
+ 
++#ifdef OLD_DXSDK
+ 			if (FAILED(D3DCompileFromMemory(pTempData, size, NULL, NULL, NULL, entry, pzShaderModel, uCompileFlags, NULL, NULL, &code, &errors, &result)))
++#else
++			if (FAILED(D3DCompile(pTempData, size, NULL, NULL, NULL, entry, pzShaderModel, uCompileFlags, NULL, &code, &errors)))
++#endif // OLD_DXSDK
+ 			{
+ 				// We can do something here to spit out the errors that were thrown during the compile.
+ 				char* errorListing = rage_new char[errors->GetBufferSize()];

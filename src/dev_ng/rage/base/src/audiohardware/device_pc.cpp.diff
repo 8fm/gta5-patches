@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/audiohardware/device_pc.cpp b/src/dev_ng/rage/base/src/audiohardware/device_pc.cpp
+--- a/src/dev_ng/rage/base/src/audiohardware/device_pc.cpp
++++ b/src/dev_ng/rage/base/src/audiohardware/device_pc.cpp
+@@ -31,7 +31,7 @@
+ 
+ #define NONEWWAVE 1 // this prevents a redef issue in mmreg.h cuased by audiodefs.h
+ #include <dsound.h>
+-#if !_WIN10
++#if !_WIN10 && defined(OLD_DXSDK)
+ #include <audiodefs.h>
+ #endif
+ 

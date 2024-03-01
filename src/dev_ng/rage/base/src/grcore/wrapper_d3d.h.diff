@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h b/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h
+--- a/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h
++++ b/src/dev_ng/rage/base/src/grcore/wrapper_d3d.h
+@@ -23,7 +23,7 @@
+ #if RSG_PC
+ #if __D3D11_1
+ #include "grcore/DxErr.h"
+-#else
++#elif defined(OLD_DXSDK)
+ #include <DxErr.h>
+ #pragma comment(lib,"DxErr.lib")
+ #endif
