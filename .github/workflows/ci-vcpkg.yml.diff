@@ -2,7 +2,7 @@ diff --git a/.github/workflows/ci-vcpkg.yml b/.github/workflows/ci-vcpkg.yml
 new file mode 100644
 --- /dev/null
 +++ b/.github/workflows/ci-vcpkg.yml
-@@ -0,0 +1,39 @@
+@@ -0,0 +1,61 @@
 +name: VCPKG CI
 +
 +on:
@@ -10,8 +10,8 @@ new file mode 100644
 +  pull_request:
 +
 +jobs:
-+  windows:
-+    name: msvc ${{ matrix.Configuration }} ${{ matrix.Platform }}
++  windows-sln:
++    name: win sln ${{ matrix.Configuration }} ${{ matrix.Platform }}
 +    runs-on: windows-latest
 +    strategy:
 +      fail-fast: false
@@ -24,7 +24,6 @@ new file mode 100644
 +        submodules: recursive
 +
 +    - uses: microsoft/setup-msbuild@main
-+
 +    - name: Generate cpp/h files from *.psc
 +      working-directory: ${{env.GITHUB_WORKSPACE}}
 +      run: |
@@ -32,13 +31,36 @@ new file mode 100644
 +        msbuild /m /p:Configuration=Release /p:Platform="${{ matrix.Platform }}" src/dev_ng/rage/base/src/rage_lib_psc/rage_lib_psc_2022_unity.vcxproj
 +        msbuild /m /p:Configuration=Release /p:Platform="${{ matrix.Platform }}" src/dev_ng/rage/framework/src/framework_lib_psc/framework_lib_psc_2022_unity.vcxproj
 +        msbuild /m /p:Configuration=Release /p:Platform="${{ matrix.Platform }}" src/dev_ng/game/vs_project_lib_psc/game_lib_psc_2022_unity.vcxproj
-+
 +    - name: Build
 +      working-directory: src/dev_ng/game/VS_Project
 +      run: msbuild /m /p:Configuration="${{ matrix.Configuration }}" /p:Platform="${{ matrix.Platform }}" game_2022_unity.sln
-+
 +    - name: Upload artifact
-+      uses: actions/upload-artifact@v3
++      uses: actions/upload-artifact@v4
 +      with:
-+        name: gta5.${{ matrix.Configuration }}.${{ matrix.Platform }}
++        name: gta5.win.sln.${{ matrix.Configuration }}.${{ matrix.Platform }}
 +        path: titleupdate/dev_ng/*.exe
++
++  windows-cmake:
++    name: win cmake ${{ matrix.Configuration }} ${{ matrix.Platform }}
++    runs-on: windows-latest
++    strategy:
++      fail-fast: false
++      matrix:
++        Configuration: [BankRelease]
++        Platform: [x64]
++    steps:
++    - uses: actions/checkout@main
++      with:
++        submodules: recursive
++
++    - uses: ilammy/msvc-dev-cmd@v1
++    - name: Build
++      working-directory: src/dev_ng
++      run: |
++        cmake --preset='ninja-${{ matrix.Configuration }}-${{ matrix.Platform }}'
++        cmake --build --preset='${{ matrix.Configuration }}-${{ matrix.Platform }}'
++    - name: Upload artifact
++      uses: actions/upload-artifact@v4
++      with:
++        name: gta5.win.cmake.${{ matrix.Configuration }}.${{ matrix.Platform }}
++        path: src/dev_ng/bin/${{ matrix.Configuration }}-${{ matrix.Platform }}
