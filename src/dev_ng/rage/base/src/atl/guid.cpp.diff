@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/atl/guid.cpp b/src/dev_ng/rage/base/src/atl/guid.cpp
+--- a/src/dev_ng/rage/base/src/atl/guid.cpp
++++ b/src/dev_ng/rage/base/src/atl/guid.cpp
+@@ -5,7 +5,7 @@
+ //
+ 
+ #include "guid.h"
+-#include "atl/uuid.h"
++#include "atl/Uuid.h"
+ #if ATL_GUID_DEBUG
+ #include "atl/hashmap.h"
+ #endif

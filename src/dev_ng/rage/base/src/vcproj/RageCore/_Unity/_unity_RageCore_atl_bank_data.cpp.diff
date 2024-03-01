@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_atl_bank_data.cpp b/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_atl_bank_data.cpp
+--- a/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_atl_bank_data.cpp
++++ b/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_atl_bank_data.cpp
+@@ -54,7 +54,7 @@
+ #include "../../../atl/pagedpool.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../atl/uuid.cpp"
++#include "../../../atl/Uuid.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../bank/bank.cpp"
+@@ -132,7 +132,7 @@
+ #include "../../../bank/bkangle.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+-#include "../../../bank/xmessagebox.cpp"
++#include "../../../bank/XMessageBox.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
+ #include "../../../data/autoid.cpp"

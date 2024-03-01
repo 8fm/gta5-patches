@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/guidutil.cpp b/src/dev_ng/rage/base/src/system/guidutil.cpp
+--- a/src/dev_ng/rage/base/src/system/guidutil.cpp
++++ b/src/dev_ng/rage/base/src/system/guidutil.cpp
+@@ -7,7 +7,7 @@
+ 
+ #include "system/guidutil.h"
+ #include "system/criticalsection.h"
+-#include "atl/uuid.h"
++#include "atl/Uuid.h"
+ #include "string/string.h"
+ 
+ //----------------------------------------------------------------------------------------------------------------------
