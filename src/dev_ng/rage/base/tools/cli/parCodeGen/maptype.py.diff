@@ -10,6 +10,15 @@ diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/maptype.py b/src/dev_ng/r
              sys.exit(1)
          self.ChildSpec = self.Children[0];
          if not isinstance(self.ChildSpec, MemberSpec) and not isinstance(self.ChildSpec, AssertSpec) and not isinstance(self.ChildSpec, PadSpec):
+@@ -33,7 +33,7 @@ class MapSpec(MemberSpec):
+         # make a little DOM we can parse for the key
+         doc = Document()
+         parentElt = doc.createElement("map")
+-        doc.documentElement = parentElt
++        doc.appendChild(parentElt)
+         
+         keyElem = None
+         
 @@ -56,7 +56,7 @@ class MapSpec(MemberSpec):
          
          keys = BuildSpecObjects(parentElt, self)
