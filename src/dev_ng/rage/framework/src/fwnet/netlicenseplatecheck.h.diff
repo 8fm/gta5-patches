@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netlicenseplatecheck.h b/src/dev_ng/rage/framework/src/fwnet/netlicenseplatecheck.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netlicenseplatecheck.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netlicenseplatecheck.h
+@@ -6,7 +6,7 @@
+ #ifndef INC_NETLICENSEPLATECHECK_H_
+ #define INC_NETLICENSEPLATECHECK_H_
+ 
+-#include "rline\socialclub\rlsocialclubcommon.h"
++#include "rline/socialclub/rlsocialclubcommon.h"
+ 
+ namespace netLicensePlateCheck
+ {

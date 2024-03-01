@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/framework/src/video/media_buffer.h b/src/dev_ng/rage/framework/src/video/media_buffer.h
+--- a/src/dev_ng/rage/framework/src/video/media_buffer.h
++++ b/src/dev_ng/rage/framework/src/video/media_buffer.h
+@@ -25,6 +25,9 @@
+ // framework
+ #if RSG_ORBIS
+ #include "mediaencoder_bufferinterface_rage.h"
++#elif RSG_LINUX
++#include "mediaencoder_bufferinterface_rage.h"
++#include "system/d3d11.h"
+ #else
+ #include "mediaencoder_bufferinterface_win.h"
+ #endif
+@@ -350,7 +353,7 @@ namespace rage
+ 	};
+ 
+ 
+-#if RSG_ORBIS
++#if RSG_ORBIS || RSG_LINUX
+ 	typedef MediaBufferBlobNV12FromRGB32<MediaBufferBlobInterfaceRage> MediaBufferVideoEncode;
+ 	typedef MediaBufferExternalBlob<MediaBufferBlobInterfaceRage> MediaBufferAudioEncode;
+ #else

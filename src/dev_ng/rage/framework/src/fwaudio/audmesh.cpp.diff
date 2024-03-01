@@ -1,0 +1,22 @@
+diff --git a/src/dev_ng/rage/framework/src/fwaudio/audmesh.cpp b/src/dev_ng/rage/framework/src/fwaudio/audmesh.cpp
+--- a/src/dev_ng/rage/framework/src/fwaudio/audmesh.cpp
++++ b/src/dev_ng/rage/framework/src/fwaudio/audmesh.cpp
+@@ -1,12 +1,12 @@
+ #include "audmesh.h"
+     
+ 
+-#include "file\stream.h"
+-#include "ai\navmesh\NavMesh.h"
+-#include "fwsys\fileExts.h"
+-#include "paging\rscbuilder.h"
+-#include "string\stringhash.h"
+-#include "grcore\debugdraw.h"
++#include "file/stream.h"
++#include "ai/navmesh/NavMesh.h"
++#include "fwsys/fileExts.h"
++#include "paging/rscbuilder.h"
++#include "string/stringhash.h"
++#include "grcore/debugdraw.h"
+ 
+ #ifdef GTA_ENGINE
+ //#include "debug\debug.h"

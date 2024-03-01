@@ -1,0 +1,29 @@
+diff --git a/src/dev_ng/rage/framework/src/fwtl/assetstore.h b/src/dev_ng/rage/framework/src/fwtl/assetstore.h
+--- a/src/dev_ng/rage/framework/src/fwtl/assetstore.h
++++ b/src/dev_ng/rage/framework/src/fwtl/assetstore.h
+@@ -13,19 +13,19 @@
+ // Rage headers
+ #include "atl/atfunctor.h"
+ #include "diag/output.h"
+-#include "file\device.h"
++#include "file/device.h"
+ #include "paging/rscbuilder.h"
+-#include "string\stringhash.h"
+-#include "system\platform.h"
++#include "string/stringhash.h"
++#include "system/platform.h"
+ #include "system/stack.h"
+ #include "system/threadtype.h"
+ 
+ // Game headers
+-#include "fwtl\nameregistrar.h"
+-#include "fwtl\pool.h"
++#include "fwtl/nameregistrar.h"
++#include "fwtl/pool.h"
+ #include "streaming/streamingallocator.h"
+ #include "streaming/streamingengine.h"
+-#include "streaming\streamingmodule.h"
++#include "streaming/streamingmodule.h"
+ 
+ #define ENABLE_STORETRACKING (!__FINAL && !__PROFILE && !__SPU)
+ 

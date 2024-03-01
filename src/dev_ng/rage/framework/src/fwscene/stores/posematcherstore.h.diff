@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.h b/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.h
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.h
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/posematcherstore.h
+@@ -4,8 +4,8 @@
+ 
+ // --- Include Files ------------------------------------------------------------
+ 
+-#include "fwtl\assetstore.h"
+-#include "fwanimation\pointcloud.h"
++#include "fwtl/assetstore.h"
++#include "fwanimation/pointcloud.h"
+ 
+ namespace rage {
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/fwnet/netprofanityfilter.h b/src/dev_ng/rage/framework/src/fwnet/netprofanityfilter.h
+--- a/src/dev_ng/rage/framework/src/fwnet/netprofanityfilter.h
++++ b/src/dev_ng/rage/framework/src/fwnet/netprofanityfilter.h
+@@ -6,7 +6,7 @@
+ #ifndef INC_NETPROFANITYFILTER_H_
+ #define INC_NETPROFANITYFILTER_H_
+ 
+-#include "rline\socialclub\rlsocialclubcommon.h"
++#include "rline/socialclub/rlsocialclubcommon.h"
+ 
+ namespace netProfanityFilter
+ {

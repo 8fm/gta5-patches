@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/sinkwriter.cpp b/src/dev_ng/rage/framework/src/video/sinkwriter.cpp
+--- a/src/dev_ng/rage/framework/src/video/sinkwriter.cpp
++++ b/src/dev_ng/rage/framework/src/video/sinkwriter.cpp
+@@ -10,7 +10,7 @@
+ /////////////////////////////////////////////////////////////////////////////////
+ #include "sinkwriter.h"
+ 
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ #pragma warning(push)
+ #pragma warning(disable: 4668)

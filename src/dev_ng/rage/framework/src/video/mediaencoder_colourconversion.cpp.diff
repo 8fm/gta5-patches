@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediaencoder_colourconversion.cpp b/src/dev_ng/rage/framework/src/video/mediaencoder_colourconversion.cpp
+--- a/src/dev_ng/rage/framework/src/video/mediaencoder_colourconversion.cpp
++++ b/src/dev_ng/rage/framework/src/video/mediaencoder_colourconversion.cpp
+@@ -17,7 +17,7 @@
+ 
+ #if (USES_MEDIA_ENCODER) && !__RESOURCECOMPILER && !__RGSC_DLL
+ 
+-#if (RSG_PC || RSG_DURANGO)
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #pragma warning(push)
+ #pragma warning(disable: 4668)
+ #include <WinSock2.h>

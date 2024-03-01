@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.h b/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.h
+--- a/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.h
++++ b/src/dev_ng/rage/framework/src/video/mediaencoder_video_class_factory.h
+@@ -11,7 +11,7 @@
+ #ifndef INC_MEDIAENCODER_VIDEO_CLASS_FACTORY_H_
+ #define INC_MEDIAENCODER_VIDEO_CLASS_FACTORY_H_
+ 
+-#if RSG_PC && !__RESOURCECOMPILER
++#if RSG_PC && !__RESOURCECOMPILER && !RSG_LINUX
+ 
+ // framework
+ #include "media_common.h"

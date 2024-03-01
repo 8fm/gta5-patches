@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.h b/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.h
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.h
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/clipdictionarystore.h
+@@ -7,8 +7,8 @@
+ // C headers
+ // Rage headers
+ // Game headers
+-#include "fwtl\assetstore.h"
+-#include "crclip\clipdictionary.h"
++#include "fwtl/assetstore.h"
++#include "crclip/clipdictionary.h"
+ 
+ 
+ namespace rage {

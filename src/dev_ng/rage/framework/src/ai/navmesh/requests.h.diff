@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/ai/navmesh/requests.h b/src/dev_ng/rage/framework/src/ai/navmesh/requests.h
+--- a/src/dev_ng/rage/framework/src/ai/navmesh/requests.h
++++ b/src/dev_ng/rage/framework/src/ai/navmesh/requests.h
+@@ -9,8 +9,8 @@
+ 
+ #include "datatypes.h"
+ #include "navmeshoptimisations.h"		// For NAVMESH_OPTIMISATIONS_OFF
+-#include "fwtl\regdrefs.h"
+-#include "system\spinlock.h"
++#include "fwtl/regdrefs.h"
++#include "system/spinlock.h"
+ 
+ namespace rage
+ {

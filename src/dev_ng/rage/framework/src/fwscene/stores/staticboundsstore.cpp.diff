@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp b/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
+--- a/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
++++ b/src/dev_ng/rage/framework/src/fwscene/stores/staticboundsstore.cpp
+@@ -17,6 +17,7 @@
+ #include "streaming/packfilemanager.h"
+ #include "streaming/streaming_channel.h"
+ #include "system/bootmgr.h"
++#include "system/platformdefs.h"
+ 
+ STREAMING_OPTIMISATIONS()
+ 

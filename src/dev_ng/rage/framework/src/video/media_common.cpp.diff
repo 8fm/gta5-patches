@@ -1,0 +1,63 @@
+diff --git a/src/dev_ng/rage/framework/src/video/media_common.cpp b/src/dev_ng/rage/framework/src/video/media_common.cpp
+--- a/src/dev_ng/rage/framework/src/video/media_common.cpp
++++ b/src/dev_ng/rage/framework/src/video/media_common.cpp
+@@ -9,12 +9,13 @@
+ //
+ /////////////////////////////////////////////////////////////////////////////////
+ #include "media_common.h"
++#include <climits>
+ 
+ #ifndef __RGSC_DLL
+ #define __RGSC_DLL 0
+ #endif
+ 
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ // Windows
+ 
+@@ -44,7 +45,7 @@ namespace rage
+ {
+ 	RAGE_DEFINE_CHANNEL(video_chan);
+ 
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ 	GUID const& s_wmvVersionGuid = MFVideoFormat_WMV3;
+ 	GUID const& s_wmaVersionGuid = MFAudioFormat_WMAudioV9;
+@@ -78,7 +79,7 @@ namespace rage
+ 	{
+ 		ePrepareState finalState = MediaCommon::STATE_NONE;
+ 
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ 		HRESULT hr = CoInitializeEx( NULL, COINIT_MULTITHREADED );
+ 
+@@ -114,7 +115,7 @@ namespace rage
+ 	//		Passing in an arbitrary prepare state will result in undefined behavior.
+ 	void MediaCommon::CleanupThread( ePrepareState& prepareState )
+ 	{
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 		if( prepareState >= STATE_MEDIA_FOUNDATION )
+ 		{
+ 			ASSERT_ONLY(HRESULT hr =) MFShutdown();
+@@ -182,7 +183,7 @@ namespace rage
+ 			videoFormat == VIDEO_FORMAT_WMV && IsWmvSupported() ? AUDIO_FORMAT_WMA : AUDIO_FORMAT_INVALID;
+ 	}
+ 
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ 	// PURPOSE: Prepares a IMFMediaType object to be compatible with the format the game requires for encoding video
+ 	// PARAMS:
+@@ -614,7 +615,7 @@ namespace rage
+ 	}
+ #endif // RSG_PC || RSG_DURANGO
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ 	// Extracted from VersionHelpers.h until we move to the W8.1 SDK or greater
+ 	bool MediaCommon::IsWindowsVersionOrGreater( u16 const wMajorVersion, u16 const wMinorVersion, u16 const wServicePackMajor )

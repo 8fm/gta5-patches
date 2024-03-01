@@ -1,7 +1,24 @@
 diff --git a/src/dev_ng/rage/framework/src/video/media_common.h b/src/dev_ng/rage/framework/src/video/media_common.h
 --- a/src/dev_ng/rage/framework/src/video/media_common.h
 +++ b/src/dev_ng/rage/framework/src/video/media_common.h
-@@ -55,7 +55,7 @@ struct IMFAttributes;
+@@ -14,6 +14,7 @@
+ // rage
+ #include "audiohardware/mixer.h"
+ #include "system/mediafoundation.h"
++#include <cstddef>
+ 
+ #define SUPPORT_WMV_ENCODING (RSG_PC)
+ 
+@@ -45,7 +46,7 @@
+ 
+ #endif
+ 
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ #include <guiddef.h>
+ 
+@@ -55,7 +56,7 @@ struct IMFAttributes;
  struct IUnknown;
  
  // This interface doesn't exist prior to W8
@@ -10,3 +27,12 @@ diff --git a/src/dev_ng/rage/framework/src/video/media_common.h b/src/dev_ng/rag
  typedef IUnknown IMFDXGIDeviceManager;
  #else
  struct IMFDXGIDeviceManager;
+@@ -201,7 +202,7 @@ namespace rage
+ 		static eVideoFormat GetDefaultVideoFormat();
+ 		static eAudioFormat GetDefaultAudioFormatForVideoFormat( eVideoFormat const videoFormat );
+ 
+-#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if (RSG_PC || RSG_DURANGO) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ 		static bool PrepareGameCompatibleOutputVideoMediaType( IMFMediaType*& mediaType, rage::u32 const width, rage::u32 const height, float const fps );
+ 		static bool PrepareGameCompatibleOutputAudioMediaType( IMFMediaType*& mediaType );

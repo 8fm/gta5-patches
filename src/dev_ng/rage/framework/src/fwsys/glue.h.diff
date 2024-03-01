@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/framework/src/fwsys/glue.h b/src/dev_ng/rage/framework/src/fwsys/glue.h
+--- a/src/dev_ng/rage/framework/src/fwsys/glue.h
++++ b/src/dev_ng/rage/framework/src/fwsys/glue.h
+@@ -7,8 +7,8 @@
+ #ifndef FWSYS_GLUE_H__
+ #define FWSYS_GLUE_H__
+ 
+-#include "grcore\texture.h"
+-#include "grcore\locktypes.h"
++#include "grcore/texture.h"
++#include "grcore/locktypes.h"
+ 
+ namespace rage
+ {

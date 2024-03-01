@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/framework/src/vfx/asyncslist.h b/src/dev_ng/rage/framework/src/vfx/asyncslist.h
+--- a/src/dev_ng/rage/framework/src/vfx/asyncslist.h
++++ b/src/dev_ng/rage/framework/src/vfx/asyncslist.h
+@@ -312,6 +312,8 @@ void AsyncSListBase<PTRCONVERTER>::Push(SListItemBase<PTRCONVERTER> *first, SLis
+ 		sysMemCpy((void*)&data.head, (const void*)ls->data.head, sizeof(data.head));
+ 		sysMemCpy((void*)&data.size, (const void*)ls->data.size, sizeof(data.size));
+ 
++#	elif RSG_LINUX
++	// TODO: add Linux support
+ #	else
+ #		error "TODO: Not yet implemented for this platform"
+ #	endif
+@@ -414,6 +416,8 @@ SListItemBase<PTRCONVERTER> *AsyncSListBase<PTRCONVERTER>::Pop(const PTRCONVERTE
+ 		// Return the item we just popped
+ 		popped = (SListItemBase<PTRCONVERTER>*)hEa;
+ 
++#	elif RSG_LINUX
++	// TODO: add Linux support
+ #	else
+ #		error "TODO: Not yet implemented for this platform"
+ #	endif

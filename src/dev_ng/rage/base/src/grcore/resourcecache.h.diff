@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/resourcecache.h b/src/dev_ng/rage/base/src/grcore/resourcecache.h
+--- a/src/dev_ng/rage/base/src/grcore/resourcecache.h
++++ b/src/dev_ng/rage/base/src/grcore/resourcecache.h
+@@ -14,7 +14,7 @@
+ #if defined(__RGSC_DLL) && __RGSC_DLL
+ #define USE_RESOURCE_CACHE 0
+ #else
+-#define USE_RESOURCE_CACHE (1 && RSG_PC && !__TOOL && !__RESOURCECOMPILER && __D3D11)
++#define USE_RESOURCE_CACHE (1 && RSG_PC && !__TOOL && !__RESOURCECOMPILER && __D3D11 && !RSG_LINUX)
+ #endif
+ #define USE_DX9_SINGLE_THREADED (USE_RESOURCE_CACHE)
+ #define KEEP_SYSTEM_COPIES (!USE_DX9_SINGLE_THREADED)

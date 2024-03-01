@@ -1,12 +1,21 @@
 diff --git a/src/dev_ng/rage/framework/src/fwnet/netlog.cpp b/src/dev_ng/rage/framework/src/fwnet/netlog.cpp
 --- a/src/dev_ng/rage/framework/src/fwnet/netlog.cpp
 +++ b/src/dev_ng/rage/framework/src/fwnet/netlog.cpp
-@@ -22,7 +22,7 @@ NETWORK_OPTIMISATIONS()
+@@ -22,7 +22,8 @@ NETWORK_OPTIMISATIONS()
  // C headers
  #include <stdarg.h>
  #include <stdio.h>
 -#include <string.h>
++#include <cstring>
 +#include <string>
  
  // Rage headers
  #include "system/bootmgr.h"
+@@ -34,6 +35,7 @@ NETWORK_OPTIMISATIONS()
+ #include "fwnet/netplayer.h"
+ #include "fwnet/netplayermgrbase.h"
+ #include "fwsys/timer.h"
++#include "system/platformdefs.h"
+ 
+ extern __THREAD int RAGE_LOG_DISABLE;
+ 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/video/mediadecoder_win.cpp b/src/dev_ng/rage/framework/src/video/mediadecoder_win.cpp
+--- a/src/dev_ng/rage/framework/src/video/mediadecoder_win.cpp
++++ b/src/dev_ng/rage/framework/src/video/mediadecoder_win.cpp
+@@ -12,7 +12,7 @@
+ 
+ #if defined(VIDEO_PLAYBACK_ENABLED) && VIDEO_PLAYBACK_ENABLED
+ 
+-#if ( RSG_DURANGO || RSG_PC ) && !__RESOURCECOMPILER && !__RGSC_DLL
++#if ( RSG_DURANGO || RSG_PC ) && !__RESOURCECOMPILER && !__RGSC_DLL && !RSG_LINUX
+ 
+ // rage
+ #include "atl/array.h"

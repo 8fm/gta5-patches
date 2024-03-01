@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/framework/src/streaming/streamingloader.cpp b/src/dev_ng/rage/framework/src/streaming/streamingloader.cpp
+--- a/src/dev_ng/rage/framework/src/streaming/streamingloader.cpp
++++ b/src/dev_ng/rage/framework/src/streaming/streamingloader.cpp
+@@ -100,7 +100,7 @@ PF_VALUE_INT(RealReqRemoves, StreamLoader);
+ #endif // __STATS
+ 
+ static void StreamLoadSleep() {
+-#if RSG_WIN32
++#if RSG_WIN32 || RSG_LINUX
+ 	_mm_pause();
+ #elif RSG_SCE
+ 	// Albert: Spinlock on Prospero, waiting 10ms between reads kills load times (due to fast SSD)
