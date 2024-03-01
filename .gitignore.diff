@@ -2,7 +2,7 @@ diff --git a/.gitignore b/.gitignore
 new file mode 100644
 --- /dev/null
 +++ b/.gitignore
-@@ -0,0 +1,133 @@
+@@ -0,0 +1,134 @@
 +__pycache__/
 +build/
 +cmake-build-*/
@@ -11,6 +11,7 @@ new file mode 100644
 +titleupdate
 +tools_ng/logs
 +
++.DS_Store
 +.vs
 +obj/
 +*.aps
@@ -34,8 +35,8 @@ new file mode 100644
 +src/dev_ng/game/Peds/PedFlagsMeta.h
 +src/dev_ng/game/Peds/PedMotionState.cpp
 +src/dev_ng/game/Peds/PedMotionState.h
-+src/dev_ng/game/Peds/TaskFlags.cpp
-+src/dev_ng/game/Peds/TaskFlags.h
++src/dev_ng/game/Peds/taskflags.cpp
++src/dev_ng/game/Peds/taskflags.h
 +src/dev_ng/game/Vehicles/Metadata/VehicleEnterExitFlags.cpp
 +src/dev_ng/game/Vehicles/Metadata/VehicleEnterExitFlags.h
 +src/dev_ng/game/animation/AnimScene/AnimSceneEntityTypes.cpp
@@ -72,8 +73,8 @@ new file mode 100644
 +src/dev_ng/game/frontend/page_deck/uiPageEnums.h
 +src/dev_ng/game/game/ScriptRouterContextEnums.cpp
 +src/dev_ng/game/game/ScriptRouterContextEnums.h
-+src/dev_ng/game/ik/IkManagerSolverTypes.cpp
-+src/dev_ng/game/ik/IkManagerSolverTypes.h
++src/dev_ng/game/ik/ikmanagersolvertypes.cpp
++src/dev_ng/game/ik/ikmanagersolvertypes.h
 +src/dev_ng/game/modelinfo/VehicleModelInfoFlags.cpp
 +src/dev_ng/game/modelinfo/VehicleModelInfoFlags.h
 +src/dev_ng/game/physics/VehicleFragImpulseFunction.cpp
