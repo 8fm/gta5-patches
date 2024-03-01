@@ -26,7 +26,7 @@ diff --git a/src/dev_ng/rage/base/src/diag/civetweb.cpp b/src/dev_ng/rage/base/s
 +#elif RSG_LINUX
 +#include <climits>
 +#include <fcntl.h>
-+#undef sleep
++#include <unistd.h>
  #endif
  #include <netinet/in.h>     //NOTE: Must come before sockinfo.h, because it doesn't include it itself.
  #include <netinet/tcp.h>
@@ -46,19 +46,18 @@ diff --git a/src/dev_ng/rage/base/src/diag/civetweb.cpp b/src/dev_ng/rage/base/s
  	struct pollfd {
  		SOCKET fd;
  		short events;
-@@ -157,6 +161,11 @@
+@@ -157,6 +161,10 @@
  	#define closesocket sceNetSocketClose
  #endif
  
 +#if RSG_LINUX
-+	extern int close(int __fd); // from <unistd.h>
 +	#define closesocket close
 +#endif
 +
  #if !RSG_ORBIS && !defined(INT64_MAX)
  	#define INT64_MAX  9223372036854775807
  #endif
-@@ -1475,6 +1484,8 @@ static int set_non_blocking_mode(SOCKET listener)
+@@ -1475,6 +1483,8 @@ static int set_non_blocking_mode(SOCKET listener)
  #elif RSG_WIN32
  	u_long nonblocking = 1;
  	ioctlsocket((SOCKET)listener, FIONBIO, &nonblocking);
@@ -67,3 +66,16 @@ diff --git a/src/dev_ng/rage/base/src/diag/civetweb.cpp b/src/dev_ng/rage/base/s
  #else
  	int nonblocking = 1;
  	setsockopt((int)listener, SOL_SOCKET, SO_NBIO, (char*)&nonblocking, sizeof(nonblocking));
+@@ -1543,10 +1553,12 @@ static int pthread_cond_signal(mg_cond_t *cv)
+ // static int pthread_cond_broadcast
+ 
+ 
++#if !RSG_LINUX
+ static void sleep(unsigned seconds)
+ {
+ 	sysIpcSleep(1000 * seconds);
+ }
++#endif // !RSG_LINUX
+ 
+ static void mg_sleep(unsigned ms)
+ {
