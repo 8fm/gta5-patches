@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/projgen/cpp.props b/src/dev_ng/projgen/cpp.props
+--- a/src/dev_ng/projgen/cpp.props
++++ b/src/dev_ng/projgen/cpp.props
+@@ -132,7 +132,7 @@ File.WriteAllText(Path.Combine(SkuFolder, "param.json"), JsonSerializer.Serializ
+ 
+ 	<!-- RSG Options defaults -->
+ 	<PropertyGroup>
+-		<RunTrays>true</RunTrays>
++		<RunTrays>false</RunTrays>
+ 		<ProsperoSKU>sce_sys_eu_digital</ProsperoSKU>
+ 	</PropertyGroup>
+ 
