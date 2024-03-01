@@ -21,3 +21,12 @@ diff --git a/src/dev_ng/game/text/TextConversion.cpp b/src/dev_ng/game/text/Text
  
  TEXT_OPTIMISATIONS();
  
+@@ -339,7 +339,7 @@ size_t CTextConversion::ConvertToWideChar( const char* szString, wchar_t* wszStr
+ 
+ 		memset(wszString, 0, length*sizeof(wchar_t));
+ 		MultiByteToWideChar(1251, MB_PRECOMPOSED, szRussianName, lengthString, wszString, length);
+-#else
++#elif !RSG_LINUX
+ 		/*TODO4FIVE
+ 		if (!CLocalisation::IsCurrentLanguageRussian())*/
+ 		{

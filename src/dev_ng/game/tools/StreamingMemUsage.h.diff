@@ -12,3 +12,30 @@ diff --git a/src/dev_ng/game/tools/StreamingMemUsage.h b/src/dev_ng/game/tools/S
  #include "streaming/streaming.h"
  #include "streaming/streamingdebug.h"
  #include "tools/SectorTools.h"
+@@ -308,7 +308,7 @@ void GetStoreMemoryStats( rage::fwAssetRscStore<T, S>& store, CStreamingMemUsage
+ 	}
+ }
+ 
+-#if !__CONSOLE
++#if !__CONSOLE && !__LINUX
+ template <typename T>
+ void GetSectorModelInfoIdsForPool( T* pPool, rage::atArray<u32>& modelInfosIds, int nX, int nY )
+ {
+@@ -356,7 +356,7 @@ void GetSectorModelInfoIdsForPool( fwPool<T>* pPool, rage::atArray<u32>& modelIn
+ 	}
+ }
+ 
+-#if !__CONSOLE
++#if !__CONSOLE && !__LINUX
+ template<class T> 
+ void GetSectorInteriorModelInfoIdsForPool( T* pPool, rage::atArray<u32>& modelInfosIds, int nX, int nY )
+ {
+@@ -404,7 +404,7 @@ void GetSectorInteriorModelInfoIdsForPool( fwPool<T>* pPool, rage::atArray<u32>&
+ 	}
+ }
+ 
+-#if !__CONSOLE
++#if !__CONSOLE && !__LINUX
+ template<class T> 
+ void GetSectorObjectsForPool( T* pPool, rage::atArray<CStreamingMemUsage::TPoolObject>& objects, int nX, int nY )
+ {
