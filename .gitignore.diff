@@ -2,7 +2,8 @@ diff --git a/.gitignore b/.gitignore
 new file mode 100644
 --- /dev/null
 +++ b/.gitignore
-@@ -0,0 +1,131 @@
+@@ -0,0 +1,133 @@
++__pycache__/
 +build/
 +cmake-build-*/
 +src/dev_ng/bin
@@ -16,6 +17,7 @@ new file mode 100644
 +*.cache
 +*.filters
 +*.log
++*.pyc
 +*.sdf
 +*.suo
 +*.user
