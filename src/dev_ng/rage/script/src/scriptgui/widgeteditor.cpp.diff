@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp b/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp
+--- a/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp
++++ b/src/dev_ng/rage/script/src/scriptgui/widgeteditor.cpp
+@@ -268,7 +268,7 @@ void scrWidgetEditor::RemoteUpdate()
+ 	//p.Send();
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void scrWidgetEditor::WindowCreate() 
