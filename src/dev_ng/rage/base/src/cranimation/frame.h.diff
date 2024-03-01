@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/cranimation/frame.h b/src/dev_ng/rage/base/src/cranimation/frame.h
+--- a/src/dev_ng/rage/base/src/cranimation/frame.h
++++ b/src/dev_ng/rage/base/src/cranimation/frame.h
+@@ -13,6 +13,7 @@
+ #include "system/interlocked.h"
+ #include "system/memory.h"
+ #include "vectormath/transformv.h"
++#include <climits>
+ 
+ namespace rage
+ {

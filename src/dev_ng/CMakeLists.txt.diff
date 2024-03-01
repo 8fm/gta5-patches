@@ -46,8 +46,8 @@ new file mode 100644
 +add_subdirectory(rage/base/src/vcproj/RagePhysics)
 +add_subdirectory(rage/script/src/vcproj/RageScript)
 +add_subdirectory(rage/base/src/vcproj/RageSec)
-+add_subdirectory(rage/suite/src/vcproj/RageSuiteCreature)
 +endif()
++add_subdirectory(rage/suite/src/vcproj/RageSuiteCreature)
 +add_subdirectory(rage/scaleform/Src/vcproj/scaleformgfx)
 +
 +if (MSVC)

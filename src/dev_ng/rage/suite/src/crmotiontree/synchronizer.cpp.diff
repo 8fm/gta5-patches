@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp b/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp
+--- a/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp
++++ b/src/dev_ng/rage/suite/src/crmotiontree/synchronizer.cpp
+@@ -20,6 +20,7 @@
+ #include "crmetadata/property.h"
+ #include "crmetadata/propertyattributes.h"
+ #include "zlib/zlib.h"
++#include <climits>
+ 
+ #define DEBUG_SYNC_DISPLAYF if(0) Displayf
+ #define DEBUG_SYNC_CLIP_NAME(stoi) ((stoi->GetNode()->GetNodeType()==crmtNode::kNodeClip && static_cast<crmtNodeClip*>(stoi->GetNode())->GetClipPlayer().GetClip())?static_cast<crmtNodeClip*>(stoi->GetNode())->GetClipPlayer().GetClip()->GetName():"NONE")
