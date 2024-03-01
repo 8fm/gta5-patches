@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rl.cpp b/src/dev_ng/rage/base/src/rline/rl.cpp
+--- a/src/dev_ng/rage/base/src/rline/rl.cpp
++++ b/src/dev_ng/rage/base/src/rline/rl.cpp
+@@ -505,7 +505,7 @@ rlInit(sysMemAllocator* allocator,
+ 		success = success && rlVerifyf(g_rlXbl.Init(allocator), "Error initializing rlXbl");
+ #elif RSG_NP
+         success = success && rlVerifyf(g_rlNp.Init(), "Error initializing rlNp");
+-#elif RSG_PC && !__RGSC_DLL
++#elif RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ 
+ 		// game can still run when the pc platform DLLs are not available
+         rlVerify(g_rlPc.Init());
+@@ -596,7 +596,7 @@ rlUpdate()
+ 		}
+ #endif
+ 
+-#if RSG_PC && !__RGSC_DLL
++#if RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ 		NPROFILE(g_rlPc.Update());
+ #endif
+ 
+@@ -712,7 +712,7 @@ rlShutdown()
+         g_rlNp.Shutdown();
+ #endif
+ 
+-#if RSG_PC && !__RGSC_DLL
++#if RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ 		g_rlPc.Shutdown();
+ #endif
+ 

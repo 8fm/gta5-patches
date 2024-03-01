@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.cpp b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.cpp
+--- a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.cpp
++++ b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.cpp
+@@ -2,7 +2,7 @@
+ // CLogger.cpp
+ // Jason Hughes
+ //-------------------
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "First.h"
+ #include "CLogger.h"

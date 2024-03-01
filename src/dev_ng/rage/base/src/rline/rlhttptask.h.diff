@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlhttptask.h b/src/dev_ng/rage/base/src/rline/rlhttptask.h
+--- a/src/dev_ng/rage/base/src/rline/rlhttptask.h
++++ b/src/dev_ng/rage/base/src/rline/rlhttptask.h
+@@ -11,6 +11,7 @@
+ #include "rltask.h"
+ #include "net/http.h"
+ #include "net/status.h"
++#include <climits>
+ 
+ namespace rage
+ {

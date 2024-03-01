@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/crypto.h b/src/dev_ng/rage/base/src/net/crypto.h
+--- a/src/dev_ng/rage/base/src/net/crypto.h
++++ b/src/dev_ng/rage/base/src/net/crypto.h
+@@ -21,7 +21,7 @@ namespace rage
+ // We use wolfSSL for all other platforms. Sony's libSecure library on PS4 SDK 3.0
+ // was about 2x slower than wolfSSL 3.0, especially during HMAC calculation.
+ // See perforce history for libSecure implementation if needed.
+-#define NET_CRYPTO_USE_BCRYPT (RSG_DURANGO || RSG_PC)
++#define NET_CRYPTO_USE_BCRYPT (RSG_DURANGO || RSG_WIN32)
+ 
+ //PURPOSE
+ //  Implements RC4 encryption.

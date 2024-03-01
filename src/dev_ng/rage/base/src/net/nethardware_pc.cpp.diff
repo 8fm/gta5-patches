@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/nethardware_pc.cpp b/src/dev_ng/rage/base/src/net/nethardware_pc.cpp
+--- a/src/dev_ng/rage/base/src/net/nethardware_pc.cpp
++++ b/src/dev_ng/rage/base/src/net/nethardware_pc.cpp
+@@ -9,7 +9,7 @@
+ #endif
+ 
+ #include "file/file_config.h"
+-#if (RSG_PC || RSG_DURANGO)
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ 
+ #include "nethardware.h"
+ #include "natdetector.h"

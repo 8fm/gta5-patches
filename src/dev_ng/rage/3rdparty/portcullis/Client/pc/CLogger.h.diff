@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.h b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.h
+--- a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.h
++++ b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/CLogger.h
+@@ -6,7 +6,7 @@
+ #ifndef CLOGGER_H
+ #define CLOGGER_H
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ //-------------------
+ 
+ #include <string>

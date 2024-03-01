@@ -1,7 +1,250 @@
 diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/base/src/rline/rlpresence.cpp
 --- a/src/dev_ng/rage/base/src/rline/rlpresence.cpp
 +++ b/src/dev_ng/rage/base/src/rline/rlpresence.cpp
-@@ -2892,7 +2892,7 @@ rlPresence::RefreshSigninState(const int gamerIdx)
+@@ -972,7 +972,7 @@ rlPresence::NotifyInviteAccepted(
+     }
+ }
+ 
+-#if RSG_PC && !__RGSC_DLL
++#if RSG_PC && !__RGSC_DLL && !RSG_LINUX
+ // tasks that marshal presence calls to the DLL
+ class GetAttributesForGamerTask : public netTask
+ {
+@@ -2042,12 +2042,14 @@ rlPresence::SetIntAttribute(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::SetIntAttribute(localGamerIndex, name, value, bNeedsCommitIfDirty);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->SetIntAttribute(localGamerIndex, name, value);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2059,12 +2061,14 @@ rlPresence::SetDoubleAttribute(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::SetDoubleAttribute(localGamerIndex, name, value,bNeedsCommitIfDirty);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->SetDoubleAttribute(localGamerIndex, name, value);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2076,12 +2080,14 @@ rlPresence::SetStringAttribute(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::SetStringAttribute(localGamerIndex, name, value, bNeedsCommitIfDirty);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->SetStringAttribute(localGamerIndex, name, value);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2122,12 +2128,14 @@ rlPresence::GetIntAttribute(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::GetIntAttribute(localGamerIndex, name, value);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->GetIntAttribute(localGamerIndex, name, value);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2138,12 +2146,14 @@ rlPresence::GetDoubleAttribute(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::GetDoubleAttribute(localGamerIndex, name, value);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->GetDoubleAttribute(localGamerIndex, name, value);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2155,12 +2165,14 @@ rlPresence::GetStringAttribute(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::GetStringAttribute(localGamerIndex, name, value, sizeofValue);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->GetStringAttribute(localGamerIndex, name, value, sizeofValue);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2173,7 +2185,7 @@ rlPresence::GetAttributesForGamer(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::GetAttributesForGamer(localGamerIndex, gamerHandle, attrs, numAttrs, status);
+-#else
++#elif !RSG_LINUX
+ 	bool success = false;
+ 
+ 	GetAttributesForGamerTask* task;
+@@ -2189,6 +2201,8 @@ rlPresence::GetAttributesForGamer(const int localGamerIndex,
+ 	}
+ 
+ 	return success;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2215,12 +2229,14 @@ rlPresence::Subscribe(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+     return rlScPresence::Subscribe(localGamerIndex, channels, numChannels);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->Subscribe(localGamerIndex, channels, numChannels);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2231,12 +2247,14 @@ rlPresence::Unsubscribe(const int localGamerIndex,
+ {
+ #if SC_PRESENCE
+     return rlScPresence::Unsubscribe(localGamerIndex, channels, numChannels);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->Unsubscribe(localGamerIndex, channels, numChannels);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2245,12 +2263,14 @@ rlPresence::UnsubscribeAll(const int localGamerIndex)
+ {
+ #if SC_PRESENCE
+     return rlScPresence::UnsubscribeAll(localGamerIndex);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		return g_rlPc.GetPresenceManager()->UnsubscribeAll(localGamerIndex);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2269,7 +2289,7 @@ rlPresence::Publish(const int localGamerIndex,
+                                 filterName,
+                                 paramNameValueCsv,
+                                 message);
+-#else
++#elif !RSG_LINUX
+ 	if (g_rlPc.GetPresenceManager() != NULL)
+ 	{
+ 		rgsc::PresenceMessage rgscMessage;
+@@ -2284,6 +2304,8 @@ rlPresence::Publish(const int localGamerIndex,
+ 													&rgscMessage);
+ 	}
+ 	return false;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2346,7 +2368,7 @@ rlPresence::PostMessage(const int localGamerindex,
+ {
+ #if SC_PRESENCE
+ 	return rlScPresence::PostMessage(localGamerindex, recipients, numRecipients, message, ttlSeconds);
+-#else
++#elif !RSG_LINUX
+ 	bool success = false;
+ 
+ 	netFireAndForgetTask<PostMessageTask>* task;
+@@ -2362,6 +2384,8 @@ rlPresence::PostMessage(const int localGamerindex,
+ 	}
+ 
+ 	return success;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2390,7 +2414,7 @@ rlPresence::Query(const int localGamerIndex,
+                                 numRecordsRetrieved,
+                                 numRecords,
+                                 status);
+-#else
++#elif !RSG_LINUX
+ 	bool success = false;
+ 
+ 	QueryTask* task;
+@@ -2415,6 +2439,8 @@ rlPresence::Query(const int localGamerIndex,
+ 	}
+ 
+ 	return success;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2431,7 +2457,7 @@ rlPresence::QueryCount(const int localGamerIndex,
+                                     paramNameValueCsv,
+                                     count,
+                                     status);
+-#else
++#elif !RSG_LINUX
+ 	bool success = false;
+ 
+ 	QueryCountTask* task;
+@@ -2447,6 +2473,8 @@ rlPresence::QueryCount(const int localGamerIndex,
+ 	}
+ 
+ 	return success;
++#else
++	return false;
+ #endif
+ }
+ 
+@@ -2892,7 +2920,7 @@ rlPresence::RefreshSigninState(const int gamerIdx)
                    handleStr);
  #endif
  
@@ -10,3 +253,48 @@ diff --git a/src/dev_ng/rage/base/src/rline/rlpresence.cpp b/src/dev_ng/rage/bas
          //Make sure we're preventing people from seeing secret
          //stuff in our games during dev.
          rlGamerInfo::CheckDevPrivacyPrivilegesAndBail(newGamerInfo.GetLocalIndex());
+@@ -3607,7 +3635,7 @@ rlPresence::NativeGetStatusString(const rlGamerInfo& /*gamerInfo*/,
+ 	return false;
+ }
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ // this is here to avoid including windows platform headers.
+ static rlPcEventDelegator::Delegate m_PcDlgt;
+@@ -4154,7 +4182,7 @@ static bool IsSignedIn(const int localGamerIndex)
+ 
+ 		isSignedin = GetRgscConcreteInstance()->_GetProfileManager()->IsSignedInInternal();
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ 		isSignedin = g_rlPc.IsInitialized() && g_rlPc.GetProfileManager()->IsSignedIn();
+ #else
+@@ -4185,7 +4213,7 @@ static bool IsOnline(const int localGamerIndex)
+ 
+ 		isOnline = GetRgscConcreteInstance()->_GetProfileManager()->IsOnlineInternal();
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ 		isOnline = g_rlPc.IsInitialized() && g_rlPc.GetProfileManager()->IsOnline() && rlRos::IsOnline(0);
+ 
+@@ -4303,7 +4331,7 @@ static bool GetGamerHandle(const int localGamerIndex, rlGamerHandle *handle)
+ 			success = true;
+ 		}
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 		if(g_rlPc.IsInitialized())
+ 		{
+ 			rgsc::Profile profile;
+@@ -4374,7 +4402,7 @@ static bool GetOfflineName(const int localGamerIndex,
+ 			}
+ 		}
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ 		if(g_rlPc.IsInitialized())
+ 		{

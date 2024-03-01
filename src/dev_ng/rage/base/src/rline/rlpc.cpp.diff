@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlpc.cpp b/src/dev_ng/rage/base/src/rline/rlpc.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlpc.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlpc.cpp
+@@ -6,7 +6,7 @@
+ 
+ #include "rlpc.h"
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ #include "data/base64.h"
+ #include "data/certificateverify.h"

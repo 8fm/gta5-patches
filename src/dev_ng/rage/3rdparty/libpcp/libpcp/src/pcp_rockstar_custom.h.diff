@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/3rdparty/libpcp/libpcp/src/pcp_rockstar_custom.h b/src/dev_ng/rage/3rdparty/libpcp/libpcp/src/pcp_rockstar_custom.h
+--- a/src/dev_ng/rage/3rdparty/libpcp/libpcp/src/pcp_rockstar_custom.h
++++ b/src/dev_ng/rage/3rdparty/libpcp/libpcp/src/pcp_rockstar_custom.h
+@@ -4,7 +4,7 @@
+ #include "file/file_config.h"
+ 
+ // disabled NAT-PMP/PCP on Xbox One. Requires a custom lib from Microsoft that GTA V doesn't have.
+-#define NET_ENABLE_PCP ((RSG_PC || RSG_ORBIS || (0 && RSG_LINUX)) && !__RGSC_DLL && !RSG_MOBILE && !__TOOL && !__RESOURCECOMPILER)
++#define NET_ENABLE_PCP ((RSG_PC || RSG_ORBIS) && !__RGSC_DLL && !RSG_MOBILE && !__TOOL && !__RESOURCECOMPILER && !RSG_LINUX)
+ 
+ #if NET_ENABLE_PCP
+ 

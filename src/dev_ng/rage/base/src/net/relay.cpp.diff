@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/relay.cpp b/src/dev_ng/rage/base/src/net/relay.cpp
+--- a/src/dev_ng/rage/base/src/net/relay.cpp
++++ b/src/dev_ng/rage/base/src/net/relay.cpp
+@@ -33,7 +33,7 @@
+ #include "bank/bkmgr.h"
+ #endif
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #define STRICT
+ #pragma warning(push)
+ #pragma warning(disable: 4668)

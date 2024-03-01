@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/netsocket_pc.cpp b/src/dev_ng/rage/base/src/net/netsocket_pc.cpp
+--- a/src/dev_ng/rage/base/src/net/netsocket_pc.cpp
++++ b/src/dev_ng/rage/base/src/net/netsocket_pc.cpp
+@@ -5,7 +5,7 @@
+ // 
+ #include "file/file_config.h"
+ 
+-#if (RSG_PC || RSG_DURANGO)
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ 
+ #include "netsocket.h"
+ #include "diag/seh.h"

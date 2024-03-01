@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/rline/ros/rlros.cpp b/src/dev_ng/rage/base/src/rline/ros/rlros.cpp
+--- a/src/dev_ng/rage/base/src/rline/ros/rlros.cpp
++++ b/src/dev_ng/rage/base/src/rline/ros/rlros.cpp
+@@ -93,7 +93,7 @@
+ 
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #if !defined(STRICT)
+ #define STRICT 1
+ #endif
+@@ -912,7 +912,7 @@ rlRos::ProcessCommonErrors(const int localGamerIndex, const rlRosResult& result)
+     {
+ #if __RGSC_DLL
+         GetRgscConcreteInstance()->_GetProfileManager()->DuplicateSignInKick(localGamerIndex);
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+         if (g_rlPc.GetProfileManager())
+         {
+             g_rlPc.GetProfileManager()->OnDuplicateSignInMessageReceived(localGamerIndex);

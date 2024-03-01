@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/net/tcp.cpp b/src/dev_ng/rage/base/src/net/tcp.cpp
+--- a/src/dev_ng/rage/base/src/net/tcp.cpp
++++ b/src/dev_ng/rage/base/src/net/tcp.cpp
+@@ -20,7 +20,7 @@
+ #include "system/memory.h"
+ #include "profile/rocky.h"
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #if !defined(STRICT)
+ #define STRICT
+ #endif

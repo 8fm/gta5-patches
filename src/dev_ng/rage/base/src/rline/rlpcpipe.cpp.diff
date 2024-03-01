@@ -1,6 +1,12 @@
 diff --git a/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp b/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
 --- a/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
 +++ b/src/dev_ng/rage/base/src/rline/rlpcpipe.cpp
+@@ -1,4 +1,4 @@
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ #include "system/ipc.h"
+ 
 @@ -209,7 +209,7 @@ bool rlPcPipeSignInMessage::Init(RockstarId id)
  	rtry
  	{

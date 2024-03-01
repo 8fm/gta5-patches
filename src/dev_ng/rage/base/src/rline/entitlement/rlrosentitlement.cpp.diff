@@ -1,0 +1,16 @@
+diff --git a/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.cpp b/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.cpp
+--- a/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.cpp
++++ b/src/dev_ng/rage/base/src/rline/entitlement/rlrosentitlement.cpp
+@@ -288,6 +288,12 @@ bool rlRosEntitlement::DoesDataBlockGrantEntitlement( s64 rockstarId, const char
+ #if RSG_ORBIS
+ 		if(gmtime_s(&currentTimeInSeconds, &tm_struct) == NULL)
+ 			return false;
++#elif RSG_LINUX
++#ifdef __STDC_LIB_EXT1__
++		int err = gmtime_s(&tm_struct, &currentTimeInSeconds);
++		if (err)
++			return false;
++#endif
+ #else
+ 		//@@: location RLROSENTITLEMENT_DOESDATABLOCKGRANTENTITLEMENT_CALL_GMTIME
+ 		errno_t err = gmtime_s(&tm_struct, &currentTimeInSeconds);

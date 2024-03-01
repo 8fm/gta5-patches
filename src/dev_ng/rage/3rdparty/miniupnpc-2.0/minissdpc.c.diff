@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/3rdparty/miniupnpc-2.0/minissdpc.c b/src/dev_ng/rage/3rdparty/miniupnpc-2.0/minissdpc.c
+--- a/src/dev_ng/rage/3rdparty/miniupnpc-2.0/minissdpc.c
++++ b/src/dev_ng/rage/3rdparty/miniupnpc-2.0/minissdpc.c
+@@ -70,7 +70,7 @@ struct sockaddr_un {
+ #define closesocket close
+ #endif
+ 
+-#if (defined(RSG_IOS) && RSG_IOS) || (defined(RSG_ANDROID) && RSG_ANDROID)
++#if (defined(RSG_IOS) && RSG_IOS) || (defined(RSG_ANDROID) && RSG_ANDROID) || (defined(RSG_LINUX) && RSG_LINUX)
+ typedef int SOCKET;
+ #endif /* (defined(RSG_IOS) && RSG_IOS) || (defined(RSG_ANDROID) && RSG_ANDROID) */
+ 

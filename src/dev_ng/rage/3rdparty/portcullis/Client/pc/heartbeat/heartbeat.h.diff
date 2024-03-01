@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.h b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.h
+--- a/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.h
++++ b/src/dev_ng/rage/3rdparty/portcullis/Client/pc/heartbeat/heartbeat.h
+@@ -2,7 +2,7 @@
+ // Heartbeat.h
+ // Jason Hughes
+ //-------------------
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ namespace Portcullis
+ {
+ 	// Call this at the beginning of the game, once.  See integration document for details per platform.

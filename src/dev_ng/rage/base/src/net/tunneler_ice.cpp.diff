@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/net/tunneler_ice.cpp b/src/dev_ng/rage/base/src/net/tunneler_ice.cpp
+--- a/src/dev_ng/rage/base/src/net/tunneler_ice.cpp
++++ b/src/dev_ng/rage/base/src/net/tunneler_ice.cpp
+@@ -14,7 +14,7 @@
+ #if ICE_TUNNELER_LEAN
+ #define WINDOWS_FIREWALL_API 0
+ #else
+-#define WINDOWS_FIREWALL_API (RSG_PC)
++#define WINDOWS_FIREWALL_API (RSG_PC && !RSG_LINUX)
+ #endif
+ 
+ #include "tunneler_ice.h"
+@@ -8285,7 +8285,7 @@ netIceSession::Report(const CompletionType completionType, const FailReason fail
+ 		SendDebugInfo(metricBuf);
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// if we're on a Strict NAT and failing the majority of our NAT traversals, tell the SCUI
+ 	// to display additional info in the Network Information UI on how to resolve (includes link to support article)
+ 

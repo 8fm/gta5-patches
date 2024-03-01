@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/rlachievement.cpp b/src/dev_ng/rage/base/src/rline/rlachievement.cpp
+--- a/src/dev_ng/rage/base/src/rline/rlachievement.cpp
++++ b/src/dev_ng/rage/base/src/rline/rlachievement.cpp
+@@ -617,7 +617,7 @@ rlAchievement::NativeWrite()
+ 											   m_WriteCommand->m_GamerIndex);
+ }
+ 
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 
+ rlAchievementInfoEx::AchievementType 
+ ConvertRgscTypeToRageType(rgsc::IAchievement::AchievementType rgscType)

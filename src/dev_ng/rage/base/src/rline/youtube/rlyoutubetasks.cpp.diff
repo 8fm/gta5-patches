@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/rline/youtube/rlyoutubetasks.cpp b/src/dev_ng/rage/base/src/rline/youtube/rlyoutubetasks.cpp
+--- a/src/dev_ng/rage/base/src/rline/youtube/rlyoutubetasks.cpp
++++ b/src/dev_ng/rage/base/src/rline/youtube/rlyoutubetasks.cpp
+@@ -23,7 +23,7 @@
+ #include "bank/bkmgr.h"
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #pragma warning(disable: 4668)
+ #include <windows.h>
+ #pragma warning(error: 4668)
