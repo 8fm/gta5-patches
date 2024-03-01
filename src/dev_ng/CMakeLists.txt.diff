@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
-@@ -0,0 +1,70 @@
+@@ -0,0 +1,68 @@
 +cmake_minimum_required(VERSION 3.18)
 +project(Fuzzy)
 +
@@ -21,9 +21,7 @@ new file mode 100644
 +set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_SOURCE_DIR}/bin/${GAME_CONFIG}-${ARCH_TYPE})
 +set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR}/bin/${GAME_CONFIG}-${ARCH_TYPE})
 +
-+if (WIN32)
-+    set(DIRECTX_INCLUDE_DIRS "$ENV{DXSDK_DIR}Include")
-+else()
++if (NOT WIN32)
 +    message("Using DXVK for D3D11 API")
 +
 +    include(ExternalProject)
