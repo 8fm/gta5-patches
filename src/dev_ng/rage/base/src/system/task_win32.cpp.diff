@@ -1,0 +1,53 @@
+diff --git a/src/dev_ng/rage/base/src/system/task_win32.cpp b/src/dev_ng/rage/base/src/system/task_win32.cpp
+--- a/src/dev_ng/rage/base/src/system/task_win32.cpp
++++ b/src/dev_ng/rage/base/src/system/task_win32.cpp
+@@ -7,10 +7,12 @@
+ 
+ #include "file/asset.h"
+ 
+-#if __WIN32 || __PSP2 || RSG_ORBIS
++#if __WIN32 || __PSP2 || RSG_ORBIS || __LINUX
+ 
+ #if __WIN32
+ #include "system/xtl.h"
++#elif __LINUX // header from DXVK
++#include <windows.h>
+ #endif
+ 
+ #include "atl/array.h"
+@@ -49,7 +51,7 @@ struct __sysTaskHandle
+ 	sysIpcEvent Completed;
+ };
+ 
+-#if __WIN32
++#if __WIN32 || __LINUX
+ static ULONG_PTR s_ProcessMask = 63;
+ #elif __PSP2
+ static u32 s_ProcessMask = 7;
+@@ -247,7 +249,7 @@ DECLARE_THREAD_FUNC(sysTaskScheduler::TaskWrapper)
+ 	}
+ }
+ 
+-#if __WIN32PC && !__TOOL
++#if __WIN32PC && !__TOOL && !__LINUX
+ typedef BOOL (WINAPI *LPFN_GLPI)(
+     PSYSTEM_LOGICAL_PROCESSOR_INFORMATION, 
+     PDWORD);
+@@ -430,7 +432,7 @@ void sysTaskManager::InitClass()
+ #if __TOOL
+ 	ULONG_PTR systemMask=0;
+ 	GetProcessAffinityMask(GetCurrentProcess(),&s_ProcessMask,&systemMask);
+-#else
++#elif !__LINUX
+ 	AssertVerify(GetProcessorInfo(sm_iProcessorPackages, sm_iProcessorCores, sm_iLogicalCores));
+  #if RSG_PC && !__RESOURCECOMPILER
+ 	if (!PARAM_disableHyperthreading.Get())
+@@ -652,7 +654,7 @@ int sysTaskManager::GetMaxTasks()
+ 
+ int sysTaskManager::GetNumThreads()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	#if __TOOL
+ 		return CountOnBits((u32)s_ProcessMask);
+ 	#else

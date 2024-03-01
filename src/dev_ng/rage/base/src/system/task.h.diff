@@ -1,6 +1,15 @@
 diff --git a/src/dev_ng/rage/base/src/system/task.h b/src/dev_ng/rage/base/src/system/task.h
 --- a/src/dev_ng/rage/base/src/system/task.h
 +++ b/src/dev_ng/rage/base/src/system/task.h
+@@ -112,7 +112,7 @@ public:
+ 	// PURPOSE:	Gets a task handle pointer
+ 	static __sysTaskHandle* AllocateTaskHandle();
+ 
+-#if __WIN32 || __PSP2 || RSG_ORBIS
++#if __WIN32 || __PSP2 || RSG_ORBIS || __LINUX
+ 	static void FreeTaskHandle(sysTaskHandle task);
+ #endif
+ 
 @@ -143,7 +143,7 @@ public:
  	
  	static void DispatchLocally( const sysPreparedTaskHandle& prepHdle);
