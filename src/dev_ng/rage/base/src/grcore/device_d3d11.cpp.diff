@@ -147,15 +147,6 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp b/src/dev_ng/rage/
  }
  #endif
  
-@@ -2644,7 +2656,7 @@ void grcDevice::UnlockContextNVStereo()
- }
- #endif
- 
--#if RSG_PC
-+#if RSG_PC && !RSG_LINUX
- void grcDevice::LockContextIfInitialized()
- {
- 	if (s_ContextLock) LockContext();
 @@ -2780,7 +2792,7 @@ bool grcDevice::BeginFrame()
  	if (GetSwapChain() != NULL && grcDevice::sm_pBackBuffer != NULL)
  	{
@@ -219,15 +210,40 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp b/src/dev_ng/rage/
  #if HANG_DETECT_THREAD
  	static bool bInSafeZone = false;
  
-@@ -6329,6 +6346,7 @@ bool grcDevice::ResizeBuffers(grcDisplayWindow oNewSettings)
- 	GetClientRect( g_hwndMain, &rcCurrentClient );
- 	pcdDisplayf("Window AFTER ResizeBuffers is left: %d, right: %d, top: %d, bottom: %d", rcCurrentClient.left, rcCurrentClient.right, rcCurrentClient.top, rcCurrentClient.bottom);
- 
+@@ -6141,6 +6158,7 @@ bool grcDevice::CheckForDeviceChanges()
+ 		bInSafeZone = false;
+ 	}
+ #endif // HANG_DETECT_THREAD
 +#endif // !RSG_LINUX
  	return true;
  }
  
-@@ -6927,7 +6945,7 @@ grcImage *grcDevice::CaptureScreenShot(grcImage* pImage)
+@@ -6245,7 +6263,9 @@ bool grcDevice::ResizeBuffers(grcDisplayWindow oNewSettings)
+ 	pcdDisplayf("SwapChain description BEFORE ResizeBuffers is Width: %d, Height: %d, RefreshRate %d//%d", oDesc.BufferDesc.Width, oDesc.BufferDesc.Height, oDesc.BufferDesc.RefreshRate.Numerator, oDesc.BufferDesc.RefreshRate.Denominator);
+ 
+ 	RECT rcCurrentClient;
++#if !RSG_LINUX
+ 	GetClientRect( g_hwndMain, &rcCurrentClient );
++#endif // !RSG_LINUX
+ 	pcdDisplayf("Window BEFORE ResizeBuffers is left: %d, right: %d, top: %d, bottom: %d", rcCurrentClient.left, rcCurrentClient.right, rcCurrentClient.top, rcCurrentClient.bottom);
+ 
+ 	/*
+@@ -6321,12 +6341,14 @@ bool grcDevice::ResizeBuffers(grcDisplayWindow oNewSettings)
+     SetInReset( false );
+     SetPaused( false );
+ 
++#if !RSG_LINUX
+ 	ShowWindow( g_hwndMain, SW_SHOW );
+ 
+ 	pSwapChain->GetDesc(&oDesc);
+ 	pcdDisplayf("SwapChain description AFTER ResizeBuffers is Width: %d, Height: %d, RefreshRate %d//%d", oDesc.BufferDesc.Width, oDesc.BufferDesc.Height, oDesc.BufferDesc.RefreshRate.Numerator, oDesc.BufferDesc.RefreshRate.Denominator);
+ 
+ 	GetClientRect( g_hwndMain, &rcCurrentClient );
++#endif // !RSG_LINUX
+ 	pcdDisplayf("Window AFTER ResizeBuffers is left: %d, right: %d, top: %d, bottom: %d", rcCurrentClient.left, rcCurrentClient.right, rcCurrentClient.top, rcCurrentClient.bottom);
+ 
+ 	return true;
+@@ -6927,7 +6949,7 @@ grcImage *grcDevice::CaptureScreenShot(grcImage* pImage)
  {
  	PIXBegin(0, "CaptureScreenShot");
  
@@ -236,7 +252,7 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp b/src/dev_ng/rage/
  	RECT screen, window;
  	GetWindowRect(GetDesktopWindow(),&screen);
  	GetClientRect(g_hwndMain,&window);
-@@ -6939,7 +6957,7 @@ grcImage *grcDevice::CaptureScreenShot(grcImage* pImage)
+@@ -6939,7 +6961,7 @@ grcImage *grcDevice::CaptureScreenShot(grcImage* pImage)
  	window.bottom += origin.y;
  	int width = window.right - window.left;
  	int height = window.bottom - window.top;
@@ -245,7 +261,7 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp b/src/dev_ng/rage/
  	int width = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uWidth;
  	int height = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uHeight;
  #else
-@@ -7122,13 +7140,13 @@ grcImage *grcDevice::EndTakeScreenShot()
+@@ -7122,13 +7144,13 @@ grcImage *grcDevice::EndTakeScreenShot()
  
  	grcImage *dest = NULL;
  
@@ -261,7 +277,7 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_d3d11.cpp b/src/dev_ng/rage/
  	int width = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uWidth;
  	int height = grcDevice::sm_CurrentWindows[g_RenderThreadIndex].uHeight;
  #endif
-@@ -7256,7 +7274,7 @@ void grcDevice::DeviceRestored() {
+@@ -7256,7 +7278,7 @@ void grcDevice::DeviceRestored() {
  }
  #endif
  

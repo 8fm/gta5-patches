@@ -23,3 +23,12 @@ diff --git a/src/dev_ng/rage/base/src/grcore/effect.h b/src/dev_ng/rage/base/src
  	static CacheNameMap sm_ShaderNameCache[ssCount];
  
  	static ShaderCacheStat sm_Stats[ssCount+1];
+@@ -2207,7 +2207,7 @@ public:
+ 	//			that a particular sampler state set hasn't changed.
+ 	// NOTES:	There should be no reason to call this directly, it's used internally
+ 	//			by other basic rage graphics components.
+-#if __WIN32
++#if __WIN32 || __LINUX
+ 	static void ClearCachedSamplerState();
+ #endif
+ 

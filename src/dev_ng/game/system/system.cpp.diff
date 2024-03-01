@@ -93,7 +93,7 @@ diff --git a/src/dev_ng/game/system/system.cpp b/src/dev_ng/game/system/system.c
  	// Our "native" windows are incompatible with render thread owning the D3D device.  Use RAG or local widgets.
  	bkWidget::DisableWindows();
  #endif
-@@ -678,7 +678,7 @@ bool CSystem::Init(const char* pAppName)
+@@ -678,13 +678,13 @@ bool CSystem::Init(const char* pAppName)
  		gRenderThreadInterface.Init(PRIO_RENDER_THREAD,RenderThreadInit);
  
  		CSystem::ClearThisThreadId(SYS_THREAD_RENDER); // this is no longer the render thread
@@ -102,3 +102,10 @@ diff --git a/src/dev_ng/game/system/system.cpp b/src/dev_ng/game/system/system.c
  		grcResourceCache::GetInstance().InitWidgets();
  #endif // __BANK
  
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	VideoResManager::Init();
+ 
+ 	if(!CHudTools::GetWideScreen())

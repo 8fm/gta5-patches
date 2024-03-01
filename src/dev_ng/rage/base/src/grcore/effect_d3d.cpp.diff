@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/grcore/effect_d3d.cpp b/src/dev_ng/rage/base/src/grcore/effect_d3d.cpp
+--- a/src/dev_ng/rage/base/src/grcore/effect_d3d.cpp
++++ b/src/dev_ng/rage/base/src/grcore/effect_d3d.cpp
+@@ -9,7 +9,7 @@
+ #include "channel.h"
+ #include "stateblock_internal.h"
+ 
+-#if __WIN32
++#if __WIN32 || __LINUX
+ 
+ #include "file/asset.h"
+ #include "file/device.h"
+@@ -75,7 +75,7 @@
+ 
+ namespace rage {
+ 
+-#if __WIN32
++#if __WIN32 || __LINUX
+ extern grcSamplerState *g_SamplerStates;
+ ID3D11SamplerState **g_SamplerStates11;
+ 

@@ -63,6 +63,22 @@ diff --git a/src/dev_ng/rage/base/src/grcore/device_win32.cpp b/src/dev_ng/rage/
  extern unsigned int g_grcDepthFormat;
  #endif
  
+@@ -271,13 +279,13 @@ volatile bool grcDevice::sm_HasFocus = true;
+ volatile u32 grcDevice::sm_KillSwitch = 0;
+ #endif
+ 
+-#if __WIN32
++#if __WIN32 || __LINUX
+ // Application window title.
+ static char s_WindowTitle[64];
+ 
+ void grcDevice::SetWindowTitle(const char *appName) {
+ 	safecpy(s_WindowTitle,appName,sizeof(s_WindowTitle));
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (g_hwndMain)	// Set title immediately if window is already up
+ 		::PostMessageA(g_hwndMain, WM_SETTEXT, 0, (LPARAM)appName);
+ #endif
 @@ -324,12 +332,14 @@ typedef HRESULT ( WINAPI* LPCREATEDXGIFACTORY )( REFIID, void** );
  typedef HRESULT ( WINAPI* LPDIRECTDRAWCREATE )( GUID FAR *lpGUID, LPDIRECTDRAW FAR *lplpDD, IUnknown FAR *pUnkOuter );
  #endif // (__SHADERMODEL < 40)
