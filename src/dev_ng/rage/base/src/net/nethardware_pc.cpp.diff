@@ -6,7 +6,61 @@ diff --git a/src/dev_ng/rage/base/src/net/nethardware_pc.cpp b/src/dev_ng/rage/b
  
  #include "file/file_config.h"
 -#if (RSG_PC || RSG_DURANGO)
-+#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
++#if RSG_PC || RSG_DURANGO
  
  #include "nethardware.h"
  #include "natdetector.h"
+@@ -24,11 +24,13 @@
+ #pragma comment(lib, "Rpcrt4.lib")
+ 
+ #define STRICT
++#if !RSG_LINUX
+ #pragma warning(push)
+ #pragma warning(disable: 4668)
+ #include <winsock2.h>
+ #include <ws2tcpip.h>
+ #pragma warning(pop)
++#endif // !RSG_LINUX
+ 
+ namespace rage
+ {
+@@ -138,7 +140,7 @@ netHardware::NativeGetMacAddress( u8 (&mac)[6])
+ {
+ 	bool success = false;
+ 
+-#if RSG_DURANGO
++#if RSG_DURANGO || RSG_LINUX
+ 	// MS has no plans to expose the MAC address on Durango as of November 2013:
+ 	// https://forums.xboxlive.com/AnswerPage.aspx?qid=436b2b41-5ff0-45cf-a7e1-516bd9eb88a3&tgt=1
+ 	memset(mac, 0, sizeof(mac));
+@@ -180,8 +182,10 @@ netHardware::NativeGetLocalIpAddress(netIpAddress* ip)
+ 
+ 	if(!netVerify(res == 0))
+ 	{
++#if !RSG_LINUX
+ 		netError("gethostname failed (returned %d). Host name: %s. LastError: %d. "
+ 				 "Attempting empty hostname...", res, myname, WSAGetLastError());
++#endif // !RSG_LINUX
+ 		memset(myname, 0, sizeof(myname));
+ 	}
+ 
+@@ -199,15 +203,19 @@ netHardware::NativeGetLocalIpAddress(netIpAddress* ip)
+ 	res = getaddrinfo(myname, NULL, &hints, &addrInfoList);
+ 	if(!netVerify(res == 0))
+ 	{
++#if !RSG_LINUX
+ 		netError("getaddrinfo failed (returned %d) with host name: %s. LastError: %d. "
+ 				 "Attempting empty hostname...", res, myname, WSAGetLastError());
++#endif // !RSG_LINUX
+ 		memset(myname, 0, sizeof(myname));
+ 		res = getaddrinfo(myname, NULL, &hints, &addrInfoList);
++#if !RSG_LINUX
+ 		if(!netVerify(res == 0))
+ 		{
+ 			netError("getaddrinfo failed (returned %d) with host name: %s. LastError: %d.",
+ 					 res, myname, WSAGetLastError());
+ 		}
++#endif // !RSG_LINUX
+ 	}
+ 
+ 	if(res == 0)
