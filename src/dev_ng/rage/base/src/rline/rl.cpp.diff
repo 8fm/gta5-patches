@@ -28,3 +28,25 @@ diff --git a/src/dev_ng/rage/base/src/rline/rl.cpp b/src/dev_ng/rage/base/src/rl
  		g_rlPc.Shutdown();
  #endif
  
+@@ -883,7 +883,11 @@ bool rlIsUsingStagingEnvironment()
+ {
+ #if RL_FORCE_ANY_ENVIRONMENT || RSG_OUTPUT
+ 	// PARAM_netUseStagingEnv can probably be removed but keeping it in as fallback for now.
+-	return s_IsStagingEnv WIN32PC_ONLY(|| PARAM_netUseStagingEnv.Get());
++#if __WIN32PC && !__LINUX
++	return s_IsStagingEnv || PARAM_netUseStagingEnv.Get();
++#else
++	return s_IsStagingEnv;
++#endif // __WIN32PC && !__LINUX
+ #else
+ 	return false;
+ #endif
+@@ -1421,7 +1425,7 @@ rlStagingEnvironmentInit(const char* OUTPUT_ONLY(stagingEnv), const char* /*rosE
+     PARAM_netpresencesecure.Set("true");
+     PARAM_rlsslnocert.Set("1");
+ 
+-#if RSG_PC
++#if RSG_PC && !__LINUX
+     PARAM_netUseStagingEnv.Set("true");
+ #endif
+ 

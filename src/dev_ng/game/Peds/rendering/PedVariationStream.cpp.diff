@@ -119,3 +119,12 @@ diff --git a/src/dev_ng/game/Peds/rendering/PedVariationStream.cpp b/src/dev_ng/
  #endif //__BANK
  
  AI_OPTIMISATIONS()
+@@ -1045,7 +1045,7 @@ bool CPedVariationStream::RequestStreamPedFilesInternal(CPed* pPed, CPedVariatio
+ 	// url:bugstar:3042656 - When the user has now ugc privileges locally he can't see any crew emblem
+ 	// if crewEmblemHidden is true we don't use drawblIdx to avoid to see a grayish block where the crew emblem would be
+ 	bool crewEmblemHidden =	!CLiveManager::CheckUserContentPrivileges()	&& !pNewVarData->GetOverrideCrewLogoTexHash() && !pNewVarData->GetOverrideCrewLogoTxdHash();
+-#if RSG_PC && __BANK
++#if RSG_PC && __BANK && !__LINUX
+ 	if(PARAM_noSocialClub.Get())
+ 	{	// disable above check when -nosocialclub param present: B*7128325 (PC: DECL components not rendering in-game)
+ 		crewEmblemHidden = false;

@@ -87,3 +87,15 @@ diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/
  void CGameSessionStateMachine::ProcessReInitState()
  {
  	// Grab the level from the reinit call
+@@ -724,9 +724,9 @@ void CGameSessionStateMachine::ProcessCheckSignInState()
+ #if defined(MASTER_NO_SCUI) || !__FINAL
+ #if defined(MASTER_NO_SCUI)
+ 	if (PARAM_noSocialClub.Get())
+-#elif !__FINAL && __WIN32PC
++#elif !__FINAL && __WIN32PC && !__LINUX
+ 	if(PARAM_noprofilesignin.Get() || PARAM_noSocialClub.Get() || PARAM_unattended.Get())
+-#elif !__FINAL && !__WIN32PC
++#elif !__FINAL && (!__WIN32PC || __LINUX)
+ 	if(PARAM_noprofilesignin.Get() || PARAM_unattended.Get())
+ #endif
+ 	{
