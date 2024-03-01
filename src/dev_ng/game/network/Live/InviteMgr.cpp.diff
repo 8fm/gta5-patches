@@ -26,3 +26,12 @@ diff --git a/src/dev_ng/game/network/Live/InviteMgr.cpp b/src/dev_ng/game/networ
  
  #include "event/EventGroup.h"
  #include "event/EventNetwork.h"
+@@ -3867,7 +3867,7 @@ void InviteMgr::SendInviteResponse(
+ 
+ bool InviteMgr::NotifyPlatformInviteAccepted(sAcceptedInvite* WIN32PC_ONLY(pInvite))
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	char sessionBuf[rlSessionInfo::TO_STRING_BUFFER_SIZE] = {0};
+ 	if (rlVerify(pInvite->GetSessionInfo().ToString(sessionBuf)))
+ 	{

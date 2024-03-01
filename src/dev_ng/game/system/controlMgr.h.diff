@@ -18,3 +18,12 @@ diff --git a/src/dev_ng/game/system/controlMgr.h b/src/dev_ng/game/system/contro
  #include "input/virtualkeyboard.h"
  #include "system/ipc.h"
  #include "system/criticalsection.h"
+@@ -396,7 +396,7 @@ inline void CControlMgr::SetShakeWhenControllerDisabled(bool bShake)
+ 	sm_bShakeWhenControllerDisabled = bShake;
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ inline void CControlMgr::ApplyDirectionalForce(float X, float Y, s32 timeMS, s32 controller)
+ {
+ 	m_controls[controller].ApplyDirectionalForce(X, Y, timeMS);

@@ -79,3 +79,21 @@ diff --git a/src/dev_ng/game/network/Live/NetworkTelemetry.cpp b/src/dev_ng/game
  #endif
  
  #if RSG_PC
+@@ -2471,7 +2471,7 @@ void CNetworkTelemetry::Init(unsigned initMode)
+ 
+ void  CNetworkTelemetry::SignedOnline()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// Queue up a posting of hardware stats
+ 	sm_bPostHardwareStats = true;
+ 
+@@ -5227,7 +5227,7 @@ void CNetworkTelemetry::SetAllowPCHardwareTelemetry(const bool allowPCHardwareTe
+ 	}
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ // PC hardware metrics aren't actually reported over telemetry any longer.
+ // Instead we write out a json file to the cloud for each player.
+ class MetricPC_SETTINGS_BASE : public MetricPlayStat

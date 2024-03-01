@@ -156,3 +156,68 @@ diff --git a/src/dev_ng/game/network/Network.cpp b/src/dev_ng/game/network/Netwo
  
  #include "frontend/UIWorldIcon.h"
  #include "frontend/GameStreamMgr.h"
+@@ -373,7 +373,7 @@ public:
+ 	}
+ };
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ NetworkExitFlow::NetworkExitFlow() 
+ 	: m_ExitToDesktopState(ETD_NONE)
+ 	, m_fromMP(false)
+@@ -728,7 +728,7 @@ CNetworkScratchpads&                CNetwork::sm_ScriptScratchpads(s_ScriptScrat
+ CRoamingBubbleMgr&                  CNetwork::sm_RoamingBubbleMgr(s_RoamingBubbleMgr);
+ CNetworkVoice&						CNetwork::sm_NetworkVoice(s_NetworkVoice);
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ CNetworkTextChat&					CNetwork::sm_NetworkTextChat(s_NetworkTextChat);
+ NetworkExitFlow						CNetwork::sm_ExitToDesktopFlow;
+ #endif
+@@ -1828,7 +1828,7 @@ CNetwork::Init(unsigned initMode)
+ 
+         ASSERT_ONLY(CQueriableInterface::ValidateTaskInfos());
+ 
+-        #if __WIN32PC
++		#if __WIN32PC && !__LINUX
+ 		sm_ExitToDesktopFlow.ResetExitFlowState();
+ 		#endif
+ 	}
+@@ -1900,7 +1900,9 @@ CNetwork::Shutdown(unsigned shutdownMode)
+ 
+         netLog::StopLoggingThread();
+ 
+-		WIN32PC_ONLY(sm_ExitToDesktopFlow.ResetExitFlowState());
++		#if __WIN32PC && !__LINUX
++		sm_ExitToDesktopFlow.ResetExitFlowState();
++		#endif
+     }
+ 	else if(shutdownMode == SHUTDOWN_CORE)
+ 	{
+@@ -2426,7 +2428,7 @@ CNetwork::Update(bool fromLoadingCode)
+                 }
+ 			}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 			sm_ExitToDesktopFlow.Update();
+ #endif // __WIN32PC
+ 
+@@ -3010,7 +3012,7 @@ void CNetwork::UpdateEventTriggerCounters()
+ 
+ void CNetwork::UpdateScuiHotkeys()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	CControl& control = CControlMgr::GetPlayerMappingControl();
+ 
+ 	// If the SCUI is disalbed for shutdown, do not attempt to show the UI.
+@@ -3544,7 +3546,7 @@ bool CNetwork::IsReadyToCheckNetworkAccess(const eNetworkAccessArea OUTPUT_ONLY(
+ 	}
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// On PC, wait for sign-in to complete.
+ 	if (g_rlPc.GetProfileManager()->IsSigningIn())
+ 	{

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/system/SystemInfo.h b/src/dev_ng/game/system/SystemInfo.h
+--- a/src/dev_ng/game/system/SystemInfo.h
++++ b/src/dev_ng/game/system/SystemInfo.h
+@@ -6,7 +6,7 @@
+ #ifndef _SYSTEMINFO_H_
+ #define _SYSTEMINFO_H_
+ 
+-#if __WIN32PC && !__TOOL && !__RESOURCECOMPILER
++#if __WIN32PC && !__TOOL && !__RESOURCECOMPILER && !__LINUX
+ 
+ #pragma warning(disable: 4668)
+ #include <windows.h>

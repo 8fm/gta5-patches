@@ -47,3 +47,57 @@ diff --git a/src/dev_ng/game/network/Voice/NetworkVoice.cpp b/src/dev_ng/game/ne
  #include "system/controlMgr.h"
  #endif // RSG_PC
  
+@@ -381,7 +381,7 @@ bool CNetworkVoice::InitCore(netConnectionManager* pCxnMgr)
+ 	m_VoicePolicies.m_OutboundBandwidthLimit = m_VoiceBandwidthLimit;
+ 	m_CxnMgr->SetChannelPolicies(NETWORK_VOICE_CHANNEL_ID, m_VoicePolicies);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// TOOD: NS - apply user's saved preferences
+ 	bool voiceChatEnabled = !PARAM_voiceDisabled.Get() && !PARAM_noaudiothread.Get();
+ 	bool talkingEnabled = true;
+@@ -417,7 +417,7 @@ void CNetworkVoice::ShutdownCore()
+ {
+ 	m_VoiceChat.Shutdown();
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// fixing network heap warnings by freeing our devices on shutdown
+ 	// these should perhaps be moved to core setup and initialization and allocated from the game heap
+ 	m_VoiceChat.FreeCaptureDevice();
+@@ -724,7 +724,7 @@ bool CNetworkVoice::IsEnabled() const
+ #endif // RSG_PC
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ bool CNetworkVoice::IsTalkEnabled() const
+ {
+ 	return !PARAM_voiceDisabled.Get() && !PARAM_noaudiothread.Get() && m_bTalkEnabled;
+@@ -772,7 +772,7 @@ void CNetworkVoice::Update()
+ 	// update voice chat
+ 	if(m_VoiceChat.IsInitialized())
+ 	{
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(m_VoiceChat.GetCaptureMode() == VoiceChat::CAPTURE_MODE_PUSH_TO_TALK)
+ 		{
+ 			// We treat Caps Lock as a toggle for Push to Talk
+@@ -2630,7 +2630,7 @@ void CNetworkVoice::UpdateVoiceStatus()
+ 
+ 	// grab and set these now - these will also be used to notify remote players about our local status
+ 	bool bHasHeadset = m_VoiceChat.HasHeadset(nLocalGamerIndex);
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	const bool bThruSpeakers = m_VoiceChat.IsPlaybackDeviceStarted();
+ #else
+ 	const bool bThruSpeakers = CProfileSettings::GetInstance().GetInt(CProfileSettings::VOICE_THRU_SPEAKERS) != 0;
+@@ -4591,7 +4591,7 @@ void CNetworkVoice::CheckAndAddPendingMutesForAutoMute()
+ 	m_PendingMutesForAutoMute = 0;
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void CNetworkVoice::AdjustSettings(const FrontendVoiceSettings settings)
+ {
+ 	const float FRONTEND_DIVISOR = 10.0f;

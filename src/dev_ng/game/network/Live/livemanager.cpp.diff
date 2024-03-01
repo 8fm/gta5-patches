@@ -1,7 +1,16 @@
 diff --git a/src/dev_ng/game/network/Live/livemanager.cpp b/src/dev_ng/game/network/Live/livemanager.cpp
 --- a/src/dev_ng/game/network/Live/livemanager.cpp
 +++ b/src/dev_ng/game/network/Live/livemanager.cpp
-@@ -58,36 +58,36 @@
+@@ -5,7 +5,7 @@
+ //
+ 
+ #include <algorithm>
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include <tchar.h>
+ #endif
+ 
+@@ -58,36 +58,35 @@
  #include "livep2pkeys.h"
  #include "frontend/CFriendsMenu.h"
  #include "frontend/Store/StoreScreenMgr.h"
@@ -37,7 +46,6 @@ diff --git a/src/dev_ng/game/network/Live/livemanager.cpp b/src/dev_ng/game/netw
 +#include "network/Sessions/NetworkVoiceSession.h"
 +#include "network/Live/NetworkClan.h"
 +#include "network/Live/PlayerCardDataManager.h"
-+#include "network/xlast/presenceutil.h"
 +#include "network/Live/NetworkProfileStats.h"
 +#include "network/Live/NetworkSCPresenceUtil.h"
 +#include "network/Shop/GameTransactionsSessionMgr.h"
@@ -63,7 +71,7 @@ diff --git a/src/dev_ng/game/network/Live/livemanager.cpp b/src/dev_ng/game/netw
  #endif
  
  // Game Headers
-@@ -98,17 +98,17 @@
+@@ -98,17 +97,17 @@
  #include "Peds/PlayerInfo.h"
  #include "SaveLoad/GenericGameStorage.h"
  #include "SaveLoad/savegame_autoload.h"
@@ -88,7 +96,7 @@ diff --git a/src/dev_ng/game/network/Live/livemanager.cpp b/src/dev_ng/game/netw
  #include "system/memvisualize.h"
  #include "system/EntitlementManager.h"
  #include "frontend/ProfileSettings.h"
-@@ -139,19 +139,19 @@ namespace rage
+@@ -139,19 +138,19 @@ namespace rage
  #include "frontend/TextInputBox.h"
  #endif // RSG_PC
  
@@ -114,3 +122,57 @@ diff --git a/src/dev_ng/game/network/Live/livemanager.cpp b/src/dev_ng/game/netw
  
  NETWORK_OPTIMISATIONS()
  
+@@ -467,7 +466,7 @@ bool CLiveManager::Init(const unsigned initMode)
+ #endif
+ 		s_RlineHeap       = rage_new u8[nRlineHeapSize];
+ 
+-#if !__FINAL && (RSG_PC || RSG_DURANGO)
++#if !__FINAL && (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ 		if(PARAM_rlineSparseAllocator.Get())
+ 		{
+ 			gnetDebug1("-rlineSparseAllocator enabled, using a sparse allocator for rline allocations");
+@@ -822,7 +821,7 @@ bool CLiveManager::Init(const unsigned initMode)
+ 		}
+ 
+ 		// Language needs to be set before rlInit
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		// -uilanguage can override the system language
+ 		int language = LANGUAGE_UNDEFINED;
+ 
+@@ -873,7 +872,7 @@ bool CLiveManager::Init(const unsigned initMode)
+ 		
+ 		rlInit(sm_RlineAllocator, sm_SocketMgr->GetMainSocket(), &titleId, MIN_AGE_RATING);
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		// PC Downloader Pipe
+ 		g_rlPc.ConnectDownloaderPipe("\\\\.\\pipe\\GTAVLauncher_Pipe");
+ #endif
+@@ -3040,7 +3039,7 @@ CLiveManager::ShowSigninUi(unsigned nSignInFlags)
+ {
+ 	gnetAssert(sm_IsInitialized);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (IsSignedIn())
+ 	{
+ 		gnetWarning("Attempting to show signin UI while already signed in");
+@@ -5887,7 +5886,7 @@ static void NetworkBank_GetFriendPage()
+ }
+ #endif
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ static void NetworkBank_PipeDownloadMessage()
+ {
+ 	g_rlPc.GetDownloaderPipe()->StartDownloadWithToken("TestPlatform", "TestMessage");
+@@ -6537,7 +6536,7 @@ CLiveManager::InitWidgets()
+ 			sysMemSet(s_AchLabels[i], 0, ACHIEVEMENT_LABEL);
+ 		}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		pBank->PushGroup("PC Pipe");
+ 		pBank->AddButton("DOWN: Message", datCallback(NetworkBank_PipeDownloadMessage));
+ 		pBank->AddText("Download URL", s_DownloadUrl, 511, false);

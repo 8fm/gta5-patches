@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/frontend/WarningScreen.h b/src/dev_ng/game/frontend
  #include "frontend/WarningScreenEnums.h"
  #include "Scaleform/ScaleFormMgr.h"
  
+@@ -61,7 +61,7 @@ enum eWarningButtonFlags : u64
+ 	// flag meaning don't process any sound
+ 	FE_WARNING_NOSOUND	= BIT(30),
+ 
+-	FE_WARNING_EXIT		= BIT(31),
++	FE_WARNING_EXIT		= BIT_64(31),
+ 	FE_WARNING_NO_ON_X	= BIT_64(32),
+ 	
+ 	// Custom script stuff

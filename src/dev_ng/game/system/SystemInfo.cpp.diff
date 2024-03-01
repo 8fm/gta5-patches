@@ -1,0 +1,27 @@
+diff --git a/src/dev_ng/game/system/SystemInfo.cpp b/src/dev_ng/game/system/SystemInfo.cpp
+--- a/src/dev_ng/game/system/SystemInfo.cpp
++++ b/src/dev_ng/game/system/SystemInfo.cpp
+@@ -1,4 +1,4 @@
+-#if __WIN32PC && !__TOOL && !__RESOURCECOMPILER
++#if __WIN32PC && !__TOOL && !__RESOURCECOMPILER && !__LINUX
+ 
+ #include "system/SystemInfo.h"
+ #include "grcore/d3dwrapper.h"
+@@ -759,7 +759,7 @@ bool CSystemInfo::GetWindowsVersion(char* pszRawOS, char* pszOS, int bufferCount
+ 					The GetVersionEx() Windows API reports that the OS is Windows 8 when running Windows 10, so we cannot
+ 					differentiate between Windows 8 and Windows 10 from the API.
+ 
+-					“Applications not manifested for Windows 8.1 or Windows 10 will return the Windows 8 OS version value (6.2).”
++					"Applications not manifested for Windows 8.1 or Windows 10 will return the Windows 8 OS version value (6.2)."
+ 					- https://msdn.microsoft.com/en-us/library/windows/desktop/ms724451(v=vs.85).aspx
+ 
+ 					As a kludge, attempt to load d3d12.dll and if it succeeds, assume we're running Windows 10 (or higher).
+@@ -920,7 +920,7 @@ bool CSystemInfo::GetShortWindowsVersion(char* pszOS, int bufferCount)
+ 					The GetVersionEx() Windows API reports that the OS is Windows 8 when running Windows 10, so we cannot
+ 					differentiate between Windows 8 and Windows 10 from the API.
+ 
+-					“Applications not manifested for Windows 8.1 or Windows 10 will return the Windows 8 OS version value (6.2).”
++					"Applications not manifested for Windows 8.1 or Windows 10 will return the Windows 8 OS version value (6.2)."
+ 					- https://msdn.microsoft.com/en-us/library/windows/desktop/ms724451(v=vs.85).aspx
+ 
+ 					As a kludge, attempt to load d3d12.dll and if it succeeds, assume we're running Windows 10 (or higher).

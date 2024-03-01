@@ -21,3 +21,12 @@ diff --git a/src/dev_ng/game/security/ragesecgameinterface.h b/src/dev_ng/game/s
  #endif
  
  RAGE_DECLARE_CHANNEL(rageSecGame)
+@@ -139,7 +139,7 @@ void RageSecPopReaction();
+ extern inline void RageSecPopReaction();
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ HMODULE GetCurrentModule();
+ #endif
+ 
