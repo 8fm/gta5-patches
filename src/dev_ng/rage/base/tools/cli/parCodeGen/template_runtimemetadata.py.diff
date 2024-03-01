@@ -15,6 +15,21 @@ diff --git a/src/dev_ng/rage/base/tools/cli/parCodeGen/template_runtimemetadata.
  
          self.WriteString('''
  /*XML
+@@ -353,12 +353,12 @@ void %(CppType)s::parser_Register() {
+                             self.WriteString('''
+     CompileTimeAssert( (''')
+                             i.WriteAddress(self.CppType)
+-                            self.WriteString(''') <= 0x%(:paddedOffset)x); // If this fails, what you claim is the first member var actually isn't.''', paddedOffset=startOffsetWithMaxPadding)
++                            self.WriteString(''') <= 0x%(:paddedOffset)x); // If this fails, what you claim is the first member var actually isn't.''', paddedOffset=int(startOffsetWithMaxPadding))
+                         else:
+                             self.WriteString('''
+     CompileTimeAssert( (''')
+                             i.WriteAddress(self.CppType)
+-                            self.WriteString(''') == 0x%(:startOffset)x ); // If this fails, what you claim is the first member var actually isn't.''', startOffset=startOffset)
++                            self.WriteString(''') == 0x%(:startOffset)x ); // If this fails, what you claim is the first member var actually isn't.''', startOffset=int(startOffset))
+             lastMember = i
+             
+         self.WriteString('''
 @@ -410,7 +410,7 @@ void %(CppType)s::parser_Register() {
          self.WriteString('''
      newStructure = ::rage::parCguStructure::CreateExtraAttributes(newStructure);
