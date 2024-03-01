@@ -1,0 +1,20 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/voicechat.h b/src/dev_ng/rage/suite/src/avchat/voicechat.h
+--- a/src/dev_ng/rage/suite/src/avchat/voicechat.h
++++ b/src/dev_ng/rage/suite/src/avchat/voicechat.h
+@@ -1023,6 +1023,16 @@ public:
+     unsigned GetHeadsetPort() const { return m_HeadsetPort; }
+ #endif
+ 
++#elif RSG_LINUX
++public:
++	enum CaptureMode
++	{
++		CAPTURE_MODE_VOICE_ACTIVATED,
++		CAPTURE_MODE_PUSH_TO_TALK,
++		NUM_CAPTURE_MODES
++	};
++private:
++	volatile bool m_IsVoiceTestMode;
+ #elif RSG_PC
+ public:
+ 	static const int MAX_DEVICES = 64;

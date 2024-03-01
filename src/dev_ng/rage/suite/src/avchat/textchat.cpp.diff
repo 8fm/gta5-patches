@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/avchat/textchat.cpp b/src/dev_ng/rage/suite/src/avchat/textchat.cpp
+--- a/src/dev_ng/rage/suite/src/avchat/textchat.cpp
++++ b/src/dev_ng/rage/suite/src/avchat/textchat.cpp
+@@ -433,7 +433,7 @@ TextChat::IsAnyTyping() const
+ bool
+ TextChat::IsMuted(const rlGamerHandle& WIN32PC_ONLY(hGamer)) const
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	return g_rlPc.GetPlayerManager()->IsBlocked(hGamer.GetRockstarId());
+ #else
+     return false;

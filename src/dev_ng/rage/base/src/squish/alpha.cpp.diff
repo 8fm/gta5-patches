@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/squish/alpha.cpp b/src/dev_ng/rage/base/src/squish/alpha.cpp
+--- a/src/dev_ng/rage/base/src/squish/alpha.cpp
++++ b/src/dev_ng/rage/base/src/squish/alpha.cpp
+@@ -25,6 +25,7 @@
+    
+ #include "alpha.h"
+ #include <algorithm>
++#include <climits>
+ 
+ namespace squish {
+ 

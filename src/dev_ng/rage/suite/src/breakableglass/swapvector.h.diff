@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/breakableglass/swapvector.h b/src/dev_ng/rage/suite/src/breakableglass/swapvector.h
+--- a/src/dev_ng/rage/suite/src/breakableglass/swapvector.h
++++ b/src/dev_ng/rage/suite/src/breakableglass/swapvector.h
+@@ -3,7 +3,7 @@
+ 
+ #include <algorithm>
+ #include <vector>
+-#include "system\stl_wrapper.h"
++#include "system/stl_wrapper.h"
+ 
+ namespace rage
+ {

@@ -2,13 +2,17 @@ diff --git a/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt b/src/dev_ng/gam
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/game/VS_Project/RageMisc/CMakeLists.txt
-@@ -0,0 +1,79 @@
+@@ -0,0 +1,83 @@
 +project(RageMisc)
 +
 +set(TARGET_TYPE "StaticLib")
 +include(${CMAKE_SOURCE_DIR}/cmake/BuildOptions.cmake)
 +
 +add_definitions(-DHAVE_CONFIG_H=__XENON -DOVERRIDE_SPEEX_ERROR=1 -DOVERRIDE_SPEEX_WARNING_INT=1 -DOVERRIDE_SPEEX_WARNING=1)
++if(NOT MSVC)
++    add_definitions(-Dlinux -DSS_LEFT=0x00000000L -DSS_NOPREFIX=0x00000080L)
++    remove_definitions(-DWIN64) # RageMisc don't need WIN64 define in Linux
++endif()
 +
 +set(SRC_FILES
 +    "_Unity/_unity_RageMisc_scaleform_scr_scaleform.cpp"
@@ -63,7 +67,7 @@ new file mode 100644
 +add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
 +
 +target_include_directories(${PROJECT_NAME} PRIVATE
-+    "$ENV{DXSDK_DIR}Include"
++    ${DIRECTX_INCLUDE_DIRS}
 +    ${CMAKE_SOURCE_DIR}../../rage/3rdparty/dev/cli/libxml2-2.7.6/include
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/AMD/AMD_ShadowFX/amd_lib/shared/common/inc
 +    ${CMAKE_SOURCE_DIR}/rage/3rdparty/Scaleform/Include

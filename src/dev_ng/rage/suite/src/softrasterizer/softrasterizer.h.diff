@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h b/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h
+--- a/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h
++++ b/src/dev_ng/rage/suite/src/softrasterizer/softrasterizer.h
+@@ -20,7 +20,7 @@
+ #include "softrasterizer/tiler.h"
+ 
+ #if __BANK
+-#include "vector\color32.h"
++#include "vector/color32.h"
+ #endif
+ namespace rage {
+ 
