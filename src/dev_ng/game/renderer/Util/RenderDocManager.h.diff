@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/game/renderer/Util/RenderDocManager.h b/src/dev_ng/game/renderer/Util/RenderDocManager.h
+--- a/src/dev_ng/game/renderer/Util/RenderDocManager.h
++++ b/src/dev_ng/game/renderer/Util/RenderDocManager.h
+@@ -1,7 +1,7 @@
+ #ifndef RENDERDOC_MANAGER_H_
+ #define RENDERDOC_MANAGER_H_
+ 
+-#define RENDERDOC_ENABLED (1 && RSG_PC && !__FINAL)
++#define RENDERDOC_ENABLED (1 && RSG_PC && !__FINAL && !RSG_LINUX)
+ 
+ #if RENDERDOC_ENABLED
+ 

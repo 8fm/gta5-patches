@@ -45,3 +45,12 @@ diff --git a/src/dev_ng/game/renderer/PostScan.cpp b/src/dev_ng/game/renderer/Po
  #include "renderer/Lights/LightEntity.h"
  #include "renderer/Lights/LODLights.h"
  #include "renderer/renderListGroup.h"
+@@ -548,7 +548,7 @@ void CPostScan::ProcessPvsWhileScanning()
+ 				PF_PUSH_TIMEBAR("Wait for more PVS Entries2");
+ 				do 
+ 				{
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 					WaitForSingleObject(g_scanTasksReady, 1);
+ #else
+ 					sysIpcSleep(0);

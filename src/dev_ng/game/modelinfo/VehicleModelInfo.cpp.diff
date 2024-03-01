@@ -106,3 +106,21 @@ diff --git a/src/dev_ng/game/modelinfo/VehicleModelInfo.cpp b/src/dev_ng/game/mo
  
  #if __BANK
  #include "grcore/debugdraw.h"
+@@ -2692,7 +2692,7 @@ void CVehicleModelInfo::RequestDials(const sVehicleDashboardData& params)
+ 						CScaleformMgr::AddParamString(""); // tuning
+ 						CScaleformMgr::AddParamString(FILTER_UNKNOWN(stationStr));
+ 
+-	#if RSG_PC
++	#if RSG_PC && !RSG_LINUX
+ 						if(isUserTrack)
+ 						{
+ 							CScaleformMgr::AddParamString(audRadioStation::GetUserRadioTrackManager()->GetTrackArtist(audRadioTrack::GetUserTrackIndexFromTextId(trackId)));
+@@ -2703,7 +2703,7 @@ void CVehicleModelInfo::RequestDials(const sVehicleDashboardData& params)
+ 	#endif		
+ 						CScaleformMgr::AddParamString(FILTER_UNKNOWN(artistStr));
+ 						CScaleformMgr::AddParamString(FILTER_UNKNOWN(trackStr));
+-	#if RSG_PC
++	#if RSG_PC && !RSG_LINUX
+ 						}
+ 	#endif // RSG_PC
+ 						CScaleformMgr::EndMethod();

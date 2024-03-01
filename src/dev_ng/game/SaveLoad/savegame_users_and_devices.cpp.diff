@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/SaveLoad/savegame_users_and_devices.cpp b/src/dev_n
  #include "SaveLoad/GenericGameStorage.h"
  #include "SaveLoad/savegame_users_and_devices.h"
  
+@@ -94,7 +94,7 @@ void CSavegameUsers::Init(unsigned initMode)
+ 
+ bool CSavegameUsers::GetSignedInUser()
+ {
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 	if (g_rlPc.IsInitialized() &&
+ 		g_rlPc.GetProfileManager()->IsSignedIn())
+ 	{
