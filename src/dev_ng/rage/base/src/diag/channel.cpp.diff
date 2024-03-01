@@ -1,0 +1,62 @@
+diff --git a/src/dev_ng/rage/base/src/diag/channel.cpp b/src/dev_ng/rage/base/src/diag/channel.cpp
+--- a/src/dev_ng/rage/base/src/diag/channel.cpp
++++ b/src/dev_ng/rage/base/src/diag/channel.cpp
+@@ -129,7 +129,7 @@ void diagTerminate()
+ 		__debugbreak();
+ 	}
+ 
+-#if RSG_PS3 || RSG_ORBIS
++#if RSG_PS3 || RSG_ORBIS || RSG_LINUX
+ 	_Exit(1);
+ #elif __XENON
+ 	XLaunchNewImage( XLAUNCH_KEYWORD_DEFAULT_APP, 0 );
+@@ -147,7 +147,7 @@ void diagTerminate()
+ 
+ void diagTerminate(rage::FatalErrorCode WIN32PC_ONLY(errorCode), bool WIN32PC_ONLY(silent))
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (rage::diagErrorCodes::IsErrorCodeValid(errorCode) || !rage::diagErrorCodes::IsErrorCodesLoaded())
+ 	{
+ 		const size_t TITLE_STRING_LENGTH = 256;
+@@ -553,10 +553,10 @@ static __THREAD bool s_DontDoDiagPrintCallback = false;
+ 
+ static void NativeOutputString(const char *str)
+ {
+-	#if RSG_PC || RSG_DURANGO
+-		OutputDebugString(str);
+-	#elif RSG_ORBIS
++	#if RSG_ORBIS || RSG_LINUX
+ 		printf("%s", str);
++	#elif RSG_PC || RSG_DURANGO
++		OutputDebugString(str);
+ 	#else
+ 		#error Unhandled platform
+ 	#endif
+@@ -1394,7 +1394,7 @@ u64 diagChannel::GetPosixTime()
+ static sysCriticalSectionToken printToken;
+ #endif
+ 
+-#if __WIN32 || RSG_ORBIS
++#if __WIN32 || RSG_ORBIS || RSG_LINUX
+ static size_t StripColorization(char *dest,size_t destSize,const char *src)
+ {
+ 	char *d = dest;
+@@ -1422,7 +1422,7 @@ static size_t StripColorization(char *dest,size_t destSize,const char *src)
+ 
+ void diagPrintDefault(const char *msg)
+ {
+-#if __WIN32PC
++#if __WIN32PC && !RSG_LINUX
+ 
+ 	// All escape sequences used at start of line are five characters long.
+ 	char temp[CHANNEL_MESSAGE_SIZE];
+@@ -1493,7 +1493,7 @@ void diagPrintDefault(const char *msg)
+ 	/* 0=PPU, 1=PPU stderr, 2=SPU, 3=USER1, 4=USER2, ... 15=USER13 */
+ 	int channel = (msg[0]=='[' && msg[1]=='S' && msg[2]=='P' && msg[3]=='U' && msg[5]==']')? SYS_TTYP2 : SYS_TTYP0;
+ 	sys_tty_write(channel,msg,strlen(msg),&pWriteLen);
+-#elif __PSP2 || RSG_ORBIS
++#elif __PSP2 || RSG_ORBIS || RSG_LINUX
+ 	/// for now...
+ 	char temp[CHANNEL_MESSAGE_SIZE];
+ 	size_t len = StripColorization(temp,sizeof(temp),msg);

@@ -1,0 +1,48 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bank.cpp b/src/dev_ng/rage/base/src/bank/bank.cpp
+--- a/src/dev_ng/rage/base/src/bank/bank.cpp
++++ b/src/dev_ng/rage/base/src/bank/bank.cpp
+@@ -185,7 +185,7 @@ void bkBank::Truncate(int newCount) {
+ 
+ 
+ void bkBank::GetState(bool &WIN32PC_ONLY(shown),int &WIN32PC_ONLY(x),int &WIN32PC_ONLY(y),int &WIN32PC_ONLY(width),int &WIN32PC_ONLY(height)) { 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (m_Pane)
+ 		m_Pane->GetState(shown,x,y,width,height);
+ #endif
+@@ -193,7 +193,7 @@ void bkBank::GetState(bool &WIN32PC_ONLY(shown),int &WIN32PC_ONLY(x),int &WIN32P
+ 
+ 
+ void bkBank::SetState(bool WIN32PC_ONLY(shown),int WIN32PC_ONLY(x),int WIN32PC_ONLY(y),int WIN32PC_ONLY(width),int WIN32PC_ONLY(height)) {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (m_Pane)
+ 		m_Pane->SetState(shown,x,y,width,height);
+ #endif
+@@ -263,7 +263,7 @@ void bkBank::CheckThread(const char* funcName, const char* groupName)
+ }
+ #endif // __ASSERT
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ XPARAM(bankx);
+ XPARAM(banky);
+ void bkBank::WindowCreate() {
+@@ -314,7 +314,7 @@ bkPane* bkBank::GetPane() {
+ 
+ 
+ void bkBank::Show() {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (m_Pane)
+ 		ShowWindow(m_Pane->GetOuterHandle(),SW_NORMAL);
+ #endif
+@@ -323,7 +323,7 @@ void bkBank::Show() {
+ 
+ 
+ void bkBank::Hide() {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if (m_Pane)
+ 		ShowWindow(m_Pane->GetOuterHandle(),SW_HIDE);
+ #endif

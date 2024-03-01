@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/wndproc.cpp b/src/dev_ng/rage/base/src/system/wndproc.cpp
+--- a/src/dev_ng/rage/base/src/system/wndproc.cpp
++++ b/src/dev_ng/rage/base/src/system/wndproc.cpp
+@@ -6,7 +6,7 @@
+ 
+ #include "wndproc.h"
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ rage::rageLRESULT (__stdcall *rage::g_WindowProc)(struct HWND__ *,rage::rageUINT,rage::rageWPARAM,rage::rageLPARAM) = DefWindowProcW;
+ #endif

@@ -1,0 +1,57 @@
+diff --git a/src/dev_ng/rage/base/src/system/stack.cpp b/src/dev_ng/rage/base/src/system/stack.cpp
+--- a/src/dev_ng/rage/base/src/system/stack.cpp
++++ b/src/dev_ng/rage/base/src/system/stack.cpp
+@@ -45,7 +45,7 @@
+ #if __XENON
+ #	include "xtl.h"
+ #	include <xbdm.h>
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ #	include "xtl.h"
+ #	include <DbgHelp.h>
+ #	pragma comment(lib,"dbghelp")
+@@ -278,7 +278,7 @@ void sysStack::InitClass(const char *argv0) {
+ 	OpenSymbolFile();
+ 	CloseSymbolFile();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// In case the code below fails, these values should work if we loaded
+ 	// at our preferred address.
+ 	s_SymbolActualLoadAddress = 0;
+@@ -324,7 +324,7 @@ u32 sysStack::ParseMapFileSymbol(char *dest,int destSize,size_t lookupAddr,bool
+ 		// On PC, we hopefully know the range of addresses where the executable loaded.
+ 		// If within that range, here we remap the lookup address to an address in the
+ 		// map file.
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		if(runningProcess)
+ 		{
+ 			if(lookupAddr >= s_SymbolActualLoadAddress && lookupAddr < s_SymbolActualLoadAddress + s_SymbolExecutableSize)
+@@ -404,7 +404,7 @@ void sysStack::PrintCapturedStackTrace(const size_t *trace, int entries, void (*
+ 
+ 	s_IsPrintingStackTrace = true;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// Use the dbghelp library for symbol lookup on PC, since it's able to resolve symbols in DLLs
+ 	HANDLE process = GetCurrentProcess();
+ 	static char symbolBuff[sizeof(SYMBOL_INFO) + 256]; // SYMBOL_INFO + symbol name
+@@ -489,7 +489,7 @@ void sysStack::CaptureStackTrace(size_t* pDest, u32 destCount, u32 ignoreLevels
+ 	sceKernelBacktrace(SCE_KERNEL_BACKTRACE_CONTEXT_CURRENT, trace, numBytes, &numReturn, SCE_KERNEL_BACKTRACE_MODE_USER);
+ 	for (u32 i=0; i<destCount; i++)
+ 		pDest[i] = trace[i + ignoreLevels].pc;
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ 	memset(pDest, 0, destCount * sizeof(size_t));
+ 	CaptureStackBackTrace(ignoreLevels, destCount, (PVOID*)pDest, NULL);
+ #elif RSG_DURANGO
+@@ -529,7 +529,7 @@ void sysStack::CaptureStackTrace(size_t* pDest, u32 destCount, u32 ignoreLevels
+ #endif
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ void sysStack::PrintStackTraceAllThreads(void (*DisplayFn)(size_t,const char*,size_t))
+ {
+ 	// Get a handle to each thread in this process apart from this one

@@ -1,0 +1,57 @@
+diff --git a/src/dev_ng/rage/base/src/profile/event_tracer.cpp b/src/dev_ng/rage/base/src/profile/event_tracer.cpp
+--- a/src/dev_ng/rage/base/src/profile/event_tracer.cpp
++++ b/src/dev_ng/rage/base/src/profile/event_tracer.cpp
+@@ -23,7 +23,7 @@ PARAM(rockySamplingFrequency, "[Rocky] Overrides Rocky auto-sampling frequency (
+ #endif
+ #endif
+ 
+-#if (RSG_PC || RSG_XBOX)
++#if (RSG_PC || RSG_XBOX) && !RSG_LINUX
+ 
+ // PURPOSE: Allows to limit events only to the currently active list of threads.
+ //			Disabled by default due to expensive hash_map search for each event.
+@@ -76,7 +76,7 @@ namespace Profiler
+ 		EtwSession* etwSession;
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		void AdjustPrivileges();
+ #endif
+ 
+@@ -422,14 +422,14 @@ namespace Profiler
+ #if RSG_LINUX
+ 	struct PIDCache
+ 	{
+-		atSet<u32> m_Cache;
++		std::set<u32> m_Cache;
+ 		void Reset()
+ 		{
+-			m_Cache.Reset();
++			m_Cache.clear();
+ 		}
+ 		bool Add(u32 pid)
+ 		{
+-			return m_Cache.Insert(pid);
++			return m_Cache.insert(pid).second;
+ 		}
+ 	};
+ 	PIDCache g_pidCache;
+@@ -850,7 +850,7 @@ void GetHWCounters(rage::u64 counters[ROCKY_HARDWARE_EVENT_COUNT])
+ #endif
+ }
+ 
+-#if (RSG_PC)
++#if (RSG_PC && !RSG_LINUX)
+ void EventTracerProcessor::AdjustPrivileges()
+ {
+ 	// No privilege? Ok, let's add the privilege!
+@@ -884,7 +884,7 @@ EventTracer::Status EventTracerProcessor::Start(EventTracer::Mode mode)
+ 		USE_ROCKY_MEMORY;
+ 		bool needToCreateWorkerThread = false;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		AdjustPrivileges();
+ #endif
+ 

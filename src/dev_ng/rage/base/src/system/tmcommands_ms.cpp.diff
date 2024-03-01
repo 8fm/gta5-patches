@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/tmcommands_ms.cpp b/src/dev_ng/rage/base/src/system/tmcommands_ms.cpp
+--- a/src/dev_ng/rage/base/src/system/tmcommands_ms.cpp
++++ b/src/dev_ng/rage/base/src/system/tmcommands_ms.cpp
+@@ -46,7 +46,7 @@
+ //------------------------------------------------------------------------------
+ //
+ 
+-#if RSG_DURANGO || RSG_PC
++#if (RSG_DURANGO || RSG_PC) && !RSG_LINUX
+ 
+ // Kludge to get the SYSTMCMD_ENABLE define out of the tmcommands.h header
+ // without getting anything else.

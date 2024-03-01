@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/event/editorwidget.cpp b/src/dev_ng/rage/suite/src/event/editorwidget.cpp
+--- a/src/dev_ng/rage/suite/src/event/editorwidget.cpp
++++ b/src/dev_ng/rage/suite/src/event/editorwidget.cpp
+@@ -211,7 +211,7 @@ void evtEditorWidget::RemoteUpdate() {
+ 	//p.Send();
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void evtEditorWidget::WindowCreate() 

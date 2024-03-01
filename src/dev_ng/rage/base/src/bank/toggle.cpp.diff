@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/toggle.cpp b/src/dev_ng/rage/base/src/bank/toggle.cpp
+--- a/src/dev_ng/rage/base/src/bank/toggle.cpp
++++ b/src/dev_ng/rage/base/src/bank/toggle.cpp
+@@ -34,7 +34,7 @@ void bkToggle::SetStringRepr( const char *buf )
+     SetBool( (buf != NULL) && (strlen( buf ) > 0) && (buf[0] != '0') && (stricmp( buf, "f" ) != 0) && (stricmp( buf, "false" ) != 0) );    
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void bkToggle::WindowCreate() {

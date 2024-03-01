@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/system/tmcommands.cpp b/src/dev_ng/rage/base/src/system/tmcommands.cpp
+--- a/src/dev_ng/rage/base/src/system/tmcommands.cpp
++++ b/src/dev_ng/rage/base/src/system/tmcommands.cpp
+@@ -29,6 +29,9 @@
+ 
+ #if RSG_XENON
+ #	include "xbdm.h"
++#elif RSG_LINUX
++#	include <unistd.h>
++#	define GetCurrentProcessId getpid
+ #endif
+ 
+ #if !REDIRECT_TTY

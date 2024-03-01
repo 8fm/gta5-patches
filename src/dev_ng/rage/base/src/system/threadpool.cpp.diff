@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/system/threadpool.cpp b/src/dev_ng/rage/base/src/system/threadpool.cpp
+--- a/src/dev_ng/rage/base/src/system/threadpool.cpp
++++ b/src/dev_ng/rage/base/src/system/threadpool.cpp
+@@ -7,7 +7,7 @@
+ #include "threadpool.h"
+ #include "file/file_config.h"
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #pragma warning(disable: 4668)
+ #include <windows.h>
+ #pragma warning(error: 4668)
+@@ -64,7 +64,7 @@ sysThreadPool::Thread::Stopped() const
+ bool
+ 	sysThreadPool::Thread::IsAlive() const
+ {
+-	#if RSG_PC || RSG_DURANGO 
++	#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ 	return WaitForSingleObject(m_ThreadId, 0) != WAIT_OBJECT_0;
+ 	#else
+ 	//TODO: Figure out how to check live-ality for PS4 threads.

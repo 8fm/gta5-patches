@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/system/bootmgr_win32.cpp b/src/dev_ng/rage/base/src/system/bootmgr_win32.cpp
+--- a/src/dev_ng/rage/base/src/system/bootmgr_win32.cpp
++++ b/src/dev_ng/rage/base/src/system/bootmgr_win32.cpp
+@@ -40,7 +40,11 @@ bool sysBootManager::IsDebuggerPresent()
+ #if RSG_PC && SYSTMCMD_ENABLE
+ 	if (PARAM_rockstartargetmanager.Get()) return false;
+ #endif
++#if RSG_LINUX
++	return false;
++#else
+ 	return ::IsDebuggerPresent()?true:false;
++#endif
+ }
+ 
+ bool sysBootManager::IsDevkit() {

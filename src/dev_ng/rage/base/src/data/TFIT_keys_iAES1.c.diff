@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/data/TFIT_keys_iAES1.c b/src/dev_ng/rage/base/src/data/TFIT_keys_iAES1.c
+--- a/src/dev_ng/rage/base/src/data/TFIT_keys_iAES1.c
++++ b/src/dev_ng/rage/base/src/data/TFIT_keys_iAES1.c
+@@ -1,7 +1,7 @@
+ #ifndef _INTPTR
+ #define _INTPTR 1
+ #endif
+-#include "..\file\file_config.h"
++#include "../file/file_config.h"
+ 
+ #if RSG_CPU_X86 || RSG_CPU_X64  || __RESOURCECOMPILER
+ #if RSG_PC && !__RGSC_DLL

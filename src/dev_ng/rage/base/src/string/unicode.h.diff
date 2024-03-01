@@ -1,7 +1,17 @@
 diff --git a/src/dev_ng/rage/base/src/string/unicode.h b/src/dev_ng/rage/base/src/string/unicode.h
 --- a/src/dev_ng/rage/base/src/string/unicode.h
 +++ b/src/dev_ng/rage/base/src/string/unicode.h
-@@ -204,7 +204,9 @@ namespace rage
+@@ -38,7 +38,9 @@ namespace rage
+ 	inline int					wcsncmp(const rage::char16* a, const rage::char16* b, size_t count) {return ::wcsncmp(_TO_CW(a), _TO_CW(b), count);}
+ 	inline const rage::char16*	wcschr(const rage::char16* a, rage::char16 b) {return _TO_CC16(::wcschr(_TO_CW(a), static_cast<wchar_t>(b)));}
+ 	inline rage::char16*		wcschr(rage::char16* a, rage::char16 b) {return _TO_C16(::wcschr(_TO_W(a), static_cast<wchar_t>(b)));}
++#if __WIN32
+ 	inline long					wcstol(const rage::char16* a, rage::char16** b, int base) {return ::wcstol(_TO_CW(a), reinterpret_cast<wchar_t**>(b), base);}
++#endif
+ 	inline const rage::char16*	wcsstr(const rage::char16* a, const rage::char16* b) {return _TO_CC16(::wcsstr(_TO_CW(a), _TO_CW(b)));}
+ 
+ 	namespace rage
+@@ -204,7 +206,9 @@ namespace rage
  	}
  
  	// If this assert ever fails, we need to define our own versions of wcscmp, wcslen, etc. that work with char16s

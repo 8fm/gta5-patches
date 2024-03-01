@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/data.h b/src/dev_ng/rage/base/src/bank/data.h
+--- a/src/dev_ng/rage/base/src/bank/data.h
++++ b/src/dev_ng/rage/base/src/bank/data.h
+@@ -25,7 +25,7 @@ protected:
+ 
+     void RemoteCreate();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+     void WindowCreate();
+     rageLRESULT WindowMessage(rageUINT,rageWPARAM,rageLPARAM) { return 0; }
+ #endif

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.cpp b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.cpp
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.cpp
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.cpp
+@@ -316,7 +316,7 @@ void ptxKeyframeWidget::RemoteHandler(const bkRemotePacket& packet)
+ 	}
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ void ptxKeyframeWidget::WindowCreate() 
+ {
+ 	if (bkRemotePacket::IsConnectedToRag()==false)

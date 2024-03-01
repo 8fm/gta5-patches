@@ -1,0 +1,74 @@
+diff --git a/src/dev_ng/rage/base/src/system/main.cpp b/src/dev_ng/rage/base/src/system/main.cpp
+--- a/src/dev_ng/rage/base/src/system/main.cpp
++++ b/src/dev_ng/rage/base/src/system/main.cpp
+@@ -63,7 +63,7 @@
+ // Every project is expected to have a Main(). Even if "App" style Prologue()/Loop()/Epilogue() are to be called.
+ extern int Main();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include <process.h>
+ #include <crtdbg.h>
+ #include <werapi.h>
+@@ -207,7 +207,7 @@ static bool ExceptMain_Prologue()
+ 	Vec::DisableDenormals();
+ 
+ 	// Store size of data cache line in global, since it isn't known at compile-time for PC.
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	g_DataCacheLineSize = GetDataCacheLineSize();
+ #endif
+ 
+@@ -220,14 +220,14 @@ static bool ExceptMain_Prologue()
+ 
+ 	sysMemAllowResourceAlloc = true;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// Set the multimedia timer resolution, which controls not only
+ 	//	the multimedia timers, but also thread related functionality such
+ 	//	as Sleep and WaitForSingleObject.
+ 	timeBeginPeriod(1);
+ #endif
+ 
+-#if !__FINAL && __WIN32PC
++#if !__FINAL && __WIN32PC && !__LINUX
+ 	SetThreadName("[RAGE] Main Application Thread");
+ #endif
+ 
+@@ -256,7 +256,7 @@ static void ExceptMain_Epilogue()
+ 		g_pProjectEpilogue();
+ 	}
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	// Restore the timer resolution, just to play nice -- will only happen
+ 	//	for people that exit the game legally.
+ 	timeEndPeriod(1);
+@@ -675,7 +675,7 @@ bool CommonMain_Prologue(int argc,char **argv)
+ {
+ 	g_IsStaticInitializationFinished = true;
+ 
+-#if RSG_PC && (!defined(__RGSC_DLL) || !__RGSC_DLL)
++#if RSG_PC && (!defined(__RGSC_DLL) || !__RGSC_DLL) && !RSG_LINUX
+ 	WerSetFlags(WER_FAULT_REPORTING_FLAG_NOHEAP);
+ #endif // RSG_PC
+ 
+@@ -838,7 +838,7 @@ bool CommonMain_Prologue(int argc,char **argv)
+ 
+ 		if (memVisualize.HasResource())
+ 		{
+-#if RSG_DURANGO || RSG_ORBIS
++#if RSG_DURANGO || RSG_ORBIS || RSG_LINUX
+ 			t->InitHeap("Resource", master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL)->GetHeapBase(), master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL)->GetHeapSize());
+ #else
+ 			const sysMemAllocator* pResVirtAllocator = master.GetAllocator(MEMTYPE_RESOURCE_VIRTUAL);
+@@ -1266,7 +1266,7 @@ int CommonMain(int argc, char **argv)
+ 	sceSystemServiceHideSplashScreen();
+ #endif	// RSG_ORBIS
+ 
+-#if RSG_PC && !__FINAL
++#if RSG_PC && !__FINAL && !RSG_LINUX
+ 	if(IsDebuggerPresent())
+ 	{
+ 		SetEnvironmentVariableA("_NO_DEBUG_HEAP", "1");

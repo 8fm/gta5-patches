@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/color.cpp b/src/dev_ng/rage/base/src/bank/color.cpp
+--- a/src/dev_ng/rage/base/src/bank/color.cpp
++++ b/src/dev_ng/rage/base/src/bank/color.cpp
+@@ -1268,7 +1268,7 @@ void bkColor::RemoteHandler(const bkRemotePacket& packet) {
+ }
+ 
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "system/xtl.h"
+ 

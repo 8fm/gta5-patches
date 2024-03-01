@@ -1,0 +1,11 @@
+diff --git a/src/dev_ng/rage/base/src/paging/streamer.cpp b/src/dev_ng/rage/base/src/paging/streamer.cpp
+--- a/src/dev_ng/rage/base/src/paging/streamer.cpp
++++ b/src/dev_ng/rage/base/src/paging/streamer.cpp
+@@ -42,6 +42,7 @@
+ #endif
+ 
+ #include <cstdlib>
++#include <climits>
+ 
+ 
+ #if __PS3

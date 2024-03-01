@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/profile/sym_engine.cpp b/src/dev_ng/rage/base/src/profile/sym_engine.cpp
+--- a/src/dev_ng/rage/base/src/profile/sym_engine.cpp
++++ b/src/dev_ng/rage/base/src/profile/sym_engine.cpp
+@@ -41,7 +41,7 @@ extern "C" WINBASEAPI HANDLE WINAPI OpenProcess(DWORD dwDesiredAccess, BOOL bInh
+ #pragma comment(lib,"toolhelpx.lib")
+ #endif //RSG_DURANGO
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #include <psapi.h>
+ #endif
+ 
+@@ -282,7 +282,7 @@ void SymEngine::Init()
+ 
+ 		}
+ 
+-#elif (RSG_DURANGO || RSG_PC)
++#elif (RSG_DURANGO || RSG_PC) && !RSG_LINUX
+ 		HANDLE processHandle = GetCurrentProcess();
+ 		HMODULE modules[256];
+ 		DWORD modulesSize = 0;
+@@ -357,7 +357,7 @@ const rage::atVector<Profiler::Module>& SymEngine::GetModules() const
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ bool SymEngine::GetProcesses(ProcessList& out) const
+ {
+-#if (RSG_PC)
++#if (RSG_PC && !RSG_LINUX)
+ 	DWORD processPIDs[1024] = { 0 };
+ 	DWORD processSize = 0;
+ 

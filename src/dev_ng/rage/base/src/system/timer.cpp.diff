@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/system/timer.cpp b/src/dev_ng/rage/base/src/system/timer.cpp
+--- a/src/dev_ng/rage/base/src/system/timer.cpp
++++ b/src/dev_ng/rage/base/src/system/timer.cpp
+@@ -228,7 +228,7 @@ utimer_t sysTimer::GetTicks()
+ 
+ 
+ void sysTimer::BeginBenchmark() {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	oldClass=GetPriorityClass(GetCurrentProcess());
+ 	oldPrio=GetThreadPriority(GetCurrentThread());
+ 
+@@ -240,7 +240,7 @@ void sysTimer::BeginBenchmark() {
+ }
+ 
+ void sysTimer::EndBenchmark() {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	SetPriorityClass(GetCurrentProcess(),oldClass);
+ 	SetThreadPriority(GetCurrentThread(),oldPrio);
+ #endif

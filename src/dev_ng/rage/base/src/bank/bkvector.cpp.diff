@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bkvector.cpp b/src/dev_ng/rage/base/src/bank/bkvector.cpp
+--- a/src/dev_ng/rage/base/src/bank/bkvector.cpp
++++ b/src/dev_ng/rage/base/src/bank/bkvector.cpp
+@@ -17,7 +17,7 @@
+ 
+ using namespace rage;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ static WNDPROC s_oldVectorVectorWindowEditMessageCallback;
+ 
+@@ -205,7 +205,7 @@ bkVector::bkVector( datCallback &callback, const char *title, const char *memo,
+ , m_step(step)
+ , m_drawLocalExpanded(0)
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	m_titleWindowHandle = NULL;
+ 
+ 	for ( int i = 0; i < 12; ++i )
+@@ -224,7 +224,7 @@ bkVector::~bkVector()
+ 
+ bool bkVector::SetFocus() 
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	if ( m_windowHandles[(m_componentInFocus * 3) + 1] != NULL )
+ 	{
+ 		::SetFocus( m_windowHandles[(m_componentInFocus * 3) + 1] );
+@@ -290,7 +290,7 @@ void bkVector::RemoteUpdate()
+ 	p.Send();
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ void bkVector::WindowCreate()
+ {

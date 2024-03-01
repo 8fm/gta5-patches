@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/system/bootmgr_common.cpp b/src/dev_ng/rage/base/src/system/bootmgr_common.cpp
+--- a/src/dev_ng/rage/base/src/system/bootmgr_common.cpp
++++ b/src/dev_ng/rage/base/src/system/bootmgr_common.cpp
+@@ -70,7 +70,7 @@ void sysBootManager::StartDebuggerSupport()
+ 		// The addresses here don't have any significance other than they are values that are in the address space that we can allocate
+ #if __XENON
+ 		void * const DEBUG_DATA_PTR = (void *)0x00070000;
+-#elif __WIN32PC 
++#elif __WIN32PC && !__LINUX
+ 		void * const DEBUG_DATA_PTR = (void *)0x000007f000000000; // Near the top of addressable memory (see GetSystemInfo( SYSTEM_INFO& lpSystemInfo) and lpMaximumApplicationAddress)
+ #elif RSG_DURANGO
+ 		void * const DEBUG_DATA_PTR = (void *)0x0000020700000000;
+@@ -78,7 +78,7 @@ void sysBootManager::StartDebuggerSupport()
+ 		void * const DEBUG_DATA_PTR = (void *)0x70070000;
+ #endif
+ 
+-#if __XENON || __WIN32PC || RSG_DURANGO
++#if __XENON || (__WIN32PC && !__LINUX) || RSG_DURANGO
+ 		g_DebugData = (size_t*)VirtualAlloc(DEBUG_DATA_PTR,4096,MEM_RESERVE,PAGE_READWRITE);
+ 
+ 		Assertf(g_DebugData, "Couldn't allocate space for debug data. 0x%x\n", GetLastError());

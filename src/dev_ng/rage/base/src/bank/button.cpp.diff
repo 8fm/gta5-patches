@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/button.cpp b/src/dev_ng/rage/base/src/bank/button.cpp
+--- a/src/dev_ng/rage/base/src/bank/button.cpp
++++ b/src/dev_ng/rage/base/src/bank/button.cpp
+@@ -84,7 +84,7 @@ void bkButton::RemoteHandler(const bkRemotePacket& packet) {
+ }
+ 
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ #include "system/xtl.h"
+ 

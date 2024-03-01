@@ -1,0 +1,30 @@
+diff --git a/src/dev_ng/rage/base/src/diag/tracker_remote2.cpp b/src/dev_ng/rage/base/src/diag/tracker_remote2.cpp
+--- a/src/dev_ng/rage/base/src/diag/tracker_remote2.cpp
++++ b/src/dev_ng/rage/base/src/diag/tracker_remote2.cpp
+@@ -31,7 +31,7 @@
+ 
+ XPARAM(symfilepath);
+ 
+-#if RSG_DURANGO
++#if RSG_DURANGO || RSG_LINUX
+ extern "C" int main();
+ #elif RSG_ORBIS
+ extern int main(int argc,char **argv);
+@@ -67,7 +67,7 @@ diagTrackerRemote2::diagTrackerRemote2(const bool startWorker, int customPort)
+ 
+ 	ClientInfo clientInfo;
+ 
+-#if RSG_DURANGO || RSG_ORBIS
++#if RSG_DURANGO || RSG_ORBIS || RSG_LINUX
+ 	clientInfo.m_MainSize = (size_t) main;
+ #elif RSG_PC
+ 	clientInfo.m_MainSize = (size_t) &__ImageBase;
+@@ -115,7 +115,7 @@ diagTrackerRemote2::diagTrackerRemote2(const bool startWorker, int customPort)
+ 			strcat(clientInfo.m_SymbolFile,".cmp");
+ 	}
+ 
+-#elif __WIN32PC // __XENON
++#elif __WIN32PC && !__LINUX // __XENON
+ 	// sysStack::InitClass() hasn't been called yet, we'll have to figure out the
+ 	// location of the symbol file ourselves.
+ //	safecpy(clientInfo.m_SymbolFile, sysStack::GetSymbolFilename());

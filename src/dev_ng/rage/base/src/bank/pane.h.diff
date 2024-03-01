@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/pane.h b/src/dev_ng/rage/base/src/bank/pane.h
+--- a/src/dev_ng/rage/base/src/bank/pane.h
++++ b/src/dev_ng/rage/base/src/bank/pane.h
+@@ -154,7 +154,7 @@ public:
+ 	void SetState(bool shown,int x,int y,int width,int height);	
+ 
+ private:
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	static rageLRESULT __stdcall WndProcInner(HWND__ *,rageUINT,rageWPARAM,rageLPARAM);
+ 	static rageLRESULT __stdcall WndProcOuter(HWND__ *,rageUINT,rageWPARAM,rageLPARAM);
+ 

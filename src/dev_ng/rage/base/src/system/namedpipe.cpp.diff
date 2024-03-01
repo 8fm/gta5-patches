@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/system/namedpipe.cpp b/src/dev_ng/rage/base/src/system/namedpipe.cpp
+--- a/src/dev_ng/rage/base/src/system/namedpipe.cpp
++++ b/src/dev_ng/rage/base/src/system/namedpipe.cpp
+@@ -13,7 +13,7 @@
+ #include "system/ipc.h"
+ #include "system/timer.h"
+ 
+-#if __PPU || RSG_ORBIS
++#if __PPU || RSG_ORBIS || RSG_LINUX
+ #include <netinet/in.h>
+ #include <netinet/tcp.h>
+ #include <sys/socket.h>
+@@ -150,7 +150,7 @@ void sysNamedPipe::Close() {
+ #define TCP_NODELAY SCE_NET_TCP_NODELAY
+ #endif
+ 
+-#if RSG_ORBIS
++#if RSG_ORBIS || RSG_LINUX
+ #define SOCKET int
+ #define SOCKET_ERROR -1
+ #endif

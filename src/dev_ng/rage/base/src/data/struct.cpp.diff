@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/data/struct.cpp b/src/dev_ng/rage/base/src/data/struct.cpp
+--- a/src/dev_ng/rage/base/src/data/struct.cpp
++++ b/src/dev_ng/rage/base/src/data/struct.cpp
+@@ -15,7 +15,7 @@ typedef long long longlong;
+ CompileTimeAssertSize(int,4,4);
+ CompileTimeAssertSize(float,4,4);
+ CompileTimeAssertSize(double,8,8);
+-CompileTimeAssertSize(long,4,RSG_ORBIS? 8 : 4);
++CompileTimeAssertSize(long,4, (RSG_ORBIS || RSG_LINUX)? 8 : 4);
+ CompileTimeAssertSize(longlong,8,8);
+ 
+ namespace rage {

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bkseparator.h b/src/dev_ng/rage/base/src/bank/bkseparator.h
+--- a/src/dev_ng/rage/base/src/bank/bkseparator.h
++++ b/src/dev_ng/rage/base/src/bank/bkseparator.h
+@@ -29,7 +29,7 @@ namespace rage
+ 		static void RemoteHandler( const bkRemotePacket& p );
+ 
+ 	private:
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		void WindowCreate();
+ 		rageLRESULT WindowMessage( rageUINT, rageWPARAM, rageLPARAM );
+ #endif

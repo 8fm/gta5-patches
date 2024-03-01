@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/treelist.cpp b/src/dev_ng/rage/base/src/bank/treelist.cpp
+--- a/src/dev_ng/rage/base/src/bank/treelist.cpp
++++ b/src/dev_ng/rage/base/src/bank/treelist.cpp
+@@ -580,7 +580,7 @@ void bkTreeList::Update()
+ {
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void bkTreeList::WindowCreate() 

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/data.cpp b/src/dev_ng/rage/base/src/bank/data.cpp
+--- a/src/dev_ng/rage/base/src/bank/data.cpp
++++ b/src/dev_ng/rage/base/src/bank/data.cpp
+@@ -200,7 +200,7 @@ void bkData::SetData( u8* data, u16 length )
+ 	RemoteUpdate();
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void bkData::WindowCreate() 

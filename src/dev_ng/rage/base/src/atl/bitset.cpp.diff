@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/atl/bitset.cpp b/src/dev_ng/rage/base/src/atl/bitset.cpp
+--- a/src/dev_ng/rage/base/src/atl/bitset.cpp
++++ b/src/dev_ng/rage/base/src/atl/bitset.cpp
+@@ -6,7 +6,7 @@
+ 
+ #include "bitset.h"
+ 
+-#include "system\cache.h"
++#include "system/cache.h"
+ 
+ namespace rage {
+ 

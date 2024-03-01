@@ -1,0 +1,41 @@
+diff --git a/src/dev_ng/rage/base/src/system/memory.cpp b/src/dev_ng/rage/base/src/system/memory.cpp
+--- a/src/dev_ng/rage/base/src/system/memory.cpp
++++ b/src/dev_ng/rage/base/src/system/memory.cpp
+@@ -36,7 +36,7 @@ sys_memory_container_t g_prx_container;
+ #include <kernel.h>
+ #elif __XENON
+ #include <xbdm.h>
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ #include <Psapi.h>
+ #include <windows.h>
+ #pragma comment(lib,"Psapi.lib")
+@@ -650,7 +650,7 @@ bool sysMemHeapFree(void *ptr)
+ 	}
+ 	return false;
+ }
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ void* sysMemVirtualAllocate(size_t size, bool bTracked/*=false*/)
+ {
+ 	// Round up to 4k size, then add 4k for guard page. 
+@@ -1445,7 +1445,7 @@ void* sysMemDebugAllocate(size_t size)
+ #elif RSG_DURANGO
+ 	Assertf((size & 0x3fffff) == 0, "sysMemDebugAllocate called called with a non 4MB-aligned size: %" SIZETFMT "d!", size);
+ 	return VirtualAlloc(NULL, size, MEM_COMMIT | MEM_4MB_PAGES, PAGE_READWRITE);
+-#elif __WIN32PC
++#elif __WIN32PC && !__LINUX
+ 	return VirtualAlloc(NULL, size,  MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
+ #elif RSG_ORBIS
+ 	return sysMemFlexAllocate(size);
+@@ -1464,6 +1464,10 @@ void sysMemDebugFree(void *ptr)
+ #elif __XENON
+ 		// Only way pointer could be nonzero is if we were allowed to call DmDebugAlloc anyway so no reason to repeat DmGetCDMS call again
+ 		DmDebugFree(ptr);	
++#elif RSG_LINUX
++	{
++		// TODO: add Linux support
++	}
+ #elif __WIN32PC || RSG_DURANGO
+ 		VirtualFree(ptr,0,MEM_RELEASE);
+ #elif RSG_ORBIS

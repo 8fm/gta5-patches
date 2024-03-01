@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.h b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.h
+--- a/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.h
++++ b/src/dev_ng/rage/suite/src/rmptfx/ptxkeyframewidget.h
+@@ -45,7 +45,7 @@ class ptxKeyframeWidget : public bkWidget
+ 		void UpdateUIData();
+ 		int DrawLocal(int x, int y);
+ 		static void RemoteHandler(const bkRemotePacket& remotePacket);
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		void WindowCreate();
+ 		rageLRESULT WindowMessage(rageUINT, rageWPARAM, rageLPARAM) {return 0;}
+ #endif

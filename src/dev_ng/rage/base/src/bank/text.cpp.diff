@@ -1,0 +1,21 @@
+diff --git a/src/dev_ng/rage/base/src/bank/text.cpp b/src/dev_ng/rage/base/src/bank/text.cpp
+--- a/src/dev_ng/rage/base/src/bank/text.cpp
++++ b/src/dev_ng/rage/base/src/bank/text.cpp
+@@ -556,7 +556,7 @@ void bkText::SetStringRepr( const char *buf )
+     }
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ WNDPROC s_OldTextEditWinProc;
+@@ -832,7 +832,7 @@ void bkText::Update()
+ 	{
+ 		RemoteUpdate();
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 		if ( m_Hwnd && (GetFocus() != m_Hwnd) )		// don't send update if we already had the focus
+ 		{
+ 			WindowUpdate();

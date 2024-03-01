@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/title.cpp b/src/dev_ng/rage/base/src/bank/title.cpp
+--- a/src/dev_ng/rage/base/src/bank/title.cpp
++++ b/src/dev_ng/rage/base/src/bank/title.cpp
+@@ -72,7 +72,7 @@ void bkTitle::RemoteHandler(const bkRemotePacket& packet) {
+ }
+ 
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void bkTitle::WindowCreate() {

@@ -1,0 +1,39 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bkmatrix.cpp b/src/dev_ng/rage/base/src/bank/bkmatrix.cpp
+--- a/src/dev_ng/rage/base/src/bank/bkmatrix.cpp
++++ b/src/dev_ng/rage/base/src/bank/bkmatrix.cpp
+@@ -17,7 +17,7 @@
+ 
+ using namespace rage;
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ static WNDPROC s_oldWindowEditMessageCallback;
+ 
+@@ -240,7 +240,7 @@ bkMatrix::bkMatrix( datCallback &callback, const char *title, const char *memo,
+ , m_step(step)
+ , m_drawLocalTopY(0)
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	m_titleWindowHandle = NULL;
+ 
+ 	for ( int i = 0; i < 4; ++i )
+@@ -273,7 +273,7 @@ bkMatrix::~bkMatrix()
+ 
+ bool bkMatrix::SetFocus() 
+ {
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	int index = m_colInFocus * 3;
+ 	if ( m_windowHandles[m_rowInFocus][index + 1] != NULL )
+ 	{
+@@ -357,7 +357,7 @@ void bkMatrix::RemoteUpdate()
+ 	p.Send();
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 
+ void bkMatrix::WindowCreate()
+ {

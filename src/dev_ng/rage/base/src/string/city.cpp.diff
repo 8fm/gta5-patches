@@ -1,0 +1,14 @@
+diff --git a/src/dev_ng/rage/base/src/string/city.cpp b/src/dev_ng/rage/base/src/string/city.cpp
+--- a/src/dev_ng/rage/base/src/string/city.cpp
++++ b/src/dev_ng/rage/base/src/string/city.cpp
+@@ -72,6 +72,10 @@ static uint32 UNALIGNED_LOAD32(const char *p) {
+ #define bswap_64(x) bswap64(x)
+ #endif
+ 
++#elif defined(__linux__)
++
++#include <byteswap.h>
++
+ #else
+ 
+ #include <machine/endian.h>

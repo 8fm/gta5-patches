@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/file/cachepartition.cpp b/src/dev_ng/rage/base/src/file/cachepartition.cpp
+--- a/src/dev_ng/rage/base/src/file/cachepartition.cpp
++++ b/src/dev_ng/rage/base/src/file/cachepartition.cpp
+@@ -87,7 +87,7 @@ bool fiCachePartition::Init(bool forceClean)
+ 	}
+ 	++sm_RefCount;
+ 	return true;
+-#elif RSG_PC
++#elif RSG_PC && !RSG_LINUX
+ 	++sm_RefCount;
+ 	(void)forceClean;
+ 	

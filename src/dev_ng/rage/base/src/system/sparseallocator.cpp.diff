@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/sparseallocator.cpp b/src/dev_ng/rage/base/src/system/sparseallocator.cpp
+--- a/src/dev_ng/rage/base/src/system/sparseallocator.cpp
++++ b/src/dev_ng/rage/base/src/system/sparseallocator.cpp
+@@ -5,7 +5,7 @@
+ // 
+ #include "sparseallocator.h"
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ #include "diag/errorcodes.h"
+ #include "system/xtl.h"
+ #include "system/param.h"

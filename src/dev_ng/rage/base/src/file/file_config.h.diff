@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/file/file_config.h b/src/dev_ng/rage/base/src/file/file_config.h
+--- a/src/dev_ng/rage/base/src/file/file_config.h
++++ b/src/dev_ng/rage/base/src/file/file_config.h
+@@ -25,7 +25,7 @@
+ #endif
+ 
+ // Epic API
+-#if RSG_PC && !__GAMETOOL && !__TOOL && !__RESOURCECOMPILER  && !__RGSC_DLL
++#if RSG_PC && !__GAMETOOL && !__TOOL && !__RESOURCECOMPILER  && !__RGSC_DLL && !RSG_LINUX
+ #define EPIC_API_SUPPORTED 1
+ #define EPIC_API_ONLY(...) __VA_ARGS__
+ #else

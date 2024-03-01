@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/file/remote.cpp b/src/dev_ng/rage/base/src/file/remote.cpp
+--- a/src/dev_ng/rage/base/src/file/remote.cpp
++++ b/src/dev_ng/rage/base/src/file/remote.cpp
+@@ -55,7 +55,7 @@
+ #include <net.h>
+ #endif
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ namespace rage {
+ 	unsigned CustomMessageBox(HWND hWnd, LPCSTR lpText, LPCSTR lpCaption, UINT uType, UINT uOptions);
+ }

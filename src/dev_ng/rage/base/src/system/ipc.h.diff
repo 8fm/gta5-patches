@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/ipc.h b/src/dev_ng/rage/base/src/system/ipc.h
+--- a/src/dev_ng/rage/base/src/system/ipc.h
++++ b/src/dev_ng/rage/base/src/system/ipc.h
+@@ -16,7 +16,7 @@ struct HANDLE__;
+ 
+ #define ENABLE_ALL_CALLSTACK_TRACE	(1 && !__FINAL)
+ 
+-#define ORBIS_USE_POSIX_SEMAPHORES  (0 && RSG_ORBIS)
++#define ORBIS_USE_POSIX_SEMAPHORES  (0 && RSG_ORBIS || RSG_LINUX)
+ 
+ namespace rage {
+ 

@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/profile/core.h b/src/dev_ng/rage/base/src/profile/core.h
+--- a/src/dev_ng/rage/base/src/profile/core.h
++++ b/src/dev_ng/rage/base/src/profile/core.h
+@@ -25,6 +25,9 @@
+ #include "screenshot_storage.h"
+ #include "stream_profiler.h"
+ #include <map>
++#if RSG_LINUX
++#include <unistd.h>
++#endif
+ 
+ namespace rage
+ {

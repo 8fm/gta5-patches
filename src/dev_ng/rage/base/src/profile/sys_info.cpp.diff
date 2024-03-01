@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/profile/sys_info.cpp b/src/dev_ng/rage/base/src/profile/sys_info.cpp
+--- a/src/dev_ng/rage/base/src/profile/sys_info.cpp
++++ b/src/dev_ng/rage/base/src/profile/sys_info.cpp
+@@ -5,7 +5,7 @@
+ #if defined (_MSC_VER)
+ #define CPUID(INFO, ID) __cpuid(INFO, ID)
+ #include <intrin.h> 
+-#elif defined(__clang__)
++#elif defined(__clang__) || defined(__GNUC__)
+ # if RSG_CPU_X64
+ # include <cpuid.h>
+ #if defined(ORBIS_SDK_VERSION) && ORBIS_SDK_VERSION>1700

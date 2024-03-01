@@ -1,0 +1,9 @@
+diff --git a/src/dev_ng/rage/base/src/data/TFIT_keys_iAES2.c b/src/dev_ng/rage/base/src/data/TFIT_keys_iAES2.c
+--- a/src/dev_ng/rage/base/src/data/TFIT_keys_iAES2.c
++++ b/src/dev_ng/rage/base/src/data/TFIT_keys_iAES2.c
+@@ -1,4 +1,4 @@
+-#include "..\file\file_config.h"
++#include "../file/file_config.h"
+ 
+ #if RSG_CPU_X86 || RSG_CPU_X64  || __RESOURCECOMPILER
+ #if RSG_PC && !__RGSC_DLL

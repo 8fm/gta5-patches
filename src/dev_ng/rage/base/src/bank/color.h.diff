@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/color.h b/src/dev_ng/rage/base/src/bank/color.h
+--- a/src/dev_ng/rage/base/src/bank/color.h
++++ b/src/dev_ng/rage/base/src/bank/color.h
+@@ -115,7 +115,7 @@ protected:
+ 	bool SetComponentf( EColorComponent component, float value );
+ 
+ protected:
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	void WindowCreate();
+ 	rageLRESULT WindowMessage(rageUINT,rageWPARAM,rageLPARAM);
+ #endif

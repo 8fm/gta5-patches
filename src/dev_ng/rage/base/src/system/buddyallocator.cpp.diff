@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/buddyallocator.cpp b/src/dev_ng/rage/base/src/system/buddyallocator.cpp
+--- a/src/dev_ng/rage/base/src/system/buddyallocator.cpp
++++ b/src/dev_ng/rage/base/src/system/buddyallocator.cpp
+@@ -437,7 +437,7 @@ int sysMemBuddyAllocator::GetBlockLockCount(const void *ptr)
+ // Growable Buddy Allocator
+ //=============================================================================
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 
+ sysMemGrowBuddyAllocator::sysMemGrowBuddyAllocator(size_t leafSize, size_t maxSize RAGE_TRACKING_ONLY(, const char* allocatorName))
+ {

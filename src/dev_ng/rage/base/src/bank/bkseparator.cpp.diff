@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/bank/bkseparator.cpp b/src/dev_ng/rage/base/src/bank/bkseparator.cpp
+--- a/src/dev_ng/rage/base/src/bank/bkseparator.cpp
++++ b/src/dev_ng/rage/base/src/bank/bkseparator.cpp
+@@ -72,7 +72,7 @@ void bkSeparator::RemoteHandler( const bkRemotePacket& packet )
+ 	}
+ }
+ 
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ #include "system/xtl.h"
+ 
+ void bkSeparator::WindowCreate()

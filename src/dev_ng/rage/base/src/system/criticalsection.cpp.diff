@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/criticalsection.cpp b/src/dev_ng/rage/base/src/system/criticalsection.cpp
+--- a/src/dev_ng/rage/base/src/system/criticalsection.cpp
++++ b/src/dev_ng/rage/base/src/system/criticalsection.cpp
+@@ -175,6 +175,8 @@ bool sysCriticalSectionToken::TryLock() {
+ 	bool r = sceKernelTryLockLwMutex(CRITSEC_PTR, 1) == 0;
+ #elif RSG_ORBIS
+ 	bool r = scePthreadMutexTrylock(CRITSEC_PTR) == 0;
++#elif RSG_LINUX
++	bool r = true; // TODO: add Linux support with pthread_mutex_trylock
+ #endif
+ 
+ #if USE_TELEMETRY_CRITICAL

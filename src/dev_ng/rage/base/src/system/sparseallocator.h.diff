@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/sparseallocator.h b/src/dev_ng/rage/base/src/system/sparseallocator.h
+--- a/src/dev_ng/rage/base/src/system/sparseallocator.h
++++ b/src/dev_ng/rage/base/src/system/sparseallocator.h
+@@ -11,7 +11,7 @@
+ 
+ namespace rage {
+ 
+-#if RSG_PC || RSG_DURANGO
++#if (RSG_PC || RSG_DURANGO) && !RSG_LINUX
+ 
+ class sysMemSparseAllocator: public sysMemAllocator
+ {
