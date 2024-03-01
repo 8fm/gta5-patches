@@ -60,3 +60,30 @@ diff --git a/src/dev_ng/game/Core/gamesessionstatemachine.cpp b/src/dev_ng/game/
  #endif // RSG_PC
  
  #if __WIN32PC
+@@ -107,7 +107,7 @@ CGameSessionStateMachine::~CGameSessionStateMachine()
+ {
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ static bool is_SCui_showing()
+ {
+ 	return g_rlPc.IsUiShowing();
+@@ -123,7 +123,7 @@ void CGameSessionStateMachine::Init()
+ #if RAGE_SEC_ENABLE_YUBIKEY
+ 	SetState(TWO_FACTOR_AUTH_CHECK);
+ #else
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ 	SetState(CHECK_FOR_RGSC);
+ 	GRCDEVICE.CursorVisibilityOverride = is_SCui_showing;
+ #else
+@@ -163,7 +163,7 @@ void CGameSessionStateMachine::ReInit(int level)
+ #endif
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void CGameSessionStateMachine::ProcessReInitState()
+ {
+ 	// Grab the level from the reinit call

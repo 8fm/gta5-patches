@@ -26,3 +26,21 @@ diff --git a/src/dev_ng/game/frontend/CRadioWheel.cpp b/src/dev_ng/game/frontend
  
  FRONTEND_OPTIMISATIONS()
  #if RSG_PC && __BANK
+@@ -215,7 +215,7 @@ void CRadioWheel::Update(bool forceShow, bool isHudHidden)
+ 	CControl* pControl = &CControlMgr::GetMainPlayerControl(pPlayerPed->GetControlFromPlayer()->IsInputDisabled(INPUT_VEH_RADIO_WHEEL));
+ 	const ioValue& relevantControl = pControl->GetVehicleRadioWheel();
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(pControl->GetUserRadioNextTrack().IsPressed())
+ 	{
+ 		audRadioStation *station = audRadioStation::FindStation("RADIO_19_USER");
+@@ -539,7 +539,7 @@ audRadioStation *station = audRadioStation::FindStation("RADIO_19_USER");
+ 				// where CELL_195 means "Unknown"
+ #define FILTER_UNKNOWN(inVal) ( inVal&&TheText.DoesTextLabelExist(inVal)?TheText.Get(inVal):"")
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 				if(isUserTrack)
+ 				{
+ 					CScaleformMgr::AddParamString(audRadioStation::GetUserRadioTrackManager()->GetTrackArtist(audRadioTrack::GetUserTrackIndexFromTextId(m_iCurrentTrack.GetState())));

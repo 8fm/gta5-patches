@@ -1,9 +1,12 @@
 diff --git a/src/dev_ng/game/frontend/PCGamepadCalibration.h b/src/dev_ng/game/frontend/PCGamepadCalibration.h
 --- a/src/dev_ng/game/frontend/PCGamepadCalibration.h
 +++ b/src/dev_ng/game/frontend/PCGamepadCalibration.h
-@@ -3,7 +3,7 @@
+@@ -1,9 +1,9 @@
+ #ifndef __PC_GAMEPAD_CALIBRATION_H__
+ #define __PC_GAMEPAD_CALIBRATION_H__
  
- #if RSG_PC
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
  
 -#include "Frontend/Scaleform/ScaleFormComplexObjectMgr.h"
 +#include "frontend/Scaleform/ScaleFormComplexObjectMgr.h"

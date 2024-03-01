@@ -82,3 +82,68 @@ diff --git a/src/dev_ng/game/Core/app.cpp b/src/dev_ng/game/Core/app.cpp
  
  #if !__FINAL
  PARAM(trackerreport, "[GAME] Filename for the initial memory track");
+@@ -1251,7 +1251,7 @@ fwFsm::Return CApp::RunGame_OnEnter()
+ 	PF_FINISH_STARTUPBAR();
+ 
+ 	SetInstance(this);
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	grcResourceCache::SetGameRunningCallback(IsGameRunning);
+ 
+ 	GRCDEVICE.SetDisablePauseOnLostFocusSystemOverride(false);
+@@ -1496,6 +1496,7 @@ void GracefullyShutdownNetwork()
+ 
+ void ProcessScuiCloseLogic()
+ {
++#if !RSG_LINUX
+ 	if(g_rlPc.GetUiInterface())
+ 	{
+ 		if (!sbClosedScui && g_rlPc.GetUiInterface()->IsVisible())
+@@ -1512,6 +1513,7 @@ void ProcessScuiCloseLogic()
+ 			sbDisabledScui = true;
+ 		}
+ 	}
++#endif // !RSG_LINUX
+ }
+ 
+ bool CApp::IsShutdownConfirmed()
+@@ -1526,6 +1528,7 @@ bool CApp::IsScuiDisabledForShutdown()
+ 
+ void CApp::CheckExit()
+ {
++#if !RSG_LINUX
+ 	// ===========================================
+ 	//   PROCESSING THE STARTING OF THE EXIT FLOW 
+ 	// ===========================================
+@@ -1728,11 +1731,12 @@ void CApp::CheckExit()
+ 
+ 		ExitProcess(0);
+ 	}
++#endif // !RSG_LINUX
+ }
+ 
+ void CApp::Restart()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	const int MODULE_FILENAME_LENGTH = 1024;
+ 
+ 	TCHAR strModuleFileName[MODULE_FILENAME_LENGTH];
+@@ -1784,12 +1788,17 @@ void CApp::WriteExitFile(const char* error)
+ 		return;
+ 	}
+ 
++#if RSG_LINUX
++	uint32_t pid;
++	return;
++#else
+ 	// Grab the current pid
+ 	DWORD pid = GetCurrentProcessId();
+ 	if (pid == 0)
+ 	{
+ 		return;
+ 	}
++#endif // !RSG_LINUX
+ 
+ 	// Check for an in-file
+ 	char path_buffer[MAX_PATH] = {0};

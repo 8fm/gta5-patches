@@ -86,3 +86,12 @@ diff --git a/src/dev_ng/game/frontend/MiniMap.cpp b/src/dev_ng/game/frontend/Min
  #endif  // #if DEBUG_PAD_INPUT
  
  FRONTEND_OPTIMISATIONS()
+@@ -3788,7 +3788,7 @@ bool CMiniMap::ShouldRenderMinimap()
+ 		return false;
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (g_rlPc.IsUiShowing())
+ 	{
+ 		return false;

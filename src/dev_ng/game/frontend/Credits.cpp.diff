@@ -33,3 +33,12 @@ diff --git a/src/dev_ng/game/frontend/Credits.cpp b/src/dev_ng/game/frontend/Cre
  
  #define CREDITS_FASTER 1
  #define CREDITS_SLOWER -1
+@@ -530,7 +530,7 @@ void CCredits::Render(bool bBeforeFade)
+ 	if (!bCreditsRunning || bShutdownPending)
+ 		return;
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if (g_rlPc.IsUiShowing())
+ 		return;
+ #endif // RSG_PC

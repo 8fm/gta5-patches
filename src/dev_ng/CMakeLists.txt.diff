@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
-@@ -0,0 +1,74 @@
+@@ -0,0 +1,72 @@
 +cmake_minimum_required(VERSION 3.18)
 +project(Fuzzy)
 +
@@ -47,9 +47,7 @@ new file mode 100644
 +    add_custom_target(dependencies ALL)
 +endif()
 +
-+if (MSVC)
 +add_subdirectory(game/vs_project1_lib)
-+endif()
 +add_subdirectory(game/vs_project2_lib)
 +add_subdirectory(game/vs_project3_lib)
 +add_subdirectory(game/vs_project4_lib)

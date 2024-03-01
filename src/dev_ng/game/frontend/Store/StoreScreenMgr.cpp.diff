@@ -51,3 +51,21 @@ diff --git a/src/dev_ng/game/frontend/Store/StoreScreenMgr.cpp b/src/dev_ng/game
  
  PARAM(leavempforstore, "The store will cause the player to leave mp sessions.");
  PARAM(storeInitialProductId, "Initial Item to Highlight in the Store");
+@@ -1185,7 +1185,7 @@ bool cStoreScreenMgr::IsMPGameReadyToOpenStore()
+ 	return readyToOpenStore;
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void cStoreScreenMgr::OpenPC()
+ {
+ 	g_rlPc.GetCommerceManager()->ShowCommerceStore(NULL,NULL);
+@@ -1194,7 +1194,7 @@ void cStoreScreenMgr::OpenPC()
+ 
+ bool cStoreScreenMgr::IsStoreMenuOpen()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+     //There is no current way to query for a specific SCUI panel, so I will treat the SCUI in general as being the store
+     return g_rlPc.IsUiShowing();
+ #else

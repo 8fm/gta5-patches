@@ -55,6 +55,15 @@ diff --git a/src/dev_ng/game/audio/northaudioengine.cpp b/src/dev_ng/game/audio/
  
  #if RSG_ORBIS
  #include "audiohardware/device_orbis.h"
+@@ -139,7 +139,7 @@
+ #if RSG_PC
+ #include "audiohardware/device_xaudio_pc.h"
+ 
+-#if __BANK && RSG_PC
++#if __BANK && RSG_PC && !RSG_LINUX
+ bool g_ShowAudioFrameDebugInfo;
+ u32 g_NumberOfMixBuffers = rage::kXAudioNumberOfBuffers;
+ bool g_OverrideCPULimitedAudioSetting = false;
 @@ -753,7 +753,7 @@ void audNorthAudioEngine::GenerateMemoryReport(const char *destFileName)
  
  RAGE_DEFINE_SUBCHANNEL(Audio,NorthAudio)
@@ -73,6 +82,33 @@ diff --git a/src/dev_ng/game/audio/northaudioengine.cpp b/src/dev_ng/game/audio/
  
  #if __DEV
  	g_AssertOnSoundPoolFull = false;
+@@ -1858,7 +1858,7 @@ void audNorthAudioEngine::StartUpdate()
+ 	
+ 		bool isMinSpec = (sysIpcGetProcessorCount() <= uMinCores) || (sysTimerConsts::CpuSpeed < cfMinClockSpeed) || forceMinSpec;
+ 
+-#if __BANK
++#if __BANK && !RSG_LINUX
+ 		if(g_OverrideCPULimitedAudioSetting)
+ 		{
+ 			isMinSpec = g_ForceMinSpecMode;
+@@ -2926,7 +2926,7 @@ void audNorthAudioEngine::Update()
+ {
+ 	USE_MEMBUCKET(MEMBUCKET_AUDIO);
+ 
+-#if RSG_PC && __BANK
++#if RSG_PC && __BANK && !RSG_LINUX
+ 	audMixerDeviceXAudio2::SetNumberOfAudioMixBuffers(g_NumberOfMixBuffers); 
+ #endif
+ 
+@@ -5334,7 +5334,7 @@ void audNorthAudioEngine::CreateWidgets()
+ 
+ 	bank.AddToggle("g_UseInteriorCarFilter", &g_UseInteriorCarFilter);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	bank.AddToggle("Show Audio Frame Debug Info", &g_ShowAudioFrameDebugInfo);
+ 	bank.AddSlider("Number of mix buffers", &g_NumberOfMixBuffers, 8, 16, 1);
+ 
 @@ -5552,6 +5552,7 @@ void audNorthAudioEngine::DebugDrawSlowMo()
  
  	drawMgr.PopSection();

@@ -31,3 +31,30 @@ diff --git a/src/dev_ng/game/frontend/ProfileSettings.cpp b/src/dev_ng/game/fron
  #include "script/script.h"
  
  // --- Defines ------------------------------------------------------------------
+@@ -288,6 +288,8 @@ bool CProfileSettings::StartRead()
+ 		Warningf("CProfileSettings::StartRead - CGenericGameStorage::PushOnToSavegameQueue failed\n");
+ 		success = false;
+ 	}
++#elif RSG_LINUX
++	// TODO: add Linux support
+ #elif RSG_PC
+ 	m_valid = true;
+ 	m_settings.clear();
+@@ -522,7 +524,7 @@ bool CProfileSettings::FinishRead(bool
+ }
+ 
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ static sysIpcThreadId s_SavePcProfileThreadId = sysIpcThreadIdInvalid;
+ 
+ static bool s_bSavePcProfileThreadHasBeenStarted = false;
+@@ -809,7 +811,7 @@ void CProfileSettings::UpdateProfileSettings(bool bWait, bool ORBIS_ONLY(ignoreS
+ {
+ 	PF_AUTO_PUSH_TIMEBAR("CProfileSettings UpdateProfileSettings");
+ 
+-#if __WIN32PC && (!__FINAL || defined(MASTER_NO_SCUI))
++#if __WIN32PC && (!__FINAL || defined(MASTER_NO_SCUI)) && !__LINUX
+ 	if((g_rlPc.IsInitialized() == false))
+ 	{
+ 		// for cases where -nosocialclub is used, we won't have a profile signed in

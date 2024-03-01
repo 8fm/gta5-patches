@@ -44,3 +44,12 @@ diff --git a/src/dev_ng/game/frontend/PauseMenu.h b/src/dev_ng/game/frontend/Pau
  
  // Forward declarations
  namespace rage
+@@ -1293,7 +1293,7 @@ public:
+ 	static void CloseCreditsScreen();
+ 	static bool IsPlayCreditsSupportedOnThisScreen( MenuScreenId const menuLayoutId );
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	static void ClosePCGamepadCalibrationScreen();
+ #endif
+ 

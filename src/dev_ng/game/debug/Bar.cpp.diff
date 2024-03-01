@@ -52,3 +52,21 @@ diff --git a/src/dev_ng/game/debug/Bar.cpp b/src/dev_ng/game/debug/Bar.cpp
  #include "streaming/populationstreaming.h"
  
  PARAM(debugdisplaystate, "[debug] Control what debug information to display! Use with a value (debugdisplaystate=off|standard|coords_only).");
+@@ -273,7 +273,7 @@ void CDebugBar::Update()
+ 	s_IsStreamingPriority = strStreamingEngine::GetIsLoadingPriorityObjects();
+ #if __BANK
+ 
+-#if RSG_PC && __BANK && __D3D11
++#if RSG_PC && __BANK && __D3D11 && !RSG_LINUX
+ 
+ #if !__TOOL
+ 	static int lastWidth = 0, lastHeight = 0;
+@@ -857,7 +857,7 @@ void CDebugBar::Render_DISPLAY_STATE_STANDARD()
+ 
+ 		safecat (debugText, cTempString, NELEM(debugText));
+ 
+-#if RSG_PC && __BANK
++#if RSG_PC && __BANK && !RSG_LINUX
+ 		if (PARAM_displayVidMem.Get())
+ 		{
+ 			formatf(cTempString, "Vid:%dM/%dM", (s32)(rage::grcResourceCache::GetInstance().GetTotalUsedMemory(rage::MT_Video) / (1024UL * 1024UL)), (s32)(rage::grcResourceCache::GetInstance().GetTotalMemory(rage::MT_Video)  / (1024UL * 1024UL)));

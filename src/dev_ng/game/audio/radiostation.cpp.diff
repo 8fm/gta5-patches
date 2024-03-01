@@ -24,3 +24,474 @@ diff --git a/src/dev_ng/game/audio/radiostation.cpp b/src/dev_ng/game/audio/radi
  
  #include "debugaudio.h"
  
+@@ -70,7 +70,7 @@ bool audRadioStation::sm_HasSyncedUnlockableDJStation = false;
+ float audRadioStation::sm_CountryTalkRadioSignal = 1.f;
+ float audRadioStation::sm_ScriptGlobalRadioSignalLevel = 1.f;
+ bool audRadioStation::sm_UpdateLockedStations = false;
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ bool audRadioStation::sm_IsInRecoveryMode = false;
+ #endif
+ 
+@@ -232,7 +232,7 @@ f32 audRadioStation::sm_DjSpeechFrontendVolume = 0.f;
+ f32 audRadioStation::sm_DjSpeechFrontendLPF = kVoiceFilterLPFMaxCutoff;
+ 
+ // user music additions to pc version
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ bool audRadioStation::sm_ForceUserNextTrack = false;
+ bool audRadioStation::sm_ForceUserPrevTrack = false;
+ audUserRadioTrackManager audRadioStation::sm_UserRadioTrackManager;
+@@ -417,7 +417,7 @@ void audRadioStation::InitClass(void)
+ 
+ 	Assert(sm_NewsTrackLists.ComputeNumTracks() < kMaxNewsStories);
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	sm_ForceUserNextTrack = false;
+ 	sm_ForceUserPrevTrack = false;
+ 	
+@@ -488,7 +488,7 @@ void audRadioStation::InitClass(void)
+ 
+ void audRadioStation::PostLoad()
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(m_IsUserStation)
+ 	{
+ 		sm_UserRadioTrackManager.PostLoad();
+@@ -496,7 +496,7 @@ void audRadioStation::PostLoad()
+ #endif
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ bool audRadioStation::HasUserTracks()
+ {
+ 	return sm_UserRadioTrackManager.HasTracks();
+@@ -1033,7 +1033,11 @@ void audRadioStation::ResetHistoryForNetworkGame()
+ 		for(u32 index=0; index<sm_NumRadioStations; index++)
+ 		{
+ 			audRadioStation *station = GetStation(index);
+-			if(station WIN32PC_ONLY(&& !station->IsUserStation()) && station->GetNameHash() != ATSTRINGHASH("RADIO_22_DLC_BATTLE_MIX1_RADIO", 0xF8BEAA16))
++			if(station
++#if RSG_PC && !RSG_LINUX
++				&& !station->IsUserStation()
++#endif
++				&& station->GetNameHash() != ATSTRINGHASH("RADIO_22_DLC_BATTLE_MIX1_RADIO", 0xF8BEAA16))
+ 			{
+ 				if(!station->m_PlaySequentialMusicTracks && !station->m_UseRandomizedStrideSelection)
+ 				{
+@@ -1196,7 +1200,11 @@ void audRadioStation::SyncStation(const audRadioStationSyncData &data)
+ 		ResetHistoryForNetworkGame();
+ 	}
+ 
+-	if(m_OnlyPlayAds || IsUSBMixStation() || IsLocalPlayerNewsStation() WIN32PC_ONLY(|| m_IsUserStation))
++	if(m_OnlyPlayAds || IsUSBMixStation() || IsLocalPlayerNewsStation()
++#if RSG_PC && !RSG_LINUX
++		WIN32PC_ONLY(|| m_IsUserStation)
++#endif
++		)
+ 		return;
+ 
+ 	if(m_IsFrozen)
+@@ -1888,7 +1896,7 @@ void audRadioStation::GameUpdate()
+ 
+ void audRadioStation::UpdateStations(u32 timeInMs)
+ {	
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ #if __BANK
+ 	if(g_RadioAudioEntity.sm_DebugUserMusic)
+ 		DebugDrawUserMusic();
+@@ -2047,7 +2055,7 @@ void audRadioStation::SkipForward(u32 timeToSkip)
+ 	}
+ }
+ 
+-#if RSG_PC	// user music
++#if RSG_PC && !RSG_LINUX	// user music
+ void audRadioStation::NextTrack()
+ {
+ 	if(m_IsUserStation && !sm_IsInRecoveryMode && sm_UserRadioTrackManager.GetRadioMode() != USERRADIO_PLAY_MODE_RADIO)
+@@ -2521,7 +2529,9 @@ m_HasConstructedMixStationBeatMap(false)
+ 	m_LastTimeDJSpeechPlaying = 0u;
+ 	m_AmbientVolume = 0.0f;
+ 
+-	WIN32PC_ONLY(m_IsUserStation = AUD_GET_TRISTATE_VALUE(stationSettings->Flags, FLAG_ID_RADIOSTATIONSETTINGS_PLAYSUSERSMUSIC) == AUD_TRISTATE_TRUE);
++#if RSG_PC && !RSG_LINUX
++	m_IsUserStation = AUD_GET_TRISTATE_VALUE(stationSettings->Flags, FLAG_ID_RADIOSTATIONSETTINGS_PLAYSUSERSMUSIC) == AUD_TRISTATE_TRUE;
++#endif
+ }
+ 
+ audRadioStation::~audRadioStation()
+@@ -2671,7 +2681,7 @@ void audRadioStation::Init()
+ 	m_QueuedTrackListIndex = 0;
+ 	m_NetworkNextTrack.category = 0xff;
+ 
+-#if RSG_PC   // user music
++#if RSG_PC && !RSG_LINUX   // user music
+ 	m_LastPlayedTrackIndex = ~0U;
+ 	m_CurrentlyPlayingTrackIndex = ~0U;
+ 	m_BadTrackCount = 0;
+@@ -3014,7 +3024,9 @@ void audRadioStation::Update(u32 timeInMs)
+ 	}
+ 
+ 	bool disableNetworkModeForStation = m_UseRandomizedStrideSelection;
+-	WIN32PC_ONLY(disableNetworkModeForStation |= m_IsUserStation);
++#if RSG_PC && !RSG_LINUX
++	disableNetworkModeForStation |= m_IsUserStation;
++#endif
+ 
+ 	//Reset the TrackChanged flag
+ 	m_bHasTrackChanged = false;
+@@ -3086,7 +3098,7 @@ void audRadioStation::Update(u32 timeInMs)
+ 						}
+ 					}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 					m_LastPlayedTrackIndex = m_CurrentlyPlayingTrackIndex;
+ 					m_CurrentlyPlayingTrackIndex = m_Tracks[m_ActiveTrackIndex].GetTrackIndex();
+ 					m_BadTrackCount = 0; // Reset bad track count. We got a good one.
+@@ -3101,7 +3113,7 @@ void audRadioStation::Update(u32 timeInMs)
+ 
+ 						//Kill the next track and try to prepare another next frame.
+ 						m_Tracks[nextTrackIndex].Shutdown();
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 						if(m_IsUserStation)
+ 						{
+ 							m_BadTrackCount++;
+@@ -3130,7 +3142,7 @@ void audRadioStation::Update(u32 timeInMs)
+ 	//We're playing an active track, so prepare the next track.
+ 	//
+ 
+-#if RSG_PC // user music
++#if RSG_PC && !RSG_LINUX // user music
+ 	if(m_IsUserStation)
+ 	{
+ 		USERRADIO_PLAYMODE playMode = sm_UserRadioTrackManager.GetRadioMode();
+@@ -3246,7 +3258,11 @@ void audRadioStation::Update(u32 timeInMs)
+ 					}
+ 					
+ 					m_IsPlayingMixTransition = m_Tracks[nextTrackIndex].IsFlyloPart1() != m_Tracks[m_ActiveTrackIndex].IsFlyloPart1();
+-					u32 overlapTimeMs = WIN32PC_ONLY(m_IsUserStation ? g_UserRadioTrackOverlapTimeMs : )g_RadioTrackOverlapTimeMs;
++					u32 overlapTimeMs =
++#if RSG_PC && !RSG_LINUX
++						m_IsUserStation ? g_UserRadioTrackOverlapTimeMs :
++#endif
++						g_RadioTrackOverlapTimeMs;
+ 					u32 overlapTimePlayMs = overlapTimeMs;
+ 
+ 					if (g_UsePreciseTrackCrossfades && m_PlaySequentialMusicTracks && m_Tracks[nextTrackIndex].GetStreamingSound())
+@@ -3273,14 +3289,14 @@ void audRadioStation::Update(u32 timeInMs)
+ 						
+ 						m_Tracks[nextTrackIndex].Play();
+ 						m_IsPlayingOverlappedTrack = true;
+-	#if RSG_PC
++	#if RSG_PC && !RSG_LINUX
+ 						m_LastPlayedTrackIndex = m_CurrentlyPlayingTrackIndex;
+ 						m_CurrentlyPlayingTrackIndex =  m_Tracks[nextTrackIndex].GetTrackIndex();
+ 						m_BadTrackCount = 0;
+ 	#endif
+ 					}
+ 				}
+-	#if RSG_PC // this block came from GTA IV user music, is it still needed?  SORR
++	#if RSG_PC && !RSG_LINUX // this block came from GTA IV user music, is it still needed?  SORR
+ 				else if(state == AUD_PREPARE_FAILED)
+ 				{
+ 					//Kill the next track and try to prepare another next frame.
+@@ -3392,7 +3408,9 @@ void audRadioStation::SetPhysicalStreamingState(bool shouldStreamPhysically, aud
+ 		}
+ 	}
+ 	bool disableNetworkModeForStation = false;
+-	WIN32PC_ONLY(disableNetworkModeForStation = m_IsUserStation);
++#if RSG_PC && !RSG_LINUX
++	disableNetworkModeForStation = m_IsUserStation;
++#endif
+ 
+ 	audRadioTrack &activeTrack = m_Tracks[m_ActiveTrackIndex];
+ 	if(activeTrack.IsInitialised())
+@@ -3960,7 +3978,7 @@ void audRadioStation::MuteEmitters()
+ const RadioStationTrackList::tTrack *audRadioStation::GetTrack(const s32 category, const u32 context, const s32 trackIndex, bool ignoreLocking) const
+ {
+ 	const audRadioStationTrackListCollection *trackLists = FindTrackListsForCategory(category);
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(category == RADIO_TRACK_CAT_MUSIC && m_IsUserStation)
+ 	{
+ 		return trackLists->GetTrack(0);
+@@ -3976,7 +3994,9 @@ const RadioStationTrackList::tTrack *audRadioStation::GetTrack(const s32 categor
+ void audRadioStation::AddActiveTrackToHistory()
+ {
+ 	bool disableNetworkModeForStation = m_UseRandomizedStrideSelection;
+-	WIN32PC_ONLY(disableNetworkModeForStation = m_IsUserStation);
++#if RSG_PC && !RSG_LINUX
++	disableNetworkModeForStation = m_IsUserStation;
++#endif
+ 
+ 	if(!disableNetworkModeForStation && (IsNetworkModeHistoryActive() || PARAM_disableradiohistory.Get()))
+ 	{
+@@ -4023,7 +4043,7 @@ void audRadioStation::AddActiveTrackToHistory()
+ 			if(history)
+ 			{
+ 				u32 trackId = m_Tracks[m_ActiveTrackIndex].GetRefForHistory();
+-#if RSG_PC // user music - this was tracked differently in GTA IV this may need fixed SORR
++#if RSG_PC && !RSG_LINUX // user music - this was tracked differently in GTA IV this may need fixed SORR
+ 				if(m_IsUserStation && category == RADIO_TRACK_CAT_MUSIC)
+ 				{
+ 					trackId = m_Tracks[m_ActiveTrackIndex].GetTrackIndex();
+@@ -4041,7 +4061,7 @@ void audRadioStation::AddActiveTrackToHistory()
+ 
+ const audRadioStationHistory *audRadioStation::FindHistoryForCategory(const s32 category) const
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(m_IsUserStation && category == RADIO_TRACK_CAT_MUSIC)
+ 	{
+ 		return sm_UserRadioTrackManager.GetHistory();
+@@ -4180,7 +4200,7 @@ bool audRadioStation::IsValidCategoryForStation(const TrackCats category, const
+ 		
+ 	case RADIO_TRACK_CAT_INTRO_MORNING:
+ 	case RADIO_TRACK_CAT_INTRO_EVENING:
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(m_IsUserStation && m_MusicRunningCount > 1 && sm_UserRadioTrackManager.GetRadioMode() == USERRADIO_PLAY_MODE_RADIO)
+ 		{			
+ 			const s32 gameHours = CClock::GetHour();
+@@ -4198,28 +4218,28 @@ bool audRadioStation::IsValidCategoryForStation(const TrackCats category, const
+ 		return false;
+ 
+ 	case RADIO_TRACK_CAT_USER_INTRO:
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		return m_IsUserStation && m_MusicRunningCount > 1 && sm_UserRadioTrackManager.GetRadioMode() == USERRADIO_PLAY_MODE_RADIO;
+ #else
+ 		return false;
+ #endif // RSG_PC
+ 	case RADIO_TRACK_CAT_TO_AD:
+ 	case RADIO_TRACK_CAT_TO_NEWS:
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		return m_IsUserStation && m_MusicRunningCount > 1 && sm_UserRadioTrackManager.GetRadioMode() == USERRADIO_PLAY_MODE_RADIO;
+ #else
+ 		return false;
+ #endif // RSG_PC
+ 
+ 		case RADIO_TRACK_CAT_USER_OUTRO:
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			// avoid outro after only one song.
+ 			return m_IsUserStation && m_MusicRunningCount > 1 && sm_UserRadioTrackManager.GetRadioMode() == USERRADIO_PLAY_MODE_RADIO;
+ #else
+ 			return false;
+ #endif
+ 	case RADIO_TRACK_CAT_MUSIC:
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		// prevent runs longer than 3 songs
+ 		// TODO: factor in time
+ 		if(m_IsUserStation && sm_UserRadioTrackManager.GetRadioMode() == USERRADIO_PLAY_MODE_RADIO && m_MusicRunningCount >= 3)
+@@ -4230,7 +4250,7 @@ bool audRadioStation::IsValidCategoryForStation(const TrackCats category, const
+ 		return true;
+ 	case RADIO_TRACK_CAT_DJSOLO:
+ 	case RADIO_TRACK_CAT_IDENTS:
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(m_IsUserStation)
+ 		{
+ 			return sm_UserRadioTrackManager.GetRadioMode() == USERRADIO_PLAY_MODE_RADIO && m_MusicRunningCount > 1;
+@@ -4344,7 +4364,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 		return ret;
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(m_BadTrackCount > 4)
+ 	{
+ 		Warningf("Forcing an advert as bad track count is > 4");
+@@ -4398,7 +4418,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 	{
+ 		m_HasJustPlayedBackToBackMusic = false;
+ 		m_HasJustPlayedBackToBackAds = false;
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(m_IsUserStation && activeTrackCategory != RADIO_TRACK_CAT_TO_NEWS)
+ 		{
+ 			return RADIO_TRACK_CAT_TO_NEWS;
+@@ -4407,7 +4427,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 		return RADIO_TRACK_CAT_NEWS;
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(m_IsUserStation && !HasUserTracks() && activeTrackCategory == RADIO_TRACK_CAT_IDENTS)
+ 	{
+ 		// act like we have just played music so we can transition to anything
+@@ -4442,7 +4462,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 					weights = m_NameHash == ATSTRINGHASH("RADIO_34_DLC_HEI4_KULT", 0xE3442163) ? sm_RadioTrackCategoryWeightsNoBackToBackMusicKult : sm_RadioTrackCategoryWeightsFromMusic;
+ 				}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 				if(m_IsUserStation)
+ 				{
+ 					weights = sm_UserMusicWeightsFromMusic;
+@@ -4452,7 +4472,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ #endif
+ 				//Compute sum of weights; only for valid track cats.
+ 				{
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 					const u32 lastCat = m_IsUserStation ? RADIO_TRACK_CAT_INTRO_EVENING : RADIO_TRACK_CAT_DJSOLO;
+ #else
+ 					const u32 lastCat = RADIO_TRACK_CAT_DJSOLO;
+@@ -4462,7 +4482,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 					{
+ 						if(weights)
+ 						{
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 							if(m_IsUserStation)
+ 							{
+ 								validTimeForCategory = timeInMs >= GetNextValidSelectionTime(weights->Category[i].Category);
+@@ -4484,7 +4504,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 					{
+ 						if(weights)
+ 						{
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 							if(m_IsUserStation)
+ 							{
+ 								validTimeForCategory = timeInMs >= GetNextValidSelectionTime(weights->Category[i].Category);
+@@ -4524,7 +4544,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 						if(timeInMs < GetNextValidSelectionTime(nextTrackCategory))
+ 						{
+ 							//We heard this category too recently, so play something else instead.
+-	#if RSG_PC
++	#if RSG_PC && !RSG_LINUX
+ 							if(m_IsUserStation)
+ 							{
+ 								BANK_ONLY(audDisplayf("%s - falling back to music rather than %s due to selection time", GetName(), GetTrackCategoryName(nextTrackCategory)));
+@@ -4577,7 +4597,7 @@ u8 audRadioStation::ComputeNextTrackCategory(u32 timeInMs)
+ 			default:
+ 				//Transition to music only.
+ 				nextTrackCategory = RADIO_TRACK_CAT_MUSIC;
+-	#if RSG_PC // user music
++	#if RSG_PC && !RSG_LINUX // user music
+ 				if(m_IsUserStation && activeTrackCategory != RADIO_TRACK_CAT_DJSOLO && ResolveProbability(0.5f))
+ 				{
+ 					nextTrackCategory = RADIO_TRACK_CAT_USER_INTRO;
+@@ -4771,7 +4791,7 @@ const RadioStationTrackList::tTrack *audRadioStation::ComputeRandomTrack(s32 &ca
+ 				break;
+ 
+ 			case RADIO_TRACK_CAT_MUSIC:
+-			#if RSG_PC // user music
++			#if RSG_PC && !RSG_LINUX // user music
+ 				if(m_IsUserStation)
+ 				{
+ 					// Fall back to advert
+@@ -4917,7 +4937,10 @@ const RadioStationTrackList::tTrack *audRadioStation::ComputeRandomTrack(s32 &ca
+ 		s32 endTrackIndex = (s32)numTracks - 1;
+ 
+ 		// favor new tracks slightly (those not in the first playlist)
+-		if(WIN32PC_ONLY(!m_IsUserStation && )
++		if(
++#if RSG_PC && !RSG_LINUX
++			!m_IsUserStation &&
++#endif
+ 			category == RADIO_TRACK_CAT_MUSIC &&
+ 			numTracks > 0)
+ 		{
+@@ -4959,7 +4982,7 @@ const RadioStationTrackList::tTrack *audRadioStation::ComputeRandomTrack(s32 &ca
+ 			}
+ 		}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 		if(m_IsUserStation && category == RADIO_TRACK_CAT_MUSIC)
+ 		{
+ 			index = sm_UserRadioTrackManager.GetNextTrack();
+@@ -4977,7 +5000,7 @@ const RadioStationTrackList::tTrack *audRadioStation::ComputeRandomTrack(s32 &ca
+ 			index = trackIndex;
+ 			//Check that this track hasn't just been played/selected (to cover virtually streaming stations that are not adding
+ 			//selected tracks to the history.
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			if(m_IsUserStation && category == RADIO_TRACK_CAT_MUSIC)
+ 			{
+ 				// Track index is used as history identifier for user music
+@@ -5052,7 +5075,7 @@ s32 audRadioStation::ComputeNumTracksAvailable(const s32 category, u32 context)
+ 	{
+ 		return 0;
+ 	}
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(m_IsUserStation && category == RADIO_TRACK_CAT_MUSIC)
+ 	{
+ 		return sm_UserRadioTrackManager.GetNumTracks();
+@@ -5218,7 +5241,7 @@ void audRadioStation::ForceTrack(const RadioTrackSettings *trackSettings, s32 st
+ 				}
+ 			}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			m_LastPlayedTrackIndex = m_CurrentlyPlayingTrackIndex;
+ 			m_CurrentlyPlayingTrackIndex = m_Tracks[m_ActiveTrackIndex].GetTrackIndex();
+ #endif
+@@ -5361,7 +5384,7 @@ bool audRadioStation::InitialiseNextTrack(const u32 timeInMs)
+ 		{
+ 			// this can happen if all of the tracks in the chosen category are already in history, which is more likely for weather/news etc
+ 			// fall back to music in this case
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			if(m_IsUserStation)
+ 			{
+ 				RADIODEBUG2("No valid tracks for %s, falling back to adverts", TrackCats_ToString((TrackCats)category));
+@@ -5436,7 +5459,7 @@ bool audRadioStation::InitialiseNextTrack(const u32 timeInMs)
+ 			//NOTE: We log a track category when it is selected, rather than heard, to ensure that we maintain a reasonable
+ 			//distribution of valid selection times across virtualised stations.
+ 			const RadioTrackCategoryData *categoryData = sm_MinTimeBetweenRepeatedCategories;
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			if(m_IsUserStation && sm_MinTimeBetweenRepeatedCategoriesUser)
+ 			{
+ 				categoryData = sm_MinTimeBetweenRepeatedCategoriesUser;
+@@ -5633,7 +5656,7 @@ void audRadioStation::ClearQueuedTracks()
+ 
+ bool audRadioStation::ShouldOnlyPlayMusic() const
+ {
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	if(m_IsUserStation)
+ 	{
+ 		return (sm_UserRadioTrackManager.GetRadioMode() != USERRADIO_PLAY_MODE_RADIO);
+@@ -5671,7 +5694,9 @@ void audRadioStation::DumpNewsState()
+ u32 audRadioStation::GetNextValidSelectionTime(const s32 category) const
+ { 
+ 	bool disableNetworkModeForStation = false;
+-	WIN32PC_ONLY(disableNetworkModeForStation = m_IsUserStation);
++#if RSG_PC && !RSG_LINUX
++	disableNetworkModeForStation = m_IsUserStation;
++#endif
+ 
+ 	if(!disableNetworkModeForStation && (IsNetworkModeHistoryActive() || PARAM_disableradiohistory.Get()))
+ 		return 0U; // always valid
+@@ -6593,7 +6618,7 @@ void audRadioStation::DrawDebug(audDebugDrawManager &drawMgr) const
+ 			const u32 trackId = (*musicHistory)[historyIndex];
+ 
+ 			const char *objName = g_AudioEngine.GetSoundManager().GetFactory().GetMetadataManager().GetObjectName(trackId);
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 			if(m_IsUserStation)
+ 			{
+ 				if(trackId < sm_UserRadioTrackManager.GetNumTracks())
+@@ -6634,7 +6659,7 @@ const char *audRadioStation::GetTrackCategoryName(const s32 trackCategory)
+ 	return NULL;
+ }
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ void audRadioStation::DebugDrawUserMusic()
+ {
+ 	//for(int i=0; i<MAX_TRACK_HISTORY; i++)

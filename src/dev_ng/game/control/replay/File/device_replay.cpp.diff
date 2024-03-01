@@ -10,3 +10,12 @@ diff --git a/src/dev_ng/game/control/replay/File/device_replay.cpp b/src/dev_ng/
  #endif
  
  #if RSG_ORBIS
+@@ -953,7 +953,7 @@ eReplayFileErrorCode fiDeviceReplay::Enumerate(const ReplayFileInfo &info, const
+ 
+ 					fileData.setExtraDataU32(u32(header.fClipTime * 1000));
+ 
+-#if RSG_ORBIS
++#if RSG_ORBIS || RSG_LINUX
+ 					fileData.setLastWriteTime(header.eventMarkers[0].GetUnixTime());
+ #else
+ 					LONGLONG ll;

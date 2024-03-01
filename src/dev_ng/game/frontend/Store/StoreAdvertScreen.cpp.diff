@@ -26,3 +26,12 @@ diff --git a/src/dev_ng/game/frontend/Store/StoreAdvertScreen.cpp b/src/dev_ng/g
  #include "system/controlMgr.h"
  #include "system/pad.h"
  
+@@ -443,7 +443,7 @@ void cStoreAdvertScreen::Render()
+ 		CScaleformMgr::RenderMovie( m_MovieId, fTimeStep, true );
+ 	}
+ 
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	// hide instructional buttons if SCUI is showing ...hints are confusing
+ 	if (!g_rlPc.IsUiShowing())
+ #endif
