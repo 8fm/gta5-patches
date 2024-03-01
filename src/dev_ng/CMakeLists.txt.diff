@@ -2,7 +2,7 @@ diff --git a/src/dev_ng/CMakeLists.txt b/src/dev_ng/CMakeLists.txt
 new file mode 100644
 --- /dev/null
 +++ b/src/dev_ng/CMakeLists.txt
-@@ -0,0 +1,50 @@
+@@ -0,0 +1,76 @@
 +cmake_minimum_required(VERSION 3.18)
 +project(Fuzzy)
 +
@@ -20,6 +20,32 @@ new file mode 100644
 +set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
 +set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_SOURCE_DIR}/bin/${GAME_CONFIG}-${ARCH_TYPE})
 +set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR}/bin/${GAME_CONFIG}-${ARCH_TYPE})
++
++if (WIN32)
++    set(DIRECTX_INCLUDE_DIRS "$ENV{DXSDK_DIR}Include")
++else()
++    message("Using DXVK for D3D11 API")
++
++    include(ExternalProject)
++    ExternalProject_Add(dxvk
++        GIT_REPOSITORY    https://github.com/doitsujin/dxvk
++        GIT_TAG           v2.3
++        GIT_SHALLOW       ON
++        BUILD_ALWAYS      OFF
++        CONFIGURE_HANDLED_BY_BUILD ON
++        CONFIGURE_COMMAND meson setup ../dxvk --buildtype=release -Denable_d3d10=false -Denable_d3d11=true -Denable_dxgi=true
++        BUILD_COMMAND     ninja
++        BUILD_BYPRODUCTS  <BINARY_DIR>/src/d3d11/libdxvk_d3d11.so
++        INSTALL_COMMAND   ""
++    )
++    ExternalProject_Get_property(dxvk SOURCE_DIR BINARY_DIR)
++    set(DIRECTX_INCLUDE_DIRS
++        "${SOURCE_DIR}/include/native/directx"
++        "${SOURCE_DIR}/include/native/windows"
++    )
++    set(DIRECTX_LIBS ${BINARY_DIR}/src/d3d11/libdxvk_d3d11.so)
++    add_custom_target(dependencies ALL)
++endif()
 +
 +if (MSVC)
 +add_subdirectory(game/vs_project1_lib)
