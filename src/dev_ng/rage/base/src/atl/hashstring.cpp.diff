@@ -1,0 +1,15 @@
+diff --git a/src/dev_ng/rage/base/src/atl/hashstring.cpp b/src/dev_ng/rage/base/src/atl/hashstring.cpp
+--- a/src/dev_ng/rage/base/src/atl/hashstring.cpp
++++ b/src/dev_ng/rage/base/src/atl/hashstring.cpp
+@@ -46,9 +46,9 @@ namespace atHashStringNamespaceSupport
+ 
+ 	static int g_HashStringNamespaceInitCount = 0;
+ 	RefdStringMap*	g_StringMaps; // This is a pointer not an array to protect against initialization order problems. An array could be (re)initialized after we've already called InitNamespaces
+-	Namespace		g_Namespaces[HSNS_NUM_NAMESPACES] PPU_ONLY(__attribute__((init_priority(101)))) ORBIS_ONLY(__attribute__((init_priority(101))));
++	Namespace		g_Namespaces[HSNS_NUM_NAMESPACES] PPU_ONLY(__attribute__((init_priority(101)))) ORBIS_ONLY(__attribute__((init_priority(101)))) LINUX_ONLY(__attribute__((init_priority(101))));
+ 
+-	EarlyInit g_InitNamespacesEarly  PPU_ONLY(__attribute__((init_priority(102)))) ORBIS_ONLY(__attribute__((init_priority(102))));
++	EarlyInit g_InitNamespacesEarly  PPU_ONLY(__attribute__((init_priority(102)))) ORBIS_ONLY(__attribute__((init_priority(102)))) LINUX_ONLY(__attribute__((init_priority(102))));
+ 
+ 	void InitNamespace(atHashStringNamespaces nameSpace, u16 mapSize, HashFunction hashFn, sysMemAllocator* allocator, const char* stringName, const char* valueName )
+ 	{

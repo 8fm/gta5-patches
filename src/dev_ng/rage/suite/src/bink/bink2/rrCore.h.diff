@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/suite/src/bink/bink2/rrCore.h b/src/dev_ng/rage/suite/src/bink/bink2/rrCore.h
+--- a/src/dev_ng/rage/suite/src/bink/bink2/rrCore.h
++++ b/src/dev_ng/rage/suite/src/bink/bink2/rrCore.h
+@@ -1672,7 +1672,7 @@ RADDEFSTART
+ // simple RR_ASSERT :
+ 
+ // CB 5-27-10 : use RR_DO_ASSERTS to toggle asserts on and off :
+-#if (defined(_DEBUG) && !defined(NDEBUG)) || defined(ASSERT_IN_RELEASE)
++#if (defined(_DEBUG) && !defined(NDEBUG) && !defined(__RADLINUX__)) || defined(ASSERT_IN_RELEASE)
+   #define RR_DO_ASSERTS
+ #endif
+ 

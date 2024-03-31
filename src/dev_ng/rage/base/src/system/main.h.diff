@@ -55,3 +55,12 @@ diff --git a/src/dev_ng/rage/base/src/system/main.h b/src/dev_ng/rage/base/src/s
  	if (ENABLE_BUDDY_ALLOCATOR && USE_SPARSE_MEMORY NOTFINAL_ONLY( && sparseGameHeap))
  	{
  		// Really virtual but physical names used virtual above - Lets add to the confusion
+@@ -2080,7 +2083,7 @@ static struct InitGameHeap_t
+ 		sysMemAllocator::GetCurrent().EndLayer("global",NULL);
+ #endif
+ 	}
+-} InitGameHeapInstance PPU_ONLY(__attribute__((init_priority(101)))) ORBIS_ONLY(__attribute__((init_priority(101))));
++} InitGameHeapInstance PPU_ONLY(__attribute__((init_priority(101)))) ORBIS_ONLY(__attribute__((init_priority(101)))) LINUX_ONLY(__attribute__((init_priority(101))));
+ #endif	// !RSG_ORBIS
+ 
+ #if __PAGING
