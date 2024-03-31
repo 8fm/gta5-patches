@@ -2,7 +2,7 @@ diff --git a/.github/workflows/ci-vcpkg.yml b/.github/workflows/ci-vcpkg.yml
 new file mode 100644
 --- /dev/null
 +++ b/.github/workflows/ci-vcpkg.yml
-@@ -0,0 +1,90 @@
+@@ -0,0 +1,91 @@
 +name: VCPKG CI
 +
 +on:
@@ -84,7 +84,7 @@ new file mode 100644
 +
 +    - name: Install libs
 +      run: |
-+        sudo apt-get update && sudo apt-get install ninja-build
++        sudo apt-get update && sudo apt-get install meson ninja-build
 +    - name: Build
 +      working-directory: src/dev_ng
 +      run: |
@@ -92,4 +92,5 @@ new file mode 100644
 +        ${CXX} --version
 +        mkdir build && cd build
 +        cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo -G Ninja
++        ninja dependencies
 +        ninja
