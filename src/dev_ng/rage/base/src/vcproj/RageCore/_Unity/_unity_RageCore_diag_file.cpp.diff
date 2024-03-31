@@ -1,0 +1,13 @@
+diff --git a/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_diag_file.cpp b/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_diag_file.cpp
+--- a/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_diag_file.cpp
++++ b/src/dev_ng/rage/base/src/vcproj/RageCore/_Unity/_unity_RageCore_diag_file.cpp
+@@ -96,6 +96,9 @@
+ #include "../../../file/device_win32.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"
++#include "../../../file/device_linux.cpp"
++#include "forceinclude/_unity_epilogue.h"
++#include "forceinclude/_unity_prologue.h"
+ #include "../../../file/device_psn.cpp"
+ #include "forceinclude/_unity_epilogue.h"
+ #include "forceinclude/_unity_prologue.h"

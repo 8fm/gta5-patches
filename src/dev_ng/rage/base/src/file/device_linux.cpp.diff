@@ -1,0 +1,168 @@
+diff --git a/src/dev_ng/rage/base/src/file/device_linux.cpp b/src/dev_ng/rage/base/src/file/device_linux.cpp
+new file mode 100644
+--- /dev/null
++++ b/src/dev_ng/rage/base/src/file/device_linux.cpp
+@@ -0,0 +1,163 @@
++
++#if __LINUX
++
++#include "device.h"
++
++using namespace rage;
++
++const char *fiDeviceLocal::FixName(char *dest,int destSize,const char *src) {
++	const char *origDest = dest;
++	while (--destSize && *src) {
++		char ch = *src++;
++		if (ch == '/')
++			ch = '\\';
++		*dest++ = ch;
++	}
++	*dest = 0;
++	return origDest;
++}
++
++namespace rage {
++bool g_fiCaseSensitive = true;
++}
++
++fiHandle fiDeviceLocal::Open(const char *filename,bool readOnly) const {
++	return nullptr;
++}
++
++fiHandle fiDeviceLocal::OpenBulk(const char *filename,u64 &outBias) const {
++	return nullptr;
++}
++
++fiHandle fiDeviceLocal::CreateBulk(const char *filename) const {
++	return nullptr;
++}
++
++fiHandle fiDeviceLocal::Create(const char *filename) const
++{
++	return nullptr;
++}
++
++int fiDeviceLocal::Seek(fiHandle fd,int offset,fiSeekWhence whence) const {
++	return (int)Seek64(fd,offset,whence);
++}
++
++u64 fiDeviceLocal::Seek64(fiHandle fd,s64 offset,fiSeekWhence whence) const {
++	return 0;
++}
++
++int fiDeviceLocal::Write(fiHandle fd,const void *buffer,int count) const {
++	return 0;
++}
++
++void (*fiDevice::sm_FatalReadError)(void);
++
++int fiDeviceLocal::Read(fiHandle fd,void *buffer,int count) const {
++	return 0;
++}
++
++int fiDeviceLocal::ReadBulk(fiHandle fd,u64 offset,void *buffer,int count) const {
++	return 0;
++}
++
++int fiDeviceLocal::WriteBulk(fiHandle fd,u64 offset,const void *buffer,int count) const {
++	return 0;
++}
++
++int fiDeviceLocal::Close(fiHandle fd) const {
++	return 0;
++}
++
++int fiDeviceLocal::CloseBulk(fiHandle fd) const {
++	return 0;
++}
++
++int fiDeviceLocal::Size(fiHandle handle) const
++{
++	return 0;
++}
++
++u64 fiDeviceLocal::Size64(fiHandle handle) const
++{
++	return 0;
++}
++
++u64 fiDeviceLocal::GetFileSize(const char *filename) const {
++	return 0;
++}
++
++u64 fiDeviceLocal::GetFileTime(const char *filename) const {
++	return 0;
++}
++
++bool fiDeviceLocal::SetFileTime(const char *filename,u64 timestamp) const {
++	return 0;
++}
++
++u32 fiDeviceLocal::GetAttributes(const char *filename) const {
++	return 0;
++}
++
++bool fiDeviceLocal::SetAttributes(const char *filename,u32 attr) const {
++	return false;
++}
++
++fiHandle fiDeviceLocal::FindFileBegin(const char *filename,fiFindData &outData) const {
++}
++
++bool fiDeviceLocal::FindFileNext(fiHandle handle,fiFindData &outData) const {
++	return false;
++}
++
++int fiDeviceLocal::FindFileEnd(fiHandle handle) const {
++	return 0;
++}
++
++bool fiDeviceLocal::SetEndOfFile(fiHandle handle) const {
++	return false;
++}
++
++bool fiDeviceLocal::Delete(const char *filename) const {
++	return false;
++}
++
++bool fiDeviceLocal::Rename(const char *from,const char *to) const {
++	return false;
++}
++
++bool fiDeviceLocal::MakeDirectory(const char *filename) const
++{
++	return false;
++}
++
++bool fiDeviceLocal::UnmakeDirectory(const char *filename) const
++{
++	return false;
++}
++
++void fiDeviceLocal::OnDiscSwap()
++{
++}
++
++fiDevice::RootDeviceId fiDeviceLocal::GetRootDeviceId(const char *XENON_ONLY(name)) const
++{
++	return HARDDRIVE;
++}
++
++u32 fiDeviceLocal::GetPhysicalSortKey(const char* XENON_ONLY(filename)) const
++{
++	return HARDDRIVE_LSN;
++}
++
++void fiDevice::ConvertFileTimeToSystemTime(u64 inTime,SystemTime &outTime) {
++}
++
++void fiDevice::GetLocalSystemTime(SystemTime &outTime)
++{
++}
++
++void fiDevice::GetSystemTimeUtc(SystemTime & outTime)
++{
++}
++
++#endif
