@@ -1,94 +1,136 @@
 diff --git a/src/dev_ng/rage/base/src/system/interlocked.inl b/src/dev_ng/rage/base/src/system/interlocked.inl
 --- a/src/dev_ng/rage/base/src/system/interlocked.inl
 +++ b/src/dev_ng/rage/base/src/system/interlocked.inl
-@@ -156,6 +156,90 @@ inline void* sysInterlockedReadPointer(void* const volatile* target)
- 	return *target;
+@@ -326,6 +326,87 @@ inline void* sysInterlockedCompareExchangePointer(void* volatile* destination, v
+ 	return (void*)sceAtomicCompareAndSwap64((volatile int64_t*)(destination), (int64_t)comparand, (int64_t)exchange);
  }
  
-+#elif __LINUX
-+
-+inline u32 sysInterlockedExchange(volatile u32* destination, u32 exchange)
-+{
-+	return 0;
-+}
-+
-+inline u64 sysInterlockedExchange(volatile u64* destination, u64 exchange)
-+{
-+	return 0;
-+}
-+
-+inline u32 sysInterlockedCompareExchange(volatile u32* destination, u32 exchange, u32 comparand)
-+{
-+	return 0;
-+}
-+
-+inline u64 sysInterlockedCompareExchange(volatile u64 *destination, u64 exchange, u64 comparand)
-+{
-+	return 0;
-+}
-+
-+inline void* sysInterlockedExchangePointer(void* volatile* destination, void* exchange)
-+{
-+}
-+
-+inline void* sysInterlockedCompareExchangePointer(void* volatile* destination, void* exchange, void* comparand)
-+{
-+}
-+
-+inline u32 sysInterlockedIncrement(volatile u32* destination)
-+{
-+	return 0;
-+}
-+
-+inline u32 sysInterlockedDecrement(volatile u32* destination)
-+{
-+	return 0;
-+}
++#elif RSG_NX || __LINUX
 +
 +inline u32 sysInterlockedAdd(volatile u32* destination, s32 value)
 +{
-+	return 0;
++	return __atomic_fetch_add(destination, value, __ATOMIC_SEQ_CST);
 +}
 +
 +inline u64 sysInterlockedAdd(volatile u64* destination, s64 value)
 +{
-+	return 0;
++	return __atomic_fetch_add(destination, value, __ATOMIC_SEQ_CST);
 +}
 +
-+inline void* sysInterlockedAddPointer(volatile void** destination, ptrdiff_t value)
-+{
++inline void* sysInterlockedAddPointer(volatile void ** destination, ptrdiff_t value) {
++	return (void*) sysInterlockedAdd((u64*)destination, value);
 +}
 +
-+inline u32 sysInterlockedOr(volatile u32* destination, u32 value)
++inline u32 sysInterlockedIncrement(volatile u32* destination)
 +{
-+	return 0;
++	return __atomic_fetch_add(destination, 1, __ATOMIC_SEQ_CST) + 1;
 +}
 +
-+inline u64 sysInterlockedOr(volatile u64* destination, u64 value)
++inline u32 sysInterlockedDecrement(volatile u32* destination)
 +{
-+	return 0;
++	return __atomic_fetch_sub(destination, 1, __ATOMIC_SEQ_CST) - 1;
 +}
 +
-+inline u32 sysInterlockedAnd(volatile u32* destination, u32 value)
++inline u32 sysInterlockedCompareExchange(volatile u32* destination, u32 exchange, u32 comparand)
 +{
-+	return 0;
++	return __sync_val_compare_and_swap(destination, comparand, exchange);
 +}
 +
-+inline u32 sysInterlockedRead(const volatile u32* destination)
++inline u64 sysInterlockedCompareExchange(volatile u64* destination, u64 exchange, u64 comparand)
 +{
-+	return *destination;
++	return __sync_val_compare_and_swap(destination, comparand, exchange);
 +}
 +
-+inline u64 sysInterlockedRead(const volatile u64* destination)
++inline u32 sysInterlockedExchange(volatile u32* destination, u32 exchange)
++{   
++	return __atomic_exchange_n(destination, exchange, __ATOMIC_SEQ_CST);
++}
++
++inline void *sysInterlockedExchangePointer(void* volatile * destination, void* exchange)
++{   
++	return __atomic_exchange_n(destination, exchange, __ATOMIC_SEQ_CST);
++}
++
++inline u32 sysInterlockedOr(volatile u32* destination, u32 value) 
 +{
-+	return *destination;
++	return __atomic_fetch_or(destination, value, __ATOMIC_SEQ_CST);
++}
++
++inline u64 sysInterlockedOr(volatile u64* destination, u64 value) 
++{
++	return __atomic_fetch_or(destination, value, __ATOMIC_SEQ_CST);
++}
++
++inline u32 sysInterlockedAnd(volatile u32* destination, u32 value) 
++{
++	return __atomic_fetch_and(destination, value, __ATOMIC_SEQ_CST);
++}
++
++inline u32 sysInterlockedRead(const volatile u32* destination) 
++{
++	return __atomic_load_n(destination, __ATOMIC_SEQ_CST);
++}
++
++inline u64 sysInterlockedRead(const volatile u64* destination) 
++{
++	return __atomic_load_n(destination, __ATOMIC_SEQ_CST);
 +}
 +
 +inline void* sysInterlockedReadPointer(void* const volatile* target)
 +{
-+	return *target;
++	return __atomic_load_n(target, __ATOMIC_SEQ_CST);
 +}
 +
- #elif __PPU
++inline void* sysInterlockedCompareExchangePointer(void* volatile* destination, void* exchange, void* comparand)
++{
++	return __sync_val_compare_and_swap(destination, comparand, exchange);
++}
++
+ #elif __SPU
  
  CompileTimeAssert(sizeof(unsigned) == sizeof(uint32_t));
+@@ -600,6 +681,8 @@ inline u16 sysInterlockedIncrement(volatile u16* destination)
+ {
+ #	if RSG_ORBIS
+ 		return sceAtomicIncrement16((volatile int16_t*)destination)+1;
++#	elif RSG_NX || __LINUX
++		return __atomic_fetch_add(destination, 1, __ATOMIC_SEQ_CST) + 1;
+ #	else
+ 		// Apparently Microsoft doesn't have any 16-bit intrinsics for x86/x64 platforms, despite just needing
+ 		//      lock xadd (or lock inc if the return value is not used)
+@@ -637,6 +720,8 @@ inline u8 sysInterlockedIncrement(volatile u8* destination)
+ {
+ #	if RSG_ORBIS
+ 		return sceAtomicIncrement8((volatile int8_t*)destination)+1;
++#	elif RSG_NX || __LINUX
++		return __atomic_fetch_add(destination, 1, __ATOMIC_SEQ_CST) + 1;
+ #	else
+ 		volatile u32 *dst32 = (u32*)((uptr)destination&~3);
+ 		const uptr byteOffset = ((uptr)destination & 3);
+@@ -670,6 +755,8 @@ inline u16 sysInterlockedDecrement(volatile u16* destination)
+ {
+ #	if RSG_ORBIS
+ 		return sceAtomicDecrement16((volatile int16_t*)destination)-1;
++#	elif RSG_NX || __LINUX
++		return __atomic_fetch_sub(destination, 1, __ATOMIC_SEQ_CST) - 1;
+ #	else
+ 		// Decrementing the most significant bytes is simpler, as there is no worry about corrupting the other 16-bytes
+ 		volatile u32 *dst32 = (u32*)((uptr)destination&~3);
+@@ -700,6 +787,8 @@ inline u8 sysInterlockedDecrement(volatile u8* destination)
+ {
+ #	if RSG_ORBIS
+ 		return sceAtomicDecrement8((volatile int8_t*)destination)-1;
++#	elif RSG_NX || __LINUX
++		return __atomic_fetch_sub(destination, 1, __ATOMIC_SEQ_CST) - 1;
+ #	else
+ 		volatile u32 *dst32 = (u32*)((uptr)destination&~3);
+ 		const uptr byteOffset = ((uptr)destination & 3);
+@@ -729,7 +818,7 @@ inline u8 sysInterlockedDecrement(volatile u8* destination)
+ #	endif
+ }
+ 
+-#if RSG_ORBIS
++#if RSG_ORBIS || RSG_NX || __LINUX
+ 
+ inline u16 sysInterlockedIncrement_NoWrapping(volatile u16* destination)
+ {
