@@ -1,41 +1,146 @@
 diff --git a/src/dev_ng/rage/base/src/system/memory.cpp b/src/dev_ng/rage/base/src/system/memory.cpp
 --- a/src/dev_ng/rage/base/src/system/memory.cpp
 +++ b/src/dev_ng/rage/base/src/system/memory.cpp
-@@ -36,7 +36,7 @@ sys_memory_container_t g_prx_container;
+@@ -36,6 +36,8 @@ sys_memory_container_t g_prx_container;
  #include <kernel.h>
  #elif __XENON
  #include <xbdm.h>
--#elif __WIN32PC
-+#elif __WIN32PC && !__LINUX
++#elif __LINUX
++#include <malloc.h>
+ #elif __WIN32PC
  #include <Psapi.h>
  #include <windows.h>
- #pragma comment(lib,"Psapi.lib")
-@@ -650,7 +650,7 @@ bool sysMemHeapFree(void *ptr)
+@@ -650,6 +652,115 @@ bool sysMemHeapFree(void *ptr)
  	}
  	return false;
  }
--#elif __WIN32PC
-+#elif __WIN32PC && !__LINUX
++#elif __LINUX
++#if 0 // unused mmap version. munmap require size to unmap
++void* sysMemVirtualAllocate(size_t size)
++{
++	// Round up to 4k size, then add 4k for guard page. 
++	size_t adjustedSize = ((size + 4095U) & ~4095U) + 4096U;
++	void *result = mmap(nullptr, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
++
++	if (result == MAP_FAILED || mprotect((char*)result + adjustedSize - 4096,4096,PROT_NONE) != 0)
++	{
++#if !__FINAL
++		static bool bOnce = true;
++		if (bOnce)
++		{
++			Errorf("sysMemVirtualAllocate(%u) failed.",size);
++			bOnce = false;
++		}
++#endif // !__FINAL
++	}
++	return result;
++}
++
++void sysMemVirtualFree(void *ptr)
++{
++	if (ptr && munmap(ptr, size) != 0)
++		Errorf("sysMemVirtualFree(%p) failed",ptr);
++}
++
++#else // unused mmap version
++
++void* sysMemVirtualAllocate(size_t size)
++{
++	return memalign(128, size);
++}
++
++void sysMemVirtualFree(void *ptr)
++{
++	free(ptr);
++}
++
++#endif
++
++void* sysMemPhysicalAllocate(size_t size)
++{
++	return sysMemVirtualAllocate(size);
++}
++
++void sysMemPhysicalFree(void *ptr)
++{
++	sysMemVirtualFree(ptr);
++}
++
++bool sysMemLockMemory(void* memory, size_t size)
++{
++	return true;
++}
++
++bool sysMemUnlockMemory(void* memory, size_t size)
++{
++	return true;
++}
++
++u64 sysMemTotalFreeMemory()
++{
++	u64 result = 4 * 1024 * 1024 * 1024;
++	FILE *f = ::fopen("/proc/meminfo", "r");
++	if (f)
++	{
++		char buffer[256];
++		memset(buffer, '0', 256);
++		int tmp, buffers;
++
++		result = 0;
++		while (fgets(buffer, sizeof(buffer), f))
++		{
++			if (sscanf(buffer, "MemFree: %d", &tmp))
++				result = tmp * 1024;
++			if (sscanf(buffer, "Buffers: %d", &tmp))
++				result += tmp * 1024;
++			if (sscanf(buffer, "Cached: %d", &tmp))
++				result += tmp * 1024;
++		}
++		fclose(f);
++	}
++
++	return result;
++}
++
++u64 sysMemTotalMemory()
++{
++	u64 result = 4 * 1024 * 1024 * 1024;
++	FILE *f = ::fopen("/proc/meminfo", "r");
++	if (f)
++	{
++		char buffer[256];
++		memset(buffer, '0', 256);
++		int tmp, buffers;
++
++		result = 0;
++		while (fgets(buffer, sizeof(buffer), f))
++		{
++			if (sscanf(buffer, "MemTotal: %d", &tmp))
++				result = tmp * 1024;
++		}
++		fclose(f);
++	}
++
++	return result;
++}
+ #elif __WIN32PC
  void* sysMemVirtualAllocate(size_t size, bool bTracked/*=false*/)
  {
- 	// Round up to 4k size, then add 4k for guard page. 
-@@ -1445,7 +1445,7 @@ void* sysMemDebugAllocate(size_t size)
+@@ -1445,6 +1556,8 @@ void* sysMemDebugAllocate(size_t size)
  #elif RSG_DURANGO
  	Assertf((size & 0x3fffff) == 0, "sysMemDebugAllocate called called with a non 4MB-aligned size: %" SIZETFMT "d!", size);
  	return VirtualAlloc(NULL, size, MEM_COMMIT | MEM_4MB_PAGES, PAGE_READWRITE);
--#elif __WIN32PC
-+#elif __WIN32PC && !__LINUX
++#elif __LINUX
++	return memalign(128, size);
+ #elif __WIN32PC
  	return VirtualAlloc(NULL, size,  MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
  #elif RSG_ORBIS
- 	return sysMemFlexAllocate(size);
-@@ -1464,6 +1464,10 @@ void sysMemDebugFree(void *ptr)
+@@ -1464,6 +1577,8 @@ void sysMemDebugFree(void *ptr)
  #elif __XENON
  		// Only way pointer could be nonzero is if we were allowed to call DmDebugAlloc anyway so no reason to repeat DmGetCDMS call again
  		DmDebugFree(ptr);	
-+#elif RSG_LINUX
-+	{
-+		// TODO: add Linux support
-+	}
++#elif __LINUX
++		free(ptr);
  #elif __WIN32PC || RSG_DURANGO
  		VirtualFree(ptr,0,MEM_RELEASE);
  #elif RSG_ORBIS

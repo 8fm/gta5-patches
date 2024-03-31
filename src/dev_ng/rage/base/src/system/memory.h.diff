@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/base/src/system/memory.h b/src/dev_ng/rage/base/src/system/memory.h
+--- a/src/dev_ng/rage/base/src/system/memory.h
++++ b/src/dev_ng/rage/base/src/system/memory.h
+@@ -875,7 +875,7 @@ void debug_memory_fill(void *ptr,size_t bytes);
+ // RETURNS:	Pointer to memory, or NULL if not available
+ // NOTES:	These allocations intentionally bypass the rage tracker, because they are
+ //			typically used to provide the "backing store" of our game heaps.
+-#if __WIN32PC
++#if __WIN32PC && !__LINUX
+ void* sysMemVirtualAllocate(size_t size, bool bTracked=false);
+ #else
+ void* sysMemVirtualAllocate(size_t size);

@@ -1,0 +1,12 @@
+diff --git a/src/dev_ng/rage/script/src/script/program.cpp b/src/dev_ng/rage/script/src/script/program.cpp
+--- a/src/dev_ng/rage/script/src/script/program.cpp
++++ b/src/dev_ng/rage/script/src/script/program.cpp
+@@ -606,7 +606,7 @@ void scrProgram::SetGlobals()
+ // 	else
+ // #endif
+ 	
+-#if RSG_PC
++#if RSG_PC && !RSG_LINUX
+ 	//scrValue* pNewGlobals = (scrValue*) VirtualAlloc(NULL, count*sizeof(scrValue), MEM_RESERVE | MEM_COMMIT | MEM_WRITE_WATCH, PAGE_READWRITE);
+ 	scrValue* pNewGlobals = (scrValue*) sysMemVirtualAllocate( count*sizeof(scrValue), true );
+ #else
